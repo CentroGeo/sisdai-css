@@ -1,6 +1,6 @@
 # Dadsig css
 
-Biblioteca de estilos en scss con [sass](https://sass-lang.com/) para el Sitema de Diseño basado en los requerimientos de los Ecosistemas Nacionales Informáticos del Conacyt. 
+Biblioteca de estilos en scss con [sass](https://sass-lang.com/) para el Sistema de Diseño basado en los requerimientos de los Ecosistemas Nacionales Informáticos del Conacyt. 
 Desarrollado por la Dirección de análisis de datos y sistemas de información geográfica.
 
 
@@ -85,5 +85,5 @@ Para obtener el archivo de distribución actualizado, compila el proyecto con
 ``` sh
 npm run build
 ```
-El **buld** actualiza los archivos de la carpeta de distribución `dist` que se utilizan para actualizar la **CDN** y que puedes utilizar como archivos locales copiandolos y pegandolos en tus proyectos.
+El **build** actualiza los archivos de la carpeta de distribución `dist` que se utilizan para actualizar la **CDN** y que puedes utilizar como archivos locales copiándolos y pegándolos en tus proyectos.
 
