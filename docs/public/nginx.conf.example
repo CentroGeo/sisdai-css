@@ -1,7 +1,7 @@
-location ~ ^/dadsigcss/dadsigcss/index\.html$ { }
+location ~ ^/sisdaicss/sisdaicss/index\.html$ { }
 
-location /dadsigcss/ {
+location /sisdaicss/ {
   if (!-e $request_filename){
-    rewrite ^/dadsigcss/(.*)$ /dadsigcss/dadsigcss/index.html break;
+    rewrite ^/sisdaicss/(.*)$ /sisdaicss/sisdaicss/index.html break;
   }
 }

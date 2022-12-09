@@ -77,7 +77,7 @@ ___
 
     1.1 Existe una clase `.contenedor` general que se extiende a lo ancho de toda la pantalla, respetando margenes interiores izquierdo y derecho definidos segun los `breakpoints` para cada dispositivo.
 
-    Se puede agregar la clase `.ancho-fijo` al contenedor para que tome el ancho másximo definido en el arreglo por dispositivo. Por default el contendor se centrará en la vista.
+    Se puede agregar la clase `.ancho-fijo` al contenedor para que tome el ancho máximo definido en el arreglo por dispositivo. Por default el contendor se centrará en la vista.
 
     ```css
     $contenedores: (
@@ -108,7 +108,7 @@ ___
 
     Existen varios tipos de columnas dependiendo de en que se arman, hay en grid, en flex y en columns. 
 
-    Tanto grid como flex se basan en la idea que en celular existan 4, en tableta 8 y en escritorio hast 12 columnas por fila, como se muestra en el arreglo en las variables. Las clases de numero mayor al limite de columnas por dispositivo, se reformatea al 100% para dicho dispositovo.
+    Tanto grid como flex se basan en la idea que en celular existan 4, en tableta 8 y en escritorio hasta 12 columnas por fila, como se muestra en el arreglo en las variables. Las clases de numero mayor al limite de columnas por dispositivo, se reformatea al 100% para dicho dispositovo.
     
     Por ejemplo: grid-col-5 en celular es del 100% del ancho igual que grid-col-6... 12
 
@@ -126,15 +126,15 @@ ___
     
     Unicamente se necesita poner la clase `columns-3` al bloque que se requiera en columnas, en donde el digito describe cuantas columnas se espera que existan, existiendo números consecutivos del `1` al `12`.
     
-    ***NOTA:*** *la forma en que se formatean con este atributo es muy diferente al de flex o grid, este se formatea automaticamente, no se tiene mucho control de en que punto pasa de una columna a otra. Pero funciona bien para textos, por ejemplo.*
+    ***NOTA:*** *la forma en que se formatean con este atributo es muy diferente al de flex o grid, este se formatea automáticamente, no se tiene mucho control de en qué punto pasa de una columna a otra. Pero funciona bien para textos, por ejemplo.*
 
     2.2 **flex**
     
-    Debe estar dentro de un elemento con la clase `flex` cada columna debe tener la clase `flex-basis-1` en donde el digito describe el ancho de la columna, existiendo números consecutivos del `1` al `12`.
+    Debe estar dentro de un elemento con la clase `flex` cada columna debe tener la clase `flex-basis-1` en donde el dígito describe el ancho de la columna, existiendo números consecutivos del `1` al `12`.
 
     2.3 **grid**
 
-    Debe estar dentro de un elemento con la clase `grid` cada columna debe tener la clase `grid-column-1` en donde el digito describe el ancho de la columna, existiendo números consecutivos del `1` al `12`.
+    Debe estar dentro de un elemento con la clase `grid` cada columna debe tener la clase `grid-column-1` en donde el dígito describe el ancho de la columna, existiendo números consecutivos del `1` al `12`.
 
     2.4 **gap**
 
@@ -144,7 +144,7 @@ ___
 
     Hace la misma funcion que `gap` pero es una clase especial para utilizar con las columnas de `flex`.
 
-3. **Margenes** (margin - padding)
+3. **Márgenes** (margin - padding)
 
     Para los nombres de las clases se utilizan los prefijos `m-` (margin) y `p-` (padding) seguido del id del espaciado para diferenciar el tamaño del margen exterior e interior respectivamente.
 
@@ -159,9 +159,9 @@ ___
 
     Existe un arreglo de colores que se utilizan en la identidad y en la página de gobierno que se enlista a continuación.
 
-    Ademas para el sub arreglo de identidad se crearon clases de color de fondo, texto y borde. 
+    Además para el sub arreglo de identidad se crearon clases de color de fondo, texto y borde. 
 
-    Los nombres de las clases siguen la logica de poner primero que se va a formatear, seguido del nombre de color de la varible, por ejemplo `fondo-gobmx-verde` ó `texto-gobmx-dorado`.
+    Los nombres de las clases siguen la lógica de poner primero que se va a formatear, seguido del nombre de color de la varible, por ejemplo `fondo-gobmx-verde` ó `texto-gobmx-dorado`.
 
     ``` css
     $color-gobmx: (

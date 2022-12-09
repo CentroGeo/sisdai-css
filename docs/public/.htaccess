@@ -1,8 +1,8 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /dadsigcss
-RewriteRule ^dadsigcss/index\.html$ - [L]
+RewriteBase /sisdaicss
+RewriteRule ^sisdaicss/index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /dadsigcss/index.html [L]
+RewriteRule . /sisdaicss/index.html [L]
 </IfModule>
