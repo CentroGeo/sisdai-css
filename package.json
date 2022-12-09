@@ -1,7 +1,7 @@
 {
-  "name": "dadsig-css",
+  "name": "sisdai-css",
   "version": "0.31.0",
-  "description": "Biblioteca de estilos base CSS del Sistema de Diseño para Herramientas ENI del Conacyt",
+  "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "main": "src/eni.scss",
   "scripts": {
     "start": "concurrently \"npm run scss\" \"npm run docs\" ",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/conacyt-dai/dadsig-css.git"
+    "url": "git+https://github.com/salsa-community/sisdai-css.git"
   },
-  "author": "flkt.crnpio@gmail.com",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/conacyt-dai/dadsig-css/issues"
+    "url": "https://github.com/salsa-community/sisdai-css/issues"
   },
-  "homepage": "https://github.com/conacyt-dai/dadsig-css#readme",
+  "homepage": "https://github.com/salsa-community/sisdai-css#readme",
   "dependencies": {
     "sass": "1.49.10"
   },

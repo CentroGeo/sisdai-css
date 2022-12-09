@@ -6,10 +6,6 @@
   <div class="columns-5 columns-1-mov">
 
       <div>
-        <span class="icono-accesibilidad"></span>
-        <span>icono-accesibilidad</span>
-      </div>
-      <div>
         <span class="icono-actualizar"></span>
         <span>icono-actualizar</span>
       </div>
@@ -84,10 +80,6 @@
       <div>
         <span class="icono-capa-lineas"></span>
         <span>icono-capa-lineas</span>
-      </div>
-      <div>
-        <span class="icono-capa-poligono"></span>
-        <span>icono-capa-poligono</span>
       </div>
       <div>
         <span class="icono-capa-puntos"></span>
@@ -322,12 +314,12 @@
         <span>icono-persona</span>
       </div>
       <div>
-        <span class="icono-reloj"></span>
-        <span>icono-reloj</span>
+        <span class="icono-poligono"></span>
+        <span>icono-poligono</span>
       </div>
       <div>
-        <span class="icono-restablecer"></span>
-        <span>icono-restablecer</span>
+        <span class="icono-reloj"></span>
+        <span>icono-reloj</span>
       </div>
       <div>
         <span class="icono-restar"></span>
