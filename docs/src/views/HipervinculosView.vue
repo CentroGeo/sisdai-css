@@ -4,8 +4,8 @@
   <p>
     <a href="#">etiqueta de hipervinculo a</a> o 
     <button class="hipervinculo">button.hipervinculo</button> o 
-    <a href="#">a <span class="icon dai-descargar"></span></a> o 
-    <button class="hipervinculo">button.hipervinculo <span class="icon dai-descargar"></span></button> 
+    <a href="#">a <span class="icon sisdai-descargar"></span></a> o
+    <button class="hipervinculo">button.hipervinculo <span class="icon sisdai-descargar"></span></button>
   </p>
   
   <h2 class="m-t-10">Identidad</h2>
