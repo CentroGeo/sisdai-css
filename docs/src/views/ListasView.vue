@@ -91,28 +91,28 @@
     <div class="columna-4">
       <p class="titulo-lista">lista con iconos</p>
       <ul class="lista-icono">
-        <li class="icon dai-flecha-derecha">
+        <li class="icon sisdai-flecha-derecha">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>
             <p class="texto-terciario">texto-terciario</p>
           </div>
         </li>
-        <li class="icon dai-mapa-generador">
+        <li class="icon sisdai-mapa-generador">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>
             <p class="texto-terciario">texto-terciario</p>
           </div>
         </li>
-        <li class="icon dai-documento">
+        <li class="icon sisdai-documento">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>
             <p class="texto-terciario">texto-terciario</p>
           </div>
         </li>
-        <li class="icon dai-presentacion">
+        <li class="icon sisdai-presentacion">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>

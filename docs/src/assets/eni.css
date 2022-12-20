@@ -1164,7 +1164,7 @@ summary:focus {
 summary::before {
   display: inline-block;
   width: 24px;
-  font-family: "dai-iconos";
+  font-family: "sisdai-iconos";
   content: "h";
 }
 
@@ -1334,7 +1334,7 @@ select:not(:disabled):focus {
 }
 
 [type=checkbox]:checked + label::after {
-  font-family: "dai-iconos";
+  font-family: "sisdai-iconos";
   content: "k";
   color: var(--pagina-fondo);
   position: absolute;
@@ -7657,7 +7657,7 @@ ol + hr {
   color: var(--navegacion-color-active);
 }
 .nav-boton-submenu::after, .nav-boton-regresar::after {
-  font-family: "dai-iconos" !important;
+  font-family: "sisdai-iconos" !important;
   font-size: 1rem;
   height: 0.875rem;
   content: "e";
@@ -7673,7 +7673,7 @@ ol + hr {
   display: none;
 }
 .nav-boton-regresar::before {
-  font-family: "dai-iconos" !important;
+  font-family: "sisdai-iconos" !important;
   font-size: 1rem;
   content: "e";
   margin-left: -4px;
