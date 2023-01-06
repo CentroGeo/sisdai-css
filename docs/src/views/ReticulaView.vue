@@ -123,42 +123,44 @@
   
   <h2 class="m-t-10">Columnas <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" ref="noopener noreferrer">Flex</a></h2>
   <p>Alineacion contenedor flex, la POSICION puede ser inicio, final, centrado, espaciado, alrededor y equidistante</p>
+  <p> Además existe una clase .flex-columnas-100-al-simplificar que se le puede agregar a .flex, la cual indicará que sus .columna-# deberán escalarse a un ancho del 100% de la pantalla cuando se seleccione la <strong>VISTA SIMPLIFICADA</strong></p>
 <pre>
-  &lt;div class="flex flex-contenido-POSICION">
+  &lt;div class="flex flex-contenido-POSICION flex-columnas-100-al-simplificar">
     &lt;div class="columna-1"> &lt;/div>
     &lt;div class="columna-4"> &lt;/div>
     &lt;div class="columna-1"> &lt;/div>
   &lt;/div>
 </pre>
-  <div class="flex flex-contenido-inicio m-t-1">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1">.flex-contenido-inicio</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
+
+  <div class="flex flex-contenido-inicio m-t-1 flex-columnas-100-al-simplificar">
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-inicio</div>
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
-  <div class="flex flex-contenido-final m-t-1">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1">.flex-contenido-final</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
+  <div class="flex flex-contenido-final m-t-1 flex-columnas-100-al-simplificar">
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-final</div>
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
-  <div class="flex flex-contenido-centrado m-t-1">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1">.flex-contenido-centrado</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
+  <div class="flex flex-contenido-centrado m-t-1 flex-columnas-100-al-simplificar">
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-centrado</div>
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
-  <div class="flex flex-contenido-separado m-t-1">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1">.flex-contenido-separado</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
+  <div class="flex flex-contenido-separado m-t-1 flex-columnas-100-al-simplificar">
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-separado</div>
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
-  <div class="flex flex-contenido-alrededor m-t-1">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1">.flex-contenido-alrededor</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
+  <div class="flex flex-contenido-alrededor m-t-1 flex-columnas-100-al-simplificar">
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-alrededor</div>
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
-  <div class="flex flex-contenido-equidistante m-t-1">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1">.flex-contenido-equidistante</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"></div>
+  <div class="flex flex-contenido-equidistante m-t-1 flex-columnas-100-al-simplificar">
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-equidistante</div>
+    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
 
   <h2 class="m-t-10">Columnas <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" ref="noopener noreferrer">Grid</a></h2>

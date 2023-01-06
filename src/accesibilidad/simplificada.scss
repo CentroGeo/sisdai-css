@@ -4,11 +4,13 @@
     display: block;
     margin: auto;
     padding: 0;
-    
-    @each $dispositivo, $map in $a11y-simplificada-contenedores {
+
+    @each $dispositivo,
+    $map in $a11y-simplificada-contenedores {
       @include mediaquery($dispositivo) {
-        > [class^='columna-'],
-        > [class*=" columna-"] {
+
+        >[class^='columna-'],
+        >[class*=" columna-"] {
           display: block;
           max-width: map-get($contenedores, $dispositivo, 'ancho-lectura');
           padding: map-get($map, 'margen-interior');
@@ -25,8 +27,9 @@
   [class^='boton'],
   [class*=" boton"] {
     @extend .hipervinculo;
+
     &:not(:last-child) {
-      margin-right:  map-get($espaciado, '1');
+      margin-right: map-get($espaciado, '1');
     }
   }
 
@@ -34,14 +37,79 @@
   ol,
   .lista-avatar,
   .lista-logo {
+
     .avatar,
     .logo {
       display: none;
     }
   }
+
   img:not(.nav-logo),
   svg:not(.nav-logo),
   picture {
     display: none;
   }
+
+  .contenedor-portada {
+
+
+    .degradado-negro-abajo {
+      background: transparent;
+
+      .contenido-texto-degradado {
+        color: var(--hipervinculo-color) !important;
+      }
+    }
+  }
+
+  a.tarjeta-hipervinculo-externo {
+    min-height: 0px;
+    background-color: map-get($color-conacyt, 'claro-1');
+    text-decoration: none;
+
+    .degradado-negro-abajo {
+      background: none;
+      margin: 0;
+    }
+
+    .contenido-abajo {
+      color: var(--hipervinculo-color) !important;
+
+    }
+
+    :hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  a.tarjeta-hipervinculo-interno {
+    .contenido-abajo {
+      color: var(--hipervinculo-color) !important;
+    }
+  }
+
+  // Ruptura de retículas flex. Columnas al 100% en vista simplificada
+
+
+  @each $dispositivo,
+  $configuracion in $columnas {
+    @include mediaquery($dispositivo) {
+      .flex.flex-columnas-100-al-simplificar {
+        margin-right: calc(map-get($configuracion, 'espaciado') * -.5);
+        margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
+
+        >[class^='columna-'],
+        >[class*=" columna-"] {
+          flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
+          max-width: calc(100% - map-get($configuracion, 'espaciado'));
+          margin-left: map-get($configuracion, 'espaciado')*.5;
+          margin-right: map-get($configuracion, 'espaciado')*.5;
+        }
+      }
+
+    }
+  }
+
+
 }
