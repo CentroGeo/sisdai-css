@@ -93,7 +93,12 @@ const router = createRouter({
       path: '/navegacion',
       name: 'navegacion',
       component: () => import('../views/NavegacionView.vue')
-    }
+    },
+    {
+      path: '/portadas',
+      name: 'portadas',
+      component: () => import('../views/PortadasView.vue')
+    },
   ]
 })
 
