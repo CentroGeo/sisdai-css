@@ -1,4 +1,37 @@
 .a11y-oscura {
-	background: #000;
-	color: #fff;
+	// background: #000;
+	// color: #fff;
+	// Agregar variables para vista oscura
+	--pagina-fondo: #000;
+	--tipografia-color: #fff;
+
+	--tipografia-color-1: #fff;
+	--tipografia-color-2: #fff;
+	--tipografia-color-3: #fff;	
+	--label-color: #fff;
+	--input-color: #fff;
+	--boton-terciario-color: #fff;
+
+	// --hipervinculo-color: #005DFF;
+	// font-weight: 400 - 350;
+	// line-height: calc(1em * 1.3 - 1.5);
+	// --borde-color-1: #141414;
+	// --sombra: #0000001a;
+
+	--tabla-fondo-impar: blue;
+	--detalle-fondo: orange;
+	--boton-primario-fondo: red;
+
+	// Agregar atributos generales
+	background: var(--pagina-fondo);
+  color: var(--tipografia-color);	
+
+	// Etiquetas html y clases específicas
+	picture, img {
+		filter: brightness(.8) contrast(1.2);
+	}
+	// svg.icon path {
+	// 	fill: #fff;
+	//  color: #fff;
+	// }
 }

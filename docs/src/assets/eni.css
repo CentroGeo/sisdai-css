@@ -8412,8 +8412,22 @@ body {
 }
 
 .a11y-oscura {
-  background: #000;
-  color: #fff;
+  --pagina-fondo: #000;
+  --tipografia-color: #fff;
+  --tipografia-color-1: #fff;
+  --tipografia-color-2: #fff;
+  --tipografia-color-3: #fff;
+  --label-color: #fff;
+  --input-color: #fff;
+  --boton-terciario-color: #fff;
+  --tabla-fondo-impar: blue;
+  --detalle-fondo: orange;
+  --boton-primario-fondo: red;
+  background: var(--pagina-fondo);
+  color: var(--tipografia-color);
+}
+.a11y-oscura picture, .a11y-oscura img {
+  filter: brightness(0.8) contrast(1.2);
 }
 
 /*# sourceMappingURL=eni.css.map */

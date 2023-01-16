@@ -26,7 +26,14 @@
   }
   function toggleA11yOscura(){
     isA11yOscura.value = !isA11yOscura.value
-
+    
+    isA11yOscura.value === true ? 
+      document.body.style.background = '#000' 
+      : document.body.style.background = '#fff';
+    
+    // isA11yOscura.value === true ? 
+    //   document.documentElement.style.setProperty('--pagina-fondo','#000')
+    //   : document.documentElement.style.setProperty('--pagina-fondo','#fff');
   }
 
   function upFontSize() {
@@ -162,7 +169,7 @@
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-      <button class="boton-primario" @click="toggleA11yOscura">{{ isA11yOscura? 'Vista normal' : 'Vista oscura'}}</button>
+      <button class="boton-primario" @click="toggleA11yOscura">{{ isA11yOscura ? 'Vista normal' : 'Vista oscura'}}</button>
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>
     <main role="main" class="contenedor m-y-maximo">
