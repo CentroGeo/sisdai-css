@@ -56,6 +56,12 @@
     .degradado-negro-abajo {
       background: transparent;
 
+      .contenido-abajo {
+        p {
+          color: var(--tipografia-color);
+        }
+      }
+
       .contenido-texto-degradado {
         color: var(--hipervinculo-color) !important;
       }

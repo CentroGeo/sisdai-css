@@ -37,8 +37,8 @@
     <div class="contenedor-portada" style="height: 90vh">
       <img class="portada" src="http://placekitten.com/970/979" />
       <div class="degradado-negro-abajo">
-        <div class="contenido-abajo texto-color-1">
-          <p class="titulo-eni texto-color-1 texto-centrado">Título de ENI</p>
+        <div class="contenido-abajo">
+          <p class="titulo-eni texto-centrado">Título de ENI</p>
         </div>
       </div>
     </div>

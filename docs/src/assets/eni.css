@@ -2909,10 +2909,12 @@ ol + hr {
   margin-top: 48px;
 }
 .contenedor-portada .degradado-negro-abajo .contenido-abajo {
-  color: var(--tipografia-color-1);
   margin-top: auto;
   padding: 24px;
   width: 100%;
+}
+.contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+  color: var(--tipografia-color-1);
 }
 
 .contenedor {
@@ -8266,6 +8268,9 @@ body {
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo {
   background: transparent;
+}
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+  color: var(--tipografia-color);
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-texto-degradado {
   color: var(--hipervinculo-color) !important;
