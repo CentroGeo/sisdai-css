@@ -1326,7 +1326,7 @@ figure figcaption {
   object-fit: cover;
   object-position: 50% 50%;
 }
-.tarjeta .contenido-abajo {
+.tarjeta .contenido-html {
   width: 100%;
   align-items: stretch;
   height: 100%;
@@ -1335,7 +1335,45 @@ figure figcaption {
   color: #000;
   transition: all 0.27s ease-in-out;
 }
-.tarjeta .contenido-abajo p {
+.tarjeta .contenido-html p {
+  margin: 4px 0 4px 0;
+}
+.tarjeta-horizontal {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 100%;
+  text-decoration: none;
+}
+.tarjeta-horizontal .fondo-imagen {
+  position: relative;
+  width: 244px;
+  height: 240px;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+@media screen and (max-width: 768px) {
+  .tarjeta-horizontal {
+    flex-wrap: wrap;
+  }
+  .tarjeta-horizontal .fondo-imagen {
+    width: 100%;
+  }
+}
+.tarjeta-horizontal .contenido-html {
+  width: 100%;
+  align-items: stretch;
+  background: #EDF6FA;
+  padding: 16px;
+  color: #000;
+  transition: all 0.27s ease-in-out;
+}
+.tarjeta-horizontal .contenido-html p {
   margin: 4px 0 4px 0;
 }
 

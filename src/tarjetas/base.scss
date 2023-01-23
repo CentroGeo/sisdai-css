@@ -1,32 +1,75 @@
-.tarjeta{
+.tarjeta {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border-radius: map-get($bordes, '20');
+  overflow: hidden;
+  height: 100%;
+  text-decoration: none;
+
+  .fondo-imagen {
+    position: relative;
+    width: 100%;
+    height: 240px;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+  .contenido-html {
+    width: 100%;
+    align-items: stretch;
+    height: 100%;
+    background: #EDF6FA;
+    padding: 16px;
+    color: #000;
+    transition: all 0.27s ease-in-out;
+
+    p {
+      margin: 4px 0 4px 0;
+    }
+  }
+
+  &-horizontal {
     position: relative;
     display: flex;
-    flex-wrap: wrap;
-      width: 100%;
+    flex-wrap: nowrap;
+    width: 100%;
     border-radius: map-get($bordes, '20');
     overflow: hidden;
     height: 100%;
     text-decoration: none;
+    
+
+    .fondo-imagen {
+      position: relative;
+      width: 244px;
+      height: 240px;
+      left: 0;
+      top: 0;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+    @media screen and (max-width: calc(map-get($breakpoints, 'esc'))) {
+      flex-wrap: wrap;
       .fondo-imagen {
-          position: relative;
-          width: 100%;
-          height: 240px;
-          left: 0;
-          top: 0;
-          object-fit: cover;
-          object-position: 50% 50%;
+        width: 100%;
       }
-    .contenido-abajo{
+    }
+
+    .contenido-html {
       width: 100%;
-      
       align-items: stretch;
-      height: 100%;
       background: #EDF6FA;
       padding: 16px;
-      color:#000;
+      color: #000;
       transition: all 0.27s ease-in-out;
+
       p {
         margin: 4px 0 4px 0;
       }
     }
   }
+}
