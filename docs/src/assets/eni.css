@@ -1331,7 +1331,7 @@ figure figcaption {
   align-items: stretch;
   height: 100%;
   background: #EDF6FA;
-  padding: 16px;
+  padding: 24px;
   color: #000;
   transition: all 0.27s ease-in-out;
 }
@@ -1369,7 +1369,7 @@ figure figcaption {
   width: 100%;
   align-items: stretch;
   background: #EDF6FA;
-  padding: 16px;
+  padding: 24px;
   color: #000;
   transition: all 0.27s ease-in-out;
 }
