@@ -183,11 +183,13 @@ $contenedores: (
   'mov': (
     'ancho-maximo': 100%,
     'ancho-lectura': 100%,
+    'ancho-minimo': 100%,
     'margen-interior': map-get($espaciado, '2'),
   ),
   'esc': (
     'ancho-maximo': 1152px,
     'ancho-lectura': 700px,
+    'ancho-minimo': 500px,
     'margen-interior': map-get($espaciado, '5'),
   )
 );

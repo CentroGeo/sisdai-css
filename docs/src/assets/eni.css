@@ -1301,10 +1301,12 @@ figure figcaption {
   margin-top: 48px;
 }
 .contenedor-portada .degradado-negro-abajo .contenido-abajo {
-  color: var(--tipografia-color-1);
   margin-top: auto;
   padding: 24px;
   width: 100%;
+}
+.contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+  color: var(--tipografia-color-1);
 }
 
 .tarjeta {
@@ -3002,6 +3004,9 @@ ol + hr {
   .contenedor.ancho-lectura {
     max-width: 100%;
   }
+  .contenedor.ancho-minimo {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .contenedor {
@@ -3013,6 +3018,9 @@ ol + hr {
   }
   .contenedor.ancho-lectura {
     max-width: 700px;
+  }
+  .contenedor.ancho-minimo {
+    max-width: 500px;
   }
 }
 .contenedor .contenedor {
@@ -8336,6 +8344,9 @@ body {
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo {
   background: transparent;
+}
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+  color: var(--tipografia-color);
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-texto-degradado {
   color: var(--hipervinculo-color) !important;
