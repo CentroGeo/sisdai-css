@@ -24,10 +24,10 @@
 		position: relative;
 		width: 100%;
 		color: var(--tipografia-color-1);
-		background: linear-gradient(transparent, #171717f7);
+		background: linear-gradient(to top, #171717f7,#171717f7 10%, #00000000 100%);
 		display: flex;
 		align-items: stretch;
-		margin-top: 48px;
+		padding-top: 48px;
 
 		.contenido-abajo {
 			color: var(--tipografia-color-1);
