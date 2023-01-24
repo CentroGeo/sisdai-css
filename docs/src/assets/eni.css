@@ -1301,10 +1301,12 @@ figure figcaption {
   margin-top: 48px;
 }
 .contenedor-portada .degradado-negro-abajo .contenido-abajo {
-  color: var(--tipografia-color-1);
   margin-top: auto;
   padding: 24px;
   width: 100%;
+}
+.contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+  color: var(--tipografia-color-1);
 }
 
 .tarjeta {
@@ -2985,40 +2987,6 @@ ol + hr {
   box-shadow: 12px 12px 24px 6px var(--sombra);
 }
 
-.contenedor-portada {
-  position: relative;
-  width: 100%;
-  min-height: 240px;
-  display: flex;
-}
-.contenedor-portada .portada {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  object-fit: cover;
-  object-position: 50% 50%;
-  transition: all 0.27s ease-in-out;
-}
-.contenedor-portada .degradado-negro-abajo {
-  position: relative;
-  width: 100%;
-  color: var(--tipografia-color-1);
-  background: linear-gradient(transparent, rgba(23, 23, 23, 0.968627451));
-  display: flex;
-  align-items: stretch;
-  margin-top: 48px;
-}
-.contenedor-portada .degradado-negro-abajo .contenido-abajo {
-  margin-top: auto;
-  padding: 24px;
-  width: 100%;
-}
-.contenedor-portada .degradado-negro-abajo .contenido-abajo p {
-  color: var(--tipografia-color-1);
-}
-
 .contenedor {
   box-sizing: border-box;
   margin-left: auto;
@@ -3036,6 +3004,9 @@ ol + hr {
   .contenedor.ancho-lectura {
     max-width: 100%;
   }
+  .contenedor.ancho-minimo {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .contenedor {
@@ -3047,6 +3018,9 @@ ol + hr {
   }
   .contenedor.ancho-lectura {
     max-width: 700px;
+  }
+  .contenedor.ancho-minimo {
+    max-width: 500px;
   }
 }
 .contenedor .contenedor {
