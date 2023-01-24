@@ -28,8 +28,8 @@
     isA11yOscura.value = !isA11yOscura.value
     
     isA11yOscura.value === true ? 
-      document.body.style.background = '#000' 
-      : document.body.style.background = '#fff';
+      document.body.style.background = '#0F0F36' 
+      : document.body.style.background = '#fff'
     
     // isA11yOscura.value === true ? 
     //   document.documentElement.style.setProperty('--pagina-fondo','#000')
@@ -55,6 +55,7 @@
     isA11yOscura.value = false
     fontSize.value = 16
     document.documentElement.style.setProperty('--tipografia-tamanio','16')
+    document.body.style.background = '#fff'
   }
 
   function toggleGob() {

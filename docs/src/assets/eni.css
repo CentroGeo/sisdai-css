@@ -1,5 +1,7 @@
 :root {
   --pagina-fondo: #fff;
+  --pagina-fondo-oscura-enis: #0F0F36;
+  --pagina-fondo-oscura-gema: #140907;
   --tipografia-color: #141414;
   --tipografia-color-1: #fff;
   --tipografia-color-2: #6f7271;
@@ -8412,7 +8414,7 @@ body {
 }
 
 .a11y-oscura {
-  --pagina-fondo: #000;
+  --pagina-fondo: #0F0F36;
   --tipografia-color: #fff;
   --tipografia-color-1: #fff;
   --tipografia-color-2: #fff;
@@ -8420,14 +8422,20 @@ body {
   --label-color: #fff;
   --input-color: #fff;
   --boton-terciario-color: #fff;
-  --tabla-fondo-impar: blue;
-  --detalle-fondo: orange;
-  --boton-primario-fondo: red;
+  --borde-color-1: #5454FB
+  // --sombra: #0000001a;
+  --input-borde: #D5D5D5;
+  --tabla-fondo-impar: #EA1B1B;
+  --detalle-fondo: #BD79FC;
+  --boton-primario-fondo: #8D8DFC;
   background: var(--pagina-fondo);
   color: var(--tipografia-color);
 }
 .a11y-oscura picture, .a11y-oscura img {
   filter: brightness(0.8) contrast(1.2);
+}
+.a11y-oscura span {
+  color: #D5D5D5;
 }
 
 /*# sourceMappingURL=eni.css.map */

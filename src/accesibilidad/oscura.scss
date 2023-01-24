@@ -2,7 +2,7 @@
 	// background: #000;
 	// color: #fff;
 	// Agregar variables para vista oscura
-	--pagina-fondo: #000;
+	--pagina-fondo: #0F0F36;
 	--tipografia-color: #fff;
 
 	--tipografia-color-1: #fff;
@@ -15,12 +15,13 @@
 	// --hipervinculo-color: #005DFF;
 	// font-weight: 400 - 350;
 	// line-height: calc(1em * 1.3 - 1.5);
-	// --borde-color-1: #141414;
+	--borde-color-1: #5454FB
 	// --sombra: #0000001a;
+	--input-borde: #D5D5D5;
 
-	--tabla-fondo-impar: blue;
-	--detalle-fondo: orange;
-	--boton-primario-fondo: red;
+	--tabla-fondo-impar: #EA1B1B;
+	--detalle-fondo: #BD79FC;
+	--boton-primario-fondo: #8D8DFC;
 
 	// Agregar atributos generales
 	background: var(--pagina-fondo);
@@ -29,6 +30,10 @@
 	// Etiquetas html y clases específicas
 	picture, img {
 		filter: brightness(.8) contrast(1.2);
+	}
+	span {
+		color: #D5D5D5;
+		// color: #8D8DFC;
 	}
 	// svg.icon path {
 	// 	fill: #fff;
