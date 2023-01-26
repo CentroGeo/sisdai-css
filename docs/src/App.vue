@@ -11,7 +11,8 @@
   const showSubmenu1 = ref(null)
   const isA11yOscura = ref(null)
 
-  isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, showSubmenu1.value, isA11yOscura.value = false
+  isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
+  showSubmenu1.value, isA11yOscura.value = false
 
   function toggleA11yTypography() {
     isA11yTypography.value = !isA11yTypography.value
@@ -29,8 +30,7 @@
     
     isA11yOscura.value === true ? 
       document.body.style.background = '#0F0F36' 
-      : document.body.style.background = '#fff'
-    
+      : document.body.style.background = '#fff'    
     // isA11yOscura.value === true ? 
     //   document.documentElement.style.setProperty('--pagina-fondo','#000')
     //   : document.documentElement.style.setProperty('--pagina-fondo','#fff');
@@ -75,7 +75,8 @@
 </script>
 
 <template>
-  <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline , 'a11y-oscura': isA11yOscura}">
+  <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline , 
+  'a11y-oscura': isA11yOscura}">
 
     <nav class="navegacion navegacion-gobmx">
       <div class="nav-contenedor-identidad">
@@ -171,7 +172,9 @@
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-      <button class="boton-primario" @click="toggleA11yOscura">{{ isA11yOscura ? 'Vista normal' : 'Vista oscura'}}</button>
+      <button class="boton-primario" @click="toggleA11yOscura">
+        {{ isA11yOscura ? 'Vista normal' : 'Vista oscura'}}
+      </button>
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>
     <main role="main" class="contenedor m-y-maximo">

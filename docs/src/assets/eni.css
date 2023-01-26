@@ -8493,26 +8493,31 @@ body {
 .a11y-oscura {
   --pagina-fondo: #0F0F36;
   --tipografia-color: #fff;
+  background: var(--pagina-fondo);
+  color: var(--tipografia-color);
   --tipografia-color-1: #fff;
   --tipografia-color-2: #fff;
   --tipografia-color-3: #fff;
+  --boton-terciario-color: #fff;
+  --boton-terciario-hover-color: #D5D5D5;
+  --boton-primario-fondo: #8D8DFC;
+  --boton-primario-hover-fondo: #D5D5D5;
   --label-color: #fff;
   --input-color: #fff;
-  --boton-terciario-color: #fff;
-  --borde-color-1: #5454FB
-  // --sombra: #0000001a;
   --input-borde: #D5D5D5;
   --tabla-fondo-impar: #EA1B1B;
   --detalle-fondo: #BD79FC;
-  --boton-primario-fondo: #8D8DFC;
-  background: var(--pagina-fondo);
-  color: var(--tipografia-color);
+  --borde-color-1: #5454FB
+  // --sombra: #0000001a;
+}
+.a11y-oscura #input-readonly {
+  --input-color: #D5D5D5;
 }
 .a11y-oscura picture, .a11y-oscura img {
   filter: brightness(0.8) contrast(1.2);
 }
-.a11y-oscura span {
-  color: #D5D5D5;
+.a11y-oscura span[class*=icono-] {
+  color: #5454FB;
 }
 
 /*# sourceMappingURL=eni.css.map */
