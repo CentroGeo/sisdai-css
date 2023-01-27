@@ -1,6 +1,6 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  import { onBeforeMount, onMounted, ref, reactive, watch, computed } from 'vue'
+  import { onBeforeMount, onMounted, ref, watch, computed } from 'vue'
   
   const isA11yTypography = ref(null)
   const isA11yView = ref(null)
@@ -26,11 +26,10 @@
     isA11yUnderline.value = !isA11yUnderline.value
   }
   function toggleA11yOscura(){
-    isA11yOscura.value = !isA11yOscura.value
-    
-    isA11yOscura.value === true ? 
-      document.body.style.background = '#0F0F36' 
-      : document.body.style.background = '#fff'    
+    // isA11yOscura.value = !isA11yOscura.value    
+    // isA11yOscura.value === true ? 
+    //   document.body.style.background = '#0F0F36' 
+    //   : document.body.style.background = '#fff'    
     // isA11yOscura.value === true ? 
     //   document.documentElement.style.setProperty('--pagina-fondo','#000')
     //   : document.documentElement.style.setProperty('--pagina-fondo','#fff');
@@ -75,69 +74,51 @@
 
   const theme = ref(null) 
   theme.value = 'auto' // 'dark' | 'light' | 'auto'
-  console.log(theme.value)
 
   function alternarTema() {
-    // isA11yOscura.value = !isA11yOscura.value
-    console.log('alternando Tema')
     //rotar entre estos 3 valores
     const themes = ref(['light','dark','auto'])
-    console.log(theme.value)
-    // console.log(themes._rawValue.indexOf('light')+1%3)
-    // console.log(themes.value[1])
-    console.log(themes.value.indexOf('dark'))
     // contador de themes
     theme.value = themes.value[(themes.value.indexOf(theme.value)+1)%3]
-    console.log('aquiii',theme.value)
     localStorage.setItem("theme", theme.value)
   }
+
+  const nombreTemaActual = computed(() => {
+    const nombres = ref({
+      'light':'Claro',
+      'dark':'Oscuro',
+      'auto':'Automático'
+    })
+    return nombres.value[theme.value]
+  })
+
+  function setThemeInDocument() {
+    const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
+    // document.documentElement.setAttribute("data-dark-theme", modoOscuro.value)
+    document.documentElement.setAttribute("data-dark-theme-gema", modoOscuro.value)
+  }
   
+  // Hooks cycles
   onMounted(() => {
-    console.log('hola2')
     setThemeInDocument()
     //y escuchar el tema cuando cambie
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',setThemeInDocument)
   })
   onBeforeMount(() => {
-    console.log('hol')
     window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setThemeInDocument)
   })
-  watch( () => {
-    console.log('hola3')
+  watch(() => {
     setThemeInDocument()
   })
-
-  console.log('hola')
-  // console.log(window.localStorage)
-  localStorage.setItem('theme', theme.value)
+  
+  // localStorage.setItem('theme', theme.value)
   // localStorage.clear()
+  
   if(localStorage.getItem("theme")) {
-    console.log(localStorage)
-    console.log(localStorage.getItem("theme"))
     theme.value = localStorage.getItem("theme")
-    console.log(theme.value)
   }
-  const nombres = ref({
-    'light':'Claro',
-    'dark':'Oscuro',
-    'auto':'Automático'
-  })
-  const nombreTemaActual = computed(() => {
-    // const nombres = ref({'light':'Claro','dark':'Oscuro','auto':'Automático'})
-    console.log(theme.value)
-    console.log(nombres.value[theme.value])
-    return nombres.value[theme.value]
-    // return 'nombre'
-  })
-  function setThemeInDocument() {
-    console.log('set')
-    // console.log(window.matchMedia('(prefers-color-scheme: dark)'))  
-    const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
-    // console.log(modoOscuro.value)
-    // console.log(window.matchMedia('(prefers-color-scheme: dark)'))
-    // console.log(window.matchMedia('(prefers-color-scheme: dark)').matches)
-    document.documentElement.setAttribute("data-dark-theme", modoOscuro.value)
-  }
+  
+  
   
   
 </script>
@@ -240,11 +221,14 @@
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-      <!-- <button class="boton-primario" @click="toggleA11yOscura">
+      <!-- <button 
+        class="boton-primario" 
+        @click="toggleA11yOscura">
         {{ isA11yOscura ? 'Vista normal' : 'Vista oscura'}}
       </button> -->
-      <button class="boton-primario" @click="alternarTema">
-        <!-- {{ isA11yOscura ? 'Vista normal' : 'Vista oscura'}} -->
+      <button 
+        class="boton-primario" 
+        @click="alternarTema">
         Tema: {{ nombreTemaActual }}
       </button>
       <button class="boton-secundario" @click="resetA11y">Apagar</button>

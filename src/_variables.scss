@@ -121,6 +121,20 @@
   // --body-color: #fafafa;
   --pagina-fondo: #0F0F36;
 	--tipografia-color: #fff;
+
+  span[class*="icono-"] {
+		color: #5454FB;
+	}
+}
+:root[data-dark-theme-gema='true'] {
+  // --body-bg-color: #141414;
+  // --body-color: #fafafa;
+  --pagina-fondo: #140907;
+	--tipografia-color: #fff;
+
+  span[class*="icono-"] {
+		color: #F65600;
+	}
 }
 
 // COLOR

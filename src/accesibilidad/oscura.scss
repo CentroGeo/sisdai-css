@@ -1,45 +1,45 @@
 .a11y-oscura {
-	// Agregar variables para vista oscura
-	// Agregar atributos generales
-	--pagina-fondo: #0F0F36;
-	--tipografia-color: #fff;
-	background: var(--pagina-fondo);
-  	color: var(--tipografia-color);
+	// // Agregar variables para vista oscura
+	// // Agregar atributos generales
+	// --pagina-fondo: #0F0F36;
+	// --tipografia-color: #fff;
+	// background: var(--pagina-fondo);
+  	// color: var(--tipografia-color);
 
-	--tipografia-color-1: #fff;
-	--tipografia-color-2: #fff;
-	--tipografia-color-3: #fff;
+	// --tipografia-color-1: #fff;
+	// --tipografia-color-2: #fff;
+	// --tipografia-color-3: #fff;
 
-	// Botones
-	--boton-terciario-color: #fff;
-	--boton-terciario-hover-color: #D5D5D5;
-	--boton-primario-fondo: #8D8DFC;
-	--boton-primario-hover-fondo: #D5D5D5;
+	// // Botones
+	// --boton-terciario-color: #fff;
+	// --boton-terciario-hover-color: #D5D5D5;
+	// --boton-primario-fondo: #8D8DFC;
+	// --boton-primario-hover-fondo: #D5D5D5;
 
-	// Elementos de formularios
-	--label-color: #fff;
-	--input-color: #fff;
-	--input-borde: #D5D5D5;
+	// // Elementos de formularios
+	// --label-color: #fff;
+	// --input-color: #fff;
+	// --input-borde: #D5D5D5;
 
-	// Etiquetas html, id y clases
-	#input-readonly {
-		--input-color: #D5D5D5;
-	}
-	picture, img {
-		filter: brightness(.8) contrast(1.2);
-	}
-	span[class*="icono-"] {
-		color: #5454FB;
-	}
-	// svg.icon path {
-	// 	fill: #fff;
-	//  color: #fff;
+	// // Etiquetas html, id y clases
+	// #input-readonly {
+	// 	--input-color: #D5D5D5;
 	// }
-	--tabla-fondo-impar: #EA1B1B;
-	--detalle-fondo: #BD79FC;
-	// --hipervinculo-color: #005DFF;
-	// font-weight: 400 - 350;
-	// line-height: calc(1em * 1.3 - 1.5);
-	--borde-color-1: #5454FB
-	// --sombra: #0000001a;
+	// picture, img {
+	// 	filter: brightness(.8) contrast(1.2);
+	// }
+	// span[class*="icono-"] {
+	// 	color: #5454FB;
+	// }
+	// // svg.icon path {
+	// // 	fill: #fff;
+	// //  color: #fff;
+	// // }
+	// --tabla-fondo-impar: #EA1B1B;
+	// --detalle-fondo: #BD79FC;
+	// // --hipervinculo-color: #005DFF;
+	// // font-weight: 400 - 350;
+	// // line-height: calc(1em * 1.3 - 1.5);
+	// --borde-color-1: #5454FB
+	// // --sombra: #0000001a;
 }
