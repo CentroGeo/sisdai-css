@@ -1,3 +1,4 @@
+
 :root {
   --pagina-fondo: #fff;
 
@@ -114,6 +115,12 @@
   --navegacion-sombra-active: 0 0 0 0;
   --navegacion-color-active: #fff;
 
+}
+:root[data-dark-theme='true'] {
+  // --body-bg-color: #141414;
+  // --body-color: #fafafa;
+  --pagina-fondo: #0F0F36;
+	--tipografia-color: #fff;
 }
 
 // COLOR
