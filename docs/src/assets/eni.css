@@ -100,11 +100,11 @@
   --navegacion-color-active: #fff;
 }
 
-:root[data-dark-theme=true] {
+:root[data-dark-theme-eni=true] {
   --pagina-fondo: #0F0F36;
   --tipografia-color: #fff;
 }
-:root[data-dark-theme=true] span[class*=icono-] {
+:root[data-dark-theme-eni=true] span[class*=icono-] {
   color: #5454FB;
 }
 

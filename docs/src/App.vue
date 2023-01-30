@@ -74,30 +74,22 @@
 
   const theme = ref(null) 
   theme.value = 'auto' // 'dark' | 'light' | 'auto'
-
   function alternarTema() {
     //rotar entre estos 3 valores
-    const themes = ref(['light','dark','auto'])
+    const themes = ['light','dark','auto']
     // contador de themes
-    theme.value = themes.value[(themes.value.indexOf(theme.value)+1)%3]
+    theme.value = themes[(themes.indexOf(theme.value)+1)%3]
     localStorage.setItem("theme", theme.value)
   }
-
   const nombreTemaActual = computed(() => {
-    const nombres = ref({
-      'light':'Claro',
-      'dark':'Oscuro',
-      'auto':'Automático'
-    })
-    return nombres.value[theme.value]
+    const nombres = {'light':'Claro','dark':'Oscuro','auto':'Automático'}
+    return nombres[theme.value]
   })
-
   function setThemeInDocument() {
     const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
-    // document.documentElement.setAttribute("data-dark-theme", modoOscuro.value)
+    // document.documentElement.setAttribute("data-dark-theme-eni", modoOscuro.value)
     document.documentElement.setAttribute("data-dark-theme-gema", modoOscuro.value)
-  }
-  
+  }  
   // Hooks cycles
   onMounted(() => {
     setThemeInDocument()
@@ -107,19 +99,14 @@
   onBeforeMount(() => {
     window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setThemeInDocument)
   })
-  watch(() => {
+  watch(theme, () => {
     setThemeInDocument()
-  })
-  
+  })  
   // localStorage.setItem('theme', theme.value)
-  // localStorage.clear()
-  
+  // localStorage.clear()  
   if(localStorage.getItem("theme")) {
     theme.value = localStorage.getItem("theme")
   }
-  
-  
-  
   
 </script>
 
