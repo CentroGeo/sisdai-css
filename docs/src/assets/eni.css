@@ -114,6 +114,7 @@
 }
 
 :root[data-dark-theme-eni=true] {
+  --pagina-fondo: #161515;
   --tipografia-color: #fff;
   --tipografia-color-2: #6F6F6F;
   --borde-color-1: #fff;
