@@ -23,14 +23,14 @@
 	.degradado-negro-abajo {
 		position: relative;
 		width: 100%;
-		color: var(--tipografia-color-1);
-		background: linear-gradient(to top, #171717f7,#171717f7 10%, #00000000 100%);
+		color: var(--tarjetas-externas-color);
+		background: var(--tarjetas-externas-fondo-gradiente);
 		display: flex;
 		align-items: stretch;
 		padding-top: 48px;
 
 		.contenido-abajo {
-			color: var(--tipografia-color-1);
+			color: var(--tarjetas-externas-color);
 			margin-top: auto;
 			padding: 24px;
 			width: 100%;

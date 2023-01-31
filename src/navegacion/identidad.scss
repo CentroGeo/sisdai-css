@@ -41,15 +41,15 @@
 }
 
 .navegacion-conacyt {
-  background: #fff;
+  background: var(--navegacion-conacyt-fondo);
   box-shadow: 0 8px 8px -4px #0012;
   .nav-menu-contedor {
-    background-color: #fff;
+    background-color: var(--navegacion-conacyt-fondo);
   }
   .nav-hipervinculo {
     background: transparent;
     box-shadow: none;
-    color: map-get($color-conacyt, 'oscuro-1');
+    color: var(--navegacion-conacyt-color);
     &:hover,
     &:focus {
       background-color:map-get($color-conacyt, 'claro-0'); 
@@ -60,8 +60,8 @@
     &.active,
     &.router-link-exact-active {
       background-color: transparent;
-      box-shadow: inset 0 -5px 0 map-get($color-conacyt, 'oscuro-1');
-      color: map-get($color-conacyt, 'oscuro-1');
+      box-shadow: inset 0 -5px 0 var(--navegacion-conacyt-color);
+      color: var(--navegacion-conacyt-color);
     }
   }
   .nav-hiperviculo-logo {
@@ -72,17 +72,17 @@
   }
   .nav-boton-menu {
     .nav-icono-menu {
-      background: map-get($color-conacyt, 'oscuro-1');;
+      background: var(--navegacion-conacyt-fondo-icono);
       &::after,
       &::before {
-        background: map-get($color-conacyt, 'oscuro-1');;
+        background: var(--navegacion-conacyt-fondo-icono);
       }
     }
   }
   .nav-boton-submenu {
     background: transparent;
     box-shadow: none;
-    color: map-get($color-conacyt, 'oscuro-1');
+    color: var(--navegacion-conacyt-color);
     &:hover,
     &:focus {
       background-color:map-get($color-conacyt, 'claro-0'); 
@@ -98,7 +98,8 @@
     }
   }
   .nav-submenu {
-    background-color: #fff;
+    // background-color: #fff;
+    background-color: var(--navegacion-conacyt-fondo);
     box-shadow: 0 8px 8px -4px #0012;
   }
 }

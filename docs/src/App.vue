@@ -72,6 +72,7 @@
     showSubmenu1.value = !showSubmenu1.value
   }
 
+  // Módulo de vista oscura
   const theme = ref(null) 
   theme.value = 'auto' // 'dark' | 'light' | 'auto'
   function alternarTema() {
@@ -87,8 +88,8 @@
   })
   function setThemeInDocument() {
     const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
-    // document.documentElement.setAttribute("data-dark-theme-eni", modoOscuro.value)
-    document.documentElement.setAttribute("data-dark-theme-gema", modoOscuro.value)
+    document.documentElement.setAttribute("data-dark-theme-eni", modoOscuro.value)
+    // document.documentElement.setAttribute("data-dark-theme-gema", modoOscuro.value)
   }  
   // Hooks cycles
   onMounted(() => {

@@ -19,18 +19,18 @@
 	.degradado-negro-abajo {
 		position: relative;
 		width: 100%;
-		color: var(--tipografia-color-1);
-		background: linear-gradient(transparent, #171717f7);
+		background: var(--portada-fondo-grandiente);
 		display: flex;
 		align-items: stretch;
 		margin-top: 48px;
 
-		.contenido-abajo {
-			color: var(--tipografia-color-1);
+		.contenido-abajo {			
 			margin-top: auto;
 			padding: 24px;
 			width: 100%;
-
+			.titulo-eni, .titulo-capitulo, .subtitulo-capitulo {
+				color: var(--portada-color);
+			}
 		}
 	}
 }
