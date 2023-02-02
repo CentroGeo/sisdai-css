@@ -54,7 +54,8 @@
     isA11yOscura.value = false
     fontSize.value = 16
     document.documentElement.style.setProperty('--tipografia-tamanio','16')
-    document.body.style.background = '#fff'
+    
+    theme.value = 'light'
   }
 
   function toggleGob() {
@@ -75,6 +76,9 @@
   // Módulo de vista oscura
   const theme = ref(null) 
   theme.value = 'auto' // 'dark' | 'light' | 'auto'
+  const perfil = ref(null) 
+  perfil.value = 'neutro' // 'neutro' | 'conacyt' | 'gema'
+
   function alternarTema() {
     //rotar entre estos 3 valores
     const themes = ['light','dark','auto']
@@ -82,15 +86,21 @@
     theme.value = themes[(themes.indexOf(theme.value)+1)%3]
     localStorage.setItem("theme", theme.value)
   }
+  function alternarPerfil() {
+    document.documentElement.removeAttribute(`data-dark-theme-${perfil.value}`)
+    //rotar entre estos valores
+    const perfiles = ['neutro','gema']
+    perfil.value = perfiles[(perfiles.indexOf(perfil.value)+1)%2]    
+  }
+  function setThemeInDocument() {
+    const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
+    document.documentElement.setAttribute(`data-dark-theme-${perfil.value}`, modoOscuro.value)
+  }
   const nombreTemaActual = computed(() => {
     const nombres = {'light':'Claro','dark':'Oscuro','auto':'Automático'}
     return nombres[theme.value]
   })
-  function setThemeInDocument() {
-    const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
-    document.documentElement.setAttribute("data-dark-theme-eni", modoOscuro.value)
-    // document.documentElement.setAttribute("data-dark-theme-gema", modoOscuro.value)
-  }  
+   
   // Hooks cycles
   onMounted(() => {
     setThemeInDocument()
@@ -100,8 +110,8 @@
   onBeforeMount(() => {
     window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setThemeInDocument)
   })
-  watch(theme, () => {
-    setThemeInDocument()
+  watch([theme, perfil], () => {
+    setThemeInDocument()    
   })  
   // localStorage.setItem('theme', theme.value)
   // localStorage.clear()  
@@ -218,6 +228,11 @@
         class="boton-primario" 
         @click="alternarTema">
         Tema: {{ nombreTemaActual }}
+      </button>
+      <button 
+        class="boton-primario" 
+        @click="alternarPerfil">
+        Perfil: {{ perfil }}
       </button>
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>

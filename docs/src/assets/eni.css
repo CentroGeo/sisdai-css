@@ -113,85 +113,6 @@
   --portada-fondo-grandiente: linear-gradient(transparent, #171717f7);
 }
 
-:root[data-dark-theme-eni=true] {
-  --pagina-fondo: #161515;
-  --tipografia-color: #fff;
-  --tipografia-color-2: #6F6F6F;
-  --borde-color-1: #fff;
-  --sombra: #ffffff1a;
-  --sombra-hover: #ffffff33;
-  --boton-primario-fondo: #fff;
-  --boton-primario-color: #161515;
-  --boton-primario-hover-fondo: #B9B9B9;
-  --boton-primario-hover-color: #161515;
-  --boton-primario-focus-fondo: #fff;
-  --boton-primario-focus-color: #161515;
-  --boton-secundario-fondo: transparent;
-  --boton-secundario-borde: #fff;
-  --boton-secundario-color: #fff;
-  --boton-secundario-hover-fondo: transparent;
-  --boton-secundario-hover-borde: #fff;
-  --boton-secundario-hover-color: #fff;
-  --boton-secundario-hover-sombra: #ffffff33;
-  --boton-secundario-focus-fondo: transparent;
-  --boton-secundario-focus-borde: #fff;
-  --boton-secundario-focus-color: #fff;
-  --boton-secundario-deshabilitado-fondo: transparent;
-  --boton-terciario-color: #fff;
-  --boton-terciario-hover-color: #fff;
-  --boton-terciario-hover-sombra: #ffffff33;
-  --boton-terciario-focus-color: #fff;
-  --boton-conacyt-fondo: #262626;
-  --label-color: #fff;
-  --input-color: #fff;
-  --input-controles-color: #fff;
-  --tabla-fondo-impar: #262626;
-  --tabla-fondo-notas: #6F6F6f;
-  --borde-color-2: #6F6F6F;
-  --input-borde: #6F6F6F;
-  --tarjetas-fondo: #393939;
-  --tarjetas-color: #fff;
-  --tarjetas-externas-color: #161515;
-  --tarjetas-externas-fondo-gradiente: linear-gradient(to top, #fffffff7,#fffffff7 10%, #ffffff00 100%);
-  --tarjetas-internas-color: #fff;
-  --tarjetas-internas-fondo: #393939;
-  --tarjetas-interna-fondo-hover: #393939;
-  --portada-color: #161515;
-  --portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
-  --navegacion-conacyt-fondo: #001F69;
-  --navegacion-conacyt-color: #fff;
-  --navegacion-conacyt-fondo-icono: #fff;
-}
-:root[data-dark-theme-eni=true] .boton-conacyt img {
-  filter: brightness(0) invert(1);
-}
-:root[data-dark-theme-eni=true] .boton-primario span[class*=icono-], :root[data-dark-theme-eni=true] .boton-info span[class*=icono-], :root[data-dark-theme-eni=true] .boton-descarga span[class*=icono-], :root[data-dark-theme-eni=true] .boton-icono span[class*=icono-] {
-  color: #161515;
-}
-:root[data-dark-theme-eni=true] .boton-secundario span[class*=icono-], :root[data-dark-theme-eni=true] .boton-terciario span[class*=icono-] {
-  color: #fff;
-}
-:root[data-dark-theme-eni=true] .input-correcto span[class*=icono-] {
-  color: var(--acciones-correcto);
-}
-:root[data-dark-theme-eni=true] .input-error span[class*=icono-] {
-  color: var(--acciones-error);
-}
-:root[data-dark-theme-eni=true] span[class*=icono-] {
-  color: #5454FB;
-}
-:root[data-dark-theme-eni=true] .nav-hiperviculo-logo img {
-  filter: brightness(0) invert(1);
-}
-
-:root[data-dark-theme-gema=true] {
-  --pagina-fondo: #140907;
-  --tipografia-color: #fff;
-}
-:root[data-dark-theme-gema=true] span[class*=icono-] {
-  color: #F65600;
-}
-
 html {
   line-height: 1.3;
   scroll-behavior: smooth;
@@ -8581,6 +8502,85 @@ body {
 .a11y-hipervinculos .a11y-simplificada [class*=" boton"]:active,
 .a11y-simplificada .a11y-hipervinculos [class*=" boton"]:active {
   text-decoration: underline !important;
+}
+
+:root[data-dark-theme-neutro=true] {
+  --pagina-fondo: #161515;
+  --tipografia-color: #fff;
+  --tipografia-color-2: #6F6F6F;
+  --borde-color-1: #fff;
+  --sombra: #ffffff1a;
+  --sombra-hover: #ffffff33;
+  --boton-primario-fondo: #fff;
+  --boton-primario-color: #161515;
+  --boton-primario-hover-fondo: #B9B9B9;
+  --boton-primario-hover-color: #161515;
+  --boton-primario-focus-fondo: #fff;
+  --boton-primario-focus-color: #161515;
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: #fff;
+  --boton-secundario-color: #fff;
+  --boton-secundario-hover-fondo: transparent;
+  --boton-secundario-hover-borde: #fff;
+  --boton-secundario-hover-color: #fff;
+  --boton-secundario-hover-sombra: #ffffff33;
+  --boton-secundario-focus-fondo: transparent;
+  --boton-secundario-focus-borde: #fff;
+  --boton-secundario-focus-color: #fff;
+  --boton-secundario-deshabilitado-fondo: transparent;
+  --boton-terciario-color: #fff;
+  --boton-terciario-hover-color: #fff;
+  --boton-terciario-hover-sombra: #ffffff33;
+  --boton-terciario-focus-color: #fff;
+  --boton-conacyt-fondo: #262626;
+  --label-color: #fff;
+  --input-color: #fff;
+  --input-controles-color: #fff;
+  --tabla-fondo-impar: #262626;
+  --tabla-fondo-notas: #6F6F6f;
+  --borde-color-2: #6F6F6F;
+  --input-borde: #6F6F6F;
+  --tarjetas-fondo: #393939;
+  --tarjetas-color: #fff;
+  --tarjetas-externas-color: #161515;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(to top, #fffffff7,#fffffff7 10%, #ffffff00 100%);
+  --tarjetas-internas-color: #fff;
+  --tarjetas-internas-fondo: #393939;
+  --tarjetas-interna-fondo-hover: #393939;
+  --portada-color: #161515;
+  --portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
+  --navegacion-conacyt-fondo: #001F69;
+  --navegacion-conacyt-color: #fff;
+  --navegacion-conacyt-fondo-icono: #fff;
+}
+:root[data-dark-theme-neutro=true] .boton-conacyt img {
+  filter: brightness(0) invert(1);
+}
+:root[data-dark-theme-neutro=true] .boton-primario span[class*=icono-], :root[data-dark-theme-neutro=true] .boton-icono span[class*=icono-], :root[data-dark-theme-neutro=true] .boton-descarga span[class*=icono-], :root[data-dark-theme-neutro=true] .boton-info span[class*=icono-] {
+  color: #161515;
+}
+:root[data-dark-theme-neutro=true] .boton-secundario span[class*=icono-], :root[data-dark-theme-neutro=true] .boton-terciario span[class*=icono-] {
+  color: #fff;
+}
+:root[data-dark-theme-neutro=true] .input-correcto span[class*=icono-] {
+  color: var(--acciones-correcto);
+}
+:root[data-dark-theme-neutro=true] .input-error span[class*=icono-] {
+  color: var(--acciones-error);
+}
+:root[data-dark-theme-neutro=true] span[class*=icono-] {
+  color: #5454FB;
+}
+:root[data-dark-theme-neutro=true] .nav-hiperviculo-logo img {
+  filter: brightness(0) invert(1);
+}
+
+:root[data-dark-theme-gema=true] {
+  --pagina-fondo: #140907;
+  --tipografia-color: #fff;
+}
+:root[data-dark-theme-gema=true] span[class*=icono-] {
+  color: #F65600;
 }
 
 /*# sourceMappingURL=eni.css.map */
