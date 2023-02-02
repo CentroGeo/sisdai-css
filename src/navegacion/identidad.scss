@@ -42,7 +42,7 @@
 
 .navegacion-conacyt {
   background: var(--navegacion-conacyt-fondo);
-  box-shadow: 0 8px 8px -4px #0012;
+  box-shadow: 0 8px 8px -4px var(--navgeacion-conacyt-sombra);
   .nav-menu-contedor {
     background-color: var(--navegacion-conacyt-fondo);
   }
@@ -98,7 +98,6 @@
     }
   }
   .nav-submenu {
-    // background-color: #fff;
     background-color: var(--navegacion-conacyt-fondo);
     box-shadow: 0 8px 8px -4px #0012;
   }

@@ -26,13 +26,7 @@
     isA11yUnderline.value = !isA11yUnderline.value
   }
   function toggleA11yOscura(){
-    // isA11yOscura.value = !isA11yOscura.value    
-    // isA11yOscura.value === true ? 
-    //   document.body.style.background = '#0F0F36' 
-    //   : document.body.style.background = '#fff'    
-    // isA11yOscura.value === true ? 
-    //   document.documentElement.style.setProperty('--pagina-fondo','#000')
-    //   : document.documentElement.style.setProperty('--pagina-fondo','#fff');
+    // isA11yOscura.value = !isA11yOscura.value
   }
 
   function upFontSize() {
@@ -82,15 +76,14 @@
   function alternarTema() {
     //rotar entre estos 3 valores
     const themes = ['light','dark','auto']
-    // contador de themes
     theme.value = themes[(themes.indexOf(theme.value)+1)%3]
     localStorage.setItem("theme", theme.value)
   }
   function alternarPerfil() {
     document.documentElement.removeAttribute(`data-dark-theme-${perfil.value}`)
     //rotar entre estos valores
-    const perfiles = ['neutro','gema']
-    perfil.value = perfiles[(perfiles.indexOf(perfil.value)+1)%2]    
+    const perfiles = ['neutro', 'conacyt', 'gema']
+    perfil.value = perfiles[(perfiles.indexOf(perfil.value)+1)%3]
   }
   function setThemeInDocument() {
     const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
@@ -104,7 +97,6 @@
   // Hooks cycles
   onMounted(() => {
     setThemeInDocument()
-    //y escuchar el tema cuando cambie
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',setThemeInDocument)
   })
   onBeforeMount(() => {

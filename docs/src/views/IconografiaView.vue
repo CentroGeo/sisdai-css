@@ -314,8 +314,8 @@
         <span>icono-persona</span>
       </div>
       <div>
-        <span class="icono-poligono"></span>
-        <span>icono-poligono</span>
+        <span class="icono-capa-poligono"></span>
+        <span>icono-capa-poligono</span>
       </div>
       <div>
         <span class="icono-reloj"></span>

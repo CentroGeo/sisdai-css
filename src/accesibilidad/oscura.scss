@@ -1,163 +1,323 @@
 :root[data-dark-theme-neutro='true'] {
-	// --body-bg-color: #141414;
-	// --body-color: #fafafa;
-	// --pagina-fondo: #0F0F36;
-	// --pagina-fondo: #091832;
-	--pagina-fondo: #161515;
-		--tipografia-color: #fff;
+  // Agregar variables para vista oscura
+  --neutro-oscuro-1: #ffffff;
+  --neutro-oscuro-2: #6f6f6f;
+  --neutro-oscuro-3: #393939;
+  --neutro-oscuro-4: #262626;
+  --neutro-oscuro-fondo: #161515;
+  --neutro-oscuro-hover: #b9b9b9;
+	
+  // Modificar propiedades de atributos generales
+	--pagina-fondo: var(--neutro-oscuro-fondo);
+  --tipografia-color: var(--neutro-oscuro-1);
 
-	--tipografia-color-2: #6F6F6F;
+	--tipografia-color-2: var(--neutro-oscuro-2);
+	--tipografia-color-3: var(--neutro-oscuro-3);
 
-	--borde-color-1: #fff;
+	--borde-color-1: var(--neutro-oscuro-1);
 
 	--sombra: #ffffff1a;
 	--sombra-hover: #ffffff33;
 
+	--detalle-fondo: var(--neutro-oscuro-4);
+	// // --hipervinculo-color: #005DFF;
+	// // font-weight: 400 - 350;
+	// // line-height: calc(1em * 1.3 - 1.5);
+
 	// Boton primario
-	--boton-primario-fondo: #fff;
-	--boton-primario-color: #161515;
-		--boton-primario-hover-fondo: #B9B9B9;
-	--boton-primario-hover-color: #161515;
-	--boton-primario-focus-fondo: #fff;
-	--boton-primario-focus-color: #161515;
+	--boton-primario-fondo: var(--neutro-oscuro-1);
+	--boton-primario-color: var(--pagina-fondo);
+  --boton-primario-hover-fondo: var(--neutro-oscuro-hover);
+	--boton-primario-hover-color: var(--pagina-fondo);
+	--boton-primario-focus-fondo: var(--neutro-oscuro-1);
+	--boton-primario-focus-color: var(--pagina-fondo);
 
 	// Boton secundario
 	--boton-secundario-fondo: transparent;
-	--boton-secundario-borde: #fff;
-	--boton-secundario-color: #fff;
-		--boton-secundario-hover-fondo: transparent;
-	--boton-secundario-hover-borde: #fff;
-	--boton-secundario-hover-color: #fff;
+	--boton-secundario-borde: var(--neutro-oscuro-1);
+	--boton-secundario-color: var(--neutro-oscuro-1);
+  --boton-secundario-hover-fondo: transparent;
+	--boton-secundario-hover-borde: var(--neutro-oscuro-1);
+	--boton-secundario-hover-color: var(--neutro-oscuro-1);
 	--boton-secundario-hover-sombra: #ffffff33;  
 	--boton-secundario-focus-fondo: transparent;
-	--boton-secundario-focus-borde: #fff;
-	--boton-secundario-focus-color: #fff;
+	--boton-secundario-focus-borde: var(--neutro-oscuro-1);
+	--boton-secundario-focus-color: var(--neutro-oscuro-1);
 	--boton-secundario-deshabilitado-fondo: transparent;
 
 	// Boton terciario
-	--boton-terciario-color: #fff;
-	--boton-terciario-hover-color: #fff;
+	--boton-terciario-color: var(--neutro-oscuro-1);
+	--boton-terciario-hover-color: var(--neutro-oscuro-1);
 	--boton-terciario-hover-sombra: #ffffff33; 
 	// --boton-terciario-focus-borde: #fff;
-	--boton-terciario-focus-color: #fff;
+	--boton-terciario-focus-color: var(--neutro-oscuro-1);
 
 	// Boton conacyt
-	--boton-conacyt-fondo: #262626;
+	--boton-conacyt-fondo: var(--neutro-oscuro-4);
 	.boton-conacyt {
 		img {
-		filter: brightness(0) invert(1);
+	  	filter: brightness(0) invert(1);
 		}
 	}
 
 	// Iconos
 	.boton-primario {
 		span[class*="icono-"] {
-		color: #161515;
+		  color: var(--pagina-fondo);
 		}
 	}
 	.boton-secundario, .boton-terciario {
 		span[class*="icono-"] {
-		color: #fff;
+		  color: var(--neutro-oscuro-1);
 		}
 	}
 	.input-correcto {
 		span[class*="icono-"] {
-		color: var(--acciones-correcto);
+		  color: var(--acciones-correcto);
 		}
 	}
 	.input-error {
 		span[class*="icono-"] {
-		color: var(--acciones-error);
+		  color: var(--acciones-error);
 		}
 	}
 	span[class*="icono-"] {
-			color: #5454FB;
-		}
+    color: #5454FB;
+  }
 
 	// Elementos de formularios
-		--label-color: #fff;
-	--input-color: #fff;
-	--input-controles-color: #fff;
-	--tabla-fondo-impar: #262626;
-	--tabla-fondo-notas: #6F6F6f;;
-	--borde-color-2: #6F6F6F;
-	--input-borde: #6F6F6F;
+  --label-color: var(--neutro-oscuro-1);
+	--input-color: var(--neutro-oscuro-1);
+	--input-controles-color: var(--neutro-oscuro-1);
+	--tabla-fondo-impar: var(--neutro-oscuro-4);
+	--tabla-fondo-notas: var(--neutro-oscuro-2);
+	--borde-color-2: var(--neutro-oscuro-2);
+	--input-borde: var(--neutro-oscuro-2);
+  #input-readonly {
+		--input-color: var(--neutro-oscuro-2);
+	}
 
 	// Tarjetas
-	--tarjetas-fondo: #393939;
-	--tarjetas-color: #fff;
-	--tarjetas-externas-color: #161515;
+	--tarjetas-fondo: var(--neutro-oscuro-4);
+	--tarjetas-color: var(--neutro-oscuro-1);
+	--tarjetas-externas-color: var(--pagina-fondo);
 	--tarjetas-externas-fondo-gradiente: linear-gradient(to top, #fffffff7,#fffffff7 10%, #ffffff00 100%);
-	--tarjetas-internas-color: #fff;
-	--tarjetas-internas-fondo: #393939;
-	--tarjetas-interna-fondo-hover: #393939;
+	--tarjetas-internas-color: var(--neutro-oscuro-1);
+	--tarjetas-internas-fondo: var(--neutro-oscuro-4);
+	--tarjetas-interna-fondo-hover: var(--neutro-oscuro-3);
 
 	// Portada
-	--portada-color: #161515;
+	--portada-color: var(--pagina-fondo);
 	--portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
 
 	// Navegacion
 	--navegacion-conacyt-fondo: #001F69;
-	--navegacion-conacyt-color: #fff;
-	--navegacion-conacyt-fondo-icono: #fff;
-	.nav-hiperviculo-logo {
+  --navgeacion-conacyt-sombra: #fff2;
+	--navegacion-conacyt-color: var(--neutro-oscuro-1);
+	--navegacion-conacyt-fondo-icono: var(--neutro-oscuro-1);
+  .nav-hiperviculo-logo {
 		img {
-		filter: brightness(0) invert(1);
+		  filter: brightness(0) invert(1);
 		}
 	}
+  .nav-hipervinculo {
+    .icono-buscar {
+      color: map-get($color-gobmx, 'claro-1');
+      &:active,
+      &:hover,
+      &:focus {
+        background: transparent;
+        box-shadow: none;
+        color: map-get($color-gobmx, 'claro-2');
+      }
+    }
+  }
+
+  // Listas
+  .lista-logo {
+    .logo {
+      &.invertir {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  // Imágenes
+  picture, img {
+		filter: brightness(.8) contrast(1.2);
+	}
 }
+:root[data-dark-theme-conacyt='true'] {
+  // Agregar variables para vista oscura
+  --conacyt-oscuro-1: #ffffff;
+  --conacyt-oscuro-2: #6f6f6f;
+  --conacyt-oscuro-3: #393939;
+  --conacyt-oscuro-4: #0A2250;
+  --conacyt-oscuro-fondo: #091832;
+  --conacyt-oscuro-hover: #b9b9b9;
+	
+  // Modificar propiedades de atributos generales
+	--pagina-fondo: var(--conacyt-oscuro-fondo);
+  --tipografia-color: var(--conacyt-oscuro-1);
+
+	--tipografia-color-2: var(--conacyt-oscuro-2);
+	--tipografia-color-3: var(--conacyt-oscuro-3);
+
+	--borde-color-1: var(--conacyt-oscuro-1);
+
+	--sombra: #ffffff1a;
+	--sombra-hover: #ffffff33;
+
+	--detalle-fondo: var(--conacyt-oscuro-4);
+	// // --hipervinculo-color: #005DFF;
+	// // font-weight: 400 - 350;
+	// // line-height: calc(1em * 1.3 - 1.5);
+
+	// Boton primario
+	--boton-primario-fondo: var(--conacyt-oscuro-1);
+	--boton-primario-color: var(--pagina-fondo);
+  --boton-primario-hover-fondo: var(--conacyt-oscuro-hover);
+	--boton-primario-hover-color: var(--pagina-fondo);
+	--boton-primario-focus-fondo: var(--conacyt-oscuro-1);
+	--boton-primario-focus-color: var(--pagina-fondo);
+
+	// Boton secundario
+	--boton-secundario-fondo: transparent;
+	--boton-secundario-borde: var(--conacyt-oscuro-1);
+	--boton-secundario-color: var(--conacyt-oscuro-1);
+  --boton-secundario-hover-fondo: transparent;
+	--boton-secundario-hover-borde: var(--conacyt-oscuro-1);
+	--boton-secundario-hover-color: var(--conacyt-oscuro-1);
+	--boton-secundario-hover-sombra: #ffffff33;
+	--boton-secundario-focus-fondo: transparent;
+	--boton-secundario-focus-borde: var(--conacyt-oscuro-1);
+	--boton-secundario-focus-color: var(--conacyt-oscuro-1);
+	--boton-secundario-deshabilitado-fondo: transparent;
+
+	// Boton terciario
+	--boton-terciario-color: var(--conacyt-oscuro-1);
+	--boton-terciario-hover-color: var(--conacyt-oscuro-1);
+	--boton-terciario-hover-sombra: #ffffff33;
+	// --boton-terciario-focus-borde: #fff;
+	--boton-terciario-focus-color: var(--conacyt-oscuro-1);
+
+	// Boton conacyt
+	--boton-conacyt-fondo: var(--conacyt-oscuro-4);
+	.boton-conacyt {
+		img {
+	  	filter: brightness(0) invert(1);
+		}
+	}
+
+	// Iconos
+	.boton-primario {
+		span[class*="icono-"] {
+		  color: var(--pagina-fondo);
+		}
+	}
+	.boton-secundario, .boton-terciario {
+		span[class*="icono-"] {
+		  color: var(--conacyt-oscuro-1);
+		}
+	}
+	.input-correcto {
+		span[class*="icono-"] {
+		  color: var(--acciones-correcto);
+		}
+	}
+	.input-error {
+		span[class*="icono-"] {
+		  color: var(--acciones-error);
+		}
+	}
+	span[class*="icono-"] {
+    color: #5454FB;
+  }
+
+	// Elementos de formularios
+  --label-color: var(--conacyt-oscuro-1);
+	--input-color: var(--conacyt-oscuro-1);
+	--input-controles-color: var(--conacyt-oscuro-1);
+	--tabla-fondo-impar: var(--conacyt-oscuro-4);
+	--tabla-fondo-notas: var(--conacyt-oscuro-2);
+	--borde-color-2: var(--conacyt-oscuro-2);
+	--input-borde: var(--conacyt-oscuro-2);
+  #input-readonly {
+		--input-color: var(--conacyt-oscuro-2);
+	}
+
+	// Tarjetas
+	--tarjetas-fondo: var(--conacyt-oscuro-4);
+	--tarjetas-color: var(--conacyt-oscuro-1);
+	--tarjetas-externas-color: var(--pagina-fondo);
+	--tarjetas-externas-fondo-gradiente: linear-gradient(to top, #fffffff7,#fffffff7 10%, #ffffff00 100%);
+	--tarjetas-internas-color: var(--conacyt-oscuro-1);
+	--tarjetas-internas-fondo: var(--conacyt-oscuro-4);
+	--tarjetas-interna-fondo-hover: var(--conacyt-oscuro-3);
+
+	// Portada
+	--portada-color: var(--pagina-fondo);
+	--portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
+
+	// Navegacion
+	--navegacion-conacyt-fondo: #001F69;
+  --navgeacion-conacyt-sombra: #fff2;
+	--navegacion-conacyt-color: var(--conacyt-oscuro-1);
+	--navegacion-conacyt-fondo-icono: var(--conacyt-oscuro-1);
+  .nav-hiperviculo-logo {
+		img {
+		  filter: brightness(0) invert(1);
+		}
+	}
+  .nav-hipervinculo {
+    .icono-buscar {
+      color: map-get($color-gobmx, 'claro-1');
+      &:active,
+      &:hover,
+      &:focus {
+        background: transparent;
+        box-shadow: none;
+        color: map-get($color-gobmx, 'claro-2');
+      }
+    }
+  }
+
+  // Listas
+  .lista-logo {
+    .logo {
+      &.invertir {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+
+  // Imágenes
+  picture, img {
+		filter: brightness(.8) contrast(1.2);
+	}
+}
+
 :root[data-dark-theme-gema='true'] {
-  // --body-bg-color: #141414;
-  // --body-color: #fafafa;
   --pagina-fondo: #140907;
-    --tipografia-color: #fff;
+  --tipografia-color: #fff;
 
   span[class*="icono-"] {
     color: #F65600;
   }
+  .nav-hipervinculo {
+    .icono-buscar {
+      color: map-get($color-gobmx, 'claro-1');
+      &:active,
+      &:hover,
+      &:focus {
+        background: transparent;
+        box-shadow: none;
+        color: map-get($color-gobmx, 'claro-2');
+      }
+    }
+  }
 }
+
 .a11y-oscura {
-	// // Agregar variables para vista oscura
-	// // Agregar atributos generales
-	// --pagina-fondo: #0F0F36;
-	// --tipografia-color: #fff;
-	// background: var(--pagina-fondo);
-  	// color: var(--tipografia-color);
-
-	// --tipografia-color-1: #fff;
-	// --tipografia-color-2: #fff;
-	// --tipografia-color-3: #fff;
-
-	// // Botones
-	// --boton-terciario-color: #fff;
-	// --boton-terciario-hover-color: #D5D5D5;
-	// --boton-primario-fondo: #8D8DFC;
-	// --boton-primario-hover-fondo: #D5D5D5;
-
-	// // Elementos de formularios
-	// --label-color: #fff;
-	// --input-color: #fff;
-	// --input-borde: #D5D5D5;
-
-	// // Etiquetas html, id y clases
-	// #input-readonly {
-	// 	--input-color: #D5D5D5;
-	// }
-	// picture, img {
-	// 	filter: brightness(.8) contrast(1.2);
-	// }
-	// span[class*="icono-"] {
-	// 	color: #5454FB;
-	// }
-	// // svg.icon path {
-	// // 	fill: #fff;
-	// //  color: #fff;
-	// // }
-	// --tabla-fondo-impar: #EA1B1B;
-	// --detalle-fondo: #BD79FC;
-	// // --hipervinculo-color: #005DFF;
-	// // font-weight: 400 - 350;
-	// // line-height: calc(1em * 1.3 - 1.5);
-	// --borde-color-1: #5454FB
-	// // --sombra: #0000001a;
+	
 }
