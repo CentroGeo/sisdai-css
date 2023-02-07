@@ -27,8 +27,10 @@
 &lt;div class="contenedor-portada" style="height: 90vh">
     &lt;img class="portada" src="http://placekitten.com/970/980">
     &lt;div class="degradado-negro-abajo">
-        &lt;div class="contenido-abajo texto-color-1">
-            &lt;p class="titulo-eni texto-color-1">Título de ENI&lt;/p>
+        &lt;div class="contenido-abajo">
+            &lt;div class="contenedor ancho-lectura">
+                &lt;p class="titulo-eni texto-centrado">Título de ENI&lt;/p>
+            &lt;/div>
         &lt;/div>
     &lt;/div>
 &lt;/div>
@@ -38,7 +40,9 @@
       <img class="portada" src="http://placekitten.com/970/979" />
       <div class="degradado-negro-abajo">
         <div class="contenido-abajo">
-          <p class="titulo-eni texto-centrado">Título de ENI</p>
+          <div class="contenedor ancho-lectura">
+            <p class="titulo-eni texto-centrado">Título de ENI</p>
+          </div>
         </div>
       </div>
     </div>

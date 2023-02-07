@@ -3019,6 +3019,9 @@ ol + hr {
   .contenedor.ancho-lectura {
     max-width: 100%;
   }
+  .contenedor.ancho-minimo {
+    max-width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .contenedor {
@@ -3030,6 +3033,9 @@ ol + hr {
   }
   .contenedor.ancho-lectura {
     max-width: 700px;
+  }
+  .contenedor.ancho-minimo {
+    max-width: 500px;
   }
 }
 .contenedor .contenedor {
@@ -7803,7 +7809,7 @@ ol + hr {
   box-shadow: var(--navegacion-sombra-hover);
   color: var(--navegacion-color-hover);
 }
-.nav-hipervinculo:active, .nav-hipervinculo.active, .nav-hipervinculo.router-link-exact-active {
+.nav-hipervinculo:active, .nav-hipervinculo.active, .nav-hipervinculo.nuxt-link-active, .nav-hipervinculo.nuxt-link-exact-active, .nav-hipervinculo.router-link-exact-active {
   background-color: var(--navegacion-fondo-active);
   box-shadow: var(--navegacion-sombra-active);
   color: var(--navegacion-color-active);
@@ -7929,7 +7935,7 @@ ol + hr {
   box-shadow: var(--navegacion-sombra-hover);
   color: var(--navegacion-color-hover);
 }
-.nav-boton-submenu:active, .nav-boton-regresar:active, .nav-boton-submenu.active, .active.nav-boton-regresar, .nav-boton-submenu.router-link-exact-active, .router-link-exact-active.nav-boton-regresar {
+.nav-boton-submenu:active, .nav-boton-regresar:active, .nav-boton-submenu.active, .active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-active, .nuxt-link-active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-exact-active, .nuxt-link-exact-active.nav-boton-regresar, .nav-boton-submenu.router-link-exact-active, .router-link-exact-active.nav-boton-regresar {
   background-color: var(--navegacion-fondo-active);
   box-shadow: var(--navegacion-sombra-active);
   color: var(--navegacion-color-active);
@@ -8031,7 +8037,7 @@ ol + hr {
   box-shadow: none;
   color: #002663;
 }
-.navegacion-conacyt .nav-hipervinculo:active, .navegacion-conacyt .nav-hipervinculo.active, .navegacion-conacyt .nav-hipervinculo.router-link-exact-active {
+.navegacion-conacyt .nav-hipervinculo:active, .navegacion-conacyt .nav-hipervinculo.active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conacyt .nav-hipervinculo.router-link-exact-active {
   background-color: transparent;
   box-shadow: inset 0 -5px 0 var(--navegacion-conacyt-color);
   color: var(--navegacion-conacyt-color);
@@ -8056,7 +8062,7 @@ ol + hr {
   box-shadow: none;
   color: #002663;
 }
-.navegacion-conacyt .nav-boton-submenu:active, .navegacion-conacyt .nav-boton-regresar:active, .navegacion-conacyt .nav-boton-submenu.active, .navegacion-conacyt .active.nav-boton-regresar, .navegacion-conacyt .nav-boton-submenu.router-link-exact-active, .navegacion-conacyt .router-link-exact-active.nav-boton-regresar {
+.navegacion-conacyt .nav-boton-submenu:active, .navegacion-conacyt .nav-boton-regresar:active, .navegacion-conacyt .nav-boton-submenu.active, .navegacion-conacyt .active.nav-boton-regresar, .navegacion-conacyt .nav-boton-submenu.nuxt-link-active, .navegacion-conacyt .nuxt-link-active.nav-boton-regresar, .navegacion-conacyt .nav-boton-submenu.nuxt-link-exact-active, .navegacion-conacyt .nuxt-link-exact-active.nav-boton-regresar, .navegacion-conacyt .nav-boton-submenu.router-link-exact-active, .navegacion-conacyt .router-link-exact-active.nav-boton-regresar {
   background-color: transparent;
   box-shadow: inset 0 -5px 0 #002663;
   color: #002663;
@@ -8353,6 +8359,9 @@ body {
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo {
   background: transparent;
+}
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+  color: var(--tipografia-color);
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-texto-degradado {
   color: var(--hipervinculo-color) !important;
