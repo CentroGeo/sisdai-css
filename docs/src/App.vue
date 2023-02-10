@@ -25,9 +25,6 @@
   function toggleA11yLink() {
     isA11yUnderline.value = !isA11yUnderline.value
   }
-  function toggleA11yOscura(){
-    // isA11yOscura.value = !isA11yOscura.value
-  }
 
   function upFontSize() {
     fontSize.value ++
@@ -88,6 +85,7 @@
   function setThemeInDocument() {
     const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
     document.documentElement.setAttribute(`data-dark-theme-${perfil.value}`, modoOscuro.value)
+    modoOscuro.value === true ? isA11yOscura.value = true : isA11yOscura.value = false
   }
   const nombreTemaActual = computed(() => {
     const nombres = {'light':'Claro','dark':'Oscuro','auto':'Automático'}
@@ -104,9 +102,7 @@
   })
   watch([theme, perfil], () => {
     setThemeInDocument()    
-  })  
-  // localStorage.setItem('theme', theme.value)
-  // localStorage.clear()  
+  })
   if(localStorage.getItem("theme")) {
     theme.value = localStorage.getItem("theme")
   }
@@ -211,11 +207,6 @@
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-      <!-- <button 
-        class="boton-primario" 
-        @click="toggleA11yOscura">
-        {{ isA11yOscura ? 'Vista normal' : 'Vista oscura'}}
-      </button> -->
       <button 
         class="boton-primario" 
         @click="alternarTema">

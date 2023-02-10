@@ -106,7 +106,7 @@
   --tarjetas-fondo: #EDF6FA;
   --tarjetas-color: #000;
   --tarjetas-externas-color: #fff;
-  --tarjetas-externas-fondo-gradiente: linear-gradient(to top, #171717f7,#171717f7 10%, #00000000 100%);
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
   --tarjetas-internas-color: #000;
   --tarjetas-internas-fondo: #E0E3EE;
   --tarjetas-interna-fondo-hover: #D9D6E4;
@@ -8709,6 +8709,13 @@ body {
 }
 
 :root[data-dark-theme-gema=true] {
+  --gema-oscuro-1: #ffffff;
+  --gema-oscuro-2: #ffd7c2;
+  --gema-oscuro-3: #ffbd99;
+  --gema-oscuro-4: #F65600;
+  --gema-oscuro-5: #521D00;
+  --gema-oscuro-6: #290E00;
+  --gema-oscuro-fondo: #140907;
   --pagina-fondo: #140907;
   --tipografia-color: #fff;
 }
@@ -8722,6 +8729,10 @@ body {
   background: transparent;
   box-shadow: none;
   color: #BD9558;
+}
+
+.a11y-oscura .fondo-imagen {
+  filter: brightness(0.8) contrast(1.2);
 }
 
 /*# sourceMappingURL=eni.css.map */

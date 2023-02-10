@@ -298,12 +298,29 @@
 }
 
 :root[data-dark-theme-gema='true'] {
+  // Agregar variables para vista oscura
+  // --conacyt-oscuro-1: #ffffff;
+  // --conacyt-oscuro-2: #6f6f6f;
+  // --conacyt-oscuro-3: #393939;
+  // --conacyt-oscuro-4: #0A2250;
+  // --conacyt-oscuro-fondo: #091832;
+  // --conacyt-oscuro-hover: #b9b9b9;
+  --gema-oscuro-1: #ffffff;
+  --gema-oscuro-2: #ffd7c2;
+  --gema-oscuro-3: #ffbd99;
+  --gema-oscuro-4: #F65600;
+  --gema-oscuro-5: #521D00;
+  --gema-oscuro-6: #290E00;
+  --gema-oscuro-fondo: #140907;
+
+  // Modificar propiedades de atributos generales
   --pagina-fondo: #140907;
   --tipografia-color: #fff;
-
+  // Iconos
   span[class*="icono-"] {
     color: #F65600;
   }
+  // Navegacion
   .nav-hipervinculo {
     .icono-buscar {
       color: map-get($color-gobmx, 'claro-1');
@@ -319,5 +336,8 @@
 }
 
 .a11y-oscura {
-	
+  // ejemplo
+	.fondo-imagen {
+		filter: brightness(.8) contrast(1.2);
+	}
 }
