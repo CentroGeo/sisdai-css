@@ -1,7 +1,5 @@
 :root {
   --pagina-fondo: #fff;
-  --pagina-fondo-oscura-enis: #0F0F36;
-  --pagina-fondo-oscura-gema: #140907;
   --tipografia-color: #141414;
   --tipografia-color-1: #fff;
   --tipografia-color-2: #6f7271;
@@ -80,7 +78,7 @@
   --boton-terciario-focus-borde: #005DFF;
   --boton-terciario-focus-color: #141414;
   --boton-terciario-focus-sombra: #005DFF;
-  --boton-conacyt-fondo: #F6F6F6;
+  --boton-conacyt-fondo: #f6f6f6;
   --hipervinculo-color: #005DFF;
   --hipervinculo-sombra: transparent;
   --hipervinculo-deshabilitado-color: #A9A8A980;
@@ -103,13 +101,13 @@
   --navgeacion-conacyt-sombra: #0012;
   --navegacion-conacyt-color: #002663;
   --navegacion-conacyt-fondo-icono: #002663;
-  --tarjetas-fondo: #EDF6FA;
-  --tarjetas-color: #000;
+  --tarjetas-fondo: #edf6fa;
+  --tarjetas-color: #141414;
   --tarjetas-externas-color: #fff;
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
-  --tarjetas-internas-color: #000;
-  --tarjetas-internas-fondo: #E0E3EE;
-  --tarjetas-interna-fondo-hover: #D9D6E4;
+  --tarjetas-internas-color: #141414;
+  --tarjetas-internas-fondo: #e0e3ee;
+  --tarjetas-interna-fondo-hover: #d9d6e4;
   --portada-color: #fff;
   --portada-fondo-grandiente: linear-gradient(transparent, #171717f7);
 }
@@ -8543,7 +8541,6 @@ body {
   --boton-secundario-hover-color: var(--neutro-oscuro-1);
   --boton-secundario-hover-sombra: #ffffff33;
   --boton-secundario-focus-fondo: transparent;
-  --boton-secundario-focus-borde: var(--neutro-oscuro-1);
   --boton-secundario-focus-color: var(--neutro-oscuro-1);
   --boton-secundario-deshabilitado-fondo: transparent;
   --boton-terciario-color: var(--neutro-oscuro-1);
