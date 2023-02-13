@@ -68,7 +68,7 @@
   const theme = ref(null) 
   theme.value = 'auto' // 'dark' | 'light' | 'auto'
   const perfil = ref(null) 
-  perfil.value = 'neutro' // 'neutro' | 'conacyt' | 'gema'
+  perfil.value = 'neutro' // 'neutro' | 'sisdai' | 'gema'
 
   function alternarTema() {
     //rotar entre estos 3 valores
@@ -79,7 +79,7 @@
   function alternarPerfil() {
     document.documentElement.removeAttribute(`data-dark-theme-${perfil.value}`)
     //rotar entre estos valores
-    const perfiles = ['neutro', 'conacyt', 'gema']
+    const perfiles = ['neutro', 'sisdai', 'gema']
     perfil.value = perfiles[(perfiles.indexOf(perfil.value)+1)%3]
   }
   function setThemeInDocument() {
@@ -138,7 +138,7 @@
     <nav class="navegacion navegacion-conacyt navegacion-pegada">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
-          <img class="nav-logo" width="130" height="38" src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conacyt.">
+          <img class="nav-logo invertir" width="130" height="38" src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conacyt.">
         </a>
         <button @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>

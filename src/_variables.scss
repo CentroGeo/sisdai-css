@@ -149,32 +149,6 @@ $color-conacyt: (
 );
 $color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
 
-$oscuro-neutro: (
-  'neutro-oscuro-1': #ffffff,
-  'neutro-oscuro-2': #6f6f6f,
-  'neutro-oscuro-3': #393939,
-  'neutro-oscuro-4': #262626,
-  'neutro-oscuro-fondo': #161515,
-  'neutro-oscuro-hover': #b9b9b9,
-);
-$oscuro-conacyt: (
-  'conacyt-oscuro-1': #ffffff,
-  'conacyt-oscuro-2': #6f6f6f,
-  'conacyt-oscuro-3': #393939,
-  'conacyt-oscuro-4': #0A2250,
-  'conacyt-oscuro-fondo': #091832,
-  'conacyt-oscuro-hover': #b9b9b9,
-);
-$oscuro-gema: (
-  'gema-oscuro-1': #ffffff,
-  'gema-oscuro-2': #ffd7c2,
-  'gema-oscuro-3': #ffbd99,
-  'gema-oscuro-4': #F65600,
-  'gema-oscuro-5': #521D00,
-  'gema-oscuro-6': #290E00,
-  'gema-oscuro-fondo': #140907,
-);
-
 $sombras-estados: (
   'focus': 0px 0px 8px 0 var(--sombra-focus),
   'hover': 3px 3px 9px 0 var(--sombra-hover)
