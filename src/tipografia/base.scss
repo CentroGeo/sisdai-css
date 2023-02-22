@@ -19,3 +19,34 @@ strong {
 small {
   font-size: 0.75em;
 }
+
+@each $id, $valor in $tamanio {
+  .texto-tamanio-#{$id} {
+    font-size: $valor;
+    line-height: calc(1em * 1.25);
+    @include mediaquery('mov') {
+      @if $id == '0' and $id == 'minimo' {
+        $valor: 0;
+      }
+      @if $id != '0' and $id != 'minimo' {
+        @if $valor == .5rem {
+          $valor: $valor + .125rem;
+        }
+        $valor: $valor - calc($valor / ($valor * 4));
+      }
+      font-size: $valor;
+      line-height: calc(1em * 1.25);
+    }
+  }
+}
+
+@each $dispositivo, $x in $breakpoints {
+  @include mediaquery($dispositivo) {
+    @each $id, $valor in $tamanio {
+      .texto-tamanio-#{$id}-#{$dispositivo} {
+        font-size: $valor;
+        line-height: calc(1em * 1.25);
+      }
+    }
+  }
+}
