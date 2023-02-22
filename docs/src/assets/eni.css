@@ -96,6 +96,38 @@
   --navegacion-fondo-active: #00f;
   --navegacion-sombra-active: 0 0 0 0;
   --navegacion-color-active: #fff;
+  --menu-lateral-fondo: #DED5FF;
+  --submenu-lateral-fondo: #D0CCFF;
+  --menu-lateral-accion: #0101FC;
+  --color-gobmx-oscuro-1: #18302D;
+  --color-gobmx-oscuro-2: #1F5D50;
+  --color-gobmx-claro-1: #DFC9A1;
+  --color-gobmx-claro-2: #BD9558;
+  --color-gobmx-acento: #9E2148;
+  --color-conacyt-oscuro-1: #002663;
+  --color-conacyt-oscuro-2: #003384;
+  --color-conacyt-claro-0: #f6f6f6;
+  --color-conacyt-claro-1: #d5d5d5;
+  --color-conacyt-claro-2: #8C8D8E;
+  --color-conacyt-acento: #13aff0;
+  --color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+  --espaciado-0: 0;
+  --espaciado-minimo: 4px;
+  --espaciado-1: 8px;
+  --espaciado-2: 16px;
+  --espaciado-3: 24px;
+  --espaciado-4: 32px;
+  --espaciado-5: 40px;
+  --espaciado-6: 48px;
+  --espaciado-7: 56px;
+  --espaciado-8: 64px;
+  --espaciado-9: 72px;
+  --espaciado-10: 80px;
+  --espaciado-extra: 96px;
+  --espaciado-maximo: 120px;
+  --breakpoints-mov: 320px;
+  --breakpoints-esc: 768px;
+  --navegacion-breakpoint: 768px;
 }
 
 html {
@@ -8195,7 +8227,7 @@ body {
 }
 
 .conacyt-fondo-degradado {
-  background-image: linear-gradient(to bottom, #003384, #002663, #001c4a);
+  background-image: var(--color-conacyt-degradado);
 }
 
 .fondo-informativo {
