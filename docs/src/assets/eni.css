@@ -96,6 +96,38 @@
   --navegacion-fondo-active: #00f;
   --navegacion-sombra-active: 0 0 0 0;
   --navegacion-color-active: #fff;
+  --menu-lateral-fondo: #DED5FF;
+  --submenu-lateral-fondo: #D0CCFF;
+  --menu-lateral-accion: #0101FC;
+  --color-gobmx-oscuro-1: #18302D;
+  --color-gobmx-oscuro-2: #1F5D50;
+  --color-gobmx-claro-1: #DFC9A1;
+  --color-gobmx-claro-2: #BD9558;
+  --color-gobmx-acento: #9E2148;
+  --color-conacyt-oscuro-1: #002663;
+  --color-conacyt-oscuro-2: #003384;
+  --color-conacyt-claro-0: #f6f6f6;
+  --color-conacyt-claro-1: #d5d5d5;
+  --color-conacyt-claro-2: #8C8D8E;
+  --color-conacyt-acento: #13aff0;
+  --color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+  --espaciado-0: 0;
+  --espaciado-minimo: 4px;
+  --espaciado-1: 8px;
+  --espaciado-2: 16px;
+  --espaciado-3: 24px;
+  --espaciado-4: 32px;
+  --espaciado-5: 40px;
+  --espaciado-6: 48px;
+  --espaciado-7: 56px;
+  --espaciado-8: 64px;
+  --espaciado-9: 72px;
+  --espaciado-10: 80px;
+  --espaciado-extra: 96px;
+  --espaciado-maximo: 120px;
+  --breakpoints-mov: 320px;
+  --breakpoints-esc: 768px;
+  --navegacion-breakpoint: 768px;
 }
 
 html {
@@ -192,6 +224,302 @@ small {
   font-size: 0.75em;
 }
 
+.texto-tamanio-0 {
+  font-size: 0;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-0 {
+    font-size: 0;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-minimo {
+  font-size: 0.25rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-minimo {
+    font-size: 0.25rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-1 {
+  font-size: 0.5rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-1 {
+    font-size: 0.375rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-2 {
+  font-size: 1rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-2 {
+    font-size: 0.75rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-3 {
+  font-size: 1.5rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-3 {
+    font-size: 1.25rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-4 {
+  font-size: 2rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-4 {
+    font-size: 1.75rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-5 {
+  font-size: 2.5rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-5 {
+    font-size: 2.25rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-6 {
+  font-size: 3rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-6 {
+    font-size: 2.75rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-7 {
+  font-size: 3.5rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-7 {
+    font-size: 3.25rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-8 {
+  font-size: 4rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-8 {
+    font-size: 3.75rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-9 {
+  font-size: 4.5rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-9 {
+    font-size: 4.25rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-10 {
+  font-size: 5rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-10 {
+    font-size: 4.75rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-extra {
+  font-size: 6rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-extra {
+    font-size: 5.75rem;
+    line-height: 1.25em;
+  }
+}
+
+.texto-tamanio-maximo {
+  font-size: 7.5rem;
+  line-height: 1.25em;
+}
+@media screen and (max-width: 767px) {
+  .texto-tamanio-maximo {
+    font-size: 7.25rem;
+    line-height: 1.25em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .texto-tamanio-0-mov {
+    font-size: 0;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-minimo-mov {
+    font-size: 0.25rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-1-mov {
+    font-size: 0.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-2-mov {
+    font-size: 1rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-3-mov {
+    font-size: 1.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-4-mov {
+    font-size: 2rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-5-mov {
+    font-size: 2.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-6-mov {
+    font-size: 3rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-7-mov {
+    font-size: 3.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-8-mov {
+    font-size: 4rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-9-mov {
+    font-size: 4.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-10-mov {
+    font-size: 5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-extra-mov {
+    font-size: 6rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-maximo-mov {
+    font-size: 7.5rem;
+    line-height: 1.25em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .texto-tamanio-0-esc {
+    font-size: 0;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-minimo-esc {
+    font-size: 0.25rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-1-esc {
+    font-size: 0.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-2-esc {
+    font-size: 1rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-3-esc {
+    font-size: 1.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-4-esc {
+    font-size: 2rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-5-esc {
+    font-size: 2.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-6-esc {
+    font-size: 3rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-7-esc {
+    font-size: 3.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-8-esc {
+    font-size: 4rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-9-esc {
+    font-size: 4.5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-10-esc {
+    font-size: 5rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-extra-esc {
+    font-size: 6rem;
+    line-height: 1.25em;
+  }
+
+  .texto-tamanio-maximo-esc {
+    font-size: 7.5rem;
+    line-height: 1.25em;
+  }
+}
 .titulo-base, .subtitulo-pagina,
 .titulo-seccion,
 .titulo-subseccion, .titulo-pagina, .subtitulo-capitulo, .titulo-capitulo, .titulo-eni, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -8195,7 +8523,7 @@ body {
 }
 
 .conacyt-fondo-degradado {
-  background-image: linear-gradient(to bottom, #003384, #002663, #001c4a);
+  background-image: var(--color-conacyt-degradado);
 }
 
 .fondo-informativo {
