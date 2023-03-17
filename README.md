@@ -4,7 +4,6 @@ Biblioteca de estilos en scss con sass para el Sistema de Diseño y Accesibilida
 ([Sisdai](https://sisdai.conacyt.mx/)).
 
 > **_Limitación de responsabilidad_**
->
 > El presente es un proyecto en construcción, por tanto ni el equipo del Sisdai 
 > ni el de Salsa son responsables del uso y contenido del presente recurso, 
 > toda vez que se trata de una versión en su modalidad prueba, y no de una 
