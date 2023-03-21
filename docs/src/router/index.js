@@ -70,6 +70,16 @@ const router = createRouter({
       component: () => import('../views/ImagenesView.vue')
     },
     {
+      path: '/portadas',
+      name: 'portadas',
+      component: () => import('../views/PortadasView.vue')
+    },
+    {
+      path: '/tarjetas',
+      name: 'tarjetas',
+      component: () => import('../views/TarjetasView.vue')
+    },
+    {
       path: '/formularios',
       name: 'formularios',
       component: () => import('../views/FormulariosView.vue')
@@ -93,7 +103,7 @@ const router = createRouter({
       path: '/navegacion',
       name: 'navegacion',
       component: () => import('../views/NavegacionView.vue')
-    }
+    },
   ]
 })
 

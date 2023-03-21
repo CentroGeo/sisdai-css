@@ -9,8 +9,9 @@
   const showGob = ref(null)
   const showMenu = ref(null)
   const showSubmenu1 = ref(null)
+  const isA11yOscura = ref(null)
 
-  isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, showSubmenu1.value = false
+  isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, showSubmenu1.value, isA11yOscura.value = false
 
   function toggleA11yTypography() {
     isA11yTypography.value = !isA11yTypography.value
@@ -22,6 +23,10 @@
 
   function toggleA11yLink() {
     isA11yUnderline.value = !isA11yUnderline.value
+  }
+  function toggleA11yOscura(){
+    isA11yOscura.value = !isA11yOscura.value
+
   }
 
   function upFontSize() {
@@ -39,6 +44,8 @@
     isA11yTypography.value = false
     isA11yView.value = false
     isA11yUnderline.value = false
+
+    isA11yOscura.value = false
     fontSize.value = 16
     document.documentElement.style.setProperty('--tipografia-tamanio','16')
   }
@@ -60,7 +67,7 @@
 </script>
 
 <template>
-  <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline }">
+  <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline , 'a11y-oscura': isA11yOscura}">
 
     <nav class="navegacion navegacion-gobmx">
       <div class="nav-contenedor-identidad">
@@ -129,6 +136,9 @@
                 <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imagenes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
+
               </ul>
             </li>
             <li class="nav-contenedor-submenu">
@@ -153,6 +163,7 @@
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
+      <button class="boton-primario" @click="toggleA11yOscura">{{ isA11yOscura? 'Vista normal' : 'Vista oscura'}}</button>
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>
     <main role="main" class="contenedor m-y-maximo">

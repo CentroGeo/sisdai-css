@@ -13,6 +13,9 @@
       &.ancho-lectura {
         max-width: map-get($map, 'ancho-lectura');
       }
+      &.ancho-minimo {
+        max-width: map-get($map, 'ancho-minimo');
+      }
     }
   }
   .contenedor {

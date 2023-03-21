@@ -18,16 +18,17 @@
 
 @import 'link/base';
 @import 'link/identidad';
+@import 'link/tarjetas-externas';
+@import 'link/tarjetas-internas';
 
 @import 'listas/base';
 @import 'listas/anidadas';
 @import 'listas/compuestas';
-
 @import 'tablas/base';
-
 @import 'detalle/base';
-
 @import 'imagenes/base';
+@import 'portada/base';
+@import 'tarjetas/base';
 
 @import 'formularios/base';
 @import 'formularios/validaciones';
@@ -39,6 +40,8 @@
 @import 'bordes/separadores';
 
  @import 'sombras/base';
+
+
 
 @import 'reticula/contenedores';
 @import 'reticula/compuestos';
@@ -68,3 +71,4 @@
 @import 'accesibilidad/tipografia';
 @import 'accesibilidad/lectura';
 @import 'accesibilidad/hipervinculos';
+@import 'accesibilidad/oscura';

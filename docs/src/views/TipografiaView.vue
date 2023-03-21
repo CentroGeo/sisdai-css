@@ -398,4 +398,24 @@
 
   </div>
 
+  <h2 class="m-t-10">Tamaños</h2>
+  <p>Base 8, clases responsivas en rem, sí varian cambiando el tamaño base de la tipografia.</p>
+  <p>texto-tamanio-1, texto-tamanio-2, texto-tamanio-3 .... texto-tamanio-10</p>
+  <p class="texto-tamanio-1">texto</p>
+  <p class="texto-tamanio-2">texto</p>
+  <p class="texto-tamanio-3">texto</p>
+  <p class="texto-tamanio-4">texto</p>
+  <p class="texto-tamanio-5">texto</p>
+  <p class="texto-tamanio-6">texto</p>
+  <p class="texto-tamanio-7">texto</p>
+  <p class="texto-tamanio-8">texto</p>
+  <p class="texto-tamanio-9">texto</p>
+  <p class="texto-tamanio-10">texto</p>
+
+  <h2 class="m-t-10">Responsivos</h2>
+  <p>Variando el tamaño para móvil y escritorio</p>
+  <p class="texto-tamanio-10-mov texto-tamanio-5-esc">
+    .texto-tamanio-10-mov .texto-tamanio-5-esc
+  </p>
+
 </template>
