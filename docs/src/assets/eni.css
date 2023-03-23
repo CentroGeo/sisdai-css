@@ -8385,6 +8385,184 @@ ol + hr {
   box-shadow: 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
 }
 
+.menu-lateral-contenedor {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  z-index: 98;
+}
+.menu-lateral-contenedor ul {
+  padding-left: 0;
+}
+.menu-lateral-contenedor ul li {
+  list-style: none;
+  margin: 0;
+}
+.menu-lateral-contenedor .menu-mov {
+  background: var(--menu-lateral-fondo, #ddf);
+  border-radius: 16px;
+  padding: 8px 0;
+  transition: all 0.2s ease-in-out;
+  z-index: 99;
+  position: relative;
+}
+.menu-lateral-contenedor .menu-mov.abierto {
+  border-radius: 16px 0 0 16px;
+}
+.menu-lateral-contenedor .menu-mov .boton-menu.boton-icono {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  color: var(--menu-lateral-accion, #00f);
+}
+.menu-lateral-contenedor .menu-mov .boton-menu.boton-icono :hover {
+  background: transparent;
+}
+.menu-lateral-contenedor .menu-colapsable {
+  margin-left: -30px;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+  background: var(--submenu-lateral-fondo, #ccf);
+  opacity: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.menu-lateral-contenedor .menu-colapsable.abierto {
+  border-radius: 0 16px 16px 0;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  pointer-events: inherit;
+  margin-left: 0;
+  opacity: 1;
+}
+.menu-lateral-contenedor .menu-max-height {
+  overflow: auto;
+  max-height: calc(100vh - 180px);
+  width: 70vw;
+}
+.menu-lateral-contenedor a {
+  display: block;
+  border-radius: 0;
+  padding: 8px 16px;
+  color: var(--navegacion-color);
+  text-decoration: none;
+  background: transparent;
+  color: var(--tipografia-color-3, #333);
+  font-weight: 400;
+  text-decoration: none;
+}
+@media (hover: hover) {
+  .menu-lateral-contenedor a:hover {
+    background: var(--submenu-lateral-fondo);
+    color: var(--menu-lateral-accion, #00f);
+  }
+}
+.menu-lateral-contenedor a.router-link-active {
+  background: #f6f6f6;
+  box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
+  color: var(--menu-lateral-accion, #00f);
+}
+.menu-lateral-contenedor a:active, .menu-lateral-contenedor a:focus, .menu-lateral-contenedor a.link-activo {
+  background: #f6f6f6;
+  box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
+  color: var(--menu-lateral-accion, #00f);
+}
+
+@media (min-width: 768px) {
+  .menu-lateral-contenedor {
+    background: #ded5ff;
+    margin: 0;
+    top: 50px;
+  }
+  .menu-lateral-contenedor .menu-mov {
+    display: none;
+  }
+  .menu-lateral-contenedor .menu-colapsable,
+.menu-lateral-contenedor .menu-colapsable.abierto {
+    background: transparent;
+    box-shadow: none;
+    width: 100%;
+    border-radius: 0;
+    pointer-events: inherit;
+    margin-left: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    opacity: 1;
+  }
+  .menu-lateral-contenedor .menu-max-height {
+    overflow: inherit;
+    max-height: inherit;
+    width: inherit;
+  }
+  .menu-lateral-contenedor a {
+    padding: 8px 40px;
+  }
+}
+.colapsable-navegacion {
+  position: relative;
+  background-color: transparent;
+  list-style: none;
+}
+.colapsable-navegacion .colapsable-submenu {
+  opacity: 1;
+  height: 100px;
+  position: relative;
+  list-style: none;
+  height: 0px;
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 0;
+  pointer-events: inherit;
+  position: relative;
+  width: 100%;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  background-color: transparent;
+  padding: 0;
+}
+.colapsable-navegacion .colapsable-submenu li {
+  margin: 0;
+}
+.colapsable-navegacion .colapsable-submenu li a {
+  background: transparent;
+  color: #000;
+  border-radius: 0;
+  padding: 8px 56px;
+  box-shadow: none;
+}
+@media screen and (max-width: 767px) {
+  .colapsable-navegacion .colapsable-submenu li a {
+    padding: 8px 32px;
+  }
+}
+.colapsable-navegacion .colapsable-submenu li a.router-link-exact-active, .colapsable-navegacion .colapsable-submenu li a.router-link-active, .colapsable-navegacion .colapsable-submenu li a:active, .colapsable-navegacion .colapsable-submenu li a:focus {
+  background: #fff;
+  box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
+}
+.colapsable-navegacion .colapsable-boton-submenu {
+  border: none;
+  color: #000;
+  font-weight: 500;
+  background: transparent;
+  padding: 8px 40px;
+}
+@media screen and (max-width: 767px) {
+  .colapsable-navegacion .colapsable-boton-submenu {
+    padding: 8px 16px;
+  }
+}
+.colapsable-navegacion.activo .colapsable-boton-submenu, .colapsable-navegacion:focus .colapsable-boton-submenu, .colapsable-navegacion:focus-within .colapsable-boton-submenu, .colapsable-navegacion:hover .colapsable-boton-submenu {
+  color: #000;
+  background: transparent;
+  box-shadow: none;
+}
+.colapsable-navegacion.activo .colapsable-submenu {
+  opacity: 1;
+  height: 100%;
+  position: relative;
+}
+
 body {
   background: var(--pagina-fondo);
   color: var(--tipografia-color);
