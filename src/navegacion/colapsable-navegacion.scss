@@ -1,0 +1,69 @@
+.colapsable-navegacion {
+  position: relative;
+  background-color: transparent;
+  list-style: none;
+  .colapsable-submenu {
+    opacity: 1;
+    height: 100px;
+    position: relative;
+    list-style: none;
+    height: 0px;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 0;
+    pointer-events: inherit;
+    position: relative;
+    width: 100%;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    background-color: transparent;
+    padding: 0;
+    li {
+      margin: 0;
+      a {
+        background: transparent;
+        color: #000;
+        border-radius: 0;
+        padding: map-get($espaciado, '1') map-get($espaciado, '7');
+        @include mediaquery(mov) { 
+            padding: map-get($espaciado, '1') map-get($espaciado, '4');
+          }
+        box-shadow: none;
+        &.router-link-exact-active,
+        &.router-link-active,
+        &:active,
+        &:focus {
+          background: #fff;
+          box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
+        }
+      }
+    }
+  }
+  .colapsable-boton-submenu {
+    border: none;
+    color: #000;
+    font-weight: 500;
+    background: transparent;
+    padding: map-get($espaciado, '1') map-get($espaciado, '5');
+    @include mediaquery(mov) { 
+        padding: map-get($espaciado, '1') map-get($espaciado, '2');
+      }
+  }
+  &.activo,
+  &:focus,
+  &:focus-within,
+  &:hover {
+    .colapsable-boton-submenu {
+      color: #000;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+  &.activo {
+    .colapsable-submenu {
+      opacity: 1;
+      height: 100%;
+      position: relative;
+    }
+  }
+}
