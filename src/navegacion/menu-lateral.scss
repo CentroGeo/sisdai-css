@@ -13,6 +13,8 @@
       }
     }
     .menu-mov {
+      margin-left: map-get($espaciado, '2');
+
       background: var(--menu-lateral-fondo, #ddf);
       border-radius: map-get($espaciado, '2');
         padding: map-get($espaciado, '1') 0;
