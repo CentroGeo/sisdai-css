@@ -8401,6 +8401,7 @@ ol + hr {
   margin: 0;
 }
 .menu-lateral-contenedor .menu-mov {
+  margin-left: 16px;
   background: var(--menu-lateral-fondo, #ddf);
   border-radius: 16px;
   padding: 8px 0;
