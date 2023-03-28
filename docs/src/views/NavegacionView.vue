@@ -223,7 +223,11 @@
     </ul>
   </li>
   <h2 class="m-t-10">Menú lateral</h2>
-  <p>El siguiente elemento .menu-lateral-contenedor consiste en un menú que contiene principalmente enlaces enlistados. También se pueden agregar colapsables como los que se enunciaron anteriormente</p>
+  <p>
+    El siguiente elemento .menu-lateral-contenedor consiste en un menú que
+    contiene principalmente enlaces enlistados. También se pueden agregar
+    colapsables como los que se enunciaron anteriormente
+  </p>
   <menu class="menu-lateral-contenedor">
     <div
       class="menu-mov"
@@ -267,7 +271,25 @@
       </div>
     </div>
   </menu>
+  <h2>Índice de contenido</h2>
 
+  <p>
+    El la clase .indice-de-contenido da a su contenido el estilo que se usa para
+    el panel lateral derecho que te permite navegar entre distinas secciones del
+    documento sin cambiar de vista
+  </p>
+
+  <div class="indice-de-contenido">
+    <p class="titulo-indice">{{ titulo }}</p>
+    <nav>
+      <div class="contenedor-indice-de-contenido">
+        <slot name="contenido-indice-de-contenido">
+          <router-link to="#routerlink"> router link prueba </router-link>
+          <a href="#anchore"> anchore link prueba </a>
+        </slot>
+      </div>
+    </nav>
+  </div>
   <p></p>
 </template>
 

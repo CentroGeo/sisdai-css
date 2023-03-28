@@ -8564,6 +8564,49 @@ ol + hr {
   position: relative;
 }
 
+.indice-de-contenido .titulo-indice {
+  font-size: 18px;
+  font-weight: 500;
+}
+.indice-de-contenido .contenedor-indice-de-contenido ul {
+  padding-left: 0;
+}
+.indice-de-contenido .contenedor-indice-de-contenido ul li {
+  list-style: none;
+  margin: 0;
+}
+.indice-de-contenido a {
+  display: block;
+  border-radius: 0;
+  padding: 8px 16px;
+  color: var(--navegacion-color);
+  text-decoration: none;
+  background: transparent;
+  color: var(--tipografia-color-3, #333);
+  font-weight: 400;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .indice-de-contenido a a {
+    padding: 8px 40px;
+  }
+}
+@media (hover: hover) {
+  .indice-de-contenido a:hover {
+    background: #f6f6f6;
+    color: var(--menu-lateral-accion, #00f);
+  }
+}
+.indice-de-contenido a:active, .indice-de-contenido a:focus {
+  color: var(--menu-lateral-accion, #00f);
+  box-shadow: none;
+}
+.indice-de-contenido a.link-activo, .indice-de-contenido a.router-link-exact-active {
+  background: #f6f6f6;
+  box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
+  color: var(--menu-lateral-accion, #00f);
+}
+
 body {
   background: var(--pagina-fondo);
   color: var(--tipografia-color);
