@@ -1127,7 +1127,7 @@ input[type=reset]:not(:last-child),
 
 a,
 .hipervinculo,
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset],
@@ -1152,7 +1152,7 @@ a,
 }
 a:disabled,
 .hipervinculo:disabled,
-.a11y-simplificada button:disabled:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button:disabled:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled,
@@ -1166,7 +1166,7 @@ a:disabled,
 }
 a:hover,
 .hipervinculo:hover,
-.a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover,
@@ -1180,7 +1180,7 @@ a:hover,
 }
 a:focus,
 .hipervinculo:focus,
-.a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[type=button]:focus,
 .a11y-simplificada input[type=submit]:focus,
 .a11y-simplificada input[type=reset]:focus,
@@ -1194,7 +1194,7 @@ a:focus,
   outline: none;
 }
 
-button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child):not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child):not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada button[class^=boton]:not(:last-child),
 .a11y-simplificada button[class*=" boton"]:not(:last-child), button.hipervinculo-conacyt:not(:last-child), button.hipervinculo-gobmx:not(:last-child) {
   margin-right: inherit;
@@ -1203,7 +1203,7 @@ button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child)
 a[class^=m-],
 a[class^=p-],
 .hipervinculo[class^=m-],
-.a11y-simplificada button[class^=m-]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button[class^=m-]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[class^=m-][type=button],
 .a11y-simplificada input[class^=m-][type=submit],
 .a11y-simplificada input[class^=m-][type=reset],
@@ -1212,7 +1212,7 @@ a[class^=p-],
 [class^=m-].hipervinculo-conacyt,
 [class^=m-].hipervinculo-gobmx,
 .hipervinculo[class^=p-],
-.a11y-simplificada button[class^=p-]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button[class^=p-]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[class^=p-][type=button],
 .a11y-simplificada input[class^=p-][type=submit],
 .a11y-simplificada input[class^=p-][type=reset],
@@ -1223,7 +1223,7 @@ a[class^=p-],
 a[class*=" m-"],
 a[class*=" p-"],
 .hipervinculo[class*=" m-"],
-.a11y-simplificada button[class*=" m-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button[class*=" m-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[class*=" m-"][type=button],
 .a11y-simplificada input[class*=" m-"][type=submit],
 .a11y-simplificada input[class*=" m-"][type=reset],
@@ -1232,7 +1232,7 @@ a[class*=" p-"],
 [class*=" m-"].hipervinculo-conacyt,
 [class*=" m-"].hipervinculo-gobmx,
 .hipervinculo[class*=" p-"],
-.a11y-simplificada button[class*=" p-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-simplificada button[class*=" p-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada input[class*=" p-"][type=button],
 .a11y-simplificada input[class*=" p-"][type=submit],
 .a11y-simplificada input[class*=" p-"][type=reset],
@@ -8847,6 +8847,90 @@ body {
   margin-right: auto;
 }
 
+.contenedor-accesibilidad {
+  position: fixed;
+  z-index: 4;
+  margin: 0;
+}
+.contenedor-accesibilidad .icono-boton-accesibilidad {
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0 0 -16px !important;
+}
+.contenedor-accesibilidad .icono-boton-accesibilidad:hover, .contenedor-accesibilidad .icono-boton-accesibilidad:focus {
+  box-shadow: 0 0 0 5px rgba(29, 116, 230, 0.25);
+}
+.contenedor-accesibilidad .icono-boton-accesibilidad .icono-accesibilidad {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #1d74e6;
+  padding-left: 0 !important;
+}
+.contenedor-accesibilidad .menu-accesibilidad {
+  background: #f6f6f6;
+  box-shadow: 1px 1px 2px 0 var(--sombra);
+  padding: 0;
+  overflow: hidden;
+}
+.contenedor-accesibilidad .menu-accesibilidad .titulo {
+  text-align: left;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin: 0;
+}
+.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad {
+  background: transparent;
+  border: none;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 16px;
+  margin-right: 0;
+}
+.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad:hover, .contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad:focus {
+  background: #dddddd;
+}
+.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad .icono-4 {
+  padding: 0;
+}
+
+.contenedor-accesibilidad {
+  --a11y-transicion: 300ms;
+  --a11y-ancho: 200;
+  --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
+  bottom: 24px;
+  right: 24px;
+  transition: bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64)), right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64));
+}
+.contenedor-accesibilidad .menu-accesibilidad {
+  max-height: 0px;
+  width: 0px;
+  margin: 0 16px 16px 24px;
+  transition: width var(--a11y-transicion) linear 0s, max-height var(--a11y-transicion) linear 0s, margin-right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32)), margin-bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32));
+}
+.contenedor-accesibilidad.abierto {
+  bottom: 8px;
+  right: 8px;
+  transition-delay: 0s, 0s;
+}
+.contenedor-accesibilidad.abierto .menu-accesibilidad {
+  width: calc(var(--a11y-ancho) * 1px);
+  max-height: 270px;
+  margin-right: 0;
+  margin-bottom: 0;
+  transition-delay: 0s, 0s, calc(var(--a11y-relacion-tiempo) * 32), calc(var(--a11y-relacion-tiempo) * 32);
+}
+
 .a11y-simplificada .a11y-simplificada-contenedor {
   box-sizing: border-box;
   display: block;
@@ -8869,7 +8953,7 @@ body {
     margin: auto;
   }
 }
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(:last-child),
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(:last-child),
 .a11y-simplificada input[type=button]:not(:last-child),
 .a11y-simplificada input[type=submit]:not(:last-child),
 .a11y-simplificada input[type=reset]:not(:last-child),
@@ -8971,8 +9055,8 @@ body {
 .a11y-hipervinculos .hipervinculo,
 .a11y-hipervinculos .hipervinculo-gobmx,
 .a11y-hipervinculos .hipervinculo-conacyt,
-.a11y-hipervinculos .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
-.a11y-simplificada .a11y-hipervinculos button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-hipervinculos .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button],
 .a11y-simplificada .a11y-hipervinculos input[type=button],
 .a11y-hipervinculos .a11y-simplificada input[type=submit],
@@ -8989,8 +9073,8 @@ body {
 .a11y-hipervinculos .hipervinculo:hover,
 .a11y-hipervinculos .hipervinculo-gobmx:hover,
 .a11y-hipervinculos .hipervinculo-conacyt:hover,
-.a11y-hipervinculos .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
-.a11y-simplificada .a11y-hipervinculos button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-hipervinculos .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:hover,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:hover,
@@ -9004,8 +9088,8 @@ body {
 .a11y-hipervinculos .hipervinculo:focus,
 .a11y-hipervinculos .hipervinculo-gobmx:focus,
 .a11y-hipervinculos .hipervinculo-conacyt:focus,
-.a11y-hipervinculos .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
-.a11y-simplificada .a11y-hipervinculos button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-hipervinculos .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:focus,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:focus,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:focus,
@@ -9019,8 +9103,8 @@ body {
 .a11y-hipervinculos .hipervinculo:focus-within,
 .a11y-hipervinculos .hipervinculo-gobmx:focus-within,
 .a11y-hipervinculos .hipervinculo-conacyt:focus-within,
-.a11y-hipervinculos .a11y-simplificada button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
-.a11y-simplificada .a11y-hipervinculos button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-hipervinculos .a11y-simplificada button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:focus-within,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:focus-within,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:focus-within,
@@ -9034,8 +9118,8 @@ body {
 .a11y-hipervinculos .hipervinculo:active,
 .a11y-hipervinculos .hipervinculo-gobmx:active,
 .a11y-hipervinculos .hipervinculo-conacyt:active,
-.a11y-hipervinculos .a11y-simplificada button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
-.a11y-simplificada .a11y-hipervinculos button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar),
+.a11y-hipervinculos .a11y-simplificada button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:active,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:active,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:active,
