@@ -68,6 +68,9 @@
 @import 'auxiliares/color-texto';
 @import 'auxiliares/alineacion-contenedores';
 
+@import 'accesibilidad/menu-accesibilidad';
+@import 'accesibilidad/menu-accesibilidad-transiciones';
+
 // a11y 
 // accesibilidad debe cargar al final
 // para que pueda sobre escribir los estilos
