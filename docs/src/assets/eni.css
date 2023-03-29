@@ -8847,6 +8847,90 @@ body {
   margin-right: auto;
 }
 
+.contenedor-accesibilidad {
+  position: fixed;
+  z-index: 4;
+  margin: 0;
+}
+.contenedor-accesibilidad .icono-boton-accesibilidad {
+  background: transparent;
+  border-radius: 50%;
+  border: none;
+  display: block;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  margin: 0 0 -16px !important;
+}
+.contenedor-accesibilidad .icono-boton-accesibilidad:hover, .contenedor-accesibilidad .icono-boton-accesibilidad:focus {
+  box-shadow: 0 0 0 5px rgba(29, 116, 230, 0.25);
+}
+.contenedor-accesibilidad .icono-boton-accesibilidad .icono-accesibilidad {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  color: #1d74e6;
+  padding-left: 0 !important;
+}
+.contenedor-accesibilidad .menu-accesibilidad {
+  background: #f6f6f6;
+  box-shadow: 1px 1px 2px 0 var(--sombra);
+  padding: 0;
+  overflow: hidden;
+}
+.contenedor-accesibilidad .menu-accesibilidad .titulo {
+  text-align: left;
+  font-weight: 600;
+  padding: 8px 16px;
+  margin: 0;
+}
+.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad {
+  background: transparent;
+  border: none;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 8px 16px;
+  margin-right: 0;
+}
+.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad:hover, .contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad:focus {
+  background: #dddddd;
+}
+.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad .icono-4 {
+  padding: 0;
+}
+
+.contenedor-accesibilidad {
+  --a11y-transicion: 300ms;
+  --a11y-ancho: 200;
+  --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
+  bottom: 24px;
+  right: 24px;
+  transition: bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64)), right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64));
+}
+.contenedor-accesibilidad .menu-accesibilidad {
+  max-height: 0px;
+  width: 0px;
+  margin: 0 16px 16px 24px;
+  transition: width var(--a11y-transicion) linear 0s, max-height var(--a11y-transicion) linear 0s, margin-right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32)), margin-bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32));
+}
+.contenedor-accesibilidad.abierto {
+  bottom: 8px;
+  right: 8px;
+  transition-delay: 0s, 0s;
+}
+.contenedor-accesibilidad.abierto .menu-accesibilidad {
+  width: calc(var(--a11y-ancho) * 1px);
+  max-height: 270px;
+  margin-right: 0;
+  margin-bottom: 0;
+  transition-delay: 0s, 0s, calc(var(--a11y-relacion-tiempo) * 32), calc(var(--a11y-relacion-tiempo) * 32);
+}
+
 .a11y-simplificada .a11y-simplificada-contenedor {
   box-sizing: border-box;
   display: block;
