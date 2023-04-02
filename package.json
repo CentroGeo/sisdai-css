@@ -4,11 +4,9 @@
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "main": "src/eni.scss",
   "scripts": {
-    "start": "concurrently \"npm run scss\" \"npm run docs\" ",
     "build": "sass src/eni.scss:dist/eni.min.css --style compressed",
     "build:docs": "cd docs && npm run build",
-    "docs": "cd docs && npm run dev",
-    "install:docs": "cd docs && npm install",
+    "build:dev": "cd docs && npm run dev",
     "scss": "sass --watch src/eni.scss:docs/src/assets/eni.css --style expanded"
   },
   "repository": {
