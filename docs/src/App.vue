@@ -148,6 +148,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/hipervinculos">Hipervínculos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/formularios">Formularios</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/globo-informacion">Globos de informacion</RouterLink></li>
               </ul>
             </li>
             <li><RouterLink class="nav-hipervinculo" to="/navegacion">Navegacion</RouterLink></li>

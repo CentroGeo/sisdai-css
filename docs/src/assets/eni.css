@@ -8847,6 +8847,35 @@ body {
   margin-right: auto;
 }
 
+.contenedor-globo-info-ext {
+  width: 322px;
+  min-height: 152px;
+  padding: 1rem;
+}
+
+.contenedor-globo-info {
+  min-height: 0;
+  padding: 0.5em;
+  width: auto;
+  max-width: 240px;
+}
+
+.contenedor-globo-info-ext,
+.contenedor-globo-info {
+  background: #1c1c1c;
+  color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 4px;
+  display: block;
+  z-index: 9999;
+  font-size: 11px;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info,
+.contenedor-globo-info .cuerpo-globo-info {
+  font-size: 11px;
+  font-weight: 400;
+}
+
 .contenedor-accesibilidad {
   position: fixed;
   z-index: 4;
