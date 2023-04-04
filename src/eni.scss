@@ -67,9 +67,11 @@
 @import 'auxiliares/alineacion-texto';
 @import 'auxiliares/color-texto';
 @import 'auxiliares/alineacion-contenedores';
+@import 'auxiliares/globo-informacion.scss';
 
 @import 'accesibilidad/menu-accesibilidad';
 @import 'accesibilidad/menu-accesibilidad-transiciones';
+
 
 // a11y 
 // accesibilidad debe cargar al final
