@@ -15,6 +15,7 @@
 @import 'boton/base';
 @import 'boton/iconos';
 @import 'boton/compuestos';
+@import 'boton/flotante';
 
 @import 'link/base';
 @import 'link/identidad';
@@ -67,7 +68,8 @@
 @import 'auxiliares/alineacion-texto';
 @import 'auxiliares/color-texto';
 @import 'auxiliares/alineacion-contenedores';
-@import 'auxiliares/globo-informacion.scss';
+@import 'auxiliares/globo-informacion';
+@import 'auxiliares/animaciones';
 
 @import 'accesibilidad/menu-accesibilidad';
 @import 'accesibilidad/menu-accesibilidad-transiciones';
