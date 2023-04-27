@@ -1,0 +1,99 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    @media (max-width: 768px) {
+      top: inherit;
+    }
+    &.overflow-x-y {
+      top: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    &-fondo-trasero {
+      background-color: rgba(0, 0, 0, 0.5);
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &-contenedor {
+      background-color: #fff;
+      position: relative;
+      margin: 120px auto;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+      padding: 24px;
+      z-index: 2;
+      @media (max-width: 768px) {
+        margin: inherit;
+        padding: 24px 24px 40px;
+      }
+      &.chico {
+        width: 462px;
+        @media (max-width: 768px) {
+          width: 100%;
+          border-radius: 20px 20px 0px 0px;
+        }
+      }
+      &.mediano {
+        width: 616px;
+        @media (max-width: 768px) {
+          width: 100%;
+          border-radius: 20px 20px 0px 0px;
+        }
+      }
+      &.grande {
+        width: 924px;
+        @media (max-width: 768px) {
+          width: 100%;
+          border-radius: 20px 20px 0px 0px;
+        }
+      }
+      &.pantalla-completa {
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        border-radius: 0px;
+      }
+    }
+    button.modal-cerrar {
+      background: none;
+      box-shadow: none;
+      border: none;
+      padding: 8px;
+      color: #000;
+      font-weight: 700;
+      margin-left: auto;
+      font-size: 16px;
+      &:hover {
+        color: #000;
+      }
+    }
+    &-encabezado {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    &-cuerpo {
+    }
+    &-pie {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.3s;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
+  }
