@@ -22,6 +22,7 @@
   &.active,
   &.nuxt-link-active,
   &.nuxt-link-exact-active,
+  &.router-link-active,
   &.router-link-exact-active {
     background-color: var(--navegacion-fondo-active);
     box-shadow: var(--navegacion-sombra-active);
