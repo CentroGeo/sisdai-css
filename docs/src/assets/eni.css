@@ -8429,7 +8429,7 @@ ol + hr {
   box-shadow: none;
   color: #002663;
 }
-.navegacion-conacyt .nav-hipervinculo:active, .navegacion-conacyt .nav-hipervinculo.active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conacyt .nav-hipervinculo.router-link-exact-active {
+.navegacion-conacyt .nav-hipervinculo:active, .navegacion-conacyt .nav-hipervinculo.active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conacyt .nav-hipervinculo.router-link-active, .navegacion-conacyt .nav-hipervinculo.router-link-exact-active {
   background-color: transparent;
   box-shadow: inset 0 -5px 0 #002663;
   color: #002663;
@@ -8616,7 +8616,7 @@ ol + hr {
     padding: 8px 32px;
   }
 }
-.colapsable-navegacion .colapsable-submenu li a.router-link-exact-active, .colapsable-navegacion .colapsable-submenu li a.router-link-active, .colapsable-navegacion .colapsable-submenu li a:active, .colapsable-navegacion .colapsable-submenu li a:focus {
+.colapsable-navegacion .colapsable-submenu li a.router-link-exact-active, .colapsable-navegacion .colapsable-submenu li a:active, .colapsable-navegacion .colapsable-submenu li a:focus {
   background: #fff;
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
 }
