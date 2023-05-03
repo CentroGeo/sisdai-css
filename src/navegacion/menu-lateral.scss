@@ -73,7 +73,7 @@
           color: var(--menu-lateral-accion, #00f);
         }
       }
-      &.router-link-active {
+      &.router-link-exact-active {
         background: #f6f6f6;
         box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
         color: var(--menu-lateral-accion, #00f);

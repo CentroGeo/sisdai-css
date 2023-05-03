@@ -1125,6 +1125,85 @@ input[type=reset]:not(:last-child),
   opacity: 1;
 }
 
+.contenedor-boton-flotante {
+  position: fixed;
+  z-index: 3;
+  margin: 0;
+  display: inline-flex;
+  bottom: 24px;
+  left: 24px;
+  /* T R A N S I C I O N E S */
+}
+.contenedor-boton-flotante .boton-flotante-alternador {
+  background: black;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.contenedor-boton-flotante .boton-flotante-alternador .icono {
+  padding: 0;
+  color: #fff;
+}
+.contenedor-boton-flotante .boton-flotante-contenido {
+  height: 40px !important;
+  padding: 0;
+  overflow: hidden;
+  color: #fff;
+  background: black;
+  border-color: #fff;
+  display: inline-flex;
+  align-items: center;
+}
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace {
+  height: 100%;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-flex !important;
+  align-items: center;
+}
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace .icono {
+  padding: 0 8px 0 0;
+}
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace:hover, .contenedor-boton-flotante .boton-flotante-contenido a.enlace:focus {
+  color: #fff;
+}
+.contenedor-boton-flotante .boton-flotante-contenido a.enlace.icono-resaltado .icono {
+  position: relative;
+  animation: animacionResaltada 2s ease-in-out infinite;
+}
+.contenedor-boton-flotante .boton-flotante-alternador {
+  transition: border-radius 0.27s linear 0.6s !important;
+}
+.contenedor-boton-flotante.abierto .boton-flotante-alternador {
+  transition-delay: 0s !important;
+}
+.contenedor-boton-flotante .boton-flotante-contenido {
+  max-width: 0;
+  transition: max-width 0.6s linear 0s !important;
+}
+.contenedor-boton-flotante.abierto .boton-flotante-contenido {
+  max-width: 500px;
+  transition-delay: 0.27s !important;
+}
+
+/* A C C E S I B I L I D A D */
+.a11y-simplificada .contenedor-boton-flotante {
+  position: static !important;
+}
+.a11y-simplificada .contenedor-boton-flotante .boton-flotante-alternador {
+  display: none;
+}
+.a11y-simplificada .contenedor-boton-flotante .boton-flotante-contenido a.enlace {
+  color: black;
+}
+.a11y-simplificada .contenedor-boton-flotante .boton-flotante-contenido a.enlace.icono-resaltado .icono {
+  animation: none;
+}
+
 a,
 .hipervinculo,
 .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
@@ -8122,7 +8201,7 @@ ol + hr {
   box-shadow: var(--navegacion-sombra-hover);
   color: var(--navegacion-color-hover);
 }
-.nav-hipervinculo:active, .nav-hipervinculo.active, .nav-hipervinculo.nuxt-link-active, .nav-hipervinculo.nuxt-link-exact-active, .nav-hipervinculo.router-link-exact-active {
+.nav-hipervinculo:active, .nav-hipervinculo.active, .nav-hipervinculo.nuxt-link-active, .nav-hipervinculo.nuxt-link-exact-active, .nav-hipervinculo.router-link-active, .nav-hipervinculo.router-link-exact-active {
   background-color: var(--navegacion-fondo-active);
   box-shadow: var(--navegacion-sombra-active);
   color: var(--navegacion-color-active);
@@ -8350,7 +8429,7 @@ ol + hr {
   box-shadow: none;
   color: #002663;
 }
-.navegacion-conacyt .nav-hipervinculo:active, .navegacion-conacyt .nav-hipervinculo.active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conacyt .nav-hipervinculo.router-link-exact-active {
+.navegacion-conacyt .nav-hipervinculo:active, .navegacion-conacyt .nav-hipervinculo.active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-active, .navegacion-conacyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conacyt .nav-hipervinculo.router-link-active, .navegacion-conacyt .nav-hipervinculo.router-link-exact-active {
   background-color: transparent;
   box-shadow: inset 0 -5px 0 #002663;
   color: #002663;
@@ -8459,7 +8538,7 @@ ol + hr {
     color: var(--menu-lateral-accion, #00f);
   }
 }
-.menu-lateral-contenedor a.router-link-active {
+.menu-lateral-contenedor a.router-link-exact-active {
   background: #f6f6f6;
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
   color: var(--menu-lateral-accion, #00f);
@@ -8537,7 +8616,7 @@ ol + hr {
     padding: 8px 32px;
   }
 }
-.colapsable-navegacion .colapsable-submenu li a.router-link-exact-active, .colapsable-navegacion .colapsable-submenu li a.router-link-active, .colapsable-navegacion .colapsable-submenu li a:active, .colapsable-navegacion .colapsable-submenu li a:focus {
+.colapsable-navegacion .colapsable-submenu li a.router-link-exact-active, .colapsable-navegacion .colapsable-submenu li a:active, .colapsable-navegacion .colapsable-submenu li a:focus {
   background: #fff;
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
 }
@@ -8876,12 +8955,33 @@ body {
   font-weight: 400;
 }
 
-.contenedor-accesibilidad {
+@keyframes animacionResaltada {
+  0% {
+    opacity: 0.25;
+    top: 2px;
+  }
+  50% {
+    opacity: 1;
+    top: -2px;
+  }
+  100% {
+    opacity: 0.25;
+    top: 2px;
+  }
+}
+.contenedor-menu-accesibilidad {
   position: fixed;
   z-index: 4;
   margin: 0;
+  /* T R A N S I C I O N E S */
+  --a11y-transicion: 300ms;
+  --a11y-ancho: 200;
+  --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
+  bottom: 24px;
+  right: 24px;
+  transition: bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64)), right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64));
 }
-.contenedor-accesibilidad .icono-boton-accesibilidad {
+.contenedor-menu-accesibilidad .icono-boton-accesibilidad {
   background: transparent;
   border-radius: 50%;
   border: none;
@@ -8891,10 +8991,10 @@ body {
   padding: 0;
   margin: 0 0 -16px !important;
 }
-.contenedor-accesibilidad .icono-boton-accesibilidad:hover, .contenedor-accesibilidad .icono-boton-accesibilidad:focus {
+.contenedor-menu-accesibilidad .icono-boton-accesibilidad:hover, .contenedor-menu-accesibilidad .icono-boton-accesibilidad:focus {
   box-shadow: 0 0 0 5px rgba(29, 116, 230, 0.25);
 }
-.contenedor-accesibilidad .icono-boton-accesibilidad .icono-accesibilidad {
+.contenedor-menu-accesibilidad .icono-boton-accesibilidad .icono-accesibilidad {
   background-color: #fff;
   height: 40px;
   width: 40px;
@@ -8902,19 +9002,19 @@ body {
   color: #1d74e6;
   padding-left: 0 !important;
 }
-.contenedor-accesibilidad .menu-accesibilidad {
+.contenedor-menu-accesibilidad .menu-accesibilidad {
   background: #f6f6f6;
   box-shadow: 1px 1px 2px 0 var(--sombra);
   padding: 0;
   overflow: hidden;
 }
-.contenedor-accesibilidad .menu-accesibilidad .titulo {
+.contenedor-menu-accesibilidad .menu-accesibilidad .titulo {
   text-align: left;
   font-weight: 600;
   padding: 8px 16px;
   margin: 0;
 }
-.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad {
+.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad {
   background: transparent;
   border: none;
   display: flex;
@@ -8926,33 +9026,24 @@ body {
   padding: 8px 16px;
   margin-right: 0;
 }
-.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad:hover, .contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad:focus {
+.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad:focus {
   background: #dddddd;
 }
-.contenedor-accesibilidad .menu-accesibilidad .opcion-accesibilidad .icono-4 {
+.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad .icono-4 {
   padding: 0;
 }
-
-.contenedor-accesibilidad {
-  --a11y-transicion: 300ms;
-  --a11y-ancho: 200;
-  --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
-  bottom: 24px;
-  right: 24px;
-  transition: bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64)), right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 64));
-}
-.contenedor-accesibilidad .menu-accesibilidad {
+.contenedor-menu-accesibilidad .menu-accesibilidad {
   max-height: 0px;
   width: 0px;
   margin: 0 16px 16px 24px;
   transition: width var(--a11y-transicion) linear 0s, max-height var(--a11y-transicion) linear 0s, margin-right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32)), margin-bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32));
 }
-.contenedor-accesibilidad.abierto {
+.contenedor-menu-accesibilidad.abierto {
   bottom: 8px;
   right: 8px;
   transition-delay: 0s, 0s;
 }
-.contenedor-accesibilidad.abierto .menu-accesibilidad {
+.contenedor-menu-accesibilidad.abierto .menu-accesibilidad {
   width: calc(var(--a11y-ancho) * 1px);
   max-height: 270px;
   margin-right: 0;
