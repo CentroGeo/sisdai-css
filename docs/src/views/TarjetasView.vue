@@ -80,6 +80,18 @@
     </div>
     <div class="columna-4 columna-5-esc m-b-3">
       <div class="tarjeta">
+        <img class="fondo-imagen" src="http://placekitten.com/970/982" />
+        <div class="contenido-html">
+          <p class="parrafo-texto-alto">Aquí va el contenido</p>
+          <p>
+            Puede tener elementos como botones
+          </p>
+          <a class="boton boton-primario m-y-3">Soy un enlace con forma de botón</a>
+        </div>
+      </div>
+    </div>
+    <div class="columna-4 columna-5-esc m-b-3">
+      <div class="tarjeta">
         <img class="fondo-imagen" src="http://placekitten.com/960/934" />
         <div class="contenido-html">
           <p class="parrafo-texto-alto">Aquí va el contenido</p>
