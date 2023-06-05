@@ -48,7 +48,7 @@
   svg:not(.nav-logo),
   picture, 
   video.portada {
-    display: none;
+    display: none!important;
   }
 
   .contenedor-portada {

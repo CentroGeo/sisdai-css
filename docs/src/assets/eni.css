@@ -1688,6 +1688,11 @@ figure figcaption {
   display: flex;
   height: calc(100vh - 92px);
 }
+@media (max-width: 768px) {
+  .contenedor-portada {
+    height: calc(100vh - 120px);
+  }
+}
 .contenedor-portada .portada {
   position: absolute;
   width: 100%;
@@ -9103,7 +9108,7 @@ body {
 .a11y-simplificada svg:not(.nav-logo),
 .a11y-simplificada picture,
 .a11y-simplificada video.portada {
-  display: none;
+  display: none !important;
 }
 .a11y-simplificada .contenedor-portada {
   height: auto;
