@@ -4,6 +4,9 @@
 	min-height: 100px;
 	display: flex;
 	height: calc(100vh - 92px);
+	@media (max-width: map-get($breakpoints, "esc")) {
+		height: calc(100vh - 120px);
+	  }
 
 	.portada {
 		position: absolute;
