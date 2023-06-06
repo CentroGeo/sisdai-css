@@ -1291,11 +1291,6 @@ button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child)
 .a11y-simplificada button[class*=" boton"]:not(:last-child), button.hipervinculo-conacyt:not(:last-child), button.hipervinculo-gobmx:not(:last-child) {
   margin-right: inherit;
 }
-button.hipervinculo:visited, .a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
-.a11y-simplificada button[class^=boton]:visited,
-.a11y-simplificada button[class*=" boton"]:visited, button.hipervinculo-conacyt:visited, button.hipervinculo-gobmx:visited {
-  color: var(--hipervinculo-visitado);
-}
 
 a[class^=m-],
 a[class^=p-],
