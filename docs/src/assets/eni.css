@@ -86,6 +86,7 @@
   --hipervinculo-hover-sombra: transparent;
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
+  --hipervinculo-visitado: #9233FF;
   --navegacion-fondo: #eef;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;
@@ -1242,6 +1243,18 @@ a:disabled,
   background-color: transparent;
   color: var(--hipervinculo-deshabilitado-color);
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
+}
+a:visited,
+.hipervinculo:visited,
+.a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada input[type=button]:visited,
+.a11y-simplificada input[type=submit]:visited,
+.a11y-simplificada input[type=reset]:visited,
+.a11y-simplificada [class^=boton]:visited,
+.a11y-simplificada [class*=" boton"]:visited,
+.hipervinculo-conacyt:visited,
+.hipervinculo-gobmx:visited {
+  color: var(--hipervinculo-visitado);
 }
 a:hover,
 .hipervinculo:hover,
