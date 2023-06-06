@@ -27,7 +27,7 @@
   [class^='boton'],
   [class*=" boton"] {
     @extend .hipervinculo;
-
+    background-color: transparent !important;
     &:not(:last-child) {
       margin-right: map-get($espaciado, '1');
     }
@@ -46,18 +46,21 @@
 
   img:not(.nav-logo),
   svg:not(.nav-logo),
-  picture {
-    display: none;
+  picture, 
+  video.portada {
+    display: none!important;
   }
 
   .contenedor-portada {
+    height: auto;
 
 
     .degradado-negro-abajo {
       background: transparent;
 
       .contenido-abajo {
-        p {
+        margin-top: 0px;
+        * {
           color: var(--tipografia-color);
         }
       }

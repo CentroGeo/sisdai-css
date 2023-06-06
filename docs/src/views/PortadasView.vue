@@ -8,7 +8,7 @@
       contenido que cubre completamente el fondo de su contenedor reescalándose
       de forma centrada sin dejar espacios en blanco hacia arriba o hacia abajo
     </p>
-    <p>La altura de .contenedor-portada será por default min-height: 240px</p>
+    <p>La altura de .contenedor-portada será por default 	height: calc(100vh - 92px);</p>
     <pre>
 &lt;div class="contenedor-portada" style="height: 300px">
     &lt;img class="portada" src="http://placekitten.com/970/980">
@@ -16,7 +16,7 @@
 </pre
     >
 
-    <div class="contenedor-portada" style="height: 300px">
+    <div class="contenedor-portada" >
       <img class="portada" src="http://placekitten.com/970/980" />
     </div>
     <p>
@@ -24,7 +24,7 @@
       .degradado-negro-abajo, que puede ser un div que contenga texto
     </p>
     <pre>
-&lt;div class="contenedor-portada" style="height: 90vh">
+&lt;div class="contenedor-portada">
     &lt;img class="portada" src="http://placekitten.com/970/980">
     &lt;div class="degradado-negro-abajo">
         &lt;div class="contenido-abajo">
@@ -36,12 +36,12 @@
 &lt;/div>
 </pre
     >
-    <div class="contenedor-portada" style="height: 90vh">
+    <div class="contenedor-portada" >
       <img class="portada" src="http://placekitten.com/970/979" />
       <div class="degradado-negro-abajo">
         <div class="contenido-abajo">
           <div class="contenedor ancho-lectura">
-            <p class="titulo-eni texto-centrado">Título de ENI</p>
+            <h1 class="texto-centrado">Título de ENI</h1>
           </div>
         </div>
       </div>

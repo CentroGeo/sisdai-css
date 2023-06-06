@@ -1,8 +1,13 @@
 .contenedor-portada {
 	position: relative;
 	width: 100%;
-	min-height: 240px;
+	min-height: 100px;
 	display: flex;
+	height: calc(100vh - 92px);
+	@media (max-width: map-get($breakpoints, "esc")) {
+		height: calc(100vh - 120px);
+	  }
+
 	.portada {
 		position: absolute;
 		width: 100%;
@@ -16,7 +21,6 @@
 	.degradado-negro-abajo {
 		position: relative;
 		width: 100%;
-		color: var(--tipografia-color-1);
 		background: linear-gradient(transparent, #171717f7);
 		display: flex;
 		align-items: stretch;
@@ -25,7 +29,8 @@
 			margin-top: auto;
 			padding: 24px 24px 48px 24px;
 			width:100%;
-			p {
+			color: var(--tipografia-color-1) ;
+			* {
 				color: var(--tipografia-color-1);
 			}
 		}

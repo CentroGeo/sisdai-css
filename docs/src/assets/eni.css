@@ -1385,7 +1385,6 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-externo .degradado-negro-abajo {
   position: relative;
   width: 100%;
-  color: var(--tipografia-color-1);
   background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0.59) 60%, rgba(0, 0, 0, 0) 100%);
   display: flex;
   align-items: stretch;
@@ -1703,8 +1702,14 @@ figure figcaption {
 .contenedor-portada {
   position: relative;
   width: 100%;
-  min-height: 240px;
+  min-height: 100px;
   display: flex;
+  height: calc(100vh - 92px);
+}
+@media (max-width: 768px) {
+  .contenedor-portada {
+    height: calc(100vh - 120px);
+  }
 }
 .contenedor-portada .portada {
   position: absolute;
@@ -1719,7 +1724,6 @@ figure figcaption {
 .contenedor-portada .degradado-negro-abajo {
   position: relative;
   width: 100%;
-  color: var(--tipografia-color-1);
   background: linear-gradient(transparent, rgba(23, 23, 23, 0.968627451));
   display: flex;
   align-items: stretch;
@@ -1729,8 +1733,9 @@ figure figcaption {
   margin-top: auto;
   padding: 24px 24px 48px 24px;
   width: 100%;
+  color: var(--tipografia-color-1);
 }
-.contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+.contenedor-portada .degradado-negro-abajo .contenido-abajo * {
   color: var(--tipografia-color-1);
 }
 
@@ -9091,6 +9096,14 @@ body {
     margin: auto;
   }
 }
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada input[type=button],
+.a11y-simplificada input[type=submit],
+.a11y-simplificada input[type=reset],
+.a11y-simplificada [class^=boton],
+.a11y-simplificada [class*=" boton"] {
+  background-color: transparent !important;
+}
 .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(:last-child),
 .a11y-simplificada input[type=button]:not(:last-child),
 .a11y-simplificada input[type=submit]:not(:last-child),
@@ -9111,13 +9124,20 @@ body {
 }
 .a11y-simplificada img:not(.nav-logo),
 .a11y-simplificada svg:not(.nav-logo),
-.a11y-simplificada picture {
-  display: none;
+.a11y-simplificada picture,
+.a11y-simplificada video.portada {
+  display: none !important;
+}
+.a11y-simplificada .contenedor-portada {
+  height: auto;
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo {
   background: transparent;
 }
-.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo p {
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo {
+  margin-top: 0px;
+}
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo * {
   color: var(--tipografia-color);
 }
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-texto-degradado {
