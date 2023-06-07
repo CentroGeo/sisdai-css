@@ -63,6 +63,9 @@
   }
 }
 .nav-submenu {
+  background-color: var(--navegacion-fondo);
+  border-radius: var(--navegacion-redondeado);
+  box-shadow: var(--navegacion-sombra);
   width: 100%;
   list-style: none;
   margin: 0;
@@ -132,10 +135,7 @@
       }
     }
   }
-  .nav-submenu {
-    background-color: var(--navegacion-fondo);
-    border-radius: var(--navegacion-redondeado);
-    box-shadow: var(--navegacion-sombra);
+  .nav-submenu {    
     overflow: clip;
     opacity: 0;
     pointer-events: none;

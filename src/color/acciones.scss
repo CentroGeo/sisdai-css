@@ -1,10 +1,3 @@
-$acciones: (
-  'informativo': var(--acciones-informativo),
-  'error': var(--acciones-error),
-  'advertencia': var(--acciones-advertencia),
-  'correcto': var(--acciones-correcto),
-);
-
 @each $nombre, $color in $acciones {
   .fondo-#{$nombre} {
     background-color: $color;

@@ -20,14 +20,14 @@
     }
   }
 
-  button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu),
+  button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
   input[type=button],
   input[type=submit],
   input[type=reset],
   [class^='boton'],
   [class*=" boton"] {
     @extend .hipervinculo;
-
+    background-color: transparent !important;
     &:not(:last-child) {
       margin-right: map-get($espaciado, '1');
     }
@@ -46,18 +46,21 @@
 
   img:not(.nav-logo),
   svg:not(.nav-logo),
-  picture {
-    display: none;
+  picture, 
+  video.portada {
+    display: none!important;
   }
 
   .contenedor-portada {
+    height: auto;
 
 
     .degradado-negro-abajo {
       background: transparent;
 
       .contenido-abajo {
-        p {
+        margin-top: 0px;
+        * {
           color: var(--tipografia-color);
         }
       }

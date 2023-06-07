@@ -60,6 +60,7 @@
     &.active,
     &.nuxt-link-active,
     &.nuxt-link-exact-active,
+    &.router-link-active,
     &.router-link-exact-active {
       background-color: transparent;
       box-shadow: inset 0 -5px 0 var(--navegacion-conacyt-color);

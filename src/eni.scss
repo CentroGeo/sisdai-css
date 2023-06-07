@@ -15,6 +15,7 @@
 @import 'boton/base';
 @import 'boton/iconos';
 @import 'boton/compuestos';
+@import 'boton/flotante';
 
 @import 'link/base';
 @import 'link/identidad';
@@ -54,6 +55,10 @@
 @import 'navegacion/botones';
 @import 'navegacion/iconos';
 @import 'navegacion/identidad';
+@import 'navegacion/menu-lateral';
+@import 'navegacion/colapsable-navegacion';
+@import 'navegacion/indice-de-contenido';
+
 
 
 @import 'color/base';
@@ -63,6 +68,11 @@
 @import 'auxiliares/alineacion-texto';
 @import 'auxiliares/color-texto';
 @import 'auxiliares/alineacion-contenedores';
+@import 'auxiliares/globo-informacion';
+@import 'auxiliares/animaciones';
+
+@import 'accesibilidad/menu-accesibilidad';
+
 
 // a11y 
 // accesibilidad debe cargar al final

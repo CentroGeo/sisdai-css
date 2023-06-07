@@ -19,6 +19,9 @@ a,
     color: var(--hipervinculo-deshabilitado-color);
     box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
   }
+  &:visited {
+    color: var(--hipervinculo-visitado);
+  }
   &:hover {
     background-color: transparent;
     color: var(--hipervinculo-hover-color);

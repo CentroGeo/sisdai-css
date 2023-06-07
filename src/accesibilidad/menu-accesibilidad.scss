@@ -1,0 +1,122 @@
+.contenedor-menu-accesibilidad {
+  position: fixed;
+  z-index: 4;
+  margin: 0;
+  
+  .icono-boton-accesibilidad {
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    display: block;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0 0 -16px !important;
+
+    &:hover, &:focus {
+      box-shadow: 0 0 0 5px rgba(29, 116, 230, 0.25);
+    }
+
+    .icono-accesibilidad {
+      background-color: #fff;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      color: #1d74e6;
+      padding-left: 0 !important;
+    }
+  }
+
+  .menu-accesibilidad {
+    background: #f6f6f6;
+    box-shadow: 1px 1px 2px 0 var(--sombra);
+    padding: 0;
+    overflow: hidden;
+
+    .titulo {
+      text-align: left;
+      font-weight: 600;
+      padding: 8px 16px;
+      margin: 0;
+    }
+
+    .opcion-accesibilidad {
+      background: transparent;
+      border: none;
+      display: flex;
+      gap: 8px;
+      width: 100%;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-align: left;
+      padding: 8px 16px;
+      margin-right: 0;
+
+      &:hover, &:focus {
+        background: #dddddd;
+      }
+
+      .icono-4 {
+        padding: 0;
+      }
+    }
+  }
+
+  /* T R A N S I C I O N E S */
+  --a11y-transicion: 300ms;
+  --a11y-ancho: 200;
+  --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
+  bottom: 24px;
+  right: 24px;
+  transition: /* cambia 16px */ bottom
+      /* dura lo que al contenedor le tome crecer 32px (16*2) */
+      calc(var(--a11y-relacion-tiempo) * 32) linear
+      /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 64px (32*2) */
+      calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 64)),
+    /* cambia 16px */ right
+      /* dura lo que al contenedor le tome crecer 32px (16*2) */
+      calc(var(--a11y-relacion-tiempo) * 32) linear
+      /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 64px (32*2) */
+      calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 64));
+
+  .menu-accesibilidad {
+    max-height: 0px;
+    width: 0px;
+    margin: 0 16px 16px 24px;
+    transition: /* cambia 200px */ width
+        /* dura el tiempo completo de la transición */ var(--a11y-transicion)
+        linear /* al cerrar: inicia sin retraso */ 0s,
+      /* cambia el alto del contenido, sin exceder 270px */ max-height
+        /* dura el tiempo completo de la transición */ var(--a11y-transicion)
+        linear /* al cerrar: inicia sin retraso */ 0s,
+      /* cambia 16px */ margin-right
+        /* dura lo que al contenedor le tome crecer 32px (16*2) */
+        calc(var(--a11y-relacion-tiempo) * 32) linear
+        /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 32px */
+        calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 32)),
+      /* cambia 16px */ margin-bottom
+        /* dura lo que al contenedor le tome crecer 32px (16*2) */
+        calc(var(--a11y-relacion-tiempo) * 32) linear
+        /* al cerrar: tiene un retraso del tiempo que al contenedor le tome reducir a 32px */
+        calc(var(--a11y-relacion-tiempo) * calc(var(--a11y-ancho) - 32));
+  }
+
+  &.abierto {
+    bottom: 8px;
+    right: 8px;
+    transition-delay: /* al abrir: inicia sin retraso */ 0s,
+      /* al abrir: inicia sin retraso */ 0s;
+
+    .menu-accesibilidad {
+      width: calc(var(--a11y-ancho) * 1px);
+      max-height: 270px;
+      margin-right: 0;
+      margin-bottom: 0;
+      transition-delay: 0s, 0s,
+        /* al abrir: tiene un retraso del tiempo que al contenedor le tome crecer a 32px */
+          calc(var(--a11y-relacion-tiempo) * 32),
+        /* al abrir: tiene un retraso del tiempo que al contenedor le tome crecer a 32px */
+          calc(var(--a11y-relacion-tiempo) * 32);
+    }
+  }
+}

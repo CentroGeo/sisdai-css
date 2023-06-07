@@ -174,6 +174,10 @@
         <span>icono-eliminar</span>
       </div>
       <div>
+        <span class="icono-enlace-externo"></span>
+        <span>icono-enlace-externo</span>
+      </div>
+      <div>
         <span class="icono-enlace-subrayado"></span>
         <span>icono-enlace-subrayado</span>
       </div>

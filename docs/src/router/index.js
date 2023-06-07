@@ -104,6 +104,11 @@ const router = createRouter({
       name: 'navegacion',
       component: () => import('../views/NavegacionView.vue')
     },
+    {
+      path: '/globo-informacion',
+      name: 'globo-informacion',
+      component: () => import('../views/GloboInformacionView.vue')
+    }
   ]
 })
 

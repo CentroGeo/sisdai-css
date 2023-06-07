@@ -1,3 +1,132 @@
+// COLOR
+$color-gobmx: (
+  'oscuro-1': #18302D,
+  'oscuro-2': #1F5D50,
+  'claro-1': #DFC9A1,
+  'claro-2': #BD9558,
+  'acento': #9E2148,
+);
+
+$color-conacyt: (
+  'oscuro-1': #002663,
+  'oscuro-2': #003384,
+  'claro-0': #f6f6f6,
+  'claro-1': #d5d5d5,
+  'claro-2': #8C8D8E,
+  'acento': #13aff0,
+);
+
+$color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+
+$acciones: (
+  'informativo': var(--acciones-informativo),
+  'error': var(--acciones-error),
+  'advertencia': var(--acciones-advertencia),
+  'correcto': var(--acciones-correcto),
+);
+
+$sombras-estados: (
+  'focus': 0px 0px 8px 0 var(--sombra-focus),
+  'hover': 3px 3px 9px 0 var(--sombra-hover)
+);
+$sombras-produndidad: (
+  '0': 0 0 0 0 transparent,
+  '1': 1px 1px 2px 0 var(--sombra),
+  '2': 4px 4px 8px 2px var(--sombra),
+  '3': 6px 6px 12px 3px var(--sombra),
+  '4': 8px 8px 16px 4px var(--sombra),
+  '5': 12px 12px 24px 6px var(--sombra),
+);
+
+$bordes: ( // x * 2
+  '0': 0px,
+  '1': 1px,
+  '2': 2px,
+  '4': 4px,
+  '8': 8px,
+  '16': 16px,
+  '20': 20px,
+);
+
+// RETICULA
+$espaciado: ( // x * 8
+  '0': 0,
+  'minimo': 4px,
+  '1': 8px,
+  '2': 16px,
+  '3': 24px,
+  '4': 32px,
+  '5': 40px,
+  '6': 48px,
+  '7': 56px,
+  '8': 64px,
+  '9': 72px,
+  '10': 80px,
+  'extra': 96px,
+  'maximo': 120px,
+);
+
+// TEXTOS
+$tamanio: ( // x * 8
+  '0': 0,
+  'minimo': .25rem,
+  '1': .5rem,
+  '2': 1rem,
+  '3': 1.5rem,
+  '4': 2rem,
+  '5': 2.5rem,
+  '6': 3rem,
+  '7': 3.5rem,
+  '8': 4rem,
+  '9': 4.5rem,
+  '10': 5rem,
+  'extra': 6rem,
+  'maximo': 7.5rem
+);
+
+$breakpoints: (
+  'mov': 320px,
+  'esc': 768px,
+);
+
+$navegacion-breakpoint: 768px;
+
+$contenedores: (
+  'mov': (
+    'ancho-maximo': 100%,
+    'ancho-lectura': 100%,
+    'ancho-minimo': 100%,
+    'margen-interior': map-get($espaciado, '2'),
+  ),
+  'esc': (
+    'ancho-maximo': 1152px,
+    'ancho-lectura': 700px,
+    'ancho-minimo': 500px,
+    'margen-interior': map-get($espaciado, '5'),
+  )
+);
+
+$a11y-simplificada-contenedores: (
+  'mov': (
+    'columnas': 1,
+    'espaciado': map-get($espaciado, '2'),
+  ),
+  'esc': (
+    'columnas': 2,
+    'espaciado': map-get($espaciado, '3'),
+  )
+);
+
+$columnas: (
+  'mov': (
+    'columnas': 8,
+    'espaciado': map-get($espaciado, '2'),
+  ),
+  'esc': (
+    'columnas': 16,
+    'espaciado': map-get($espaciado, '3'),
+  )
+);
 
 :root {
   --pagina-fondo: #fff;
@@ -101,7 +230,9 @@
   --hipervinculo-hover-sombra: transparent;
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
+  --hipervinculo-visitado: #9233FF;
 
+  // Navegacion
   --navegacion-fondo: #eef;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;
@@ -112,6 +243,9 @@
   --navegacion-fondo-active: #00f;
   --navegacion-sombra-active: 0 0 0 0;
   --navegacion-color-active: #fff;
+  --menu-lateral-fondo: #DED5FF;
+  --submenu-lateral-fondo: #D0CCFF;
+  --menu-lateral-accion: #0101FC;
 
   --navegacion-conacyt-fondo: #fff;
   --navgeacion-conacyt-sombra: #0012;
@@ -129,107 +263,25 @@
   --portada-color: #fff;
   --portada-fondo-grandiente: linear-gradient(transparent, #171717f7);
 
+  // Color
+  @each $id, $valor in $color-gobmx {
+    --color-gobmx-#{$id}: #{$valor};
+  }
+
+  @each $id, $valor in $color-conacyt {
+    --color-conacyt-#{$id}: #{$valor};
+  }
+  --color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+
+  // Reticula
+  @each $id, $valor in $espaciado {
+    --espaciado-#{$id}: #{$valor};
+  }
+
+  // Breakpoints
+  @each $id, $valor in $breakpoints {
+    --breakpoints-#{$id}: #{$valor};
+  }
+  --navegacion-breakpoint: 768px;
+
 }
-// COLOR
-$color-gobmx: (
-  'oscuro-1': #18302D,
-  'oscuro-2': #1F5D50,
-  'claro-1': #DFC9A1,
-  'claro-2': #BD9558,
-  'acento': #9E2148,
-);
-
-$color-conacyt: (
-  'oscuro-1': #002663,
-  'oscuro-2': #003384,
-  'claro-0': #f6f6f6,
-  'claro-1': #d5d5d5,
-  'claro-2': #8C8D8E,
-  'acento': #13aff0,
-);
-$color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
-
-$sombras-estados: (
-  'focus': 0px 0px 8px 0 var(--sombra-focus),
-  'hover': 3px 3px 9px 0 var(--sombra-hover)
-);
-$sombras-produndidad: (
-  '0': 0 0 0 0 transparent,
-  '1': 1px 1px 2px 0 var(--sombra),
-  '2': 4px 4px 8px 2px var(--sombra),
-  '3': 6px 6px 12px 3px var(--sombra),
-  '4': 8px 8px 16px 4px var(--sombra),
-  '5': 12px 12px 24px 6px var(--sombra),
-);
-
-$bordes: ( // x * 2
-  '0': 0px,
-  '1': 1px,
-  '2': 2px,
-  '4': 4px,
-  '8': 8px,
-  '16': 16px,
-  '20': 20px,
-);
-
-// RETICULA
-$espaciado: ( // x * 8
-  '0': 0,
-  'minimo': 4px,
-  '1': 8px,
-  '2': 16px,
-  '3': 24px,
-  '4': 32px,
-  '5': 40px,
-  '6': 48px,
-  '7': 56px,
-  '8': 64px,
-  '9': 72px,
-  '10': 80px,
-  'extra': 96px,
-  'maximo': 120px,
-);
-
-$breakpoints: (
-  'mov': 320px,
-  'esc': 768px,
-);
-
-$navegacion-breakpoint: 768px;
-
-$contenedores: (
-  'mov': (
-    'ancho-maximo': 100%,
-    'ancho-lectura': 100%,
-    'ancho-minimo': 100%,
-    'margen-interior': map-get($espaciado, '2'),
-  ),
-  'esc': (
-    'ancho-maximo': 1152px,
-    'ancho-lectura': 700px,
-    'ancho-minimo': 500px,
-    'margen-interior': map-get($espaciado, '5'),
-  )
-);
-
-$a11y-simplificada-contenedores: (
-  'mov': (
-    'columnas': 1,
-    'espaciado': map-get($espaciado, '2'),
-  ),
-  'esc': (
-    'columnas': 2,
-    'espaciado': map-get($espaciado, '3'),
-  )
-);
-
-$columnas: (
-  'mov': (
-    'columnas': 8,
-    'espaciado': map-get($espaciado, '2'),
-  ),
-  'esc': (
-    'columnas': 16,
-    'espaciado': map-get($espaciado, '3'),
-  )
-);
