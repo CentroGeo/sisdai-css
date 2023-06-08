@@ -382,7 +382,6 @@
 	  	filter: brightness(0) invert(1);
 		}
 	}
-
   // Iconos en inputs  
 	.input-correcto {
 		span[class*="icono-"] {
@@ -394,17 +393,14 @@
 		  color: var(--acciones-error);
 		}
 	}
-
   // Iconos
 	span[class*="icono-"] {
     color: #fff;
   }
-
   // Texto en input
   #input-readonly {
 		--input-color: #6f6f6f;
 	}
-
   // Navegacion gob
   .nav-hipervinculo {
     .icono-buscar {
@@ -418,7 +414,6 @@
       }
     }
   }
-
   // Listas
   .lista-logo {
     .logo {
@@ -427,12 +422,10 @@
       }
     }
   }
-
   // Imágenes
   picture, img {
 		filter: brightness(.8) contrast(1.2);
 	}
-
   // Contenedores documentación retícula
   .conacyt-fondo-claro-1 {
     background-color: #393939;

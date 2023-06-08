@@ -9,10 +9,10 @@
   const showGob = ref(null)
   const showMenu = ref(null)
   const showSubmenu1 = ref(null)
-  const isA11yOscura = ref(null)
 
   isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
-  showSubmenu1.value, isA11yOscura.value = false
+  showSubmenu1.value = false
+  
 
   function toggleA11yTypography() {
     isA11yTypography.value = !isA11yTypography.value
@@ -21,11 +21,21 @@
   function toggleA11yView() {
     isA11yView.value = !isA11yView.value
   }
-
   function toggleA11yLink() {
     isA11yUnderline.value = !isA11yUnderline.value
   }
-
+  function toggleGob() {
+    showMenu.value = false
+    showGob.value = !showGob.value
+  }
+  function toggleMenu() {
+    showGob.value = false
+    showSubmenu1.value = false
+    showMenu.value = !showMenu.value
+  }
+  function toggleReticula() {
+    showSubmenu1.value = !showSubmenu1.value
+  }
   function upFontSize() {
     fontSize.value ++
     let up_size = `${fontSize.value}px`
@@ -36,34 +46,21 @@
     let down_size = `${fontSize.value}px`
     document.documentElement.style.setProperty('--tipografia-tamanio',down_size)
   }
-
   function resetA11y() {
     isA11yTypography.value = false
     isA11yView.value = false
     isA11yUnderline.value = false
-
-    isA11yOscura.value = false
     fontSize.value = 16
     document.documentElement.style.setProperty('--tipografia-tamanio','16')
-    
+    // Resetea variable
+    isA11yOscura.value = false
     theme.value = 'light'
   }
 
-  function toggleGob() {
-    showMenu.value = false
-    showGob.value = !showGob.value
-  }
-
-  function toggleMenu() {
-    showGob.value = false
-    showSubmenu1.value = false
-    showMenu.value = !showMenu.value
-  }
-
-  function toggleReticula() {
-    showSubmenu1.value = !showSubmenu1.value
-  }
-
+  // Declaración variable reactiva
+  const isA11yOscura = ref(null)
+  // Inicialización
+  isA11yOscura.value = false
   // Módulo de vista oscura
   const theme = ref(null) 
   theme.value = 'auto' // 'dark' | 'light' | 'auto'
@@ -73,32 +70,54 @@
   function alternarTema() {
     //rotar entre estos 3 valores
     const themes = ['light','dark','auto']
-    theme.value = themes[(themes.indexOf(theme.value)+1)%3]
+    theme.value = themes[
+      (themes.indexOf(theme.value) + 1) % 3
+    ]
+
     localStorage.setItem("theme", theme.value)
   }
   function alternarPerfil() {
-    document.documentElement.removeAttribute(`data-dark-theme-${perfil.value}`)
+    document
+      .documentElement
+      .removeAttribute(`data-dark-theme-${perfil.value}`)
     //rotar entre estos valores
     const perfiles = ['neutro', 'sisdai', 'gema']
-    perfil.value = perfiles[(perfiles.indexOf(perfil.value)+1)%3]
+    perfil.value = perfiles[
+      (perfiles.indexOf(perfil.value) + 1) % 3
+    ]
   }
   function setThemeInDocument() {
-    const modoOscuro = ref((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches && theme.value === 'auto') || theme.value === 'dark')
-    document.documentElement.setAttribute(`data-dark-theme-${perfil.value}`, modoOscuro.value)
-    modoOscuro.value === true ? isA11yOscura.value = true : isA11yOscura.value = false
+    const modoOscuro = ref(
+      (
+        window.matchMedia 
+          && window.matchMedia('(prefers-color-scheme: dark)').matches 
+          && theme.value === 'auto'
+      ) || theme.value === 'dark'
+    )
+
+    document
+    .documentElement
+    .setAttribute(`data-dark-theme-${perfil.value}`, modoOscuro.value)
+    
+    modoOscuro.value === true 
+    ? isA11yOscura.value = true : isA11yOscura.value = false
   }
   const nombreTemaActual = computed(() => {
-    const nombres = {'light':'Claro','dark':'Oscuro','auto':'Automático'}
+    const nombres = {
+      'light':'Claro',
+      'dark':'Oscuro',
+      'auto':'Automático'
+    }
     return nombres[theme.value]
   })
    
   // Hooks cycles
+  onBeforeMount(() => {
+    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setThemeInDocument)
+  })
   onMounted(() => {
     setThemeInDocument()
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',setThemeInDocument)
-  })
-  onBeforeMount(() => {
-    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setThemeInDocument)
   })
   watch([theme, perfil], () => {
     setThemeInDocument()    
@@ -208,6 +227,7 @@
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
+
       <button 
         class="boton-primario" 
         @click="alternarTema">
@@ -218,6 +238,7 @@
         @click="alternarPerfil">
         Perfil: {{ perfil }}
       </button>
+
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>
     <main role="main" class="contenedor m-y-maximo">
