@@ -234,6 +234,7 @@
         Tema: {{ nombreTemaActual }}
       </button>
       <button 
+        v-if="nombreTemaActual === 'Oscuro'"
         class="boton-primario" 
         @click="alternarPerfil">
         Perfil: {{ perfil }}
