@@ -10,6 +10,9 @@
     background: transparent;
     box-shadow: none;
     color: map-get($color-gobmx, 'claro-1');
+    &:visited {
+      color: map-get($color-gobmx, 'claro-1');
+    }
     &:active,
     &:hover,
     &:focus {
@@ -50,6 +53,9 @@
     background: transparent;
     box-shadow: none;
     color: map-get($color-conacyt, 'oscuro-1');
+    &:visited {
+      color: map-get($color-conacyt, 'oscuro-1');
+    }
     &:hover,
     &:focus {
       background-color:map-get($color-conacyt, 'claro-0'); 
