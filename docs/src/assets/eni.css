@@ -1300,6 +1300,22 @@ a:focus,
   outline: none;
 }
 
+a.boton:visited {
+  color: var(--hipervinculo-color);
+}
+
+a.boton.boton-primario:visited, a.boton.boton-icono:visited, a.boton.boton-descarga:visited, a.boton.boton-info:visited {
+  color: var(--boton-primario-color);
+}
+
+a.boton.boton-secundario:visited, .boton-terciario:visited {
+  color: var(--boton-secundario-color);
+}
+
+a.boton.boton-terciario:visited {
+  color: var(--boton-terciario-color);
+}
+
 button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child):not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada button[class^=boton]:not(:last-child),
 .a11y-simplificada button[class*=" boton"]:not(:last-child), button.hipervinculo-conacyt:not(:last-child), button.hipervinculo-gobmx:not(:last-child) {
