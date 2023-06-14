@@ -955,6 +955,13 @@ input[type=reset]:disabled,
 .boton:disabled {
   pointer-events: none;
 }
+button:visited,
+input[type=button]:visited,
+input[type=submit]:visited,
+input[type=reset]:visited,
+.boton:visited {
+  color: var(--hipervinculo-color);
+}
 button:not(:last-child),
 input[type=button]:not(:last-child),
 input[type=submit]:not(:last-child),
@@ -973,6 +980,9 @@ input[type=reset]:not(:last-child),
   border-color: var(--boton-primario-deshabilitado-borde);
   box-shadow: 3px 3px 4px var(--boton-primario-deshabilitado-sombra);
   color: var(--boton-primario-deshabilitado-color);
+}
+.boton-primario:visited, .boton-info:visited, .boton-descarga:visited, .boton-icono:visited {
+  color: var(--boton-primario-color);
 }
 .boton-primario:not(:disabled):hover, .boton-info:not(:disabled):hover, .boton-descarga:not(:disabled):hover, .boton-icono:not(:disabled):hover {
   background-color: var(--boton-primario-hover-fondo);
@@ -999,6 +1009,9 @@ input[type=reset]:not(:last-child),
   box-shadow: 3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
   color: var(--boton-secundario-deshabilitado-color);
 }
+.boton-secundario:visited {
+  color: var(--boton-secundario-color);
+}
 .boton-secundario:not(:disabled):hover {
   background-color: var(--boton-secundario-hover-fondo);
   border-color: var(--boton-secundario-hover-borde);
@@ -1023,6 +1036,9 @@ input[type=reset]:not(:last-child),
   border-color: var(--boton-terciario-deshabilitado-borde);
   box-shadow: 3px 3px 4px var(--boton-terciario-deshabilitado-sombra);
   color: var(--boton-terciario-deshabilitado-color);
+}
+.boton-terciario:visited {
+  color: var(--boton-terciario-color);
 }
 .boton-terciario:not(:disabled):hover {
   background-color: var(--boton-terciario-hover-fondo);
@@ -1300,22 +1316,6 @@ a:focus,
   outline: none;
 }
 
-a.boton:visited {
-  color: var(--hipervinculo-color);
-}
-
-a.boton.boton-primario:visited, a.boton.boton-icono:visited, a.boton.boton-descarga:visited, a.boton.boton-info:visited {
-  color: var(--boton-primario-color);
-}
-
-a.boton.boton-secundario:visited, .boton-terciario:visited {
-  color: var(--boton-secundario-color);
-}
-
-a.boton.boton-terciario:visited {
-  color: var(--boton-terciario-color);
-}
-
 button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child):not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
 .a11y-simplificada button[class^=boton]:not(:last-child),
 .a11y-simplificada button[class*=" boton"]:not(:last-child), button.hipervinculo-conacyt:not(:last-child), button.hipervinculo-gobmx:not(:last-child) {
@@ -1370,6 +1370,9 @@ a[class*=" p-"],
   font-weight: 400;
   text-decoration: none;
 }
+.hipervinculo-gobmx:visited {
+  color: #DFC9A1;
+}
 .hipervinculo-gobmx:hover, .hipervinculo-gobmx:focus {
   color: #BD9558;
 }
@@ -1378,6 +1381,9 @@ a[class*=" p-"],
   color: #d5d5d5;
   font-weight: 400;
   text-decoration: none;
+}
+.hipervinculo-conacyt:visited {
+  color: #d5d5d5;
 }
 .hipervinculo-conacyt:hover {
   color: #13aff0;
@@ -8440,6 +8446,9 @@ ol + hr {
   box-shadow: none;
   color: #DFC9A1;
 }
+.navegacion-gobmx .nav-hipervinculo:visited {
+  color: #DFC9A1;
+}
 .navegacion-gobmx .nav-hipervinculo:active, .navegacion-gobmx .nav-hipervinculo:hover, .navegacion-gobmx .nav-hipervinculo:focus {
   background: transparent;
   box-shadow: none;
@@ -8472,6 +8481,9 @@ ol + hr {
   background: transparent;
   box-shadow: none;
   color: var(--navegacion-conacyt-color);
+}
+.navegacion-conacyt .nav-hipervinculo:visited {
+  color: #002663;
 }
 .navegacion-conacyt .nav-hipervinculo:hover, .navegacion-conacyt .nav-hipervinculo:focus {
   background-color: #f6f6f6;

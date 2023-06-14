@@ -24,6 +24,9 @@ input[type=reset],
   &:disabled {
     pointer-events: none;
   }
+  &:visited {
+    color: var(--hipervinculo-color);
+  }
   &:not(:last-child) {
     margin-right:  map-get($espaciado, '1');
   }
@@ -38,6 +41,9 @@ input[type=reset],
     border-color: var(--boton-primario-deshabilitado-borde);
     box-shadow: 3px 3px 4px var(--boton-primario-deshabilitado-sombra);
     color: var(--boton-primario-deshabilitado-color);
+  }
+  &:visited {
+    color: var(--boton-primario-color);
   }
   &:not(:disabled):hover {
     background-color: var(--boton-primario-hover-fondo);
@@ -64,6 +70,9 @@ input[type=reset],
     box-shadow: 3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
     color: var(--boton-secundario-deshabilitado-color);
   }
+  &:visited {
+    color: var(--boton-secundario-color);
+  }
   &:not(:disabled):hover {
     background-color: var(--boton-secundario-hover-fondo);
     border-color: var(--boton-secundario-hover-borde);
@@ -88,6 +97,9 @@ input[type=reset],
     border-color: var(--boton-terciario-deshabilitado-borde);
     box-shadow: 3px 3px 4px var(--boton-terciario-deshabilitado-sombra);
     color: var(--boton-terciario-deshabilitado-color);
+  }
+  &:visited {
+    color: var(--boton-terciario-color);
   }
   &:not(:disabled):hover {
     background-color: var(--boton-terciario-hover-fondo);
