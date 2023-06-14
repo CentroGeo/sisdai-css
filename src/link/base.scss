@@ -35,27 +35,6 @@ a,
   }
 }
 
-a.boton {
-  &:visited {
-    color: var(--hipervinculo-color);
-  }
-}
-a.boton.boton-primario {
-  &:visited {
-    color: var(--boton-primario-color);
-  }
-}
-a.boton.boton-secundario, .boton-terciario {
-  &:visited {
-    color: var(--boton-secundario-color);
-  }
-}
-a.boton.boton-terciario {
-  &:visited {
-    color: var(--boton-terciario-color);
-  }
-}
-
 button.hipervinculo {
   &:not(:last-child) {
     margin-right: inherit;
