@@ -91,28 +91,28 @@
     <div class="columna-4">
       <p class="titulo-lista">lista con iconos</p>
       <ul class="lista-icono">
-        <li class="icon sisdai-flecha-derecha">
+        <li class="icon icono-flecha-derecha">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>
             <p class="texto-terciario">texto-terciario</p>
           </div>
         </li>
-        <li class="icon sisdai-mapa-generador">
+        <li class="icon icono-mapa-generador">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>
             <p class="texto-terciario">texto-terciario</p>
           </div>
         </li>
-        <li class="icon sisdai-documento">
+        <li class="icon icono-documento">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>
             <p class="texto-terciario">texto-terciario</p>
           </div>
         </li>
-        <li class="icon sisdai-presentacion">
+        <li class="icon icono-presentacion">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>
@@ -127,7 +127,7 @@
         <li>
           <a href="#">
             <div class="avatar">
-              <img src="https://www.fillmurray.com/300/300" alt="murray"/>
+              <img src="https://www.placebear.com/300/300" alt="placebear"/>
             </div>
             <div class="texto">
               <p class="texto-primario">texto-primario</p>
@@ -139,7 +139,7 @@
         <li>
           <div class="elemento">
             <div class="avatar">
-              <img src="https://www.fillmurray.com/600/600" alt="murray"/>
+              <img src="https://www.placebear.com/600/600" alt="placebear"/>
             </div>
             <div class="texto">
               <p class="texto-primario">texto-primario</p>
@@ -150,7 +150,7 @@
         </li>
         <li>
           <div class="avatar">
-            <img src="https://www.fillmurray.com/250/250" alt="murray"/>
+            <img src="https://www.placebear.com/250/250" alt="placebear"/>
           </div>
           <div class="texto">
             <p class="texto-primario">texto-primario<br>a dos lineas</p>
