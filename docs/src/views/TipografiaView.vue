@@ -264,11 +264,33 @@
       <p class="notas">Notas: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officia nesciunt error nisi id laborum atque a, pariatur eligendi ipsam rem maxime in deserunt eum sapiente quis vero. Rerum, aut!</p>
     </div>
     <div class="columna-4">
-<pre class="m-x--1">
-  &lt; p class="notas">
-    Notas: Lorem ipsum . . .
-  &lt;/ p>
-</pre>
+      <pre class="m-x--1">
+        &lt; p class="notas">
+          Notas: Lorem ipsum . . .
+        &lt;/ p>
+      </pre>
+    </div>
+    <div class="columna-4">
+      <p> 0.875rem <br> 14px <br> Regular (400)</p>
+    </div>
+  </div>
+  <div class="contenedor ancho-lectura contenedor-izq">
+    <p>Adicionalmente, se puede utilizar un color de fondo para el contenido de notas la clase notas-fondo. Este color está conectado a una variable que responde a las vistas de accesibilidad:</p>
+  </div>
+  <div class="flex">
+    <div class="columna-8">
+      <div class="notas-fondo p-2 borde-redondeado-8">
+        <p class="notas">Notas: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officia nesciunt error nisi id laborum atque a, pariatur eligendi ipsam rem maxime in deserunt eum sapiente quis vero. Rerum, aut!</p>
+      </div>
+    </div>
+    <div class="columna-4">
+      <pre class="m-x--1">
+        &lt; div class="notas-fondo p-2 borde-redondeado-8">
+          &lt; p class="notas">
+            Notas: Lorem ipsum . . .
+          &lt;/ p>
+        &lt;/ div>
+      </pre>
     </div>
     <div class="columna-4">
       <p> 0.875rem <br> 14px <br> Regular (400)</p>

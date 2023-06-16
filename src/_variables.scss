@@ -129,12 +129,13 @@ $columnas: (
 );
 
 :root {
-  --pagina-fondo: #fff;
+  --pagina-fondo: #ffffff;
+  --nota-fondo: #CCE1FF;
   
   --tipografia-color: #141414;
-  --tipografia-color-1: #fff;
-  --tipografia-color-2: #6f7271;
-  --tipografia-color-3: #404041;
+  --tipografia-color-1: #ffffff;
+  --tipografia-color-2: #0068FF;
+  --tipografia-color-3: #5E7392;
 
   --tabla-fondo-impar: #f6f6f6;
   --tabla-fondo-notas: #a9a8a9;
@@ -169,21 +170,21 @@ $columnas: (
   --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
 
-  --boton-primario-fondo: #141414;
-  --boton-primario-borde: #141414;
-  --boton-primario-color: #fff;
+  --boton-primario-fondo: #0068FF;
+  --boton-primario-borde: #0068FF;
+  --boton-primario-color: #ffffff;
   --boton-primario-sombra: transparent;
-    --boton-primario-deshabilitado-fondo: #ddd;
-    --boton-primario-deshabilitado-borde: #ddd;
-    --boton-primario-deshabilitado-color: #a9a8a9;
+    --boton-primario-deshabilitado-fondo: #dddddd;
+    --boton-primario-deshabilitado-borde: #dddddd;
+    --boton-primario-deshabilitado-color: #767677;
     --boton-primario-deshabilitado-sombra: transparent;
-      --boton-primario-hover-fondo: #404041;
-      --boton-primario-hover-borde: #404041;
-      --boton-primario-hover-color: #fff;
+      --boton-primario-hover-fondo: #0058CC;
+      --boton-primario-hover-borde: #0058CC;
+      --boton-primario-hover-color: #ffffff;
       --boton-primario-hover-sombra: #00000033;
-        --boton-primario-focus-fondo: #141414;
+        --boton-primario-focus-fondo: #0068FF;
         --boton-primario-focus-borde: #005DFF;
-        --boton-primario-focus-color: #fff;
+        --boton-primario-focus-color: #ffffff;
         --boton-primario-focus-sombra: #005DFF;
 
   --boton-secundario-fondo: #fff;
