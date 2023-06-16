@@ -30,7 +30,7 @@
     <input class="boton-secundario" type="submit" value="input[submit]">
     <input class="boton-secundario" type="reset" value="input[reset]">
   </p>
-  <h3>terciario</h3>
+  <!-- <h3>terciario</h3>
   <p>
     <button class="boton-terciario">button.boton-terciario</button>
     <button class="boton-terciario" disabled>disabled</button>
@@ -38,7 +38,7 @@
     <input class="boton-terciario" type="button" value="input[button]">
     <input class="boton-terciario" type="submit" value="input[submit]">
     <input class="boton-terciario" type="reset" value="input[reset]">
-  </p>
+  </p> -->
 
   <h2 class="m-t-10">tamaño</h2>
   <p>
@@ -51,11 +51,11 @@
     <button class="boton-secundario boton-chico"> boton-chico </button>
     <button class="boton-secundario boton-grande"> boton-grande </button>
   </p>
-  <p>
+  <!-- <p>
     <button class="boton-terciario"> boton </button>
     <button class="boton-terciario boton-chico"> boton-chico </button>
     <button class="boton-terciario boton-grande"> boton-grande </button>
-  </p>
+  </p> -->
   <p>
     <button class="boton-primario"> boton <span class="icono-flecha-derecha"></span></button>
     <button class="boton-primario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
@@ -66,11 +66,11 @@
     <button class="boton-secundario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
     <button class="boton-secundario boton-grande"> boton-grande <span class="icono-flecha-derecha"></span></button>
   </p>
-  <p>
+  <!-- <p>
     <button class="boton-terciario"> boton <span class="icono-flecha-derecha"></span></button>
     <button class="boton-terciario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
     <button class="boton-terciario boton-grande"> boton-grande <span class="icono-flecha-derecha"></span></button>
-  </p>
+  </p> -->
 
   <h2 class="m-t-10">Iconos</h2>
   <p>boton icono + primario + secundario + terciario</p>
@@ -83,10 +83,10 @@
       <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
-    <button class="boton-icono boton-terciario">
+    <!-- <button class="boton-icono boton-terciario">
       <span class="icono-flecha-derecha"></span>
       <span class="a11y-solo-lectura">Siguiente.</span>
-    </button>
+    </button> -->
   </p>
   <p>boton icono +  -  + chico + grande</p>
   <p>
