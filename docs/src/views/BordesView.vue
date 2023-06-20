@@ -25,7 +25,7 @@
       <p>.borde-b</p><p> .borde-color-3<br> #a9a8a9</p>
     </div>
     <div class="columna-2 borde-b borde-color-4">
-      <p>.borde-b</p><p> .borde-color-4<br> #fff</p>
+      <p>.borde-b</p><p> .borde-color-4<br> #ffffff</p>
     </div>
     <div class="columna-2 borde borde-color-1 borde-r-color-3">
       <p>.borde</p><p>.borde-color-1</p><p>.borde-r-color-3</p>

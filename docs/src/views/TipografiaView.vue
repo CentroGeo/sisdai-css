@@ -138,10 +138,10 @@
   
     <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado"> <p class="titulo-subseccion">titulo subseccion</p> </div>
     <div class="columna-2">
-      <p><b>Celular</b><br> 1.125rem <br> 18px <br> Regular (400) <br> color: #6f7271 </p>
+      <p><b>Celular</b><br> 1.125rem <br> 18px <br> Regular (400) <br> color: #0068FF </p>
     </div>
     <div class="columna-2">
-      <p><b>Escritorio</b><br> 1.5rem <br> 24px <br> Regular (400) <br> color: #6f7271 </p>
+      <p><b>Escritorio</b><br> 1.5rem <br> 24px <br> Regular (400) <br> color: #0068FF </p>
     </div>
     <div class="columna-4">
 <pre class="m-x--1">
@@ -184,7 +184,7 @@
     Lorem ipsum . . .
   &lt;/ p>
 </pre>
-      <p>#fff</p>
+      <p>#ffffff</p>
     </div>
     <div class="columna-4">
       <p class="texto-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa pariatur suscipit recusandae, modi sit ipsa fugiat facere doloremque animi repellat similique perspiciatis error, accusantium voluptatum nemo corporis, ipsum cumque.</p>
@@ -195,7 +195,7 @@
     Lorem ipsum . . .
   &lt;/ p>
 </pre>
-      <p>#6f7271</p>
+      <p>#0068FF</p>
     </div>
     <div class="columna-4">
       <p class="texto-color-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa pariatur suscipit recusandae, modi sit ipsa fugiat facere doloremque animi repellat similique perspiciatis error, accusantium voluptatum nemo corporis, ipsum cumque.</p>
@@ -206,7 +206,7 @@
     Lorem ipsum . . .
   &lt;/ p>
 </pre>
-      <p>#404041</p>
+      <p>#5E7392</p>
     </div>
   </div>
   <h3 class="m-t-5">Parrafos especiales</h3>
@@ -248,10 +248,10 @@
 </pre>
     </div>
     <div class="columna-2">
-      <p><b>Celular</b><br>1.5rem <br> 24px <br> #404041</p>
+      <p><b>Celular</b><br>1.5rem <br> 24px <br> #5E7392</p>
     </div>
     <div class="columna-2">
-      <p><b>Escritorio</b><br>1.75rem <br> 28px <br> #404041</p>
+      <p><b>Escritorio</b><br>1.75rem <br> 28px <br> #5E7392</p>
     </div>
   </div>
 
@@ -367,7 +367,7 @@
 </pre>
     </div>
     <div class="columna-4">
-      <p> .75rem <br> 12px <br> Medium (500) <br> #6f7271</p>
+      <p> .75rem <br> 12px <br> Medium (500) <br> #5E7392</p>
     </div>
 
     <div class="columna-8">

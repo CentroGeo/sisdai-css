@@ -1,6 +1,6 @@
 <template>
 
-  <h1>Margenes</h1>
+  <h1>Márgenes</h1>
 
   <h2 class="m-t-10">Posiciones</h2>
   <div class="grid">

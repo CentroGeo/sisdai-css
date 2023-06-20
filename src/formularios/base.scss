@@ -54,11 +54,11 @@ select {
     transition: all .27s ease-in-out;
   }
   &:not(:disabled):hover {
-    border-color: var(--input-hover-borde);
+    border-color: var(--input-hover);
   }
   &:not(:disabled):focus {
-    border-color: var(--input-focus-sombra);
-    box-shadow: 0 0 8px var(--input-focus-sombra);
+    border-color: var(--input-focus);
+    box-shadow: 0 0 8px var(--input-focus);
     outline: none;
   }
 }
@@ -95,8 +95,8 @@ select {
 }
 [type=checkbox]:focus + label,
 [type=radio]:focus + label {
-  border-color: var(--input-focus-sombra);
-  box-shadow: 0 0 8px var(--input-focus-sombra);
+  border-color: var(--input-focus);
+  box-shadow: 0 0 8px var(--input-focus);
   color: var(--input-color);
   outline: none;
 }
@@ -175,8 +175,8 @@ select {
   -webkit-appearance: none;
 }
 [type=range]:focus {
-  border-color: var(--input-focus-sombra);
-  box-shadow: 0 0 8px var(--input-focus-sombra);
+  border-color: var(--input-focus);
+  box-shadow: 0 0 8px var(--input-focus);
   border-radius: map-get($espaciado, 'minimo');
   outline: none;
 }

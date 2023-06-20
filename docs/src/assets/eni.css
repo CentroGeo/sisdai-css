@@ -5,32 +5,10 @@
   --tipografia-color-1: #ffffff;
   --tipografia-color-2: #0068FF;
   --tipografia-color-3: #5E7392;
-  --tabla-fondo-impar: #f6f6f6;
-  --tabla-fondo-notas: #a9a8a9;
-  --detalle-fondo: #f6f6f6;
-  --detalle-focus-sombra: #005DFF;
-  --sombra: #0000001a;
-  --sombra-focus: #005DFF;
-  --sombra-hover: #00000033;
-  --label-color: #6f7271;
-  --input-fondo: transparent;
-  --input-color: #141414;
-  --input-borde: #a9a8a9;
-  --input-controles-color: #14a634;
-  --input-deshabilitado-fondo: #f6f6f6;
-  --input-deshabilitado-color: #a9a8a9;
-  --input-hover-borde: #6F7271;
-  --input-focus-sombra: #005DFF;
-  --acciones-informativo: #1256C4;
-  --acciones-error: #C51228;
-  --acciones-advertencia: #FEB301;
-  --acciones-correcto: #069165;
   --borde-color-1: #141414;
   --borde-color-2: #6f7271;
   --borde-color-3: #a9a8a9;
-  --borde-color-4: #fff;
-  --tipografia-familia: "Montserrat", sans-serif;
-  --tipografia-tamanio: 16px;
+  --borde-color-4: #ffffff;
   --boton-primario-fondo: #0068FF;
   --boton-primario-borde: #0068FF;
   --boton-primario-color: #ffffff;
@@ -63,22 +41,28 @@
   --boton-secundario-focus-borde: #005DFF;
   --boton-secundario-focus-color: #364A69;
   --boton-secundario-focus-sombra: #005DFF;
-  --boton-terciario-fondo: transparent;
-  --boton-terciario-borde: transparent;
-  --boton-terciario-color: #141414;
-  --boton-terciario-sombra: transparent;
-  --boton-terciario-deshabilitado-fondo: transparent;
-  --boton-terciario-deshabilitado-borde: transparent;
-  --boton-terciario-deshabilitado-color: #a9a8a9;
-  --boton-terciario-deshabilitado-sombra: transparent;
-  --boton-terciario-hover-fondo: transparent;
-  --boton-terciario-hover-borde: transparent;
-  --boton-terciario-hover-color: #141414;
-  --boton-terciario-hover-sombra: #00000033;
-  --boton-terciario-focus-fondo: transparent;
-  --boton-terciario-focus-borde: #005DFF;
-  --boton-terciario-focus-color: #141414;
-  --boton-terciario-focus-sombra: #005DFF;
+  --label-color: #5E7392;
+  --input-fondo: transparent;
+  --input-color: #141414;
+  --input-borde: #5E7392;
+  --input-controles-color: #0068FF;
+  --input-deshabilitado-fondo: #DDDDDD;
+  --input-deshabilitado-color: #AAAAAA;
+  --input-hover: #364A69;
+  --input-focus: #005DFF;
+  --tabla-fondo-impar: #f6f6f6;
+  --tabla-fondo-notas: #a9a8a9;
+  --detalle-fondo: #f6f6f6;
+  --detalle-focus-sombra: #005DFF;
+  --sombra: #0000001a;
+  --sombra-focus: #005DFF;
+  --sombra-hover: #00000033;
+  --acciones-informativo: #1256C4;
+  --acciones-error: #C51228;
+  --acciones-advertencia: #FEB301;
+  --acciones-correcto: #069165;
+  --tipografia-familia: "Montserrat", sans-serif;
+  --tipografia-tamanio: 16px;
   --boton-conacyt-fondo: #f6f6f6;
   --hipervinculo-color: #005DFF;
   --hipervinculo-sombra: transparent;
@@ -113,7 +97,6 @@
   --tarjetas-internas-color: #141414;
   --tarjetas-internas-fondo: #e0e3ee;
   --tarjetas-interna-fondo-hover: #d9d6e4;
-  --portada-color: #fff;
   --portada-fondo-grandiente: linear-gradient(transparent, #171717f7);
   --color-gobmx-oscuro-1: #18302D;
   --color-gobmx-oscuro-2: #1F5D50;
@@ -1905,13 +1888,13 @@ select:not(:disabled) {
 input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):not(:disabled):hover,
 textarea:not(:disabled):hover,
 select:not(:disabled):hover {
-  border-color: var(--input-hover-borde);
+  border-color: var(--input-hover);
 }
 input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):not(:disabled):focus,
 textarea:not(:disabled):focus,
 select:not(:disabled):focus {
-  border-color: var(--input-focus-sombra);
-  box-shadow: 0 0 8px var(--input-focus-sombra);
+  border-color: var(--input-focus);
+  box-shadow: 0 0 8px var(--input-focus);
   outline: none;
 }
 
@@ -1948,8 +1931,8 @@ select:not(:disabled):focus {
 
 [type=checkbox]:focus + label,
 [type=radio]:focus + label {
-  border-color: var(--input-focus-sombra);
-  box-shadow: 0 0 8px var(--input-focus-sombra);
+  border-color: var(--input-focus);
+  box-shadow: 0 0 8px var(--input-focus);
   color: var(--input-color);
   outline: none;
 }
@@ -2032,8 +2015,8 @@ select {
 }
 
 [type=range]:focus {
-  border-color: var(--input-focus-sombra);
-  box-shadow: 0 0 8px var(--input-focus-sombra);
+  border-color: var(--input-focus);
+  box-shadow: 0 0 8px var(--input-focus);
   border-radius: 4px;
   outline: none;
 }
@@ -9384,7 +9367,6 @@ body {
   --tarjetas-internas-color: var(--neutro-oscuro-1);
   --tarjetas-internas-fondo: var(--neutro-oscuro-4);
   --tarjetas-interna-fondo-hover: var(--neutro-oscuro-3);
-  --portada-color: var(--pagina-fondo);
   --portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
   --navegacion-conacyt-fondo: #001F69;
   --navgeacion-conacyt-sombra: #fff2;
@@ -9446,7 +9428,6 @@ body {
   --tarjetas-internas-color: var(--conacyt-oscuro-1);
   --tarjetas-internas-fondo: var(--conacyt-oscuro-4);
   --tarjetas-interna-fondo-hover: var(--conacyt-oscuro-3);
-  --portada-color: var(--pagina-fondo);
   --portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
   --navegacion-conacyt-fondo: #001F69;
   --navgeacion-conacyt-sombra: #fff2;

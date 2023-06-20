@@ -112,7 +112,7 @@
             <p class="texto-terciario">texto-terciario</p>
           </div>
         </li>
-        <li class="icon icono-presentacion">
+        <li class="icon icono-social-github">
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
             <p class="texto-secundario">texto-secundario</p>

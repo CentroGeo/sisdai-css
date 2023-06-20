@@ -176,7 +176,7 @@
                 <li><button class="nav-boton-regresar" @click="toggleReticula">Retícula</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/contenedores">Contenedores</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/reticula">Cuadricula</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/margenes">Margenes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/margenes">Márgenes</RouterLink></li>
               </ul>
             </li>
             <li class="nav-contenedor-submenu">
@@ -267,6 +267,6 @@
     font-size: 14px;
     line-height: 14px;
     padding: 8px 16px;
-  }
+  }  
 
 </style>
