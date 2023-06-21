@@ -73,7 +73,7 @@
   </p> -->
 
   <h2 class="m-t-10">Iconos</h2>
-  <p>boton icono + primario + secundario + terciario</p>
+  <p>boton icono + primario + secundario</p>
   <p>
     <button class="boton-icono boton-primario">
       <span class="icono-flecha-derecha"></span>
