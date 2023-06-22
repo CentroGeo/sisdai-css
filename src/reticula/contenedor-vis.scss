@@ -1,0 +1,186 @@
+.contenedor-vis {
+  // Variables
+  $alto-menus: 120px;
+  $alto-boton-conahcyt: 40px;
+  $alto-maximo-contenedor-vis: calc(100vh - $alto-menus);
+  $alto-minimo-vis: 300px;
+
+  // min-width: 800px;
+  width: 100%;
+
+  .contenido-vis {
+    // min-height: $alto-minimo-vis;
+    width: 100%;
+  }
+
+  // Botón conahcyt simepre este pegado abajo
+  position: relative;
+  padding-bottom: $alto-boton-conahcyt;
+  .boton.boton-conacyt {
+    position: absolute;
+    bottom: 0;
+  }
+
+  // Scroll en los paneles
+  .panel-encabezado-vis,
+  .panel-izquierda-vis,
+  .panel-derecha-vis,
+  .panel-pie-vis {
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+
+  /* * * * * Bordes redondeados * * * * */
+  .panel-encabezado-vis,
+  .contenido-vis {
+    border-radius: 7px 7px 0 0;
+  }
+  .vista-carga {
+    border-radius: 7px;
+  }
+  &.con-panel-encabezado-vis .contenido-vis {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  @include mediaquery('esc') {
+    &.con-panel-izquierda-vis {
+      .panel-izquierda-vis {
+        border-top-left-radius: 7px;
+      }
+      .contenido-vis {
+        border-top-left-radius: 0;
+      }
+    }
+    &.con-panel-derecha-vis {
+      .contenido-vis {
+        border-top-right-radius: 0;
+      }
+      .panel-derecha-vis {
+        border-top-right-radius: 7px;
+      }
+    }
+    &.con-panel-encabezado-vis {
+      .panel-derecha-vis,
+      .panel-izquierda-vis {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+  }
+  /* * * * * Bordes redondeados * * * * */
+
+  /* * * * * Escodner elementos * * * * */
+  &.sin-cargador .vista-cargando {
+    display: none;
+  }
+
+  &.sin-boton-conahcyt {
+    padding-bottom: 0;
+
+    .boton.boton-conacyt {
+      display: none;
+    }
+
+    .contenido-vis,
+    .panel-izquierda-vis,
+    .panel-derecha-vis,
+    .panel-pie-vis {
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+
+    &.con-panel-izquierda-vis .contenido-vis {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    &.con-panel-derecha-vis {
+      .contenido-vis,
+      .panel-izquierda-vis {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+    &.con-panel-pie-vis {
+      .contenido-vis,
+      .panel-izquierda-vis,
+      .panel-derecha-vis {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    @include mediaquery('esc') {
+      &.con-panel-izquierda-vis {
+        .panel-izquierda-vis {
+          border-bottom-right-radius: 0;
+        }
+        .contenido-vis {
+          border-bottom-right-radius: 7px;
+        }
+      }
+      &.con-panel-derecha-vis {
+        .contenido-vis {
+          border-bottom-left-radius: 7px;
+        }
+        .panel-derecha-vis {
+          border-bottom-left-radius: 0;
+        }
+      }
+      &.con-panel-izquierda-vis.con-panel-derecha-vis {
+        .panel-izquierda-vis {
+          border-bottom-left-radius: 7px;
+        }
+        .contenido-vis {
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+      &.con-panel-pie-vis.con-panel-izquierda-vis,
+      &.con-panel-pie-vis.con-panel-derecha-vis {
+        .panel-izquierda-vis,
+        .contenido-vis {
+          border-bottom-right-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+
+  &.sin-bordes {
+    border: none;
+
+    .contenido-vis,
+    .vista-cargando,
+    .panel-encabezado-vis,
+    .panel-izquierda-vis,
+    .panel-derecha-vis,
+    .panel-pie-vis,
+    .boton.boton-conacyt {
+      border-radius: 0 !important;
+    }
+  }
+  /* * * * * Escodner elementos * * * * */
+
+  /* * * * * Diosposicion * * * * */
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: auto min($alto-minimo-vis) auto auto auto;
+
+  // Filas por defecto
+  .panel-encabezado-vis {
+    grid-row: 1;
+  }
+  .contenido-vis {
+    grid-row: 2;
+  }
+  .panel-izquierda-vis {
+    grid-row: 3;
+  }
+  .panel-derecha-vis {
+    grid-row: 4;
+  }
+  .panel-pie-vis {
+    grid-row: 5;
+  }
+  /* * * * * Diosposicion * * * * */
+}
