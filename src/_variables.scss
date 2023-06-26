@@ -157,10 +157,11 @@ $columnas: (
       --boton-primario-hover-borde: #0058CC;
       --boton-primario-hover-color: #ffffff;
       --boton-primario-hover-sombra: #00000033;
-        --boton-primario-focus-fondo: #0068FF;
-        --boton-primario-focus-borde: #005DFF;
+        --boton-primario-focus-fondo: #0058CC;
+        --boton-primario-focus-borde: #ffffff;
         --boton-primario-focus-color: #ffffff;
         --boton-primario-focus-sombra: #005DFF;
+        --boton-primario-focus-contorno: #005DFF;
 
   --boton-secundario-fondo: transparent;
   --boton-secundario-borde: #364A69;
@@ -174,7 +175,7 @@ $columnas: (
       --boton-secundario-hover-borde: #364A69;
       --boton-secundario-hover-color: #364A69;
       --boton-secundario-hover-sombra: #00000016;
-        --boton-secundario-focus-fondo: transparent;
+        --boton-secundario-focus-fondo: #CCE1FF;
         --boton-secundario-focus-borde: #005DFF;
         --boton-secundario-focus-color: #364A69;
         --boton-secundario-focus-sombra: #005DFF;
@@ -208,23 +209,6 @@ $columnas: (
 
   --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
-
-  // --boton-terciario-fondo: transparent;
-  // --boton-terciario-borde: transparent;
-  // --boton-terciario-color: #141414;
-  // --boton-terciario-sombra: transparent;
-  //   --boton-terciario-deshabilitado-fondo: transparent;
-  //   --boton-terciario-deshabilitado-borde: transparent;
-  //   --boton-terciario-deshabilitado-color: #a9a8a9;
-  //   --boton-terciario-deshabilitado-sombra: transparent;
-  //     --boton-terciario-hover-fondo: transparent;
-  //     --boton-terciario-hover-borde: transparent;
-  //     --boton-terciario-hover-color: #141414;
-  //     --boton-terciario-hover-sombra: #00000033;
-  //       --boton-terciario-focus-fondo: transparent;
-  //       --boton-terciario-focus-borde: #005DFF;
-  //       --boton-terciario-focus-color: #141414;
-  //       --boton-terciario-focus-sombra: #005DFF;
 
   --boton-conacyt-fondo: #f6f6f6;
 
@@ -289,4 +273,22 @@ $columnas: (
   }
   --navegacion-breakpoint: 768px;
 
+
+
+  // --boton-terciario-fondo: transparent;
+  // --boton-terciario-borde: transparent;
+  // --boton-terciario-color: #141414;
+  // --boton-terciario-sombra: transparent;
+  //   --boton-terciario-deshabilitado-fondo: transparent;
+  //   --boton-terciario-deshabilitado-borde: transparent;
+  //   --boton-terciario-deshabilitado-color: #a9a8a9;
+  //   --boton-terciario-deshabilitado-sombra: transparent;
+  //     --boton-terciario-hover-fondo: transparent;
+  //     --boton-terciario-hover-borde: transparent;
+  //     --boton-terciario-hover-color: #141414;
+  //     --boton-terciario-hover-sombra: #00000033;
+  //       --boton-terciario-focus-fondo: transparent;
+  //       --boton-terciario-focus-borde: #005DFF;
+  //       --boton-terciario-focus-color: #141414;
+  //       --boton-terciario-focus-sombra: #005DFF;
 }

@@ -422,17 +422,19 @@
 
   <h2 class="m-t-10">Tamaños</h2>
   <p>Base 8, clases responsivas en rem, sí varian cambiando el tamaño base de la tipografia.</p>
-  <p>texto-tamanio-1, texto-tamanio-2, texto-tamanio-3 .... texto-tamanio-10</p>
-  <p class="texto-tamanio-1">texto</p>
-  <p class="texto-tamanio-2">texto</p>
-  <p class="texto-tamanio-3">texto</p>
-  <p class="texto-tamanio-4">texto</p>
-  <p class="texto-tamanio-5">texto</p>
-  <p class="texto-tamanio-6">texto</p>
-  <p class="texto-tamanio-7">texto</p>
-  <p class="texto-tamanio-8">texto</p>
-  <p class="texto-tamanio-9">texto</p>
-  <p class="texto-tamanio-10">texto</p>
+  <!-- <p>texto-tamanio-1, texto-tamanio-2, texto-tamanio-3 .... texto-tamanio-10</p> -->
+  <div class="flex flex-contenido-separado" style="align-items: flex-end;">
+    <p class="texto-tamanio-1">texto-tamanio-1</p>
+    <p class="texto-tamanio-2">texto-tamanio-2</p>
+    <p class="texto-tamanio-3">texto-tamanio-3</p>
+    <p class="texto-tamanio-4">texto-tamanio-4</p>
+    <p class="texto-tamanio-5">texto-tamanio-5</p>
+    <p class="texto-tamanio-6">texto-tamanio-6</p>
+    <p class="texto-tamanio-7">texto-tamanio-7</p>
+    <p class="texto-tamanio-8">texto-tamanio-8</p>
+    <p class="texto-tamanio-9">texto-tamanio-9</p>
+    <p class="texto-tamanio-10">texto-tamanio-10</p>
+  </div>
 
   <h2 class="m-t-10">Responsivos</h2>
   <p>Variando el tamaño para móvil y escritorio</p>

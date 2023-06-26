@@ -21,10 +21,11 @@
   --boton-primario-hover-borde: #0058CC;
   --boton-primario-hover-color: #ffffff;
   --boton-primario-hover-sombra: #00000033;
-  --boton-primario-focus-fondo: #0068FF;
-  --boton-primario-focus-borde: #005DFF;
+  --boton-primario-focus-fondo: #0058CC;
+  --boton-primario-focus-borde: #ffffff;
   --boton-primario-focus-color: #ffffff;
   --boton-primario-focus-sombra: #005DFF;
+  --boton-primario-focus-contorno: #005DFF;
   --boton-secundario-fondo: transparent;
   --boton-secundario-borde: #364A69;
   --boton-secundario-color: #364A69;
@@ -37,7 +38,7 @@
   --boton-secundario-hover-borde: #364A69;
   --boton-secundario-hover-color: #364A69;
   --boton-secundario-hover-sombra: #00000016;
-  --boton-secundario-focus-fondo: transparent;
+  --boton-secundario-focus-fondo: #CCE1FF;
   --boton-secundario-focus-borde: #005DFF;
   --boton-secundario-focus-color: #364A69;
   --boton-secundario-focus-sombra: #005DFF;
@@ -628,6 +629,7 @@ h6, .h6 {
 }
 
 .parrafo-texto-alto {
+  color: var(--tipografia-color-3);
   font-size: 1.25rem;
   line-height: 1.5em;
 }
@@ -976,11 +978,10 @@ input[type=reset]:not(:last-child),
 }
 .boton-primario:not(:disabled):focus, .boton-info:not(:disabled):focus, .boton-descarga:not(:disabled):focus, .boton-icono:not(:disabled):focus {
   background-color: var(--boton-primario-focus-fondo);
-  border-color: #ffffff;
-  position: relative;
-  box-shadow: 0 0 24px var(--boton-primario-focus-sombra);
+  border-color: var(--boton-primario-focus-borde);
+  box-shadow: 0 0 8px var(--boton-primario-focus-sombra);
   color: var(--boton-primario-focus-color);
-  outline: 4px solid var(--boton-primario-focus-borde);
+  outline: 1px solid var(--boton-primario-focus-contorno);
 }
 
 .boton-secundario {

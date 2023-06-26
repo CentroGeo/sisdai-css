@@ -54,13 +54,13 @@ input[type=reset],
   &:not(:disabled):focus {
     background-color: var(--boton-primario-focus-fondo);
     // border-color: var(--boton-primario-focus-borde);
-    border-color: #ffffff;
-    position: relative;
-    box-shadow: 0 0 24px var(--boton-primario-focus-sombra);
+    border-color: var(--boton-primario-focus-borde);
+    box-shadow: 0 0 8px var(--boton-primario-focus-sombra);
     color: var(--boton-primario-focus-color);
     // outline: none;
-    outline: 4px solid var(--boton-primario-focus-borde);
-
+    outline: 1px solid var(--boton-primario-focus-contorno);
+    
+    // position: relative;
     // &:after {
     //   content: '';
     //   position: absolute;
