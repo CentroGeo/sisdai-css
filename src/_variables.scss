@@ -27,7 +27,7 @@ $acciones: (
 
 $sombras-estados: (
   'focus': 0px 0px 8px 0 var(--sombra-focus),
-  'hover': 3px 3px 9px 0 var(--sombra-hover)
+  'hover': 4px 4px 8px 2px var(--sombra-hover)
 );
 $sombras-produndidad: (
   '0': 0 0 0 0 transparent,
@@ -130,7 +130,7 @@ $columnas: (
 
 :root {
   --pagina-fondo: #ffffff;
-  --nota-fondo: #CCE1FF;
+  --nota-fondo: #CCE1FF4c;
   
   // Tipografia
   --tipografia-color: #141414;
@@ -143,6 +143,16 @@ $columnas: (
   --borde-color-2: #6f7271;
   --borde-color-3: #a9a8a9;
   --borde-color-4: #ffffff;
+  --borde-focus: #005DFF;
+
+  // Sombras
+  --sombra: #0000001a;
+  --sombra-focus: #005DFF;
+  --sombra-hover: #0000001a;
+
+  // Detalles
+  --detalle-fondo: #CCE1FF4c;
+  --detalle-focus-sombra: #005DFF;
 
   // Botones
   --boton-primario-fondo: #0068FF;
@@ -194,13 +204,15 @@ $columnas: (
   // Tablas
   --tabla-fondo-impar: #f6f6f6;
   --tabla-fondo-notas: #a9a8a9;
-  
-  --detalle-fondo: #f6f6f6;
-  --detalle-focus-sombra: #005DFF;
-  
-  --sombra: #0000001a;
-  --sombra-focus: #005DFF;
-  --sombra-hover: #00000033;
+
+  // Tarjetas
+  --tarjetas-fondo: #edf6fa;
+  --tarjetas-color: #141414;
+  --tarjetas-externas-color: #fff;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
+  --tarjetas-internas-color: #141414;
+  --tarjetas-internas-fondo: #e0e3ee;
+  --tarjetas-interna-fondo-hover: #d9d6e4;
   
   --acciones-informativo: #1256C4;
   --acciones-error: #C51228;
@@ -241,14 +253,6 @@ $columnas: (
   --navgeacion-conacyt-sombra: #0012;
   --navegacion-conacyt-color: #002663;
   --navegacion-conacyt-fondo-icono: #002663;
-
-  --tarjetas-fondo: #edf6fa;
-  --tarjetas-color: #141414;
-  --tarjetas-externas-color: #fff;
-  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
-  --tarjetas-internas-color: #141414;
-  --tarjetas-internas-fondo: #e0e3ee;
-  --tarjetas-interna-fondo-hover: #d9d6e4;
 
   --portada-fondo-grandiente: linear-gradient(transparent, #171717f7);
 

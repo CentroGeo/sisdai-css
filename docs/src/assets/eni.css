@@ -1,6 +1,6 @@
 :root {
   --pagina-fondo: #ffffff;
-  --nota-fondo: #CCE1FF;
+  --nota-fondo: #CCE1FF4c;
   --tipografia-color: #141414;
   --tipografia-color-1: #ffffff;
   --tipografia-color-2: #0068FF;
@@ -9,6 +9,12 @@
   --borde-color-2: #6f7271;
   --borde-color-3: #a9a8a9;
   --borde-color-4: #ffffff;
+  --borde-focus: #005DFF;
+  --sombra: #0000001a;
+  --sombra-focus: #005DFF;
+  --sombra-hover: #0000001a;
+  --detalle-fondo: #CCE1FF4c;
+  --detalle-focus-sombra: #005DFF;
   --boton-primario-fondo: #0068FF;
   --boton-primario-borde: #0068FF;
   --boton-primario-color: #ffffff;
@@ -53,11 +59,13 @@
   --input-focus: #005DFF;
   --tabla-fondo-impar: #f6f6f6;
   --tabla-fondo-notas: #a9a8a9;
-  --detalle-fondo: #f6f6f6;
-  --detalle-focus-sombra: #005DFF;
-  --sombra: #0000001a;
-  --sombra-focus: #005DFF;
-  --sombra-hover: #00000033;
+  --tarjetas-fondo: #edf6fa;
+  --tarjetas-color: #141414;
+  --tarjetas-externas-color: #fff;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
+  --tarjetas-internas-color: #141414;
+  --tarjetas-internas-fondo: #e0e3ee;
+  --tarjetas-interna-fondo-hover: #d9d6e4;
   --acciones-informativo: #1256C4;
   --acciones-error: #C51228;
   --acciones-advertencia: #FEB301;
@@ -91,13 +99,6 @@
   --navgeacion-conacyt-sombra: #0012;
   --navegacion-conacyt-color: #002663;
   --navegacion-conacyt-fondo-icono: #002663;
-  --tarjetas-fondo: #edf6fa;
-  --tarjetas-color: #141414;
-  --tarjetas-externas-color: #fff;
-  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
-  --tarjetas-internas-color: #141414;
-  --tarjetas-internas-fondo: #e0e3ee;
-  --tarjetas-interna-fondo-hover: #d9d6e4;
   --portada-fondo-grandiente: linear-gradient(transparent, #171717f7);
   --color-gobmx-oscuro-1: #18302D;
   --color-gobmx-oscuro-2: #1F5D50;
@@ -1661,7 +1662,9 @@ summary:hover, summary:active {
   box-shadow: 0 0 0 transparent;
 }
 summary:focus {
-  background-color: var(--detalle-fondo);
+  background-color: transparent;
+  box-shadow: 0 0 8px var(--detalle-focus-sombra);
+  border: 1px solid var(--borde-focus);
   outline: none;
 }
 summary::before {
@@ -3380,7 +3383,7 @@ ol + hr {
 }
 
 .sombra-hover {
-  box-shadow: 3px 3px 9px 0 var(--sombra-hover);
+  box-shadow: 4px 4px 8px 2px var(--sombra-hover);
 }
 
 .sombra-profundidad-0 {
