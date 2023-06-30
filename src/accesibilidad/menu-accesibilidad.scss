@@ -24,6 +24,10 @@
       border-radius: 50%;
       color: #1d74e6;
       padding-left: 0 !important;
+
+      ::before {
+        margin-top: -2px;
+      }
     }
   }
 
@@ -62,7 +66,7 @@
     }
   }
 
-  /* T R A N S I C I O N E S */
+  /* * * * * Transiciones * * * * */
   --a11y-transicion: 300ms;
   --a11y-ancho: 200;
   --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
@@ -119,4 +123,5 @@
           calc(var(--a11y-relacion-tiempo) * 32);
     }
   }
+  /* * * * * Transiciones * * * * */
 }
