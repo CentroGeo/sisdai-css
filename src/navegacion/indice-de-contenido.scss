@@ -18,11 +18,9 @@
       border-radius: 0;
       padding: map-get($espaciado, '1')
         map-get($contenedores, 'mov', 'margen-interior');
-  
-      color: var(--navegacion-color);
       text-decoration: none;
       background: transparent;
-      color: var(--tipografia-color-3, #333);
+      color: var(--menu-lateral-color);
       font-weight: 400;
       text-decoration: none;
       @media (min-width: map-get($breakpoints, 'esc')) {
@@ -33,21 +31,21 @@
       }
       @media (hover: hover) {
         &:hover {
-          background: #f6f6f6;
-          color: var(--menu-lateral-accion, #00f);
+          background: var(--menu-lateral-accion-fondo-hover);
+          color: var(--menu-lateral-accion);
         }
       }
   
       &:active,
       &:focus {
-        color: var(--menu-lateral-accion, #00f);
+        color: var(--menu-lateral-accion);
         box-shadow: none;
       }
       &.link-activo,
       &.router-link-exact-active {
-        background: #f6f6f6;
-        box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
-        color: var(--menu-lateral-accion, #00f);
+        background: var(--menu-lateral-accion-fondo-active);
+        box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
+        color: var(--menu-lateral-accion);
       }
     }
   }

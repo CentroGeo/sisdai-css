@@ -60,31 +60,31 @@
 
   <h2 class="m-t-10">Redondeado</h2>
   <div class="grid">
-    <div class="columna-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-0">
+    <div class="columna-2 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-0">
       <p class="p-x-1">.borde-redondeado-0 <br> 0px</p>
     </div>
-    <div class="columna-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-1">
+    <div class="columna-2 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-1">
       <p class="p-x-1">.borde-redondeado-1 <br> 1px</p>
     </div>
-    <div class="columna-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-2">
+    <div class="columna-2 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-2">
       <p class="p-x-1">.borde-redondeado-2 <br> 2px</p>
     </div>
-    <div class="columna-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-4">
+    <div class="columna-2 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-4">
       <p class="p-x-1">.borde-redondeado-4 <br> 4px</p>
     </div>
-    <div class="columna-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-8">
+    <div class="columna-2 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-8">
       <p class="p-x-1">.borde-redondeado-8 <br> 8px</p>
     </div>
-    <div class="columna-2 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-16">
+    <div class="columna-2 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-16">
       <p class="p-x-1">.borde-redondeado-16 <br> 16px</p>
     </div>
   </div>
   <div class="grid m-t-3">
-    <div class="columna-4 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-2 borde-r-redondeado-16">
+    <div class="columna-4 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-2 borde-r-redondeado-16">
       <p class="m-3">.borde-redondeado-2</p>
       <p class="m-3">.borde-r-redondeado-16</p>
     </div>
-    <div class="columna-4 conacyt-fondo-degradado conacyt-texto-claro-1 borde-redondeado-2 borde-t-l-redondeado-16">
+    <div class="columna-4 conahcyt-fondo-degradado conahcyt-texto-claro-1 borde-redondeado-2 borde-t-l-redondeado-16">
       <p class="m-3">.borde-redondeado-2</p>
       <p class="m-3">.borde-t-l-redondeado-16</p>
     </div>

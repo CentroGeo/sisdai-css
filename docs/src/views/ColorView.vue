@@ -85,91 +85,106 @@
     </div>
   </div>
 
-  <h2 class="m-t-10">Identidad Conacyt</h2>
+  <h2 class="m-t-10">Identidad Conahcyt</h2>
   <div class="grid">
-    <div class="columna-2 m-y-1 conacyt-fondo-oscuro-1 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-fondo-oscuro-1 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-fondo-oscuro-1</p>
-      <p>#001c4a</p>
-    </div>
-    <div class="columna-2 m-y-1 conacyt-fondo-oscuro-2 borde-redondeado-8"></div>
-    <div class="columna-2">
-      <p>.conacyt-fondo-oscuro-2</p>
+      <p>.conahcyt-fondo-oscuro-1</p>
       <p>#002663</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-fondo-claro-1 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-fondo-oscuro-2 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-fondo-claro-1</p>
-      <p>#fff</p>
+      <p>.conahcyt-fondo-oscuro-2</p>
+      <p>#003384</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-fondo-claro-2 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-fondo-claro-0 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-fondo-claro-2</p>
+      <p>.conahcyt-fondo-claro-0</p>
+      <p>#DDDDDD4c</p>
+    </div>
+    <div class="columna-2 m-y-1 conahcyt-fondo-claro-1 borde-redondeado-8"></div>
+    <div class="columna-2">
+      <p>.conahcyt-fondo-claro-1</p>
       <p>#d5d5d5</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-fondo-acento borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-fondo-claro-2 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-fondo-acento</p>
+      <p>.conahcyt-fondo-claro-2</p>
+      <p>#8C8D8E</p>
+    </div>
+    <div class="columna-2 m-y-1 conahcyt-fondo-acento borde-redondeado-8"></div>
+    <div class="columna-2">
+      <p>.conahcyt-fondo-acento</p>
       <p>#13aff0</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-fondo-degradado borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-fondo-degradado borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-fondo-degradado</p>
+      <p>.conahcyt-fondo-degradado</p>
       <p>#003384, #002663, #001c4a</p>
     </div>
   </div>
   <div class="grid">
-    <div class="columna-2 m-y-1 conacyt-borde-oscuro-1  borde borde-grosor-3 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-borde-oscuro-1  borde borde-grosor-3 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-borde-oscuro-1</p>
+      <p>.conahcyt-borde-oscuro-1</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-borde-oscuro-2  borde borde-grosor-3 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-borde-oscuro-2  borde borde-grosor-3 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-borde-oscuro-2</p>
+      <p>.conahcyt-borde-oscuro-2</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-borde-claro-1  borde borde-grosor-3 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-borde-claro-0  borde borde-grosor-3 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-borde-claro-1</p>
+      <p>.conahcyt-borde-claro-0</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-borde-claro-2  borde borde-grosor-3 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-borde-claro-1  borde borde-grosor-3 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-borde-claro-2</p>
+      <p>.conahcyt-borde-claro-1</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-borde-acento  borde borde-grosor-3 borde-redondeado-8"></div>
+    <div class="columna-2 m-y-1 conahcyt-borde-claro-2  borde borde-grosor-3 borde-redondeado-8"></div>
     <div class="columna-2">
-      <p>.conacyt-borde-acento</p>
+      <p>.conahcyt-borde-claro-2</p>
+    </div>
+    <div class="columna-2 m-y-1 conahcyt-borde-acento  borde borde-grosor-3 borde-redondeado-8"></div>
+    <div class="columna-2">
+      <p>.conahcyt-borde-acento</p>
     </div>
   </div>
   <div class="grid">
-    <div class="columna-2 m-y-1 conacyt-texto-oscuro-1">
+    <div class="columna-2 m-y-1 conahcyt-texto-oscuro-1">
       <p>Color de texto</p>
     </div>
     <div class="columna-2">
-      <p>.conacyt-texto-oscuro-1</p>
+      <p>.conahcyt-texto-oscuro-1</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-texto-oscuro-2">
+    <div class="columna-2 m-y-1 conahcyt-texto-oscuro-2">
       <p>Color de texto</p>
     </div>
     <div class="columna-2">
-      <p>.conacyt-texto-oscuro-2</p>
+      <p>.conahcyt-texto-oscuro-2</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-texto-claro-1">
+    <div class="columna-2 m-y-1 conahcyt-texto-claro-0">
       <p>Color de texto</p>
     </div>
     <div class="columna-2">
-      <p>.conacyt-texto-claro-1</p>
+      <p>.conahcyt-texto-claro-0</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-texto-claro-2">
+    <div class="columna-2 m-y-1 conahcyt-texto-claro-1">
       <p>Color de texto</p>
     </div>
     <div class="columna-2">
-      <p>.conacyt-texto-claro-2</p>
+      <p>.conahcyt-texto-claro-1</p>
     </div>
-    <div class="columna-2 m-y-1 conacyt-texto-acento">
+    <div class="columna-2 m-y-1 conahcyt-texto-claro-2">
       <p>Color de texto</p>
     </div>
     <div class="columna-2">
-      <p>.conacyt-texto-acento</p>
+      <p>.conahcyt-texto-claro-2</p>
+    </div>
+    <div class="columna-2 m-y-1 conahcyt-texto-acento">
+      <p>Color de texto</p>
+    </div>
+    <div class="columna-2">
+      <p>.conahcyt-texto-acento</p>
     </div>
   </div>
 

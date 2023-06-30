@@ -117,10 +117,10 @@
       </button>
     </div> 
     <div class="columna-4 columna-8-esc">
-      <h3>boton-info + boton-conacyt</h3>
+      <h3>boton-info + boton-conahcyt</h3>
       <button class="boton-info">Mas Info</button>
-      <a class="boton boton-conacyt" href="https://conacyt.mx/" target="_blank">
-        <img src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conacyt" height="28px">
+      <a class="boton boton-conahcyt" href="https://conacyt.mx/" target="_blank">
+        <img src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conahcyt" height="28px">
       </a>
     </div>
   </div>

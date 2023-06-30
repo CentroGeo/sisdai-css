@@ -20,7 +20,7 @@
     }
   }
 
-  button:not(.hipervinculo-gobmx):not(.hipervinculo-conacyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+  button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
   input[type=button],
   input[type=submit],
   input[type=reset],
@@ -73,7 +73,7 @@
 
   a.tarjeta-hipervinculo-externo {
     min-height: 0px;
-    background-color: map-get($color-conacyt, 'claro-1');
+    background-color: map-get($color-conahcyt, 'claro-1');
     text-decoration: none;
 
     .degradado-negro-abajo {

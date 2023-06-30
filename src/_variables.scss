@@ -7,16 +7,16 @@ $color-gobmx: (
   'acento': #9E2148,
 );
 
-$color-conacyt: (
+$color-conahcyt: (
   'oscuro-1': #002663,
   'oscuro-2': #003384,
-  'claro-0': #f6f6f6,
+  'claro-0': #DDDDDD4c,
   'claro-1': #d5d5d5,
   'claro-2': #8C8D8E,
   'acento': #13aff0,
 );
 
-$color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+$color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
 
 $acciones: (
   'informativo': var(--acciones-informativo),
@@ -227,14 +227,28 @@ $columnas: (
       --navegacion-sombra-active: 0 0 0 0;
       --navegacion-color-active: #fff;
   
-  --menu-lateral-fondo: #DED5FF;
-  --submenu-lateral-fondo: #D0CCFF;
-  --menu-lateral-accion: #0101FC;
+  --menu-lateral-color: #102543;
+  // --menu-lateral-fondo: #DED5FF;
+  --menu-lateral-fondo: #cce1ff;
+  // --menu-lateral-accion: #0101FC;
+  // --menu-lateral-accion: #00f;
+  --menu-lateral-accion: #364a69;
+  // --menu-lateral-accion-fondo-hover: #D0CCFF;
+  --menu-lateral-accion-fondo-hover: #889dbb;
+  // --menu-lateral-accion-fondo-active: #f6f6f6;
+  --menu-lateral-accion-fondo-active: #ffffffcc;
+  // --menu-lateral-accion-sombra-active: #00f;
+  --menu-lateral-accion-sombra-active: #364a69;
+  // --submenu-lateral-fondo: #D0CCFF;
+  // --submenu-lateral-fondo-hover: #D0CCFF;
+  --submenu-lateral-fondo-mov: #ddf;
+  // --submenu-lateral-fondo-colapsable: #ccf;
+  --submenu-lateral-fondo-colapsable: #cce1ff;
 
-  --navegacion-conacyt-fondo: #fff;
-  --navgeacion-conacyt-sombra: #0012;
-  --navegacion-conacyt-color: #002663;
-  --navegacion-conacyt-fondo-icono: #002663;
+  --navegacion-conahcyt-fondo: #ffffff;
+  --navegacion-conahcyt-sombra: #0000002a;
+  --navegacion-conahcyt-color: #002663;
+  --navegacion-conahcyt-fondo-icono: #002663;
   
   --acciones-informativo: #1256C4;
   --acciones-error: #C51228;
@@ -244,7 +258,7 @@ $columnas: (
   --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
 
-  --boton-conacyt-fondo: #f6f6f6;
+  --boton-conahcyt-fondo: #f6f6f6;
 
   --hipervinculo-color: #005DFF;
   --hipervinculo-sombra: transparent;
@@ -265,10 +279,10 @@ $columnas: (
     --color-gobmx-#{$id}: #{$valor};
   }
 
-  @each $id, $valor in $color-conacyt {
-    --color-conacyt-#{$id}: #{$valor};
+  @each $id, $valor in $color-conahcyt {
+    --color-conahcyt-#{$id}: #{$valor};
   }
-  --color-conacyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
 
   // Reticula
   @each $id, $valor in $espaciado {
