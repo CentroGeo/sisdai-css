@@ -210,6 +210,7 @@ $columnas: (
   --tarjetas-color: #141414;
   --tarjetas-externas-color: #ffffff;
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
+  --tarjetas-externas-simplificada-fondo: #d5d5d5;
   --tarjetas-internas-color: #141414;
   --tarjetas-internas-fondo: #DDDDDD4c;
     --tarjetas-interna-fondo-hover: #DDDDDD;
@@ -227,29 +228,22 @@ $columnas: (
       --navegacion-sombra-active: 0 0 0 0;
       --navegacion-color-active: #fff;
   
-  --menu-lateral-color: #102543;
-  // --menu-lateral-fondo: #DED5FF;
-  --menu-lateral-fondo: #cce1ff;
-  // --menu-lateral-accion: #0101FC;
-  // --menu-lateral-accion: #00f;
-  --menu-lateral-accion: #364a69;
-  // --menu-lateral-accion-fondo-hover: #D0CCFF;
-  --menu-lateral-accion-fondo-hover: #889dbb;
-  // --menu-lateral-accion-fondo-active: #f6f6f6;
-  --menu-lateral-accion-fondo-active: #ffffffcc;
-  // --menu-lateral-accion-sombra-active: #00f;
-  --menu-lateral-accion-sombra-active: #364a69;
-  // --submenu-lateral-fondo: #D0CCFF;
-  // --submenu-lateral-fondo-hover: #D0CCFF;
-  --submenu-lateral-fondo-mov: #ddf;
-  // --submenu-lateral-fondo-colapsable: #ccf;
-  --submenu-lateral-fondo-colapsable: #cce1ff;
-
+  // Navegacion principal
   --navegacion-conahcyt-fondo: #ffffff;
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #002663;
   --navegacion-conahcyt-fondo-icono: #002663;
   
+  // Navegacion secundaria
+  --menu-lateral-color: #102543;
+  --menu-lateral-fondo: #CCE1FFB2;
+  --menu-lateral-accion: #0068FF;
+    --menu-lateral-accion-fondo-hover: #CCE1FF;
+      --menu-lateral-accion-fondo-active: #ffffffcc;
+      --menu-lateral-accion-sombra-active: #0068FF;
+  --submenu-lateral-fondo-mov: #CCE1FFB2;
+  --submenu-lateral-fondo-colapsable: #CCE1FF;
+
   --acciones-informativo: #1256C4;
   --acciones-error: #C51228;
   --acciones-advertencia: #FEB301;

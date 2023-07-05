@@ -73,7 +73,7 @@
 
   a.tarjeta-hipervinculo-externo {
     min-height: 0px;
-    background-color: map-get($color-conahcyt, 'claro-1');
+    background-color: var(--tarjetas-externas-simplificada-fondo);
     text-decoration: none;
 
     .degradado-negro-abajo {

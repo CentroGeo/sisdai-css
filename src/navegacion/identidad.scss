@@ -1,24 +1,24 @@
 .navegacion-gobmx {
-  background-color: map-get($color-gobmx, 'oscuro-1');
+  background-color: var(--color-gobmx-oscuro-1);
   box-shadow: none;
   .nav-menu-contedor {
-    background-color: map-get($color-gobmx, 'oscuro-1');
+    background-color: var(--color-gobmx-oscuro-1);
     box-shadow: 0 8px 8px -4px #0002;
-    border-top: 1px solid map-get($color-gobmx, 'claro-1');
+    border-top: 1px solid var(--color-gobmx-claro-1);
   }
   .nav-hipervinculo {
     background: transparent;
     box-shadow: none;
-    color: map-get($color-gobmx, 'claro-1');
+    color: var(--color-gobmx-claro-1);
     &:visited {
-      color: map-get($color-gobmx, 'claro-1');
+      color: var(--color-gobmx-claro-1);
     }
     &:active,
     &:hover,
     &:focus {
       background: transparent;
       box-shadow: none;
-      color: map-get($color-gobmx, 'claro-2');
+      color: var(--color-gobmx-claro-2);
     }
   }
   .nav-boton-menu {
@@ -104,7 +104,7 @@
     &.nuxt-link-exact-active,
     &.router-link-exact-active {
       background-color: transparent;
-      box-shadow: inset 0 -5px 0 map-get($color-conahcyt, 'oscuro-1');
+      box-shadow: inset 0 -5px 0 var(--color-conahcyt-oscuro-1);
       color: var(--navegacion-conahcyt-color);
     }
   }
