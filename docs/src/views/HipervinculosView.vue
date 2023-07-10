@@ -48,7 +48,7 @@
     <img class="fondo-imagen" src="http://placekitten.com/970/980" />
     <div class="degradado-negro-abajo">
       <div class="contenido-abajo ">
-        <p class="parrafo-texto-alto texto-color-1 m-y-0">Nombre del hipervínculo externo</p>
+        <p class="parrafo-texto-alto m-y-0">Nombre del hipervínculo externo</p>
         <p>Subtitulo del hipervínculo externo</p>
       </div>
     </div>
@@ -70,7 +70,7 @@
         <img class="fondo-imagen" src="http://placekitten.com/970/984" />
         <div class="degradado-negro-abajo">
           <div class="contenido-abajo ">
-            <p class="parrafo-texto-alto texto-color-1">
+            <p class="parrafo-texto-alto">
               Nombre del hipervínculo externo
               <span class="icono-teclado"></span>
             </p>
@@ -83,7 +83,7 @@
         <img class="fondo-imagen" src="http://placekitten.com/970/985" />
         <div class="degradado-negro-abajo">
           <div class="contenido-abajo">
-            <p class="parrafo-texto-alto texto-color-1">Nombre del hipervínculo externo</p>
+            <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
           </div>
         </div>
       </a>
@@ -93,7 +93,7 @@
         <img class="fondo-imagen" src="http://placekitten.com/970/990" />
         <div class="degradado-negro-abajo">
           <div class="contenido-abajo ">
-            <p class="parrafo-texto-alto texto-color-1">Nombre del hipervínculo externo</p>
+            <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
           </div>
         </div>
       </a>
@@ -103,7 +103,7 @@
         <img class="fondo-imagen" src="http://placekitten.com/970/991" />
         <div class="degradado-negro-abajo">
           <div class="contenido-abajo ">
-            <p class="parrafo-texto-alto texto-color-1">Nombre del hipervínculo externo</p>
+            <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
           </div>
         </div>
       </a>
@@ -113,7 +113,7 @@
         <img class="fondo-imagen" src="http://placekitten.com/970/980" />
         <div class="degradado-negro-abajo">
           <div class="contenido-abajo ">
-            <p class="parrafo-texto-alto texto-color-1">Nombre del hipervínculo externo</p>
+            <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
           </div>
         </div>
       </a>

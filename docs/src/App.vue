@@ -198,7 +198,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imagenes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
 

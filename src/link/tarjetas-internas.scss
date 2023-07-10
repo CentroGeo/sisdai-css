@@ -28,6 +28,9 @@
     p {
       margin: 4px 0 4px 0;
     }
+    .parrafo-texto-alto {
+      color: var(--tarjetas-internas-color);
+    }
   }
   &:focus {
     color: var(--hipervinculo-focus-color);
