@@ -52,4 +52,15 @@ a[class*=" p-"],
   display: inline-block;
 }
 
-
+// Este "estilo" sirve para mejorar accesibilidad con lectores de pantalla
+[target="_blank"]:after {
+  content: ". Abre nueva pestaña.";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
