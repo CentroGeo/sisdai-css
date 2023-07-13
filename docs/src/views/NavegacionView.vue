@@ -211,10 +211,11 @@
   <p>En el siguiente ejemplo, la clase .activo se agrega al hacer click</p>
   <li class="colapsable-navegacion" :class="{ activo: colapsable_activo }">
     <button
-      class="colapsable-boton-submenu nav-boton-submenu"
+      class="colapsable-boton-submenu"
       @click="colapsable_activo = !colapsable_activo"
     >
       Titulo colapsable
+      <span aria-hidden="true" class="nav-boton-submenu"></span>
     </button>
     <ul class="colapsable-submenu">
       <li>
@@ -254,10 +255,11 @@
             :class="{ activo: colapsable_activo }"
           >
             <button
-              class="colapsable-boton-submenu nav-boton-submenu"
+              class="colapsable-boton-submenu"
               @click="colapsable_activo = !colapsable_activo"
             >
               Titulo colapsable
+              <span aria-hidden="true" class="nav-boton-submenu"></span>
             </button>
             <ul class="colapsable-submenu">
               <li>
