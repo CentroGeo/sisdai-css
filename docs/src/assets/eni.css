@@ -8359,11 +8359,10 @@ ol + hr {
 
 .nav-boton-submenu, .nav-boton-regresar {
   display: inline-flex;
-  background-color: var(--navegacion-fondo);
+  background: transparent;
   border: none;
   border-radius: 0;
   box-shadow: 0 0 0 0;
-  color: var(--navegacion-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1em;
@@ -8372,18 +8371,7 @@ ol + hr {
   text-decoration: none;
   white-space: nowrap;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  width: 100%;
   text-align: left;
-}
-.nav-boton-submenu:hover, .nav-boton-regresar:hover, .nav-boton-submenu:focus, .nav-boton-regresar:focus {
-  background-color: var(--navegacion-fondo-hover);
-  box-shadow: var(--navegacion-sombra-hover);
-  color: var(--navegacion-color-hover);
-}
-.nav-boton-submenu:active, .nav-boton-regresar:active, .nav-boton-submenu.active, .active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-active, .nuxt-link-active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-exact-active, .nuxt-link-exact-active.nav-boton-regresar, .nav-boton-submenu.router-link-exact-active, .router-link-exact-active.nav-boton-regresar {
-  background-color: var(--navegacion-fondo-active);
-  box-shadow: var(--navegacion-sombra-active);
-  color: var(--navegacion-color-active);
 }
 .nav-boton-submenu::after, .nav-boton-regresar::after {
   font-family: "sisdai-iconos" !important;
@@ -8690,6 +8678,9 @@ ol + hr {
   .colapsable-navegacion .colapsable-boton-submenu {
     padding: 8px 16px;
   }
+}
+.colapsable-navegacion .colapsable-boton-submenu .nav-boton-submenu, .colapsable-navegacion .colapsable-boton-submenu .nav-boton-regresar {
+  padding: 0;
 }
 .colapsable-navegacion.activo .colapsable-boton-submenu, .colapsable-navegacion:focus .colapsable-boton-submenu, .colapsable-navegacion:focus-within .colapsable-boton-submenu, .colapsable-navegacion:hover .colapsable-boton-submenu {
   color: #000;
