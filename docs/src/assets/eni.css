@@ -60,6 +60,7 @@
   --input-deshabilitado-color: #AAAAAA;
   --input-hover: #364A69;
   --input-focus: #005DFF;
+  --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">        <g fill="%23141414">            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>            <rect width="24" height="24" fill="none"/>        </g>    </svg>');
   --tabla-fondo-impar: #CCE1FF4c;
   --tabla-fondo-notas: #CCE1FF;
   --tarjetas-fondo: #DDDDDD4c;
@@ -2013,11 +2014,12 @@ select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBpZD0iY2hldnJvbi0tc29ydC0tZG93biIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggaWQ9IlRyYXphZG9fMjg4ODIiIGRhdGEtbmFtZT0iVHJhemFkbyAyODg4MiIgZD0iTTE0LjI1LDI1LjksOSwyMC42NWwxLjA1LTEuMDUsNC4yLDQuMiw0LjItNC4yLDEuMDUsMS4wNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0xMC42KSIvPgogIDxyZWN0IGlkPSJfVHJhbnNwYXJlbnRfUmVjdGFuZ2xlXyIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiBmaWxsPSJub25lIi8+Cjwvc3ZnPgo=);
   background-position: calc(100% - 16px), 50%;
   background-size: 24px;
   background-repeat: no-repeat;
   padding-right: 32px;
+  /* Assign the SVG variable */
+  background-image: var(--input-select-svg);
 }
 
 [type=file] {
@@ -9397,60 +9399,102 @@ body {
 }
 
 :root[data-dark-theme-neutro=true] {
-  --neutro-oscuro-1: #fff;
-  --neutro-oscuro-2: #6f6f6f;
-  --neutro-oscuro-3: #393939;
-  --neutro-oscuro-4: #262626;
-  --neutro-oscuro-fondo: #102543;
-  --neutro-oscuro-hover: #b9b9b9;
-  --pagina-fondo: var(--neutro-oscuro-fondo);
-  --tipografia-color: var(--neutro-oscuro-1);
-  --tipografia-color-2: var(--neutro-oscuro-2);
-  --tipografia-color-3: var(--neutro-oscuro-3);
-  --borde-color-1: var(--neutro-oscuro-1);
-  --sombra: #ffffff1a;
-  --sombra-hover: #ffffff33;
-  --detalle-fondo: var(--neutro-oscuro-4);
-  --boton-primario-fondo: var(--neutro-oscuro-1);
-  --boton-primario-color: var(--pagina-fondo);
-  --boton-primario-hover-fondo: var(--neutro-oscuro-hover);
-  --boton-primario-hover-color: var(--pagina-fondo);
-  --boton-primario-focus-fondo: var(--neutro-oscuro-1);
-  --boton-primario-focus-color: var(--pagina-fondo);
+  --pagina-fondo: #102543;
+  --nota-fondo: #364A694c;
+  --tipografia-color: #ffffff;
+  --tipografia-color-1: #141414;
+  --tipografia-color-2: #6692FF;
+  --tipografia-color-3: #889DBB;
+  --borde-color-1: #ffffff;
+  --borde-color-2: #889DBB;
+  --borde-color-3: #AAAAAA;
+  --borde-color-4: #ffffff;
+  --borde-focus: #668BFF;
+  --sombra: #0000001a;
+  --sombra-focus: #668BFF;
+  --sombra-hover: #0000001a;
+  --detalle-fondo: #CCE1FF4c;
+  --detalle-focus-sombra: #668BFF;
+  --boton-primario-fondo: #6692FF;
+  --boton-primario-borde: #6692FF;
+  --boton-primario-color: #102543;
+  --boton-primario-sombra: transparent;
+  --boton-primario-deshabilitado-fondo: #364A69;
+  --boton-primario-deshabilitado-borde: #364A69;
+  --boton-primario-deshabilitado-color: #5E7392;
+  --boton-primario-deshabilitado-sombra: transparent;
+  --boton-primario-hover-fondo: #80AAFF;
+  --boton-primario-hover-borde: #80AAFF;
+  --boton-primario-hover-color: #102543;
+  --boton-primario-hover-sombra: #0000004c;
+  --boton-primario-focus-fondo: #80AAFF;
+  --boton-primario-focus-borde: #102543;
+  --boton-primario-focus-color: #102543;
+  --boton-primario-focus-sombra: #668BFF;
+  --boton-primario-focus-contorno: #668BFF;
   --boton-secundario-fondo: transparent;
-  --boton-secundario-borde: var(--neutro-oscuro-1);
-  --boton-secundario-color: var(--neutro-oscuro-1);
-  --boton-secundario-hover-fondo: transparent;
-  --boton-secundario-hover-borde: var(--neutro-oscuro-1);
-  --boton-secundario-hover-color: var(--neutro-oscuro-1);
-  --boton-secundario-hover-sombra: #ffffff33;
-  --boton-secundario-focus-fondo: transparent;
-  --boton-secundario-focus-color: var(--neutro-oscuro-1);
+  --boton-secundario-borde: #B1C6E4;
+  --boton-secundario-color: #B1C6E4;
+  --boton-secundario-sombra: transparent;
   --boton-secundario-deshabilitado-fondo: transparent;
-  --boton-terciario-color: var(--neutro-oscuro-1);
-  --boton-terciario-hover-color: var(--neutro-oscuro-1);
-  --boton-terciario-hover-sombra: #ffffff33;
-  --boton-terciario-focus-color: var(--neutro-oscuro-1);
-  --boton-conahcyt-fondo: var(--neutro-oscuro-4);
-  --label-color: var(--neutro-oscuro-1);
-  --input-color: var(--neutro-oscuro-1);
-  --input-controles-color: var(--neutro-oscuro-1);
-  --tabla-fondo-impar: var(--neutro-oscuro-4);
-  --tabla-fondo-notas: var(--neutro-oscuro-2);
-  --borde-color-2: var(--neutro-oscuro-2);
-  --input-borde: var(--neutro-oscuro-2);
-  --tarjetas-fondo: var(--neutro-oscuro-4);
-  --tarjetas-color: var(--neutro-oscuro-1);
-  --tarjetas-externas-color: var(--neutro-oscuro-1);
-  --tarjetas-externas-fondo-gradiente: linear-gradient(to top, #262626f7,#262626f7 10%, #ffffff00 100%);
-  --tarjetas-internas-color: var(--neutro-oscuro-1);
-  --tarjetas-internas-fondo: var(--neutro-oscuro-4);
-  --tarjetas-interna-fondo-hover: var(--neutro-oscuro-3);
-  --portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
-  --navegacion-conahcyt-fondo: #001F69;
-  --navegacion-conahcyt-sombra: #fff2;
-  --navegacion-conahcyt-color: var(--neutro-oscuro-1);
-  --navegacion-conahcyt-fondo-icono: var(--neutro-oscuro-1);
+  --boton-secundario-deshabilitado-borde: #5E7392;
+  --boton-secundario-deshabilitado-color: #364A69;
+  --boton-secundario-deshabilitado-sombra: transparent;
+  --boton-secundario-hover-fondo: #364A69;
+  --boton-secundario-hover-borde: #B1C6E4;
+  --boton-secundario-hover-color: #B1C6E4;
+  --boton-secundario-hover-sombra: #0000004c;
+  --boton-secundario-focus-fondo: #364A69;
+  --boton-secundario-focus-borde: #668BFF;
+  --boton-secundario-focus-color: #B1C6E4;
+  --boton-secundario-focus-sombra: #668BFF;
+  --label-color: #889DBB;
+  --input-fondo: transparent;
+  --input-color: #ffffff;
+  --input-borde: #889DBB;
+  --input-controles-color: #6692FF;
+  --input-deshabilitado-fondo: #5E7392;
+  --input-deshabilitado-color: #364A69;
+  --input-hover: #B1C6E4;
+  --input-focus: #668BFF;
+  --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">        <g fill="%23ffffff">            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>            <rect width="24" height="24" fill="none"/>        </g>    </svg>');
+  --tabla-fondo-impar: #364A694c;
+  --tabla-fondo-notas: #364A69;
+  --tarjetas-fondo: #364A694c;
+  --tarjetas-color: #ffffff;
+  --tarjetas-externas-color: #141414;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.59) 60%, rgba(255,255,255,0) 100%);
+  --tarjetas-internas-color: #FFFFFF;
+  --tarjetas-internas-fondo: #364A694c;
+  --tarjetas-interna-fondo-hover: #364A69;
+  --tarjetas-simplificada-fondo: #102543;
+  --tarjetas-simplificada-color: #668BFF;
+  --tarjetas-simplificada-borde: #668BFF;
+  --tarjetas-simplificada-fondo-hover: #668BFF;
+  --tarjetas-simplificadas-borde-hover: #668BFF;
+  --tarjetas-simplificada-color-hover: #102543;
+  --tarjeta-simplificada-fondo-focus: #668BFF;
+  --tarjeta-simplificada-borde-focus: #102543;
+  --tarjeta-simplificada-color-focus: #102543;
+  --tarjeta-simplificada-contorno-focus: #668BFF;
+  --tarjeta-simplificada-sombra-focus: #668BFF;
+  --tarjetas-contenido-simplificada-fondo: #364A694c;
+  --tarjetas--contenido-simplificada-color: #FFFFFF;
+  --portada-fondo-grandiente: linear-gradient(transparent, #FFFFFFe5);
+  --navegacion-conahcyt-fondo: #002663;
+  --navegacion-conahcyt-sombra: #ffffff32;
+  --navegacion-conahcyt-color: #ffffff;
+  --navegacion-conahcyt-fondo-icono: #002663;
+  --hipervinculo-color: #668BFF;
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-deshabilitado-color: #AAAAAA;
+  --hipervinculo-deshabilitado-sombra: transparent;
+  --hipervinculo-hover-color: #8999CC;
+  --hipervinculo-hover-sombra: transparent;
+  --hipervinculo-focus-color: #668BFF;
+  --hipervinculo-focus-sombra: #668BFF;
+  --hipervinculo-visitado: #9233FF;
+  --boton-conahcyt-fondo: #f6f6f6;
 }
 :root[data-dark-theme-neutro=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
@@ -9679,9 +9723,6 @@ body {
 .a11y-oscura .boton-secundario span[class*=icono-], .a11y-oscura .boton-terciario span[class*=icono-] {
   color: #fff;
 }
-.a11y-oscura .boton-conahcyt img {
-  filter: brightness(0) invert(1);
-}
 .a11y-oscura .input-correcto span[class*=icono-] {
   color: var(--acciones-correcto);
 }
@@ -9692,7 +9733,7 @@ body {
   color: #fff;
 }
 .a11y-oscura #input-readonly {
-  --input-color: #6f6f6f;
+  --input-color: var(--input-color);
 }
 .a11y-oscura .nav-hipervinculo .icono-buscar {
   color: #DFC9A1;

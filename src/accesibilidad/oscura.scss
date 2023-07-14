@@ -1,75 +1,122 @@
 :root[data-dark-theme-neutro='true'] {
-  // Agregar variables para vista oscura
-  --neutro-oscuro-1: #fff;
-  --neutro-oscuro-2: #6f6f6f;
-  --neutro-oscuro-3: #393939;
-  --neutro-oscuro-4: #262626;
-  --neutro-oscuro-fondo: #102543;
-  --neutro-oscuro-hover: #b9b9b9;
+  --pagina-fondo: #102543;
+  --nota-fondo: #364A694c;
   
-  // Modificar propiedades de atributos generales
-	--pagina-fondo: var(--neutro-oscuro-fondo);
-  --tipografia-color: var(--neutro-oscuro-1);
-	--tipografia-color-2: var(--neutro-oscuro-2);
-	--tipografia-color-3: var(--neutro-oscuro-3);
-	--borde-color-1: var(--neutro-oscuro-1);
-	--sombra: #ffffff1a;
-	--sombra-hover: #ffffff33;
-	--detalle-fondo: var(--neutro-oscuro-4);
-	// // --hipervinculo-color: #005DFF;
-	// // font-weight: 400 - 350;
-	// // line-height: calc(1em * 1.3 - 1.5);
-	// Boton primario
-	--boton-primario-fondo: var(--neutro-oscuro-1);
-	--boton-primario-color: var(--pagina-fondo);
-  --boton-primario-hover-fondo: var(--neutro-oscuro-hover);
-	--boton-primario-hover-color: var(--pagina-fondo);
-	--boton-primario-focus-fondo: var(--neutro-oscuro-1);
-	--boton-primario-focus-color: var(--pagina-fondo);
-	// Boton secundario
-	--boton-secundario-fondo: transparent;
-	--boton-secundario-borde: var(--neutro-oscuro-1);
-	--boton-secundario-color: var(--neutro-oscuro-1);
-  --boton-secundario-hover-fondo: transparent;
-	--boton-secundario-hover-borde: var(--neutro-oscuro-1);
-	--boton-secundario-hover-color: var(--neutro-oscuro-1);
-	--boton-secundario-hover-sombra: #ffffff33;  
-	--boton-secundario-focus-fondo: transparent;
-	// --boton-secundario-focus-borde: var(--neutro-oscuro-1);
-	--boton-secundario-focus-color: var(--neutro-oscuro-1);
-	--boton-secundario-deshabilitado-fondo: transparent;
-	// Boton terciario
-	--boton-terciario-color: var(--neutro-oscuro-1);
-	--boton-terciario-hover-color: var(--neutro-oscuro-1);
-	--boton-terciario-hover-sombra: #ffffff33; 
-	// --boton-terciario-focus-borde: #fff;
-	--boton-terciario-focus-color: var(--neutro-oscuro-1);
-	// Boton conahcyt
-	--boton-conahcyt-fondo: var(--neutro-oscuro-4);
-	// Elementos de formularios
-  --label-color: var(--neutro-oscuro-1);
-	--input-color: var(--neutro-oscuro-1);
-	--input-controles-color: var(--neutro-oscuro-1);
-	--tabla-fondo-impar: var(--neutro-oscuro-4);
-	--tabla-fondo-notas: var(--neutro-oscuro-2);
-	--borde-color-2: var(--neutro-oscuro-2);
-	--input-borde: var(--neutro-oscuro-2);
-	// Tarjetas
-	--tarjetas-fondo: var(--neutro-oscuro-4);
-	--tarjetas-color: var(--neutro-oscuro-1);
-	--tarjetas-externas-color: var(--neutro-oscuro-1);
-	--tarjetas-externas-fondo-gradiente: linear-gradient(to top, #262626f7,#262626f7 10%, #ffffff00 100%);
-	--tarjetas-internas-color: var(--neutro-oscuro-1);
-	--tarjetas-internas-fondo: var(--neutro-oscuro-4);
-	--tarjetas-interna-fondo-hover: var(--neutro-oscuro-3);
-	// Portada
-	--portada-fondo-grandiente: linear-gradient(transparent, #fffffff7);
-	// Navegacion
-	--navegacion-conahcyt-fondo: #001F69;
-  --navegacion-conahcyt-sombra: #fff2;
-	--navegacion-conahcyt-color: var(--neutro-oscuro-1);
-	--navegacion-conahcyt-fondo-icono: var(--neutro-oscuro-1);
-  // Navegacion conahcyt
+  // Tipografia
+  --tipografia-color: #ffffff;
+  --tipografia-color-1: #141414;
+  --tipografia-color-2: #6692FF;
+  --tipografia-color-3: #889DBB;
+
+  // Bordes
+  --borde-color-1: #ffffff;
+  --borde-color-2: #889DBB;
+  --borde-color-3: #AAAAAA;
+  --borde-color-4: #ffffff;
+  --borde-focus: #668BFF;
+
+  // Sombras
+  --sombra: #0000001a;
+  --sombra-focus: #668BFF;
+  --sombra-hover: #0000001a;
+
+  // Detalles
+  --detalle-fondo: #CCE1FF4c;
+  --detalle-focus-sombra: #668BFF;
+
+  // Boton primario
+  --boton-primario-fondo: #6692FF;
+  --boton-primario-borde: #6692FF;
+  --boton-primario-color: #102543;
+  --boton-primario-sombra: transparent;
+    --boton-primario-deshabilitado-fondo: #364A69;
+    --boton-primario-deshabilitado-borde: #364A69;
+    --boton-primario-deshabilitado-color: #5E7392;
+    --boton-primario-deshabilitado-sombra: transparent;
+      --boton-primario-hover-fondo: #80AAFF;
+      --boton-primario-hover-borde: #80AAFF;
+      --boton-primario-hover-color: #102543;
+      --boton-primario-hover-sombra: #0000004c;
+        --boton-primario-focus-fondo: #80AAFF;
+        --boton-primario-focus-borde: #102543;
+        --boton-primario-focus-color: #102543;
+        --boton-primario-focus-sombra: #668BFF;
+        --boton-primario-focus-contorno: #668BFF;
+  
+  // Boton secundario
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: #B1C6E4;
+  --boton-secundario-color: #B1C6E4;
+  --boton-secundario-sombra: transparent;
+    --boton-secundario-deshabilitado-fondo: transparent;
+    --boton-secundario-deshabilitado-borde: #5E7392;
+    --boton-secundario-deshabilitado-color: #364A69;
+    --boton-secundario-deshabilitado-sombra: transparent;
+      --boton-secundario-hover-fondo: #364A69;
+      --boton-secundario-hover-borde: #B1C6E4;
+      --boton-secundario-hover-color: #B1C6E4;
+      --boton-secundario-hover-sombra: #0000004c;
+        --boton-secundario-focus-fondo: #364A69;
+        --boton-secundario-focus-borde: #668BFF;
+        --boton-secundario-focus-color: #B1C6E4;
+        --boton-secundario-focus-sombra: #668BFF;
+
+  // Elementos de forumlario
+  --label-color: #889DBB;
+  --input-fondo: transparent;
+  --input-color: #ffffff;
+  --input-borde: #889DBB;
+  --input-controles-color: #6692FF;
+    --input-deshabilitado-fondo: #5E7392;
+    --input-deshabilitado-color: #364A69;
+      --input-hover: #B1C6E4;
+        --input-focus: #668BFF;
+
+  --input-select-svg: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+        <g fill="%23ffffff">\
+            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
+            <rect width="24" height="24" fill="none"/>\
+        </g>\
+    </svg>');
+
+  // Tablas
+  --tabla-fondo-impar: #364A694c;
+  --tabla-fondo-notas: #364A69;
+
+  // Tarjetas
+  --tarjetas-fondo: #364A694c;
+  --tarjetas-color: #ffffff;
+  --tarjetas-externas-color: #141414;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.59) 60%, rgba(255,255,255,0) 100%);
+  --tarjetas-internas-color: #FFFFFF;
+  --tarjetas-internas-fondo: #364A694c;
+    --tarjetas-interna-fondo-hover: #364A69;
+
+  --tarjetas-simplificada-fondo: #102543;
+  --tarjetas-simplificada-color: #668BFF;
+  --tarjetas-simplificada-borde: #668BFF;
+    --tarjetas-simplificada-fondo-hover: #668BFF;
+    --tarjetas-simplificadas-borde-hover: #668BFF;
+    --tarjetas-simplificada-color-hover: #102543;
+      --tarjeta-simplificada-fondo-focus: #668BFF;
+      --tarjeta-simplificada-borde-focus: #102543;
+      --tarjeta-simplificada-color-focus: #102543;
+      --tarjeta-simplificada-contorno-focus: #668BFF;
+      --tarjeta-simplificada-sombra-focus: #668BFF;
+  --tarjetas-contenido-simplificada-fondo: #364A694c;
+  --tarjetas--contenido-simplificada-color: #FFFFFF;
+
+  // Portada
+  --portada-fondo-grandiente: linear-gradient(transparent, #FFFFFFe5);
+  
+  // Navegacion principal
+  --navegacion-conahcyt-fondo: #002663;
+  --navegacion-conahcyt-sombra: #ffffff32;
+  --navegacion-conahcyt-color: #ffffff;
+  --navegacion-conahcyt-fondo-icono: #002663;
+
+  // Logo de conahcyt
   .nav-hiperviculo-logo {
 		.nav-logo {
       &.invertir {
@@ -77,6 +124,35 @@
       }
 		}
 	}
+  
+  // // Navegacion secundaria
+  // --menu-lateral-color: #102543;
+  // --menu-lateral-fondo: #CCE1FFB2;
+  // --menu-lateral-accion: #0068FF;
+  //   --menu-lateral-accion-fondo-hover: #CCE1FF;
+  //     --menu-lateral-accion-fondo-active: #ffffffcc;
+  //     --menu-lateral-accion-sombra-active: #0068FF;
+  // --submenu-lateral-fondo-mov: #CCE1FFB2;
+  // --submenu-lateral-fondo-colapsable: #CCE1FF;
+
+  // // Acciones
+  // --acciones-informativo: #1256C4;
+  // --acciones-error: #C51228;
+  // --acciones-advertencia: #FEB301;
+  // --acciones-correcto: #069165;
+
+  // Hipervinculos
+  --hipervinculo-color: #668BFF;
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-deshabilitado-color: #AAAAAA;
+  --hipervinculo-deshabilitado-sombra: transparent;
+  --hipervinculo-hover-color: #8999CC;
+  --hipervinculo-hover-sombra: transparent;
+  --hipervinculo-focus-color: #668BFF;
+  --hipervinculo-focus-sombra: #668BFF;
+  --hipervinculo-visitado: #9233FF;
+
+  --boton-conahcyt-fondo: #f6f6f6;
 }
 
 :root[data-dark-theme-sisdai='true'] {
@@ -376,11 +452,11 @@
 		  color: #fff;
 		}
 	}
-  .boton-conahcyt {
-		img {
-	  	filter: brightness(0) invert(1);
-		}
-	}
+  // .boton-conahcyt {
+	// 	img {
+	//   	filter: brightness(0) invert(1);
+	// 	}
+	// }
   // Iconos en inputs  
 	.input-correcto {
 		span[class*="icono-"] {
@@ -398,7 +474,7 @@
   }
   // Texto en input
   #input-readonly {
-		--input-color: #6f6f6f;
+		--input-color: var(--input-color);
 	}
   // Navegacion gob
   .nav-hipervinculo {
