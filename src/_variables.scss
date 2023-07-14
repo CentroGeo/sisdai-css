@@ -248,6 +248,7 @@ $columnas: (
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #002663;
   --navegacion-conahcyt-fondo-icono: #002663;
+  --navegacion-conahcyt-fondo-hover: #DDDDDD4c;
   
   // Navegacion secundaria
   --menu-lateral-color: #102543;
@@ -260,10 +261,14 @@ $columnas: (
   --submenu-lateral-fondo-colapsable: #CCE1FF;
 
   // Acciones
-  --acciones-informativo: #1256C4;
-  --acciones-error: #C51228;
-  --acciones-advertencia: #FEB301;
-  --acciones-correcto: #069165;
+  --acciones-informativo: #19439C;
+  --acciones-informativo-2: #ECF2FF;
+  --acciones-error: #940B1C;
+  --acciones-error-2: #FEE9EC;
+  --acciones-advertencia: #916802;
+  --acciones-advertencia-2: #FFF7E3;
+  --acciones-correcto: #2A6F4D;
+  --acciones-correcto-2: #E7FBF1;
 
   // Hipervinculos
   --hipervinculo-color: #005DFF;

@@ -11,8 +11,8 @@
   // Bordes
   --borde-color-1: #ffffff;
   --borde-color-2: #889DBB;
-  --borde-color-3: #AAAAAA;
-  --borde-color-4: #ffffff;
+  --borde-color-3: #364A69;
+  --borde-color-4: #CCE1FF;
   --borde-focus: #668BFF;
 
   // Sombras
@@ -21,7 +21,7 @@
   --sombra-hover: #0000001a;
 
   // Detalles
-  --detalle-fondo: #CCE1FF4c;
+  --detalle-fondo: #364A694c;
   --detalle-focus-sombra: #668BFF;
 
   // Boton primario
@@ -112,9 +112,10 @@
   
   // Navegacion principal
   --navegacion-conahcyt-fondo: #002663;
-  --navegacion-conahcyt-sombra: #ffffff32;
+  --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #ffffff;
-  --navegacion-conahcyt-fondo-icono: #002663;
+  --navegacion-conahcyt-fondo-icono: #FFFFFF;
+  --navegacion-conahcyt-fondo-hover: #003384;
 
   // Logo de conahcyt
   .nav-hiperviculo-logo {
@@ -125,15 +126,15 @@
 		}
 	}
   
-  // // Navegacion secundaria
-  // --menu-lateral-color: #102543;
-  // --menu-lateral-fondo: #CCE1FFB2;
-  // --menu-lateral-accion: #0068FF;
-  //   --menu-lateral-accion-fondo-hover: #CCE1FF;
-  //     --menu-lateral-accion-fondo-active: #ffffffcc;
-  //     --menu-lateral-accion-sombra-active: #0068FF;
-  // --submenu-lateral-fondo-mov: #CCE1FFB2;
-  // --submenu-lateral-fondo-colapsable: #CCE1FF;
+  // Navegacion secundaria
+  --menu-lateral-color: #FFFFFF;
+  --menu-lateral-fondo: #364A69B2;
+  --menu-lateral-accion: #6692FF;
+    --menu-lateral-accion-fondo-hover: #364A69;
+      --menu-lateral-accion-fondo-active: #102543cb;
+      --menu-lateral-accion-sombra-active: #6692FF;
+  --submenu-lateral-fondo-mov: #364A69B2;
+  --submenu-lateral-fondo-colapsable: #364A69;
 
   // // Acciones
   // --acciones-informativo: #1256C4;
