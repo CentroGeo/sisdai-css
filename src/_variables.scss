@@ -20,9 +20,13 @@ $color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a)
 
 $acciones: (
   'informativo': var(--acciones-informativo),
+  'informativo-2': var(--acciones-informativo-2),
   'error': var(--acciones-error),
+  'error-2': var(--acciones-error-2),
   'advertencia': var(--acciones-advertencia),
+  'advertencia-2': var(--acciones-advertencia-2),
   'correcto': var(--acciones-correcto),
+  'correcto-2': var(--acciones-correcto-2),
 );
 
 $sombras-estados: (

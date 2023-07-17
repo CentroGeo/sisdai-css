@@ -136,22 +136,26 @@
   --submenu-lateral-fondo-mov: #364A69B2;
   --submenu-lateral-fondo-colapsable: #364A69;
 
-  // // Acciones
-  // --acciones-informativo: #1256C4;
-  // --acciones-error: #C51228;
-  // --acciones-advertencia: #FEB301;
-  // --acciones-correcto: #069165;
+  // Acciones
+  --acciones-informativo: #66A5FE;
+  --acciones-informativo-2: #172136;
+  --acciones-error: #FF6969;
+  --acciones-error-2: #341116;
+  --acciones-advertencia: #FFDC69;
+  --acciones-advertencia-2: #201C11;
+  --acciones-correcto: #1BD97C;
+  --acciones-correcto-2: #0D2619;
 
   // Hipervinculos
   --hipervinculo-color: #668BFF;
   --hipervinculo-sombra: transparent;
-  --hipervinculo-deshabilitado-color: #AAAAAA;
+  --hipervinculo-deshabilitado-color: #364A69;
   --hipervinculo-deshabilitado-sombra: transparent;
   --hipervinculo-hover-color: #8999CC;
   --hipervinculo-hover-sombra: transparent;
   --hipervinculo-focus-color: #668BFF;
   --hipervinculo-focus-sombra: #668BFF;
-  --hipervinculo-visitado: #9233FF;
+  --hipervinculo-visitado: #CF99FF;
 
   --boton-conahcyt-fondo: #f6f6f6;
 }
