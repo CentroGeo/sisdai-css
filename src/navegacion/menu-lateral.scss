@@ -28,6 +28,9 @@
         :hover {
           background: transparent;
         }
+        &:focus {
+          box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
+        }
         background: transparent;
         border: none;
         box-shadow: none;
