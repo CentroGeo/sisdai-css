@@ -8547,6 +8547,9 @@ ol + hr {
 .menu-lateral-contenedor .menu-mov .boton-menu.boton-icono :hover {
   background: transparent;
 }
+.menu-lateral-contenedor .menu-mov .boton-menu.boton-icono:focus {
+  box-shadow: 0 0 0 2px #005DFF;
+}
 .menu-lateral-contenedor .menu-colapsable {
   margin-left: -30px;
   pointer-events: none;
