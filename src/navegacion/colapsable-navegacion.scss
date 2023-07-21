@@ -47,6 +47,9 @@
     @include mediaquery(mov) { 
         padding: map-get($espaciado, '1') map-get($espaciado, '2');
       }
+    .nav-boton-submenu {
+      padding: 0;
+    }
   }
   &.activo,
   &:focus,

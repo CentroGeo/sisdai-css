@@ -82,11 +82,12 @@
 }
 .nav-boton-submenu {
   display: inline-flex;
-  background-color: var(--navegacion-fondo);
+  // background-color: var(--navegacion-fondo);
+  background: transparent;
   border: none;
   border-radius: 0;
   box-shadow: 0 0 0 0;
-  color: var(--navegacion-color);
+  // color: var(--navegacion-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: calc(1em * 1);
@@ -97,18 +98,18 @@
   transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
   &:hover,
   &:focus {
-    background-color: var(--navegacion-fondo-hover);
-    box-shadow: var(--navegacion-sombra-hover);
-    color: var(--navegacion-color-hover);
+    // background-color: var(--navegacion-fondo-hover);
+    // box-shadow: var(--navegacion-sombra-hover);
+    // color: var(--navegacion-color-hover);
   }
   &:active,
   &.active,
   &.nuxt-link-active,
   &.nuxt-link-exact-active,
   &.router-link-exact-active {
-    background-color: var(--navegacion-fondo-active);
-    box-shadow: var(--navegacion-sombra-active);
-    color: var(--navegacion-color-active);
+    // background-color: var(--navegacion-fondo-active);
+    // box-shadow: var(--navegacion-sombra-active);
+    // color: var(--navegacion-color-active);
   }
   &::after {
     font-family: "sisdai-iconos" !important;
@@ -117,7 +118,7 @@
     content: "\65";
     margin-left: map-get($espaciado,'minimo');
   }
-  width: 100%;
+  // width: 100%;
   text-align: left;
   @include mediaquery('nav') {
     &::after {
