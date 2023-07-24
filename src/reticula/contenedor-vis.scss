@@ -70,6 +70,25 @@
   /* * * * * Bordes redondeados * * * * */
 
   /* * * * * Escodner elementos * * * * */
+  .panel-encabezado-vis,
+  .panel-izquierda-vis,
+  .panel-derecha-vis,
+  .panel-pie-vis {
+    display: none;
+  }
+  &.con-panel-encabezado-vis .panel-encabezado-vis {
+    display: block;
+  }
+  &.con-panel-izquierda-vis .panel-izquierda-vis {
+    display: block;
+  }
+  &.con-panel-derecha-vis .panel-derecha-vis {
+    display: block;
+  }
+  &.con-panel-pie-vis .panel-pie-vis {
+    display: block;
+  }
+  
   &.sin-cargador .vista-cargando {
     display: none;
   }
