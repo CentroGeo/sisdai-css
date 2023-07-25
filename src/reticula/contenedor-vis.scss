@@ -11,6 +11,7 @@
   .contenido-vis {
     // min-height: $alto-minimo-vis;
     width: 100%;
+    margin: 0;
   }
 
   // Botón conahcyt simepre este pegado abajo
@@ -88,7 +89,7 @@
   &.con-panel-pie-vis .panel-pie-vis {
     display: block;
   }
-  
+
   &.sin-cargador .vista-cargando {
     display: none;
   }
@@ -183,18 +184,18 @@
   /* * * * * Diosposicion * * * * */
   display: grid;
   grid-gap: 0;
-  grid-template-rows: auto min($alto-minimo-vis) auto auto auto;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto min($alto-minimo-vis) auto auto;
+  grid-template-columns: 1;
   // grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
 
   // Filas por defecto
   .panel-encabezado-vis {
     grid-row-start: 1;
   }
-  .contenido-vis {
+  .panel-izquierda-vis {
     grid-row-start: 2;
   }
-  .panel-izquierda-vis {
+  .contenido-vis {
     grid-row-start: 3;
   }
   .panel-derecha-vis {
@@ -204,20 +205,23 @@
     grid-row-start: 5;
   }
   .panel-encabezado-vis,
-  .contenido-vis,
   .panel-izquierda-vis,
+  .contenido-vis,
   .panel-derecha-vis,
   .panel-pie-vis {
     grid-column-start: 1;
     grid-row-end: span 1;
-    grid-column-end: span 12;
+    grid-column-end: span 1;
   }
 
   @include mediaquery('esc') {
-    grid-template-rows: auto min($alto-minimo-vis) auto;
+    grid-template-rows: min($alto-minimo-vis);
     .panel-izquierda-vis,
     .contenido-vis,
     .panel-derecha-vis {
+      grid-row-start: 1;
+    }
+    .panel-pie-vis {
       grid-row-start: 2;
     }
     .panel-encabezado-vis,
@@ -225,44 +229,64 @@
       // Cuando hay encabezado o pie, estos deben tomar el resto de la pantalla como alto máximo
       max-height: calc($alto-maximo-contenedor-vis - $alto-minimo-vis);
     }
+    &.con-panel-encabezado-vis {
+      grid-template-rows: auto min($alto-minimo-vis);
+      .panel-izquierda-vis,
+      .contenido-vis,
+      .panel-derecha-vis {
+        grid-row-start: 2;
+      }
+      .panel-pie-vis {
+        grid-row-start: 3;
+      }
+    }
+    &.con-panel-izquierda-vis,
+    &.con-panel-derecha-vis {
+      .panel-encabezado-vis,
+      .panel-pie-vis {
+        grid-column-end: span 2;
+      }
+    }
+    .con-panel-pie-vis {
+      grid-template-rows: min($alto-minimo-vis) auto;
+    }
     &.con-panel-encabezado-vis.con-panel-pie-vis {
+      grid-template-rows: auto min($alto-minimo-vis) auto;
       .panel-encabezado-vis,
       .panel-pie-vis {
         // Cuando hay encabezado y pie, estos deben tomar la mitad del resto de la pantalla como alto máximo
         max-height: calc(($alto-maximo-contenedor-vis - $alto-minimo-vis) / 2);
       }
     }
-    &.con-panel-izquierda-vis,
-    &.con-panel-derecha-vis {
-      .panel-izquierda-vis,
-      .panel-derecha-vis {
-        grid-column-end: span 4;
-      }
-      .contenido-vis {
-        grid-column-end: span 8;
-      }
-    }
     &.con-panel-izquierda-vis {
+      grid-template-columns: 1fr 2fr;
+      .panel-izquierda-vis {
+        grid-column-start: 1;
+      }
       .contenido-vis {
-        grid-column-start: 5;
+        grid-column-start: 2;
       }
     }
     &.con-panel-derecha-vis {
+      grid-template-columns: 2fr 1fr;
+      .contenido-vis {
+        grid-column-start: 1;
+      }
       .panel-derecha-vis {
-        grid-column-start: 9;
+        grid-column-start: 2;
       }
     }
     &.con-panel-izquierda-vis.con-panel-derecha-vis {
-      .contenido-vis {
-        grid-column-start: 4;
-        grid-column-end: span 6;
-      }
-      .panel-izquierda-vis,
-      .panel-derecha-vis {
+      grid-template-columns: 1fr 2fr 1fr;
+      .panel-encabezado-vis,
+      .panel-pie-vis {
         grid-column-end: span 3;
       }
+      .contenido-vis {
+        grid-column-start: 2;
+      }
       .panel-derecha-vis {
-        grid-column-start: 10;
+        grid-column-start: 3;
       }
     }
   }
