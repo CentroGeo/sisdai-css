@@ -86,7 +86,7 @@
         <div class="columna-8">
           <input class="boton-primario" type="submit" value="input[submit]">
           <input class="boton-secundario" type="reset" value="input[reset]">
-          <input class="boton-terciario" type="button" value="input[button]">
+          <input class="boton" type="button" value="input[button]">
         </div>
       </div>
     </fieldset>
@@ -102,7 +102,7 @@
 
     <input class="boton-primario" type="submit" value="input[submit]">
     <input class="boton-secundario" type="reset" value="input[reset]">
-    <input class="boton-terciario" type="button" value="input[button]">
+    <input class="boton" type="button" value="input[button]">
   </form>
 
   <h2 class="m-t-10">Formulario validaciones</h2>

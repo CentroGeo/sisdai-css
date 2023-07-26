@@ -1,29 +1,29 @@
 .hipervinculo-gobmx {
   @extend .hipervinculo;
-  color: map-get($color-gobmx, 'claro-1');
+  color: var(--color-gobmx-claro-1);
   font-weight: 400;
   text-decoration: none;
   &:visited {
-    color: map-get($color-gobmx, 'claro-1');
+    color: var(--color-gobmx-claro-1);
   }
   &:hover,
   &:focus {
-    color: map-get($color-gobmx, 'claro-2');
+    color: var(--color-gobmx-claro-2);
   }
 }
 
-.hipervinculo-conacyt {
+.hipervinculo-conahcyt {
   @extend .hipervinculo;
-  color: map-get($color-conacyt, 'claro-1');
+  color: var(--color-conahcyt-claro-1);
   font-weight: 400;
   text-decoration: none;
   &:visited {
-    color: map-get($color-conacyt, 'claro-1');
+    color: var(--color-conahcyt-claro-1);
   }
   &:hover {
-    color: map-get($color-conacyt, 'acento');
+    color: var(--color-conahcyt-acento);
   }
   &:focus {
-    color: map-get($color-conacyt, 'acento');
+    color: var(--color-conahcyt-acento);
   }
 }

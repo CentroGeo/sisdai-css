@@ -19,22 +19,22 @@
   &lt;/div>
 </pre>
   <div class="grid">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
   </div>
   <p class="m-t-5">
     Los nombres de las columnas son numericas y van creciendo en porcentaje al total de las columnas en el dispositivo, por lo que columna-1 es 1/16 en escritorio y 1/8 para celular.
@@ -56,52 +56,52 @@
   &lt;/div>
 </pre>
   <div class="flex">
-    <div class="columna-1 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-2 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-2 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-3 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-3 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-4 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-4 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-5 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-5 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-6 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-6 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-7 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-7 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-8 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-8 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-9 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-9 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-10 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-10 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-11 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-11 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-12 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-12 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-13 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-13 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-14 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-14 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-15 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-15 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <div class="flex">
-    <div class="columna-16 conacyt-fondo-claro-1 m-y-1 p-1"> </div>
+    <div class="columna-16 conahcyt-fondo-claro-1 m-y-1 p-1"> </div>
   </div>
   <p class="m-t-5">
     Existen clases responsivas para los dispositivos -mov -esc . Estas clases tienen mayor prioridad que las que no especifican el dispositivo para poder reformatear la disposicion en caso de ser necesario.
@@ -115,10 +115,10 @@
   &lt;/div>
 </pre>
   <div class="grid m-y-1">
-    <div class="columna-11-esc columna-5-mov conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 columna-3-esc conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-11-esc columna-5-mov conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 columna-3-esc conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1"> </div>
   </div>
   
   <h2 class="m-t-10">Columnas <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" ref="noopener noreferrer">Flex</a></h2>
@@ -133,34 +133,34 @@
 </pre>
 
   <div class="flex flex-contenido-inicio m-t-1 flex-columnas-100-al-simplificar">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-inicio</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conahcyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-inicio</div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
   <div class="flex flex-contenido-final m-t-1 flex-columnas-100-al-simplificar">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-final</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conahcyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-final</div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
   <div class="flex flex-contenido-centrado m-t-1 flex-columnas-100-al-simplificar">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-centrado</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conahcyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-centrado</div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
   <div class="flex flex-contenido-separado m-t-1 flex-columnas-100-al-simplificar">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-separado</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conahcyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-separado</div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
   <div class="flex flex-contenido-alrededor m-t-1 flex-columnas-100-al-simplificar">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-alrededor</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conahcyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-alrededor</div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
   <div class="flex flex-contenido-equidistante m-t-1 flex-columnas-100-al-simplificar">
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
-    <div class="columna-4 conacyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-equidistante</div>
-    <div class="columna-1 conacyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
+    <div class="columna-4 conahcyt-fondo-claro-1 p-1 m-y-1">.flex-contenido-equidistante</div>
+    <div class="columna-1 conahcyt-fondo-claro-1 p-1 m-y-1"></div>
   </div>
 
   <h2 class="m-t-10">Columnas <a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank" ref="noopener noreferrer">Grid</a></h2>

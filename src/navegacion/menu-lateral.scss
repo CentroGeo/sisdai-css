@@ -15,7 +15,7 @@
     .menu-mov {
       margin-left: map-get($espaciado, '2');
 
-      background: var(--menu-lateral-fondo, #ddf);
+      background: var(--submenu-lateral-fondo-mov);
       border-radius: map-get($espaciado, '2');
         padding: map-get($espaciado, '1') 0;
       transition: all 0.2s ease-in-out;
@@ -29,25 +29,25 @@
           background: transparent;
         }
         &:focus {
-          box-shadow: 0 0 0 2px #005DFF;
+          box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
         }
         background: transparent;
         border: none;
         box-shadow: none;
-        color: var(--menu-lateral-accion, #00f);
+        color: var(--menu-lateral-color);
       }
     }
     .menu-colapsable {
       margin-left: -30px;
       pointer-events: none;
       transition: all 0.2s ease-in-out;
-      background: var(--submenu-lateral-fondo, #ccf);
+      background: var(--submenu-lateral-fondo-colapsable);
       opacity: 0;
       padding-top: map-get($espaciado, '1');
       padding-bottom: map-get($espaciado, '1');
       &.abierto {
         border-radius: 0 map-get($espaciado, '2') map-get($espaciado, '2') 0;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 4px 8px var(--sombra);
         pointer-events: inherit;
         margin-left: 0;
         opacity: 1;
@@ -63,37 +63,34 @@
       border-radius: 0;
       padding: map-get($espaciado, '1')
         map-get($contenedores, 'mov', 'margen-interior');
-  
-      color: var(--navegacion-color);
       text-decoration: none;
       background: transparent;
-      color: var(--tipografia-color-3, #333);
+      color: var(--menu-lateral-color);
       font-weight: 400;
       text-decoration: none;
       @media (hover: hover) {
         &:hover {
-          background: var(--submenu-lateral-fondo);
-          color: var(--menu-lateral-accion, #00f);
+          background: var(--menu-lateral-accion-fondo-hover);
         }
       }
       &.router-link-exact-active {
-        background: #f6f6f6;
-        box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
-        color: var(--menu-lateral-accion, #00f);
+        background: var(--menu-lateral-accion-fondo-active);
+        box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
+        color: var(--menu-lateral-accion);
       }
       &:active,
       &:focus,
       &.link-activo {
-        background: #f6f6f6;
-        box-shadow: inset 8px 0 0 var(--menu-lateral-accion, #00f);
-        color: var(--menu-lateral-accion, #00f);
+        background: var(--menu-lateral-accion-fondo-active);
+        box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
+        color: var(--menu-lateral-accion);
       }
     }
   }
   
   @media (min-width: map-get($breakpoints, 'esc')) {
     .menu-lateral-contenedor {
-      background: #ded5ff;
+      background: var(--menu-lateral-fondo);
       margin: 0;
       top: 50px;
       .menu-mov {

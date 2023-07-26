@@ -24,9 +24,9 @@ summary {
     box-shadow: 0 0 0 transparent;
   }
   &:focus {
-    background-color: var(--detalle-fondo); //TODO: preguntar a diseño si fondo gris o transparente con sombra
-    // background-color: transparent;
-    // box-shadow: 0 0 8px var(--detalle-focus-sombra);
+    background-color: transparent;
+    box-shadow: 0 0 8px var(--detalle-focus-sombra);
+    border: 1px solid var(--borde-focus);
     outline: none;
   }
   &::before {
