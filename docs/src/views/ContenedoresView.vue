@@ -10,7 +10,7 @@
   ...
 &lt;/div>
 </pre>
-  <p class="p-3 conacyt-fondo-claro-1">
+  <p class="p-3 conahcyt-fondo-claro-1">
     contenedor
   </p>
 
@@ -23,7 +23,7 @@
 &lt;/div>
 </pre>
   <div class="contenedor ancho-fijo">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-fijo
     </p>
   </div>
@@ -37,24 +37,24 @@
 &lt;/div>
 </pre>
   <div class="contenedor ancho-lectura">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-lectura
     </p>
   </div>
 
   <h2 class="m-t-10">Auxiliares de alineacion para contenedores</h2>
   <div class="contenedor ancho-lectura contenedor-izq">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-lectura contenedor-izq
     </p>
   </div>
   <div class="contenedor ancho-lectura contenedor-der">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conhcyt-fondo-claro-1">
       contenedor ancho-lectura contenedor-der
     </p>
   </div>
   <div class="contenedor ancho-lectura contenedor-centro">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-lectura contenedor-centro
     </p>
   </div>
@@ -73,14 +73,14 @@
 </pre>
   <div class="contenedor p-0">
     <div class="flex a11y-simplificada-contenedor ">
-      <div class="columna-4 conacyt-fondo-claro-1">
+      <div class="columna-4 conahcyt-fondo-claro-1">
         <p>1</p>
         <p>Si existe como padre la clase <b>a11y-simplificada</b> que debe estar conectada con el store para poder prender o apagar</p>
       </div>
       <div class="columna-1 gobmx-fondo-claro-2 ">
         <p>2</p>
       </div>
-      <div class="columna-6 conacyt-fondo-claro-2">
+      <div class="columna-6 conahcyt-fondo-claro-2">
         <p>3</p>
         <p>Para el contenedor con clase <b>a11y-simplificada-contenedor</b> reformatea el contenido que sea como bloques de texto con el ancho maximo del ancho de lectura.</p>
       </div>

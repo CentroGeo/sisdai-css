@@ -21,11 +21,12 @@
 	.degradado-negro-abajo {
 		position: relative;
 		width: 100%;
-		background: linear-gradient(transparent, #171717f7);
+		background: var(--portada-fondo-grandiente);
 		display: flex;
 		align-items: stretch;
-		margin-top:48px;
-		.contenido-abajo{
+		margin-top: 48px;
+
+		.contenido-abajo {			
 			margin-top: auto;
 			padding: 24px 24px 48px 24px;
 			width:100%;

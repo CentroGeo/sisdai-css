@@ -21,12 +21,15 @@
     
     align-items: stretch;
     height: 100%;
-    background: #E0E3EE;
+    background: var(--tarjetas-internas-fondo);
     padding: 16px;
-    color:#000;
+    color: var(--tarjetas-internas-color);
     transition: all 0.27s ease-in-out;
     p {
       margin: 4px 0 4px 0;
+    }
+    .parrafo-texto-alto {
+      color: var(--tarjetas-internas-color);
     }
   }
   &:focus {
@@ -36,7 +39,7 @@
   }
   &:hover {
     .contenido-abajo{
-      background: #D9D6E4;
+      background: var(--tarjetas-interna-fondo-hover);
     }
   }
 }

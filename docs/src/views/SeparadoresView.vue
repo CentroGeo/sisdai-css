@@ -12,7 +12,7 @@
       <ul class="lista-avatar">
         <li>
           <div class="avatar">
-            <img src="https://www.fillmurray.com/400/400" alt="murray"/>
+            <img src="https://placebear.com/400/400" alt="placebear"/>
           </div>
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
@@ -22,7 +22,7 @@
         </li>
         <li>
           <div class="avatar">
-            <img src="https://www.fillmurray.com/300/300" alt="murray"/>
+            <img src="https://placebear.com/300/300" alt="placebear"/>
           </div>
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
@@ -32,7 +32,7 @@
         </li>
         <li>
           <div class="avatar">
-            <img src="https://www.fillmurray.com/100/100" alt="murray"/>
+            <img src="https://placebear.com/100/100" alt="placebear"/>
           </div>
           <div class="texto">
             <p class="texto-primario">texto-primario<br>a dos lineas</p>
@@ -45,7 +45,7 @@
       <ol class="lista-avatar">
         <li>
           <div class="avatar">
-            <img src="https://www.fillmurray.com/300/300" alt="murray"/>
+            <img src="https://placebear.com/300/300" alt="placebear"/>
           </div>
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
@@ -55,7 +55,7 @@
         </li>
         <li>
           <div class="avatar">
-            <img src="https://www.fillmurray.com/600/600" alt="murray"/>
+            <img src="https://placebear.com/600/600" alt="placebear"/>
           </div>
           <div class="texto">
             <p class="texto-primario">texto-primario</p>
@@ -65,7 +65,7 @@
         </li>
         <li>
           <div class="avatar">
-            <img src="https://www.fillmurray.com/250/250" alt="murray"/>
+            <img src="https://placebear.com/250/250" alt="placebear"/>
           </div>
           <div class="texto">
             <p class="texto-primario">texto-primario<br>a dos lineas</p>

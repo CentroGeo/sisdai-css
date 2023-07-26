@@ -28,7 +28,7 @@
     continuación se muestra un ejemplo
   </p>
   <pre>
-&lt;aclass="tarjeta-hipervinculo-externo" href="" target="_blank">
+&lt;a class="tarjeta-hipervinculo-externo" href="" target="_blank">
   &lt;img class="fondo-imagen" src="http://placekitten.com/970/980" />
   &lt;div class="degradado-negro-abajo">
     &lt;div class="contenido-abajo ">
@@ -201,8 +201,8 @@
     <a href="#" class="hipervinculo-gobmx m-r-3">a.hipervinculo-gobmx</a>
     <button class="hipervinculo-gobmx">button.hipervinculo-gobmx</button>
   </p>
-  <p class="conacyt-fondo-oscuro-1 p-3">
-    <a href="#" class="hipervinculo-conacyt m-r-3">a.hipervinculo-conacyt</a>
-    <button class="hipervinculo-conacyt">button.hipervinculo-conacyt</button>
+  <p class="conahcyt-fondo-oscuro-1 p-3">
+    <a href="#" class="hipervinculo-conahcyt m-r-3">a.hipervinculo-conahcyt</a>
+    <button class="hipervinculo-conahcyt">button.hipervinculo-conahcyt</button>
   </p>
 </template>

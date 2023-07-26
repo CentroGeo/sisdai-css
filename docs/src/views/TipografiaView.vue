@@ -138,10 +138,10 @@
   
     <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado"> <p class="titulo-subseccion">titulo subseccion</p> </div>
     <div class="columna-2">
-      <p><b>Celular</b><br> 1.125rem <br> 18px <br> Regular (400) <br> color: #6f7271 </p>
+      <p><b>Celular</b><br> 1.125rem <br> 18px <br> Regular (400) <br> color: #0068FF </p>
     </div>
     <div class="columna-2">
-      <p><b>Escritorio</b><br> 1.5rem <br> 24px <br> Regular (400) <br> color: #6f7271 </p>
+      <p><b>Escritorio</b><br> 1.5rem <br> 24px <br> Regular (400) <br> color: #0068FF </p>
     </div>
     <div class="columna-4">
 <pre class="m-x--1">
@@ -184,7 +184,7 @@
     Lorem ipsum . . .
   &lt;/ p>
 </pre>
-      <p>#fff</p>
+      <p>#ffffff</p>
     </div>
     <div class="columna-4">
       <p class="texto-color-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa pariatur suscipit recusandae, modi sit ipsa fugiat facere doloremque animi repellat similique perspiciatis error, accusantium voluptatum nemo corporis, ipsum cumque.</p>
@@ -195,7 +195,7 @@
     Lorem ipsum . . .
   &lt;/ p>
 </pre>
-      <p>#6f7271</p>
+      <p>#0068FF</p>
     </div>
     <div class="columna-4">
       <p class="texto-color-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur culpa pariatur suscipit recusandae, modi sit ipsa fugiat facere doloremque animi repellat similique perspiciatis error, accusantium voluptatum nemo corporis, ipsum cumque.</p>
@@ -206,7 +206,7 @@
     Lorem ipsum . . .
   &lt;/ p>
 </pre>
-      <p>#404041</p>
+      <p>#5E7392</p>
     </div>
   </div>
   <h3 class="m-t-5">Parrafos especiales</h3>
@@ -248,10 +248,10 @@
 </pre>
     </div>
     <div class="columna-2">
-      <p><b>Celular</b><br>1.5rem <br> 24px <br> #404041</p>
+      <p><b>Celular</b><br>1.5rem <br> 24px <br> #5E7392</p>
     </div>
     <div class="columna-2">
-      <p><b>Escritorio</b><br>1.75rem <br> 28px <br> #404041</p>
+      <p><b>Escritorio</b><br>1.75rem <br> 28px <br> #5E7392</p>
     </div>
   </div>
 
@@ -264,11 +264,33 @@
       <p class="notas">Notas: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officia nesciunt error nisi id laborum atque a, pariatur eligendi ipsam rem maxime in deserunt eum sapiente quis vero. Rerum, aut!</p>
     </div>
     <div class="columna-4">
-<pre class="m-x--1">
-  &lt; p class="notas">
-    Notas: Lorem ipsum . . .
-  &lt;/ p>
-</pre>
+      <pre class="m-x--1">
+        &lt; p class="notas">
+          Notas: Lorem ipsum . . .
+        &lt;/ p>
+      </pre>
+    </div>
+    <div class="columna-4">
+      <p> 0.875rem <br> 14px <br> Regular (400)</p>
+    </div>
+  </div>
+  <div class="contenedor ancho-lectura contenedor-izq">
+    <p>Adicionalmente, se puede utilizar un color de fondo para el contenido de notas la clase notas-fondo. Este color está conectado a una variable que responde a las vistas de accesibilidad:</p>
+  </div>
+  <div class="flex">
+    <div class="columna-8">
+      <div class="notas-fondo p-2 borde-redondeado-8">
+        <p class="notas">Notas: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officia nesciunt error nisi id laborum atque a, pariatur eligendi ipsam rem maxime in deserunt eum sapiente quis vero. Rerum, aut!</p>
+      </div>
+    </div>
+    <div class="columna-4">
+      <pre class="m-x--1">
+        &lt; div class="notas-fondo p-2 borde-redondeado-8">
+          &lt; p class="notas">
+            Notas: Lorem ipsum . . .
+          &lt;/ p>
+        &lt;/ div>
+      </pre>
     </div>
     <div class="columna-4">
       <p> 0.875rem <br> 14px <br> Regular (400)</p>
@@ -345,7 +367,7 @@
 </pre>
     </div>
     <div class="columna-4">
-      <p> .75rem <br> 12px <br> Medium (500) <br> #6f7271</p>
+      <p> .75rem <br> 12px <br> Medium (500) <br> #5E7392</p>
     </div>
 
     <div class="columna-8">
@@ -400,17 +422,19 @@
 
   <h2 class="m-t-10">Tamaños</h2>
   <p>Base 8, clases responsivas en rem, sí varian cambiando el tamaño base de la tipografia.</p>
-  <p>texto-tamanio-1, texto-tamanio-2, texto-tamanio-3 .... texto-tamanio-10</p>
-  <p class="texto-tamanio-1">texto</p>
-  <p class="texto-tamanio-2">texto</p>
-  <p class="texto-tamanio-3">texto</p>
-  <p class="texto-tamanio-4">texto</p>
-  <p class="texto-tamanio-5">texto</p>
-  <p class="texto-tamanio-6">texto</p>
-  <p class="texto-tamanio-7">texto</p>
-  <p class="texto-tamanio-8">texto</p>
-  <p class="texto-tamanio-9">texto</p>
-  <p class="texto-tamanio-10">texto</p>
+  <!-- <p>texto-tamanio-1, texto-tamanio-2, texto-tamanio-3 .... texto-tamanio-10</p> -->
+  <div class="flex flex-contenido-separado" style="align-items: flex-end;">
+    <p class="texto-tamanio-1">texto-tamanio-1</p>
+    <p class="texto-tamanio-2">texto-tamanio-2</p>
+    <p class="texto-tamanio-3">texto-tamanio-3</p>
+    <p class="texto-tamanio-4">texto-tamanio-4</p>
+    <p class="texto-tamanio-5">texto-tamanio-5</p>
+    <p class="texto-tamanio-6">texto-tamanio-6</p>
+    <p class="texto-tamanio-7">texto-tamanio-7</p>
+    <p class="texto-tamanio-8">texto-tamanio-8</p>
+    <p class="texto-tamanio-9">texto-tamanio-9</p>
+    <p class="texto-tamanio-10">texto-tamanio-10</p>
+  </div>
 
   <h2 class="m-t-10">Responsivos</h2>
   <p>Variando el tamaño para móvil y escritorio</p>

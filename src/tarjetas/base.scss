@@ -22,13 +22,17 @@
     width: 100%;
     align-items: stretch;
     height: 100%;
-    background: #EDF6FA;
+    background: var(--tarjetas-fondo);
     padding: 24px;
-    color: #000;
+    color: var(--tarjetas-color);
     transition: all 0.27s ease-in-out;
 
     p {
       margin: 4px 0 4px 0;
+    }
+
+    .parrafo-texto-alto {
+      color: var(--tarjetas-color);
     }
   }
 
@@ -61,13 +65,17 @@
     .contenido-html {
       width: 100%;
       align-items: stretch;
-      background: #EDF6FA;
+      background: var(--tarjetas-fondo);
       padding: 24px;
-      color: #000;
+      color: var(--tarjetas-color);
       transition: all 0.27s ease-in-out;
 
       p {
         margin: 4px 0 4px 0;
+      }
+
+      .parrafo-texto-alto {
+        color: var(--tarjetas-color);
       }
     }
   }
