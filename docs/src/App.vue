@@ -65,7 +65,7 @@
   const theme = ref(null) 
   theme.value = 'auto' // 'dark' | 'light' | 'auto'
   const perfil = ref(null) 
-  perfil.value = 'neutro' // 'neutro' | 'sisdai' | 'gema'
+  perfil.value = 'eni' // 'eni' | 'sisdai' | 'gema'
 
   function alternarTema() {
     //rotar entre estos 3 valores
@@ -81,7 +81,7 @@
       .documentElement
       .removeAttribute(`data-dark-theme-${perfil.value}`)
     //rotar entre estos valores
-    const perfiles = ['neutro', 'sisdai', 'gema']
+    const perfiles = ['eni', 'sisdai', 'gema']
     perfil.value = perfiles[
       (perfiles.indexOf(perfil.value) + 1) % 3
     ]

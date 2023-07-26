@@ -9,19 +9,19 @@
   --acciones-correcto-2: #e7fbf1; 
 } */
 
-* {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-}
+// * {
+//   margin: 0;
+//   box-sizing: border-box;
+//   font-family: "Montserrat", sans-serif;
+// }
 
-.contenedor {
-  width: 90%;
-  max-width: 1200px;
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 40px 0;
-}
+// .contenedor {
+//   width: 90%;
+//   max-width: 1200px;
+//   overflow: hidden;
+//   margin: 0 auto;
+//   padding: 40px 0;
+// }
 
 .alertas__contenedor {
   display: flex;
@@ -41,7 +41,10 @@
 .alerta__encabezado {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  // margin-bottom: 1.5rem;
+  .icono-cerrar {
+    font-size: 1.5rem;
+  }
 }
 
 .alerta__info--titulo {
@@ -51,24 +54,41 @@
 
 .alerta__titulo {
   line-height: 1.5rem;
+  font-weight: 500;
 }
 
 .informativa {
   border-color: var(--acciones-informativo);
   background-color: var(--acciones-informativo-2);
+  .icono-informacion {
+    color: var(--acciones-informativo);
+    font-size: 1.5rem;
+  }
 }
 
 .confirmacion {
   border-color: var(--acciones-correcto);
   background-color: var(--acciones-correcto-2);
+  .icono-informacion {
+    color: var(--acciones-correcto);
+    font-size: 1.5rem;
+  }
 }
 
 .advertencia {
   border-color: var(--acciones-advertencia);
   background-color: var(--acciones-advertencia-2);
+  .icono-informacion {
+    color: var(--acciones-advertencia);
+    font-size: 1.5rem;
+  }
 }
 
 .error {
   border-color: var(--acciones-error);
   background-color: var(--acciones-error-2);
+  .icono-informacion {
+    color: var(--acciones-error);
+    font-size: 1.5rem;
+  }
 }

@@ -160,7 +160,7 @@
     <div class="nav-contenedor-identidad">
       <a href="#" class="nav-hiperviculo-logo">
         <img
-          class="nav-logo"
+          class="nav-logo invertir"
           width="130"
           height="38"
           src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"

@@ -127,7 +127,7 @@
       ></div>
       <div class="columna-2">
         <p>.conahcyt-fondo-claro-1</p>
-        <p>#d5d5d5</p>
+        <p>#DDDDDD</p>
       </div>
       <div
         class="columna-2 m-y-1 conahcyt-fondo-claro-2 borde-redondeado-8"
@@ -385,7 +385,8 @@
             <div class="alerta__info">
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
-                  <svg
+                  <span class="icono-informacion"></span>
+                  <!-- <svg
                     id="information"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -420,7 +421,7 @@
                       height="24"
                       fill="none"
                     />
-                  </svg>
+                  </svg> -->
 
                   <!-- <img
                     src="/img/alerta_icono.svg"
@@ -430,12 +431,12 @@
 
                   <p class="alerta__titulo">Alerta informativa</p>
                 </div>
-
-                <img
+                <span class="icono-cerrar"></span>
+                <!-- <img
                   src="/img/cerrar_icono.svg"
                   alt=""
                   class="alerta__cerrar--icono"
-                />
+                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">
@@ -450,7 +451,8 @@
             <div class="alerta__info">
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
-                  <svg
+                  <span class="icono-informacion"></span>
+                  <!-- <svg
                     id="information"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -485,7 +487,7 @@
                       height="24"
                       fill="none"
                     />
-                  </svg>
+                  </svg> -->
 
                   <!-- <img
                     src="/img/alerta_icono.svg"
@@ -495,12 +497,12 @@
 
                   <p class="alerta__titulo">Alerta confirmación</p>
                 </div>
-
-                <img
+                <span class="icono-cerrar"></span>
+                <!-- <img
                   src="/img/cerrar_icono.svg"
                   alt=""
                   class="alerta__cerrar--icono"
-                />
+                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">
@@ -515,7 +517,8 @@
             <div class="alerta__info">
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
-                  <svg
+                  <span class="icono-informacion"></span>
+                  <!-- <svg
                     id="information"
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -550,7 +553,7 @@
                       height="24"
                       fill="none"
                     />
-                  </svg>
+                  </svg> -->
 
                   <!-- <img
                     src="/img/alerta_icono.svg"
@@ -560,11 +563,12 @@
 
                   <p class="alerta__titulo">Alerta informativa</p>
                 </div>
-                <img
+                <span class="icono-cerrar"></span>
+                <!-- <img
                   src="/img/cerrar_icono.svg"
                   alt=""
                   class="alerta__cerrar--icono"
-                />
+                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">
@@ -579,19 +583,20 @@
             <div class="alerta__info">
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
-                  <img
+                  <span class="icono-informacion"></span>
+                  <!-- <img
                     src="/img/alerta_icono.svg"
                     alt=""
                     class="alerta__icono"
-                  />
+                  /> -->
                   <p class="alerta__titulo">Alerta informativa</p>
                 </div>
-
-                <img
+                <span class="icono-cerrar"></span>
+                <!-- <img
                   src="/img/cerrar_icono.svg"
                   alt=""
                   class="alerta__cerrar--icono"
-                />
+                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">
