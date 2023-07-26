@@ -1,85 +1,81 @@
 @charset 'UTF-8';
-@import '_variables';
-@import '_normalizar';
-@import '_mixins';
+@import "_variables";
+@import "_normalizar";
+@import "_mixins";
 
 // modulos
-@import 'tipografia/base';
-@import 'tipografia/titulos';
-@import 'tipografia/parrafos';
-@import 'tipografia/notas';
-@import 'tipografia/visualizaciones';
+@import "tipografia/base";
+@import "tipografia/titulos";
+@import "tipografia/parrafos";
+@import "tipografia/notas";
+@import "tipografia/visualizaciones";
 
-@import 'icono/base';
+@import "icono/base";
 
-@import 'boton/base';
-@import 'boton/iconos';
-@import 'boton/compuestos';
-@import 'boton/flotante';
+@import "boton/base";
+@import "boton/iconos";
+@import "boton/compuestos";
+@import "boton/flotante";
 
-@import 'link/base';
-@import 'link/identidad';
-@import 'link/tarjetas-externas';
-@import 'link/tarjetas-internas';
+@import "link/base";
+@import "link/identidad";
+@import "link/tarjetas-externas";
+@import "link/tarjetas-internas";
 
-@import 'listas/base';
-@import 'listas/anidadas';
-@import 'listas/compuestas';
-@import 'tablas/base';
-@import 'detalle/base';
-@import 'imagenes/base';
-@import 'portada/base';
-@import 'tarjetas/base';
+@import "listas/base";
+@import "listas/anidadas";
+@import "listas/compuestas";
+@import "tablas/base";
+@import "detalle/base";
+@import "imagenes/base";
+@import "portada/base";
+@import "tarjetas/base";
 
-@import 'formularios/base';
-@import 'formularios/validaciones';
+@import "formularios/base";
+@import "formularios/validaciones";
 
-@import 'bordes/base';
-@import 'bordes/redondeado';
-@import 'bordes/colores';
-@import 'bordes/grosores';
-@import 'bordes/separadores';
+@import "bordes/base";
+@import "bordes/redondeado";
+@import "bordes/colores";
+@import "bordes/grosores";
+@import "bordes/separadores";
 
- @import 'sombras/base';
+@import "sombras/base";
 
+@import "reticula/contenedores";
+@import "reticula/compuestos";
+@import "reticula/columnas";
+@import "reticula/margenes";
 
+@import "navegacion/navegacion";
+@import "navegacion/hipervinculos";
+@import "navegacion/botones";
+@import "navegacion/iconos";
+@import "navegacion/identidad";
+@import "navegacion/menu-lateral";
+@import "navegacion/colapsable-navegacion";
+@import "navegacion/indice-de-contenido";
 
-@import 'reticula/contenedores';
-@import 'reticula/compuestos';
-@import 'reticula/columnas';
-@import 'reticula/margenes';
+@import "color/base";
+@import "color/identidad";
+@import "color/acciones";
 
+@import "alertas/base";
 
-@import 'navegacion/navegacion';
-@import 'navegacion/hipervinculos';
-@import 'navegacion/botones';
-@import 'navegacion/iconos';
-@import 'navegacion/identidad';
-@import 'navegacion/menu-lateral';
-@import 'navegacion/colapsable-navegacion';
-@import 'navegacion/indice-de-contenido';
+@import "auxiliares/alineacion-texto";
+@import "auxiliares/color-texto";
+@import "auxiliares/color-fondo";
+@import "auxiliares/alineacion-contenedores";
+@import "auxiliares/globo-informacion";
+@import "auxiliares/animaciones";
 
+@import "accesibilidad/menu-accesibilidad";
 
-
-@import 'color/base';
-@import 'color/identidad';
-@import 'color/acciones';
-
-@import 'auxiliares/alineacion-texto';
-@import 'auxiliares/color-texto';
-@import 'auxiliares/color-fondo';
-@import 'auxiliares/alineacion-contenedores';
-@import 'auxiliares/globo-informacion';
-@import 'auxiliares/animaciones';
-
-@import 'accesibilidad/menu-accesibilidad';
-
-
-// a11y 
+// a11y
 // accesibilidad debe cargar al final
 // para que pueda sobre escribir los estilos
-@import 'accesibilidad/simplificada';
-@import 'accesibilidad/tipografia';
-@import 'accesibilidad/lectura';
-@import 'accesibilidad/hipervinculos';
-@import 'accesibilidad/oscura';
+@import "accesibilidad/simplificada";
+@import "accesibilidad/tipografia";
+@import "accesibilidad/lectura";
+@import "accesibilidad/hipervinculos";
+@import "accesibilidad/oscura";

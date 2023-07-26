@@ -1,0 +1,74 @@
+/*:root {
+    --acciones-informativo: #19439c;
+  --acciones-informativo-2: #ecf2ff;
+  --acciones-error: #940b1c;
+  --acciones-error-2: #fee9ec;
+  --acciones-advertencia: #916802;
+  --acciones-advertencia-2: #fff7e3;
+  --acciones-correcto: #2a6f4d;
+  --acciones-correcto-2: #e7fbf1; 
+} */
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.alertas__contenedor {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.alerta {
+  width: 300px;
+  border: 2px solid;
+  border-radius: 1.25rem;
+}
+
+.alerta__info {
+  padding: 1.5rem;
+}
+
+.alerta__encabezado {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.alerta__info--titulo {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.alerta__titulo {
+  line-height: 1.5rem;
+}
+
+.informativa {
+  border-color: var(--acciones-informativo);
+  background-color: var(--acciones-informativo-2);
+}
+
+.confirmacion {
+  border-color: var(--acciones-correcto);
+  background-color: var(--acciones-correcto-2);
+}
+
+.advertencia {
+  border-color: var(--acciones-advertencia);
+  background-color: var(--acciones-advertencia-2);
+}
+
+.error {
+  border-color: var(--acciones-error);
+  background-color: var(--acciones-error-2);
+}
