@@ -1,6 +1,6 @@
 {
   "name": "sisdai-css",
-  "version": "0.38.3",
+  "version": "0.38.4",
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "main": "src/eni.scss",
   "scripts": {
