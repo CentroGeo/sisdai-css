@@ -421,7 +421,7 @@
     }
   }
   // Imágenes
-  picture, img {
+  picture, img:not(.nav-logo, .foot-logo) {
 		filter: brightness(.8) contrast(1.2);
 	}
   // Contenedores documentación retícula
