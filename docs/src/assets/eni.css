@@ -8122,7 +8122,8 @@ ol + hr {
   justify-content: space-between;
 }
 .nav-contenedor-identidad .nav-informacion {
-  background: var(--navegacion-fondo);
+  background: var(--submenu-lateral-fondo-colapsable);
+  color: var(--menu-lateral-color);
   font-size: 0.75rem;
   padding: 4px 16px;
   margin-left: -16px;

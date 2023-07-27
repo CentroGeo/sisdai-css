@@ -26,7 +26,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   .nav-informacion {
-    background: var(--navegacion-fondo);
+    background: var(--submenu-lateral-fondo-colapsable);
+    color: var(--menu-lateral-color);
     font-size: 0.75rem;
     padding: map-get($espaciado,'minimo') map-get($contenedores, 'mov', 'margen-interior');
     margin-left: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
