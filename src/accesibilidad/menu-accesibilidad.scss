@@ -48,8 +48,10 @@
 
     .titulo {
       text-align: left;
-      font-weight: 600;;
+      font-weight: 600;
       margin-bottom: 0;
+      font-size: 16px;
+      color: #141414;
     }
 
     hr {
@@ -64,7 +66,7 @@
       display: flex;
       gap: 8px;
       width: 100%;
-      font-size: .75rem;
+      font-size: 12px;
       font-weight: 600;
       text-align: left;
       margin-right: 0;
