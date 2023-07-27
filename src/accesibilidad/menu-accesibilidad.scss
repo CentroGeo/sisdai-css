@@ -48,8 +48,7 @@
 
     .titulo {
       text-align: left;
-      font-weight: 600;
-      padding: 8px 16px;
+      font-weight: 600;;
       margin-bottom: 0;
     }
 
@@ -65,10 +64,9 @@
       display: flex;
       gap: 8px;
       width: 100%;
-      font-size: 1rem;
+      font-size: .75rem;
       font-weight: 600;
       text-align: left;
-      padding: 8px 16px;
       margin-right: 0;
 
       &:hover, &:focus {
@@ -130,9 +128,9 @@
     transition-delay: /* al abrir: inicia sin retraso */ 0s,
       /* al abrir: inicia sin retraso */ 0s;
 
-    .icono-boton-accesibilidad .icono-accesibilidad:before {
-      margin-top: -1px;
-    }
+    // .icono-boton-accesibilidad .icono-accesibilidad:before {
+    //   margin-top: -1px;
+    // }
 
     .menu-accesibilidad {
       width: calc(var(--a11y-ancho) * 1px);
