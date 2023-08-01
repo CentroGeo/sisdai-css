@@ -17,7 +17,7 @@
   // Botón conahcyt simepre este pegado abajo
   position: relative;
   padding-bottom: $alto-boton-conahcyt;
-  .boton.boton-conacyt {
+  .boton.boton-conahcyt {
     position: absolute;
     bottom: 0;
   }
@@ -117,7 +117,7 @@
   &.sin-boton-conahcyt {
     padding-bottom: 0;
 
-    .boton.boton-conacyt {
+    .boton.boton-conahcyt {
       display: none;
     }
 
@@ -183,7 +183,7 @@
     .panel-izquierda-vis,
     .panel-derecha-vis,
     .panel-pie-vis,
-    .boton.boton-conacyt {
+    .boton.boton-conahcyt {
       border-radius: 0 !important;
     }
   }
