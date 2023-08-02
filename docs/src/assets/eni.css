@@ -982,27 +982,27 @@ input[type=reset]:not(:last-child),
   margin-right: 8px;
 }
 
-.boton-primario, .boton-info, .boton-descarga, .boton-icono {
+.boton-primario, .ir-contenido-principal, .boton-info, .boton-descarga, .boton-icono {
   background-color: var(--boton-primario-fondo);
   border-color: var(--boton-primario-borde);
   color: var(--boton-primario-color);
 }
-.boton-primario:disabled, .boton-info:disabled, .boton-descarga:disabled, .boton-icono:disabled {
+.boton-primario:disabled, .ir-contenido-principal:disabled, .boton-info:disabled, .boton-descarga:disabled, .boton-icono:disabled {
   background-color: var(--boton-primario-deshabilitado-fondo);
   border-color: var(--boton-primario-deshabilitado-borde);
   box-shadow: 3px 3px 4px var(--boton-primario-deshabilitado-sombra);
   color: var(--boton-primario-deshabilitado-color);
 }
-.boton-primario:visited, .boton-info:visited, .boton-descarga:visited, .boton-icono:visited {
+.boton-primario:visited, .ir-contenido-principal:visited, .boton-info:visited, .boton-descarga:visited, .boton-icono:visited {
   color: var(--boton-primario-color);
 }
-.boton-primario:not(:disabled):hover, .boton-info:not(:disabled):hover, .boton-descarga:not(:disabled):hover, .boton-icono:not(:disabled):hover {
+.boton-primario:not(:disabled):hover, .ir-contenido-principal:not(:disabled):hover, .boton-info:not(:disabled):hover, .boton-descarga:not(:disabled):hover, .boton-icono:not(:disabled):hover {
   background-color: var(--boton-primario-hover-fondo);
   border-color: var(--boton-primario-hover-borde);
   box-shadow: 3px 3px 4px var(--boton-primario-hover-sombra);
   color: var(--boton-primario-hover-color);
 }
-.boton-primario:not(:disabled):focus, .boton-info:not(:disabled):focus, .boton-descarga:not(:disabled):focus, .boton-icono:not(:disabled):focus {
+.boton-primario:not(:disabled):focus, .ir-contenido-principal:not(:disabled):focus, .boton-info:not(:disabled):focus, .boton-descarga:not(:disabled):focus, .boton-icono:not(:disabled):focus {
   background-color: var(--boton-primario-focus-fondo);
   border-color: var(--boton-primario-focus-borde);
   box-shadow: 0 0 8px var(--boton-primario-focus-sombra);
@@ -8247,6 +8247,22 @@ ol + hr {
     right: 0;
   }
 }
+.ir-contenido-principal {
+  background-color: rgba(0, 93, 254, 0.9019607843);
+  position: absolute;
+  text-align: center;
+  transform: translateY(-100%);
+  z-index: 111;
+  width: 100%;
+  height: 45px;
+  border-radius: 0;
+  text-decoration: none;
+  padding: 12px;
+}
+.ir-contenido-principal:focus {
+  transform: translateY(0%);
+}
+
 .nav-hipervinculo {
   background-color: var(--navegacion-fondo);
   box-shadow: 0 0 0 0;
@@ -9670,7 +9686,7 @@ body {
   filter: brightness(0) invert(1);
 }
 
-.a11y-oscura .boton-primario span[class*=icono-], .a11y-oscura .boton-icono span[class*=icono-], .a11y-oscura .boton-descarga span[class*=icono-], .a11y-oscura .boton-info span[class*=icono-] {
+.a11y-oscura .boton-primario span[class*=icono-], .a11y-oscura .boton-icono span[class*=icono-], .a11y-oscura .boton-descarga span[class*=icono-], .a11y-oscura .boton-info span[class*=icono-], .a11y-oscura .ir-contenido-principal span[class*=icono-] {
   color: var(--boton-primario-color);
 }
 .a11y-oscura .boton-secundario span[class*=icono-] {
