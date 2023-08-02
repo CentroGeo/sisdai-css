@@ -152,3 +152,19 @@
     }
   }
 }
+.ir-contenido-principal {
+  @extend .boton-primario;
+  background-color: #005dfee6;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-100%);
+  z-index: 111;
+  width: 100%;
+  height: 45px;
+  border-radius: 0;
+  text-decoration: none;
+  padding:12px;
+  &:focus {
+    transform: translateY(0%);
+  }
+}
