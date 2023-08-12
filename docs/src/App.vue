@@ -131,7 +131,7 @@
 <template>
   <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline , 
   'a11y-oscura': isA11yOscura}">
-
+  <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
     <nav class="navegacion navegacion-gobmx">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
@@ -242,7 +242,7 @@
 
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>
-    <main role="main" class="contenedor m-y-maximo">
+    <main role="main" class="contenedor m-y-maximo" id="principal">
       <RouterView />
     </main>
 
