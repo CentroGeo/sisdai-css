@@ -1942,7 +1942,7 @@ select:not(:disabled):focus {
   background-color: var(--input-fondo);
   border: 1px solid transparent;
   border-radius: 4px;
-  color: var(--label-color);
+  color: var(--input-color);
   cursor: pointer;
   display: inline-flex;
   position: relative;
@@ -1968,6 +1968,7 @@ select:not(:disabled):focus {
 [type=checkbox]:checked + label,
 [type=radio]:checked + label {
   color: var(--input-color);
+  background: #dddddd;
 }
 
 [type=checkbox]:hover + label::before,
@@ -1978,32 +1979,34 @@ select:not(:disabled):focus {
 [type=checkbox] + label::before,
 [type=radio] + label::before {
   box-sizing: border-box;
-  box-shadow: inset 0 0 0 1px var(--input-borde);
+  box-shadow: inset 0 0 0 1px var(--input-color);
   content: "";
-  height: 1.25rem;
-  width: 1.25rem;
-  left: 4px;
+  height: 1.125rem;
+  width: 1.125rem;
+  top: 5px;
+  left: 5px;
+  padding: 6px;
   background-color: var(--input-fondo);
   position: absolute;
 }
 
 [type=checkbox] + label::before {
-  border: 2px solid var(--pagina-fondo);
   border-radius: 4px;
 }
 
 [type=checkbox]:checked + label::before,
 [type=radio]:checked + label::before {
-  box-shadow: inset 0 0 0 1px var(--input-controles-color);
-  background: var(--input-controles-color);
+  box-shadow: inset 0 0 0 1px #141414;
+  background: transparent;
 }
 
 [type=checkbox]:checked + label::after {
   font-family: "sisdai-iconos";
-  content: "k";
-  color: var(--pagina-fondo);
+  content: "j";
+  color: #141414;
   position: absolute;
   left: calc(0.125rem + 4px);
+  font-weight: 800;
 }
 
 [type=radio] + label::before {
