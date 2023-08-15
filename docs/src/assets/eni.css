@@ -2198,6 +2198,84 @@ select {
   color: var(--acciones-correcto);
 }
 
+label.controlador-checkbox  {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+label.controlador-checkbox  input {
+  height: 1.125rem;
+  width: 1.125rem;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
+  background: transparent;
+  border: 1px solid #aaa;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #141414;
+  display: inline-flex;
+  font-family: var(--tipografia-familia);
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.27s ease-in-out;
+}
+label.controlador-checkbox  input::before {
+  height: 1.125rem;
+  width: 1.125rem;
+}
+
+.controlador-vis {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+.controlador-vis .figura-variable {
+  width: 18px;
+  height: 18px;
+  background: #7E8CF5;
+  border: 1px solid var(--tipografia-color);
+  border-radius: 50%;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 1;
+}
+.controlador-vis [type=checkbox] + label {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-right: 16px;
+  margin: 0px;
+}
+.controlador-vis [type=checkbox]:disabled + label {
+  cursor: default;
+  color: #AAAAAA;
+  box-shadow: inset 0 0 0 1px #AAAAAA;
+}
+.controlador-vis [type=checkbox]:disabled + label:hover {
+  background: transparent;
+}
+.controlador-vis [type=checkbox]:not(:disabled) + label {
+  cursor: pointer;
+}
+.controlador-vis [type=checkbox]:disabled + label::before {
+  box-shadow: inset 0 0 0 1px #AAAAAA;
+}
+.controlador-vis [type=checkbox] + label::before {
+  top: 10px;
+  margin-left: 8px;
+}
+.controlador-vis [type=checkbox]:checked + label::after {
+  left: calc(0.125rem + 12px);
+}
+.controlador-vis .nombre-variable {
+  padding-left: 64px;
+}
+
 .borde {
   border: 1px solid var(--borde-color-1);
 }

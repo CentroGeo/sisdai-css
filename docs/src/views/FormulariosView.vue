@@ -57,6 +57,29 @@
   </div>
   <div class="grid">
     <div class="columna-4">
+      <!-- <label class="controlador-checkbox" for="">
+        <input type="checkbox" name="" id="">
+        <span class="figura-variable"></span>
+        <span class="nombre-variable">nombre-variable</span>
+        <span class="info-variable"></span>
+      </label> -->
+      <span class="controlador-vis">
+        <span class="figura-variable"></span>
+        <input id="control_1" type="checkbox">
+        <label class="nombre-variable" for="control_1">Etiqueta de texto</label>
+        <span class="info-variable"></span>
+      </span>
+      <br>
+      <span class="controlador-vis">
+        <span class="figura-variable"></span>
+        <input id="control_2" type="checkbox" disabled>
+        <label class="nombre-variable" for="control_2">Etiqueta de texto</label>
+        <span class="info-variable"></span>
+      </span>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="columna-4">
       <input id="radio1" type="radio" name="radioses1">
       <label for="radio1">Radio 1</label>
       <input id="radio2" type="radio" name="radioses1">

@@ -1,0 +1,106 @@
+label.controlador-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    input {
+        height: 1.125rem;
+        width: 1.125rem;
+        margin: 0;
+        
+        position: absolute;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        background: transparent;
+        border: 1px solid #aaa;
+        box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
+        border-radius: 6px;
+        box-sizing: border-box;
+        color: #141414;
+        display: inline-flex;
+        font-family: var(--tipografia-familia);
+        font-size: 16px;
+        font-weight: 600;
+        // padding: 4.5px 9px;
+        // margin-bottom: 15px;
+        // max-width: 100%;
+        transition: all 0.27s ease-in-out;
+        &::before {
+            height: 1.125rem;
+            width: 1.125rem;
+        }
+    }    
+}
+.controlador-vis {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    // cursor: pointer;
+    
+    
+    &.disabled {
+        // background: red;
+        
+    }
+    &:hover {
+        // background: #dddddd;
+        // border-radius: 4px;
+    }
+    .figura-variable {
+        width: 18px;
+        height: 18px;
+        // background: var(--tipografia-color-1);
+        background: #7E8CF5;
+        border: 1px solid var(--tipografia-color);
+        border-radius: 50%;
+        margin-left: 40px;
+        position: absolute;
+        z-index: 1;
+    }
+    [type=checkbox] + label {
+        // padding: 0px;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        padding-right: 16px;
+        // padding-left: 8px;
+        margin: 0px;   
+    }
+    [type=checkbox] {
+        &:disabled + label {
+            cursor: default;
+            color: #AAAAAA;
+            // background: red;
+            // border: 1px solid #AAAAAA;
+            box-shadow: inset 0 0 0 1px #AAAAAA;
+            &:hover {
+                background: transparent;
+            }
+        }
+        &:not(:disabled) + label {
+            cursor: pointer;
+        }      
+    }
+    [type=checkbox] {
+        &:disabled + label::before {
+            // background: red;
+            // border: 1px solid ;
+            box-shadow: inset 0 0 0 1px #AAAAAA;
+        }
+    }
+    [type=checkbox] + label::before {
+        top: 10px;
+        margin-left: 8px;
+    }
+    [type=checkbox]:checked + label::after {
+        left: calc(.125rem + 12px);
+    }
+    label {
+        // order: -2;
+    }
+    .nombre-variable {
+        padding-left: 64px;
+        
+    }
+}
