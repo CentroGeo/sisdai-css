@@ -2199,52 +2199,20 @@ select {
   color: var(--acciones-correcto);
 }
 
-label.controlador-checkbox  {
-  position: relative;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-label.controlador-checkbox  input {
-  height: 1.125rem;
-  width: 1.125rem;
-  margin: 0;
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  z-index: -1;
-  background: transparent;
-  border: 1px solid #aaa;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0);
-  border-radius: 6px;
-  box-sizing: border-box;
-  color: #141414;
-  display: inline-flex;
-  font-family: var(--tipografia-familia);
-  font-size: 16px;
-  font-weight: 600;
-  transition: all 0.27s ease-in-out;
-}
-label.controlador-checkbox  input::before {
-  height: 1.125rem;
-  width: 1.125rem;
-}
-
-.controlador-vis {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: fit-content;
-}
 .controlador-vis .figura-variable {
   width: 18px;
   height: 18px;
   background: #7E8CF5;
   border: 1px solid var(--tipografia-color);
   border-radius: 50%;
-  margin-left: 40px;
   position: absolute;
+  margin-left: 40px;
+  margin-top: 11px;
   z-index: 1;
+}
+.controlador-vis .figura-variable.disabled {
+  background: #DDDDDD;
+  border: 1px solid #AAAAAA;
 }
 .controlador-vis [type=checkbox] + label {
   padding-top: 9px;
