@@ -88,7 +88,7 @@
   --tarjetas-fondo: #364A694c;
   --tarjetas-color: #ffffff;
   --tarjetas-externas-color: #141414;
-  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.59) 60%, rgba(255,255,255,0) 100%);
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, #102543f1 0%, #10254396 60%, #10254300 100%);
   --tarjetas-internas-color: #FFFFFF;
   --tarjetas-internas-fondo: #364A694c;
     --tarjetas-interna-fondo-hover: #364A69;
@@ -108,7 +108,7 @@
   --tarjetas--contenido-simplificada-color: #FFFFFF;
 
   // Portada
-  --portada-fondo-grandiente: linear-gradient(transparent, #FFFFFFe5);
+  --portada-fondo-grandiente: linear-gradient(transparent, #102543f1);
   
   // Navegacion principal
   --navegacion-conahcyt-fondo: #002663;
@@ -420,10 +420,6 @@
       }
     }
   }
-  // Imágenes
-  picture, img:not(.nav-logo, .foot-logo) {
-		filter: brightness(.8) contrast(1.2);
-	}
   // Contenedores documentación retícula
   .conahcyt-fondo-claro-1 {
     // background-color: #393939;
