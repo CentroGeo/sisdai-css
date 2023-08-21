@@ -139,6 +139,8 @@ select {
   background: transparent;
 }
 [type=checkbox]:checked + label::after {
+  // MENCIONAR A DEV
+  // que el icono lee 'j', agregar aria-hidden
   font-family: "sisdai-iconos";
   content: "\6a";
   // color: var(--pagina-fondo);
