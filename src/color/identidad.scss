@@ -10,17 +10,17 @@
   }
 }
 
-@each $nombre, $color in $color-conacyt {
-  .conacyt-fondo-#{$nombre} {
+@each $nombre, $color in $color-conahcyt {
+  .conahcyt-fondo-#{$nombre} {
     background-color: $color;
   }
-  .conacyt-borde-#{$nombre} {
+  .conahcyt-borde-#{$nombre} {
     border-color: $color;
   }
-  .conacyt-texto-#{$nombre} {
+  .conahcyt-texto-#{$nombre} {
     color: $color;
   }
 }
-.conacyt-fondo-degradado {
-  background-image: var(--color-conacyt-degradado);
+.conahcyt-fondo-degradado {
+  background-image: var(--color-conahcyt-degradado);
 }

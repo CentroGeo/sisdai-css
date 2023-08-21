@@ -105,3 +105,12 @@
     font-weight: 500;
   }
 }
+
+.lista-redes-sociales {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  li {
+    margin: 0;
+  }
+}

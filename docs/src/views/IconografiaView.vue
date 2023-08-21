@@ -174,10 +174,6 @@
         <span>icono-eliminar</span>
       </div>
       <div>
-        <span class="icono-enlace-externo"></span>
-        <span>icono-enlace-externo</span>
-      </div>
-      <div>
         <span class="icono-enlace-subrayado"></span>
         <span>icono-enlace-subrayado</span>
       </div>
@@ -318,8 +314,8 @@
         <span>icono-persona</span>
       </div>
       <div>
-        <span class="icono-poligono"></span>
-        <span>icono-poligono</span>
+        <span class="icono-capa-poligono"></span>
+        <span>icono-capa-poligono</span>
       </div>
       <div>
         <span class="icono-reloj"></span>
@@ -349,7 +345,35 @@
         <span class="icono-voto-si"></span>
         <span>icono-voto-si</span>
       </div>
-
+      <div>
+        <span class="icono-accesibilidad"></span>
+        <span>icono-accesibilidad</span>
+      </div>
+      <div>
+        <span class="icono-restablecer"></span>
+        <span>icono-restablecer</span>
+      </div>
+      <div>
+        <span class="icono-flecha-izquierda"></span>
+        <span>icono-flecha-izquierda</span>
+      </div>
+      <div>
+        <span class="icono-enlace-externo"></span>
+        <span>icono-enlace-externo</span>
+      </div>
+      <div>
+        <span class="icono-metadatos"></span>
+        <span>icono-metadatos</span>
+      </div>
+      <div>
+        <span class="icono-visualizador"></span>
+        <span>icono-visualizador</span>
+      </div>
+      <div>
+        <span class="icono-zoom-instruccional"></span>
+        <span>icono-zoom-instruccional</span>
+      </div>
+      
 
   </div>
 

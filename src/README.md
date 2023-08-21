@@ -183,24 +183,24 @@ ___
     );
     ```
 
-2. **Colores institucionales Conacyt**
+2. **Colores institucionales Conahcyt**
     
-    Así mismo se creó un arreglo con las variables de color que utiliza el Conacyt en su identidad y en su página web. 
+    Así mismo se creó un arreglo con las variables de color que utiliza el Conahcyt en su identidad y en su página web. 
 
-    Para este caso se utiliza igual el sub arreglo de identidad para crear clases de color de fondo, texto y borde, agregando una clase extra de `fondo-conacyt-degradato` que se utiliza en el footer del mismo.
+    Para este caso se utiliza igual el sub arreglo de identidad para crear clases de color de fondo, texto y borde, agregando una clase extra de `fondo-conahcyt-degradato` que se utiliza en el footer del mismo.
 
     ``` css
-    $color-conacyt: (
-      'conacyt-degradado': linear-gradient(to bottom, #003384, #002663, #001c4a), // footer conacyt // este es especial na mas pa fondos
+    $color-conahcyt: (
+      'conahcyt-degradado': linear-gradient(to bottom, #003384, #002663, #001c4a), // footer conahcyt // este es especial na mas pa fondos
       'identidad': (
-        'conacyt-azul': #022563,
-        'conacyt-gris': #8C8D8E,
+        'conahcyt-azul': #022563,
+        'conahcyt-gris': #8C8D8E,
       ),
       'utiles': (
-        'conacyt-negro': #141414, // cuerpo de texto
-        'conacyt-gris': #d5d5d5, // enlaces conacyt
-        'conacyt-blanco': #fff, // texto footer conacyt
-        'conacyt-cian': #13aff0, // hover enlaces conacyt
+        'conahcyt-negro': #141414, // cuerpo de texto
+        'conahcyt-gris': #d5d5d5, // enlaces conahcyt
+        'conahcyt-blanco': #fff, // texto footer conahcyt
+        'conahcyt-cian': #13aff0, // hover enlaces conahcyt
       ),
     );
     ```

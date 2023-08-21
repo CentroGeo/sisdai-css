@@ -73,16 +73,14 @@ Agrega las siguientes lineas en el `<head> </head>` del archivo de html, y que a
 
    Y la documentación del proyecto
     ``` sh
-    npm run install:docs
+    npm run build:docs
     ```
 
-3. Levantar el entorno local
+3. Para levantar la documentación en local
 
     ``` sh
-    npm start
+    npm run build:dev
     ```
-   Ese comando debe compilar y dejar vigilando los cambios de la carpeta `src/` que contiene los estilos en scss,
-   levantar un entorno local de la carpeta de documentación del proyecto `docs/`
 
 4. Abre tu navegador con la siguiente dirección
     ```

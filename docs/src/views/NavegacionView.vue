@@ -155,16 +155,16 @@
     </div>
   </nav>
 
-  <h3 class="m-t-10">Navegación de Conacyt</h3>
-  <nav class="navegacion navegacion-conacyt">
+  <h3 class="m-t-10">Navegación de Conahcyt</h3>
+  <nav class="navegacion navegacion-conahcyt">
     <div class="nav-contenedor-identidad">
       <a href="#" class="nav-hiperviculo-logo">
         <img
-          class="nav-logo"
+          class="nav-logo invertir"
           width="130"
           height="38"
           src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
-          alt="Conacyt."
+          alt="Conahcyt."
         />
       </a>
       <button class="nav-boton-menu">
@@ -211,10 +211,11 @@
   <p>En el siguiente ejemplo, la clase .activo se agrega al hacer click</p>
   <li class="colapsable-navegacion" :class="{ activo: colapsable_activo }">
     <button
-      class="colapsable-boton-submenu nav-boton-submenu"
+      class="colapsable-boton-submenu"
       @click="colapsable_activo = !colapsable_activo"
     >
       Titulo colapsable
+      <span aria-hidden="true" class="nav-boton-submenu"></span>
     </button>
     <ul class="colapsable-submenu">
       <li>
@@ -222,6 +223,7 @@
       </li>
     </ul>
   </li>
+  
   <h2 class="m-t-10">Menú lateral</h2>
   <p>
     El siguiente elemento .menu-lateral-contenedor consiste en un menú que
@@ -253,10 +255,11 @@
             :class="{ activo: colapsable_activo }"
           >
             <button
-              class="colapsable-boton-submenu nav-boton-submenu"
+              class="colapsable-boton-submenu"
               @click="colapsable_activo = !colapsable_activo"
             >
               Titulo colapsable
+              <span aria-hidden="true" class="nav-boton-submenu"></span>
             </button>
             <ul class="colapsable-submenu">
               <li>
@@ -280,7 +283,7 @@
   </p>
 
   <div class="indice-de-contenido">
-    <p class="titulo-indice">{{ titulo }}</p>
+    <p class="titulo-indice">{ { titulo } }</p>
     <nav>
       <div class="contenedor-indice-de-contenido">
         <slot name="contenido-indice-de-contenido">
