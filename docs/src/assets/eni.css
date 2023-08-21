@@ -1631,6 +1631,15 @@ dl dd {
   font-weight: 500;
 }
 
+.lista-redes-sociales {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+}
+.lista-redes-sociales li {
+  margin: 0;
+}
+
 table {
   border-collapse: collapse;
   text-align: left;
