@@ -4,10 +4,12 @@ Biblioteca de estilos en scss con sass para el Sistema de Diseño y Accesibilida
 ([Sisdai](https://sisdai.conacyt.mx/)).
 
 > **_Limitación de responsabilidad_**
-> El presente es un proyecto en construcción, por tanto ni el equipo del Sisdai 
-> ni el de Salsa son responsables del uso y contenido del presente recurso, 
-> toda vez que se trata de una versión en su modalidad prueba, y no de una 
-> versión pública, por lo que una vez que sea lanzada la versión final, 
+>
+> El presente es un proyecto en construcción, por tanto el equipo del Sisdai
+> no es responsable del uso y contenido del presente recurso,
+> toda vez que se trata de una versión en su modalidad prueba, y no de una
+> versión liberada al público, por lo que una vez que sea lanzada la versión
+> final,
 > se invita a la persona usuaria a consultarla y validar sus requisitos.
 
 ## Cómo utilizar la biblioteca en un proyecto estático
@@ -27,15 +29,13 @@ Agrega las siguientes lineas en el `<head> </head>` del archivo de html, y que a
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://file.myfontastic.com/JS4TgqY9L4s8WsKQDkt5qA/icons.css" rel="stylesheet">  
-  <link href="https://cdn.jsdelivr.net/gh/conacyt-dai/dadsig-css/dist/eni.min.css" rel="stylesheet">
-
 ```
 
 ## Cómo instalar la biblioteca en un proyecto
 
 1. Instala la biblioteca
     ``` sh
-    npm i github:salsa-community/sisdai-css
+    npm i gitlab:codigo.conahcyt.mx/sisdai/sisdai-css
     ```
 
 2. Importa la biblioteca
@@ -100,18 +100,20 @@ que puedes utilizar como archivos locales copiándolos y pegándolos en tus proy
 
 **SOFTWARE LIBRE Y ESTÁNDARES ABIERTOS**
 
-Sisdai y sisdai-css está alineado a las disposiciones establecidas por la Coordinación de Estrategia Digital Nacional (
-DOF:06/09/2021) en donde se estipula que las "políticas y disposiciones tienen como objetivo fortalecer el uso del software
-libre y los estándares abiertos, fomentar el desarrollo de aplicaciones institucionales con utilidad pública, lograr la
-autonomía, soberanía e independencia tecnológicas dentro de la APF". En el artículo 63 se explicita que "cuando se trate
-de desarrollos basados en software libre, se respetarán las condiciones de su licenciamiento original [...]", en este
-sentido este proyecto está alineado a lo que se define desde [SALSA](https://salsa.crip.conacyt.mx/).
+Sisdai y sisdai-componentes están alineadas a las disposiciones establecidas por
+la Coordinación de Estrategia Digital Nacional (
+DOF:06/09/2021) en donde se estipula que las "políticas y disposiciones tienen
+como objetivo fortalecer el uso del software
+libre y los estándares abiertos, fomentar el desarrollo de aplicaciones
+institucionales con utilidad pública, lograr la
+autonomía, soberanía e independencia tecnológicas dentro de la APF". En el
+artículo 63 se explicita que "cuando se trate
+de desarrollos basados en software libre, se respetarán las condiciones de su
+licenciamiento original [...]".
 
 ## Contribuir
 
-Para contribuir al proyecto, se pide que se haga por medio de los lineamientos de contribución de SALSA que se
-pueden consultar [aquí](https://salsa.crip.conacyt.mx/guidelines/contribute/).
-
-*En los lineamientos de contribución se lista la rama _master_ como principal, sin embargo en este proyecto, dicha
-rama es _main_.
-
+Para contribuir al proyecto, se pide que se haga tomando en cuenta la guía de
+contribución
+de [git](https://git-scm.com/book/es/v2/Git-en-entornos-distribuidos-Contribuyendo-a-un-Proyecto)
+.
