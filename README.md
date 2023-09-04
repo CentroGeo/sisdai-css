@@ -100,7 +100,7 @@ que puedes utilizar como archivos locales copiándolos y pegándolos en tus proy
 
 **SOFTWARE LIBRE Y ESTÁNDARES ABIERTOS**
 
-Sisdai y sisdai-componentes están alineadas a las disposiciones establecidas por
+Sisdai y sisdai-css están alineadas a las disposiciones establecidas por
 la Coordinación de Estrategia Digital Nacional (
 DOF:06/09/2021) en donde se estipula que las "políticas y disposiciones tienen
 como objetivo fortalecer el uso del software
