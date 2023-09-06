@@ -1631,6 +1631,15 @@ dl dd {
   font-weight: 500;
 }
 
+.lista-redes-sociales {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+}
+.lista-redes-sociales li {
+  margin: 0;
+}
+
 table {
   border-collapse: collapse;
   text-align: left;
@@ -8186,7 +8195,7 @@ ol + hr {
   box-shadow: var(--navegacion-sombra);
   border-radius: var(--navegacion-redondeado);
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 70%;
   max-width: 320px;
   position: absolute;
@@ -8259,6 +8268,9 @@ ol + hr {
     max-width: inherit;
     right: 0;
     top: 0;
+  }
+  .nav-menu-contedor .nav-menu-complementario {
+    padding-left: 16px;
   }
   .nav-menu-contedor .nav-menu-principal {
     flex: 1;
