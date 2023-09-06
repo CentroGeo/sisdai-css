@@ -5,8 +5,10 @@
   "main": "src/eni.scss",
   "scripts": {
     "build": "sass src/eni.scss:dist/eni.min.css --style compressed",
-    "build:docs": "cd docs && npm run build",
-    "build:dev": "cd docs && npm run dev",
+    "docs:install": "cd docs && npm install",
+    "docs:dev": "cd docs && npm run dev",
+    "docs:build": "cd docs && npm run build",
+    "docs:preview": "cd docs && npm run preview",
     "scss": "sass --watch src/eni.scss:docs/src/assets/eni.css --style expanded"
   },
   "repository": {
