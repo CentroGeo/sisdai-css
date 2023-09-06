@@ -1,13 +1,7 @@
 .controlador-vis {
-    // position: relative;
-    // display: flex;
-    // align-items: center;
-    // width: fit-content;
-
     .figura-variable {
         width: 18px;
         height: 18px;
-        // background: var(--tipografia-color-1);
         background: #7E8CF5;
         border: 1px solid var(--tipografia-color);
         border-radius: 50%;
@@ -15,23 +9,24 @@
         margin-left: 40px;
         margin-top: 11px;
         z-index: 1;
+        cursor: pointer;
         &.disabled {
             background: #DDDDDD;
             border: 1px solid #AAAAAA;
-        }
+            cursor: default;
+        }        
     }
     [type=checkbox] + label {
         padding-top: 9px;
         padding-bottom: 9px;
         padding-right: 16px;
-        margin: 0px;   
+        margin: 0px;
+        color: var(--tipografia-color);
     }
     [type=checkbox] {
         &:disabled + label {
             cursor: default;
             color: #AAAAAA;
-            // background: red;
-            // border: 1px solid #AAAAAA;
             box-shadow: inset 0 0 0 1px #AAAAAA;
             &:hover {
                 background: transparent;
@@ -43,18 +38,43 @@
     }
     [type=checkbox] {
         &:disabled + label::before {
-            // border: 1px solid ;
             box-shadow: inset 0 0 0 1px #AAAAAA;
         }
     }
     [type=checkbox] + label::before {
         top: 10px;
         margin-left: 8px;
+        box-shadow: inset 0 0 0 1px var(--tipografia-color);
+    }
+    [type=checkbox]:checked:not(:hover) + label {
+        background: transparent;
     }
     [type=checkbox]:checked + label::after {
         left: calc(.125rem + 12px);
+        color: var(--tipografia-color);
     }
     .nombre-variable {
-        padding-left: 64px;        
+        padding-left: 64px;
+    }
+
+
+    &:hover {
+        .figura-variable {
+            &:not(.disabled) {
+                border: 1px solid #141414;
+            }
+        }
+        [type=checkbox]:not(:disabled) + label {
+            background: #dddddd;
+        }
+        [type=checkbox]:not(:disabled) + label::before {
+            box-shadow: inset 0 0 0 1px #141414;
+        }
+        [type=checkbox]:checked + label::after {
+            color: #141414;
+        }
+        .nombre-variable {
+            color: #141414;
+        }
     }
 }

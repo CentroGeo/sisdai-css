@@ -105,12 +105,12 @@ select {
 [type=radio]:hover + label,
 [type=checkbox]:checked + label,
 [type=radio]:checked + label {
-  color: var(--input-color);
+  color: #141414;
   background: #dddddd;
 }
 [type=checkbox]:hover + label::before,
 [type=radio]:hover + label::before {
-  box-shadow: inset 0 0 0 1px var(--input-color);
+  box-shadow: inset 0 0 0 1px #141414;
 }
 [type=checkbox] + label::before,
 [type=radio] + label::before {

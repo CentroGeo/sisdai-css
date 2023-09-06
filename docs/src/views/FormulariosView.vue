@@ -61,9 +61,6 @@
         <span class="figura-variable"></span>
         <input id="control_1" type="checkbox">
         <label class="nombre-variable" for="control_1">Etiqueta de texto</label>
-        <!-- <button>
-          <span class="info-variable"></span>
-        </button> -->
       </span>
       <span class="controlador-vis">
         <span class="figura-variable disabled"></span>
