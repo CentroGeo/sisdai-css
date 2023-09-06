@@ -8146,7 +8146,7 @@ ol + hr {
   box-shadow: var(--navegacion-sombra);
   border-radius: var(--navegacion-redondeado);
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 70%;
   max-width: 320px;
   position: absolute;
@@ -8219,6 +8219,9 @@ ol + hr {
     max-width: inherit;
     right: 0;
     top: 0;
+  }
+  .nav-menu-contedor .nav-menu-complementario {
+    padding-left: 16px;
   }
   .nav-menu-contedor .nav-menu-principal {
     flex: 1;
