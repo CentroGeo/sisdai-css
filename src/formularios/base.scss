@@ -81,7 +81,6 @@ select {
   background-color: var(--input-fondo);
   border: 1px solid transparent;
   border-radius: map-get($bordes, '4');
-  // color: var(--label-color);
   color: var(--input-color);
   cursor: pointer;
   display: inline-flex;
@@ -115,7 +114,6 @@ select {
 [type=checkbox] + label::before,
 [type=radio] + label::before {
   box-sizing: border-box;
-  // box-shadow: inset 0 0 0 1px var(--input-borde);
   box-shadow: inset 0 0 0 1px var(--input-color);
   content: "";
   height: 1.125rem;
@@ -128,14 +126,11 @@ select {
 }
 // checkbox
 [type=checkbox] + label::before {
-  // border: 2px solid var(--pagina-fondo);
   border-radius: 4px;
 }
 [type=checkbox]:checked + label::before,
 [type=radio]:checked + label::before {
-  // box-shadow: inset 0 0 0 1px var(--input-controles-color);
   box-shadow: inset 0 0 0 1px #141414;
-  // background: var(--input-controles-color);
   background: transparent;
 }
 [type=checkbox]:checked + label::after {
@@ -143,7 +138,6 @@ select {
   // que el icono lee 'j', agregar aria-hidden
   font-family: "sisdai-iconos";
   content: "\6a";
-  // color: var(--pagina-fondo);
   color: #141414;
   position: absolute;
   left: calc(.125rem + 4px);
