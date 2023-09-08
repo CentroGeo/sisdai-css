@@ -10,7 +10,7 @@
       siguiendo las instrucciones de instalación de este proyecto.
     </p>
     <p class="parrafo-texto-alto">
-      <a href="https://github.com/salsa-community/sisdai-css" target="_blank" rel="noopener" class="nav-boton">
+      <a href="https://codigo.conahcyt.mx/sisdai/sisdai-css" target="_blank" rel="noopener" class="nav-boton">
         <span class="icono-social-github m-r-1"></span>
         sisdai-css
       </a>
