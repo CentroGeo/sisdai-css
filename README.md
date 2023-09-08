@@ -35,7 +35,7 @@ Agrega las siguientes lineas en el `<head> </head>` del archivo de html, y que a
 
 1. Instala la biblioteca
     ``` sh
-    npm i gitlab:codigo.conahcyt.mx/sisdai/sisdai-css
+    npm i git+https://codigo.conahcyt.mx/sisdai/sisdai-css#v{version}
     ```
 
 2. Importa la biblioteca
@@ -60,7 +60,7 @@ Agrega las siguientes lineas en el `<head> </head>` del archivo de html, y que a
 1. Clona el repositorio con la siguiente linea en la terminal
 
     ``` sh
-    git clone git@github.com:salsa-community/sisdai-css.git
+    git clone https://codigo.conahcyt.mx/sisdai/sisdai-css.git
     ```
    Si por alguna razón no pudiste clonar, puedes leer la
    [documentación de Github acerca de cómo clonar un repositorio](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
