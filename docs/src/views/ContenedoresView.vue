@@ -1,5 +1,4 @@
 <template>
-
   <h1>Contenedores</h1>
 
 
@@ -145,4 +144,88 @@
     </div>
   </div>
 
+  <h2 class="m-t-10">Visualizaciones</h2>
+  <div class="contenedor-vis borde-redondeado-8 con-panel-encabezado-vis con-panel-pie-vis m-b-4">
+    <div class="panel-encabezado-vis p-x-2">
+      <p class="vis-titulo-visualizacion">
+        Evolución de variantes del virus SARS-CoV-2
+      </p>
+      <p class="vis-titulo-proyecto">
+        (Solamente se muestran variantes de preocupación y de interés)
+      </p>
+    </div>
+
+    <figure class="contenido-vis p-x-2">
+      <img
+        src="img/grafica-variantes.png"
+        alt="visalizacion"
+        height="100%"
+        width="100%"
+      />
+    </figure>
+
+    <div class="panel-pie-vis p-x-2">
+      <p class="vis-titulo-leyenda">
+        Variantes del virus SARS-CoV-2
+      </p>
+      <hr>
+      <p class="notas">
+        Nota. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
+      </p>
+    </div>
+
+    <div class="boton boton-conahcyt-vis">
+      <a href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
+          alt="Conahcyt"
+        >
+      </a>
+
+      <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        Sisdai
+      </a>
+    </div>
+  </div>
+
+  <div class="contenedor-vis borde-redondeado-8 con-panel-izquierda-vis con-panel-pie-vis">
+    <div class="panel-izquierda-vis p-x-2">
+      <p class="vis-titulo-visualizacion">
+        Población total en 2020 por el método de clasificación de rupturas naturales (Jenks)
+      </p>
+      <!-- <p class="vis-titulo-leyenda">
+        Leyenda
+      </p> -->
+      <img src="img/mapa-leyenda.png" alt="leyenda" height="200px" />
+    </div>
+
+    <figure class="contenido-vis p-t-2 p-r-2">
+      <img
+        src="img/mapa-poblacion.png"
+        alt="visalizacion"
+        height="100%"
+        width="100%"
+      />
+    </figure>
+
+    <div class="panel-pie-vis p-x-2">
+      <hr>
+      <p class="notas">
+        Nota. Datos de origen del Instituto Nacional de Estadística y Geografía (INEGI), 2020.
+      </p>
+    </div>
+
+    <div class="boton boton-conahcyt-vis">
+      <a href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
+          alt="Conahcyt"
+        >
+      </a>
+
+      <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        Sisdai
+      </a>
+    </div>
+  </div>
 </template>

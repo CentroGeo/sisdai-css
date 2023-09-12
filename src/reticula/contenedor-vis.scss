@@ -5,6 +5,8 @@
   $alto-maximo-contenedor-vis: calc(100vh - $alto-menus);
   $alto-minimo-vis: 300px;
 
+  background: #DDDDDD4D;
+
   // min-width: 800px;
   width: 100%;
 
@@ -17,7 +19,8 @@
   // Botón conahcyt simepre este pegado abajo
   position: relative;
   padding-bottom: $alto-boton-conahcyt;
-  .boton.boton-conahcyt {
+  .boton.boton-conahcyt,
+  .boton.boton-conahcyt-vis {
     position: absolute;
     bottom: 0;
   }
@@ -117,7 +120,8 @@
   &.sin-boton-conahcyt {
     padding-bottom: 0;
 
-    .boton.boton-conahcyt {
+    .boton.boton-conahcyt,
+    .boton.boton-conahcyt-vis {
       display: none;
     }
 
@@ -183,7 +187,8 @@
     .panel-izquierda-vis,
     .panel-derecha-vis,
     .panel-pie-vis,
-    .boton.boton-conahcyt {
+    .boton.boton-conahcyt,
+    .boton.boton-conahcyt-vis {
       border-radius: 0 !important;
     }
   }
