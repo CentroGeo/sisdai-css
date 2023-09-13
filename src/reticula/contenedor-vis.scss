@@ -197,7 +197,7 @@
   /* * * * * Diosposicion * * * * */
   display: grid;
   grid-gap: 0;
-  grid-template-rows: auto auto min($alto-minimo-vis) auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 1;
   // grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
 
@@ -228,7 +228,7 @@
   }
 
   @include mediaquery('esc') {
-    grid-template-rows: min($alto-minimo-vis);
+    grid-template-rows: auto;
     .panel-izquierda-vis,
     .contenido-vis,
     .panel-derecha-vis {
@@ -243,7 +243,7 @@
       max-height: calc($alto-maximo-contenedor-vis - $alto-minimo-vis);
     }
     &.con-panel-encabezado-vis {
-      grid-template-rows: auto min($alto-minimo-vis);
+      grid-template-rows: auto auto;
       .panel-izquierda-vis,
       .contenido-vis,
       .panel-derecha-vis {
@@ -261,10 +261,10 @@
       }
     }
     .con-panel-pie-vis {
-      grid-template-rows: min($alto-minimo-vis) auto;
+      grid-template-rows: auto auto;
     }
     &.con-panel-encabezado-vis.con-panel-pie-vis {
-      grid-template-rows: auto min($alto-minimo-vis) auto;
+      grid-template-rows: auto auto auto;
       .panel-encabezado-vis,
       .panel-pie-vis {
         // Cuando hay encabezado y pie, estos deben tomar la mitad del resto de la pantalla como alto máximo

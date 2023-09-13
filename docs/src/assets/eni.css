@@ -8205,7 +8205,7 @@ ol + hr {
   /* * * * * Diosposicion * * * * */
   display: grid;
   grid-gap: 0;
-  grid-template-rows: auto auto 300px auto auto;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-columns: 1;
   /* * * * * Diosposicion * * * * */
 }
@@ -8371,7 +8371,7 @@ ol + hr {
 }
 @media screen and (min-width: 768px) {
   .contenedor-vis {
-    grid-template-rows: 300px;
+    grid-template-rows: auto;
   }
   .contenedor-vis .panel-izquierda-vis,
 .contenedor-vis .contenido-vis,
@@ -8386,7 +8386,7 @@ ol + hr {
     max-height: calc(100vh - 120px - 300px);
   }
   .contenedor-vis.con-panel-encabezado-vis {
-    grid-template-rows: auto 300px;
+    grid-template-rows: auto auto;
   }
   .contenedor-vis.con-panel-encabezado-vis .panel-izquierda-vis,
 .contenedor-vis.con-panel-encabezado-vis .contenido-vis,
@@ -8402,10 +8402,10 @@ ol + hr {
     grid-column-end: span 2;
   }
   .contenedor-vis .con-panel-pie-vis {
-    grid-template-rows: 300px auto;
+    grid-template-rows: auto auto;
   }
   .contenedor-vis.con-panel-encabezado-vis.con-panel-pie-vis {
-    grid-template-rows: auto 300px auto;
+    grid-template-rows: auto auto auto;
   }
   .contenedor-vis.con-panel-encabezado-vis.con-panel-pie-vis .panel-encabezado-vis,
 .contenedor-vis.con-panel-encabezado-vis.con-panel-pie-vis .panel-pie-vis {
