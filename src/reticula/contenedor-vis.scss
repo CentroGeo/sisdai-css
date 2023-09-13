@@ -1,0 +1,307 @@
+.contenedor-vis {
+  // Variables
+  $alto-menus: 120px;
+  $alto-boton-conahcyt: 40px;
+  $alto-maximo-contenedor-vis: calc(100vh - $alto-menus);
+  $alto-minimo-vis: 300px;
+
+  background: #DDDDDD4D;
+
+  // min-width: 800px;
+  width: 100%;
+
+  .contenido-vis {
+    // min-height: $alto-minimo-vis;
+    width: 100%;
+    margin: 0;
+  }
+
+  // Botón conahcyt simepre este pegado abajo
+  position: relative;
+  padding-bottom: $alto-boton-conahcyt;
+  .boton.boton-conahcyt,
+  .boton.boton-conahcyt-vis {
+    position: absolute;
+    bottom: 0;
+  }
+
+  // Scroll en los paneles
+  .panel-encabezado-vis,
+  .panel-izquierda-vis,
+  .panel-derecha-vis,
+  .panel-pie-vis {
+    overflow: auto;
+    scrollbar-width: thin;
+  }
+
+  /* * * * * Bordes redondeados * * * * */
+  .panel-encabezado-vis,
+  .panel-izquierda-vis,
+  .contenido-vis {
+    border-radius: 7px 7px 0 0;
+  }
+  .vista-cargando {
+    border-radius: 7px;
+  }
+  &.con-panel-encabezado-vis {
+    .panel-izquierda-vis {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+  &.con-panel-encabezado-vis,
+  &.con-panel-izquierda-vis {
+    .contenido-vis {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+    }
+  }
+  @include mediaquery('esc') {
+    &.con-panel-encabezado-vis {
+      .panel-derecha-vis,
+      .panel-izquierda-vis {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+    }
+    &.con-panel-encabezado-vis.con-panel-izquierda-vis {
+      .contenido-vis {
+        border-top-right-radius: 0;
+      }
+    }
+    &.con-panel-encabezado-vis.con-panel-derecha-vis {
+      .panel-derecha-vis {
+        border-top-right-radius: 0;
+      }
+    }
+    &.con-panel-izquierda-vis {
+      .panel-izquierda-vis {
+        border-top-right-radius: 0;
+      }
+      .contenido-vis {
+        border-top-right-radius: 7px;
+      }
+    }
+    &.con-panel-derecha-vis {
+      .contenido-vis {
+        border-top-right-radius: 0;
+      }
+      .panel-derecha-vis {
+        border-top-right-radius: 7px;
+      }
+    }
+  }
+  /* * * * * Bordes redondeados * * * * */
+
+  /* * * * * Escodner elementos * * * * */
+  .panel-encabezado-vis,
+  .panel-izquierda-vis,
+  .panel-derecha-vis,
+  .panel-pie-vis {
+    display: none;
+  }
+  &.con-panel-encabezado-vis .panel-encabezado-vis {
+    display: block;
+  }
+  &.con-panel-izquierda-vis .panel-izquierda-vis {
+    display: block;
+  }
+  &.con-panel-derecha-vis .panel-derecha-vis {
+    display: block;
+  }
+  &.con-panel-pie-vis .panel-pie-vis {
+    display: block;
+  }
+
+  &.sin-cargador .vista-cargando {
+    display: none;
+  }
+
+  &.sin-boton-conahcyt {
+    padding-bottom: 0;
+
+    .boton.boton-conahcyt,
+    .boton.boton-conahcyt-vis {
+      display: none;
+    }
+
+    .contenido-vis,
+    .panel-derecha-vis,
+    .panel-pie-vis {
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 7px;
+    }
+    &.con-panel-derecha-vis {
+      .contenido-vis,
+      .panel-izquierda-vis {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+    &.con-panel-pie-vis {
+      .contenido-vis,
+      .panel-derecha-vis {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+
+    @include mediaquery('esc') {
+      &.con-panel-izquierda-vis {
+        .panel-izquierda-vis {
+          border-bottom-left-radius: 7px;
+        }
+        .contenido-vis {
+          border-bottom-left-radius: 0;
+        }
+      }
+      &.con-panel-derecha-vis {
+        .contenido-vis {
+          border-bottom-left-radius: 7px;
+        }
+        .panel-derecha-vis {
+          border-bottom-left-radius: 0;
+        }
+      }
+      &.con-panel-izquierda-vis.con-panel-derecha-vis {
+        .contenido-vis {
+          border-bottom-left-radius: 0;
+        }
+      }
+      &.con-panel-pie-vis.con-panel-izquierda-vis,
+      &.con-panel-pie-vis.con-panel-derecha-vis {
+        .panel-izquierda-vis,
+        .contenido-vis {
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+
+  &.sin-bordes {
+    border: none;
+
+    .contenido-vis,
+    .vista-cargando,
+    .panel-encabezado-vis,
+    .panel-izquierda-vis,
+    .panel-derecha-vis,
+    .panel-pie-vis,
+    .boton.boton-conahcyt,
+    .boton.boton-conahcyt-vis {
+      border-radius: 0 !important;
+    }
+  }
+  /* * * * * Escodner elementos * * * * */
+
+  /* * * * * Diosposicion * * * * */
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1;
+  // grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
+
+  // Filas por defecto
+  .panel-encabezado-vis {
+    grid-row-start: 1;
+  }
+  .panel-izquierda-vis {
+    grid-row-start: 2;
+  }
+  .contenido-vis {
+    grid-row-start: 3;
+  }
+  .panel-derecha-vis {
+    grid-row-start: 4;
+  }
+  .panel-pie-vis {
+    grid-row-start: 5;
+  }
+  .panel-encabezado-vis,
+  .panel-izquierda-vis,
+  .contenido-vis,
+  .panel-derecha-vis,
+  .panel-pie-vis {
+    grid-column-start: 1;
+    grid-row-end: span 1;
+    grid-column-end: span 1;
+  }
+
+  @include mediaquery('esc') {
+    grid-template-rows: auto;
+    .panel-izquierda-vis,
+    .contenido-vis,
+    .panel-derecha-vis {
+      grid-row-start: 1;
+    }
+    .panel-pie-vis {
+      grid-row-start: 2;
+    }
+    .panel-encabezado-vis,
+    .panel-pie-vis {
+      // Cuando hay encabezado o pie, estos deben tomar el resto de la pantalla como alto máximo
+      max-height: calc($alto-maximo-contenedor-vis - $alto-minimo-vis);
+    }
+    &.con-panel-encabezado-vis {
+      grid-template-rows: auto auto;
+      .panel-izquierda-vis,
+      .contenido-vis,
+      .panel-derecha-vis {
+        grid-row-start: 2;
+      }
+      .panel-pie-vis {
+        grid-row-start: 3;
+      }
+    }
+    &.con-panel-izquierda-vis,
+    &.con-panel-derecha-vis {
+      .panel-encabezado-vis,
+      .panel-pie-vis {
+        grid-column-end: span 2;
+      }
+    }
+    .con-panel-pie-vis {
+      grid-template-rows: auto auto;
+    }
+    &.con-panel-encabezado-vis.con-panel-pie-vis {
+      grid-template-rows: auto auto auto;
+      .panel-encabezado-vis,
+      .panel-pie-vis {
+        // Cuando hay encabezado y pie, estos deben tomar la mitad del resto de la pantalla como alto máximo
+        max-height: calc(($alto-maximo-contenedor-vis - $alto-minimo-vis) / 2);
+      }
+    }
+    &.con-panel-izquierda-vis {
+      grid-template-columns: 1fr 2fr;
+      .panel-izquierda-vis {
+        grid-column-start: 1;
+      }
+      .contenido-vis {
+        grid-column-start: 2;
+      }
+    }
+    &.con-panel-derecha-vis {
+      grid-template-columns: 2fr 1fr;
+      .contenido-vis {
+        grid-column-start: 1;
+      }
+      .panel-derecha-vis {
+        grid-column-start: 2;
+      }
+    }
+    &.con-panel-izquierda-vis.con-panel-derecha-vis {
+      grid-template-columns: 1fr 2fr 1fr;
+      .panel-encabezado-vis,
+      .panel-pie-vis {
+        grid-column-end: span 3;
+      }
+      .contenido-vis {
+        grid-column-start: 2;
+      }
+      .panel-derecha-vis {
+        grid-column-start: 3;
+      }
+    }
+  }
+  /* * * * * Diosposicion * * * * */
+}
