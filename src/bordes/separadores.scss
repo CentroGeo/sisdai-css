@@ -6,6 +6,9 @@ hr {
   margin-top: map-get($espaciado, '2');
   margin-bottom: map-get($espaciado, '2');
 }
+.contenedor-vis hr {
+  border-top: 1px solid var(--borde-color-3)
+}
 
 h1 + hr,
 h2 + hr,
