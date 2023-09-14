@@ -73,16 +73,29 @@
   justify-content: space-between;
   width: 100%;
   padding: 0 16px 16px;
+
   img, a {
     min-height: 24px;
     max-height: 24px;
     cursor: pointer;
   }
-  &:hover,
-  &:focus {
-    filter: grayscale(0%);
+
+  .logo-conacyt {
+    color: #003384;
+    filter: grayscale(100%);
     img {
-      opacity: 1;
+      opacity: .5;
+      transition: all .25s ease-in-out;
+    }
+  }
+
+  .logo-conacyt {
+    &:hover,
+    &:focus {
+      filter: grayscale(0%);
+      img {
+        opacity: 1;
+      }
     }
   }
 }

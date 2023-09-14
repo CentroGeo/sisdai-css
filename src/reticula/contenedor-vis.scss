@@ -20,7 +20,7 @@
   position: relative;
   padding-bottom: $alto-boton-conahcyt;
   .boton.boton-conahcyt,
-  .boton.boton-conahcyt-vis {
+  .boton-conahcyt-vis {
     position: absolute;
     bottom: 0;
   }
@@ -121,7 +121,7 @@
     padding-bottom: 0;
 
     .boton.boton-conahcyt,
-    .boton.boton-conahcyt-vis {
+    .boton-conahcyt-vis {
       display: none;
     }
 
@@ -188,7 +188,7 @@
     .panel-derecha-vis,
     .panel-pie-vis,
     .boton.boton-conahcyt,
-    .boton.boton-conahcyt-vis {
+    .boton-conahcyt-vis {
       border-radius: 0 !important;
     }
   }

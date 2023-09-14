@@ -174,8 +174,8 @@
       </p>
     </div>
 
-    <div class="boton boton-conahcyt-vis">
-      <a href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
+    <div class="boton-conahcyt-vis">
+      <a class="logo-conacyt" href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
         <img
           src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
           alt="Conahcyt"
