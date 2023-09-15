@@ -1140,27 +1140,6 @@ input[type=reset]:not(:last-child),
   opacity: 1;
 }
 
-.boton-conahcyt-vis {
-  min-height: 40px;
-  max-height: 40px;
-  border-width: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 16px 16px;
-}
-.boton-conahcyt-vis img, .boton-conahcyt-vis a {
-  min-height: 24px;
-  max-height: 24px;
-  cursor: pointer;
-}
-.boton-conahcyt-vis:hover, .boton-conahcyt-vis:focus {
-  filter: grayscale(0%);
-}
-.boton-conahcyt-vis:hover img, .boton-conahcyt-vis:focus img {
-  opacity: 1;
-}
-
 .contenedor-boton-flotante {
   position: fixed;
   z-index: 3;
@@ -1430,6 +1409,16 @@ a[class*=" p-"],
   object-position: 50% 50%;
   transition: all 0.27s ease-in-out;
 }
+.tarjeta-hipervinculo-externo .fondo-imagen img,
+.tarjeta-hipervinculo-externo .fondo-imagen figure,
+.tarjeta-hipervinculo-externo .fondo-imagen video,
+.tarjeta-hipervinculo-externo .fondo-imagen picture {
+  object-fit: cover;
+  object-position: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
 .tarjeta-hipervinculo-externo .degradado-negro-abajo {
   position: relative;
   width: 100%;
@@ -1480,6 +1469,16 @@ a[class*=" p-"],
   top: 0;
   object-fit: cover;
   object-position: 50% 50%;
+}
+.tarjeta-hipervinculo-interno .fondo-imagen img,
+.tarjeta-hipervinculo-interno .fondo-imagen figure,
+.tarjeta-hipervinculo-interno .fondo-imagen video,
+.tarjeta-hipervinculo-interno .fondo-imagen picture {
+  object-fit: cover;
+  object-position: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .tarjeta-hipervinculo-interno .contenido-abajo {
   width: 100%;
@@ -1824,6 +1823,16 @@ figure figcaption {
   top: 0;
   object-fit: cover;
   object-position: 50% 50%;
+}
+.tarjeta .fondo-imagen img,
+.tarjeta .fondo-imagen figure,
+.tarjeta .fondo-imagen video,
+.tarjeta .fondo-imagen picture {
+  object-fit: cover;
+  object-position: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 .tarjeta .contenido-html {
   width: 100%;
@@ -2229,6 +2238,10 @@ select {
   color: var(--acciones-correcto);
 }
 
+.controlador-vis {
+  display: inline-block;
+  position: relative;
+}
 .controlador-vis .figura-variable {
   width: 18px;
   height: 18px;
@@ -3505,6 +3518,10 @@ hr {
   overflow: visible;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+.contenedor-vis hr {
+  border-top: 1px solid var(--borde-color-3);
 }
 
 h1 + hr,
@@ -8194,10 +8211,14 @@ ol + hr {
   }
 }
 .contenedor-vis {
+  --alto-menus: 120px;
+  --alto-boton-conahcyt: 40px;
+  --alto-maximo-contenedor-vis: calc(100vh - var(--alto-menus));
+  --alto-minimo-vis: 300px;
   background: rgba(221, 221, 221, 0.3019607843);
   width: 100%;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: var(--alto-boton-conahcyt);
   /* * * * * Bordes redondeados * * * * */
   /* * * * * Bordes redondeados * * * * */
   /* * * * * Escodner elementos * * * * */
@@ -8214,9 +8235,52 @@ ol + hr {
   margin: 0;
 }
 .contenedor-vis .boton.boton-conahcyt,
-.contenedor-vis .boton.boton-conahcyt-vis {
+.contenedor-vis .boton-conahcyt-vis,
+.contenedor-vis .contenedor-vis-atribuciones {
   position: absolute;
   bottom: 0;
+  min-height: 40px;
+  max-height: 40px;
+  border-width: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 16px 16px;
+}
+.contenedor-vis .boton.boton-conahcyt img, .contenedor-vis .boton.boton-conahcyt a,
+.contenedor-vis .boton-conahcyt-vis img,
+.contenedor-vis .boton-conahcyt-vis a,
+.contenedor-vis .contenedor-vis-atribuciones img,
+.contenedor-vis .contenedor-vis-atribuciones a {
+  min-height: 24px;
+  max-height: 24px;
+  cursor: pointer;
+}
+.contenedor-vis .boton.boton-conahcyt .logo-conacyt,
+.contenedor-vis .boton-conahcyt-vis .logo-conacyt,
+.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt {
+  color: #003384;
+  filter: grayscale(100%);
+}
+.contenedor-vis .boton.boton-conahcyt .logo-conacyt img,
+.contenedor-vis .boton-conahcyt-vis .logo-conacyt img,
+.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt img {
+  opacity: 0.5;
+  transition: all 0.25s ease-in-out;
+}
+.contenedor-vis .boton.boton-conahcyt .logo-conacyt:hover, .contenedor-vis .boton.boton-conahcyt .logo-conacyt:focus,
+.contenedor-vis .boton-conahcyt-vis .logo-conacyt:hover,
+.contenedor-vis .boton-conahcyt-vis .logo-conacyt:focus,
+.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:hover,
+.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:focus {
+  filter: grayscale(0%);
+}
+.contenedor-vis .boton.boton-conahcyt .logo-conacyt:hover img, .contenedor-vis .boton.boton-conahcyt .logo-conacyt:focus img,
+.contenedor-vis .boton-conahcyt-vis .logo-conacyt:hover img,
+.contenedor-vis .boton-conahcyt-vis .logo-conacyt:focus img,
+.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:hover img,
+.contenedor-vis .contenedor-vis-atribuciones .logo-conacyt:focus img {
+  opacity: 1;
 }
 .contenedor-vis .panel-encabezado-vis,
 .contenedor-vis .panel-izquierda-vis,
@@ -8291,7 +8355,8 @@ ol + hr {
   padding-bottom: 0;
 }
 .contenedor-vis.sin-boton-conahcyt .boton.boton-conahcyt,
-.contenedor-vis.sin-boton-conahcyt .boton.boton-conahcyt-vis {
+.contenedor-vis.sin-boton-conahcyt .boton-conahcyt-vis,
+.contenedor-vis.sin-boton-conahcyt .contenedor-vis-atribuciones {
   display: none;
 }
 .contenedor-vis.sin-boton-conahcyt .contenido-vis,
@@ -8342,7 +8407,8 @@ ol + hr {
 .contenedor-vis.sin-bordes .panel-derecha-vis,
 .contenedor-vis.sin-bordes .panel-pie-vis,
 .contenedor-vis.sin-bordes .boton.boton-conahcyt,
-.contenedor-vis.sin-bordes .boton.boton-conahcyt-vis {
+.contenedor-vis.sin-bordes .boton-conahcyt-vis,
+.contenedor-vis.sin-bordes .contenedor-vis-atribuciones {
   border-radius: 0 !important;
 }
 .contenedor-vis .panel-encabezado-vis {
@@ -8383,7 +8449,7 @@ ol + hr {
   }
   .contenedor-vis .panel-encabezado-vis,
 .contenedor-vis .panel-pie-vis {
-    max-height: calc(100vh - 120px - 300px);
+    max-height: calc(var(--alto-maximo-contenedor-vis) - var(--alto-minimo-vis));
   }
   .contenedor-vis.con-panel-encabezado-vis {
     grid-template-rows: auto auto;
@@ -8409,7 +8475,7 @@ ol + hr {
   }
   .contenedor-vis.con-panel-encabezado-vis.con-panel-pie-vis .panel-encabezado-vis,
 .contenedor-vis.con-panel-encabezado-vis.con-panel-pie-vis .panel-pie-vis {
-    max-height: calc((100vh - 120px - 300px) / 2);
+    max-height: calc((var(--alto-maximo-contenedor-vis) - var(--alto-minimo-vis)) / 2);
   }
   .contenedor-vis.con-panel-izquierda-vis {
     grid-template-columns: 1fr 2fr;

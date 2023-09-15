@@ -64,25 +64,3 @@
     }
   }
 }
-
-.boton-conahcyt-vis {
-  min-height: 40px;
-  max-height: 40px;
-  border-width: 0;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 16px 16px;
-  img, a {
-    min-height: 24px;
-    max-height: 24px;
-    cursor: pointer;
-  }
-  &:hover,
-  &:focus {
-    filter: grayscale(0%);
-    img {
-      opacity: 1;
-    }
-  }
-}
