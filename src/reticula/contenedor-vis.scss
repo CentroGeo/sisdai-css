@@ -1,9 +1,9 @@
 .contenedor-vis {
   // Variables
-  $alto-menus: 120px;
-  $alto-boton-conahcyt: 40px;
-  $alto-maximo-contenedor-vis: calc(100vh - $alto-menus);
-  $alto-minimo-vis: 300px;
+  --alto-menus: 120px;
+  --alto-boton-conahcyt: 40px;
+  --alto-maximo-contenedor-vis: calc(100vh - var(--alto-menus));
+  --alto-minimo-vis: 300px;
 
   background: #DDDDDD4D;
 
@@ -11,14 +11,14 @@
   width: 100%;
 
   .contenido-vis {
-    // min-height: $alto-minimo-vis;
+    // min-height: var(--alto-minimo-vis);
     width: 100%;
     margin: 0;
   }
 
   // Botón conahcyt simepre este pegado abajo
   position: relative;
-  padding-bottom: $alto-boton-conahcyt;
+  padding-bottom: var(--alto-boton-conahcyt);
   .boton.boton-conahcyt,
   .boton-conahcyt-vis,
   .contenedor-vis-atribuciones {
@@ -275,7 +275,7 @@
     .panel-encabezado-vis,
     .panel-pie-vis {
       // Cuando hay encabezado o pie, estos deben tomar el resto de la pantalla como alto máximo
-      max-height: calc($alto-maximo-contenedor-vis - $alto-minimo-vis);
+      max-height: calc(var(--alto-maximo-contenedor-vis) - var(--alto-minimo-vis));
     }
     &.con-panel-encabezado-vis {
       grid-template-rows: auto auto;
@@ -303,7 +303,7 @@
       .panel-encabezado-vis,
       .panel-pie-vis {
         // Cuando hay encabezado y pie, estos deben tomar la mitad del resto de la pantalla como alto máximo
-        max-height: calc(($alto-maximo-contenedor-vis - $alto-minimo-vis) / 2);
+        max-height: calc((var(--alto-maximo-contenedor-vis) - var(--alto-minimo-vis)) / 2);
       }
     }
     &.con-panel-izquierda-vis {
