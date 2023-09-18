@@ -63,7 +63,7 @@
   isA11yOscura.value = false
   // Módulo de vista oscura
   const theme = ref(null) 
-  theme.value = 'auto' // 'dark' | 'light' | 'auto'
+  theme.value = 'light' // 'dark' | 'light' | 'auto'
   const perfil = ref(null) 
   perfil.value = 'eni' // 'eni' | 'sisdai' | 'gema'
 
