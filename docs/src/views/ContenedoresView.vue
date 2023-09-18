@@ -157,7 +157,7 @@
 
     <figure class="contenido-vis p-x-2">
       <img
-        src="img/grafica-variantes.png"
+        src="/img/grafica-variantes.png"
         alt="visalizacion"
         height="100%"
         width="100%"
@@ -196,12 +196,12 @@
       <!-- <p class="vis-titulo-leyenda">
         Leyenda
       </p> -->
-      <img src="img/mapa-leyenda.png" alt="leyenda" height="200px" />
+      <img src="/img/mapa-leyenda.png" alt="leyenda" height="200px" />
     </div>
 
     <figure class="contenido-vis p-t-2 p-r-2">
       <img
-        src="img/mapa-poblacion.png"
+        src="/img/mapa-poblacion.png"
         alt="visalizacion"
         height="100%"
         width="100%"
