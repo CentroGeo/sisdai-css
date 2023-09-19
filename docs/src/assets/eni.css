@@ -696,12 +696,19 @@ h6, .h6 {
   font-size: 1rem;
   line-height: 1.2em;
   font-weight: 400;
+  margin: 0 0 8px 0;
 }
 
 .vis-titulo-leyenda {
   font-size: 1rem;
   line-height: 1.2em;
   font-weight: 600;
+  margin: 16px 0 8px 0;
+}
+@media screen and (min-width: 768px) {
+  .vis-titulo-leyenda {
+    margin: 16px 0 8px 0;
+  }
 }
 
 .vis-titulo-ejes {
@@ -717,19 +724,31 @@ h6, .h6 {
 }
 
 .vis-fecha-actualizacion {
-  color: var(--tipografia-color-3);
   font-size: 0.75rem;
   line-height: 1.2em;
   font-weight: 500;
+  margin: 8px 0 8px 0;
+}
+@media screen and (min-width: 768px) {
+  .vis-fecha-actualizacion {
+    margin: 8px 0 16px 0;
+  }
 }
 
 .vis-instruccional {
   font-size: 1rem;
   line-height: 1.2em;
-  font-weight: 500;
+  font-weight: 400;
+  margin: 8px 0 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .vis-instruccional {
+    margin: 16px 0 16px 0;
+  }
 }
 
 .vis-titulo-visualizacion {
+  margin: 0 0 8px 0;
   font-size: 1.125rem;
   line-height: 1.2em;
   font-weight: 600;
@@ -750,6 +769,13 @@ h6, .h6 {
   .vis-leyenda {
     line-height: 1.5em;
   }
+}
+
+.vis-fuente {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 16px 0 16px 0;
 }
 
 [class^=icono-],
