@@ -146,7 +146,7 @@
 
   <h2 class="m-t-10">Visualizaciones</h2>
   <div class="contenedor-vis borde-redondeado-8 con-panel-encabezado-vis con-panel-pie-vis m-b-4">
-    <div class="panel-encabezado-vis p-x-2">
+    <div class="panel-encabezado-vis">
       <p class="vis-titulo-visualizacion">
         Evolución de variantes del virus SARS-CoV-2
       </p>
@@ -155,7 +155,7 @@
       </p>
     </div>
 
-    <figure class="contenido-vis p-x-2">
+    <figure class="contenido-vis">
       <img
         src="/img/grafica-variantes.png"
         alt="visalizacion"
@@ -164,7 +164,7 @@
       />
     </figure>
 
-    <div class="panel-pie-vis p-x-2">
+    <div class="panel-pie-vis">
       <p class="vis-titulo-leyenda">
         Variantes del virus SARS-CoV-2
       </p>
@@ -189,7 +189,7 @@
   </div>
 
   <div class="contenedor-vis borde-redondeado-8 con-panel-izquierda-vis con-panel-pie-vis">
-    <div class="panel-izquierda-vis p-x-2">
+    <div class="panel-izquierda-vis">
       <p class="vis-titulo-visualizacion">
         Población total en 2020 por el método de clasificación de rupturas naturales (Jenks)
       </p>
@@ -199,7 +199,7 @@
       <img src="/img/mapa-leyenda.png" alt="leyenda" height="200px" />
     </div>
 
-    <figure class="contenido-vis p-t-2 p-r-2">
+    <figure class="contenido-vis">
       <img
         src="/img/mapa-poblacion.png"
         alt="visalizacion"
@@ -208,7 +208,7 @@
       />
     </figure>
 
-    <div class="panel-pie-vis p-x-2">
+    <div class="panel-pie-vis">
       <hr>
       <p class="notas">
         Nota. Datos de origen del Instituto Nacional de Estadística y Geografía (INEGI), 2020.
