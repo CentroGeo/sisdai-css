@@ -4,6 +4,7 @@
   --alto-boton-conahcyt: 40px;
   --alto-maximo-contenedor-vis: calc(100vh - var(--alto-menus));
   --alto-minimo-vis: 300px;
+  padding: 24px;
 
   background: #DDDDDD4D;
 
@@ -25,13 +26,13 @@
     position: absolute;
     bottom: 0;
     // 
-    min-height: 40px;
-    max-height: 40px;
+    min-height: 44px;
+    max-height: 44px;
     border-width: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0 16px 16px;
+    padding: 0 24px 24px 24px;
 
     img, a {
       min-height: 24px;

@@ -696,12 +696,19 @@ h6, .h6 {
   font-size: 1rem;
   line-height: 1.2em;
   font-weight: 400;
+  margin: 0 0 8px 0;
 }
 
 .vis-titulo-leyenda {
   font-size: 1rem;
   line-height: 1.2em;
   font-weight: 600;
+  margin: 16px 0 8px 0;
+}
+@media screen and (min-width: 768px) {
+  .vis-titulo-leyenda {
+    margin: 16px 0 8px 0;
+  }
 }
 
 .vis-titulo-ejes {
@@ -717,19 +724,31 @@ h6, .h6 {
 }
 
 .vis-fecha-actualizacion {
-  color: var(--tipografia-color-3);
   font-size: 0.75rem;
   line-height: 1.2em;
   font-weight: 500;
+  margin: 8px 0 8px 0;
+}
+@media screen and (min-width: 768px) {
+  .vis-fecha-actualizacion {
+    margin: 8px 0 16px 0;
+  }
 }
 
 .vis-instruccional {
   font-size: 1rem;
   line-height: 1.2em;
-  font-weight: 500;
+  font-weight: 400;
+  margin: 8px 0 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .vis-instruccional {
+    margin: 16px 0 16px 0;
+  }
 }
 
 .vis-titulo-visualizacion {
+  margin: 0 0 8px 0;
   font-size: 1.125rem;
   line-height: 1.2em;
   font-weight: 600;
@@ -750,6 +769,13 @@ h6, .h6 {
   .vis-leyenda {
     line-height: 1.5em;
   }
+}
+
+.vis-fuente {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.2em;
+  margin: 16px 0 16px 0;
 }
 
 [class^=icono-],
@@ -8215,6 +8241,7 @@ ol + hr {
   --alto-boton-conahcyt: 40px;
   --alto-maximo-contenedor-vis: calc(100vh - var(--alto-menus));
   --alto-minimo-vis: 300px;
+  padding: 24px;
   background: rgba(221, 221, 221, 0.3019607843);
   width: 100%;
   position: relative;
@@ -8239,13 +8266,13 @@ ol + hr {
 .contenedor-vis .contenedor-vis-atribuciones {
   position: absolute;
   bottom: 0;
-  min-height: 40px;
-  max-height: 40px;
+  min-height: 44px;
+  max-height: 44px;
   border-width: 0;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 16px 16px;
+  padding: 0 24px 24px 24px;
 }
 .contenedor-vis .boton.boton-conahcyt img, .contenedor-vis .boton.boton-conahcyt a,
 .contenedor-vis .boton-conahcyt-vis img,

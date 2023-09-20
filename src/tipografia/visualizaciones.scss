@@ -1,44 +1,59 @@
 // titulos visualizaciones
-[class^='vis-'],
-[class*=' vis-'] {
+[class^="vis-"],
+[class*=" vis-"] {
   color: var(--tipografia-color);
-  font-family: var(--tipografia-familia, 'sans-serif');
+  font-family: var(--tipografia-familia, "sans-serif");
   line-height: calc(1em * 1.2);
 }
 .vis-titulo-proyecto {
   font-size: 1rem;
   line-height: calc(1em * 1.2);
   font-weight: 400;
+  margin: 0 0 8px 0;
 }
 .vis-titulo-leyenda {
   font-size: 1rem; // 16px
   line-height: calc(1em * 1.2);
   font-weight: 600;
+  margin: 16px 0 8px 0;
+
+  @include mediaquery(esc) {
+    margin: 16px 0 8px 0;
+  }
 }
 .vis-titulo-ejes {
-  font-size: 	0.75rem; // 12px
+  font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
   font-weight: 600;
 }
 .vis-valores-ejes {
-  font-size: 	0.75rem; // 12px
+  font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
   font-weight: 500;
 }
 .vis-fecha-actualizacion {
-  color: var(--tipografia-color-3);
-  font-size: 	0.75rem; // 12px
+  font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
   font-weight: 500;
+  margin: 8px 0 8px 0;
+
+  @include mediaquery(esc) {
+    margin: 8px 0 16px 0;
+  }
 }
 .vis-instruccional {
   font-size: 1rem;
   line-height: calc(1em * 1.2);
-  font-weight: 500;
+  font-weight: 400;
+  margin: 8px 0 16px 0;
+
+  @include mediaquery(esc) {
+    margin: 16px 0 16px 0;
+  }
 }
 
-
 .vis-titulo-visualizacion {
+  margin: 0 0 8px 0;
   font-size: 1.125rem; // 18px
   line-height: calc(1em * 1.2);
   font-weight: 600;
@@ -54,4 +69,10 @@
   @include mediaquery(esc) {
     line-height: calc(1em * 1.5);
   }
+}
+.vis-fuente {
+  font-size: 0.875rem; // 14px
+  font-weight: 400;
+  line-height: calc(1em * 1.2);
+  margin: 16px 0 16px 0;
 }
