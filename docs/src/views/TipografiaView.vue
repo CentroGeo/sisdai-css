@@ -702,6 +702,90 @@
         Interlineado 1.2em
       </p>
     </div>
+    <!-- Nomenclatura-->
+    <div class="columna-8">
+      <p class="vis-nomenclatura">
+        <span class="figura-variable"></span>
+        Nomenclatura
+      </p>
+    </div>
+    <div class="columna-4">
+      <pre class="m-x--1">
+        &lt;p class="vis-nomenclatura">
+        &lt;span class="figura-variable">&lt;/span>
+        Nomenclatura
+        &lt;/p>
+    </pre
+      >
+    </div>
+    <div class="columna-2">
+      <p>
+        <b>Celular</b><br />
+        1rem <br />
+        16px <br />
+        Regular (400) <br />
+        Interlineado 1.2em
+      </p>
+    </div>
+    <div class="columna-2">
+      <p>
+        <b>Escritorio</b><br />
+        1rem <br />
+        16px <br />
+        Regular (400) <br />
+        Interlineado 1.2em
+      </p>
+    </div>
+    <!-- Nomenclatura multiple -->
+    <div class="columna-8">
+      <span class="vis-nomenclatura">
+        <span class="figura-variable"></span>
+        Nomenclatura 1
+      </span>
+      <span class="vis-nomenclatura">
+        <span class="figura-variable" style="background: orange"></span>
+        Nomenclatura 2 </span
+      ><span class="vis-nomenclatura">
+        <span class="figura-variable" style="background: purple"></span>
+        Nomenclatura 3
+      </span>
+    </div>
+    <div class="columna-4">
+      <pre class="m-x--1">
+        &lt;div class="columna-8">
+        &lt;span class="vis-nomenclatura">
+        &lt;span class="figura-variable">&lt;/span>
+        Nomenclatura 1
+        &lt;/span>
+        &lt;span class="vis-nomenclatura">
+        &lt;span class="figura-variable" style="background: orange">&lt;/span>
+        Nomenclatura 2 &lt;/span
+      >&lt;span class="vis-nomenclatura">
+      &lt;span class="figura-variable" style="background: purple">&lt;/span>
+        Nomenclatura 3
+        &lt;/span>
+        &lt;/div>
+    </pre
+      >
+    </div>
+    <div class="columna-2">
+      <p>
+        <b>Celular</b><br />
+        1rem <br />
+        16px <br />
+        Regular (400) <br />
+        Interlineado 1.2em
+      </p>
+    </div>
+    <div class="columna-2">
+      <p>
+        <b>Escritorio</b><br />
+        1rem <br />
+        16px <br />
+        Regular (400) <br />
+        Interlineado 1.2em
+      </p>
+    </div>
   </div>
 
   <h2 class="m-t-10">Tamaños</h2>
