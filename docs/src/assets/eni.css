@@ -778,6 +778,30 @@ h6, .h6 {
   margin: 16px 0 16px 0;
 }
 
+.vis-nomenclatura {
+  font-size: 1rem;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 24px;
+}
+.vis-nomenclatura .figura-variable {
+  width: 18px;
+  height: 18px;
+  background: #7e8cf5;
+  border: 1px solid var(--tipografia-color);
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  transform: translateY(2px);
+  margin-right: 4px;
+}
+.vis-nomenclatura .figura-variable.disabled {
+  background: #dddddd;
+  border: 1px solid #aaaaaa;
+  cursor: default;
+}
+
 [class^=icono-],
 [class*=" icono-"] {
   display: inline-flex;
