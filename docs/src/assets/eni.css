@@ -9666,6 +9666,66 @@ body {
     height: 50px;
   }
 }
+.vista-cargando {
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vista-cargando.posicion-absoluta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.vista-cargando > ul {
+  display: inline-flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  list-style: none;
+  gap: 4px;
+}
+.vista-cargando > ul > li {
+  background: #fff;
+  width: 10px;
+  height: 8px;
+  animation: vistaCargando 0ms -800ms linear infinite alternate;
+}
+.vista-cargando > ul > li:nth-child(1) {
+  animation-duration: 405ms;
+}
+.vista-cargando > ul > li:nth-child(2) {
+  animation-duration: 477ms;
+}
+.vista-cargando > ul > li:nth-child(3) {
+  animation-duration: 456ms;
+}
+.vista-cargando > ul > li:nth-child(4) {
+  animation-duration: 402ms;
+}
+.vista-cargando > ul > li:nth-child(5) {
+  animation-duration: 472ms;
+}
+.vista-cargando > ul > li:nth-child(6) {
+  animation-duration: 452ms;
+}
+.vista-cargando > ul > li:nth-child(7) {
+  animation-duration: 415ms;
+}
+.vista-cargando > ul > li:nth-child(8) {
+  animation-duration: 456ms;
+}
+.vista-cargando > ul > li:nth-child(9) {
+  animation-duration: 497ms;
+}
+.vista-cargando > ul > li:nth-child(10) {
+  animation-duration: 440ms;
+}
+
 .contenedor-menu-accesibilidad {
   position: fixed;
   z-index: 4;
