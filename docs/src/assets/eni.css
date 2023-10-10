@@ -1810,7 +1810,7 @@ figure {
 }
 figure figcaption {
   color: var(--tipografia-color-3);
-  border-left: 2px solid var(--borde-color-3);
+  border-left: 2px solid var(--tipografia-color-3);
   padding-left: 16px;
   margin-top: 1em;
 }
