@@ -9021,7 +9021,7 @@ ol + hr {
   position: sticky;
   top: 100px;
   display: flex;
-  z-index: 98;
+  z-index: 3;
 }
 .menu-lateral-contenedor ul {
   padding-left: 0;
