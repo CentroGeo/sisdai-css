@@ -226,6 +226,10 @@
         <span>icono-grupo</span>
       </div>
       <div>
+        <span class="icono-guardar"></span>
+        <span>icono-guardar</span>
+      </div>
+      <div>
         <span class="icono-social-facebook"></span>
         <span>icono-social-facebook</span>
       </div>
@@ -276,6 +280,10 @@
       <div>
         <span class="icono-minimizar"></span>
         <span>icono-minimizar</span>
+      </div>
+      <div>
+        <span class="icono-mover"></span>
+        <span>icono-mover</span>
       </div>
       <div>
         <span class="icono-nivel"></span>
