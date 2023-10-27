@@ -56,20 +56,130 @@
     </div>
   </div>
   <div class="grid">
-    <div class="columna-8">
+    <div class="columna-16">
       <span class="controlador-vis">
         <span class="figura-variable"></span>
         <input id="control_1" type="checkbox">
         <label class="nombre-variable" for="control_1">Etiqueta de texto</label>
       </span>
       <span class="controlador-vis">
-        <span class="figura-variable disabled"></span>
-        <input id="control_2" type="checkbox" disabled>
+        <span class="figura-variable"></span>
+        <input id="control_2" type="checkbox">
         <label class="nombre-variable" for="control_2">Etiqueta de texto</label>
+      </span>
+      <span class="controlador-vis">
+        <span class="figura-variable disabled"></span>
+        <input id="control_3" type="checkbox" disabled>
+        <label class="nombre-variable" for="control_3">Etiqueta de texto</label>
         <span class="info-variable"></span>
+      </span>
+      <span class="controlador-vis">
+        <span class="figura-variable disabled"></span>
+        <input id="control_4" type="checkbox" disabled checked>
+        <label class="nombre-variable" for="control_4">Etiqueta de texto</label>
       </span>
     </div>
   </div>
+
+  <div class="grid">
+    <div class="columna-16">
+      <span class="controlador-vis2">
+        <input id="control_radio_1" type="radio" name="radioses2">
+        <label class="nombre-variable" for="control_radio_1">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+      <span class="controlador-vis2">
+        <input id="control_radio_2" type="radio" name="radioses2">
+        <label class="nombre-variable" for="control_radio_2">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+      <span class="controlador-vis2">
+        <input id="control_radio_3" type="radio" name="radioses2" disabled>
+        <label class="nombre-variable" for="control_radio_3">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+        <span class="info-variable"></span>
+      </span>
+      <span class="controlador-vis2">
+        <input id="control_radio_4" type="radio" name="radioses2" disabled checked>
+        <label class="nombre-variable" for="control_radio_4">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="columna-16">
+      <span class="controlador-vis2">
+        <input id="control_check_1" type="checkbox">
+        <label class="nombre-variable" for="control_check_1">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+      <span class="controlador-vis2">
+        <input id="control_check_2" type="checkbox">
+        <label class="nombre-variable" for="control_check_2">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+      <span class="controlador-vis2">
+        <input id="control_check_3" type="checkbox" disabled>
+        <label class="nombre-variable" for="control_check_3">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+        <span class="info-variable"></span>
+      </span>
+      <span class="controlador-vis2">
+        <input id="control_check_4" type="checkbox" disabled checked>
+        <label class="nombre-variable" for="control_check_4">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="columna-16">
+      <span class="controlador-vis2 sin-control">
+        <input id="control_check_2.1" type="checkbox">
+        <label class="nombre-variable" for="control_check_2.1">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+      <span class="controlador-vis2 sin-figura">
+        <input id="control_check_2.2" type="checkbox">
+        <label class="nombre-variable" for="control_check_2.2">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+      <span class="controlador-vis2 sin-control sin-figura">
+        <input id="control_check_2.3" type="checkbox" disabled>
+        <label class="nombre-variable" for="control_check_2.3">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+      <span class="controlador-vis2 grande">
+        <input id="control_check_2.4" type="checkbox" disabled checked>
+        <label class="nombre-variable" for="control_check_2.4">
+          <span class="figura-variable" />
+          Etiqueta de texto
+        </label>
+      </span>
+    </div>
+  </div>
+
   <div class="grid">
     <div class="columna-4">
       <input id="radio1" type="radio" name="radioses1">
