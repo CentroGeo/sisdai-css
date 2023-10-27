@@ -1,7 +1,6 @@
 <template>
   <h1>Navegación</h1>
-
-  <nav class="navegacion">
+  <nav class="navegacion" >
     <div class="nav-contenedor-identidad">
       <a href="#" class="nav-hiperviculo-logo">
         <svg
@@ -81,8 +80,16 @@
   </nav>
 
   <h2 class="m-t-10">Identidad</h2>
+  <p>
+    Hay estilos distintos para movil y escritorio, sin embargo, en ocasiones
+    puede ser necesario forzar la vista de movil cuando hay muchas opciones en
+    la navegación. Para ello existe la clase ".navegacion-movil-forzada".
+    Presiona el siguiente botón para asignar dicha clase a las barras de
+    navegación con identidad de  ejemplo en esta sección:
+  </p>
+  <button @click="navegacion_movil_forzada = !navegacion_movil_forzada">{{ navegacion_movil_forzada ? "Desactivar vista movil forzada" : "Activar vista movil forzada en menús" }}</button>
   <h3>Gobierno</h3>
-  <nav class="navegacion navegacion-gobmx">
+  <nav class="navegacion navegacion-gobmx" :class="{'navegacion-movil-forzada': navegacion_movil_forzada}">
     <div class="nav-contenedor-identidad">
       <a
         href="https://www.gob.mx/"
@@ -156,7 +163,7 @@
   </nav>
 
   <h3 class="m-t-10">Navegación de Conahcyt</h3>
-  <nav class="navegacion navegacion-conahcyt">
+  <nav class="navegacion navegacion-conahcyt" :class="{'navegacion-movil-forzada': navegacion_movil_forzada}">
     <div class="nav-contenedor-identidad">
       <a href="#" class="nav-hiperviculo-logo">
         <img
@@ -223,7 +230,7 @@
       </li>
     </ul>
   </li>
-  
+
   <h2 class="m-t-10">Menú lateral</h2>
   <p>
     El siguiente elemento .menu-lateral-contenedor consiste en un menú que
@@ -300,4 +307,5 @@
 import { ref } from "vue";
 const abrirMenu = ref(false);
 const colapsable_activo = ref(false);
+const navegacion_movil_forzada = ref(false);
 </script>

@@ -1,45 +1,52 @@
-.nav-hipervinculo {
-  background-color: var(--navegacion-fondo);
-  box-shadow: 0 0 0 0;
-  color: var(--navegacion-color);
-  border: none;
-  border-radius: 0;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: calc(1em * 1);
-  padding: map-get($espaciado,'2');
-  text-decoration: none;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
-  &:hover,
-  &:focus {
+.navegacion {
+  .nav-hipervinculo {
+    background-color: var(--navegacion-fondo);
+    box-shadow: 0 0 0 0;
+    color: var(--navegacion-color);
     border: none;
     border-radius: 0;
-    background-color: var(--navegacion-fondo-hover);
-    box-shadow: var(--navegacion-sombra-hover);
-    color: var(--navegacion-color-hover);
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: calc(1em * 1);
+    padding: map-get($espaciado, "2");
+    text-decoration: none;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+      box-shadow 0.2s ease-in-out;
+    &:hover,
+    &:focus {
+      border: none;
+      border-radius: 0;
+      background-color: var(--navegacion-fondo-hover);
+      box-shadow: var(--navegacion-sombra-hover);
+      color: var(--navegacion-color-hover);
+    }
+    &:active,
+    &.active,
+    &.nuxt-link-active,
+    &.nuxt-link-exact-active,
+    &.router-link-active,
+    &.router-link-exact-active {
+      background-color: var(--navegacion-fondo-active);
+      box-shadow: var(--navegacion-sombra-active);
+      color: var(--navegacion-color-active);
+    }
+    display: block;
   }
-  &:active,
-  &.active,
-  &.nuxt-link-active,
-  &.nuxt-link-exact-active,
-  &.router-link-active,
-  &.router-link-exact-active {
-    background-color: var(--navegacion-fondo-active);
-    box-shadow: var(--navegacion-sombra-active);
-    color: var(--navegacion-color-active);
+  &:not(.navegacion-movil-forzada) {
+    .nav-hipervinculo {
+      @include mediaquery("nav") {
+        display: inline-flex;
+        white-space: nowrap;
+      }
+    }
   }
-  display: block;
-  @include mediaquery('nav') {
-    display: inline-flex;
-    white-space: nowrap;
-  }
-}
 
-.nav-hiperviculo-logo {
-  display: inline-flex;
-  padding: map-get($espaciado, 'minimo');
-  margin: 0;
-  .nav-logo {
-    height: 38px;
+  .nav-hiperviculo-logo {
+    display: inline-flex;
+    padding: map-get($espaciado, "minimo");
+    margin: 0;
+    .nav-logo {
+      height: 38px;
+    }
   }
 }

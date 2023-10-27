@@ -80,6 +80,11 @@ const router = createRouter({
       component: () => import('../views/TarjetasView.vue')
     },
     {
+      path: '/visibilidad',
+      name: 'visibilidad',
+      component: () => import('../views/VisibilidadView.vue')
+    },
+    {
       path: '/formularios',
       name: 'formularios',
       component: () => import('../views/FormulariosView.vue')

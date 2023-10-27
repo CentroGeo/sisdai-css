@@ -126,21 +126,26 @@
     }
   }
 }
-.nav-boton-regresar {
-  @extend .nav-boton-submenu;
-  &::after {
-    display: none;
+.navegacion {
+  .nav-boton-regresar {
+    @extend .nav-boton-submenu;
+    &::after {
+      display: none;
+    }
+    &::before {
+      font-family: "sisdai-iconos" !important;
+      font-size: 1rem;
+      content: "\65";
+      margin-left: calc(map-get($espaciado, "minimo") * -1);
+      margin-right: map-get($espaciado, "minimo");
+      transform: rotate(180deg);
+    }
   }
-  &::before {
-    font-family: "sisdai-iconos" !important;
-    font-size: 1rem;
-    content: "\65";
-    margin-left: calc(map-get($espaciado, "minimo") * -1);
-    margin-right: map-get($espaciado, "minimo");
-    transform: rotate(180deg);
-  }
-  @include mediaquery("nav") {
-    display: none;
+  &:not(.navegacion-movil-forzada) {
+    .nav-boton-regresar {
+      @include mediaquery("nav") {
+        display: none;
+      }
+    }
   }
 }
-
