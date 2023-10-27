@@ -201,6 +201,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visibilidad">Visibilidad</RouterLink></li>
 
               </ul>
             </li>

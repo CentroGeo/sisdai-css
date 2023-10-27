@@ -1,0 +1,18 @@
+.oculto {
+  display: none;
+}
+
+.no-visible {
+  visibility: hidden;
+}
+
+@each $dispositivo, $x in $breakpoints {
+  @include mediaquery($dispositivo) {
+    .oculto-#{$dispositivo} {
+      display: none;
+    }
+    .no-visible-#{$dispositivo} {
+      visibility: hidden;
+    }
+  }
+}
