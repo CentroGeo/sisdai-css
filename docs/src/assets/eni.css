@@ -654,8 +654,14 @@ h6, .h6 {
   color: var(--tipografia-color-2);
 }
 
-.parrafo-texto-alto {
+.parrafo-texto-secundario {
   color: var(--tipografia-color-3);
+  font-size: 1;
+  line-height: 1.5em;
+}
+
+.parrafo-texto-alto {
+  color: var(--tipografia-color);
   font-size: 1.25rem;
   line-height: 1.5em;
 }
@@ -1289,7 +1295,7 @@ a,
   font-weight: 500;
   line-height: inherit;
   padding: 0;
-  text-decoration: underline;
+  text-decoration: none;
   text-align: left;
   cursor: pointer;
   transition: all 0.27s ease-in-out;
@@ -1659,7 +1665,7 @@ dl dd {
   font-weight: 400;
 }
 .lista-compuesta .texto .texto-terciario, .lista-logo .texto .texto-terciario, .lista-avatar .texto .texto-terciario, .lista-icono .texto .texto-terciario {
-  color: var(--tipografia-color-2);
+  color: var(--tipografia-color-3);
   font-weight: 400;
 }
 
@@ -1983,7 +1989,7 @@ select {
 input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset])::placeholder,
 textarea::placeholder,
 select::placeholder {
-  color: var(--tipografia-color-2);
+  color: var(--tipografia-color);
 }
 input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):disabled,
 textarea:disabled,
