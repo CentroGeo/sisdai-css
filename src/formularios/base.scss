@@ -41,7 +41,7 @@ select {
   -ms-touch-action: manipulation;
   touch-action: manipulation;
   &::placeholder {
-    color: var(--tipografia-color-2);
+    color: var(--tipografia-color);
   }
   &:disabled {
     background-color: var(--input-deshabilitado-fondo);
