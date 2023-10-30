@@ -85,31 +85,31 @@
     <div class="columna-16">
       <span class="controlador-vis2">
         <input id="control_radio_1" type="radio" name="radioses2">
-        <label class="nombre-variable" for="control_radio_1">
+        <label for="control_radio_1">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
       <span class="controlador-vis2">
         <input id="control_radio_2" type="radio" name="radioses2">
-        <label class="nombre-variable" for="control_radio_2">
+        <label for="control_radio_2">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
       <span class="controlador-vis2">
         <input id="control_radio_3" type="radio" name="radioses2" disabled>
-        <label class="nombre-variable" for="control_radio_3">
+        <label for="control_radio_3">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
         <span class="info-variable"></span>
       </span>
       <span class="controlador-vis2">
         <input id="control_radio_4" type="radio" name="radioses2" disabled checked>
-        <label class="nombre-variable" for="control_radio_4">
+        <label for="control_radio_4">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
     </div>
@@ -118,31 +118,31 @@
     <div class="columna-16">
       <span class="controlador-vis2">
         <input id="control_check_1" type="checkbox">
-        <label class="nombre-variable" for="control_check_1">
+        <label for="control_check_1">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
       <span class="controlador-vis2">
         <input id="control_check_2" type="checkbox">
-        <label class="nombre-variable" for="control_check_2">
+        <label for="control_check_2">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
       <span class="controlador-vis2">
         <input id="control_check_3" type="checkbox" disabled>
-        <label class="nombre-variable" for="control_check_3">
+        <label for="control_check_3">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
         <span class="info-variable"></span>
       </span>
       <span class="controlador-vis2">
         <input id="control_check_4" type="checkbox" disabled checked>
-        <label class="nombre-variable" for="control_check_4">
+        <label for="control_check_4">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
     </div>
@@ -151,30 +151,78 @@
     <div class="columna-16">
       <span class="controlador-vis2 sin-control">
         <input id="control_check_2.1" type="checkbox">
-        <label class="nombre-variable" for="control_check_2.1">
+        <label for="control_check_2.1">
+        <!-- <label> -->
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
       <span class="controlador-vis2 sin-figura">
         <input id="control_check_2.2" type="checkbox">
-        <label class="nombre-variable" for="control_check_2.2">
+        <label for="control_check_2.2">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
       <span class="controlador-vis2 sin-control sin-figura">
         <input id="control_check_2.3" type="checkbox" disabled>
-        <label class="nombre-variable" for="control_check_2.3">
+        <label for="control_check_2.3">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
         </label>
       </span>
       <span class="controlador-vis2 grande">
         <input id="control_check_2.4" type="checkbox" disabled checked>
-        <label class="nombre-variable" for="control_check_2.4">
+        <label for="control_check_2.4">
           <span class="figura-variable" />
-          Etiqueta de texto
+          <span class="nombre-variable">Etiqueta de texto</span>
+        </label>
+      </span>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="columna-4">
+      <span class="controlador-vis2 sin-control">
+        <input id="control_check_3.1" type="checkbox">
+        <label for="control_check_3.1">
+        <!-- <label> -->
+          <span class="figura-variable" />
+          <span class="nombre-variable">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis tempore beatae dolorem nostrum. Velit, eos voluptates qui numquam asperiores atque recusandae autem sit. Obcaecati eligendi iste aliquid facilis perferendis.
+          </span>
+        </label>
+      </span>
+    </div>
+    <div class="columna-4">
+      <span class="controlador-vis2 sin-figura">
+        <input id="control_check_3.2" type="checkbox">
+        <label for="control_check_3.2">
+          <span class="figura-variable" />
+          <span class="nombre-variable">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis tempore beatae dolorem nostrum. Velit, eos voluptates qui numquam asperiores atque recusandae autem sit. Obcaecati eligendi iste aliquid facilis perferendis.
+          </span>
+        </label>
+      </span>
+    </div>
+    <div class="columna-4">
+      <span class="controlador-vis2 sin-control sin-figura">
+        <input id="control_check_3.3" type="checkbox" disabled>
+        <label for="control_check_3.3">
+          <span class="figura-variable" />
+          <span class="nombre-variable">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis tempore beatae dolorem nostrum. Velit, eos voluptates qui numquam asperiores atque recusandae autem sit. Obcaecati eligendi iste aliquid facilis perferendis.
+          </span>
+        </label>
+      </span>
+    </div>
+    <div class="columna-4">
+      <span class="controlador-vis2 grande">
+        <input id="control_check_3.4" type="checkbox" disabled checked>
+        <label for="control_check_3.4">
+          <span class="figura-variable" />
+          <span class="nombre-variable">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis tempore beatae dolorem nostrum. Velit, eos voluptates qui numquam asperiores atque recusandae autem sit. Obcaecati eligendi iste aliquid facilis perferendis.
+          </span>
         </label>
       </span>
     </div>
