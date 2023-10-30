@@ -1989,7 +1989,7 @@ select {
 input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset])::placeholder,
 textarea::placeholder,
 select::placeholder {
-  color: var(--tipografia-color-2);
+  color: var(--tipografia-color);
 }
 input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]):disabled,
 textarea:disabled,
