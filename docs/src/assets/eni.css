@@ -8893,7 +8893,7 @@ ol + hr {
   font-family: "sisdai-iconos" !important;
   font-size: 1rem;
   height: 0.875rem;
-  content: "e";
+  content: "d";
   margin-left: 4px;
 }
 @media screen and (min-width: 768px) {
@@ -8902,13 +8902,16 @@ ol + hr {
   }
 }
 
+.navegacion .nav-boton-regresar {
+  color: var(--navegacion-conahcyt-color);
+}
 .navegacion .nav-boton-regresar::after {
   display: none;
 }
 .navegacion .nav-boton-regresar::before {
   font-family: "sisdai-iconos" !important;
   font-size: 1rem;
-  content: "e";
+  content: "d";
   margin-left: -4px;
   margin-right: 4px;
   transform: rotate(180deg);
