@@ -59,8 +59,8 @@ Agrega las siguientes lineas en el `<head> </head>` del archivo de html, y que a
 
 1. Clona el repositorio con la siguiente linea en la terminal
 
-    ``` sh
-    git clone git@github.com:salsa-community/sisdai-css.git
+    ``` http
+    git clone https://codigo.conahcyt.mx/sisdai/sisdai-css.git
     ```
    Si por alguna razón no pudiste clonar, puedes leer la
    [documentación de Github acerca de cómo clonar un repositorio](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
