@@ -154,7 +154,7 @@
       </div>
     </nav>
 
-    <nav class="navegacion navegacion-conahcyt navegacion-pegada">
+    <nav class="navegacion navegacion-conahcyt navegacion-pegada ">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img class="nav-logo invertir" width="130" height="38" src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conahcyt.">
@@ -194,13 +194,14 @@
               <ul class="nav-submenu">
                 <li><button class="nav-boton-regresar">Contenido</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tipografia">Tipografia</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/iconografia">Iconografia</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/pictogramas">Pictogramas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visibilidad">Visibilidad</RouterLink></li>
 
               </ul>
             </li>

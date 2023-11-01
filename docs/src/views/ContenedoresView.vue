@@ -169,7 +169,7 @@
         Variantes del virus SARS-CoV-2
       </p>
       <hr>
-      <p class="notas">
+      <p class="vis-fuente">
         Nota. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
       </p>
     </div>

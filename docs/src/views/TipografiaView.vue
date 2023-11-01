@@ -354,6 +354,28 @@
   <h3 class="m-t-5">Parrafos especiales</h3>
   <div class="flex">
     <div class="columna-8">
+      <p class="parrafo-texto-secundario">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam enim
+        nobis ipsam temporibus. Obcaecati adipisci, laborum quos numquam sequi
+        vero architecto libero, repellendus illo, accusamus consequatur
+        voluptatibus distinctio ut atque!
+      </p>
+    </div>
+    <div class="columna-4">
+      <pre class="m-x--1">
+  &lt; p class="parrafo-texto-secundario">
+    Lorem ipsum . . .
+  &lt;/ p>
+</pre
+      >
+    </div>
+    <div class="columna-4">
+      <p>
+        1rem <br />
+        16px
+      </p>
+    </div>
+    <div class="columna-8">
       <p class="parrafo-texto-alto">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam enim
         nobis ipsam temporibus. Obcaecati adipisci, laborum quos numquam sequi
