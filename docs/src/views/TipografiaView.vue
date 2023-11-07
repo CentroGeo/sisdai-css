@@ -56,7 +56,7 @@
       <h6>h6</h6>
     </div>
     <div class="columna-2">
-      <p>1rem<br />16px</p>
+      <p>1.125rem<br />18px</p>
     </div>
   </div>
 
