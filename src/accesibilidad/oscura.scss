@@ -165,78 +165,151 @@
 }
 
 :root[data-dark-theme-gema='true'] {
+  --color-0: #412110;
+  --color-1: #6747364c;
+  --color-2: #ffffff;
+  --color-3: #141414;
+  --color-4: #f4a762;
+  --color-5: #b99988;
+  --color-6: #674736;
+  --color-7: #fdddcc;
+  --color-8: #668bff;
+  --color-9: transparent;
+  --color-10: #90705f;
+  --color-11: #f2b17c;
+  --color-12: #0000004c;
+  --color-13: #e2c2b1;
+  --color-14: #dddddd;
+  --color-15: #002663;
+  --color-16: #00000032;
+  --color-17: #003384;
+  --color-18: #674736b2;
+  --color-19: #412110cb;
+  --color-20: #364a69b2;
+  --color-21: #66a5fe;
+  --color-22: #172136;
+  --color-23: #ff6969;
+  --color-24: #341116;
+  --color-25: #ffdc69;
+  --color-26: #201c11;
+  --color-27: #1bd97c;
+  --color-28: #0d2619;
+  --color-29: #364a69;
+  --color-30: #8999cc;
+  --color-31: #cf99ff;
   --pagina-fondo: #412110;
   --nota-fondo: #6747364c;
   
-  // Tipografia
-  --tipografia-color: #ffffff;
-  --tipografia-color-1: #141414;
-  --tipografia-color-2: #F4A762;
-  --tipografia-color-3: #B99988;
-
-  // Bordes
-  --borde-color-1: #ffffff;
-  --borde-color-2: #B99988;
-  --borde-color-3: #674736;
-  --borde-color-4: #FDDDCC;
-  --borde-focus: #668BFF;
-
-  // Sombras
-  --sombra: #0000001a;
-  --sombra-focus: #668BFF;
-  --sombra-hover: #0000001a;
-
-  // Detalles
-  --detalle-fondo: #6747364c;
-  --detalle-focus-sombra: #668BFF;
-
-  // Boton primario
-  --boton-primario-fondo: #F4A762;
-  --boton-primario-borde: #F4A762;
-  --boton-primario-color: #412110;
-  --boton-primario-sombra: transparent;
-    --boton-primario-deshabilitado-fondo: #674736;
-    --boton-primario-deshabilitado-borde: #674736;
-    --boton-primario-deshabilitado-color: #90705F;
-    --boton-primario-deshabilitado-sombra: transparent;
-      --boton-primario-hover-fondo: #F2B17C;
-      --boton-primario-hover-borde: #F2B17C;
-      --boton-primario-hover-color: #412110;
-      --boton-primario-hover-sombra: #0000004c;
-        --boton-primario-focus-fondo: #F2B17C;
-        --boton-primario-focus-borde: #412110;
-        --boton-primario-focus-color: #412110;
-        --boton-primario-focus-sombra: #668BFF;
-        --boton-primario-focus-contorno: #668BFF;
-  
-  // Boton secundario
-  --boton-secundario-fondo: transparent;
-  --boton-secundario-borde: #E2C2B1;
-  --boton-secundario-color: #E2C2B1;
-  --boton-secundario-sombra: transparent;
-    --boton-secundario-deshabilitado-fondo: transparent;
-    --boton-secundario-deshabilitado-borde: #5E7392;
-    --boton-secundario-deshabilitado-color: #364A69;
-    --boton-secundario-deshabilitado-sombra: transparent;
-      --boton-secundario-hover-fondo: #364A69;
-      --boton-secundario-hover-borde: #B1C6E4;
-      --boton-secundario-hover-color: #B1C6E4;
-      --boton-secundario-hover-sombra: #0000004c;
-        --boton-secundario-focus-fondo: #364A69;
-        --boton-secundario-focus-borde: #668BFF;
-        --boton-secundario-focus-color: #B1C6E4;
-        --boton-secundario-focus-sombra: #668BFF;
-
-  // Elementos de forumlario
-  --label-color: #889DBB;
-  --input-fondo: transparent;
-  --input-color: #ffffff;
-  --input-borde: #889DBB;
-  --input-controles-color: #6692FF;
-    --input-deshabilitado-fondo: #5E7392;
-    --input-deshabilitado-color: #364A69;
-      --input-hover: #B1C6E4;
-        --input-focus: #668BFF;
+  --pagina-fondo: var( --color-0 );
+  --nota-fondo: var( --color-1 );
+  --tipografia-color: var( --color-2 );
+  --tipografia-color-1: var( --color-3 );
+  --tipografia-color-2: var( --color-4 );
+  --tipografia-color-3: var( --color-5 );
+  --borde-color-1: var( --color-2 );
+  --borde-color-2: var( --color-5 );
+  --borde-color-3: var( --color-6 );
+  --borde-color-4: var( --color-7 );
+  --borde-focus: var( --color-8 );
+  --sombra: var( --color-2 );
+  --sombra-focus: var( --color-5 );
+  --sombra-hover: var( --color-6 );
+  --detalle-fondo: var( --color-7 );
+  --detalle-focus-sombra: var( --color-8 );
+  --boton-primario-fondo: var( --color-4 );
+  --boton-primario-borde: var( --color-4 );
+  --boton-primario-color: var( --color-0 );
+  --boton-primario-sombra: var( --color-9 );
+  --boton-primario-deshabilitado-fondo: var( --color-6 );
+  --boton-primario-deshabilitado-borde: var( --color-6 );
+  --boton-primario-deshabilitado-color: var( --color-10 );
+  --boton-primario-deshabilitado-sombra: var( --color-9 );
+  --boton-primario-hover-fondo: var( --color-11 );
+  --boton-primario-hover-borde: var( --color-11 );
+  --boton-primario-hover-color: var( --color-0 );
+  --boton-primario-hover-sombra: var( --color-12 );
+  --boton-primario-focus-fondo: var( --color-11 );
+  --boton-primario-focus-borde: var( --color-0 );
+  --boton-primario-focus-color: var( --color-0 );
+  --boton-primario-focus-contorno: var( --color-8 );
+  --boton-primario-focus-sombra: var( --color-8 );
+  --boton-secundario-fondo: var( --color-9 );
+  --boton-secundario-borde: var( --color-13 );
+  --boton-secundario-color: var( --color-13 );
+  --boton-secundario-sombra: var( --color-9 );
+  --boton-secundario-deshabilitado-fondo: var( --color-9 );
+  --boton-secundario-deshabilitado-borde: var( --color-10 );
+  --boton-secundario-deshabilitado-color: var( --color-6 );
+  --boton-secundario-deshabilitado-sombra: var( --color-9 );
+  --boton-secundario-hover-fondo: var( --color-6 );
+  --boton-secundario-hover-borde: var( --color-13 );
+  --boton-secundario-hover-color: var( --color-13 );
+  --boton-secundario-hover-sombra: var( --color-12 );
+  --boton-secundario-focus-fondo: var( --color-6 );
+  --boton-secundario-focus-borde: var( --color-8 );
+  --boton-secundario-focus-color: var( --color-13 );
+  --boton-secundario-focus-sombra: var( --color-8 );
+  --boton-conahcyt-fondo: var( --color-14 );
+  --label-color: var( --color-5 );
+  --input-fondo: var( --color-9 );
+  --input-color: var( --color-2 );
+  --input-borde: var( --color-5 );
+  --input-controles-color: var( --color-4 );
+  --input-deshabilitado-fondo: var( --color-10 );
+  --input-deshabilitado-color: var( --color-6 );
+  --input-hover: var( --color-13 );
+  --input-focus: var( --color-8 );
+  --tabla-fondo-impar: var( --color-1 );
+  --tabla-fondo-notas: var( --color-6 );
+  --tarjetas-fondo: var( --color-1 );
+  --tarjetas-color: var( --color-2 );
+  --tarjetas-externas-color: var( --color-3 );
+  --tarjetas-internas-color: var( --color-2 );
+  --tarjetas-internas-fondo: var( --color-1 );
+  --tarjetas-interna-fondo-hover: var( --color-6 );
+  --tarjetas-simplificada-fondo: var( --color-0 );
+  --tarjetas-simplificada-color: var( --color-8 );
+  --tarjetas-simplificada-borde: var( --color-8 );
+  --tarjetas-simplificada-fondo-hover: var( --color-8 );
+  --tarjetas-simplificadas-borde-hover: var( --color-8 );
+  --tarjetas-simplificada-color-hover: var( --color-0 );
+  --tarjeta-simplificada-fondo-focus: var( --color-8 );
+  --tarjeta-simplificada-borde-focus: var( --color-0 );
+  --tarjeta-simplificada-color-focus: var( --color-0 );
+  --tarjeta-simplificada-contorno-focus: var( --color-8 );
+  --tarjeta-simplificada-sombra-focus: var( --color-8 );
+  --tarjetas-contenido-simplificada-fondo: var( --color-1 );
+  --tarjetas--contenido-simplificada-color: var( --color-2 );
+  --navegacion-conahcyt-fondo: var( --color-15 );
+  --navegacion-conahcyt-sombra: var( --color-16 );
+  --navegacion-conahcyt-color: var( --color-2 );
+  --navegacion-conahcyt-fondo-icono: var( --color-2 );
+  --navegacion-conahcyt-fondo-hover: var( --color-17 );
+  --menu-lateral-color: var( --color-2 );
+  --menu-lateral-fondo: var( --color-18 );
+  --menu-lateral-accion: var( --color-4 );
+  --menu-lateral-accion-fondo-hover: var( --color-6 );
+  --menu-lateral-accion-fondo-active: var( --color-19 );
+  --menu-lateral-accion-sombra-active: var( --color-4 );
+  --submenu-lateral-fondo-mov: var( --color-20 );
+  --submenu-lateral-fondo-colapsable: var( --color-6 );
+  --acciones-informativo: var( --color-21 );
+  --acciones-informativo-2: var( --color-22 );
+  --acciones-error: var( --color-23 );
+  --acciones-error-2: var( --color-24 );
+  --acciones-advertencia: var( --color-25 );
+  --acciones-advertencia-2: var( --color-26 );
+  --acciones-correcto: var( --color-27 );
+  --acciones-correcto-2: var( --color-28 );
+  --hipervinculo-color: var( --color-8 );
+  --hipervinculo-sombra: var( --color-9 );
+  --hipervinculo-deshabilitado-color: var( --color-29 );
+  --hipervinculo-deshabilitado-sombra: var( --color-9 );
+  --hipervinculo-hover-color: var( --color-30 );
+  --hipervinculo-hover-sombra: var( --color-9 );
+  --hipervinculo-focus-color: var( --color-8 );
+  --hipervinculo-focus-sombra: var( --color-8 );
+  --hipervinculo-visitado: var( --color-31 );
 
   --input-select-svg: url('data:image/svg+xml,\
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
@@ -246,42 +319,12 @@
         </g>\
     </svg>');
 
-  // Tablas
-  --tabla-fondo-impar: #364A694c;
-  --tabla-fondo-notas: #364A69;
-
-  // Tarjetas
-  --tarjetas-fondo: #364A694c;
-  --tarjetas-color: #ffffff;
-  --tarjetas-externas-color: #141414;
-  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, #102543f1 0%, #10254396 60%, #10254300 100%);
-  --tarjetas-internas-color: #FFFFFF;
-  --tarjetas-internas-fondo: #364A694c;
-    --tarjetas-interna-fondo-hover: #364A69;
-
-  --tarjetas-simplificada-fondo: #102543;
-  --tarjetas-simplificada-color: #668BFF;
-  --tarjetas-simplificada-borde: #668BFF;
-    --tarjetas-simplificada-fondo-hover: #668BFF;
-    --tarjetas-simplificadas-borde-hover: #668BFF;
-    --tarjetas-simplificada-color-hover: #102543;
-      --tarjeta-simplificada-fondo-focus: #668BFF;
-      --tarjeta-simplificada-borde-focus: #102543;
-      --tarjeta-simplificada-color-focus: #102543;
-      --tarjeta-simplificada-contorno-focus: #668BFF;
-      --tarjeta-simplificada-sombra-focus: #668BFF;
-  --tarjetas-contenido-simplificada-fondo: #364A694c;
-  --tarjetas--contenido-simplificada-color: #FFFFFF;
+  
 
   // Portada
   --portada-fondo-grandiente: linear-gradient(transparent, #102543f1);
   
-  // Navegacion principal
-  --navegacion-conahcyt-fondo: #002663;
-  --navegacion-conahcyt-sombra: #00000032;
-  --navegacion-conahcyt-color: #ffffff;
-  --navegacion-conahcyt-fondo-icono: #FFFFFF;
-  --navegacion-conahcyt-fondo-hover: #003384;
+  
 
   // Logo de conahcyt
   .nav-hiperviculo-logo {
@@ -292,38 +335,6 @@
 		}
 	}
   
-  // Navegacion secundaria
-  --menu-lateral-color: #FFFFFF;
-  --menu-lateral-fondo: #364A69B2;
-  --menu-lateral-accion: #6692FF;
-    --menu-lateral-accion-fondo-hover: #364A69;
-      --menu-lateral-accion-fondo-active: #102543cb;
-      --menu-lateral-accion-sombra-active: #6692FF;
-  --submenu-lateral-fondo-mov: #364A69B2;
-  --submenu-lateral-fondo-colapsable: #364A69;
-
-  // Acciones
-  --acciones-informativo: #66A5FE;
-  --acciones-informativo-2: #172136;
-  --acciones-error: #FF6969;
-  --acciones-error-2: #341116;
-  --acciones-advertencia: #FFDC69;
-  --acciones-advertencia-2: #201C11;
-  --acciones-correcto: #1BD97C;
-  --acciones-correcto-2: #0D2619;
-
-  // Hipervinculos
-  --hipervinculo-color: #668BFF;
-  --hipervinculo-sombra: transparent;
-  --hipervinculo-deshabilitado-color: #364A69;
-  --hipervinculo-deshabilitado-sombra: transparent;
-  --hipervinculo-hover-color: #8999CC;
-  --hipervinculo-hover-sombra: transparent;
-  --hipervinculo-focus-color: #668BFF;
-  --hipervinculo-focus-sombra: #668BFF;
-  --hipervinculo-visitado: #CF99FF;
-
-  --boton-conahcyt-fondo: #f6f6f6;
 }
 
 .a11y-oscura {
