@@ -34,6 +34,9 @@ h5,.h5 {
 h6,.h6 {
   @extend .titulo-base;
   font-size: 1rem; // 16px
+  @include mediaquery(esc) {
+    font-size: 1.125rem; //18px
+  }
   line-height: calc(1em * 1.25);
 }
 
