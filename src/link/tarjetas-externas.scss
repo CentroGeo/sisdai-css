@@ -58,6 +58,8 @@
   }
 
   &:hover {
+    text-decoration: none;
+
     .fondo-imagen {
       transform: scale(1);
     }
@@ -66,7 +68,6 @@
   &:focus {
     background-color: transparent;
     color: var(--hipervinculo-focus-color);
-    box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
     outline: none;
   }
 }

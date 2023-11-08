@@ -109,7 +109,7 @@
   --hipervinculo-sombra: transparent;
   --hipervinculo-deshabilitado-color: #AAAAAA;
   --hipervinculo-deshabilitado-sombra: transparent;
-  --hipervinculo-hover-color: #356CCC;
+  --hipervinculo-hover-color: #005DFF;
   --hipervinculo-hover-sombra: transparent;
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
@@ -1343,7 +1343,7 @@ a:hover,
 .hipervinculo-gobmx:hover {
   background-color: transparent;
   color: var(--hipervinculo-hover-color);
-  box-shadow: 0 0 2px var(--hipervinculo-hover-sombra);
+  text-decoration: underline;
 }
 a:focus,
 .hipervinculo:focus,
@@ -1357,7 +1357,7 @@ a:focus,
 .hipervinculo-gobmx:focus {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
-  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
+  border: dashed 2px var(--hipervinculo-focus-sombra);
   outline: none;
 }
 
@@ -1502,13 +1502,15 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo .parrafo-texto-alto {
   color: #ffffff;
 }
+.tarjeta-hipervinculo-externo:hover {
+  text-decoration: none;
+}
 .tarjeta-hipervinculo-externo:hover .fondo-imagen {
   transform: scale(1);
 }
 .tarjeta-hipervinculo-externo:focus {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
-  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
   outline: none;
 }
 
@@ -1558,8 +1560,10 @@ a[class*=" p-"],
 }
 .tarjeta-hipervinculo-interno:focus {
   color: var(--hipervinculo-focus-color);
-  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
   outline: none;
+}
+.tarjeta-hipervinculo-interno:hover {
+  text-decoration: none;
 }
 .tarjeta-hipervinculo-interno:hover .contenido-abajo {
   background: var(--tarjetas-interna-fondo-hover);
