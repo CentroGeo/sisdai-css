@@ -1357,8 +1357,7 @@ a:focus,
 .hipervinculo-gobmx:focus {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
-  border: dashed 2px var(--hipervinculo-focus-sombra);
-  outline: none;
+  outline: 2px dashed var(--hipervinculo-focus-sombra);
 }
 
 button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child):not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
@@ -1511,7 +1510,9 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-externo:focus {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
-  outline: none;
+}
+.tarjeta-hipervinculo-externo:focus .fondo-imagen {
+  transform: scale(1);
 }
 
 .tarjeta-hipervinculo-interno {
@@ -1560,7 +1561,6 @@ a[class*=" p-"],
 }
 .tarjeta-hipervinculo-interno:focus {
   color: var(--hipervinculo-focus-color);
-  outline: none;
 }
 .tarjeta-hipervinculo-interno:hover {
   text-decoration: none;
@@ -8757,6 +8757,7 @@ ol + hr {
 }
 .ir-contenido-principal:focus {
   transform: translateY(0%);
+  border: 0 solid var(--hipervinculo-focus-sombra);
 }
 
 .navegacion .nav-hipervinculo {

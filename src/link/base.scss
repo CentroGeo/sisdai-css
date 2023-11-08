@@ -31,8 +31,7 @@ a,
   &:focus {
     background-color: transparent;
     color: var(--hipervinculo-focus-color);
-    border:dashed 2px var(--hipervinculo-focus-sombra);
-    outline: none;
+    outline: 2px dashed var(--hipervinculo-focus-sombra);
   }
 }
 
