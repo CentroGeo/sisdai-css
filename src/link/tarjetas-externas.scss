@@ -65,9 +65,10 @@
     }
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: transparent;
     color: var(--hipervinculo-focus-color);
+    outline:none;
     .fondo-imagen {
       transform: scale(1);
     }

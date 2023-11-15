@@ -20,6 +20,9 @@
       box-shadow: var(--navegacion-sombra-hover);
       color: var(--navegacion-color-hover);
     }
+    &:focus-visible {
+      outline: none;
+    }
     &:active,
     &.active,
     &.nuxt-link-active,
@@ -45,6 +48,9 @@
     display: inline-flex;
     padding: map-get($espaciado, "minimo");
     margin: 0;
+    &:focus-visible {
+      outline: none;
+    }
     .nav-logo {
       height: 38px;
     }

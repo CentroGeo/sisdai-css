@@ -42,8 +42,10 @@
       color: var(--tarjetas-internas-color);
     }
   }
-  &:focus {
+  &:focus-visible {
     color: var(--hipervinculo-focus-color);
+    outline:none;
+    
   }
   &:hover {
     text-decoration: none;

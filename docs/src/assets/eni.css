@@ -1345,16 +1345,16 @@ a:hover,
   color: var(--hipervinculo-hover-color);
   text-decoration: underline;
 }
-a:focus,
-.hipervinculo:focus,
-.a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
-.a11y-simplificada input[type=button]:focus,
-.a11y-simplificada input[type=submit]:focus,
-.a11y-simplificada input[type=reset]:focus,
-.a11y-simplificada [class^=boton]:focus,
-.a11y-simplificada [class*=" boton"]:focus,
-.hipervinculo-conahcyt:focus,
-.hipervinculo-gobmx:focus {
+a:focus-visible,
+.hipervinculo:focus-visible,
+.a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada input[type=button]:focus-visible,
+.a11y-simplificada input[type=submit]:focus-visible,
+.a11y-simplificada input[type=reset]:focus-visible,
+.a11y-simplificada [class^=boton]:focus-visible,
+.a11y-simplificada [class*=" boton"]:focus-visible,
+.hipervinculo-conahcyt:focus-visible,
+.hipervinculo-gobmx:focus-visible {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
   outline: 2px dashed var(--hipervinculo-focus-sombra);
@@ -1507,11 +1507,12 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-externo:hover .fondo-imagen {
   transform: scale(1);
 }
-.tarjeta-hipervinculo-externo:focus {
+.tarjeta-hipervinculo-externo:focus-visible {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
+  outline: none;
 }
-.tarjeta-hipervinculo-externo:focus .fondo-imagen {
+.tarjeta-hipervinculo-externo:focus-visible .fondo-imagen {
   transform: scale(1);
 }
 
@@ -1559,8 +1560,9 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-interno .contenido-abajo .parrafo-texto-alto {
   color: var(--tarjetas-internas-color);
 }
-.tarjeta-hipervinculo-interno:focus {
+.tarjeta-hipervinculo-interno:focus-visible {
   color: var(--hipervinculo-focus-color);
+  outline: none;
 }
 .tarjeta-hipervinculo-interno:hover {
   text-decoration: none;
@@ -8781,6 +8783,9 @@ ol + hr {
   box-shadow: var(--navegacion-sombra-hover);
   color: var(--navegacion-color-hover);
 }
+.navegacion .nav-hipervinculo:focus-visible {
+  outline: none;
+}
 .navegacion .nav-hipervinculo:active, .navegacion .nav-hipervinculo.active, .navegacion .nav-hipervinculo.nuxt-link-active, .navegacion .nav-hipervinculo.nuxt-link-exact-active, .navegacion .nav-hipervinculo.router-link-active, .navegacion .nav-hipervinculo.router-link-exact-active {
   background-color: var(--navegacion-fondo-active);
   box-shadow: var(--navegacion-sombra-active);
@@ -8796,6 +8801,9 @@ ol + hr {
   display: inline-flex;
   padding: 4px;
   margin: 0;
+}
+.navegacion .nav-hiperviculo-logo:focus-visible {
+  outline: none;
 }
 .navegacion .nav-hiperviculo-logo .nav-logo {
   height: 38px;
@@ -9128,6 +9136,9 @@ ol + hr {
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
   color: var(--menu-lateral-accion);
 }
+.menu-lateral-contenedor a:focus-visible {
+  outline: none;
+}
 
 @media (min-width: 768px) {
   .menu-lateral-contenedor {
@@ -9163,6 +9174,9 @@ ol + hr {
   position: relative;
   background-color: transparent;
   list-style: none;
+}
+.colapsable-navegacion a:focus-visible {
+  outline: none;
 }
 .colapsable-navegacion .colapsable-submenu {
   opacity: 1;
@@ -9260,6 +9274,9 @@ ol + hr {
 .indice-de-contenido a:active, .indice-de-contenido a:focus {
   color: var(--menu-lateral-accion);
   box-shadow: none;
+}
+.indice-de-contenido a:focus-visible {
+  outline: none;
 }
 .indice-de-contenido a.link-activo, .indice-de-contenido a.router-link-exact-active {
   background: var(--menu-lateral-accion-fondo-active);
@@ -10312,6 +10329,10 @@ body {
 }
 .a11y-oscura .conahcyt-fondo-claro-1 {
   background-color: var(--color-conahcyt-claro-0);
+}
+
+footer a:focus-visible {
+  outline: none;
 }
 
 /*# sourceMappingURL=eni.css.map */

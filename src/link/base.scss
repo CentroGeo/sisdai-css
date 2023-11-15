@@ -28,7 +28,7 @@ a,
     color: var(--hipervinculo-hover-color);
     text-decoration: underline;
   }
-  &:focus {
+  &:focus-visible {
     background-color: transparent;
     color: var(--hipervinculo-focus-color);
     outline: 2px dashed var(--hipervinculo-focus-sombra);
