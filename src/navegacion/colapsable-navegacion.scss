@@ -2,6 +2,9 @@
   position: relative;
   background-color: transparent;
   list-style: none;
+  a:focus-visible{
+    outline: none;
+  }
   .colapsable-submenu {
     opacity: 1;
     height: 100px;
