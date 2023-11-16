@@ -713,6 +713,7 @@
         14px <br />
         Regular (400) <br />
         Interlineado 1.2em
+        #5E7392 
       </p>
     </div>
     <div class="columna-2">
@@ -722,6 +723,7 @@
         14px <br />
         Regular (400) <br />
         Interlineado 1.2em
+        #5E7392 
       </p>
     </div>
     <!-- Nomenclatura-->
