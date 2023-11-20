@@ -109,7 +109,7 @@
   --hipervinculo-sombra: transparent;
   --hipervinculo-deshabilitado-color: #AAAAAA;
   --hipervinculo-deshabilitado-sombra: transparent;
-  --hipervinculo-hover-color: #356CCC;
+  --hipervinculo-hover-color: #005DFF;
   --hipervinculo-hover-sombra: transparent;
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
@@ -585,6 +585,11 @@ h6, .h6 {
   font-size: 1rem;
   line-height: 1.25em;
 }
+@media screen and (min-width: 768px) {
+  h6, .h6 {
+    font-size: 1.125rem;
+  }
+}
 
 .titulo-eni {
   font-size: 3rem;
@@ -778,7 +783,8 @@ h6, .h6 {
 }
 
 .vis-fuente {
-  font-size: 1rem;
+  font-size: 0.875rem;
+  color: var(--tipografia-color-3);
   font-weight: 400;
   line-height: 1.2em;
   margin: 16px 0 16px 0;
@@ -1338,22 +1344,21 @@ a:hover,
 .hipervinculo-gobmx:hover {
   background-color: transparent;
   color: var(--hipervinculo-hover-color);
-  box-shadow: 0 0 2px var(--hipervinculo-hover-sombra);
+  text-decoration: underline;
 }
-a:focus,
-.hipervinculo:focus,
-.a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
-.a11y-simplificada input[type=button]:focus,
-.a11y-simplificada input[type=submit]:focus,
-.a11y-simplificada input[type=reset]:focus,
-.a11y-simplificada [class^=boton]:focus,
-.a11y-simplificada [class*=" boton"]:focus,
-.hipervinculo-conahcyt:focus,
-.hipervinculo-gobmx:focus {
+a:focus-visible,
+.hipervinculo:focus-visible,
+.a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada input[type=button]:focus-visible,
+.a11y-simplificada input[type=submit]:focus-visible,
+.a11y-simplificada input[type=reset]:focus-visible,
+.a11y-simplificada [class^=boton]:focus-visible,
+.a11y-simplificada [class*=" boton"]:focus-visible,
+.hipervinculo-conahcyt:focus-visible,
+.hipervinculo-gobmx:focus-visible {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
-  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
-  outline: none;
+  outline: 2px dashed var(--hipervinculo-focus-sombra);
 }
 
 button.hipervinculo:not(:last-child), .a11y-simplificada button:not(:last-child):not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
@@ -1497,14 +1502,19 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo .parrafo-texto-alto {
   color: #ffffff;
 }
+.tarjeta-hipervinculo-externo:hover {
+  text-decoration: none;
+}
 .tarjeta-hipervinculo-externo:hover .fondo-imagen {
   transform: scale(1);
 }
-.tarjeta-hipervinculo-externo:focus {
+.tarjeta-hipervinculo-externo:focus-visible {
   background-color: transparent;
   color: var(--hipervinculo-focus-color);
-  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
   outline: none;
+}
+.tarjeta-hipervinculo-externo:focus-visible .fondo-imagen {
+  transform: scale(1);
 }
 
 .tarjeta-hipervinculo-interno {
@@ -1551,10 +1561,12 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-interno .contenido-abajo .parrafo-texto-alto {
   color: var(--tarjetas-internas-color);
 }
-.tarjeta-hipervinculo-interno:focus {
+.tarjeta-hipervinculo-interno:focus-visible {
   color: var(--hipervinculo-focus-color);
-  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
   outline: none;
+}
+.tarjeta-hipervinculo-interno:hover {
+  text-decoration: none;
 }
 .tarjeta-hipervinculo-interno:hover .contenido-abajo {
   background: var(--tarjetas-interna-fondo-hover);
@@ -2060,9 +2072,7 @@ select:not(:disabled):focus {
 }
 
 [type=checkbox]:hover + label,
-[type=radio]:hover + label,
-[type=checkbox]:checked + label,
-[type=radio]:checked + label {
+[type=radio]:hover + label {
   color: #141414;
   background: #dddddd;
 }
@@ -2295,163 +2305,93 @@ select {
 }
 
 .controlador-vis {
-  display: inline-block;
-  position: relative;
+  --controlador-vis-control-alto: 1.125rem;
+  --controlador-vis-figura-alto: 18px;
+  --controlador-vis-figura-borde: 1px;
 }
-.controlador-vis .figura-variable {
-  width: 18px;
-  height: 18px;
-  background: #7E8CF5;
-  border: 1px solid var(--tipografia-color);
-  border-radius: 50%;
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 11px;
-  z-index: 1;
-  cursor: pointer;
-}
-.controlador-vis .figura-variable.disabled {
-  background: #DDDDDD;
-  border: 1px solid #AAAAAA;
-  cursor: default;
-}
-.controlador-vis [type=checkbox] + label {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-right: 16px;
-  margin: 0px;
-  color: var(--tipografia-color);
-}
-.controlador-vis [type=checkbox]:disabled + label {
-  cursor: default;
-  color: #AAAAAA;
-  box-shadow: inset 0 0 0 1px #AAAAAA;
-}
-.controlador-vis [type=checkbox]:disabled + label:hover {
-  background: transparent;
-}
-.controlador-vis [type=checkbox]:not(:disabled) + label {
-  cursor: pointer;
-}
-.controlador-vis [type=checkbox]:disabled + label::before {
-  box-shadow: inset 0 0 0 1px #AAAAAA;
-}
-.controlador-vis [type=checkbox] + label::before {
-  top: 10px;
-  margin-left: 8px;
-  box-shadow: inset 0 0 0 1px var(--tipografia-color);
-}
-.controlador-vis [type=checkbox]:checked:not(:hover) + label {
-  background: transparent;
-}
-.controlador-vis [type=checkbox]:checked + label::after {
-  left: calc(0.125rem + 12px);
-  color: var(--tipografia-color);
-}
-.controlador-vis .nombre-variable {
-  padding-left: 64px;
-}
-.controlador-vis:hover .figura-variable:not(.disabled) {
-  border: 1px solid #141414;
-}
-.controlador-vis:hover [type=checkbox]:not(:disabled) + label {
-  background: #dddddd;
-}
-.controlador-vis:hover [type=checkbox]:not(:disabled) + label::before {
-  box-shadow: inset 0 0 0 1px #141414;
-}
-.controlador-vis:hover [type=checkbox]:checked + label::after {
-  color: #141414;
-}
-.controlador-vis:hover .nombre-variable {
-  color: #141414;
-}
-
-.controlador-vis2 input[type=checkbox] + label, .controlador-vis2 input[type=radio] + label {
-  padding-left: calc(1.25rem + 8px + 4px);
-  padding-top: 9px;
-  padding-bottom: 9px;
+.controlador-vis label {
+  padding: 9px 16px;
   margin: 0;
+  display: inline-flex;
 }
-.controlador-vis2 input[type=checkbox] + label:before, .controlador-vis2 input[type=radio] + label:before {
-  box-shadow: inset 0 0 0 1px var(--tipografia-color);
-  margin-left: 8px;
-  margin-top: 0;
-  top: auto;
+.controlador-vis label .figura-variable {
+  min-width: calc(var(--controlador-vis-figura-alto));
+  max-width: calc(var(--controlador-vis-figura-alto));
+  min-height: calc(var(--controlador-vis-figura-alto));
+  max-height: calc(var(--controlador-vis-figura-alto));
+  margin-top: max(0px, (var(--controlador-vis-control-alto) - var(--controlador-vis-figura-alto)) / 2 + 1px);
+  margin-right: 6px;
 }
-.controlador-vis2 input[type=checkbox] + label .figura-variable, .controlador-vis2 input[type=radio] + label .figura-variable {
-  min-width: 18px;
-  height: 18px;
+.controlador-vis label .figura-variable.muestra {
   background: #7E8CF5;
-  border: 1px solid var(--tipografia-color);
+  border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
   border-radius: 50%;
-  margin-left: 8px;
 }
-.controlador-vis2 input[type=checkbox] + label .nombre-variable, .controlador-vis2 input[type=radio] + label .nombre-variable {
+.controlador-vis label .nombre-variable {
   color: var(--tipografia-color);
-  padding-left: 6px;
   display: inline-flex;
   align-items: center;
 }
-.controlador-vis2 input[type=checkbox]:hover + label:before, .controlador-vis2 input[type=radio]:hover + label:before {
+.controlador-vis input[type=checkbox] + label, .controlador-vis input[type=radio] + label {
+  padding-left: 16px;
+}
+.controlador-vis input[type=checkbox] + label:before, .controlador-vis input[type=radio] + label:before {
+  box-shadow: inset 0 0 0 1px var(--tipografia-color);
+  position: static;
+  min-width: var(--controlador-vis-control-alto);
+  min-height: var(--controlador-vis-control-alto);
+  margin-top: max(1px, (var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) / 2);
+  margin-right: 8px;
+}
+.controlador-vis input[type=checkbox]:hover + label:before, .controlador-vis input[type=radio]:hover + label:before {
   box-shadow: inset 0 0 0 1px #141414;
 }
-.controlador-vis2 input[type=checkbox]:hover + label .figura-variable, .controlador-vis2 input[type=radio]:hover + label .figura-variable {
+.controlador-vis input[type=checkbox]:hover + label .figura-variable.muestra, .controlador-vis input[type=radio]:hover + label .figura-variable.muestra {
   border: 1px solid #141414;
 }
-.controlador-vis2 input[type=checkbox]:hover + label .nombre-variable, .controlador-vis2 input[type=radio]:hover + label .nombre-variable {
+.controlador-vis input[type=checkbox]:hover + label .nombre-variable, .controlador-vis input[type=radio]:hover + label .nombre-variable {
   color: #141414;
 }
-.controlador-vis2 input[type=checkbox]:checked:not(:hover) + label, .controlador-vis2 input[type=radio]:checked:not(:hover) + label {
+.controlador-vis input[type=checkbox]:checked:not(:hover) + label, .controlador-vis input[type=radio]:checked:not(:hover) + label {
   background: transparent;
 }
-.controlador-vis2 input[type=checkbox]:disabled + label, .controlador-vis2 input[type=radio]:disabled + label {
+.controlador-vis input[type=checkbox]:disabled + label, .controlador-vis input[type=radio]:disabled + label {
   cursor: default;
   box-shadow: inset 0 0 0 1px #AAAAAA;
 }
-.controlador-vis2 input[type=checkbox]:disabled + label:before, .controlador-vis2 input[type=radio]:disabled + label:before {
+.controlador-vis input[type=checkbox]:disabled + label:before, .controlador-vis input[type=radio]:disabled + label:before {
   box-shadow: inset 0 0 0 1px #AAAAAA;
 }
-.controlador-vis2 input[type=checkbox]:disabled + label:hover, .controlador-vis2 input[type=radio]:disabled + label:hover {
+.controlador-vis input[type=checkbox]:disabled + label:hover, .controlador-vis input[type=radio]:disabled + label:hover {
   background: transparent;
 }
-.controlador-vis2 input[type=checkbox]:disabled + label .figura-variable, .controlador-vis2 input[type=radio]:disabled + label .figura-variable {
+.controlador-vis input[type=checkbox]:disabled + label .figura-variable.muestra, .controlador-vis input[type=radio]:disabled + label .figura-variable.muestra {
   background: #DDDDDD;
   border: 1px solid #AAAAAA;
 }
-.controlador-vis2 input[type=checkbox]:disabled + label .nombre-variable, .controlador-vis2 input[type=radio]:disabled + label .nombre-variable {
+.controlador-vis input[type=checkbox]:disabled + label .nombre-variable, .controlador-vis input[type=radio]:disabled + label .nombre-variable {
   color: #AAAAAA;
 }
-.controlador-vis2 input[type=checkbox]:checked + label:after {
-  left: calc(0.125rem + 12px);
+.controlador-vis input[type=checkbox]:checked + label:after {
+  left: auto;
   color: var(--tipografia-color);
-  top: 7px;
+  line-height: 1rem;
+  min-width: calc(var(--controlador-vis-control-alto) - 1px);
+  min-height: calc(var(--controlador-vis-control-alto) - 1px);
+  text-align: center;
+  margin-top: max(1px, (var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) / 2);
 }
-.controlador-vis2 input[type=checkbox]:checked:hover:checked:not(:disabled) + label:after {
+.controlador-vis input[type=checkbox]:checked:hover:checked:not(:disabled) + label:after {
   color: #141414;
 }
-.controlador-vis2 input[type=checkbox]:checked:disabled + label:after {
+.controlador-vis input[type=checkbox]:checked:disabled + label:after {
   color: #AAAAAA;
 }
-.controlador-vis2 input[type=radio]:checked + label:before {
+.controlador-vis input[type=radio]:checked + label:before {
   box-shadow: inset 0 0 0 0.375rem var(--input-controles-color);
 }
-.controlador-vis2.sin-figura input[type=checkbox] + label .figura-variable, .controlador-vis2.sin-figura input[type=radio] + label .figura-variable {
+.controlador-vis.sin-figura input[type=checkbox] + label .figura-variable, .controlador-vis.sin-figura input[type=radio] + label .figura-variable {
   display: none;
-}
-.controlador-vis2.grande {
-  --alto-figura: 30px;
-  --alto-control: 18px;
-}
-.controlador-vis2.grande input[type=checkbox] + label:before, .controlador-vis2.grande input[type=radio] + label:before {
-  margin-top: calc((var(--alto-figura) - var(--alto-control)) / 2);
-}
-.controlador-vis2.grande input[type=checkbox] + label .figura-variable, .controlador-vis2.grande input[type=radio] + label .figura-variable {
-  min-width: var(--alto-figura);
-  height: var(--alto-figura);
-}
-.controlador-vis2.grande input[type=checkbox]:checked + label:after, .controlador-vis2.grande input[type=radio]:checked + label:after {
-  top: 13px;
 }
 
 .borde {
@@ -8835,6 +8775,7 @@ ol + hr {
 }
 .ir-contenido-principal:focus {
   transform: translateY(0%);
+  border: 0 solid var(--hipervinculo-focus-sombra);
 }
 
 .navegacion .nav-hipervinculo {
@@ -8858,6 +8799,9 @@ ol + hr {
   box-shadow: var(--navegacion-sombra-hover);
   color: var(--navegacion-color-hover);
 }
+.navegacion .nav-hipervinculo:focus-visible {
+  outline: none;
+}
 .navegacion .nav-hipervinculo:active, .navegacion .nav-hipervinculo.active, .navegacion .nav-hipervinculo.nuxt-link-active, .navegacion .nav-hipervinculo.nuxt-link-exact-active, .navegacion .nav-hipervinculo.router-link-active, .navegacion .nav-hipervinculo.router-link-exact-active {
   background-color: var(--navegacion-fondo-active);
   box-shadow: var(--navegacion-sombra-active);
@@ -8873,6 +8817,9 @@ ol + hr {
   display: inline-flex;
   padding: 4px;
   margin: 0;
+}
+.navegacion .nav-hiperviculo-logo:focus-visible {
+  outline: none;
 }
 .navegacion .nav-hiperviculo-logo .nav-logo {
   height: 38px;
@@ -8980,7 +8927,7 @@ ol + hr {
   font-family: "sisdai-iconos" !important;
   font-size: 1rem;
   height: 0.875rem;
-  content: "e";
+  content: "d";
   margin-left: 4px;
 }
 @media screen and (min-width: 768px) {
@@ -8989,13 +8936,16 @@ ol + hr {
   }
 }
 
+.navegacion .nav-boton-regresar {
+  color: var(--navegacion-conahcyt-color);
+}
 .navegacion .nav-boton-regresar::after {
   display: none;
 }
 .navegacion .nav-boton-regresar::before {
   font-family: "sisdai-iconos" !important;
   font-size: 1rem;
-  content: "e";
+  content: "d";
   margin-left: -4px;
   margin-right: 4px;
   transform: rotate(180deg);
@@ -9115,7 +9065,7 @@ ol + hr {
 }
 
 .menu-lateral-contenedor {
-  margin: 0;
+  margin: 16px 0 0 0;
   padding: 0;
   position: sticky;
   top: 100px;
@@ -9202,6 +9152,9 @@ ol + hr {
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
   color: var(--menu-lateral-accion);
 }
+.menu-lateral-contenedor a:focus-visible {
+  outline: none;
+}
 
 @media (min-width: 768px) {
   .menu-lateral-contenedor {
@@ -9237,6 +9190,9 @@ ol + hr {
   position: relative;
   background-color: transparent;
   list-style: none;
+}
+.colapsable-navegacion a:focus-visible {
+  outline: none;
 }
 .colapsable-navegacion .colapsable-submenu {
   opacity: 1;
@@ -9334,6 +9290,9 @@ ol + hr {
 .indice-de-contenido a:active, .indice-de-contenido a:focus {
   color: var(--menu-lateral-accion);
   box-shadow: none;
+}
+.indice-de-contenido a:focus-visible {
+  outline: none;
 }
 .indice-de-contenido a.link-activo, .indice-de-contenido a.router-link-exact-active {
   background: var(--menu-lateral-accion-fondo-active);
@@ -10386,6 +10345,10 @@ body {
 }
 .a11y-oscura .conahcyt-fondo-claro-1 {
   background-color: var(--color-conahcyt-claro-0);
+}
+
+footer a:focus-visible {
+  outline: none;
 }
 
 /*# sourceMappingURL=eni.css.map */

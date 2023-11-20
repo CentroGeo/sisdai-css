@@ -73,7 +73,7 @@
   <div class="grid">
     <div class="columna-16">
       <!-- <ControladorVis deshabilitado encendido /> -->
-      <span class="controlador-vis2">
+      <span class="controlador-vis">
         <input id="control_check_1.1" type="checkbox">
         <label for="control_check_1.1">
           <span class="figura-variable muestra" />
@@ -81,7 +81,7 @@
         </label>
       </span>
       <!-- <ControladorVis deshabilitado sinSimbolo /> -->
-      <span class="controlador-vis2 sin-figura">
+      <span class="controlador-vis sin-figura">
         <input id="control_check_1.2" type="checkbox">
         <label for="control_check_1.2">
           <span class="figura-variable muestra" />
@@ -89,7 +89,7 @@
         </label>
       </span>
       <!-- <ControladorVis sinControl /> -->
-      <span class="controlador-vis2">
+      <span class="controlador-vis">
         <input id="control_check_1.3" type="checkbox" disabled>
         <label for="control_check_1.3">
           <span class="figura-variable muestra" />
@@ -97,7 +97,7 @@
         </label>
       </span>
       <!-- <ControladorVis simbolo="30px" /> -->
-      <span class="controlador-vis2">
+      <span class="controlador-vis">
         <input id="control_check_1.4" type="checkbox" checked disabled>
         <label for="control_check_1.4">
           <span class="figura-variable muestra" />
@@ -108,27 +108,27 @@
   </div>
   <div class="grid">
     <div class="columna-16">
-      <span class="controlador-vis2">
+      <span class="controlador-vis">
         <input id="control_radio_1.1" type="radio" name="radio-control-vis">
         <label for="control_radio_1.1">
           <span class="figura-variable muestra" />
           <span class="nombre-variable">Valor nomenclatura</span>
         </label>
       </span>
-      <span class="controlador-vis2">
+      <span class="controlador-vis">
         <input id="control_radio_1.2" type="radio" name="radio-control-vis">
         <label for="control_radio_1.2">
           <span class="nombre-variable">Valor nomenclatura</span>
         </label>
       </span>
-      <span class="controlador-vis2">
+      <span class="controlador-vis">
         <input id="control_radio_1.3" type="radio" name="radio-control-vis" disabled>
         <label for="control_radio_1.3">
           <span class="figura-variable muestra" />
           <span class="nombre-variable">Valor nomenclatura</span>
         </label>
       </span>
-      <span class="controlador-vis2">
+      <span class="controlador-vis">
         <input id="control_radio_1.4" type="radio" name="radio-control-vis" disabled checked>
         <label for="control_radio_1.4">
           <span class="figura-variable muestra" />
@@ -143,7 +143,7 @@
   <p>La clase `.controlador-vis` contiene la variable `--controlador-vis-figura-alto`, la cual se puede usar para modificar el tamaño de la figura.</p>
   <div class="grid">
     <div class="columna-4">
-      <span class="controlador-vis2 grande">
+      <span class="controlador-vis grande">
         <input id="control_check_2.1" type="checkbox">
         <label for="control_check_2.1">
           <span class="figura-variable icono-visualizador icono-4" />
@@ -152,7 +152,7 @@
       </span>
       </div>
       <div class="columna-4">
-      <span class="controlador-vis2 chica">
+      <span class="controlador-vis chica">
         <input id="control_check_2.2" type="checkbox">
         <label for="control_check_2.2">
           <span class="figura-variable icono-visualizador icono-1" />
@@ -161,7 +161,7 @@
       </span>
     </div>
     <div class="columna-4">
-      <span class="controlador-vis2 grande">
+      <span class="controlador-vis grande">
         <input id="control_check_2.3" type="checkbox">
         <label for="control_check_2.3">
           <span class="figura-variable muestra" />
@@ -172,7 +172,7 @@
       </span>
     </div>
     <div class="columna-4">
-      <span class="controlador-vis2 chica">
+      <span class="controlador-vis chica">
         <input id="control_check_2.4" type="checkbox">
         <label for="control_check_2.4">
           <span class="figura-variable muestra" />
@@ -253,7 +253,7 @@
 </template>
 
 <style lang="scss">
-.controlador-vis2{
+.controlador-vis{
   &.grande {
     --controlador-vis-figura-alto: 32px;
   }
