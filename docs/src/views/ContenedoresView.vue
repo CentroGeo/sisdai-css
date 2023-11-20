@@ -170,7 +170,7 @@
       </p>
       <hr>
       <p class="vis-fuente">
-        Nota. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
+        Fuente. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
       </p>
     </div>
 

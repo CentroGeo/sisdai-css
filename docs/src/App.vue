@@ -194,7 +194,7 @@
               <ul class="nav-submenu">
                 <li><button class="nav-boton-regresar">Contenido</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tipografia">Tipografia</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/iconografia">Iconografia</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/pictogramas">Pictogramas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li>

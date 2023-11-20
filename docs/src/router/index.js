@@ -30,9 +30,9 @@ const router = createRouter({
       component: () => import('../views/TipografiaView.vue')
     },
     {
-      path: '/iconografia',
-      name: 'iconografia',
-      component: () => import('../views/IconografiaView.vue')
+      path: '/pictogramas',
+      name: 'pictogramas',
+      component: () => import('../views/PictogramasView.vue')
     },
     {
       path: '/color',

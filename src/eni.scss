@@ -84,3 +84,9 @@
 @import "accesibilidad/lectura";
 @import "accesibilidad/hipervinculos";
 @import "accesibilidad/oscura";
+
+footer {
+  a:focus-visible {
+    outline: none;
+  }
+}
