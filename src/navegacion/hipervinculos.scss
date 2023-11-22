@@ -46,7 +46,7 @@
 
   .nav-hiperviculo-logo {
     display: inline-flex;
-    padding: map-get($espaciado, "minimo");
+    padding: map-get($espaciado, "minimo") 0;
     margin: 0;
     &:focus-visible {
       outline: none;
