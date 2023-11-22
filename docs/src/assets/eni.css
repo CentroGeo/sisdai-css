@@ -3671,8 +3671,8 @@ ol + hr {
 }
 @media screen and (max-width: 767px) {
   .contenedor {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .contenedor.ancho-fijo {
     max-width: 100%;
@@ -3686,11 +3686,11 @@ ol + hr {
 }
 @media screen and (min-width: 768px) {
   .contenedor {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
   .contenedor.ancho-fijo {
-    max-width: 1152px;
+    max-width: 1366px;
   }
   .contenedor.ancho-lectura {
     max-width: 700px;
@@ -8604,8 +8604,8 @@ ol + hr {
   display: block;
   position: relative;
   z-index: 110;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .navegacion.navegacion-pegada {
   position: sticky;
@@ -8629,10 +8629,10 @@ ol + hr {
   background: var(--submenu-lateral-fondo-colapsable);
   color: var(--menu-lateral-color);
   font-size: 0.75rem;
-  padding: 4px 16px;
-  margin-left: -16px;
-  margin-right: -16px;
-  flex: 1 0 calc(100% - 32px);
+  padding: 4px 24px;
+  margin-left: -24px;
+  margin-right: -24px;
+  flex: 1 0 calc(100% - 48px);
 }
 
 .nav-menu-contedor {
@@ -8686,8 +8686,8 @@ ol + hr {
   .navegacion:not(.navegacion-movil-forzada) {
     display: flex;
     align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
   .navegacion:not(.navegacion-movil-forzada) .nav-contenedor-identidad {
     display: flex;
@@ -8751,14 +8751,14 @@ ol + hr {
   }
 
   .navegacion-movil-forzada {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 48px;
+    padding-right: 48px;
   }
   .navegacion-movil-forzada .nav-informacion {
-    padding: 4px 40px;
-    margin-left: -40px;
-    margin-right: -40px;
-    flex: 1 0 calc(100% - 32px);
+    padding: 4px 48px;
+    margin-left: -48px;
+    margin-right: -48px;
+    flex: 1 0 calc(100% - 48px);
   }
 }
 .ir-contenido-principal {
@@ -8815,7 +8815,7 @@ ol + hr {
 }
 .navegacion .nav-hiperviculo-logo {
   display: inline-flex;
-  padding: 4px;
+  padding: 4px 0;
   margin: 0;
 }
 .navegacion .nav-hiperviculo-logo:focus-visible {
@@ -9130,7 +9130,7 @@ ol + hr {
 .menu-lateral-contenedor a {
   display: block;
   border-radius: 0;
-  padding: 8px 16px;
+  padding: 8px 24px;
   text-decoration: none;
   background: transparent;
   color: var(--menu-lateral-color);
@@ -9183,7 +9183,7 @@ ol + hr {
     width: inherit;
   }
   .menu-lateral-contenedor a {
-    padding: 8px 40px;
+    padding: 8px 48px;
   }
 }
 .colapsable-navegacion {
@@ -9270,7 +9270,7 @@ ol + hr {
 .indice-de-contenido a {
   display: block;
   border-radius: 0;
-  padding: 8px 16px;
+  padding: 8px 24px;
   text-decoration: none;
   background: transparent;
   color: var(--menu-lateral-color);
@@ -9279,7 +9279,7 @@ ol + hr {
 }
 @media (min-width: 768px) {
   .indice-de-contenido a a {
-    padding: 8px 40px;
+    padding: 8px 48px;
   }
 }
 @media (hover: hover) {
