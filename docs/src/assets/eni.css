@@ -2305,76 +2305,93 @@ select {
 }
 
 .controlador-vis {
-  display: inline-block;
-  position: relative;
+  --controlador-vis-control-alto: 1.125rem;
+  --controlador-vis-figura-alto: 18px;
+  --controlador-vis-figura-borde: 1px;
 }
-.controlador-vis .figura-variable {
-  width: 18px;
-  height: 18px;
+.controlador-vis label {
+  padding: 9px 16px;
+  margin: 0;
+  display: inline-flex;
+}
+.controlador-vis label .figura-variable {
+  min-width: calc(var(--controlador-vis-figura-alto));
+  max-width: calc(var(--controlador-vis-figura-alto));
+  min-height: calc(var(--controlador-vis-figura-alto));
+  max-height: calc(var(--controlador-vis-figura-alto));
+  margin-top: max(0px, (var(--controlador-vis-control-alto) - var(--controlador-vis-figura-alto)) / 2 + 1px);
+  margin-right: 6px;
+}
+.controlador-vis label .figura-variable.muestra {
   background: #7E8CF5;
-  border: 1px solid var(--tipografia-color);
+  border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
   border-radius: 50%;
-  position: absolute;
-  margin-left: 40px;
-  margin-top: 11px;
-  z-index: 1;
-  cursor: pointer;
 }
-.controlador-vis .figura-variable.disabled {
-  background: #DDDDDD;
-  border: 1px solid #AAAAAA;
-  cursor: default;
-}
-.controlador-vis [type=checkbox] + label {
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-right: 16px;
-  margin: 0px;
+.controlador-vis label .nombre-variable {
   color: var(--tipografia-color);
+  display: inline-flex;
+  align-items: center;
 }
-.controlador-vis [type=checkbox]:disabled + label {
-  cursor: default;
-  color: #AAAAAA;
-  box-shadow: inset 0 0 0 1px #AAAAAA;
+.controlador-vis input[type=checkbox] + label, .controlador-vis input[type=radio] + label {
+  padding-left: 16px;
 }
-.controlador-vis [type=checkbox]:disabled + label:hover {
-  background: transparent;
-}
-.controlador-vis [type=checkbox]:not(:disabled) + label {
-  cursor: pointer;
-}
-.controlador-vis [type=checkbox]:disabled + label::before {
-  box-shadow: inset 0 0 0 1px #AAAAAA;
-}
-.controlador-vis [type=checkbox] + label::before {
-  top: 10px;
-  margin-left: 8px;
+.controlador-vis input[type=checkbox] + label:before, .controlador-vis input[type=radio] + label:before {
   box-shadow: inset 0 0 0 1px var(--tipografia-color);
+  position: static;
+  min-width: var(--controlador-vis-control-alto);
+  min-height: var(--controlador-vis-control-alto);
+  margin-top: max(1px, (var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) / 2);
+  margin-right: 8px;
 }
-.controlador-vis [type=checkbox]:checked:not(:hover) + label {
-  background: transparent;
-}
-.controlador-vis [type=checkbox]:checked + label::after {
-  left: calc(0.125rem + 12px);
-  color: var(--tipografia-color);
-}
-.controlador-vis .nombre-variable {
-  padding-left: 64px;
-}
-.controlador-vis:hover .figura-variable:not(.disabled) {
-  border: 1px solid #141414;
-}
-.controlador-vis:hover [type=checkbox]:not(:disabled) + label {
-  background: #dddddd;
-}
-.controlador-vis:hover [type=checkbox]:not(:disabled) + label::before {
+.controlador-vis input[type=checkbox]:hover + label:before, .controlador-vis input[type=radio]:hover + label:before {
   box-shadow: inset 0 0 0 1px #141414;
 }
-.controlador-vis:hover [type=checkbox]:checked + label::after {
+.controlador-vis input[type=checkbox]:hover + label .figura-variable.muestra, .controlador-vis input[type=radio]:hover + label .figura-variable.muestra {
+  border: 1px solid #141414;
+}
+.controlador-vis input[type=checkbox]:hover + label .nombre-variable, .controlador-vis input[type=radio]:hover + label .nombre-variable {
   color: #141414;
 }
-.controlador-vis:hover .nombre-variable {
+.controlador-vis input[type=checkbox]:checked:not(:hover) + label, .controlador-vis input[type=radio]:checked:not(:hover) + label {
+  background: transparent;
+}
+.controlador-vis input[type=checkbox]:disabled + label, .controlador-vis input[type=radio]:disabled + label {
+  cursor: default;
+  box-shadow: inset 0 0 0 1px #AAAAAA;
+}
+.controlador-vis input[type=checkbox]:disabled + label:before, .controlador-vis input[type=radio]:disabled + label:before {
+  box-shadow: inset 0 0 0 1px #AAAAAA;
+}
+.controlador-vis input[type=checkbox]:disabled + label:hover, .controlador-vis input[type=radio]:disabled + label:hover {
+  background: transparent;
+}
+.controlador-vis input[type=checkbox]:disabled + label .figura-variable.muestra, .controlador-vis input[type=radio]:disabled + label .figura-variable.muestra {
+  background: #DDDDDD;
+  border: 1px solid #AAAAAA;
+}
+.controlador-vis input[type=checkbox]:disabled + label .nombre-variable, .controlador-vis input[type=radio]:disabled + label .nombre-variable {
+  color: #AAAAAA;
+}
+.controlador-vis input[type=checkbox]:checked + label:after {
+  left: auto;
+  color: var(--tipografia-color);
+  line-height: 1rem;
+  min-width: calc(var(--controlador-vis-control-alto) - 1px);
+  min-height: calc(var(--controlador-vis-control-alto) - 1px);
+  text-align: center;
+  margin-top: max(1px, (var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) / 2);
+}
+.controlador-vis input[type=checkbox]:checked:hover:checked:not(:disabled) + label:after {
   color: #141414;
+}
+.controlador-vis input[type=checkbox]:checked:disabled + label:after {
+  color: #AAAAAA;
+}
+.controlador-vis input[type=radio]:checked + label:before {
+  box-shadow: inset 0 0 0 0.375rem var(--input-controles-color);
+}
+.controlador-vis.sin-figura input[type=checkbox] + label .figura-variable, .controlador-vis.sin-figura input[type=radio] + label .figura-variable {
+  display: none;
 }
 
 .borde {
