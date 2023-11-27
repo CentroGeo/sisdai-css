@@ -10,7 +10,7 @@ $color-gobmx: (
 $color-conahcyt: (
   'oscuro-1': #002663,
   'oscuro-2': #003384,
-  'claro-0': #DDDDDD4c,
+  'claro-0': #F5F5F5,
   'claro-1': #DDDDDD,
   'claro-2': #AAAAAA,
   'acento': #13aff0,
@@ -137,7 +137,7 @@ $columnas: (
   --tipografia-tamanio: 16px;
 
   --pagina-fondo: #ffffff;
-  --nota-fondo: #CCE1FF4c;
+  --nota-fondo: #F0F6FF;
   
   // Tipografia
   --tipografia-color: #141414;
@@ -158,7 +158,7 @@ $columnas: (
   --sombra-hover: #0000001a;
 
   // Detalles
-  --detalle-fondo: #CCE1FF4c;
+  --detalle-fondo: #F0F6FF;
   --detalle-focus-sombra: #005DFF;
 
   // Boton primario
@@ -198,7 +198,7 @@ $columnas: (
         --boton-secundario-focus-color: #364A69;
         --boton-secundario-focus-sombra: #005DFF;
 
-  // Elementos de forumlario
+  // Elementos de formulario
   --label-color: #5E7392;
   --input-fondo: transparent;
   --input-color: #141414;
@@ -218,16 +218,16 @@ $columnas: (
     </svg>');
 
   // Tablas
-  --tabla-fondo-impar: #CCE1FF4c;
+  --tabla-fondo-impar: #F0F6FF;
   --tabla-fondo-notas: #CCE1FF;
 
   // Tarjetas
-  --tarjetas-fondo: #DDDDDD4c;
+  --tarjetas-fondo: #F5F5F5;
   --tarjetas-color: #141414;
   --tarjetas-externas-color: #ffffff;
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
   --tarjetas-internas-color: #141414;
-  --tarjetas-internas-fondo: #DDDDDD4c;
+  --tarjetas-internas-fondo: #F5F5F5;
     --tarjetas-interna-fondo-hover: #DDDDDD;
 
   --tarjetas-simplificada-fondo: #FFFFFF;
@@ -241,7 +241,7 @@ $columnas: (
       --tarjeta-simplificada-color-focus: #FFFFFF;
       --tarjeta-simplificada-contorno-focus: #005DFF;
       --tarjeta-simplificada-sombra-focus: #005DFF;
-  --tarjetas-contenido-simplificada-fondo: #DDDDDD4c;
+  --tarjetas-contenido-simplificada-fondo: #F5F5F5;
   --tarjetas--contenido-simplificada-color: #141414;
 
   // Portada
@@ -252,16 +252,16 @@ $columnas: (
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #002663;
   --navegacion-conahcyt-fondo-icono: #002663;
-  --navegacion-conahcyt-fondo-hover: #DDDDDD4c;
+  --navegacion-conahcyt-fondo-hover: #F5F5F5;
   
   // Navegacion secundaria
   --menu-lateral-color: #102543;
-  --menu-lateral-fondo: #CCE1FFB2;
+  --menu-lateral-fondo: #DBEAFF;
   --menu-lateral-accion: #0068FF;
     --menu-lateral-accion-fondo-hover: #CCE1FF;
-      --menu-lateral-accion-fondo-active: #ffffffcc;
+      --menu-lateral-accion-fondo-active: #F8FBFF;
       --menu-lateral-accion-sombra-active: #0068FF;
-  --submenu-lateral-fondo-mov: #CCE1FFB2;
+  --submenu-lateral-fondo-mov: #DBEAFF;
   --submenu-lateral-fondo-colapsable: #CCE1FF;
 
   // Acciones
