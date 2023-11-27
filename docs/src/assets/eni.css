@@ -2323,7 +2323,7 @@ select {
   margin-right: 6px;
 }
 .controlador-vis label .figura-variable.muestra {
-  background: #7E8CF5;
+  background: #7e8cf5;
   border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
   border-radius: 50%;
 }
@@ -2332,10 +2332,12 @@ select {
   display: inline-flex;
   align-items: center;
 }
-.controlador-vis input[type=checkbox] + label, .controlador-vis input[type=radio] + label {
+.controlador-vis input[type=checkbox] + label,
+.controlador-vis input[type=radio] + label {
   padding-left: 16px;
 }
-.controlador-vis input[type=checkbox] + label:before, .controlador-vis input[type=radio] + label:before {
+.controlador-vis input[type=checkbox] + label:before,
+.controlador-vis input[type=radio] + label:before {
   box-shadow: inset 0 0 0 1px var(--tipografia-color);
   position: static;
   min-width: var(--controlador-vis-control-alto);
@@ -2343,34 +2345,43 @@ select {
   margin-top: max(1px, (var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) / 2);
   margin-right: 8px;
 }
-.controlador-vis input[type=checkbox]:hover + label:before, .controlador-vis input[type=radio]:hover + label:before {
+.controlador-vis input[type=checkbox]:hover + label:before,
+.controlador-vis input[type=radio]:hover + label:before {
   box-shadow: inset 0 0 0 1px #141414;
 }
-.controlador-vis input[type=checkbox]:hover + label .figura-variable.muestra, .controlador-vis input[type=radio]:hover + label .figura-variable.muestra {
+.controlador-vis input[type=checkbox]:hover + label .figura-variable.muestra,
+.controlador-vis input[type=radio]:hover + label .figura-variable.muestra {
   border: 1px solid #141414;
 }
-.controlador-vis input[type=checkbox]:hover + label .nombre-variable, .controlador-vis input[type=radio]:hover + label .nombre-variable {
+.controlador-vis input[type=checkbox]:hover + label .nombre-variable,
+.controlador-vis input[type=radio]:hover + label .nombre-variable {
   color: #141414;
 }
-.controlador-vis input[type=checkbox]:checked:not(:hover) + label, .controlador-vis input[type=radio]:checked:not(:hover) + label {
+.controlador-vis input[type=checkbox]:checked:not(:hover) + label,
+.controlador-vis input[type=radio]:checked:not(:hover) + label {
   background: transparent;
 }
-.controlador-vis input[type=checkbox]:disabled + label, .controlador-vis input[type=radio]:disabled + label {
+.controlador-vis input[type=checkbox]:disabled + label,
+.controlador-vis input[type=radio]:disabled + label {
   cursor: default;
-  box-shadow: inset 0 0 0 1px #AAAAAA;
+  box-shadow: inset 0 0 0 1px #aaaaaa;
 }
-.controlador-vis input[type=checkbox]:disabled + label:before, .controlador-vis input[type=radio]:disabled + label:before {
-  box-shadow: inset 0 0 0 1px #AAAAAA;
+.controlador-vis input[type=checkbox]:disabled + label:before,
+.controlador-vis input[type=radio]:disabled + label:before {
+  box-shadow: inset 0 0 0 1px #aaaaaa;
 }
-.controlador-vis input[type=checkbox]:disabled + label:hover, .controlador-vis input[type=radio]:disabled + label:hover {
+.controlador-vis input[type=checkbox]:disabled + label:hover,
+.controlador-vis input[type=radio]:disabled + label:hover {
   background: transparent;
 }
-.controlador-vis input[type=checkbox]:disabled + label .figura-variable.muestra, .controlador-vis input[type=radio]:disabled + label .figura-variable.muestra {
-  background: #DDDDDD;
-  border: 1px solid #AAAAAA;
+.controlador-vis input[type=checkbox]:disabled + label .figura-variable.muestra,
+.controlador-vis input[type=radio]:disabled + label .figura-variable.muestra {
+  background: #dddddd;
+  border: 1px solid #aaaaaa;
 }
-.controlador-vis input[type=checkbox]:disabled + label .nombre-variable, .controlador-vis input[type=radio]:disabled + label .nombre-variable {
-  color: #AAAAAA;
+.controlador-vis input[type=checkbox]:disabled + label .nombre-variable,
+.controlador-vis input[type=radio]:disabled + label .nombre-variable {
+  color: #aaaaaa;
 }
 .controlador-vis input[type=checkbox]:checked + label:after {
   left: auto;
@@ -2385,12 +2396,13 @@ select {
   color: #141414;
 }
 .controlador-vis input[type=checkbox]:checked:disabled + label:after {
-  color: #AAAAAA;
+  color: var(--tipografia-color);
 }
 .controlador-vis input[type=radio]:checked + label:before {
   box-shadow: inset 0 0 0 0.375rem var(--input-controles-color);
 }
-.controlador-vis.sin-figura input[type=checkbox] + label .figura-variable, .controlador-vis.sin-figura input[type=radio] + label .figura-variable {
+.controlador-vis.sin-figura input[type=checkbox] + label .figura-variable,
+.controlador-vis.sin-figura input[type=radio] + label .figura-variable {
   display: none;
 }
 
