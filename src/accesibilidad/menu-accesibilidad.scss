@@ -32,7 +32,6 @@
   }
 
   .menu-accesibilidad {
-    // background: #f6f6f6;
     background-color: var(--nota-fondo);
     box-shadow: 0 4px 8px 0 var(--sombra);
     padding: 0;
@@ -53,7 +52,6 @@
       font-weight: 600;
       margin-bottom: 0;
       font-size: 16px;
-      // color: #141414;
       color: var(--menu-lateral-color);
     }
 
@@ -80,7 +78,6 @@
       margin-right: 0;
 
       &:hover {
-        // background: #dddddd;
         background: var(--boton-secundario-hover-fondo);
       }
       &:focus {
