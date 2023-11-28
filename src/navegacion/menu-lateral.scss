@@ -1,5 +1,5 @@
 .menu-lateral-contenedor {
-    margin: 0;
+    margin: 16px 0 0 0;
     padding: 0;
     position: sticky;
     top: 100px;
@@ -87,6 +87,9 @@
         background: var(--menu-lateral-accion-fondo-active);
         box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
         color: var(--menu-lateral-accion);
+      }
+      &:focus-visible {
+        outline: none;
       }
     }
   }

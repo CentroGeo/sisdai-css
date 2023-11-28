@@ -45,6 +45,7 @@
     </div>
   </div>
   
+  <h2 class="m-t-10">Checkbox</h2>
   <div class="grid">
     <div class="columna-4">
       <input id="checkbox1" type="checkbox" name="checkboxes1">
@@ -55,21 +56,8 @@
       <label for="checkbox3">Checkbox 2</label>
     </div>
   </div>
-  <div class="grid">
-    <div class="columna-8">
-      <span class="controlador-vis">
-        <span class="figura-variable"></span>
-        <input id="control_1" type="checkbox">
-        <label class="nombre-variable" for="control_1">Etiqueta de texto</label>
-      </span>
-      <span class="controlador-vis">
-        <span class="figura-variable disabled"></span>
-        <input id="control_2" type="checkbox" disabled>
-        <label class="nombre-variable" for="control_2">Etiqueta de texto</label>
-        <span class="info-variable"></span>
-      </span>
-    </div>
-  </div>
+
+  <h2 class="m-t-10">Radios</h2>
   <div class="grid">
     <div class="columna-4">
       <input id="radio1" type="radio" name="radioses1">
@@ -80,9 +68,120 @@
       <label for="radio3">Radio 3</label>
     </div>
   </div>
-  <div class="m-t-3 m-b-10">
-    <button type="button" class="boton-primario">Enviar</button>
-    <button type="button" class="boton-secundario">Cancelar</button>
+
+  <h2 class="m-t-10">controlador-vis</h2>
+  <div class="grid">
+    <div class="columna-16">
+      <!-- <ControladorVis deshabilitado encendido /> -->
+      <span class="controlador-vis">
+        <input id="control_check_1.1" type="checkbox">
+        <label for="control_check_1.1">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+      <!-- <ControladorVis deshabilitado sinSimbolo /> -->
+      <span class="controlador-vis sin-figura">
+        <input id="control_check_1.2" type="checkbox">
+        <label for="control_check_1.2">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+      <!-- <ControladorVis sinControl /> -->
+      <span class="controlador-vis">
+        <input id="control_check_1.3" type="checkbox" disabled>
+        <label for="control_check_1.3">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+      <!-- <ControladorVis simbolo="30px" /> -->
+      <span class="controlador-vis">
+        <input id="control_check_1.4" type="checkbox" checked disabled>
+        <label for="control_check_1.4">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="columna-16">
+      <span class="controlador-vis">
+        <input id="control_radio_1.1" type="radio" name="radio-control-vis">
+        <label for="control_radio_1.1">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+      <span class="controlador-vis">
+        <input id="control_radio_1.2" type="radio" name="radio-control-vis">
+        <label for="control_radio_1.2">
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+      <span class="controlador-vis">
+        <input id="control_radio_1.3" type="radio" name="radio-control-vis" disabled>
+        <label for="control_radio_1.3">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+      <span class="controlador-vis">
+        <input id="control_radio_1.4" type="radio" name="radio-control-vis" disabled checked>
+        <label for="control_radio_1.4">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">Valor nomenclatura</span>
+        </label>
+      </span>
+    </div>
+  </div>
+  <p>En estos ejemplos se usa la clase .muestra en el elemento que contiene la figura para mostrar como se vé el símbolo de una nomenclatura. Puede precendír de esta clase o customizarla para dar forma a los simbolos necesarios.</p>
+
+  <h3>Tamaños</h3>
+  <p>La clase `.controlador-vis` contiene la variable `--controlador-vis-figura-alto`, la cual se puede usar para modificar el tamaño de la figura.</p>
+  <div class="grid">
+    <div class="columna-4">
+      <span class="controlador-vis grande">
+        <input id="control_check_2.1" type="checkbox">
+        <label for="control_check_2.1">
+          <span class="figura-variable icono-visualizador icono-4" />
+          <span class="nombre-variable">Icono grande</span>
+        </label>
+      </span>
+      </div>
+      <div class="columna-4">
+      <span class="controlador-vis chica">
+        <input id="control_check_2.2" type="checkbox">
+        <label for="control_check_2.2">
+          <span class="figura-variable icono-visualizador icono-1" />
+          <span class="nombre-variable">Icono chico</span>
+        </label>
+      </span>
+    </div>
+    <div class="columna-4">
+      <span class="controlador-vis grande">
+        <input id="control_check_2.3" type="checkbox">
+        <label for="control_check_2.3">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto ullam, quibusdam adipisci maiores inventore! Eum at voluptates deserunt iure, veritatis dolore atque mollitia quidem esse nemo consectetur, doloremque dolorum?
+          </span>
+        </label>
+      </span>
+    </div>
+    <div class="columna-4">
+      <span class="controlador-vis chica">
+        <input id="control_check_2.4" type="checkbox">
+        <label for="control_check_2.4">
+          <span class="figura-variable muestra" />
+          <span class="nombre-variable">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, illum similique quos neque rem hic aut minima quibusdam eaque. Cupiditate eligendi reprehenderit dignissimos, recusandae laboriosam iste facere officiis ut est.
+          </span>
+        </label>
+      </span>
+    </div>
   </div>
 
   <h2 class="m-t-10">Fielset</h2>
@@ -152,3 +251,14 @@
   </div>
 
 </template>
+
+<style lang="scss">
+.controlador-vis{
+  &.grande {
+    --controlador-vis-figura-alto: 32px;
+  }
+  &.chica {
+    --controlador-vis-figura-alto: 8px;
+  }
+}
+</style>

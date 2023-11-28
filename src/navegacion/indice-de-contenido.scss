@@ -40,6 +40,9 @@
         color: var(--menu-lateral-accion);
         box-shadow: none;
       }
+      &:focus-visible {
+        outline: none;
+      }
       &.link-activo,
       &.router-link-exact-active {
         background: var(--menu-lateral-accion-fondo-active);

@@ -32,7 +32,7 @@
   }
 
   .menu-accesibilidad {
-    background: #f6f6f6;
+    background-color: var(--nota-fondo);
     box-shadow: 0 4px 8px 0 var(--sombra);
     padding: 0;
     overflow: hidden;
@@ -44,6 +44,7 @@
     .titulo,
     .opcion-accesibilidad {
       padding: 4px 16px;
+      color: var(--menu-lateral-color);
     }
 
     .titulo {
@@ -51,12 +52,17 @@
       font-weight: 600;
       margin-bottom: 0;
       font-size: 16px;
-      color: #141414;
+      color: var(--menu-lateral-color);
     }
 
     hr {
       margin: 4px 16px;
       overflow: hidden;
+      border-top: 1px solid var(--menu-lateral-color);
+    }
+
+    .controlador-vis {
+      
     }
 
     .opcion-accesibilidad {
@@ -71,8 +77,13 @@
       text-align: left;
       margin-right: 0;
 
-      &:hover, &:focus {
-        background: #dddddd;
+      &:hover {
+        background: var(--boton-secundario-hover-fondo);
+      }
+      &:focus {
+        background: var(--boton-secundario-hover-fondo);
+        border: 1px solid var(--boton-secundario-focus-borde);
+        box-shadow: 0 0 8px var(--boton-secundario-focus-sombra);
       }
 
       .icono-4 {

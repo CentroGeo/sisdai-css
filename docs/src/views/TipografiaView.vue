@@ -56,7 +56,7 @@
       <h6>h6</h6>
     </div>
     <div class="columna-2">
-      <p>1rem<br />16px</p>
+      <p>1.125rem<br />18px</p>
     </div>
   </div>
 
@@ -713,6 +713,7 @@
         14px <br />
         Regular (400) <br />
         Interlineado 1.2em
+        #5E7392 
       </p>
     </div>
     <div class="columna-2">
@@ -722,6 +723,7 @@
         14px <br />
         Regular (400) <br />
         Interlineado 1.2em
+        #5E7392 
       </p>
     </div>
     <!-- Nomenclatura-->

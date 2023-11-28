@@ -183,5 +183,6 @@
   padding: 12px;
   &:focus {
     transform: translateY(0%);
+    border:0 solid var(--hipervinculo-focus-sombra);
   }
 }
