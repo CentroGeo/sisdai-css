@@ -2310,7 +2310,7 @@ select {
   --controlador-vis-figura-borde: 1px;
 }
 .controlador-vis label {
-  padding: 9px 16px;
+  padding: 8px 16px;
   margin: 0;
   display: inline-flex;
 }
@@ -2319,7 +2319,7 @@ select {
   max-width: calc(var(--controlador-vis-figura-alto));
   min-height: calc(var(--controlador-vis-figura-alto));
   max-height: calc(var(--controlador-vis-figura-alto));
-  margin-top: max(0px, (var(--controlador-vis-control-alto) - var(--controlador-vis-figura-alto)) / 2 + 1px);
+  margin-top: max(0px, (var(--controlador-vis-control-alto) - var(--controlador-vis-figura-alto)) / 2 + 0px);
   margin-right: 6px;
 }
 .controlador-vis label .figura-variable.muestra {
@@ -2387,8 +2387,8 @@ select {
   left: auto;
   color: var(--tipografia-color);
   line-height: 1rem;
-  min-width: calc(var(--controlador-vis-control-alto) - 1px);
-  min-height: calc(var(--controlador-vis-control-alto) - 1px);
+  min-width: var(--controlador-vis-control-alto);
+  min-height: var(--controlador-vis-control-alto);
   text-align: center;
   margin-top: max(1px, (var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) / 2);
 }
