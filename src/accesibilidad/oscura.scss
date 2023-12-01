@@ -166,7 +166,7 @@
 
 :root[data-dark-theme-gema='true'] {
   --color-0: #412110;
-  --color-1: #4C2C1B;
+  --color-1: #4c2c1b;
   --color-2: #ffffff;
   --color-3: #141414;
   --color-4: #f4a762;
@@ -183,23 +183,19 @@
   --color-15: #002663;
   --color-16: #00000032;
   --color-17: #003384;
-  --color-18: #674736b2;
-  --color-19: #412110cb;
-  --color-20: #364a69b2;
-  --color-21: #66a5fe;
-  --color-22: #172136;
-  --color-23: #ff6969;
-  --color-24: #341116;
-  --color-25: #ffdc69;
-  --color-26: #201c11;
-  --color-27: #1bd97c;
-  --color-28: #0d2619;
-  --color-29: #364a69;
-  --color-30: #8999cc;
-  --color-31: #cf99ff;
-  --pagina-fondo: #412110;
-  --nota-fondo: #6747364c;
-  
+  --color-18: #5b3b2a;
+  --color-19: #462614;
+  --color-20: #66a5fe;
+  --color-21: #172136;
+  --color-22: #ff6969;
+  --color-23: #341116;
+  --color-24: #ffdc69;
+  --color-25: #201c11;
+  --color-26: #1bd97c;
+  --color-27: #0d2619;
+  --color-28: #364a69;
+  --color-29: #8999cc;
+  --color-30: #cf99ff;
   --pagina-fondo: var( --color-0 );
   --nota-fondo: var( --color-1 );
   --tipografia-color: var( --color-2 );
@@ -214,7 +210,7 @@
   --sombra: var( --color-2 );
   --sombra-focus: var( --color-5 );
   --sombra-hover: var( --color-6 );
-  --detalle-fondo: var( --color-7 );
+  --detalle-fondo: var( --color-1 );
   --detalle-focus-sombra: var( --color-8 );
   --boton-primario-fondo: var( --color-4 );
   --boton-primario-borde: var( --color-4 );
@@ -291,25 +287,25 @@
   --menu-lateral-accion-fondo-hover: var( --color-6 );
   --menu-lateral-accion-fondo-active: var( --color-19 );
   --menu-lateral-accion-sombra-active: var( --color-4 );
-  --submenu-lateral-fondo-mov: var( --color-20 );
+  --submenu-lateral-fondo-mov: var( --color-18 );
   --submenu-lateral-fondo-colapsable: var( --color-6 );
-  --acciones-informativo: var( --color-21 );
-  --acciones-informativo-2: var( --color-22 );
-  --acciones-error: var( --color-23 );
-  --acciones-error-2: var( --color-24 );
-  --acciones-advertencia: var( --color-25 );
-  --acciones-advertencia-2: var( --color-26 );
-  --acciones-correcto: var( --color-27 );
-  --acciones-correcto-2: var( --color-28 );
+  --acciones-informativo: var( --color-20 );
+  --acciones-informativo-2: var( --color-21 );
+  --acciones-error: var( --color-22 );
+  --acciones-error-2: var( --color-23 );
+  --acciones-advertencia: var( --color-24 );
+  --acciones-advertencia-2: var( --color-25 );
+  --acciones-correcto: var( --color-26 );
+  --acciones-correcto-2: var( --color-27 );
   --hipervinculo-color: var( --color-8 );
   --hipervinculo-sombra: var( --color-9 );
-  --hipervinculo-deshabilitado-color: var( --color-29 );
+  --hipervinculo-deshabilitado-color: var( --color-28 );
   --hipervinculo-deshabilitado-sombra: var( --color-9 );
-  --hipervinculo-hover-color: var( --color-30 );
+  --hipervinculo-hover-color: var( --color-29 );
   --hipervinculo-hover-sombra: var( --color-9 );
   --hipervinculo-focus-color: var( --color-8 );
   --hipervinculo-focus-sombra: var( --color-8 );
-  --hipervinculo-visitado: var( --color-31 );
+  --hipervinculo-visitado: var( --color-30 );
 
   --input-select-svg: url('data:image/svg+xml,\
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\

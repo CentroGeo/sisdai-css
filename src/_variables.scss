@@ -325,7 +325,7 @@ $columnas: (
 
 :root[data-light-theme-gema='true']  {
   --color-0: #ffffff;
-  --color-1: #FFF5F0;
+  --color-1: #fff5f0;
   --color-2: #141414;
   --color-3: #cc4b14;
   --color-4: #90705f;
@@ -338,12 +338,12 @@ $columnas: (
   --color-11: #0000001a;
   --color-12: #674736;
   --color-13: #fdddcc;
-  --color-14: #dddddd4c;
+  --color-14: #f5f5f5;
   --color-15: #00000032;
   --color-16: #002663;
   --color-17: #412110;
-  --color-18: #fdddccb2;
-  --color-19: #ffffffcc;
+  --color-18: #fde7db;
+  --color-19: #fefaf8;
   --color-20: #19439c;
   --color-21: #ecf2ff;
   --color-22: #940b1c;
@@ -354,7 +354,6 @@ $columnas: (
   --color-27: #e7fbf1;
   --color-28: #356ccc;
   --color-29: #9233ff;
-
   --pagina-fondo: var( --color-0 );
   --nota-fondo: var( --color-1 );
   --tipografia-color: var( --color-2 );
@@ -369,7 +368,7 @@ $columnas: (
   --sombra: var( --color-2 );
   --sombra-focus: var( --color-5 );
   --sombra-hover: var( --color-6 );
-  --detalle-fondo: var( --color-0 );
+  --detalle-fondo: var( --color-1 );
   --detalle-focus-sombra: var( --color-7 );
   --boton-primario-fondo: var( --color-3 );
   --boton-primario-borde: var( --color-3 );
