@@ -12,14 +12,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/salsa-community/sisdai-css.git"
+    "url": "git+https://codigo.conahcyt.mx/sisdai/sisdai-css.git"
   },
-  "author": "",
-  "license": "",
   "bugs": {
-    "url": "https://github.com/salsa-community/sisdai-css/issues"
+    "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css/issues"
   },
-  "homepage": "https://github.com/salsa-community/sisdai-css#readme",
+  "homepage": "https://codigo.conahcyt.mx/sisdai/sisdai-css/#readme",
   "dependencies": {
     "sass": "1.49.10"
   },
