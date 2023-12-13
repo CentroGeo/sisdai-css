@@ -2,6 +2,7 @@
   "name": "sisdai-css",
   "version": "0.39.4",
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
+  "license": "LGPL-3.0-only",
   "main": "src/eni.scss",
   "scripts": {
     "build": "sass src/eni.scss:dist/eni.min.css --style compressed",
@@ -29,5 +30,9 @@
   ],
   "devDependencies": {
     "concurrently": "7.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css"
   }
 }
