@@ -64,8 +64,8 @@
     a {
       display: block;
       border-radius: 0;
-      padding: map-get($espaciado, '1')
-        map-get($contenedores, 'mov', 'margen-interior');
+      /*padding: map-get($espaciado, '1')
+        map-get($contenedores, 'mov', 'margen-interior');*/
       text-decoration: none;
       background: transparent;
       color: var(--menu-lateral-color);
@@ -119,9 +119,9 @@
         max-height: inherit;
         width: inherit;
       }
-      a {
+      /*a {
         padding: map-get($espaciado, '1')
           map-get($contenedores, 'esc', 'margen-interior');
-      }
+      }*/
     }
   }
