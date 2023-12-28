@@ -327,7 +327,7 @@ $columnas: (
   --tipografia-tamanio: 16px;
 
   --pagina-fondo: #ffffff;
-  --nota-fondo: #DBD0FB4c;
+  --nota-fondo: #F4F1FE;
   
   // Tipografia
   --tipografia-color: #141414;
@@ -348,7 +348,7 @@ $columnas: (
   --sombra-hover: #0000001a;
 
   // Detalles
-  --detalle-fondo: #DBD0FB4c;
+  --detalle-fondo: #F4F1FE;
   --detalle-focus-sombra: #005DFF;
 
   // Boton primario
@@ -408,16 +408,16 @@ $columnas: (
     </svg>');
 
   // Tablas
-  --tabla-fondo-impar: #DBD0FB4c;
+  --tabla-fondo-impar: #F4F1FE;
   --tabla-fondo-notas: #DBD0FB;
 
   // Tarjetas
-  --tarjetas-fondo: #DDDDDD4c;
+  --tarjetas-fondo: #F5F5F5;
   --tarjetas-color: #141414;
   --tarjetas-externas-color: #ffffff;
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
   --tarjetas-internas-color: #141414;
-  --tarjetas-internas-fondo: #DDDDDD4c;
+  --tarjetas-internas-fondo: #F5F5F5;
     --tarjetas-interna-fondo-hover: #DDDDDD;
 
   --tarjetas-simplificada-fondo: #FFFFFF;
@@ -431,7 +431,7 @@ $columnas: (
       --tarjeta-simplificada-color-focus: #FFFFFF;
       --tarjeta-simplificada-contorno-focus: #005DFF;
       --tarjeta-simplificada-sombra-focus: #005DFF;
-  --tarjetas-contenido-simplificada-fondo: #DDDDDD4c;
+  --tarjetas-contenido-simplificada-fondo: #F5F5F5;
   --tarjetas--contenido-simplificada-color: #141414;
 
   // Portada
@@ -442,16 +442,16 @@ $columnas: (
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #002663;
   --navegacion-conahcyt-fondo-icono: #002663;
-  --navegacion-conahcyt-fondo-hover: #DDDDDD4c;
+  --navegacion-conahcyt-fondo-hover: #F5F5F5;
   
   // Navegacion secundaria
   --menu-lateral-color: #201540;
-  --menu-lateral-fondo: #DBD0FBB2;
+  --menu-lateral-fondo: #E4DEFC;
   --menu-lateral-accion: #0068FF;
     --menu-lateral-accion-fondo-hover: #DBD0FB;
-      --menu-lateral-accion-fondo-active: #FFFFFFcc;
+      --menu-lateral-accion-fondo-active: #FEFAF8;
       --menu-lateral-accion-sombra-active: #0068FF;
-  --submenu-lateral-fondo-mov: #DBD0FBB2;
+  --submenu-lateral-fondo-mov: #F4F1FE;
   --submenu-lateral-fondo-colapsable: #DBD0FB;
 
   // Acciones

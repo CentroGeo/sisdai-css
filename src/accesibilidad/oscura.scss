@@ -162,7 +162,7 @@
 
 :root[data-dark-theme-sisdai='true'] {
   --pagina-fondo: #201540;
-  --nota-fondo: #453B674c;
+  --nota-fondo: #2B204C;
   
   // Tipografia
   --tipografia-color: #ffffff;
@@ -183,7 +183,7 @@
   --sombra-hover: #0000001a;
 
   // Detalles
-  --detalle-fondo: #453B674c;
+  --detalle-fondo: #2B204C;
   --detalle-focus-sombra: #668BFF;
 
   // Boton primario
@@ -243,16 +243,16 @@
     </svg>');
 
   // Tablas
-  --tabla-fondo-impar: #453B674c;
+  --tabla-fondo-impar: #2B204C;
   --tabla-fondo-notas: #453B67;
 
   // Tarjetas
-  --tarjetas-fondo: #453B674c;
+  --tarjetas-fondo: #2B204C;
   --tarjetas-color: #ffffff;
   --tarjetas-externas-color: #141414;
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, #102543f1 0%, #10254396 60%, #10254300 100%);
   --tarjetas-internas-color: #FFFFFF;
-  --tarjetas-internas-fondo: #453B674c;
+  --tarjetas-internas-fondo: #2B204C;
     --tarjetas-interna-fondo-hover: #453B67;
 
   --tarjetas-simplificada-fondo: #201540;
@@ -266,7 +266,7 @@
       --tarjeta-simplificada-color-focus: #201541;
       --tarjeta-simplificada-contorno-focus: #668BFF;
       --tarjeta-simplificada-sombra-focus: #668BFF;
-  --tarjetas-contenido-simplificada-fondo: #453B674c;
+  --tarjetas-contenido-simplificada-fondo: #2B204C;
   --tarjetas--contenido-simplificada-color: #FFFFFF;
 
   // Portada
@@ -290,12 +290,12 @@
   
   // Navegacion secundaria
   --menu-lateral-color: #FFFFFF;
-  --menu-lateral-fondo: #453B67B2;
+  --menu-lateral-fondo: #3A2F5B;
   --menu-lateral-accion: #9674E1;
     --menu-lateral-accion-fondo-hover: #453B67;
-      --menu-lateral-accion-fondo-active: #201540cb;
+      --menu-lateral-accion-fondo-active: #1F143F;
       --menu-lateral-accion-sombra-active: #9674E1;
-  --submenu-lateral-fondo-mov: #453B67B2;
+  --submenu-lateral-fondo-mov: #3A2F5B;
   --submenu-lateral-fondo-colapsable: #453B67;
 
   // Acciones
