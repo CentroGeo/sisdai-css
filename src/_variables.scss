@@ -327,13 +327,13 @@ $columnas: (
   --tipografia-tamanio: 16px;
 
   --pagina-fondo: #ffffff;
-  --nota-fondo: #F0F6FF;
+  --nota-fondo: #DBD0FB4c;
   
   // Tipografia
   --tipografia-color: #141414;
   --tipografia-color-1: #ffffff;
-  --tipografia-color-2: #0068FF;
-  --tipografia-color-3: #5E7392;
+  --tipografia-color-2: #3F17E4;
+  --tipografia-color-3: #6E6380;
 
   // Bordes
   --borde-color-1: #141414;
@@ -348,23 +348,23 @@ $columnas: (
   --sombra-hover: #0000001a;
 
   // Detalles
-  --detalle-fondo: #F0F6FF;
+  --detalle-fondo: #DBD0FB4c;
   --detalle-focus-sombra: #005DFF;
 
   // Boton primario
-  --boton-primario-fondo: #0068FF;
-  --boton-primario-borde: #0068FF;
+  --boton-primario-fondo: #3F17E4;
+  --boton-primario-borde: #3F17E5;
   --boton-primario-color: #ffffff;
   --boton-primario-sombra: transparent;
     --boton-primario-deshabilitado-fondo: #dddddd;
     --boton-primario-deshabilitado-borde: #dddddd;
     --boton-primario-deshabilitado-color: #767677;
     --boton-primario-deshabilitado-sombra: transparent;
-      --boton-primario-hover-fondo: #0058CC;
-      --boton-primario-hover-borde: #0058CC;
+      --boton-primario-hover-fondo: #2B13B1;
+      --boton-primario-hover-borde: #2B13B1;
       --boton-primario-hover-color: #ffffff;
       --boton-primario-hover-sombra: #0000001a;
-        --boton-primario-focus-fondo: #0058CC;
+        --boton-primario-focus-fondo: #2B13B1;
         --boton-primario-focus-borde: #ffffff;
         --boton-primario-focus-color: #ffffff;
         --boton-primario-focus-sombra: #005DFF;
@@ -372,31 +372,31 @@ $columnas: (
   
   // Boton secundario
   --boton-secundario-fondo: transparent;
-  --boton-secundario-borde: #364A69;
-  --boton-secundario-color: #364A69;
+  --boton-secundario-borde: #453B67;
+  --boton-secundario-color: #453B67;
   --boton-secundario-sombra: transparent;
     --boton-secundario-deshabilitado-fondo: transparent;
     --boton-secundario-deshabilitado-borde: #dddddd;
     --boton-secundario-deshabilitado-color: #AAAAAA;
     --boton-secundario-deshabilitado-sombra: transparent;
       --boton-secundario-hover-fondo: #CCE1FF;
-      --boton-secundario-hover-borde: #364A69;
-      --boton-secundario-hover-color: #364A69;
+      --boton-secundario-hover-borde: #453B67;
+      --boton-secundario-hover-color: #453B67;
       --boton-secundario-hover-sombra: #0000001a;
-        --boton-secundario-focus-fondo: #CCE1FF;
+        --boton-secundario-focus-fondo: #DBD0FB;
         --boton-secundario-focus-borde: #005DFF;
-        --boton-secundario-focus-color: #364A69;
+        --boton-secundario-focus-color: #453B67;
         --boton-secundario-focus-sombra: #005DFF;
 
   // Elementos de formulario
-  --label-color: #5E7392;
+  --label-color: #6E638F;
   --input-fondo: transparent;
   --input-color: #141414;
-  --input-borde: #5E7392;
-  --input-controles-color: #0068FF;
+  --input-borde: #6E638F;
+  --input-controles-color: #3F17E4;
     --input-deshabilitado-fondo: #DDDDDD;
     --input-deshabilitado-color: #AAAAAA;
-      --input-hover: #364A69;
+      --input-hover: #453B67;
         --input-focus: #005DFF;
 
   --input-select-svg: url('data:image/svg+xml,\
@@ -408,16 +408,16 @@ $columnas: (
     </svg>');
 
   // Tablas
-  --tabla-fondo-impar: #F0F6FF;
-  --tabla-fondo-notas: #CCE1FF;
+  --tabla-fondo-impar: #DBD0FB4c;
+  --tabla-fondo-notas: #DBD0FB;
 
   // Tarjetas
-  --tarjetas-fondo: #F5F5F5;
+  --tarjetas-fondo: #DDDDDD4c;
   --tarjetas-color: #141414;
   --tarjetas-externas-color: #ffffff;
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
   --tarjetas-internas-color: #141414;
-  --tarjetas-internas-fondo: #F5F5F5;
+  --tarjetas-internas-fondo: #DDDDDD4c;
     --tarjetas-interna-fondo-hover: #DDDDDD;
 
   --tarjetas-simplificada-fondo: #FFFFFF;
@@ -431,7 +431,7 @@ $columnas: (
       --tarjeta-simplificada-color-focus: #FFFFFF;
       --tarjeta-simplificada-contorno-focus: #005DFF;
       --tarjeta-simplificada-sombra-focus: #005DFF;
-  --tarjetas-contenido-simplificada-fondo: #F5F5F5;
+  --tarjetas-contenido-simplificada-fondo: #DDDDDD4c;
   --tarjetas--contenido-simplificada-color: #141414;
 
   // Portada
@@ -442,17 +442,17 @@ $columnas: (
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #002663;
   --navegacion-conahcyt-fondo-icono: #002663;
-  --navegacion-conahcyt-fondo-hover: #F5F5F5;
+  --navegacion-conahcyt-fondo-hover: #DDDDDD4c;
   
   // Navegacion secundaria
-  --menu-lateral-color: #102543;
-  --menu-lateral-fondo: #DBEAFF;
+  --menu-lateral-color: #201540;
+  --menu-lateral-fondo: #DBD0FBB2;
   --menu-lateral-accion: #0068FF;
-    --menu-lateral-accion-fondo-hover: #CCE1FF;
-      --menu-lateral-accion-fondo-active: #F8FBFF;
+    --menu-lateral-accion-fondo-hover: #DBD0FB;
+      --menu-lateral-accion-fondo-active: #FFFFFFcc;
       --menu-lateral-accion-sombra-active: #0068FF;
-  --submenu-lateral-fondo-mov: #DBEAFF;
-  --submenu-lateral-fondo-colapsable: #CCE1FF;
+  --submenu-lateral-fondo-mov: #DBD0FBB2;
+  --submenu-lateral-fondo-colapsable: #DBD0FB;
 
   // Acciones
   --acciones-informativo: #19439C;
@@ -469,7 +469,7 @@ $columnas: (
   --hipervinculo-sombra: transparent;
   --hipervinculo-deshabilitado-color: #AAAAAA;
   --hipervinculo-deshabilitado-sombra: transparent;
-  --hipervinculo-hover-color: #005DFF;
+  --hipervinculo-hover-color: #356CCC;
   --hipervinculo-hover-sombra: transparent;
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
