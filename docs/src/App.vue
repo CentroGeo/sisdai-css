@@ -2,6 +2,7 @@
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, ref, watch, computed } from 'vue'
   
+  const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
   const isA11yView = ref(null)
   const isA11yUnderline = ref(null)
@@ -10,7 +11,7 @@
   const showMenu = ref(null)
   const showSubmenu1 = ref(null)
 
-  isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
+  isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
   showSubmenu1.value = false
   
 
@@ -54,77 +55,112 @@
     document.documentElement.style.setProperty('--tipografia-tamanio','16')
     // Resetea variable
     isA11yOscura.value = false
-    theme.value = 'light'
+    tema.value = 'clara'
   }
 
-  // Declaración variable reactiva
-  const isA11yOscura = ref(null)
-  // Inicialización
-  isA11yOscura.value = false
   // Módulo de vista oscura
-  const theme = ref(null) 
-  theme.value = 'light' // 'dark' | 'light' | 'auto'
-  const perfil = ref(null) 
-  perfil.value = 'eni' // 'eni' | 'sisdai' | 'gema'
+  const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
+  const perfil = ref('eni') // 'eni' | 'sisdai' | 'gema'
 
   function alternarTema() {
-    //rotar entre estos 3 valores
-    const themes = ['light','dark','auto']
-    theme.value = themes[
-      (themes.indexOf(theme.value) + 1) % 3
+    // rotar entre estos 3 temas
+    const themes = ['clara','oscura','auto']
+    tema.value = themes[
+      (themes.indexOf(tema.value) + 1) % 3
     ]
-
-    localStorage.setItem("theme", theme.value)
   }
+
   function alternarPerfil() {
-    document
-      .documentElement
-      .removeAttribute(`data-dark-theme-${perfil.value}`)
-    //rotar entre estos valores
+    // remueve el atributo para dejar a los otros perfiles
+    document.documentElement.removeAttribute(
+      `data-dark-theme-${perfil.value}`
+    )
+    document.documentElement.removeAttribute(
+      `data-light-theme-${perfil.value}`
+    )
+    // rotar entre estos perfiles
     const perfiles = ['eni', 'sisdai', 'gema']
     perfil.value = perfiles[
       (perfiles.indexOf(perfil.value) + 1) % 3
     ]
   }
-  function setThemeInDocument() {
-    const modoOscuro = ref(
-      (
-        window.matchMedia 
-          && window.matchMedia('(prefers-color-scheme: dark)').matches 
-          && theme.value === 'auto'
-      ) || theme.value === 'dark'
-    )
 
-    document
-    .documentElement
-    .setAttribute(`data-dark-theme-${perfil.value}`, modoOscuro.value)
-    
-    modoOscuro.value === true 
-    ? isA11yOscura.value = true : isA11yOscura.value = false
+  function getTemaDispositivo() {
+    if (
+      (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches &&
+        tema.value === 'auto') ||
+      tema.value === 'oscura'
+    ) {
+      return 'oscura'
+    }
+    return 'clara'
+  }
+
+  function setClaseA11yOscura(temaClaroUOscuro) {
+    temaClaroUOscuro === 'oscura' ? 
+      isA11yOscura.value = true : isA11yOscura.value = false
+  }
+
+  function setTemaEnDocumentoYLocalStorage() {
+    localStorage.setItem("theme", tema.value)
+    let temaClaroUOscuro = getTemaDispositivo()
+
+    // Agrega claseSeleccionada `.a11y-oscura`
+    setClaseA11yOscura(temaClaroUOscuro)
+
+    // Agrega y/o remueve el atributo selecctor para :root
+    switch(temaClaroUOscuro) {
+      case 'clara':
+        document.documentElement.removeAttribute(
+          `data-dark-theme-${perfil.value}`
+        )
+        document.documentElement.removeAttribute(
+          `data-light-theme-${perfil.value}`
+        )
+        document.documentElement.setAttribute(
+          `data-light-theme-${perfil.value}`, 
+          true
+        )
+        break
+      case 'oscura':
+        document.documentElement.removeAttribute(
+          `data-light-theme-${perfil.value}`
+        )
+        document.documentElement.removeAttribute(
+          `data-dark-theme-${perfil.value}`
+        )
+        document.documentElement.setAttribute(
+          `data-dark-theme-${perfil.value}`, 
+          true
+        )
+        break
+    }
   }
   const nombreTemaActual = computed(() => {
     const nombres = {
-      'light':'Claro',
-      'dark':'Oscuro',
+      'clara':'Claro',
+      'oscura':'Oscuro',
       'auto':'Automático'
     }
-    return nombres[theme.value]
+    return nombres[tema.value]
   })
    
   // Hooks cycles
   onBeforeMount(() => {
-    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setThemeInDocument)
+    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setTemaEnDocumentoYLocalStorage)
   })
   onMounted(() => {
-    setThemeInDocument()
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',setThemeInDocument)
+    setTemaEnDocumentoYLocalStorage()
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',setTemaEnDocumentoYLocalStorage)
   })
-  watch([theme, perfil], () => {
-    setThemeInDocument()    
+  watch([perfil, tema], () => {
+    setTemaEnDocumentoYLocalStorage()    
   })
-  if(localStorage.getItem("theme")) {
-    theme.value = localStorage.getItem("theme")
-  }
+
+  // if(localStorage.getItem("theme")) {
+  //   theme.value = localStorage.getItem("theme")
+  // }
   
 </script>
 
@@ -234,8 +270,7 @@
         @click="alternarTema">
         Tema: {{ nombreTemaActual }}
       </button>
-      <button 
-        v-if="nombreTemaActual === 'Oscuro'"
+      <button       
         class="boton-primario" 
         @click="alternarPerfil">
         Perfil: {{ perfil }}
