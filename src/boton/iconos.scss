@@ -28,10 +28,10 @@
   &.boton-sin-borde{
     @extend .boton-secundario;
     border-color:transparent;
-    color:var(--input-controles-color);
+    color:var(--boton-icono-sin-borde-color);
     &:not(:disabled):hover, &:not(:disabled):focus{
       border-color:transparent;
-      color:var(--input-controles-color);
+      color:var(--boton-icono-sin-borde-color);
 
     }
   }

@@ -51,6 +51,7 @@
   --boton-secundario-focus-borde: #005DFF;
   --boton-secundario-focus-color: #364A69;
   --boton-secundario-focus-sombra: #005DFF;
+  --boton-icono-sin-borde-color: #0068FF;
   --label-color: #5E7392;
   --input-fondo: transparent;
   --input-color: #141414;
@@ -1138,11 +1139,11 @@ input[type=reset]:not(:last-child),
 }
 .boton-icono.boton-sin-borde {
   border-color: transparent;
-  color: var(--input-controles-color);
+  color: var(--boton-icono-sin-borde-color);
 }
 .boton-icono.boton-sin-borde:not(:disabled):hover, .boton-icono.boton-sin-borde:not(:disabled):focus {
   border-color: transparent;
-  color: var(--input-controles-color);
+  color: var(--boton-icono-sin-borde-color);
 }
 
 .boton-descarga {
@@ -10276,6 +10277,7 @@ body {
   --boton-secundario-focus-borde: #668BFF;
   --boton-secundario-focus-color: #B1C6E4;
   --boton-secundario-focus-sombra: #668BFF;
+  --boton-icono-sin-borde-color: #6692FF;
   --label-color: #889DBB;
   --input-fondo: transparent;
   --input-color: #ffffff;
