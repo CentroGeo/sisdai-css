@@ -25,4 +25,14 @@
   &.boton-grande {
     font-size: 2rem;
   }
+  &.boton-sin-borde{
+    @extend .boton-secundario;
+    border-color:transparent;
+    color:var(--input-controles-color);
+    &:not(:disabled):hover, &:not(:disabled):focus{
+      border-color:transparent;
+      color:var(--input-controles-color);
+
+    }
+  }
 }
