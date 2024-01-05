@@ -103,6 +103,22 @@
       <span class="a11y-solo-lectura">Siguiente.</span>
     </button>
   </p>
+  <p>boton icono +  sin borde</p>
+  <p>
+    <button class="boton-icono boton-sin-borde ">
+      <span class="icono-flecha-derecha"></span>
+      <span class="a11y-solo-lectura">Siguiente.</span>
+    </button>
+    <button class="boton-icono boton-sin-borde boton-chico">
+      <span class="icono-flecha-derecha"></span>
+      <span class="a11y-solo-lectura">Siguiente.</span>
+    </button>
+    <button class="boton-icono boton-sin-borde boton-grande">
+      <span class="icono-flecha-derecha"></span>
+      <span class="a11y-solo-lectura">Siguiente.</span>
+    </button>
+
+  </p>
 
   <h2 class="m-t-10">Compuestos</h2>
   <div class="grid">

@@ -238,6 +238,7 @@
   --boton-secundario-focus-borde: #005DFF;
   --boton-secundario-focus-color: #364A69;
   --boton-secundario-focus-sombra: #005DFF;
+  --boton-icono-sin-borde-color: #0068FF;
   --label-color: #5E7392;
   --input-fondo: transparent;
   --input-color: #141414;
@@ -1443,27 +1444,27 @@ input[type=reset]:not(:last-child),
   outline: 1px solid var(--boton-primario-focus-contorno);
 }
 
-.boton-secundario {
+.boton-secundario, .boton-icono.boton-sin-borde {
   background-color: var(--boton-secundario-fondo);
   border-color: var(--boton-secundario-borde);
   color: var(--boton-secundario-color);
 }
-.boton-secundario:disabled {
+.boton-secundario:disabled, .boton-icono.boton-sin-borde:disabled {
   background-color: var(--boton-secundario-deshabilitado-fondo);
   border-color: var(--boton-secundario-deshabilitado-borde);
   box-shadow: 3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
   color: var(--boton-secundario-deshabilitado-color);
 }
-.boton-secundario:visited {
+.boton-secundario:visited, .boton-icono.boton-sin-borde:visited {
   color: var(--boton-secundario-color);
 }
-.boton-secundario:not(:disabled):hover {
+.boton-secundario:not(:disabled):hover, .boton-icono.boton-sin-borde:not(:disabled):hover {
   background-color: var(--boton-secundario-hover-fondo);
   border-color: var(--boton-secundario-hover-borde);
   box-shadow: 3px 3px 4px var(--boton-secundario-hover-sombra);
   color: var(--boton-secundario-hover-color);
 }
-.boton-secundario:not(:disabled):focus {
+.boton-secundario:not(:disabled):focus, .boton-icono.boton-sin-borde:not(:disabled):focus {
   background-color: var(--boton-secundario-focus-fondo);
   border-color: var(--boton-secundario-focus-borde);
   box-shadow: 0 0 8px var(--boton-secundario-focus-sombra);
@@ -1506,6 +1507,14 @@ input[type=reset]:not(:last-child),
 }
 .boton-icono.boton-grande {
   font-size: 2rem;
+}
+.boton-icono.boton-sin-borde {
+  border-color: transparent;
+  color: var(--boton-icono-sin-borde-color);
+}
+.boton-icono.boton-sin-borde:not(:disabled):hover, .boton-icono.boton-sin-borde:not(:disabled):focus {
+  border-color: transparent;
+  color: var(--boton-icono-sin-borde-color);
 }
 
 .boton-descarga {
@@ -10758,6 +10767,7 @@ body {
   --boton-secundario-focus-borde: #668BFF;
   --boton-secundario-focus-color: #B1C6E4;
   --boton-secundario-focus-sombra: #668BFF;
+  --boton-icono-sin-borde-color: #6692FF;
   --label-color: #889DBB;
   --input-fondo: transparent;
   --input-color: #ffffff;
@@ -10979,7 +10989,7 @@ body {
 .a11y-oscura .boton-primario span[class*=icono-], .a11y-oscura .boton-icono span[class*=icono-], .a11y-oscura .boton-descarga span[class*=icono-], .a11y-oscura .boton-info span[class*=icono-], .a11y-oscura .ir-contenido-principal span[class*=icono-] {
   color: var(--boton-primario-color);
 }
-.a11y-oscura .boton-secundario span[class*=icono-] {
+.a11y-oscura .boton-secundario span[class*=icono-], .a11y-oscura .boton-icono.boton-sin-borde span[class*=icono-] {
   color: var(--boton-secundario-color);
 }
 .a11y-oscura .boton-conahcyt img {
