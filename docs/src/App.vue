@@ -69,13 +69,13 @@
       (themes.indexOf(tema.value) + 1) % 3
     ]
   }
-
+  const body = document.querySelector("body")
   function alternarPerfil() {
     // remueve el atributo para dejar a los otros perfiles
-    document.documentElement.removeAttribute(
+    body.removeAttribute(
       `data-dark-theme-${perfil.value}`
     )
-    document.documentElement.removeAttribute(
+    body.removeAttribute(
       `data-light-theme-${perfil.value}`
     )
     // rotar entre estos perfiles
@@ -109,28 +109,30 @@
     // Agrega claseSeleccionada `.a11y-oscura`
     setClaseA11yOscura(temaClaroUOscuro)
 
+    
+
     // Agrega y/o remueve el atributo selecctor para :root
     switch(temaClaroUOscuro) {
       case 'clara':
-        document.documentElement.removeAttribute(
+        body.removeAttribute(
           `data-dark-theme-${perfil.value}`
         )
-        document.documentElement.removeAttribute(
+        body.removeAttribute(
           `data-light-theme-${perfil.value}`
         )
-        document.documentElement.setAttribute(
+        body.setAttribute(
           `data-light-theme-${perfil.value}`, 
           true
         )
         break
       case 'oscura':
-        document.documentElement.removeAttribute(
+        body.removeAttribute(
           `data-light-theme-${perfil.value}`
         )
-        document.documentElement.removeAttribute(
+        body.removeAttribute(
           `data-dark-theme-${perfil.value}`
         )
-        document.documentElement.setAttribute(
+        body.setAttribute(
           `data-dark-theme-${perfil.value}`, 
           true
         )
@@ -157,16 +159,20 @@
   watch([perfil, tema], () => {
     setTemaEnDocumentoYLocalStorage()    
   })
-
   // if(localStorage.getItem("theme")) {
   //   theme.value = localStorage.getItem("theme")
   // }
+  watch([isA11yOscura, isA11yTypography, isA11yView, isA11yUnderline], () => {
+    isA11yTypography.value ? body.classList.add('a11y-tipografia') : body.classList.remove('a11y-tipografia')
+    isA11yView.value ? body.classList.add('a11y-simplificada') : body.classList.remove('a11y-simplificada')
+    isA11yUnderline.value ? body.classList.add('a11y-hipervinculos') : body.classList.remove('a11y-hipervinculos')
+    isA11yOscura.value ? body.classList.add('a11y-oscura') : body.classList.remove('a11y-oscura')
+  })
   
 </script>
 
 <template>
-  <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline , 
-  'a11y-oscura': isA11yOscura}">
+  <div>
   <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
     <nav class="navegacion navegacion-gobmx">
       <div class="nav-contenedor-identidad">

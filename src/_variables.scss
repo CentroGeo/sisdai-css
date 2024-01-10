@@ -161,7 +161,7 @@ $columnas: (
 }
 
 // Variables de color claro Sisdai
-:root[data-light-theme-sisdai='true'] {
+body[data-light-theme-sisdai='true'] {
   --pagina-fondo: #ffffff;
   --nota-fondo: #F4F1FE;
   
@@ -349,7 +349,7 @@ $columnas: (
 }
 
 // Variables de color claro Eni
-:root[data-light-theme-eni='true'] {
+body[data-light-theme-eni='true'] {
   --pagina-fondo: #ffffff;
   --nota-fondo: #F0F6FF;
   
@@ -540,7 +540,7 @@ $columnas: (
 }
 
 // Variables de color claro Gema
-:root[data-light-theme-gema='true']  {
+body[data-light-theme-gema='true']  {
   --color-0: #ffffff;
   --color-1: #fff5f0;
   --color-2: #141414;

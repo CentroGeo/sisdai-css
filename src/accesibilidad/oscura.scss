@@ -1,5 +1,5 @@
 // Variables de color oscuro Sisdai
-:root[data-dark-theme-sisdai='true'] {
+body[data-dark-theme-sisdai='true'] {
   --pagina-fondo: #201540;
   --nota-fondo: #2B204C;
   
@@ -162,7 +162,7 @@
 }
 
 // Variables de color oscuro Eni
-:root[data-dark-theme-eni='true'] {
+body[data-dark-theme-eni='true'] {
   --pagina-fondo: #102543;
   --nota-fondo: #1B304E;
   
@@ -327,7 +327,7 @@
 }
 
 // Variables de color oscuro Gema
-:root[data-dark-theme-gema='true'] {
+body[data-dark-theme-gema='true'] {
   --color-0: #412110;
   --color-1: #4c2c1b;
   --color-2: #ffffff;

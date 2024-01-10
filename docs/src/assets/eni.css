@@ -33,7 +33,7 @@
   --navegacion-breakpoint: 768px;
 }
 
-:root[data-light-theme-sisdai=true] {
+body[data-light-theme-sisdai=true] {
   --pagina-fondo: #ffffff;
   --nota-fondo: #F4F1FE;
   --tipografia-color: #141414;
@@ -188,7 +188,7 @@
   --navegacion-breakpoint: 768px;
 }
 
-:root[data-light-theme-eni=true] {
+body[data-light-theme-eni=true] {
   --pagina-fondo: #ffffff;
   --nota-fondo: #F0F6FF;
   --tipografia-color: #141414;
@@ -344,7 +344,7 @@
   --navegacion-breakpoint: 768px;
 }
 
-:root[data-light-theme-gema=true] {
+body[data-light-theme-gema=true] {
   --color-0: #ffffff;
   --color-1: #fff5f0;
   --color-2: #141414;
@@ -10598,7 +10598,7 @@ body {
   text-decoration: underline !important;
 }
 
-:root[data-dark-theme-sisdai=true] {
+body[data-dark-theme-sisdai=true] {
   --pagina-fondo: #201540;
   --nota-fondo: #2B204C;
   --tipografia-color: #ffffff;
@@ -10713,11 +10713,11 @@ body {
   --hipervinculo-visitado: #CF99FF;
   --boton-conahcyt-fondo: #f6f6f6;
 }
-:root[data-dark-theme-sisdai=true] .nav-hiperviculo-logo .nav-logo.invertir {
+body[data-dark-theme-sisdai=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
 }
 
-:root[data-dark-theme-eni=true] {
+body[data-dark-theme-eni=true] {
   --pagina-fondo: #102543;
   --nota-fondo: #1B304E;
   --tipografia-color: #ffffff;
@@ -10833,11 +10833,11 @@ body {
   --hipervinculo-visitado: #CF99FF;
   --boton-conahcyt-fondo: #f6f6f6;
 }
-:root[data-dark-theme-eni=true] .nav-hiperviculo-logo .nav-logo.invertir {
+body[data-dark-theme-eni=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
 }
 
-:root[data-dark-theme-gema=true] {
+body[data-dark-theme-gema=true] {
   --color-0: #412110;
   --color-1: #4c2c1b;
   --color-2: #ffffff;
@@ -10982,7 +10982,7 @@ body {
   --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">        <g fill="%23ffffff">            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>            <rect width="24" height="24" fill="none"/>        </g>    </svg>');
   --portada-fondo-grandiente: linear-gradient(transparent, #102543f1);
 }
-:root[data-dark-theme-gema=true] .nav-hiperviculo-logo .nav-logo.invertir {
+body[data-dark-theme-gema=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
 }
 
