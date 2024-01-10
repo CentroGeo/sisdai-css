@@ -61,6 +61,7 @@
   // Módulo de vista oscura
   const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
   const perfil = ref('eni') // 'eni' | 'sisdai' | 'gema'
+  const body = document.querySelector("body")
 
   function alternarTema() {
     // rotar entre estos 3 temas
@@ -69,15 +70,12 @@
       (themes.indexOf(tema.value) + 1) % 3
     ]
   }
-  const body = document.querySelector("body")
+
   function alternarPerfil() {
     // remueve el atributo para dejar a los otros perfiles
-    body.removeAttribute(
-      `data-dark-theme-${perfil.value}`
-    )
-    body.removeAttribute(
-      `data-light-theme-${perfil.value}`
-    )
+    body.removeAttribute(`data-dark-theme-${perfil.value}`)
+    body.removeAttribute(`data-light-theme-${perfil.value}`)
+    
     // rotar entre estos perfiles
     const perfiles = ['eni', 'sisdai', 'gema']
     perfil.value = perfiles[
@@ -102,6 +100,18 @@
       isA11yOscura.value = true : isA11yOscura.value = false
   }
 
+  function setTemaClaro() {
+    body.removeAttribute(`data-dark-theme-${perfil.value}`)
+    body.removeAttribute(`data-light-theme-${perfil.value}`)
+    body.setAttribute(`data-light-theme-${perfil.value}`, true)
+  }
+
+  function setTemaOscuro() {
+    body.removeAttribute(`data-light-theme-${perfil.value}`)
+    body.removeAttribute(`data-dark-theme-${perfil.value}`)
+    body.setAttribute(`data-dark-theme-${perfil.value}`, true)
+  }
+
   function setTemaEnDocumentoYLocalStorage() {
     localStorage.setItem("theme", tema.value)
     let temaClaroUOscuro = getTemaDispositivo()
@@ -109,33 +119,13 @@
     // Agrega claseSeleccionada `.a11y-oscura`
     setClaseA11yOscura(temaClaroUOscuro)
 
-    
-
     // Agrega y/o remueve el atributo selecctor para :root
     switch(temaClaroUOscuro) {
       case 'clara':
-        body.removeAttribute(
-          `data-dark-theme-${perfil.value}`
-        )
-        body.removeAttribute(
-          `data-light-theme-${perfil.value}`
-        )
-        body.setAttribute(
-          `data-light-theme-${perfil.value}`, 
-          true
-        )
+        setTemaClaro()
         break
       case 'oscura':
-        body.removeAttribute(
-          `data-light-theme-${perfil.value}`
-        )
-        body.removeAttribute(
-          `data-dark-theme-${perfil.value}`
-        )
-        body.setAttribute(
-          `data-dark-theme-${perfil.value}`, 
-          true
-        )
+        setTemaOscuro()
         break
     }
   }
@@ -148,25 +138,38 @@
     return nombres[tema.value]
   })
    
-  // Hooks cycles
   onBeforeMount(() => {
-    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setTemaEnDocumentoYLocalStorage)
+    window.matchMedia('(prefers-color-scheme: dark)')
+      .removeEventListener('change',setTemaEnDocumentoYLocalStorage)
   })
+
   onMounted(() => {
     setTemaEnDocumentoYLocalStorage()
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',setTemaEnDocumentoYLocalStorage)
+    window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change',setTemaEnDocumentoYLocalStorage)
   })
+
   watch([perfil, tema], () => {
     setTemaEnDocumentoYLocalStorage()    
   })
   // if(localStorage.getItem("theme")) {
   //   theme.value = localStorage.getItem("theme")
   // }
+
   watch([isA11yOscura, isA11yTypography, isA11yView, isA11yUnderline], () => {
-    isA11yTypography.value ? body.classList.add('a11y-tipografia') : body.classList.remove('a11y-tipografia')
-    isA11yView.value ? body.classList.add('a11y-simplificada') : body.classList.remove('a11y-simplificada')
-    isA11yUnderline.value ? body.classList.add('a11y-hipervinculos') : body.classList.remove('a11y-hipervinculos')
-    isA11yOscura.value ? body.classList.add('a11y-oscura') : body.classList.remove('a11y-oscura')
+    // Coloca las clases accesibles en el body
+    isA11yTypography.value 
+      ? body.classList.add('a11y-tipografia') 
+      : body.classList.remove('a11y-tipografia')
+    isA11yView.value 
+      ? body.classList.add('a11y-simplificada') 
+      : body.classList.remove('a11y-simplificada')
+    isA11yUnderline.value 
+      ? body.classList.add('a11y-hipervinculos') 
+      : body.classList.remove('a11y-hipervinculos')
+    isA11yOscura.value 
+      ? body.classList.add('a11y-oscura') 
+      : body.classList.remove('a11y-oscura')
   })
   
 </script>
