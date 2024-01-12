@@ -625,13 +625,14 @@ h6, .h6 {
 
 .vis-instruccional {
   font-size: 1rem;
-  line-height: 1.2em;
+  line-height: 1.25em;
   font-weight: 400;
   margin: 8px 0 16px 0;
 }
 @media screen and (min-width: 768px) {
   .vis-instruccional {
     margin: 16px 0 16px 0;
+    line-height: 1.25em;
   }
 }
 
@@ -651,11 +652,11 @@ h6, .h6 {
 .vis-leyenda {
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.3em;
+  line-height: 1.25em;
 }
 @media screen and (min-width: 768px) {
   .vis-leyenda {
-    line-height: 1.5em;
+    line-height: 1.25em;
   }
 }
 
@@ -663,7 +664,7 @@ h6, .h6 {
   font-size: 0.875rem;
   color: var(--tipografia-color-3);
   font-weight: 400;
-  line-height: 1.2em;
+  line-height: 1.25em;
   margin: 16px 0 16px 0;
 }
 
@@ -1927,11 +1928,13 @@ select:not(:disabled):focus {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+  line-height: 1.25em;
   border: 0;
 }
 
 [type=checkbox] + label,
 [type=radio] + label {
+  line-height: 1.25em;
   background-color: var(--input-fondo);
   border: 1px solid transparent;
   border-radius: 4px;
@@ -8228,6 +8231,11 @@ ol + hr {
   width: 100%;
   padding: 0 24px 24px 24px;
 }
+.contenedor-vis .boton.boton-conahcyt hr,
+.contenedor-vis .boton-conahcyt-vis hr,
+.contenedor-vis .contenedor-vis-atribuciones hr {
+  border-top: 1px solid var(--borde-color-3);
+}
 .contenedor-vis .boton.boton-conahcyt img, .contenedor-vis .boton.boton-conahcyt a,
 .contenedor-vis .boton-conahcyt-vis img,
 .contenedor-vis .boton-conahcyt-vis a,
@@ -9547,10 +9555,6 @@ body {
 
 .texto-color-3 {
   color: var(--tipografia-color-3);
-}
-
-.texto-color-4 {
-  color: var(--tipografia-color-4);
 }
 
 .notas-fondo {

@@ -23,6 +23,9 @@
   .boton.boton-conahcyt,
   .boton-conahcyt-vis,
   .contenedor-vis-atribuciones {
+    hr{
+      border-top: 1px solid var(--borde-color-3)
+    }
     position: absolute;
     bottom: 0;
     // 

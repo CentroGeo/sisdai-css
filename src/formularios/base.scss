@@ -74,10 +74,13 @@ select {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
+  line-height: 1.25em;
   border: 0;
 }
 [type=checkbox] + label,
 [type=radio] + label {
+  line-height: 1.25em;
+
   background-color: var(--input-fondo);
   border: 1px solid transparent;
   border-radius: map-get($bordes, '4');
