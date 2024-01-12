@@ -8,7 +8,6 @@
   --tipografia-color-1: #ffffff;
   --tipografia-color-2: #0068FF;
   --tipografia-color-3: #5E7392;
-  --tipografia-color-4:#364A69;
   --borde-color-1: #141414;
   --borde-color-2: #767677;
   --borde-color-3: #AAAAAA;
@@ -787,7 +786,7 @@ h6, .h6 {
 
 .vis-fuente {
   font-size: 0.875rem;
-  color: var(--tipografia-color-4);
+  color: var(--tipografia-color-3);
   font-weight: 400;
   line-height: 1.25em;
   margin: 16px 0 16px 0;
@@ -9680,10 +9679,6 @@ body {
 
 .texto-color-3 {
   color: var(--tipografia-color-3);
-}
-
-.texto-color-4 {
-  color: var(--tipografia-color-4);
 }
 
 .notas-fondo {
