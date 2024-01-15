@@ -550,6 +550,11 @@ body[data-dark-theme-gema='true'] {
       }
     }
   }
+  img {
+    &.invertir {
+      filter: brightness(0) invert(1);
+    }
+  }
   // Contenedores documentación retícula
   .conahcyt-fondo-claro-1 {
     // background-color: #393939;
