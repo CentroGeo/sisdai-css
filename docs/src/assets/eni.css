@@ -1385,7 +1385,10 @@ a[class*=" p-"],
 .tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo p {
   margin: 4px 0 4px 0;
 }
-.tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo .parrafo-texto-alto {
+.tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo .parrafo-texto-alto,
+.tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo .subtitulo-capitulo,
+.tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo .titulo-pagina,
+.tarjeta-hipervinculo-externo .degradado-negro-abajo .contenido-abajo .titulo-capitulo {
   color: #ffffff;
 }
 .tarjeta-hipervinculo-externo:hover {
