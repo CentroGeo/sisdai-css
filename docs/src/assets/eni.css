@@ -1993,14 +1993,14 @@ select:not(:disabled):focus {
 
 [type=checkbox]:checked + label::before,
 [type=radio]:checked + label::before {
-  box-shadow: inset 0 0 0 1px #141414;
+  box-shadow: inset 0 0 0 1px var(--tipografia-color);
   background: transparent;
 }
 
 [type=checkbox]:checked + label::after {
   font-family: "sisdai-iconos";
   content: "j";
-  color: #141414;
+  color: var(--tipografia-color);
   position: absolute;
   left: calc(0.125rem + 4px);
   font-weight: 800;
