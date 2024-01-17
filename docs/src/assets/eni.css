@@ -9904,7 +9904,7 @@ body {
   color: var(--hipervinculo-color) !important;
 }
 .a11y-simplificada .contenedor-colapsable .colapsable-boton {
-  display: block;
+  display: flex !important;
   padding: 8px 40px !important;
   color: var(--menu-lateral-color) !important;
   align-items: center !important;
