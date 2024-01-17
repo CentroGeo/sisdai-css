@@ -9907,6 +9907,7 @@ body {
   display: block;
   padding: 8px 40px !important;
   color: var(--menu-lateral-color) !important;
+  align-items: center !important;
 }
 .a11y-simplificada .contenedor-colapsable .colapsable-boton .nav-boton-submenu, .a11y-simplificada .contenedor-colapsable .colapsable-boton .navegacion .nav-boton-regresar, .navegacion .a11y-simplificada .contenedor-colapsable .colapsable-boton .nav-boton-regresar {
   display: none !important;
