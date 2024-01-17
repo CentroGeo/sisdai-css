@@ -9903,6 +9903,14 @@ body {
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-texto-degradado {
   color: var(--hipervinculo-color) !important;
 }
+.a11y-simplificada .contenedor-colapsable .colapsable-boton {
+  display: block;
+  padding: 0 40px !important;
+  color: var(--menu-lateral-color) !important;
+}
+.a11y-simplificada .contenedor-colapsable .colapsable-boton .nav-boton-submenu, .a11y-simplificada .contenedor-colapsable .colapsable-boton .navegacion .nav-boton-regresar, .navegacion .a11y-simplificada .contenedor-colapsable .colapsable-boton .nav-boton-regresar {
+  display: none !important;
+}
 .a11y-simplificada .tarjeta .contenido-html {
   background: var(--tarjetas-contenido-simplificada-fondo);
   color: var(--tarjetas--contenido-simplificada-color);
