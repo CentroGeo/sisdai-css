@@ -786,7 +786,7 @@ h6, .h6 {
 
 .vis-fuente {
   font-size: 0.875rem;
-  color: var(--tipografia-color-3);
+  color: var(--tipografia-color);
   font-weight: 400;
   line-height: 1.25em;
   margin: 16px 0 16px 0;
