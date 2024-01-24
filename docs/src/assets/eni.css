@@ -2077,6 +2077,7 @@ select:not(:disabled):focus {
 
 [type=checkbox]:focus + label,
 [type=radio]:focus + label {
+  background: var(--input-deshabilitado-fondo);
   border-color: var(--input-focus);
   box-shadow: 0 0 8px var(--input-focus);
   color: var(--input-color);
@@ -2085,13 +2086,13 @@ select:not(:disabled):focus {
 
 [type=checkbox]:hover + label,
 [type=radio]:hover + label {
-  color: #141414;
-  background: #dddddd;
+  background: var(--input-deshabilitado-fondo);
+  color: var(--input-color);
 }
 
 [type=checkbox]:hover + label::before,
 [type=radio]:hover + label::before {
-  box-shadow: inset 0 0 0 1px #141414;
+  box-shadow: inset 0 0 0 1px var(--input-color);
 }
 
 [type=checkbox] + label::before,
@@ -2108,20 +2109,35 @@ select:not(:disabled):focus {
   position: absolute;
 }
 
+[type=checkbox]:disabled + label,
+[type=radio]:disabled + label {
+  color: var(--input-deshabilitado-color);
+}
+[type=checkbox]:disabled + label:hover,
+[type=radio]:disabled + label:hover {
+  background: transparent;
+  cursor: default;
+}
+
+[type=checkbox]:disabled + label::before,
+[type=radio]:disabled + label::before {
+  box-shadow: inset 0 0 0 1px var(--input-deshabilitado-color);
+}
+
 [type=checkbox] + label::before {
   border-radius: 4px;
 }
 
 [type=checkbox]:checked + label::before,
 [type=radio]:checked + label::before {
-  box-shadow: inset 0 0 0 1px #141414;
+  box-shadow: inset 0 0 0 1px var(--input-color);
   background: transparent;
 }
 
 [type=checkbox]:checked + label::after {
   font-family: "sisdai-iconos";
   content: "j";
-  color: #141414;
+  color: var(--input-color);
   position: absolute;
   left: calc(0.125rem + 4px);
   font-weight: 800;
@@ -2359,15 +2375,15 @@ select {
 }
 .controlador-vis input[type=checkbox]:hover + label:before,
 .controlador-vis input[type=radio]:hover + label:before {
-  box-shadow: inset 0 0 0 1px #141414;
+  box-shadow: inset 0 0 0 1px var(--input-color);
 }
 .controlador-vis input[type=checkbox]:hover + label .figura-variable.muestra,
 .controlador-vis input[type=radio]:hover + label .figura-variable.muestra {
-  border: 1px solid #141414;
+  border: 1px solid var(--input-color);
 }
 .controlador-vis input[type=checkbox]:hover + label .nombre-variable,
 .controlador-vis input[type=radio]:hover + label .nombre-variable {
-  color: #141414;
+  color: var(--input-color);
 }
 .controlador-vis input[type=checkbox]:checked:not(:hover) + label,
 .controlador-vis input[type=radio]:checked:not(:hover) + label {
@@ -2376,11 +2392,10 @@ select {
 .controlador-vis input[type=checkbox]:disabled + label,
 .controlador-vis input[type=radio]:disabled + label {
   cursor: default;
-  box-shadow: inset 0 0 0 1px #aaaaaa;
 }
 .controlador-vis input[type=checkbox]:disabled + label:before,
 .controlador-vis input[type=radio]:disabled + label:before {
-  box-shadow: inset 0 0 0 1px #aaaaaa;
+  box-shadow: inset 0 0 0 1px var(--input-deshabilitado-color);
 }
 .controlador-vis input[type=checkbox]:disabled + label:hover,
 .controlador-vis input[type=radio]:disabled + label:hover {
@@ -2388,12 +2403,12 @@ select {
 }
 .controlador-vis input[type=checkbox]:disabled + label .figura-variable.muestra,
 .controlador-vis input[type=radio]:disabled + label .figura-variable.muestra {
-  background: #dddddd;
-  border: 1px solid #aaaaaa;
+  background: var(--input-deshabilitado-fondo);
+  border: 1px solid var(--input-deshabilitado-color);
 }
 .controlador-vis input[type=checkbox]:disabled + label .nombre-variable,
 .controlador-vis input[type=radio]:disabled + label .nombre-variable {
-  color: #aaaaaa;
+  color: var(--input-deshabilitado-color);
 }
 .controlador-vis input[type=checkbox]:checked + label:after {
   left: auto;
@@ -2405,7 +2420,7 @@ select {
   margin-top: max(1px, (var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) / 2);
 }
 .controlador-vis input[type=checkbox]:checked:hover:checked:not(:disabled) + label:after {
-  color: #141414;
+  color: var(--input-color);
 }
 .controlador-vis input[type=checkbox]:checked:disabled + label:after {
   color: var(--tipografia-color);

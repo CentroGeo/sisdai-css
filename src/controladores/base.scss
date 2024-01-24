@@ -69,17 +69,17 @@
     &:hover {
       + label {
         &:before {
-          box-shadow: inset 0 0 0 1px #141414;
+          box-shadow: inset 0 0 0 1px var(--input-color);
         }
         .figura-variable.muestra {
-          border: 1px solid #141414;
+          border: 1px solid var(--input-color);
         }
         .nombre-variable {
-          color: #141414;
+          color: var(--input-color);
         }
       }
       // &:checked:not(:disabled) + label:after {
-      //     color: #141414;
+      //     color: var(--input-color);
       // }
     }
 
@@ -91,20 +91,20 @@
 
     &:disabled + label {
       cursor: default;
-      box-shadow: inset 0 0 0 1px #aaaaaa;
+      // box-shadow: inset 0 0 0 1px var(--input-deshabilitado-color);
 
       &:before {
-        box-shadow: inset 0 0 0 1px #aaaaaa;
+        box-shadow: inset 0 0 0 1px var(--input-deshabilitado-color);
       }
       &:hover {
         background: transparent;
       }
       .figura-variable.muestra {
-        background: #dddddd;
-        border: 1px solid #aaaaaa;
+        background: var(--input-deshabilitado-fondo);
+        border: 1px solid var(--input-deshabilitado-color);
       }
       .nombre-variable {
-        color: #aaaaaa;
+        color: var(--input-deshabilitado-color);
       }
     }
   }
@@ -128,7 +128,7 @@
       );
     }
     &:hover:checked:not(:disabled) + label:after {
-      color: #141414;
+      color: var(--input-color);
     }
     &:disabled + label:after {
       color: var(--tipografia-color);

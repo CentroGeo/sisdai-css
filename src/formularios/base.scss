@@ -98,6 +98,7 @@ select {
 }
 [type=checkbox]:focus + label,
 [type=radio]:focus + label {
+  background: var(--input-deshabilitado-fondo);
   border-color: var(--input-focus);
   box-shadow: 0 0 8px var(--input-focus);
   color: var(--input-color);
@@ -106,12 +107,12 @@ select {
 [type=checkbox]:hover + label,
 [type=radio]:hover + label
 {
-  color: #141414;
-  background: #dddddd;
+  background: var(--input-deshabilitado-fondo);
+  color: var(--input-color);
 }
 [type=checkbox]:hover + label::before,
 [type=radio]:hover + label::before {
-  box-shadow: inset 0 0 0 1px #141414;
+  box-shadow: inset 0 0 0 1px var(--input-color);
 }
 [type=checkbox] + label::before,
 [type=radio] + label::before {
@@ -126,13 +127,26 @@ select {
   background-color: var(--input-fondo);
   position: absolute;
 }
+// desabilitado
+[type=checkbox]:disabled + label,
+[type=radio]:disabled + label {
+  color: var(--input-deshabilitado-color);
+  &:hover {
+    background: transparent;
+    cursor: default;
+  }
+}
+[type=checkbox]:disabled + label::before,
+[type=radio]:disabled + label::before {
+  box-shadow: inset 0 0 0 1px var(--input-deshabilitado-color);
+}
 // checkbox
 [type=checkbox] + label::before {
   border-radius: 4px;
 }
 [type=checkbox]:checked + label::before,
 [type=radio]:checked + label::before {
-  box-shadow: inset 0 0 0 1px #141414;
+  box-shadow: inset 0 0 0 1px var(--input-color);
   background: transparent;
 }
 [type=checkbox]:checked + label::after {
@@ -140,7 +154,7 @@ select {
   // que el icono lee 'j', agregar aria-hidden
   font-family: "sisdai-iconos";
   content: "\6a";
-  color: #141414;
+  color: var(--input-color);
   position: absolute;
   left: calc(.125rem + 4px);
   font-weight: 800;
