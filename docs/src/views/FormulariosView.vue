@@ -53,7 +53,9 @@
         <input id="checkbox2" type="checkbox" name="checkboxes1">
         <label for="checkbox2">Checkbox 2</label>
         <input id="checkbox3" type="checkbox" name="checkboxes1" disabled>
-        <label for="checkbox3">Checkbox 3 desabilitado</label>
+        <label for="checkbox3">Checkbox desabilitado</label>
+        <input id="checkbox4" type="checkbox" name="checkboxes1" indeterminate>
+        <label for="checkbox4">Checkbox indeterminado</label>
       </div>
     </div>
 

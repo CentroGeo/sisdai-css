@@ -2143,6 +2143,16 @@ select:not(:disabled):focus {
   font-weight: 800;
 }
 
+[type=checkbox]:indeterminate + label::after {
+  font-family: "sisdai-iconos";
+  content: "/";
+  color: var(--input-color);
+  position: absolute;
+  left: calc(0.125rem + 2px);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
 [type=radio] + label::before {
   border-radius: 50%;
 }

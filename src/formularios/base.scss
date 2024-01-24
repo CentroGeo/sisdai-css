@@ -159,6 +159,15 @@ select {
   left: calc(.125rem + 4px);
   font-weight: 800;
 }
+[type=checkbox]:indeterminate + label::after {
+  font-family: "sisdai-iconos";
+  content: "\2f";
+  color: var(--input-color);
+  position: absolute;
+  left: calc(.125rem + 2px);
+  font-weight: 800;
+  font-size: 1.2rem;
+}
 // radio
 [type=radio] + label::before {
   border-radius: 50%;
