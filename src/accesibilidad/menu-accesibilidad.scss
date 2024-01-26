@@ -62,7 +62,79 @@
     }
 
     .controlador-vis {
-      
+      width: calc(100% - 32px);
+      margin-left: 16px !important;
+      margin-right: 16px !important;
+      label {
+        width: 100%;
+        &:hover {
+          background: var(--boton-secundario-hover-fondo);
+          border: 1px solid transparent;
+          box-shadow: none;
+          color: var(--tipografia-color);
+          .nombre-variable {
+            color: var(--tipografia-color);
+          }
+        }
+        .figura-variable {
+          max-width: inherit;
+        }
+        .nombre-variable {
+          font-size: 16px;
+        }
+      }
+      input[type='checkbox'] {
+        &:hover {
+          + label {
+            &:before {
+              box-shadow: inset 0 0 0 1px var(--tipografia-color);
+            }
+          }
+        }
+        &:focus {
+          + label {
+            background: var(--boton-secundario-hover-fondo);
+          }
+        }
+        &:checked {
+          &:not(:hover) + label {
+            &:before {
+              background: var(--input-controles-color);
+            }
+          }
+        }
+      }
+      input[type='checkbox']:checked {
+        + label:after {
+          color: var(--tipografia-color-1);
+        }
+        &:hover:checked:not(:disabled) + label:after {
+          color: var(--tipografia-color-1);
+        }
+      }
+      input[type='checkbox']:checked + label:before {
+        background: var(--input-controles-color);
+        box-shadow: inset 0 0 0 1px var(--input-controles-color);
+      }
+    }
+
+    .hipervinculo {
+      margin-left: 20px !important;
+      padding: 4px !important;
+      text-decoration: none !important;
+      border: 1px solid transparent;
+      &:hover {
+        color: var(--hipervinculo-color);
+        background: var(--boton-secundario-hover-fondo);
+        box-shadow: none !important;
+        border: 1px solid var(--hipervinculo-color) !important;
+      }
+      &:focus {
+        background: var(--boton-secundario-hover-fondo);
+        box-shadow: 0 0 8px var(--input-focus);
+        border: 1px solid var(--hipervinculo-focus-sombra);
+        outline: none;
+      }
     }
 
     .opcion-accesibilidad {

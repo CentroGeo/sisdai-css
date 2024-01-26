@@ -9789,6 +9789,96 @@ body {
   overflow: hidden;
   border-top: 1px solid var(--menu-lateral-color);
 }
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis {
+  width: calc(100% - 32px);
+  margin-left: 16px !important;
+  margin-right: 16px !important;
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label {
+  width: 100%;
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label:hover {
+  background: var(--boton-secundario-hover-fondo);
+  border: 1px solid transparent;
+  box-shadow: none;
+  color: var(--tipografia-color);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label:hover .nombre-variable {
+  color: var(--tipografia-color);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label .figura-variable {
+  max-width: inherit;
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label .nombre-variable {
+  font-size: 16px;
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:hover + label:before {
+  box-shadow: inset 0 0 0 1px var(--tipografia-color);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:focus + label {
+  background: var(--boton-secundario-hover-fondo);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked:not(:hover) + label:before {
+  background: var(--input-controles-color);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked + label:after {
+  color: var(--tipografia-color-1);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked:hover:checked:not(:disabled) + label:after {
+  color: var(--tipografia-color-1);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked + label:before {
+  background: var(--input-controles-color);
+  box-shadow: inset 0 0 0 1px var(--input-controles-color);
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button],
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button],
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit],
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=submit],
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=reset],
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=reset],
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class^=boton],
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class^=boton],
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class*=" boton"],
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class*=" boton"], .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-gobmx, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-conahcyt {
+  margin-left: 20px !important;
+  padding: 4px !important;
+  text-decoration: none !important;
+  border: 1px solid transparent;
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button]:hover,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button]:hover,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit]:hover,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=submit]:hover,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=reset]:hover,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=reset]:hover,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class^=boton]:hover,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class^=boton]:hover,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class*=" boton"]:hover,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class*=" boton"]:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-gobmx:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-conahcyt:hover {
+  color: var(--hipervinculo-color);
+  background: var(--boton-secundario-hover-fondo);
+  box-shadow: none !important;
+  border: 1px solid var(--hipervinculo-color) !important;
+}
+.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button]:focus,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button]:focus,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit]:focus,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=submit]:focus,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=reset]:focus,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=reset]:focus,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class^=boton]:focus,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class^=boton]:focus,
+.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class*=" boton"]:focus,
+.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class*=" boton"]:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-gobmx:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-conahcyt:focus {
+  background: var(--boton-secundario-hover-fondo);
+  box-shadow: 0 0 8px var(--input-focus);
+  border: 1px solid var(--hipervinculo-focus-sombra);
+  outline: none;
+}
 .contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad {
   background: transparent;
   border: none;
