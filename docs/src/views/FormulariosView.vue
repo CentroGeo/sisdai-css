@@ -57,6 +57,85 @@
         <input id="checkbox4" type="checkbox" name="checkboxes1" indeterminate>
         <label for="checkbox4">Checkbox indeterminado</label>
       </div>
+      <div class="columna-16">
+        <h3>Checkboxes anidados</h3>
+        <p>Contenedor <code>.casillas-anidadas</code> subcontenedor <code>.casillas-subseleccion</code></p>
+        <p>Personalmente prefiero las listas para las cosas anidadas, pero tambien funciona con divs.</p>
+      </div>
+      <div class="columna-4">
+        <div class="casillas-anidadas">
+          <input id="checkbox-parent" type="checkbox" name="checkbox-parent">
+          <label for="checkbox-parent">Checkbox Padre</label>
+          <div class="casillas-subseleccion casillas-anidadas">
+            <input id="checkbox-child1" type="checkbox" name="checkbox-child">
+            <label for="checkbox-child1">Checkbox Hijo 1</label>
+            <input id="checkbox-child2" type="checkbox" name="checkbox-child">
+            <label for="checkbox-child2">Checkbox Hijo 2</label>
+            <div class="casillas-subseleccion casillas-anidadas">
+              <input id="checkbox-child21" type="checkbox" name="checkbox-child">
+              <label for="checkbox-child21">Checkbox Hijo 2-1</label>
+              <input id="checkbox-child22" type="checkbox" name="checkbox-child">
+              <label for="checkbox-child22">Checkbox Hijo 2-2</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="columna-4">
+        <ul class="casillas-anidadas">
+          <li>
+            <input id="ul-checkbox-parent" type="checkbox" name="ul-checkbox-parent">
+            <label for="ul-checkbox-parent">Checkbox Padre</label>
+            <ul class="casillas-subseleccion casillas-anidadas">
+              <li>
+                <input id="ul-checkbox-child1" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child1">Checkbox Hijo 1</label>
+              </li>
+              <li>
+                <input id="ul-checkbox-child2" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child2">Checkbox Hijo 2</label>
+                <ul class="casillas-subseleccion casillas-anidadas">
+                  <li>
+                    <input id="ul-checkbox-child21" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child21">Checkbox Hijo 2-1</label>
+                  </li>
+                  <li>
+                    <input id="ul-checkbox-child22" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child22">Checkbox Hijo 2-2</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="columna-4">
+        <ol class="casillas-anidadas">
+          <li>
+            <input id="ol-checkbox-parent" type="checkbox" name="ol-checkbox-parent">
+            <label for="ol-checkbox-parent">Checkbox Padre</label>
+            <ol class="casillas-subseleccion casillas-anidadas">
+              <li>
+                <input id="ol-checkbox-child1" type="checkbox" name="ol-checkbox-child">
+                <label for="ol-checkbox-child1">Checkbox Hijo 1</label>
+              </li>
+              <li>
+                <input id="ol-checkbox-child2" type="checkbox" name="ol-checkbox-child">
+                <label for="ol-checkbox-child2">Checkbox Hijo 2</label>
+                <ol class="casillas-subseleccion casillas-anidadas">
+                  <li>
+                    <input id="ol-checkbox-child21" type="checkbox" name="ol-checkbox-child">
+                    <label for="ol-checkbox-child21">Checkbox Hijo 2-1</label>
+                  </li>
+                  <li>
+                    <input id="ol-checkbox-child22" type="checkbox" name="ol-checkbox-child">
+                    <label for="ol-checkbox-child22">Checkbox Hijo 2-2</label>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
     </div>
 
     <h2 class="m-t-10">Radios</h2>
@@ -79,15 +158,14 @@
           <input id="control_check_1.1" type="checkbox">
           <label for="control_check_1.1">
             <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Valor y Muestra</span>
           </label>
         </span>
         <!-- <ControladorVis deshabilitado sinSimbolo /> -->
-        <span class="controlador-vis sin-figura">
+        <span class="controlador-vis">
           <input id="control_check_1.2" type="checkbox">
           <label for="control_check_1.2">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Valor</span>
           </label>
         </span>
         <!-- <ControladorVis sinControl /> -->
@@ -95,7 +173,7 @@
           <input id="control_check_1.3" type="checkbox" disabled>
           <label for="control_check_1.3">
             <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Deshabilitado</span>
           </label>
         </span>
         <!-- <ControladorVis simbolo="30px" /> -->
@@ -103,7 +181,7 @@
           <input id="control_check_1.4" type="checkbox" checked disabled>
           <label for="control_check_1.4">
             <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Seleccionado Deshabilitado</span>
           </label>
         </span>
       </div>
@@ -114,27 +192,27 @@
           <input id="control_radio_1.1" type="radio" name="radio-control-vis">
           <label for="control_radio_1.1">
             <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Valor y Muestra</span>
           </label>
         </span>
         <span class="controlador-vis">
           <input id="control_radio_1.2" type="radio" name="radio-control-vis">
           <label for="control_radio_1.2">
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Valor</span>
           </label>
         </span>
         <span class="controlador-vis">
           <input id="control_radio_1.3" type="radio" name="radio-control-vis" disabled>
           <label for="control_radio_1.3">
             <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Deshabilitado</span>
           </label>
         </span>
         <span class="controlador-vis">
           <input id="control_radio_1.4" type="radio" name="radio-control-vis" disabled checked>
           <label for="control_radio_1.4">
             <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor nomenclatura</span>
+            <span class="nombre-variable">Seleccionado Deshabilitado</span>
           </label>
         </span>
       </div>
@@ -253,14 +331,3 @@
     </div>
   </div>
 </template>
-
-<style lang="scss">
-.controlador-vis{
-  &.grande {
-    --controlador-vis-figura-alto: 32px;
-  }
-  &.chica {
-    --controlador-vis-figura-alto: 8px;
-  }
-}
-</style>
