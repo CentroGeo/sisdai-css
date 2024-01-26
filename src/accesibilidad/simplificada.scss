@@ -83,7 +83,10 @@
     .contenido-html {
       background: var(--tarjetas-contenido-simplificada-fondo);
       color: var(--tarjetas--contenido-simplificada-color);
-      .parrafo-texto-alto {
+      .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
 				color: var(--tarjetas--contenido-simplificada-color);
 			}
       a, button {
@@ -94,7 +97,10 @@
       .contenido-html {
         background: var(--tarjetas-contenido-simplificada-fondo);
         color: var(--tarjetas--contenido-simplificada-color);
-        .parrafo-texto-alto {
+        .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
           color: var(--tarjetas--contenido-simplificada-color);
         }
         a, button {
@@ -116,7 +122,10 @@
     }
     .contenido-abajo {
       color: var(--tarjetas-simplificada-color);
-      .parrafo-texto-alto {
+      .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
         color: var(--tarjetas-simplificada-color);
       }
     }
@@ -125,7 +134,10 @@
       background: var(--tarjetas-simplificada-fondo-hover);
       border: 1px solid var(--tarjetas-simplificada-borde-hover);
       // text-decoration: underline;
-      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto {
+      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
         color: var(--tarjetas-simplificada-color-hover);
       }
     }
@@ -135,7 +147,10 @@
       box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
       outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
 
-      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto {
+      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
         color: var(--tarjeta-simplificada-color-focus);
       }
     }
@@ -147,7 +162,10 @@
     .contenido-abajo {
       background-color: var(--tarjetas-simplificada-fondo);
       color: var(--tarjetas-simplificada-color);
-      .parrafo-texto-alto {
+      .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
         color: var(--tarjetas-simplificada-color);
       }
     }
@@ -157,7 +175,10 @@
       .contenido-abajo {
         background: var(--tarjetas-simplificada-fondo-hover);
         color: var(--tarjetas-simplificada-color-hover);
-        .parrafo-texto-alto {
+        .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
           color: var(--tarjetas-simplificada-color-hover);
         }
       }
@@ -172,7 +193,10 @@
         background: var(--tarjeta-simplificada-fondo-focus);
         color: var(--tarjeta-simplificada-color-focus);
 
-        .parrafo-texto-alto {
+        .parrafo-texto-alto, 
+      .subtitulo-capitulo, 
+      .titulo-pagina, 
+      .titulo-capitulo {
           color: var(--tarjeta-simplificada-color-focus);
         }
       }

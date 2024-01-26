@@ -10006,7 +10006,10 @@ body {
   background: var(--tarjetas-contenido-simplificada-fondo);
   color: var(--tarjetas--contenido-simplificada-color);
 }
-.a11y-simplificada .tarjeta .contenido-html .parrafo-texto-alto {
+.a11y-simplificada .tarjeta .contenido-html .parrafo-texto-alto,
+.a11y-simplificada .tarjeta .contenido-html .subtitulo-capitulo,
+.a11y-simplificada .tarjeta .contenido-html .titulo-pagina,
+.a11y-simplificada .tarjeta .contenido-html .titulo-capitulo {
   color: var(--tarjetas--contenido-simplificada-color);
 }
 .a11y-simplificada .tarjeta .contenido-html a, .a11y-simplificada .tarjeta .contenido-html button {
@@ -10016,7 +10019,10 @@ body {
   background: var(--tarjetas-contenido-simplificada-fondo);
   color: var(--tarjetas--contenido-simplificada-color);
 }
-.a11y-simplificada .tarjeta-horizontal .contenido-html .parrafo-texto-alto {
+.a11y-simplificada .tarjeta-horizontal .contenido-html .parrafo-texto-alto,
+.a11y-simplificada .tarjeta-horizontal .contenido-html .subtitulo-capitulo,
+.a11y-simplificada .tarjeta-horizontal .contenido-html .titulo-pagina,
+.a11y-simplificada .tarjeta-horizontal .contenido-html .titulo-capitulo {
   color: var(--tarjetas--contenido-simplificada-color);
 }
 .a11y-simplificada .tarjeta-horizontal .contenido-html a, .a11y-simplificada .tarjeta-horizontal .contenido-html button {
@@ -10036,14 +10042,20 @@ body {
 .a11y-simplificada a.tarjeta-hipervinculo-externo .contenido-abajo {
   color: var(--tarjetas-simplificada-color);
 }
-.a11y-simplificada a.tarjeta-hipervinculo-externo .contenido-abajo .parrafo-texto-alto {
+.a11y-simplificada a.tarjeta-hipervinculo-externo .contenido-abajo .parrafo-texto-alto,
+.a11y-simplificada a.tarjeta-hipervinculo-externo .contenido-abajo .subtitulo-capitulo,
+.a11y-simplificada a.tarjeta-hipervinculo-externo .contenido-abajo .titulo-pagina,
+.a11y-simplificada a.tarjeta-hipervinculo-externo .contenido-abajo .titulo-capitulo {
   color: var(--tarjetas-simplificada-color);
 }
 .a11y-simplificada a.tarjeta-hipervinculo-externo:hover {
   background: var(--tarjetas-simplificada-fondo-hover);
   border: 1px solid var(--tarjetas-simplificada-borde-hover);
 }
-.a11y-simplificada a.tarjeta-hipervinculo-externo:hover .contenido-abajo, .a11y-simplificada a.tarjeta-hipervinculo-externo:hover .contenido-abajo > .parrafo-texto-alto {
+.a11y-simplificada a.tarjeta-hipervinculo-externo:hover .contenido-abajo, .a11y-simplificada a.tarjeta-hipervinculo-externo:hover .contenido-abajo > .parrafo-texto-alto,
+.a11y-simplificada a.tarjeta-hipervinculo-externo:hover .subtitulo-capitulo,
+.a11y-simplificada a.tarjeta-hipervinculo-externo:hover .titulo-pagina,
+.a11y-simplificada a.tarjeta-hipervinculo-externo:hover .titulo-capitulo {
   color: var(--tarjetas-simplificada-color-hover);
 }
 .a11y-simplificada a.tarjeta-hipervinculo-externo:focus {
@@ -10052,7 +10064,10 @@ body {
   box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
   outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
 }
-.a11y-simplificada a.tarjeta-hipervinculo-externo:focus .contenido-abajo, .a11y-simplificada a.tarjeta-hipervinculo-externo:focus .contenido-abajo > .parrafo-texto-alto {
+.a11y-simplificada a.tarjeta-hipervinculo-externo:focus .contenido-abajo, .a11y-simplificada a.tarjeta-hipervinculo-externo:focus .contenido-abajo > .parrafo-texto-alto,
+.a11y-simplificada a.tarjeta-hipervinculo-externo:focus .subtitulo-capitulo,
+.a11y-simplificada a.tarjeta-hipervinculo-externo:focus .titulo-pagina,
+.a11y-simplificada a.tarjeta-hipervinculo-externo:focus .titulo-capitulo {
   color: var(--tarjeta-simplificada-color-focus);
 }
 .a11y-simplificada a.tarjeta-hipervinculo-interno {
@@ -10062,7 +10077,10 @@ body {
   background-color: var(--tarjetas-simplificada-fondo);
   color: var(--tarjetas-simplificada-color);
 }
-.a11y-simplificada a.tarjeta-hipervinculo-interno .contenido-abajo .parrafo-texto-alto {
+.a11y-simplificada a.tarjeta-hipervinculo-interno .contenido-abajo .parrafo-texto-alto,
+.a11y-simplificada a.tarjeta-hipervinculo-interno .contenido-abajo .subtitulo-capitulo,
+.a11y-simplificada a.tarjeta-hipervinculo-interno .contenido-abajo .titulo-pagina,
+.a11y-simplificada a.tarjeta-hipervinculo-interno .contenido-abajo .titulo-capitulo {
   color: var(--tarjetas-simplificada-color);
 }
 .a11y-simplificada a.tarjeta-hipervinculo-interno:hover {
@@ -10072,7 +10090,10 @@ body {
   background: var(--tarjetas-simplificada-fondo-hover);
   color: var(--tarjetas-simplificada-color-hover);
 }
-.a11y-simplificada a.tarjeta-hipervinculo-interno:hover .contenido-abajo .parrafo-texto-alto {
+.a11y-simplificada a.tarjeta-hipervinculo-interno:hover .contenido-abajo .parrafo-texto-alto,
+.a11y-simplificada a.tarjeta-hipervinculo-interno:hover .contenido-abajo .subtitulo-capitulo,
+.a11y-simplificada a.tarjeta-hipervinculo-interno:hover .contenido-abajo .titulo-pagina,
+.a11y-simplificada a.tarjeta-hipervinculo-interno:hover .contenido-abajo .titulo-capitulo {
   color: var(--tarjetas-simplificada-color-hover);
 }
 .a11y-simplificada a.tarjeta-hipervinculo-interno:focus {
@@ -10084,7 +10105,10 @@ body {
   background: var(--tarjeta-simplificada-fondo-focus);
   color: var(--tarjeta-simplificada-color-focus);
 }
-.a11y-simplificada a.tarjeta-hipervinculo-interno:focus .contenido-abajo .parrafo-texto-alto {
+.a11y-simplificada a.tarjeta-hipervinculo-interno:focus .contenido-abajo .parrafo-texto-alto,
+.a11y-simplificada a.tarjeta-hipervinculo-interno:focus .contenido-abajo .subtitulo-capitulo,
+.a11y-simplificada a.tarjeta-hipervinculo-interno:focus .contenido-abajo .titulo-pagina,
+.a11y-simplificada a.tarjeta-hipervinculo-interno:focus .contenido-abajo .titulo-capitulo {
   color: var(--tarjeta-simplificada-color-focus);
 }
 @media screen and (max-width: 767px) {
