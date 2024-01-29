@@ -208,7 +208,8 @@ select {
   padding-right: 32px;
   /* Assign the SVG variable */
   background-image: var(--input-select-svg);
-  
+  background-color: var(--pagina-fondo);
+  color: var(--input-color);
 }
 
 
