@@ -100,6 +100,7 @@ select {
   box-shadow: 0 0 8px var(--input-focus);
   color: var(--input-color);
   outline: none;
+  z-index: 1;
 }
 [type=checkbox]:hover + label,
 [type=radio]:hover + label
