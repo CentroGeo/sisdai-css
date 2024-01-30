@@ -8328,9 +8328,9 @@ ol + hr {
   width: 100%;
 }
 .contenedor-vis .contenedor-vis-paneles {
-  padding-top: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
   /* * * * * Escodner elementos * * * * */
   /* * * * * Escodner elementos * * * * */
   /* * * * * Diosposicion * * * * */
@@ -8391,8 +8391,14 @@ ol + hr {
 .contenedor-vis .contenedor-vis-paneles .panel-pie-vis :last-child {
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .contenedor-vis .contenedor-vis-paneles {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis {
-  padding-bottom: 16px;
+  padding-bottom: 24px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis {
   margin: -8px;
@@ -8400,7 +8406,7 @@ ol + hr {
 }
 @media screen and (max-width: 767px) {
   .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis {
-    padding-bottom: 24px;
+    padding-bottom: 32px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -8414,7 +8420,7 @@ ol + hr {
 }
 @media screen and (max-width: 767px) {
   .contenedor-vis .contenedor-vis-paneles .panel-derecha-vis {
-    padding-top: 24px;
+    padding-top: 32px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -8425,7 +8431,7 @@ ol + hr {
 .contenedor-vis .contenedor-vis-paneles .panel-pie-vis {
   margin: -8px;
   padding: 8px;
-  padding-top: 24px;
+  padding-top: 32px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis,
 .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis,
@@ -8545,11 +8551,17 @@ ol + hr {
   justify-content: space-between;
   align-items: center;
   line-height: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
-  margin-top: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+@media screen and (min-width: 768px) {
+  .contenedor-vis .contenedor-vis-atribuciones {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
 .contenedor-vis .contenedor-vis-atribuciones .logo-conacyt {
   filter: grayscale(100%);

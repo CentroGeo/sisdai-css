@@ -5,8 +5,8 @@
   --contenedor-vis-alto-maximo: calc(100vh - var(--contenedor-vis-alto-menus));
   --contenedor-vis-alto-minimo-vis: 300px;
   
-  $contenedor-espacio: map-get($espaciado, '3');
-  $sombra-espacio: 8px;
+  // tamaño del boxshadow de checkboxes en focus definido en el archivo base de formularios
+  $sombra-espacio: 8px; 
 
   background: #dddddd4d;
   width: 100%;
@@ -47,7 +47,7 @@
     }
 
     // Scroll en los paneles
-    // eliminar margen del primer y ultimo elemento
+    // y eliminar margen del primer y ultimo elemento
     .panel-encabezado-vis,
     .panel-izquierda-vis,
     .panel-derecha-vis,
@@ -63,17 +63,21 @@
     }
 
     // Espacio entre paneles
-    padding-top: $contenedor-espacio;
-    padding-left: $contenedor-espacio;
-    padding-right: $contenedor-espacio;
+    padding-top: map-get($espaciado, '2');
+    padding-left: map-get($espaciado, '2');
+    padding-right: map-get($espaciado, '2');
+    @include mediaquery('esc') {
+      padding-left: map-get($espaciado, '3');
+      padding-right: map-get($espaciado, '3');
+    }
     .panel-encabezado-vis {
-      padding-bottom: map-get($espaciado, '2');
+      padding-bottom: map-get($espaciado, '3');
     }
     .panel-izquierda-vis {
       margin: calc( $sombra-espacio * -1);
       padding: $sombra-espacio;
       @include mediaquery('mov') {
-        padding-bottom: calc( map-get($espaciado, '2') + $sombra-espacio )
+        padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio )
       }
       @include mediaquery('esc') {
         padding-right: calc( map-get($espaciado, '3') + $sombra-espacio )
@@ -83,7 +87,7 @@
       margin: calc( $sombra-espacio * -1);
       padding: $sombra-espacio;
       @include mediaquery('mov') {
-        padding-top: calc( map-get($espaciado, '2') + $sombra-espacio )
+        padding-top: calc( map-get($espaciado, '3') + $sombra-espacio )
       }
       @include mediaquery('esc') {
         padding-left: calc( map-get($espaciado, '3') + $sombra-espacio )
@@ -92,7 +96,7 @@
     .panel-pie-vis {
       margin: calc( $sombra-espacio * -1);
       padding: $sombra-espacio;
-      padding-top: calc( map-get($espaciado, '2') + $sombra-espacio )
+      padding-top: calc( map-get($espaciado, '3') + $sombra-espacio )
     }
 
     /* * * * * Escodner elementos * * * * */
@@ -247,11 +251,16 @@
     justify-content: space-between;
     align-items: center;
     line-height: 24px;
-    margin-left: $contenedor-espacio;
-    margin-right: $contenedor-espacio;
-    margin-top: map-get($espaciado, '2');
     padding-top: map-get($espaciado, '2');
     padding-bottom: map-get($espaciado, '2');
+    margin-top: map-get($espaciado, '2');
+    margin-left: map-get($espaciado, '2');
+    margin-right: map-get($espaciado, '2');
+    @include mediaquery('esc') {
+      margin-left: map-get($espaciado, '3');
+      margin-right: map-get($espaciado, '3');
+    }
+    
     .logo-conacyt {
       filter: grayscale(100%);
       img {
