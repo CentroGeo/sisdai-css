@@ -3,6 +3,9 @@
 Biblioteca de estilos en scss con sass para el Sistema de Diseño y Accesibilidad para la Investigación
 ([Sisdai](https://sisdai.conacyt.mx/)).
 
+Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
+en su equipo a través del **protocolo HTTPS**.
+
 ## Utilidades
 
 * Normaliza la forma en que se visualizan los elementos de HTML entre los distintos navegadores como Firefox, Chrome, Opera, Safari, Edge
