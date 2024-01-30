@@ -733,6 +733,7 @@ h6, .h6 {
   font-size: 0.75rem;
   line-height: 1.2em;
   font-weight: 500;
+  fill: var(--tipografia-color);
 }
 
 .vis-fecha-actualizacion {
@@ -8340,6 +8341,32 @@ ol + hr {
   margin: 0;
   min-height: var(--contenedor-vis-alto-minimo-vis);
   position: relative;
+}
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+}
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip .contenedor-titulo-eje-y {
+  display: inline-block;
+}
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip .contenedor-titulo-eje-y .titulo-eje-y {
+  position: absolute;
+  display: block;
+  transform-origin: top left;
+  text-align: center;
+}
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip div.contenedor-titulo-eje-x {
+  position: relative;
+  width: 100%;
+}
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip div.contenedor-titulo-eje-x .titulo-eje-x {
+  text-align: center;
+}
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip figure {
+  position: absolute;
+  top: 0;
+  margin: 0;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :first-child,
 .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :first-child,

@@ -14,6 +14,33 @@
       margin: 0;
       min-height: var(--contenedor-vis-alto-minimo-vis);
       position: relative; // para los tooltips queden adentro de la visualización
+      div.contenedor-svg-ejes-tooltip { 
+        // Estos estilos se usan en sisdai-graficas y sirve para acomodar los títulos de ejes
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        .contenedor-titulo-eje-y {
+          display: inline-block;
+          .titulo-eje-y {
+            position: absolute;
+            display: block;
+            transform-origin: top left;
+            text-align: center;
+          }
+        }
+        div.contenedor-titulo-eje-x {
+          position: relative;
+          width: 100%;
+          .titulo-eje-x {
+            text-align: center;
+          }
+        }
+        figure {
+          position: absolute;
+          top: 0;
+          margin: 0;
+        }
+      }
     }
 
     .panel-encabezado-vis,
