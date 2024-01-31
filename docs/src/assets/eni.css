@@ -9040,6 +9040,9 @@ ol + hr {
   margin-left: 0;
   opacity: 1;
 }
+.menu-lateral-contenedor .menu-colapsable .contenedor-colapsable-contenido li a:focus:hover {
+  color: var(--menu-lateral-accion);
+}
 .menu-lateral-contenedor .menu-colapsable .contenedor-colapsable-contenido li a:hover {
   color: var(--menu-lateral-hover-color);
 }

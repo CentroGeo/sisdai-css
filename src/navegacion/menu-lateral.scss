@@ -57,9 +57,14 @@
       }
       .contenedor-colapsable-contenido {
         li {
-          a {            
+          a {     
+            &:focus {
+              &:hover {
+                color: var(--menu-lateral-accion);
+              }
+            }       
             &:hover {
-              color: var(--menu-lateral-hover-color)
+              color: var(--menu-lateral-hover-color);
             }
           }
         }
