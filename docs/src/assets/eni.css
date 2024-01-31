@@ -10454,7 +10454,7 @@ body[data-dark-theme-eni=true] {
   --menu-lateral-color: #FFFFFF;
   --menu-lateral-fondo: #2A3F5D;
   --menu-lateral-accion: #6692FF;
-  --menu-lateral-accion-fondo-hover: #364A69;
+  --menu-lateral-accion-fondo-hover: #B1C6E4;
   --menu-lateral-accion-fondo-active: #142A48;
   --menu-lateral-accion-sombra-active: #6692FF;
   --submenu-lateral-fondo-mov: #2A3F5D;
@@ -10914,7 +10914,7 @@ body[data-light-theme-eni=true] {
   --menu-lateral-color: #102543;
   --menu-lateral-fondo: #DBEAFF;
   --menu-lateral-accion: #0068FF;
-  --menu-lateral-accion-fondo-hover: #CCE1FF;
+  --menu-lateral-accion-fondo-hover: #364A69;
   --menu-lateral-accion-fondo-active: #F8FBFF;
   --menu-lateral-accion-sombra-active: #0068FF;
   --submenu-lateral-fondo-mov: #DBEAFF;
