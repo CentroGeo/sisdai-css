@@ -74,6 +74,7 @@
       @media (hover: hover) {
         &:hover {
           background: var(--menu-lateral-accion-fondo-hover);
+          color: #ffffff;
         }
       }
       &.router-link-exact-active {

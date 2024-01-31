@@ -9059,6 +9059,7 @@ ol + hr {
 @media (hover: hover) {
   .menu-lateral-contenedor a:hover {
     background: var(--menu-lateral-accion-fondo-hover);
+    color: #ffffff;
   }
 }
 .menu-lateral-contenedor a.router-link-exact-active {
