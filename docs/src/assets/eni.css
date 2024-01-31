@@ -9159,6 +9159,9 @@ ol + hr {
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
   color: var(--menu-lateral-accion);
 }
+.contenedor-colapsable .contenedor-colapsable-contenido li a:hover {
+  color: #ffffff;
+}
 .contenedor-colapsable .colapsable-boton {
   border: none;
   color: var(--menu-lateral-color);

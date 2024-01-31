@@ -50,6 +50,9 @@
           box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
           color: var(--menu-lateral-accion);
         }
+        &:hover {
+          color: #ffffff;
+        }
       }
     }
   }
