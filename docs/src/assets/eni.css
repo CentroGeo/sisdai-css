@@ -9040,6 +9040,9 @@ ol + hr {
   margin-left: 0;
   opacity: 1;
 }
+.menu-lateral-contenedor .menu-colapsable .contenedor-colapsable-contenido li a:hover {
+  color: var(--menu-lateral-hover-color);
+}
 .menu-lateral-contenedor .menu-max-height {
   overflow: auto;
   max-height: calc(100vh - 180px);
@@ -9059,7 +9062,7 @@ ol + hr {
 @media (hover: hover) {
   .menu-lateral-contenedor a:hover {
     background: var(--menu-lateral-accion-fondo-hover);
-    color: #ffffff;
+    color: var(--menu-lateral-hover-color);
   }
 }
 .menu-lateral-contenedor a.router-link-exact-active {
@@ -9159,9 +9162,6 @@ ol + hr {
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
   color: var(--menu-lateral-accion);
 }
-.contenedor-colapsable .contenedor-colapsable-contenido li a:hover {
-  color: #ffffff;
-}
 .contenedor-colapsable .colapsable-boton {
   border: none;
   color: var(--menu-lateral-color);
@@ -9211,6 +9211,7 @@ ol + hr {
 @media (hover: hover) {
   .indice-de-contenido a:hover {
     background: var(--menu-lateral-accion-fondo-hover);
+    color: var(--menu-lateral-hover-color);
   }
 }
 .indice-de-contenido a:active, .indice-de-contenido a:focus {
@@ -10458,6 +10459,7 @@ body[data-dark-theme-eni=true] {
   --menu-lateral-color: #FFFFFF;
   --menu-lateral-fondo: #2A3F5D;
   --menu-lateral-accion: #6692FF;
+  --menu-lateral-hover-color: #102543;
   --menu-lateral-accion-fondo-hover: #B1C6E4;
   --menu-lateral-accion-fondo-active: #142A48;
   --menu-lateral-accion-sombra-active: #6692FF;
@@ -10918,6 +10920,7 @@ body[data-light-theme-eni=true] {
   --menu-lateral-color: #102543;
   --menu-lateral-fondo: #DBEAFF;
   --menu-lateral-accion: #0068FF;
+  --menu-lateral-hover-color: #ffffff;
   --menu-lateral-accion-fondo-hover: #364A69;
   --menu-lateral-accion-fondo-active: #F8FBFF;
   --menu-lateral-accion-sombra-active: #0068FF;
