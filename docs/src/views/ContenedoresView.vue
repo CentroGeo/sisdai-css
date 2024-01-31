@@ -147,9 +147,7 @@
 
     <h2 class="m-t-10">Visualizaciones</h2>
     <div class="contenedor-vis borde-redondeado-8 m-b-4">
-      <!-- <div class="contenedor-vis-paneles p-2-mov p-3-esc con-panel-encabezado-vis con-panel-pie-vis"> -->
       <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-pie-vis">
-        <!-- <div class="panel-encabezado-vis p-b-2"> -->
           <div class="panel-encabezado-vis">
           <p class="vis-titulo-visualizacion">
             Evolución de variantes del virus SARS-CoV-2
@@ -167,8 +165,6 @@
             width="100%"
           />
         </figure>
-
-        <!-- <div class="panel-pie-vis p-t-2"> -->
         <div class="panel-pie-vis">
           <p class="vis-titulo-leyenda">
             Variantes del virus SARS-CoV-2
@@ -250,8 +246,6 @@
           </p>
         </div>
       </div>
-
-      <!-- <div class="contenedor-vis-atribuciones borde-t borde-color-3 p-y-2 m-x-2-mov m-x-3-esc"> -->
       <div class="contenedor-vis-atribuciones borde-t borde-color-3">
         <a
           class="logo-conacyt atribucion-conahcyt"
@@ -263,7 +257,6 @@
             alt="Conahcyt"
           />
         </a>
-
         <a
           class="atribucion-sisdai"
           href="https://sisdai.conahcyt.mx/"
@@ -276,14 +269,48 @@
     </div>
 
     <div class="contenedor-vis borde-redondeado-8">
-      <!-- <div class="contenedor-vis-paneles p-2-mov p-3-esc con-panel-izquierda-vis con-panel-derecha-vis con-panel-pie-vis"> -->
-      <div class="contenedor-vis-paneles con-panel-izquierda-vis con-panel-derecha-vis con-panel-pie-vis">
-        <!-- <div class="panel-izquierda-vis p-b-2-mov p-r-2-esc"> -->
-        <div class="panel-izquierda-vis">
+      <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-izquierda-vis con-panel-derecha-vis con-panel-pie-vis">
+        <div class="panel-encabezado-vis">
           <p class="vis-titulo-visualizacion">
             Población total en 2020 por el método de clasificación de rupturas naturales (Jenks)
           </p>
-          <img src="/img/mapa-leyenda.png" alt="leyenda" height="200px" />
+          <div class="flex">
+            <div class="columna-4">
+              <label for="selector1">Muestra</label>
+              <select id="selector1">
+                <option>uno</option>
+                <option>dos</option>
+              </select>
+            </div>
+            <div class="columna-4">
+              <label for="selector2">Muestra</label>
+              <select id="selector2">
+                <option>tres</option>
+                <option>cuatro</option>
+              </select>
+            </div>
+            <div class="columna-4">
+              <label for="selector3">Muestra</label>
+              <select id="selector3">
+                <option>cinco</option>
+                <option>seis</option>
+              </select>
+            </div>
+            <div class="columna-4">
+              <label for="selector3">Muestra</label>
+              <select id="selector3">
+                <option>siete</option>
+                <option>ocho</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="panel-izquierda-vis">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat ipsa atque velit
+            temporibus autem quod similique cum odit excepturi inventore, id iste deleniti eveniet
+            asperiores cupiditate possimus dolorem numquam.
+          </p>
           <div>
             <input id="checkbox-map1" type="checkbox" name="checkboxes-mapa">
             <label for="checkbox-map1">Checkbox de un mapita con texto largo largo</label>
@@ -294,7 +321,6 @@
           </div>
           <p>Algún texto</p>
         </div>
-        <!-- <div class="panel-derecha-vis p-t-2-mov p-l-2-esc"> -->
         <div class="panel-derecha-vis">
           <ul class="casillas-anidadas">
             <li>
@@ -333,7 +359,6 @@
           />
         </figure>
 
-        <!-- <div class="panel-pie-vis p-t-2"> -->
         <div class="panel-pie-vis">
           <p class="notas">
             Nota. Datos de origen del Instituto Nacional de Estadística y Geografía (INEGI), 2020.

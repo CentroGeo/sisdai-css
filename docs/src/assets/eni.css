@@ -8376,7 +8376,8 @@ ol + hr {
 .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis,
 .contenedor-vis .contenedor-vis-paneles .panel-derecha-vis,
 .contenedor-vis .contenedor-vis-paneles .panel-pie-vis {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   scrollbar-width: thin;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :first-child,
@@ -8398,7 +8399,9 @@ ol + hr {
   }
 }
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis {
-  padding-bottom: 24px;
+  margin: -8px;
+  padding: 8px;
+  padding-bottom: 32px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis {
   margin: -8px;

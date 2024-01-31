@@ -52,7 +52,8 @@
     .panel-izquierda-vis,
     .panel-derecha-vis,
     .panel-pie-vis {
-      overflow: auto;
+      overflow-y: auto;
+      overflow-x: hidden;
       scrollbar-width: thin;
       :first-child {
         margin-top: 0;
@@ -71,7 +72,9 @@
       padding-right: map-get($espaciado, '3');
     }
     .panel-encabezado-vis {
-      padding-bottom: map-get($espaciado, '3');
+      margin: calc( $sombra-espacio * -1);
+      padding: $sombra-espacio;
+      padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio )
     }
     .panel-izquierda-vis {
       margin: calc( $sombra-espacio * -1);
