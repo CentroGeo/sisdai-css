@@ -9927,11 +9927,14 @@ body {
   transition-delay: 0s, 0s;
 }
 .contenedor-menu-accesibilidad.abierto .menu-accesibilidad {
-  width: calc(var(--a11y-ancho) * 1px);
-  max-height: 270px;
+  width: 283px !important;
+  max-height: 330px;
   margin-right: 0;
   margin-bottom: 0;
   transition-delay: 0s, 0s, calc(var(--a11y-relacion-tiempo) * 32), calc(var(--a11y-relacion-tiempo) * 32);
+}
+.contenedor-menu-accesibilidad.abierto .menu-accesibilidad .titulo {
+  width: 170px;
 }
 
 .a11y-simplificada .a11y-simplificada-contenedor {

@@ -218,8 +218,10 @@
     // }
 
     .menu-accesibilidad {
-      width: calc(var(--a11y-ancho) * 1px);
-      max-height: 270px;
+      // width: calc(var(--a11y-ancho) * 1px);
+      width: 283px !important;
+      // max-height: 270px;
+      max-height: 330px;
       margin-right: 0;
       margin-bottom: 0;
       transition-delay: 0s, 0s,
@@ -227,6 +229,9 @@
           calc(var(--a11y-relacion-tiempo) * 32),
         /* al abrir: tiene un retraso del tiempo que al contenedor le tome crecer a 32px */
           calc(var(--a11y-relacion-tiempo) * 32);
+      .titulo {
+        width: 170px;
+      }
     }
   }
   /* * * * * Transiciones * * * * */
