@@ -2379,7 +2379,6 @@ select {
   --controlador-vis-figura-alto: 18px;
   --controlador-vis-figura-borde: 1px;
   display: inline-flex;
-  margin-right: 16px;
   max-width: 320px;
 }
 .controlador-vis.grande {
@@ -8380,16 +8379,16 @@ ol + hr {
   overflow-x: hidden;
   scrollbar-width: thin;
 }
-.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :first-child,
-.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :first-child,
-.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :first-child,
-.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :first-child {
+.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :first-child:not(.figura-variable) {
   margin-top: 0;
 }
-.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :last-child,
-.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :last-child,
-.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :last-child,
-.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :last-child {
+.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :last-child:not(.nombre-variable) {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {

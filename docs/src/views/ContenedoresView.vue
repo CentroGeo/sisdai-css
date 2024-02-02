@@ -1,7 +1,10 @@
+<script setup>
+import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
+</script>
+
 <template>
   <div>
     <h1>Contenedores</h1>
-
 
     <h2 class="m-t-10">Contenedor</h2>
     <p>Ancho del 100% con margenes laterales de 40px para escritorio y 16px para celular</p>
@@ -146,6 +149,7 @@
     </div>
 
     <h2 class="m-t-10">Visualizaciones</h2>
+    
     <div class="contenedor-vis borde-redondeado-8 m-b-4">
       <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-pie-vis">
           <div class="panel-encabezado-vis">
@@ -268,126 +272,6 @@
       </div>
     </div>
 
-    <div class="contenedor-vis borde-redondeado-8">
-      <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-izquierda-vis con-panel-derecha-vis con-panel-pie-vis">
-        <div class="panel-encabezado-vis">
-          <p class="vis-titulo-visualizacion">
-            Población total en 2020 por el método de clasificación de rupturas naturales (Jenks)
-          </p>
-          <div class="flex">
-            <div class="columna-4">
-              <label for="selector1">Muestra</label>
-              <select id="selector1">
-                <option>uno</option>
-                <option>dos</option>
-              </select>
-            </div>
-            <div class="columna-4">
-              <label for="selector2">Muestra</label>
-              <select id="selector2">
-                <option>tres</option>
-                <option>cuatro</option>
-              </select>
-            </div>
-            <div class="columna-4">
-              <label for="selector3">Muestra</label>
-              <select id="selector3">
-                <option>cinco</option>
-                <option>seis</option>
-              </select>
-            </div>
-            <div class="columna-4">
-              <label for="selector3">Muestra</label>
-              <select id="selector3">
-                <option>siete</option>
-                <option>ocho</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="panel-izquierda-vis">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat ipsa atque velit
-            temporibus autem quod similique cum odit excepturi inventore, id iste deleniti eveniet
-            asperiores cupiditate possimus dolorem numquam.
-          </p>
-          <div>
-            <input id="checkbox-map1" type="checkbox" name="checkboxes-mapa">
-            <label for="checkbox-map1">Checkbox de un mapita con texto largo largo</label>
-          </div>
-          <div>
-            <input id="checkbox-map2" type="checkbox" name="checkboxes-mapa">
-            <label for="checkbox-map2">Checkbox</label>
-          </div>
-          <p>Algún texto</p>
-        </div>
-        <div class="panel-derecha-vis">
-          <ul class="casillas-anidadas">
-            <li>
-              <input id="ul-checkbox-parent" type="checkbox" name="ul-checkbox-parent">
-              <label for="ul-checkbox-parent">Checkbox Padre</label>
-              <ul class="casillas-subseleccion casillas-anidadas">
-                <li>
-                  <input id="ul-checkbox-child1" type="checkbox" name="ul-checkbox-child">
-                  <label for="ul-checkbox-child1">Checkbox Hijo 1</label>
-                </li>
-                <li>
-                  <input id="ul-checkbox-child2" type="checkbox" name="ul-checkbox-child">
-                  <label for="ul-checkbox-child2">Checkbox Hijo 2</label>
-                  <ul class="casillas-subseleccion casillas-anidadas">
-                    <li>
-                      <input id="ul-checkbox-child21" type="checkbox" name="ul-checkbox-child">
-                      <label for="ul-checkbox-child21">Checkbox Hijo 2-1</label>
-                    </li>
-                    <li>
-                      <input id="ul-checkbox-child22" type="checkbox" name="ul-checkbox-child">
-                      <label for="ul-checkbox-child22">Checkbox Hijo 2-2</label>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-
-        <figure class="contenido-vis">
-          <img
-            src="/img/mapa-poblacion.png"
-            alt="visalizacion"
-            height="100%"
-            width="100%"
-          />
-        </figure>
-
-        <div class="panel-pie-vis">
-          <p class="notas">
-            Nota. Datos de origen del Instituto Nacional de Estadística y Geografía (INEGI), 2020.
-          </p>
-        </div>
-      </div>
-
-      <div class="contenedor-vis-atribuciones borde-t borde-color-3 p-y-2 m-x-2-mov m-x-3-esc">
-        <a
-          class="logo-conacyt atribucion-conahcyt"
-          href="https://conahcyt.mx/"
-          target="_blank"
-        >
-          <img
-            src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
-            alt="Conahcyt"
-          />
-        </a>
-
-        <a
-          class="atribucion-sisdai"
-          href="https://sisdai.conahcyt.mx/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sisdai
-        </a>
-      </div>
-    </div>
-
+    <UsoSisdaiMapa />
   </div>
 </template>
