@@ -64,8 +64,8 @@
               </label>
             </div>
           </div>
-          <div class="leyenda-clases m-l-1">
-            <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
+          <div class="leyenda-clases">
+            <div class="controlador-vis no-seleccionable" style="--controlador-vis-figura-alto: 18px;">
               <!--v-if-->
               <label>
                 <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18">
@@ -74,7 +74,7 @@
                 <span class="nombre-variable">Intermitente</span>
               </label>
             </div>
-            <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
+            <div class="controlador-vis no-seleccionable" style="--controlador-vis-figura-alto: 18px;">
               <!--v-if-->
               <label>
                 <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18"><line x1="0" y1="18" x2="18" y2="0" style="stroke:#0556cd;stroke-width:1;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:bevel;fill:transparent;"></line>
@@ -95,7 +95,7 @@
               </label>
             </div>
           </div>
-          <div class="leyenda-clases m-l-1">
+          <div class="leyenda-clases">
             <p class="titulo-clases m-y-1">Número de habitantes</p>
             <div class="controlador-vis" style="--controlador-vis-figura-alto: 3px;">
               <input type="checkbox" id="localidades-clase-control-0-b9uz3rcy7q4">
