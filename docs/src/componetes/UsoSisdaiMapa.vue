@@ -65,22 +65,22 @@
             </div>
           </div>
           <div class="leyenda-clases">
-            <div class="controlador-vis no-seleccionable" style="--controlador-vis-figura-alto: 18px;">
+            <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
               <!--v-if-->
-              <label>
+              <p class="no-seleccionable">
                 <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18">
                   <line x1="0" y1="18" x2="18" y2="0" style="stroke:#0d9fea;stroke-width:1;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:bevel;fill:transparent;"></line>
                 </svg>
                 <span class="nombre-variable">Intermitente</span>
-              </label>
+              </p>
             </div>
-            <div class="controlador-vis no-seleccionable" style="--controlador-vis-figura-alto: 18px;">
+            <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
               <!--v-if-->
-              <label>
+              <p class="no-seleccionable">
                 <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18"><line x1="0" y1="18" x2="18" y2="0" style="stroke:#0556cd;stroke-width:1;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:bevel;fill:transparent;"></line>
                 </svg>
                 <span class="nombre-variable">Perenne</span>
-              </label>
+              </p>
             </div>
           </div>
         </div>

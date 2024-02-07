@@ -2378,18 +2378,21 @@ select {
   --controlador-vis-control-alto: 1.125rem;
   --controlador-vis-figura-alto: 18px;
   --controlador-vis-figura-borde: 1px;
+  min-height: var(--controlador-vis-control-alto);
+  vertical-align: text-top;
+}
+.controlador-vis .no-seleccionable {
+  padding: 8px;
+  padding-left: calc(1.25rem + 8px + 4px);
+  margin: 0;
+  line-height: 1.25em;
+  color: var(--input-color);
+  vertical-align: text-top;
   display: inline-flex;
-  max-width: 320px;
-}
-.controlador-vis.grande {
-  --controlador-vis-figura-alto: 32px;
-}
-.controlador-vis.chica {
-  --controlador-vis-figura-alto: 8px;
 }
 .controlador-vis label::before,
 .controlador-vis label::after {
-  margin-top: max((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.4, 0px);
+  margin-top: max((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.5, 0px);
 }
 .controlador-vis .nombre-variable,
 .controlador-vis .figura-variable {
@@ -2397,7 +2400,7 @@ select {
 }
 .controlador-vis .nombre-variable {
   flex: 1 1;
-  margin-top: max((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.4, 0px);
+  margin-top: max((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.5, 0px);
 }
 .controlador-vis .figura-variable {
   flex-shrink: 0;
@@ -2407,7 +2410,7 @@ select {
   height: calc(var(--controlador-vis-figura-alto));
 }
 .controlador-vis .figura-variable.muestra {
-  background: #7e8cf5;
+  background-color: #7e8cf5;
   border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
   border-radius: 50%;
 }
@@ -2417,6 +2420,22 @@ select {
 .controlador-vis [type=radio]:checked:disabled + label .figura-variable.muestra {
   background-color: var(--input-deshabilitado-fondo);
   border-color: var(--input-deshabilitado-color);
+}
+
+div.controlador-vis label,
+.controlador-vis.en-bloque label {
+  display: flex;
+}
+
+span.controlador-vis,
+.controlador-vis.en-linea {
+  display: inline-flex;
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+span.controlador-vis label,
+.controlador-vis.en-linea label {
+  display: inline-flex;
 }
 
 .borde {
@@ -8323,7 +8342,8 @@ ol + hr {
   --contenedor-vis-alto-atribuciones: 58px;
   --contenedor-vis-alto-maximo: calc(100vh - var(--contenedor-vis-alto-menus));
   --contenedor-vis-alto-minimo-vis: 300px;
-  background: rgba(221, 221, 221, 0.3019607843);
+  background-color: var(--tarjetas-internas-fondo);
+  color: var(--tarjetas-internas-color);
   width: 100%;
 }
 .contenedor-vis .contenedor-vis-paneles {
