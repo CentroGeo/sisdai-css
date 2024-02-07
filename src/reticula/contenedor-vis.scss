@@ -8,17 +8,19 @@
   // tamaño del boxshadow de checkboxes en focus definido en el archivo base de formularios
   $sombra-espacio: 8px; 
 
-  background: #dddddd4d;
+  background-color: var(--tarjetas-internas-fondo);
+  color: var(--tarjetas-internas-color);
   width: 100%;
-
+  
   .contenedor-vis-paneles {
     .contenido-vis {
       width: 100%;
       margin: 0;
       min-height: var(--contenedor-vis-alto-minimo-vis);
       position: relative; // para los tooltips queden adentro de la visualización
+      
+      // Estos estilos se usan en sisdai-graficas y sirve para acomodar los títulos de ejes
       div.contenedor-svg-ejes-tooltip { 
-        // Estos estilos se usan en sisdai-graficas y sirve para acomodar los títulos de ejes
         position: relative;
         width: 100%;
         display: inline-block;
@@ -127,7 +129,6 @@
       display: block;
     }
     &.sin-atribuciones {
-      // padding-bottom: 24px;
       .contenedor-vis-atribuciones {
         display: none;
       }
