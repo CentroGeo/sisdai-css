@@ -241,7 +241,7 @@
         </span>
       </div>
       <div class="columna-4">
-        <span class="controlador-vis grande">
+        <div class="controlador-vis" style="--controlador-vis-figura-alto: 37px;">
           <input id="control_check_2.3" type="checkbox">
           <label for="control_check_2.3">
             <span class="figura-variable muestra" />
@@ -249,10 +249,10 @@
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto ullam, quibusdam adipisci maiores inventore! Eum at voluptates deserunt iure, veritatis dolore atque mollitia quidem esse nemo consectetur, doloremque dolorum?
             </span>
           </label>
-        </span>
+        </div>
       </div>
       <div class="columna-4">
-        <span class="controlador-vis chica">
+        <div class="controlador-vis" style="--controlador-vis-figura-alto: 7px;">
           <input id="control_check_2.4" type="checkbox">
           <label for="control_check_2.4">
             <span class="figura-variable muestra" />
@@ -260,7 +260,7 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, illum similique quos neque rem hic aut minima quibusdam eaque. Cupiditate eligendi reprehenderit dignissimos, recusandae laboriosam iste facere officiis ut est.
             </span>
           </label>
-        </span>
+        </div>
       </div>
     </div>
 
