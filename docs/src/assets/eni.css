@@ -2102,7 +2102,7 @@ select:not(:disabled):focus {
   content: "";
   height: 1.125rem;
   width: 1.125rem;
-  top: 9px;
+  top: 8px;
   left: 8px;
   padding: 4px;
   background-color: var(--input-fondo);
@@ -2145,7 +2145,7 @@ select:not(:disabled):focus {
   color: var(--input-color);
   position: absolute;
   left: calc(0.125rem + 8px - 1px);
-  top: 8px;
+  top: 7px;
   font-weight: 800;
   text-align: center;
 }
@@ -2156,7 +2156,7 @@ select:not(:disabled):focus {
   color: var(--input-color);
   position: absolute;
   left: calc(0.125rem + 4px + 1px);
-  top: 8px;
+  top: 7px;
   font-weight: 800;
   font-size: 1.2rem;
 }
@@ -2371,7 +2371,8 @@ select {
   display: flex;
 }
 .casillas-anidadas .casillas-subseleccion {
-  padding-left: calc(1.25rem + 4px);
+  list-style: none;
+  padding: 0 0 0 calc(1.25rem + 4px);
 }
 
 .controlador-vis {
@@ -2381,14 +2382,16 @@ select {
   min-height: var(--controlador-vis-control-alto);
   vertical-align: text-top;
 }
-.controlador-vis .no-seleccionable {
+.controlador-vis .lectura {
   padding: 8px;
-  padding-left: calc(1.25rem + 8px + 4px);
   margin: 0;
   line-height: 1.25em;
   color: var(--input-color);
   vertical-align: text-top;
   display: inline-flex;
+}
+.controlador-vis .anidado {
+  padding-left: calc(1.25rem + 8px + 4px);
 }
 .controlador-vis label::before,
 .controlador-vis label::after {

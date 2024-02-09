@@ -7,14 +7,16 @@
   vertical-align: text-top;
 
   // elementos del controlador-vis que no tienen checkbox ni radio buttons
-  .no-seleccionable {
+  .lectura {
     padding: map-get($espaciado, '1');
-    padding-left: calc(1.25rem + map-get($espaciado, '1') + 4px);
     margin: 0;
     line-height: 1.25em;
     color: var(--input-color);
     vertical-align: text-top;
     display: inline-flex;
+  }
+  .anidado {
+    padding-left: calc(1.25rem + map-get($espaciado, '1') + 4px);
   }
 
   label::before,
