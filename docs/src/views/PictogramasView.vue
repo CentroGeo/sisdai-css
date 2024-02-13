@@ -66,6 +66,10 @@
         <span>icono-ayuda</span>
       </div>
       <div>
+        <span class="icono-bajar-capa"></span>
+        <span>icono-bajar-capa</span>
+      </div>
+      <div>
         <span class="icono-buscar"></span>
         <span>icono-buscar</span>
       </div>
@@ -174,10 +178,6 @@
         <span>icono-eliminar</span>
       </div>
       <div>
-        <span class="icono-enlace-externo"></span>
-        <span>icono-enlace-externo</span>
-      </div>
-      <div>
         <span class="icono-enlace-subrayado"></span>
         <span>icono-enlace-subrayado</span>
       </div>
@@ -230,6 +230,10 @@
         <span>icono-grupo</span>
       </div>
       <div>
+        <span class="icono-guardar"></span>
+        <span>icono-guardar</span>
+      </div>
+      <div>
         <span class="icono-social-facebook"></span>
         <span>icono-social-facebook</span>
       </div>
@@ -242,12 +246,24 @@
         <span>icono-social-instagram</span>
       </div>
       <div>
+        <span class="icono-social-linkedin"></span>
+        <span>icono-social-linkedin</span>
+      </div>
+      <div>
         <span class="icono-social-twitter"></span>
         <span>icono-social-twitter</span>
       </div>
       <div>
         <span class="icono-social-youtube"></span>
         <span>icono-social-youtube</span>
+      </div>
+      <div>
+        <span class="icono-social-x"></span>
+        <span>icono-social-x</span>
+      </div>
+      <div>
+        <span class="icono-subir-capa"></span>
+        <span>icono-subir-capa</span>
       </div>
       <div>
         <span class="icono-informacion"></span>
@@ -280,6 +296,10 @@
       <div>
         <span class="icono-minimizar"></span>
         <span>icono-minimizar</span>
+      </div>
+      <div>
+        <span class="icono-mover"></span>
+        <span>icono-mover</span>
       </div>
       <div>
         <span class="icono-nivel"></span>
@@ -318,8 +338,8 @@
         <span>icono-persona</span>
       </div>
       <div>
-        <span class="icono-poligono"></span>
-        <span>icono-poligono</span>
+        <span class="icono-capa-poligono"></span>
+        <span>icono-capa-poligono</span>
       </div>
       <div>
         <span class="icono-reloj"></span>
@@ -328,6 +348,10 @@
       <div>
         <span class="icono-restar"></span>
         <span>icono-restar</span>
+      </div>
+      <div>
+        <span class="icono-tabla"></span>
+        <span>icono-tabla</span>
       </div>
       <div>
         <span class="icono-teclado"></span>
@@ -349,7 +373,35 @@
         <span class="icono-voto-si"></span>
         <span>icono-voto-si</span>
       </div>
-
+      <div>
+        <span class="icono-accesibilidad"></span>
+        <span>icono-accesibilidad</span>
+      </div>
+      <div>
+        <span class="icono-restablecer"></span>
+        <span>icono-restablecer</span>
+      </div>
+      <div>
+        <span class="icono-flecha-izquierda"></span>
+        <span>icono-flecha-izquierda</span>
+      </div>
+      <div>
+        <span class="icono-enlace-externo"></span>
+        <span>icono-enlace-externo</span>
+      </div>
+      <div>
+        <span class="icono-metadatos"></span>
+        <span>icono-metadatos</span>
+      </div>
+      <div>
+        <span class="icono-visualizador"></span>
+        <span>icono-visualizador</span>
+      </div>
+      <div>
+        <span class="icono-zoom-instruccional"></span>
+        <span>icono-zoom-instruccional</span>
+      </div>
+      
 
   </div>
 

@@ -8,8 +8,8 @@
   display: block;
   position: relative;
   z-index: 110;
-  padding-left: map-get($contenedores, 'mov', 'margen-interior');
-  padding-right: map-get($contenedores, 'mov', 'margen-interior');
+  padding-left: map-get($contenedores, "mov", "margen-interior");
+  padding-right: map-get($contenedores, "mov", "margen-interior");
   &.navegacion-pegada {
     position: sticky;
     top: 0;
@@ -26,12 +26,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   .nav-informacion {
-    background: var(--navegacion-fondo);
+    background: var(--submenu-lateral-fondo-colapsable);
+    color: var(--menu-lateral-color);
     font-size: 0.75rem;
-    padding: map-get($espaciado,'minimo') map-get($contenedores, 'mov', 'margen-interior');
-    margin-left: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
-    margin-right: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
-    flex: 1 0 calc(100% - map-get($contenedores, 'mov', 'margen-interior')*2);
+    padding: map-get($espaciado, "minimo")
+      map-get($contenedores, "mov", "margen-interior");
+    margin-left: calc(map-get($contenedores, "mov", "margen-interior") * -1);
+    margin-right: calc(map-get($contenedores, "mov", "margen-interior") * -1);
+    flex: 1 0 calc(100% - map-get($contenedores, "mov", "margen-interior") * 2);
   }
 }
 .nav-menu-contedor {
@@ -39,13 +41,13 @@
   box-shadow: var(--navegacion-sombra);
   border-radius: var(--navegacion-redondeado);
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column;
   width: 70%;
   max-width: 320px;
   position: absolute;
   top: 46px;
   right: -320px;
-  transition: right .3s ease-in-out;
+  transition: right 0.3s ease-in-out;
   &.abierto {
     right: 0;
     &.submenu-abierto {
@@ -63,6 +65,9 @@
   }
 }
 .nav-submenu {
+  background-color: var(--navegacion-fondo);
+  border-radius: var(--navegacion-redondeado);
+  box-shadow: var(--navegacion-sombra);
   width: 100%;
   list-style: none;
   margin: 0;
@@ -70,84 +75,114 @@
   position: absolute;
   top: 0;
   right: -320px;
-  transition: right .3s ease-in-out;
+  transition: right 0.3s ease-in-out;
   &.abierto {
     right: 320px;
   }
 }
 
-@include mediaquery('nav') {
+@include mediaquery("nav") {
   .navegacion {
-    display: flex;
-    align-items: center;
-    padding-left: map-get($contenedores, 'esc', 'margen-interior');
-    padding-right: map-get($contenedores, 'esc', 'margen-interior');
-  }
-  .nav-contenedor-identidad {
-    display: flex;
-    align-items: center;
-    .nav-boton-menu,
-    .nav-informacion {
-      display: none;
-    }
-  }
-  .nav-menu-contedor {
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: none;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    overflow: visible;
-    width: 100%;
-    max-width: inherit;
-    right: 0;
-    top: 0;
-    .nav-menu-principal {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-    }
-    &.abierto.submenu-abierto {
-        right: 0;
 
-    }
-  }
-  .nav-menu {
-    display: flex;
-    align-items: center;
-    li {
-      position: relative;
-      &.nav-contenedor-submenu {
-        &:hover,
-        &:focus,
-        &:focus-within {
-          > .nav-submenu {
-            opacity: 1;
-            pointer-events: inherit;
+    &:not(.navegacion-movil-forzada) {
+      display: flex;
+      align-items: center;
+      padding-left: map-get($contenedores, "esc", "margen-interior");
+      padding-right: map-get($contenedores, "esc", "margen-interior");
+      .nav-contenedor-identidad {
+        display: flex;
+        align-items: center;
+        .nav-boton-menu,
+        .nav-informacion {
+          display: none;
+        }
+      }
+      .nav-menu-contedor {
+        background-color: transparent;
+        box-shadow: none;
+        border-radius: none;
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+        overflow: visible;
+        width: 100%;
+        max-width: inherit;
+        right: 0;
+        top: 0;
+        .nav-menu-complementario {
+          padding-left: 16px;
+        }
+        .nav-menu-principal {
+          flex: 1;
+          display: flex;
+          justify-content: flex-end;
+        }
+        &.abierto.submenu-abierto {
+          right: 0;
+        }
+      }
+      .nav-menu {
+        display: flex;
+        align-items: center;
+        li {
+          position: relative;
+          &.nav-contenedor-submenu {
+            &:hover,
+            &:focus,
+            &:focus-within {
+              > .nav-submenu {
+                opacity: 1;
+                pointer-events: inherit;
+              }
+            }
           }
+        }
+      }
+      .nav-submenu {
+        overflow: clip;
+        opacity: 0;
+        pointer-events: none;
+        top: inherit;
+        left: inherit;
+        right: 0;
+        width: inherit;
+        .nav-hipervinculo {
+          display: block;
+        }
+        &.abierto {
+          right: 0;
         }
       }
     }
   }
-  .nav-submenu {
-    background-color: var(--navegacion-fondo);
-    border-radius: var(--navegacion-redondeado);
-    box-shadow: var(--navegacion-sombra);
-    overflow: clip;
-    opacity: 0;
-    pointer-events: none;
-    top: inherit;
-    left: inherit;
-    right: 0;
-    width: inherit;
-    .nav-hipervinculo {
-      display: block;
-    }
-    &.abierto {
-      right: 0;
-    }
+  .navegacion-movil-forzada{
+     padding-left: map-get($contenedores, "esc", "margen-interior");
+      padding-right: map-get($contenedores, "esc", "margen-interior");
+      .nav-informacion {
+        padding: map-get($espaciado, "minimo")
+          map-get($contenedores, "esc", "margen-interior");
+        margin-left: calc(map-get($contenedores, "esc", "margen-interior") * -1);
+        margin-right: calc(map-get($contenedores, "esc", "margen-interior") * -1);
+        flex: 1 0 calc(100% - map-get($contenedores, "mov", "margen-interior") * 2);
+      }
+  }
+}
+.ir-contenido-principal {
+  @extend .boton-primario;
+  background-color: #005dfee6;
+  position: absolute;
+  text-align: center;
+  transform: translateY(-100%);
+  z-index: 111;
+  width: 100%;
+  height: 45px;
+  border-radius: 0;
+  text-decoration: none;
+  padding: 12px;
+  &:focus {
+    transform: translateY(0%);
+    border:0 solid var(--hipervinculo-focus-sombra);
   }
 }

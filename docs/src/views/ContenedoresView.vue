@@ -1,5 +1,4 @@
 <template>
-
   <h1>Contenedores</h1>
 
 
@@ -10,7 +9,7 @@
   ...
 &lt;/div>
 </pre>
-  <p class="p-3 conacyt-fondo-claro-1">
+  <p class="p-3 conahcyt-fondo-claro-1">
     contenedor
   </p>
 
@@ -23,7 +22,7 @@
 &lt;/div>
 </pre>
   <div class="contenedor ancho-fijo">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-fijo
     </p>
   </div>
@@ -37,24 +36,24 @@
 &lt;/div>
 </pre>
   <div class="contenedor ancho-lectura">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-lectura
     </p>
   </div>
 
   <h2 class="m-t-10">Auxiliares de alineacion para contenedores</h2>
   <div class="contenedor ancho-lectura contenedor-izq">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-lectura contenedor-izq
     </p>
   </div>
   <div class="contenedor ancho-lectura contenedor-der">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conhcyt-fondo-claro-1">
       contenedor ancho-lectura contenedor-der
     </p>
   </div>
   <div class="contenedor ancho-lectura contenedor-centro">
-    <p class="p-3 conacyt-fondo-claro-1">
+    <p class="p-3 conahcyt-fondo-claro-1">
       contenedor ancho-lectura contenedor-centro
     </p>
   </div>
@@ -73,14 +72,14 @@
 </pre>
   <div class="contenedor p-0">
     <div class="flex a11y-simplificada-contenedor ">
-      <div class="columna-4 conacyt-fondo-claro-1">
+      <div class="columna-4 conahcyt-fondo-claro-1">
         <p>1</p>
         <p>Si existe como padre la clase <b>a11y-simplificada</b> que debe estar conectada con el store para poder prender o apagar</p>
       </div>
       <div class="columna-1 gobmx-fondo-claro-2 ">
         <p>2</p>
       </div>
-      <div class="columna-6 conacyt-fondo-claro-2">
+      <div class="columna-6 conahcyt-fondo-claro-2">
         <p>3</p>
         <p>Para el contenedor con clase <b>a11y-simplificada-contenedor</b> reformatea el contenido que sea como bloques de texto con el ancho maximo del ancho de lectura.</p>
       </div>
@@ -145,4 +144,88 @@
     </div>
   </div>
 
+  <h2 class="m-t-10">Visualizaciones</h2>
+  <div class="contenedor-vis borde-redondeado-8 con-panel-encabezado-vis con-panel-pie-vis m-b-4">
+    <div class="panel-encabezado-vis">
+      <p class="vis-titulo-visualizacion">
+        Evolución de variantes del virus SARS-CoV-2
+      </p>
+      <p class="vis-titulo-proyecto">
+        (Solamente se muestran variantes de preocupación y de interés)
+      </p>
+    </div>
+
+    <figure class="contenido-vis">
+      <img
+        src="/img/grafica-variantes.png"
+        alt="visalizacion"
+        height="100%"
+        width="100%"
+      />
+    </figure>
+
+    <div class="panel-pie-vis">
+      <p class="vis-titulo-leyenda">
+        Variantes del virus SARS-CoV-2
+      </p>
+      <hr>
+      <p class="vis-fuente">
+        Fuente. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
+      </p>
+    </div>
+
+    <div class="contenedor-vis-atribuciones">
+      <a class="logo-conacyt" href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
+          alt="Conahcyt"
+        >
+      </a>
+
+      <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        Sisdai
+      </a>
+    </div>
+  </div>
+
+  <div class="contenedor-vis borde-redondeado-8 con-panel-izquierda-vis con-panel-pie-vis">
+    <div class="panel-izquierda-vis">
+      <p class="vis-titulo-visualizacion">
+        Población total en 2020 por el método de clasificación de rupturas naturales (Jenks)
+      </p>
+      <!-- <p class="vis-titulo-leyenda">
+        Leyenda
+      </p> -->
+      <img src="/img/mapa-leyenda.png" alt="leyenda" height="200px" />
+    </div>
+
+    <figure class="contenido-vis">
+      <img
+        src="/img/mapa-poblacion.png"
+        alt="visalizacion"
+        height="100%"
+        width="100%"
+      />
+    </figure>
+
+    <div class="panel-pie-vis">
+      <hr>
+      <p class="notas">
+        Nota. Datos de origen del Instituto Nacional de Estadística y Geografía (INEGI), 2020.
+      </p>
+    </div>
+
+    <div class="contenedor-vis-atribuciones">
+      <a class="logo-conacyt" href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
+          alt="Conahcyt"
+        >
+      </a>
+
+      <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        Sisdai
+      </a>
+    </div>
+  </div>
 </template>

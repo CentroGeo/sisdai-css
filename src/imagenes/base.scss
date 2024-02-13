@@ -6,8 +6,8 @@ figure {
   margin: 1em 0;
   figcaption {
     @extend .notas;
-    color: var(--tipografia-color-2);
-    border-left: 2px solid var(--borde-color-3);
+    color: var(--tipografia-color-3);
+    border-left: 2px solid var(--tipografia-color-3);
     padding-left: map-get($espaciado, '2');
     margin-top: 1em;
   }

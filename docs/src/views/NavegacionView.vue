@@ -1,6 +1,5 @@
 <template>
   <h1>Navegación</h1>
-
   <nav class="navegacion">
     <div class="nav-contenedor-identidad">
       <a href="#" class="nav-hiperviculo-logo">
@@ -81,8 +80,25 @@
   </nav>
 
   <h2 class="m-t-10">Identidad</h2>
+  <p>
+    Hay estilos distintos para movil y escritorio, sin embargo, en ocasiones
+    puede ser necesario forzar la vista de movil cuando hay muchas opciones en
+    la navegación. Para ello existe la clase ".navegacion-movil-forzada".
+    Presiona el siguiente botón para asignar dicha clase a las barras de
+    navegación con identidad de ejemplo en esta sección:
+  </p>
+  <button @click="navegacion_movil_forzada = !navegacion_movil_forzada">
+    {{
+      navegacion_movil_forzada
+        ? "Desactivar vista movil forzada"
+        : "Activar vista movil forzada en menús"
+    }}
+  </button>
   <h3>Gobierno</h3>
-  <nav class="navegacion navegacion-gobmx">
+  <nav
+    class="navegacion navegacion-gobmx"
+    :class="{ 'navegacion-movil-forzada': navegacion_movil_forzada }"
+  >
     <div class="nav-contenedor-identidad">
       <a
         href="https://www.gob.mx/"
@@ -155,16 +171,19 @@
     </div>
   </nav>
 
-  <h3 class="m-t-10">Navegación de Conacyt</h3>
-  <nav class="navegacion navegacion-conacyt">
+  <h3 class="m-t-10">Navegación de Conahcyt</h3>
+  <nav
+    class="navegacion navegacion-conahcyt"
+    :class="{ 'navegacion-movil-forzada': navegacion_movil_forzada }"
+  >
     <div class="nav-contenedor-identidad">
       <a href="#" class="nav-hiperviculo-logo">
         <img
-          class="nav-logo"
+          class="nav-logo invertir"
           width="130"
           height="38"
           src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
-          alt="Conacyt."
+          alt="Conahcyt."
         />
       </a>
       <button class="nav-boton-menu">
@@ -205,23 +224,39 @@
   <p>
     Los estilos de estos elementos colapsables como elementos independientes aún
     no está definido dentro del sistema de diseño. Consiste en un elemento
-    .colapsable-navegacion que contiene un botón visible y al agregarse la clase
+    .contenedor-colapsable que contiene un botón visible y al agregarse la clase
     .activo, entonces muestra una lista de enlaces.
   </p>
   <p>En el siguiente ejemplo, la clase .activo se agrega al hacer click</p>
-  <li class="colapsable-navegacion" :class="{ activo: colapsable_activo }">
+
+  <div class="contenedor-colapsable" :class="{ activo: colapsable_activo1 }">
     <button
-      class="colapsable-boton-submenu nav-boton-submenu"
-      @click="colapsable_activo = !colapsable_activo"
+      :aria-expanded="colapsable_activo1"
+      class="colapsable-boton"
+      @click="colapsable_activo1 = !colapsable_activo1"
     >
-      Titulo colapsable
+      <div class="contenedor-encabezado-colapsable">
+        <p class="m-0">Encabezado colapsable</p>
+      </div>
+      <div class="p-t-1">
+        <span aria-hidden="true" class="nav-boton-submenu"></span>
+      </div>
     </button>
-    <ul class="colapsable-submenu">
-      <li>
-        <a href="#"> Menú del submenu</a>
-      </li>
-    </ul>
-  </li>
+    <div class="contenedor-colapsable-contenido">
+      <ul>
+        <li>
+          <a
+            href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes"
+            target="_blank"
+            :tabindex="colapsable_activo1 ? undefined : -1"
+          >
+            Elemento desplegado</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <h2 class="m-t-10">Menú lateral</h2>
   <p>
     El siguiente elemento .menu-lateral-contenedor consiste en un menú que
@@ -243,27 +278,75 @@
       <div class="menu-max-height">
         <ul>
           <li>
-            <router-link to="#routerlink"> router link prueba </router-link>
+            <router-link to="#routerlink" class="p-x-5-esc p-x-3-mov p-y-1">
+              router link prueba
+            </router-link>
           </li>
           <li>
-            <a href="#anchore"> anchore link prueba </a>
+            <a href="#anchore" class="p-x-5-esc p-x-3-mov p-y-1">
+              anchore link prueba
+            </a>
           </li>
           <li
-            class="colapsable-navegacion"
-            :class="{ activo: colapsable_activo }"
+            class="contenedor-colapsable"
+            :class="{ activo: colapsable_activo2 }"
           >
             <button
-              class="colapsable-boton-submenu nav-boton-submenu"
-              @click="colapsable_activo = !colapsable_activo"
+              class="colapsable-boton p-x-5-esc p-x-3-mov p-y-1"
+              @click="colapsable_activo2 = !colapsable_activo2"
             >
               Titulo colapsable
+              <span aria-hidden="true" class="nav-boton-submenu"></span>
             </button>
-            <ul class="colapsable-submenu">
+            <ul class="contenedor-colapsable-contenido">
               <li>
-                <a href="#"> Menú del submenu</a>
+                <a
+                  href="#"
+                  class="p-x-5-esc p-x-3-mov p-y-1 p-l-4-mov p-l-6-esc"
+                >
+                  Menú del submenu</a
+                >
               </li>
               <li>
-                <a href=""> Menú del submenu 2</a>
+                <a
+                  href=""
+                  class="p-x-5-esc p-x-3-mov p-y-1 p-l-4-mov p-l-6-esc"
+                >
+                  Menú del submenu 2</a
+                >
+              </li>
+              <li>
+                <div
+                  class="contenedor-colapsable"
+                  :class="{ activo: colapsable_activo3 }"
+                >
+                  <button
+                    class="colapsable-boton p-x-6-esc p-x-4-mov p-y-1"
+                    @click="colapsable_activo3 = !colapsable_activo3"
+                  >
+                    Titulo colapsable
+                    <span aria-hidden="true" class="nav-boton-submenu"></span>
+                  </button>
+                  <ul class="contenedor-colapsable-contenido">
+                    <li>
+                      <a
+                        href="#"
+                        class="p-x-5-esc p-x-3-mov p-y-1 p-l-5-mov p-l-7-esc"
+                      >
+                        Menú del submenu</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href=""
+                        class="p-x-5-esc p-x-3-mov p-y-1 p-l-5-mov p-l-7-esc"
+                      >
+                        Menú del submenu 2</a
+                      >
+                    </li>
+                    <li></li>
+                  </ul>
+                </div>
               </li>
             </ul>
           </li>
@@ -280,7 +363,7 @@
   </p>
 
   <div class="indice-de-contenido">
-    <p class="titulo-indice">{{ titulo }}</p>
+    <p class="titulo-indice">{ { titulo } }</p>
     <nav>
       <div class="contenedor-indice-de-contenido">
         <slot name="contenido-indice-de-contenido">
@@ -296,5 +379,10 @@
 <script setup>
 import { ref } from "vue";
 const abrirMenu = ref(false);
-const colapsable_activo = ref(false);
+const colapsable_activo1 = ref(false);
+const colapsable_activo2= ref(false);
+
+const colapsable_activo3 = ref(false);
+
+const navegacion_movil_forzada = ref(false);
 </script>

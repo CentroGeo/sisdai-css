@@ -3,8 +3,8 @@
   font-size: 0.875rem;
   font-weight: 400;
   line-height: calc(1em * 1);
-  padding: map-get($espaciado,'1');
-  margin: map-get($espaciado,'1') map-get($espaciado,'2');
+  padding: map-get($espaciado, "1");
+  margin: map-get($espaciado, "1") map-get($espaciado, "2");
   background-color: var(--navegacion-fondo-hover);
   box-shadow: 0 0 0 0;
   color: var(--navegacion-color-hover);
@@ -16,17 +16,17 @@
     box-shadow: var(--navegacion-sombra-active);
     color: var(--navegacion-color-active);
   }
-  @include mediaquery('nav') {
-    margin: 0 0 0 map-get($espaciado,'minimo');
+  @include mediaquery("nav") {
+    margin: 0 0 0 map-get($espaciado, "minimo");
   }
 }
 .nav-boton-icon {
   @extend .nav-boton;
-  padding: calc(map-get($espaciado,'1') + 2px);
+  padding: calc(map-get($espaciado, "1") + 2px);
   border-radius: 50%;
-  margin: map-get($espaciado,'1') map-get($espaciado,'2');
-  @include mediaquery('nav') {
-    margin: map-get($espaciado,'minimo');
+  margin: map-get($espaciado, "1") map-get($espaciado, "2");
+  @include mediaquery("nav") {
+    margin: map-get($espaciado, "minimo");
   }
 }
 
@@ -41,13 +41,13 @@
   border: none;
   border-radius: 0;
   justify-content: center;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   .nav-icono-menu {
     background: var(--navegacion-color);
     width: 20px;
     height: 1px;
     display: block;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     position: absolute;
     top: 22px;
     &::after,
@@ -58,7 +58,7 @@
       height: 1px;
       display: block;
       position: absolute;
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
     }
     &::after {
       top: 5px;
@@ -71,74 +71,82 @@
     .nav-icono-menu {
       width: 0;
       &::after {
-        transform: translate3d(-10px,-5px,0) rotate(-135deg);
+        transform: translate3d(-10px, -5px, 0) rotate(-135deg);
       }
       &::before {
-        transform: translate3d(-10px,5px,0) rotate(135deg);
+        transform: translate3d(-10px, 5px, 0) rotate(135deg);
       }
     }
-
   }
 }
 .nav-boton-submenu {
   display: inline-flex;
-  background-color: var(--navegacion-fondo);
+  // background-color: var(--navegacion-fondo);
+  background: transparent;
   border: none;
   border-radius: 0;
   box-shadow: 0 0 0 0;
-  color: var(--navegacion-color);
+  // color: var(--navegacion-color);
   font-size: 0.875rem;
   font-weight: 400;
   line-height: calc(1em * 1);
-  padding: map-get($espaciado,'2');
+  padding: map-get($espaciado, "2");
   margin: 0 !important;
   text-decoration: none;
   white-space: nowrap;
-  transition: color .2s ease-in-out, background-color .2s ease-in-out, box-shadow .2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
   &:hover,
   &:focus {
-    background-color: var(--navegacion-fondo-hover);
-    box-shadow: var(--navegacion-sombra-hover);
-    color: var(--navegacion-color-hover);
+    // background-color: var(--navegacion-fondo-hover);
+    // box-shadow: var(--navegacion-sombra-hover);
+    // color: var(--navegacion-color-hover);
   }
   &:active,
   &.active,
   &.nuxt-link-active,
   &.nuxt-link-exact-active,
   &.router-link-exact-active {
-    background-color: var(--navegacion-fondo-active);
-    box-shadow: var(--navegacion-sombra-active);
-    color: var(--navegacion-color-active);
+    // background-color: var(--navegacion-fondo-active);
+    // box-shadow: var(--navegacion-sombra-active);
+    // color: var(--navegacion-color-active);
   }
   &::after {
     font-family: "sisdai-iconos" !important;
     font-size: 1rem;
     height: 0.875rem;
-    content: "\65";
-    margin-left: map-get($espaciado,'minimo');
+    content: "d";
+    margin-left: map-get($espaciado, "minimo");
   }
-  width: 100%;
+  // width: 100%;
   text-align: left;
-  @include mediaquery('nav') {
+  @include mediaquery("nav") {
     &::after {
       transform: rotate(90deg);
     }
   }
 }
-.nav-boton-regresar {
-  @extend .nav-boton-submenu;
-  &::after {
-    display: none;
+.navegacion {
+  .nav-boton-regresar {
+    color: var(--navegacion-conahcyt-color);
+    @extend .nav-boton-submenu;
+    &::after {
+      display: none;
+    }
+    &::before {
+      font-family: "sisdai-iconos" !important;
+      font-size: 1rem;
+      content: "d";
+      margin-left: calc(map-get($espaciado, "minimo") * -1);
+      margin-right: map-get($espaciado, "minimo");
+      transform: rotate(180deg);
+    }
   }
-  &::before {
-    font-family: "sisdai-iconos" !important;
-    font-size: 1rem;
-    content: "\65";
-    margin-left: calc(map-get($espaciado,'minimo') * -1);
-    margin-right: map-get($espaciado,'minimo');
-    transform: rotate(180deg);
-  }
-  @include mediaquery('nav') {
-    display: none;
+  &:not(.navegacion-movil-forzada) {
+    .nav-boton-regresar {
+      @include mediaquery("nav") {
+        display: none;
+      }
+    }
   }
 }

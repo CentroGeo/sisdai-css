@@ -1,24 +1,27 @@
 {
   "name": "sisdai-css",
-  "version": "0.37.0",
+  "version": "0.46.5",
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "main": "src/eni.scss",
   "scripts": {
     "build": "sass src/eni.scss:dist/eni.min.css --style compressed",
-    "build:docs": "cd docs && npm run build",
-    "build:dev": "cd docs && npm run dev",
+    "docs": "concurrently \"npm run scss\" \"npm run docs:dev\"",
+    "docs:install": "cd docs && npm install",
+    "docs:dev": "cd docs && npm run dev",
+    "docs:build": "cd docs && npm run build",
+    "docs:preview": "cd docs && npm run preview",
     "scss": "sass --watch src/eni.scss:docs/src/assets/eni.css --style expanded"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/salsa-community/sisdai-css.git"
+    "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css.git"
   },
   "author": "",
   "license": "",
   "bugs": {
-    "url": "https://github.com/salsa-community/sisdai-css/issues"
+    "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css/issues"
   },
-  "homepage": "https://github.com/salsa-community/sisdai-css#readme",
+  "homepage": "https://codigo.conahcyt.mx/sisdai/sisdai-css#readme",
   "dependencies": {
     "sass": "1.49.10"
   },

@@ -10,7 +10,8 @@ a,
   font-weight: 500;
   line-height: inherit;
   padding: 0;
-  text-decoration: underline;
+  // text-decoration: underline;
+  text-decoration: none;
   text-align: left;
   cursor: pointer;
   transition: all .27s ease-in-out;
@@ -19,16 +20,18 @@ a,
     color: var(--hipervinculo-deshabilitado-color);
     box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
   }
+  &:visited {
+    color: var(--hipervinculo-visitado);
+  }
   &:hover {
     background-color: transparent;
     color: var(--hipervinculo-hover-color);
-    box-shadow: 0 0 2px var(--hipervinculo-hover-sombra);
+    text-decoration: underline;
   }
-  &:focus {
+  &:focus-visible {
     background-color: transparent;
     color: var(--hipervinculo-focus-color);
-    box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
-    outline: none;
+    outline: 2px dashed var(--hipervinculo-focus-sombra);
   }
 }
 
@@ -49,4 +52,15 @@ a[class*=" p-"],
   display: inline-block;
 }
 
-
+// Este "estilo" sirve para mejorar accesibilidad con lectores de pantalla
+[target="_blank"]:after {
+  content: ". Abre nueva pestaña.";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}

@@ -1,58 +1,76 @@
 .tarjeta-hipervinculo-externo {
-	position: relative;
-	width: 100%;
-	min-height: 240px;
-	display: flex;
-	border-radius: map-get($bordes, '20');
-	overflow: hidden;
-	text-decoration: none;
-	box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  min-height: 240px;
+  display: flex;
+  border-radius: map-get($bordes, "20");
+  overflow: hidden;
+  text-decoration: none;
+  box-sizing: border-box;
 
-	.fondo-imagen {
-		transform: scale(1.1);
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 0;
-		top: 0;
-		object-fit: cover;
-		object-position: 50% 50%;
-		transition: all 0.27s ease-in-out;
-	}
+  .fondo-imagen {
+    transform: scale(1.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    object-position: 50% 50%;
+    transition: all 0.27s ease-in-out;
+    img,
+    figure,
+    video,
+    picture {
+      object-fit: cover;
+      object-position: 50%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
 
-	.degradado-negro-abajo {
-		position: relative;
-		width: 100%;
-		color: var(--tipografia-color-1);
-		background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
-		display: flex;
-		align-items: stretch;
-		padding-top: 48px;
+  .degradado-negro-abajo {
+    position: relative;
+    width: 100%;
+    color: var(--tarjetas-externas-color);
+    background: var(--tarjetas-externas-fondo-gradiente);
+    display: flex;
+    align-items: stretch;
+    padding-top: 48px;
 
-		.contenido-abajo {
-			color: var(--tipografia-color-1);
-			margin-top: auto;
-			padding: 24px;
-			width: 100%;
+    .contenido-abajo {
+      color: var(--tarjetas-externas-color);
+      margin-top: auto;
+      padding: 24px;
+      width: 100%;
+      color: #ffffff;
 
-			p {
-				margin: 4px 0 4px 0;
-			}
+      p {
+        margin: 4px 0 4px 0;
+      }
 
-		}
-	}
+      .parrafo-texto-alto {
+        // color: var(--tarjetas-externas-color);
+        color: #ffffff;
+      }
+    }
+  }
 
-	&:hover {
-		.fondo-imagen {
-			transform: scale(1);
-		}
-	}
+  &:hover {
+    text-decoration: none;
 
-	&:focus {
+    .fondo-imagen {
+      transform: scale(1);
+    }
+  }
 
-		background-color: transparent;
-		color: var(--hipervinculo-focus-color);
-		box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
-		outline: none;
-	}
+  &:focus-visible {
+    background-color: transparent;
+    color: var(--hipervinculo-focus-color);
+    outline:none;
+    .fondo-imagen {
+      transform: scale(1);
+    }
+  }
 }
