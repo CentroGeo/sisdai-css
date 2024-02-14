@@ -106,25 +106,27 @@ donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
 El código se encuentra separado por módulos dependiendo del tipo de etiqueta o funcionalidad de los elementos que contenga.
 
-  1. accesibilidad
-  1. alertas
-  1. auxiliares
-  1. bordes
-  1. boton
-  1. color
-  1. detalle
-  1. formularios
-  1. icono
-  1. imagenes
-  1. link
-  1. listas
-  1. navegacion
-  1. portada
-  1. reticula
-  1. sombras
-  1. tablas
-  1. tarjetas
-  1. tipografia
+| Modulo | Descripcion |
+| ------ | ----------- |
+| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menu de accesibilidad |
+| Alertas | Contenedores para mostrar notificaciones de texto |
+| Auxiliares | Clases globales para alinear contenedores y elementos |
+| Bordes | Clases reutilizables de distintos estilos de bordes |
+| Boton | Clases que se aplican al elemento `<boton>` |
+| Color | Clases generales de colores para estados de elementos y clases de colores institucionales |
+| Detalle | Estilos de la etiqueta `<details>` `<summary>` utilizados en secciones de preguntas y respuestas |
+| Formularios | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios |
+| Icono | Clases de tamaños para las clases de `.icono-` |
+| Imagenes | Estilos de las etiquetas relacionadas con imagenes `<img>`, `<figure>` y `<figcaption>` |
+| Link | Estilos de la etiqueta de hipervinculo `<a>` |
+| Listas | Estilos de las etiquedas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales |
+| Navegacion* | Estilos y clases para todos los elementos que se necesitan en la navegacion, desde el `<nav>` hasta listas anidadas de sub-menu |
+| Portada* | Clases del componente de diseño de portada para un capítulo ENI |
+| Reticula | Clases de contenedores y reticula con renglones y columnas |
+| Sombras | Clases reutilizables de distingos estilos de sombras |
+| Tablas | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>` |
+| Tarjetas* | Clases para el componente tarjeta del sistema de diseño |
+| Tipografia | Estilos de las etiquetas de titulos y parrafos. Clases de titulos especiales responsivas que utilizan los capítulos de eni y los componentes de visualizacion de datos |
 
 ## Uso local del proyecto
 
