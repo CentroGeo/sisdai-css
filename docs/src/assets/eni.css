@@ -10615,7 +10615,7 @@ body[data-dark-theme-gema=true] {
   --menu-lateral-fondo: var( --color-18 );
   --menu-lateral-accion: var( --color-4 );
   --menu-lateral-hover-color: var( --color-0);
-  --menu-lateral-accion-fondo-hover: var( --color-6 );
+  --menu-lateral-accion-fondo-hover: var( --color-13 );
   --menu-lateral-accion-fondo-active: var( --color-19 );
   --menu-lateral-accion-sombra-active: var( --color-4 );
   --submenu-lateral-fondo-mov: var( --color-18 );
