@@ -10304,6 +10304,7 @@ body[data-dark-theme-sisdai=true] {
   --boton-secundario-focus-borde: #668BFF;
   --boton-secundario-focus-color: #BFB5E0;
   --boton-secundario-focus-sombra: #668BFF;
+  --boton-conahcyt-fondo: #DDDDDD;
   --label-color: #978CB7;
   --input-fondo: transparent;
   --input-color: #ffffff;
@@ -10367,7 +10368,6 @@ body[data-dark-theme-sisdai=true] {
   --hipervinculo-focus-color: #668BFF;
   --hipervinculo-focus-sombra: #668BFF;
   --hipervinculo-visitado: #CF99FF;
-  --boton-conahcyt-fondo: #f6f6f6;
 }
 body[data-dark-theme-sisdai=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
@@ -10423,6 +10423,7 @@ body[data-dark-theme-eni=true] {
   --boton-secundario-focus-borde: #668BFF;
   --boton-secundario-focus-color: #B1C6E4;
   --boton-secundario-focus-sombra: #668BFF;
+  --boton-conahcyt-fondo: #DDDDDD;
   --boton-icono-sin-borde-color: #6692FF;
   --label-color: #889DBB;
   --input-fondo: transparent;
@@ -10488,7 +10489,6 @@ body[data-dark-theme-eni=true] {
   --hipervinculo-focus-color: #668BFF;
   --hipervinculo-focus-sombra: #668BFF;
   --hipervinculo-visitado: #CF99FF;
-  --boton-conahcyt-fondo: #f6f6f6;
 }
 body[data-dark-theme-eni=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
@@ -10614,6 +10614,7 @@ body[data-dark-theme-gema=true] {
   --menu-lateral-color: var( --color-2 );
   --menu-lateral-fondo: var( --color-18 );
   --menu-lateral-accion: var( --color-4 );
+  --menu-lateral-hover-color: var( --color-0);
   --menu-lateral-accion-fondo-hover: var( --color-6 );
   --menu-lateral-accion-fondo-active: var( --color-19 );
   --menu-lateral-accion-sombra-active: var( --color-4 );
@@ -10729,6 +10730,7 @@ body[data-light-theme-sisdai=true] {
   --boton-secundario-focus-borde: #005DFF;
   --boton-secundario-focus-color: #453B67;
   --boton-secundario-focus-sombra: #005DFF;
+  --boton-conahcyt-fondo: #DDDDDD;
   --label-color: #6E638F;
   --input-fondo: transparent;
   --input-color: #141414;
@@ -10738,7 +10740,7 @@ body[data-light-theme-sisdai=true] {
   --input-deshabilitado-color: #AAAAAA;
   --input-hover: #453B67;
   --input-focus: #005DFF;
-  --input-select-svg: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">          <g fill="%23141414">              <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>              <rect width="24" height="24" fill="none"/>          </g>      </svg>');
+  --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">        <g fill="%23141414">            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>            <rect width="24" height="24" fill="none"/>        </g>    </svg>');
   --tabla-fondo-impar: #F4F1FE;
   --tabla-fondo-notas: #DBD0FB;
   --tarjetas-fondo: #F5F5F5;
@@ -10792,7 +10794,6 @@ body[data-light-theme-sisdai=true] {
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
   --hipervinculo-visitado: #9233FF;
-  --boton-conahcyt-fondo: #f6f6f6;
   --navegacion-fondo: #eef;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;
@@ -10884,6 +10885,7 @@ body[data-light-theme-eni=true] {
   --boton-secundario-focus-borde: #005DFF;
   --boton-secundario-focus-color: #364A69;
   --boton-secundario-focus-sombra: #005DFF;
+  --boton-conahcyt-fondo: #DDDDDD;
   --boton-icono-sin-borde-color: #0068FF;
   --label-color: #5E7392;
   --input-fondo: transparent;
@@ -10894,7 +10896,7 @@ body[data-light-theme-eni=true] {
   --input-deshabilitado-color: #AAAAAA;
   --input-hover: #364A69;
   --input-focus: #005DFF;
-  --input-select-svg: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">          <g fill="%23141414">              <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>              <rect width="24" height="24" fill="none"/>          </g>      </svg>');
+  --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">        <g fill="%23141414">            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>            <rect width="24" height="24" fill="none"/>        </g>    </svg>');
   --tabla-fondo-impar: #F0F6FF;
   --tabla-fondo-notas: #CCE1FF;
   --tarjetas-fondo: #F5F5F5;
@@ -10949,7 +10951,6 @@ body[data-light-theme-eni=true] {
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
   --hipervinculo-visitado: #9233FF;
-  --boton-conahcyt-fondo: #f6f6f6;
   --navegacion-fondo: #eef;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;
@@ -11110,6 +11111,7 @@ body[data-light-theme-gema=true] {
   --menu-lateral-color: var( --color-17 );
   --menu-lateral-fondo: var( --color-18 );
   --menu-lateral-accion: var( --color-3 );
+  --menu-lateral-hover-color: var( --color-0);
   --menu-lateral-accion-fondo-hover: var( --color-13 );
   --menu-lateral-accion-fondo-active: var( --color-19 );
   --menu-lateral-accion-sombra-active: var( --color-3 );
@@ -11132,7 +11134,7 @@ body[data-light-theme-gema=true] {
   --hipervinculo-focus-color: var( --color-7 );
   --hipervinculo-focus-sombra: var( --color-7 );
   --hipervinculo-visitado: var( --color-29 );
-  --input-select-svg: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">          <g fill="%23141414">              <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>              <rect width="24" height="24" fill="none"/>          </g>      </svg>');
+  --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">        <g fill="%23141414">            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>            <rect width="24" height="24" fill="none"/>        </g>    </svg>');
   --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
   --navegacion-fondo: #eef;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);

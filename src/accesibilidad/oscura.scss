@@ -62,6 +62,8 @@ body[data-dark-theme-sisdai='true'] {
         --boton-secundario-focus-color: #BFB5E0;
         --boton-secundario-focus-sombra: #668BFF;
 
+  --boton-conahcyt-fondo: #DDDDDD;
+
   // Elementos de forumlario
   --label-color: #978CB7;
   --input-fondo: transparent;
@@ -157,8 +159,6 @@ body[data-dark-theme-sisdai='true'] {
   --hipervinculo-focus-color: #668BFF;
   --hipervinculo-focus-sombra: #668BFF;
   --hipervinculo-visitado: #CF99FF;
-
-  --boton-conahcyt-fondo: #f6f6f6;
 }
 
 // Variables de color oscuro Eni
@@ -224,6 +224,8 @@ body[data-dark-theme-eni='true'] {
         --boton-secundario-focus-borde: #668BFF;
         --boton-secundario-focus-color: #B1C6E4;
         --boton-secundario-focus-sombra: #668BFF;
+
+  --boton-conahcyt-fondo: #DDDDDD;
  // Boton icono sin borde
  --boton-icono-sin-borde-color: #6692FF;
 
@@ -323,8 +325,6 @@ body[data-dark-theme-eni='true'] {
   --hipervinculo-focus-color: #668BFF;
   --hipervinculo-focus-sombra: #668BFF;
   --hipervinculo-visitado: #CF99FF;
-
-  --boton-conahcyt-fondo: #f6f6f6;
 }
 
 // Variables de color oscuro Gema
@@ -448,6 +448,7 @@ body[data-dark-theme-gema='true'] {
   --menu-lateral-color: var( --color-2 );
   --menu-lateral-fondo: var( --color-18 );
   --menu-lateral-accion: var( --color-4 );
+  --menu-lateral-hover-color: var( --color-0);
   --menu-lateral-accion-fondo-hover: var( --color-6 );
   --menu-lateral-accion-fondo-active: var( --color-19 );
   --menu-lateral-accion-sombra-active: var( --color-4 );
