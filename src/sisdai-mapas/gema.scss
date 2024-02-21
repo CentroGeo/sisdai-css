@@ -1,0 +1,20 @@
+.visualizador .sisdai-mapa.contenedor-vis.gema {
+  height: 100%;
+  position: relative;
+  
+  .contenedor-vis-paneles {
+    height: 100%;
+    max-height: max-content;
+    padding: 0;
+    border-radius: 0;
+    grid-template-columns: 1fr auto;
+
+    .contenido-vis {
+      grid-column-end: span 2;
+    }
+  }
+
+  .contenedor-vis-atribuciones {
+    display: none;
+  }
+}
