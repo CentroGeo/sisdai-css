@@ -7,8 +7,10 @@
   "scripts": {
     "build": "sass src/eni.scss:dist/eni.min.css --style compressed",
     "build:docs": "cd docs && npm run build",
-    "build:dev": "cd docs && npm run dev",
-    "scss": "sass --watch src/eni.scss:docs/src/assets/eni.css --style expanded"
+    "docs": "concurrently \"npm run docs:scss\" \"npm run docs:dev\"",
+    "docs:install": "cd docs && npm install",
+    "docs:dev": "cd docs && npm run dev",
+    "docs:scss": "sass --watch src/eni.scss:docs/src/assets/eni.css --style expanded"
   },
   "repository": {
     "type": "git",
@@ -21,16 +23,12 @@
   "dependencies": {
     "sass": "1.49.10"
   },
+  "devDependencies": {
+    "concurrently": "7.2.1"
+  },
   "files": [
     "dist",
     "src",
     "README.md"
-  ],
-  "devDependencies": {
-    "concurrently": "7.2.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css"
-  }
+  ]
 }
