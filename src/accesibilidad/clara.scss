@@ -124,7 +124,8 @@ body[data-light-theme-sisdai='true'] {
   --menu-lateral-color: #201540;
   --menu-lateral-fondo: #E4DEFC;
   --menu-lateral-accion: #0068FF;
-    --menu-lateral-accion-fondo-hover: #DBD0FB;
+  --menu-lateral-hover-color: #FFFFFF;
+    --menu-lateral-accion-fondo-hover: #453B67;
       --menu-lateral-accion-fondo-active: #FEFAF8;
       --menu-lateral-accion-sombra-active: #0068FF;
   --submenu-lateral-fondo-mov: #F4F1FE;
@@ -499,7 +500,7 @@ body[data-light-theme-gema='true']  {
   --menu-lateral-fondo: var( --color-18 );
   --menu-lateral-accion: var( --color-3 );
   --menu-lateral-hover-color: var( --color-0);
-  --menu-lateral-accion-fondo-hover: var( --color-13 );
+  --menu-lateral-accion-fondo-hover: var( --color-12 );
   --menu-lateral-accion-fondo-active: var( --color-19 );
   --menu-lateral-accion-sombra-active: var( --color-3 );
   --submenu-lateral-fondo-mov: var( --color-18 );
