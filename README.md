@@ -39,7 +39,7 @@ Agrega las siguientes lineas dentro del `<head> </head>` del archivo de html en 
 
 ### Instala la biblioteca
 
-En la carpeta principal de tu proyecto Vue, instala la biblioteca a las dependencias de tu proyecto con:
+En la carpeta principal de tu proyecto Vue, instala la biblioteca en las dependencias de tu proyecto con:
 
 ``` bash
 npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css
@@ -85,15 +85,15 @@ Muchos de los estilos de la biblioteca se muestran sin agregar ninguna clase, ut
   <h1> Estilo estandarizado de título principal </h1>
 ```
 
-Existen además clases para estilizar elementos que se encuentran agrupadas por módulos dependiendo de su uso.
+Existen además clases para dar estilo a elementos y se encuentran agrupadas por módulos dependiendo de su uso.
 
 ```html
   <h1 class="titulo-pagina">Es la jerarquía de texto más alta, se ubica generalmente al inicio de la página y describe el contenido de la misma</h1>
 ```
 
-## Actualizacion
+## Actualización
 
-Si actualmente utilizas la biblioteca y necesitas utilizar otra version, ubicate en la carpeta del proyecto en donde necesitas la actualización instala la version que requieres nuevamente
+Si actualmente utilizas la biblioteca y necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la version que requieres nuevamente
 
 ```bash
 npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
@@ -106,27 +106,27 @@ donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
 El código se encuentra separado por módulos dependiendo del tipo de etiqueta o funcionalidad de los elementos que contenga.
 
-| Modulo | Descripcion |
-| ------ | ----------- |
-| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menu de accesibilidad |
-| Alertas | Contenedores para mostrar notificaciones de texto |
-| Auxiliares | Clases globales para alinear contenedores y elementos |
-| Bordes | Clases reutilizables de distintos estilos de bordes |
-| Boton | Clases que se aplican al elemento `<boton>` |
-| Color | Clases generales de colores para estados de elementos y clases de colores institucionales |
-| Detalle | Estilos de la etiqueta `<details>` `<summary>` utilizados en secciones de preguntas y respuestas |
-| Formularios | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios |
-| Icono | Clases de tamaños para las clases de `.icono-` |
-| Imagenes | Estilos de las etiquetas relacionadas con imagenes `<img>`, `<figure>` y `<figcaption>` |
-| Link | Estilos de la etiqueta de hipervinculo `<a>` |
-| Listas | Estilos de las etiquedas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales |
-| Navegacion* | Estilos y clases para todos los elementos que se necesitan en la navegacion, desde el `<nav>` hasta listas anidadas de sub-menu |
-| Portada* | Clases del componente de diseño de portada para un capítulo ENI |
-| Reticula | Clases de contenedores y reticula con renglones y columnas |
-| Sombras | Clases reutilizables de distingos estilos de sombras |
-| Tablas | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>` |
-| Tarjetas* | Clases para el componente tarjeta del sistema de diseño |
-| Tipografia | Estilos de las etiquetas de titulos y parrafos. Clases de titulos especiales responsivas que utilizan los capítulos de eni y los componentes de visualizacion de datos |
+| Modulo | Descripcion                                                                                                                                                            |
+| ------ |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menu de accesibilidad                                                                                  |
+| Alertas | Contenedores para mostrar notificaciones de texto                                                                                                                      |
+| Auxiliares | Clases globales para alinear contenedores y elementos                                                                                                                  |
+| Bordes | Clases reutilizables de distintos estilos de bordes                                                                                                                    |
+| Boton | Clases que se aplican al elemento `<boton>`                                                                                                                            |
+| Color | Clases generales de colores para estados de elementos y clases de colores institucionales                                                                              |
+| Detalle | Estilos de la etiqueta `<details>` `<summary>` utilizados en secciones de preguntas y respuestas                                                                       |
+| Formularios | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                       |
+| Icono | Clases de tamaños para las clases de `.icono-`                                                                                                                         |
+| Imagenes | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                |
+| Link | Estilos de la etiqueta de hipervinculo `<a>`                                                                                                                           |
+| Listas | Estilos de las etiquedas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                          |
+| Navegacion* | Estilos y clases para todos los elementos que se necesitan en la navegación, desde el `<nav>` hasta listas anidadas de sub-menu                                        |
+| Portada* | Clases del componente de diseño de portada para un capítulo ENI                                                                                                        |
+| Reticula | Clases de contenedores y reticula con renglones y columnas                                                                                                             |
+| Sombras | Clases reutilizables de distintos estilos de sombras                                                                                                                   |
+| Tablas | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                    |
+| Tarjetas* | Clases para el componente tarjeta del sistema de diseño                                                                                                                |
+| Tipografia | Estilos de las etiquetas de títulos y parrafos. Clases de títulos especiales responsivas que utilizan los capítulos de ENI y los componentes de visualización de datos |
 
 ## Uso local del proyecto
 
@@ -244,12 +244,12 @@ Preferiblemente situarlo antes de los auxiliares y los archivos de accesibilidad
 ```
 
 Para facilitar el mantenimiento de la biblioteca se debe prestar atención en las variables declaradas en `_variables.css`
-y hacer uso de ellas sobre todo en margenes y colores; 
-las tipografías deben estar declaradas en unidades rem para que varien conforme el tamaño general de la tipografia del sitio.
+y hacer uso de ellas sobre todo en márgenes y colores; 
+las tipografías deben estar declaradas en unidades rem para que varien conforme el tamaño general de la tipografía del sitio.
 
 Además se deben utilizar en la medida de lo posible los `_mixins.scss` de mediaquery 
 o en su defecto utilizar las variables en el @media screen and (max-width: calc(map-get($breakpoints, 'esc')))
-para controlar los puntos de cambio de diseño de celular, escritorio y navegacion.
+para controlar los puntos de cambio de diseño de celular, escritorio y navegación.
 
 
 ```bash
