@@ -9046,6 +9046,9 @@ ol + hr {
 .menu-lateral-contenedor .menu-colapsable .contenedor-colapsable-contenido li a:hover {
   color: var(--menu-lateral-hover-color);
 }
+.menu-lateral-contenedor .menu-colapsable .contenedor-colapsable-contenido li a.router-link-exact-active:hover {
+  color: var(--menu-lateral-accion);
+}
 .menu-lateral-contenedor .menu-max-height {
   overflow: auto;
   max-height: calc(100vh - 180px);

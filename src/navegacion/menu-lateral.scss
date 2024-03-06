@@ -66,6 +66,11 @@
             &:hover {
               color: var(--menu-lateral-hover-color);
             }
+            &.router-link-exact-active {
+              &:hover {
+                color: var(--menu-lateral-accion);
+              }
+            }
           }
         }
       }
