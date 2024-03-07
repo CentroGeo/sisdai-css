@@ -9,13 +9,14 @@ Listado de los elementos de la librería en proceso de desarrollo y documencaci�
 - Accesibilidad
   - [x] Vista simplificada
   - [x] Cambio de tipografía
-  - [ ] Cambio de color (tema claro/oscuro)
+  - [x] Hipervinculos subrayados
+  - [-] Cambio de color (tema claro/oscuro)
   - [x] Auxiliares de lectura
   - [ ] Auxiliares de navegación por teclado
   - [ ] Auxiliares de animación
 - Auxiliares
-  - [ ] Alineación de bloque
-  - [ ] Alineación de texto
+  - [x] Alineación de bloque
+  - [x] Alineación de texto
   - [ ] Peso tipográfico
   - [ ] Animación
 - Módulos
@@ -25,14 +26,14 @@ Listado de los elementos de la librería en proceso de desarrollo y documencaci�
   - [x] Links
   - [x] Color
   - [x] Retícula
-  - [ ] Tablas
-  - [ ] Listas
-  - [ ] Imagenes
-  - [ ] Bordes
-  - [ ] Sombras
-  - [ ] Separadores
-  - [ ] Formulario
-- Notas
+  - [x] Tablas
+  - [x] Listas
+  - [x] Imagenes
+  - [x] Bordes
+  - [x] Sombras
+  - [x] Separadores
+  - [x] Formulario
+
 
 
 ## Variables
