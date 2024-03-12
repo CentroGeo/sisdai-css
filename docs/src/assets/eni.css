@@ -9116,29 +9116,29 @@ ol + hr {
     width: inherit;
   }
 }
-.colapsable-navegacion {
+.contenedor-colapsable {
   position: relative;
   background-color: transparent;
   list-style: none;
 }
-.colapsable-navegacion a:focus-visible {
+.contenedor-colapsable a:focus-visible {
   outline: none;
 }
-.colapsable-navegacion .colapsable-boton {
+.contenedor-colapsable .colapsable-boton {
   display: flex;
   flex-wrap: nowrap;
 }
-.colapsable-navegacion .colapsable-boton div.contenedor-encabezado-colapsable {
+.contenedor-colapsable .colapsable-boton div.contenedor-encabezado-colapsable {
   text-align: left;
 }
-.colapsable-navegacion .nav-boton-submenu, .colapsable-navegacion .navegacion .nav-boton-regresar, .navegacion .colapsable-navegacion .nav-boton-regresar {
+.contenedor-colapsable .nav-boton-submenu, .contenedor-colapsable .navegacion .nav-boton-regresar, .navegacion .contenedor-colapsable .nav-boton-regresar {
   padding: 0;
 }
-.colapsable-navegacion .nav-boton-submenu::after, .colapsable-navegacion .navegacion .nav-boton-regresar::after, .navegacion .colapsable-navegacion .nav-boton-regresar::after {
+.contenedor-colapsable .nav-boton-submenu::after, .contenedor-colapsable .navegacion .nav-boton-regresar::after, .navegacion .contenedor-colapsable .nav-boton-regresar::after {
   transition: all 0.27s ease;
   transform: rotate(90deg);
 }
-.colapsable-navegacion .contenedor-colapsable-contenido {
+.contenedor-colapsable .contenedor-colapsable-contenido {
   opacity: 1;
   position: relative;
   height: 0px;
@@ -9152,37 +9152,37 @@ ol + hr {
   transition: all 0.3s ease-in-out;
   background-color: transparent;
 }
-.colapsable-navegacion .contenedor-colapsable-contenido ul {
+.contenedor-colapsable .contenedor-colapsable-contenido ul {
   list-style: none;
 }
-.colapsable-navegacion .contenedor-colapsable-contenido li {
+.contenedor-colapsable .contenedor-colapsable-contenido li {
   margin: 0;
 }
-.colapsable-navegacion .contenedor-colapsable-contenido li a {
+.contenedor-colapsable .contenedor-colapsable-contenido li a {
   color: var(--menu-lateral-color);
   border-radius: 0;
   box-shadow: none;
 }
-.colapsable-navegacion .contenedor-colapsable-contenido li a.router-link-exact-active, .colapsable-navegacion .contenedor-colapsable-contenido li a:active, .colapsable-navegacion .contenedor-colapsable-contenido li a:focus {
+.contenedor-colapsable .contenedor-colapsable-contenido li a.router-link-exact-active, .contenedor-colapsable .contenedor-colapsable-contenido li a:active, .contenedor-colapsable .contenedor-colapsable-contenido li a:focus {
   background: var(--menu-lateral-accion-fondo-active);
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
   color: var(--menu-lateral-accion);
 }
-.colapsable-navegacion .colapsable-boton {
+.contenedor-colapsable .colapsable-boton {
   border: none;
   color: var(--menu-lateral-color);
   font-weight: 500;
   background: transparent;
 }
-.colapsable-navegacion.activo .colapsable-boton, .colapsable-navegacion:focus .colapsable-boton, .colapsable-navegacion:focus-within .colapsable-boton, .colapsable-navegacion:hover .colapsable-boton {
+.contenedor-colapsable.activo .colapsable-boton, .contenedor-colapsable:focus .colapsable-boton, .contenedor-colapsable:focus-within .colapsable-boton, .contenedor-colapsable:hover .colapsable-boton {
   color: var(--menu-lateral-color);
   background: transparent;
   box-shadow: none;
 }
-.colapsable-navegacion.activo > .colapsable-boton:first-of-type > .nav-boton-submenu::after, .navegacion .colapsable-navegacion.activo > .colapsable-boton:first-of-type > .nav-boton-regresar::after {
+.contenedor-colapsable.activo > .colapsable-boton:first-of-type > .nav-boton-submenu::after, .navegacion .contenedor-colapsable.activo > .colapsable-boton:first-of-type > .nav-boton-regresar::after {
   transform: rotate(270deg);
 }
-.colapsable-navegacion.activo > .contenedor-colapsable-contenido:first-of-type {
+.contenedor-colapsable.activo > .contenedor-colapsable-contenido:first-of-type {
   opacity: 1;
   height: 100%;
   position: relative;
