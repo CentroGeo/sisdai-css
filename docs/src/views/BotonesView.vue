@@ -14,23 +14,23 @@
   
     <h2 class="m-t-10">color</h2>
     <h3>primario</h3>
-    <p>
+    <div>
       <button class="boton-primario">button.boton-primario</button>
       <button class="boton-primario" disabled>disabled</button>
       <a href="" class="boton boton-primario">a.boton.boton-primario</a>
       <input class="boton-primario" type="button" value="input[button]">
       <input class="boton-primario" type="submit" value="input[submit]">
       <input class="boton-primario" type="reset" value="input[reset]">
-    </p>
+    </div>
     <h3>secundario</h3>
-    <p>
+    <div>
       <button class="boton-secundario">button.boton-secundario</button>
       <button class="boton-secundario" disabled>disabled</button>
       <a href="" class="boton boton-secundario">a.boton.boton-secundario</a>
       <input class="boton-secundario" type="button" value="input[button]">
       <input class="boton-secundario" type="submit" value="input[submit]">
       <input class="boton-secundario" type="reset" value="input[reset]">
-    </p>
+    </div>
   
     <h2 class="m-t-10">tamaño</h2>
     <p>

@@ -11,9 +11,9 @@
     ...
   &lt;/div>
   </pre>
-    <p class="p-3 conahcyt-fondo-claro-1">
+    <div class="p-3 conahcyt-fondo-claro-1">
       contenedor
-    </p>
+    </div>
   
   
     <h2 class="m-t-10">Contenedor de ancho fijo</h2>
@@ -24,9 +24,9 @@
   &lt;/div>
   </pre>
     <div class="contenedor ancho-fijo">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1">
         contenedor ancho-fijo
-      </p>
+      </div>
     </div>
   
   
@@ -38,26 +38,26 @@
   &lt;/div>
   </pre>
     <div class="contenedor ancho-lectura">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1">
         contenedor ancho-lectura
-      </p>
+      </div>
     </div>
   
     <h2 class="m-t-10">Auxiliares de alineacion para contenedores</h2>
     <div class="contenedor ancho-lectura contenedor-izq">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1">
         contenedor ancho-lectura contenedor-izq
-      </p>
+      </div>
     </div>
     <div class="contenedor ancho-lectura contenedor-der">
-      <p class="p-3 conhcyt-fondo-claro-1">
+      <div class="p-3 conhcyt-fondo-claro-1">
         contenedor ancho-lectura contenedor-der
-      </p>
+      </div>
     </div>
     <div class="contenedor ancho-lectura contenedor-centro">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1">
         contenedor ancho-lectura contenedor-centro
-      </p>
+      </div>
     </div>
   
     <h2 class="m-t-10">Contenedores especiales</h2>

@@ -268,4 +268,10 @@
     line-height: 14px;
     padding: 8px 16px;
   }
+  p {
+    max-width: 800px;
+  }
+  details p {
+    max-width: inherit;
+  }
 </style>
