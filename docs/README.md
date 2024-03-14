@@ -8,7 +8,7 @@ Es a la fecha, más bien un lugar en donde se muestran ejemplos de cómo son vis
 
 Se recomienda seguir la documentación y scripts del proyecto madre de ésta documentación. 
 
-Pero si por alguna razón se necesitara correr éste proyecto independiente, entiendase como un proyecto anidado, está vinculado a la biblioteca de estilos sisdai-css únicamente por el archivo compilado `eni.css`, que se importa en el archivo `App.vue` en la línea `@import '@/assets/eni.css';`
+Pero si por alguna razón se necesita correr éste proyecto independiente, entiéndase como un proyecto anidado, está vinculado a la biblioteca de estilos sisdai-css únicamente por el archivo compilado `eni.css`, que se importa en el archivo `App.vue` en la línea `@import '@/assets/eni.css';`. Por lo demás es independiente para su instalación, compilación y publicación.
 
 ## Uso local del proyecto
 
