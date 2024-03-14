@@ -11,7 +11,8 @@
   &lt;div class="tarjeta">
     &lt;img
       class="fondo-imagen"
-      src="http://placekitten.com/970/984"
+      src="https://picsum.photos/970/984"
+      alt=""
     />
     &lt;div class="contenido-html">
       &lt;p class="parrafo-texto-alto">Aquí va el contenido&lt;/p>
@@ -21,7 +22,7 @@
     </pre>
     <p>El resultado es el siguiente</p>
     <div class="tarjeta">
-      <img class="fondo-imagen" src="http://placekitten.com/970/984" />
+      <img class="fondo-imagen" src="https://picsum.photos/970/984" alt="" />
       <div class="contenido-html">
         <p class="parrafo-texto-alto">Aquí va el contenido</p>
         <p>
@@ -33,7 +34,7 @@
     </div>
     <p>También existe una variante horizontal, que sólo se muestra así en escritorio</p>
     <div class="tarjeta-horizontal">
-      <img class="fondo-imagen" src="http://placekitten.com/970/984" />
+      <img class="fondo-imagen" src="https://picsum.photos/970/985" alt="" />
       <div class="contenido-html">
         <p class="parrafo-texto-alto">Aquí va el contenido</p>
         <p>
@@ -48,16 +49,10 @@
       Este tipo de elementos, al igual que los hipervínculos externos, también
       pueden usarse en retículas
     </p>
-    <div
-      class="
-        flex flex-contenido-separado
-        contenedor
-        ancho-fijo
-      "
-    >
-      <div class="columna-4 columna-6-esc m-b-3">
+    <div class="flex">
+      <div class="columna-8 m-b-3">
         <div class="tarjeta">
-          <img class="fondo-imagen" src="http://placekitten.com/970/980" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/986" alt="" />
           <div class="contenido-html">
             <p class="parrafo-texto-alto">Aquí va el contenido</p>
             <p>
@@ -68,9 +63,9 @@
           </div>
         </div>
       </div>
-      <div class="columna-4 columna-5-esc m-b-3">
+      <div class="columna-4 columna-4-esc m-b-3">
         <div class="tarjeta">
-          <img class="fondo-imagen" src="http://placekitten.com/970/982" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/987" alt="" />
           <div class="contenido-html">
             <p class="parrafo-texto-alto">Aquí va el contenido</p>
             <p>
@@ -80,9 +75,9 @@
           </div>
         </div>
       </div>
-      <div class="columna-4 columna-5-esc m-b-3">
+      <div class="columna-4 columna-4-esc m-b-3">
         <div class="tarjeta">
-          <img class="fondo-imagen" src="http://placekitten.com/970/982" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/988" alt="" />
           <div class="contenido-html">
             <p class="parrafo-texto-alto">Aquí va el contenido</p>
             <p>
@@ -92,9 +87,9 @@
           </div>
         </div>
       </div>
-      <div class="columna-4 columna-5-esc m-b-3">
+      <div class="columna-4 columna-10-esc m-b-3">
         <div class="tarjeta">
-          <img class="fondo-imagen" src="http://placekitten.com/960/934" />
+          <img class="fondo-imagen" src="https://picsum.photos/960/989" alt="" />
           <div class="contenido-html">
             <p class="parrafo-texto-alto">Aquí va el contenido</p>
             <p>
@@ -105,9 +100,9 @@
           </div>
         </div>
       </div>
-      <div class="columna-4 columna-5-esc m-b-3">
+      <div class="columna-4 columna-6-esc m-b-3">
         <div class="tarjeta">
-          <img class="fondo-imagen" src="http://placekitten.com/960/934" />
+          <img class="fondo-imagen" src="https://picsum.photos/960/990" alt="" />
           <div class="contenido-html">
             <div class="contenedor-alto-fijo" style="height: 220px">
               <h4>Y también puedes meter un contenido escroleable</h4>
