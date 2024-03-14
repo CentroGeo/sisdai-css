@@ -267,6 +267,5 @@
     font-size: 14px;
     line-height: 14px;
     padding: 8px 16px;
-  }  
-
+  }
 </style>
