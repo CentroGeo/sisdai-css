@@ -660,7 +660,7 @@ h6, .h6 {
   color: var(--tipografia-color-2);
 }
 
-.parrafo-texto-alto {
+.parrafo-texto-secundario {
   color: var(--tipografia-color-3);
   font-size: 1;
   line-height: 1.5em;
