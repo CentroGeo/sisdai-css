@@ -11,13 +11,13 @@
     <p>La altura de .contenedor-portada será por default 	height: calc(100vh - 92px);</p>
     <pre>
 &lt;div class="contenedor-portada" style="height: 300px">
-    &lt;img class="portada" src="https://picsum.photos/970/980">
+    &lt;img class="portada" src="https://picsum.photos/970/980" alt="" />
 &lt;/div>
 </pre
     >
 
     <div class="contenedor-portada" >
-      <img class="portada" src="https://picsum.photos/970/980" />
+      <img class="portada" src="https://picsum.photos/970/980" alt="" />
     </div>
     <p>
       El siguiente ejemplo incluye un elemento .portada y otro elemento
@@ -25,7 +25,7 @@
     </p>
     <pre>
 &lt;div class="contenedor-portada">
-    &lt;img class="portada" src="https://picsum.photos/970/980">
+    &lt;img class="portada" src="https://picsum.photos/970/980" alt="" >
     &lt;div class="degradado-negro-abajo">
         &lt;div class="contenido-abajo">
             &lt;div class="contenedor ancho-lectura">
@@ -37,7 +37,7 @@
 </pre
     >
     <div class="contenedor-portada" >
-      <img class="portada" src="https://picsum.photos/970/979" />
+      <img class="portada" src="https://picsum.photos/970/979" alt="" />
       <div class="degradado-negro-abajo">
         <div class="contenido-abajo">
           <div class="contenedor ancho-lectura">
@@ -46,6 +46,5 @@
         </div>
       </div>
     </div>
-    
   </div>
 </template>
