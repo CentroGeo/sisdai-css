@@ -5,75 +5,73 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
 <template>
   <div>
     <h1>Contenedores</h1>
-
+    
     <h2 class="m-t-10">Contenedor</h2>
     <p>Ancho del 100% con margenes laterales de 40px para escritorio y 16px para celular</p>
-  <pre>
-  &lt;div class="contenedor">
-    ...
-  &lt;/div>
-  </pre>
-    <p class="p-3 conahcyt-fondo-claro-1">
+    <pre>
+    &lt;div class="contenedor">
+      ...
+    &lt;/div>
+    </pre>
+    <div class="p-3 conahcyt-fondo-claro-1">
       contenedor
-    </p>
-
-
+    </div>
+    
     <h2 class="m-t-10">Contenedor de ancho fijo</h2>
     <p>Se centra y se limita el ancho máximo que puede tener el contenedor en cada dispositivo no más de 1152px para escritorio y 100% para celular</p>
-  <pre>
-  &lt;div class="contenedor ancho-fijo">
-    ...
-  &lt;/div>
-  </pre>
+    <pre>
+    &lt;div class="contenedor ancho-fijo">
+      ...
+    &lt;/div>
+    </pre>
     <div class="contenedor ancho-fijo">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1">
         contenedor ancho-fijo
-      </p>
+      </div>
     </div>
-
-
+    
     <h2 class="m-t-10">Contenedor de ancho de lectura</h2>
     <p>Se centra y se limita el ancho máximo que puede tener el contenedor en cada dispositivo no más de 700px para escritorio y 100% para celular</p>
-  <pre>
-  &lt;div class="contenedor ancho-lectura">
-    ...
-  &lt;/div>
-  </pre>
+    <pre>
+    &lt;div class="contenedor ancho-lectura">
+      ...
+    &lt;/div>
+    </pre>
     <div class="contenedor ancho-lectura">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1">
         contenedor ancho-lectura
-      </p>
+      </div>
     </div>
-
+    
     <h2 class="m-t-10">Auxiliares de alineacion para contenedores</h2>
     <div class="contenedor ancho-lectura contenedor-izq">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1 m-y-1">
         contenedor ancho-lectura contenedor-izq
-      </p>
-    </div>
-    <div class="contenedor ancho-lectura contenedor-der">
-      <p class="p-3 conhcyt-fondo-claro-1">
-        contenedor ancho-lectura contenedor-der
-      </p>
+      </div>
     </div>
     <div class="contenedor ancho-lectura contenedor-centro">
-      <p class="p-3 conahcyt-fondo-claro-1">
+      <div class="p-3 conahcyt-fondo-claro-1 m-y-1">
         contenedor ancho-lectura contenedor-centro
-      </p>
+      </div>
+    </div>
+    <div class="contenedor ancho-lectura contenedor-der">
+      <div class="p-3 conahcyt-fondo-claro-1 m-y-1">
+        contenedor ancho-lectura contenedor-der
+      </div>
     </div>
 
     <h2 class="m-t-10">Contenedores especiales</h2>
     <h3>Contenedor simplificado para vista simplificada</h3>
     <p>Este contenedor no importa que formato tenga, que tan ancho sea, cuando se selecciona la opción de accesibilidad de vista simplificada, se muestra el contenido en bloque.</p>
-  <pre>
-  &lt;div class="contenedor">
-    &lt;div class="a11y-simplificada-contenedor">
-      &lt;div>
+    <pre>
+    &lt;div class="contenedor">
+      &lt;div class="a11y-simplificada-contenedor">
+        &lt;div>
+          ...
+        &lt;/div>
         ...
-      &lt;/div>
-      ...
-  &lt;/div>
-  </pre>
+    &lt;/div>
+    </pre>
     <div class="contenedor p-0">
       <div class="flex a11y-simplificada-contenedor ">
         <div class="columna-4 conahcyt-fondo-claro-1">
@@ -96,10 +94,8 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
       </div>
     </div>
 
-
     <h2 class="m-t-10">Contenedores compuestos</h2>
     <h3>Contenedor de alto fijo para contenido scrolleable</h3>
-    
     <div class="flex">
       <div class="columna-5">
         <div class="header-contenedor-alto-fijo">
@@ -118,20 +114,20 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
         </div>
       </div>
       <div class="columna-5">
-  <pre>
-  &lt;div class="flex">
-    &lt;div class="columna-5">
-      &lt;div class="header-contenedor-alto-fijo">
-        &lt;p>Titulo del contenido&lt;/p>
-        &lt;a descarga class="boton-secundario">botón&lt;/a>
-      &lt;/div>
-      &lt;div class="contenedor-alto-fijo" lang="en">
-        &lt;h4>Ahoy!&lt;/h4>
-        ...
-      &lt;/div>
-    &lt;/div>
-  &lt;/div>
-  </pre>
+        <pre>
+        &lt;div class="flex">
+          &lt;div class="columna-5">
+            &lt;div class="header-contenedor-alto-fijo">
+              &lt;p>Titulo del contenido&lt;/p>
+              &lt;a descarga class="boton-secundario">botón&lt;/a>
+            &lt;/div>
+            &lt;div class="contenedor-alto-fijo" lang="en">
+              &lt;h4>Ahoy!&lt;/h4>
+              ...
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+        </pre>
       </div>
       <div class="columna-6">
         <p>
@@ -149,10 +145,10 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
     </div>
 
     <h2 class="m-t-10">Visualizaciones</h2>
-    
+    <h3 class="m-t-0">Gráficas</h3>
     <div class="contenedor-vis borde-redondeado-8 m-b-4">
       <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-pie-vis">
-          <div class="panel-encabezado-vis">
+        <div class="panel-encabezado-vis">
           <p class="vis-titulo-visualizacion">
             Evolución de variantes del virus SARS-CoV-2
           </p>
@@ -160,13 +156,10 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
             (Solamente se muestran variantes de preocupación y de interés)
           </p>
         </div>
-
         <figure class="contenido-vis">
           <img
             src="/img/grafica-variantes.png"
-            alt="visalizacion"
-            height="100%"
-            width="100%"
+            alt="visualizacion"
           />
         </figure>
         <div class="panel-pie-vis">
@@ -272,6 +265,7 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
       </div>
     </div>
 
+    <h3>Mapas</h3>
     <UsoSisdaiMapa />
   </div>
 </template>

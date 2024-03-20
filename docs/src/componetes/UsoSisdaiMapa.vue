@@ -176,9 +176,7 @@
       <figure class="contenido-vis">
         <img
           src="/img/mapa-poblacion.png"
-          alt="visalizacion"
-          height="100%"
-          width="100%"
+          alt="mapa"
         />
       </figure>
 
