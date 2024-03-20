@@ -10711,6 +10711,7 @@ body[data-dark-theme-gema=true] .nav-hiperviculo-logo .nav-logo.invertir {
 }
 .a11y-oscura .conahcyt-fondo-claro-1 {
   background-color: var(--color-conahcyt-claro-0);
+  color: #141414;
 }
 
 body[data-light-theme-sisdai=true] {
