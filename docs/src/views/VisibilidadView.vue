@@ -1,7 +1,6 @@
 <template>
-  <h1>Visibilidad</h1>
-
   <div>
+    <h1>Visibilidad</h1>
     <pre>
 &lt;p>&lt;span class="oculto">Este es un &lt;/span>elemento oculto&lt;/p>
 &lt;p>&lt;span class="no-visible">Este es un &lt;/span>elemento no visible&lt;/p>

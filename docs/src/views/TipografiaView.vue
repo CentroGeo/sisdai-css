@@ -1,4 +1,5 @@
 <template>
+<div>
   <h1>Tipografia</h1>
   <div class="contenedor ancho-lectura contenedor-izq">
     <p>
@@ -834,4 +835,5 @@
   <p class="texto-tamanio-10-mov texto-tamanio-5-esc">
     .texto-tamanio-10-mov .texto-tamanio-5-esc
   </p>
+</div>
 </template>

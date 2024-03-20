@@ -13,6 +13,7 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
+.colapsable-navegacion,
 .contenedor-colapsable {
   position: relative;
   background-color: transparent;
@@ -73,8 +74,6 @@
     color: var(--menu-lateral-color);
     font-weight: 500;
     background: transparent;
-    
-   
   }
   &.activo,
   &:focus,
@@ -86,8 +85,8 @@
       box-shadow: none;
     }
   }
-  &.activo{
-    & > .colapsable-boton:first-of-type  > .nav-boton-submenu{
+  &.activo {
+    & > .colapsable-boton:first-of-type .nav-boton-submenu {
       &::after {
         transform: rotate(270deg);
       }
@@ -97,7 +96,5 @@
       height: 100%;
       position: relative;
     }
-    
-    
   }
 }
