@@ -31,7 +31,7 @@
     </p>
     <pre>
   &lt;a class="tarjeta-hipervinculo-externo" href="" target="_blank">
-    &lt;img class="fondo-imagen" src="https://picsum.photos/970/980" />
+    &lt;img class="fondo-imagen" src="https://picsum.photos/970/980" alt="" />
     &lt;div class="degradado-negro-abajo">
       &lt;div class="contenido-abajo ">
         &lt;p class="parrafo-texto-alto m-y-0">
@@ -47,7 +47,7 @@
     >
     <p>El resultado es el siguiente</p>
     <a class="tarjeta-hipervinculo-externo" href="" target="_blank">
-      <img class="fondo-imagen" src="https://picsum.photos/970/980" />
+      <img class="fondo-imagen" src="https://picsum.photos/970/980" alt="" />
       <div class="degradado-negro-abajo">
         <div class="contenido-abajo ">
           <p class="parrafo-texto-alto m-y-0">Nombre del hipervínculo externo</p>
@@ -61,15 +61,13 @@
     </p>
     <div
       class="
-        flex flex-contenido-separado
-        contenedor
-        ancho-fijo
+        flex
         flex-columnas-100-al-simplificar
       "
     >
       <div class="columna-4 columna-4-esc m-b-3">
         <a class="tarjeta-hipervinculo-externo" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/984" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/981" alt="" />
           <div class="degradado-negro-abajo">
             <div class="contenido-abajo ">
               <p class="parrafo-texto-alto">
@@ -82,7 +80,7 @@
       </div>
       <div class="columna-4 columna-8-esc m-b-3">
         <a class="tarjeta-hipervinculo-externo" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/985" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/982" alt="" />
           <div class="degradado-negro-abajo">
             <div class="contenido-abajo">
               <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
@@ -92,7 +90,7 @@
       </div>
       <div class="columna-8 columna-4-esc m-b-3">
         <a class="tarjeta-hipervinculo-externo" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/990" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/983" alt="" />
           <div class="degradado-negro-abajo">
             <div class="contenido-abajo ">
               <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
@@ -102,7 +100,7 @@
       </div>
       <div class="columna-4 columna-10-esc m-b-3">
         <a class="tarjeta-hipervinculo-externo" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/991" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/984" alt="" />
           <div class="degradado-negro-abajo">
             <div class="contenido-abajo ">
               <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
@@ -112,7 +110,7 @@
       </div>
       <div class="columna-4 columna-6-esc m-b-3">
         <a class="tarjeta-hipervinculo-externo" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/980" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/985" alt="" />
           <div class="degradado-negro-abajo">
             <div class="contenido-abajo ">
               <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
@@ -136,6 +134,7 @@
     &lt;img
       class="fondo-imagen"
       src="https://picsum.photos/970/984"
+      alt=""
     />
     &lt;div class="contenido-abajo">
       &lt;p class="parrafo-texto-alto">Nombre del hipervínculo interno&lt;/p>
@@ -145,7 +144,7 @@
     </pre>
     <p>El resultado es el siguiente</p>
     <a class="tarjeta-hipervinculo-interno" href="" target="_blank">
-      <img class="fondo-imagen" src="https://picsum.photos/970/984" />
+      <img class="fondo-imagen" src="https://picsum.photos/970/986" alt="" />
       <div class="contenido-abajo">
         <p class="parrafo-texto-alto">Nombre del hipervínculo interno</p>
         <p>
@@ -162,15 +161,13 @@
     </p>
     <div
       class="
-        flex flex-contenido-separado
-        contenedor
-        ancho-fijo
+        flex
         flex-columnas-100-al-simplificar
       "
     >
       <div class="columna-4 columna-6-esc m-b-3">
         <a class="tarjeta-hipervinculo-interno" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/984" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/987" alt="" />
           <div class="contenido-abajo">
             <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
             <p>
@@ -183,7 +180,7 @@
       </div>
       <div class="columna-4 columna-5-esc m-b-3">
         <a class="tarjeta-hipervinculo-interno" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/984" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/988" alt="" />
           <div class="contenido-abajo">
             <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
           </div>
@@ -191,7 +188,7 @@
       </div>
       <div class="columna-4 columna-5-esc m-b-3">
         <a class="tarjeta-hipervinculo-interno" href="" target="_blank">
-          <img class="fondo-imagen" src="https://picsum.photos/970/984" />
+          <img class="fondo-imagen" src="https://picsum.photos/970/989" alt="" />
           <div class="contenido-abajo">
             <p class="parrafo-texto-alto">Nombre del hipervínculo externo</p>
           </div>

@@ -14,18 +14,19 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 details {
-  border-radius: 4px; // TODO: utilizar variable de bordes
+  border-radius: map-get($bordes, '4');
   margin-top: map-get($espaciado, '1');
   padding: map-get($espaciado, '2');
   &[open] {
     background-color: var(--detalle-fondo);
     summary::before {
-      content: "\69";
+      transform: rotate(90deg);
+      transform-origin: .5em;
     }
   }
 }
 summary {
-  border-radius: 4px; // TODO: utilizar variable de bordes
+  border-radius: map-get($bordes, '4');
   font-size: 1.125em;
   font-weight: 500;
   line-height: 1.3em;
@@ -46,9 +47,11 @@ summary {
   }
   &::before {
     display: inline-block;  
-    width: 24px;
+    width: map-get($espaciado, '4');
+    line-height: 1.5em;
     font-family: "sisdai-iconos";
-    content: "\68";
+    content: "\64";
+    transition: all 0.27s ease;
   }
 }
 details summary > * {
