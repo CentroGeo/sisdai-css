@@ -386,57 +386,9 @@
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
                   <span class="icono-informacion"></span>
-                  <!-- <svg
-                    id="information"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      id="Trazado_28876"
-                      data-name="Trazado 28876"
-                      d="M15.75,20V14h-3v1.5h1.5V20H12v1.5h6V20Z"
-                      transform="translate(-3 -3.5)"
-                      fill="#19439C"
-                    />
-                    <path
-                      id="Trazado_28877"
-                      data-name="Trazado 28877"
-                      d="M15.625,8A1.125,1.125,0,1,0,16.75,9.125,1.125,1.125,0,0,0,15.625,8Z"
-                      transform="translate(-3.625 -2)"
-                      fill="#19439C"
-                    />
-                    <path
-                      id="Trazado_28878"
-                      data-name="Trazado 28878"
-                      d="M12.5,23A10.5,10.5,0,1,1,23,12.5,10.5,10.5,0,0,1,12.5,23Zm0-19.5a9,9,0,1,0,9,9A9,9,0,0,0,12.5,3.5Z"
-                      transform="translate(-0.5 -0.5)"
-                      fill="#19439C"
-                    />
-                    <rect
-                      id="_Transparent_Rectangle_"
-                      data-name="&lt;Transparent Rectangle&gt;"
-                      width="24"
-                      height="24"
-                      fill="none"
-                    />
-                  </svg> -->
-
-                  <!-- <img
-                    src="/img/alerta_icono.svg"
-                    alt=""
-                    class="alerta__icono"
-                  /> -->
-
                   <p class="alerta__titulo">Alerta informativa</p>
                 </div>
                 <span class="icono-cerrar"></span>
-                <!-- <img
-                  src="/img/cerrar_icono.svg"
-                  alt=""
-                  class="alerta__cerrar--icono"
-                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">
@@ -452,57 +404,9 @@
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
                   <span class="icono-informacion"></span>
-                  <!-- <svg
-                    id="information"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      id="Trazado_28876"
-                      data-name="Trazado 28876"
-                      d="M15.75,20V14h-3v1.5h1.5V20H12v1.5h6V20Z"
-                      transform="translate(-3 -3.5)"
-                      fill="#2A6F4D"
-                    />
-                    <path
-                      id="Trazado_28877"
-                      data-name="Trazado 28877"
-                      d="M15.625,8A1.125,1.125,0,1,0,16.75,9.125,1.125,1.125,0,0,0,15.625,8Z"
-                      transform="translate(-3.625 -2)"
-                      fill="#2A6F4D"
-                    />
-                    <path
-                      id="Trazado_28878"
-                      data-name="Trazado 28878"
-                      d="M12.5,23A10.5,10.5,0,1,1,23,12.5,10.5,10.5,0,0,1,12.5,23Zm0-19.5a9,9,0,1,0,9,9A9,9,0,0,0,12.5,3.5Z"
-                      transform="translate(-0.5 -0.5)"
-                      fill="#2A6F4D"
-                    />
-                    <rect
-                      id="_Transparent_Rectangle_"
-                      data-name="&lt;Transparent Rectangle&gt;"
-                      width="24"
-                      height="24"
-                      fill="none"
-                    />
-                  </svg> -->
-
-                  <!-- <img
-                    src="/img/alerta_icono.svg"
-                    alt=""
-                    class="alerta__icono"
-                  /> -->
-
                   <p class="alerta__titulo">Alerta confirmación</p>
                 </div>
                 <span class="icono-cerrar"></span>
-                <!-- <img
-                  src="/img/cerrar_icono.svg"
-                  alt=""
-                  class="alerta__cerrar--icono"
-                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">
@@ -518,57 +422,9 @@
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
                   <span class="icono-informacion"></span>
-                  <!-- <svg
-                    id="information"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      id="Trazado_28876"
-                      data-name="Trazado 28876"
-                      d="M15.75,20V14h-3v1.5h1.5V20H12v1.5h6V20Z"
-                      transform="translate(-3 -3.5)"
-                      fill="#2A6F4D"
-                    />
-                    <path
-                      id="Trazado_28877"
-                      data-name="Trazado 28877"
-                      d="M15.625,8A1.125,1.125,0,1,0,16.75,9.125,1.125,1.125,0,0,0,15.625,8Z"
-                      transform="translate(-3.625 -2)"
-                      fill="#2A6F4D"
-                    />
-                    <path
-                      id="Trazado_28878"
-                      data-name="Trazado 28878"
-                      d="M12.5,23A10.5,10.5,0,1,1,23,12.5,10.5,10.5,0,0,1,12.5,23Zm0-19.5a9,9,0,1,0,9,9A9,9,0,0,0,12.5,3.5Z"
-                      transform="translate(-0.5 -0.5)"
-                      fill="#2A6F4D"
-                    />
-                    <rect
-                      id="_Transparent_Rectangle_"
-                      data-name="&lt;Transparent Rectangle&gt;"
-                      width="24"
-                      height="24"
-                      fill="none"
-                    />
-                  </svg> -->
-
-                  <!-- <img
-                    src="/img/alerta_icono.svg"
-                    alt=""
-                    class="alerta__icono"
-                  /> -->
-
                   <p class="alerta__titulo">Alerta informativa</p>
                 </div>
                 <span class="icono-cerrar"></span>
-                <!-- <img
-                  src="/img/cerrar_icono.svg"
-                  alt=""
-                  class="alerta__cerrar--icono"
-                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">
@@ -584,19 +440,9 @@
               <div class="alerta__encabezado">
                 <div class="alerta__info--titulo">
                   <span class="icono-informacion"></span>
-                  <!-- <img
-                    src="/img/alerta_icono.svg"
-                    alt=""
-                    class="alerta__icono"
-                  /> -->
                   <p class="alerta__titulo">Alerta informativa</p>
                 </div>
                 <span class="icono-cerrar"></span>
-                <!-- <img
-                  src="/img/cerrar_icono.svg"
-                  alt=""
-                  class="alerta__cerrar--icono"
-                /> -->
               </div>
               <div class="alerta__contenido">
                 <p class="alerta__parrafo">

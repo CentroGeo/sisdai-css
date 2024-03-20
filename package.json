@@ -1,12 +1,12 @@
 {
   "name": "sisdai-css",
-  "version": "0.46.5",
+  "version": "0.46.7",
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "license": "LGPL-3.0-only",
   "main": "src/eni.scss",
   "scripts": {
     "build": "sass src/eni.scss:dist/eni.min.css --style compressed",
-    "build:docs": "cd docs && npm run build",
+    "docs:build": "cd docs && npm run build",
     "docs": "concurrently \"npm run docs:scss\" \"npm run docs:dev\"",
     "docs:install": "cd docs && npm install",
     "docs:dev": "cd docs && npm run dev",
