@@ -1,4 +1,5 @@
 <template>
+<div>
   <h1>Tipografia</h1>
   <div class="contenedor ancho-lectura contenedor-izq">
     <p>
@@ -612,7 +613,7 @@
         .75rem <br />
         12px <br />
         Medium (500) <br />
-        #5E7392
+        #141414
       </p>
     </div>
 
@@ -713,7 +714,6 @@
         14px <br />
         Regular (400) <br />
         Interlineado 1.2em
-        #5E7392 
       </p>
     </div>
     <div class="columna-2">
@@ -723,7 +723,6 @@
         14px <br />
         Regular (400) <br />
         Interlineado 1.2em
-        #5E7392 
       </p>
     </div>
     <!-- Nomenclatura-->
@@ -836,4 +835,5 @@
   <p class="texto-tamanio-10-mov texto-tamanio-5-esc">
     .texto-tamanio-10-mov .texto-tamanio-5-esc
   </p>
+</div>
 </template>

@@ -2,154 +2,74 @@
   --controlador-vis-control-alto: 1.125rem;
   --controlador-vis-figura-alto: 18px;
   --controlador-vis-figura-borde: 1px;
+  
+  min-height: var(--controlador-vis-control-alto);
+  vertical-align: text-top;
 
-  label {
-    padding: 8px 16px;
+  // elementos del controlador-vis que no tienen checkbox ni radio buttons
+  .lectura {
+    padding: map-get($espaciado, '1');
     margin: 0;
+    line-height: 1.25em;
+    color: var(--input-color);
+    vertical-align: text-top;
     display: inline-flex;
-
-    .figura-variable {
-      min-width: calc(var(--controlador-vis-figura-alto));
-      max-width: calc(var(--controlador-vis-figura-alto));
-      min-height: calc(var(--controlador-vis-figura-alto));
-      max-height: calc(var(--controlador-vis-figura-alto));
-      // margin-left: 8px;
-      margin-top: max(
-        0px,
-        calc(
-          (
-            (
-              var(--controlador-vis-control-alto) -
-              var(--controlador-vis-figura-alto)
-            ) / 2
-          ) + 0px
-        )
-      );
-      margin-right: 6px;
-
-      &.muestra {
-        background: #7e8cf5;
-        border: var(--controlador-vis-figura-borde) solid
-          var(--tipografia-color);
-        border-radius: 50%;
-      }
-    }
-    .nombre-variable {
-      color: var(--tipografia-color);
-      // padding-left: 6px;
-      display: inline-flex;
-      align-items: center;
-    }
+  }
+  .anidado {
+    padding-left: calc(1.25rem + map-get($espaciado, '1') + 4px);
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
-    + label {
-      // padding-left: calc(1.25rem + 8px + 4px); // 32px
-      padding-left: 16px;
-
-      &:before {
-        box-shadow: inset 0 0 0 1px var(--tipografia-color);
-        position: static;
-        min-width: var(--controlador-vis-control-alto);
-        min-height: var(--controlador-vis-control-alto);
-        margin-top: max(
-          1px,
-          calc(
-            (
-                var(--controlador-vis-figura-alto) -
-                  var(--controlador-vis-control-alto)
-              ) / 2
-          )
-        );
-        margin-right: 8px;
-      }
-    }
-
-    &:hover {
-      + label {
-        &:before {
-          box-shadow: inset 0 0 0 1px #141414;
-        }
-        .figura-variable.muestra {
-          border: 1px solid #141414;
-        }
-        .nombre-variable {
-          color: #141414;
-        }
-      }
-      // &:checked:not(:disabled) + label:after {
-      //     color: #141414;
-      // }
-    }
-
-    &:checked {
-      &:not(:hover) + label {
-        background: transparent;
-      }
-    }
-
-    &:disabled + label {
-      cursor: default;
-      box-shadow: inset 0 0 0 1px #aaaaaa;
-
-      &:before {
-        box-shadow: inset 0 0 0 1px #aaaaaa;
-      }
-      &:hover {
-        background: transparent;
-      }
-      .figura-variable.muestra {
-        background: #dddddd;
-        border: 1px solid #aaaaaa;
-      }
-      .nombre-variable {
-        color: #aaaaaa;
-      }
-    }
+  label::before,
+  label::after {
+    margin-top: max(calc((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.5), 0px);
   }
 
-  input[type="checkbox"]:checked {
-    + label:after {
-      left: auto;
-      color: var(--tipografia-color);
-      line-height: 1rem;
-      min-width: var(--controlador-vis-control-alto);
-      min-height: var(--controlador-vis-control-alto);
-      text-align: center;
-      margin-top: max(
-        1px,
-        calc(
-          (
-            var(--controlador-vis-figura-alto) -
-            var(--controlador-vis-control-alto)
-          ) / 2
-        )
-      );
-    }
-    &:hover:checked:not(:disabled) + label:after {
-      color: #141414;
-    }
-    &:disabled + label:after {
-      color: var(--tipografia-color);
-    }
+  .nombre-variable,
+  .figura-variable {
+    display: inline-flex;
   }
 
-  input[type="radio"]:checked + label:before {
-    box-shadow: inset 0 0 0 0.375rem var(--input-controles-color);
+  .nombre-variable {
+    flex: 1 1;
+    margin-top: max(calc((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.5), 0px);
   }
-  // input[type="checkbox"]:checked + label:before {
-  //   background: var(--input-controles-color);
-  // }
-
-  &.sin-figura {
-    input[type="checkbox"],
-    input[type="radio"] {
-      + label {
-        .figura-variable {
-          display: none;
-        }
-      }
+  
+  .figura-variable {
+    flex-shrink: 0;
+    margin-right: map-get($espaciado, 'minimo');
+    margin-top: max(calc((var(--controlador-vis-control-alto) - var(--controlador-vis-figura-alto)) * 0.5), 0px);
+    min-width: calc(var(--controlador-vis-figura-alto));
+    height: calc(var(--controlador-vis-figura-alto));
+    &.muestra {
+      background-color: #7e8cf5;
+      border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
+      border-radius: 50%;
     }
+  }
+  
+  // figura variable muestra input desabilitado
+  [type=checkbox]:disabled + label .figura-variable.muestra,
+  [type=radio]:disabled + label .figura-variable.muestra,
+  [type=checkbox]:checked:disabled + label .figura-variable.muestra,
+  [type=radio]:checked:disabled + label .figura-variable.muestra {
+    background-color: var(--input-deshabilitado-fondo);
+    border-color: var(--input-deshabilitado-color);
+  }
+}
+
+div.controlador-vis,
+.controlador-vis.en-bloque {
+  label {
+    display: flex;
+  }
+}
+
+span.controlador-vis,
+.controlador-vis.en-linea {
+  display: inline-flex;
+  margin-right: map-get($espaciado, '1');
+  margin-bottom: map-get($espaciado, '1');
+  label {
+    display: inline-flex;
   }
 }

@@ -1,0 +1,14 @@
+.casillas-anidadas {
+  list-style: none;
+  padding: 0;
+  li {
+    margin: 0;
+  }
+  label {
+    display: flex;
+  }
+  .casillas-subseleccion {
+    list-style: none;
+    padding: 0 0 0 calc(1.25rem + 4px);
+  }
+}
