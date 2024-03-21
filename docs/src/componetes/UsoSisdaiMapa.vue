@@ -51,6 +51,84 @@
           <input id="checkbox-map2" type="checkbox" name="checkboxes-mapa">
           <label for="checkbox-map2">Checkbox</label>
         </div>
+        <ul class="casillas-anidadas">
+          <li>
+            <input id="ul-checkbox-parent" type="checkbox" name="ul-checkbox-parent">
+            <label for="ul-checkbox-parent">Checkbox Padre</label>
+            <ul class="casillas-subseleccion casillas-anidadas">
+              <li>
+                <input id="ul-checkbox-child1" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child1">Checkbox Hijo 1</label>
+              </li>
+              <li>
+                <input id="ul-checkbox-child2" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child2">Checkbox Hijo 2</label>
+                <ul class="casillas-subseleccion casillas-anidadas">
+                  <li>
+                    <input id="ul-checkbox-child21" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child21">Checkbox Hijo 2-1</label>
+                  </li>
+                  <li>
+                    <input id="ul-checkbox-child22" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child22">Checkbox Hijo 2-2</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="casillas-anidadas">
+          <li>
+            <input id="ul-checkbox-parent" type="checkbox" name="ul-checkbox-parent">
+            <label for="ul-checkbox-parent">Checkbox Padre</label>
+            <ul class="casillas-subseleccion casillas-anidadas">
+              <li>
+                <input id="ul-checkbox-child1" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child1">Checkbox Hijo 1</label>
+              </li>
+              <li>
+                <input id="ul-checkbox-child2" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child2">Checkbox Hijo 2</label>
+                <ul class="casillas-subseleccion casillas-anidadas">
+                  <li>
+                    <input id="ul-checkbox-child21" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child21">Checkbox Hijo 2-1</label>
+                  </li>
+                  <li>
+                    <input id="ul-checkbox-child22" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child22">Checkbox Hijo 2-2</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul class="casillas-anidadas">
+          <li>
+            <input id="ul-checkbox-parent" type="checkbox" name="ul-checkbox-parent">
+            <label for="ul-checkbox-parent">Checkbox Padre</label>
+            <ul class="casillas-subseleccion casillas-anidadas">
+              <li>
+                <input id="ul-checkbox-child1" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child1">Checkbox Hijo 1</label>
+              </li>
+              <li>
+                <input id="ul-checkbox-child2" type="checkbox" name="ul-checkbox-child">
+                <label for="ul-checkbox-child2">Checkbox Hijo 2</label>
+                <ul class="casillas-subseleccion casillas-anidadas">
+                  <li>
+                    <input id="ul-checkbox-child21" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child21">Checkbox Hijo 2-1</label>
+                  </li>
+                  <li>
+                    <input id="ul-checkbox-child22" type="checkbox" name="ul-checkbox-child">
+                    <label for="ul-checkbox-child22">Checkbox Hijo 2-2</label>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
       
       <div class="panel-derecha-vis">

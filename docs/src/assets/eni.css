@@ -8439,7 +8439,8 @@ ol + hr {
 }
 @media screen and (min-width: 768px) {
   .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis {
-    padding-right: 32px;
+    padding-right: 24px;
+    margin-right: 0;
   }
 }
 .contenedor-vis .contenedor-vis-paneles .panel-derecha-vis {

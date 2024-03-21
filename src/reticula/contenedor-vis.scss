@@ -81,32 +81,33 @@
     .panel-encabezado-vis {
       margin: calc( $sombra-espacio * -1);
       padding: $sombra-espacio;
-      padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio )
+      padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio );
     }
     .panel-izquierda-vis {
       margin: calc( $sombra-espacio * -1);
       padding: $sombra-espacio;
       @include mediaquery('mov') {
-        padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio )
+        padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio );
       }
       @include mediaquery('esc') {
-        padding-right: calc( map-get($espaciado, '3') + $sombra-espacio )
+        padding-right: calc( map-get($espaciado, '3') );
+        margin-right: 0;
       }
     }
     .panel-derecha-vis {
       margin: calc( $sombra-espacio * -1);
       padding: $sombra-espacio;
       @include mediaquery('mov') {
-        padding-top: calc( map-get($espaciado, '3') + $sombra-espacio )
+        padding-top: calc( map-get($espaciado, '3') + $sombra-espacio );
       }
       @include mediaquery('esc') {
-        padding-left: calc( map-get($espaciado, '3') + $sombra-espacio )
+        padding-left: calc( map-get($espaciado, '3') + $sombra-espacio );
       }
     }
     .panel-pie-vis {
       margin: calc( $sombra-espacio * -1);
       padding: $sombra-espacio;
-      padding-top: calc( map-get($espaciado, '3') + $sombra-espacio )
+      padding-top: calc( map-get($espaciado, '3') + $sombra-espacio );
     }
 
     /* * * * * Escodner elementos * * * * */
