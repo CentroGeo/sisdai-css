@@ -8607,6 +8607,31 @@ ol + hr {
   opacity: 1;
 }
 
+.contenedor-vis.gema {
+  height: 100%;
+  position: relative;
+}
+.contenedor-vis.gema .contenedor-vis-paneles {
+  height: 100%;
+  max-height: max-content;
+  padding: 0;
+  border-radius: 0;
+  grid-template-columns: 1fr auto;
+}
+.contenedor-vis.gema .contenedor-vis-paneles .contenido-vis {
+  grid-column-end: span 2;
+}
+.contenedor-vis.gema .contenedor-vis-paneles .panel-derecha-vis {
+  z-index: 1;
+}
+.contenedor-vis.gema .contenedor-vis-atribuciones {
+  display: none;
+}
+
+.visualizador .contenedor-vis.gema .sisdai-mapa-control-acercar-alejar, .visualizador .contenedor-vis.gema .sisdai-mapa-control-ajuste-vista {
+  right: calc(var(--margen) + 320px);
+}
+
 #app {
   overflow: clip;
 }
