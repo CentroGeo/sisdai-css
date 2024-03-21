@@ -1,3 +1,7 @@
+<script setup>
+import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
+</script>
+
 <template>
   <div>
     <h1>Contenedores</h1>
@@ -55,7 +59,7 @@
         contenedor ancho-lectura contenedor-der
       </div>
     </div>
-    
+
     <h2 class="m-t-10">Contenedores especiales</h2>
     <h3>Contenedor simplificado para vista simplificada</h3>
     <p>Este contenedor no importa que formato tenga, que tan ancho sea, cuando se selecciona la opción de accesibilidad de vista simplificada, se muestra el contenido en bloque.</p>
@@ -89,7 +93,7 @@
         </div>
       </div>
     </div>
-    
+
     <h2 class="m-t-10">Contenedores compuestos</h2>
     <h3>Contenedor de alto fijo para contenido scrolleable</h3>
     <div class="flex">
@@ -142,81 +146,126 @@
 
     <h2 class="m-t-10">Visualizaciones</h2>
     <h3 class="m-t-0">Gráficas</h3>
-    <div class="contenedor-vis borde-redondeado-8 con-panel-encabezado-vis con-panel-pie-vis m-b-4">
-      <div class="panel-encabezado-vis">
-        <p class="vis-titulo-visualizacion">
-          Evolución de variantes del virus SARS-CoV-2
-        </p>
-        <p class="vis-titulo-proyecto">
-          (Solamente se muestran variantes de preocupación y de interés)
-        </p>
+    <div class="contenedor-vis borde-redondeado-8 m-b-4">
+      <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-pie-vis">
+        <div class="panel-encabezado-vis">
+          <p class="vis-titulo-visualizacion">
+            Evolución de variantes del virus SARS-CoV-2
+          </p>
+          <p class="vis-titulo-proyecto">
+            (Solamente se muestran variantes de preocupación y de interés)
+          </p>
+        </div>
+        <figure class="contenido-vis">
+          <img
+            src="/img/grafica-variantes.png"
+            alt="visualizacion"
+          />
+        </figure>
+        <div class="panel-pie-vis">
+          <p class="vis-titulo-leyenda">
+            Variantes del virus SARS-CoV-2
+          </p>
+          <div>
+            <span class="controlador-vis">
+              <input id="c1" type="checkbox">
+              <label for="c1">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c2" type="checkbox">
+              <label for="c2">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c3" type="checkbox">
+              <label for="c3">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c4" type="checkbox">
+              <label for="c4">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c5" type="checkbox">
+              <label for="c5">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c6" type="checkbox">
+              <label for="c6">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c7" type="checkbox">
+              <label for="c7">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c8" type="checkbox">
+              <label for="c8">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c9" type="checkbox">
+              <label for="c9">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+            <span class="controlador-vis">
+              <input id="c10" type="checkbox">
+              <label for="c10">
+                <span class="figura-variable muestra" />
+                <span class="nombre-variable">Valor y Muestra</span>
+              </label>
+            </span>
+          </div>
+          <p class="vis-fuente">
+            Fuente. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
+          </p>
+        </div>
       </div>
-
-      <figure class="contenido-vis">
-        <img
-          src="/img/grafica-variantes.png"
-          alt="visalizacion"
-          height="100%"
-          width="100%"
-        />
-      </figure>
-
-      <div class="panel-pie-vis">
-        <p class="vis-titulo-leyenda">
-          Variantes del virus SARS-CoV-2
-        </p>
-        <hr>
-        <p class="vis-fuente">
-          Fuente. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
-        </p>
-      </div>
-
-      <div class="contenedor-vis-atribuciones">
-        <a class="logo-conacyt" href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
+      <div class="contenedor-vis-atribuciones borde-t borde-color-3">
+        <a
+          class="logo-conacyt atribucion-conahcyt"
+          href="https://conahcyt.mx/"
+          target="_blank"
+        >
           <img
             src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
             alt="Conahcyt"
-          >
+          />
         </a>
-        <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        <a
+          class="atribucion-sisdai"
+          href="https://sisdai.conahcyt.mx/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Sisdai
         </a>
       </div>
     </div>
 
-    <h3 class="m-t-0">Mapas</h3>
-    <div class="contenedor-vis borde-redondeado-8 con-panel-izquierda-vis con-panel-pie-vis">
-      <div class="panel-izquierda-vis">
-        <p class="vis-titulo-visualizacion">
-          Población total en 2020 por el método de clasificación de rupturas naturales (Jenks)
-        </p>
-        <img src="/img/mapa-leyenda.png" alt="leyenda" height="200px" />
-      </div>
-      <figure class="contenido-vis">
-        <img
-          src="/img/mapa-poblacion.png"
-          alt="visalizacion"
-          height="100%"
-          width="100%"
-        />
-      </figure>
-      <div class="panel-pie-vis">
-        <hr>
-        <p class="notas">
-          Nota. Datos de origen del Instituto Nacional de Estadística y Geografía (INEGI), 2020.
-        </p>
-      </div>
-      <div class="contenedor-vis-atribuciones">
-        <a class="logo-conacyt" href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">
-          <img
-            src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
-            alt="Conahcyt"
-          >
-        </a>
-        <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
-          Sisdai
-        </a>
-      </div>
-    </div>
+    <h3>Mapas</h3>
+    <UsoSisdaiMapa />
   </div>
 </template>
