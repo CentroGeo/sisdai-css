@@ -3,21 +3,25 @@
   --controlador-vis-figura-alto: 18px;
   --controlador-vis-figura-borde: 1px;
   
-  display: inline-flex;
-  margin-right: map-get($espaciado, '2');
-  max-width: 320px;
+  min-height: var(--controlador-vis-control-alto);
+  vertical-align: text-top;
 
-  // tamaños
-  &.grande {
-    --controlador-vis-figura-alto: 32px;
+  // elementos del controlador-vis que no tienen checkbox ni radio buttons
+  .lectura {
+    padding: map-get($espaciado, '1');
+    margin: 0;
+    line-height: 1.25em;
+    color: var(--input-color);
+    vertical-align: text-top;
+    display: inline-flex;
   }
-  &.chica {
-    --controlador-vis-figura-alto: 8px;
+  .anidado {
+    padding-left: calc(1.25rem + map-get($espaciado, '1') + 4px);
   }
 
   label::before,
   label::after {
-    margin-top: max(calc((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.4), 0px);
+    margin-top: max(calc((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.5), 0px);
   }
 
   .nombre-variable,
@@ -27,7 +31,7 @@
 
   .nombre-variable {
     flex: 1 1;
-    margin-top: max(calc((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.4), 0px);
+    margin-top: max(calc((var(--controlador-vis-figura-alto) - var(--controlador-vis-control-alto)) * 0.5), 0px);
   }
   
   .figura-variable {
@@ -37,7 +41,7 @@
     min-width: calc(var(--controlador-vis-figura-alto));
     height: calc(var(--controlador-vis-figura-alto));
     &.muestra {
-      background: #7e8cf5;
+      background-color: #7e8cf5;
       border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
       border-radius: 50%;
     }
@@ -53,3 +57,19 @@
   }
 }
 
+div.controlador-vis,
+.controlador-vis.en-bloque {
+  label {
+    display: flex;
+  }
+}
+
+span.controlador-vis,
+.controlador-vis.en-linea {
+  display: inline-flex;
+  margin-right: map-get($espaciado, '1');
+  margin-bottom: map-get($espaciado, '1');
+  label {
+    display: inline-flex;
+  }
+}

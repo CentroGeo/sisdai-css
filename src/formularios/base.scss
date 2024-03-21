@@ -115,6 +115,7 @@ select {
   box-shadow: 0 0 8px var(--input-focus);
   color: var(--input-color);
   outline: none;
+  z-index: 1;
 }
 [type=checkbox]:hover + label,
 [type=radio]:hover + label
@@ -133,7 +134,7 @@ select {
   content: "";
   height: 1.125rem;
   width: 1.125rem;
-  top: calc(map-get($espaciado, '1') + 1px);
+  top: calc(map-get($espaciado, '1'));
   left: calc(map-get($espaciado, '1'));
   padding: calc(map-get($espaciado, 'minimo'));
   background-color: var(--input-fondo);
@@ -177,7 +178,7 @@ select {
   color: var(--input-color);
   position: absolute;
   left: calc(.125rem + map-get($espaciado, '1') - 1px);
-  top: calc(map-get($espaciado, '1'));
+  top: calc(map-get($espaciado, '1')) - 1;
   font-weight: 800;
   text-align: center;
 }
@@ -190,7 +191,7 @@ select {
   color: var(--input-color);
   position: absolute;
   left: calc(.125rem + map-get($espaciado, 'minimo') + 1px);
-  top: calc(map-get($espaciado, '1'));
+  top: calc(map-get($espaciado, '1')) - 1;
   font-weight: 800;
   font-size: 1.2rem;
 }

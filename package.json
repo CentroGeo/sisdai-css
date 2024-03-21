@@ -1,6 +1,6 @@
 {
   "name": "sisdai-css",
-  "version": "0.46.7",
+  "version": "0.46.8",
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "license": "LGPL-3.0-only",
   "main": "src/eni.scss",
