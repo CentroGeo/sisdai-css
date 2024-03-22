@@ -9739,12 +9739,31 @@ body {
 .contenedor-globo-info-ext {
   width: 322px;
   min-height: 152px;
-  padding: 1rem;
+  padding: 16px;
+}
+.contenedor-globo-info-ext button.boton-cerrar {
+  float: right;
+  margin-right: 0;
+  background: #6692ff;
+  border-color: #6692ff;
+  color: #102543;
+}
+.contenedor-globo-info-ext button.boton-cerrar:hover {
+  background: #80aaff;
+  border-color: #80aaff;
+  color: #102543;
+}
+.contenedor-globo-info-ext button.boton-cerrar:focus {
+  background: #80aaff;
+  border-color: #102543;
+  box-shadow: 0 0 8px #668bff;
+  color: #102543;
+  outline: 1px solid #668bff;
 }
 
 .contenedor-globo-info {
   min-height: 0;
-  padding: 0.5em;
+  padding: 12px;
   width: auto;
   max-width: 240px;
 }
@@ -9757,12 +9776,162 @@ body {
   border-radius: 4px;
   display: block;
   z-index: 9999;
-  font-size: 11px;
 }
 .contenedor-globo-info-ext .cuerpo-globo-info,
 .contenedor-globo-info .cuerpo-globo-info {
   font-size: 11px;
   font-weight: 400;
+  line-height: 1rem;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info a,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=button],
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=button],
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=submit],
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=submit],
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=reset],
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=reset],
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class^=boton],
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class^=boton],
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class*=" boton"],
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class*=" boton"],
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-gobmx,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-conahcyt,
+.contenedor-globo-info .cuerpo-globo-info a,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=button],
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=button],
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=submit],
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=submit],
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=reset],
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=reset],
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class^=boton],
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class^=boton],
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class*=" boton"],
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class*=" boton"],
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-gobmx,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-conahcyt {
+  color: #668bff;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info a:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=button]:visited,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=button]:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=submit]:visited,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=submit]:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=reset]:visited,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=reset]:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class^=boton]:visited,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class^=boton]:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class*=" boton"]:visited,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class*=" boton"]:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-gobmx:visited,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-conahcyt:visited,
+.contenedor-globo-info .cuerpo-globo-info a:visited,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo:visited,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=button]:visited,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=button]:visited,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=submit]:visited,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=submit]:visited,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=reset]:visited,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=reset]:visited,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class^=boton]:visited,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class^=boton]:visited,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class*=" boton"]:visited,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class*=" boton"]:visited,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-gobmx:visited,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-conahcyt:visited {
+  color: #cf99ff;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info a:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=button]:hover,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=button]:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=submit]:hover,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=submit]:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=reset]:hover,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=reset]:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class^=boton]:hover,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class^=boton]:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class*=" boton"]:hover,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class*=" boton"]:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-gobmx:hover,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-conahcyt:hover,
+.contenedor-globo-info .cuerpo-globo-info a:hover,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo:hover,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=button]:hover,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=button]:hover,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=submit]:hover,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=submit]:hover,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=reset]:hover,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=reset]:hover,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class^=boton]:hover,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class^=boton]:hover,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class*=" boton"]:hover,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class*=" boton"]:hover,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-gobmx:hover,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-conahcyt:hover {
+  color: #8999cc;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info a:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=button]:focus-visible,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=button]:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=submit]:focus-visible,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=submit]:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada input[type=reset]:focus-visible,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info input[type=reset]:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class^=boton]:focus-visible,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class^=boton]:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .a11y-simplificada [class*=" boton"]:focus-visible,
+.a11y-simplificada .contenedor-globo-info-ext .cuerpo-globo-info [class*=" boton"]:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-gobmx:focus-visible,
+.contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo-conahcyt:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info a:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=button]:focus-visible,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=button]:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=submit]:focus-visible,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=submit]:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada input[type=reset]:focus-visible,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info input[type=reset]:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class^=boton]:focus-visible,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class^=boton]:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .a11y-simplificada [class*=" boton"]:focus-visible,
+.a11y-simplificada .contenedor-globo-info .cuerpo-globo-info [class*=" boton"]:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-gobmx:focus-visible,
+.contenedor-globo-info .cuerpo-globo-info .hipervinculo-conahcyt:focus-visible {
+  color: #668bff;
+  outline: 2px dashed #668bff;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info :first-child,
+.contenedor-globo-info .cuerpo-globo-info :first-child {
+  margin-top: 0;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info :last-child,
+.contenedor-globo-info .cuerpo-globo-info :last-child {
+  margin-bottom: 0;
+}
+
+.contenedor-vis .contenido-vis .contenedor-globo-info-ext,
+.contenedor-vis .contenido-vis .contenedor-globo-info {
+  background: rgba(28, 28, 28, 0.9019607843);
 }
 
 @keyframes animacionResaltada {

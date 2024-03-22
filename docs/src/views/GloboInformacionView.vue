@@ -1,28 +1,35 @@
+<script setup>
+import EjemploGloboInfoExtCerrar from "./../componetes/EjemploGloboInfoExtCerrar.vue";
+</script>
+
 <template>
   <div>
     <h1>Tooltips</h1>
     <div class="contenedor ancho-lectura contenedor-izq">
-      <p>Globo de información extendido</p>
-      <div class="contenedor-globo-info-ext">
-        <button class="boton-icono boton-secundario boton-chico">
-          <span class="icono-cerrar" />
-        </button>
-        <div class="cuerpo-globo-info">
-          <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Odio omnis, quas sequi mollitia dolorem enim molestiae tempore temporibus fugiat esse sed, voluptatem expedita porro cupiditate minima unde quaerat corporis. Nihil.
-        </div>
-      </div>
-      <p>Globo de información normal</p>
+      <h2>Globo de información normal</h2>
       <div class="contenedor-globo-info">
         <div class="cuerpo-globo-info">
-          Lorem ipsum, dolor sit amet consectetur
+          <p>Lorem ipsum, dolor sit amet consectetur</p>
         </div>
       </div>
+
+      <h2>Globo de información extendido</h2>
+      <div class="contenedor-globo-info-ext">
+        <div class="cuerpo-globo-info">
+          <p>
+            <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Odio omnis, quas sequi mollitia dolorem enim molestiae tempore temporibus fugiat esse sed, voluptatem expedita porro cupiditate minima unde quaerat corporis. Nihil.
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad nobis id, vitae iusto non mollitia! Ex id, illum magnam dolorem asperiores autem? Aperiam, alias inventore eveniet doloremque atque voluptas?</p>
+          <!-- <ul class="lista-icono">
+            <li class="icon icono-documento">Archivo</li>
+            <li class="icon icono-social-github">Github</li>
+          </ul> -->
+        </div>
+      </div>
+
+      <h2>Globo de información extendido con botón de cierre</h2>
+      <EjemploGloboInfoExtCerrar />
     </div>
   </div>
 </template>
 
-<style lang="scss">
-.contenedor-globo-info-ext > button {
-    float: right;
-}
-</style>
