@@ -17,12 +17,37 @@
   width: 322px;
   min-height: 152px;
 
-  padding: 1rem;
+  // padding: 1rem;
+  padding: 16px;
+
+  button.boton-cerrar {
+    float: right;
+    margin-right: 0;
+    
+    background: #6692ff;
+    border-color: #6692ff;
+    color: #102543;
+
+    &:hover {
+      background: #80aaff;
+      border-color: #80aaff;
+      color: #102543;
+    }
+    &:focus {
+      background: #80aaff;
+      border-color: #102543;
+      box-shadow: 0 0 8px #668bff;
+      color: #102543;
+      // outline-color: #668bff;
+      outline: 1px solid #668bff;
+    }
+  }
 }
 
 .contenedor-globo-info {
   min-height: 0;
-  padding: 0.5em;
+  // padding: 0.5em;
+  padding: 12px;
   width: auto;
   max-width: 240px;
 }
@@ -35,10 +60,41 @@
   border-radius: map-get($bordes, '4');
   display: block;
   z-index: 9999;
-  font-size: 11px;
+  // font-size: 11px;
 
   .cuerpo-globo-info {
     font-size: 11px;
+    // font-size: 0.75rem;
     font-weight: 400;
+    line-height: 1rem;
+
+    a,
+    .hipervinculo {
+      color: #668bff;
+      &:visited {
+        color: #cf99ff;
+      }
+      &:hover {
+        color: #8999cc;
+      }
+      &:focus-visible {
+        color: #668bff;
+        outline: 2px dashed #668bff;
+      }
+    }
+
+    :first-child {
+      margin-top: 0;
+    }
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.contenedor-vis .contenido-vis {
+  .contenedor-globo-info-ext,
+  .contenedor-globo-info {
+    background: #1c1c1ce6;
   }
 }
