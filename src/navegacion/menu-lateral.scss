@@ -70,6 +70,25 @@
         margin-left: 0;
         opacity: 1;
       }
+      .contenedor-colapsable-contenido {
+        li {
+          a {     
+            &:focus {
+              &:hover {
+                color: var(--menu-lateral-accion);
+              }
+            }       
+            &:hover {
+              color: var(--menu-lateral-hover-color);
+            }
+            &.router-link-exact-active {
+              &:hover {
+                color: var(--menu-lateral-accion);
+              }
+            }
+          }
+        }
+      }
     }
     .menu-max-height {
       overflow: auto;
@@ -89,6 +108,7 @@
       @media (hover: hover) {
         &:hover {
           background: var(--menu-lateral-accion-fondo-hover);
+          color: var(--menu-lateral-hover-color);
         }
       }
       &.router-link-exact-active {

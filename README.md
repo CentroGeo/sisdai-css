@@ -114,6 +114,7 @@ El código se encuentra separado por módulos dependiendo del tipo de etiqueta o
 | Bordes | Clases reutilizables de distintos estilos de bordes                                                                                                                    |
 | Boton | Clases que se aplican al elemento `<button>`                                                                                                                            |
 | Color | Clases generales de colores para estados de elementos y clases de colores institucionales                                                                              |
+| Controladores | Clase para personalizar los checkbox y radio con label para las visualizaciones                                                                          |
 | Detalle | Estilos de la etiqueta `<details>` `<summary>` utilizados en secciones de preguntas y respuestas                                                                       |
 | Formularios | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                       |
 | Icono | Clases de tamaños para las clases de `.icono-`                                                                                                                         |

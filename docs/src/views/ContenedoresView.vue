@@ -252,6 +252,7 @@ import EjemploGloboInfoExtCerrar from "./../componetes/EjemploGloboInfoExtCerrar
           target="_blank"
         >
           <img
+            class="invertir"
             src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
             alt="Conahcyt"
           />
