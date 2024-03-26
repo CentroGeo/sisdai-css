@@ -1,5 +1,6 @@
 <script setup>
 import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
+import EjemploGloboInfoExtCerrar from "./../componetes/EjemploGloboInfoExtCerrar.vue";
 </script>
 
 <template>
@@ -157,6 +158,7 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
           </p>
         </div>
         <figure class="contenido-vis">
+          <EjemploGloboInfoExtCerrar style="position: absolute;" />
           <img
             src="/img/grafica-variantes.png"
             alt="visualizacion"
@@ -250,6 +252,7 @@ import UsoSisdaiMapa from "../componetes/UsoSisdaiMapa.vue";
           target="_blank"
         >
           <img
+            class="invertir"
             src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
             alt="Conahcyt"
           />

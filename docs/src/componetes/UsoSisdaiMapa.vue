@@ -1,3 +1,7 @@
+<script setup>
+import EjemploGloboInfoExtCerrar from "./EjemploGloboInfoExtCerrar.vue";
+</script>
+
 <template>
   <div class="contenedor-vis borde-redondeado-8">
     <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-izquierda-vis con-panel-derecha-vis con-panel-pie-vis">
@@ -252,6 +256,8 @@
       </div>
 
       <figure class="contenido-vis">
+        <EjemploGloboInfoExtCerrar style="position: absolute;" />
+
         <img
           src="/img/mapa-poblacion.png"
           alt="mapa"
@@ -272,6 +278,7 @@
         target="_blank"
       >
         <img
+          class="invertir"
           src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
           alt="Conahcyt"
         />
