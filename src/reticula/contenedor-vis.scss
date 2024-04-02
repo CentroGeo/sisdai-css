@@ -1,57 +1,284 @@
 .contenedor-vis {
   // Variables
-  --alto-menus: 120px;
-  --alto-boton-conahcyt: 40px;
-  --alto-maximo-contenedor-vis: calc(100vh - var(--alto-menus));
-  --alto-minimo-vis: 300px;
-  padding: 24px;
+  --contenedor-vis-alto-menus: 50px;
+  --contenedor-vis-alto-atribuciones: 58px;
+  --contenedor-vis-alto-maximo: calc(100vh - var(--contenedor-vis-alto-menus));
+  --contenedor-vis-alto-minimo-vis: 300px;
+  
+  // tamaño del boxshadow de checkboxes en focus definido en el archivo base de formularios
+  $sombra-espacio: 8px; 
 
-  background: #DDDDDD4D;
-
-  // min-width: 800px;
+  background-color: var(--tarjetas-internas-fondo);
+  color: var(--tarjetas-internas-color);
   width: 100%;
+  
+  .contenedor-vis-paneles {
+    .contenido-vis {
+      width: 100%;
+      margin: 0;
+      min-height: var(--contenedor-vis-alto-minimo-vis);
+      position: relative; // para los tooltips queden adentro de la visualización
+      
+      // Estos estilos se usan en sisdai-graficas y sirve para acomodar los títulos de ejes
+      div.contenedor-svg-ejes-tooltip { 
+        position: relative;
+        width: 100%;
+        display: inline-block;
+        .contenedor-titulo-eje-y {
+          display: inline-block;
+          .titulo-eje-y {
+            position: absolute;
+            display: block;
+            transform-origin: top left;
+            text-align: center;
+          }
+        }
+        div.contenedor-titulo-eje-x {
+          position: relative;
+          width: 100%;
+          .titulo-eje-x {
+            text-align: center;
+          }
+        }
+        figure {
+          position: absolute;
+          top: 0;
+          margin: 0;
+        }
+      }
+    }
 
-  .contenido-vis {
-    // min-height: var(--alto-minimo-vis);
-    width: 100%;
-    margin: 0;
+    // Scroll en los paneles
+    // y eliminar margen del primer y ultimo elemento
+    .panel-encabezado-vis,
+    .panel-izquierda-vis,
+    .panel-derecha-vis,
+    .panel-pie-vis {
+      overflow-y: auto;
+      overflow-x: hidden;
+      scrollbar-width: thin;
+
+      :first-child:not(
+        .figura-variable /* para que los simbolos de las leyendas no se muevan */
+      ) {
+        margin-top: 0;
+      }
+      :last-child:not(
+        .nombre-variable /* para que las etiquetas de las leyendas no se muevan */
+      ) {
+        margin-bottom: 0;
+      }
+    }
+
+    // Espacio entre paneles
+    padding-top: map-get($espaciado, '2');
+    padding-left: map-get($espaciado, '2');
+    padding-right: map-get($espaciado, '2');
+    @include mediaquery('esc') {
+      padding-left: map-get($espaciado, '3');
+      padding-right: map-get($espaciado, '3');
+    }
+    .panel-encabezado-vis {
+      margin: calc( $sombra-espacio * -1);
+      padding: $sombra-espacio;
+      padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio );
+    }
+    .panel-izquierda-vis {
+      margin: calc( $sombra-espacio * -1);
+      padding: $sombra-espacio;
+      @include mediaquery('mov') {
+        padding-bottom: calc( map-get($espaciado, '3') + $sombra-espacio );
+      }
+      @include mediaquery('esc') {
+        padding-right: calc( map-get($espaciado, '3') );
+        margin-right: 0;
+      }
+    }
+    .panel-derecha-vis {
+      margin: calc( $sombra-espacio * -1);
+      padding: $sombra-espacio;
+      @include mediaquery('mov') {
+        padding-top: calc( map-get($espaciado, '3') + $sombra-espacio );
+      }
+      @include mediaquery('esc') {
+        padding-left: calc( map-get($espaciado, '3') + $sombra-espacio );
+      }
+    }
+    .panel-pie-vis {
+      margin: calc( $sombra-espacio * -1);
+      padding: $sombra-espacio;
+      padding-top: calc( map-get($espaciado, '3') + $sombra-espacio );
+    }
+
+    /* * * * * Escodner elementos * * * * */
+    .panel-encabezado-vis,
+    .panel-izquierda-vis,
+    .panel-derecha-vis,
+    .panel-pie-vis {
+      display: none;
+    }
+    &.con-panel-encabezado-vis .panel-encabezado-vis {
+      display: block;
+    }
+    &.con-panel-izquierda-vis .panel-izquierda-vis {
+      display: block;
+    }
+    &.con-panel-derecha-vis .panel-derecha-vis {
+      display: block;
+    }
+    &.con-panel-pie-vis .panel-pie-vis {
+      display: block;
+    }
+    &.sin-atribuciones {
+      .contenedor-vis-atribuciones {
+        display: none;
+      }
+    }
+    /* * * * * Escodner elementos * * * * */
+
+    /* * * * * Diosposicion * * * * */
+    display: grid;
+    grid-gap: 0;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: 1;
+    // grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
+
+    // Filas por defecto
+    .panel-encabezado-vis {
+      grid-row-start: 1;
+    }
+    .panel-izquierda-vis {
+      grid-row-start: 2;
+    }
+    .contenido-vis {
+      grid-row-start: 3;
+    }
+    .panel-derecha-vis {
+      grid-row-start: 4;
+    }
+    .panel-pie-vis {
+      grid-row-start: 5;
+    }
+    .panel-encabezado-vis,
+    .panel-izquierda-vis,
+    .contenido-vis,
+    .panel-derecha-vis,
+    .panel-pie-vis {
+      grid-column-start: 1;
+      grid-row-end: span 1;
+      grid-column-end: span 1;
+    }
+
+    @include mediaquery('esc') {
+      // reglas para escritorio
+      max-height: var(
+        --contenedor-vis-alto-maximo
+      ); // contenedor no sea más alto que la pantalla
+      // grid-template-rows: auto 1fr auto; // los paneles en medio del encabezado y pie no se desborden
+      grid-template-rows: 0 1fr 0;
+      min-height: calc(
+        var(--contenedor-vis-alto-minimo-vis) +
+          var(--contenedor-vis-alto-atribuciones) + 24px
+      );
+
+      .panel-izquierda-vis,
+      .contenido-vis,
+      .panel-derecha-vis {
+        grid-row-start: 2;
+      }
+      .panel-pie-vis {
+        grid-row-start: 3;
+      }
+      &.con-panel-encabezado-vis {
+        grid-template-rows: auto auto 0;
+
+        &.con-panel-izquierda-vis,
+        &.con-panel-derecha-vis {
+          grid-template-rows: auto 1fr 0;
+        }
+      }
+      &.con-panel-encabezado-vis,
+      &.con-panel-pie-vis {
+        &.con-panel-izquierda-vis,
+        &.con-panel-derecha-vis {
+          .panel-encabezado-vis,
+          .panel-pie-vis {
+            grid-column-end: span 2;
+          }
+        }
+      }
+      &.con-panel-encabezado-vis.con-panel-pie-vis {
+        grid-template-rows: auto auto auto;
+      }
+      &.con-panel-izquierda-vis {
+        grid-template-columns: 1fr 2fr;
+        .contenido-vis {
+          grid-column-start: 2;
+        }
+      }
+      &.con-panel-derecha-vis {
+        grid-template-columns: 2fr 1fr;
+        .contenido-vis {
+          grid-column-start: 1;
+        }
+        .panel-derecha-vis {
+          grid-column-start: 2;
+        }
+      }
+      &.con-panel-izquierda-vis.con-panel-derecha-vis {
+        grid-template-columns: 1fr 2fr 1fr;
+        .panel-encabezado-vis,
+        .panel-pie-vis {
+          grid-column-end: span 3;
+        }
+        .contenido-vis {
+          grid-column-start: 2;
+        }
+        .panel-derecha-vis {
+          grid-column-start: 3;
+        }
+      }
+      &.con-panel-pie-vis {
+        grid-template-rows: 0 auto auto;
+
+        &.con-panel-izquierda-vis,
+        &.con-panel-derecha-vis {
+          grid-template-rows: 0 1fr auto;
+        }
+        &.con-panel-encabezado-vis {
+          &.con-panel-izquierda-vis,
+          &.con-panel-derecha-vis {
+            grid-template-rows: auto 1fr auto;
+          }
+        }
+      }
+    }
+    /* * * * * Diosposicion * * * * */
   }
 
-  // Botón conahcyt simepre este pegado abajo
-  position: relative;
-  padding-bottom: var(--alto-boton-conahcyt);
-  .boton.boton-conahcyt,
-  .boton-conahcyt-vis,
   .contenedor-vis-atribuciones {
-    hr{
-      border-top: 1px solid var(--borde-color-3)
-    }
-    position: absolute;
-    bottom: 0;
-    // 
-    min-height: var(--alto-boton-conahcyt);
-    max-height: var(--alto-boton-conahcyt);
-    border-width: 0;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 0 24px 24px 24px;
-
-    img, a {
-      min-height: 24px;
-      max-height: 24px;
-      cursor: pointer;
+    align-items: center;
+    line-height: 24px;
+    padding-top: map-get($espaciado, '2');
+    padding-bottom: map-get($espaciado, '2');
+    margin-top: map-get($espaciado, '2');
+    margin-left: map-get($espaciado, '2');
+    margin-right: map-get($espaciado, '2');
+    @include mediaquery('esc') {
+      margin-left: map-get($espaciado, '3');
+      margin-right: map-get($espaciado, '3');
     }
-
+    
     .logo-conacyt {
-      color: #003384;
       filter: grayscale(100%);
-
       img {
-        opacity: .5;
-        transition: all .25s ease-in-out;
+        float: left;
+        height: 24px;
+        opacity: 0.5;
+        transition: all 0.25s ease-in-out;
       }
-
       &:hover,
       &:focus {
         filter: grayscale(0%);
@@ -61,286 +288,39 @@
       }
     }
   }
+}
 
-  // Scroll en los paneles
-  .panel-encabezado-vis,
-  .panel-izquierda-vis,
-  .panel-derecha-vis,
-  .panel-pie-vis {
-    overflow: auto;
-    scrollbar-width: thin;
-  }
+// clases especiales gema
+.contenedor-vis.gema {
+  height: 100%;
+  position: relative;
+  
+  .contenedor-vis-paneles {
+    height: 100%;
+    max-height: max-content;
+    padding: 0;
+    border-radius: 0;
+    grid-template-columns: 1fr auto;
 
-  /* * * * * Bordes redondeados * * * * */
-  .panel-encabezado-vis,
-  .panel-izquierda-vis,
-  .contenido-vis {
-    border-radius: 7px 7px 0 0;
-  }
-  .vista-cargando {
-    border-radius: 7px;
-  }
-  &.con-panel-encabezado-vis {
-    .panel-izquierda-vis {
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-    }
-  }
-  &.con-panel-encabezado-vis,
-  &.con-panel-izquierda-vis {
     .contenido-vis {
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-    }
-  }
-  @include mediaquery('esc') {
-    &.con-panel-encabezado-vis {
-      .panel-derecha-vis,
-      .panel-izquierda-vis {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-    }
-    &.con-panel-encabezado-vis.con-panel-izquierda-vis {
-      .contenido-vis {
-        border-top-right-radius: 0;
-      }
-    }
-    &.con-panel-encabezado-vis.con-panel-derecha-vis {
-      .panel-derecha-vis {
-        border-top-right-radius: 0;
-      }
-    }
-    &.con-panel-izquierda-vis {
-      .panel-izquierda-vis {
-        border-top-right-radius: 0;
-      }
-      .contenido-vis {
-        border-top-right-radius: 7px;
-      }
-    }
-    &.con-panel-derecha-vis {
-      .contenido-vis {
-        border-top-right-radius: 0;
-      }
-      .panel-derecha-vis {
-        border-top-right-radius: 7px;
-      }
-    }
-  }
-  /* * * * * Bordes redondeados * * * * */
-
-  /* * * * * Escodner elementos * * * * */
-  .panel-encabezado-vis,
-  .panel-izquierda-vis,
-  .panel-derecha-vis,
-  .panel-pie-vis {
-    display: none;
-  }
-  &.con-panel-encabezado-vis .panel-encabezado-vis {
-    display: block;
-  }
-  &.con-panel-izquierda-vis .panel-izquierda-vis {
-    display: block;
-  }
-  &.con-panel-derecha-vis .panel-derecha-vis {
-    display: block;
-  }
-  &.con-panel-pie-vis .panel-pie-vis {
-    display: block;
-  }
-
-  &.sin-cargador .vista-cargando {
-    display: none;
-  }
-
-  &.sin-boton-conahcyt {
-    padding-bottom: 0;
-
-    .boton.boton-conahcyt,
-    .boton-conahcyt-vis,
-    .contenedor-vis-atribuciones {
-      display: none;
+      grid-column-end: span 2;
     }
 
-    .contenido-vis,
-    .panel-derecha-vis,
-    .panel-pie-vis {
-      border-bottom-right-radius: 7px;
-      border-bottom-left-radius: 7px;
-    }
-    &.con-panel-derecha-vis {
-      .contenido-vis,
-      .panel-izquierda-vis {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-    }
-    &.con-panel-pie-vis {
-      .contenido-vis,
-      .panel-derecha-vis {
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-      }
-    }
-
-    @include mediaquery('esc') {
-      &.con-panel-izquierda-vis {
-        .panel-izquierda-vis {
-          border-bottom-left-radius: 7px;
-        }
-        .contenido-vis {
-          border-bottom-left-radius: 0;
-        }
-      }
-      &.con-panel-derecha-vis {
-        .contenido-vis {
-          border-bottom-left-radius: 7px;
-        }
-        .panel-derecha-vis {
-          border-bottom-left-radius: 0;
-        }
-      }
-      &.con-panel-izquierda-vis.con-panel-derecha-vis {
-        .contenido-vis {
-          border-bottom-left-radius: 0;
-        }
-      }
-      &.con-panel-pie-vis.con-panel-izquierda-vis,
-      &.con-panel-pie-vis.con-panel-derecha-vis {
-        .panel-izquierda-vis,
-        .contenido-vis {
-          border-bottom-left-radius: 0;
-        }
-      }
-    }
-  }
-
-  &.sin-bordes {
-    border: none;
-
-    .contenido-vis,
-    .vista-cargando,
-    .panel-encabezado-vis,
-    .panel-izquierda-vis,
-    .panel-derecha-vis,
-    .panel-pie-vis,
-    .boton.boton-conahcyt,
-    .boton-conahcyt-vis,
-    .contenedor-vis-atribuciones {
-      border-radius: 0 !important;
-    }
-  }
-  /* * * * * Escodner elementos * * * * */
-
-  /* * * * * Diosposicion * * * * */
-  display: grid;
-  grid-gap: 0;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-columns: 1;
-  // grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
-
-  // Filas por defecto
-  .panel-encabezado-vis {
-    grid-row-start: 1;
-  }
-  .panel-izquierda-vis {
-    grid-row-start: 2;
-  }
-  .contenido-vis {
-    grid-row-start: 3;
-  }
-  .panel-derecha-vis {
-    grid-row-start: 4;
-  }
-  .panel-pie-vis {
-    grid-row-start: 5;
-  }
-  .panel-encabezado-vis,
-  .panel-izquierda-vis,
-  .contenido-vis,
-  .panel-derecha-vis,
-  .panel-pie-vis {
-    grid-column-start: 1;
-    grid-row-end: span 1;
-    grid-column-end: span 1;
-  }
-
-  @include mediaquery('esc') {
-    grid-template-rows: auto;
-    .panel-izquierda-vis,
-    .contenido-vis,
     .panel-derecha-vis {
-      grid-row-start: 1;
-    }
-    .panel-pie-vis {
-      grid-row-start: 2;
-    }
-    .panel-encabezado-vis,
-    .panel-pie-vis {
-      // Cuando hay encabezado o pie, estos deben tomar el resto de la pantalla como alto máximo
-      max-height: calc(var(--alto-maximo-contenedor-vis) - var(--alto-minimo-vis));
-    }
-    &.con-panel-encabezado-vis {
-      grid-template-rows: auto auto;
-      .panel-izquierda-vis,
-      .contenido-vis,
-      .panel-derecha-vis {
-        grid-row-start: 2;
-      }
-      .panel-pie-vis {
-        grid-row-start: 3;
-      }
-    }
-    &.con-panel-izquierda-vis,
-    &.con-panel-derecha-vis {
-      .panel-encabezado-vis,
-      .panel-pie-vis {
-        grid-column-end: span 2;
-      }
-    }
-    .con-panel-pie-vis {
-      grid-template-rows: auto auto;
-    }
-    &.con-panel-encabezado-vis.con-panel-pie-vis {
-      grid-template-rows: auto auto auto;
-      .panel-encabezado-vis,
-      .panel-pie-vis {
-        // Cuando hay encabezado y pie, estos deben tomar la mitad del resto de la pantalla como alto máximo
-        max-height: calc((var(--alto-maximo-contenedor-vis) - var(--alto-minimo-vis)) / 2);
-      }
-    }
-    &.con-panel-izquierda-vis {
-      grid-template-columns: 1fr 2fr;
-      .panel-izquierda-vis {
-        grid-column-start: 1;
-      }
-      .contenido-vis {
-        grid-column-start: 2;
-      }
-    }
-    &.con-panel-derecha-vis {
-      grid-template-columns: 2fr 1fr;
-      .contenido-vis {
-        grid-column-start: 1;
-      }
-      .panel-derecha-vis {
-        grid-column-start: 2;
-      }
-    }
-    &.con-panel-izquierda-vis.con-panel-derecha-vis {
-      grid-template-columns: 1fr 2fr 1fr;
-      .panel-encabezado-vis,
-      .panel-pie-vis {
-        grid-column-end: span 3;
-      }
-      .contenido-vis {
-        grid-column-start: 2;
-      }
-      .panel-derecha-vis {
-        grid-column-start: 3;
-      }
+      z-index: 1;
     }
   }
-  /* * * * * Diosposicion * * * * */
+
+  .contenedor-vis-atribuciones {
+    display: none;
+  }
+}
+
+.visualizador .contenedor-vis.gema {
+  .sisdai-mapa-control {
+    &-acercar-alejar,
+    &-ajuste-vista {
+      right: calc(var(--margen) + 320px);
+    }
+  }
 }

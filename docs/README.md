@@ -1,34 +1,37 @@
-# docs
+# Docs
 
-This template should help get you started developing with Vue 3 in Vite.
+El proyecto de 'documentación' de la biblioteca sisdai-css es un proyecto creado con Vue3.
 
-## Recommended IDE Setup
+Es a la fecha, más bien un lugar en donde se muestran ejemplos de cómo son visualmente los elementos y componentes que existen hasta el momento.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Instalación y uso
 
-## Customize configuration
+Se recomienda seguir la documentación y scripts del proyecto madre de ésta documentación. 
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Pero si por alguna razón se necesita correr éste proyecto independiente, entiéndase como un proyecto anidado, está vinculado a la biblioteca de estilos sisdai-css únicamente por el archivo compilado `eni.css`, que se importa en el archivo `App.vue` en la línea `@import '@/assets/eni.css';`. Por lo demás es independiente para su instalación, compilación y publicación.
 
-## Project Setup
+## Uso local del proyecto
 
+### Instalación 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Levantar el entorno local
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Compilar para publicar
 
 ```sh
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+Para customizar la configuración hay que revisar la documentación oficial de Vite en [Configurando Vite](https://es.vitejs.dev/config/). 
+
+### Revisar errores de estilo [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint

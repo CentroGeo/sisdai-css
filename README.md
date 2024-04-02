@@ -12,7 +12,7 @@ en su equipo a través del **protocolo HTTPS**.
 * Normaliza la forma en que se visualizan los elementos de HTML entre los distintos navegadores como Firefox, Chrome, Opera, Safari, Edge
 * Estandariza estilos desde las etiquetas de HTML
 * Agrega clases para ayudar a la accesibilidad
-* Contiene un archivo de `_variables` general para homogeneizar, tipografias, pesos, tamaños, espacios y colores
+* Contiene un archivo de `_variables` general para homogeneizar, tipografías, pesos, tamaños, espacios y colores
 * Contiene un archivo de `_mixins` general para reutilizar los mediaquery de los límites declarados para la correcta visualización en celulares y pantallas más grandes
 
 ## Instalación y uso
@@ -22,10 +22,10 @@ tiene incluida una versión estable de sisdai-componentes y no requiere ningún 
 
 ### Agrega las tipografías
 
-Esta biblioteca utiliza las tipografias de Montserrat y Atkinson Hyperlegible de Google fonts 
+Esta biblioteca utiliza las tipografías de Montserrat y Atkinson Hyperlegible de Google fonts 
 y una tipografía de íconos publicada a través de Fontastic.
 
-Agrega las siguientes lineas dentro del `<head> </head>` del archivo de html en el siguiente orden:
+Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en el siguiente orden:
 
 1. Ligas de las tipografías de Google Fonts.
 2. Ligas de la tipografía para los íconos (aún en desarrollo).
@@ -93,7 +93,7 @@ Existen además clases para dar estilo a elementos y se encuentran agrupadas por
 
 ## Actualización
 
-Si actualmente utilizas la biblioteca y necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la version que requieres nuevamente
+Si actualmente utilizas la biblioteca y necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la versión que requieres nuevamente
 
 ```bash
 npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
@@ -108,25 +108,29 @@ El código se encuentra separado por módulos dependiendo del tipo de etiqueta o
 
 | Modulo | Descripcion                                                                                                                                                            |
 | ------ |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menu de accesibilidad                                                                                  |
+| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menú de accesibilidad                                                                                  |
 | Alertas | Contenedores para mostrar notificaciones de texto                                                                                                                      |
 | Auxiliares | Clases globales para alinear contenedores y elementos                                                                                                                  |
 | Bordes | Clases reutilizables de distintos estilos de bordes                                                                                                                    |
-| Boton | Clases que se aplican al elemento `<boton>`                                                                                                                            |
+| Boton | Clases que se aplican al elemento `<button>`                                                                                                                            |
 | Color | Clases generales de colores para estados de elementos y clases de colores institucionales                                                                              |
+| Controladores | Clase para personalizar los checkbox y radio con label para las visualizaciones                                                                          |
 | Detalle | Estilos de la etiqueta `<details>` `<summary>` utilizados en secciones de preguntas y respuestas                                                                       |
 | Formularios | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                       |
 | Icono | Clases de tamaños para las clases de `.icono-`                                                                                                                         |
-| Imagenes | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                |
-| Link | Estilos de la etiqueta de hipervinculo `<a>`                                                                                                                           |
-| Listas | Estilos de las etiquedas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                          |
-| Navegacion* | Estilos y clases para todos los elementos que se necesitan en la navegación, desde el `<nav>` hasta listas anidadas de sub-menu                                        |
-| Portada* | Clases del componente de diseño de portada para un capítulo ENI                                                                                                        |
-| Reticula | Clases de contenedores y reticula con renglones y columnas                                                                                                             |
+| Imágenes | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                |
+| Link | Estilos de la etiqueta de hipervínculo `<a>`                                                                                                                           |
+| Listas | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                          |
+| Navegación* | Estilos y clases para todos los elementos que se necesitan en la navegación, desde el `<nav>` hasta listas anidadas de sub-menu                                        |
+| Portada* | Clases para construir una portada portada para un capítulo ENI                                                                                                        |
+| Retícula | Clases de contenedores y retícula con renglones y columnas                                                                                                             |
 | Sombras | Clases reutilizables de distintos estilos de sombras                                                                                                                   |
 | Tablas | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                    |
-| Tarjetas* | Clases para el componente tarjeta del sistema de diseño                                                                                                                |
-| Tipografia | Estilos de las etiquetas de títulos y parrafos. Clases de títulos especiales responsivas que utilizan los capítulos de ENI y los componentes de visualización de datos |
+| Tarjetas | Clases para crear estilos de tarjeta del sistema de diseño                                                                                                                |
+| Tipografía | Estilos de las etiquetas de títulos y párrafos. Clases de títulos especiales responsivas que utilizan los capítulos de ENI y los componentes de visualización de datos |
+
+> [!NOTE]  
+> *Componentes Vue agregados en otras bibliotecas
 
 ## Uso local del proyecto
 
@@ -207,7 +211,7 @@ ___
 
 #### Estructura
 
-Las clases se encuentran agrupadas en modulos, dependiendo el tipo de elemento en el que se utilizará,
+Las clases se encuentran agrupadas en módulos, dependiendo el tipo de elemento en el que se utilizará,
 si no existiera una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del componente. 
 
 ```bash
@@ -219,7 +223,7 @@ sisdai-css/
 ```
 
 Para agregar el nuevo elemento a la biblioteca se debe importar en el archivo principal `eni.scss`.
-Hay que recordar que el orden en el que se impoten los estilos importa, el último archivo 'gana' el estilo final.
+Hay que recordar que el orden en el que se importen los estilos importa, el último archivo 'gana' el estilo final.
 
 ```bash
 sisdai-css/
@@ -245,7 +249,7 @@ Preferiblemente situarlo antes de los auxiliares y los archivos de accesibilidad
 
 Para facilitar el mantenimiento de la biblioteca se debe prestar atención en las variables declaradas en `_variables.css`
 y hacer uso de ellas sobre todo en márgenes y colores; 
-las tipografías deben estar declaradas en unidades rem para que varien conforme el tamaño general de la tipografía del sitio.
+las tipografías deben estar declaradas en unidades rem para que se actualicen conforme el tamaño general de la tipografía del sitio.
 
 Además se deben utilizar en la medida de lo posible los `_mixins.scss` de mediaquery 
 o en su defecto utilizar las variables en el @media screen and (max-width: calc(map-get($breakpoints, 'esc')))
@@ -261,14 +265,14 @@ sisdai-css/
 
 ```
 
-#### Agregar el nuevo elemento a la documentacion
+#### Agregar el nuevo elemento a la documentación
 
 En la carpeta `docs` existe un proyecto de Vue para desplegar la documentación.
 Parecido a los módulos en los que se agrupan los estilos, existen vistas en la
 documentación en donde se demuestra como se ve el nuevo estilo, clase o componente
 y se describe brevemente su funcionalidad.
 
-En caso de necesitarse una nueva vista, hay que recordar agregarla en las rutas 
+En caso de necesitar una nueva vista, hay que recordar agregarla en las rutas 
 y en la navegación.
 
 #### Compilación y actualización

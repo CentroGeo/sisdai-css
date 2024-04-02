@@ -1,0 +1,574 @@
+// Variables de color claro Sisdai
+body[data-light-theme-sisdai='true'] {
+  --pagina-fondo: #ffffff;
+  --nota-fondo: #F4F1FE;
+  
+  // Tipografia
+  --tipografia-color: #141414;
+  --tipografia-color-1: #ffffff;
+  --tipografia-color-2: #3F17E4;
+  --tipografia-color-3: #6E6380;
+
+  // Bordes
+  --borde-color-1: #141414;
+  --borde-color-2: #767677;
+  --borde-color-3: #AAAAAA;
+  --borde-color-4: #ffffff;
+  --borde-focus: #005DFF;
+
+  // Sombras
+  --sombra: #0000001a;
+  --sombra-focus: #005DFF;
+  --sombra-hover: #0000001a;
+
+  // Detalles
+  --detalle-fondo: #F4F1FE;
+  --detalle-focus-sombra: #005DFF;
+
+  // Boton primario
+  --boton-primario-fondo: #3F17E4;
+  --boton-primario-borde: #3F17E5;
+  --boton-primario-color: #ffffff;
+  --boton-primario-sombra: transparent;
+    --boton-primario-deshabilitado-fondo: #dddddd;
+    --boton-primario-deshabilitado-borde: #dddddd;
+    --boton-primario-deshabilitado-color: #767677;
+    --boton-primario-deshabilitado-sombra: transparent;
+      --boton-primario-hover-fondo: #2B13B1;
+      --boton-primario-hover-borde: #2B13B1;
+      --boton-primario-hover-color: #ffffff;
+      --boton-primario-hover-sombra: #0000001a;
+        --boton-primario-focus-fondo: #2B13B1;
+        --boton-primario-focus-borde: #ffffff;
+        --boton-primario-focus-color: #ffffff;
+        --boton-primario-focus-sombra: #005DFF;
+        --boton-primario-focus-contorno: #005DFF;
+  
+  // Boton secundario
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: #453B67;
+  --boton-secundario-color: #453B67;
+  --boton-secundario-sombra: transparent;
+    --boton-secundario-deshabilitado-fondo: transparent;
+    --boton-secundario-deshabilitado-borde: #dddddd;
+    --boton-secundario-deshabilitado-color: #AAAAAA;
+    --boton-secundario-deshabilitado-sombra: transparent;
+      --boton-secundario-hover-fondo: #CCE1FF;
+      --boton-secundario-hover-borde: #453B67;
+      --boton-secundario-hover-color: #453B67;
+      --boton-secundario-hover-sombra: #0000001a;
+        --boton-secundario-focus-fondo: #DBD0FB;
+        --boton-secundario-focus-borde: #005DFF;
+        --boton-secundario-focus-color: #453B67;
+        --boton-secundario-focus-sombra: #005DFF;
+  
+  --boton-conahcyt-fondo: #DDDDDD;
+
+  // Elementos de formulario
+  --label-color: #6E638F;
+  --input-fondo: transparent;
+  --input-color: #141414;
+  --input-borde: #6E638F;
+  --input-controles-color: #3F17E4;
+    --input-deshabilitado-fondo: #DDDDDD;
+    --input-deshabilitado-color: #AAAAAA;
+      --input-hover: #453B67;
+        --input-focus: #005DFF;
+
+  --input-select-svg: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+        <g fill="%23141414">\
+            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
+            <rect width="24" height="24" fill="none"/>\
+        </g>\
+    </svg>');
+
+  // Tablas
+  --tabla-fondo-impar: #F4F1FE;
+  --tabla-fondo-notas: #DBD0FB;
+
+  // Tarjetas
+  --tarjetas-fondo: #F5F5F5;
+  --tarjetas-color: #141414;
+  --tarjetas-externas-color: #ffffff;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
+  --tarjetas-internas-color: #141414;
+  --tarjetas-internas-fondo: #F5F5F5;
+    --tarjetas-interna-fondo-hover: #DDDDDD;
+
+  --tarjetas-simplificada-fondo: #FFFFFF;
+  --tarjetas-simplificada-color: #005DFF;
+  --tarjetas-simplificada-borde: #005DFF;
+    --tarjetas-simplificada-fondo-hover: #005DFF;
+    --tarjetas-simplificadas-borde-hover: #005DFF;
+    --tarjetas-simplificada-color-hover: #FFFFFF;
+      --tarjeta-simplificada-fondo-focus: #005DFF;
+      --tarjeta-simplificada-borde-focus: #FFFFFF;
+      --tarjeta-simplificada-color-focus: #FFFFFF;
+      --tarjeta-simplificada-contorno-focus: #005DFF;
+      --tarjeta-simplificada-sombra-focus: #005DFF;
+  --tarjetas-contenido-simplificada-fondo: #F5F5F5;
+  --tarjetas--contenido-simplificada-color: #141414;
+
+  // Portada
+  --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
+  
+  // Navegacion principal
+  --navegacion-conahcyt-fondo: #ffffff;
+  --navegacion-conahcyt-sombra: #00000032;
+  --navegacion-conahcyt-color: #002663;
+  --navegacion-conahcyt-fondo-icono: #002663;
+  --navegacion-conahcyt-fondo-hover: #F5F5F5;
+  
+  // Navegacion secundaria
+  --menu-lateral-color: #201540;
+  --menu-lateral-fondo: #E4DEFC;
+  --menu-lateral-accion: #0068FF;
+  --menu-lateral-hover-color: #FFFFFF;
+    --menu-lateral-accion-fondo-hover: #453B67;
+      --menu-lateral-accion-fondo-active: #FEFAF8;
+      --menu-lateral-accion-sombra-active: #0068FF;
+  --submenu-lateral-fondo-mov: #F4F1FE;
+  --submenu-lateral-fondo-colapsable: #DBD0FB;
+
+  // Acciones
+  --acciones-informativo: #19439C;
+  --acciones-informativo-2: #ECF2FF;
+  --acciones-error: #940B1C;
+  --acciones-error-2: #FEE9EC;
+  --acciones-advertencia: #916802;
+  --acciones-advertencia-2: #FFF7E3;
+  --acciones-correcto: #2A6F4D;
+  --acciones-correcto-2: #E7FBF1;
+
+  // Hipervinculos
+  --hipervinculo-color: #005DFF;
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-deshabilitado-color: #AAAAAA;
+  --hipervinculo-deshabilitado-sombra: transparent;
+  --hipervinculo-hover-color: #356CCC;
+  --hipervinculo-hover-sombra: transparent;
+  --hipervinculo-focus-color: #005DFF;
+  --hipervinculo-focus-sombra: #005DFF;
+  --hipervinculo-visitado: #9233FF;
+
+  // Navegacion
+  --navegacion-fondo: #eef;
+  --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
+  --navegacion-redondeado: 0 0 8px 8px;
+  --navegacion-color: #00f;
+    --navegacion-fondo-hover: #ddf;
+    --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
+    --navegacion-color-hover: #00f;
+      --navegacion-fondo-active: #00f;
+      --navegacion-sombra-active: 0 0 0 0;
+      --navegacion-color-active: #fff;
+
+  // Color
+  @each $id, $valor in $color-gobmx {
+    --color-gobmx-#{$id}: #{$valor};
+  }
+
+  @each $id, $valor in $color-conahcyt {
+    --color-conahcyt-#{$id}: #{$valor};
+  }
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+
+  // Reticula
+  @each $id, $valor in $espaciado {
+    --espaciado-#{$id}: #{$valor};
+  }
+
+  // Breakpoints
+  @each $id, $valor in $breakpoints {
+    --breakpoints-#{$id}: #{$valor};
+  }
+  --navegacion-breakpoint: 768px;
+
+}
+  
+// Variables de color claro Eni
+body[data-light-theme-eni='true'] {
+  --pagina-fondo: #ffffff;
+  --nota-fondo: #F0F6FF;
+  
+  // Tipografia
+  --tipografia-color: #141414;
+  --tipografia-color-1: #ffffff;
+  --tipografia-color-2: #0068FF;
+  --tipografia-color-3: #5E7392;
+
+  // Bordes
+  --borde-color-1: #141414;
+  --borde-color-2: #767677;
+  --borde-color-3: #AAAAAA;
+  --borde-color-4: #ffffff;
+  --borde-focus: #005DFF;
+
+  // Sombras
+  --sombra: #0000001a;
+  --sombra-focus: #005DFF;
+  --sombra-hover: #0000001a;
+
+  // Detalles
+  --detalle-fondo: #F0F6FF;
+  --detalle-focus-sombra: #005DFF;
+
+  // Boton primario
+  --boton-primario-fondo: #0068FF;
+  --boton-primario-borde: #0068FF;
+  --boton-primario-color: #ffffff;
+  --boton-primario-sombra: transparent;
+    --boton-primario-deshabilitado-fondo: #dddddd;
+    --boton-primario-deshabilitado-borde: #dddddd;
+    --boton-primario-deshabilitado-color: #767677;
+    --boton-primario-deshabilitado-sombra: transparent;
+      --boton-primario-hover-fondo: #0058CC;
+      --boton-primario-hover-borde: #0058CC;
+      --boton-primario-hover-color: #ffffff;
+      --boton-primario-hover-sombra: #0000001a;
+        --boton-primario-focus-fondo: #0058CC;
+        --boton-primario-focus-borde: #ffffff;
+        --boton-primario-focus-color: #ffffff;
+        --boton-primario-focus-sombra: #005DFF;
+        --boton-primario-focus-contorno: #005DFF;
+  
+  // Boton secundario
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: #364A69;
+  --boton-secundario-color: #364A69;
+  --boton-secundario-sombra: transparent;
+    --boton-secundario-deshabilitado-fondo: transparent;
+    --boton-secundario-deshabilitado-borde: #dddddd;
+    --boton-secundario-deshabilitado-color: #AAAAAA;
+    --boton-secundario-deshabilitado-sombra: transparent;
+      --boton-secundario-hover-fondo: #CCE1FF;
+      --boton-secundario-hover-borde: #364A69;
+      --boton-secundario-hover-color: #364A69;
+      --boton-secundario-hover-sombra: #0000001a;
+        --boton-secundario-focus-fondo: #CCE1FF;
+        --boton-secundario-focus-borde: #005DFF;
+        --boton-secundario-focus-color: #364A69;
+        --boton-secundario-focus-sombra: #005DFF;
+
+  --boton-conahcyt-fondo: #DDDDDD;
+  
+  // Boton icono sin borde
+  --boton-icono-sin-borde-color: #0068FF;
+
+  // Elementos de formulario
+  --label-color: #5E7392;
+  --input-fondo: transparent;
+  --input-color: #141414;
+  --input-borde: #5E7392;
+  --input-controles-color: #0068FF;
+    --input-deshabilitado-fondo: #DDDDDD;
+    --input-deshabilitado-color: #AAAAAA;
+      --input-hover: #364A69;
+        --input-focus: #005DFF;
+
+  --input-select-svg: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+        <g fill="%23141414">\
+            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
+            <rect width="24" height="24" fill="none"/>\
+        </g>\
+    </svg>');
+
+  // Tablas
+  --tabla-fondo-impar: #F0F6FF;
+  --tabla-fondo-notas: #CCE1FF;
+
+  // Tarjetas
+  --tarjetas-fondo: #F5F5F5;
+  --tarjetas-color: #141414;
+  --tarjetas-externas-color: #ffffff;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
+  --tarjetas-internas-color: #141414;
+  --tarjetas-internas-fondo: #F5F5F5;
+    --tarjetas-interna-fondo-hover: #DDDDDD;
+
+  --tarjetas-simplificada-fondo: #FFFFFF;
+  --tarjetas-simplificada-color: #005DFF;
+  --tarjetas-simplificada-borde: #005DFF;
+    --tarjetas-simplificada-fondo-hover: #005DFF;
+    --tarjetas-simplificadas-borde-hover: #005DFF;
+    --tarjetas-simplificada-color-hover: #FFFFFF;
+      --tarjeta-simplificada-fondo-focus: #005DFF;
+      --tarjeta-simplificada-borde-focus: #FFFFFF;
+      --tarjeta-simplificada-color-focus: #FFFFFF;
+      --tarjeta-simplificada-contorno-focus: #005DFF;
+      --tarjeta-simplificada-sombra-focus: #005DFF;
+  --tarjetas-contenido-simplificada-fondo: #F5F5F5;
+  --tarjetas--contenido-simplificada-color: #141414;
+
+  // Portada
+  --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
+  
+  // Navegacion principal
+  --navegacion-conahcyt-fondo: #ffffff;
+  --navegacion-conahcyt-sombra: #00000032;
+  --navegacion-conahcyt-color: #002663;
+  --navegacion-conahcyt-fondo-icono: #002663;
+  --navegacion-conahcyt-fondo-hover: #F5F5F5;
+  
+  // Navegacion secundaria
+  --menu-lateral-color: #102543;
+  --menu-lateral-fondo: #DBEAFF;
+  --menu-lateral-accion: #0068FF;
+  --menu-lateral-hover-color: #ffffff;
+    --menu-lateral-accion-fondo-hover: #364A69;
+      --menu-lateral-accion-fondo-active: #F8FBFF;
+      --menu-lateral-accion-sombra-active: #0068FF;
+  --submenu-lateral-fondo-mov: #DBEAFF;
+  --submenu-lateral-fondo-colapsable: #CCE1FF;
+
+  // Acciones
+  --acciones-informativo: #19439C;
+  --acciones-informativo-2: #ECF2FF;
+  --acciones-error: #940B1C;
+  --acciones-error-2: #FEE9EC;
+  --acciones-advertencia: #916802;
+  --acciones-advertencia-2: #FFF7E3;
+  --acciones-correcto: #2A6F4D;
+  --acciones-correcto-2: #E7FBF1;
+
+  // Hipervinculos
+  --hipervinculo-color: #005DFF;
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-deshabilitado-color: #AAAAAA;
+  --hipervinculo-deshabilitado-sombra: transparent;
+  --hipervinculo-hover-color: #356CCC;
+  --hipervinculo-hover-sombra: transparent;
+  --hipervinculo-focus-color: #005DFF;
+  --hipervinculo-focus-sombra: #005DFF;
+  --hipervinculo-visitado: #9233FF;
+
+  // Navegacion
+  --navegacion-fondo: #eef;
+  --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
+  --navegacion-redondeado: 0 0 8px 8px;
+  --navegacion-color: #00f;
+    --navegacion-fondo-hover: #ddf;
+    --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
+    --navegacion-color-hover: #00f;
+      --navegacion-fondo-active: #00f;
+      --navegacion-sombra-active: 0 0 0 0;
+      --navegacion-color-active: #fff;
+
+  // Color
+  @each $id, $valor in $color-gobmx {
+    --color-gobmx-#{$id}: #{$valor};
+  }
+
+  @each $id, $valor in $color-conahcyt {
+    --color-conahcyt-#{$id}: #{$valor};
+  }
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+
+  // Reticula
+  @each $id, $valor in $espaciado {
+    --espaciado-#{$id}: #{$valor};
+  }
+
+  // Breakpoints
+  @each $id, $valor in $breakpoints {
+    --breakpoints-#{$id}: #{$valor};
+  }
+  --navegacion-breakpoint: 768px;
+
+}
+
+// Variables de color claro Gema
+body[data-light-theme-gema='true']  {
+  --color-0: #ffffff;
+  --color-1: #fff5f0;
+  --color-2: #141414;
+  --color-3: #cc4b14;
+  --color-4: #90705f;
+  --color-5: #767677;
+  --color-6: #aaaaaa;
+  --color-7: #005dff;
+  --color-8: transparent;
+  --color-9: #dddddd;
+  --color-10: #993310;
+  --color-11: #0000001a;
+  --color-12: #674736;
+  --color-13: #fdddcc;
+  --color-14: #f5f5f5;
+  --color-15: #00000032;
+  --color-16: #002663;
+  --color-17: #412110;
+  --color-18: #fde7db;
+  --color-19: #fefaf8;
+  --color-20: #19439c;
+  --color-21: #ecf2ff;
+  --color-22: #940b1c;
+  --color-23: #fee9ec;
+  --color-24: #916802;
+  --color-25: #fff7e3;
+  --color-26: #2a6f4d;
+  --color-27: #e7fbf1;
+  --color-28: #356ccc;
+  --color-29: #9233ff;
+  --pagina-fondo: var( --color-0 );
+  --nota-fondo: var( --color-1 );
+  --tipografia-color: var( --color-2 );
+  --tipografia-color-1: var( --color-0 );
+  --tipografia-color-2: var( --color-3 );
+  --tipografia-color-3: var( --color-4 );
+  --borde-color-1: var( --color-2 );
+  --borde-color-2: var( --color-5 );
+  --borde-color-3: var( --color-6 );
+  --borde-color-4: var( --color-0 );
+  --borde-focus: var( --color-7 );
+  --sombra: var( --color-2 );
+  --sombra-focus: var( --color-5 );
+  --sombra-hover: var( --color-6 );
+  --detalle-fondo: var( --color-1 );
+  --detalle-focus-sombra: var( --color-7 );
+  --boton-primario-fondo: var( --color-3 );
+  --boton-primario-borde: var( --color-3 );
+  --boton-primario-color: var( --color-0 );
+  --boton-primario-sombra: var( --color-8 );
+  --boton-primario-deshabilitado-fondo: var( --color-9 );
+  --boton-primario-deshabilitado-borde: var( --color-9 );
+  --boton-primario-deshabilitado-color: var( --color-5 );
+  --boton-primario-deshabilitado-sombra: var( --color-8 );
+  --boton-primario-hover-fondo: var( --color-10 );
+  --boton-primario-hover-borde: var( --color-10 );
+  --boton-primario-hover-color: var( --color-0 );
+  --boton-primario-hover-sombra: var( --color-11 );
+  --boton-primario-focus-fondo: var( --color-10 );
+  --boton-primario-focus-borde: var( --color-0 );
+  --boton-primario-focus-color: var( --color-0 );
+  --boton-primario-focus-contorno: var( --color-7 );
+  --boton-primario-focus-sombra: var( --color-7 );
+  --boton-secundario-fondo: var( --color-8 );
+  --boton-secundario-borde: var( --color-12 );
+  --boton-secundario-color: var( --color-12 );
+  --boton-secundario-sombra: var( --color-8 );
+  --boton-secundario-deshabilitado-fondo: var( --color-8 );
+  --boton-secundario-deshabilitado-borde: var( --color-9 );
+  --boton-secundario-deshabilitado-color: var( --color-6 );
+  --boton-secundario-deshabilitado-sombra: var( --color-8 );
+  --boton-secundario-hover-fondo: var( --color-13 );
+  --boton-secundario-hover-borde: var( --color-12 );
+  --boton-secundario-hover-color: var( --color-12 );
+  --boton-secundario-hover-sombra: var( --color-11 );
+  --boton-secundario-focus-fondo: var( --color-13 );
+  --boton-secundario-focus-borde: var( --color-7 );
+  --boton-secundario-focus-color: var( --color-12 );
+  --boton-secundario-focus-sombra: var( --color-7 );
+  --boton-conahcyt-fondo: var( --color-9 );
+  --label-color: var( --color-4 );
+  --input-fondo: var( --color-8 );
+  --input-color: var( --color-2 );
+  --input-borde: var( --color-4 );
+  --input-controles-color: var( --color-3 );
+  --input-deshabilitado-fondo: var( --color-9 );
+  --input-deshabilitado-color: var( --color-6 );
+  --input-hover: var( --color-12 );
+  --input-focus: var( --color-7 );
+  --tabla-fondo-impar: var( --color-1 );
+  --tabla-fondo-notas: var( --color-13 );
+  --tarjetas-fondo: var( --color-14 );
+  --tarjetas-color: var( --color-2 );
+  --tarjetas-externas-color: var( --color-0 );
+  --tarjetas-internas-color: var( --color-2 );
+  --tarjetas-internas-fondo: var( --color-14 );
+  --tarjetas-interna-fondo-hover: var( --color-9 );
+  --tarjetas-simplificada-fondo: var( --color-0 );
+  --tarjetas-simplificada-color: var( --color-7 );
+  --tarjetas-simplificada-borde: var( --color-7 );
+  --tarjetas-simplificada-fondo-hover: var( --color-7 );
+  --tarjetas-simplificadas-borde-hover: var( --color-7 );
+  --tarjetas-simplificada-color-hover: var( --color-0 );
+  --tarjeta-simplificada-fondo-focus: var( --color-7 );
+  --tarjeta-simplificada-borde-focus: var( --color-0 );
+  --tarjeta-simplificada-color-focus: var( --color-0 );
+  --tarjeta-simplificada-contorno-focus: var( --color-7 );
+  --tarjeta-simplificada-sombra-focus: var( --color-7 );
+  --tarjetas-contenido-simplificada-fondo: var( --color-14 );
+  --tarjetas--contenido-simplificada-color: var( --color-2 );
+  --navegacion-conahcyt-fondo: var( --color-0 );
+  --navegacion-conahcyt-sombra: var( --color-15 );
+  --navegacion-conahcyt-color: var( --color-16 );
+  --navegacion-conahcyt-fondo-icono: var( --color-16 );
+  --navegacion-conahcyt-fondo-hover: var( --color-14 );
+  --menu-lateral-color: var( --color-17 );
+  --menu-lateral-fondo: var( --color-18 );
+  --menu-lateral-accion: var( --color-3 );
+  --menu-lateral-hover-color: var( --color-0);
+  --menu-lateral-accion-fondo-hover: var( --color-12 );
+  --menu-lateral-accion-fondo-active: var( --color-19 );
+  --menu-lateral-accion-sombra-active: var( --color-3 );
+  --submenu-lateral-fondo-mov: var( --color-18 );
+  --submenu-lateral-fondo-colapsable: var( --color-13 );
+  --acciones-informativo: var( --color-20 );
+  --acciones-informativo-2: var( --color-21 );
+  --acciones-error: var( --color-22 );
+  --acciones-error-2: var( --color-23 );
+  --acciones-advertencia: var( --color-24 );
+  --acciones-advertencia-2: var( --color-25 );
+  --acciones-correcto: var( --color-26 );
+  --acciones-correcto-2: var( --color-27 );
+  --hipervinculo-color: var( --color-7 );
+  --hipervinculo-sombra: var( --color-8 );
+  --hipervinculo-deshabilitado-color: var( --color-6 );
+  --hipervinculo-deshabilitado-sombra: var( --color-8 );
+  --hipervinculo-hover-color: var( --color-28 );
+  --hipervinculo-hover-sombra: var( --color-8 );
+  --hipervinculo-focus-color: var( --color-7 );
+  --hipervinculo-focus-sombra: var( --color-7 );
+  --hipervinculo-visitado: var( --color-29 );
+  
+
+  --input-select-svg: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
+        <g fill="%23141414">\
+            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
+            <rect width="24" height="24" fill="none"/>\
+        </g>\
+    </svg>');
+
+  
+
+  // Portada
+  --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
+  
+
+  // Navegacion
+  --navegacion-fondo: #eef;
+  --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
+  --navegacion-redondeado: 0 0 8px 8px;
+  --navegacion-color: #00f;
+    --navegacion-fondo-hover: #ddf;
+    --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
+    --navegacion-color-hover: #00f;
+      --navegacion-fondo-active: #00f;
+      --navegacion-sombra-active: 0 0 0 0;
+      --navegacion-color-active: #fff;
+
+  // Color
+  @each $id, $valor in $color-gobmx {
+    --color-gobmx-#{$id}: #{$valor};
+  }
+
+  @each $id, $valor in $color-conahcyt {
+    --color-conahcyt-#{$id}: #{$valor};
+  }
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+
+  // Reticula
+  @each $id, $valor in $espaciado {
+    --espaciado-#{$id}: #{$valor};
+  }
+
+  // Breakpoints
+  @each $id, $valor in $breakpoints {
+    --breakpoints-#{$id}: #{$valor};
+  }
+  --navegacion-breakpoint: 768px;
+
+}
