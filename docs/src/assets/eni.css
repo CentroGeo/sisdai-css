@@ -9638,50 +9638,60 @@ body {
 
 .contenedor-globo-info-ext {
   width: 322px;
-  min-height: 152px;
+  max-height: 160px;
   padding: 16px;
+  overflow-y: auto;
 }
 .contenedor-globo-info-ext button.boton-cerrar {
-  float: right;
   margin-right: 0;
-  background: #6692ff;
-  border-color: #6692ff;
-  color: #102543;
+  background: transparent;
+  border-color: #B1C6E4;
+  color: #B1C6E4;
 }
 .contenedor-globo-info-ext button.boton-cerrar:hover {
-  background: #80aaff;
-  border-color: #80aaff;
-  color: #102543;
+  background: #364A69;
+  border-color: #B1C6E4;
+  color: #B1C6E4;
 }
 .contenedor-globo-info-ext button.boton-cerrar:focus {
-  background: #80aaff;
-  border-color: #102543;
-  box-shadow: 0 0 8px #668bff;
-  color: #102543;
-  outline: 1px solid #668bff;
+  background: #364A69;
+  border-color: #668BFF;
+  box-shadow: 0 0 8px #668BFF;
+  color: #B1C6E4;
+  outline-color: #668BFF;
+}
+.contenedor-globo-info-ext .cuerpo-globo-info {
+  font-size: 16px;
+  line-height: 1.25rem;
 }
 
 .contenedor-globo-info {
   min-height: 0;
-  padding: 12px;
+  padding: 16px;
   width: auto;
   max-width: 240px;
+}
+.contenedor-globo-info .cuerpo-globo-info {
+  font-size: 12px;
+  line-height: 0.938rem;
 }
 
 .contenedor-globo-info-ext,
 .contenedor-globo-info {
-  background: #1c1c1c;
+  background: #141414;
   color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
-  border-radius: 4px;
-  display: block;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  flex-direction: row-reverse;
+  align-items: flex-start;
   z-index: 9999;
 }
 .contenedor-globo-info-ext .cuerpo-globo-info,
 .contenedor-globo-info .cuerpo-globo-info {
-  font-size: 11px;
   font-weight: 400;
-  line-height: 1rem;
 }
 .contenedor-globo-info-ext .cuerpo-globo-info a,
 .contenedor-globo-info-ext .cuerpo-globo-info .hipervinculo,
@@ -9831,7 +9841,7 @@ body {
 
 .contenedor-vis .contenido-vis .contenedor-globo-info-ext,
 .contenedor-vis .contenido-vis .contenedor-globo-info {
-  background: rgba(28, 28, 28, 0.9019607843);
+  background: rgba(20, 20, 20, 0.9019607843);
 }
 
 @keyframes animacionResaltada {
