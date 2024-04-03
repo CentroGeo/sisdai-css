@@ -239,13 +239,15 @@ select {
   box-sizing: border-box !important;
   border: 1px solid transparent;
   width: 100%;
-  margin-top: map-get($espaciado, "2");
-  margin-bottom: map-get($espaciado, "2");
   background-color: transparent;
   -webkit-appearance: none;
   appearance: none;
-cursor:pointer;
-  min-height: 1.25rem;
+  cursor: pointer;
+  min-height: 2.5rem;
+  border-radius: 0.25rem;
+  margin-top: map-get($espaciado, "1");
+  margin-bottom: map-get($espaciado, "3");
+
   // La bolita
   &::-moz-range-thumb {
     margin-top: calc((-1rem * 0.5) + 0.125rem);
@@ -262,7 +264,6 @@ cursor:pointer;
     background: var(--input-controles-color);
     border: 0;
     border-radius: 0.5rem;
-    
   }
   &::-webkit-slider-thumb {
     margin-top: calc((-1rem * 0.5) + 0.125rem);
@@ -316,7 +317,6 @@ cursor:pointer;
     &::-webkit-slider-thumb {
       background-color: var(--boton-primario-focus-fondo);
     }
-    // La pista
     &::-webkit-slider-runnable-track {
       background-color: var(--boton-primario-focus-fondo);
     }
@@ -331,7 +331,7 @@ cursor:pointer;
     }
   }
   &:disabled {
-    cursor:  auto;
+    cursor: auto;
 
     &::-moz-range-thumb {
       background-color: var(--boton-primario-deshabilitado-color);
@@ -342,7 +342,6 @@ cursor:pointer;
     &::-webkit-slider-thumb {
       background-color: var(--boton-primario-deshabilitado-color);
     }
-    // La pista
     &::-webkit-slider-runnable-track {
       background-color: var(--input-deshabilitado-fondo);
     }
@@ -359,11 +358,10 @@ cursor:pointer;
   &:focus {
     border-color: var(--boton-primario-focus-fondo);
     box-shadow: 0 0 8px var(--input-focus);
-    border-radius: map-get($espaciado, 'minimo');
+    border-radius: map-get($espaciado, "minimo");
     outline: none;
-    border-radius: .625rem;
+    border-radius: 0.25rem;
   }
-
 }
 
 /*[type=range]:focus::-webkit-slider-runnable-track {
