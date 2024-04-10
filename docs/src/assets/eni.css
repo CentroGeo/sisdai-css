@@ -8284,6 +8284,15 @@ ol + hr {
   top: 0;
   margin: 0;
 }
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip figure svg .vis-linea-ejes {
+  stroke: var(--color-5);
+  stroke-dasharray: 3 3;
+  stroke-width: 1px;
+}
+.contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip figure svg .vis-linea-base {
+  stroke: var(--color-5);
+  stroke-width: 1px;
+}
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis,
 .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis,
 .contenedor-vis .contenedor-vis-paneles .panel-derecha-vis,
@@ -9835,6 +9844,13 @@ body {
 .contenedor-globo-info-ext .cuerpo-globo-info :last-child,
 .contenedor-globo-info .cuerpo-globo-info :last-child {
   margin-bottom: 0;
+}
+.contenedor-globo-info-ext .punto-color,
+.contenedor-globo-info .punto-color {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  border: 1px solid var(--color-2);
 }
 
 .contenedor-vis .contenido-vis .contenedor-globo-info-ext,

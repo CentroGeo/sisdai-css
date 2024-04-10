@@ -99,6 +99,12 @@
       margin-bottom: 0;
     }
   }
+  .punto-color{
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    border: 1px solid var(--color-2);
+  }
 }
 
 .contenedor-vis .contenido-vis {
