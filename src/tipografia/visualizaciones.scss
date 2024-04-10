@@ -14,7 +14,7 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 // Sisdai: Documentación V.3 Tipografía Visualizaciones
-// Revision: 08/04/2024
+// Revision: 09/04/2024
 [class^="vis-"],
 [class*=" vis-"] {
   color: var(--tipografia-color);
@@ -95,11 +95,4 @@
       cursor: default;
     }
   }
-}
-.vis-fuente {
-  font-size: 0.875rem; // 14px
-  line-height: calc(1em * 1.25);
-  color: var(--tipografia-color);
-  font-weight: 400;
-  margin: 16px 0 16px 0;
 }
