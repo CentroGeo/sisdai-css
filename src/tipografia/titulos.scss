@@ -13,38 +13,51 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
+// Sisdai: Documentación V.2 Tipografía General
+// Revision: 09/04/2024
 .titulo-base {
   color: var(--tipografia-color);
   font-weight: 500;
-  line-height: calc(1em * 1.25);
   margin-top: map-get($espaciado, '3');
   margin-bottom: map-get($espaciado, '3');
+  line-height: calc(1em * 1.25);
 }
 h1,.h1 {
   @extend .titulo-base;
-  font-size: 2.25rem; // 36px
-  line-height: calc(1em * 1.25);
+  font-size: 2rem; // 32px
+  @include mediaquery(esc) {
+    font-size: 2.25rem; // 36px
+    margin-top: map-get($espaciado, '8');
+  }
 }
 h2,.h2 {
   @extend .titulo-base;
-  font-size: 2rem; // 32px
-  line-height: calc(1em * 1.25);
+  font-size: 1.75rem; // 28px
+  @include mediaquery(esc) {
+    font-size: 2rem; // 32px
+  }
 }
 
 h3,.h3 {
   @extend .titulo-base;
-  font-size: 1.75rem; // 28px
-  line-height: calc(1em * 1.25);
+  font-size: 1.5rem; // 24px
+  @include mediaquery(esc) {
+    font-size: 1.75rem; // 28px
+  }
 }
 h4,.h4 {
   @extend .titulo-base;
-  font-size: 1.5rem; // 24px
-  line-height: calc(1em * 1.25);
+  font-size: 1.25rem; // 20px
+  @include mediaquery(esc) {
+    font-size: 1.5rem; // 24px
+  }
 }
 h5,.h5 {
   @extend .titulo-base;
-  font-size: 1.25rem; // 20px
-  line-height: calc(1em * 1.25);
+  font-size: 1.125rem; //18px
+  @include mediaquery(esc) {
+    font-size: 1.25rem; // 20px
+  }
 }
 h6,.h6 {
   @extend .titulo-base;
@@ -52,46 +65,42 @@ h6,.h6 {
   @include mediaquery(esc) {
     font-size: 1.125rem; //18px
   }
-  line-height: calc(1em * 1.25);
 }
 
+
+
+
+
+// que pasa con todas estas clases!!!???
 // titulos eni variables responsivas
 .titulo-eni {
   @extend .titulo-base;
   font-size: 3rem; //48px
-  line-height: calc(1em * 1.25);
   @include mediaquery(esc) { 
     font-size: 5rem; // 80px
-    line-height: calc(1em * 1.25);
   }
 }
 
 .titulo-capitulo {
   @extend .titulo-base;
   font-size: 2.25rem; // 36px
-  line-height: calc(1em * 1.25);
   @include mediaquery(esc) {
     font-size: 3.5rem; // 56px
-    line-height: calc(1em * 1.25);
   }
 }
 .subtitulo-capitulo {
   @extend .titulo-base;
   font-size: 1.125rem; // 18px
-  line-height: calc(1em * 1.25);
   @include mediaquery(esc) {
     font-size: 1.5rem; //24px
-    line-height: calc(1em * 1.25);
   }
 }
 
 .titulo-pagina {
   @extend .titulo-base;
   font-size: 1.75rem; // 28px
-  line-height: calc(1em * 1.25);
   @include mediaquery(esc) { 
     font-size: 2.25rem; // 36px
-    line-height: calc(1em * 1.25);
   }
 }
 .subtitulo-pagina,
@@ -99,10 +108,8 @@ h6,.h6 {
 .titulo-subseccion { 
   @extend .titulo-base;
   font-size: 1.125rem; // 18px
-  line-height: calc(1em * 1.25);
   @include mediaquery(esc) {
     font-size: 1.5rem; // 24px
-    line-height: calc(1em * 1.25);
   }
 }
 .subtitulo-pagina {

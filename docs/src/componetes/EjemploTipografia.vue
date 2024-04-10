@@ -12,12 +12,12 @@
   })
 </script>
 <template>
-  <div class="flex m-y-3">
+  <div class="flex borde-b borde-color-3">
     <div class="columna-8 columna-6-esc" v-html="html"></div>
     <div class="columna-8 columna-6-esc">
       <pre class="codigo">{{ html }}</pre>
     </div>
-    <div class="columna-4 columna-2-esc">
+    <div class="columna-4 columna-2-esc p-y-1">
       <span v-if="celular && escritorio">Celular</span>
       <ul class="atributos">
         <li v-for="(atributo, index) in celular" :key="index">
@@ -28,7 +28,7 @@
         </li>
       </ul>
     </div>
-    <div class="columna-4 columna-2-esc">
+    <div class="columna-4 columna-2-esc p-y-1">
       <span v-if="escritorio">Escritorio</span>
       <ul class="atributos">
         <li v-for="(atributo, index) in escritorio" :key="index">

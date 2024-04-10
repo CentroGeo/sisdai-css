@@ -6,9 +6,19 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
     <h1>Tipografía</h1>
     <div class="contenedor ancho-lectura contenedor-izq">
       <p>
+        El Sisdai utiliza Montserrat como familia tipográfica base, 
+        con un tamaño de 16px que se equivale a 1rem.  
+      </p>
+      <p>
         Todas las tipografías se calculan en <b>rem</b> para que al momento de
-        cambiar el tamaño de la tipograía a la raiz, todos crezcan manteniendo la
+        cambiar el tamaño de la tipografía todos los textos se ajusten manteniendo la
         relación jerárquica del tamaño.
+      </p>
+      <p>
+        Las variables de familia tipografica y tamaño estan
+        declaradas dentro del archivo <code>src/_variables.scss</code> 
+        de la carpeta raiz del proyecto, bajo los nombres de
+        <code>--tipografia-familia</code> y <code>--tipografia-tamanio</code>
       </p>
     </div>
 
@@ -16,65 +26,91 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
     <div class="contenedor ancho-lectura contenedor-izq">
       <p>
         Para todas las etiquetas de heading y clases de titulos y subtitlos el
-        interlineado se mantiene de 1.25em y el peso de la tipografia es medium
-        (500).
+        interlineado se mantiene de 1.25em, el peso de la tipografia es medium
+        (500) y tienen margenes superior e inferior de 24px <i>*con algunas excepciones</i>.
       </p>
     </div>
-    <div class="flex">
-      <div class="columna-2 sombra-profundidad-2 m-y-1 texto-centrado">
-        <h1>h1</h1>
-      </div>
-      <div class="columna-2">
-        <p>2.25rem<br />36px</p>
-      </div>
-
-      <div class="columna-2 sombra-profundidad-2 m-y-1 texto-centrado">
-        <h2>h2</h2>
-      </div>
-      <div class="columna-2">
-        <p>2rem<br />32px</p>
-      </div>
-
-      <div class="columna-2 sombra-profundidad-2 m-y-1 texto-centrado">
-        <h3>h3</h3>
-      </div>
-      <div class="columna-2">
-        <p>1.75rem<br />28px</p>
-      </div>
-
-      <div class="columna-2 sombra-profundidad-2 m-y-1 texto-centrado">
-        <h4>h4</h4>
-      </div>
-      <div class="columna-2">
-        <p>1.5rem<br />24px</p>
-      </div>
-
-      <div class="columna-2 sombra-profundidad-2 m-y-1 texto-centrado">
-        <h5>h5</h5>
-      </div>
-      <div class="columna-2">
-        <p>1.25rem<br />20px</p>
-      </div>
-
-      <div class="columna-2 sombra-profundidad-2 m-y-1 texto-centrado">
-        <h6>h6</h6>
-      </div>
-      <div class="columna-2">
-        <p>1.125rem<br />18px</p>
-      </div>
-    </div>
-
-    <h2 class="m-t-10">Titulos especiales (responsivos)</h2>
+    <EjemploTipografia 
+      html='
+      <h1>Título h1</h1>
+      <p class="h1">Clase de titulo h1</p>
+      '
+      :celular="[
+        {nombre:'Tamaño', valor:'2rem'},
+      ]"
+      :escritorio="[
+        {nombre:'Tamaño', valor:'2.25rem'},
+        {nombre:'Margen superior', valor:'64px'},
+      ]"
+    />
+    <EjemploTipografia 
+      html='
+      <h2>Título h2</h2>
+      <p class="h2">Clase de titulo h2</p>
+      '
+      :celular="[
+        {nombre:'Tamaño', valor:'1.75rem'},
+      ]"
+      :escritorio="[
+        {nombre:'Tamaño', valor:'2rem'},
+      ]"
+    />
+    <EjemploTipografia 
+      html='
+      <h3>Título h3</h3>
+      <p class="h3">Clase de titulo h3</p>
+      '
+      :celular="[
+        {nombre:'Tamaño', valor:'1.5rem'},
+      ]"
+      :escritorio="[
+        {nombre:'Tamaño', valor:'1.75rem'},
+      ]"
+    />
+    <EjemploTipografia 
+      html='
+      <h4>Título h4</h4>
+      <p class="h4">Clase de titulo h4</p>
+      '
+      :celular="[
+        {nombre:'Tamaño', valor:'1.25rem'},
+      ]"
+      :escritorio="[
+        {nombre:'Tamaño', valor:'1.5rem'},
+      ]"
+    />
+    <EjemploTipografia 
+      html='
+      <h5>Título h5</h5>
+      <p class="h5">Clase de titulo h5</p>
+      '
+      :celular="[
+        {nombre:'Tamaño', valor:'1.125rem'},
+      ]"
+      :escritorio="[
+        {nombre:'Tamaño', valor:'1.25rem'},
+      ]"
+    />
+    <EjemploTipografia 
+      html='
+      <h6>Título h6</h6>
+      <p class="h6">Clase de titulo h6</p>
+      '
+      :celular="[
+        {nombre:'Tamaño', valor:'1rem'},
+      ]"
+      :escritorio="[
+        {nombre:'Tamaño', valor:'1.125rem'},
+      ]"
+    />
+    
+    <!-- <h2 class="m-t-10">Titulos especiales</h2>
     <div class="contenedor ancho-lectura contenedor-izq">
       <p>
         Las clases especiales de titulos funcionan sobre cualquier etiqueta. Es
         importante mantener el ordenen de los headings <code>h1 ... h6</code> por
         buenas prácticas de código, para mejorar el posicionamiento orgánico y por
         accesibilidad.
-      </p>
-      <p>
-        Tienen dos tamaños que se formatean automaticamente con el breakpoint del
-        sistema de diseño, lo único que se necesita es poner la clase
       </p>
     </div>
     <div class="flex">
@@ -96,11 +132,11 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
         </p>
       </div>
       <div class="columna-4">
-  <pre class="m-x--1">
-    &lt; p class="titulo-eni">
-      titulo eni
-    &lt;/ p>
-  </pre>
+        <pre class="m-x--1">
+          &lt; p class="titulo-eni">
+            titulo eni
+          &lt;/ p>
+        </pre>
       </div>
 
       <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado">
@@ -122,11 +158,10 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
       </div>
       <div class="columna-4">
         <pre class="m-x--1">
-    &lt; p class="titulo-capitulo">
-      titulo capitulo
-    &lt;/ p>
-  </pre
-        >
+          &lt; p class="titulo-capitulo">
+            titulo capitulo
+          &lt;/ p>
+        </pre>
       </div>
 
       <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado">
@@ -148,11 +183,10 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
       </div>
       <div class="columna-4">
         <pre class="m-x--1">
-    &lt; p class="subtitulo-capitulo">
-      subtitulo capitulo
-    &lt;/ p>
-  </pre
-        >
+          &lt; p class="subtitulo-capitulo">
+            subtitulo capitulo
+          &lt;/ p>
+        </pre>
       </div>
 
       <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado">
@@ -174,11 +208,10 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
       </div>
       <div class="columna-4">
         <pre class="m-x--1">
-    &lt; p class="titulo-pagina">
-      titulo pagina
-    &lt;/ p>
-  </pre
-        >
+          &lt; p class="titulo-pagina">
+            titulo pagina
+          &lt;/ p>
+        </pre>
       </div>
 
       <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado">
@@ -202,11 +235,10 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
       </div>
       <div class="columna-4">
         <pre class="m-x--1">
-    &lt; p class="subtitulo-pagina">
-      subtitulo pagina
-    &lt;/ p>
-  </pre
-        >
+          &lt; p class="subtitulo-pagina">
+            subtitulo pagina
+          &lt;/ p>
+        </pre>
       </div>
 
       <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado">
@@ -228,11 +260,10 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
       </div>
       <div class="columna-4">
         <pre class="m-x--1">
-    &lt; p class="titulo-seccion">
-      titulo seccion
-    &lt;/ p>
-  </pre
-        >
+          &lt; p class="titulo-seccion">
+            titulo seccion
+          &lt;/ p>
+        </pre>
       </div>
 
       <div class="columna-8 sombra-profundidad-2 m-y-1 texto-centrado">
@@ -258,13 +289,12 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
       </div>
       <div class="columna-4">
         <pre class="m-x--1">
-    &lt; p class="titulo-subseccion">
-      titulo subseccion
-    &lt;/ p>
-  </pre
-        >
+          &lt; p class="titulo-subseccion">
+            titulo subseccion
+          &lt;/ p>
+        </pre>
       </div>
-    </div>
+    </div> -->
 
     <h2 class="m-t-10">Parrafos</h2>
     <div class="contenedor ancho-lectura contenedor-izq">
@@ -629,19 +659,6 @@ import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
         {nombre:'Peso', valor:'Regular (400)'},
         {nombre:'Margen derecho', valor:'24px'},
         {nombre:'Margen inferior', valor:'8px'},
-      ]"
-    />
-    <EjemploTipografia 
-      html='
-      <p class="vis-fuente">
-        Fuente de datos
-      </p>'
-      :celular="[
-        {nombre:'Tamaño', valor:'0.875rem'},
-        {nombre:'Interlineado', valor:'1.25em'},
-        {nombre:'Peso', valor:'Regular (400)'},
-        {nombre:'Margen superior', valor:'16px'},
-        {nombre:'Margen inferior', valor:'16px'},
       ]"
     />
     
