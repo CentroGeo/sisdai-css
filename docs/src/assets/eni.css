@@ -9692,7 +9692,6 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 8px;
-  flex-direction: row-reverse;
   align-items: flex-start;
   z-index: 9999;
 }
