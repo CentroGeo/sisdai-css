@@ -9684,7 +9684,7 @@ body {
 }
 .contenedor-globo-info button.boton-cerrar {
   margin-right: 0;
-  background: transparent;
+  background: transparent !important;
   border-color: #B1C6E4;
   color: #B1C6E4;
 }

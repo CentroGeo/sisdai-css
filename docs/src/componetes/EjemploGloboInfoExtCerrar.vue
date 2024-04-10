@@ -1,9 +1,6 @@
 <template>
   <div class="contenedor-globo-info-ext">
-    <button class="boton-icono boton-secundario boton-chico boton-cerrar">
-      <span class="icono-cerrar" />
-      <span class="a11y-solo-lectura">Cerrar.</span>
-    </button>
+    
     <div class="cuerpo-globo-info">
       <p><b>Lorem ipsum dolor sit amet</b></p>
       <p>
@@ -12,5 +9,9 @@
         <a href="https://conahcyt.mx" target="_blank" rel="noopener noreferrer">Link externo a Conahcyt.</a>
       </p>
     </div>
+    <button class="boton-icono boton-secundario boton-chico boton-cerrar">
+      <span class="icono-cerrar" />
+      <span class="a11y-solo-lectura">Cerrar.</span>
+    </button>
   </div>
 </template>
