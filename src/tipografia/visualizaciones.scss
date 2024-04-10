@@ -13,109 +13,93 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-// titulos visualizaciones
+// Sisdai: Documentación V.3 Tipografía Visualizaciones
+// Revision: 08/04/2024
 [class^="vis-"],
 [class*=" vis-"] {
   color: var(--tipografia-color);
   font-family: var(--tipografia-familia, "sans-serif");
-  line-height: calc(1em * 1.2);
 }
-.vis-titulo-proyecto {
-  font-size: 1rem;
-  line-height: calc(1em * 1.2);
-  font-weight: 400;
-  margin: 0 0 8px 0;
-}
-.vis-titulo-leyenda {
-  font-size: 1rem; // 16px
-  line-height: calc(1em * 1.2);
-  font-weight: 600;
-  margin: 16px 0 8px 0;
 
+.vis-titulo-visualizacion {
+  display: block;
+  margin: 0 0 8px 0;
+  font-size: 1.125rem; // 18px
+  line-height: calc(1em * 1.25);
+  font-weight: 600;
   @include mediaquery(esc) {
-    margin: 16px 0 8px 0;
+    font-size: 1.5rem; // 24px
+    line-height: calc(1em * 1.25);
   }
 }
-.vis-titulo-ejes {
+
+.vis-fecha-actualizacion {
+  display: block;
   font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
   font-weight: 600;
+  margin: 8px 0 16px 0;
 }
+
+.vis-instruccional {
+  display: block;
+  font-size: 1rem; // 16px
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 16px 0 16px 0;
+}
+
 .vis-valores-ejes {
   font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
   font-weight: 500;
   fill: var(--tipografia-color);
-
 }
-.vis-fecha-actualizacion {
+
+.vis-titulo-ejes {
   font-size: 0.75rem; // 12px
-  line-height: calc(1em * 1.2);
-  font-weight: 500;
-  margin: 8px 0 8px 0;
-
-  @include mediaquery(esc) {
-    margin: 8px 0 16px 0;
-  }
-}
-.vis-instruccional {
-  font-size: 1rem;
-  line-height: 1.25em;
-  font-weight: 400;
-  margin: 8px 0 16px 0;
-
-  @include mediaquery(esc) {
-    margin: 16px 0 16px 0;
-    line-height: 1.25em;
-
-  }
-}
-
-.vis-titulo-visualizacion {
-  margin: 0 0 8px 0;
-  font-size: 1.125rem; // 18px
-  line-height: calc(1em * 1.2);
+  line-height: calc(1em * 1.25);
   font-weight: 600;
-  @include mediaquery(esc) {
-    font-size: 1.5rem; // 24px
-    line-height: calc(1em * 1.2);
-  }
+  fill: var(--tipografia-color);
 }
-.vis-leyenda {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.25em;
-  @include mediaquery(esc) {
-    line-height: 1.25em;
-  }
+
+.vis-titulo-leyenda {
+  display: block;
+  font-size: 1rem; // 16px
+  line-height: calc(1em * 1.25);
+  font-weight: 600;
+  margin: 16px 0 8px 0;
 }
-.vis-fuente {
-  font-size: 0.875rem; // 14px
-  color: var(--tipografia-color);
-  font-weight: 400;
-  line-height: 1.25em;
-  margin: 16px 0 16px 0;
-}
+
 .vis-nomenclatura {
-  font-size: 1rem;
+  font-size: 1rem; // 16px
+  line-height: calc(1em * 1.25);
+  font-weight: 400;
   display: inline-block;
   margin-bottom: 8px;
   margin-right: 24px;
   .figura-variable {
-    width: 18px;
-    height: 18px;
-    background: #7e8cf5;
+    width: 1.125rem; // 18px
+    height: 1.125rem; // 18px
+    background-color: var(--acciones-informativo);
     border: 1px solid var(--tipografia-color);
     border-radius: 50%;
     position: relative;
     display: inline-block;
     z-index: 1;
-    transform: translateY(2px);
+    transform: translateY(0.125rem);
     margin-right: 4px;
     &.disabled {
-      background: #dddddd;
-      border: 1px solid #aaaaaa;
+      background: var(--input-deshabilitado-fondo);
+      border: 1px solid var(--input-deshabilitado-color);
       cursor: default;
     }
   }
+}
+.vis-fuente {
+  font-size: 0.875rem; // 14px
+  line-height: calc(1em * 1.25);
+  color: var(--tipografia-color);
+  font-weight: 400;
+  margin: 16px 0 16px 0;
 }
