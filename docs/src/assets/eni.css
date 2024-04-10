@@ -9682,6 +9682,24 @@ body {
   font-size: 12px;
   line-height: 0.938rem;
 }
+.contenedor-globo-info button.boton-cerrar {
+  margin-right: 0;
+  background: transparent;
+  border-color: #B1C6E4;
+  color: #B1C6E4;
+}
+.contenedor-globo-info button.boton-cerrar:hover {
+  background: #364A69;
+  border-color: #B1C6E4;
+  color: #B1C6E4;
+}
+.contenedor-globo-info button.boton-cerrar:focus {
+  background: #364A69;
+  border-color: #668BFF;
+  box-shadow: 0 0 8px #668BFF;
+  color: #B1C6E4;
+  outline-color: #668BFF;
+}
 
 .contenedor-globo-info-ext,
 .contenedor-globo-info {
