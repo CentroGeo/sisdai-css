@@ -8285,12 +8285,12 @@ ol + hr {
   margin: 0;
 }
 .contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip figure svg .vis-linea-ejes {
-  stroke: var(--color-5);
+  stroke: var(--borde-color-2);
   stroke-dasharray: 3 3;
   stroke-width: 1px;
 }
 .contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip figure svg .vis-linea-base {
-  stroke: var(--color-5);
+  stroke: var(--borde-color-2);
   stroke-width: 1px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis,

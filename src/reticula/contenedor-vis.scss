@@ -46,12 +46,12 @@
           margin: 0;
           svg{
             .vis-linea-ejes{
-              stroke:var(--color-5);
+              stroke:var(--borde-color-2);
               stroke-dasharray: 3 3;
               stroke-width: 1px;
             }
             .vis-linea-base{
-              stroke:var(--color-5);
+              stroke:var(--borde-color-2);
               stroke-width: 1px;
             }
           }
