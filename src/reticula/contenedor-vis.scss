@@ -44,6 +44,17 @@
           position: absolute;
           top: 0;
           margin: 0;
+          svg{
+            .vis-linea-ejes{
+              stroke:var(--borde-color-2);
+              stroke-dasharray: 3 3;
+              stroke-width: 1px;
+            }
+            .vis-linea-base{
+              stroke:var(--borde-color-2);
+              stroke-width: 1px;
+            }
+          }
         }
       }
     }
