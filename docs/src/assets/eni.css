@@ -9322,8 +9322,8 @@ ol + hr {
   }
 }
 .modal-contenedor.grande {
-  width: 924px;
-  max-width: 924px;
+  width: 90% !important;
+  max-width: 1110px;
 }
 @media (max-width: 768px) {
   .modal-contenedor.grande {
