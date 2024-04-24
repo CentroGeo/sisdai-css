@@ -21,7 +21,8 @@
     align-self: center;
   }
 }
-@each $id, $valor in $espaciado {
+
+@each $id, $valor in $pictograma {
   .icono-#{$id} {
     font-size: $valor;
   }
@@ -29,7 +30,7 @@
 
 @each $dispositivo, $x in $breakpoints {
   @include mediaquery($dispositivo) {
-    @each $id, $valor in $espaciado {
+    @each $id, $valor in $pictograma {
       .icono-#{$id}-#{$dispositivo} {
         font-size: $valor;
       }
