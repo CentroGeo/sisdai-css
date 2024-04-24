@@ -9,10 +9,10 @@
   const fontSize = ref(16)
   const showGob = ref(null)
   const showMenu = ref(null)
-  const showSubmenu1 = ref(null)
+  const showSubmenu = ref('')
 
   isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
-  showSubmenu1.value = false
+  showSubmenu.value = false
   
 
   function toggleA11yTypography() {
@@ -31,11 +31,11 @@
   }
   function toggleMenu() {
     showGob.value = false
-    showSubmenu1.value = false
+    showSubmenu.value = ''
     showMenu.value = !showMenu.value
   }
-  function toggleReticula() {
-    showSubmenu1.value = !showSubmenu1.value
+  function toggleSubmenu(submenu) {
+    showSubmenu.value = submenu
   }
   function upFontSize() {
     fontSize.value ++
@@ -176,7 +176,7 @@
 
 <template>
   <div>
-  <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
+    <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
     <nav class="navegacion navegacion-gobmx">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
@@ -211,56 +211,82 @@
           Sección: <b>{{ $route.name }}</b>
         </div>
       </div>
-      <div class="nav-menu-contedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu1 }">
+      <div class="nav-menu-contedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li><RouterLink class="nav-hipervinculo" to="/" exact>Inicio</RouterLink></li>
+
+            <!-- ACCESIBILIDAD
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleReticula">Retícula</button>
-              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu1 }">
-                <li><button class="nav-boton-regresar" @click="toggleReticula">Retícula</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/contenedores">Contenedores</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/reticula">Cuadricula</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/margenes">Márgenes</RouterLink></li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')">Accesibilidad</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/">Cambio de fuente</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/">Vista simplificada</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/">Reducir/Incrementar tipografía</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/">Enlaces subrayados</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/">Modo claro/oscuro</RouterLink></li>
+              </ul>
+            </li> 
+            -->
+            
+            <li class="nav-contenedor-submenu">
+              <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')">Fundamentos</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/tipografia">Tipografia</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
               </ul>
             </li>
+
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu">Estilo</button>
-              <ul class="nav-submenu">
-                <li><button class="nav-boton-regresar">Estilo</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/color">Color</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/bordes">Bordes</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/sombras">Sombras</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/separadores">Separadores</RouterLink></li>
-              </ul>
-            </li>
-            <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu">Contenido</button>
-              <ul class="nav-submenu">
-                <li><button class="nav-boton-regresar">Contenido</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/tipografia">Tipografia</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/pictogramas">Pictogramas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/visibilidad">Visibilidad</RouterLink></li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('elementos')">Elementos</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }">
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/hipervinculos">Hipervínculos</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/formularios">Formularios</RouterLink></li>
 
               </ul>
             </li>
-            <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu">Interactivo</button>
-              <ul class="nav-submenu">
-                <li><button class="nav-boton-regresar">Interactivo</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/hipervinculos">Hipervínculos</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/formularios">Formularios</RouterLink></li>
+
+            <!-- <li class="nav-contenedor-submenu">
+              <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')">Componentes</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/globo-informacion">Globos de informacion</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/navegacion">Navegacion</RouterLink></li>
+              </ul>
+            </li> -->
+
+            <!-- <li class="nav-contenedor-submenu">
+              <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')">Visualizaciones</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
+              </ul>
+            </li> -->
+
+            <li class="nav-contenedor-submenu">
+              <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')">Auxiliares</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/bordes">Bordes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
             </li>
-            <li><RouterLink class="nav-hipervinculo" to="/navegacion">Navegacion</RouterLink></li>
+            
           </ul>
         </div>
       </div>
@@ -287,15 +313,14 @@
 
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>
-    <main role="main" class="contenedor m-y-maximo" id="principal">
+    <main role="main" id="principal">
       <RouterView />
     </main>
 
   </div>
 </template>
 
-<style>
-  @import '@/assets/eni.css';
+<style lang="scss" scoped>
   .tmp-menu {
     background: #000;
     color: #aaa;
@@ -308,7 +333,10 @@
     right: 0;
     align-items: baseline;
     z-index: 1111;
-  }.tmp-menu *{
+
+    // display: none;
+  }
+  .tmp-menu * {
     font-size: 14px;
     line-height: 14px;
     padding: 8px 16px;

@@ -10,34 +10,39 @@ const router = createRouter({
       component: InicioView
     },
     {
-      path: '/contenedores',
-      name: 'contenedores',
-      component: () => import('../views/ContenedoresView.vue')
-    },
-    {
-      path: '/reticula',
-      name: 'reticula',
-      component: () => import('../views/ReticulaView.vue')
-    },
-    {
-      path: '/margenes',
-      name: 'margenes',
-      component: () => import('../views/MargenesView.vue')
-    },
-    {
-      path: '/tipografia',
-      name: 'tipografia',
-      component: () => import('../views/TipografiaView.vue')
-    },
-    {
-      path: '/pictogramas',
-      name: 'pictogramas',
-      component: () => import('../views/PictogramasView.vue')
-    },
-    {
-      path: '/color',
-      name: 'color',
-      component: () => import('../views/ColorView.vue')
+      path: '/fundamentos',
+      children: [
+        {
+          path: 'contenedores',
+          name: 'contenedores',
+          component: () => import('../views/FundamentosContenedores.vue')
+        },
+        {
+          path: 'reticula',
+          name: 'reticula',
+          component: () => import('../views/FundamentosReticula.vue')
+        },
+        {
+          path: 'espaciado',
+          name: 'espaciado',
+          component: () => import('../views/FundamentosEspaciado.vue')
+        },
+        {
+          path: 'tipografia',
+          name: 'tipografia',
+          component: () => import('../views/FundamentosTipografia.vue')
+        },
+        {
+          path: 'pictogramas',
+          name: 'pictogramas',
+          component: () => import('../views/FundamentosPictogramas.vue')
+        },
+        {
+          path: 'color',
+          name: 'color',
+          component: () => import('../views/FundamentosColor.vue')
+        }
+      ]
     },
     {
       path: '/botones',
@@ -80,29 +85,9 @@ const router = createRouter({
       component: () => import('../views/TarjetasView.vue')
     },
     {
-      path: '/visibilidad',
-      name: 'visibilidad',
-      component: () => import('../views/VisibilidadView.vue')
-    },
-    {
       path: '/formularios',
       name: 'formularios',
       component: () => import('../views/FormulariosView.vue')
-    },
-    {
-      path: '/bordes',
-      name: 'bordes',
-      component: () => import('../views/BordesView.vue')
-    },
-    {
-      path: '/sombras',
-      name: 'sombras',
-      component: () => import('../views/SombrasView.vue')
-    },
-    {
-      path: '/separadores',
-      name: 'separadores',
-      component: () => import('../views/SeparadoresView.vue')
     },
     {
       path: '/navegacion',
@@ -113,7 +98,37 @@ const router = createRouter({
       path: '/globo-informacion',
       name: 'globo-informacion',
       component: () => import('../views/GloboInformacionView.vue')
-    }
+    },
+    {
+      path: '/visualizaciones',
+      children: [
+        {
+          path: 'vistipografia',
+          name: 'vistipografia',
+          component: () => import('../views/VisualizacionesTipografia.vue')
+        }
+      ],
+    },
+    {
+      path: '/auxiliares',
+      children: [
+        {
+          path: 'texto',
+          name: 'texto',
+          component: () => import('../views/AuxiliaresTexto.vue')
+        },
+        {
+          path: 'visibilidad',
+          name: 'visibilidad',
+          component: () => import('../views/AuxiliaresVisibilidad.vue')
+        },
+        {
+          path: 'bordes',
+          name: 'bordes',
+          component: () => import('../views/AuxiliaresBordes.vue')
+        },
+      ]
+    },
   ]
 })
 

@@ -1,7 +1,14 @@
 <template>
-  <div>
+  <div class="contenedor m-y-maximo">
     <h1>Color</h1>
-    <h2 class="m-t-10">Identidad Gobierno de México</h2>
+    <div class="fondo-error-2 texto-error texto-centrado borde-redondeado-8 p-maximo">
+      <p class="texto-tamanio-10 icono-colaborar">!!!</p>
+      <p class="texto-tamanio-6">
+        Sección esta en revisión.<br>
+        Quizás nada de lo que se encuentra aqui exista en la siguiente versión<br>
+      </p>
+    </div>
+    <h2 class="m-t-maximo">Identidad Gobierno de México</h2>
     <div class="grid">
       <div
         class="columna-2 m-y-1 gobmx-fondo-oscuro-1 borde-redondeado-8"

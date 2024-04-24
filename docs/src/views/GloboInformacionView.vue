@@ -5,7 +5,7 @@ import EjemploGloboInfoExtCerrar from "./../componetes/EjemploGloboInfoExtCerrar
 <template>
   <div>
     <h1>Tooltips</h1>
-    <div class="contenedor ancho-lectura contenedor-izq">
+    <div class="contenedor-lectura ">
       <h2>Globo de información normal</h2>
       <div class="contenedor-globo-info">
         <div class="cuerpo-globo-info">

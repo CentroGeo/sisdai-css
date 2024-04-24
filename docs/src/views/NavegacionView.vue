@@ -81,7 +81,7 @@
     </nav>
 
     <h2 class="m-t-10">Identidad</h2>
-    <div class="contenedor ancho-lectura contenedor-izq">
+    <div class="contenedor-lectura ">
       <p>
         Hay estilos distintos para movil y escritorio, sin embargo, en ocasiones
         puede ser necesario forzar la vista de movil cuando hay muchas opciones en
@@ -226,7 +226,7 @@
 
 
     <h2>Colapsable</h2>
-    <div class="contenedor ancho-lectura contenedor-izq">
+    <div class="contenedor-lectura ">
       <p>
         Los estilos de estos elementos colapsables como elementos independientes aún
         no está definido dentro del sistema de diseño. Consiste en un elemento
@@ -265,7 +265,7 @@
     </div>
 
     <h2 class="m-t-10">Menú lateral</h2>
-    <div class="contenedor ancho-lectura contenedor-izq">
+    <div class="contenedor-lectura ">
       <p>
         El siguiente elemento .menu-lateral-contenedor consiste en un menú que
         contiene principalmente enlaces enlistados. También se pueden agregar
@@ -366,7 +366,7 @@
     </menu>
 
     <h2>Índice de contenido</h2>
-    <div class="contenedor ancho-lectura contenedor-izq">
+    <div class="contenedor-lectura ">
       <p>
         El la clase .indice-de-contenido da a su contenido el estilo que se usa para
         el panel lateral derecho que te permite navegar entre distinas secciones del

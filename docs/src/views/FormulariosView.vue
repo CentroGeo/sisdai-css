@@ -1,51 +1,315 @@
+<script setup>
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+</script>
 <template>
-  <div>
-    <h1>Formularios</h1>
-    <p>Formularios en un grid. Por defecto los elementos de formulario toman el ancho maximo del contenedor o columna que los contenga.</p>
-    <div class="grid">
-      <div class="columna-4">
-        <label for="input1">Etiqueta</label>
-        <input id="input1" type="text" placeholder="placeholder" value="value">
-      </div>
-        <div class="columna-4">
-        <label for="input-readonly">Attr readonly</label>
-        <input id="input-readonly" type="text" readonly value="solo lectura">
-      </div>
-      <div class="columna-4">
-        <label for="input-disabled">Attr disabled</label>
-        <input id="input-disabled" type="text" disabled value="desabilitado">
-      </div>
-      <div class="columna-4">
-        <label for="password1">Password</label>
-        <input id="password1" type="password" placeholder="Contraseña" value="ejelesposcomocrees">
-      </div>
-      <div class="columna-4">
-        <label for="email1">Email</label>
-        <input id="email1" type="email" placeholder="placeholder" value="asdf@comimsa.com">
-      </div>
-      <div class="columna-4">
-        <label for="file1">Archivos</label>
-        <input id="file1" type="file" placeholder="seleccione" value="">
-      </div>
-      <div class="columna-4">
-        <label for="rango1">Rango</label>
-        <input id="rango1" type="range"  name="volume" min="0" max="11">
-      </div>
-      <div class="columna-4">
-        <label for="selectoption1">Selector</label>
-        <select name="selectoption" id="selectoption1">
-          <option value="o1">Opción uno</option>
-          <option value="o2" selected>Opción seleccionada</option>
-          <option value="o3" disabled>Opción deshabilitada</option>
-        </select>
-      </div>
-      <div class="columna-4">
-        <label for="textarea1">Area de texto</label>
-        <textarea name="" id="" cols="30" rows="10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos unde itaque maxime alias tempora quas sed tenetur saepe reiciendis deserunt iure magnam minima facilis, ullam excepturi recusandae consequuntur. Totam, ut?</textarea>
-      </div>
+  <div class="contenedor m-y-maximo">
+    <div class="contenedor ancho-lectura">
+      <h1>Formularios</h1>
+      <p>
+        El Sisdai recomienda el uso de HTML semántico para mejorar la usabilidad y accesibilidad de la web.
+        Es por esto que reforzamos dando estilo a las etiquetas nativas para que se puedan utilizar sin agregar ninguna clase.
+      </p>
+      <p>
+        Por otro lado, entendemos que existen componentes que necesitan mejor estructura para comprender su uso,
+        por lo que se crearon clases para dar contexto, ayuda, o simplemente estructurar mejor la información.
+      </p>
     </div>
     
-    <h2 class="m-t-10">Checkbox</h2>
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Elementos</h2>
+
+      <p>
+        La etiqueta <code>&lt;label/></code> se recomienda siempre utilizarla y ligarla por medio de su atributo <code>for</code>
+        al <code>input</code> al que sirve de referecia. Ésta etiqueta puede contener un elemento con la clase 
+        <code>.formulario-obligatoriedad</code> para agregarle información acerca de si el campo es opcional o requerido.
+      </p>
+      
+      <p>
+        Tanto el campo de texto <code>&lt;input/></code> para las clases mas generales (no checkbox, ni radio, ni range), 
+        como el selector y el área de texto; son del ancho del contenedor o columna que lo contenga, 
+        pero tiene un ancho máximo de <code>700px</code> para mejorar la legibilidad.
+      </p>
+
+      <p>
+        El área de texto además tiene un alto mínimo de <code>120px</code>, 
+        ésta altura se puede incrementar con el atributo <code>rows</code> nativo del área de texto.
+      </p>
+
+      <p>
+        Opcionalmente se agrega la clase <code>.formulario-ayuda</code> para poner notas debajo de las etiquetas <code>input</code>.
+      </p>
+    </div>
+
+    <div class="contenedor">
+    <div class="flex">
+    <div class="columna m-t-3">
+    <EjemploCodigoVertical
+      html='
+      <label for="campo">
+        Etiqueta del campo
+        <span class="formulario-obligatoriedad">
+          (Obligarorio)
+        </span>
+      </label>
+      <input 
+        id="campo" 
+        type="text" 
+        placeholder="Texto de ejemplo"
+      />
+      <p class="formulario-ayuda">
+        Texto de ayuda.
+      </p>
+      '
+    />
+    </div>
+    <div class="columna m-t-3">
+    <EjemploCodigoVertical
+      html='
+        <label for="selector">
+          Selector
+          <span class="formulario-obligatoriedad">
+            (Obligarorio)
+          </span>
+        </label>
+        <select id="selector">
+          <option value="0" disabled selected>
+            Selecciona algo
+          </option>
+          <option value="1">
+            Opción uno
+          </option>
+          <option value="2">
+            Opción dos
+          </option>
+        </select>
+        <p class="formulario-ayuda">
+          Texto de ayuda.
+        </p>
+        '
+    />
+    </div>
+    <div class="columna m-t-3">
+    <EjemploCodigoVertical
+      html='
+        <label for="areadetexto">
+          Área de texto
+          <span class="formulario-obligatoriedad">
+            (Obligarorio)
+          </span>
+        </label>
+        <textarea 
+          id="areadetexto" 
+          placeholder="Texto de ejemplo"
+        ></textarea>
+        <p class="formulario-ayuda">
+          Texto de ayuda.
+        </p>
+        '
+    />
+    </div>
+    </div>
+    </div>
+
+
+    <h2 class="m-t-10">Tipos de campo</h2>
+    <div class="contenedor">
+      <div class="flex">
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="texto">
+          Campo de texto
+        </label>
+        <input
+          id="texto"
+          type="text"
+          placeholder="Texto"
+          value="Texto"
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="contrasenia">
+          Campo de contraseña
+        </label>
+        <input
+          id="contrasenia"
+          type="password"
+          placeholder="3jEmpl."
+          value="3jEmpl."
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="correo">
+          Campo de correo
+        </label>
+        <input
+          id="correo"
+          type="email"
+          placeholder="nombre@dominio.mx"
+          value="nombre@dominio.mx"
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="archivo">
+          Campo para subir archivos
+        </label>
+        <input
+          id="arvhico"
+          type="file"
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="buscar">
+          Campo de busqueda
+        </label>
+        <input
+          id="buscar"
+          type="search"
+          placeholder="Buscando. . ."
+          value="Buscando. . ."
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="numero">
+          Campo numérico
+        </label>
+        <input
+          id="numero"
+          type="number"
+          placeholder="10"
+          step="10"
+          min="10" 
+          max="100"
+          value=""
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="telefono">
+          Campo de teléfono
+        </label>
+        <input
+          id="telefono"
+          type="tel"
+          placeholder="12 1234 1234"
+          pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+          value=""
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="url">
+          Campo de URL
+        </label>
+        <input
+          id="url"
+          type="url"
+          placeholder="https://dominio.com"
+          pattern="https://.*"
+          value=""
+        />
+        '
+      />
+      </div>
+    
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="fecha">
+          Fecha
+        </label>
+        <input 
+          id="fecha" 
+          type="date"
+          min="2020-01-01" 
+          max="2023-12-31"
+          value=""
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="hora">
+          hora
+        </label>
+        <input 
+          id="hora" 
+          type="time"
+          min="09:00"
+          max="18:00"
+          value=""
+        />
+        '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+        <label for="fechayhora">
+          Fecha y hora
+        </label>
+        <input 
+          id="fechayhora" 
+          type="datetime-local"
+          min="2018-06-07T00:00"
+          max="2018-06-14T00:00"
+          value="2018-06-12T19:30"
+        />
+        '
+      />
+      </div>
+      </div>
+    </div>
+
+    <h2 class="m-t-10">Otros tipos de campo</h2>
+    <h3>Rango</h3>
+    <div>
+      <EjemploCodigoVertical
+        html='
+          <label for="rango">
+            Rango
+          </label>
+          <input 
+            id="rango" 
+            type="range"
+            min="0"
+            max="11"
+            value=""
+          />
+          '
+        />
+      </div>
+    
+
+    <h3 class="m-t-6">Checkbox</h3>
     <div class="grid">
       <div class="columna-16">
         <input id="checkbox1" type="checkbox" name="checkboxes1">
@@ -138,7 +402,7 @@
       </div>
     </div>
 
-    <h2 class="m-t-10">Radios</h2>
+    <h3 class="m-t-6">Radios</h3>
     <div class="grid">
       <div class="columna-16">
         <input id="radio1" type="radio" name="radioses1">
@@ -150,184 +414,75 @@
       </div>
     </div>
 
-    <h2 class="m-t-10">controlador-vis</h2>
-    <div class="grid">
-      <div class="columna-16">
-        <!-- <ControladorVis deshabilitado encendido /> -->
-        <span class="controlador-vis">
-          <input id="control_check_1.1" type="checkbox">
-          <label for="control_check_1.1">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor y Muestra</span>
-          </label>
-        </span>
-        <!-- <ControladorVis deshabilitado sinSimbolo /> -->
-        <span class="controlador-vis">
-          <input id="control_check_1.2" type="checkbox">
-          <label for="control_check_1.2">
-            <span class="nombre-variable">Valor</span>
-          </label>
-        </span>
-        <!-- <ControladorVis sinControl /> -->
-        <span class="controlador-vis">
-          <input id="control_check_1.3" type="checkbox" disabled>
-          <label for="control_check_1.3">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Deshabilitado</span>
-          </label>
-        </span>
-        <!-- <ControladorVis simbolo="30px" /> -->
-        <span class="controlador-vis">
-          <input id="control_check_1.4" type="checkbox" checked disabled>
-          <label for="control_check_1.4">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Seleccionado Deshabilitado</span>
-          </label>
-        </span>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="columna-16">
-        <span class="controlador-vis">
-          <input id="control_radio_1.1" type="radio" name="radio-control-vis">
-          <label for="control_radio_1.1">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor y Muestra</span>
-          </label>
-        </span>
-        <span class="controlador-vis">
-          <input id="control_radio_1.2" type="radio" name="radio-control-vis">
-          <label for="control_radio_1.2">
-            <span class="nombre-variable">Valor</span>
-          </label>
-        </span>
-        <span class="controlador-vis">
-          <input id="control_radio_1.3" type="radio" name="radio-control-vis" disabled>
-          <label for="control_radio_1.3">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Deshabilitado</span>
-          </label>
-        </span>
-        <span class="controlador-vis">
-          <input id="control_radio_1.4" type="radio" name="radio-control-vis" disabled checked>
-          <label for="control_radio_1.4">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Seleccionado Deshabilitado</span>
-          </label>
-        </span>
-      </div>
-    </div>
-    <p>En estos ejemplos se usa la clase .muestra en el elemento que contiene la figura para mostrar como se vé el símbolo de una nomenclatura. Puede precendír de esta clase o customizarla para dar forma a los simbolos necesarios.</p>
 
-    <h3>Tamaños</h3>
-    <p>La clase `.controlador-vis` contiene la variable `--controlador-vis-figura-alto`, la cual se puede usar para modificar el tamaño de la figura.</p>
-    <div class="grid">
-      <div class="columna-4">
-        <span class="controlador-vis grande">
-          <input id="control_check_2.1" type="checkbox">
-          <label for="control_check_2.1">
-            <span class="figura-variable icono-visualizador icono-4" />
-            <span class="nombre-variable">Icono grande</span>
-          </label>
-        </span>
-        </div>
-        <div class="columna-4">
-        <span class="controlador-vis chica">
-          <input id="control_check_2.2" type="checkbox">
-          <label for="control_check_2.2">
-            <span class="figura-variable icono-visualizador icono-1" />
-            <span class="nombre-variable">Icono chico</span>
-          </label>
-        </span>
-      </div>
-      <div class="columna-4">
-        <div class="controlador-vis" style="--controlador-vis-figura-alto: 37px;">
-          <input id="control_check_2.3" type="checkbox">
-          <label for="control_check_2.3">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto ullam, quibusdam adipisci maiores inventore! Eum at voluptates deserunt iure, veritatis dolore atque mollitia quidem esse nemo consectetur, doloremque dolorum?
-            </span>
-          </label>
-        </div>
-      </div>
-      <div class="columna-4">
-        <div class="controlador-vis" style="--controlador-vis-figura-alto: 7px;">
-          <input id="control_check_2.4" type="checkbox">
-          <label for="control_check_2.4">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, illum similique quos neque rem hic aut minima quibusdam eaque. Cupiditate eligendi reprehenderit dignissimos, recusandae laboriosam iste facere officiis ut est.
-            </span>
-          </label>
-        </div>
-      </div>
-    </div>
-
-    <h2 class="m-t-10">Fielset</h2>
-    <form action="#">
-      <fieldset>
-        <legend>legend</legend>
-        <div class="grid">
-          <div class="columna-8">
-            <label for="inputfieldset1">Etiqueta</label>
-            <input id="inputfieldset1" type="text" placeholder="placeholder" value="value">
-          </div>
-          <div class="columna-8">
-            <label for="inputfieldset2">Etiqueta</label>
-            <input id="inputfieldset2" type="text" placeholder="placeholder" value="value">
-          </div>
-          <div class="columna-8">
-            <input class="boton-primario" type="submit" value="input[submit]">
-            <input class="boton-secundario" type="reset" value="input[reset]">
-            <input class="boton" type="button" value="input[button]">
-          </div>
-        </div>
-      </fieldset>
-    </form>
 
     <h2 class="m-t-10">Formulario horizontal</h2>
-    <form action="#" class="formulario-horizontal">
-      <label for="inputhorizontal1">Etiqueta</label>
-      <input id="inputhorizontal1" type="text" placeholder="placeholder" value="value">
-
-      <label for="inputhorizontal2">Etiqueta</label>
-      <input id="inputhorizontal2" type="text" placeholder="placeholder" value="value">
-
-      <input class="boton-primario" type="submit" value="input[submit]">
-      <input class="boton-secundario" type="reset" value="input[reset]">
-      <input class="boton" type="button" value="input[button]">
-    </form>
-
-    <h2 class="m-t-10">Formulario validaciones</h2>
-    <div class="grid">
-      <div class="columna-4">
-        <label for="input-error">Error</label>
-        <div class="input-error">
-          <input id="input-error" type="text" placeholder="placeholder" value="value">
-          <span class="icono-cerrar"></span>
-        </div>
+    <EjemploCodigoVertical
+      html='
+      <div class="formulario-horizontal">
+        <label for="horizontal1">Etiqueta</label>
+        <input id="horizontal1" type="text" placeholder="placeholder" value="value">
+        <label for="horizontal2">Etiqueta</label>
+        <input id="horizontal2" type="text" placeholder="placeholder" value="value">
       </div>
-      <div class="columna-4">
-        <label for="input-correcto">Correcto</label>
-        <div class="input-correcto">
-          <input id="input-correcto" type="text" placeholder="placeholder" value="value">
-          <span class="icono-aprobado"></span>
-        </div>
-      </div>
-    </div>
+      '
+    />
     
-    <div class="formulario-horizontal">
-      <label for="input-error">Error</label>
-      <div class="input-error">
-        <input id="input-error" type="text" placeholder="placeholder" value="value">
-        <span class="icono-cerrar"></span>
-      </div>
-      <label for="input-correcto">Correcto</label>
-      <div class="input-correcto">
-        <input id="input-correcto" type="text" placeholder="placeholder" value="value">
-        <span class="icono-aprobado"></span>
-      </div>
+
+    
+    <h2 class="m-t-10">Estados</h2>
+    <div class="flex">
+    <div class="columna-8 m-t-3">
+    <EjemploCodigoVertical
+      html='
+      <label for="campo">
+        Etiqueta del campo
+        <span class="formulario-obligatoriedad">
+          (Obligarorio)
+        </span>
+      </label>
+      <input 
+        id="campo" 
+        class="formulario-campo-confirmacion"
+        type="text" 
+        placeholder="Texto de ejemplo"
+      />
+      <p 
+        class="formulario-ayuda 
+        formulario-texto-confirmacion"
+      >
+        Texto de ayuda.
+      </p>
+      '
+    />
     </div>
+    <div class="columna-8 m-t-3">
+    <EjemploCodigoVertical
+      html='
+      <label for="campo">
+        Etiqueta del campo
+        <span class="formulario-obligatoriedad">
+          (Obligarorio)
+        </span>
+      </label>
+      <input 
+        id="campo" 
+        class="formulario-campo-error"
+        type="text" 
+        placeholder="Texto de ejemplo"
+      />
+      <p 
+        class="formulario-ayuda 
+        formulario-texto-error"
+      >
+        Texto de ayuda.
+      </p>
+      '
+    />
+    </div>
+    </div>
+
+
+
   </div>
 </template>
