@@ -1,0 +1,50 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+// estado de error
+.formulario-error {
+  input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='button']):not([type='submit']):not([type='reset']),
+  textarea,
+  select {
+    border-color: var(--input-error) !important;
+  }
+  .formulario-ayuda {
+    color: var(--input-error);
+  }
+}
+.formulario-campo-error {
+  border-color: var(--input-error) !important;
+}
+.formulario-texto-error {
+  color: var(--input-error);
+}
+
+// estado de confirmacion
+.formulario-confirmacion {
+  input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='button']):not([type='submit']):not([type='reset']),
+  textarea,
+  select {
+    border-color: var(--input-confirmacion) !important;
+  }
+  .formulario-ayuda {
+    color: var(--input-confirmacion);
+  }
+}
+.formulario-campo-confirmacion {
+  border-color: var(--input-confirmacion) !important;
+}
+.formulario-texto-confirmacion {
+  color: var(--input-confirmacion);
+}

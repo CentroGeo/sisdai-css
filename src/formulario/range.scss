@@ -1,0 +1,142 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+[type='range'] {
+  box-sizing: border-box !important;
+  border: 1px solid transparent;
+  width: 100%;
+  background-color: transparent;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  min-height: 2.5rem;
+  border-radius: 0.25rem;
+  margin-top: map-get($espaciado, '1');
+  margin-bottom: map-get($espaciado, '3');
+
+  // La bolita
+  &::-moz-range-thumb {
+    margin-top: calc((-1rem * 0.5) + 0.125rem);
+    height: 1rem;
+    width: 1rem;
+    background: var(--input-controles-color);
+    border: 0;
+    border-radius: 0.5rem;
+  }
+  &::-ms-thumb {
+    margin-top: calc((-1rem * 0.5) + 0.125rem);
+    width: 1rem;
+    height: 1rem;
+    background: var(--input-controles-color);
+    border: 0;
+    border-radius: 0.5rem;
+  }
+  &::-webkit-slider-thumb {
+    margin-top: calc((-1rem * 0.5) + 0.125rem);
+    width: 1rem;
+    height: 1rem;
+    background: var(--input-controles-color);
+    margin-top: calc(-0.5rem + 0.125rem);
+    border: 0;
+    border-radius: 0.5rem;
+    -webkit-appearance: none;
+    &:hover {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+  }
+  // La pista
+  &::-webkit-slider-runnable-track {
+    background: var(--input-controles-color);
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 0.25rem;
+  }
+  &::-moz-range-track {
+    background: var(--input-controles-color);
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 0.25rem;
+  }
+  &::-ms-fill-lower {
+    background: var(--input-controles-color);
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 0.25rem;
+  }
+  &::-ms-fill-upper {
+    background: var(--input-deshabilitado-fondo);
+    border: 0;
+    border-radius: 0.25rem;
+    width: 100%;
+    height: 0.25rem;
+  }
+  &:hover {
+    &::-moz-range-thumb {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+    &::-ms-thumb {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+    &::-webkit-slider-thumb {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+    &::-webkit-slider-runnable-track {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+    &::-moz-range-track {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+    &::-ms-fill-lower {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+    &::-ms-fill-upper {
+      background-color: var(--boton-primario-focus-fondo);
+    }
+  }
+  &:disabled {
+    cursor: auto;
+    &::-moz-range-thumb {
+      background-color: var(--boton-primario-deshabilitado-color);
+    }
+    &::-ms-thumb {
+      background-color: var(--boton-primario-deshabilitado-color);
+    }
+    &::-webkit-slider-thumb {
+      background-color: var(--boton-primario-deshabilitado-color);
+    }
+    &::-webkit-slider-runnable-track {
+      background-color: var(--input-deshabilitado-fondo);
+    }
+    &::-moz-range-track {
+      background-color: var(--input-deshabilitado-fondo);
+    }
+    &::-ms-fill-lower {
+      background-color: var(--input-deshabilitado-fondo);
+    }
+    &::-ms-fill-upper {
+      background-color: var(--input-deshabilitado-fondo);
+    }
+  }
+  &:focus {
+    border-color: var(--boton-primario-focus-fondo);
+    box-shadow: 0 0 8px var(--input-focus);
+    border-radius: map-get($espaciado, 'minimo');
+    outline: none;
+    border-radius: 0.25rem;
+  }
+}
