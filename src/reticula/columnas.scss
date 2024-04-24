@@ -36,8 +36,6 @@
   justify-content: space-evenly;
 }
 
-// TODO: crear clases para align-items
-
 .grid {
   display: grid;
 }
@@ -47,6 +45,12 @@
     .flex {
       margin-right: calc(map-get($configuracion, 'espaciado') * -.5);
       margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
+      > [class^='columna'],
+      > [class*=" columna"] {
+        flex: 1;
+        margin-left: map-get($configuracion, 'espaciado')*.5;
+        margin-right: map-get($configuracion, 'espaciado')*.5;
+      }
       > [class^='columna-'],
       > [class*=" columna-"] {
         flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
@@ -97,5 +101,14 @@
         column-count: $i;
       }
     }
+  }
+}
+
+.columns {
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
   }
 }

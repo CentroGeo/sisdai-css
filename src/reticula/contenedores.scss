@@ -25,16 +25,33 @@
       &.ancho-fijo {
         max-width: map-get($map, 'ancho-maximo');
       }
-      &.ancho-lectura {
-        max-width: map-get($map, 'ancho-lectura');
-      }
       &.ancho-minimo {
         max-width: map-get($map, 'ancho-minimo');
       }
+      //
+      &.ancho-lectura {
+        max-width: map-get($map, 'ancho-lectura');
+        padding-left: map-get($map, 'margen-interior-lectura');
+        padding-right: map-get($map, 'margen-interior-lectura');
+      }
     }
   }
-  .contenedor {
+  .contenedor { // elimina padding en contenedores anidados
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+// alineacion
+.alineacion-cetrada {
+  margin-left: auto;
+  margin-right: auto;
+}
+.alineacion-derecha {
+  margin-left: auto;
+  margin-right: 0;
+}
+.alineacion-izquierda {
+  margin-left: 0;
+  margin-right: auto;
 }
