@@ -21,7 +21,7 @@
 	height: calc(100vh - 92px);
 	@media (max-width: map-get($breakpoints, "esc")) {
 		height: calc(100vh - 120px);
-	  }
+  }
 
 	.portada {
 		position: absolute;
@@ -45,10 +45,8 @@
 			margin-top: auto;
 			padding: 24px 24px 48px 24px;
 			width:100%;
-			// color: var(--tipografia-color-1);
 			color: #ffffff;
 			* {
-				// color: var(--tipografia-color-1);
 				color: #ffffff;
 			}
 		}
