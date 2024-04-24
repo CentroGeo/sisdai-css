@@ -14,8 +14,34 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .notas {
-  color: var(--tipografia-color);
   font-size: 0.875rem; // 14px
   font-weight: 400;
   line-height: calc(1em * 1.3);
+  margin-top: map-get($espaciado, '3');
+  margin-bottom: map-get($espaciado, '3');
+}
+
+.notas-titulo {
+  font-size: 1rem; // 16px
+  font-weight: 500;
+  line-height: calc(1em * 1.3);
+  margin-top: map-get($espaciado, '3');
+  margin-bottom: map-get($espaciado, '2');
+}
+
+.notas-titulo + .notas {
+  margin-top: map-get($espaciado, '2');
+}
+
+.notas-contenedor {
+  background: var(--nota-fondo);
+  padding: map-get($espaciado, '3');
+}
+
+.notas-contenedor > .notas-titulo {
+  margin-top: 0;
+}
+
+.notas-contenedor > .notas {
+  margin-bottom: 0;
 }

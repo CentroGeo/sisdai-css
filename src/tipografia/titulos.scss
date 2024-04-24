@@ -13,8 +13,6 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-// Sisdai: Documentación V.2 Tipografía General
-// Revision: 09/04/2024
 .titulo-base {
   color: var(--tipografia-color);
   font-weight: 500;
@@ -22,6 +20,7 @@
   margin-bottom: map-get($espaciado, '3');
   line-height: calc(1em * 1.25);
 }
+
 h1,.h1 {
   @extend .titulo-base;
   font-size: 2rem; // 32px
@@ -30,6 +29,7 @@ h1,.h1 {
     margin-top: map-get($espaciado, '8');
   }
 }
+
 h2,.h2 {
   @extend .titulo-base;
   font-size: 1.75rem; // 28px
@@ -45,6 +45,7 @@ h3,.h3 {
     font-size: 1.75rem; // 28px
   }
 }
+
 h4,.h4 {
   @extend .titulo-base;
   font-size: 1.25rem; // 20px
@@ -52,6 +53,7 @@ h4,.h4 {
     font-size: 1.5rem; // 24px
   }
 }
+
 h5,.h5 {
   @extend .titulo-base;
   font-size: 1.125rem; //18px
@@ -59,63 +61,11 @@ h5,.h5 {
     font-size: 1.25rem; // 20px
   }
 }
+
 h6,.h6 {
   @extend .titulo-base;
   font-size: 1rem; // 16px
   @include mediaquery(esc) {
     font-size: 1.125rem; //18px
   }
-}
-
-
-
-
-
-// que pasa con todas estas clases!!!???
-// titulos eni variables responsivas
-.titulo-eni {
-  @extend .titulo-base;
-  font-size: 3rem; //48px
-  @include mediaquery(esc) { 
-    font-size: 5rem; // 80px
-  }
-}
-
-.titulo-capitulo {
-  @extend .titulo-base;
-  font-size: 2.25rem; // 36px
-  @include mediaquery(esc) {
-    font-size: 3.5rem; // 56px
-  }
-}
-.subtitulo-capitulo {
-  @extend .titulo-base;
-  font-size: 1.125rem; // 18px
-  @include mediaquery(esc) {
-    font-size: 1.5rem; //24px
-  }
-}
-
-.titulo-pagina {
-  @extend .titulo-base;
-  font-size: 1.75rem; // 28px
-  @include mediaquery(esc) { 
-    font-size: 2.25rem; // 36px
-  }
-}
-.subtitulo-pagina,
-.titulo-seccion,
-.titulo-subseccion { 
-  @extend .titulo-base;
-  font-size: 1.125rem; // 18px
-  @include mediaquery(esc) {
-    font-size: 1.5rem; // 24px
-  }
-}
-.subtitulo-pagina {
-  font-weight: 400;
-}
-.titulo-subseccion {
-  font-weight: 400;
-  color: var(--tipografia-color-2);
 }

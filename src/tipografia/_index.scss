@@ -13,16 +13,7 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-p {
-  line-height: calc(1em * 1.5);
-  margin-top: map-get($espaciado, '3');
-  margin-bottom: map-get($espaciado, '3');
-}
-
-.parrafo-texto-secundario {
-  color: var(--tipografia-color-3);
-}
-
-.parrafo-texto-alto {
-  font-size: 1.25rem; // 20px
-}
+// Sisdai: Documentación V.2 Tipografía General
+@import './titulos';
+@import './parrafos';
+@import './notas';
