@@ -13,20 +13,19 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-
 @charset 'UTF-8';
+// primero siempre las variables, normalizador y mixins 
 @import "_variables";
 @import "_normalizar";
 @import "_mixins";
 
 // modulos
-@import "tipografia/base";
-@import "tipografia/titulos";
-@import "tipografia/parrafos";
-@import "tipografia/notas";
-@import "tipografia/visualizaciones";
-
+@import "color/identidad";
+@import "color/acciones";
+@import 'tipografia';
 @import "icono/base";
+@import "reticula";
+
 
 @import "boton/base";
 @import "boton/iconos";
@@ -44,14 +43,14 @@
 @import "tablas/base";
 @import "detalle/base";
 @import "imagenes/base";
-@import "portada/base";
 @import "tarjetas/base";
 
-@import "formularios/base";
-@import "formularios/validaciones";
-@import "formularios/contenedores";
 
-@import "controladores/base";
+
+
+@import "formulario";
+
+
 
 @import "bordes/base";
 @import "bordes/redondeado";
@@ -59,14 +58,9 @@
 @import "bordes/grosores";
 @import "bordes/separadores";
 
-@import "sombras/base";
 
-@import "reticula/contenedores";
-@import "reticula/compuestos";
-@import "reticula/columnas";
-@import "reticula/margenes";
-@import "reticula/contenedor-vis";
 
+// componentes
 @import "navegacion/navegacion";
 @import "navegacion/hipervinculos";
 @import "navegacion/botones";
@@ -76,26 +70,33 @@
 @import "navegacion/colapsable-navegacion";
 @import "navegacion/indice-de-contenido";
 
-@import "color/base";
-@import "color/identidad";
-@import "color/acciones";
+@import "portada/contenedor.scss";
+@import "portada/tipografia.scss";
 
+@import "visualizacion/contenedor.scss";
+@import "visualizacion/tipografia.scss";
+@import "controladores/base";
 @import "alertas/base";
-
-@import "auxiliares/alineacion-texto";
-@import "auxiliares/color-texto";
-@import "auxiliares/color-fondo";
-@import "auxiliares/alineacion-contenedores";
 @import "auxiliares/globo-informacion";
-@import "auxiliares/animaciones";
-@import "auxiliares/visibilidad.scss";
 @import "auxiliares/vista-cargando";
 
-@import "accesibilidad/menu-accesibilidad";
+
+// auxiliares !!!????
+// TODO: BORRAR?
+// pues diseño quiere quitar las clases auxiliares !!!!
+// 
+// en penultimo lugar en el acomodo de archivos
+// para que los auxiliares puedan sobreescribir estilos
+// pero no puedan sobreescribir estilos de accesibilidad
+@import "auxiliares/texto";
+@import "auxiliares/animacion";
+@import "auxiliares/visibilidad";
+
 
 // a11y
 // accesibilidad debe cargar al final
 // para que pueda sobre escribir los estilos
+@import "accesibilidad/menu-accesibilidad";
 @import "accesibilidad/simplificada";
 @import "accesibilidad/tipografia";
 @import "accesibilidad/lectura";
