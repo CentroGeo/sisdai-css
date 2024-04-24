@@ -18,13 +18,11 @@ img {
 }
 
 figure {
-  margin: 1em 0;
+  color: var(--tipografia-color-3);
+  margin-top: map-get($espaciado, '1');
+  margin-bottom: map-get($espaciado, '1');
   figcaption {
-    @extend .notas;
-    color: var(--tipografia-color-3);
-    border-left: 2px solid var(--tipografia-color-3);
-    padding-left: map-get($espaciado, '2');
-    margin-top: 1em;
+    font-size: 0.875rem; // 14px
+    font-weight: 400;
   }
 }
-
