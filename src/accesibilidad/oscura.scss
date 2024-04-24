@@ -81,21 +81,22 @@ body[data-dark-theme-sisdai='true'] {
 
   // Elementos de forumlario
   --label-color: #978CB7;
-  --input-fondo: transparent;
+  --input-fondo: var(--pagina-fondo);
   --input-color: #ffffff;
   --input-borde: #978CB7;
+  --input-placeholder: #767677;
   --input-controles-color: #9674E1;
     --input-deshabilitado-fondo: #6E638F;
     --input-deshabilitado-color: #453B67;
       --input-hover: #BFB5E0;
         --input-focus: #668BFF;
 
+  // cambiar el color en fill="%23978CB7" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
   --input-select-svg: url('data:image/svg+xml,\
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
-        <g fill="%23ffffff">\
-            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
-            <rect width="24" height="24" fill="none"/>\
-        </g>\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+      <g id="icon">\
+        <polygon fill="%23978CB7" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+      </g>\
     </svg>');
 
   // Tablas
@@ -246,23 +247,26 @@ body[data-dark-theme-eni='true'] {
  --boton-icono-sin-borde-color: #6692FF;
 
   // Elementos de forumlario
-  --label-color: #889DBB;
-  --input-fondo: transparent;
-  --input-color: #ffffff;
-  --input-borde: #889DBB;
+  --label-color: #B1C6E4;
+  --input-fondo: var(--pagina-fondo);
+  --input-color: #FFFFFF;
+  --input-borde: #B1C6E4;
+  --input-placeholder: #889DBB;
   --input-controles-color: #6692FF;
     --input-deshabilitado-fondo: #5E7392;
-    --input-deshabilitado-color: #364A69;
-      --input-hover: #B1C6E4;
-        --input-focus: #668BFF;
-
-  --input-select-svg: url('data:image/svg+xml,\
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
-        <g fill="%23ffffff">\
-            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
-            <rect width="24" height="24" fill="none"/>\
+    --input-deshabilitado-borde: #364A69;
+    --input-deshabilitado-color: #B1C6E4;
+    --input-hover: #1B304E;
+    --input-focus: #668BFF;
+    // cambiar el color en fill="%23889DBB" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
+    --input-select-svg: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+        <g id="icon">\
+          <polygon fill="%23889DBB" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
         </g>\
-    </svg>');
+      </svg>');
+    --input-confirmacion: #1BD97C;
+    --input-error: #FF6969;
 
   // Tablas
   --tabla-fondo-impar: #1B304E;
@@ -430,6 +434,7 @@ body[data-dark-theme-gema='true'] {
   --input-fondo: var( --color-9 );
   --input-color: var( --color-2 );
   --input-borde: var( --color-5 );
+  --input-placeholder: var( --color-5 );
   --input-controles-color: var( --color-4 );
   --input-deshabilitado-fondo: var( --color-10 );
   --input-deshabilitado-color: var( --color-6 );
@@ -488,12 +493,12 @@ body[data-dark-theme-gema='true'] {
   --hipervinculo-focus-sombra: var( --color-8 );
   --hipervinculo-visitado: var( --color-30 );
 
+  // cambiar el color en fill="%23b99988" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
   --input-select-svg: url('data:image/svg+xml,\
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
-        <g fill="%23ffffff">\
-            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
-            <rect width="24" height="24" fill="none"/>\
-        </g>\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+      <g id="icon">\
+        <polygon fill="%23b99988" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+      </g>\
     </svg>');
 
   

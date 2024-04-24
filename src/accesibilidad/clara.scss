@@ -66,21 +66,22 @@ body[data-light-theme-sisdai='true'] {
 
   // Elementos de formulario
   --label-color: #6E638F;
-  --input-fondo: transparent;
+  --input-fondo: var(--pagina-fondo);
   --input-color: #141414;
   --input-borde: #6E638F;
+  --input-placeholder: #767677;
   --input-controles-color: #3F17E4;
     --input-deshabilitado-fondo: #DDDDDD;
     --input-deshabilitado-color: #AAAAAA;
       --input-hover: #453B67;
         --input-focus: #005DFF;
 
+  // cambiar el color en fill="%236E638F" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
   --input-select-svg: url('data:image/svg+xml,\
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
-        <g fill="%23141414">\
-            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
-            <rect width="24" height="24" fill="none"/>\
-        </g>\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+      <g id="icon">\
+        <polygon fill="%236E638F" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+      </g>\
     </svg>');
 
   // Tablas
@@ -257,23 +258,26 @@ body[data-light-theme-eni='true'] {
   --boton-icono-sin-borde-color: #0068FF;
 
   // Elementos de formulario
-  --label-color: #5E7392;
-  --input-fondo: transparent;
+  --label-color: #364A69;
+  --input-fondo: var(--pagina-fondo);
   --input-color: #141414;
-  --input-borde: #5E7392;
+  --input-borde: #364A69;
+  --input-placeholder: #767677;
   --input-controles-color: #0068FF;
     --input-deshabilitado-fondo: #DDDDDD;
-    --input-deshabilitado-color: #AAAAAA;
-      --input-hover: #364A69;
-        --input-focus: #005DFF;
-
-  --input-select-svg: url('data:image/svg+xml,\
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
-        <g fill="%23141414">\
-            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
-            <rect width="24" height="24" fill="none"/>\
+    --input-deshabilitado-borde: #AAAAAA;
+    --input-deshabilitado-color: #141414;
+    --input-hover: #F0F6FF;
+    --input-focus: #005DFF;
+    // cambiar el color en fill="%23364A69" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
+    --input-select-svg: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+        <g id="icon">\
+          <polygon fill="%23364A69" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
         </g>\
-    </svg>');
+      </svg>');
+    --input-confirmacion: #2A6F4D;
+    --input-error: #940B1C;
 
   // Tablas
   --tabla-fondo-impar: #F0F6FF;
@@ -465,6 +469,7 @@ body[data-light-theme-gema='true']  {
   --input-fondo: var( --color-8 );
   --input-color: var( --color-2 );
   --input-borde: var( --color-4 );
+  --input-placeholder: var( --color-5 );
   --input-controles-color: var( --color-3 );
   --input-deshabilitado-fondo: var( --color-9 );
   --input-deshabilitado-color: var( --color-6 );
@@ -522,14 +527,13 @@ body[data-light-theme-gema='true']  {
   --hipervinculo-focus-color: var( --color-7 );
   --hipervinculo-focus-sombra: var( --color-7 );
   --hipervinculo-visitado: var( --color-29 );
-  
 
+  // cambiar el color en fill="%2390705f" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
   --input-select-svg: url('data:image/svg+xml,\
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\
-        <g fill="%23141414">\
-            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>\
-            <rect width="24" height="24" fill="none"/>\
-        </g>\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+      <g id="icon">\
+        <polygon fill="%2390705f" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+      </g>\
     </svg>');
 
   
