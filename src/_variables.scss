@@ -30,9 +30,11 @@ $color-conahcyt: (
   'claro-2': #AAAAAA,
   'acento': #13aff0,
 );
-
 $color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
 
+// TODO: investigar si necesitamos este arreglo
+// si las variables ya existen en CSS
+// se pueden utilizar directo mas facil
 $acciones: (
   'informativo': var(--acciones-informativo),
   'informativo-2': var(--acciones-informativo-2),
@@ -44,30 +46,39 @@ $acciones: (
   'correcto-2': var(--acciones-correcto-2),
 );
 
-$sombras-estados: (
-  'focus': 0px 0px 8px 0 var(--sombra-focus),
-  'hover': 4px 4px 8px 2px var(--sombra-hover)
-);
-$sombras-produndidad: (
-  '0': 0 0 0 0 transparent,
-  '1': 1px 1px 2px 0 var(--sombra),
-  '2': 4px 4px 8px 2px var(--sombra),
-  '3': 6px 6px 12px 3px var(--sombra),
-  '4': 8px 8px 16px 4px var(--sombra),
-  '5': 12px 12px 24px 6px var(--sombra),
-);
-
-$bordes: ( // x * 2
+// AUX / bordes
+$bordes: (
   '0': 0px,
   '1': 1px,
   '2': 2px,
   '4': 4px,
   '8': 8px,
   '16': 16px,
-  '20': 20px,
+  '24': 24px,
 );
 
-// RETICULA
+// TAMAÑOS / PICTOGRAMAS
+$pictograma: (
+  '24': 1.5rem,
+  '32': 2rem,
+  '48': 3rem,
+);
+
+// AUX / tamaño tipografico
+$tamanio: ( 
+  '1': 0.75rem,
+  '2': 0.875rem,
+  '3': 1rem,
+  '4': 1.125rem,
+  '5': 1.25rem,
+  '6': 1.5rem,
+  '7': 2.25rem,
+  '8': 3rem,
+  '9': 3.5rem,
+  '10': 5rem,
+);
+
+// ESPACIADO // MARGIN PADDING GAP
 $espaciado: ( // x * 8
   '0': 0,
   'minimo': 4px,
@@ -85,24 +96,6 @@ $espaciado: ( // x * 8
   'maximo': 120px,
 );
 
-// TEXTOS
-$tamanio: ( // x * 8
-  '0': 0,
-  'minimo': .25rem,
-  '1': .5rem,
-  '2': 1rem,
-  '3': 1.5rem,
-  '4': 2rem,
-  '5': 2.5rem,
-  '6': 3rem,
-  '7': 3.5rem,
-  '8': 4rem,
-  '9': 4.5rem,
-  '10': 5rem,
-  'extra': 6rem,
-  'maximo': 7.5rem
-);
-
 $breakpoints: (
   'mov': 320px,
   'esc': 768px,
@@ -116,12 +109,14 @@ $contenedores: (
     'ancho-lectura': 100%,
     'ancho-minimo': 100%,
     'margen-interior': map-get($espaciado, '3'),
+    'margen-interior-lectura': map-get($espaciado, '3'),
   ),
   'esc': (
     'ancho-maximo': 1366px,
     'ancho-lectura': 700px,
     'ancho-minimo': 500px,
     'margen-interior': map-get($espaciado, '6'),
+    'margen-interior-lectura': map-get($espaciado, '0'),
   )
 );
 
@@ -147,30 +142,10 @@ $columnas: (
   )
 );
 
-// Variables globales que utilizan todos los desarrollos
+// Variables de CSS
 :root {
+  // estas variables son importantes que sean en CSS
+  // para que el menu de accesibilidad las pueda cambiar fácilmente
   --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
-
-  // Color
-  @each $id, $valor in $color-gobmx {
-    --color-gobmx-#{$id}: #{$valor};
-  }
-
-  @each $id, $valor in $color-conahcyt {
-    --color-conahcyt-#{$id}: #{$valor};
-  }
-  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
-
-  // Reticula
-  @each $id, $valor in $espaciado {
-    --espaciado-#{$id}: #{$valor};
-  }
-
-  // Breakpoints
-  @each $id, $valor in $breakpoints {
-    --breakpoints-#{$id}: #{$valor};
-  }
-  --navegacion-breakpoint: 768px;
-
 }
