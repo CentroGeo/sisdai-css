@@ -14,15 +14,15 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 hr {
-  border-top: 1px solid var(--borde-color-1);
-  box-sizing: content-box;
-  height: 0;
-  overflow: visible;
+  border: none;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: var(--borde-color-1);
   margin-top: map-get($espaciado, '2');
   margin-bottom: map-get($espaciado, '2');
 }
 .contenedor-vis hr {
-  border-top: 1px solid var(--borde-color-3)
+  border-top-color: var(--borde-color-3);
 }
 
 h1 + hr,
@@ -38,13 +38,4 @@ ul + hr,
 ol + hr {
   margin-top: map-get($espaciado, '0');
   margin-bottom: map-get($espaciado, '0');
-}
-
-.separador,
-.separador-primario {
-  border-top-color: var(--borde-color-1);
-}
-
-.separador-secundario {
-  border-top-color: var(--borde-color-2);
 }

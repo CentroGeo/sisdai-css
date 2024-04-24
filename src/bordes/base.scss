@@ -36,37 +36,3 @@
   border-top: 1px solid var(--borde-color-1);
   border-bottom: 1px solid var(--borde-color-1);
 }
-
-@each $id, $valor in $espaciado {
-  .borde-redondeado-#{$id} {
-    border-radius: $valor;
-  }
-  .border-redondeado-t-#{$id} {
-    border-top-left-radius: $valor;
-    border-top-right-radius: $valor;
-  }
-  .border-redondeado-b-#{$id} {
-    border-bottom-left-radius: $valor;
-    border-bottom-right-radius: $valor;
-  }
-  .border-redondeado-l-#{$id} {
-    border-top-left-radius: $valor;
-    border-bottom-left-radius: $valor;
-  }
-  .border-redondeado-l-#{$id} {
-    border-top-right-radius: $valor;
-    border-bottom-right-radius: $valor;
-  }
-  .borde-redondeado-t-l-#{$id} {
-    border-top-left-radius: $valor;
-  }
-  .borde-redondeado-t-r-#{$id} {
-    border-top-right-radius: $valor;
-  }
-  .borde-redondeado-b-l-#{$id} {
-    border-bottom-left-radius: $valor;
-  }
-  .borde-redondeado-b-r-#{$id} {
-    border-bottom-right-radius: $valor;
-  }
-}
