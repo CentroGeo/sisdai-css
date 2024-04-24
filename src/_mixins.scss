@@ -30,3 +30,15 @@
     }
   }
 }
+
+@mixin ancho-lectura {
+  @each $dispositivo, $map in $contenedores {
+    @include mediaquery($dispositivo) {
+      max-width: map-get($map, 'ancho-lectura');
+    }
+  }
+}
+
+@mixin transision {
+  transition: all .27s ease-in-out;
+}
