@@ -27,8 +27,12 @@ select {
   background-image: var(--input-select-svg);
   background-color: var(--input-fondo);
   color: var(--input-color);
-
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+
+  &:disabled {
+    opacity: 1;
+    background-image: var(--input-select-deshabilitada-svg);
+  }
 }

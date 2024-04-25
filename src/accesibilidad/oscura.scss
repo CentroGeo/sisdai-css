@@ -98,6 +98,12 @@ body[data-dark-theme-sisdai='true'] {
         <polygon fill="%23978CB7" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
       </g>\
     </svg>');
+    --input-select-deshabilitada-svg: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+        <g id="icon">\
+          <polygon fill="%23889DBB" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+        </g>\
+      </svg>');
 
   // Tablas
   --tabla-fondo-impar: #2B204C;
@@ -260,6 +266,12 @@ body[data-dark-theme-eni='true'] {
     --input-focus: #668BFF;
     // cambiar el color en fill="%23889DBB" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
     --input-select-svg: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+        <g id="icon">\
+          <polygon fill="%23889DBB" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+        </g>\
+      </svg>');
+      --input-select-deshabilitada-svg: url('data:image/svg+xml,\
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
         <g id="icon">\
           <polygon fill="%23889DBB" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
@@ -500,6 +512,12 @@ body[data-dark-theme-gema='true'] {
         <polygon fill="%23b99988" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
       </g>\
     </svg>');
+    --input-select-deshabilitada-svg: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+        <g id="icon">\
+          <polygon fill="%23889DBB" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+        </g>\
+      </svg>');
 
   
 

@@ -40,7 +40,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </p>
     </div>
 
-    <div class="contenedor">
     <div class="flex">
     <div class="columna m-t-3">
     <EjemploCodigoVertical
@@ -108,6 +107,54 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     />
     </div>
     </div>
+
+    <h2 class="m-t-10">Estados deshabilitados</h2>
+    <div class="flex">
+    <div class="columna m-t-3">
+    <EjemploCodigoVertical
+      html='
+      <label for="campod">
+        Campo deshabilitado
+      </label>
+      <input 
+        id="campod" 
+        type="text" 
+        placeholder="Texto de ejemplo"
+        value="Texto deshabilitado"
+        disabled
+      />
+      '
+    />
+    </div>
+    <div class="columna m-t-3">
+    <EjemploCodigoVertical
+      html='
+        <label for="selectord">
+          Selector deshabilitado
+        </label>
+        <select id="selectord" disabled>
+          <option value="0">
+            Selecciona algo
+          </option>
+        </select>
+        '
+    />
+    </div>
+    <div class="columna m-t-3">
+    <EjemploCodigoVertical
+      html='
+        <label for="areadetextod">
+          Área de texto
+        </label>
+        <textarea 
+          id="areadetextod" 
+          placeholder="Texto de ejemplo"
+          disabled
+        >Área de texto deshabilitada
+        </textarea>
+        '
+    />
+    </div>
     </div>
 
 
@@ -118,14 +165,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
         <label for="texto">
-          Campo de texto deshabilitado
+          Campo de texto 
         </label>
         <input
           id="texto"
           type="text"
           placeholder="Texto"
-          value="Deshabilitado"
-          disabled
+          value=""
         />
         '
       />

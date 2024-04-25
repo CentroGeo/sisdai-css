@@ -83,6 +83,12 @@ body[data-light-theme-sisdai='true'] {
         <polygon fill="%236E638F" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
       </g>\
     </svg>');
+    --input-select-deshabilitada-svg: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+      <g id="icon">\
+        <polygon fill="%23767677" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+      </g>\
+    </svg>');
 
   // Tablas
   --tabla-fondo-impar: #F4F1FE;
@@ -274,6 +280,12 @@ body[data-light-theme-eni='true'] {
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
         <g id="icon">\
           <polygon fill="%23364A69" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+        </g>\
+      </svg>');
+    --input-select-deshabilitada-svg: url('data:image/svg+xml,\
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+        <g id="icon">\
+          <polygon fill="%23767677" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
         </g>\
       </svg>');
     --input-confirmacion: #2A6F4D;
@@ -533,6 +545,12 @@ body[data-light-theme-gema='true']  {
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
       <g id="icon">\
         <polygon fill="%2390705f" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
+      </g>\
+    </svg>');
+    --input-select-deshabilitada-svg: url('data:image/svg+xml,\
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
+      <g id="icon">\
+        <polygon fill="%23767677" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
       </g>\
     </svg>');
 
