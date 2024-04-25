@@ -448,50 +448,58 @@ p {
 
 [class^=icono-],
 [class*=" icono-"] {
+  font-size: 1em;
+  line-height: 1.5em;
+  vertical-align: middle;
   display: inline-flex;
-}
-[class^=icono-]::before,
-[class*=" icono-"]::before {
-  display: inline-flex;
-  align-self: center;
+  padding: 0.25em;
 }
 
 .icono-24 {
-  font-size: 1.5rem;
+  font-size: 1rem;
+  padding: 4px;
 }
 
 .icono-32 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  padding: 4px;
 }
 
 .icono-48 {
-  font-size: 3rem;
+  font-size: 2rem;
+  padding: 8px;
 }
 
 @media screen and (max-width: 767px) {
   .icono-24-mov {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 4px;
   }
 
   .icono-32-mov {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 4px;
   }
 
   .icono-48-mov {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 8px;
   }
 }
 @media screen and (min-width: 768px) {
   .icono-24-esc {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding: 4px;
   }
 
   .icono-32-esc {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 4px;
   }
 
   .icono-48-esc {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding: 8px;
   }
 }
 .contenedor {
@@ -5951,20 +5959,6 @@ details summary > * {
   display: inline-block;
 }
 
-img {
-  max-width: 100%;
-}
-
-figure {
-  color: var(--tipografia-color-3);
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-figure figcaption {
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-
 .tarjeta {
   position: relative;
   display: flex;
@@ -6047,6 +6041,29 @@ figure figcaption {
 }
 .tarjeta-horizontal .contenido-html .parrafo-texto-alto {
   color: var(--tarjetas-color);
+}
+
+img {
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+figure {
+  color: var(--tipografia-color-3);
+  margin: 24px 0;
+  clear: both;
+}
+figure img {
+  margin-bottom: 8px;
+}
+figure img:not(:last-of-type) {
+  margin-right: 8px;
+}
+figure figcaption {
+  margin-top: -8px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  clear: both;
 }
 
 .form-campo-base, [type=file], select, textarea, input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]) {

@@ -250,7 +250,7 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/hipervinculos">Hipervínculos</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/formularios">Formularios</RouterLink></li>

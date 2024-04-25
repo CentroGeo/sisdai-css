@@ -1,102 +1,124 @@
+<script setup>
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+</script>
 <template>
-  <div>
+  <div class="contenedor m-y-maximo">
 
-    <h1>Imagenes</h1>
+    <div class="contenedor ancho-lectura">
+      <h1>Imágenes</h1>
+      
+      <p class="h4">Acerca de la accesibilidad en el Sisdai.</p>
+      <p>
+        Todas las imágenes deben tener el atributo <code>alt</code>. 
+        Éste atrubuto <b>puede</b> ir vacio <code>alt=""</code> si la imagen es únicamente decorativa;  
+        pero <b>debe</b> llevar texo alternativo <code>alt="texto que describe la imagen"</code> 
+        cuando la imágen da más información referente al contenido del sitio.
+      </p>
+      <p>
+        Ninguna imágen debe verse en la vista simplificada.
+      </p>
+    </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Imagen &lt; img /></h2>
+      <p>
+        La etiqueta de imagen <code>&lt; img /></code> es un elemento de linea
+        que se dibuja dependiendo de las dimensiones del archivo.
+      </p>
+    </div>
+    <div class="flex">
+      <div class="columna-8">
+      <EjemploCodigoVertical
+      html='
+      <img 
+        src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/xiu.jpg" 
+        alt=""
+      />
+      
+      Si el archivo es más pequeño que el contenedor en donde está,
+      únicamente cubrirá la proporción de sus dimensiones.
+      '
+      />
+      </div>
+      <div class="columna-8">
+      <EjemploCodigoVertical
+      html='
+      <img 
+        src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/bose-1.jpg" 
+        alt=""
+      />
+      
+      Si las dimensiones del archivo son mayores que del contenedor en el que está,
+      el ancho se ajusta para no pasar del ancho del contenedor.
+      '
+      />
+      </div>
+    </div>
+
     
-    <h2 class="m-t-10">&lt; img /></h2>
-    <div class="grid">
-      <div class="columna-6">
-        <pre>
-        &lt; img
-          src="https://picsum.photos/200/150"
-          alt="" />
-        </pre>
-        <p>
-          La etiqueta de imágen es un elemento de linea que se dibuja dependiendo de las dimensiones del archivo.
-          <img src="https://picsum.photos/200/150" alt=""> Si el archivo es más pequeño que el contenedor en donde está, únicamente cubrirá la proporción de sus dimensiones.
-        </p>
-      </div>
-      <div class="columna-6">
-        <pre>
-        &lt; img
-          src="https://picsum.photos/960/960"
-          alt="" />
-        </pre>
-        <p>
-          Si las dimensiones del archivo son mayores que del contenedor en el que está, se escalará para que el ancho sea del 100% el objeto que lo contenga.
-          <img src="https://picsum.photos/920/920" alt="">
-        </p>
-      </div>
-      <div class="columna-4">
-        <p class="titulo-lista m-x-2">Notas de accesibilidad</p>
-        <ul>
-          <li>Ninguna imágen debe verse en la vista simplificada</li>
-          <li>Siemre debe ir el atributo <code>alt</code> que:
-            <ul>
-              <li><b>puede</b> ir vacio <code>alt=""</code> si la imagen es únicamente decorativa</li>
-              <li><b>debe</b> llevar texo alternativo <code>alt="texto que describe la imagen"</code> cuando la imágen da más información referente al contenido del sitio.</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Imagen compuesta &lt; picture /></h2>
+      <p>Con la etiqueta <code>picture</code> se pueden definir distintos archivos para la misma imágen.</p>
+      <p>Con el atributo <code>media</code> de puede definir el ancho minimo (o máximo) para mostrar una u otra imágen.</p>
+
+      <EjemploCodigoVertical
+      html='
+      <picture> 
+        <source 
+          srcset="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/pekibb.jpg"
+          media="(min-width: 700px)"
+        />
+        <img 
+          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/pekihermosa.jpg"
+          alt="" 
+        />
+      </picture>
+      '
+      />
     </div>
-  
-    <h2 class="m-t-10">&lt; picture ></h2>
-    <div class="grid">
-      <div class="columna-6">
-        <picture> 
-          <source srcset="https://picsum.photos/1920/1080" media="(min-width: 800px)" />
-          <img src="https://picsum.photos/800/800" alt="" />
-        </picture>
-      </div>
-      <div class="columna-6">
-        <pre>
-        &lt;picture> 
-        &lt;source 
-          srcset="https://picsum.photos/1920/1080"
-          media="(min-width: 800px)" />
-        &lt;img
-          src="https://picsum.photos/800/800"
-          alt="" />
-        &lt;/picture>
-        </pre>
-      </div>
-      <div class="columna-4">
-        <p>Con la etiqueta <code>picture</code> se pueden definir distintos archivos para la misma imágen.</p>
-        <p>Con el atributo <code>media</code> de puede definir el breackpoint de ancho minimo (o máximo) para mostrar una u otra imágen.</p>
-      </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Contenedor de imágenes &lt; figure /></h2>
+      <p>
+        La etiqueta de <code>figure</code> sirve para encapsular una o varias imágenes. 
+        Cuenta con la etiqueda de <code>figcaption</code> en donde se puede agregar 
+        una descripcion más explicativa de lo que se está viendo, 
+        este texto es visible por todos los navegadores.
+      </p>
+      <p>
+        Si se ocultan las imágenes por la selección de la <b>Vista simplificada</b>, 
+        el texto del <code>figcaption</code> permanecerá visible.
+      </p>
     </div>
-  
-    <h2 class="m-t-10">&lt; figure ></h2>
-    <div class="grid">
-      <div class="columna-6">
-        <figure>
-          <img src="https://picsum.photos/1900/1000" alt="">
-          <img src="https://picsum.photos/1000/600" alt="">
-          <figcaption>
-            Galería de imágenes
-          </figcaption>
-        </figure>
-      </div>
-      <div class="columna-6">
-        <pre>
-        &lt;figure>
-        &lt;img 
-          src="https://picsum.photos/1900/1000"
-          alt="">
-        &lt;img 
-          src="https://picsum.photos/1000/600"
-          alt="">
-        &lt;figcaption>
-          Galería de imágenes
-        &lt;/figcaption>
-        &lt;/ figure>
-        </pre>
-      </div>
-      <div class="columna-4">
-        <p>La etiqueta de <code>figure</code> sirve para encapsular una o varias imágenes. Cuenta con la etiqueda de <code>figcaption</code> en donde se puede agregar una descripcion más explicativa de lo que se está viendo, este texto es visible por todos los navegadores</p>
-        <p>Si se ocultan las imágenes por la selección de la <b>Vista simplificada</b>, el texto del <code>figcaption</code> permanecerá visible</p>
-      </div>
-    </div>
+    <EjemploCodigoVertical
+      html='
+      <figure>
+        <img 
+          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-1.jpg" 
+          height="380px"
+          alt=""
+        />
+        <img 
+          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-2.jpg" 
+          height="380px"
+          alt=""
+        />
+        <img 
+          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-3.jpg" 
+          height="380px"
+          alt=""
+        />
+        <img 
+          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-4.jpg" 
+          height="380px"
+          alt=""
+        />
+        <figcaption>
+          Galería de esparragus
+        </figcaption>
+      </figure>
+      '
+      />
+
   </div>
 </template>

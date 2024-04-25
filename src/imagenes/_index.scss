@@ -14,15 +14,25 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 img {
+  border-radius: map-get($bordes, '8');
   max-width: 100%;
 }
 
 figure {
   color: var(--tipografia-color-3);
-  margin-top: map-get($espaciado, '1');
-  margin-bottom: map-get($espaciado, '1');
+  margin: map-get($espaciado, '3') 0;
+  clear: both;
+  img {
+    margin-bottom: map-get($espaciado, '1');
+  }
+  img:not(:last-of-type) {
+    margin-right: map-get($espaciado, '1');
+  }
+  
   figcaption {
+    margin-top: calc(map-get($espaciado, '1') * -1);
     font-size: 0.875rem; // 14px
     font-weight: 400;
+    clear: both;
   }
 }
