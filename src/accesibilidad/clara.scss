@@ -262,7 +262,7 @@ body[data-light-theme-eni='true'] {
   --input-fondo: var(--pagina-fondo);
   --input-color: #141414;
   --input-borde: #364A69;
-  --input-placeholder: #767677;
+  --input-placeholder: #767677; // este tambien lo usa el label de checkbox y radio en el estado deshabilitado
   --input-controles-color: #0068FF;
     --input-deshabilitado-fondo: #DDDDDD;
     --input-deshabilitado-borde: #AAAAAA;

@@ -4,11 +4,15 @@
       type: String,
       required: true
     },
+    tiene_ejemplo: {
+      type: Boolean,
+      default: true
+    }
   })
 </script>
 <template>
   <div class="ej-vertical">
-    <div v-html="html"></div>
+    <div v-if="tiene_ejemplo" v-html="html"></div>
     <div class="codigo">
       <code>HTML</code>
       <pre>{{ html }}</pre>

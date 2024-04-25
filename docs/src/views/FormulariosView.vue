@@ -118,13 +118,14 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
         <label for="texto">
-          Campo de texto
+          Campo de texto deshabilitado
         </label>
         <input
           id="texto"
           type="text"
           placeholder="Texto"
-          value="Texto"
+          value="Deshabilitado"
+          disabled
         />
         '
       />
@@ -292,125 +293,270 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <h2 class="m-t-10">Otros tipos de campo</h2>
     <h3>Rango</h3>
     <div>
-      <EjemploCodigoVertical
-        html='
-          <label for="rango">
-            Rango
-          </label>
-          <input 
-            id="rango" 
-            type="range"
-            min="0"
-            max="11"
-            value=""
-          />
-          '
+    <EjemploCodigoVertical
+      html='
+        <label for="rango">
+          Rango
+        </label>
+        <input 
+          id="rango" 
+          type="range"
+          min="0"
+          max="11"
+          value=""
         />
-      </div>
+        '
+      />
+    </div>
     
-
-    <h3 class="m-t-6">Checkbox</h3>
+    <div class="contenedor ancho-lectura m-l-0">
+      <h3 class="m-t-6">Casillas de verificacion</h3>
+      <p>
+        Para las casillas de verificacion <code>checkbox</code> 
+        es importante que su etiqueta <code>label</code> 
+        se posicione justo después de ésta, ya es es a través 
+        del <code>label</code> que se crean los estilos.
+      </p>
+    </div>
     <div class="grid">
-      <div class="columna-16">
-        <input id="checkbox1" type="checkbox" name="checkboxes1">
-        <label for="checkbox1">Checkbox 1</label>
-        <input id="checkbox2" type="checkbox" name="checkboxes1">
-        <label for="checkbox2">Checkbox 2</label>
-        <input id="checkbox3" type="checkbox" name="checkboxes1" disabled>
-        <label for="checkbox3">Checkbox desabilitado</label>
-        <input id="checkbox4" type="checkbox" name="checkboxes1" indeterminate>
-        <label for="checkbox4">Checkbox indeterminado</label>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="checkbox1" 
+          type="checkbox"
+          name="checkboxes"
+          checked
+        />
+        <label for="checkbox1">
+          Casilla de verificación seleccionada
+        </label>
+      </p>
+      '
+      />
       </div>
-      <div class="columna-16">
-        <h3>Checkboxes anidados</h3>
-        <p>Contenedor <code>.casillas-anidadas</code> subcontenedor <code>.casillas-subseleccion</code></p>
-        <p>Personalmente prefiero las listas para las cosas anidadas, pero tambien funciona con divs.</p>
+
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="checkbox2" 
+          type="checkbox" 
+          name="checkboxes" 
+          class="indeterminate"
+          indeterminate
+        />
+        <label for="checkbox2">
+          Casilla indeterminada
+        </label>
+      </p>
+      '
+      />
       </div>
-      <div class="columna-4">
+
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="checkbox3" 
+          type="checkbox" 
+          name="checkboxes" 
+          disabled
+        />
+        <label for="checkbox3">
+          Casilla deshabilitada
+        </label>
+      </p>
+      '
+      />
+      </div>
+      
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="checkbox3" 
+          type="checkbox" 
+          name="checkboxes" 
+          disabled
+          checked
+        />
+        <label for="checkbox3">
+          Casilla deshabilitada seleccionada
+        </label>
+      </p>
+      '
+      />
+      </div>
+    </div>
+
+    <div class="contenedor ancho-lectura m-l-0">
+      <h3 class="m-t-6">Checkboxes anidados</h3>
+      <p>
+        Contenedor <code>.casillas-anidadas</code> subcontenedor <code>.casillas-subseleccion</code>.
+        Estas clases de contenedor funcionan tanto en <code>div</code>, 
+        como en listas ordenadas <code>ol</code> y desordenadas <code>ul</code>.
+      </p>
+    </div>
+    <div class="grid">
+      <div class="columna-8">
         <div class="casillas-anidadas">
-          <input id="checkbox-parent" type="checkbox" name="checkbox-parent">
-          <label for="checkbox-parent">Checkbox Padre</label>
+          <input id="dc1" type="checkbox" indeterminate />
+          <label for="dc1">Casilla Madre</label>
           <div class="casillas-subseleccion casillas-anidadas">
-            <input id="checkbox-child1" type="checkbox" name="checkbox-child">
-            <label for="checkbox-child1">Checkbox Hijo 1</label>
-            <input id="checkbox-child2" type="checkbox" name="checkbox-child">
-            <label for="checkbox-child2">Checkbox Hijo 2</label>
+            <input id="dc2" type="checkbox" />
+            <label for="dc2">Casilla 2</label>
+            <input id="dc3" type="checkbox" indeterminate />
+            <label for="dc3">Casilla 3</label>
             <div class="casillas-subseleccion casillas-anidadas">
-              <input id="checkbox-child21" type="checkbox" name="checkbox-child">
-              <label for="checkbox-child21">Checkbox Hijo 2-1</label>
-              <input id="checkbox-child22" type="checkbox" name="checkbox-child">
-              <label for="checkbox-child22">Checkbox Hijo 2-2</label>
+              <input id="dc4" type="checkbox" />
+              <label for="dc4">Casilla 4</label>
+              <input id="dc5" type="checkbox" checked>
+              <label for="dc5">Casilla 5</label>
             </div>
           </div>
         </div>
+      <EjemploCodigoVertical
+      :tiene_ejemplo="false"
+      html='
+      <div class="casillas-anidadas">
+        <input ... />
+        <label> ... </label>
+        <div class="casillas-subseleccion casillas-anidadas">
+          <input ... />
+          <label> ... </label>
+          ...
+        </div>
       </div>
-      <div class="columna-4">
+      '
+      />
+      </div>
+      
+      <div class="columna-8">
         <ul class="casillas-anidadas">
           <li>
-            <input id="ul-checkbox-parent" type="checkbox" name="ul-checkbox-parent">
-            <label for="ul-checkbox-parent">Checkbox Padre</label>
+            <input id="uc1" type="checkbox" />
+            <label for="uc1">Casilla 1</label>
             <ul class="casillas-subseleccion casillas-anidadas">
               <li>
-                <input id="ul-checkbox-child1" type="checkbox" name="ul-checkbox-child">
-                <label for="ul-checkbox-child1">Checkbox Hijo 1</label>
+                <input id="uc2" type="checkbox" />
+                <label for="uc2">Casilla 1-1</label>
               </li>
               <li>
-                <input id="ul-checkbox-child2" type="checkbox" name="ul-checkbox-child">
-                <label for="ul-checkbox-child2">Checkbox Hijo 2</label>
+                <input id="uc3" type="checkbox" />
+                <label for="uc3">Casilla 1-2</label>
                 <ul class="casillas-subseleccion casillas-anidadas">
                   <li>
-                    <input id="ul-checkbox-child21" type="checkbox" name="ul-checkbox-child">
-                    <label for="ul-checkbox-child21">Checkbox Hijo 2-1</label>
+                    <input id="uc4" type="checkbox" />
+                    <label for="uc4">Casilla 1-2-1</label>
                   </li>
                   <li>
-                    <input id="ul-checkbox-child22" type="checkbox" name="ul-checkbox-child">
-                    <label for="ul-checkbox-child22">Checkbox Hijo 2-2</label>
+                    <input id="uc5" type="checkbox" />
+                    <label for="uc5">Casilla 1-2-2</label>
                   </li>
                 </ul>
               </li>
             </ul>
           </li>
         </ul>
-      </div>
-      <div class="columna-4">
-        <ol class="casillas-anidadas">
-          <li>
-            <input id="ol-checkbox-parent" type="checkbox" name="ol-checkbox-parent">
-            <label for="ol-checkbox-parent">Checkbox Padre</label>
-            <ol class="casillas-subseleccion casillas-anidadas">
-              <li>
-                <input id="ol-checkbox-child1" type="checkbox" name="ol-checkbox-child">
-                <label for="ol-checkbox-child1">Checkbox Hijo 1</label>
-              </li>
-              <li>
-                <input id="ol-checkbox-child2" type="checkbox" name="ol-checkbox-child">
-                <label for="ol-checkbox-child2">Checkbox Hijo 2</label>
-                <ol class="casillas-subseleccion casillas-anidadas">
-                  <li>
-                    <input id="ol-checkbox-child21" type="checkbox" name="ol-checkbox-child">
-                    <label for="ol-checkbox-child21">Checkbox Hijo 2-1</label>
-                  </li>
-                  <li>
-                    <input id="ol-checkbox-child22" type="checkbox" name="ol-checkbox-child">
-                    <label for="ol-checkbox-child22">Checkbox Hijo 2-2</label>
-                  </li>
-                </ol>
-              </li>
-            </ol>
-          </li>
-        </ol>
+      <EjemploCodigoVertical
+      :tiene_ejemplo="false"
+      html='
+      <ul class="casillas-anidadas">
+        <li>
+          <input ... />
+          <label> ... </label>
+          <ul class="casillas-subseleccion casillas-anidadas">
+            <li>
+              <input ... />
+              <label> ... </label>
+            </li>
+            ...
+          </ul>
+          ...
+        </li>
+      </ul>
+      '
+      />
       </div>
     </div>
 
-    <h3 class="m-t-6">Radios</h3>
+
+    <div class="contenedor ancho-lectura m-l-0">
+      <h3 class="m-t-6">Botones de Radio</h3>
+      <p>
+        Al igual que las casillas de verificacion,
+        en los botones de <code>radio</code>,
+        es importante que su etiqueta <code>label</code> 
+        se posicione justo después de ésta, ya es es a través 
+        del <code>label</code> que se crean los estilos.
+      </p>
+    </div>
     <div class="grid">
-      <div class="columna-16">
-        <input id="radio1" type="radio" name="radioses1">
-        <label for="radio1">Radio 1</label>
-        <input id="radio2" type="radio" name="radioses1">
-        <label for="radio2">Radio 2</label>
-        <input id="radio3" type="radio" name="radioses1" disabled>
-        <label for="radio3">Radio 3 desabilitado</label>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="r1" 
+          type="radio" 
+          name="radio"
+        />
+        <label for="r1">
+          Radio
+        </label>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="r2" 
+          type="radio" 
+          name="radio" 
+          checked
+        />
+        <label for="r2">
+          Radio seleccionado
+        </label>
+      </p>
+      '
+      />
+      </div>
+      
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="r3" 
+          type="radio" 
+          name="rdes" 
+        disabled 
+        />
+        <label for="r3">
+          Radio deshabilitado
+        </label>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4 m-t-3">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input id="r4" 
+          type="radio"
+          name="rdes"
+          checked 
+          disabled
+        />
+        <label for="r4">
+          Radio deshabilitado seleccionado
+        </label>
+      </p>
+      '
+      />
       </div>
     </div>
 
@@ -481,8 +627,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     />
     </div>
     </div>
-
-
 
   </div>
 </template>
