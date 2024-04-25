@@ -338,21 +338,40 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <h2 class="m-t-10">Otros tipos de campo</h2>
     <h3>Rango</h3>
-    <div>
-    <EjemploCodigoVertical
-      html='
-        <label for="rango">
-          Rango
-        </label>
-        <input 
-          id="rango" 
-          type="range"
-          min="0"
-          max="11"
-          value=""
+    <div class="flex">
+    <div class="columna-8">
+      <EjemploCodigoVertical
+        html='
+          <label for="rango">
+            Rango
+          </label>
+          <input 
+            id="rango" 
+            type="range"
+            min="0"
+            max="11"
+            value=""
+          />
+          '
         />
-        '
-      />
+    </div>
+    <div class="columna-8">
+      <EjemploCodigoVertical
+        html='
+          <label for="rango">
+            Rango deshabilitado
+          </label>
+          <input 
+            id="rango" 
+            type="range"
+            min="0"
+            max="11"
+            value=""
+            disabled
+          />
+          '
+        />
+    </div>
     </div>
     
     <div class="contenedor ancho-lectura m-l-0">
