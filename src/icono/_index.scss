@@ -15,24 +15,26 @@
 
 [class^='icono-'],
 [class*=" icono-"] {
+  font-size: 1em;
+  line-height: calc(1.5em);
+  vertical-align: middle;
   display: inline-flex;
-  &::before {
-    display: inline-flex;
-    align-self: center;
-  }
+  padding: 0.25em;
 }
 
-@each $id, $valor in $pictograma {
+@each $id, $map in $pictograma {
   .icono-#{$id} {
-    font-size: $valor;
+    font-size: map-get($map, 'tamanio');
+    padding: map-get($map, 'espaciado') ;
   }
 }
 
 @each $dispositivo, $x in $breakpoints {
   @include mediaquery($dispositivo) {
-    @each $id, $valor in $pictograma {
+    @each $id, $map in $pictograma {
       .icono-#{$id}-#{$dispositivo} {
-        font-size: $valor;
+        font-size: map-get($map, 'tamanio');
+        padding: map-get($map, 'espaciado') ;
       }
     }
   }

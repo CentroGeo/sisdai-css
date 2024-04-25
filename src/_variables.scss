@@ -59,9 +59,18 @@ $bordes: (
 
 // TAMAÑOS / PICTOGRAMAS
 $pictograma: (
-  '24': 1.5rem,
-  '32': 2rem,
-  '48': 3rem,
+  '24': (
+    'tamanio': 1rem,
+    'espaciado': 4px,
+  ),
+  '32': (
+    'tamanio': 1.5rem,
+    'espaciado': 4px,
+  ),
+  '48': (
+    'tamanio': 2rem,
+    'espaciado': 8px,
+  ),
 );
 
 // AUX / tamaño tipografico
