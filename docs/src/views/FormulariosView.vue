@@ -48,7 +48,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <label for="campo">
         Etiqueta del campo
         <span class="formulario-obligatoriedad">
-          (Obligarorio)
+          (Obligatorio)
         </span>
       </label>
       <input 
@@ -68,7 +68,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <label for="selector">
           Selector
           <span class="formulario-obligatoriedad">
-            (Obligarorio)
+            (Obligatorio)
           </span>
         </label>
         <select id="selector">
@@ -94,7 +94,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <label for="areadetexto">
           Área de texto
           <span class="formulario-obligatoriedad">
-            (Obligarorio)
+            (Obligatorio)
           </span>
         </label>
         <textarea 
@@ -584,7 +584,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <label for="campo">
         Etiqueta del campo
         <span class="formulario-obligatoriedad">
-          (Obligarorio)
+          (Obligatorio)
         </span>
       </label>
       <input 
@@ -608,7 +608,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <label for="campo">
         Etiqueta del campo
         <span class="formulario-obligatoriedad">
-          (Obligarorio)
+          (Obligatorio)
         </span>
       </label>
       <input 
