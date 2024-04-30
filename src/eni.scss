@@ -23,14 +23,13 @@
 @import "color/identidad";
 @import "color/acciones";
 @import 'tipografia';
-@import "icono";
+@import "pictograma";
 @import "reticula";
 
+@import "boton";
+@import "imagenes";
+@import "formulario";
 
-@import "boton/base";
-@import "boton/iconos";
-@import "boton/compuestos";
-@import "boton/flotante";
 
 @import "link/base";
 @import "link/identidad";
@@ -44,12 +43,6 @@
 @import "detalle/base";
 
 @import "tarjetas/base";
-
-
-
-@import "imagenes";
-@import "formulario";
-
 
 
 @import "bordes/base";

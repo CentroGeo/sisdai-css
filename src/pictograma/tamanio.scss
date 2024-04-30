@@ -13,17 +13,8 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-[class^='icono-'],
-[class*=" icono-"] {
-  font-size: 1em;
-  line-height: calc(1.5em);
-  vertical-align: middle;
-  display: inline-flex;
-  padding: 0.25em;
-}
-
 @each $id, $map in $pictograma {
-  .icono-#{$id} {
+  .pictograma-#{$id} {
     font-size: map-get($map, 'tamanio');
     padding: map-get($map, 'espaciado') ;
   }
@@ -32,7 +23,7 @@
 @each $dispositivo, $x in $breakpoints {
   @include mediaquery($dispositivo) {
     @each $id, $map in $pictograma {
-      .icono-#{$id}-#{$dispositivo} {
+      .pictograma-#{$id}-#{$dispositivo} {
         font-size: map-get($map, 'tamanio');
         padding: map-get($map, 'espaciado') ;
       }

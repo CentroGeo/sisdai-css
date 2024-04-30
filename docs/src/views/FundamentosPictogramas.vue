@@ -21,7 +21,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
       <EjemploCodigoVertical
       html='
-      <h2 class="icono-actualizar"></h2>
+      <h2 class="pictograma-actualizar"></h2>
       '
       />
     </div>
@@ -31,426 +31,426 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="columns-3 columns-1-mov">
       <div>
-        <span class="icono-actualizar"></span>
-        <span class="icono-clase-ejemplo">icono-actualizar</span>
+        <span class="pictograma-actualizar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-actualizar</span>
       </div>
       <div>
-        <span class="icono-agregar"></span>
-        <span class="icono-clase-ejemplo">icono-agregar</span>
+        <span class="pictograma-agregar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-agregar</span>
       </div>
       <div>
-        <span class="icono-angulo-abajo"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-abajo</span>
+        <span class="pictograma-angulo-abajo"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-abajo</span>
       </div>
       <div>
-        <span class="icono-angulo-arriba"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-arriba</span>
+        <span class="pictograma-angulo-arriba"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-arriba</span>
       </div>
       <div>
-        <span class="icono-angulo-derecho"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-derecho</span>
+        <span class="pictograma-angulo-derecho"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-derecho</span>
       </div>
       <div>
-        <span class="icono-angulo-doble-abajo"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-doble-abajo</span>
+        <span class="pictograma-angulo-doble-abajo"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-doble-abajo</span>
       </div>
       <div>
-        <span class="icono-angulo-doble-arriba"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-doble-arriba</span>
+        <span class="pictograma-angulo-doble-arriba"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-doble-arriba</span>
       </div>
       <div>
-        <span class="icono-angulo-doble-derecha"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-doble-derecha</span>
+        <span class="pictograma-angulo-doble-derecha"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-doble-derecha</span>
       </div>
       <div>
-        <span class="icono-angulo-doble-izquierda"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-doble-izquierda</span>
+        <span class="pictograma-angulo-doble-izquierda"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-doble-izquierda</span>
       </div>
       <div>
-        <span class="icono-angulo-izquierdo"></span>
-        <span class="icono-clase-ejemplo">icono-angulo-izquierdo</span>
+        <span class="pictograma-angulo-izquierdo"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-angulo-izquierdo</span>
       </div>
       <div>
-        <span class="icono-aprobado"></span>
-        <span class="icono-clase-ejemplo">icono-aprobado</span>
+        <span class="pictograma-aprobado"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-aprobado</span>
       </div>
       <div>
-        <span class="icono-archivo-descargar"></span>
-        <span class="icono-clase-ejemplo">icono-archivo-descargar</span>
+        <span class="pictograma-archivo-descargar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-archivo-descargar</span>
       </div>
       <div>
-        <span class="icono-archivo-subir"></span>
-        <span class="icono-clase-ejemplo">icono-archivo-subir</span>
+        <span class="pictograma-archivo-subir"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-archivo-subir</span>
       </div>
       <div>
-        <span class="icono-arrastrar"></span>
-        <span class="icono-clase-ejemplo">icono-arrastrar</span>
+        <span class="pictograma-arrastrar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-arrastrar</span>
       </div>
       <div>
-        <span class="icono-ayuda"></span>
-        <span class="icono-clase-ejemplo">icono-ayuda</span>
+        <span class="pictograma-ayuda"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ayuda</span>
       </div>
       <div>
-        <span class="icono-bajar-capa"></span>
-        <span class="icono-clase-ejemplo">icono-bajar-capa</span>
+        <span class="pictograma-bajar-capa"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-bajar-capa</span>
       </div>
       <div>
-        <span class="icono-buscar"></span>
-        <span class="icono-clase-ejemplo">icono-buscar</span>
+        <span class="pictograma-buscar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-buscar</span>
       </div>
       <div>
-        <span class="icono-calendario"></span>
-        <span class="icono-clase-ejemplo">icono-calendario</span>
+        <span class="pictograma-calendario"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-calendario</span>
       </div>
       <div>
-        <span class="icono-cambio-tipografia"></span>
-        <span class="icono-clase-ejemplo">icono-cambio-tipografia</span>
+        <span class="pictograma-cambio-tipografia"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-cambio-tipografia</span>
       </div>
       <div>
-        <span class="icono-capa-lineas"></span>
-        <span class="icono-clase-ejemplo">icono-capa-lineas</span>
+        <span class="pictograma-capa-lineas"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-capa-lineas</span>
       </div>
       <div>
-        <span class="icono-capa-puntos"></span>
-        <span class="icono-clase-ejemplo">icono-capa-puntos</span>
+        <span class="pictograma-capa-puntos"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-capa-puntos</span>
       </div>
       <div>
-        <span class="icono-casilla"></span>
-        <span class="icono-clase-ejemplo">icono-casilla</span>
+        <span class="pictograma-casilla"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-casilla</span>
       </div>
       <div>
-        <span class="icono-casilla-verificada"></span>
-        <span class="icono-clase-ejemplo">icono-casilla-verificada</span>
+        <span class="pictograma-casilla-verificada"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-casilla-verificada</span>
       </div>
       <div>
-        <span class="icono-cerrar"></span>
-        <span class="icono-clase-ejemplo">icono-cerrar</span>
+        <span class="pictograma-cerrar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-cerrar</span>
       </div>
       <div>
-        <span class="icono-colaborar"></span>
-        <span class="icono-clase-ejemplo">icono-colaborar</span>
+        <span class="pictograma-colaborar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-colaborar</span>
       </div>
       <div>
-        <span class="icono-compartir"></span>
-        <span class="icono-clase-ejemplo">icono-compartir</span>
+        <span class="pictograma-compartir"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-compartir</span>
       </div>
       <div>
-        <span class="icono-contraste"></span>
-        <span class="icono-clase-ejemplo">icono-contraste</span>
+        <span class="pictograma-contraste"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-contraste</span>
       </div>
       <div>
-        <span class="icono-control-comenzar"></span>
-        <span class="icono-clase-ejemplo">icono-control-comenzar</span>
+        <span class="pictograma-control-comenzar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-control-comenzar</span>
       </div>
       <div>
-        <span class="icono-control-detener"></span>
-        <span class="icono-clase-ejemplo">icono-control-detener</span>
+        <span class="pictograma-control-detener"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-control-detener</span>
       </div>
       <div>
-        <span class="icono-control-final"></span>
-        <span class="icono-clase-ejemplo">icono-control-final</span>
+        <span class="pictograma-control-final"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-control-final</span>
       </div>
       <div>
-        <span class="icono-control-inicio"></span>
-        <span class="icono-clase-ejemplo">icono-control-inicio</span>
+        <span class="pictograma-control-inicio"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-control-inicio</span>
       </div>
       <div>
-        <span class="icono-control-pausa"></span>
-        <span class="icono-clase-ejemplo">icono-control-pausa</span>
+        <span class="pictograma-control-pausa"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-control-pausa</span>
       </div>
       <div>
-        <span class="icono-copiar"></span>
-        <span class="icono-clase-ejemplo">icono-copiar</span>
+        <span class="pictograma-copiar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-copiar</span>
       </div>
       <div>
-        <span class="icono-documento"></span>
-        <span class="icono-clase-ejemplo">icono-documento</span>
+        <span class="pictograma-documento"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento</span>
       </div>
       <div>
-        <span class="icono-documento-csv"></span>
-        <span class="icono-clase-ejemplo">icono-documento-csv</span>
+        <span class="pictograma-documento-csv"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento-csv</span>
       </div>
       <div>
-        <span class="icono-documento-geojson"></span>
-        <span class="icono-clase-ejemplo">icono-documento-geojson</span>
+        <span class="pictograma-documento-geojson"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento-geojson</span>
       </div>
       <div>
-        <span class="icono-documento-geopaquete"></span>
-        <span class="icono-clase-ejemplo">icono-documento-geopaquete</span>
+        <span class="pictograma-documento-geopaquete"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento-geopaquete</span>
       </div>
       <div>
-        <span class="icono-documento-pdf"></span>
-        <span class="icono-clase-ejemplo">icono-documento-pdf</span>
+        <span class="pictograma-documento-pdf"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento-pdf</span>
       </div>
       <div>
-        <span class="icono-documento-png"></span>
-        <span class="icono-clase-ejemplo">icono-documento-png</span>
+        <span class="pictograma-documento-png"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento-png</span>
       </div>
       <div>
-        <span class="icono-documento-ppt"></span>
-        <span class="icono-clase-ejemplo">icono-documento-ppt</span>
+        <span class="pictograma-documento-ppt"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento-ppt</span>
       </div>
       <div>
-        <span class="icono-documento-word"></span>
-        <span class="icono-clase-ejemplo">icono-documento-word</span>
+        <span class="pictograma-documento-word"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-documento-word</span>
       </div>
       <div>
-        <span class="icono-editar"></span>
-        <span class="icono-clase-ejemplo">icono-editar</span>
+        <span class="pictograma-editar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-editar</span>
       </div>
       <div>
-        <span class="icono-eliminar"></span>
-        <span class="icono-clase-ejemplo">icono-eliminar</span>
+        <span class="pictograma-eliminar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-eliminar</span>
       </div>
       <div>
-        <span class="icono-enlace-subrayado"></span>
-        <span class="icono-clase-ejemplo">icono-enlace-subrayado</span>
+        <span class="pictograma-enlace-subrayado"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-enlace-subrayado</span>
       </div>
       <div>
-        <span class="icono-estrella"></span>
-        <span class="icono-clase-ejemplo">icono-estrella</span>
+        <span class="pictograma-estrella"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-estrella</span>
       </div>
       <div>
-        <span class="icono-flecha-abajo"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-abajo</span>
+        <span class="pictograma-flecha-abajo"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-abajo</span>
       </div>
       <div>
-        <span class="icono-flecha-abajo-derecha"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-abajo-derecha</span>
+        <span class="pictograma-flecha-abajo-derecha"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-abajo-derecha</span>
       </div>
       <div>
-        <span class="icono-flecha-abajo-izquierda"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-abajo-izquierda</span>
+        <span class="pictograma-flecha-abajo-izquierda"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-abajo-izquierda</span>
       </div>
       <div>
-        <span class="icono-flecha-arriba"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-arriba</span>
+        <span class="pictograma-flecha-arriba"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-arriba</span>
       </div>
       <div>
-        <span class="icono-flecha-arriba-derecha"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-arriba-derecha</span>
+        <span class="pictograma-flecha-arriba-derecha"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-arriba-derecha</span>
       </div>
       <div>
-        <span class="icono-flecha-arriba-izquierda"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-arriba-izquierda</span>
+        <span class="pictograma-flecha-arriba-izquierda"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-arriba-izquierda</span>
       </div>
       <div>
-        <span class="icono-flecha-derecha"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-derecha</span>
+        <span class="pictograma-flecha-derecha"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-derecha</span>
       </div>
       <div>
-        <span class="icono-flecha-izquierda"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-izquierda</span>
+        <span class="pictograma-flecha-izquierda"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-izquierda</span>
       </div>
       <div>
-        <span class="icono-flechas-horizontales"></span>
-        <span class="icono-clase-ejemplo">icono-flechas-horizontales</span>
+        <span class="pictograma-flechas-horizontales"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flechas-horizontales</span>
       </div>
       <div>
-        <span class="icono-flkt"></span>
-        <span class="icono-clase-ejemplo">icono-flkt</span>
+        <span class="pictograma-flkt"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flkt</span>
       </div>
       <div>
-        <span class="icono-grupo"></span>
-        <span class="icono-clase-ejemplo">icono-grupo</span>
+        <span class="pictograma-grupo"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-grupo</span>
       </div>
       <div>
-        <span class="icono-guardar"></span>
-        <span class="icono-clase-ejemplo">icono-guardar</span>
+        <span class="pictograma-guardar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-guardar</span>
       </div>
       <div>
-        <span class="icono-social-facebook"></span>
-        <span class="icono-clase-ejemplo">icono-social-facebook</span>
+        <span class="pictograma-social-facebook"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-social-facebook</span>
       </div>
       <div>
-        <span class="icono-social-github"></span>
-        <span class="icono-clase-ejemplo">icono-social-github</span>
+        <span class="pictograma-social-github"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-social-github</span>
       </div>
       <div>
-        <span class="icono-social-instagram"></span>
-        <span class="icono-clase-ejemplo">icono-social-instagram</span>
+        <span class="pictograma-social-instagram"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-social-instagram</span>
       </div>
       <div>
-        <span class="icono-social-linkedin"></span>
-        <span class="icono-clase-ejemplo">icono-social-linkedin</span>
+        <span class="pictograma-social-linkedin"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-social-linkedin</span>
       </div>
       <div>
-        <span class="icono-social-twitter"></span>
-        <span class="icono-clase-ejemplo">icono-social-twitter</span>
+        <span class="pictograma-social-twitter"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-social-twitter</span>
       </div>
       <div>
-        <span class="icono-social-youtube"></span>
-        <span class="icono-clase-ejemplo">icono-social-youtube</span>
+        <span class="pictograma-social-youtube"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-social-youtube</span>
       </div>
       <div>
-        <span class="icono-social-x"></span>
-        <span class="icono-clase-ejemplo">icono-social-x</span>
+        <span class="pictograma-social-x"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-social-x</span>
       </div>
       <div>
-        <span class="icono-subir-capa"></span>
-        <span class="icono-clase-ejemplo">icono-subir-capa</span>
+        <span class="pictograma-subir-capa"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-subir-capa</span>
       </div>
       <div>
-        <span class="icono-informacion"></span>
-        <span class="icono-clase-ejemplo">icono-informacion</span>
+        <span class="pictograma-informacion"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-informacion</span>
       </div>
       <div>
-        <span class="icono-inicio"></span>
-        <span class="icono-clase-ejemplo">icono-inicio</span>
+        <span class="pictograma-inicio"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-inicio</span>
       </div>
       <div>
-        <span class="icono-mapa-centro"></span>
-        <span class="icono-clase-ejemplo">icono-mapa-centro</span>
+        <span class="pictograma-mapa-centro"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-mapa-centro</span>
       </div>
       <div>
-        <span class="icono-mapa-generador"></span>
-        <span class="icono-clase-ejemplo">icono-mapa-generador</span>
+        <span class="pictograma-mapa-generador"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-mapa-generador</span>
       </div>
       <div>
-        <span class="icono-maximizar"></span>
-        <span class="icono-clase-ejemplo">icono-maximizar</span>
+        <span class="pictograma-maximizar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-maximizar</span>
       </div>
       <div>
-        <span class="icono-menu"></span>
-        <span class="icono-clase-ejemplo">icono-menu</span>
+        <span class="pictograma-menu"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-menu</span>
       </div>
       <div>
-        <span class="icono-mexico"></span>
-        <span class="icono-clase-ejemplo">icono-mexico</span>
+        <span class="pictograma-mexico"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-mexico</span>
       </div>
       <div>
-        <span class="icono-minimizar"></span>
-        <span class="icono-clase-ejemplo">icono-minimizar</span>
+        <span class="pictograma-minimizar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-minimizar</span>
       </div>
       <div>
-        <span class="icono-mover"></span>
-        <span class="icono-clase-ejemplo">icono-mover</span>
+        <span class="pictograma-mover"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-mover</span>
       </div>
       <div>
-        <span class="icono-nivel"></span>
-        <span class="icono-clase-ejemplo">icono-nivel</span>
+        <span class="pictograma-nivel"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-nivel</span>
       </div>
       <div>
-        <span class="icono-numerales"></span>
-        <span class="icono-clase-ejemplo">icono-numerales</span>
+        <span class="pictograma-numerales"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-numerales</span>
       </div>
       <div>
-        <span class="icono-ojo-ocultar"></span>
-        <span class="icono-clase-ejemplo">icono-ojo-ocultar</span>
+        <span class="pictograma-ojo-ocultar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ojo-ocultar</span>
       </div>
       <div>
-        <span class="icono-ojo-ver"></span>
-        <span class="icono-clase-ejemplo">icono-ojo-ver</span>
+        <span class="pictograma-ojo-ver"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ojo-ver</span>
       </div>
       <div>
-        <span class="icono-ordenar-alfabetico-asc"></span>
-        <span class="icono-clase-ejemplo">icono-ordenar-alfabetico-asc</span>
+        <span class="pictograma-ordenar-alfabetico-asc"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ordenar-alfabetico-asc</span>
       </div>
       <div>
-        <span class="icono-ordenar-alfabetico-desc"></span>
-        <span class="icono-clase-ejemplo">icono-ordenar-alfabetico-desc</span>
+        <span class="pictograma-ordenar-alfabetico-desc"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ordenar-alfabetico-desc</span>
       </div>
       <div>
-        <span class="icono-ordenar-asc"></span>
-        <span class="icono-clase-ejemplo">icono-ordenar-asc</span>
+        <span class="pictograma-ordenar-asc"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ordenar-asc</span>
       </div>
       <div>
-        <span class="icono-ordenar-desc"></span>
-        <span class="icono-clase-ejemplo">icono-ordenar-desc</span>
+        <span class="pictograma-ordenar-desc"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ordenar-desc</span>
       </div>
       <div>
-        <span class="icono-persona"></span>
-        <span class="icono-clase-ejemplo">icono-persona</span>
+        <span class="pictograma-persona"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-persona</span>
       </div>
       <div>
-        <span class="icono-capa-poligono"></span>
-        <span class="icono-clase-ejemplo">icono-capa-poligono</span>
+        <span class="pictograma-capa-poligono"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-capa-poligono</span>
       </div>
       <div>
-        <span class="icono-reloj"></span>
-        <span class="icono-clase-ejemplo">icono-reloj</span>
+        <span class="pictograma-reloj"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-reloj</span>
       </div>
       <div>
-        <span class="icono-restar"></span>
-        <span class="icono-clase-ejemplo">icono-restar</span>
+        <span class="pictograma-restar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-restar</span>
       </div>
       <div>
-        <span class="icono-tabla"></span>
-        <span class="icono-clase-ejemplo">icono-tabla</span>
+        <span class="pictograma-tabla"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-tabla</span>
       </div>
       <div>
-        <span class="icono-teclado"></span>
-        <span class="icono-clase-ejemplo">icono-teclado</span>
+        <span class="pictograma-teclado"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-teclado</span>
       </div>
       <div>
-        <span class="icono-ubicacion"></span>
-        <span class="icono-clase-ejemplo">icono-ubicacion</span>
+        <span class="pictograma-ubicacion"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ubicacion</span>
       </div>
       <div>
-        <span class="icono-vista-simplificada"></span>
-        <span class="icono-clase-ejemplo">icono-vista-simplificada</span>
+        <span class="pictograma-vista-simplificada"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-vista-simplificada</span>
       </div>
       <div>
-        <span class="icono-voto-no"></span>
-        <span class="icono-clase-ejemplo">icono-voto-no</span>
+        <span class="pictograma-voto-no"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-voto-no</span>
       </div>
       <div>
-        <span class="icono-voto-si"></span>
-        <span class="icono-clase-ejemplo">icono-voto-si</span>
+        <span class="pictograma-voto-si"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-voto-si</span>
       </div>
       <div>
-        <span class="icono-accesibilidad"></span>
-        <span class="icono-clase-ejemplo">icono-accesibilidad</span>
+        <span class="pictograma-accesibilidad"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-accesibilidad</span>
       </div>
       <div>
-        <span class="icono-restablecer"></span>
-        <span class="icono-clase-ejemplo">icono-restablecer</span>
+        <span class="pictograma-restablecer"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-restablecer</span>
       </div>
       <div>
-        <span class="icono-flecha-izquierda"></span>
-        <span class="icono-clase-ejemplo">icono-flecha-izquierda</span>
+        <span class="pictograma-flecha-izquierda"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-flecha-izquierda</span>
       </div>
       <div>
-        <span class="icono-enlace-externo"></span>
-        <span class="icono-clase-ejemplo">icono-enlace-externo</span>
+        <span class="pictograma-enlace-externo"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-enlace-externo</span>
       </div>
       <div>
-        <span class="icono-metadatos"></span>
-        <span class="icono-clase-ejemplo">icono-metadatos</span>
+        <span class="pictograma-metadatos"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-metadatos</span>
       </div>
       <div>
-        <span class="icono-visualizador"></span>
-        <span class="icono-clase-ejemplo">icono-visualizador</span>
+        <span class="pictograma-visualizador"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-visualizador</span>
       </div>
       <div>
-        <span class="icono-zoom-instruccional"></span>
-        <span class="icono-clase-ejemplo">icono-zoom-instruccional</span>
+        <span class="pictograma-zoom-instruccional"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-zoom-instruccional</span>
       </div>
     </div>
       
 
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Tamaños</h2>
+      <h2 class="m-t-10">Tamaños especiales</h2>
       <p>
-        Los iconos al ser tipografía varian dependiendo de la etiquta en donde se encuentre.
+        Los pictogramas al ser tipografía varian dependiendo de la etiquta en donde se encuentre.
         Aún así en el sistema de diseño especifica que se deben usar los tamaños originales 
         o los que correspondan a incrementos de 24px, 32px y 48px respectivamente. 
       </p>
       <p>
-        Para lo que se crearon las clases de tamaño <code>.icono-24</code>, <code>.icono-32</code>
-        e <code>.icono-48</code> en donde el número corresponde al tamaño de la fuente en pixeles
+        Para lo que se crearon las clases de tamaño <code>.pictograma-24</code>, <code>.pictograma-32</code>
+        y <code>.pictograma-48</code> en donde el número corresponde al tamaño de la fuente en pixeles
         cuando la tipografía base esta en <code>16px</code>. Están declarados en unidades <code>rem</code>
         para respetar la jerarquia en caso que se incremente o reduzca el tamaño tipográfico general.
       </p>
       <EjemploCodigoVertical
       html='
-      <span class="icono-flkt icono-24"></span>
-      <span class="icono-flkt icono-32"></span>
-      <span class="icono-flkt icono-48"></span>
+      <span class="pictograma-flkt pictograma-24"></span>
+      <span class="pictograma-flkt pictograma-32"></span>
+      <span class="pictograma-flkt pictograma-48"></span>
       '
       />
 
-      <h3 class="m-t-10">Tamaños responsivos</h3>
+      <h3 class="m-t-10">Tamaños especiales responsivos</h3>
       <p>
         Como en el resto de las clases responsivas, se utiliza agregando el subfijo 
         <code>-mov</code> para dispositivos móviles y 
@@ -458,18 +458,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </p>
       <EjemploCodigoVertical
       html='
-      <span class="icono-flkt icono-24-mov icono-48-esc"></span>
+      <span class="pictograma-flkt pictograma-24-mov pictograma-48-esc"></span>
       '
       />
     </div>
 
   </div>
 </template>
-<style>
-  .icono-clase-ejemplo {
-    background: var(--nota-fondo);
-    margin: 8px;
-    padding: 4px 16px;
-    border-radius: 4px;
-  }
-</style>

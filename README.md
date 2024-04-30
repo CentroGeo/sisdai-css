@@ -22,8 +22,7 @@ tiene incluida una versión estable de sisdai-componentes y no requiere ningún 
 
 ### Agrega las tipografías
 
-Esta biblioteca utiliza las tipografías de Montserrat y Atkinson Hyperlegible de Google fonts 
-y una tipografía de íconos publicada a través de Fontastic.
+Esta biblioteca utiliza las tipografías de Montserrat y Atkinson Hyperlegible de Google fonts.
 
 Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en el siguiente orden:
 
@@ -34,7 +33,6 @@ Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
-  <link href="https://file.myfontastic.com/JS4TgqY9L4s8WsKQDkt5qA/icons.css" rel="stylesheet">  
 ```
 
 ### Instala la biblioteca
@@ -117,7 +115,7 @@ El código se encuentra separado por módulos dependiendo del tipo de etiqueta o
 | Controladores | Clase para personalizar los checkbox y radio con label para las visualizaciones                                                                          |
 | Detalle | Estilos de la etiqueta `<details>` `<summary>` utilizados en secciones de preguntas y respuestas                                                                       |
 | Formularios | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                       |
-| Icono | Clases de tamaños para las clases de `.icono-`                                                                                                                         |
+| Pictogramas | Enlace y mapeado de la tipografía Sisdai-Pictogramas  `.pictograma-`                                                                                                                         |
 | Imágenes | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                |
 | Link | Estilos de la etiqueta de hipervínculo `<a>`                                                                                                                           |
 | Listas | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                          |
