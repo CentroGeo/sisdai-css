@@ -13,45 +13,22 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.boton {
-  border: none; // el borde debe ser box shadow para empatar con el alto de los elementos en diseño
-  border-radius: map-get($bordes, '4'); 
-  box-sizing: border-box;
-  font-family: var(--tipografia-familia, 'sans-serif');
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: calc(1em * 1.25);
-  padding: map-get($espaciado, '2') map-get($espaciado, '3');
-  text-decoration: none;
-  text-align: center;
-  display: inline-flex;
-  align-items: center;
-  &:not(:disabled) {
-    cursor: pointer;
-    @include transision;
-  }
-  &.deshabilitado,
-  &:disabled {
-    pointer-events: none;
-  }
-  &:hover,
-  &:focus {
-    text-decoration: none;
-    outline: none;
-  }
+// tamaño 40px margen 8px fontsize 24px
+// tamaño 32px margen 4px fontsize 24px 
+// tamaño 24px margen 4px fontsize 16px
+
+.boton-pictograma {
+  @extend .boton;
+  padding: map-get($espaciado, 'minimo');
+
   .pictograma,
   [class^='pictograma-'],
   [class*=" pictograma-"] {
     display: inline-flex;
     align-items: center;
-    font-size: 1rem; // 16px
+    justify-content: center;
+    font-size: 1.5rem; // 24px
     line-height: 1;
-    padding: 0 0 0 map-get($espaciado, '1');
+    padding: 0;
   }
-}
-button,
-input[type=button],
-input[type=submit],
-input[type=reset] {
-  @extend .boton;
 }

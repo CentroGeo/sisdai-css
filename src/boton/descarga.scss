@@ -13,41 +13,38 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.boton,
-[class^='boton-'],
-[class*=" boton-"] {
-  [class^='icono-'],
-  [class*=" icono-"] {
-    display: inline-flex;
-    align-items: center;
-    padding-left: map-get($espaciado, '1');
-  }
-}
-
-.boton-icono {
+.boton-descarga {
+  @extend .boton;
   @extend .boton-primario;
-  font-size: 1.5rem;
-  line-height: 0;
-  padding: calc(map-get($espaciado, 'minimo'));
-  [class^='icono-'],
-  [class*=" icono-"] {
-    padding-left: 0;
-  }
-
-  &.boton-chico {
+  display: block;
+  border-radius: map-get($bordes, '12');
+  padding: map-get($espaciado, '4');
+  text-align: left;
+  width: 100%;
+  
+  .titulo {
+    display: block;
     font-size: 1rem;
+    line-height: calc(1.25rem);
+    font-weight: 600;
+    margin: 0 0  map-get($espaciado, '1');
   }
-  &.boton-grande {
-    font-size: 2rem;
-  }
-  &.boton-sin-borde{
-    @extend .boton-secundario;
-    border-color:transparent;
-    color:var(--boton-icono-sin-borde-color);
-    &:not(:disabled):hover, &:not(:disabled):focus{
-      border-color:transparent;
-      color:var(--boton-icono-sin-borde-color);
-
+  .descripcion {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 400;
+    .texto {
+      font-size: 1rem;
+      line-height: calc(1.25rem);
+      font-weight: 400;
+      flex: 1;
+      margin: 0;
+    }
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=" pictograma-"] {
+      font-size: 2rem; // 32px
+      padding: 0 0 0 map-get($espaciado, '1');
     }
   }
 }

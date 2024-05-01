@@ -54,6 +54,8 @@
 
 
 // componentes
+@import "componente/boton-flotante";
+
 @import "navegacion/navegacion";
 @import "navegacion/hipervinculos";
 @import "navegacion/botones";
@@ -68,6 +70,7 @@
 
 @import "visualizacion/contenedor.scss";
 @import "visualizacion/tipografia.scss";
+@import "visualizacion/boton.scss";
 @import "controladores/base";
 @import "alertas/base";
 @import "auxiliares/globo-informacion";

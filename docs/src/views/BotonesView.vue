@@ -1,121 +1,604 @@
+<script setup>
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+</script>
 <template>
-  <div>
-    <h1>Botones</h1>
+  <div class="contenedor m-y-maximo">
 
-    <h2 class="m-t-10">base</h2>
-    <p>
-      <button>button</button>
-      <a href="" class="boton">a.boton</a>
-      <input type="button" value="input[button]">
-      <input type="submit" value="input[submit]">
-      <input type="reset" value="input[reset]">
-    </p>
+    <div class="contenedor ancho-lectura">
+      <h1>Botones</h1>
+      <p>
+        Los estilos de botones se aplican a las etiquetas nativas para botones <code>button</code>, 
+        <code>input[button]</code>, <code>input[submit]</code> y <code>input[reset]</code>. 
+        Etiquetas que recomendamos utilizar observando los requerimientos del HTML semántico.
+      </p>
+      <p>
+        Aún así, existe la clase <code>.boton</code> para agregarle el estilo a otro tipo de elemento,
+        al que además deberá agregársele el rol de boton <code>role="button"</code>.
+      </p>
+      <p>
+        Hay que recorder, que por accesibilidad los botones deben ser elementos que hacen una accion,
+        como enviar un formulario o descargar un documento, no se deben utilizar las clases únicamente 
+        por cómo se ven visualmente.
+      </p>
+      <p>
+        De forma predenterminada al poner un botón sin clases extra, tiene el color primario,
+        exceptuando el input reset que tiene el color secundaio, debido a que la acción de limpiar el formulario
+        siempre es una acción alternativa a enviarlo.
+      </p>
+    </div>
 
-    <h2 class="m-t-10">color</h2>
-    <h3>primario</h3>
-    <p>
-      <button class="boton-primario">button.boton-primario</button>
-      <button class="boton-primario" disabled>disabled</button>
-      <a href="" class="boton boton-primario">a.boton.boton-primario</a>
-      <input class="boton-primario" type="button" value="input[button]">
-      <input class="boton-primario" type="submit" value="input[submit]">
-      <input class="boton-primario" type="reset" value="input[reset]">
-    </p>
-    <h3>secundario</h3>
-    <p>
-      <button class="boton-secundario">button.boton-secundario</button>
-      <button class="boton-secundario" disabled>disabled</button>
-      <a href="" class="boton boton-secundario">a.boton.boton-secundario</a>
-      <input class="boton-secundario" type="button" value="input[button]">
-      <input class="boton-secundario" type="submit" value="input[submit]">
-      <input class="boton-secundario" type="reset" value="input[reset]">
-    </p>
-    
-    <h2 class="m-t-10">tamaño</h2>
-    <p>
-      <button class="boton-primario"> boton </button>
-      <button class="boton-primario boton-chico"> boton-chico </button>
-      <button class="boton-primario boton-grande"> boton-grande </button>
-    </p>
-    <p>
-      <button class="boton-secundario"> boton </button>
-      <button class="boton-secundario boton-chico"> boton-chico </button>
-      <button class="boton-secundario boton-grande"> boton-grande </button>
-    </p>
-    
-    <p>
-      <button class="boton-primario"> boton <span class="icono-flecha-derecha"></span></button>
-      <button class="boton-primario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
-      <button class="boton-primario boton-grande"> boton-grande <span class="icono-flecha-derecha"></span></button>
-    </p>
-    <p>
-      <button class="boton-secundario"> boton <span class="icono-flecha-derecha"></span></button>
-      <button class="boton-secundario boton-chico"> boton-chico <span class="icono-flecha-derecha"></span></button>
-      <button class="boton-secundario boton-grande"> boton-grande <span class="icono-flecha-derecha"></span></button>
-    </p>
-    
-    <h2 class="m-t-10">Iconos</h2>
-    <p>boton icono + primario + secundario</p>
-    <p>
-      <button class="boton-icono boton-primario">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-      <button class="boton-icono boton-secundario">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-    </p>
-    <p>boton icono +  -  + chico + grande</p>
-    <p>
-      <button class="boton-icono boton-primario">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-      <button class="boton-icono boton-primario boton-chico">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-      <button class="boton-icono boton-primario boton-grande">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-    </p>
-    <p>boton icono +  sin borde</p>
-    <p>
-      <button class="boton-icono boton-sin-borde ">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-      <button class="boton-icono boton-sin-borde boton-chico">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-      <button class="boton-icono boton-sin-borde boton-grande">
-        <span class="icono-flecha-derecha"></span>
-        <span class="a11y-solo-lectura">Siguiente.</span>
-      </button>
-    </p>
-
-    <h2 class="m-t-10">Compuestos</h2>
-    <div class="grid">
-      <div class="columna-4 columna-8-esc">
-        <h3>boton-descarga</h3>
-        <button class="boton-descarga">
-          <p class="titulo">Descarga de archivos</p>
-          <div class="descripcion">
-            <p class="texto">Tenetur molestias iusto ducimus cumque eligendi quod, porro quos iste facere ut, eum veritatis debitis voluptate nemo sunt obcaecati. </p>
-            <span class="icono-archivo-descargar"></span>
-          </div>
+    <div class="flex">
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button type="button">
+          button
         </button>
-      </div> 
-      <div class="columna-4 columna-8-esc">
-        <h3>boton-info + boton-conahcyt</h3>
-        <button class="boton-info">Mas Info</button>
-        <a class="boton boton-conahcyt" href="https://conacyt.mx/" target="_blank">
-          <img src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conahcyt" height="28px">
-        </a>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input 
+          type="button" 
+          value="input button"
+        />
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input 
+          type="submit" 
+          value="input submit"
+        />
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <input 
+          type="reset" 
+          value="input reset"
+        />
+      </p>
+      '
+      />
       </div>
     </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">
+        Color.<br>
+        Botones primario y secundario
+      </h2>
+      <p>
+        El <code>boton-primario</code>, también conocido como llamado a la acción (<span lang="en">call to action o CTA</span> en inglés) 
+        se utiliza para atraer la atención de la persona usuaria hacia una acción. 
+      </p>
+      <p>
+        El <code>boton-secundario</code> se utiliza cuando se tengan dos o más acciones juntas
+        para restar importancia a acciones como cancelar. 
+      </p>
+    </div>
+    <div class="flex">
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          type="button"
+          class="boton-primario"
+        >
+          botón primario
+        </button>
+      </p>
+      '
+      />
+      </div>
+      
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          type="button"
+          class="boton-primario"
+          disabled
+        >
+          botón primario deshabilitado
+        </button>
+      </p>
+      '
+      />
+      </div>
+    
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          type="button"
+          class="boton-secundario"
+        >
+          botón secundario
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          type="button"
+          class="boton-secundario"
+          disabled
+        >
+          botón secundario deshabilitado
+        </button>
+      </p>
+      '
+      />
+      </div>
+    </div>
+
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">
+        Tamaño.<br>
+        Botón chico, regular y grande
+      </h2>
+      <p>
+        El tamaño del botón no afecta el color, pueden mezclarse ambas clases.
+      </p>
+    </div>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button class="boton-chico"> 
+          boton-chico
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button> 
+          boton
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button class="boton-grande">
+          boton-grande
+        </button>
+      </p>
+      '
+      />
+      </div>
+    </div>
+
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">
+        Botones de texto y pictogramas
+      </h2>
+    </div>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button class="boton-chico"> 
+          boton-chico
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          ></span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button> 
+          boton
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          ></span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button class="boton-grande">
+          boton-grande
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          ></span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+    </div>
+
+
+
+    <div class="contenedor ancho-lectura p-t-10">
+      <h2 class="m-t-10">Botones de pictogramas</h2>
+      <h3>Tamaños<br>Botón chico, regular y grande</h3>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-chico
+          "
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton
+              pictograma chico
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+      
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="boton-pictograma"
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              pictograma
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-grande
+          "
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              pictograma grande
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+
+    </div>
+
+    <div class="contenedor ancho-lectura p-t-10">
+      <h3 class="m-t-6">Colores</h3>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-primario-con-contenedor
+          "
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton
+              primario
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma
+            boton-secundario-con-contenedor
+          "
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              secundario
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-primario-sin-contenedor
+          "
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              primario sin contenedor
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-secundario-sin-contenedor
+          "
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              secundario sin contenedor
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-primario-con-contenedor
+          "
+          disabled
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton
+              primario deshabilitado
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma
+            boton-secundario-con-contenedor
+          "
+          disabled
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              secundario deshabilitado
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-primario-sin-contenedor
+          "
+          disabled
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              primario sin contenedor
+              deshabilitado
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+
+      <div class="columna-4">
+      <EjemploCodigoVertical
+      html='
+      <p>
+        <button 
+          class="
+            boton-pictograma 
+            boton-secundario-sin-contenedor
+          "
+          disabled
+        >
+          <span 
+            class="pictograma-flkt" 
+            aria-hidden="true"
+          />
+          <span 
+            class="a11y-solo-lectura"
+          >
+              Ejemplo boton 
+              secundario sin contenedor
+              deshabilitado
+          </span>
+        </button>
+      </p>
+      '
+      />
+      </div>
+
+    </div>
+
+    <div class="contenedor ancho-lectura p-t-10">
+      <h2 class="m-t-10">Botón de descarga</h2>
+      <p>
+        Es un tipo de boton en bloque que toma el ancho completo
+        del contenedor en donde se encuentre.
+      </p>
+    </div>
+    <div class="flex flex-contenido-centrado">
+
+      <div class="columna-8">
+      <EjemploCodigoVertical
+      html='
+      <div class="m-y-1">
+        <a 
+          class="boton-descarga" 
+          href="./img/grafica-variantes.png"
+          download="nombre-que-tomara-la-descarga"
+        >
+          <span class="titulo">
+            Descarga de archivos
+          </span>
+          <span class="descripcion">
+            <p class="texto">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Odit totam omnis libero nihil amet tenetur rerum modi iusto, 
+              ullam ea eveniet ex nostrum illo. 
+              Atque consectetur beatae voluptates tenetur error.
+            </p>
+            <span 
+            class="pictograma-archivo-descargar" 
+              aria-hidden="true"
+            ></span>
+          </span>
+        </a>
+      </div>
+      '
+      />
+      </div>
+
+    </div>
+
   </div>
 </template>

@@ -180,7 +180,7 @@
     <nav class="navegacion navegacion-gobmx">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
-          <img width="128" height="38" class="nav-logo" src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" alt="Gobierno de México.">
+          <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México.">
         </a>
         <button @click="toggleGob" class="nav-boton-menu" :class="{ 'abierto': showGob }">
           <span class="nav-icono-menu"></span>
@@ -202,7 +202,7 @@
     <nav class="navegacion navegacion-conahcyt navegacion-pegada ">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
-          <img class="nav-logo invertir" width="130" height="38" src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conahcyt.">
+          <img class="nav-logo invertir" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
         </a>
         <button @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>
@@ -250,8 +250,8 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/hipervinculos">Hipervínculos</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/formularios">Formularios</RouterLink></li>
 
@@ -333,6 +333,7 @@
     right: 0;
     align-items: baseline;
     z-index: 1111;
+    gap: 8px;
 
     // display: none;
   }

@@ -1,0 +1,133 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+.boton-primario {
+  background-color: var(--boton-primario-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-primario-borde); // border-color: var(--boton-primario-borde);
+  color: var(--boton-primario-color);
+  &.deshabilitado,
+  &:disabled {
+    background-color: var(--boton-primario-deshabilitado-fondo);
+    box-shadow: inset 0 0 0 1px var(--boton-primario-deshabilitado-borde); // border-color: var(--boton-primario-deshabilitado-borde);
+    color: var(--boton-primario-deshabilitado-color);
+  }
+  &:visited {
+    color: var(--boton-primario-color);
+  }
+  &:not(:disabled):hover {
+    background-color: var(--boton-primario-hover-fondo); 
+    box-shadow: 
+      inset 0 0 0 1px var(--boton-primario-hover-borde), // border-color: var(--boton-primario-hover-borde);
+      3px 3px 4px var(--boton-primario-hover-sombra);
+    color: var(--boton-primario-hover-color);
+  }
+  &:not(:disabled):focus {
+    background-color: var(--boton-primario-focus-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--boton-primario-focus-borde), // border-color: var(--boton-primario-focus-borde);
+      0 0 0 1px var(--boton-primario-focus-contorno),
+      0 0 8px var(--boton-primario-focus-sombra);
+    color: var(--boton-primario-focus-color);
+  }
+}
+button,
+input[type=button]:not(.boton-secundario),
+input[type=submit]:not(.boton-secundario),
+.boton-primario-con-contenedor {
+  @extend .boton-primario;
+}
+
+.boton-secundario {
+  background-color: var(--boton-secundario-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-borde); // border-color: var(--boton-secundario-borde);
+  color: var(--boton-secundario-color);
+  &.deshabilitado,
+  &:disabled {
+    background-color: var(--boton-secundario-deshabilitado-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--boton-secundario-deshabilitado-borde), // border-color: var(--boton-secundario-deshabilitado-borde);
+      3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
+    color: var(--boton-secundario-deshabilitado-color);
+  }
+  &:visited {
+    color: var(--boton-secundario-color);
+  }
+  &:not(:disabled):hover {
+    background-color: var(--boton-secundario-hover-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--boton-secundario-hover-borde), // border-color: var(--boton-secundario-hover-borde);
+      0 0 8px var(--boton-secundario-hover-sombra);
+    color: var(--boton-secundario-hover-color);
+  }
+  &:not(:disabled):focus {
+    background-color: var(--boton-secundario-focus-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--boton-secundario-focus-borde), // border-color: var(--boton-secundario-focus-borde);
+      0 0 8px var(--boton-secundario-focus-sombra);
+    color: var(--boton-secundario-focus-color);
+  }
+}
+.boton-secundario-con-contenedor,
+input[type=reset]:not(.boton-primario) {
+  @extend .boton-secundario;
+}
+
+.boton-primario-sin-contenedor {
+  background: transparent;
+  box-shadow: none;
+  color: var(--boton-primario-sin-contenedor-color);
+  &.deshabilitado,
+  &:disabled {
+    background: transparent;
+    box-shadow: none;
+    color: var(--boton-primario-sin-contenedor-deshabilitado-color);
+  }
+  &:not(:disabled):hover {
+    background-color: var(--boton-primario-sin-contenedor-hover-fondo);
+    box-shadow: none;
+    color: var(--boton-primario-sin-contenedor-hover-color);
+  }
+  &:not(:disabled):focus {
+    background-color: var(--boton-primario-sin-contenedor-focus-fondo);
+    box-shadow: 
+    0 0 0 1px var(--boton-primario-sin-contenedor-focus-borde),
+    0 0 8px var(--boton-primario-sin-contenedor-focus-sombra);
+    color: var(--boton-primario-sin-contenedor-focus-color);
+  }
+}
+
+.boton-secundario-sin-contenedor {
+  background: transparent;
+  box-shadow: none;
+  color: var(--boton-secundario-sin-contenedor-color);
+  &.deshabilitado,
+  &:disabled {
+    background: transparent;
+    box-shadow: none;
+    color: var(--boton-secundario-sin-contenedor-deshabilitado-color);
+  }
+  &:not(:disabled):hover {
+    background-color: var(--boton-secundario-sin-contenedor-hover-fondo);
+    box-shadow: none;
+    color: var(--boton-secundario-sin-contenedor-hover-color);
+  }
+  &:not(:disabled):focus {
+    background-color: var(--boton-secundario-sin-contenedor-focus-fondo);
+    box-shadow: 
+    0 0 0 1px var(--boton-secundario-sin-contenedor-focus-borde),
+    0 0 8px var(--boton-secundario-sin-contenedor-focus-sombra);
+    color: var(--boton-secundario-sin-contenedor-focus-color);
+  }
+}
