@@ -127,7 +127,7 @@
     // color: var(--navegacion-color-active);
   }
   &::after {
-    font-family: "sisdai-iconos" !important;
+    font-family: "sisdai-pictogramas" !important;
     font-size: 1rem;
     height: 0.875rem;
     content: "d";
@@ -149,7 +149,7 @@
       display: none;
     }
     &::before {
-      font-family: "sisdai-iconos" !important;
+      font-family: "sisdai-pictogramas" !important;
       font-size: 1rem;
       content: "d";
       margin-left: calc(map-get($espaciado, "minimo") * -1);

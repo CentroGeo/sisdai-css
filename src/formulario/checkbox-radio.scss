@@ -105,7 +105,7 @@
   background-color: var(--input-fondo);
 }
 [type='checkbox']:checked + label::after {
-  font-family: 'sisdai-iconos';
+  font-family: 'sisdai-pictogramas';
   content: '\6a';
   color: var(--input-color);
   position: absolute;
@@ -119,7 +119,7 @@
 }
 [type='checkbox']:not(:checked).indeterminate + label::after,
 [type='checkbox']:indeterminate + label::after {
-  font-family: 'sisdai-iconos';
+  font-family: 'sisdai-pictogramas';
   content: '\2f';
   color: var(--input-color);
   position: absolute;
