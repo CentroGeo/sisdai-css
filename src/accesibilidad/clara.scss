@@ -257,6 +257,28 @@ body[data-light-theme-eni='true'] {
         --boton-secundario-focus-borde: #005DFF;
         --boton-secundario-focus-color: #364A69;
         --boton-secundario-focus-sombra: #005DFF;
+  
+  // Boton primario sin contenedor
+  --boton-primario-sin-contenedor-color: #0068FF; 
+    --boton-primario-sin-contenedor-deshabilitado-color: #AAAAAA; 
+      --boton-primario-sin-contenedor-hover-fondo: transparent;
+      --boton-primario-sin-contenedor-hover-color: #0058CC;
+      --boton-primario-sin-contenedor-hover-sombra: transparent;
+        --boton-primario-sin-contenedor-focus-fondo: #CCE1FF; 
+        --boton-primario-sin-contenedor-focus-borde: #005DFF;
+        --boton-primario-sin-contenedor-focus-color: #0068FF;
+        --boton-primario-sin-contenedor-focus-sombra: #005DFF;
+  
+  // Boton secundario sin contenedor
+  --boton-secundario-sin-contenedor-color: #364A69; 
+    --boton-secundario-sin-contenedor-deshabilitado-color: #AAAAAA;
+      --boton-secundario-sin-contenedor-hover-fondo: #CCE1FF;
+      --boton-secundario-sin-contenedor-hover-color: #364A69;
+      --boton-secundario-sin-contenedor-hover-sombra: transparent;
+        --boton-secundario-sin-contenedor-focus-fondo: #CCE1FF;
+        --boton-secundario-sin-contenedor-focus-borde: #005DFF;
+        --boton-secundario-sin-contenedor-focus-color: #364A69;
+        --boton-secundario-sin-contenedor-focus-sombra: #005DFF;
 
   --boton-conahcyt-fondo: #DDDDDD;
   
