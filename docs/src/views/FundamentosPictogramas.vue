@@ -4,7 +4,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="contenedor ancho-lectura">
+    <div class="ancho-lectura">
       <h1>Pictogramas</h1>
       <p>
         La mayoría de los pictogramas utilizados en Sisdai se recuperaron de 

@@ -45,35 +45,46 @@ const router = createRouter({
       ]
     },
     {
-      path: '/botones',
-      name: 'botones',
-      component: () => import('../views/BotonesView.vue')
+      path: '/elementos',
+      children: [
+        {
+          path: 'botones',
+          name: 'botones',
+          component: () => import('../views/ElementosBotones.vue')
+        },
+        {
+          path: 'imagenes',
+          name: 'imagenes',
+          component: () => import('../views/ElementosImagenes.vue')
+        },
+        {
+          path: 'formularios',
+          name: 'formularios',
+          component: () => import('../views/ElementosFormularios.vue')
+        },
+        {
+          path: 'hipervinculos',
+          name: 'hipervinculos',
+          component: () => import('../views/ElementosHipervinculos.vue')
+        },
+        {
+          path: 'listas',
+          name: 'listas',
+          component: () => import('../views/ElementosListas.vue')
+        },
+        {
+          path: 'tablas',
+          name: 'tablas',
+          component: () => import('../views/ElementosTablas.vue')
+        },
+        {
+          path: 'detalles',
+          name: 'detalles',
+          component: () => import('../views/ElementosDetalles.vue')
+        },
+      ]
     },
-    {
-      path: '/hipervinculos',
-      name: 'hipervinculos',
-      component: () => import('../views/HipervinculosView.vue')
-    },
-    {
-      path: '/listas',
-      name: 'listas',
-      component: () => import('../views/ListasView.vue')
-    },
-    {
-      path: '/tablas',
-      name: 'tablas',
-      component: () => import('../views/TablasView.vue')
-    },
-    {
-      path: '/detalles',
-      name: 'detalles',
-      component: () => import('../views/DetallesView.vue')
-    },
-    {
-      path: '/imagenes',
-      name: 'imagenes',
-      component: () => import('../views/ImagenesView.vue')
-    },
+    
     {
       path: '/portadas',
       name: 'portadas',
@@ -84,11 +95,7 @@ const router = createRouter({
       name: 'tarjetas',
       component: () => import('../views/TarjetasView.vue')
     },
-    {
-      path: '/formularios',
-      name: 'formularios',
-      component: () => import('../views/FormulariosView.vue')
-    },
+    
     {
       path: '/navegacion',
       name: 'navegacion',

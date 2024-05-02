@@ -247,14 +247,13 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementos')">Elementos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li> -->
-                <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/hipervinculos">Hipervínculos</RouterLink></li> -->
-                <li><RouterLink class="nav-hipervinculo" to="/formularios">Formularios</RouterLink></li>
-
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles</RouterLink></li> --> 
               </ul>
             </li>
 

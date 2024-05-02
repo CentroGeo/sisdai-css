@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contenedor m-y-maximo">
     <h1>Detalles</h1>
     <details open>
       <summary>Details</summary>

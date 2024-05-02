@@ -574,7 +574,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="m-y-1">
         <a 
           class="boton-descarga" 
-          href="./img/grafica-variantes.png"
+          href="../img/grafica-variantes.png"
           download="nombre-que-tomara-la-descarga"
         >
           <span class="titulo">
