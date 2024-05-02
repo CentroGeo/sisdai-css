@@ -14,46 +14,42 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 details {
-  border-radius: map-get($bordes, '4');
-  margin-top: map-get($espaciado, '1');
-  padding: map-get($espaciado, '2');
+  border-bottom: 1px solid var(--borde-color-3);
+  display: block;
   &[open] {
-    background-color: var(--detalle-fondo);
     summary::before {
       transform: rotate(90deg);
       transform-origin: .5em;
     }
   }
+  > :ntd-child(2) {
+    margin-top: map-get($espaciado, '3');
+  }
+  > :last-child {
+    margin-bottom: map-get($espaciado, '3');
+  }
 }
 summary {
+  border: 1px solid transparent;
   border-radius: map-get($bordes, '4');
-  font-size: 1.125em;
-  font-weight: 500;
-  line-height: 1.3em;
-  margin: calc( map-get($espaciado, '2') * -1);
-  padding: map-get($espaciado, '2');
+  display: flex;
   list-style: none;
+  padding: map-get($espaciado, '1') 0;
   cursor: pointer;
   &:hover,
   &:active {
     background-color: var(--detalle-fondo);
-    box-shadow: 0 0 0 transparent;
   }
   &:focus {
-    background-color: transparent;
-    box-shadow: 0 0 8px var(--detalle-focus-sombra);
-    border: 1px solid var(--borde-focus);
+    box-shadow: 0 0 0 1px var(--detalle-focus-sombra), 0 0 8px var(--detalle-focus-sombra);
+    background-color: var(--detalle-fondo);
     outline: none;
   }
   &::before {
-    display: inline-block;  
-    width: map-get($espaciado, '4');
-    line-height: 1.5em;
+    display: inline-flex;  
+    width: map-get($espaciado, '3');
     font-family: "sisdai-pictogramas";
     content: "\64";
     transition: all 0.27s ease;
   }
-}
-details summary > * {
-  display: inline-block;
 }
