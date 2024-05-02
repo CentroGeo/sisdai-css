@@ -365,7 +365,7 @@ kbd {
   color: var(--acciones-correcto-2);
 }
 
-.titulo-base, .subtitulo-capitulo, .titulo-capitulo, .titulo-eni, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+.titulo-base, .subtitulo-capitulo, .titulo-capitulo, .titulo-eni, h6, .h6, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--tipografia-color);
   font-weight: 500;
   margin-top: 24px;
@@ -419,11 +419,11 @@ h5, .h5 {
   }
 }
 
-h6, .h6 {
+h6, .h6, .titulo-tabla {
   font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
-  h6, .h6 {
+  h6, .h6, .titulo-tabla {
     font-size: 1.125rem;
   }
 }
@@ -1081,6 +1081,7 @@ p {
 @media screen and (max-width: 767px) {
   .flex {
     column-gap: 16px;
+    row-gap: 16px;
   }
   .flex > [class^=columna-],
 .flex > [class*=" columna-"] {
@@ -1089,6 +1090,7 @@ p {
 
   .grid {
     column-gap: 16px;
+    row-gap: 16px;
     grid-template-columns: repeat(8, 1fr);
   }
   .grid > [class^=columna-],
@@ -1207,6 +1209,7 @@ p {
 @media screen and (min-width: 768px) {
   .flex {
     column-gap: 24px;
+    row-gap: 24px;
   }
   .flex > [class^=columna-],
 .flex > [class*=" columna-"] {
@@ -1215,6 +1218,7 @@ p {
 
   .grid {
     column-gap: 24px;
+    row-gap: 24px;
     grid-template-columns: repeat(16, 1fr);
   }
   .grid > [class^=columna-],
@@ -6598,14 +6602,18 @@ table {
 }
 table caption {
   text-align: left;
-  padding: 16px 24px 24px;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: 16px 0;
 }
 table th,
 table td {
   padding: 16px 24px;
 }
-table th {
-  padding-top: 0;
+table thead {
+  font-weight: 600;
 }
 table thead tr {
   border-bottom: 1px solid var(--borde-color-2);
@@ -6613,31 +6621,25 @@ table thead tr {
 table tbody tr:nth-child(odd) {
   background-color: var(--tabla-fondo-impar);
 }
+table tfoot {
+  font-weight: 600;
+}
 table tfoot tr {
   background-color: var(--tabla-fondo-notas);
 }
 
 .titulo-tabla {
-  font-size: 1.125em;
-  font-weight: 500;
-  line-height: 1.3em;
-  margin: 24px 16px 16px;
+  margin-bottom: 0;
 }
 
 .tabla-condensada th,
 .tabla-condensada td {
-  padding: 8px 24px;
-}
-.tabla-condensada th {
-  padding-top: 0;
+  padding: 8px 16px;
 }
 
 .tabla-expandida th,
 .tabla-expandida td {
   padding: 24px;
-}
-.tabla-expandida th {
-  padding-top: 0;
 }
 
 ol,

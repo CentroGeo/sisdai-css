@@ -18,16 +18,18 @@ table {
   text-align: left;
   caption {
     text-align: left;
-    padding: map-get($espaciado, '2') map-get($espaciado, '3') map-get($espaciado, '3');
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.25em;
+    font-weight: 400;
+    margin: map-get($espaciado, '2') 0;
   }
   th,
   td {
     padding: map-get($espaciado, '2') map-get($espaciado, '3');
   }
-  th {
-    padding-top: 0;
-  }
   thead {
+    font-weight: 600;
     tr {
       border-bottom: 1px solid var(--borde-color-2);
     }
@@ -38,6 +40,7 @@ table {
     }
   }
   tfoot {
+    font-weight: 600;
     tr {
       background-color: var(--tabla-fondo-notas);
     }
@@ -45,20 +48,15 @@ table {
 }
 
 .titulo-tabla {
-  font-size: 1.125em;
-  font-weight: 500;
-  line-height: 1.3em;
-  margin:  map-get($espaciado, '3')  map-get($espaciado, '2')  map-get($espaciado, '2');
+  @extend .h6;
+  margin-bottom: 0;
 }
 
 
 .tabla-condensada {
   th,
   td {
-    padding: map-get($espaciado, '1') map-get($espaciado, '3');
-  }
-  th {
-    padding-top: 0;
+    padding: map-get($espaciado, '1') map-get($espaciado, '2');
   }
 }
 
@@ -66,8 +64,5 @@ table {
   th,
   td {
     padding: map-get($espaciado, '3');
-  }
-  th {
-    padding-top: 0;
   }
 }
