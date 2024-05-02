@@ -9276,85 +9276,63 @@ ol + hr {
   color: var(--menu-lateral-accion);
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 9999;
+dialog[open]::backdrop {
+  background-color: #141414;
+  opacity: 0.75;
 }
-@media (max-width: 768px) {
-  .modal {
-    top: inherit;
-  }
-}
-.modal.overflow-x-y {
-  top: 0;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.modal-fondo-trasero {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
-.modal-contenedor {
+
+dialog.modal {
+  color: var(--tipografia-color);
   background-color: var(--pagina-fondo);
-  min-height: 0px;
-  width: fit-content;
-  max-width: 462px;
-  position: relative;
-  margin: 120px auto;
   border-radius: 20px;
+  margin: 120px auto;
   padding: 24px;
-  z-index: 2;
+  border: none;
+  max-width: 462px;
 }
 @media (max-width: 768px) {
-  .modal-contenedor.chico {
+  dialog.modal.chico {
     width: 100%;
     margin: inherit;
     padding: 24px 24px 40px;
   }
 }
-.modal-contenedor.grande {
+dialog.modal.grande {
   width: 90% !important;
   max-width: 1110px;
 }
 @media (max-width: 768px) {
-  .modal-contenedor.grande {
+  dialog.modal.grande {
     width: 100%;
     margin: inherit;
     padding: 24px 24px 40px;
   }
 }
-.modal-contenedor.pantalla-completa {
+dialog.modal.pantalla-completa {
   width: 100%;
   max-width: 100%;
   height: 100%;
   margin: 0px;
   border-radius: 0px;
 }
-.modal-contenedor .modal-cerrar {
+dialog.modal .modal-contenedor2 {
+  background-color: var(--pagina-fondo);
+}
+dialog.modal .modal-contenedor2 .modal-cerrar {
   color: var(--tipografia-color);
   float: right;
   margin-right: 0;
   margin-left: 8px;
 }
-.modal-cuerpo :first-child {
+dialog.modal .modal-contenedor2-cuerpo :first-child {
   margin-top: 0;
 }
-.modal-cuerpo :last-child {
+dialog.modal .modal-contenedor2-cuerpo :last-child {
   margin-bottom: 0;
 }
-
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 0.3s;
+  transition: opacity 10.3s;
 }
 
 .fade-enter,
