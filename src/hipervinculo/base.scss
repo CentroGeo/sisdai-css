@@ -12,7 +12,6 @@
 
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
 a,
 .hipervinculo {
   background-color: transparent;
@@ -25,11 +24,14 @@ a,
   font-weight: 500;
   line-height: inherit;
   padding: 0;
-  // text-decoration: underline;
   text-decoration: none;
   text-align: left;
-  cursor: pointer;
-  transition: all .27s ease-in-out;
+  display: inline;
+    vertical-align: baseline;
+  &:not(:disabled) {
+    cursor: pointer;
+    @include transision;
+  }
   &:disabled {
     background-color: transparent;
     color: var(--hipervinculo-deshabilitado-color);
@@ -42,17 +44,47 @@ a,
     background-color: transparent;
     color: var(--hipervinculo-hover-color);
     text-decoration: underline;
+    box-shadow: none;
   }
   &:focus-visible {
     background-color: transparent;
     color: var(--hipervinculo-focus-color);
     outline: 2px dashed var(--hipervinculo-focus-sombra);
+    box-shadow: none;
+  }
+
+  .pictograma,
+  [class^='pictograma-'],
+  [class*=" pictograma-"] {
+    display: inline;
+    vertical-align: baseline;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 0;
   }
 }
 
-button.hipervinculo {
-  &:not(:last-child) {
-    margin-right: inherit;
+// para quitarle los colores por defecto a los botones que se utilicen con el estilo de hipervinculo
+.hipervinculo {
+  &:disabled {
+    background-color: transparent !important;
+    color: var(--hipervinculo-deshabilitado-color) !important;
+    box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra) !important;
+  }
+  &:visited {
+    color: var(--hipervinculo-visitado) !important;
+  }
+  &:hover {
+    background-color: transparent !important;
+    color: var(--hipervinculo-hover-color) !important;
+    text-decoration: underline !important;
+    box-shadow: none !important;
+  }
+  &:focus-visible {
+    background-color: transparent !important;
+    color: var(--hipervinculo-focus-color) !important;
+    outline: 2px dashed var(--hipervinculo-focus-sombra) !important;
+    box-shadow: none !important;
   }
 }
 

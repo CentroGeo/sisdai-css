@@ -19,11 +19,11 @@
   font-weight: 400;
   text-decoration: none;
   &:visited {
-    color: var(--color-gobmx-claro-1);
+    color: var(--color-gobmx-claro-1) !important;
   }
   &:hover,
   &:focus {
-    color: var(--color-gobmx-claro-2);
+    color: var(--color-gobmx-claro-2) !important;
   }
 }
 
@@ -33,12 +33,12 @@
   font-weight: 400;
   text-decoration: none;
   &:visited {
-    color: var(--color-conahcyt-claro-1);
+    color: var(--color-conahcyt-claro-1) !important;
   }
   &:hover {
-    color: var(--color-conahcyt-acento);
+    color: var(--color-conahcyt-acento) !important;
   }
   &:focus {
-    color: var(--color-conahcyt-acento);
+    color: var(--color-conahcyt-acento) !important;
   }
 }
