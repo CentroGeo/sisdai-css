@@ -108,7 +108,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     </div>
 
-    <h2 class="m-t-10">Estados deshabilitados</h2>
     <div class="flex flex-contenido-centrado">
     <div class="columna-4 m-t-3">
     <EjemploCodigoVertical
