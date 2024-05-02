@@ -157,4 +157,27 @@ $columnas: (
   // para que el menu de accesibilidad las pueda cambiar fácilmente
   --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
+
+  // color institucional
+  @each $id, $valor in $color-gobmx {
+    --color-gobmx-#{$id}: #{$valor};
+  }
+
+  @each $id, $valor in $color-conahcyt {
+    --color-conahcyt-#{$id}: #{$valor};
+  }
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+
+  // TODO:
+  // preguntar quien utiliza estas variables y pa que y como y onde.. 
+  // porque quizas podrian utilizarse directo las variables de sass
+  // reticula
+  @each $id, $valor in $espaciado {
+    --espaciado-#{$id}: #{$valor};
+  }
+  // breakpoints
+  @each $id, $valor in $breakpoints {
+    --breakpoints-#{$id}: #{$valor};
+  }
+  --navegacion-breakpoint: 768px;
 }
