@@ -31,7 +31,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </p>
 
       <p>
-        El área de texto además tiene un alto mínimo de <code>120px</code>, 
+        El área de texto <code>&lt;textarea/></code> además tiene un alto mínimo de <code>120px</code>, 
         ésta altura se puede incrementar con el atributo <code>rows</code> nativo del área de texto.
       </p>
 
@@ -40,8 +40,8 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </p>
     </div>
 
-    <div class="flex">
-    <div class="columna m-t-3">
+    <div class="flex flex-contenido-centrado">
+    <div class="columna-4 m-t-3">
     <EjemploCodigoVertical
       html='
       <label for="campo">
@@ -61,7 +61,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       '
     />
     </div>
-    <div class="columna m-t-3">
+    <div class="columna-4 m-t-3">
     <EjemploCodigoVertical
       html='
         <label for="selector">
@@ -87,7 +87,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         '
     />
     </div>
-    <div class="columna m-t-3">
+    <div class="columna-4 m-t-3">
     <EjemploCodigoVertical
       html='
         <label for="areadetexto">
@@ -109,8 +109,8 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
 
     <h2 class="m-t-10">Estados deshabilitados</h2>
-    <div class="flex">
-    <div class="columna m-t-3">
+    <div class="flex flex-contenido-centrado">
+    <div class="columna-4 m-t-3">
     <EjemploCodigoVertical
       html='
       <label for="campod">
@@ -126,7 +126,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       '
     />
     </div>
-    <div class="columna m-t-3">
+    <div class="columna-4 m-t-3">
     <EjemploCodigoVertical
       html='
         <label for="selectord">
@@ -140,7 +140,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         '
     />
     </div>
-    <div class="columna m-t-3">
+    <div class="columna-4 m-t-3">
     <EjemploCodigoVertical
       html='
         <label for="areadetextod">
