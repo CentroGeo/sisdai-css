@@ -170,28 +170,6 @@ body[data-light-theme-sisdai='true'] {
       --navegacion-fondo-active: #00f;
       --navegacion-sombra-active: 0 0 0 0;
       --navegacion-color-active: #fff;
-
-  // Color
-  @each $id, $valor in $color-gobmx {
-    --color-gobmx-#{$id}: #{$valor};
-  }
-
-  @each $id, $valor in $color-conahcyt {
-    --color-conahcyt-#{$id}: #{$valor};
-  }
-  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
-
-  // Reticula
-  @each $id, $valor in $espaciado {
-    --espaciado-#{$id}: #{$valor};
-  }
-
-  // Breakpoints
-  @each $id, $valor in $breakpoints {
-    --breakpoints-#{$id}: #{$valor};
-  }
-  --navegacion-breakpoint: 768px;
-
 }
   
 // Variables de color claro Eni
@@ -393,28 +371,6 @@ body[data-light-theme-eni='true'] {
       --navegacion-fondo-active: #00f;
       --navegacion-sombra-active: 0 0 0 0;
       --navegacion-color-active: #fff;
-
-  // Color
-  @each $id, $valor in $color-gobmx {
-    --color-gobmx-#{$id}: #{$valor};
-  }
-
-  @each $id, $valor in $color-conahcyt {
-    --color-conahcyt-#{$id}: #{$valor};
-  }
-  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
-
-  // Reticula
-  @each $id, $valor in $espaciado {
-    --espaciado-#{$id}: #{$valor};
-  }
-
-  // Breakpoints
-  @each $id, $valor in $breakpoints {
-    --breakpoints-#{$id}: #{$valor};
-  }
-  --navegacion-breakpoint: 768px;
-
 }
 
 // Variables de color claro Gema
@@ -593,26 +549,4 @@ body[data-light-theme-gema='true']  {
       --navegacion-fondo-active: #00f;
       --navegacion-sombra-active: 0 0 0 0;
       --navegacion-color-active: #fff;
-
-  // Color
-  @each $id, $valor in $color-gobmx {
-    --color-gobmx-#{$id}: #{$valor};
-  }
-
-  @each $id, $valor in $color-conahcyt {
-    --color-conahcyt-#{$id}: #{$valor};
-  }
-  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
-
-  // Reticula
-  @each $id, $valor in $espaciado {
-    --espaciado-#{$id}: #{$valor};
-  }
-
-  // Breakpoints
-  @each $id, $valor in $breakpoints {
-    --breakpoints-#{$id}: #{$valor};
-  }
-  --navegacion-breakpoint: 768px;
-
 }

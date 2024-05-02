@@ -13,7 +13,8 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </p>
       <p>
         Aún así, existe la clase <code>.boton</code> para agregarle el estilo a otro tipo de elemento,
-        al que además deberá agregársele el rol de boton <code>role="button"</code>.
+        al que además deberá agregársele el rol de boton <code>role="button"</code> y en el que se 
+        debe cuidar mantener la funcionalidad de un botón a través de funciones de javascript.
       </p>
       <p>
         Hay que recorder, que por accesibilidad los botones deben ser elementos que hacen una accion,
