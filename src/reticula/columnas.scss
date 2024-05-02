@@ -46,6 +46,7 @@
   @include mediaquery($dispositivo) {
     .flex {
       column-gap: map-get($configuracion, 'espaciado');
+      row-gap: map-get($configuracion, 'espaciado');
       > [class^='columna-'],
       > [class*=" columna-"] {
         flex: 1 1;
@@ -53,6 +54,7 @@
     }
     .grid {
       column-gap: map-get($configuracion, 'espaciado');
+      row-gap: map-get($configuracion, 'espaciado');
       grid-template-columns: repeat(map-get($configuracion, 'columnas'), 1fr);
       > [class^='columna-'],
       > [class*=" columna-"] {
