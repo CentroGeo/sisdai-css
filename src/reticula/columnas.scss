@@ -14,6 +14,7 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .flex {
+  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
 }
@@ -37,26 +38,17 @@
 }
 
 .grid {
+  box-sizing: border-box;
   display: grid;
 }
 
 @each $dispositivo, $configuracion in $columnas {
   @include mediaquery($dispositivo) {
     .flex {
-      margin-right: calc(map-get($configuracion, 'espaciado') * -.5);
-      margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
-      > [class^='columna'],
-      > [class*=" columna"] {
-        flex: 1;
-        margin-left: map-get($configuracion, 'espaciado')*.5;
-        margin-right: map-get($configuracion, 'espaciado')*.5;
-      }
+      column-gap: map-get($configuracion, 'espaciado');
       > [class^='columna-'],
       > [class*=" columna-"] {
-        flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
-        max-width: calc(100% - map-get($configuracion, 'espaciado'));
-        margin-left: map-get($configuracion, 'espaciado')*.5;
-        margin-right: map-get($configuracion, 'espaciado')*.5;
+        flex: 1 1;
       }
     }
     .grid {
@@ -72,8 +64,8 @@
     }
     @for $i from 1 through map-get($configuracion, 'columnas') {
       .flex > .columna-#{$i} {
-        flex-basis: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
-        max-width: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
+        flex: 1 1 calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')) - 1px);
+        max-width: calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')));
       }
       .grid > .columna-#{$i} {
         grid-column: span $i;
@@ -89,10 +81,8 @@
   @include mediaquery($dispositivo) {
     @for $i from 1 through map-get($configuracion, 'columnas') {
       .flex > .columna-#{$i}-#{$dispositivo} {
-        flex-basis: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
-        max-width: calc( ( $i / map-get($configuracion, 'columnas') * 100%) - map-get($configuracion, 'espaciado'));
-        margin-left: map-get($configuracion, 'espaciado')*.5;
-        margin-right: map-get($configuracion, 'espaciado')*.5;
+        flex: 1 1 calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')) - 1px);
+        max-width: calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')));
       }
       .grid > .columna-#{$i}-#{$dispositivo} {
         grid-column: span $i;

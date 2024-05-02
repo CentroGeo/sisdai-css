@@ -1044,6 +1044,7 @@ p {
 }
 
 .flex {
+  box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
 }
@@ -1073,26 +1074,17 @@ p {
 }
 
 .grid {
+  box-sizing: border-box;
   display: grid;
 }
 
 @media screen and (max-width: 767px) {
   .flex {
-    margin-right: -8px;
-    margin-left: -8px;
-  }
-  .flex > [class^=columna],
-.flex > [class*=" columna"] {
-    flex: 1;
-    margin-left: 8px;
-    margin-right: 8px;
+    column-gap: 16px;
   }
   .flex > [class^=columna-],
 .flex > [class*=" columna-"] {
-    flex-basis: calc(100% - 16px);
-    max-width: calc(100% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1;
   }
 
   .grid {
@@ -1109,8 +1101,8 @@ p {
   }
 
   .flex > .columna-1 {
-    flex-basis: calc(12.5% - 16px);
-    max-width: calc(12.5% - 16px);
+    flex: 1 1 calc(12.5% - 16px + 2px - 1px);
+    max-width: calc(12.5% - 16px + 2px);
   }
 
   .grid > .columna-1 {
@@ -1122,8 +1114,8 @@ p {
   }
 
   .flex > .columna-2 {
-    flex-basis: calc(25% - 16px);
-    max-width: calc(25% - 16px);
+    flex: 1 1 calc(25% - 16px + 4px - 1px);
+    max-width: calc(25% - 16px + 4px);
   }
 
   .grid > .columna-2 {
@@ -1135,8 +1127,8 @@ p {
   }
 
   .flex > .columna-3 {
-    flex-basis: calc(37.5% - 16px);
-    max-width: calc(37.5% - 16px);
+    flex: 1 1 calc(37.5% - 16px + 6px - 1px);
+    max-width: calc(37.5% - 16px + 6px);
   }
 
   .grid > .columna-3 {
@@ -1148,8 +1140,8 @@ p {
   }
 
   .flex > .columna-4 {
-    flex-basis: calc(50% - 16px);
-    max-width: calc(50% - 16px);
+    flex: 1 1 calc(50% - 16px + 8px - 1px);
+    max-width: calc(50% - 16px + 8px);
   }
 
   .grid > .columna-4 {
@@ -1161,8 +1153,8 @@ p {
   }
 
   .flex > .columna-5 {
-    flex-basis: calc(62.5% - 16px);
-    max-width: calc(62.5% - 16px);
+    flex: 1 1 calc(62.5% - 16px + 10px - 1px);
+    max-width: calc(62.5% - 16px + 10px);
   }
 
   .grid > .columna-5 {
@@ -1174,8 +1166,8 @@ p {
   }
 
   .flex > .columna-6 {
-    flex-basis: calc(75% - 16px);
-    max-width: calc(75% - 16px);
+    flex: 1 1 calc(75% - 16px + 12px - 1px);
+    max-width: calc(75% - 16px + 12px);
   }
 
   .grid > .columna-6 {
@@ -1187,8 +1179,8 @@ p {
   }
 
   .flex > .columna-7 {
-    flex-basis: calc(87.5% - 16px);
-    max-width: calc(87.5% - 16px);
+    flex: 1 1 calc(87.5% - 16px + 14px - 1px);
+    max-width: calc(87.5% - 16px + 14px);
   }
 
   .grid > .columna-7 {
@@ -1200,8 +1192,8 @@ p {
   }
 
   .flex > .columna-8 {
-    flex-basis: calc(100% - 16px);
-    max-width: calc(100% - 16px);
+    flex: 1 1 calc(100% - 16px + 16px - 1px);
+    max-width: calc(100% - 16px + 16px);
   }
 
   .grid > .columna-8 {
@@ -1214,21 +1206,11 @@ p {
 }
 @media screen and (min-width: 768px) {
   .flex {
-    margin-right: -12px;
-    margin-left: -12px;
-  }
-  .flex > [class^=columna],
-.flex > [class*=" columna"] {
-    flex: 1;
-    margin-left: 12px;
-    margin-right: 12px;
+    column-gap: 24px;
   }
   .flex > [class^=columna-],
 .flex > [class*=" columna-"] {
-    flex-basis: calc(100% - 24px);
-    max-width: calc(100% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1;
   }
 
   .grid {
@@ -1245,8 +1227,8 @@ p {
   }
 
   .flex > .columna-1 {
-    flex-basis: calc(6.25% - 24px);
-    max-width: calc(6.25% - 24px);
+    flex: 1 1 calc(6.25% - 24px + 1.5px - 1px);
+    max-width: calc(6.25% - 24px + 1.5px);
   }
 
   .grid > .columna-1 {
@@ -1258,8 +1240,8 @@ p {
   }
 
   .flex > .columna-2 {
-    flex-basis: calc(12.5% - 24px);
-    max-width: calc(12.5% - 24px);
+    flex: 1 1 calc(12.5% - 24px + 3px - 1px);
+    max-width: calc(12.5% - 24px + 3px);
   }
 
   .grid > .columna-2 {
@@ -1271,8 +1253,8 @@ p {
   }
 
   .flex > .columna-3 {
-    flex-basis: calc(18.75% - 24px);
-    max-width: calc(18.75% - 24px);
+    flex: 1 1 calc(18.75% - 24px + 4.5px - 1px);
+    max-width: calc(18.75% - 24px + 4.5px);
   }
 
   .grid > .columna-3 {
@@ -1284,8 +1266,8 @@ p {
   }
 
   .flex > .columna-4 {
-    flex-basis: calc(25% - 24px);
-    max-width: calc(25% - 24px);
+    flex: 1 1 calc(25% - 24px + 6px - 1px);
+    max-width: calc(25% - 24px + 6px);
   }
 
   .grid > .columna-4 {
@@ -1297,8 +1279,8 @@ p {
   }
 
   .flex > .columna-5 {
-    flex-basis: calc(31.25% - 24px);
-    max-width: calc(31.25% - 24px);
+    flex: 1 1 calc(31.25% - 24px + 7.5px - 1px);
+    max-width: calc(31.25% - 24px + 7.5px);
   }
 
   .grid > .columna-5 {
@@ -1310,8 +1292,8 @@ p {
   }
 
   .flex > .columna-6 {
-    flex-basis: calc(37.5% - 24px);
-    max-width: calc(37.5% - 24px);
+    flex: 1 1 calc(37.5% - 24px + 9px - 1px);
+    max-width: calc(37.5% - 24px + 9px);
   }
 
   .grid > .columna-6 {
@@ -1323,8 +1305,8 @@ p {
   }
 
   .flex > .columna-7 {
-    flex-basis: calc(43.75% - 24px);
-    max-width: calc(43.75% - 24px);
+    flex: 1 1 calc(43.75% - 24px + 10.5px - 1px);
+    max-width: calc(43.75% - 24px + 10.5px);
   }
 
   .grid > .columna-7 {
@@ -1336,8 +1318,8 @@ p {
   }
 
   .flex > .columna-8 {
-    flex-basis: calc(50% - 24px);
-    max-width: calc(50% - 24px);
+    flex: 1 1 calc(50% - 24px + 12px - 1px);
+    max-width: calc(50% - 24px + 12px);
   }
 
   .grid > .columna-8 {
@@ -1349,8 +1331,8 @@ p {
   }
 
   .flex > .columna-9 {
-    flex-basis: calc(56.25% - 24px);
-    max-width: calc(56.25% - 24px);
+    flex: 1 1 calc(56.25% - 24px + 13.5px - 1px);
+    max-width: calc(56.25% - 24px + 13.5px);
   }
 
   .grid > .columna-9 {
@@ -1362,8 +1344,8 @@ p {
   }
 
   .flex > .columna-10 {
-    flex-basis: calc(62.5% - 24px);
-    max-width: calc(62.5% - 24px);
+    flex: 1 1 calc(62.5% - 24px + 15px - 1px);
+    max-width: calc(62.5% - 24px + 15px);
   }
 
   .grid > .columna-10 {
@@ -1375,8 +1357,8 @@ p {
   }
 
   .flex > .columna-11 {
-    flex-basis: calc(68.75% - 24px);
-    max-width: calc(68.75% - 24px);
+    flex: 1 1 calc(68.75% - 24px + 16.5px - 1px);
+    max-width: calc(68.75% - 24px + 16.5px);
   }
 
   .grid > .columna-11 {
@@ -1388,8 +1370,8 @@ p {
   }
 
   .flex > .columna-12 {
-    flex-basis: calc(75% - 24px);
-    max-width: calc(75% - 24px);
+    flex: 1 1 calc(75% - 24px + 18px - 1px);
+    max-width: calc(75% - 24px + 18px);
   }
 
   .grid > .columna-12 {
@@ -1401,8 +1383,8 @@ p {
   }
 
   .flex > .columna-13 {
-    flex-basis: calc(81.25% - 24px);
-    max-width: calc(81.25% - 24px);
+    flex: 1 1 calc(81.25% - 24px + 19.5px - 1px);
+    max-width: calc(81.25% - 24px + 19.5px);
   }
 
   .grid > .columna-13 {
@@ -1414,8 +1396,8 @@ p {
   }
 
   .flex > .columna-14 {
-    flex-basis: calc(87.5% - 24px);
-    max-width: calc(87.5% - 24px);
+    flex: 1 1 calc(87.5% - 24px + 21px - 1px);
+    max-width: calc(87.5% - 24px + 21px);
   }
 
   .grid > .columna-14 {
@@ -1427,8 +1409,8 @@ p {
   }
 
   .flex > .columna-15 {
-    flex-basis: calc(93.75% - 24px);
-    max-width: calc(93.75% - 24px);
+    flex: 1 1 calc(93.75% - 24px + 22.5px - 1px);
+    max-width: calc(93.75% - 24px + 22.5px);
   }
 
   .grid > .columna-15 {
@@ -1440,8 +1422,8 @@ p {
   }
 
   .flex > .columna-16 {
-    flex-basis: calc(100% - 24px);
-    max-width: calc(100% - 24px);
+    flex: 1 1 calc(100% - 24px + 24px - 1px);
+    max-width: calc(100% - 24px + 24px);
   }
 
   .grid > .columna-16 {
@@ -1454,10 +1436,8 @@ p {
 }
 @media screen and (max-width: 767px) {
   .flex > .columna-1-mov {
-    flex-basis: calc(12.5% - 16px);
-    max-width: calc(12.5% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(12.5% - 16px + 2px - 1px);
+    max-width: calc(12.5% - 16px + 2px);
   }
 
   .grid > .columna-1-mov {
@@ -1469,10 +1449,8 @@ p {
   }
 
   .flex > .columna-2-mov {
-    flex-basis: calc(25% - 16px);
-    max-width: calc(25% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(25% - 16px + 4px - 1px);
+    max-width: calc(25% - 16px + 4px);
   }
 
   .grid > .columna-2-mov {
@@ -1484,10 +1462,8 @@ p {
   }
 
   .flex > .columna-3-mov {
-    flex-basis: calc(37.5% - 16px);
-    max-width: calc(37.5% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(37.5% - 16px + 6px - 1px);
+    max-width: calc(37.5% - 16px + 6px);
   }
 
   .grid > .columna-3-mov {
@@ -1499,10 +1475,8 @@ p {
   }
 
   .flex > .columna-4-mov {
-    flex-basis: calc(50% - 16px);
-    max-width: calc(50% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(50% - 16px + 8px - 1px);
+    max-width: calc(50% - 16px + 8px);
   }
 
   .grid > .columna-4-mov {
@@ -1514,10 +1488,8 @@ p {
   }
 
   .flex > .columna-5-mov {
-    flex-basis: calc(62.5% - 16px);
-    max-width: calc(62.5% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(62.5% - 16px + 10px - 1px);
+    max-width: calc(62.5% - 16px + 10px);
   }
 
   .grid > .columna-5-mov {
@@ -1529,10 +1501,8 @@ p {
   }
 
   .flex > .columna-6-mov {
-    flex-basis: calc(75% - 16px);
-    max-width: calc(75% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(75% - 16px + 12px - 1px);
+    max-width: calc(75% - 16px + 12px);
   }
 
   .grid > .columna-6-mov {
@@ -1544,10 +1514,8 @@ p {
   }
 
   .flex > .columna-7-mov {
-    flex-basis: calc(87.5% - 16px);
-    max-width: calc(87.5% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(87.5% - 16px + 14px - 1px);
+    max-width: calc(87.5% - 16px + 14px);
   }
 
   .grid > .columna-7-mov {
@@ -1559,10 +1527,8 @@ p {
   }
 
   .flex > .columna-8-mov {
-    flex-basis: calc(100% - 16px);
-    max-width: calc(100% - 16px);
-    margin-left: 8px;
-    margin-right: 8px;
+    flex: 1 1 calc(100% - 16px + 16px - 1px);
+    max-width: calc(100% - 16px + 16px);
   }
 
   .grid > .columna-8-mov {
@@ -1575,10 +1541,8 @@ p {
 }
 @media screen and (min-width: 768px) {
   .flex > .columna-1-esc {
-    flex-basis: calc(6.25% - 24px);
-    max-width: calc(6.25% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(6.25% - 24px + 1.5px - 1px);
+    max-width: calc(6.25% - 24px + 1.5px);
   }
 
   .grid > .columna-1-esc {
@@ -1590,10 +1554,8 @@ p {
   }
 
   .flex > .columna-2-esc {
-    flex-basis: calc(12.5% - 24px);
-    max-width: calc(12.5% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(12.5% - 24px + 3px - 1px);
+    max-width: calc(12.5% - 24px + 3px);
   }
 
   .grid > .columna-2-esc {
@@ -1605,10 +1567,8 @@ p {
   }
 
   .flex > .columna-3-esc {
-    flex-basis: calc(18.75% - 24px);
-    max-width: calc(18.75% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(18.75% - 24px + 4.5px - 1px);
+    max-width: calc(18.75% - 24px + 4.5px);
   }
 
   .grid > .columna-3-esc {
@@ -1620,10 +1580,8 @@ p {
   }
 
   .flex > .columna-4-esc {
-    flex-basis: calc(25% - 24px);
-    max-width: calc(25% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(25% - 24px + 6px - 1px);
+    max-width: calc(25% - 24px + 6px);
   }
 
   .grid > .columna-4-esc {
@@ -1635,10 +1593,8 @@ p {
   }
 
   .flex > .columna-5-esc {
-    flex-basis: calc(31.25% - 24px);
-    max-width: calc(31.25% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(31.25% - 24px + 7.5px - 1px);
+    max-width: calc(31.25% - 24px + 7.5px);
   }
 
   .grid > .columna-5-esc {
@@ -1650,10 +1606,8 @@ p {
   }
 
   .flex > .columna-6-esc {
-    flex-basis: calc(37.5% - 24px);
-    max-width: calc(37.5% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(37.5% - 24px + 9px - 1px);
+    max-width: calc(37.5% - 24px + 9px);
   }
 
   .grid > .columna-6-esc {
@@ -1665,10 +1619,8 @@ p {
   }
 
   .flex > .columna-7-esc {
-    flex-basis: calc(43.75% - 24px);
-    max-width: calc(43.75% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(43.75% - 24px + 10.5px - 1px);
+    max-width: calc(43.75% - 24px + 10.5px);
   }
 
   .grid > .columna-7-esc {
@@ -1680,10 +1632,8 @@ p {
   }
 
   .flex > .columna-8-esc {
-    flex-basis: calc(50% - 24px);
-    max-width: calc(50% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(50% - 24px + 12px - 1px);
+    max-width: calc(50% - 24px + 12px);
   }
 
   .grid > .columna-8-esc {
@@ -1695,10 +1645,8 @@ p {
   }
 
   .flex > .columna-9-esc {
-    flex-basis: calc(56.25% - 24px);
-    max-width: calc(56.25% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(56.25% - 24px + 13.5px - 1px);
+    max-width: calc(56.25% - 24px + 13.5px);
   }
 
   .grid > .columna-9-esc {
@@ -1710,10 +1658,8 @@ p {
   }
 
   .flex > .columna-10-esc {
-    flex-basis: calc(62.5% - 24px);
-    max-width: calc(62.5% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(62.5% - 24px + 15px - 1px);
+    max-width: calc(62.5% - 24px + 15px);
   }
 
   .grid > .columna-10-esc {
@@ -1725,10 +1671,8 @@ p {
   }
 
   .flex > .columna-11-esc {
-    flex-basis: calc(68.75% - 24px);
-    max-width: calc(68.75% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(68.75% - 24px + 16.5px - 1px);
+    max-width: calc(68.75% - 24px + 16.5px);
   }
 
   .grid > .columna-11-esc {
@@ -1740,10 +1684,8 @@ p {
   }
 
   .flex > .columna-12-esc {
-    flex-basis: calc(75% - 24px);
-    max-width: calc(75% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(75% - 24px + 18px - 1px);
+    max-width: calc(75% - 24px + 18px);
   }
 
   .grid > .columna-12-esc {
@@ -1755,10 +1697,8 @@ p {
   }
 
   .flex > .columna-13-esc {
-    flex-basis: calc(81.25% - 24px);
-    max-width: calc(81.25% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(81.25% - 24px + 19.5px - 1px);
+    max-width: calc(81.25% - 24px + 19.5px);
   }
 
   .grid > .columna-13-esc {
@@ -1770,10 +1710,8 @@ p {
   }
 
   .flex > .columna-14-esc {
-    flex-basis: calc(87.5% - 24px);
-    max-width: calc(87.5% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(87.5% - 24px + 21px - 1px);
+    max-width: calc(87.5% - 24px + 21px);
   }
 
   .grid > .columna-14-esc {
@@ -1785,10 +1723,8 @@ p {
   }
 
   .flex > .columna-15-esc {
-    flex-basis: calc(93.75% - 24px);
-    max-width: calc(93.75% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(93.75% - 24px + 22.5px - 1px);
+    max-width: calc(93.75% - 24px + 22.5px);
   }
 
   .grid > .columna-15-esc {
@@ -1800,10 +1736,8 @@ p {
   }
 
   .flex > .columna-16-esc {
-    flex-basis: calc(100% - 24px);
-    max-width: calc(100% - 24px);
-    margin-left: 12px;
-    margin-right: 12px;
+    flex: 1 1 calc(100% - 24px + 24px - 1px);
+    max-width: calc(100% - 24px + 24px);
   }
 
   .grid > .columna-16-esc {
@@ -6658,6 +6592,54 @@ summary::before {
   transition: all 0.27s ease;
 }
 
+table {
+  border-collapse: collapse;
+  text-align: left;
+}
+table caption {
+  text-align: left;
+  padding: 16px 24px 24px;
+}
+table th,
+table td {
+  padding: 16px 24px;
+}
+table th {
+  padding-top: 0;
+}
+table thead tr {
+  border-bottom: 1px solid var(--borde-color-2);
+}
+table tbody tr:nth-child(odd) {
+  background-color: var(--tabla-fondo-impar);
+}
+table tfoot tr {
+  background-color: var(--tabla-fondo-notas);
+}
+
+.titulo-tabla {
+  font-size: 1.125em;
+  font-weight: 500;
+  line-height: 1.3em;
+  margin: 24px 16px 16px;
+}
+
+.tabla-condensada th,
+.tabla-condensada td {
+  padding: 8px 24px;
+}
+.tabla-condensada th {
+  padding-top: 0;
+}
+
+.tabla-expandida th,
+.tabla-expandida td {
+  padding: 24px;
+}
+.tabla-expandida th {
+  padding-top: 0;
+}
+
 ol,
 ul,
 dl {
@@ -6812,54 +6794,6 @@ dl dd {
 }
 .lista-redes-sociales li {
   margin: 0;
-}
-
-table {
-  border-collapse: collapse;
-  text-align: left;
-}
-table caption {
-  text-align: left;
-  padding: 16px 24px 24px;
-}
-table th,
-table td {
-  padding: 16px 24px;
-}
-table th {
-  padding-top: 0;
-}
-table thead tr {
-  border-bottom: 1px solid var(--borde-color-2);
-}
-table tbody tr:nth-child(odd) {
-  background-color: var(--tabla-fondo-impar);
-}
-table tfoot tr {
-  background-color: var(--tabla-fondo-notas);
-}
-
-.titulo-tabla {
-  font-size: 1.125em;
-  font-weight: 500;
-  line-height: 1.3em;
-  margin: 24px 16px 16px;
-}
-
-.tabla-condensada th,
-.tabla-condensada td {
-  padding: 8px 24px;
-}
-.tabla-condensada th {
-  padding-top: 0;
-}
-
-.tabla-expandida th,
-.tabla-expandida td {
-  padding: 24px;
-}
-.tabla-expandida th {
-  padding-top: 0;
 }
 
 .tarjeta {

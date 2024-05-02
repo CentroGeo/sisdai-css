@@ -64,6 +64,28 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       </div>
       '
     />
+    <EjemploReticula
+      codigo='
+      <div class="flex">
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1 </div>
+      </div>
+      '
+    />
 
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">
@@ -80,7 +102,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-1"> 1 </div>
+        <div class="columna-1"> 1f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-1"> 1g </div>
       </div>
       '
     />
@@ -88,7 +118,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-2"> 2 </div>
+        <div class="columna-2"> 2f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-2"> 2g </div>
       </div>
       '
     />
@@ -96,7 +134,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-3"> 3 </div>
+        <div class="columna-3"> 3f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-3"> 3g </div>
       </div>
       '
     />
@@ -104,7 +150,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-4"> 4 </div>
+        <div class="columna-4"> 4f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-4"> 4g </div>
       </div>
       '
     />
@@ -112,7 +166,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-5"> 5 </div>
+        <div class="columna-5"> 5f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-5"> 5g </div>
       </div>
       '
     />
@@ -120,7 +182,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-6"> 6 </div>
+        <div class="columna-6"> 6f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-6"> 6g </div>
       </div>
       '
     />
@@ -128,7 +198,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-7"> 7 </div>
+        <div class="columna-7"> 7f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-7"> 7g </div>
       </div>
       '
     />
@@ -136,7 +214,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-8"> 8 </div>
+        <div class="columna-8"> 8f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-8"> 8g </div>
       </div>
       '
     />
@@ -144,7 +230,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-9"> 9 </div>
+        <div class="columna-9"> 9f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-9"> 9g </div>
       </div>
       '
     />
@@ -152,7 +246,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-10"> 10 </div>
+        <div class="columna-10"> 10f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-10"> 10g </div>
       </div>
       '
     />
@@ -160,7 +262,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-11"> 11 </div>
+        <div class="columna-11"> 11f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-11"> 11g </div>
       </div>
       '
     />
@@ -168,7 +278,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-12"> 12 </div>
+        <div class="columna-12"> 12f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-12"> 12g </div>
       </div>
       '
     />
@@ -176,7 +294,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-13"> 13 </div>
+        <div class="columna-13"> 13f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-13"> 13g </div>
       </div>
       '
     />
@@ -184,7 +310,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-14"> 14 </div>
+        <div class="columna-14"> 14f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-14"> 14g </div>
       </div>
       '
     />
@@ -192,7 +326,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-15"> 15 </div>
+        <div class="columna-15"> 15f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-15"> 15g </div>
       </div>
       '
     />
@@ -200,7 +342,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       :mostrarCodigo="false"
       codigo='
       <div class="flex">
-        <div class="columna-16"> 16 </div>
+        <div class="columna-16"> 16f </div>
+      </div>
+      '
+    />
+    <EjemploReticula
+      :mostrarCodigo="false"
+      codigo='
+      <div class="grid">
+        <div class="columna-16"> 16g </div>
       </div>
       '
     />
