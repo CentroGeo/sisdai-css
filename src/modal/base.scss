@@ -1,12 +1,11 @@
 dialog[open]::backdrop {
   background-color: #141414;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 dialog {
   &.modal {
     color: var(--tipografia-color);
     background-color: var(--pagina-fondo);
-    // background-color: white;
     border-radius: 20px;
     margin: 120px auto;
     padding: 24px;
@@ -38,8 +37,8 @@ dialog {
       margin: 0px;
       border-radius: 0px;
     }
-    .modal-contenedor2 {
-      background-color: var(--pagina-fondo);
+
+    .modal-contenedor {
 
       .modal-cerrar {
         color: var(--tipografia-color);
@@ -48,7 +47,7 @@ dialog {
         margin-left: 8px;
       }
 
-      &-cuerpo {
+      .modal-cuerpo {
         :first-child {
           margin-top: 0;
         }
@@ -57,8 +56,6 @@ dialog {
         }
       }
     }
-  }
-  &-contenedor2 {
   }
 }
 .fade-enter-active,

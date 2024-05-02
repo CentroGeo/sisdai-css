@@ -9278,7 +9278,7 @@ ol + hr {
 
 dialog[open]::backdrop {
   background-color: #141414;
-  opacity: 0.75;
+  opacity: 0.5;
 }
 
 dialog.modal {
@@ -9315,21 +9315,19 @@ dialog.modal.pantalla-completa {
   margin: 0px;
   border-radius: 0px;
 }
-dialog.modal .modal-contenedor2 {
-  background-color: var(--pagina-fondo);
-}
-dialog.modal .modal-contenedor2 .modal-cerrar {
+dialog.modal .modal-contenedor .modal-cerrar {
   color: var(--tipografia-color);
   float: right;
   margin-right: 0;
   margin-left: 8px;
 }
-dialog.modal .modal-contenedor2-cuerpo :first-child {
+dialog.modal .modal-contenedor .modal-cuerpo :first-child {
   margin-top: 0;
 }
-dialog.modal .modal-contenedor2-cuerpo :last-child {
+dialog.modal .modal-contenedor .modal-cuerpo :last-child {
   margin-bottom: 0;
 }
+
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 10.3s;
