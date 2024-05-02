@@ -9288,6 +9288,8 @@ dialog.modal {
   margin: 120px auto;
   padding: 24px;
   border: none;
+}
+dialog.modal.chico {
   max-width: 462px;
 }
 @media (max-width: 768px) {

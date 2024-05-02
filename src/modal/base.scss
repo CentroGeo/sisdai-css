@@ -10,9 +10,9 @@ dialog {
     margin: 120px auto;
     padding: 24px;
     border: none;
-    max-width: 462px;
 
     &.chico {
+      max-width: 462px;
       @media (max-width: 768px) {
         // Coloca abajo el modal en móvil
         width: 100%;
@@ -39,7 +39,6 @@ dialog {
     }
 
     .modal-contenedor {
-
       .modal-cerrar {
         color: var(--tipografia-color);
         float: right;
