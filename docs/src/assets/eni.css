@@ -9293,6 +9293,7 @@ dialog.modal {
   border-radius: 20px;
   padding: 24px;
   border: none;
+  overflow: hidden;
 }
 dialog.modal.chico {
   max-width: 462px;
@@ -9313,9 +9314,12 @@ dialog.modal.grande {
 }
 @media (max-width: 768px) {
   dialog.modal.grande {
-    width: 100%;
+    width: 100% !important;
     margin: inherit;
     padding: 24px 24px 40px;
+    top: auto;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
   }
 }
 dialog.modal.pantalla-completa {
@@ -9337,16 +9341,6 @@ dialog.modal .modal-contenedor .modal-cuerpo :first-child {
 }
 dialog.modal .modal-contenedor .modal-cuerpo :last-child {
   margin-bottom: 0;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 10.3s;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
 }
 
 body {

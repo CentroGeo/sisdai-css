@@ -19,6 +19,8 @@ dialog {
     border-radius: 20px;
     padding: 24px;
     border: none;
+    
+    overflow: hidden;
 
     &.chico {
       max-width: 462px;
@@ -37,9 +39,12 @@ dialog {
       max-width: 1110px;
       @media (max-width: 768px) {
         // Coloca abajo el modal en móvil
-        width: 100%;
+        width: 100% !important;
         margin: inherit;
         padding: 24px 24px 40px;
+        top: auto;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
       }
     }
     &.pantalla-completa {
@@ -69,14 +74,6 @@ dialog {
       }
     }
   }
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 10.3s;
-}
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
 }
 // .modal {
 //   position: fixed;
