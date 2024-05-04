@@ -9330,11 +9330,14 @@ dialog.modal.pantalla-completa {
   margin: 0px;
   border-radius: 0px;
 }
+dialog.modal .modal-contenedor {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+}
 dialog.modal .modal-contenedor .modal-cerrar {
   color: var(--tipografia-color);
-  float: right;
-  margin-right: 0;
-  margin-left: 8px;
 }
 dialog.modal .modal-contenedor .modal-cuerpo :first-child {
   margin-top: 0;

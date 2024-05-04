@@ -1,3 +1,18 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
 dialog[open]::backdrop {
   background-color: #141414;
   opacity: 0.5;
@@ -5,7 +20,7 @@ dialog[open]::backdrop {
 dialog {
   &.modal {
     position: fixed;
-    
+
     color: var(--tipografia-color);
     background-color: var(--pagina-fondo);
 
@@ -13,13 +28,13 @@ dialog {
     bottom: 0;
     right: 0;
     left: 0;
-    
+
     margin: 120px auto;
 
     border-radius: 20px;
     padding: 24px;
     border: none;
-    
+
     overflow: hidden;
 
     &.chico {
@@ -57,11 +72,12 @@ dialog {
     }
 
     .modal-contenedor {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 8px;
       .modal-cerrar {
         color: var(--tipografia-color);
-        float: right;
-        margin-right: 0;
-        margin-left: 8px;
       }
 
       .modal-cuerpo {
