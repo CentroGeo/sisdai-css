@@ -9332,18 +9332,21 @@ dialog.modal.pantalla-completa {
 }
 dialog.modal .modal-contenedor {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   gap: 8px;
+  justify-content: space-between;
 }
-dialog.modal .modal-contenedor .modal-cerrar {
-  color: var(--tipografia-color);
+dialog.modal .modal-contenedor .modal-cuerpo {
+  width: 100%;
 }
 dialog.modal .modal-contenedor .modal-cuerpo :first-child {
   margin-top: 0;
 }
 dialog.modal .modal-contenedor .modal-cuerpo :last-child {
   margin-bottom: 0;
+}
+dialog.modal .modal-contenedor .modal-cerrar {
+  color: var(--tipografia-color);
 }
 
 body {
