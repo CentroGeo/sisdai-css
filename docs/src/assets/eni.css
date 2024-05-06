@@ -6646,15 +6646,16 @@ ol,
 ul,
 dl {
   margin: 0;
+  padding: 0;
 }
 
 ol,
 ul {
-  padding: 0 0 0 32px;
+  list-style-position: inside;
 }
 ol li,
 ul li {
-  margin-top: 16px;
+  margin: 16px 0;
 }
 ol ol,
 ol ul,
@@ -6666,136 +6667,175 @@ ol ol li,
 ol ul li,
 ul ol li,
 ul ul li {
-  margin-top: 8px;
+  margin: 8px 0;
 }
 
-dl dt {
-  font-weight: 500;
-  margin: 16px 0 0 0;
-}
-dl dd {
-  margin: 8px 0 0 0;
-}
-
-.listas-anidadas {
+ol {
   list-style-type: none;
   counter-reset: item;
 }
-.listas-anidadas li {
+ol li {
   counter-increment: item;
 }
-.listas-anidadas li ol, .listas-anidadas li ul {
+ol li ol {
   list-style-type: none;
   counter-reset: item;
 }
-.listas-anidadas li::before {
+ol li::before {
   content: counters(item, ".") ". ";
 }
 
-.titulo-lista {
-  font-size: 1.125em;
-  font-weight: 500;
-  line-height: 1.3em;
-  margin-top: 24px;
-  margin-bottom: 16px;
+dl dt {
+  font-weight: 600;
+  margin: 16px 0 8px 0;
+}
+dl dd {
+  margin: 8px 0 16px 0;
 }
 
-.lista-plana, .lista-compuesta, .lista-logo, .lista-avatar, .lista-icono {
+.lista-limpia, .lista-compuesta, .lista-casilla, .lista-accion, .lista-logo, .lista-avatar {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.lista-plana li, .lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li {
+.lista-limpia ol, .lista-compuesta ol, .lista-casilla ol, .lista-accion ol, .lista-logo ol, .lista-avatar ol, .lista-limpia ul, .lista-compuesta ul, .lista-casilla ul, .lista-accion ul, .lista-logo ul, .lista-avatar ul {
+  padding: 0;
+}
+.lista-limpia ol li, .lista-compuesta ol li, .lista-casilla ol li, .lista-accion ol li, .lista-logo ol li, .lista-avatar ol li, .lista-limpia ul li, .lista-compuesta ul li, .lista-casilla ul li, .lista-accion ul li, .lista-logo ul li, .lista-avatar ul li {
+  margin: 0;
+}
+.lista-limpia li, .lista-compuesta li, .lista-casilla li, .lista-accion li, .lista-logo li, .lista-avatar li {
   margin: 0;
 }
 
-.lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li {
+.lista-compuesta li, .lista-casilla li, .lista-accion li, .lista-logo li, .lista-avatar li {
   display: flex;
   width: 100%;
-  padding: 16px 16px 16px 0;
 }
-.lista-compuesta a, .lista-logo a, .lista-avatar a, .lista-icono a {
+.lista-compuesta a, .lista-casilla a, .lista-accion a, .lista-logo a, .lista-avatar a {
   display: flex;
   width: 100%;
-  padding: 16px;
-  margin: -16px;
   text-decoration: none;
 }
-.lista-compuesta a:hover, .lista-logo a:hover, .lista-avatar a:hover, .lista-icono a:hover {
-  background-color: var(--tabla-fondo-impar);
+.lista-compuesta a:hover, .lista-casilla a:hover, .lista-accion a:hover, .lista-logo a:hover, .lista-avatar a:hover {
+  background-color: var(--tarjetas-internas-fondo);
 }
-.lista-compuesta .elemento, .lista-logo .elemento, .lista-avatar .elemento, .lista-icono .elemento {
-  display: flex;
-  width: 100%;
-}
-.lista-compuesta .avatar, .lista-logo .avatar, .lista-avatar .avatar, .lista-icono .avatar {
-  flex: 0 0 64px;
-}
-.lista-compuesta .texto, .lista-logo .texto, .lista-avatar .texto, .lista-icono .texto {
+
+.lista-compuesta .texto, .lista-casilla .texto, .lista-accion .texto, .lista-logo .texto, .lista-avatar .texto,
+.lista-compuesta-texto,
+.lista-casilla li [type=checkbox] + label,
+.lista-casilla li [type=checkbox] + legend,
+.lista-casilla li [type=radio] + label,
+.lista-casilla li [type=radio] + legend {
   flex: 1 1;
   display: block;
 }
-.lista-compuesta .texto > *, .lista-logo .texto > *, .lista-avatar .texto > *, .lista-icono .texto > * {
+.lista-compuesta .texto > *, .lista-casilla .texto > *, .lista-accion .texto > *, .lista-logo .texto > *, .lista-avatar .texto > *,
+.lista-compuesta-texto > *,
+.lista-casilla li [type=checkbox] + label > *,
+.lista-casilla li [type=checkbox] + legend > *,
+.lista-casilla li [type=radio] + label > *,
+.lista-casilla li [type=radio] + legend > * {
   margin: 0;
 }
-.lista-compuesta .texto .texto-primario, .lista-logo .texto .texto-primario, .lista-avatar .texto .texto-primario, .lista-icono .texto .texto-primario {
+.lista-compuesta .texto .texto-primario, .lista-casilla .texto .texto-primario, .lista-accion .texto .texto-primario, .lista-logo .texto .texto-primario, .lista-avatar .texto .texto-primario,
+.lista-compuesta-texto .texto-primario,
+.lista-casilla li [type=checkbox] + label .texto-primario,
+.lista-casilla li [type=checkbox] + legend .texto-primario,
+.lista-casilla li [type=radio] + label .texto-primario,
+.lista-casilla li [type=radio] + legend .texto-primario {
   color: var(--tipografia-color);
   font-weight: 500;
 }
-.lista-compuesta .texto .texto-secundario, .lista-logo .texto .texto-secundario, .lista-avatar .texto .texto-secundario, .lista-icono .texto .texto-secundario {
+.lista-compuesta .texto .texto-secundario, .lista-casilla .texto .texto-secundario, .lista-accion .texto .texto-secundario, .lista-logo .texto .texto-secundario, .lista-avatar .texto .texto-secundario,
+.lista-compuesta-texto .texto-secundario,
+.lista-casilla li [type=checkbox] + label .texto-secundario,
+.lista-casilla li [type=checkbox] + legend .texto-secundario,
+.lista-casilla li [type=radio] + label .texto-secundario,
+.lista-casilla li [type=radio] + legend .texto-secundario {
   color: var(--tipografia-color);
   font-weight: 400;
 }
-.lista-compuesta .texto .texto-terciario, .lista-logo .texto .texto-terciario, .lista-avatar .texto .texto-terciario, .lista-icono .texto .texto-terciario {
+.lista-compuesta .texto .texto-terciario, .lista-casilla .texto .texto-terciario, .lista-accion .texto .texto-terciario, .lista-logo .texto .texto-terciario, .lista-avatar .texto .texto-terciario,
+.lista-compuesta-texto .texto-terciario,
+.lista-casilla li [type=checkbox] + label .texto-terciario,
+.lista-casilla li [type=checkbox] + legend .texto-terciario,
+.lista-casilla li [type=radio] + label .texto-terciario,
+.lista-casilla li [type=radio] + legend .texto-terciario {
   color: var(--tipografia-color-3);
   font-weight: 400;
 }
 
-.lista-icono li::before {
-  margin: 4px 16px 8px 0;
+.lista-avatar li {
+  padding: 24px 0;
+  align-items: center;
 }
-
+.lista-avatar li > a {
+  margin: -24px 0;
+  padding: 24px 0;
+  align-items: center;
+}
 .lista-avatar .avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
+  border-radius: 80px;
+  height: 80px;
+  width: 80px;
+  margin: 0 24px;
   overflow: hidden;
-  margin: 4px 24px 4px 0;
 }
 .lista-avatar .avatar img,
 .lista-avatar .avatar svg {
-  width: 100%;
   object-fit: cover;
 }
 
+.lista-logo li {
+  padding: 24px 0;
+  align-items: center;
+}
+.lista-logo li > a {
+  margin: -24px 0;
+  padding: 24px 0;
+  align-items: center;
+}
 .lista-logo .logo {
+  height: 80px;
   width: 120px;
-  height: 64px;
-  margin: 0 16px 0 0;
+  margin: 0 24px 0 0;
   overflow: hidden;
 }
-.lista-logo .logo img,
-.lista-logo .logo svg {
-  height: 100%;
-  max-width: 100%;
-  padding: 0;
-  object-fit: fill;
-}
-.lista-logo .nombre {
-  flex: 1 1;
-  display: flex;
-  align-items: center;
-  color: var(--tipografia-color);
-  font-weight: 500;
+.lista-logo .logo img {
+  height: 80px;
+  width: 120px;
+  object-fit: scale-down;
 }
 
-.lista-redes-sociales {
-  list-style: none;
-  display: flex;
-  padding-left: 0px;
+.lista-accion li {
+  border-bottom: 1px solid var(--borde-color-3);
+  padding: 16px 0;
 }
-.lista-redes-sociales li {
-  margin: 0;
+.lista-accion .acciones {
+  display: flex;
+  align-items: center;
+}
+.lista-accion .acciones button,
+.lista-accion .acciones .boton,
+.lista-accion .acciones input[type=button],
+.lista-accion .acciones input[type=submit],
+.lista-accion .acciones input[type=reset],
+.lista-accion .acciones .boton-pictograma,
+.lista-accion .acciones .boton-descarga {
+  margin-left: 4px;
+}
+
+.lista-casilla li {
+  border-bottom: 1px solid var(--borde-color-3);
+  padding: 12px 0;
+}
+.lista-casilla li [type=checkbox] + label, .lista-casilla li [type=checkbox] + legend,
+.lista-casilla li [type=radio] + label,
+.lista-casilla li [type=radio] + legend {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: calc(1.25rem + 16px + 4px);
 }
 
 .tarjeta {
@@ -10967,10 +11007,6 @@ body[data-light-theme-gema=true] {
   --navegacion-fondo-active: #00f;
   --navegacion-sombra-active: 0 0 0 0;
   --navegacion-color-active: #fff;
-}
-
-footer a:focus-visible {
-  outline: none;
 }
 
 /*# sourceMappingURL=eni.css.map */

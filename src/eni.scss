@@ -32,12 +32,9 @@
 @import "formulario";
 @import "detalle";
 @import "tabla";
+@import "lista";
 
 
-
-@import "listas/base";
-@import "listas/anidadas";
-@import "listas/compuestas";
 
 @import "tarjetas/base";
 
@@ -96,9 +93,3 @@
 @import "accesibilidad/hipervinculos";
 @import "accesibilidad/oscura";
 @import "accesibilidad/clara";
-
-footer {
-  a:focus-visible {
-    outline: none;
-  }
-}

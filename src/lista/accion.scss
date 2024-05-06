@@ -13,17 +13,18 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.listas-anidadas {
-  list-style-type: none;
-  counter-reset: item;
+.lista-accion {
+  @extend .lista-compuesta;
   li {
-    counter-increment: item;
-    ol, ul {
-      list-style-type: none;
-      counter-reset: item;
-    }
-    &::before {
-      content: counters(item, ".") ". ";
+    border-bottom: 1px solid var(--borde-color-3);
+    padding: map-get($espaciado, '2') 0;
+  }
+  .acciones {
+    display: flex;
+    align-items: center;
+    button,
+    .boton {
+      margin-left: map-get($espaciado, 'minimo');
     }
   }
 }
