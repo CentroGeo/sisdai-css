@@ -1,5 +1,5 @@
 <script setup>
-import EjemploGloboInfoExtCerrar from "./../componetes/EjemploGloboInfoExtCerrar.vue";
+import EjemploGloboInfoExtCerrar from "../componetes/EjemploGloboInfoExtCerrar.vue";
 </script>
 
 <template>

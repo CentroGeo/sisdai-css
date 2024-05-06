@@ -257,14 +257,21 @@
               </ul>
             </li>
 
+            <li class="nav-contenedor-submenu">
+              <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')">Elementos Compuestos</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos Compuestos</button></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
+              </ul>
+            </li>
+
             <!-- <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')">Componentes</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/globo-informacion">Globos de informacion</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/navegacion">Navegacion</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de informacion</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
               </ul>
             </li> -->
 

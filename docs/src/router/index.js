@@ -84,27 +84,35 @@ const router = createRouter({
         },
       ]
     },
-    
     {
-      path: '/portadas',
-      name: 'portadas',
-      component: () => import('../views/PortadasView.vue')
+      path: '/elementos-compuestos',
+      children: [
+        {
+          path: 'tarjetas',
+          name: 'tarjetas',
+          component: () => import('../views/ElementosCompuestosTarjetas.vue')
+        },
+        {
+          path: 'portadas',
+          name: 'portadas',
+          component: () => import('../views/ElementosCompuestosPortadas.vue')
+        },
+      ]
     },
     {
-      path: '/tarjetas',
-      name: 'tarjetas',
-      component: () => import('../views/TarjetasView.vue')
-    },
-    
-    {
-      path: '/navegacion',
-      name: 'navegacion',
-      component: () => import('../views/NavegacionView.vue')
-    },
-    {
-      path: '/globo-informacion',
-      name: 'globo-informacion',
-      component: () => import('../views/GloboInformacionView.vue')
+      path: '/componentes',
+      children: [
+        {
+          path: 'navegacion',
+          name: 'navegacion',
+          component: () => import('../views/ComponenteNavegacion.vue')
+        },
+        {
+          path: '/globo-informacion',
+          name: 'globo-informacion',
+          component: () => import('../views/ComponenteGloboinformacion.vue')
+        },
+      ]
     },
     {
       path: '/visualizaciones',
