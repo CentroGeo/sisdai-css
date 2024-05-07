@@ -15,58 +15,86 @@
 
 .contenedor-globo-info-ext {
   width: 322px;
-  min-height: 152px;
-
-  // padding: 1rem;
+  // min-height: 152px;
+  max-height: 160px;
   padding: 16px;
+  overflow-y: auto;
 
   button.boton-cerrar {
-    float: right;
     margin-right: 0;
     
-    background: #6692ff;
-    border-color: #6692ff;
-    color: #102543;
+    background: transparent;
+    border-color: #B1C6E4;
+    color: #B1C6E4;
 
     &:hover {
-      background: #80aaff;
-      border-color: #80aaff;
-      color: #102543;
+      background: #364A69;
+      border-color: #B1C6E4;
+      color: #B1C6E4;
     }
     &:focus {
-      background: #80aaff;
-      border-color: #102543;
-      box-shadow: 0 0 8px #668bff;
-      color: #102543;
-      // outline-color: #668bff;
-      outline: 1px solid #668bff;
+      background: #364A69;
+      border-color: #668BFF;
+      box-shadow: 0 0 8px #668BFF;
+      color: #B1C6E4;
+      outline-color: #668BFF;      
     }
+  }
+  .cuerpo-globo-info {
+    font-size: 16px;
+    // line-height: 1rem;
+    line-height: 1.25rem;
   }
 }
 
 .contenedor-globo-info {
   min-height: 0;
-  // padding: 0.5em;
-  padding: 12px;
+  padding: 16px;
   width: auto;
   max-width: 240px;
+
+  .cuerpo-globo-info {
+    font-size: 12px;
+    line-height: 0.938rem;
+  }
+  button.boton-cerrar {
+    margin-right: 0;
+    
+    background: transparent!important;
+    border-color: #B1C6E4;
+    color: #B1C6E4;
+
+    &:hover {
+      background: #364A69;
+      border-color: #B1C6E4;
+      color: #B1C6E4;
+    }
+    &:focus {
+      background: #364A69;
+      border-color: #668BFF;
+      box-shadow: 0 0 8px #668BFF;
+      color: #B1C6E4;
+      outline-color: #668BFF;      
+    }
+  }
 }
 
 .contenedor-globo-info-ext,
 .contenedor-globo-info {
-  background: #1c1c1c;
+  background: #141414;
   color: #fff;
   box-shadow: 0px 3px 6px #00000029;
-  border-radius: map-get($bordes, '4');
-  display: block;
+  border-radius: map-get($bordes, '8');
+
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: flex-start;
+
   z-index: 9999;
-  // font-size: 11px;
 
   .cuerpo-globo-info {
-    font-size: 11px;
-    // font-size: 0.75rem;
     font-weight: 400;
-    line-height: 1rem;
 
     a,
     .hipervinculo {
@@ -90,11 +118,18 @@
       margin-bottom: 0;
     }
   }
+  .punto-color{
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    border: 1px solid var(--borde-color-4);
+    display: inline-block;
+  }
 }
 
 .contenedor-vis .contenido-vis {
   .contenedor-globo-info-ext,
   .contenedor-globo-info {
-    background: #1c1c1ce6;
+    background: #141414e6;
   }
 }

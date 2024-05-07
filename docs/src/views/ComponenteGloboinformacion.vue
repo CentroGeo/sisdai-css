@@ -20,10 +20,6 @@ import EjemploGloboInfoExtCerrar from "../componetes/EjemploGloboInfoExtCerrar.v
             <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Odio omnis, quas sequi mollitia dolorem enim molestiae tempore temporibus fugiat esse sed, voluptatem expedita porro cupiditate minima unde quaerat corporis. Nihil.
           </p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad nobis id, vitae iusto non mollitia! Ex id, illum magnam dolorem asperiores autem? Aperiam, alias inventore eveniet doloremque atque voluptas?</p>
-          <!-- <ul class="lista-icono">
-            <li class="icon icono-documento">Archivo</li>
-            <li class="icon icono-social-github">Github</li>
-          </ul> -->
         </div>
       </div>
 
