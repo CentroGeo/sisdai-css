@@ -19,13 +19,14 @@
 @import "_normalizar";
 @import "_mixins";
 
-// modulos
+// fundamentos
 @import "color/identidad";
 @import "color/acciones";
 @import 'tipografia';
 @import "pictograma";
 @import "reticula";
 
+// elementos
 @import "boton";
 @import "hipervinculo";
 @import "imagenes";
@@ -35,19 +36,11 @@
 @import "lista";
 
 
-
-@import "tarjetas/base";
-
-
-@import "bordes/base";
-@import "bordes/redondeado";
-@import "bordes/colores";
-@import "bordes/grosores";
-@import "bordes/separadores";
-
-
+// elementos compuestos
+@import "tarjeta";
 
 // componentes
+
 @import "componente/boton-flotante";
 
 @import "navegacion/navegacion";
@@ -78,6 +71,13 @@
 // en penultimo lugar en el acomodo de archivos
 // para que los auxiliares puedan sobreescribir estilos
 // pero no puedan sobreescribir estilos de accesibilidad
+// auxiliares
+@import "bordes/base";
+@import "bordes/redondeado";
+@import "bordes/colores";
+@import "bordes/grosores";
+@import "bordes/separadores";
+
 @import "auxiliares/texto";
 @import "auxiliares/animacion";
 @import "auxiliares/visibilidad";

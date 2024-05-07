@@ -1,0 +1,63 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+.tarjeta {
+  flex: 1 1;
+  background: var(--tarjetas-fondo);
+  border-radius: map-get($bordes, '20');
+  overflow: hidden;
+
+  .portada,
+  .fondo-imagen {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .contenido,
+  .contenido-html {
+    align-items: stretch;
+    padding: map-get($espaciado, '3');
+    color: var(--tarjetas-color);
+    @include transicion;
+
+    > * {
+      margin-top: map-get($espaciado, '2');
+      margin-bottom: map-get($espaciado, '2');
+    }
+
+    > button,
+    > [class^='boton-'],
+    > [class*=" boton-"] {
+      margin-top: map-get($espaciado, '1');
+    }
+
+    > :first-child {
+      margin-top: 0;
+    }
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .etiqueta {
+    @extend .notas;
+  }
+  .titulo {
+    @extend .h6;
+  }
+}

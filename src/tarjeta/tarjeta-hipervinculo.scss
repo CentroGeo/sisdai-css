@@ -1,0 +1,60 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+.tarjeta-hipervinculo {
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: map-get($bordes, "20");
+  text-decoration: none;
+  box-sizing: border-box;
+  margin-top: map-get($espaciado, '1');
+  margin-bottom: map-get($espaciado, '1');
+
+  .contenido,
+  .contenido-html,
+  .contenido-abajo {
+    > * {
+      margin: map-get($espaciado, 'minimo') 0;
+    }
+    > :first-child {
+      margin-top: 0;
+    }
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    box-shadow: 
+    0 0 0 2px var(--hipervinculo-focus-sombra),
+    0 0 8px 1px var(--hipervinculo-focus-sombra);
+  }
+
+  &:hover {
+    text-decoration: none;
+    .fondo-imagen {
+      transform: scale(1);
+    }
+  }
+
+  &:focus-visible {
+    outline: none;
+    .fondo-imagen {
+      transform: scale(1);
+    }
+  }
+}

@@ -14,14 +14,10 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .tarjeta-hipervinculo-externo {
+  @extend .tarjeta-hipervinculo;
   position: relative;
   width: 100%;
   min-height: 240px;
-  display: flex;
-  border-radius: map-get($bordes, "20");
-  overflow: hidden;
-  text-decoration: none;
-  box-sizing: border-box;
 
   .fondo-imagen {
     transform: scale(1.1);
@@ -32,62 +28,32 @@
     top: 0;
     object-fit: cover;
     object-position: 50% 50%;
-    transition: all 0.27s ease-in-out;
-    img,
-    figure,
-    video,
-    picture {
-      object-fit: cover;
-      object-position: 50%;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
+    @include transicion;
   }
 
+  .fondo-degradado,
   .degradado-negro-abajo {
     position: relative;
     width: 100%;
-    color: var(--tarjetas-externas-color);
     background: var(--tarjetas-externas-fondo-gradiente);
     display: flex;
     align-items: stretch;
-    padding-top: 48px;
-
-    .contenido-abajo {
+    margin-top: map-get($espaciado, '6');
+  }
+  
+  .contenido,
+  .contenido-abajo {
+    margin-top: auto;
+    padding: map-get($espaciado, '3');
+    width: 100%;
+    > * {
       color: var(--tarjetas-externas-color);
-      margin-top: auto;
-      padding: 24px;
-      width: 100%;
-      color: #ffffff;
-
-      p {
-        margin: 4px 0 4px 0;
-      }
-
-      .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
-        color: #ffffff;
-      }
+      border-color: currentColor;
     }
-  }
-
-  &:hover {
-    text-decoration: none;
-
-    .fondo-imagen {
-      transform: scale(1);
-    }
-  }
-
-  &:focus-visible {
-    background-color: transparent;
-    color: var(--hipervinculo-focus-color);
-    outline:none;
-    .fondo-imagen {
-      transform: scale(1);
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=" pictograma-"] {
+      vertical-align: middle;
     }
   }
 }

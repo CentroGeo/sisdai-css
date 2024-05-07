@@ -95,6 +95,7 @@
   }
 
   .tarjeta {
+    .contenido,
     .contenido-html {
       background: var(--tarjetas-contenido-simplificada-fondo);
       color: var(--tarjetas--contenido-simplificada-color);
@@ -108,110 +109,91 @@
         text-decoration: none !important;
       }
     }
-    &-horizontal {
+  }
+
+  .tarjeta-horizontal {
+    @media screen and (min-width: calc(map-get($breakpoints, 'esc'))) {
+      .contenido,
       .contenido-html {
-        background: var(--tarjetas-contenido-simplificada-fondo);
-        color: var(--tarjetas--contenido-simplificada-color);
-        .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
-          color: var(--tarjetas--contenido-simplificada-color);
-        }
-        a, button {
-          text-decoration: none !important;
-        }
-      } 
+        padding-left: map-get($espaciado, '3');
+      }
     }
   }
 
-  a.tarjeta-hipervinculo-externo {
-    min-height: 0px;
-    background-color: var(--tarjetas-simplificada-fondo);
-    color: var(--tarjetas-simplificada-color);
+  .tarjeta-hipervinculo-externo {
+    background: var(--tarjetas-simplificada-fondo);
     border: 1px solid var(--tarjetas-simplificada-borde);
-    text-decoration: none;
+    min-height: auto;
+    color: var(--tarjetas-simplificada-color);
+
+    .fondo-degradado,
     .degradado-negro-abajo {
       background: none;
       margin: 0;
     }
+    .contenido,
     .contenido-abajo {
       color: var(--tarjetas-simplificada-color);
-      .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
+      > * {
         color: var(--tarjetas-simplificada-color);
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      box-shadow: none;
       background: var(--tarjetas-simplificada-fondo-hover);
-      border: 1px solid var(--tarjetas-simplificada-borde-hover);
-      // text-decoration: underline;
-      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
-        color: var(--tarjetas-simplificada-color-hover);
-      }
-    }
-    &:focus {
-      background: var(--tarjeta-simplificada-fondo-focus);
-      border: 1px solid var(--tarjeta-simplificada-borde-focus);
-      box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
-      outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
-
-      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
-        color: var(--tarjeta-simplificada-color-focus);
-      }
-    }
-
-  }
-
-  a.tarjeta-hipervinculo-interno {
-    border: 1px solid var(--tarjetas-simplificada-borde);
-    .contenido-abajo {
-      background-color: var(--tarjetas-simplificada-fondo);
-      color: var(--tarjetas-simplificada-color);
-      .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
-        color: var(--tarjetas-simplificada-color);
-      }
-    }
-
-    &:hover {
-      border: 1px solid var(--tarjetas-simplificada-borde-hover);
+      .contenido, 
       .contenido-abajo {
-        background: var(--tarjetas-simplificada-fondo-hover);
-        color: var(--tarjetas-simplificada-color-hover);
-        .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
+        > * {
           color: var(--tarjetas-simplificada-color-hover);
         }
       }
     }
-
-    &:focus {
-      border: 1px solid var(--tarjeta-simplificada-borde-focus);
-      outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
+    &:focus,
+    &:focus-visible {
+      background: var(--tarjeta-simplificada-fondo-focus);
+      // border: 1px solid var(--tarjeta-simplificada-borde-focus);
       box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
+      // outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
+    }
+  }
 
+  .tarjeta-hipervinculo-interno {
+    border: 1px solid var(--tarjetas-simplificada-borde);
+    .contenido,
+    .contenido-html,
+    .contenido-abajo {
+      background-color: var(--tarjetas-simplificada-fondo);
+      > * {
+        color: var(--tarjetas-simplificada-color);
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      box-shadow: none;
+      .contenido,
+      .contenido-html,
       .contenido-abajo {
+        background: var(--tarjetas-simplificada-fondo-hover);
+        > * {
+          color: var(--tarjetas-simplificada-color-hover);
+        }
+      }
+    }
+    &:focus,
+    &:focus-visible {
+      box-shadow: 0 0 8px 1px var(--tarjeta-simplificada-sombra-focus);
+      .contenido,
+      .contenido-html,
+      .contenido-abajo {
+        // border: 1px solid var(--tarjeta-simplificada-borde-focus);
+        // outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
         background: var(--tarjeta-simplificada-fondo-focus);
-        color: var(--tarjeta-simplificada-color-focus);
-
-        .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
+        > * {
           color: var(--tarjeta-simplificada-color-focus);
         }
       }
