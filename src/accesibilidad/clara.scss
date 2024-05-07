@@ -101,7 +101,7 @@ body[data-light-theme-sisdai='true'] {
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
   --tarjetas-internas-color: #141414;
   --tarjetas-internas-fondo: #F5F5F5;
-    --tarjetas-interna-fondo-hover: #DDDDDD;
+    --tarjetas-internas-fondo-hover: #DDDDDD;
 
   --tarjetas-simplificada-fondo: #FFFFFF;
   --tarjetas-simplificada-color: #005DFF;
@@ -302,7 +302,7 @@ body[data-light-theme-eni='true'] {
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
   --tarjetas-internas-color: #141414;
   --tarjetas-internas-fondo: #F5F5F5;
-    --tarjetas-interna-fondo-hover: #DDDDDD;
+    --tarjetas-internas-fondo-hover: #DDDDDD;
 
   --tarjetas-simplificada-fondo: #FFFFFF;
   --tarjetas-simplificada-color: #005DFF;
@@ -472,7 +472,7 @@ body[data-light-theme-gema='true']  {
   --tarjetas-externas-color: var( --color-0 );
   --tarjetas-internas-color: var( --color-2 );
   --tarjetas-internas-fondo: var( --color-14 );
-  --tarjetas-interna-fondo-hover: var( --color-9 );
+  --tarjetas-internas-fondo-hover: var( --color-9 );
   --tarjetas-simplificada-fondo: var( --color-0 );
   --tarjetas-simplificada-color: var( --color-7 );
   --tarjetas-simplificada-borde: var( --color-7 );

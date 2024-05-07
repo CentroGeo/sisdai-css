@@ -340,8 +340,6 @@
     align-items: baseline;
     z-index: 1111;
     gap: 8px;
-
-    // display: none;
   }
   .tmp-menu * {
     font-size: 14px;

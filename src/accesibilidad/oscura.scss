@@ -116,7 +116,7 @@ body[data-dark-theme-sisdai='true'] {
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, #102543f1 0%, #10254396 60%, #10254300 100%);
   --tarjetas-internas-color: #FFFFFF;
   --tarjetas-internas-fondo: #2B204C;
-    --tarjetas-interna-fondo-hover: #453B67;
+    --tarjetas-internas-fondo-hover: #453B67;
 
   --tarjetas-simplificada-fondo: #201540;
   --tarjetas-simplificada-color: #668BFF;
@@ -313,7 +313,7 @@ body[data-dark-theme-eni='true'] {
   --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, #102543f1 0%, #10254396 60%, #10254300 100%);
   --tarjetas-internas-color: #FFFFFF;
   --tarjetas-internas-fondo: #1B304E;
-    --tarjetas-interna-fondo-hover: #364A69;
+    --tarjetas-internas-fondo-hover: #364A69;
 
   --tarjetas-simplificada-fondo: #102543;
   --tarjetas-simplificada-color: #668BFF;
@@ -481,7 +481,7 @@ body[data-dark-theme-gema='true'] {
   --tarjetas-externas-color: var( --color-3 );
   --tarjetas-internas-color: var( --color-2 );
   --tarjetas-internas-fondo: var( --color-1 );
-  --tarjetas-interna-fondo-hover: var( --color-6 );
+  --tarjetas-internas-fondo-hover: var( --color-6 );
   --tarjetas-simplificada-fondo: var( --color-0 );
   --tarjetas-simplificada-color: var( --color-8 );
   --tarjetas-simplificada-borde: var( --color-8 );

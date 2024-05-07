@@ -21,6 +21,7 @@
   box-sizing: border-box;
   margin-top: map-get($espaciado, '1');
   margin-bottom: map-get($espaciado, '1');
+  background: var(--tarjetas-internas-fondo);
 
   .contenido,
   .contenido-html,
@@ -46,6 +47,7 @@
 
   &:hover {
     text-decoration: none;
+    background-color: var(--tarjetas-internas-fondo-hover);
     .fondo-imagen {
       transform: scale(1);
     }
