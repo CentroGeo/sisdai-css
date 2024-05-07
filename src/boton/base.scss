@@ -28,7 +28,7 @@
   align-items: center;
   &:not(:disabled) {
     cursor: pointer;
-    @include transision;
+    @include transicion;
   }
   &.deshabilitado,
   &:disabled {
