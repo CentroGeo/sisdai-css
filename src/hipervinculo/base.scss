@@ -30,7 +30,7 @@ a,
     vertical-align: baseline;
   &:not(:disabled) {
     cursor: pointer;
-    @include transision;
+    @include transicion;
   }
   &:disabled {
     background-color: transparent;

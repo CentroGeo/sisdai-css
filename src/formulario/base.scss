@@ -43,7 +43,7 @@ $form-campo-alto: 40px;
     color: var(--input-deshabilitado-color);
   }
   &:not(:disabled) {
-    @include transision;
+    @include transicion;
   }
   &:not(:disabled):hover {
     background-color: var(--input-hover);
