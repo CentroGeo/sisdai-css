@@ -1,105 +1,127 @@
 <script setup>
-// import EjemploTipografia from '@/componetes/EjemploTipografia.vue'
+// import EjemploEstiloClase from '../componetes/EjemploEstiloClase.vue'
+// import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
 </script>
 <template>
-  <div>
-    <h1>Portadas</h1>
-
-    <p>
-      Algunos elementos usan elementos multimedia como fondo, como videos, gifs
-      o imágenes y encima texto. Los elementos .portada permiten mostrar
-      contenido que cubre completamente el fondo de su contenedor reescalándose
-      de forma centrada sin dejar espacios en blanco hacia arriba o hacia abajo
-    </p>
-    <p>La altura de .contenedor-portada será por default 	height: calc(100vh - 92px);</p>
-    <pre>
-&lt;div class="contenedor-portada" style="height: 300px">
-    &lt;img class="portada" src="https://picsum.photos/970/980" alt="" />
-&lt;/div>
-</pre
-    >
-
-    <div class="contenedor-portada" >
-      <img class="portada" src="https://picsum.photos/970/980" alt="" />
+  <div class="m-y-maximo">
+    
+    <div class="contenedor ancho-lectura">
+      <h1>Portadas</h1>
+      <p>
+        Las portadas constan de ilustraciones, fotografías o animaciones 
+        que se muestran en un primer momento a pantalla completa junto con el título del sitio.
+      </p>
+      <p>
+        Las portadas se construyen a partir de un contenedor principal <code>.contenedor-portada</code>
+        que contiene una imagen <code>.portada</code> cubierta por un contenedor <code>.fondo-degradado</code>
+        en donde se aloja el <code>.contenido</code> que puede llevar 
+        un <code>.titulo</code> o un <code>.titulo-alto</code> y un <code>.subtitulo</code>,
+        que se ajustan en tamaño automáticamete dependiendo el ancho de la pantalla.
+      </p>
     </div>
-    <p>
-      El siguiente ejemplo incluye un elemento .portada y otro elemento
-      .degradado-negro-abajo, que puede ser un div que contenga texto
-    </p>
-    <pre>
-&lt;div class="contenedor-portada">
-    &lt;img class="portada" src="https://picsum.photos/970/980" alt="" >
-    &lt;div class="degradado-negro-abajo">
-        &lt;div class="contenido-abajo">
-            &lt;div class="contenedor-lectura">
-                &lt;p class="titulo-eni texto-centrado">Título de ENI&lt;/p>
-            &lt;/div>
-        &lt;/div>
-    &lt;/div>
-&lt;/div>
-</pre
-    >
-    <div class="contenedor-portada" >
-      <img class="portada" src="https://picsum.photos/970/979" alt="" />
-      <div class="degradado-negro-abajo">
-        <div class="contenido-abajo">
-          <div class="contenedor-lectura">
-            <h1 class="titulo-eni texto-centrado">Título de ENI</h1>
-          </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Titulo alto</h2>
+      <p>
+        Para nombres cortos es mejor utilizar <code>.titulo-alto</code> en combinación con el <code>.subtitulo</code>
+        para resaltar el título y mejorar la composición.
+      </p>
+      <EjemploPropiedades
+        class="m-y-3"
+        :propiedades="[[
+          {titulo:'Celular'},
+          {titulo: '.titulo-alto'},
+          {nombre:'Tamaño', valor:'2.25rem'},
+          {titulo: '.subtitulo'},
+          {nombre:'Tamaño', valor:'1.125rem'},
+        ],[
+          {titulo:'Escritorio'},
+          {titulo: '.titulo-alto'},
+          {nombre:'Tamaño', valor:'5rem'},
+          {titulo: '.subtitulo'},
+          {nombre:'Tamaño', valor:'1.5rem'},
+        ]]"
+      />
+    </div>
+
+    <div class="contenedor-portada">
+      <img class="portada" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/duquesa-1.jpg" alt="">
+      <div class="fondo-degradado">
+        <div class="contenido">
+          <p class="titulo-alto">Título Alto</p>
+          <p class="subtitulo">Subtítulo</p>
         </div>
       </div>
     </div>
-
-    <!-- <h2 class="m-t-10">Tipografía</h2> -->
-      <!-- <div class="contenedor-lectura  m-b-6">
-        <p>
-          Las portadas son componentes que se utilizan para presentar un proyecto.
-          Estas son clases de títulos muy específicos que se utilizan para presentar un ENI 
-          o un capítulo o subcapítulo de éste.
-        </p>
-        <p>
-          Estos títulos mantienen las propiedades base de todos los títulos del sistema.
-        </p>
-      </div> -->
-      <!-- 
-      <EjemploTipografia 
+    <div class="contenedor m-b-10">
+      <EjemploCodigoVertical
+        class="m-y-1"
+        :tiene_ejemplo="false"
         html='
-        <h1 class="titulo-eni">
-          Título ENI
-        </h1>
+        <div class="contenedor-portada">
+          <img class="portada" src="..." alt="">
+          <div class="fondo-degradado">
+            <div class="contenido">
+              <p class="titulo-alto">Título Alto</p>
+              <p class="subtitulo">Subtítulo</p>
+            </div>
+          </div>
+        </div>
         '
+      />
+    </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Titulo</h2>
+      <p>
+        En caso que el título sea muy extenso es mejor utilizar <code>.titulo</code> en combinación con el <code>.subtitulo</code>
+        para mejorar la legibilidad.
+      </p>
+      <EjemploPropiedades
+        class="m-y-3"
         :propiedades="[[
           {titulo:'Celular'},
+          {titulo: '.titulo'},
           {nombre:'Tamaño', valor:'2.25rem'},
-          {titulo:''},
+          {titulo: '.subtitulo'},
+          {nombre:'Tamaño', valor:'1.125rem'},
+        ],[
           {titulo:'Escritorio'},
-          {nombre:'Fondo', valor:'5rem'},
+          {titulo: '.titulo'},
+          {nombre:'Tamaño', valor:'3.5rem'},
+          {titulo: '.subtitulo'},
+          {nombre:'Tamaño', valor:'1.5rem'},
         ]]"
       />
-      
-      <EjemploTipografia 
+    </div>
+    <div class="contenedor-portada">
+      <img class="portada" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/godo.jpg" alt="">
+      <div class="fondo-degradado">
+        <div class="contenido">
+          <p class="titulo">Un título mas extenso puede leerse mejor en una tipografía más pequeña</p>
+          <p class="subtitulo">Subtítulo</p>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor">
+      <EjemploCodigoVertical
+        class="m-y-1"
+        :tiene_ejemplo="false"
         html='
-        <h1 class="titulo-capitulo">
-          Título Capítulo de ENI
-        </h1>'
-        :celular="[
-          {nombre:'Tamaño', valor:'2.25rem'},
-        ]"
-        :escritorio="[
-          {nombre:'Tamaño', valor:'3.5rem'},
-        ]"
+        <div class="contenedor-portada">
+          <img class="portada" src="..." alt="">
+          <div class="fondo-degradado">
+            <div class="contenido">
+              <p class="titulo">Título</p>
+              <p class="subtitulo">Subtítulo</p>
+            </div>
+          </div>
+        </div>
+        '
       />
-      <EjemploTipografia 
-        html='
-        <h1 class="subtitulo-capitulo">
-          Subtítulo Capítulo de ENI
-        </h1>'
-        :celular="[
-          {nombre:'Tamaño', valor:'1.125rem'},
-        ]"
-        :escritorio="[
-          {nombre:'Tamaño', valor:'1.5rem'},
-        ]"
-      />  -->
+    </div>
+    
   </div>
 </template>

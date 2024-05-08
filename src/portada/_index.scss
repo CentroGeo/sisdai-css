@@ -13,24 +13,4 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.titulo-eni {
-  @extend .titulo-base;
-  font-size: 2.25rem; // 36px
-  @include mediaquery(esc) { 
-    font-size: 5rem; // 80px
-  }
-}
-.titulo-capitulo {
-  @extend .titulo-base;
-  font-size: 2.25rem; // 36px
-  @include mediaquery(esc) {
-    font-size: 3.5rem; // 56px
-  }
-}
-.subtitulo-capitulo {
-  @extend .titulo-base;
-  font-size: 1.125rem; // 18px
-  @include mediaquery(esc) {
-    font-size: 1.5rem; //24px
-  }
-}
+@import "./base.scss";

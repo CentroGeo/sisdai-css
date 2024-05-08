@@ -38,6 +38,7 @@
 
 // elementos compuestos
 @import "tarjeta";
+@import "portada";
 
 // componentes
 
@@ -51,9 +52,6 @@
 @import "navegacion/menu-lateral";
 @import "navegacion/colapsable-navegacion";
 @import "navegacion/indice-de-contenido";
-
-@import "portada/contenedor.scss";
-@import "portada/tipografia.scss";
 
 @import 'modal/base';
 

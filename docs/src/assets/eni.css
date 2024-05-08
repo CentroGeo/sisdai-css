@@ -365,7 +365,7 @@ kbd {
   color: var(--acciones-correcto-2);
 }
 
-.titulo-base, .subtitulo-capitulo, .titulo-capitulo, .titulo-eni, h6, .h6, .tarjeta .titulo, .tarjeta-hipervinculo-interno .titulo, .tarjeta-horizontal .titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+.titulo-base, .contenedor-portada .subtitulo, .contenedor-portada .titulo, .contenedor-portada .titulo-alto, h6, .h6, .tarjeta .titulo, .tarjeta-hipervinculo-interno .titulo, .tarjeta-horizontal .titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--tipografia-color);
   font-weight: 500;
   margin-top: 24px;
@@ -7034,6 +7034,80 @@ dl dd {
   vertical-align: middle;
 }
 
+.contenedor-portada {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  display: flex;
+  height: calc(100vh - 92px);
+}
+@media (max-width: 768px) {
+  .contenedor-portada {
+    height: calc(100vh - 120px);
+  }
+}
+.contenedor-portada .portada {
+  border-radius: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: all 0.27s ease-in-out;
+}
+.contenedor-portada .fondo-degradado {
+  position: relative;
+  width: 100%;
+  background: var(--portada-fondo-grandiente);
+  display: flex;
+  align-items: stretch;
+  margin-top: 48px;
+}
+.contenedor-portada .contenido {
+  margin: auto auto 0;
+  padding: 24px 24px 96px;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+}
+.contenedor-portada .contenido > * {
+  color: var(--portada-color);
+  border-color: currentColor;
+  margin: 8px 0;
+}
+.contenedor-portada .contenido > :first-child {
+  margin-top: 0;
+}
+.contenedor-portada .contenido > :last-child {
+  margin-bottom: 0;
+}
+.contenedor-portada .titulo-alto {
+  font-size: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .contenedor-portada .titulo-alto {
+    font-size: 5rem;
+  }
+}
+.contenedor-portada .titulo {
+  font-size: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .contenedor-portada .titulo {
+    font-size: 3.5rem;
+  }
+}
+.contenedor-portada .subtitulo {
+  font-size: 1.125rem;
+}
+@media screen and (min-width: 768px) {
+  .contenedor-portada .subtitulo {
+    font-size: 1.5rem;
+  }
+}
+
 .contenedor-boton-flotante {
   position: fixed;
   z-index: 3;
@@ -7858,73 +7932,6 @@ dl dd {
   background: var(--menu-lateral-accion-fondo-active);
   box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
   color: var(--menu-lateral-accion);
-}
-
-.contenedor-portada {
-  position: relative;
-  width: 100%;
-  min-height: 100px;
-  display: flex;
-  height: calc(100vh - 92px);
-}
-@media (max-width: 768px) {
-  .contenedor-portada {
-    height: calc(100vh - 120px);
-  }
-}
-.contenedor-portada .portada {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  object-fit: cover;
-  object-position: 50% 50%;
-  transition: all 0.27s ease-in-out;
-}
-.contenedor-portada .degradado-negro-abajo {
-  position: relative;
-  width: 100%;
-  background: var(--portada-fondo-grandiente);
-  display: flex;
-  align-items: stretch;
-  margin-top: 48px;
-}
-.contenedor-portada .degradado-negro-abajo .contenido-abajo {
-  margin-top: auto;
-  padding: 24px 24px 48px 24px;
-  width: 100%;
-  color: #ffffff;
-}
-.contenedor-portada .degradado-negro-abajo .contenido-abajo * {
-  color: #ffffff;
-}
-
-.titulo-eni {
-  font-size: 2.25rem;
-}
-@media screen and (min-width: 768px) {
-  .titulo-eni {
-    font-size: 5rem;
-  }
-}
-
-.titulo-capitulo {
-  font-size: 2.25rem;
-}
-@media screen and (min-width: 768px) {
-  .titulo-capitulo {
-    font-size: 3.5rem;
-  }
-}
-
-.subtitulo-capitulo {
-  font-size: 1.125rem;
-}
-@media screen and (min-width: 768px) {
-  .subtitulo-capitulo {
-    font-size: 1.5rem;
-  }
 }
 
 dialog[open]::backdrop {
@@ -10079,17 +10086,21 @@ ol + hr {
 .a11y-simplificada .contenedor-portada {
   height: auto;
 }
+.a11y-simplificada .contenedor-portada .fondo-degradado,
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo {
   background: transparent;
 }
+.a11y-simplificada .contenedor-portada .fondo-degradado .contenido,
+.a11y-simplificada .contenedor-portada .fondo-degradado .contenido-abajo,
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido,
 .a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo {
   margin-top: 0px;
 }
-.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo * {
+.a11y-simplificada .contenedor-portada .fondo-degradado .contenido > *,
+.a11y-simplificada .contenedor-portada .fondo-degradado .contenido-abajo > *,
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido > *,
+.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-abajo > * {
   color: var(--tipografia-color);
-}
-.a11y-simplificada .contenedor-portada .degradado-negro-abajo .contenido-texto-degradado {
-  color: var(--hipervinculo-color) !important;
 }
 .a11y-simplificada .contenedor-colapsable .colapsable-boton {
   display: flex !important;
@@ -10446,6 +10457,7 @@ body[data-dark-theme-sisdai=true] {
   --tarjetas-contenido-simplificada-fondo: #2B204C;
   --tarjetas--contenido-simplificada-color: #FFFFFF;
   --portada-fondo-grandiente: linear-gradient(transparent, #201541f1);
+  --portada-color: #ffffff;
   --navegacion-conahcyt-fondo: #002663;
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #ffffff;
@@ -10590,6 +10602,7 @@ body[data-dark-theme-eni=true] {
   --tarjetas-contenido-simplificada-fondo: #1B304E;
   --tarjetas--contenido-simplificada-color: #FFFFFF;
   --portada-fondo-grandiente: linear-gradient(transparent, #102543f1);
+  --portada-color: #ffffff;
   --navegacion-conahcyt-fondo: #002663;
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #ffffff;
@@ -10773,6 +10786,7 @@ body[data-dark-theme-gema=true] {
   --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">      <g id="icon">        <polygon fill="%23b99988" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>      </g>    </svg>');
   --input-select-deshabilitada-svg: url('data:image/svg+xml,      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">        <g id="icon">          <polygon fill="%23889DBB" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>        </g>      </svg>');
   --portada-fondo-grandiente: linear-gradient(transparent, #102543f1);
+  --portada-color: #ffffff;
 }
 body[data-dark-theme-gema=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
@@ -10905,6 +10919,7 @@ body[data-light-theme-sisdai=true] {
   --tarjetas-contenido-simplificada-fondo: #F5F5F5;
   --tarjetas--contenido-simplificada-color: #141414;
   --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
+  --portada-color: #ffffff;
   --navegacion-conahcyt-fondo: #ffffff;
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #002663;
@@ -11056,6 +11071,7 @@ body[data-light-theme-eni=true] {
   --tarjetas-contenido-simplificada-fondo: #F5F5F5;
   --tarjetas--contenido-simplificada-color: #141414;
   --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
+  --portada-color: #ffffff;
   --navegacion-conahcyt-fondo: #ffffff;
   --navegacion-conahcyt-sombra: #00000032;
   --navegacion-conahcyt-color: #002663;
@@ -11245,6 +11261,7 @@ body[data-light-theme-gema=true] {
   --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">      <g id="icon">        <polygon fill="%2390705f" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>      </g>    </svg>');
   --input-select-deshabilitada-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">      <g id="icon">        <polygon fill="%23767677" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>      </g>    </svg>');
   --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
+  --portada-color: #ffffff;
   --navegacion-fondo: #eef;
   --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
   --navegacion-redondeado: 0 0 8px 8px;

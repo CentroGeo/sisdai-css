@@ -68,16 +68,17 @@
 
   .contenedor-portada {
     height: auto;
+    
+    .fondo-degradado,
     .degradado-negro-abajo {
       background: transparent;
+
+      .contenido,
       .contenido-abajo {
         margin-top: 0px;
-        * {
+        > * {
           color: var(--tipografia-color);
         }
-      }
-      .contenido-texto-degradado {
-        color: var(--hipervinculo-color) !important;
       }
     }
   }
