@@ -22,6 +22,7 @@
     [type='checkbox'] + label,
     [type='radio'] + label{
       @extend .lista-compuesta-texto;
+      @include transicion;
       padding-top: calc(map-get($espaciado, 'minimo') - 1px);
       padding-bottom: calc(map-get($espaciado, 'minimo') - 1px);
       padding-left: calc(1.25rem + map-get($espaciado, '2') + 4px);

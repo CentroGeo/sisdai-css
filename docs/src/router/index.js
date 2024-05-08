@@ -97,6 +97,11 @@ const router = createRouter({
           name: 'portadas',
           component: () => import('../views/ElementosCompuestosPortadas.vue')
         },
+        {
+          path: 'listas-compuestas',
+          name: 'listas-compuestas',
+          component: () => import('../views/ElementosCompuestosListas.vue')
+        },
       ]
     },
     {

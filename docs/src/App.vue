@@ -263,6 +263,7 @@
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos Compuestos</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
               </ul>
             </li>
 

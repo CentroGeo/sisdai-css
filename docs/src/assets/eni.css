@@ -6833,6 +6833,7 @@ dl dd {
 .lista-casilla li [type=checkbox] + label, .lista-casilla li [type=checkbox] + legend,
 .lista-casilla li [type=radio] + label,
 .lista-casilla li [type=radio] + legend {
+  transition: all 0.27s ease-in-out;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: calc(1.25rem + 16px + 4px);
