@@ -77,7 +77,11 @@ body[data-dark-theme-sisdai='true'] {
         --boton-secundario-focus-color: #BFB5E0;
         --boton-secundario-focus-sombra: #668BFF;
 
-  --boton-conahcyt-fondo: #DDDDDD;
+  // --boton-conahcyt-fondo: #DDDDDD;
+  --boton-alternar-fondo: #DDDDDD;
+  --boton-alternar-color: #364A69;
+  --boton-alternar-deshabilitado-color: #767677;
+  --boton-alternar-deshabilitado-fondo: #AAAAAA;
 
   // Elementos de forumlario
   --label-color: #978CB7;
@@ -271,7 +275,12 @@ body[data-dark-theme-eni='true'] {
         --boton-secundario-sin-contenedor-focus-color: #364A69;
         --boton-secundario-sin-contenedor-focus-sombra: #005DFF;
 
-  --boton-conahcyt-fondo: #DDDDDD;
+  // --boton-conahcyt-fondo: #DDDDDD;
+  --boton-alternar-fondo: #DDDDDD;
+  --boton-alternar-color: #364A69;
+  --boton-alternar-deshabilitado-color: #767677;
+  --boton-alternar-deshabilitado-fondo: #AAAAAA;
+
  // Boton icono sin borde
  --boton-icono-sin-borde-color: #6692FF;
 
@@ -465,7 +474,11 @@ body[data-dark-theme-gema='true'] {
   --boton-secundario-focus-borde: var( --color-8 );
   --boton-secundario-focus-color: var( --color-13 );
   --boton-secundario-focus-sombra: var( --color-8 );
-  --boton-conahcyt-fondo: var( --color-14 );
+  // --boton-conahcyt-fondo: var( --color-14 );
+  --boton-alternar-fondo: #DDDDDD;
+  --boton-alternar-color: #364A69;
+  --boton-alternar-deshabilitado-color: #767677;
+  --boton-alternar-deshabilitado-fondo: #AAAAAA;
   --label-color: var( --color-5 );
   --input-fondo: var( --color-9 );
   --input-color: var( --color-2 );

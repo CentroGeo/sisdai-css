@@ -102,6 +102,11 @@ const router = createRouter({
           name: 'listas-compuestas',
           component: () => import('../views/ElementosCompuestosListas.vue')
         },
+        {
+          path: 'botones-compuestos',
+          name: 'botones-compuestos',
+          component: () => import('../views/ElementosCompuestosBotones.vue')
+        },
       ]
     },
     {

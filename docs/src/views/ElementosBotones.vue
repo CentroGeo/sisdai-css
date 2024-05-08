@@ -560,46 +560,5 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     </div>
 
-    <div class="contenedor ancho-lectura p-t-10">
-      <h2 class="m-t-10">Botón de descarga</h2>
-      <p>
-        Es un tipo de boton en bloque que toma el ancho completo
-        del contenedor en donde se encuentre.
-      </p>
-    </div>
-    <div class="flex flex-contenido-centrado">
-
-      <div class="columna-8">
-      <EjemploCodigoVertical
-      html='
-      <div class="m-y-1">
-        <a 
-          class="boton-descarga" 
-          href="../img/grafica-variantes.png"
-          download="nombre-que-tomara-la-descarga"
-        >
-          <span class="titulo">
-            Descarga de archivos
-          </span>
-          <span class="descripcion">
-            <p class="texto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-              Odit totam omnis libero nihil amet tenetur rerum modi iusto, 
-              ullam ea eveniet ex nostrum illo. 
-              Atque consectetur beatae voluptates tenetur error.
-            </p>
-            <span 
-            class="pictograma-archivo-descargar" 
-              aria-hidden="true"
-            ></span>
-          </span>
-        </a>
-      </div>
-      '
-      />
-      </div>
-
-    </div>
-
   </div>
 </template>

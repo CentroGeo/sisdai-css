@@ -1,0 +1,80 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+.boton-alternar {
+  background-color: var(--boton-alternar-fondo);
+  border-radius: map-get($bordes, '20');
+  display: inline-flex;
+  padding: map-get($espaciado, 'minimo');
+  margin: map-get($espaciado, 'minimo');
+
+
+  [type='radio']:disabled {
+    pointer-events: none;
+    cursor: default;
+  }
+  [type='radio']:disabled + label {
+    background-color: transparent;
+    color: var(--boton-alternar-deshabilitado-color);
+    box-shadow: none;
+    pointer-events: none;
+    cursor: default;
+  }
+  [type='radio']:disabled:checked + label {
+    background-color: var(--boton-alternar-deshabilitado-fondo);
+    color: var(--boton-primario-color);
+    box-shadow: none;
+    pointer-events: none;
+    cursor: default;
+  }
+
+  [type='radio'] + label {
+    @extend .boton;
+    background-color: transparent;
+    color: var(--boton-alternar-color);
+    border-radius: map-get($bordes, '20');
+    font-weight: 600;
+    font-size: 0.875rem; // 14px
+    line-height: 1.5rem; // 24px
+    padding: map-get($espaciado, 'minimo') map-get($espaciado, '1');
+    margin: 0;
+  }
+
+  [type='radio']:not(:disabled):focus + label {
+    background-color: var(--boton-primario-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--boton-primario-focus-borde),
+      0 0 8px var(--boton-primario-focus-sombra);
+    color: var(--boton-primario-focus-color);
+    z-index: 1;
+  }
+
+  [type='radio']:not(:disabled) + label {
+    &:hover {
+      background: transparent;
+      color: #0068FF;
+    }
+  }
+  
+
+  [type='radio']:not(:disabled):checked + label {
+    @extend .boton-primario;
+  }
+
+  [type='radio'] + label::after,
+  [type='radio'] + label::before {
+    display: none;
+  }
+}

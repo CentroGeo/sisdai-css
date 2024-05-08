@@ -34,7 +34,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <p class="etiqueta">Etiqueta o texto secundario</p>
             <p class="titulo">Título de la tarjeta de una o más palabras</p>
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
-            <button type="button">predeterminado</button>
+            <button type="button" class="boton-chico">predeterminado</button>
           </div>
         </div>
         <EjemploCodigoVertical
@@ -49,7 +49,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <p class="titulo"> ... </p>
             <p> ... </p>
             
-            <button type="button"> ... </button>
+            <button type="button" class="boton-chico"> ... </button>
           </div>
         </div>
         '
@@ -142,7 +142,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <p class="etiqueta">Etiqueta o texto secundario</p>
           <p class="titulo">Título de la tarjeta de una o más palabras</p>
           <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
-          <button type="button">predeterminado</button>
+          <button type="button" class="boton-chico">predeterminado</button>
         </div>
       </div>
       <EjemploCodigoVertical
@@ -155,7 +155,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <p class="etiqueta"> ... </p>
             <p class="titulo"> ... </p>
             <p> ... </p>
-            <button type="button"> ... </button>
+            <button type="button" class="boton-chico"> ... </button>
           </div>
           </div>
         </div>
