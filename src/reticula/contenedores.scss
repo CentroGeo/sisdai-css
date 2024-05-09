@@ -49,18 +49,18 @@
     padding-left: 0;
     padding-right: 0;
   }
-}
-
-// alineacion
-.alineacion-cetrada {
-  margin-left: auto;
-  margin-right: auto;
-}
-.alineacion-derecha {
-  margin-left: auto;
-  margin-right: 0;
-}
-.alineacion-izquierda {
-  margin-left: 0;
-  margin-right: auto;
+  
+  // alineacion
+  .alineacion-cetrada {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .alineacion-derecha {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .alineacion-izquierda {
+    margin-left: 0;
+    margin-right: auto;
+  }
 }
