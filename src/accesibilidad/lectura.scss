@@ -22,3 +22,16 @@
   white-space: nowrap; 
   width: 1px; 
 }
+
+// Se agrega informacion al letcor de pantalla cuando los hipervinculos abren en una nueva pestaña
+[target="_blank"]:after {
+  content: ". Abre nueva pestaña.";
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
