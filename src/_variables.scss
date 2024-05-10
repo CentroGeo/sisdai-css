@@ -184,16 +184,8 @@ $columnas: (
   }
   --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
 
-  // TODO:
-  // preguntar quien utiliza estas variables y pa que y como y onde.. 
-  // porque quizas podrian utilizarse directo las variables de sass
-  // reticula
-  @each $id, $valor in $espaciado {
-    --espaciado-#{$id}: #{$valor};
-  }
-  // breakpoints
-  @each $id, $valor in $breakpoints {
-    --breakpoints-#{$id}: #{$valor};
-  }
-  --navegacion-breakpoint: 768px;
+ // color globo informacion
+ --globo-informacion-fondo: #141414E6;
+ --globo-informacion-color: #ffffff;
+ --globo-informacion-accion: #80AAFF;
 }

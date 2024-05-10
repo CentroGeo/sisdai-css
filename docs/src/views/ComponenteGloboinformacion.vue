@@ -1,5 +1,5 @@
 <script setup>
-import EjemploGloboInfoExtCerrar from "../componetes/EjemploGloboInfoExtCerrar.vue";
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 </script>
 
 <template>
@@ -8,33 +8,91 @@ import EjemploGloboInfoExtCerrar from "../componetes/EjemploGloboInfoExtCerrar.v
     <div class="ancho-lectura">
       <h1>Globo de información</h1>
       <p>
-        Directiva declarada en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>
-        Comunmente conocidos como Tooltips, 
-        estas directivas funcionan para cualquier elemento html o componente de vue, 
+        Directiva declarada en la biblioteca 
+        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
+      </p>
+      <p>
+        Comunmente conocidos como Tooltips, estas directivas funcionan para cualquier elemento html o componente de vue, 
         agregando la directiva <code>v-globo-informacion</code> o <code>v-globo-informacion-extendido</code>.
       </p>
     </div>
-    <div class="contenedor-lectura">
-      <h2>Globo de información normal</h2>
-      <div class="contenedor-globo-info">
-        <div class="cuerpo-globo-info">
-          <p>Lorem ipsum, dolor sit amet consectetur</p>
-        </div>
-      </div>
 
-      <h2>Globo de información extendido</h2>
-      <div class="contenedor-globo-info-ext">
-        <div class="cuerpo-globo-info">
-          <p>
-            <b>Lorem ipsum dolor sit amet</b> consectetur adipisicing elit. Odio omnis, quas sequi mollitia dolorem enim molestiae tempore temporibus fugiat esse sed, voluptatem expedita porro cupiditate minima unde quaerat corporis. Nihil.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ad nobis id, vitae iusto non mollitia! Ex id, illum magnam dolorem asperiores autem? Aperiam, alias inventore eveniet doloremque atque voluptas?</p>
-        </div>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-8">
+        <h2 class="m-t-10">Globo de información simple</h2>
+        <EjemploCodigoVertical
+          html='
+          <div class="contenedor-globo-info">
+            <div class="cuerpo-globo-info">
+              <p>
+                <span class="punto-color"></span>
+                Jalisco | 8,348,151 habitantes
+              </p>
+            </div>
+          </div>
+          '
+        />
       </div>
-
-      <h2>Globo de información extendido con botón de cierre</h2>
-      <EjemploGloboInfoExtCerrar />
     </div>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-8">
+        <h2 class="m-t-10">Globo de información complejo</h2>
+        <EjemploCodigoVertical
+          html='
+          <div class="contenedor-globo-info-ext">
+            <div class="cuerpo-globo-info">
+              <p>
+                <b>Lorem ipsum</b>
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Ut, ab? Optio est natus autem facere fugiat et ducimus 
+                beatae aspernatur, fugit, asperiores nostrum amet odio 
+                laboriosam itaque voluptatibus facilis quam.
+                Dolor officiis facilis quod recusandae, cupiditate possimus 
+                at praesentium? Hic voluptate maiores magnam totam porro 
+                facere corporis placeat distinctio explicabo recusandae! 
+                Reprehenderit.
+              </p>
+            </div>
+          </div>
+          '
+        />
+      </div>
+    </div>
+   
+
+    
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-8">
+        <h2 class="m-t-10">Globo de información complejo con botón de cierre</h2>
+        <EjemploCodigoVertical
+          html='
+          <div class="contenedor-globo-info-ext-boton">
+            <div class="cuerpo-globo-info">
+              <p>
+                <b>Red Nacional de Jardines Etnobiológicos</b>
+              </p>
+              <p>
+                Jardín Botánico Efraim Hernández Xolocotzi 
+                (sede dos)<br>
+                <a href="https://jardinbotanicofcfuanl.com"> 
+                  jardinbotanicofcfuanl.com
+                </a>
+              </p>
+            </div>
+            <button class="boton-pictograma boton-primario-sin-contenedor">
+              <span class="pictograma-cerrar" aria-hidden="true"></span>
+              <span class="a11y-solo-lectura">Cerrar.</span>
+            </button>
+          </div>
+          '
+        />
+      </div>
+    </div>
+
   </div>
 </template>
 

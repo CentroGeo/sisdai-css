@@ -13,123 +13,63 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.contenedor-globo-info-ext {
-  width: 322px;
-  // min-height: 152px;
-  max-height: 160px;
-  padding: 16px;
-  overflow-y: auto;
-
-  button.boton-cerrar {
-    margin-right: 0;
-    
-    background: transparent;
-    border-color: #B1C6E4;
-    color: #B1C6E4;
-
-    &:hover {
-      background: #364A69;
-      border-color: #B1C6E4;
-      color: #B1C6E4;
-    }
-    &:focus {
-      background: #364A69;
-      border-color: #668BFF;
-      box-shadow: 0 0 8px #668BFF;
-      color: #B1C6E4;
-      outline-color: #668BFF;      
-    }
-  }
-  .cuerpo-globo-info {
-    font-size: 16px;
-    // line-height: 1rem;
-    line-height: 1.25rem;
-  }
-}
-
-.contenedor-globo-info {
-  min-height: 0;
-  padding: 16px;
-  width: auto;
-  max-width: 240px;
-
-  .cuerpo-globo-info {
-    font-size: 12px;
-    line-height: 0.938rem;
-  }
-  button.boton-cerrar {
-    margin-right: 0;
-    
-    background: transparent!important;
-    border-color: #B1C6E4;
-    color: #B1C6E4;
-
-    &:hover {
-      background: #364A69;
-      border-color: #B1C6E4;
-      color: #B1C6E4;
-    }
-    &:focus {
-      background: #364A69;
-      border-color: #668BFF;
-      box-shadow: 0 0 8px #668BFF;
-      color: #B1C6E4;
-      outline-color: #668BFF;      
-    }
-  }
-}
-
+.contenedor-globo-info-ext-boton,
 .contenedor-globo-info-ext,
 .contenedor-globo-info {
-  background: #141414;
-  color: #fff;
-  box-shadow: 0px 3px 6px #00000029;
+  background-color: var(--globo-informacion-fondo);
+  color: var(--globo-informacion-color);
   border-radius: map-get($borde-redondeado, '8');
-
+  padding: map-get($espaciado, '2');
+  width: auto;
   display: flex;
-  justify-content: space-between;
-  gap: 8px;
   align-items: flex-start;
-
+  gap: map-get($espaciado, '1');
   z-index: 9999;
 
-  .cuerpo-globo-info {
-    font-weight: 400;
-
-    a,
-    .hipervinculo {
-      color: #668bff;
-      &:visited {
-        color: #cf99ff;
-      }
-      &:hover {
-        color: #8999cc;
-      }
-      &:focus-visible {
-        color: #668bff;
-        outline: 2px dashed #668bff;
-      }
-    }
-
-    :first-child {
-      margin-top: 0;
-    }
-    :last-child {
-      margin-bottom: 0;
-    }
+  a,
+  button {
+    background-color: transparent;
+    color: var(--globo-informacion-accion);
   }
-  .punto-color{
+}
+
+.cuerpo-globo-info {
+  > * {
+    line-height: 1.25em;
+    margin-top: map-get($espaciado, '2');
+    margin-bottom: map-get($espaciado, '2');
+  }
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  .punto-color {
     width: 0.625rem;
     height: 0.625rem;
     border-radius: 50%;
     border: 1px solid var(--borde-color-4);
+    background-color: var(--globo-informacion-accion);
     display: inline-block;
   }
 }
 
-.contenedor-vis .contenido-vis {
-  .contenedor-globo-info-ext,
-  .contenedor-globo-info {
-    background: #141414e6;
+.contenedor-globo-info {
+  max-width: 240px;
+  .cuerpo-globo-info > * {
+    font-size: 0.75rem;
+    line-height: 1.25em;
   }
+}
+.contenedor-globo-info-ext {
+  max-height: 160px;
+  max-width: 420px;
+  overflow-y: auto;
+}
+.contenedor-globo-info-ext-boton {
+  max-height: 160px;
+  max-width: 460px;
+  overflow-y: auto;
 }
