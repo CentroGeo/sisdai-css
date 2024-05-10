@@ -16,7 +16,7 @@ a,
 .hipervinculo {
   background-color: transparent;
   border: none;
-  border-radius: map-get($bordes, '4');
+  border-radius: map-get($borde-redondeado, '4');
   box-shadow: 0 0 2px var(--hipervinculo-sombra);
   box-sizing: border-box;
   color: var(--hipervinculo-color);
@@ -55,7 +55,7 @@ a,
 
   .pictograma,
   [class^='pictograma-'],
-  [class*=" pictograma-"] {
+  [class*=' pictograma-'] {
     display: inline;
     vertical-align: baseline;
     font-size: inherit;
@@ -88,13 +88,13 @@ a,
   }
 }
 
-a[class^="m-"],
-a[class^="p-"],
-.hipervinculo[class^="m-"],
-.hipervinculo[class^="p-"],
-a[class*=" m-"],
-a[class*=" p-"],
-.hipervinculo[class*=" m-"],
-.hipervinculo[class*=" p-"] {
+a[class^='m-'],
+a[class^='p-'],
+.hipervinculo[class^='m-'],
+.hipervinculo[class^='p-'],
+a[class*=' m-'],
+a[class*=' p-'],
+.hipervinculo[class*=' m-'],
+.hipervinculo[class*=' p-'] {
   display: inline-block;
 }

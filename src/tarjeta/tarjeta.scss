@@ -16,7 +16,7 @@
 .tarjeta {
   flex: 1 1;
   background: var(--tarjetas-fondo);
-  border-radius: map-get($bordes, '20');
+  border-radius: map-get($borde-redondeado, '20');
   overflow: hidden;
 
   .portada,
@@ -42,7 +42,7 @@
 
     > button,
     > [class^='boton-'],
-    > [class*=" boton-"] {
+    > [class*=' boton-'] {
       margin-top: map-get($espaciado, '1');
     }
 

@@ -82,6 +82,11 @@ const router = createRouter({
           name: 'detalles',
           component: () => import('../views/ElementosDetalles.vue')
         },
+        {
+          path: 'separadores',
+          name: 'separadores',
+          component: () => import('../views/ElementosSeparadores.vue')
+        },
       ]
     },
     {
@@ -96,6 +101,16 @@ const router = createRouter({
           path: 'portadas',
           name: 'portadas',
           component: () => import('../views/ElementosCompuestosPortadas.vue')
+        },
+        {
+          path: 'alertas',
+          name: 'alertas',
+          component: () => import('../views/ElementosCompuestosAlertas.vue')
+        },
+        {
+          path: 'cargando',
+          name: 'cargando',
+          component: () => import('../views/ElementosCompuestosCargando.vue')
         },
         {
           path: 'listas-compuestas',
@@ -118,9 +133,39 @@ const router = createRouter({
           component: () => import('../views/ComponenteNavegacion.vue')
         },
         {
-          path: '/globo-informacion',
+          path: 'menu-lateral',
+          name: 'menu-lateral',
+          component: () => import('../views/ComponenteMenuLateral.vue')
+        },
+        {
+          path: 'menu-accesibilidad',
+          name: 'menu-accesibilidad',
+          component: () => import('../views/ComponenteMenuAccesibilidad.vue')
+        },
+        {
+          path: 'modal',
+          name: 'modal',
+          component: () => import('../views/ComponenteModal.vue')
+        },
+        {
+          path: 'boton-flotante',
+          name: 'boton-flotante',
+          component: () => import('../views/ComponenteBotonFlotante.vue')
+        },
+        {
+          path: 'colapsable',
+          name: 'colapsable',
+          component: () => import('../views/ComponenteColapsable.vue')
+        },
+        {
+          path: 'indice-contenido',
+          name: 'indice-contenido',
+          component: () => import('../views/ComponenteIndiceContenido.vue')
+        },
+        {
+          path: 'globo-informacion',
           name: 'globo-informacion',
-          component: () => import('../views/ComponenteGloboinformacion.vue')
+          component: () => import('../views/ComponenteGloboInformacion.vue')
         },
       ]
     },
@@ -131,6 +176,16 @@ const router = createRouter({
           path: 'vistipografia',
           name: 'vistipografia',
           component: () => import('../views/VisualizacionesTipografia.vue')
+        },
+        {
+          path: 'viscontenedor',
+          name: 'viscontenedor',
+          component: () => import('../views/VisualizacionesContenedor.vue')
+        },
+        {
+          path: 'viscontrolador',
+          name: 'viscontrolador',
+          component: () => import('../views/VisualizacionesControlador.vue')
         }
       ],
     },

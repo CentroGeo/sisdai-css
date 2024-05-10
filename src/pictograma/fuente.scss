@@ -14,25 +14,25 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 @font-face {
-  font-family: "sisdai-pictogramas";
-  src: url("https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.eot");
-  src: url("https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas?#iefix") format("embedded-opentype"),
-    url("https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.woff") format("woff"),
-    url("https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.ttf") format("truetype"),
-    url("https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.svg#sisdai-pictogramas") format("svg");
+  font-family: 'sisdai-pictogramas';
+  src: url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.eot');
+  src: url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas?#iefix') format('embedded-opentype'),
+    url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.woff') format('woff'),
+    url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.ttf') format('truetype'),
+    url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.svg#sisdai-pictogramas') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^='pictograma-'],
-[class*=" pictograma-"] {
+[class*=' pictograma-'] {
   vertical-align: middle;
   display: inline-flex;
   padding: 0.25em;
 }
 
 [data-pictograma]:before {
-  font-family: "sisdai-pictogramas" !important;
+  font-family: 'sisdai-pictogramas' !important;
   content: attr(data-pictograma);
   font-style: normal !important;
   font-weight: normal !important;
@@ -43,9 +43,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="pictograma-"]:before,
-[class*=" pictograma-"]:before {
-  font-family: "sisdai-pictogramas" !important;
+[class^='pictograma-']:before,
+[class*=' pictograma-']:before {
+  font-family: 'sisdai-pictogramas' !important;
   font-style: normal !important;
   font-weight: normal !important;
   font-variant: normal !important;

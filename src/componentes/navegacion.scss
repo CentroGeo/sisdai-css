@@ -23,8 +23,8 @@
   display: block;
   position: relative;
   z-index: 110;
-  padding-left: map-get($contenedores, "mov", "margen-interior");
-  padding-right: map-get($contenedores, "mov", "margen-interior");
+  padding-left: map-get($contenedores, 'mov', 'margen-interior');
+  padding-right: map-get($contenedores, 'mov', 'margen-interior');
   &.navegacion-pegada {
     position: sticky;
     top: 0;
@@ -44,11 +44,11 @@
     background: var(--submenu-lateral-fondo-colapsable);
     color: var(--menu-lateral-color);
     font-size: 0.75rem;
-    padding: map-get($espaciado, "minimo")
-      map-get($contenedores, "mov", "margen-interior");
-    margin-left: calc(map-get($contenedores, "mov", "margen-interior") * -1);
-    margin-right: calc(map-get($contenedores, "mov", "margen-interior") * -1);
-    flex: 1 0 calc(100% - map-get($contenedores, "mov", "margen-interior") * 2);
+    padding: map-get($espaciado, 'minimo')
+      map-get($contenedores, 'mov', 'margen-interior');
+    margin-left: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
+    margin-right: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
+    flex: 1 0 calc(100% - map-get($contenedores, 'mov', 'margen-interior') * 2);
   }
 }
 .nav-menu-contedor {
@@ -96,14 +96,14 @@
   }
 }
 
-@include mediaquery("nav") {
+@include mediaquery('nav') {
   .navegacion {
 
     &:not(.navegacion-movil-forzada) {
       display: flex;
       align-items: center;
-      padding-left: map-get($contenedores, "esc", "margen-interior");
-      padding-right: map-get($contenedores, "esc", "margen-interior");
+      padding-left: map-get($contenedores, 'esc', 'margen-interior');
+      padding-right: map-get($contenedores, 'esc', 'margen-interior');
       .nav-contenedor-identidad {
         display: flex;
         align-items: center;
@@ -173,14 +173,14 @@
     }
   }
   .navegacion-movil-forzada{
-     padding-left: map-get($contenedores, "esc", "margen-interior");
-      padding-right: map-get($contenedores, "esc", "margen-interior");
+     padding-left: map-get($contenedores, 'esc', 'margen-interior');
+      padding-right: map-get($contenedores, 'esc', 'margen-interior');
       .nav-informacion {
-        padding: map-get($espaciado, "minimo")
-          map-get($contenedores, "esc", "margen-interior");
-        margin-left: calc(map-get($contenedores, "esc", "margen-interior") * -1);
-        margin-right: calc(map-get($contenedores, "esc", "margen-interior") * -1);
-        flex: 1 0 calc(100% - map-get($contenedores, "mov", "margen-interior") * 2);
+        padding: map-get($espaciado, 'minimo')
+          map-get($contenedores, 'esc', 'margen-interior');
+        margin-left: calc(map-get($contenedores, 'esc', 'margen-interior') * -1);
+        margin-right: calc(map-get($contenedores, 'esc', 'margen-interior') * -1);
+        flex: 1 0 calc(100% - map-get($contenedores, 'mov', 'margen-interior') * 2);
       }
   }
 }

@@ -14,7 +14,7 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 img {
-  border-radius: map-get($bordes, '8');
+  border-radius: map-get($borde-redondeado, '8');
   max-width: 100%;
 }
 

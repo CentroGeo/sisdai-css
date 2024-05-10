@@ -58,14 +58,14 @@ Puedes importar la biblioteca de manera general en el archivo `main.js` de tu pr
 ```js
 // src/main.js
 
-import 'sisdai-css/src/eni.scss'
+import 'sisdai-css/src/sisdai.scss'
 
 ```
 
 Ó en el archivo o sección de estilos de tu proyecto
 
 ```css
-@import 'sisdai-css/src/eni.scss';
+@import 'sisdai-css/src/sisdai.scss';
 ```
 
 *Opcionalmente** se pueden importar las variables y mixins para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
@@ -107,28 +107,25 @@ El código se encuentra separado por módulos dependiendo del tipo de etiqueta o
 | Modulo | Descripcion                                                                                                                                                            |
 | ------ |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menú de accesibilidad                                                                                  |
-| Alertas | Contenedores para mostrar notificaciones de texto                                                                                                                      |
-| Auxiliares | Clases globales para alinear contenedores y elementos                                                                                                                  |
-| Bordes | Clases reutilizables de distintos estilos de bordes                                                                                                                    |
-| Boton | Clases que se aplican al elemento `<button>`                                                                                                                            |
+| Auxiliares | Clases auxiliares para desarrollo, estilos de texto, bordes, alineacion y visualizacion en distintos dispositivos |
+| Botón | Clases que se aplican al elemento `<button>`                                                                                                                            |
 | Color | Clases generales de colores para estados de elementos y clases de colores institucionales                                                                              |
-| Controladores | Clase para personalizar los checkbox y radio con label para las visualizaciones                                                                          |
-| Detalle | Estilos de la etiqueta `<details>` `<summary>` utilizados en secciones de preguntas y respuestas                                                                       |
-| Formularios | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                       |
-| Pictogramas | Enlace y mapeado de la tipografía Sisdai-Pictogramas  `.pictograma-`                                                                                                                         |
-| Imágenes | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                |
-| Link | Estilos de la etiqueta de hipervínculo `<a>`                                                                                                                           |
-| Listas | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                          |
-| Navegación* | Estilos y clases para todos los elementos que se necesitan en la navegación, desde el `<nav>` hasta listas anidadas de sub-menu                                        |
-| Portada* | Clases para construir una portada portada para un capítulo ENI                                                                                                        |
+| Componentes* | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://codigo.conahcyt.mx/sisdai/sisdai-componentes) |
+| Formulario | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                       |
+| Hipercínculo | Estilos de la etiqueta de hipervínculo `<a>`                                                                                                                           |
+| Imagen | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                |
+| Lista | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                          |
+| Pictograma | Enlace y mapeado de la tipografía Sisdai-Pictogramas  `.pictograma-`                                                                                                                         |
+| Portada | Clases para construir una portada portada para un capítulo ENI                                                                                                        |
 | Retícula | Clases de contenedores y retícula con renglones y columnas                                                                                                             |
-| Sombras | Clases reutilizables de distintos estilos de sombras                                                                                                                   |
-| Tablas | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                    |
-| Tarjetas | Clases para crear estilos de tarjeta del sistema de diseño                                                                                                                |
-| Tipografía | Estilos de las etiquetas de títulos y párrafos. Clases de títulos especiales responsivas que utilizan los capítulos de ENI y los componentes de visualización de datos |
+| Tabla | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                    |
+| Tarjeta | Clases para crear estilos de tarjeta del sistema de diseño                                                                                                                |
+| Tipografía | Estilos de las etiquetas de títulos y párrafos. |
+| Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://codigo.conahcyt.mx/sisdai/sisdai-graficas) y [sisdai-mapas](https://codigo.conahcyt.mx/sisdai/sisdai-mapas) |
 
 > [!NOTE]  
-> *Componentes Vue agregados en otras bibliotecas
+> *Estilos que se utilizan en otras bibliotecas del Sisdai
+
 
 ## Uso local del proyecto
 
@@ -216,24 +213,25 @@ si no existiera una carpeta adecuada, se crea una nueva dentro de `src/` con el 
 sisdai-css/
 └── src
     └── *nuevoelemento* # carpeta del elemento o componente
+        ├── _index.scss # archivo con import de todos los archivos del nuevo elemento
         ├── base.scss # estilos generales
         └── subelemento.scss # sub elementos o casos particulares
 ```
 
-Para agregar el nuevo elemento a la biblioteca se debe importar en el archivo principal `eni.scss`.
+Para agregar el nuevo elemento a la biblioteca se debe importar en el archivo principal `sisdai.scss`.
 Hay que recordar que el orden en el que se importen los estilos importa, el último archivo 'gana' el estilo final.
 
 ```bash
 sisdai-css/
 └── src
     ├── [...]
-    └── eni.scss
+    └── sisdai.scss
 ```
 
 Preferiblemente situarlo antes de los auxiliares y los archivos de accesibilidad
 
 ```css
-/* src/eni.scss */
+/* src/sisdai.scss */
 ...
 
 @import "nuevoelemento/base";

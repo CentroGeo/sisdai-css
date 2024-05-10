@@ -13,10 +13,10 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-[class^="vis-"],
-[class*=" vis-"] {
+[class^='vis-'],
+[class*=' vis-'] {
   color: var(--tipografia-color);
-  font-family: var(--tipografia-familia, "sans-serif");
+  font-family: var(--tipografia-familia, 'sans-serif');
 }
 
 .vis-titulo-visualizacion {

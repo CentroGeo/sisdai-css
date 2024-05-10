@@ -15,7 +15,7 @@
 
 .boton {
   border: none; // el borde debe ser box shadow para empatar con el alto de los elementos en diseño
-  border-radius: map-get($bordes, '4'); 
+  border-radius: map-get($borde-redondeado, '4'); 
   box-sizing: border-box;
   font-family: var(--tipografia-familia, 'sans-serif');
   font-size: 1rem;
@@ -41,7 +41,7 @@
   }
   .pictograma,
   [class^='pictograma-'],
-  [class*=" pictograma-"] {
+  [class*=' pictograma-'] {
     display: inline-flex;
     align-items: center;
     font-size: 1rem; // 16px

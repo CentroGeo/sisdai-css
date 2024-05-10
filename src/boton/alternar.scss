@@ -15,7 +15,7 @@
 
 .boton-alternar {
   background-color: var(--boton-alternar-fondo);
-  border-radius: map-get($bordes, '20');
+  border-radius: map-get($borde-redondeado, '20');
   display: inline-flex;
   padding: map-get($espaciado, 'minimo');
   margin: map-get($espaciado, 'minimo');
@@ -44,7 +44,7 @@
     @extend .boton;
     background-color: transparent;
     color: var(--boton-alternar-color);
-    border-radius: map-get($bordes, '20');
+    border-radius: map-get($borde-redondeado, '20');
     font-weight: 600;
     font-size: 0.875rem; // 14px
     line-height: 1.5rem; // 24px

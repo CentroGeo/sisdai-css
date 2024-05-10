@@ -25,7 +25,7 @@
       @include mediaquery($dispositivo) {
 
         >[class^='columna-'],
-        >[class*=" columna-"] {
+        >[class*=' columna-'] {
           display: block;
           max-width: map-get($contenedores, $dispositivo, 'ancho-lectura');
           padding: map-get($map, 'margen-interior');
@@ -40,7 +40,7 @@
   input[type=submit],
   input[type=reset],
   [class^='boton'],
-  [class*=" boton"] {
+  [class*=' boton'] {
     @extend .hipervinculo;
     background-color: transparent !important;
     &:not(:last-child) {
@@ -212,7 +212,7 @@
         margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
 
         >[class^='columna-'],
-        >[class*=" columna-"] {
+        >[class*=' columna-'] {
           flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
           max-width: calc(100% - map-get($configuracion, 'espaciado'));
           margin-left: map-get($configuracion, 'espaciado')*.5;

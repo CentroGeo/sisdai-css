@@ -31,7 +31,7 @@ details {
 }
 summary {
   border: 1px solid transparent;
-  border-radius: map-get($bordes, '4');
+  border-radius: map-get($borde-redondeado, '4');
   display: flex;
   list-style: none;
   padding: map-get($espaciado, '1') 0;

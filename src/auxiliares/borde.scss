@@ -1,0 +1,128 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+
+.borde {
+  border: 1px solid var(--borde-color-1);
+}
+.borde-t {
+  border-top: 1px solid var(--borde-color-1);
+}
+.borde-r {
+  border-right: 1px solid var(--borde-color-1);
+}
+.borde-b {
+  border-bottom: 1px solid var(--borde-color-1);
+}
+.borde-l {
+  border-left: 1px solid var(--borde-color-1);
+}
+.borde-x {
+  border-right: 1px solid var(--borde-color-1);
+  border-left: 1px solid var(--borde-color-1);
+}
+.borde-y {
+  border-top: 1px solid var(--borde-color-1);
+  border-bottom: 1px solid var(--borde-color-1);
+}
+
+// color
+@each $id, $valor in $borde-color {
+  .borde-color-#{$id} {
+    border-color: $valor;
+  }
+  .borde-t-color-#{$id} {
+    border-top-color: $valor;
+  }
+  .borde-r-color-#{$id} {
+    border-right-color: $valor;
+  }
+  .borde-b-color-#{$id} {
+    border-bottom-color: $valor;
+  }
+  .borde-l-color-#{$id} {
+    border-left-color: $valor;
+  }
+  .borde-x-color-#{$id} {
+    border-right-color: $valor;
+    border-left-color: $valor;
+  }
+  .borde-y-color-#{$id} {
+    border-top-color: $valor;
+    border-bottom-color: $valor;
+  }
+}
+
+// grosor
+@each $id, $valor in $borde-grosor {
+  .borde-grosor-#{$id} {
+    border-width: $valor;
+  }
+  .borde-t-grosor-#{$id} {
+    border-top-width: $valor;
+  }
+  .borde-r-grosor-#{$id} {
+    border-right-width: $valor;
+  }
+  .borde-b-grosor-#{$id} {
+    border-bottom-width: $valor;
+  }
+  .borde-l-grosor-#{$id} {
+    border-left-width: $valor;
+  }
+  .borde-x-grosor-#{$id} {
+    border-right-width: $valor;
+    border-left-width: $valor;
+  }
+  .borde-y-grosor-#{$id} {
+    border-top-width: $valor;
+    border-bottom-width: $valor;
+  }
+}
+
+// redondeado
+@each $id, $valor in $borde-redondeado {
+  .borde-redondeado-#{$id} {
+    border-radius: $valor;
+  }
+  .borde-t-redondeado-#{$id} {
+    border-top-left-radius: $valor;
+    border-top-right-radius: $valor;
+  }
+  .borde-b-redondeado-#{$id} {
+    border-bottom-left-radius: $valor;
+    border-bottom-right-radius: $valor;
+  }
+  .borde-r-redondeado-#{$id} {
+    border-top-left-radius: $valor;
+    border-bottom-left-radius: $valor;
+  }
+  .borde-l-redondeado-#{$id} {
+    border-top-right-radius: $valor;
+    border-bottom-right-radius: $valor;
+  }
+  .borde-t-l-redondeado-#{$id} {
+    border-top-left-radius: $valor;
+  }
+  .borde-t-r-redondeado-#{$id} {
+    border-top-right-radius: $valor;
+  }
+  .borde-b-l-redondeado-#{$id} {
+    border-bottom-left-radius: $valor;
+  }
+  .borde-b-r-redondeado-#{$id} {
+    border-bottom-right-radius: $valor;
+  }
+}

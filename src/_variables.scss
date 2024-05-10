@@ -47,7 +47,8 @@ $acciones: (
 );
 
 // AUX / bordes
-$bordes: (
+$borde-redondeado: (
+  '0': 0,
   '2': 2px,
   '4': 4px,
   '8': 8px,
@@ -55,6 +56,21 @@ $bordes: (
   '16': 16px,
   '20': 20px,
   '24': 24px,
+);
+
+$borde-grosor: (
+  '0':  0,
+  '1':  1px,
+  '2':  2px,
+  '3':  3px,
+  '4':  4px,
+);
+
+$borde-color: (
+  '1':  var(--borde-color-1),
+  '2':  var(--borde-color-2),
+  '3':  var(--borde-color-3),
+  '4':  var(--borde-color-4),
 );
 
 // TAMAÑOS / PICTOGRAMAS

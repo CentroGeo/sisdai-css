@@ -13,26 +13,4 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.borde {
-  border: 1px solid var(--borde-color-1);
-}
-.borde-t {
-  border-top: 1px solid var(--borde-color-1);
-}
-.borde-r {
-  border-right: 1px solid var(--borde-color-1);
-}
-.borde-b {
-  border-bottom: 1px solid var(--borde-color-1);
-}
-.borde-l {
-  border-left: 1px solid var(--borde-color-1);
-}
-.borde-x {
-  border-right: 1px solid var(--borde-color-1);
-  border-left: 1px solid var(--borde-color-1);
-}
-.borde-y {
-  border-top: 1px solid var(--borde-color-1);
-  border-bottom: 1px solid var(--borde-color-1);
-}
+@import './base.scss';

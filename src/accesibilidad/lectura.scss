@@ -24,8 +24,8 @@
 }
 
 // Se agrega informacion al letcor de pantalla cuando los hipervinculos abren en una nueva pestaña
-[target="_blank"]:after {
-  content: ". Abre nueva pestaña.";
+[target='_blank']:after {
+  content: '. Abre nueva pestaña.';
   position: absolute;
   width: 1px;
   height: 1px;

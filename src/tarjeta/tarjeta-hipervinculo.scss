@@ -16,7 +16,7 @@
 .tarjeta-hipervinculo {
   display: inline-flex;
   overflow: hidden;
-  border-radius: map-get($bordes, "20");
+  border-radius: map-get($borde-redondeado, '20');
   text-decoration: none;
   box-sizing: border-box;
   margin-top: map-get($espaciado, '1');

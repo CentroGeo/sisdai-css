@@ -3,9 +3,18 @@ import EjemploGloboInfoExtCerrar from "../componetes/EjemploGloboInfoExtCerrar.v
 </script>
 
 <template>
-  <div>
-    <h1>Tooltips</h1>
-    <div class="contenedor-lectura ">
+  <div class="contenedor m-y-maximo">
+
+    <div class="ancho-lectura">
+      <h1>Globo de información</h1>
+      <p>
+        Directiva declarada en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>
+        Comunmente conocidos como Tooltips, 
+        estas directivas funcionan para cualquier elemento html o componente de vue, 
+        agregando la directiva <code>v-globo-informacion</code> o <code>v-globo-informacion-extendido</code>.
+      </p>
+    </div>
+    <div class="contenedor-lectura">
       <h2>Globo de información normal</h2>
       <div class="contenedor-globo-info">
         <div class="cuerpo-globo-info">

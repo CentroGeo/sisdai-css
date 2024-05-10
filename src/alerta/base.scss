@@ -13,31 +13,6 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-/*:root {
-    --acciones-informativo: #19439c;
-  --acciones-informativo-2: #ecf2ff;
-  --acciones-error: #940b1c;
-  --acciones-error-2: #fee9ec;
-  --acciones-advertencia: #916802;
-  --acciones-advertencia-2: #fff7e3;
-  --acciones-correcto: #2a6f4d;
-  --acciones-correcto-2: #e7fbf1; 
-} */
-
-// * {
-//   margin: 0;
-//   box-sizing: border-box;
-//   font-family: "Montserrat", sans-serif;
-// }
-
-// .contenedor {
-//   width: 90%;
-//   max-width: 1200px;
-//   overflow: hidden;
-//   margin: 0 auto;
-//   padding: 40px 0;
-// }
-
 .alertas__contenedor {
   display: flex;
   gap: 1.5rem;
@@ -56,8 +31,7 @@
 .alerta__encabezado {
   display: flex;
   justify-content: space-between;
-  // margin-bottom: 1.5rem;
-  .icono-cerrar {
+  .pictograma-cerrar {
     font-size: 1.5rem;
   }
 }
@@ -70,12 +44,13 @@
 .alerta__titulo {
   line-height: 1.5rem;
   font-weight: 500;
+  margin: 7px 0;
 }
 
 .informativa {
   border-color: var(--acciones-informativo);
   background-color: var(--acciones-informativo-2);
-  .icono-informacion {
+  .pictograma-informacion {
     color: var(--acciones-informativo);
     font-size: 1.5rem;
   }
@@ -84,7 +59,7 @@
 .confirmacion {
   border-color: var(--acciones-correcto);
   background-color: var(--acciones-correcto-2);
-  .icono-informacion {
+  .pictograma-informacion {
     color: var(--acciones-correcto);
     font-size: 1.5rem;
   }
@@ -93,7 +68,7 @@
 .advertencia {
   border-color: var(--acciones-advertencia);
   background-color: var(--acciones-advertencia-2);
-  .icono-informacion {
+  .pictograma-informacion {
     color: var(--acciones-advertencia);
     font-size: 1.5rem;
   }
@@ -102,7 +77,7 @@
 .error {
   border-color: var(--acciones-error);
   background-color: var(--acciones-error-2);
-  .icono-informacion {
+  .pictograma-informacion {
     color: var(--acciones-error);
     font-size: 1.5rem;
   }

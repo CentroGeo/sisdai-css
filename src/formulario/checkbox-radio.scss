@@ -95,7 +95,7 @@
 
 // checkbox
 [type='checkbox'] + label::before {
-  border-radius: map-get($bordes, '2');
+  border-radius: map-get($borde-redondeado, '2');
 }
 [type='checkbox']:checked + label::before,
 [type='radio']:checked + label::before {

@@ -48,7 +48,7 @@
       column-gap: map-get($configuracion, 'espaciado');
       row-gap: map-get($configuracion, 'espaciado');
       > [class^='columna-'],
-      > [class*=" columna-"] {
+      > [class*=' columna-'] {
         flex: 1 1;
       }
     }
@@ -57,7 +57,7 @@
       row-gap: map-get($configuracion, 'espaciado');
       grid-template-columns: repeat(map-get($configuracion, 'columnas'), 1fr);
       > [class^='columna-'],
-      > [class*=" columna-"] {
+      > [class*=' columna-'] {
         grid-column: span 16;
       }
     }

@@ -45,7 +45,7 @@ ol {
       counter-reset: item;
     }
     &::before {
-      content: counters(item, ".") ". ";
+      content: counters(item, '.') '. ';
     }
   }
 }
