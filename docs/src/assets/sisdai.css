@@ -7640,7 +7640,6 @@ dialog.modal {
   border-radius: 20px;
   padding: 24px;
   border: none;
-  overflow: hidden;
 }
 dialog.modal.chico {
   max-width: 462px;
