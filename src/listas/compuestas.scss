@@ -34,8 +34,7 @@
   li {
     display: flex;
     width: 100%;
-    padding: map-get($espaciado, '2') map-get($espaciado, '2')
-      map-get($espaciado, '2') 0;
+    padding: map-get($espaciado, '2') map-get($espaciado, '2') map-get($espaciado, '2') 0;
   }
   a {
     display: flex;
@@ -46,17 +45,6 @@
     &:hover {
       background-color: var(--tabla-fondo-impar); //TODO: definir el color
     }
-  }
-  .acciones {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-  }
-  .elemento-acciones {
-    display: flex;
-    width: 100%;
-    margin-left: map-get($espaciado, '3');
-    margin-right: map-get($espaciado, '2');
   }
   .elemento {
     display: flex;
@@ -83,19 +71,6 @@
       color: var(--tipografia-color-3);
       font-weight: 400;
     }
-  }
-}
-.lista-acciones {
-  @extend .lista-compuesta;
-  button {
-    color: var(--tipografia-color);
-  }
-  li:not(:last-child) {
-    border-bottom: 1px solid var(--borde-color-3);
-  }
-  li::before {
-    margin: map-get($espaciado, 'minimo') map-get($espaciado, '2')
-      map-get($espaciado, '2') * 0.5 0;
   }
 }
 

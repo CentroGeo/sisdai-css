@@ -1492,76 +1492,55 @@ dl dd {
   margin-bottom: 16px;
 }
 
-.lista-plana, .lista-compuesta, .lista-logo, .lista-avatar, .lista-icono, .lista-acciones {
+.lista-plana, .lista-compuesta, .lista-logo, .lista-avatar, .lista-icono {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.lista-plana li, .lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li, .lista-acciones li {
+.lista-plana li, .lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li {
   margin: 0;
 }
 
-.lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li, .lista-acciones li {
+.lista-compuesta li, .lista-logo li, .lista-avatar li, .lista-icono li {
   display: flex;
   width: 100%;
   padding: 16px 16px 16px 0;
 }
-.lista-compuesta a, .lista-logo a, .lista-avatar a, .lista-icono a, .lista-acciones a {
+.lista-compuesta a, .lista-logo a, .lista-avatar a, .lista-icono a {
   display: flex;
   width: 100%;
   padding: 16px;
   margin: -16px;
   text-decoration: none;
 }
-.lista-compuesta a:hover, .lista-logo a:hover, .lista-avatar a:hover, .lista-icono a:hover, .lista-acciones a:hover {
+.lista-compuesta a:hover, .lista-logo a:hover, .lista-avatar a:hover, .lista-icono a:hover {
   background-color: var(--tabla-fondo-impar);
 }
-.lista-compuesta .acciones, .lista-logo .acciones, .lista-avatar .acciones, .lista-icono .acciones, .lista-acciones .acciones {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-}
-.lista-compuesta .elemento-acciones, .lista-logo .elemento-acciones, .lista-avatar .elemento-acciones, .lista-icono .elemento-acciones, .lista-acciones .elemento-acciones {
-  display: flex;
-  width: 100%;
-  margin-left: 24px;
-  margin-right: 16px;
-}
-.lista-compuesta .elemento, .lista-logo .elemento, .lista-avatar .elemento, .lista-icono .elemento, .lista-acciones .elemento {
+.lista-compuesta .elemento, .lista-logo .elemento, .lista-avatar .elemento, .lista-icono .elemento {
   display: flex;
   width: 100%;
 }
-.lista-compuesta .avatar, .lista-logo .avatar, .lista-avatar .avatar, .lista-icono .avatar, .lista-acciones .avatar {
+.lista-compuesta .avatar, .lista-logo .avatar, .lista-avatar .avatar, .lista-icono .avatar {
   flex: 0 0 64px;
 }
-.lista-compuesta .texto, .lista-logo .texto, .lista-avatar .texto, .lista-icono .texto, .lista-acciones .texto {
+.lista-compuesta .texto, .lista-logo .texto, .lista-avatar .texto, .lista-icono .texto {
   flex: 1 1;
   display: block;
 }
-.lista-compuesta .texto > *, .lista-logo .texto > *, .lista-avatar .texto > *, .lista-icono .texto > *, .lista-acciones .texto > * {
+.lista-compuesta .texto > *, .lista-logo .texto > *, .lista-avatar .texto > *, .lista-icono .texto > * {
   margin: 0;
 }
-.lista-compuesta .texto .texto-primario, .lista-logo .texto .texto-primario, .lista-avatar .texto .texto-primario, .lista-icono .texto .texto-primario, .lista-acciones .texto .texto-primario {
+.lista-compuesta .texto .texto-primario, .lista-logo .texto .texto-primario, .lista-avatar .texto .texto-primario, .lista-icono .texto .texto-primario {
   color: var(--tipografia-color);
   font-weight: 500;
 }
-.lista-compuesta .texto .texto-secundario, .lista-logo .texto .texto-secundario, .lista-avatar .texto .texto-secundario, .lista-icono .texto .texto-secundario, .lista-acciones .texto .texto-secundario {
+.lista-compuesta .texto .texto-secundario, .lista-logo .texto .texto-secundario, .lista-avatar .texto .texto-secundario, .lista-icono .texto .texto-secundario {
   color: var(--tipografia-color);
   font-weight: 400;
 }
-.lista-compuesta .texto .texto-terciario, .lista-logo .texto .texto-terciario, .lista-avatar .texto .texto-terciario, .lista-icono .texto .texto-terciario, .lista-acciones .texto .texto-terciario {
+.lista-compuesta .texto .texto-terciario, .lista-logo .texto .texto-terciario, .lista-avatar .texto .texto-terciario, .lista-icono .texto .texto-terciario {
   color: var(--tipografia-color-3);
   font-weight: 400;
-}
-
-.lista-acciones button {
-  color: var(--tipografia-color);
-}
-.lista-acciones li:not(:last-child) {
-  border-bottom: 1px solid var(--borde-color-3);
-}
-.lista-acciones li::before {
-  margin: 4px 16px 8px 0;
 }
 
 .lista-icono li::before {
@@ -9314,6 +9293,7 @@ dialog.modal {
   border-radius: 20px;
   padding: 24px;
   border: none;
+  overflow: hidden;
 }
 dialog.modal.chico {
   max-width: 462px;
