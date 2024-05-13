@@ -5758,30 +5758,34 @@ input[type=reset]:not(:disabled):focus:not(.boton-primario):not(.boton-info):not
   text-align: left;
   width: 100%;
 }
-.boton-descarga .titulo {
+.boton-descarga .boton-descarga-titulo {
   display: block;
   font-size: 1rem;
   line-height: 1.25rem;
   font-weight: 600;
   margin: 0 0 8px;
 }
-.boton-descarga .descripcion {
-  display: flex;
-  align-items: flex-end;
+.boton-descarga .boton-descarga-cuerpo {
+  display: block;
+  position: relative;
+  padding-right: 40px;
   font-weight: 400;
 }
-.boton-descarga .descripcion .texto {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  font-weight: 400;
-  flex: 1;
-  margin: 0;
+.boton-descarga .boton-descarga-cuerpo > * {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
-.boton-descarga .descripcion .pictograma,
-.boton-descarga .descripcion [class^=pictograma-],
-.boton-descarga .descripcion [class*=" pictograma-"] {
+.boton-descarga .boton-descarga-cuerpo > :first-child {
+  margin-top: 0;
+}
+.boton-descarga .boton-descarga-cuerpo > :last-child {
+  margin-bottom: 0;
+}
+.boton-descarga .boton-descarga-cuerpo .boton-descarga-pictograma {
   font-size: 2rem;
-  padding: 0 0 0 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .boton-alternar {

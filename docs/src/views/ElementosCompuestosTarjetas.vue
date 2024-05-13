@@ -6,7 +6,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="ancho-lectura">
       <h1>Tarjetas</h1>
       <p>
-        Las tarjetas son un 'componente' de diseño en el que todos sus elementos son opcionales,
+        Las tarjetas son un componente de diseño en el que todos sus elementos son opcionales,
         razón por la cual se crearon en la sección de elementos compuestos,
         para darle la flexibilidad al desarrollador de hacer lo que se requiera en determinado proyecto.
       </p>

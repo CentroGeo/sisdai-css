@@ -27,21 +27,18 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           href="../img/grafica-variantes.png"
           download="nombre-que-tomara-la-descarga"
         >
-          <span class="titulo">
-            Descarga de archivos
-          </span>
-          <span class="descripcion">
-            <p class="texto">
+          <div class="boton-descarga-cuerpo">
+            <p class="boton-descarga-titulo">
+              Descarga de archivos
+            </p>
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Odit totam omnis libero nihil amet tenetur rerum modi iusto, 
               ullam ea eveniet ex nostrum illo. 
               Atque consectetur beatae voluptates tenetur error.
             </p>
-            <span 
-            class="pictograma-archivo-descargar" 
-              aria-hidden="true"
-            ></span>
-          </span>
+            <span class="boton-descarga-pictograma pictograma-archivo-descargar" aria-hidden="true"></span>
+          </div>
         </a>
       </div>
       <div class="columna-6">
@@ -50,21 +47,17 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         html='
         <a 
           class="boton-descarga" 
-          href="ubicacion/local/del/archivo.extencion"
+          href="../img/grafica-variantes.png"
           download="nombre-que-tomara-la-descarga"
         >
-          <span class="titulo">
-            Descarga de archivos
-          </span>
-          <span class="descripcion">
-            <p class="texto">
-              Lorem ipsum ...
-            </p>
+          <div class="boton-descarga-cuerpo">
+            <p class="boton-descarga-titulo"> Título </p>
+            <p> ... </p>
             <span 
-              class="pictograma-archivo-descargar" 
-              aria-hidden="true" 
+              class="boton-descarga-pictograma pictograma-archivo-descargar" 
+              aria-hidden="true"
             ></span>
-          </span>
+          </div>
         </a>
         '
         />
