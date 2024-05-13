@@ -352,7 +352,7 @@ kbd {
   color: var(--acciones-correcto-2);
 }
 
-.titulo-base, dialog.modal .modal-contenedor .modal-titulo, .contenedor-portada .subtitulo, .contenedor-portada .titulo, .contenedor-portada .titulo-alto, h6, .h6, .tarjeta .tarjeta-titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+.titulo-base, dialog.modal .modal-contenedor .modal-titulo, .portada.portada-secundaria .portada-titulo, .portada .portada-subtitulo, .portada .portada-titulo, h6, .h6, .tarjeta .tarjeta-titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--tipografia-color);
   font-weight: 500;
   margin-top: 24px;
@@ -7038,7 +7038,7 @@ ol + hr {
   vertical-align: middle;
 }
 
-.contenedor-portada {
+.portada {
   position: relative;
   width: 100%;
   min-height: 100px;
@@ -7046,11 +7046,11 @@ ol + hr {
   height: calc(100vh - 92px);
 }
 @media (max-width: 768px) {
-  .contenedor-portada {
+  .portada {
     height: calc(100vh - 120px);
   }
 }
-.contenedor-portada .portada {
+.portada .portada-imagen {
   border-radius: 0;
   position: absolute;
   width: 100%;
@@ -7061,7 +7061,7 @@ ol + hr {
   object-position: 50% 50%;
   transition: all 0.27s ease-in-out;
 }
-.contenedor-portada .fondo-degradado {
+.portada .portada-degradado {
   position: relative;
   width: 100%;
   background: var(--portada-fondo-grandiente);
@@ -7069,46 +7069,46 @@ ol + hr {
   align-items: stretch;
   margin-top: 48px;
 }
-.contenedor-portada .contenido {
+.portada .portada-cuerpo {
   margin: auto auto 0;
   padding: 24px 24px 96px;
   width: 100%;
   max-width: 700px;
   text-align: center;
 }
-.contenedor-portada .contenido > * {
+.portada .portada-cuerpo > * {
   color: var(--portada-color);
   border-color: currentColor;
   margin: 8px 0;
 }
-.contenedor-portada .contenido > :first-child {
+.portada .portada-cuerpo > :first-child {
   margin-top: 0;
 }
-.contenedor-portada .contenido > :last-child {
+.portada .portada-cuerpo > :last-child {
   margin-bottom: 0;
 }
-.contenedor-portada .titulo-alto {
+.portada .portada-titulo {
   font-size: 2.25rem;
 }
 @media screen and (min-width: 768px) {
-  .contenedor-portada .titulo-alto {
+  .portada .portada-titulo {
     font-size: 5rem;
   }
 }
-.contenedor-portada .titulo {
-  font-size: 2.25rem;
-}
-@media screen and (min-width: 768px) {
-  .contenedor-portada .titulo {
-    font-size: 3.5rem;
-  }
-}
-.contenedor-portada .subtitulo {
+.portada .portada-subtitulo {
   font-size: 1.125rem;
 }
 @media screen and (min-width: 768px) {
-  .contenedor-portada .subtitulo {
+  .portada .portada-subtitulo {
     font-size: 1.5rem;
+  }
+}
+.portada.portada-secundaria .portada-titulo {
+  font-size: 2.25rem;
+}
+@media screen and (min-width: 768px) {
+  .portada.portada-secundaria .portada-titulo {
+    font-size: 3.5rem;
   }
 }
 

@@ -13,7 +13,7 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.contenedor-portada {
+.portada {
 	position: relative;
 	width: 100%;
 	min-height: 100px;
@@ -23,7 +23,7 @@
 		height: calc(100vh - 120px);
   }
 
-	.portada {
+	.portada-imagen {
     border-radius: 0;
 		position: absolute;
 		width: 100%;
@@ -35,7 +35,7 @@
 		@include transicion;
 	}
 
-  .fondo-degradado {
+  .portada-degradado {
 		position: relative;
 		width: 100%;
 		background: var(--portada-fondo-grandiente);
@@ -44,7 +44,7 @@
 		margin-top: map-get($espaciado, '6');
 	}
 
-  .contenido {			
+  .portada-cuerpo {			
     margin: auto auto 0;
     padding: map-get($espaciado, '3') map-get($espaciado, '3') map-get($espaciado, 'extra');
     width: 100%;
@@ -63,28 +63,29 @@
     }
   }
 
-  .titulo-alto {
+  .portada-titulo {
     @extend .titulo-base;
     font-size: 2.25rem; // 36px
     @include mediaquery('esc') { 
       font-size: 5rem; // 80px
     }
   }
-
-  .titulo {
-    @extend .titulo-base;
-    font-size: 2.25rem; // 36px
-    @include mediaquery('esc') {
-      font-size: 3.5rem; // 56px
-    }
-  }
   
-  .subtitulo {
+  .portada-subtitulo {
     @extend .titulo-base;
     font-size: 1.125rem; // 18px
     @include mediaquery('esc') {
       font-size: 1.5rem; //24px
     }
   }
-  
+
+  &.portada-secundaria {
+    .portada-titulo {
+      @extend .titulo-base;
+      font-size: 2.25rem; // 36px
+      @include mediaquery('esc') {
+        font-size: 3.5rem; // 56px
+      }
+    }
+  }
 }
