@@ -13,28 +13,21 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.contenedor-globo-info-ext-boton,
-.contenedor-globo-info-ext,
-.contenedor-globo-info {
+.globo-informacion {
   background-color: var(--globo-informacion-fondo);
-  color: var(--globo-informacion-color);
   border-radius: map-get($borde-redondeado, '8');
+  color: var(--globo-informacion-color);
+  display: block;
+  position: relative;
   padding: map-get($espaciado, '2');
   width: auto;
-  display: flex;
-  align-items: flex-start;
+  max-width: 240px;
+
   gap: map-get($espaciado, '1');
   z-index: 9999;
 
-  a,
-  button {
-    background-color: transparent;
-    color: var(--globo-informacion-accion);
-  }
-}
-
-.cuerpo-globo-info {
   > * {
+    font-size: 0.75rem;
     line-height: 1.25em;
     margin-top: map-get($espaciado, '2');
     margin-bottom: map-get($espaciado, '2');
@@ -46,7 +39,12 @@
     margin-bottom: 0;
   }
 
-  .punto-color {
+  a,
+  button {
+    color: var(--globo-informacion-accion);
+  }
+
+  .globo-informacion-punto-color {
     width: 0.625rem;
     height: 0.625rem;
     border-radius: 50%;
@@ -54,22 +52,32 @@
     background-color: var(--globo-informacion-accion);
     display: inline-block;
   }
-}
 
-.contenedor-globo-info {
-  max-width: 240px;
-  .cuerpo-globo-info > * {
-    font-size: 0.75rem;
-    line-height: 1.25em;
+  &.globo-informacion-grande {
+    max-height: 160px;
+    max-width: 420px;
+    overflow-y: auto;
+    
+    > * {
+      font-size: 1rem;
+    }
   }
-}
-.contenedor-globo-info-ext {
-  max-height: 160px;
-  max-width: 420px;
-  overflow-y: auto;
-}
-.contenedor-globo-info-ext-boton {
-  max-height: 160px;
-  max-width: 460px;
-  overflow-y: auto;
+
+  &.globo-informacion-extra {
+    max-height: 160px;
+    max-width: 460px;
+    overflow-y: auto;
+    padding-right: map-get($espaciado, '5');
+    
+    > * {
+      font-size: 1rem;
+    }
+
+    .globo-informacion-cerrar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: map-get($espaciado, '1');
+    }
+  }
 }

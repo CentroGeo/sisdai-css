@@ -7298,41 +7298,35 @@ ol + hr {
   animation-duration: 440ms;
 }
 
-.contenedor-globo-info-ext-boton,
-.contenedor-globo-info-ext,
-.contenedor-globo-info {
+.globo-informacion {
   background-color: var(--globo-informacion-fondo);
-  color: var(--globo-informacion-color);
   border-radius: 8px;
+  color: var(--globo-informacion-color);
+  display: block;
+  position: relative;
   padding: 16px;
   width: auto;
-  display: flex;
-  align-items: flex-start;
+  max-width: 240px;
   gap: 8px;
   z-index: 9999;
 }
-.contenedor-globo-info-ext-boton a,
-.contenedor-globo-info-ext-boton button,
-.contenedor-globo-info-ext a,
-.contenedor-globo-info-ext button,
-.contenedor-globo-info a,
-.contenedor-globo-info button {
-  background-color: transparent;
-  color: var(--globo-informacion-accion);
-}
-
-.cuerpo-globo-info > * {
+.globo-informacion > * {
+  font-size: 0.75rem;
   line-height: 1.25em;
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.cuerpo-globo-info > :first-child {
+.globo-informacion > :first-child {
   margin-top: 0;
 }
-.cuerpo-globo-info > :last-child {
+.globo-informacion > :last-child {
   margin-bottom: 0;
 }
-.cuerpo-globo-info .punto-color {
+.globo-informacion a,
+.globo-informacion button {
+  color: var(--globo-informacion-accion);
+}
+.globo-informacion .globo-informacion-punto-color {
   width: 0.625rem;
   height: 0.625rem;
   border-radius: 50%;
@@ -7340,25 +7334,28 @@ ol + hr {
   background-color: var(--globo-informacion-accion);
   display: inline-block;
 }
-
-.contenedor-globo-info {
-  max-width: 240px;
-}
-.contenedor-globo-info .cuerpo-globo-info > * {
-  font-size: 0.75rem;
-  line-height: 1.25em;
-}
-
-.contenedor-globo-info-ext {
+.globo-informacion.globo-informacion-grande {
   max-height: 160px;
   max-width: 420px;
   overflow-y: auto;
 }
-
-.contenedor-globo-info-ext-boton {
+.globo-informacion.globo-informacion-grande > * {
+  font-size: 1rem;
+}
+.globo-informacion.globo-informacion-extra {
   max-height: 160px;
   max-width: 460px;
   overflow-y: auto;
+  padding-right: 40px;
+}
+.globo-informacion.globo-informacion-extra > * {
+  font-size: 1rem;
+}
+.globo-informacion.globo-informacion-extra .globo-informacion-cerrar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
 }
 
 .contenedor-boton-flotante {
