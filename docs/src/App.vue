@@ -275,18 +275,18 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')">Componentes</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante</RouterLink></li> -->
               </ul>
             </li>
 
-            <li class="nav-contenedor-submenu">
+            <!-- <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')">Visualizaciones</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
@@ -294,7 +294,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
               </ul>
-            </li>
+            </li> -->
 
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')">Auxiliares</button>

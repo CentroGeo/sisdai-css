@@ -66,7 +66,7 @@
   .titulo-alto {
     @extend .titulo-base;
     font-size: 2.25rem; // 36px
-    @include mediaquery(esc) { 
+    @include mediaquery('esc') { 
       font-size: 5rem; // 80px
     }
   }
@@ -74,7 +74,7 @@
   .titulo {
     @extend .titulo-base;
     font-size: 2.25rem; // 36px
-    @include mediaquery(esc) {
+    @include mediaquery('esc') {
       font-size: 3.5rem; // 56px
     }
   }
@@ -82,7 +82,7 @@
   .subtitulo {
     @extend .titulo-base;
     font-size: 1.125rem; // 18px
-    @include mediaquery(esc) {
+    @include mediaquery('esc') {
       font-size: 1.5rem; //24px
     }
   }

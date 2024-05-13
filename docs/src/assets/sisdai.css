@@ -14,6 +14,7 @@
   --color-conahcyt-claro-2: #AAAAAA;
   --color-conahcyt-acento: #13aff0;
   --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
+  --dialogo-fondo: rgba(0,0,0,0.5);
   --globo-informacion-fondo: #141414E6;
   --globo-informacion-color: #ffffff;
   --globo-informacion-accion: #80AAFF;
@@ -351,7 +352,7 @@ kbd {
   color: var(--acciones-correcto-2);
 }
 
-.titulo-base, .contenedor-portada .subtitulo, .contenedor-portada .titulo, .contenedor-portada .titulo-alto, h6, .h6, .tarjeta .titulo, .tarjeta-hipervinculo-interno .titulo, .tarjeta-horizontal .titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+.titulo-base, dialog.modal .modal-contenedor .modal-titulo, .contenedor-portada .subtitulo, .contenedor-portada .titulo, .contenedor-portada .titulo-alto, h6, .h6, .tarjeta .titulo, .tarjeta-hipervinculo-interno .titulo, .tarjeta-horizontal .titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--tipografia-color);
   font-weight: 500;
   margin-top: 24px;
@@ -7439,52 +7440,45 @@ ol + hr {
   animation: none;
 }
 
-dialog[open]::backdrop {
-  background-color: #141414;
-  opacity: 0.5;
+dialog::backdrop {
+  background-color: var(--dialogo-fondo);
 }
 
 dialog.modal {
   position: fixed;
-  color: var(--tipografia-color);
-  background-color: var(--pagina-fondo);
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  margin: 120px auto;
+  background-color: var(--pagina-fondo);
+  color: var(--tipografia-color);
   border-radius: 20px;
-  padding: 24px;
   border: none;
+  padding: 24px;
+  margin: 120px auto;
+  width: calc(100% - 40px);
 }
-dialog.modal.chico {
-  max-width: 462px;
+@media screen and (min-width: 768px) {
+  dialog.modal {
+    min-width: 462px;
+    max-width: 1110px;
+  }
 }
-@media (max-width: 768px) {
-  dialog.modal.chico {
+@media screen and (min-width: 768px) {
+  dialog.modal.modal-chico {
+    width: 462px;
+  }
+}
+@media screen and (max-width: 767px) {
+  dialog.modal.modal-grande {
+    top: auto;
+    margin: auto;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
     width: 100%;
-    margin: inherit;
-    padding: 24px 24px 40px;
-    top: auto;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
   }
 }
-dialog.modal.grande {
-  width: 90% !important;
-  max-width: 1110px;
-}
-@media (max-width: 768px) {
-  dialog.modal.grande {
-    width: 100% !important;
-    margin: inherit;
-    padding: 24px 24px 40px;
-    top: auto;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-}
-dialog.modal.pantalla-completa {
+dialog.modal.modal-pantalla-completa {
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -7493,21 +7487,62 @@ dialog.modal.pantalla-completa {
   border-radius: 0px;
 }
 dialog.modal .modal-contenedor {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  justify-content: space-between;
+  position: relative;
 }
-dialog.modal .modal-contenedor .modal-cuerpo {
-  width: 100%;
-}
-dialog.modal .modal-contenedor .modal-cuerpo :first-child {
+dialog.modal .modal-contenedor .modal-cuerpo > :first-child {
   margin-top: 0;
 }
-dialog.modal .modal-contenedor .modal-cuerpo :last-child {
+dialog.modal .modal-contenedor .modal-cuerpo > :last-child {
   margin-bottom: 0;
 }
+dialog.modal .modal-contenedor .modal-pie {
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-top: 40px;
+}
+dialog.modal .modal-contenedor .modal-pie > button,
+dialog.modal .modal-contenedor .modal-pie > .boton,
+dialog.modal .modal-contenedor .modal-pie > input[type=button],
+dialog.modal .modal-contenedor .modal-pie > input[type=submit],
+dialog.modal .modal-contenedor .modal-pie > input[type=reset],
+dialog.modal .modal-contenedor .modal-pie > .boton-pictograma,
+dialog.modal .modal-contenedor .modal-pie > .boton-descarga,
+dialog.modal .modal-contenedor .boton-alternar .modal-pie > [type=radio] + label,
+.boton-alternar dialog.modal .modal-contenedor .modal-pie > [type=radio] + label,
+dialog.modal .modal-contenedor .boton-alternar .modal-pie > [type=radio] + legend,
+.boton-alternar dialog.modal .modal-contenedor .modal-pie > [type=radio] + legend {
+  flex: 1 0;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  dialog.modal .modal-contenedor .modal-pie > button,
+dialog.modal .modal-contenedor .modal-pie > .boton,
+dialog.modal .modal-contenedor .modal-pie > input[type=button],
+dialog.modal .modal-contenedor .modal-pie > input[type=submit],
+dialog.modal .modal-contenedor .modal-pie > input[type=reset],
+dialog.modal .modal-contenedor .modal-pie > .boton-pictograma,
+dialog.modal .modal-contenedor .modal-pie > .boton-descarga,
+dialog.modal .modal-contenedor .boton-alternar .modal-pie > [type=radio] + label,
+.boton-alternar dialog.modal .modal-contenedor .modal-pie > [type=radio] + label,
+dialog.modal .modal-contenedor .boton-alternar .modal-pie > [type=radio] + legend,
+.boton-alternar dialog.modal .modal-contenedor .modal-pie > [type=radio] + legend {
+    flex: inherit;
+  }
+}
+dialog.modal .modal-contenedor .modal-titulo {
+  font-size: 1.125rem;
+  padding-right: 40px;
+}
+@media screen and (min-width: 768px) {
+  dialog.modal .modal-contenedor .modal-titulo {
+    font-size: 1.5rem;
+  }
+}
 dialog.modal .modal-contenedor .modal-cerrar {
+  position: absolute;
+  top: 0;
+  right: 0;
   color: var(--tipografia-color);
 }
 
