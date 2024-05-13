@@ -14,20 +14,16 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .tarjeta-hipervinculo-interno {
-  @extend .tarjeta;
   @extend .tarjeta-hipervinculo;
   flex: 1 1;
   flex-direction: column;
   width: 100%;
 
-  .portada,
-  .fondo-imagen {
+  .tarjeta-imagen {
     height: 240px;
   }
 
-  .contenido,
-  .contenido-html,
-  .contenido-abajo {
+  .tarjeta-cuerpo {
     padding: map-get($espaciado, '2');
   }
 }

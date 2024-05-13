@@ -352,7 +352,7 @@ kbd {
   color: var(--acciones-correcto-2);
 }
 
-.titulo-base, dialog.modal .modal-contenedor .modal-titulo, .contenedor-portada .subtitulo, .contenedor-portada .titulo, .contenedor-portada .titulo-alto, h6, .h6, .tarjeta .titulo, .tarjeta-hipervinculo-interno .titulo, .tarjeta-horizontal .titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+.titulo-base, dialog.modal .modal-contenedor .modal-titulo, .contenedor-portada .subtitulo, .contenedor-portada .titulo, .contenedor-portada .titulo-alto, h6, .h6, .tarjeta .tarjeta-titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   color: var(--tipografia-color);
   font-weight: 500;
   margin-top: 24px;
@@ -406,11 +406,11 @@ h5, .h5 {
   }
 }
 
-h6, .h6, .tarjeta .titulo, .tarjeta-hipervinculo-interno .titulo, .tarjeta-horizontal .titulo, .titulo-tabla {
+h6, .h6, .tarjeta .tarjeta-titulo, .titulo-tabla {
   font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
-  h6, .h6, .tarjeta .titulo, .tarjeta-hipervinculo-interno .titulo, .tarjeta-horizontal .titulo, .titulo-tabla {
+  h6, .h6, .tarjeta .tarjeta-titulo, .titulo-tabla {
     font-size: 1.125rem;
   }
 }
@@ -429,7 +429,7 @@ p {
   font-size: 1.25rem;
 }
 
-.notas, .tarjeta .etiqueta, .tarjeta-hipervinculo-interno .etiqueta, .tarjeta-horizontal .etiqueta, .formulario-ayuda {
+.notas, .tarjeta .tarjeta-etiqueta, .formulario-ayuda {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.3em;
@@ -445,7 +445,7 @@ p {
   margin-bottom: 16px;
 }
 
-.notas-titulo + .notas, .tarjeta .notas-titulo + .etiqueta, .tarjeta-hipervinculo-interno .notas-titulo + .etiqueta, .tarjeta-horizontal .notas-titulo + .etiqueta, .notas-titulo + .formulario-ayuda {
+.notas-titulo + .notas, .tarjeta .notas-titulo + .tarjeta-etiqueta, .notas-titulo + .formulario-ayuda {
   margin-top: 16px;
 }
 
@@ -458,7 +458,7 @@ p {
   margin-top: 0;
 }
 
-.notas-contenedor > .notas, .tarjeta .notas-contenedor > .etiqueta, .tarjeta-hipervinculo-interno .notas-contenedor > .etiqueta, .tarjeta-horizontal .notas-contenedor > .etiqueta, .notas-contenedor > .formulario-ayuda {
+.notas-contenedor > .notas, .tarjeta .notas-contenedor > .tarjeta-etiqueta, .notas-contenedor > .formulario-ayuda {
   margin-bottom: 0;
 }
 
@@ -6898,66 +6898,38 @@ ol + hr {
   margin-bottom: 0;
 }
 
-.tarjeta, .tarjeta-hipervinculo-interno, .tarjeta-horizontal {
+.tarjeta {
   flex: 1 1;
   background: var(--tarjetas-fondo);
   border-radius: 20px;
   overflow: hidden;
 }
-.tarjeta .portada, .tarjeta-hipervinculo-interno .portada, .tarjeta-horizontal .portada,
-.tarjeta .fondo-imagen,
-.tarjeta-hipervinculo-interno .fondo-imagen,
-.tarjeta-horizontal .fondo-imagen {
+.tarjeta .tarjeta-imagen {
   width: 100%;
   height: 240px;
   object-fit: cover;
   object-position: center;
   border-radius: 0;
 }
-.tarjeta .contenido, .tarjeta-hipervinculo-interno .contenido, .tarjeta-horizontal .contenido,
-.tarjeta .contenido-html,
-.tarjeta-hipervinculo-interno .contenido-html,
-.tarjeta-horizontal .contenido-html {
+.tarjeta .tarjeta-cuerpo {
   align-items: stretch;
   padding: 24px;
   color: var(--tarjetas-color);
   transition: all 0.27s ease-in-out;
 }
-.tarjeta .contenido > *, .tarjeta-hipervinculo-interno .contenido > *, .tarjeta-horizontal .contenido > *,
-.tarjeta .contenido-html > *,
-.tarjeta-hipervinculo-interno .contenido-html > *,
-.tarjeta-horizontal .contenido-html > * {
+.tarjeta .tarjeta-cuerpo > * {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.tarjeta .contenido > button, .tarjeta-hipervinculo-interno .contenido > button, .tarjeta-horizontal .contenido > button,
-.tarjeta .contenido > [class^=boton-],
-.tarjeta-hipervinculo-interno .contenido > [class^=boton-],
-.tarjeta-horizontal .contenido > [class^=boton-],
-.tarjeta .contenido > [class*=" boton-"],
-.tarjeta-hipervinculo-interno .contenido > [class*=" boton-"],
-.tarjeta-horizontal .contenido > [class*=" boton-"],
-.tarjeta .contenido-html > button,
-.tarjeta-hipervinculo-interno .contenido-html > button,
-.tarjeta-horizontal .contenido-html > button,
-.tarjeta .contenido-html > [class^=boton-],
-.tarjeta-hipervinculo-interno .contenido-html > [class^=boton-],
-.tarjeta-horizontal .contenido-html > [class^=boton-],
-.tarjeta .contenido-html > [class*=" boton-"],
-.tarjeta-hipervinculo-interno .contenido-html > [class*=" boton-"],
-.tarjeta-horizontal .contenido-html > [class*=" boton-"] {
+.tarjeta .tarjeta-cuerpo > button,
+.tarjeta .tarjeta-cuerpo > [class^=boton-],
+.tarjeta .tarjeta-cuerpo > [class*=" boton-"] {
   margin-top: 8px;
 }
-.tarjeta .contenido > :first-child, .tarjeta-hipervinculo-interno .contenido > :first-child, .tarjeta-horizontal .contenido > :first-child,
-.tarjeta .contenido-html > :first-child,
-.tarjeta-hipervinculo-interno .contenido-html > :first-child,
-.tarjeta-horizontal .contenido-html > :first-child {
+.tarjeta .tarjeta-cuerpo > :first-child {
   margin-top: 0;
 }
-.tarjeta .contenido > :last-child, .tarjeta-hipervinculo-interno .contenido > :last-child, .tarjeta-horizontal .contenido > :last-child,
-.tarjeta .contenido-html > :last-child,
-.tarjeta-hipervinculo-interno .contenido-html > :last-child,
-.tarjeta-horizontal .contenido-html > :last-child {
+.tarjeta .tarjeta-cuerpo > :last-child {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
@@ -6966,16 +6938,14 @@ ol + hr {
     flex-wrap: nowrap;
     position: relative;
   }
-  .tarjeta-horizontal .portada,
-.tarjeta-horizontal .fondo-imagen {
+  .tarjeta-horizontal .tarjeta-imagen {
     height: 100%;
     width: 244px;
     position: absolute;
     top: 0;
     bottom: 0;
   }
-  .tarjeta-horizontal .contenido,
-.tarjeta-horizontal .contenido-html {
+  .tarjeta-horizontal .tarjeta-cuerpo {
     padding-left: 268px;
   }
 }
@@ -6990,31 +6960,13 @@ ol + hr {
   margin-bottom: 8px;
   background: var(--tarjetas-internas-fondo);
 }
-.tarjeta-hipervinculo .contenido > *, .tarjeta-hipervinculo-externo .contenido > *, .tarjeta-hipervinculo-interno .contenido > *,
-.tarjeta-hipervinculo .contenido-html > *,
-.tarjeta-hipervinculo-externo .contenido-html > *,
-.tarjeta-hipervinculo-interno .contenido-html > *,
-.tarjeta-hipervinculo .contenido-abajo > *,
-.tarjeta-hipervinculo-externo .contenido-abajo > *,
-.tarjeta-hipervinculo-interno .contenido-abajo > * {
+.tarjeta-hipervinculo .tarjeta-cuerpo > *, .tarjeta-hipervinculo-externo .tarjeta-cuerpo > *, .tarjeta-hipervinculo-interno .tarjeta-cuerpo > * {
   margin: 4px 0;
 }
-.tarjeta-hipervinculo .contenido > :first-child, .tarjeta-hipervinculo-externo .contenido > :first-child, .tarjeta-hipervinculo-interno .contenido > :first-child,
-.tarjeta-hipervinculo .contenido-html > :first-child,
-.tarjeta-hipervinculo-externo .contenido-html > :first-child,
-.tarjeta-hipervinculo-interno .contenido-html > :first-child,
-.tarjeta-hipervinculo .contenido-abajo > :first-child,
-.tarjeta-hipervinculo-externo .contenido-abajo > :first-child,
-.tarjeta-hipervinculo-interno .contenido-abajo > :first-child {
+.tarjeta-hipervinculo .tarjeta-cuerpo > :first-child, .tarjeta-hipervinculo-externo .tarjeta-cuerpo > :first-child, .tarjeta-hipervinculo-interno .tarjeta-cuerpo > :first-child {
   margin-top: 0;
 }
-.tarjeta-hipervinculo .contenido > :last-child, .tarjeta-hipervinculo-externo .contenido > :last-child, .tarjeta-hipervinculo-interno .contenido > :last-child,
-.tarjeta-hipervinculo .contenido-html > :last-child,
-.tarjeta-hipervinculo-externo .contenido-html > :last-child,
-.tarjeta-hipervinculo-interno .contenido-html > :last-child,
-.tarjeta-hipervinculo .contenido-abajo > :last-child,
-.tarjeta-hipervinculo-externo .contenido-abajo > :last-child,
-.tarjeta-hipervinculo-interno .contenido-abajo > :last-child {
+.tarjeta-hipervinculo .tarjeta-cuerpo > :last-child, .tarjeta-hipervinculo-externo .tarjeta-cuerpo > :last-child, .tarjeta-hipervinculo-interno .tarjeta-cuerpo > :last-child {
   margin-bottom: 0;
 }
 .tarjeta-hipervinculo:hover, .tarjeta-hipervinculo-externo:hover, .tarjeta-hipervinculo-interno:hover, .tarjeta-hipervinculo:focus, .tarjeta-hipervinculo-externo:focus, .tarjeta-hipervinculo-interno:focus, .tarjeta-hipervinculo:focus-visible, .tarjeta-hipervinculo-externo:focus-visible, .tarjeta-hipervinculo-interno:focus-visible {
@@ -7024,13 +6976,13 @@ ol + hr {
   text-decoration: none;
   background-color: var(--tarjetas-internas-fondo-hover);
 }
-.tarjeta-hipervinculo:hover .fondo-imagen, .tarjeta-hipervinculo-externo:hover .fondo-imagen, .tarjeta-hipervinculo-interno:hover .fondo-imagen {
+.tarjeta-hipervinculo:hover .tarjeta-imagen, .tarjeta-hipervinculo-externo:hover .tarjeta-imagen, .tarjeta-hipervinculo-interno:hover .tarjeta-imagen {
   transform: scale(1);
 }
 .tarjeta-hipervinculo:focus-visible, .tarjeta-hipervinculo-externo:focus-visible, .tarjeta-hipervinculo-interno:focus-visible {
   outline: none;
 }
-.tarjeta-hipervinculo:focus-visible .fondo-imagen, .tarjeta-hipervinculo-externo:focus-visible .fondo-imagen, .tarjeta-hipervinculo-interno:focus-visible .fondo-imagen {
+.tarjeta-hipervinculo:focus-visible .tarjeta-imagen, .tarjeta-hipervinculo-externo:focus-visible .tarjeta-imagen, .tarjeta-hipervinculo-interno:focus-visible .tarjeta-imagen {
   transform: scale(1);
 }
 
@@ -7039,22 +6991,20 @@ ol + hr {
   flex-direction: column;
   width: 100%;
 }
-.tarjeta-hipervinculo-interno .portada,
-.tarjeta-hipervinculo-interno .fondo-imagen {
+.tarjeta-hipervinculo-interno .tarjeta-imagen {
   height: 240px;
 }
-.tarjeta-hipervinculo-interno .contenido,
-.tarjeta-hipervinculo-interno .contenido-html,
-.tarjeta-hipervinculo-interno .contenido-abajo {
+.tarjeta-hipervinculo-interno .tarjeta-cuerpo {
   padding: 16px;
 }
 
 .tarjeta-hipervinculo-externo {
+  display: flex;
   position: relative;
   width: 100%;
   min-height: 240px;
 }
-.tarjeta-hipervinculo-externo .fondo-imagen {
+.tarjeta-hipervinculo-externo .tarjeta-imagen {
   transform: scale(1.1);
   position: absolute;
   width: 100%;
@@ -7065,8 +7015,7 @@ ol + hr {
   object-position: 50% 50%;
   transition: all 0.27s ease-in-out;
 }
-.tarjeta-hipervinculo-externo .fondo-degradado,
-.tarjeta-hipervinculo-externo .degradado-negro-abajo {
+.tarjeta-hipervinculo-externo .tarjeta-degradado {
   position: relative;
   width: 100%;
   background: var(--tarjetas-externas-fondo-gradiente);
@@ -7074,23 +7023,18 @@ ol + hr {
   align-items: stretch;
   margin-top: 48px;
 }
-.tarjeta-hipervinculo-externo .contenido,
-.tarjeta-hipervinculo-externo .contenido-abajo {
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo {
   margin-top: auto;
   padding: 24px;
   width: 100%;
 }
-.tarjeta-hipervinculo-externo .contenido > *,
-.tarjeta-hipervinculo-externo .contenido-abajo > * {
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo > * {
   color: var(--tarjetas-externas-color);
   border-color: currentColor;
 }
-.tarjeta-hipervinculo-externo .contenido .pictograma,
-.tarjeta-hipervinculo-externo .contenido [class^=pictograma-],
-.tarjeta-hipervinculo-externo .contenido [class*=" pictograma-"],
-.tarjeta-hipervinculo-externo .contenido-abajo .pictograma,
-.tarjeta-hipervinculo-externo .contenido-abajo [class^=pictograma-],
-.tarjeta-hipervinculo-externo .contenido-abajo [class*=" pictograma-"] {
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo .pictograma,
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class^=pictograma-],
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class*=" pictograma-"] {
   vertical-align: middle;
 }
 
@@ -9965,44 +9909,24 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .contenedor-colapsable .colapsable-boton .nav-boton-submenu, .a11y-simplificada .contenedor-colapsable .colapsable-boton .navegacion .nav-boton-regresar, .navegacion .a11y-simplificada .contenedor-colapsable .colapsable-boton .nav-boton-regresar {
   display: none !important;
 }
-.a11y-simplificada .tarjeta .contenido, .a11y-simplificada .tarjeta-horizontal .contenido, .a11y-simplificada .tarjeta-hipervinculo-interno .contenido,
-.a11y-simplificada .tarjeta .contenido-html,
-.a11y-simplificada .tarjeta-horizontal .contenido-html,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido-html {
+.a11y-simplificada .tarjeta .contenido,
+.a11y-simplificada .tarjeta .contenido-html {
   background: var(--tarjetas-contenido-simplificada-fondo);
   color: var(--tarjetas--contenido-simplificada-color);
 }
-.a11y-simplificada .tarjeta .contenido .parrafo-texto-alto, .a11y-simplificada .tarjeta-horizontal .contenido .parrafo-texto-alto, .a11y-simplificada .tarjeta-hipervinculo-interno .contenido .parrafo-texto-alto,
+.a11y-simplificada .tarjeta .contenido .parrafo-texto-alto,
 .a11y-simplificada .tarjeta .contenido .subtitulo-capitulo,
-.a11y-simplificada .tarjeta-horizontal .contenido .subtitulo-capitulo,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido .subtitulo-capitulo,
 .a11y-simplificada .tarjeta .contenido .titulo-pagina,
-.a11y-simplificada .tarjeta-horizontal .contenido .titulo-pagina,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido .titulo-pagina,
 .a11y-simplificada .tarjeta .contenido .titulo-capitulo,
-.a11y-simplificada .tarjeta-horizontal .contenido .titulo-capitulo,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido .titulo-capitulo,
 .a11y-simplificada .tarjeta .contenido-html .parrafo-texto-alto,
-.a11y-simplificada .tarjeta-horizontal .contenido-html .parrafo-texto-alto,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido-html .parrafo-texto-alto,
 .a11y-simplificada .tarjeta .contenido-html .subtitulo-capitulo,
-.a11y-simplificada .tarjeta-horizontal .contenido-html .subtitulo-capitulo,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido-html .subtitulo-capitulo,
 .a11y-simplificada .tarjeta .contenido-html .titulo-pagina,
-.a11y-simplificada .tarjeta-horizontal .contenido-html .titulo-pagina,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido-html .titulo-pagina,
-.a11y-simplificada .tarjeta .contenido-html .titulo-capitulo,
-.a11y-simplificada .tarjeta-horizontal .contenido-html .titulo-capitulo,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido-html .titulo-capitulo {
+.a11y-simplificada .tarjeta .contenido-html .titulo-capitulo {
   color: var(--tarjetas--contenido-simplificada-color);
 }
-.a11y-simplificada .tarjeta .contenido a, .a11y-simplificada .tarjeta-horizontal .contenido a, .a11y-simplificada .tarjeta-hipervinculo-interno .contenido a, .a11y-simplificada .tarjeta .contenido button, .a11y-simplificada .tarjeta-horizontal .contenido button, .a11y-simplificada .tarjeta-hipervinculo-interno .contenido button,
+.a11y-simplificada .tarjeta .contenido a, .a11y-simplificada .tarjeta .contenido button,
 .a11y-simplificada .tarjeta .contenido-html a,
-.a11y-simplificada .tarjeta-horizontal .contenido-html a,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido-html a,
-.a11y-simplificada .tarjeta .contenido-html button,
-.a11y-simplificada .tarjeta-horizontal .contenido-html button,
-.a11y-simplificada .tarjeta-hipervinculo-interno .contenido-html button {
+.a11y-simplificada .tarjeta .contenido-html button {
   text-decoration: none !important;
 }
 @media screen and (min-width: 768px) {

@@ -19,8 +19,7 @@
   border-radius: map-get($borde-redondeado, '20');
   overflow: hidden;
 
-  .portada,
-  .fondo-imagen {
+  .tarjeta-imagen {
     width: 100%;
     height: 240px;
     object-fit: cover;
@@ -28,8 +27,7 @@
     border-radius: 0;
   }
 
-  .contenido,
-  .contenido-html {
+  .tarjeta-cuerpo {
     align-items: stretch;
     padding: map-get($espaciado, '3');
     color: var(--tarjetas-color);
@@ -54,10 +52,10 @@
     }
   }
 
-  .etiqueta {
+  .tarjeta-etiqueta {
     @extend .notas;
   }
-  .titulo {
+  .tarjeta-titulo {
     @extend .h6;
   }
 }

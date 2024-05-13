@@ -14,22 +14,20 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .tarjeta-horizontal {
-  @extend .tarjeta;
-  
   @media screen and (min-width: calc(map-get($breakpoints, 'esc'))) {
     display: flex;
     flex-wrap: nowrap;
     position: relative;
-    .portada,
-    .fondo-imagen {
+
+    .tarjeta-imagen {
       height: 100%;
       width: 244px;
       position: absolute;
       top: 0;
       bottom: 0;
     }
-    .contenido,
-    .contenido-html {
+    
+    .tarjeta-cuerpo {
       padding-left: calc(244px + map-get($espaciado, '3'));
     }
   }

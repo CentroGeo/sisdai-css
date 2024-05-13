@@ -23,9 +23,7 @@
   margin-bottom: map-get($espaciado, '1');
   background: var(--tarjetas-internas-fondo);
 
-  .contenido,
-  .contenido-html,
-  .contenido-abajo {
+  .tarjeta-cuerpo {
     > * {
       margin: map-get($espaciado, 'minimo') 0;
     }
@@ -48,14 +46,14 @@
   &:hover {
     text-decoration: none;
     background-color: var(--tarjetas-internas-fondo-hover);
-    .fondo-imagen {
+    .tarjeta-imagen {
       transform: scale(1);
     }
   }
 
   &:focus-visible {
     outline: none;
-    .fondo-imagen {
+    .tarjeta-imagen {
       transform: scale(1);
     }
   }
