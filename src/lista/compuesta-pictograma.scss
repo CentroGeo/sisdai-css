@@ -13,26 +13,20 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.lista-logo {
-  @extend .lista-compuesta;
+.lista-pictograma {
   li {
     padding: map-get($espaciado, '3') 0;
-    align-items: center;
   }
-  li > a {
-    margin: calc(map-get($espaciado, '3') * -1) 0;
-    padding: map-get($espaciado, '3') 0;
+  
+  .lista-pictograma-imagen {
+    display: flex;
     align-items: center;
-  }
-  .logo {
-    height: map-get($espaciado, '10');
-    width: map-get($espaciado, 'maximo');
-    margin: 0 map-get($espaciado, '3') 0 0;
-    overflow: hidden;
-    img {
-      height: map-get($espaciado, '10');
-      width: map-get($espaciado, 'maximo');
-      object-fit: scale-down;
+    margin: 0 map-get($espaciado, '3');
+
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      padding: 0;
     }
   }
 }

@@ -13,12 +13,18 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-@import './base';
-
-// listas compuestas
-@import './compuesta';
-@import './compuesta-pictograma';
-@import './compuesta-avatar';
-@import './compuesta-logotipo';
-@import './compuesta-accion';
-@import './compuesta-casilla';
+.lista-accion {
+  li {
+    border-bottom: 1px solid var(--borde-color-3);
+    padding: map-get($espaciado, '2') 0;
+  }
+  .lista-accion-acciones {
+    display: flex;
+    align-items: center;
+    
+    button,
+    .boton {
+      margin-left: map-get($espaciado, 'minimo');
+    }
+  }
+}

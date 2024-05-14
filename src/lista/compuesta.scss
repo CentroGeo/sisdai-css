@@ -44,22 +44,21 @@
   }
 }
 
-.lista-compuesta .texto,
-.lista-compuesta-texto {
+.lista-compuesta-cuerpo {
   flex: 1 1;
   display: block;
   > * {
     margin: 0;
   }
-  .texto-primario {
+  .lista-compuesta-texto-primario {
     color: var(--tipografia-color);
     font-weight: 500;
   }
-  .texto-secundario {
+  .lista-compuesta-texto-secundario {
     color: var(--tipografia-color);
     font-weight: 400;
   }
-  .texto-terciario {
+  .lista-compuesta-texto-terciario {
     color: var(--tipografia-color-3);
     font-weight: 400;
   }

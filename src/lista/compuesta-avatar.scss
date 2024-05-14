@@ -13,19 +13,25 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.lista-casilla {
-  @extend .lista-compuesta;
+.lista-avatar {
   li {
-    border-bottom: 1px solid var(--borde-color-3);
-    padding: calc(map-get($espaciado, '1') + map-get($espaciado, 'minimo')) 0;
-
-    [type='checkbox'] + label,
-    [type='radio'] + label{
-      @extend .lista-compuesta-texto;
-      @include transicion;
-      padding-top: calc(map-get($espaciado, 'minimo') - 1px);
-      padding-bottom: calc(map-get($espaciado, 'minimo') - 1px);
-      padding-left: calc(1.25rem + map-get($espaciado, '2') + 4px);
+    padding: map-get($espaciado, '3') 0;
+    align-items: center;
+  }
+  li > a {
+    margin: calc(map-get($espaciado, '3') * -1) 0;
+    padding: map-get($espaciado, '3') 0;
+    align-items: center;
+  }
+  .lista-avatar-imagen {
+    border-radius: map-get($espaciado, '10');
+    height: map-get($espaciado, '10');
+    width: map-get($espaciado, '10');
+    margin: 0 map-get($espaciado, '3');
+    overflow: hidden;
+    img,
+    svg {
+      object-fit: cover;
     }
   }
 }
