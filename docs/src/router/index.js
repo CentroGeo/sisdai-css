@@ -87,6 +87,31 @@ const router = createRouter({
           name: 'separadores',
           component: () => import('../views/ElementosSeparadores.vue')
         },
+        {
+          path: 'lista-compuesta',
+          name: 'lista-compuesta',
+          component: () => import('../views/ElementosCompuestosListas.vue')
+        },
+        {
+          path: 'boton-compuesto',
+          name: 'boton-compuesto',
+          component: () => import('../views/ElementosCompuestosBotones.vue')
+        },
+        {
+          path: 'boton-pictograma',
+          name: 'boton-pictograma',
+          component: () => import('../views/ElementosCompuestosBotonesPictograma.vue')
+        },
+        {
+          path: 'tarjeta',
+          name: 'tarjeta',
+          component: () => import('../views/ElementosCompuestosTarjetas.vue')
+        },
+        {
+          path: 'portada',
+          name: 'portada',
+          component: () => import('../views/ElementosCompuestosPortadas.vue')
+        },
       ]
     },
     {
@@ -121,6 +146,11 @@ const router = createRouter({
           path: 'botones-compuestos',
           name: 'botones-compuestos',
           component: () => import('../views/ElementosCompuestosBotones.vue')
+        },
+        {
+          path: 'botones-pictogramas',
+          name: 'botones-pictogramas',
+          component: () => import('../views/ElementosCompuestosBotonesPictograma.vue')
         },
       ]
     },

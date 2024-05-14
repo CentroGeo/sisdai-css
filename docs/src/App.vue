@@ -249,10 +249,15 @@
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/boton-pictograma"> <span class="pictograma-angulo-doble-derecha"></span> Botones Pictograma</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/boton-compuesto"> <span class="pictograma-angulo-doble-derecha"></span> Botones Compuestos</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/lista-compuesta"> <span class="pictograma-angulo-doble-derecha"></span> Listas Compuestas</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/portada">Portadas</RouterLink></li>  -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/tarjeta">Tarjetas</RouterLink></li> --> 
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles</RouterLink></li> --> 
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/separadores">Separadores</RouterLink></li> --> 
               </ul>
@@ -264,9 +269,10 @@
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos Compuestos</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">Cargando</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">Cargando</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos</RouterLink></li>
               </ul>
             </li>

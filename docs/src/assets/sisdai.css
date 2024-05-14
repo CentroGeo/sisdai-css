@@ -7092,6 +7092,7 @@ ol + hr {
 }
 .portada .portada-titulo {
   font-size: 2.25rem;
+  color: var(--portada-color);
 }
 @media screen and (min-width: 768px) {
   .portada .portada-titulo {
@@ -7100,6 +7101,7 @@ ol + hr {
 }
 .portada .portada-subtitulo {
   font-size: 1.125rem;
+  color: var(--portada-color);
 }
 @media screen and (min-width: 768px) {
   .portada .portada-subtitulo {
@@ -7108,6 +7110,7 @@ ol + hr {
 }
 .portada.portada-secundaria .portada-titulo {
   font-size: 2.25rem;
+  color: var(--portada-color);
 }
 @media screen and (min-width: 768px) {
   .portada.portada-secundaria .portada-titulo {
