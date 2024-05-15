@@ -283,7 +283,7 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante</RouterLink></li>
               </ul>
             </li>
 

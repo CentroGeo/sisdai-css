@@ -269,6 +269,15 @@ body[data-light-theme-eni='true'] {
   --boton-alternar-color: #364A69;
   --boton-alternar-deshabilitado-color: #767677;
   --boton-alternar-deshabilitado-fondo: #AAAAAA;
+
+  // boton flotante
+  --boton-flotante-fondo: var(--pagina-fondo);
+  --boton-flotante-fondo-hover: #cce1ff;
+  --boton-flotante-fondo-focus: #cce1ff;
+  --boton-flotante-color: #364a69;
+  --boton-flotante-color-hover: #364a69;
+  --boton-flotante-color-focus: #364a69;
+  --boton-flotante-sombra-focus: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
   
   // Boton icono sin borde
   --boton-icono-sin-borde-color: #0068FF;

@@ -13,95 +13,123 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.contenedor-boton-flotante {
-  position: fixed;
-  z-index: 3;
-  margin: 0;
+.boton-flotante {
+  background-color: var(--boton-flotante-fondo);
+  border-radius: map-get($borde-redondeado, '20');
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  
   display: inline-flex;
-  bottom: 32px;
-  left: 32px;
+  position: fixed;
+  bottom: map-get($espaciado, '4');
+  left: map-get($espaciado, '4');
+  z-index: 3;
 
   .boton-flotante-alternador {
-    background: black;
     border: none;
-    width: 40px;
-    height: 40px;
+    border-radius: map-get($borde-redondeado, '20');
+    width: map-get($espaciado, '5');
+    height: map-get($espaciado, '5');
     padding: 0;
     margin: 0;
+    align-items: center;
     justify-content: center;
+    position: relative;
 
-    .pictograma {
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      position: absolute;
       padding: 0;
-      color: #fff;
+      font-size: 2rem;
+      transition: all 0.4s ease-in-out;
     }
+    .boton-flotante-pictograma-cerrado {
+      opacity: 1;
+    }
+    .boton-flotante-pictograma-abierto {
+      opacity: 0;
+    }
+    z-index: 1;
   }
 
-  .boton-flotante-contenido {
-    height: 40px !important;
-    padding: 0;
-    overflow: hidden;
-    color: #fff;
-    background: black;
-    border-color: #fff;
+  .boton-flotante-cuerpo {
     display: inline-flex;
     align-items: center;
-
-    a.enlace {
-      height: 100%;
-      color: #fff;
-      font-size: 14px;
-      text-decoration: none;
-      display: inline-flex !important;
+    white-space: nowrap;
+    
+    * {
+      display: inline-flex;
       align-items: center;
+      white-space: nowrap;
+    }
 
-      .pictograma {
-        padding: 0 8px 0 0;
+    .boton-flotante-hipervinculo {
+      background-color: var(--boton-flotante-fondo);
+      color: var(--boton-flotante-color);
+      font-size: 0.875rem; // 14px
+      line-height: map-get($espaciado, '5');
+      border-radius: 0;
+      height: map-get($espaciado, '5');
+      overflow: hidden;
+      position: relative;
+
+      // mostrar / ocultar
+      max-width: 0;
+      left: -40px;
+      opacity: 0;
+      padding: 0;
+      transition: all 0.4s ease-in-out;
+
+      &:hover {
+        background-color: var(--boton-flotante-fondo-hover);
+        color: var(--boton-flotante-color-hover);
+        text-decoration: none;
       }
 
-      &:hover, &:focus {
-        color: #fff;
+      &:focus {
+        outline: none;
+        background-color: var(--boton-flotante-fondo-focus);
+        color: var(--boton-flotante-color-focus);
+        box-shadow: var(--boton-flotante-sombra-focus);
+        z-index: 1;
       }
 
-      &.pictograma-resaltado .pictograma {
-        position: relative;
+      &:last-child {
+        border-radius: 0 map-get($borde-redondeado, '20') map-get($borde-redondeado, '20') 0;
+      }
+    }
+
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      font-size: 1.5rem; // 24px
+      padding: 0;
+      margin: 0 map-get($espaciado, 'minimo') 0 0;
+      &.pictograma-resaltado {
         animation: animacionResaltada 2s ease-in-out infinite;
+        position: relative;
       }
     }
   }
-
-  /* T R A N S I C I O N E S */
-  .boton-flotante-alternador {
-    transition: border-radius 0.27s linear 0.6s !important;
-  }
-
-  &.abierto .boton-flotante-alternador {
-    transition-delay: 0s !important;
-  }
-
-  .boton-flotante-contenido {
-    max-width: 0;
-    transition: max-width 0.6s linear 0s !important;
-  }
-
-  &.abierto .boton-flotante-contenido {
-    max-width: 500px;
-    transition-delay: 0.27s !important;
-  }
-}
-
-/* A C C E S I B I L I D A D */
-.a11y-simplificada .contenedor-boton-flotante {
-  position: static !important;
-
-  .boton-flotante-alternador {
-    display: none;
-  }
-
-  .boton-flotante-contenido a.enlace {
-    color: black;
-
-    &.pictograma-resaltado .pictograma {
-      animation: none;
+  
+  &.abierto {
+    .boton-flotante-alternador {
+      border-radius: map-get($borde-redondeado, '20') 0 0 map-get($borde-redondeado, '20');
+      .boton-flotante-pictograma-cerrado {
+        opacity: 0;
+      }
+      .boton-flotante-pictograma-abierto {
+        opacity: 1;
+      }
+    }
+    .boton-flotante-hipervinculo {
+      max-width: 200px;
+      left: 0;
+      opacity: 1;
+      padding: 0 map-get($espaciado, '1');
+      &:last-child {
+        padding-right: map-get($espaciado, '2');
+      }
     }
   }
 }

@@ -45,7 +45,7 @@
 button,
 input[type=button]:not(.boton-secundario),
 input[type=submit]:not(.boton-secundario),
-.boton-primario-con-contenedor {
+.boton-con-contenedor-primario {
   @extend .boton-primario;
 }
 
@@ -79,12 +79,12 @@ input[type=submit]:not(.boton-secundario),
     color: var(--boton-secundario-focus-color);
   }
 }
-.boton-secundario-con-contenedor,
+.boton-con-contenedor-secundario,
 input[type=reset]:not(.boton-primario) {
   @extend .boton-secundario;
 }
 
-.boton-primario-sin-contenedor {
+.boton-sin-contenedor-primario {
   background: transparent;
   box-shadow: none;
   color: var(--boton-primario-sin-contenedor-color);
@@ -108,7 +108,7 @@ input[type=reset]:not(.boton-primario) {
   }
 }
 
-.boton-secundario-sin-contenedor {
+.boton-sin-contenedor-secundario {
   background: transparent;
   box-shadow: none;
   color: var(--boton-secundario-sin-contenedor-color);

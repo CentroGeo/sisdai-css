@@ -20,10 +20,8 @@
     margin: auto;
     padding: 0;
 
-    @each $dispositivo,
-    $map in $a11y-simplificada-contenedores {
+    @each $dispositivo, $map in $a11y-simplificada-contenedores {
       @include mediaquery($dispositivo) {
-
         >[class^='columna-'],
         >[class*=' columna-'] {
           display: block;
@@ -66,15 +64,11 @@
     display: none!important;
   }
 
-  .contenedor-portada {
+  .portada {
     height: auto;
-    
-    .fondo-degradado,
-    .degradado-negro-abajo {
+    .portada-degradado {
       background: transparent;
-
-      .contenido,
-      .contenido-abajo {
+      .portada-cuerpo {
         margin-top: 0px;
         > * {
           color: var(--tipografia-color);
@@ -83,27 +77,13 @@
     }
   }
 
-  .contenedor-colapsable {
-    .colapsable-boton {
-      display: flex !important;
-      padding: 8px 40px !important;
-      color: var(--menu-lateral-color) !important;
-      align-items: center !important;
-      .nav-boton-submenu {
-        display: none !important;
-      }
-    }
-  }
-
   .tarjeta {
-    .contenido,
-    .contenido-html {
+    .tarjeta-cuerpo {
       background: var(--tarjetas-contenido-simplificada-fondo);
       color: var(--tarjetas--contenido-simplificada-color);
-      .parrafo-texto-alto, 
-      .subtitulo-capitulo, 
-      .titulo-pagina, 
-      .titulo-capitulo {
+      p,
+      .tarjeta-titulo, 
+      .tarjeta-etiqueta {
 				color: var(--tarjetas--contenido-simplificada-color);
 			}
       a, button {
@@ -114,8 +94,7 @@
 
   .tarjeta-horizontal {
     @media screen and (min-width: calc(map-get($breakpoints, 'esc'))) {
-      .contenido,
-      .contenido-html {
+      .tarjeta-cuerpo {
         padding-left: map-get($espaciado, '3');
       }
     }
@@ -126,27 +105,22 @@
     border: 1px solid var(--tarjetas-simplificada-borde);
     min-height: auto;
     color: var(--tarjetas-simplificada-color);
-
-    .fondo-degradado,
-    .degradado-negro-abajo {
+    .tarjeta-degradado {
       background: none;
       margin: 0;
     }
-    .contenido,
-    .contenido-abajo {
+    .tarjeta-cuerpo {
       color: var(--tarjetas-simplificada-color);
       > * {
         color: var(--tarjetas-simplificada-color);
       }
     }
-
     &:hover,
     &:focus,
     &:focus-visible {
       box-shadow: none;
-      background: var(--tarjetas-simplificada-fondo-hover);
-      .contenido, 
-      .contenido-abajo {
+      .tarjeta-cuerpo {
+        background: var(--tarjetas-simplificada-fondo-hover);
         > * {
           color: var(--tarjetas-simplificada-color-hover);
         }
@@ -155,30 +129,23 @@
     &:focus,
     &:focus-visible {
       background: var(--tarjeta-simplificada-fondo-focus);
-      // border: 1px solid var(--tarjeta-simplificada-borde-focus);
       box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
-      // outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
     }
   }
 
   .tarjeta-hipervinculo-interno {
     border: 1px solid var(--tarjetas-simplificada-borde);
-    .contenido,
-    .contenido-html,
-    .contenido-abajo {
+    .tarjeta-cuerpo {
       background-color: var(--tarjetas-simplificada-fondo);
       > * {
         color: var(--tarjetas-simplificada-color);
       }
     }
-
     &:hover,
     &:focus,
     &:focus-visible {
       box-shadow: none;
-      .contenido,
-      .contenido-html,
-      .contenido-abajo {
+      .tarjeta-cuerpo {
         background: var(--tarjetas-simplificada-fondo-hover);
         > * {
           color: var(--tarjetas-simplificada-color-hover);
@@ -188,11 +155,7 @@
     &:focus,
     &:focus-visible {
       box-shadow: 0 0 8px 1px var(--tarjeta-simplificada-sombra-focus);
-      .contenido,
-      .contenido-html,
-      .contenido-abajo {
-        // border: 1px solid var(--tarjeta-simplificada-borde-focus);
-        // outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
+      .tarjeta-cuerpo {
         background: var(--tarjeta-simplificada-fondo-focus);
         > * {
           color: var(--tarjeta-simplificada-color-focus);
@@ -201,11 +164,35 @@
     }
   }
 
-  // Ruptura de retículas flex. Columnas al 100% en vista simplificada
+  .boton-flotante {
+    position: static;
 
+    .boton-flotante-alternador {
+      display: none !important;
+    }
 
-  @each $dispositivo,
-  $configuracion in $columnas {
+    .boton-flotante-cuerpo {
+      &:hover,
+      &:focus {
+        text-decoration: none !important;
+      }
+      .boton-flotante-hipervinculo {
+        max-width: 200px;
+        opacity: 1;
+        padding: 0 map-get($espaciado, '1') 0 0;
+      }
+      .pictograma,
+      [class^='pictograma-'],
+      [class*=' pictograma-'] {
+        font-size: 1em;
+      }
+      .pictograma-resaltado {
+        animation: none;
+      }
+    }
+  }
+
+  @each $dispositivo, $configuracion in $columnas {
     @include mediaquery($dispositivo) {
       .flex.flex-columnas-100-al-simplificar {
         margin-right: calc(map-get($configuracion, 'espaciado') * -.5);
@@ -219,16 +206,6 @@
           margin-right: map-get($configuracion, 'espaciado')*.5;
         }
       }
-
     }
   }
-  .contenedor-alto-fijo{
-    height: auto !important;
-    border-top: 1px solid transparent;
-    &:hover {
-      background-color: inherit; //TODO: definir el color
-    }
-  }
-
-
 }

@@ -16,27 +16,9 @@
 .boton-chico {
   font-size: 0.875rem; // 14px
   padding: map-get($espaciado, '1');
-  
-  &.boton-pictograma {
-    padding: map-get($espaciado, 'minimo');
-    .pictograma,
-    [class^='pictograma-'],
-    [class*=' pictograma-'] {
-      font-size: 1rem; // 16px
-    }
-  }
 }
 
 .boton-grande {
   font-size: 1rem; // 16px
   padding: map-get($espaciado, '3');
-
-  &.boton-pictograma {
-    padding: map-get($espaciado, '1');
-    .pictograma,
-    [class^='pictograma-'],
-    [class*=' pictograma-'] {
-      font-size: 1.5rem; // 24px
-    }
-  }
 }
