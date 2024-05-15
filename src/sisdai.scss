@@ -36,21 +36,13 @@
 @import 'detalle'; // revision diseño
 @import 'separador'; // revision diseño
 
-
-// elementos compuestos
-@import 'tarjeta';
-@import 'portada';
-@import 'alerta'; // revision diseño
-@import 'cargando'; // revision diseño
-
-// componentes y visualizaciones
+// compuestos, componentes y visualizaciones
+@import 'compuestos';
 @import 'componentes';
 @import 'visualizaciones';
 
-
 // auxiliares 
 @import 'auxiliares';
-
 
 // a11y
 // accesibilidad debe cargar al final

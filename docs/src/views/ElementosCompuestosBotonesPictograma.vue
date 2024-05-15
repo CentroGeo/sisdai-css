@@ -97,11 +97,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
 
     <div class="contenedor ancho-lectura p-t-10">
-      <h2 class="m-t-6">Colores</h2>
+      <h2 class="m-t-6">Clases de color</h2>
     </div>
 
     <div class="flex flex-contenido-centrado">
-
       <div class="columna-4">
       <EjemploCodigoVertical
       html='
@@ -127,7 +126,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       '
       />
       </div>
-
       <div class="columna-4">
       <EjemploCodigoVertical
       html='
@@ -178,7 +176,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       '
       />
       </div>
-
       <div class="columna-4">
       <EjemploCodigoVertical
       html='
@@ -204,7 +201,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       '
       />
       </div>
+    </div>
 
+    <div class="contenedor ancho-lectura p-t-10">
+      <h2 class="m-t-6">Clases de color en estado deshabilitado</h2>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
       <div class="columna-4">
       <EjemploCodigoVertical
       html='

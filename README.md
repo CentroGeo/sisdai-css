@@ -102,25 +102,27 @@ donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
 ## Listado de elementos
 
-El código se encuentra separado por módulos dependiendo del tipo de etiqueta o funcionalidad de los elementos que contenga.
+El código se encuentra separado por carpetas dependiendo del tipo de etiqueta o funcionalidad de los elementos que contenga.
+En general clases fundamentales para estructurar las vistas, definir la tipografía, color, así como cada etiqueta nativa de html tiene su propia carpeta.
+Se separaron los elementos compuestos, componentes y clases requeridos para visualizaciones en carpetas y archivos especificos para cada uno,
+para asegurar por jerarquía que estilos puedan sobreescribir a otros.
 
 | Modulo | Descripcion                                                                                                                                                            |
 | ------ |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menú de accesibilidad                                                                                  |
+| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menú de accesibilidad |
 | Auxiliares | Clases auxiliares para desarrollo, estilos de texto, bordes, alineacion y visualizacion en distintos dispositivos |
-| Botón | Clases que se aplican al elemento `<button>`                                                                                                                            |
-| Color | Clases generales de colores para estados de elementos y clases de colores institucionales                                                                              |
+| Botón | Clases que se aplican al elemento `<button>` |
+| Color | Clases generales de colores para estados de elementos y clases de colores institucionales |
 | Componentes* | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://codigo.conahcyt.mx/sisdai/sisdai-componentes) |
-| Formulario | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                       |
-| Hipercínculo | Estilos de la etiqueta de hipervínculo `<a>`                                                                                                                           |
-| Imagen | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                |
-| Lista | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                          |
-| Pictograma | Enlace y mapeado de la tipografía Sisdai-Pictogramas  `.pictograma-`                                                                                                                         |
-| Portada | Clases para construir una portada portada para un capítulo ENI                                                                                                        |
-| Retícula | Clases de contenedores y retícula con renglones y columnas                                                                                                             |
-| Tabla | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                    |
-| Tarjeta | Clases para crear estilos de tarjeta del sistema de diseño                                                                                                                |
-| Tipografía | Estilos de las etiquetas de títulos y párrafos. |
+| Compuestos | Estilos de multiples elementos que combinados crean un nuevo estilo de elemento compuesto |
+| Formulario | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios |
+| Hipercínculo | Estilos de la etiqueta de hipervínculo `<a>` |
+| Imagen | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>` |
+| Lista | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales |
+| Pictograma | Enlace y mapeado de la tipografía Sisdai-Pictogramas  `.pictograma-` |
+| Retícula | Clases de contenedores y retícula con renglones y columnas |
+| Tabla | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>` |
+| Tipografía | Estilos de las etiquetas de títulos, párrafos y texto en general. |
 | Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://codigo.conahcyt.mx/sisdai/sisdai-graficas) y [sisdai-mapas](https://codigo.conahcyt.mx/sisdai/sisdai-mapas) |
 
 > [!NOTE]  
@@ -228,19 +230,17 @@ sisdai-css/
     └── sisdai.scss
 ```
 
-Preferiblemente situarlo antes de los auxiliares y los archivos de accesibilidad
+Situarlo antes de los auxiliares y los archivos de accesibilidad
 
 ```css
 /* src/sisdai.scss */
 ...
-
-@import "nuevoelemento/base";
-@import "nuevoelemento/buselemento";
-
-@import "auxiliares/...";
 ...
-@import "accesibilidad/...";
-...
+
+@import "nuevoelemento";
+
+@import "auxiliares";
+@import "accesibilidad";
 ```
 
 Para facilitar el mantenimiento de la biblioteca se debe prestar atención en las variables declaradas en `_variables.css`

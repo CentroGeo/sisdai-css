@@ -13,4 +13,25 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-@import './base.scss';
+@import './alerta';
+
+@import './portada';
+
+@import './tarjeta';
+@import './tarjeta-horizontal';
+@import './tarjeta-hipervinculo';
+@import './tarjeta-hipervinculo-interno';
+@import './tarjeta-hipervinculo-externo';
+
+@import './lista-compuesta';
+@import './lista-compuesta-pictograma';
+@import './lista-compuesta-avatar';
+@import './lista-compuesta-logotipo';
+@import './lista-compuesta-accion';
+@import './lista-compuesta-casilla';
+
+@import './boton-pictograma';
+@import './boton-descarga';
+@import './boton-alternar';
+
+@import './vista-cargando';
