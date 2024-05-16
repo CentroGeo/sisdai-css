@@ -227,13 +227,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               <p class="lista-compuesta-texto-terciario">texto-terciario</p>
             </div>
             <div class="lista-accion-acciones">
-              <button class="boton-pictograma boton-primario-sin-contenedor">
+              <button class="boton-pictograma boton-sin-contenedor-primario">
                 <span class="pictograma-editar" aria-hidden="true"/>
                 <span class="a11y-solo-lectura">
                     Editar
                 </span>
               </button>
-              <button class="boton-pictograma boton-secundario-sin-contenedor">
+              <button class="boton-pictograma boton-sin-contenedor-secundario">
                 <span class="pictograma-eliminar" aria-hidden="true"/>
                 <span class="a11y-solo-lectura">
                     Eliminar
@@ -248,13 +248,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               <p class="lista-compuesta-texto-terciario">355kb</p>
             </div>
             <div class="lista-accion-acciones">
-              <button class="boton-pictograma boton-primario-sin-contenedor">
+              <button class="boton-pictograma boton-sin-contenedor-primario">
                 <span class="pictograma-editar" aria-hidden="true"/>
                 <span class="a11y-solo-lectura">
                     Editar
                 </span>
               </button>
-              <button class="boton-pictograma boton-secundario-sin-contenedor">
+              <button class="boton-pictograma boton-sin-contenedor-secundario">
                 <span class="pictograma-eliminar" aria-hidden="true"/>
                 <span class="a11y-solo-lectura">
                     Eliminar
@@ -269,7 +269,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               <p class="lista-compuesta-texto-terciario">355kb</p>
             </div>
             <div class="lista-accion-acciones">
-              <button class="boton-pictograma boton-secundario-sin-contenedor">
+              <button class="boton-pictograma boton-sin-contenedor-secundario">
                 <span class="pictograma-archivo-descargar" aria-hidden="true"/>
                 <span class="a11y-solo-lectura">Descargar</span>
               </button>
@@ -290,13 +290,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </div>
               <div class="lista-accion-acciones">
                 <button 
-                  class="boton-pictograma boton-primario-sin-contenedor">
+                  class="boton-pictograma boton-sin-contenedor-primario">
                   <span class="pictograma-editar" aria-hidden="true"/>
                   <span class="a11y-solo-lectura">
                     Editar
                   </span>
                 </button>
-                <button class="boton-pictograma boton-secundario-sin-contenedor">
+                <button class="boton-pictograma boton-sin-contenedor-secundario">
                   <span class="pictograma-eliminar" aria-hidden="true"/>
                   <span class="a11y-solo-lectura">
                     Eliminar

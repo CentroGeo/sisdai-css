@@ -4,6 +4,7 @@
   --tipografia-tamanio: 16px;
   --color-gobmx-oscuro-1: #18302D;
   --color-gobmx-oscuro-2: #1F5D50;
+  --color-gobmx-claro-0: #FFFFFF;
   --color-gobmx-claro-1: #DFC9A1;
   --color-gobmx-claro-2: #BD9558;
   --color-gobmx-acento: #9E2148;
@@ -142,6 +143,18 @@ kbd {
 
 .gobmx-texto-oscuro-2 {
   color: #1F5D50;
+}
+
+.gobmx-fondo-claro-0 {
+  background-color: #FFFFFF;
+}
+
+.gobmx-borde-claro-0 {
+  border-color: #FFFFFF;
+}
+
+.gobmx-texto-claro-0 {
+  color: #FFFFFF;
 }
 
 .gobmx-fondo-claro-1 {
@@ -5672,43 +5685,43 @@ input[type=reset]:not(:disabled):focus:not(.boton-primario):not(.boton-info):not
 .boton-sin-contenedor-primario {
   background: transparent;
   box-shadow: none;
-  color: var(--boton-primario-sin-contenedor-color);
+  color: var(--boton-sin-contenedor-primario-color);
 }
 .boton-sin-contenedor-primario.deshabilitado, .boton-sin-contenedor-primario:disabled {
   background: transparent;
   box-shadow: none;
-  color: var(--boton-primario-sin-contenedor-deshabilitado-color);
+  color: var(--boton-sin-contenedor-primario-deshabilitado-color);
 }
 .boton-sin-contenedor-primario:not(:disabled):hover {
-  background-color: var(--boton-primario-sin-contenedor-hover-fondo);
+  background-color: var(--boton-sin-contenedor-primario-hover-fondo);
   box-shadow: none;
-  color: var(--boton-primario-sin-contenedor-hover-color);
+  color: var(--boton-sin-contenedor-primario-hover-color);
 }
 .boton-sin-contenedor-primario:not(:disabled):focus {
-  background-color: var(--boton-primario-sin-contenedor-focus-fondo);
-  box-shadow: 0 0 0 1px var(--boton-primario-sin-contenedor-focus-borde), 0 0 8px var(--boton-primario-sin-contenedor-focus-sombra);
-  color: var(--boton-primario-sin-contenedor-focus-color);
+  background-color: var(--boton-sin-contenedor-primario-focus-fondo);
+  box-shadow: 0 0 0 1px var(--boton-sin-contenedor-primario-focus-borde), 0 0 8px var(--boton-sin-contenedor-primario-focus-sombra);
+  color: var(--boton-sin-contenedor-primario-focus-color);
 }
 
 .boton-sin-contenedor-secundario {
   background: transparent;
   box-shadow: none;
-  color: var(--boton-secundario-sin-contenedor-color);
+  color: var(--boton-sin-contenedor-secundario-color);
 }
 .boton-sin-contenedor-secundario.deshabilitado, .boton-sin-contenedor-secundario:disabled {
   background: transparent;
   box-shadow: none;
-  color: var(--boton-secundario-sin-contenedor-deshabilitado-color);
+  color: var(--boton-sin-contenedor-secundario-deshabilitado-color);
 }
 .boton-sin-contenedor-secundario:not(:disabled):hover {
-  background-color: var(--boton-secundario-sin-contenedor-hover-fondo);
+  background-color: var(--boton-sin-contenedor-secundario-hover-fondo);
   box-shadow: none;
-  color: var(--boton-secundario-sin-contenedor-hover-color);
+  color: var(--boton-sin-contenedor-secundario-hover-color);
 }
 .boton-sin-contenedor-secundario:not(:disabled):focus {
-  background-color: var(--boton-secundario-sin-contenedor-focus-fondo);
-  box-shadow: 0 0 0 1px var(--boton-secundario-sin-contenedor-focus-borde), 0 0 8px var(--boton-secundario-sin-contenedor-focus-sombra);
-  color: var(--boton-secundario-sin-contenedor-focus-color);
+  background-color: var(--boton-sin-contenedor-secundario-focus-fondo);
+  box-shadow: 0 0 0 1px var(--boton-sin-contenedor-secundario-focus-borde), 0 0 8px var(--boton-sin-contenedor-secundario-focus-sombra);
+  color: var(--boton-sin-contenedor-secundario-focus-color);
 }
 
 .boton-chico {
@@ -8461,6 +8474,54 @@ dialog.modal .modal-contenedor .modal-cerrar {
   box-shadow: 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
 }
 
+.piepagina, .piepagina-conahcyt, .piepagina-gobmx {
+  font-size: 0.875rem;
+}
+.piepagina p, .piepagina-conahcyt p, .piepagina-gobmx p {
+  margin: 16px 0;
+}
+.piepagina ul, .piepagina-conahcyt ul, .piepagina-gobmx ul, .piepagina ol, .piepagina-conahcyt ol, .piepagina-gobmx ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.piepagina ul li, .piepagina-conahcyt ul li, .piepagina-gobmx ul li, .piepagina ol li, .piepagina-conahcyt ol li, .piepagina-gobmx ol li {
+  margin: 0;
+}
+.piepagina .piepagina-titulo, .piepagina-conahcyt .piepagina-titulo, .piepagina-gobmx .piepagina-titulo {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.25em;
+  margin-top: 24px;
+}
+.piepagina .piepagina-social, .piepagina-conahcyt .piepagina-social, .piepagina-gobmx .piepagina-social {
+  font-size: 1.5rem;
+}
+.piepagina .piepagina-social li, .piepagina-conahcyt .piepagina-social li, .piepagina-gobmx .piepagina-social li {
+  display: inline-block;
+}
+.piepagina .piepagina-social li:not(:last-child), .piepagina-conahcyt .piepagina-social li:not(:last-child), .piepagina-gobmx .piepagina-social li:not(:last-child) {
+  margin-right: 24px;
+}
+
+.piepagina-gobmx {
+  background-color: var(--color-gobmx-oscuro-1);
+  background-image: url("https://cdn.conacyt.mx/sisdai/recursos/gobmxpleca.svg");
+  background-position: bottom;
+  background-repeat: repeat-x;
+  background-size: auto 50px;
+  color: var(--color-gobmx-claro-0);
+  padding-top: 32px;
+  padding-bottom: 80px;
+}
+
+.piepagina-conahcyt {
+  background: var(--color-conahcyt-degradado);
+  color: var(--color-gobmx-claro-0);
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .boton-info {
   border-radius: 0;
   border-width: 0;
@@ -10334,24 +10395,24 @@ body[data-dark-theme-eni=true] {
   --boton-secundario-focus-borde: #668BFF;
   --boton-secundario-focus-color: #B1C6E4;
   --boton-secundario-focus-sombra: #668BFF;
-  --boton-primario-sin-contenedor-color: #0058CC;
-  --boton-primario-sin-contenedor-deshabilitado-color: #AAAAAA;
-  --boton-primario-sin-contenedor-hover-fondo: transparent;
-  --boton-primario-sin-contenedor-hover-color: #0058CC;
-  --boton-primario-sin-contenedor-hover-sombra: transparent;
-  --boton-primario-sin-contenedor-focus-fondo: #CCE1FF;
-  --boton-primario-sin-contenedor-focus-borde: #005DFF;
-  --boton-primario-sin-contenedor-focus-color: #0068FF;
-  --boton-primario-sin-contenedor-focus-sombra: #005DFF;
-  --boton-secundario-sin-contenedor-color: #364A69;
-  --boton-secundario-sin-contenedor-deshabilitado-color: #AAAAAA;
-  --boton-secundario-sin-contenedor-hover-fondo: #CCE1FF;
-  --boton-secundario-sin-contenedor-hover-color: #364A69;
-  --boton-secundario-sin-contenedor-hover-sombra: transparent;
-  --boton-secundario-sin-contenedor-focus-fondo: #CCE1FF;
-  --boton-secundario-sin-contenedor-focus-borde: #005DFF;
-  --boton-secundario-sin-contenedor-focus-color: #364A69;
-  --boton-secundario-sin-contenedor-focus-sombra: #005DFF;
+  --boton-sin-contenedor-primario-color: #0058CC;
+  --boton-sin-contenedor-primario-deshabilitado-color: #AAAAAA;
+  --boton-sin-contenedor-primario-hover-fondo: transparent;
+  --boton-sin-contenedor-primario-hover-color: #0058CC;
+  --boton-sin-contenedor-primario-hover-sombra: transparent;
+  --boton-sin-contenedor-primario-focus-fondo: #CCE1FF;
+  --boton-sin-contenedor-primario-focus-borde: #005DFF;
+  --boton-sin-contenedor-primario-focus-color: #0068FF;
+  --boton-sin-contenedor-primario-focus-sombra: #005DFF;
+  --boton-sin-contenedor-secundario-color: #364A69;
+  --boton-sin-contenedor-secundario-deshabilitado-color: #AAAAAA;
+  --boton-sin-contenedor-secundario-hover-fondo: #CCE1FF;
+  --boton-sin-contenedor-secundario-hover-color: #364A69;
+  --boton-sin-contenedor-secundario-hover-sombra: transparent;
+  --boton-sin-contenedor-secundario-focus-fondo: #CCE1FF;
+  --boton-sin-contenedor-secundario-focus-borde: #005DFF;
+  --boton-sin-contenedor-secundario-focus-color: #364A69;
+  --boton-sin-contenedor-secundario-focus-sombra: #005DFF;
   --boton-alternar-fondo: #DDDDDD;
   --boton-alternar-color: #364A69;
   --boton-alternar-deshabilitado-color: #767677;
@@ -10812,24 +10873,24 @@ body[data-light-theme-eni=true] {
   --boton-secundario-focus-borde: #005DFF;
   --boton-secundario-focus-color: #364A69;
   --boton-secundario-focus-sombra: #005DFF;
-  --boton-primario-sin-contenedor-color: #0068FF;
-  --boton-primario-sin-contenedor-deshabilitado-color: #AAAAAA;
-  --boton-primario-sin-contenedor-hover-fondo: transparent;
-  --boton-primario-sin-contenedor-hover-color: #0058CC;
-  --boton-primario-sin-contenedor-hover-sombra: transparent;
-  --boton-primario-sin-contenedor-focus-fondo: #CCE1FF;
-  --boton-primario-sin-contenedor-focus-borde: #005DFF;
-  --boton-primario-sin-contenedor-focus-color: #0068FF;
-  --boton-primario-sin-contenedor-focus-sombra: #005DFF;
-  --boton-secundario-sin-contenedor-color: #364A69;
-  --boton-secundario-sin-contenedor-deshabilitado-color: #AAAAAA;
-  --boton-secundario-sin-contenedor-hover-fondo: #CCE1FF;
-  --boton-secundario-sin-contenedor-hover-color: #364A69;
-  --boton-secundario-sin-contenedor-hover-sombra: transparent;
-  --boton-secundario-sin-contenedor-focus-fondo: #CCE1FF;
-  --boton-secundario-sin-contenedor-focus-borde: #005DFF;
-  --boton-secundario-sin-contenedor-focus-color: #364A69;
-  --boton-secundario-sin-contenedor-focus-sombra: #005DFF;
+  --boton-sin-contenedor-primario-color: #0068FF;
+  --boton-sin-contenedor-primario-deshabilitado-color: #AAAAAA;
+  --boton-sin-contenedor-primario-hover-fondo: transparent;
+  --boton-sin-contenedor-primario-hover-color: #0058CC;
+  --boton-sin-contenedor-primario-hover-sombra: transparent;
+  --boton-sin-contenedor-primario-focus-fondo: #CCE1FF;
+  --boton-sin-contenedor-primario-focus-borde: #005DFF;
+  --boton-sin-contenedor-primario-focus-color: #0068FF;
+  --boton-sin-contenedor-primario-focus-sombra: #005DFF;
+  --boton-sin-contenedor-secundario-color: #364A69;
+  --boton-sin-contenedor-secundario-deshabilitado-color: #AAAAAA;
+  --boton-sin-contenedor-secundario-hover-fondo: #CCE1FF;
+  --boton-sin-contenedor-secundario-hover-color: #364A69;
+  --boton-sin-contenedor-secundario-hover-sombra: transparent;
+  --boton-sin-contenedor-secundario-focus-fondo: #CCE1FF;
+  --boton-sin-contenedor-secundario-focus-borde: #005DFF;
+  --boton-sin-contenedor-secundario-focus-color: #364A69;
+  --boton-sin-contenedor-secundario-focus-sombra: #005DFF;
   --boton-alternar-fondo: #DDDDDD;
   --boton-alternar-color: #364A69;
   --boton-alternar-deshabilitado-color: #767677;

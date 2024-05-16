@@ -74,7 +74,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 jardinbotanicofcfuanl.com
               </a>
             </p>
-            <button class="boton-pictograma boton-secundario-sin-contenedor globo-informacion-cerrar">
+            <button class="boton-pictograma boton-sin-contenedor-secundario globo-informacion-cerrar">
               <span class="pictograma-cerrar" aria-hidden="true"></span>
               <span class="a11y-solo-lectura">Cerrar.</span>
             </button>

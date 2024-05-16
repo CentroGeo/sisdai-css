@@ -108,7 +108,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma 
-            boton-primario-con-contenedor
+            boton-con-contenedor-primario
           "
         >
           <span 
@@ -133,7 +133,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma
-            boton-secundario-con-contenedor
+            boton-con-contenedor-secundario
           "
         >
           <span 
@@ -158,7 +158,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma 
-            boton-primario-sin-contenedor
+            boton-sin-contenedor-primario
           "
         >
           <span 
@@ -183,7 +183,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma 
-            boton-secundario-sin-contenedor
+            boton-sin-contenedor-secundario
           "
         >
           <span 
@@ -215,7 +215,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma 
-            boton-primario-con-contenedor
+            boton-con-contenedor-primario
           "
           disabled
         >
@@ -242,7 +242,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma
-            boton-secundario-con-contenedor
+            boton-con-contenedor-secundario
           "
           disabled
         >
@@ -268,7 +268,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma 
-            boton-primario-sin-contenedor
+            boton-sin-contenedor-primario
           "
           disabled
         >
@@ -296,7 +296,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <button 
           class="
             boton-pictograma 
-            boton-secundario-sin-contenedor
+            boton-sin-contenedor-secundario
           "
           disabled
         >

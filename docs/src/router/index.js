@@ -172,6 +172,11 @@ const router = createRouter({
           name: 'globo-informacion',
           component: () => import('../views/ComponenteGloboInformacion.vue')
         },
+        {
+          path: 'institucionales',
+          name: 'institucionales',
+          component: () => import('../views/ComponentesInstitucionales.vue')
+        },
       ]
     },
     {

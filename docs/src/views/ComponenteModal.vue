@@ -38,7 +38,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                     <button> Acción primaria </button>
                   </p>
                 </div>
-                <button class="boton-pictograma boton-secundario-sin-contenedor modal-cerrar">
+                <button class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar">
                   <span class="pictograma-cerrar" aria-hidden="true"></span>
                   <span class="a11y-solo-lectura">Cerrar Modal.</span>
                 </button>
@@ -51,7 +51,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <button type="button">Acción primaria</button>
           </p>
         </div>
-        <button class="boton-pictograma boton-secundario-sin-contenedor modal-cerrar">
+        <button class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar">
           <span class="pictograma-cerrar" aria-hidden="true"></span>
           <span class="a11y-solo-lectura">Cerrar Modal.</span>
         </button>

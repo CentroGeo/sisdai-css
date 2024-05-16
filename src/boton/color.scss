@@ -87,47 +87,47 @@ input[type=reset]:not(.boton-primario) {
 .boton-sin-contenedor-primario {
   background: transparent;
   box-shadow: none;
-  color: var(--boton-primario-sin-contenedor-color);
+  color: var(--boton-sin-contenedor-primario-color);
   &.deshabilitado,
   &:disabled {
     background: transparent;
     box-shadow: none;
-    color: var(--boton-primario-sin-contenedor-deshabilitado-color);
+    color: var(--boton-sin-contenedor-primario-deshabilitado-color);
   }
   &:not(:disabled):hover {
-    background-color: var(--boton-primario-sin-contenedor-hover-fondo);
+    background-color: var(--boton-sin-contenedor-primario-hover-fondo);
     box-shadow: none;
-    color: var(--boton-primario-sin-contenedor-hover-color);
+    color: var(--boton-sin-contenedor-primario-hover-color);
   }
   &:not(:disabled):focus {
-    background-color: var(--boton-primario-sin-contenedor-focus-fondo);
+    background-color: var(--boton-sin-contenedor-primario-focus-fondo);
     box-shadow: 
-    0 0 0 1px var(--boton-primario-sin-contenedor-focus-borde),
-    0 0 8px var(--boton-primario-sin-contenedor-focus-sombra);
-    color: var(--boton-primario-sin-contenedor-focus-color);
+    0 0 0 1px var(--boton-sin-contenedor-primario-focus-borde),
+    0 0 8px var(--boton-sin-contenedor-primario-focus-sombra);
+    color: var(--boton-sin-contenedor-primario-focus-color);
   }
 }
 
 .boton-sin-contenedor-secundario {
   background: transparent;
   box-shadow: none;
-  color: var(--boton-secundario-sin-contenedor-color);
+  color: var(--boton-sin-contenedor-secundario-color);
   &.deshabilitado,
   &:disabled {
     background: transparent;
     box-shadow: none;
-    color: var(--boton-secundario-sin-contenedor-deshabilitado-color);
+    color: var(--boton-sin-contenedor-secundario-deshabilitado-color);
   }
   &:not(:disabled):hover {
-    background-color: var(--boton-secundario-sin-contenedor-hover-fondo);
+    background-color: var(--boton-sin-contenedor-secundario-hover-fondo);
     box-shadow: none;
-    color: var(--boton-secundario-sin-contenedor-hover-color);
+    color: var(--boton-sin-contenedor-secundario-hover-color);
   }
   &:not(:disabled):focus {
-    background-color: var(--boton-secundario-sin-contenedor-focus-fondo);
+    background-color: var(--boton-sin-contenedor-secundario-focus-fondo);
     box-shadow: 
-    0 0 0 1px var(--boton-secundario-sin-contenedor-focus-borde),
-    0 0 8px var(--boton-secundario-sin-contenedor-focus-sombra);
-    color: var(--boton-secundario-sin-contenedor-focus-color);
+    0 0 0 1px var(--boton-sin-contenedor-secundario-focus-borde),
+    0 0 8px var(--boton-sin-contenedor-secundario-focus-sombra);
+    color: var(--boton-sin-contenedor-secundario-focus-color);
   }
 }
