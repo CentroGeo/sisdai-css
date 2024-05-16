@@ -64,6 +64,60 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </div>
     </div>
 
+    <div class="ancho-lectura">
+      <p>
+        Si el <code>.boton-descarga</code> fuera una etiqueta de hipervínculo, 
+        es necesario agregar la clase <code>.deshabilitado</code> al elemento para obtener el estado <code>disabled</code>
+        nativo del botón.
+      </p>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-6">
+        
+        <a 
+          class="boton-descarga deshabilitado" 
+          href="../img/grafica-variantes.png"
+          download="nombre-que-tomara-la-descarga"
+          disabled
+        >
+          <div class="boton-descarga-cuerpo">
+            <p class="boton-descarga-titulo">
+              Descarga de archivos
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Odit totam omnis libero nihil amet tenetur rerum modi iusto, 
+              ullam ea eveniet ex nostrum illo. 
+              Atque consectetur beatae voluptates tenetur error.
+            </p>
+            <span class="boton-descarga-pictograma pictograma-archivo-descargar" aria-hidden="true"></span>
+          </div>
+        </a>
+      </div>
+      <div class="columna-6">
+        <EjemploCodigoVertical
+        :tiene_ejemplo="false"
+        html='
+        <a 
+          class="boton-descarga deshabilitado" 
+          href="../img/grafica-variantes.png"
+          download="nombre-que-tomara-la-descarga"
+        >
+          <div class="boton-descarga-cuerpo">
+            <p class="boton-descarga-titulo"> Título </p>
+            <p> ... </p>
+            <span 
+              class="boton-descarga-pictograma pictograma-archivo-descargar" 
+              aria-hidden="true"
+            ></span>
+          </div>
+        </a>
+        '
+        />
+      </div>
+    </div>
+
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Botón alternar</h2>
       <p>
