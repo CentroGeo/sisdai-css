@@ -20,7 +20,7 @@
   
   .lista-pictograma-imagen {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     margin: 0 map-get($espaciado, '3');
 
     .pictograma,

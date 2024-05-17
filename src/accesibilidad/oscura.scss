@@ -576,63 +576,19 @@ body[data-dark-theme-gema='true'] {
 }
 
 .a11y-oscura {
-  // Iconos en botones
-	.boton-primario {
-		span[class*="icono-"] {
-		  color: var(--boton-primario-color);
-		}
-	}
-	.boton-secundario {
-		span[class*="icono-"] {
-		  color: var(--boton-secundario-color);
-		}
-	}
+  
   // Botón conahcyt para vis
   .boton-conahcyt {
     img {
       filter: brightness(0) invert(1);
     }
 	}
-  // Iconos en inputs  
-	.input-correcto {
-		span[class*="icono-"] {
-		  color: var(--acciones-correcto);
-		}
-	}
-	.input-error {
-		span[class*="icono-"] {
-		  color: var(--acciones-error);
-		}
-	}
-  // Texto en input
-  #input-readonly {
-		--input-color: var(--input-color);
-	}
-  // Navegacion gob
-  .nav-hipervinculo {
-    .icono-buscar {
-      color: var(--color-gobmx-claro-1);
-      &:active,
-      &:hover,
-      &:focus {
-        background: transparent;
-        box-shadow: none;
-        color: var(--color-gobmx-claro-2);
-      }
-    }
-  }
-  // Listas
-  .lista-logo {
-    .logo {
-      &.invertir {
-        filter: brightness(0) invert(1);
-      }
-    }
-  }
-  img {
-    &.invertir {
-      filter: brightness(0) invert(1);
-    }
+
+  // Imagenes
+  img.invertir,
+  svg.invertir,
+  .color-invertir {
+    filter: brightness(0) invert(1);
   }
   // Contenedores documentación retícula
   .conahcyt-fondo-claro-1 {

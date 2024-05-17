@@ -15,62 +15,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </p>
     </div>
 
-    <div class="ancho-lectura">
-      <h2 class="m-t-10">Lista pictotrama</h2>
-      <p>
-        La lista <code>.lista-pictograma</code> utiliza pictogramas del sistema de diseño, que al utilizarse como tipografía,
-        varia su tamaño dependiendo de la etiqueta o clase a la que se agregue.
-      </p>
-      <p>
-        Para la correcta visualización de este tipo de lista, 
-        se recomienda utilizar el mismo tamaño de pictograma en todos sus elementos.
-      </p>
-    </div>
-    <div class="flex flex-contenido-centrado">
-      <div class="columna-6">
-        <ul class="lista-compuesta lista-pictograma">
-          <li>
-            <div class="lista-pictograma-imagen">
-              <span class="pictograma-flkt pictograma-48"></span>
-            </div>
-            <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-primario">texto-primario</p>
-              <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-              <p class="lista-compuesta-texto-terciario">texto-terciario</p>
-            </div>
-          </li>
-          <li>
-            <div class="lista-pictograma-imagen">
-              <span class="pictograma-flkt pictograma-48"></span>
-            </div>
-            <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-primario">texto-primario</p>
-              <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-              <p class="lista-compuesta-texto-terciario">texto-terciario</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="columna-6">
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
-          <ul class="lista-compuesta lista-pictograma">
-            <li>
-              <div class="lista-pictograma-imagen">
-                <span class="pictograma-flkt pictograma-48"></span>
-              </div>
-              <div class="lista-compuesta-cuerpo">
-                <p class="lista-compuesta-texto-primario">texto-primario</p>
-                <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-                <p class="lista-compuesta-texto-terciario">texto-terciario</p>
-              </div>
-            </li>
-          </ul>
-          '
-        />
-      </div>
-    </div>
 
     <div class="ancho-lectura">
       <h2 class="m-t-10">Lista avatar</h2>
@@ -167,7 +111,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <li>
             <a href="#">
               <div class="lista-logotipo-imagen">
-                <img src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
+                <img class="color-invertir" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-texto-primario">texto-primario</p>
@@ -177,7 +121,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <li>
             <a href="#">
               <div class="lista-logotipo-imagen">
-                <img src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
+                <img class="color-invertir" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-texto-primario">Nombre de la institución</p>
@@ -194,7 +138,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <li>
               <a href="#">
                 <div class="lista-logotipo-imagen">
-                  <img src="..." alt=""/>
+                  <img class="color-invertir" src="..." alt=""/>
                 </div>
                 <div class="lista-compuesta-cuerpo">
                   <p class="lista-compuesta-texto-primario">texto-primario</p>
@@ -202,6 +146,67 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </a>
             </li>
             ...
+          </ul>
+          '
+        />
+      </div>
+    </div>
+
+
+    <div class="ancho-lectura">
+      <h2 class="m-t-10">Lista pictotrama</h2>
+      <p>
+        La lista <code>.lista-pictograma</code> utiliza pictogramas del sistema de diseño, que al utilizarse como tipografía,
+        varia su tamaño dependiendo de la etiqueta o clase a la que se agregue.
+      </p>
+      <p>
+        Para la correcta visualización de este tipo de lista, 
+        se recomienda utilizar el mismo tamaño de pictograma en todos sus elementos.
+      </p>
+    </div>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-6">
+        <ul class="lista-compuesta lista-pictograma">
+          <li>
+            <div class="lista-pictograma-imagen">
+              <span class="pictograma-flkt pictograma-32 texto-color-2"></span>
+            </div>
+            <div class="lista-compuesta-cuerpo">
+              <p class="lista-compuesta-texto-secundario">texto-secundario</p>
+            </div>
+          </li>
+          <li>
+            <div class="lista-pictograma-imagen">
+              <span class="pictograma-flkt pictograma-32 texto-color-2"></span>
+            </div>
+            <div class="lista-compuesta-cuerpo">
+              <p class="lista-compuesta-texto-secundario">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Aut perspiciatis dolores magni temporibus, ab consequuntur molestiae, 
+                illo quasi ipsum at natus qui autem facere ducimus consectetur 
+                totam eos! Nostrum, officiis?
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="columna-6">
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <ul class="lista-compuesta lista-pictograma">
+            <li>
+              <div class="lista-pictograma-imagen">
+                <span 
+                  class="pictograma-flkt pictograma-32 texto-color-2"
+                ></span>
+              </div>
+              <div class="lista-compuesta-cuerpo">
+                <p class="lista-compuesta-texto-secundario">
+                  texto-secundario
+                </p>
+              </div>
+            </li>
           </ul>
           '
         />

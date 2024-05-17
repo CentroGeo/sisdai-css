@@ -6998,7 +6998,7 @@ ol + hr {
 }
 .lista-pictograma .lista-pictograma-imagen {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   margin: 0 24px;
 }
 .lista-pictograma .lista-pictograma-imagen .pictograma,
@@ -7090,10 +7090,10 @@ ol + hr {
 .boton-pictograma .pictograma,
 .boton-pictograma [class^=pictograma-],
 .boton-pictograma [class*=" pictograma-"] {
-  font-size: 1.5rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
   line-height: 1;
   padding: 0;
 }
@@ -10006,14 +10006,14 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada [class*=" boton"]:not(:last-child) {
   margin-right: 8px;
 }
-.a11y-simplificada ul .avatar,
-.a11y-simplificada ul .logo,
-.a11y-simplificada ol .avatar,
-.a11y-simplificada ol .logo,
-.a11y-simplificada .lista-avatar .avatar,
-.a11y-simplificada .lista-avatar .logo,
-.a11y-simplificada .lista-logo .avatar,
-.a11y-simplificada .lista-logo .logo {
+.a11y-simplificada ul .lista-avatar-imagen,
+.a11y-simplificada ul .lista-logotipo-imagen,
+.a11y-simplificada ol .lista-avatar-imagen,
+.a11y-simplificada ol .lista-logotipo-imagen,
+.a11y-simplificada .lista-avatar .lista-avatar-imagen,
+.a11y-simplificada .lista-avatar .lista-logotipo-imagen,
+.a11y-simplificada .lista-logotipo .lista-avatar-imagen,
+.a11y-simplificada .lista-logotipo .lista-logotipo-imagen {
   display: none;
 }
 .a11y-simplificada img:not(.nav-logo),
@@ -10712,40 +10712,12 @@ body[data-dark-theme-gema=true] .nav-hiperviculo-logo .nav-logo.invertir {
   filter: brightness(0) invert(1);
 }
 
-.a11y-oscura .boton-primario span[class*=icono-], .a11y-oscura button span[class*=icono-],
-.a11y-oscura input[type=button]:not(.boton-secundario) span[class*=icono-],
-.a11y-oscura input[type=submit]:not(.boton-secundario) span[class*=icono-],
-.a11y-oscura .boton-con-contenedor-primario span[class*=icono-], .a11y-oscura .boton-descarga span[class*=icono-], .a11y-oscura .boton-alternar [type=radio]:not(:disabled):checked + label span[class*=icono-], .boton-alternar .a11y-oscura [type=radio]:not(:disabled):checked + label span[class*=icono-], .a11y-oscura .boton-alternar [type=radio]:not(:disabled):checked + legend span[class*=icono-], .boton-alternar .a11y-oscura [type=radio]:not(:disabled):checked + legend span[class*=icono-], .a11y-oscura .ir-contenido-principal span[class*=icono-], .a11y-oscura .boton-info span[class*=icono-] {
-  color: var(--boton-primario-color);
-}
-.a11y-oscura .boton-secundario span[class*=icono-], .a11y-oscura .boton-con-contenedor-secundario span[class*=icono-],
-.a11y-oscura input[type=reset]:not(.boton-primario):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) span[class*=icono-] {
-  color: var(--boton-secundario-color);
-}
 .a11y-oscura .boton-conahcyt img {
   filter: brightness(0) invert(1);
 }
-.a11y-oscura .input-correcto span[class*=icono-] {
-  color: var(--acciones-correcto);
-}
-.a11y-oscura .input-error span[class*=icono-] {
-  color: var(--acciones-error);
-}
-.a11y-oscura #input-readonly {
-  --input-color: var(--input-color);
-}
-.a11y-oscura .nav-hipervinculo .icono-buscar {
-  color: var(--color-gobmx-claro-1);
-}
-.a11y-oscura .nav-hipervinculo .icono-buscar:active, .a11y-oscura .nav-hipervinculo .icono-buscar:hover, .a11y-oscura .nav-hipervinculo .icono-buscar:focus {
-  background: transparent;
-  box-shadow: none;
-  color: var(--color-gobmx-claro-2);
-}
-.a11y-oscura .lista-logo .logo.invertir {
-  filter: brightness(0) invert(1);
-}
-.a11y-oscura img.invertir {
+.a11y-oscura img.invertir,
+.a11y-oscura svg.invertir,
+.a11y-oscura .color-invertir {
   filter: brightness(0) invert(1);
 }
 .a11y-oscura .conahcyt-fondo-claro-1 {
