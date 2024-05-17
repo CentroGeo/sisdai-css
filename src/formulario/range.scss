@@ -14,17 +14,19 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 [type='range'] {
-  box-sizing: border-box !important;
-  border: 1px solid transparent;
-  width: 100%;
   background-color: transparent;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  width: 100%;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
-  min-height: 2.5rem;
-  border-radius: 0.25rem;
-  margin-top: map-get($espaciado, '1');
-  margin-bottom: map-get($espaciado, '3');
+  padding: map-get($espaciado, '1') 0;
+  height: $form-campo-alto;
+  border-radius: $form-campo-radio;
+  margin: map-get($espaciado, '1') 0 map-get($espaciado, '3');
 
   // La bolita
   &::-moz-range-thumb {
@@ -44,11 +46,10 @@
     border-radius: 0.5rem;
   }
   &::-webkit-slider-thumb {
-    margin-top: calc((-1rem * 0.5) + 0.125rem);
+    margin-top: calc(-0.5rem + 0.125rem);
     width: 1rem;
     height: 1rem;
     background: var(--input-controles-color);
-    margin-top: calc(-0.5rem + 0.125rem);
     border: 0;
     border-radius: 0.5rem;
     -webkit-appearance: none;
@@ -110,14 +111,15 @@
   }
   &:disabled {
     cursor: auto;
+    pointer-events: none;
     &::-moz-range-thumb {
-      background-color: var(--boton-primario-deshabilitado-color);
+      background-color: var(--input-deshabilitado-fondo);
     }
     &::-ms-thumb {
-      background-color: var(--boton-primario-deshabilitado-color);
+      background-color: var(--input-deshabilitado-fondo);
     }
     &::-webkit-slider-thumb {
-      background-color: var(--boton-primario-deshabilitado-color);
+      background-color: var(--input-deshabilitado-fondo);
     }
     &::-webkit-slider-runnable-track {
       background-color: var(--input-deshabilitado-fondo);
@@ -133,10 +135,9 @@
     }
   }
   &:focus {
-    border-color: var(--boton-primario-focus-fondo);
+    background-color: var(--input-hover);
+    border-color: var(--input-focus);
     box-shadow: 0 0 8px var(--input-focus);
-    border-radius: map-get($espaciado, 'minimo');
     outline: none;
-    border-radius: 0.25rem;
   }
 }
