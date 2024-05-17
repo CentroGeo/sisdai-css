@@ -27,7 +27,7 @@ a,
   text-decoration: none;
   text-align: left;
   display: inline;
-    vertical-align: baseline;
+  vertical-align: baseline;
   &:not(:disabled) {
     cursor: pointer;
     @include transicion;
