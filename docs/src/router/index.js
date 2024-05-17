@@ -177,6 +177,11 @@ const router = createRouter({
           name: 'institucionales',
           component: () => import('../views/ComponentesInstitucionales.vue')
         },
+        {
+          path: 'audio',
+          name: 'audio',
+          component: () => import('../views/ComponenteAudio.vue')
+        },
       ]
     },
     {

@@ -33,7 +33,7 @@
     }
   }
 
-  button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
+  button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
   input[type=button],
   input[type=submit],
   input[type=reset],
@@ -188,6 +188,26 @@
       }
       .pictograma-resaltado {
         animation: none;
+      }
+    }
+  }
+
+  .audio {
+    background: transparent;
+    padding: 0;
+
+    .audio-cuerpo {
+      padding: map-get($espaciado, '2');
+    }
+    .boton-pictograma {
+      display: inline-flex !important;
+      align-items: center !important;
+      .pictograma,
+      [class^='pictograma-'],
+      [class*=' pictograma-'] {
+        display: inline-flex !important;
+        align-items: center !important;
+        font-size: 1.5rem !important; // 24px
       }
     }
   }
