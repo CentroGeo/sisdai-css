@@ -26,7 +26,8 @@
   padding: map-get($espaciado, '1') 0;
   height: $form-campo-alto;
   border-radius: $form-campo-radio;
-  margin: map-get($espaciado, '1') 0 map-get($espaciado, '3');
+  display: flex;
+  margin: 0;
 
   // La bolita
   &::-moz-range-thumb {

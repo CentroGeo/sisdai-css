@@ -38,6 +38,5 @@ label {
 textarea + .formulario-ayuda,
 select + .formulario-ayuda,
 input + .formulario-ayuda {
-  margin-top: calc(map-get($espaciado, '2') * -1);
-  margin-bottom: map-get($espaciado, '3');
+  margin-top: map-get($espaciado, 'minimo');
 }
