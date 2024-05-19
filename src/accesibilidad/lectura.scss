@@ -20,7 +20,9 @@
   overflow: hidden; 
   position: absolute; 
   white-space: nowrap; 
-  width: 1px; 
+  width: 1px;
+  display: block;
+  visibility: hidden;
 }
 
 // Se agrega informacion al letcor de pantalla cuando los hipervinculos abren en una nueva pestaña

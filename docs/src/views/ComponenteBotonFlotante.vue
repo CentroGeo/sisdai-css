@@ -9,12 +9,11 @@ const estaAbierto = ref(true)
     <div class="ancho-lectura">
       <h1>Botón flotante</h1>
       <p>
-        Componente declarado en la biblioteca 
+        Estilos para el componente <code><code>SisdaiBotonFlotante</code></code> declarado en la biblioteca 
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
       </p>
-      <p>
-        El componente <code> &lt;SisdaiBotonFlotante></code> 
-        permite tener enlaces fijos en todas las vistas del sitio,
+      <p>  
+        Este permite tener enlaces fijos en todas las vistas del sitio,
         posicionado el componente en el esquina inferior izquierda.
       </p>
       <p>
@@ -25,12 +24,24 @@ const estaAbierto = ref(true)
       <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
-        <div class="boton-flotante">
+        <div role="toolbar" class="boton-flotante">
 
           <button class="boton-flotante-alternador">
-            <span class="boton-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
-            <span class="boton-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>
-            <span class="a11y-solo-lectura">Abrir o cerrar botón flotante</span>
+            <span 
+              class="boton-flotante-pictograma-abierto pictograma-restar"
+              aria-hidden="true"
+            ></span>
+            <span 
+              class="boton-flotante-pictograma-cerrado pictograma-agregar"
+              aria-hidden="true"
+            ></span>
+
+            <span class="boton-flotante-a11y-abierto a11y-solo-lectura">
+              Cerrar botón flotante
+            </span>
+            <span class="boton-flotante-a11y-cerrado a11y-solo-lectura">
+              Abrir botón flotante
+            </span>
           </button>
 
           <div class="boton-flotante-cuerpo">
@@ -56,8 +67,9 @@ const estaAbierto = ref(true)
     <div class="boton-flotante" :class="{abierto: estaAbierto}">
       <button class="boton-flotante-alternador" @click="estaAbierto = !estaAbierto">
         <span class="boton-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
+        <span class="boton-flotante-a11y-abierto a11y-solo-lectura">Cerrar botón flotante</span>
         <span class="boton-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>
-        <span class="a11y-solo-lectura">Abrir o cerrar botón flotante</span>
+        <span class="boton-flotante-a11y-cerrado a11y-solo-lectura">Abrir botón flotante</span>
       </button>
 
       <div class="boton-flotante-cuerpo">

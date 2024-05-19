@@ -22,7 +22,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <h2 class="m-t-10">Globo de información</h2>
         <EjemploCodigoVertical
           html='
-          <div class="globo-informacion">
+          <div class="globo-informacion" role="tooltip">
             <p>
               <span class="globo-informacion-punto-color"></span>
               Jalisco | 8,348,151 habitantes
@@ -38,7 +38,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <h2 class="m-t-10">Globo de información complejo</h2>
         <EjemploCodigoVertical
           html='
-          <div class="globo-informacion globo-informacion-grande">
+          <div class="globo-informacion globo-informacion-grande" role="tooltip">
             <p>
               <b>Lorem ipsum</b>
             </p>
@@ -63,7 +63,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <h2 class="m-t-10">Globo de información complejo con botón de cierre</h2>
         <EjemploCodigoVertical
           html='
-          <div class="globo-informacion globo-informacion-extra">
+          <div class="globo-informacion globo-informacion-extra" role="tooltip">
             <p>
               <b>Red Nacional de Jardines Etnobiológicos</b>
             </p>

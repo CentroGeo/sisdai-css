@@ -43,6 +43,12 @@
       font-size: 2rem;
       transition: all 0.4s ease-in-out;
     }
+    .boton-flotante-a11y-cerrado {
+      display: block;
+    }
+    .boton-flotante-a11y-abierto {
+      display: none;
+    }
     .boton-flotante-pictograma-cerrado {
       opacity: 1;
     }
@@ -120,6 +126,12 @@
       }
       .boton-flotante-pictograma-abierto {
         opacity: 1;
+      }
+      .boton-flotante-a11y-cerrado {
+        display: none;
+      }
+      .boton-flotante-a11y-abierto {
+        display: block;
       }
     }
     .boton-flotante-hipervinculo {

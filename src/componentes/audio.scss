@@ -18,22 +18,17 @@
   border-radius: map-get($borde-redondeado, '20');
   padding: map-get($espaciado, '2');
 
-  select,
-  [type='range'] {
-    margin: 0;
-  }
-
   .audio-cabecera {
     margin-bottom: map-get($espaciado, '3');
+    > * {
+      margin-top: map-get($espaciado, '2');
+      margin-bottom: map-get($espaciado, '2');
+    }
     > :first-child {
       margin-top: 0;
     }
     > :last-child {
       margin-bottom: 0;
-    }
-    > * {
-      margin-top: map-get($espaciado, '2');
-      margin-bottom: map-get($espaciado, '2');
     }
   }
 
