@@ -192,7 +192,12 @@
             <li><a href="https://coronavirus.gob.mx/" class="nav-hipervinculo" target="_blank" rel="noopener">Información sobre COVID-19</a></li>
             <li><a href="https://www.gob.mx/tramites" class="nav-hipervinculo" target="_blank" rel="noopener">Trámites</a></li>
             <li><a href="https://www.gob.mx/gobierno" class="nav-hipervinculo" target="_blank" rel="noopener">Gobierno</a></li>
-            <li><a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener"><span class="pictograma-buscar"></span> </a></li>
+            <li>
+              <a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener">
+                <span class="pictograma-buscar" aria-hidden="true"></span>
+                <span class="a11y-solo-lectura">Busqueda</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -277,6 +282,7 @@
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li> -->
@@ -318,7 +324,7 @@
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
       <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
-      <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
+      <button class="boton-primario" @click="upFontSize">Incrementar fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
 
       <button 

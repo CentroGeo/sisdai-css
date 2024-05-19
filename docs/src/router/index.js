@@ -182,6 +182,11 @@ const router = createRouter({
           name: 'audio',
           component: () => import('../views/ComponenteAudio.vue')
         },
+        {
+          path: 'control-acercar-alejar',
+          name: 'control-acercar-alejar',
+          component: () => import('../views/ComponenteControlAcercarAlejar.vue')
+        },
       ]
     },
     {
