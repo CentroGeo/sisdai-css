@@ -7310,6 +7310,7 @@ ol + hr {
   border-top-right-radius: 0 !important;
   border-bottom-right-radius: 0 !important;
   height: auto !important;
+  padding-right: 3rem !important;
 }
 .campo-busqueda .campo-busqueda-entrada::-webkit-search-decoration, .campo-busqueda .campo-busqueda-entrada::-webkit-search-cancel-button, .campo-busqueda .campo-busqueda-entrada::-webkit-search-results-button, .campo-busqueda .campo-busqueda-entrada::-webkit-search-results-decoration {
   display: none;
