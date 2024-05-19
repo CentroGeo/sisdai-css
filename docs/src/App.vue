@@ -281,15 +281,16 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Busqueda</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable</RouterLink></li> -->
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">Institucionales</RouterLink></li>
               </ul>
             </li>

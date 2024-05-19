@@ -52,7 +52,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
         </div>
         <button class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar">
-          <span class="pictograma-cerrar" aria-label="true"></span>
+          <span class="pictograma-cerrar" aria-hidden="true"></span>
           <span class="a11y-solo-lectura">Cerrar Modal.</span>
         </button>
       </div>

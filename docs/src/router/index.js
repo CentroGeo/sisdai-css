@@ -187,6 +187,11 @@ const router = createRouter({
           name: 'control-acercar-alejar',
           component: () => import('../views/ComponenteControlAcercarAlejar.vue')
         },
+        {
+          path: 'campo-busqueda',
+          name: 'campo-busqueda',
+          component: () => import('../views/ComponenteCampoBusqueda.vue')
+        },
       ]
     },
     {

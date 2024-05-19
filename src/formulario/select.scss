@@ -24,6 +24,8 @@ select {
   background-size: map-get($espaciado, '4');
   background-repeat: no-repeat;
   padding-right: map-get($espaciado, '5');
+  padding-top: calc(map-get($espaciado, '1') + 1px);
+  padding-bottom: calc(map-get($espaciado, '1') + 1px);
   background-image: var(--input-select-svg);
   background-color: var(--input-fondo);
   color: var(--input-color);
