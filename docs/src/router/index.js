@@ -183,6 +183,11 @@ const router = createRouter({
           component: () => import('../views/ComponenteAudio.vue')
         },
         {
+          path: 'control-deslizante',
+          name: 'control-deslizante',
+          component: () => import('../views/ComponenteControlDeslizante.vue')
+        },
+        {
           path: 'control-acercar-alejar',
           name: 'control-acercar-alejar',
           component: () => import('../views/ComponenteControlAcercarAlejar.vue')
