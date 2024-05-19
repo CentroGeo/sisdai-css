@@ -133,7 +133,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-6">
-        <div class="boton-alternar">
+        <div class="boton-alternar" role="group" aria-label="Ejemplo grupo de elementos seleccionables">
           <input type="radio" id="a1" name="ejemplo" value="seleccionado" checked />
           <label for="a1">Opcion 1</label>
           <input type="radio" id="a2" name="ejemplo" value="opcion" />
@@ -146,7 +146,11 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
-        <div class="boton-alternar">
+        <div 
+          class="boton-alternar" 
+          role="group" 
+          aria-label="Ejemplo grupo de elementos seleccionables"
+        >
           <input id="a1" name="ejemplo" value="a1" type="radio" checked />
           <label for="a1"> Opcion 1 </label>
           
@@ -160,7 +164,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <div class="boton-alternar">
+        <div class="boton-alternar" role="group" aria-label="Ejemplo grupo de elementos deshabilitados">
           <input type="radio" id="b1" name="ej-b" value="seleccionado" checked disabled />
           <label for="b1">Opcion 1</label>
           <input type="radio" id="b2" name="ej-b" value="opcion" disabled />
@@ -172,7 +176,11 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
-        <div class="boton-alternar">
+        <div 
+          class="boton-alternar" 
+          role="group" 
+          aria-label="Ejemplo grupo de elementos deshabilitados"
+        >
           <input id="b1" name="ej-b" value="b1" type="radio" checked disabled />
           <label for="b1"> Opcion 1 </label>
           
