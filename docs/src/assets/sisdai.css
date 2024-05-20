@@ -5538,7 +5538,7 @@ p {
     padding-bottom: 120px;
   }
 }
-.boton, .boton-alternar [type=radio] + label, .boton-alternar [type=radio] + legend, .boton-descarga, .boton-pictograma, button,
+.boton, .ir-contenido-principal, .boton-alternar [type=radio] + label, .boton-alternar [type=radio] + legend, .boton-descarga, .boton-pictograma, button,
 input[type=button],
 input[type=submit],
 input[type=reset] {
@@ -5555,37 +5555,38 @@ input[type=reset] {
   display: inline-flex;
   align-items: center;
 }
-.boton:not(:disabled), .boton-alternar [type=radio] + label:not(:disabled), .boton-alternar [type=radio] + legend:not(:disabled), .boton-descarga:not(:disabled), .boton-pictograma:not(:disabled), button:not(:disabled),
+.boton:not(:disabled), .ir-contenido-principal:not(:disabled), .boton-alternar [type=radio] + label:not(:disabled), .boton-alternar [type=radio] + legend:not(:disabled), .boton-descarga:not(:disabled), .boton-pictograma:not(:disabled), button:not(:disabled),
 input[type=button]:not(:disabled),
 input[type=submit]:not(:disabled),
 input[type=reset]:not(:disabled) {
   cursor: pointer;
   transition: all 0.27s ease-in-out;
 }
-.boton.deshabilitado, .boton-alternar [type=radio] + label.deshabilitado, .boton-alternar [type=radio] + legend.deshabilitado, .deshabilitado.boton-descarga, .deshabilitado.boton-pictograma, button.deshabilitado,
+.boton.deshabilitado, .deshabilitado.ir-contenido-principal, .boton-alternar [type=radio] + label.deshabilitado, .boton-alternar [type=radio] + legend.deshabilitado, .deshabilitado.boton-descarga, .deshabilitado.boton-pictograma, button.deshabilitado,
 input.deshabilitado[type=button],
 input.deshabilitado[type=submit],
-input.deshabilitado[type=reset], .boton:disabled, .boton-alternar [type=radio] + label:disabled, .boton-alternar [type=radio] + legend:disabled, .boton-descarga:disabled, .boton-pictograma:disabled, button:disabled,
+input.deshabilitado[type=reset], .boton:disabled, .ir-contenido-principal:disabled, .boton-alternar [type=radio] + label:disabled, .boton-alternar [type=radio] + legend:disabled, .boton-descarga:disabled, .boton-pictograma:disabled, button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled,
 input[type=reset]:disabled {
   pointer-events: none;
 }
-.boton:hover, .boton-alternar [type=radio] + label:hover, .boton-alternar [type=radio] + legend:hover, .boton-descarga:hover, .boton-pictograma:hover, button:hover,
+.boton:hover, .ir-contenido-principal:hover, .boton-alternar [type=radio] + label:hover, .boton-alternar [type=radio] + legend:hover, .boton-descarga:hover, .boton-pictograma:hover, button:hover,
 input[type=button]:hover,
 input[type=submit]:hover,
-input[type=reset]:hover, .boton:focus, .boton-alternar [type=radio] + label:focus, .boton-alternar [type=radio] + legend:focus, .boton-descarga:focus, .boton-pictograma:focus, button:focus,
+input[type=reset]:hover, .boton:focus, .ir-contenido-principal:focus, .boton-alternar [type=radio] + label:focus, .boton-alternar [type=radio] + legend:focus, .boton-descarga:focus, .boton-pictograma:focus, button:focus,
 input[type=button]:focus,
 input[type=submit]:focus,
 input[type=reset]:focus {
   text-decoration: none;
   outline: none;
 }
-.boton .pictograma, .boton-alternar [type=radio] + label .pictograma, .boton-alternar [type=radio] + legend .pictograma, .boton-descarga .pictograma, .boton-pictograma .pictograma, button .pictograma,
+.boton .pictograma, .ir-contenido-principal .pictograma, .boton-alternar [type=radio] + label .pictograma, .boton-alternar [type=radio] + legend .pictograma, .boton-descarga .pictograma, .boton-pictograma .pictograma, button .pictograma,
 input[type=button] .pictograma,
 input[type=submit] .pictograma,
 input[type=reset] .pictograma,
 .boton [class^=pictograma-],
+.ir-contenido-principal [class^=pictograma-],
 .boton-alternar [type=radio] + label [class^=pictograma-],
 .boton-alternar [type=radio] + legend [class^=pictograma-],
 .boton-descarga [class^=pictograma-],
@@ -5595,6 +5596,7 @@ input[type=button] [class^=pictograma-],
 input[type=submit] [class^=pictograma-],
 input[type=reset] [class^=pictograma-],
 .boton [class*=" pictograma-"],
+.ir-contenido-principal [class*=" pictograma-"],
 .boton-alternar [type=radio] + label [class*=" pictograma-"],
 .boton-alternar [type=radio] + legend [class*=" pictograma-"],
 .boton-descarga [class*=" pictograma-"],
@@ -5610,42 +5612,42 @@ input[type=reset] [class*=" pictograma-"] {
   padding: 0 0 0 8px;
 }
 
-.boton-primario, .boton-info, .ir-contenido-principal, .boton-alternar [type=radio]:not(:disabled):checked + label, .boton-alternar [type=radio]:not(:disabled):checked + legend, .boton-descarga, button,
-input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario, .ir-contenido-principal, .boton-info, .boton-alternar [type=radio]:not(:disabled):checked + label, .boton-alternar [type=radio]:not(:disabled):checked + legend, .boton-descarga, button,
+input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario {
   background-color: var(--boton-primario-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
   color: var(--boton-primario-color);
 }
-.boton-primario.deshabilitado, .deshabilitado.boton-info, .deshabilitado.ir-contenido-principal, .boton-alternar [type=radio]:not(:disabled):checked + label.deshabilitado, .boton-alternar [type=radio]:not(:disabled):checked + legend.deshabilitado, .deshabilitado.boton-descarga, button.deshabilitado,
-input.deshabilitado[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input.deshabilitado[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-.deshabilitado.boton-con-contenedor-primario, .boton-primario:disabled, .boton-info:disabled, .ir-contenido-principal:disabled, .boton-alternar [type=radio]:not(:disabled):checked + label:disabled, .boton-alternar [type=radio]:not(:disabled):checked + legend:disabled, .boton-descarga:disabled, button:disabled,
-input[type=button]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario.deshabilitado, .deshabilitado.ir-contenido-principal, .deshabilitado.boton-info, .boton-alternar [type=radio]:not(:disabled):checked + label.deshabilitado, .boton-alternar [type=radio]:not(:disabled):checked + legend.deshabilitado, .deshabilitado.boton-descarga, button.deshabilitado,
+input.deshabilitado[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input.deshabilitado[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.deshabilitado.boton-con-contenedor-primario, .boton-primario:disabled, .ir-contenido-principal:disabled, .boton-info:disabled, .boton-alternar [type=radio]:not(:disabled):checked + label:disabled, .boton-alternar [type=radio]:not(:disabled):checked + legend:disabled, .boton-descarga:disabled, button:disabled,
+input[type=button]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:disabled {
   background-color: var(--boton-primario-deshabilitado-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-deshabilitado-borde);
   color: var(--boton-primario-deshabilitado-color);
 }
-.boton-primario:visited, .boton-info:visited, .ir-contenido-principal:visited, .boton-alternar [type=radio]:not(:disabled):checked + label:visited, .boton-alternar [type=radio]:not(:disabled):checked + legend:visited, .boton-descarga:visited, button:visited,
-input[type=button]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario:visited, .ir-contenido-principal:visited, .boton-info:visited, .boton-alternar [type=radio]:not(:disabled):checked + label:visited, .boton-alternar [type=radio]:not(:disabled):checked + legend:visited, .boton-descarga:visited, button:visited,
+input[type=button]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:visited {
   color: var(--boton-primario-color);
 }
-.boton-primario:not(:disabled):hover, .boton-info:not(:disabled):hover, .ir-contenido-principal:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):hover, .boton-descarga:not(:disabled):hover, button:not(:disabled):hover,
-input[type=button]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario:not(:disabled):hover, .ir-contenido-principal:not(:disabled):hover, .boton-info:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):hover, .boton-descarga:not(:disabled):hover, button:not(:disabled):hover,
+input[type=button]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:not(:disabled):hover {
   background-color: var(--boton-primario-hover-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-hover-borde), 3px 3px 4px var(--boton-primario-hover-sombra);
   color: var(--boton-primario-hover-color);
 }
-.boton-primario:not(:disabled):focus, .boton-info:not(:disabled):focus, .ir-contenido-principal:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):focus, .boton-descarga:not(:disabled):focus, button:not(:disabled):focus,
-input[type=button]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario:not(:disabled):focus, .ir-contenido-principal:not(:disabled):focus, .boton-info:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):focus, .boton-descarga:not(:disabled):focus, button:not(:disabled):focus,
+input[type=button]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:not(:disabled):focus {
   background-color: var(--boton-primario-focus-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-focus-borde), 0 0 0 1px var(--boton-primario-focus-contorno), 0 0 8px var(--boton-primario-focus-sombra);
@@ -5653,30 +5655,30 @@ input[type=submit]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-co
 }
 
 .boton-secundario, .boton-con-contenedor-secundario,
-input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-borde);
   color: var(--boton-secundario-color);
 }
 .boton-secundario.deshabilitado, .deshabilitado.boton-con-contenedor-secundario,
-input.deshabilitado[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario), .boton-secundario:disabled, .boton-con-contenedor-secundario:disabled,
-input[type=reset]:disabled:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input.deshabilitado[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario), .boton-secundario:disabled, .boton-con-contenedor-secundario:disabled,
+input[type=reset]:disabled:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-deshabilitado-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-deshabilitado-borde), 3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
   color: var(--boton-secundario-deshabilitado-color);
 }
 .boton-secundario:visited, .boton-con-contenedor-secundario:visited,
-input[type=reset]:visited:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:visited:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   color: var(--boton-secundario-color);
 }
 .boton-secundario:not(:disabled):hover, .boton-con-contenedor-secundario:not(:disabled):hover,
-input[type=reset]:not(:disabled):hover:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:not(:disabled):hover:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-hover-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-hover-borde), 0 0 8px var(--boton-secundario-hover-sombra);
   color: var(--boton-secundario-hover-color);
 }
 .boton-secundario:not(:disabled):focus, .boton-con-contenedor-secundario:not(:disabled):focus,
-input[type=reset]:not(:disabled):focus:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.boton-info):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:not(:disabled):focus:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-focus-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
   color: var(--boton-secundario-focus-color);
@@ -5736,7 +5738,7 @@ input[type=reset]:not(:disabled):focus:not(.boton-primario):not(.boton-info):not
 
 a,
 .hipervinculo,
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset],
@@ -5761,7 +5763,7 @@ a,
 }
 a:not(:disabled),
 .hipervinculo:not(:disabled),
-.a11y-simplificada button:not(:disabled):not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button:not(:disabled):not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:not(:disabled),
 .a11y-simplificada input[type=submit]:not(:disabled),
 .a11y-simplificada input[type=reset]:not(:disabled),
@@ -5774,7 +5776,7 @@ a:not(:disabled),
 }
 a:disabled,
 .hipervinculo:disabled,
-.a11y-simplificada button:disabled:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button:disabled:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled,
@@ -5788,7 +5790,7 @@ a:disabled,
 }
 a:visited,
 .hipervinculo:visited,
-.a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:visited,
 .a11y-simplificada input[type=submit]:visited,
 .a11y-simplificada input[type=reset]:visited,
@@ -5800,7 +5802,7 @@ a:visited,
 }
 a:hover,
 .hipervinculo:hover,
-.a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover,
@@ -5815,7 +5817,7 @@ a:hover,
 }
 a:focus-visible,
 .hipervinculo:focus-visible,
-.a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:focus-visible,
 .a11y-simplificada input[type=submit]:focus-visible,
 .a11y-simplificada input[type=reset]:focus-visible,
@@ -5832,7 +5834,7 @@ a .pictograma,
 a [class^=pictograma-],
 a [class*=" pictograma-"],
 .hipervinculo .pictograma,
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad) .pictograma,
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad) .pictograma,
 .a11y-simplificada input[type=button] .pictograma,
 .a11y-simplificada input[type=submit] .pictograma,
 .a11y-simplificada input[type=reset] .pictograma,
@@ -5841,7 +5843,7 @@ a [class*=" pictograma-"],
 .hipervinculo-conahcyt .pictograma,
 .hipervinculo-gobmx .pictograma,
 .hipervinculo [class^=pictograma-],
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad) [class^=pictograma-],
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad) [class^=pictograma-],
 .a11y-simplificada input[type=button] [class^=pictograma-],
 .a11y-simplificada input[type=submit] [class^=pictograma-],
 .a11y-simplificada input[type=reset] [class^=pictograma-],
@@ -5850,7 +5852,7 @@ a [class*=" pictograma-"],
 .hipervinculo-conahcyt [class^=pictograma-],
 .hipervinculo-gobmx [class^=pictograma-],
 .hipervinculo [class*=" pictograma-"],
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad) [class*=" pictograma-"],
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad) [class*=" pictograma-"],
 .a11y-simplificada input[type=button] [class*=" pictograma-"],
 .a11y-simplificada input[type=submit] [class*=" pictograma-"],
 .a11y-simplificada input[type=reset] [class*=" pictograma-"],
@@ -5865,7 +5867,7 @@ a [class*=" pictograma-"],
   padding: 0;
 }
 
-.hipervinculo:disabled, .a11y-simplificada button:disabled:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.hipervinculo:disabled, .a11y-simplificada button:disabled:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled,
@@ -5875,7 +5877,7 @@ a [class*=" pictograma-"],
   color: var(--hipervinculo-deshabilitado-color) !important;
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra) !important;
 }
-.hipervinculo:visited, .a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.hipervinculo:visited, .a11y-simplificada button:visited:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:visited,
 .a11y-simplificada input[type=submit]:visited,
 .a11y-simplificada input[type=reset]:visited,
@@ -5883,7 +5885,7 @@ a [class*=" pictograma-"],
 .a11y-simplificada [class*=" boton"]:visited, .hipervinculo-conahcyt:visited, .hipervinculo-gobmx:visited {
   color: var(--hipervinculo-visitado) !important;
 }
-.hipervinculo:hover, .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.hipervinculo:hover, .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover,
@@ -5894,7 +5896,7 @@ a [class*=" pictograma-"],
   text-decoration: underline !important;
   box-shadow: none !important;
 }
-.hipervinculo:focus-visible, .a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.hipervinculo:focus-visible, .a11y-simplificada button:focus-visible:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button]:focus-visible,
 .a11y-simplificada input[type=submit]:focus-visible,
 .a11y-simplificada input[type=reset]:focus-visible,
@@ -5909,7 +5911,7 @@ a [class*=" pictograma-"],
 a[class^=m-],
 a[class^=p-],
 .hipervinculo[class^=m-],
-.a11y-simplificada button[class^=m-]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button[class^=m-]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[class^=m-][type=button],
 .a11y-simplificada input[class^=m-][type=submit],
 .a11y-simplificada input[class^=m-][type=reset],
@@ -5918,7 +5920,7 @@ a[class^=p-],
 [class^=m-].hipervinculo-conahcyt,
 [class^=m-].hipervinculo-gobmx,
 .hipervinculo[class^=p-],
-.a11y-simplificada button[class^=p-]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button[class^=p-]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[class^=p-][type=button],
 .a11y-simplificada input[class^=p-][type=submit],
 .a11y-simplificada input[class^=p-][type=reset],
@@ -5929,7 +5931,7 @@ a[class^=p-],
 a[class*=" m-"],
 a[class*=" p-"],
 .hipervinculo[class*=" m-"],
-.a11y-simplificada button[class*=" m-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button[class*=" m-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[class*=" m-"][type=button],
 .a11y-simplificada input[class*=" m-"][type=submit],
 .a11y-simplificada input[class*=" m-"][type=reset],
@@ -5938,7 +5940,7 @@ a[class*=" p-"],
 [class*=" m-"].hipervinculo-conahcyt,
 [class*=" m-"].hipervinculo-gobmx,
 .hipervinculo[class*=" p-"],
-.a11y-simplificada button[class*=" p-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button[class*=" p-"]:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[class*=" p-"][type=button],
 .a11y-simplificada input[class*=" p-"][type=submit],
 .a11y-simplificada input[class*=" p-"][type=reset],
@@ -7059,6 +7061,7 @@ ol + hr {
 }
 .lista-accion .lista-accion-acciones button,
 .lista-accion .lista-accion-acciones .boton,
+.lista-accion .lista-accion-acciones .ir-contenido-principal,
 .lista-accion .lista-accion-acciones .boton-alternar [type=radio] + label,
 .boton-alternar .lista-accion .lista-accion-acciones [type=radio] + label,
 .lista-accion .lista-accion-acciones .boton-alternar [type=radio] + legend,
@@ -7595,6 +7598,7 @@ dialog.modal .modal-contenedor .modal-pie {
 }
 dialog.modal .modal-contenedor .modal-pie > button,
 dialog.modal .modal-contenedor .modal-pie > .boton,
+dialog.modal .modal-contenedor .modal-pie > .ir-contenido-principal,
 dialog.modal .modal-contenedor .modal-pie > input[type=button],
 dialog.modal .modal-contenedor .modal-pie > input[type=submit],
 dialog.modal .modal-contenedor .modal-pie > input[type=reset],
@@ -7610,6 +7614,7 @@ dialog.modal .modal-contenedor .boton-alternar .modal-pie > [type=radio] + legen
 @media screen and (min-width: 768px) {
   dialog.modal .modal-contenedor .modal-pie > button,
 dialog.modal .modal-contenedor .modal-pie > .boton,
+dialog.modal .modal-contenedor .modal-pie > .ir-contenido-principal,
 dialog.modal .modal-contenedor .modal-pie > input[type=button],
 dialog.modal .modal-contenedor .modal-pie > input[type=submit],
 dialog.modal .modal-contenedor .modal-pie > input[type=reset],
@@ -7743,7 +7748,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   background: var(--input-controles-color);
   box-shadow: inset 0 0 0 1px var(--input-controles-color);
 }
-.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button],
 .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button],
 .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit],
@@ -7759,7 +7764,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   text-decoration: none !important;
   border: 1px solid transparent;
 }
-.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button]:hover,
 .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit]:hover,
@@ -7775,7 +7780,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   box-shadow: none !important;
   border: 1px solid var(--hipervinculo-color) !important;
 }
-.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button]:focus,
 .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button]:focus,
 .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit]:focus,
@@ -8037,16 +8042,14 @@ dialog.modal .modal-contenedor .modal-cerrar {
 .contenedor-colapsable .colapsable-boton div.contenedor-encabezado-colapsable {
   text-align: left;
 }
-.colapsable-navegacion .nav-boton-submenu, .colapsable-navegacion .navegacion .nav-boton-regresar, .navegacion .colapsable-navegacion .nav-boton-regresar,
+.colapsable-navegacion .nav-boton-submenu, .colapsable-navegacion .nav-boton-regresar,
 .contenedor-colapsable .nav-boton-submenu,
-.contenedor-colapsable .navegacion .nav-boton-regresar,
-.navegacion .contenedor-colapsable .nav-boton-regresar {
+.contenedor-colapsable .nav-boton-regresar {
   padding: 0;
 }
-.colapsable-navegacion .nav-boton-submenu::after, .colapsable-navegacion .navegacion .nav-boton-regresar::after, .navegacion .colapsable-navegacion .nav-boton-regresar::after,
+.colapsable-navegacion .nav-boton-submenu::after, .colapsable-navegacion .nav-boton-regresar::after,
 .contenedor-colapsable .nav-boton-submenu::after,
-.contenedor-colapsable .navegacion .nav-boton-regresar::after,
-.navegacion .contenedor-colapsable .nav-boton-regresar::after {
+.contenedor-colapsable .nav-boton-regresar::after {
   transition: all 0.27s ease;
   transform: rotate(90deg);
 }
@@ -8103,10 +8106,9 @@ dialog.modal .modal-contenedor .modal-cerrar {
   background: transparent;
   box-shadow: none;
 }
-.colapsable-navegacion.activo > .colapsable-boton:first-of-type .nav-boton-submenu::after, .colapsable-navegacion.activo > .colapsable-boton:first-of-type .navegacion .nav-boton-regresar::after, .navegacion .colapsable-navegacion.activo > .colapsable-boton:first-of-type .nav-boton-regresar::after,
+.colapsable-navegacion.activo > .colapsable-boton:first-of-type .nav-boton-submenu::after, .colapsable-navegacion.activo > .colapsable-boton:first-of-type .nav-boton-regresar::after,
 .contenedor-colapsable.activo > .colapsable-boton:first-of-type .nav-boton-submenu::after,
-.contenedor-colapsable.activo > .colapsable-boton:first-of-type .navegacion .nav-boton-regresar::after,
-.navegacion .contenedor-colapsable.activo > .colapsable-boton:first-of-type .nav-boton-regresar::after {
+.contenedor-colapsable.activo > .colapsable-boton:first-of-type .nav-boton-regresar::after {
   transform: rotate(270deg);
 }
 .colapsable-navegacion.activo > .contenedor-colapsable-contenido:first-of-type,
@@ -8272,35 +8274,18 @@ dialog.modal .modal-contenedor .modal-cerrar {
     right: 0;
   }
 
-  .navegacion-movil-forzada {
+  .navegacion.navegacion-movil-forzada {
     padding-left: 48px;
     padding-right: 48px;
   }
-  .navegacion-movil-forzada .nav-informacion {
+  .navegacion.navegacion-movil-forzada .nav-informacion {
     padding: 4px 48px;
     margin-left: -48px;
     margin-right: -48px;
     flex: 1 0 calc(100% - 48px);
   }
 }
-.ir-contenido-principal {
-  background-color: rgba(0, 93, 254, 0.9019607843);
-  position: absolute;
-  text-align: center;
-  transform: translateY(-100%);
-  z-index: 111;
-  width: 100%;
-  height: 45px;
-  border-radius: 0;
-  text-decoration: none;
-  padding: 12px;
-}
-.ir-contenido-principal:focus {
-  transform: translateY(0%);
-  border: 0 solid var(--hipervinculo-focus-sombra);
-}
-
-.navegacion .nav-hipervinculo {
+.nav-hipervinculo {
   background-color: var(--navegacion-fondo);
   box-shadow: 0 0 0 0;
   color: var(--navegacion-color);
@@ -8314,77 +8299,63 @@ dialog.modal .modal-contenedor .modal-cerrar {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: block;
 }
-.navegacion .nav-hipervinculo:hover, .navegacion .nav-hipervinculo:focus {
+.nav-hipervinculo:visited {
+  color: var(--navegacion-color);
+}
+.nav-hipervinculo:hover, .nav-hipervinculo:focus {
   border: none;
   border-radius: 0;
   background-color: var(--navegacion-fondo-hover);
   box-shadow: var(--navegacion-sombra-hover);
   color: var(--navegacion-color-hover);
+  z-index: 1;
+  text-decoration: none;
 }
-.navegacion .nav-hipervinculo:focus-visible {
+.nav-hipervinculo:focus-visible {
   outline: none;
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
 }
-.navegacion .nav-hipervinculo:active, .navegacion .nav-hipervinculo.active, .navegacion .nav-hipervinculo.nuxt-link-active, .navegacion .nav-hipervinculo.nuxt-link-exact-active, .navegacion .nav-hipervinculo.router-link-active, .navegacion .nav-hipervinculo.router-link-exact-active {
+.nav-hipervinculo:active, .nav-hipervinculo.active, .nav-hipervinculo.nuxt-link-active, .nav-hipervinculo.nuxt-link-exact-active, .nav-hipervinculo.router-link-active, .nav-hipervinculo.router-link-exact-active {
   background-color: var(--navegacion-fondo-active);
   box-shadow: var(--navegacion-sombra-active);
   color: var(--navegacion-color-active);
 }
+.nav-hipervinculo:active:hover, .nav-hipervinculo:active:focus-visible, .nav-hipervinculo.active:hover, .nav-hipervinculo.active:focus-visible, .nav-hipervinculo.nuxt-link-active:hover, .nav-hipervinculo.nuxt-link-active:focus-visible, .nav-hipervinculo.nuxt-link-exact-active:hover, .nav-hipervinculo.nuxt-link-exact-active:focus-visible, .nav-hipervinculo.router-link-active:hover, .nav-hipervinculo.router-link-active:focus-visible, .nav-hipervinculo.router-link-exact-active:hover, .nav-hipervinculo.router-link-exact-active:focus-visible {
+  border: none;
+  border-radius: 0;
+  background-color: var(--navegacion-fondo-hover);
+  box-shadow: var(--navegacion-sombra-hover), var(--navegacion-sombra-active);
+  color: var(--navegacion-color-hover);
+}
+.nav-hipervinculo:active:focus-visible, .nav-hipervinculo.active:focus-visible, .nav-hipervinculo.nuxt-link-active:focus-visible, .nav-hipervinculo.nuxt-link-exact-active:focus-visible, .nav-hipervinculo.router-link-active:focus-visible, .nav-hipervinculo.router-link-exact-active:focus-visible {
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), var(--navegacion-sombra-active), 0 0 8px var(--boton-secundario-focus-sombra);
+}
+
 @media screen and (min-width: 768px) {
   .navegacion:not(.navegacion-movil-forzada) .nav-hipervinculo {
     display: inline-flex;
     white-space: nowrap;
   }
 }
-.navegacion .nav-hiperviculo-logo {
+
+.nav-hiperviculo-logo {
   display: inline-flex;
   padding: 4px 0;
   margin: 0;
 }
-.navegacion .nav-hiperviculo-logo:focus-visible {
+.nav-hiperviculo-logo:focus-visible {
   outline: none;
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
 }
-.navegacion .nav-hiperviculo-logo .nav-logo {
+.nav-hiperviculo-logo .nav-logo {
   height: 38px;
 }
 
-.nav-boton, .nav-boton-icon {
-  display: inline-flex;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1em;
-  padding: 8px;
-  margin: 8px 16px;
-  background-color: var(--navegacion-fondo-hover);
-  box-shadow: 0 0 0 0;
-  color: var(--navegacion-color-hover);
-  border: none;
-  text-decoration: none;
-}
-.nav-boton:hover, .nav-boton-icon:hover, .nav-boton:focus, .nav-boton-icon:focus {
-  background-color: var(--navegacion-fondo-active);
-  box-shadow: var(--navegacion-sombra-active);
-  color: var(--navegacion-color-active);
-}
-@media screen and (min-width: 768px) {
-  .nav-boton, .nav-boton-icon {
-    margin: 0 0 0 4px;
-  }
-}
-
-.nav-boton-icon {
-  padding: 10px;
-  border-radius: 50%;
-  margin: 8px 16px;
-}
-@media screen and (min-width: 768px) {
-  .nav-boton-icon {
-    margin: 4px;
-  }
-}
-
-.nav-boton-menu {
+.navegacion .nav-boton-menu {
   background: transparent;
   border: none;
+  box-shadow: none;
   display: inline-flex;
   width: 46px;
   height: 46px;
@@ -8395,7 +8366,12 @@ dialog.modal .modal-contenedor .modal-cerrar {
   justify-content: center;
   transition: all 0.3s ease-in-out;
 }
-.nav-boton-menu .nav-icono-menu {
+.navegacion .nav-boton-menu:hover, .navegacion .nav-boton-menu:focus {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+.navegacion .nav-boton-menu .nav-icono-menu {
   background: var(--navegacion-color);
   width: 20px;
   height: 1px;
@@ -8404,7 +8380,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   position: absolute;
   top: 22px;
 }
-.nav-boton-menu .nav-icono-menu::after, .nav-boton-menu .nav-icono-menu::before {
+.navegacion .nav-boton-menu .nav-icono-menu::after, .navegacion .nav-boton-menu .nav-icono-menu::before {
   background: var(--navegacion-color);
   content: "";
   width: 20px;
@@ -8413,45 +8389,71 @@ dialog.modal .modal-contenedor .modal-cerrar {
   position: absolute;
   transition: all 0.3s ease-in-out;
 }
-.nav-boton-menu .nav-icono-menu::after {
+.navegacion .nav-boton-menu .nav-icono-menu::after {
   top: 5px;
 }
-.nav-boton-menu .nav-icono-menu::before {
+.navegacion .nav-boton-menu .nav-icono-menu::before {
   top: -5px;
 }
-.nav-boton-menu.abierto .nav-icono-menu {
+.navegacion .nav-boton-menu.abierto .nav-icono-menu {
   width: 0;
 }
-.nav-boton-menu.abierto .nav-icono-menu::after {
+.navegacion .nav-boton-menu.abierto .nav-icono-menu::after {
   transform: translate3d(-10px, -5px, 0) rotate(-135deg);
 }
-.nav-boton-menu.abierto .nav-icono-menu::before {
+.navegacion .nav-boton-menu.abierto .nav-icono-menu::before {
   transform: translate3d(-10px, 5px, 0) rotate(135deg);
 }
 
-.nav-boton-submenu, .navegacion .nav-boton-regresar {
-  display: inline-flex;
-  background: transparent;
+.navegacion .navegacion-boton-base, .navegacion .nav-boton-submenu, .navegacion .nav-boton-regresar, .navegacion .nav-boton {
+  background-color: var(--navegacion-fondo);
   border: none;
-  border-radius: 0;
   box-shadow: 0 0 0 0;
+  color: var(--navegacion-color);
+  display: inline-flex;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1em;
-  padding: 16px;
-  margin: 0 !important;
   text-decoration: none;
   white-space: nowrap;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  text-align: left;
+  transition: all 0.2s ease-in-out;
 }
-.nav-boton-submenu:hover, .navegacion .nav-boton-regresar:hover, .nav-boton-submenu:focus, .navegacion .nav-boton-regresar:focus {
+.navegacion .navegacion-boton-base:hover, .navegacion .nav-boton-submenu:hover, .navegacion .nav-boton-regresar:hover, .navegacion .nav-boton:hover, .navegacion .navegacion-boton-base:focus, .navegacion .nav-boton-submenu:focus, .navegacion .nav-boton-regresar:focus, .navegacion .nav-boton:focus {
   background-color: var(--navegacion-fondo-hover);
+  box-shadow: var(--navegacion-sombra-hover);
+  color: var(--navegacion-color-hover);
 }
-.nav-boton-submenu:active, .navegacion .nav-boton-regresar:active, .nav-boton-submenu.active, .navegacion .active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-active, .navegacion .nuxt-link-active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-exact-active, .navegacion .nuxt-link-exact-active.nav-boton-regresar, .nav-boton-submenu.router-link-exact-active, .navegacion .router-link-exact-active.nav-boton-regresar {
+.navegacion .navegacion-boton-base:not(:disabled):focus-visible, .navegacion .nav-boton-submenu:not(:disabled):focus-visible, .navegacion .nav-boton-regresar:not(:disabled):focus-visible, .navegacion .nav-boton:not(:disabled):focus-visible {
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
+}
+
+.nav-boton {
+  padding: 8px;
+  margin: 8px 16px;
+}
+.nav-boton .pictograma,
+.nav-boton [class^=pictograma-],
+.nav-boton [class*=" pictograma-"] {
+  padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .nav-boton {
+    margin: 0 0 0 4px;
+  }
+}
+
+.nav-boton-submenu, .nav-boton-regresar {
+  border-radius: 0;
+  padding: 16px;
+  margin: 0;
+  width: 100%;
+}
+.nav-boton-submenu:active, .nav-boton-regresar:active, .nav-boton-submenu.active, .active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-active, .nuxt-link-active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-exact-active, .nuxt-link-exact-active.nav-boton-regresar, .nav-boton-submenu.router-link-exact-active, .router-link-exact-active.nav-boton-regresar {
   background-color: var(--navegacion-fondo-active);
+  box-shadow: var(--navegacion-sombra-active);
+  color: var(--navegacion-color-active);
 }
-.nav-boton-submenu::after, .navegacion .nav-boton-regresar::after {
+.nav-boton-submenu::after, .nav-boton-regresar::after {
   font-family: "sisdai-pictogramas" !important;
   font-size: 1rem;
   height: 0.875rem;
@@ -8459,18 +8461,15 @@ dialog.modal .modal-contenedor .modal-cerrar {
   margin-left: 4px;
 }
 @media screen and (min-width: 768px) {
-  .nav-boton-submenu::after, .navegacion .nav-boton-regresar::after {
+  .nav-boton-submenu::after, .nav-boton-regresar::after {
     transform: rotate(90deg);
   }
 }
 
-.navegacion .nav-boton-regresar {
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion .nav-boton-regresar::after {
+.nav-boton-regresar::after {
   display: none;
 }
-.navegacion .nav-boton-regresar::before {
+.nav-boton-regresar::before {
   font-family: "sisdai-pictogramas" !important;
   font-size: 1rem;
   content: "d";
@@ -8478,6 +8477,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   margin-right: 4px;
   transform: rotate(180deg);
 }
+
 @media screen and (min-width: 768px) {
   .navegacion:not(.navegacion-movil-forzada) .nav-boton-regresar {
     display: none;
@@ -8557,20 +8557,23 @@ dialog.modal .modal-contenedor .modal-cerrar {
 .navegacion-conahcyt .nav-boton-menu .nav-icono-menu::after, .navegacion-conahcyt .nav-boton-menu .nav-icono-menu::before {
   background: var(--navegacion-conahcyt-fondo-icono);
 }
-.navegacion-conahcyt .nav-boton-submenu, .navegacion-conahcyt .navegacion .nav-boton-regresar, .navegacion .navegacion-conahcyt .nav-boton-regresar {
+.navegacion-conahcyt .nav-boton-submenu, .navegacion-conahcyt .nav-boton-regresar {
   background: transparent;
   box-shadow: none;
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-boton-submenu:hover, .navegacion-conahcyt .navegacion .nav-boton-regresar:hover, .navegacion .navegacion-conahcyt .nav-boton-regresar:hover, .navegacion-conahcyt .nav-boton-submenu:focus, .navegacion-conahcyt .navegacion .nav-boton-regresar:focus, .navegacion .navegacion-conahcyt .nav-boton-regresar:focus {
+.navegacion-conahcyt .nav-boton-submenu:hover, .navegacion-conahcyt .nav-boton-regresar:hover, .navegacion-conahcyt .nav-boton-submenu:focus, .navegacion-conahcyt .nav-boton-regresar:focus {
   background-color: var(--navegacion-conahcyt-fondo-hover);
   box-shadow: none;
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-boton-submenu:active, .navegacion-conahcyt .navegacion .nav-boton-regresar:active, .navegacion .navegacion-conahcyt .nav-boton-regresar:active, .navegacion-conahcyt .nav-boton-submenu.active, .navegacion-conahcyt .navegacion .active.nav-boton-regresar, .navegacion .navegacion-conahcyt .active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-active, .navegacion-conahcyt .navegacion .nuxt-link-active.nav-boton-regresar, .navegacion .navegacion-conahcyt .nuxt-link-active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-exact-active, .navegacion-conahcyt .navegacion .nuxt-link-exact-active.nav-boton-regresar, .navegacion .navegacion-conahcyt .nuxt-link-exact-active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.router-link-exact-active, .navegacion-conahcyt .navegacion .router-link-exact-active.nav-boton-regresar, .navegacion .navegacion-conahcyt .router-link-exact-active.nav-boton-regresar {
+.navegacion-conahcyt .nav-boton-submenu:active, .navegacion-conahcyt .nav-boton-regresar:active, .navegacion-conahcyt .nav-boton-submenu.active, .navegacion-conahcyt .active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-active, .navegacion-conahcyt .nuxt-link-active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-exact-active, .navegacion-conahcyt .nuxt-link-exact-active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.router-link-exact-active, .navegacion-conahcyt .router-link-exact-active.nav-boton-regresar {
   background-color: transparent;
   box-shadow: inset 0 -5px 0 var(--color-conahcyt-oscuro-1);
   color: var(--navegacion-conahcyt-color);
+}
+.navegacion-conahcyt .nav-boton-submenu:not(:disabled):focus-visible, .navegacion-conahcyt .nav-boton-regresar:not(:disabled):focus-visible {
+  box-shadow: none;
 }
 .navegacion-conahcyt .nav-submenu {
   background-color: var(--navegacion-conahcyt-fondo);
@@ -10048,7 +10051,7 @@ span.controlador-vis label, span.controlador-vis legend,
     margin: auto;
   }
 }
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset],
@@ -10056,7 +10059,7 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada [class*=" boton"] {
   background-color: transparent !important;
 }
-.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad):not(:last-child),
+.a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad):not(:last-child),
 .a11y-simplificada input[type=button]:not(:last-child),
 .a11y-simplificada input[type=submit]:not(:last-child),
 .a11y-simplificada input[type=reset]:not(:last-child),
@@ -10264,8 +10267,8 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .hipervinculo,
 .a11y-hipervinculos .hipervinculo-gobmx,
 .a11y-hipervinculos .hipervinculo-conahcyt,
-.a11y-hipervinculos .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.a11y-simplificada .a11y-hipervinculos button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-hipervinculos .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button],
 .a11y-simplificada .a11y-hipervinculos input[type=button],
 .a11y-hipervinculos .a11y-simplificada input[type=submit],
@@ -10282,8 +10285,8 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .hipervinculo:hover,
 .a11y-hipervinculos .hipervinculo-gobmx:hover,
 .a11y-hipervinculos .hipervinculo-conahcyt:hover,
-.a11y-hipervinculos .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.a11y-simplificada .a11y-hipervinculos button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-hipervinculos .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:hover,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:hover,
@@ -10297,8 +10300,8 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .hipervinculo:focus,
 .a11y-hipervinculos .hipervinculo-gobmx:focus,
 .a11y-hipervinculos .hipervinculo-conahcyt:focus,
-.a11y-hipervinculos .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.a11y-simplificada .a11y-hipervinculos button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-hipervinculos .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:focus,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:focus,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:focus,
@@ -10312,8 +10315,8 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .hipervinculo:focus-within,
 .a11y-hipervinculos .hipervinculo-gobmx:focus-within,
 .a11y-hipervinculos .hipervinculo-conahcyt:focus-within,
-.a11y-hipervinculos .a11y-simplificada button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.a11y-simplificada .a11y-hipervinculos button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-hipervinculos .a11y-simplificada button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:focus-within:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:focus-within,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:focus-within,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:focus-within,
@@ -10327,8 +10330,8 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .hipervinculo:active,
 .a11y-hipervinculos .hipervinculo-gobmx:active,
 .a11y-hipervinculos .hipervinculo-conahcyt:active,
-.a11y-hipervinculos .a11y-simplificada button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.a11y-simplificada .a11y-hipervinculos button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-icon):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-hipervinculos .a11y-simplificada button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
+.a11y-simplificada .a11y-hipervinculos button:active:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:active,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:active,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:active,
@@ -10340,6 +10343,18 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .a11y-simplificada [class*=" boton"]:active,
 .a11y-simplificada .a11y-hipervinculos [class*=" boton"]:active {
   text-decoration: underline !important;
+}
+
+.ir-contenido-principal {
+  position: absolute;
+  justify-content: center;
+  transform: translateY(-100%);
+  z-index: 111;
+  width: 100%;
+  border-radius: 0;
+}
+.ir-contenido-principal:focus {
+  transform: translateY(0%);
 }
 
 body[data-dark-theme-sisdai=true] {
@@ -11068,16 +11083,16 @@ body[data-light-theme-eni=true] {
   --hipervinculo-focus-color: #005DFF;
   --hipervinculo-focus-sombra: #005DFF;
   --hipervinculo-visitado: #9233FF;
-  --navegacion-fondo: #eef;
-  --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
+  --navegacion-fondo: #fff;
+  --navegacion-sombra: 0 1px 0 .1px #ccc, 0 4px 4px rgba(0,0,0,0.2);
   --navegacion-redondeado: 0 0 8px 8px;
-  --navegacion-color: #00f;
-  --navegacion-fondo-hover: #ddf;
-  --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
-  --navegacion-color-hover: #00f;
-  --navegacion-fondo-active: #00f;
-  --navegacion-sombra-active: 0 0 0 0;
-  --navegacion-color-active: #fff;
+  --navegacion-color: #364a69;
+  --navegacion-fondo-hover: #F0F6FF;
+  --navegacion-sombra-hover: 0 0 0 0 transparent;
+  --navegacion-color-hover: #364a69;
+  --navegacion-fondo-active: #fff;
+  --navegacion-sombra-active: inset 0 -4px 0 0 #0068FF;
+  --navegacion-color-active: #364a69;
 }
 
 body[data-light-theme-gema=true] {

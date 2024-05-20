@@ -13,61 +13,83 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.navegacion {
-  .nav-hipervinculo {
-    background-color: var(--navegacion-fondo);
-    box-shadow: 0 0 0 0;
+.nav-hipervinculo {
+  background-color: var(--navegacion-fondo);
+  box-shadow: 0 0 0 0;
+  color: var(--navegacion-color);
+  border: none;
+  border-radius: 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: calc(1em * 1);
+  padding: map-get($espaciado, '2');
+  text-decoration: none;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+  box-shadow 0.2s ease-in-out;
+  &:visited {
     color: var(--navegacion-color);
+  }
+  &:hover,
+  &:focus {
     border: none;
     border-radius: 0;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: calc(1em * 1);
-    padding: map-get($espaciado, '2');
+    background-color: var(--navegacion-fondo-hover);
+    box-shadow: var(--navegacion-sombra-hover);
+    color: var(--navegacion-color-hover);
+    z-index: 1;
     text-decoration: none;
-    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-      box-shadow 0.2s ease-in-out;
+  }
+  &:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
+  }
+  &:active,
+  &.active,
+  &.nuxt-link-active,
+  &.nuxt-link-exact-active,
+  &.router-link-active,
+  &.router-link-exact-active {
+    background-color: var(--navegacion-fondo-active);
+    box-shadow: var(--navegacion-sombra-active);
+    color: var(--navegacion-color-active);
     &:hover,
-    &:focus {
+    &:focus-visible {
       border: none;
       border-radius: 0;
       background-color: var(--navegacion-fondo-hover);
-      box-shadow: var(--navegacion-sombra-hover);
+      box-shadow: var(--navegacion-sombra-hover), var(--navegacion-sombra-active);
       color: var(--navegacion-color-hover);
     }
     &:focus-visible {
       outline: none;
-    }
-    &:active,
-    &.active,
-    &.nuxt-link-active,
-    &.nuxt-link-exact-active,
-    &.router-link-active,
-    &.router-link-exact-active {
-      background-color: var(--navegacion-fondo-active);
-      box-shadow: var(--navegacion-sombra-active);
-      color: var(--navegacion-color-active);
-    }
-    display: block;
-  }
-  &:not(.navegacion-movil-forzada) {
-    .nav-hipervinculo {
-      @include mediaquery('nav') {
-        display: inline-flex;
-        white-space: nowrap;
-      }
+      box-shadow: 
+      inset 0 0 0 1px var(--boton-secundario-focus-borde),
+      var(--navegacion-sombra-active),
+      0 0 8px var(--boton-secundario-focus-sombra);
     }
   }
+  display: block;
+}
 
-  .nav-hiperviculo-logo {
-    display: inline-flex;
-    padding: map-get($espaciado, 'minimo') 0;
-    margin: 0;
-    &:focus-visible {
-      outline: none;
-    }
-    .nav-logo {
-      height: 38px;
+.navegacion:not(.navegacion-movil-forzada) {
+  .nav-hipervinculo {
+    @include mediaquery('nav') {
+      display: inline-flex;
+      white-space: nowrap;
     }
   }
 }
+
+.nav-hiperviculo-logo {
+  display: inline-flex;
+  padding: map-get($espaciado, 'minimo') 0;
+  margin: 0;
+  &:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
+  }
+  .nav-logo {
+    height: 38px;
+  }
+}
+

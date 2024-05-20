@@ -381,16 +381,16 @@ body[data-light-theme-eni='true'] {
   --hipervinculo-visitado: #9233FF;
 
   // Navegacion
-  --navegacion-fondo: #eef;
-  --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
+  --navegacion-fondo: #fff;
+  --navegacion-sombra: 0 1px 0 .1px #ccc, 0 4px 4px rgba(0,0,0,0.2);
   --navegacion-redondeado: 0 0 8px 8px;
-  --navegacion-color: #00f;
-    --navegacion-fondo-hover: #ddf;
-    --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
-    --navegacion-color-hover: #00f;
-      --navegacion-fondo-active: #00f;
-      --navegacion-sombra-active: 0 0 0 0;
-      --navegacion-color-active: #fff;
+  --navegacion-color: #364a69;
+    --navegacion-fondo-hover: #F0F6FF;
+    --navegacion-sombra-hover: 0 0 0 0 transparent;
+    --navegacion-color-hover: #364a69;
+      --navegacion-fondo-active: #fff;
+      --navegacion-sombra-active: inset 0 -4px 0 0 #0068FF;
+      --navegacion-color-active: #364a69;
 }
 
 // Variables de color claro Gema

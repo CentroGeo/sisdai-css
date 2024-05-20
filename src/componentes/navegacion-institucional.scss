@@ -122,6 +122,9 @@
       box-shadow: inset 0 -5px 0 var(--color-conahcyt-oscuro-1);
       color: var(--navegacion-conahcyt-color);
     }
+    &:not(:disabled):focus-visible {
+      box-shadow: none;
+    }
   }
   .nav-submenu {
     background-color: var(--navegacion-conahcyt-fondo);
