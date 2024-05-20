@@ -17,22 +17,24 @@
   display: flex;
   align-items: center;
   position: relative;
+  gap: map-get($espaciado, 'minimo');
 
   .control-acercar-alejar-rango {
     flex: 1 0;
-    min-width: 200px;
   }
   
   .control-acercar-alejar-porcentaje {
-    flex: 0 1 4.5rem;
-    max-width: 4.5rem;
-    width: 4.5rem;
+    flex: 0 1 calc(3ch + map-get($espaciado, '5'));
+    max-width: calc(3ch + map-get($espaciado, '5'));
+    width: calc(3ch + map-get($espaciado, '5'));
+    padding-right: map-get($espaciado, '3') !important;
+    text-align: right !important;
   }
 
   &::after {
     content: '%';
     position: absolute;
-    right: 0.5rem;
+    right: map-get($espaciado, '1');
     color: var(--tipografia-color);
   }
 }

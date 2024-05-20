@@ -41,8 +41,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
           <input 
             type="text" 
+            maxlength="3"
+            inputmode="numeric" 
+            min="0"
+            max="100"
+            pattern="\d*"
             class="control-acercar-alejar-porcentaje" 
-            aria-label="Porcentaje de acercamiento" 
+            aria-label="Porcentaje de acercamiento"
           />
         </div>
         '
