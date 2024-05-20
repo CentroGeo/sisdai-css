@@ -31,17 +31,12 @@
   }
   .campo-busqueda-borrar {
     position: absolute;
-    top: .75rem;
-    right: 4.25rem;
+    top: calc(map-get($espaciado, '1') * 1.5);
+    right: map-get($espaciado, '8');
   }
   .campo-busqueda-buscar {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: .75rem;
-    .pictograma,
-    [class^='pictograma-'],
-    [class*=' pictograma-'] {
-      font-size: 2rem; // 32px
-    }
+    padding: map-get($espaciado, '2');
   }
 }
