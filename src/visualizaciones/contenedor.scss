@@ -9,6 +9,7 @@
   $sombra-espacio: 8px; 
 
   background-color: var(--tarjetas-internas-fondo);
+  border-radius: map-get($borde-redondeado, '20');
   color: var(--tarjetas-internas-color);
   width: 100%;
   
@@ -68,13 +69,14 @@
       overflow-y: auto;
       overflow-x: hidden;
       scrollbar-width: thin;
+      position: relative;
 
-      :first-child:not(
+      > :first-child:not(
         .figura-variable /* para que los simbolos de las leyendas no se muevan */
       ) {
         margin-top: 0;
       }
-      :last-child:not(
+      > :last-child:not(
         .nombre-variable /* para que las etiquetas de las leyendas no se muevan */
       ) {
         margin-bottom: 0;
@@ -299,6 +301,15 @@
       }
     }
   }
+}
+
+// agrega el padding de los elementos anidados
+.leyenda-clases {
+  padding: 0 0 0 calc(1.25rem + 4px);
+}
+.titulo-clases {
+  margin: map-get($espaciado, '1') 0;
+  padding: 0 0 0 map-get($espaciado, '1');
 }
 
 // clases especiales gema

@@ -5612,42 +5612,42 @@ input[type=reset] [class*=" pictograma-"] {
   padding: 0 0 0 8px;
 }
 
-.boton-primario, .ir-contenido-principal, .boton-info, .boton-alternar [type=radio]:not(:disabled):checked + label, .boton-alternar [type=radio]:not(:disabled):checked + legend, .boton-descarga, button,
-input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario, .ir-contenido-principal, .boton-alternar [type=radio]:not(:disabled):checked + label, .boton-alternar [type=radio]:not(:disabled):checked + legend, .boton-descarga, button,
+input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario {
   background-color: var(--boton-primario-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
   color: var(--boton-primario-color);
 }
-.boton-primario.deshabilitado, .deshabilitado.ir-contenido-principal, .deshabilitado.boton-info, .boton-alternar [type=radio]:not(:disabled):checked + label.deshabilitado, .boton-alternar [type=radio]:not(:disabled):checked + legend.deshabilitado, .deshabilitado.boton-descarga, button.deshabilitado,
-input.deshabilitado[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input.deshabilitado[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-.deshabilitado.boton-con-contenedor-primario, .boton-primario:disabled, .ir-contenido-principal:disabled, .boton-info:disabled, .boton-alternar [type=radio]:not(:disabled):checked + label:disabled, .boton-alternar [type=radio]:not(:disabled):checked + legend:disabled, .boton-descarga:disabled, button:disabled,
-input[type=button]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario.deshabilitado, .deshabilitado.ir-contenido-principal, .boton-alternar [type=radio]:not(:disabled):checked + label.deshabilitado, .boton-alternar [type=radio]:not(:disabled):checked + legend.deshabilitado, .deshabilitado.boton-descarga, button.deshabilitado,
+input.deshabilitado[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input.deshabilitado[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.deshabilitado.boton-con-contenedor-primario, .boton-primario:disabled, .ir-contenido-principal:disabled, .boton-alternar [type=radio]:not(:disabled):checked + label:disabled, .boton-alternar [type=radio]:not(:disabled):checked + legend:disabled, .boton-descarga:disabled, button:disabled,
+input[type=button]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:disabled:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:disabled {
   background-color: var(--boton-primario-deshabilitado-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-deshabilitado-borde);
   color: var(--boton-primario-deshabilitado-color);
 }
-.boton-primario:visited, .ir-contenido-principal:visited, .boton-info:visited, .boton-alternar [type=radio]:not(:disabled):checked + label:visited, .boton-alternar [type=radio]:not(:disabled):checked + legend:visited, .boton-descarga:visited, button:visited,
-input[type=button]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario:visited, .ir-contenido-principal:visited, .boton-alternar [type=radio]:not(:disabled):checked + label:visited, .boton-alternar [type=radio]:not(:disabled):checked + legend:visited, .boton-descarga:visited, button:visited,
+input[type=button]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:visited:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:visited {
   color: var(--boton-primario-color);
 }
-.boton-primario:not(:disabled):hover, .ir-contenido-principal:not(:disabled):hover, .boton-info:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):hover, .boton-descarga:not(:disabled):hover, button:not(:disabled):hover,
-input[type=button]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario:not(:disabled):hover, .ir-contenido-principal:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):hover, .boton-descarga:not(:disabled):hover, button:not(:disabled):hover,
+input[type=button]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:not(:disabled):hover:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:not(:disabled):hover {
   background-color: var(--boton-primario-hover-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-hover-borde), 3px 3px 4px var(--boton-primario-hover-sombra);
   color: var(--boton-primario-hover-color);
 }
-.boton-primario:not(:disabled):focus, .ir-contenido-principal:not(:disabled):focus, .boton-info:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):focus, .boton-descarga:not(:disabled):focus, button:not(:disabled):focus,
-input[type=button]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
-input[type=submit]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+.boton-primario:not(:disabled):focus, .ir-contenido-principal:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):focus, .boton-descarga:not(:disabled):focus, button:not(:disabled):focus,
+input[type=button]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
+input[type=submit]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario)),
 .boton-con-contenedor-primario:not(:disabled):focus {
   background-color: var(--boton-primario-focus-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-focus-borde), 0 0 0 1px var(--boton-primario-focus-contorno), 0 0 8px var(--boton-primario-focus-sombra);
@@ -5655,30 +5655,30 @@ input[type=submit]:not(:disabled):focus:not(.boton-secundario):not(.boton-con-co
 }
 
 .boton-secundario, .boton-con-contenedor-secundario,
-input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-borde);
   color: var(--boton-secundario-color);
 }
 .boton-secundario.deshabilitado, .deshabilitado.boton-con-contenedor-secundario,
-input.deshabilitado[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario), .boton-secundario:disabled, .boton-con-contenedor-secundario:disabled,
-input[type=reset]:disabled:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input.deshabilitado[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario), .boton-secundario:disabled, .boton-con-contenedor-secundario:disabled,
+input[type=reset]:disabled:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-deshabilitado-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-deshabilitado-borde), 3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
   color: var(--boton-secundario-deshabilitado-color);
 }
 .boton-secundario:visited, .boton-con-contenedor-secundario:visited,
-input[type=reset]:visited:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:visited:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   color: var(--boton-secundario-color);
 }
 .boton-secundario:not(:disabled):hover, .boton-con-contenedor-secundario:not(:disabled):hover,
-input[type=reset]:not(:disabled):hover:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:not(:disabled):hover:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-hover-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-hover-borde), 0 0 8px var(--boton-secundario-hover-sombra);
   color: var(--boton-secundario-hover-color);
 }
 .boton-secundario:not(:disabled):focus, .boton-con-contenedor-secundario:not(:disabled):focus,
-input[type=reset]:not(:disabled):focus:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-info):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
+input[type=reset]:not(:disabled):focus:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(input[type=submit]:not(.boton-secundario):not(.boton-con-contenedor-secundario):not(input[type=reset]:not(.boton-primario):not(.ir-contenido-principal):not(.boton-descarga):not(button):not(input[type=button]:not(.boton-secundario)):not(input[type=submit]:not(.boton-secundario)):not(.boton-con-contenedor-primario))):not(.boton-con-contenedor-primario) {
   background-color: var(--boton-secundario-focus-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
   color: var(--boton-secundario-focus-color);
@@ -6122,7 +6122,7 @@ textarea {
 [type=radio] + label,
 [type=radio] + legend {
   line-height: 1.25em;
-  background-color: var(--input-fondo);
+  background-color: transparent;
   border: 1px solid transparent;
   border-radius: 8px;
   cursor: pointer;
@@ -7320,38 +7320,35 @@ ol + hr {
 }
 .campo-busqueda .campo-busqueda-borrar {
   position: absolute;
-  top: 0.75rem;
-  right: 4.25rem;
+  top: 12px;
+  right: 64px;
 }
 .campo-busqueda .campo-busqueda-buscar {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  padding: 0.75rem;
-}
-.campo-busqueda .campo-busqueda-buscar .pictograma,
-.campo-busqueda .campo-busqueda-buscar [class^=pictograma-],
-.campo-busqueda .campo-busqueda-buscar [class*=" pictograma-"] {
-  font-size: 2rem;
+  padding: 16px;
 }
 
 .control-acercar-alejar {
   display: flex;
   align-items: center;
   position: relative;
+  gap: 4px;
 }
 .control-acercar-alejar .control-acercar-alejar-rango {
   flex: 1 0;
-  min-width: 200px;
 }
 .control-acercar-alejar .control-acercar-alejar-porcentaje {
-  flex: 0 1 4.5rem;
-  max-width: 4.5rem;
-  width: 4.5rem;
+  flex: 0 1 calc(3ch + 40px);
+  max-width: calc(3ch + 40px);
+  width: calc(3ch + 40px);
+  padding-right: 24px !important;
+  text-align: right !important;
 }
 .control-acercar-alejar::after {
   content: "%";
   position: absolute;
-  right: 0.5rem;
+  right: 8px;
   color: var(--tipografia-color);
 }
 
@@ -7815,9 +7812,6 @@ dialog.modal .modal-contenedor .modal-cerrar {
   background: var(--boton-secundario-hover-fondo);
   border: 1px solid var(--boton-secundario-focus-borde);
   box-shadow: 0 0 8px var(--boton-secundario-focus-sombra);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad .icono-4 {
-  padding: 0;
 }
 .contenedor-menu-accesibilidad .menu-accesibilidad > :last-child {
   margin-bottom: 12px;
@@ -8628,46 +8622,13 @@ dialog.modal .modal-contenedor .modal-cerrar {
   padding-bottom: 32px;
 }
 
-.boton-info {
-  border-radius: 0;
-  border-width: 0;
-  font-size: 0.875rem;
-  display: block;
-  padding: 8px;
-  width: 100%;
-}
-
-.boton-conahcyt {
-  background-color: var(--color-conahcyt-claro-0);
-  border-radius: 0 0 8px 8px;
-  border-width: 0;
-  box-shadow: 3px 3px 4px transparent;
-  display: flex;
-  color: #003384;
-  filter: grayscale(100%);
-  padding: 4px 8px;
-  text-align: left;
-  width: 100%;
-  cursor: pointer;
-}
-.boton-conahcyt img {
-  height: 28px;
-  opacity: 0.5;
-  transition: all 0.25s ease-in-out;
-}
-.boton-conahcyt:hover, .boton-conahcyt:focus {
-  filter: grayscale(0%);
-}
-.boton-conahcyt:hover img, .boton-conahcyt:focus img {
-  opacity: 1;
-}
-
 .contenedor-vis {
   --contenedor-vis-alto-menus: 50px;
   --contenedor-vis-alto-atribuciones: 58px;
   --contenedor-vis-alto-maximo: calc(100vh - var(--contenedor-vis-alto-menus));
   --contenedor-vis-alto-minimo-vis: 300px;
   background-color: var(--tarjetas-internas-fondo);
+  border-radius: 20px;
   color: var(--tarjetas-internas-color);
   width: 100%;
 }
@@ -8732,17 +8693,18 @@ dialog.modal .modal-contenedor .modal-cerrar {
   overflow-y: auto;
   overflow-x: hidden;
   scrollbar-width: thin;
+  position: relative;
 }
-.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :first-child:not(.figura-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :first-child:not(.figura-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :first-child:not(.figura-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :first-child:not(.figura-variable) {
+.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis > :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis > :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis > :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-pie-vis > :first-child:not(.figura-variable) {
   margin-top: 0;
 }
-.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :last-child:not(.nombre-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :last-child:not(.nombre-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :last-child:not(.nombre-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :last-child:not(.nombre-variable) {
+.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis > :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis > :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis > :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-pie-vis > :last-child:not(.nombre-variable) {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
@@ -8936,6 +8898,15 @@ dialog.modal .modal-contenedor .modal-cerrar {
   opacity: 1;
 }
 
+.leyenda-clases {
+  padding: 0 0 0 calc(1.25rem + 4px);
+}
+
+.titulo-clases {
+  margin: 8px 0;
+  padding: 0 0 0 8px;
+}
+
 .contenedor-vis.gema {
   height: 100%;
   position: relative;
@@ -8969,8 +8940,8 @@ dialog.modal .modal-contenedor .modal-cerrar {
   vertical-align: text-top;
 }
 .controlador-vis .lectura {
-  padding: 8px;
-  margin: 0;
+  padding: 10px;
+  margin: 0 0 8px 0;
   line-height: 1.25em;
   color: var(--input-color);
   vertical-align: text-top;
@@ -9003,6 +8974,14 @@ dialog.modal .modal-contenedor .modal-cerrar {
   background-color: #7e8cf5;
   border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
   border-radius: 50%;
+}
+.controlador-vis .figura-variable.pictograma, .controlador-vis .figura-variable[class^=pictograma-], .controlador-vis .figura-variable[class*=" pictograma-"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(var(--controlador-vis-figura-alto));
+  line-height: 1;
+  padding: 0;
 }
 .controlador-vis [type=checkbox]:disabled + label .figura-variable.muestra, .controlador-vis [type=checkbox]:disabled + legend .figura-variable.muestra,
 .controlador-vis [type=radio]:disabled + label .figura-variable.muestra,
@@ -9039,15 +9018,14 @@ span.controlador-vis label, span.controlador-vis legend,
 
 .vis-titulo-visualizacion {
   display: block;
-  margin: 0 0 8px 0;
-  font-size: 1.125rem;
+  margin: 16px 0;
   line-height: 1.25em;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
   .vis-titulo-visualizacion {
     font-size: 1.5rem;
-    line-height: 1.25em;
   }
 }
 
@@ -9056,7 +9034,7 @@ span.controlador-vis label, span.controlador-vis legend,
   font-size: 0.75rem;
   line-height: 1.2em;
   font-weight: 500;
-  margin: 8px 0 16px 0;
+  margin: 16px 0;
 }
 
 .vis-instruccional {
@@ -9064,14 +9042,15 @@ span.controlador-vis label, span.controlador-vis legend,
   font-size: 1rem;
   line-height: 1.25em;
   font-weight: 400;
-  margin: 16px 0 16px 0;
+  margin: 16px 0;
 }
 
 .vis-valores-ejes {
   font-size: 0.75rem;
   line-height: 1.2em;
-  font-weight: 500;
+  font-weight: 400;
   fill: var(--tipografia-color);
+  margin: 0;
 }
 
 .vis-titulo-ejes {
@@ -9079,6 +9058,7 @@ span.controlador-vis label, span.controlador-vis legend,
   line-height: 1.25em;
   font-weight: 600;
   fill: var(--tipografia-color);
+  margin: 0;
 }
 
 .vis-titulo-leyenda {
@@ -9086,16 +9066,16 @@ span.controlador-vis label, span.controlador-vis legend,
   font-size: 1rem;
   line-height: 1.25em;
   font-weight: 600;
-  margin: 16px 0 8px 0;
+  margin: 16px 0;
 }
 
 .vis-nomenclatura {
   font-size: 1rem;
   line-height: 1.25em;
   font-weight: 400;
-  display: inline-block;
-  margin-bottom: 8px;
-  margin-right: 24px;
+  color: var(--label-color);
+  display: inline-flex;
+  margin: 8px 24px 8px 0;
 }
 .vis-nomenclatura .figura-variable {
   width: 1.125rem;
@@ -9103,16 +9083,12 @@ span.controlador-vis label, span.controlador-vis legend,
   background-color: var(--acciones-informativo);
   border: 1px solid var(--tipografia-color);
   border-radius: 50%;
-  position: relative;
-  display: inline-block;
-  z-index: 1;
-  transform: translateY(0.125rem);
+  display: inline-flex;
   margin-right: 4px;
 }
 .vis-nomenclatura .figura-variable.disabled {
   background: var(--input-deshabilitado-fondo);
   border: 1px solid var(--input-deshabilitado-color);
-  cursor: default;
 }
 
 @keyframes animacionResaltada {

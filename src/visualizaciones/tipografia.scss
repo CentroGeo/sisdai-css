@@ -21,13 +21,12 @@
 
 .vis-titulo-visualizacion {
   display: block;
-  margin: 0 0 8px 0;
-  font-size: 1.125rem; // 18px
+  margin: map-get($espaciado, '2') 0;
   line-height: calc(1em * 1.25);
+  font-size: 1.125rem; // 18px
   font-weight: 600;
   @include mediaquery(esc) {
     font-size: 1.5rem; // 24px
-    line-height: calc(1em * 1.25);
   }
 }
 
@@ -36,7 +35,7 @@
   font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
   font-weight: 500;
-  margin: 8px 0 16px 0;
+  margin: map-get($espaciado, '2') 0;
 }
 
 .vis-instruccional {
@@ -44,14 +43,15 @@
   font-size: 1rem; // 16px
   line-height: 1.25em;
   font-weight: 400;
-  margin: 16px 0 16px 0;
+  margin: map-get($espaciado, '2') 0;
 }
 
 .vis-valores-ejes {
   font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
-  font-weight: 500;
+  font-weight: 400;
   fill: var(--tipografia-color);
+  margin: 0;
 }
 
 .vis-titulo-ejes {
@@ -59,6 +59,7 @@
   line-height: calc(1em * 1.25);
   font-weight: 600;
   fill: var(--tipografia-color);
+  margin: 0;
 }
 
 .vis-titulo-leyenda {
@@ -66,31 +67,28 @@
   font-size: 1rem; // 16px
   line-height: calc(1em * 1.25);
   font-weight: 600;
-  margin: 16px 0 8px 0;
+  margin: map-get($espaciado, '2') 0;
 }
 
 .vis-nomenclatura {
   font-size: 1rem; // 16px
   line-height: calc(1em * 1.25);
   font-weight: 400;
-  display: inline-block;
-  margin-bottom: 8px;
-  margin-right: 24px;
+  color: var(--label-color);
+  display: inline-flex;
+  margin: map-get($espaciado, '1') map-get($espaciado, '3') map-get($espaciado, '1') 0;
+
   .figura-variable {
     width: 1.125rem; // 18px
     height: 1.125rem; // 18px
     background-color: var(--acciones-informativo);
     border: 1px solid var(--tipografia-color);
     border-radius: 50%;
-    position: relative;
-    display: inline-block;
-    z-index: 1;
-    transform: translateY(0.125rem);
-    margin-right: 4px;
+    display: inline-flex;
+    margin-right: map-get($espaciado, 'minimo');
     &.disabled {
       background: var(--input-deshabilitado-fondo);
       border: 1px solid var(--input-deshabilitado-color);
-      cursor: default;
     }
   }
 }

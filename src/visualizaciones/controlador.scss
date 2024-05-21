@@ -8,8 +8,8 @@
 
   // elementos del controlador-vis que no tienen checkbox ni radio buttons
   .lectura {
-    padding: map-get($espaciado, '1');
-    margin: 0;
+    padding: calc(map-get($espaciado, '1') + 2px);
+    margin: 0 0 map-get($espaciado, '1') 0;
     line-height: 1.25em;
     color: var(--input-color);
     vertical-align: text-top;
@@ -44,6 +44,16 @@
       background-color: #7e8cf5;
       border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
       border-radius: 50%;
+    }
+    &.pictograma,
+    &[class^='pictograma-'],
+    &[class*=' pictograma-'] {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: calc(var(--controlador-vis-figura-alto));
+      line-height: 1;
+      padding: 0;
     }
   }
   

@@ -1,364 +1,307 @@
 <script setup>
-import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 </script>
 <template>
-  <div>
-    <h1>Visualizaciones</h1>
+  <div class="contenedor m-y-maximo">
+    
+    <div class="ancho-lectura">
+      <h1>Controlador Vis</h1>
+      <p>
+        El <code>controlador-vis</code> es un campo especial que se utiliza para en gráficas 
+        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
+        y mapas <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>
+        para representar y controlar las variables que se muestran en la visualizacion.
+      </p>
+      <p>
+        En estos ejemplos se usa la clase <code>muestra</code> en el elemento que contiene la <code>figura-variable</code> 
+        para mostrar como se vé el símbolo de una nomenclatura.<br>
+        Puede precendír de esta clase o customizarla para dar forma a los simbolos necesarios.
+      </p>
+    </div>
 
-    <h2>Gráficas</h2>
-    <div class="contenedor-vis borde-redondeado-8 m-b-4">
-      <div class="contenedor-vis-paneles con-panel-encabezado-vis con-panel-pie-vis">
-        <div class="panel-encabezado-vis">
-          <p class="vis-titulo-visualizacion">
-            Evolución de variantes del virus SARS-CoV-2
-          </p>
-          <p class="vis-titulo-proyecto">
-            (Solamente se muestran variantes de preocupación y de interés)
-          </p>
-        </div>
-        <figure class="contenido-vis">
-          <EjemploGloboInfoExtCerrar style="position: absolute;" />
-          <img
-            src="/img/grafica-variantes.png"
-            alt="visualizacion"
-          />
-        </figure>
-        <div class="panel-pie-vis">
-          <p class="vis-titulo-leyenda">
-            Variantes del virus SARS-CoV-2
-          </p>
-          <div>
-            <span class="controlador-vis">
-              <input id="c1" type="checkbox">
-              <label for="c1">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c2" type="checkbox">
-              <label for="c2">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c3" type="checkbox">
-              <label for="c3">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c4" type="checkbox">
-              <label for="c4">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c5" type="checkbox">
-              <label for="c5">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c6" type="checkbox">
-              <label for="c6">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c7" type="checkbox">
-              <label for="c7">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c8" type="checkbox">
-              <label for="c8">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c9" type="checkbox">
-              <label for="c9">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
-            <span class="controlador-vis">
-              <input id="c10" type="checkbox">
-              <label for="c10">
-                <span class="figura-variable muestra" />
-                <span class="nombre-variable">Valor y Muestra</span>
-              </label>
-            </span>
+    <div class="contenedor-vis m-y-3">
+      <div class="contenedor-vis-paneles con-panel-derecha-vis">
+        <div class="panel-derecha-vis">
+
+          <div class="sisdai-mapa-leyenda"> <!-- clase no requerida, solo referencia -->
+            <div class="leyenda-titulo">
+              <div class="controlador-vis">
+                <input type="checkbox" id="aaa">
+                <label for="aaa">
+                  <span class="nombre-variable">Nombre variable</span>
+                </label>
+              </div>
+            </div>
+            <div class="leyenda-clases">
+              <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
+                <p class="lectura">
+                  <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18">
+                    <line x1="0" y1="18" x2="18" y2="0" style="stroke:#0d9fea;stroke-width:1;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:bevel;fill:transparent;"></line>
+                  </svg>
+                  <span class="nombre-variable">Controlador con parrafo de lectura</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <p class="vis-fuente">
-            Fuente. Las fechas que se despliegan corresponden al día en que se tomó la muestra.
-          </p>
+
+          <div class="sisdai-mapa-leyenda"> <!-- clase no requerida, solo referencia -->
+            <div class="leyenda-titulo">
+              <div class="controlador-vis">
+                <input type="checkbox" id="bbb">
+                <label for="bbb">
+                  <span class="nombre-variable">Nombre variable</span>
+                </label>
+              </div>
+            </div>
+            <div class="leyenda-clases">
+              <p class="titulo-clases">Título clases</p>
+              <div class="controlador-vis" style="--controlador-vis-figura-alto: 3px;">
+                <input type="checkbox" id="ccc">
+                <label for="ccc">
+                  <svg class="figura-variable" style="--controlador-vis-figura-alto: 3px; min-width: 39px;" width="39" height="3">
+                    <circle cx="19.5" cy="1.5" r="1.5" style="mark:circle;fill:#E8921A;fill-opacity:1.0;"></circle>
+                  </svg>
+                  <span class="nombre-variable">Figura variable con muestra de 3px</span>
+                </label>
+              </div>
+              <div class="controlador-vis" style="--controlador-vis-figura-alto: 7px;">
+                <input type="checkbox" id="ddd">
+                <label for="ddd">
+                  <svg class="figura-variable" style="--controlador-vis-figura-alto: 7px; min-width: 39px;" width="39" height="7">
+                    <circle cx="19.5" cy="3.5" r="3" style="mark:circle;fill:#DB8719;fill-opacity:1.0;stroke:#ffffff;stroke-width:1;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;"></circle>
+                  </svg>
+                  <span class="nombre-variable">Figura variable con muestra de 7px</span>
+                </label>
+              </div>
+              <div class="controlador-vis" style="--controlador-vis-figura-alto: 13px;">
+                <input type="checkbox" id="eee">
+                <label for="eee">
+                  <svg class="figura-variable" style="--controlador-vis-figura-alto: 13px; min-width: 39px;" width="39" height="13">
+                    <circle cx="19.5" cy="6.5" r="6" style="mark:circle;fill:#DB8719;fill-opacity:1.0;stroke:#ffffff;stroke-width:1;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;"></circle>
+                  </svg>
+                  <span class="nombre-variable">Figura variable con muestra de 13px</span>
+                </label>
+              </div>
+              <div class="controlador-vis" style="--controlador-vis-figura-alto: 23px;">
+                <input type="checkbox" id="fff">
+                <label for="fff">
+                  <svg class="figura-variable" style="--controlador-vis-figura-alto: 23px; min-width: 39px;" width="39" height="23">
+                    <circle cx="19.5" cy="11.5" r="11" style="mark:circle;fill:#DB8719;fill-opacity:1.0;stroke:#ffffff;stroke-width:1;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;"></circle>
+                  </svg>
+                  <span class="nombre-variable">Figura variable con muestra de 23px</span>
+                </label>
+              </div>
+              <div class="controlador-vis" style="--controlador-vis-figura-alto: 39px;">
+                <input type="checkbox" id="ggg">
+                <label for="ggg">
+                  <svg class="figura-variable" style="--controlador-vis-figura-alto: 39px; min-width: 39px;" width="39" height="39">
+                    <circle cx="19.5" cy="19.5" r="19" style="mark:circle;fill:#DB8719;fill-opacity:1.0;stroke:#ffffff;stroke-width:1;stroke-opacity:1;stroke-linecap:butt;stroke-linejoin:miter;"></circle>
+                  </svg>
+                  <span class="nombre-variable">Figura variable con muestra de 39px</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenido-vis">
+          <div style="border: 1px dashed #00f; padding: 8px; height: 100%; ">
+            gráfica o mapa
+          </div>
         </div>
       </div>
       <div class="contenedor-vis-atribuciones borde-t borde-color-3">
-        <a
-          class="logo-conacyt atribucion-conahcyt"
-          href="https://conahcyt.mx/"
-          target="_blank"
-        >
+        <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <img
-            class="invertir"
-            src="https://conahcyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg"
+            class="color-invertir"
+            src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg"
             alt="Conahcyt"
           />
         </a>
-        <a
-          class="atribucion-sisdai"
-          href="https://sisdai.conahcyt.mx/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           Sisdai
         </a>
       </div>
     </div>
 
-
-    <h2>Mapas</h2>
-    <UsoSisdaiMapa />
-
-
-    <h2 class="m-t-10">Tipografía</h2>
-    <div class="contenedor-lectura  m-b-6">
-      <p>
-        Las visualizaciones de datos usan tipografía para dar contexto a la información mostrada.
-        Se integran diferentes jerarquías tipográficas para distinguir títulos, nombres de ejes, variables, etc. 
-      </p>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-8">
+        <span class="controlador-vis">
+          <input id="zz" type="checkbox">
+          <label for="zz">
+            <span class="nombre-variable">Nombre variable</span>
+          </label>
+        </span>
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <span class="controlador-vis">
+            <input id="zz" type="checkbox">
+            <label for="zz">
+              <span class="nombre-variable">
+                Nombre variable
+              </span>
+            </label>
+          </span>
+        '/>
+      </div>
+      <div class="columna-8">
+        <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
+          <p class="lectura">
+            <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18">
+              <line x1="0" y1="18" x2="18" y2="0" style="stroke:#0d9fea;stroke-width:1;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:bevel;fill:transparent;"></line>
+            </svg>
+            <span class="nombre-variable">Controlador con parrafo de lectura</span>
+          </p>
+        </div>
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
+            <p class="lectura">
+              <svg class="figura-variable">
+                ...
+              </svg>
+              <span class="nombre-variable">
+                Controlador con parrafo de lectura
+              </span>
+            </p>
+          </div>
+        '/>
+      </div>
+      <div class="columna-8">
+        <span class="controlador-vis">
+          <input id="yy" type="checkbox">
+          <label for="yy">
+            <span class="figura-variable muestra" />
+            <span class="nombre-variable">Figura variable con muestra</span>
+          </label>
+        </span>
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <span class="controlador-vis">
+            <input id="yy" type="checkbox">
+            <label for="yy">
+              <span class="figura-variable muestra" />
+              <span class="nombre-variable">
+                Figura variable con muestra
+              </span>
+            </label>
+          </span>
+        '/>
+      </div>
     </div>
-    <EjemploCodigoHorizontal 
-      html='
-      <p class="vis-titulo-visualizacion">
-        Título de visualización
-      </p>'
-      :atributos="[[
-        {titulo:'Celular'},
-        {nombre:'Tamaño', valor:'1.125rem'},
-        {nombre:'Interlineado', valor:'1.25em'},
-        {nombre:'Peso', valor:'Semibold (600)'},
-        {nombre:'Margen inferior', valor:'8px'},
-      ],[
-        {titulo:'Escritorio'},
-        {nombre:'Tamaño', valor:'1.5rem'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <p class="vis-fecha-actualizacion">
-        Fecha de actualización
-      </p>'
-      :atributos="[[
-        {titulo:'Celular y escritorio'},
-        {nombre:'Tamaño', valor:'0.75rem'},
-        {nombre:'Interlineado', valor:'1.2em'},
-        {nombre:'Peso', valor:'Medium (500)'},
-        {nombre:'Margen superior', valor:'8px'},
-        {nombre:'Margen inferior', valor:'16px'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <p class="vis-instruccional">
-        Instruccional
-      </p>'
-      :atributos="[[
-        {titulo:'Celular y escritorio'},
-        {nombre:'Tamaño', valor:'1rem'},
-        {nombre:'Interlineado', valor:'1.25em'},
-        {nombre:'Peso', valor:'Regular (400)'},
-        {nombre:'Margen superior', valor:'16px'},
-        {nombre:'Margen inferior', valor:'16px'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <p class="vis-valores-ejes">
-        Valores de ejes
-      </p>'
-      :atributos="[[
-        {titulo:'Celular y escritorio'},
-        {nombre:'Tamaño', valor:'0.75rem'},
-        {nombre:'Interlineado', valor:'1.2em'},
-        {nombre:'Peso', valor:'Medium (500)'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <p class="vis-titulo-ejes">
-        Título de ejes
-      </p>'
-      :atributos="[[
-        {titulo:'Celular y escritorio'},
-        {nombre:'Tamaño', valor:'0.75rem'},
-        {nombre:'Interlineado', valor:'1.25em'},
-        {nombre:'Peso', valor:'Semibold (600)'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <p class="vis-titulo-leyenda">
-        Título de leyenda
-      </p>'
-      :atributos="[[
-        {titulo:'Celular y escritorio'},
-        {nombre:'Tamaño', valor:'1rem'},
-        {nombre:'Interlineado', valor:'1.25em'},
-        {nombre:'Peso', valor:'Semibold (600)'},
-        {nombre:'Margen superior', valor:'16px'},
-        {nombre:'Margen inferior', valor:'8px'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <p class="vis-nomenclatura">
-        <span class="figura-variable"></span>
-        Nomenclatura
-      </p>
-      <p class="vis-nomenclatura">
-        <span class="figura-variable"></span>
-        Nomenclatura
-      </p>'
-      :atributos="[[
-        {titulo:'Celular y escritorio'},
-        {nombre:'Presentación', valor:'inline-block'},
-        {nombre:'Tamaño', valor:'1rem'},
-        {nombre:'Interlineado', valor:'1.25em'},
-        {nombre:'Peso', valor:'Regular (400)'},
-        {nombre:'Margen derecho', valor:'24px'},
-        {nombre:'Margen inferior', valor:'8px'},
-      ]]"
-    /> 
    
-
-
-
-
-
-    <h2 class="m-t-10">controlador-vis</h2>
-    <div class="grid">
-      <div class="columna-16">
-        
-        <span class="controlador-vis">
-          <input id="control_check_1.1" type="checkbox">
-          <label for="control_check_1.1">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor y Muestra</span>
-          </label>
-        </span>
-
-        <span class="controlador-vis">
-          <input id="control_check_1.2" type="checkbox">
-          <label for="control_check_1.2">
-            <span class="nombre-variable">Valor</span>
-          </label>
-        </span>
-
-        <span class="controlador-vis">
-          <input id="control_check_1.3" type="checkbox" disabled>
-          <label for="control_check_1.3">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Deshabilitado</span>
-          </label>
-        </span>
-
-        <span class="controlador-vis">
-          <input id="control_check_1.4" type="checkbox" checked disabled>
-          <label for="control_check_1.4">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Seleccionado Deshabilitado</span>
-          </label>
-        </span>
-      </div>
+    <div class="ancho-lectura">
+      <h2 class="m-t-10">Tamaño</h2>
+      <p>
+        Para controlar el tamaño de la <code>figura-variable</code> el <code>controlador-vis</code> tiene la variable de CSS
+        <code>--controlador-vis-figura-alto</code>, la cual se puede usar para modificar el tamaño de la figura.
+      </p>
     </div>
-    <div class="grid">
-      <div class="columna-16">
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-8">
         <span class="controlador-vis">
-          <input id="control_radio_1.1" type="radio" name="radio-control-vis">
-          <label for="control_radio_1.1">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Valor y Muestra</span>
+          <input id="xx" type="checkbox">
+          <label for="xx">
+            <span class="figura-variable pictograma-visualizador" />
+            <span class="nombre-variable">Con pictograma</span>
           </label>
         </span>
-        <span class="controlador-vis">
-          <input id="control_radio_1.2" type="radio" name="radio-control-vis">
-          <label for="control_radio_1.2">
-            <span class="nombre-variable">Valor</span>
-          </label>
-        </span>
-        <span class="controlador-vis">
-          <input id="control_radio_1.3" type="radio" name="radio-control-vis" disabled>
-          <label for="control_radio_1.3">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Deshabilitado</span>
-          </label>
-        </span>
-        <span class="controlador-vis">
-          <input id="control_radio_1.4" type="radio" name="radio-control-vis" disabled checked>
-          <label for="control_radio_1.4">
-            <span class="figura-variable muestra" />
-            <span class="nombre-variable">Seleccionado Deshabilitado</span>
-          </label>
-        </span>
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <span class="controlador-vis">
+            <input id="xx" type="checkbox">
+            <label for="xx">
+              <span class="figura-variable pictograma-visualizador" />
+              <span class="nombre-variable">
+                Con pictograma
+              </span>
+            </label>
+          </span>
+        '/>
       </div>
-    </div>
-    <p>En estos ejemplos se usa la clase .muestra en el elemento que contiene la figura para mostrar como se vé el símbolo de una nomenclatura. Puede precendír de esta clase o customizarla para dar forma a los simbolos necesarios.</p>
-
-    <h3>Tamaños</h3>
-    <p>La clase `.controlador-vis` contiene la variable `--controlador-vis-figura-alto`, la cual se puede usar para modificar el tamaño de la figura.</p>
-    <div class="grid">
-      <div class="columna-4">
-        <span class="controlador-vis grande">
-          <input id="control_check_2.1" type="checkbox">
-          <label for="control_check_2.1">
-            <span class="figura-variable icono-visualizador icono-4" />
-            <span class="nombre-variable">Icono grande</span>
+      <div class="columna-8">
+        <span class="controlador-vis"  style="--controlador-vis-figura-alto: 32px;">
+          <input id="ww" type="checkbox">
+          <label for="ww">
+            <span class="figura-variable pictograma-visualizador" />
+            <span class="nombre-variable">
+              Pictograma 32px
+            </span>
           </label>
         </span>
-        </div>
-        <div class="columna-4">
-        <span class="controlador-vis chica">
-          <input id="control_check_2.2" type="checkbox">
-          <label for="control_check_2.2">
-            <span class="figura-variable icono-visualizador icono-1" />
-            <span class="nombre-variable">Icono chico</span>
-          </label>
-        </span>
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <span class="controlador-vis" style="--controlador-vis-figura-alto: 32px;">
+            <input id="ww" type="checkbox">
+            <label for="ww">
+              <span class="figura-variable pictograma-visualizador" />
+              <span class="nombre-variable">
+                Pictograma 32px
+              </span>
+            </label>
+          </span>
+        '/>
       </div>
-      <div class="columna-4">
+      <div class="columna-8">
         <div class="controlador-vis" style="--controlador-vis-figura-alto: 37px;">
-          <input id="control_check_2.3" type="checkbox">
-          <label for="control_check_2.3">
+          <input id="vv" type="checkbox">
+          <label for="vv">
             <span class="figura-variable muestra" />
             <span class="nombre-variable">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit architecto ullam, quibusdam adipisci maiores inventore! Eum at voluptates deserunt iure, veritatis dolore atque mollitia quidem esse nemo consectetur, doloremque dolorum?
+              Figura variable con muestra de 37px.<br>
+              Nombre de variable largo para probar el acomodo del texto con 
+              algunas líneas extra que luego si pasa por ejemplo en los mapas
+              que las variables que se utilizan son muy muy específicas.
             </span>
           </label>
         </div>
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <div class="controlador-vis" style="--controlador-vis-figura-alto: 37px;">
+            <input id="vv" type="checkbox">
+            <label for="vv">
+              <span class="figura-variable muestra" />
+              <span class="nombre-variable">
+                Figura variable con muestra de 37px.<br>
+                Nombre de variable largo para probar el acomodo del texto con 
+                algunas líneas extra que luego si pasa por ejemplo en los mapas
+                que las variables que se utilizan son muy muy específicas.
+              </span>
+            </label>
+          </div>
+        '/>
       </div>
-      <div class="columna-4">
+      <div class="columna-8">
         <div class="controlador-vis" style="--controlador-vis-figura-alto: 7px;">
-          <input id="control_check_2.4" type="checkbox">
-          <label for="control_check_2.4">
+          <input id="uu" type="checkbox">
+          <label for="uu">
             <span class="figura-variable muestra" />
             <span class="nombre-variable">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, illum similique quos neque rem hic aut minima quibusdam eaque. Cupiditate eligendi reprehenderit dignissimos, recusandae laboriosam iste facere officiis ut est.
+              Figura variable con muestra de 7px
             </span>
           </label>
         </div>
+        <EjemploCodigoVertical
+          :tiene_ejemplo="false"
+          html='
+          <div class="controlador-vis" style="--controlador-vis-figura-alto: 7px;">
+            <input id="uu" type="checkbox">
+            <label for="uu">
+              <span class="figura-variable muestra" />
+              <span class="nombre-variable">
+                Figura variable con muestra de 7px
+              </span>
+            </label>
+          </div>
+        '/>
       </div>
     </div>
+
   </div>
+
 </template>

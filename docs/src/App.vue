@@ -296,7 +296,7 @@
               </ul>
             </li>
 
-            <!-- <li class="nav-contenedor-submenu">
+            <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')">Visualizaciones</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
@@ -304,7 +304,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
               </ul>
-            </li> -->
+            </li>
 
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')">Auxiliares</button>
@@ -363,6 +363,7 @@
     align-items: baseline;
     z-index: 1111;
     gap: 8px;
+    display: none;
   }
   .tmp-menu * {
     font-size: 14px;
