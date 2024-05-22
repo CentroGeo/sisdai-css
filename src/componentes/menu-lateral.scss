@@ -12,151 +12,148 @@
 
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+.menu-lateral {
+  display: flex;
 
-.menu-lateral-contenedor {
-    margin: 16px 0 0 0;
-    padding: 0;
-    position: sticky;
-    top: 100px;
-    display: flex;
-    z-index: 3;
-    ul {
-      padding-left: 0;
-      li {
-        list-style: none;
-        margin: 0;
-      }
-    }
-    .menu-mov {
-      margin-left: map-get($espaciado, '2');
+  @include mediaquery('mov') {
+    position: fixed;
+    width: 70vw;
+    top: 140px;
 
-      background: var(--submenu-lateral-fondo-mov);
-      border-radius: map-get($espaciado, '2');
-        padding: map-get($espaciado, '1') 0;
-      transition: all 0.2s ease-in-out;
-      z-index: 99;
-      position: relative;
-      &.abierto {
-        border-radius: map-get($espaciado, '2') 0 0 map-get($espaciado, '2');
-    }
-      .boton-menu.boton-icono {
-        :hover {
-          background: transparent;
-        }
-        &:focus {
-          box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra);
-        }
-        background: transparent;
-        border: none;
-        box-shadow: none;
-        .icono-angulo-doble-derecha, 
-          .icono-angulo-doble-izquierda {
-          color: var(--menu-lateral-color);
-        }
-      }
-    }
-    .menu-colapsable {
-      margin-left: -30px;
-      pointer-events: none;
-      transition: all 0.2s ease-in-out;
-      background: var(--submenu-lateral-fondo-colapsable);
+    .menu-lateral-contenedor {
+      border-radius: 0 map-get($borde-redondeado, '20') map-get($borde-redondeado, '20') 0;
+      overflow: hidden;
+      margin-left: -40px;
       opacity: 0;
-      padding-top: map-get($espaciado, '1');
-      padding-bottom: map-get($espaciado, '1');
-      &.abierto {
-        border-radius: 0 map-get($espaciado, '2') map-get($espaciado, '2') 0;
-        box-shadow: 4px 4px 8px var(--sombra);
-        pointer-events: inherit;
+      pointer-events: none;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    &.abierto {
+      .menu-lateral-boton {
+        border-radius: map-get($borde-redondeado, '20') 0 0 map-get($borde-redondeado, '20');
+      }
+      .menu-lateral-contenedor {
         margin-left: 0;
         opacity: 1;
+        pointer-events: inherit;
       }
-      .contenedor-colapsable-contenido {
+    }
+  }
+
+  @include mediaquery('esc') {
+    position: sticky;
+    width: 100%;
+    top: map-get($espaciado, '5');
+    height: calc(100vh - map-get($espaciado, '5'));
+
+    .menu-lateral-boton {
+      display: none;
+    }
+    .menu-lateral-contenedor {
+      border-radius: 0;
+      padding-top: map-get($espaciado, '5');
+    }
+  }
+}
+
+.menu-lateral-boton {
+  background: var(--menu-lateral-fondo);
+  border-radius: map-get($borde-redondeado, '20');
+  margin-right: 2px;
+  margin-left: map-get($espaciado, '2');
+  display: flex;
+  padding: 0;
+  z-index: 3;
+
+  .pictograma,
+  [class^='pictograma-'],
+  [class*=' pictograma-'] {
+    align-self: flex-start;
+    padding: map-get($espaciado, '2');
+  }
+  &:active,
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
+  }
+}
+
+.menu-lateral-contenedor {
+  background: var(--menu-lateral-fondo);
+  position: relative;
+  width: 100%;
+  z-index: 2;
+
+  * {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ul, ol {
+    @extend .lista-limpia;
+  }
+  
+  a,
+  button {
+    background-color: transparent;
+    color: var(--menu-lateral-color);
+    border-radius: 0;
+    display: flex;
+    width: 100%;
+    padding: map-get($espaciado, '1') map-get($espaciado, '3');
+    &:hover {
+      background: var(--menu-lateral-accion-fondo-hover);
+      color: var(--menu-lateral-hover-color);
+    }
+  }
+
+  a {
+    background: transparent;
+    font-weight: 400;
+    text-decoration: none;
+    &.router-link-exact-active,
+    &:active,
+    &:focus,
+    &.link-activo {
+      background: var(--menu-lateral-accion-fondo-active);
+      box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
+      color: var(--menu-lateral-accion);
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+  button {
+    font-weight: 500;
+    &:focus-visible {
+      box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
+    }
+  }
+
+  ul, ol {
+    li {
+      a,
+      button {
+        padding-left: map-get($espaciado, '5');
+      }
+      li {
+        a,
+        button {
+          padding-left: map-get($espaciado, '7');
+        }
         li {
-          a {     
-            &:focus {
-              &:hover {
-                color: var(--menu-lateral-accion);
-              }
-            }       
-            &:hover {
-              color: var(--menu-lateral-hover-color);
-            }
-            &.router-link-exact-active {
-              &:hover {
-                color: var(--menu-lateral-accion);
-              }
-            }
+          a,
+          button {
+            padding-left: map-get($espaciado, '9');
           }
         }
       }
     }
-    .menu-max-height {
-      overflow: auto;
-      max-height: calc(100vh - 180px);
-      width: 70vw;
-    }
-    a {
-      display: block;
-      border-radius: 0;
-      /*padding: map-get($espaciado, '1')
-        map-get($contenedores, 'mov', 'margen-interior');*/
-      text-decoration: none;
-      background: transparent;
-      color: var(--menu-lateral-color);
-      font-weight: 400;
-      text-decoration: none;
-      @media (hover: hover) {
-        &:hover {
-          background: var(--menu-lateral-accion-fondo-hover);
-          color: var(--menu-lateral-hover-color);
-        }
-      }
-      &.router-link-exact-active {
-        background: var(--menu-lateral-accion-fondo-active);
-        box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
-        color: var(--menu-lateral-accion);
-      }
-      &:active,
-      &:focus,
-      &.link-activo {
-        background: var(--menu-lateral-accion-fondo-active);
-        box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
-        color: var(--menu-lateral-accion);
-      }
-      &:focus-visible {
-        outline: none;
-      }
-    }
   }
   
-  @media (min-width: map-get($breakpoints, 'esc')) {
-    .menu-lateral-contenedor {
-      background: var(--menu-lateral-fondo);
-      margin: 0;
-      top: 50px;
-      .menu-mov {
-        display: none;
-      }
-      .menu-colapsable,
-      .menu-colapsable.abierto {
-        background: transparent;
-        box-shadow: none;
-        width: 100%;
-        border-radius: 0;
-        pointer-events: inherit;
-        margin-left: 0;
-        padding-top: map-get($espaciado, '5');
-        padding-bottom: map-get($espaciado, '5');
-        opacity: 1;
-      }
-      .menu-max-height {
-        overflow: inherit;
-        max-height: inherit;
-        width: inherit;
-      }
-      /*a {
-        padding: map-get($espaciado, '1')
-          map-get($contenedores, 'esc', 'margen-interior');
-      }*/
-    }
-  }
+}
+
+.menu-lateral-fondo {
+  background: var(--menu-lateral-fondo);
+}

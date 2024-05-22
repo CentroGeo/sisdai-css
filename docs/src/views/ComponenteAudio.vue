@@ -23,7 +23,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <div class="audio">
 
           <div class="audio-cabecera">
-            <p class="notas">Etiqueta o texto secundario .notas</p>
+            <p class="nota">Etiqueta o texto secundario .nota</p>
             <p class="h3">Titulo .h3</p>
             <p>
               El texto descriptivo es conciso y significativo. 

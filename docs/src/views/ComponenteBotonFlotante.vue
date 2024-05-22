@@ -7,7 +7,11 @@ const estaAbierto = ref(true)
   <div class="contenedor m-y-maximo">
 
     <div class="ancho-lectura">
-      <h1>Botón flotante</h1>
+
+      <h1>
+        Botón flotante
+        <span class="etiqueta">preliminar</span>
+      </h1>
       <p>
         Estilos para el componente <code><code>SisdaiBotonFlotante</code></code> declarado en la biblioteca 
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
@@ -25,8 +29,7 @@ const estaAbierto = ref(true)
         :tiene_ejemplo="false"
         html='
         <div role="toolbar" class="boton-flotante">
-
-          <button class="boton-flotante-alternador">
+          <button class="boton-primario boton-flotante-alternador">
             <span 
               class="boton-flotante-pictograma-abierto pictograma-restar"
               aria-hidden="true"
@@ -57,7 +60,6 @@ const estaAbierto = ref(true)
               Otro Enlace
             </a>
           </div>
-
         </div>
         '
       />
@@ -65,7 +67,7 @@ const estaAbierto = ref(true)
 
 
     <div class="boton-flotante" :class="{abierto: estaAbierto}">
-      <button class="boton-flotante-alternador" @click="estaAbierto = !estaAbierto">
+      <button class="boton-primario boton-flotante-alternador" @click="estaAbierto = !estaAbierto">
         <span class="boton-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
         <span class="boton-flotante-a11y-abierto a11y-solo-lectura">Cerrar botón flotante</span>
         <span class="boton-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>

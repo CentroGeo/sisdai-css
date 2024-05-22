@@ -1,6 +1,6 @@
 <template>
   <div class="contenedor m-y-maximo">
-    <h1>Detalles</h1>
+    <h1>Detalles <span class="etiqueta">preliminar</span></h1>
     <details open>
       <summary>Details</summary>
       <p>

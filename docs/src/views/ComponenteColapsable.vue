@@ -1,48 +1,118 @@
 <script setup>
-import { ref } from "vue";
-const colapsable_activo1 = ref(false);
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 </script>
 <template>
-  <div>
+  <div class="contenedor m-y-maximo">
 
-    <h1>Colapsable</h1>
-    <div class="contenedor-lectura ">
+    <div class="ancho-lectura">
+      <h1>Colapsable <span class="etiqueta">preliminar</span></h1>
       <p>
-        Los estilos de estos elementos colapsables como elementos independientes aún
-        no está definido dentro del sistema de diseño. Consiste en un elemento
-        .contenedor-colapsable que contiene un botón visible y al agregarse la clase
-        .activo, entonces muestra una lista de enlaces.
+        Estilos para el componente <code>SisdaiColapsableNavegacion</code> declarado en la biblioteca 
+        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
       </p>
-      <p>En el siguiente ejemplo, la clase .activo se agrega al hacer click</p>
+      <p>
+        Los estilos de estos elementos colapsables aún no está definido dentro del sistema de diseño. 
+        Consiste en un elemento <code>colapsable</code> que contiene un botón <code>colapsable-boton</code> 
+        y un contenedor <code>colapsable-contenedor</code>.
+      </p>
+      <p>
+        La lógica funciona mediante javascript únicamente en la biblioteca de componentes,
+        al agregar o quitar la clase <code>abierto</code> al <code>colapsable</code>.
+        Cuando la usuaria haga click en el botón <code>colapsable-boton</code>, se expande el contenedor <code>colapsable-contenedor</code>.
+      </p>
+      
     </div>
 
-    <div class="contenedor-colapsable" :class="{ activo: colapsable_activo1 }">
-      <button
-        :aria-expanded="colapsable_activo1"
-        class="colapsable-boton"
-        @click="colapsable_activo1 = !colapsable_activo1"
-      >
-        <div class="contenedor-encabezado-colapsable">
-          <p class="m-0">Encabezado colapsable</p>
-        </div>
-        <div class="p-t-1">
-          <span aria-hidden="true" class="nav-boton-submenu"></span>
-        </div>
-      </button>
-      <div class="contenedor-colapsable-contenido">
-        <ul>
-          <li>
-            <a
-              href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes"
-              target="_blank"
-              :tabindex="colapsable_activo1 ? undefined : -1"
+    <div class="flex flex-contenido-centrado m-t-10">
+      <div class="columna-8">
+        <p>
+          Ejemplo colapsado
+        </p>
+        <EjemploCodigoVertical
+          html='
+          <div class="colapsable">
+            <!-- cambiar con js el aria-expanded="false" a "true" cuando se abra -->
+            <button 
+              class="colapsable-boton" 
+              aria-controls="ID-UNICO" 
+              aria-expanded="false" 
+              aria-label="Abrir/Cerrar colapsable"
             >
-              Elemento desplegado</a
+
+              <!-- <slot name="encabezado"> -->
+                Encabezado colapsable
+              <!-- </slot> -->
+              
+              <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+            </button>
+
+            <!-- eliminar con js el aria-hidden="true" cuando se abra -->
+            <div 
+              class="colapsable-contenedor" 
+              id="ID-UNICO" 
+              aria-hidden="true"
             >
-          </li>
-        </ul>
+
+              <!-- <slot name="contenido"> -->
+                <ul>
+                  <li>
+                    <a href="#">Enlace</a>
+                  </li>
+                  <li>
+                    <a href="#">Enlace</a>
+                  </li>
+                </ul>
+              <!-- </slot> -->
+
+            </div>
+          </div>
+          '
+        />
+      </div>
+      <div class="columna-8">
+        <p>
+          Ejemplo abierto
+        </p>
+        <EjemploCodigoVertical
+          html='
+          <div class="colapsable abierto">
+            <!-- cambiar con js el aria-expanded="true" a "false" cuando se colapse -->
+            <button 
+              class="colapsable-boton" 
+              aria-controls="ID-UNICO-DOS" 
+              aria-expanded="true" 
+              aria-label="Abrir/Cerrar colapsable"
+            >
+
+              <!-- <slot name="encabezado"> -->
+                Encabezado colapsable abierto
+              <!-- </slot> -->
+
+              <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+            </button>
+
+            <!-- agregar con js el aria-hidden="true" cuando se colapse -->
+            <div 
+              class="colapsable-contenedor" 
+              id="ID-UNICO-DOS"
+            >
+              
+              <!-- <slot name="contenido"> -->
+                <ul>
+                  <li>
+                    <a href="#">Enlace</a>
+                  </li>
+                  <li>
+                    <a href="#">Enlace</a>
+                  </li>
+                </ul>
+              <!-- </slot> -->
+
+            </div>
+          </div>
+          '
+        />
       </div>
     </div>
-
 </div>
 </template>

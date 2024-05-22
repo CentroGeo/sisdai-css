@@ -169,13 +169,13 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
 
     <EjemploCodigoHorizontal 
       html='
-      <p class="notas">
+      <p class="nota">
         <b>Las notas</b> se utilizan para hacer observaciones 
         o aclaraciones respecto a un tema. 
       </p>
       '
       :propiedades="[[
-        {titulo:'.notas'},
+        {titulo:'.nota'},
         {nombre:'Tamaño', valor:'0.875rem'},
         {nombre:'Interlineado', valor:'1.3em'},
         {nombre:'Peso', valor:'Regular (400)'},
@@ -185,41 +185,41 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
     />
     <EjemploCodigoHorizontal 
       html='
-      <p class="notas-titulo">
+      <p class="nota-titulo">
         Notas:
       </p>
 
-      <p class="notas">
+      <p class="nota">
         Las notas se utilizan para hacer observaciones 
         o aclaraciones respecto a un tema. 
       </p>
       '
       :propiedades="[[
-        {titulo:'.notas-titulo'},
+        {titulo:'.nota-titulo'},
         {nombre:'Tamaño', valor:'1rem'},
         {nombre:'Interlineado', valor:'1.3em'},
         {nombre:'Peso', valor:'Medium (500)'},
         {nombre:'Margen superior', valor:'24px'},
         {nombre:'Margen inferior', valor:'16px'},
         {titulo:''},
-        {titulo:'.notas'},
+        {titulo:'.nota'},
         {nombre:'Margen superior', valor:'16px'},
       ]]"
     />
     <EjemploCodigoHorizontal 
       html='
       <div class="notas-contenedor">
-        <p class="notas-titulo">
+        <p class="nota-titulo">
           Notas:
         </p>
-        <p class="notas">
+        <p class="nota">
           Las notas se utilizan para hacer observaciones 
           o aclaraciones respecto a un tema. 
         </p>
       </div>
       '
       :propiedades="[[
-        {titulo:'.notas-contenedor'},
+        {titulo:'.nota-contenedor'},
         {nombre:'Fondo', valor:'var(--nota-fondo)'},
         {nombre:'Margen interior', valor:'24px'},
       ]]"

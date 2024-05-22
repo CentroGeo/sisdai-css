@@ -1,112 +1,240 @@
 <script setup>
-import { ref } from "vue";
-const abrirMenu = ref(false);
-const colapsable_activo2= ref(false);
-const colapsable_activo3 = ref(false);
+import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 </script>
 <template>
   <div>
 
-    <h1>Menú lateral</h1>
-    <div class="contenedor-lectura ">
-      <p>
-        El siguiente elemento .menu-lateral-contenedor consiste en un menú que
-        contiene principalmente enlaces enlistados. También se pueden agregar
-        colapsables como los que se enunciaron anteriormente
-      </p>
-    </div>
-    
-    <menu class="menu-lateral-contenedor">
-      <div
-        class="menu-mov"
-        @click="abrirMenu = !abrirMenu"
-        :class="{ abierto: abrirMenu }"
-      >
-        <button class="boton-icono boton-menu">
-          <span v-if="abrirMenu" class="icono-angulo-doble-izquierda"></span>
-          <span v-else class="icono-angulo-doble-derecha"></span>
-        </button>
-      </div>
-      <div class="menu-colapsable" :class="{ abierto: abrirMenu }">
-        <div class="menu-max-height">
-          <ul>
-            <li>
-              <router-link to="#routerlink" class="p-x-5-esc p-x-3-mov p-y-1">
-                router link prueba
-              </router-link>
-            </li>
-            <li>
-              <a href="#anchore" class="p-x-5-esc p-x-3-mov p-y-1">
-                anchore link prueba
-              </a>
-            </li>
-            <li
-              class="contenedor-colapsable"
-              :class="{ activo: colapsable_activo2 }"
+    <div class="flex">
+      <div class="columna-4 menu-lateral-fondo">
+
+        <nav class="menu-lateral abierto">
+
+          <button 
+            class="menu-lateral-boton" 
+            aria-controls="ejemplomenulateral" 
+            aria-expanded="true"
+            aria-label="Abrir/Cerrar navegación"
+          >
+            <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+          </button>
+          
+          <div 
+            class="menu-lateral-contenedor"
+            id="ejemplomenulateral"
             >
-              <button
-                class="colapsable-boton p-x-5-esc p-x-3-mov p-y-1"
-                @click="colapsable_activo2 = !colapsable_activo2"
+            <ul>
+              <li>
+                <router-link to="/">
+                  router link inicio prueba
+                </router-link>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo
+                </a>
+              </li>
+              <li class="colapsable">
+                <!-- cambiar con js el aria-expanded="false" a "true" cuando se abra -->
+                <button 
+                  class="colapsable-boton" 
+                  aria-controls="ejemplocolapsable1" 
+                  aria-expanded="false" 
+                  aria-label="Abrir/Cerrar colapsable"
+                >
+                  Colapsable cerrado
+                  <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+                </button>
+                <!-- eliminar con js el aria-hidden="true" cuando se abra -->
+                <div 
+                  class="colapsable-contenedor"
+                  id="ejemplocolapsable1"
+                  aria-hidden="true" 
+                >
+                  <ul>
+                    <li>
+                      <a href="#">Enlace colapsado</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="colapsable abierto">
+                <!-- cambiar con js el aria-expanded="true" a "false" cuando se colapse -->
+                <button 
+                  class="colapsable-boton" 
+                  aria-controls="ejemplocolapsable2" 
+                  aria-expanded="true" 
+                  aria-label="Abrir/Cerrar colapsable"
+                >
+                  Colapsable abierto
+                  <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+                </button>
+                <!-- agregar con js el aria-hidden="true" cuando se colapse -->
+                <div 
+                  class="colapsable-contenedor"
+                  id="ejemplocolapsable2"
+                >
+                  <ul>
+                    <li>
+                      <a href="#">Enlace</a>
+                    </li>
+                    <li>
+                      <a href="#">Enlace</a>
+                    </li>
+                    <li class="colapsable abierto">
+                      <!-- cambiar con js el aria-expanded="true" a "false" cuando se colapse -->
+                      <button 
+                        class="colapsable-boton" 
+                        aria-controls="ejemplocolapsable3" 
+                        aria-expanded="true" 
+                        aria-label="Abrir/Cerrar colapsable"
+                      >
+                        Colapsable sublista abierto
+                        <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+                      </button>
+                      <!-- agregar con js el aria-hidden="true" cuando se colapse -->
+                      <div 
+                        class="colapsable-contenedor"
+                        id="ejemplocolapsable3"
+                      >
+                        <ul>
+                          <li>
+                            <a href="#">Enlace</a>
+                          </li>
+                          <li>
+                            <a href="#">Enlace</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+      <div class="columna-12 columna-8-mov">
+        <div class="contenedor m-y-maximo alineacion-izquierda ancho-lectura">
+          <h1>Menú lateral <span class="etiqueta">preliminar</span></h1>
+          <p>
+            Estilos para el componente <code>SisdaiMenuLateral</code> declarado en la biblioteca 
+            <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
+          </p>
+
+          <p>
+            Este componente <code>menu-lateral</code> tiene la logica de los colapsables en versión móvil, 
+            es decir que en celulares se muestra el botón <code>menu-lateral-boton</code> a través del cual 
+            se agrega o quita la clase <code>abierto</code> directamente sobre el <code>menu-lateral</code> 
+            para mostrar u ocultar su contenido.
+          </p>
+          <EjemploCodigoVertical
+            :tiene_ejemplo="false"
+            html='
+            <nav class="menu-lateral"> <- aqui se agrega .abierto (notas estado abierto)
+
+              <button 
+                class="menu-lateral-boton" 
+                aria-controls="ID-UNICO" 
+                aria-expanded="false" <- solo en móvil <- aqui se cambia a true (notas estado abierto)
+                aria-label="Abrir/Cerrar navegación"
               >
-                Titulo colapsable
-                <span aria-hidden="true" class="nav-boton-submenu"></span>
+                <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
               </button>
-              <ul class="contenedor-colapsable-contenido">
-                <li>
-                  <a
-                    href="#"
-                    class="p-x-5-esc p-x-3-mov p-y-1 p-l-4-mov p-l-6-esc"
-                  >
-                    Menú del submenu</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href=""
-                    class="p-x-5-esc p-x-3-mov p-y-1 p-l-4-mov p-l-6-esc"
-                  >
-                    Menú del submenu 2</a
-                  >
-                </li>
-                <li>
-                  <div
-                    class="contenedor-colapsable"
-                    :class="{ activo: colapsable_activo3 }"
-                  >
-                    <button
-                      class="colapsable-boton p-x-6-esc p-x-4-mov p-y-1"
-                      @click="colapsable_activo3 = !colapsable_activo3"
+
+              <div 
+                class="menu-lateral-contenedor"
+                id="ID-UNICO"
+                aria-hidden="true" <- solo en móvil <- se elimina este atributo (notas estado abierto)
+              >
+
+                <!-- contenido que se muestra u oculta en móvil -->
+
+              </div>
+            </nav>
+          '/>
+          <p>
+            Dentro del componente, se encuentra el contenedor <code>menu-lateral-contenedor</code> que se espera
+            contenga listas anidadas de hipervínculos y componentes de contenido colapsable <code>SisdaiColapsableNavegacion</code>
+          </p>
+
+          <EjemploCodigoVertical
+            :tiene_ejemplo="false"
+            html='
+            <nav class="menu-lateral abierto">
+
+              <button 
+                class="menu-lateral-boton" 
+                aria-controls="ID-UNICO-DOS" 
+                aria-expanded="true" 
+                aria-label="Abrir/Cerrar navegación"
+              >
+                <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+              </button>
+
+              <div 
+                class="menu-lateral-contenedor"
+                id="ID-UNICO-DOS"
+              >
+                <ul>
+                  <li>
+                    <router-link to="/">
+                      router link inicio prueba
+                    </router-link>
+                  </li>
+                  <li>
+                    <a href="#">
+                      hipervinculo
+                    </a>
+                  </li>
+                  <li class="colapsable">
+                    <button 
+                      class="colapsable-boton" 
+                      aria-controls="ID-UNICO-TRES" 
+                      aria-expanded="false" 
+                      aria-label="Abrir/Cerrar colapsable"
                     >
-                      Titulo colapsable
-                      <span aria-hidden="true" class="nav-boton-submenu"></span>
+                      Colapsable
+                      <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                     </button>
-                    <ul class="contenedor-colapsable-contenido">
-                      <li>
-                        <a
-                          href="#"
-                          class="p-x-5-esc p-x-3-mov p-y-1 p-l-5-mov p-l-7-esc"
-                        >
-                          Menú del submenu</a
-                        >
-                      </li>
-                      <li>
-                        <a
-                          href=""
-                          class="p-x-5-esc p-x-3-mov p-y-1 p-l-5-mov p-l-7-esc"
-                        >
-                          Menú del submenu 2</a
-                        >
-                      </li>
-                      <li></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </li>
-          </ul>
+                    <div 
+                      class="colapsable-contenedor" 
+                      id="ID-UNICO-TRES" 
+                      aria-hidden="true"
+                    >
+                      <ul>
+                        <li>
+                          <a href="#">Enlace colapsado</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          '/>
+          
+          <p>
+            La clase <code>menu-lateral-fondo</code>, no forma parte del <code>menu-lateral</code>, pero ayuda a poner el mismo
+            color de fondo en la columna en donde se encuentre el menu para que en la vista de escritorio se complete visualmente
+            la sección aunque el menu tenga poca altura. 
+          </p>
+          <EjemploCodigoVertical
+            :tiene_ejemplo="false"
+            html='
+            <div class="columna-4 menu-lateral-fondo">
+
+              <nav class="menu-lateral">
+
+                <!-- contenido del menu -->
+
+              </nav>
+            </div>
+          '/>
+          
         </div>
       </div>
-    </menu>
+    </div>
 
   </div>
 </template>

@@ -21,11 +21,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         como enviar un formulario o descargar un documento, no se deben utilizar las clases únicamente 
         por cómo se ven visualmente.
       </p>
-      <p>
-        De forma predenterminada al poner un botón sin clases extra, tiene el color primario,
-        exceptuando el input reset que tiene el color secundaio, debido a que la acción de limpiar el formulario
-        siempre es una acción alternativa a enviarlo.
-      </p>
+      
     </div>
 
     <div class="flex">

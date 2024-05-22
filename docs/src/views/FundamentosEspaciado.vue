@@ -18,7 +18,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         en base a los nombres de las propiedades de CSS.
         El nombre de las clases es una combinacion entre <code>propiedad-posicion-tamaño</code>.
       </p>
-      <p class="notas">
+      <p class="nota">
         Los colores utilizados en la documentacion son únicamente de referencia,
         nada en estas clases agrega color.
       </p>
@@ -30,7 +30,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         Las variables de tamaño estan declaradas en una lista numerica en incrementos de 8 en 8 de 0 a 10.
         A los que se les agregan los margenes especiales mínimo (4px), extra (96px) y máximo (120px).
       </p>
-      <p class="notas">
+      <p class="nota">
         Los puntos dibujados en el fondo del ejemplo del margen exterior, están separados por 8px.
       </p>
     </div>

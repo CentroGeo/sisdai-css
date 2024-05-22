@@ -1,7 +1,7 @@
 <template>
   <div class="contenedor m-y-maximo">
     <div class="ancho-lectura">
-      <h1>Alertas</h1>
+      <h1>Alertas <span class="etiqueta">preliminar</span></h1>
     </div>
 
     <section class="alertas">

@@ -62,7 +62,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <code>contenido-vis</code>
             <dl>
               <dt>Móviles</dt>
-              <dd>Aparece después del panel izquierda (si exite) y del encabezado, al 100% del ancho.</dd>
+              <dd>Aparece después del panel izquierda (si existe) y del encabezado, al 100% del ancho.</dd>
               <dt>Escritorio</dt>
               <dd>Posición central, el ancho varía entre un medio, dos tercios o 100%, dependiendo de si se utilizaron dos, uno o ningún panel lateral.</dd>
             </dl>

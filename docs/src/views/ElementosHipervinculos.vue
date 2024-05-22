@@ -65,26 +65,5 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </div>
     </div>
 
-
-    <div class="ancho-lectura">
-      <h2 class="m-t-10">Hipervínculos institucionales</h2>
-      <p>
-        Estos estilos vienen copiados directamente de los estilos que actualmente se utilizan
-        en las páginas de Gobierno y del Conhacyt. No forman parte del sistema de diseño pero 
-        al ser requeridos para agregar los pies de página y encabezados, necesitan estar.
-      </p>
-      
-      <p class="gobmx-fondo-oscuro-1 p-3">
-        <a href="#" class="hipervinculo-gobmx m-r-3">a.hipervinculo-gobmx</a>
-        <button class="hipervinculo-gobmx">button.hipervinculo-gobmx</button>
-      </p>
-      <p class="conahcyt-fondo-oscuro-1 p-3">
-        <a href="#" class="hipervinculo-conahcyt m-r-3">a.hipervinculo-conahcyt</a>
-        <button class="hipervinculo-conahcyt">button.hipervinculo-conahcyt</button>
-      </p>
-     
-
-    </div>
-
   </div>
 </template>

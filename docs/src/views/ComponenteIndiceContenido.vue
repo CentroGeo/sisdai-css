@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <h2>Índice de contenido</h2>
+    <h1>Índice de contenido <span class="etiqueta">preliminar</span></h1>
     <div class="contenedor-lectura ">
       <p>
         El la clase .indice-de-contenido da a su contenido el estilo que se usa para

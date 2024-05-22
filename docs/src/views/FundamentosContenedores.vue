@@ -18,7 +18,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         Los contenedores, la retícula y todos los elementos responsivos cambian de disposición o tamaño 
         de <code>mov</code> a <code>esc</code> pasando de <var>768px</var> de ancho de pantalla.
       </p>
-      <p class="notas">
+      <p class="nota">
         Los colores utilizados en la documentacion son únicamente de referencia,
         nada en estas clases agrega color.
       </p>

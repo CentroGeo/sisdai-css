@@ -239,11 +239,11 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
-                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/tipografia">Tipografia</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/tipografia">Tipografia</RouterLink></li>
               </ul>
             </li>
 
@@ -251,14 +251,14 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementos')">Elementos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/separadores">Separadores <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles</RouterLink></li> --> 
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/separadores">Separadores</RouterLink></li> --> 
               </ul>
             </li>
 
@@ -266,13 +266,13 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')">Elementos Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos Compuestos</button></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">Cargando <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">Cargando</RouterLink></li> -->
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos</RouterLink></li>
               </ul>
             </li>
 
@@ -281,15 +281,15 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Busqueda</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
@@ -301,8 +301,8 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontenedor">Contenedor</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
               </ul>
             </li>
 
@@ -310,8 +310,8 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')">Auxiliares</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/bordes">Bordes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
             </li>
@@ -363,7 +363,6 @@
     align-items: baseline;
     z-index: 1111;
     gap: 8px;
-    display: none;
   }
   .tmp-menu * {
     font-size: 14px;

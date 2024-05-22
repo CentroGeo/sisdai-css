@@ -24,7 +24,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <span class="a11y-solo-lectura">Limpiar campo de búsqueda</span>
           </button>
 
-          <button class="boton-pictograma campo-busqueda-buscar">
+          <button class="boton-primario boton-pictograma campo-busqueda-buscar">
             <span class="pictograma-buscar" aria-hidden="true"></span>
             <span class="a11y-solo-lectura">Buscar</span>
           </button>

@@ -1,5 +1,5 @@
 <template>
-  <div class="contenedor ancho-lectura m-y-maximo ">
+  <div class="contenedor ancho-lectura m-y-maximo">
     <h1>sisdai-css</h1>
     <p class="parrafo-texto-alto">
       Esta es la documentación de la biblioteca de estilos del Sistema de Diseño y Accesibilidad para la
@@ -10,8 +10,8 @@
       siguiendo las instrucciones de instalación de este proyecto.
     </p>
     <p class="parrafo-texto-alto">
-      <a href="https://codigo.conahcyt.mx/sisdai/sisdai-css" target="_blank" rel="noopener" class="nav-boton">
-        <span class="icono-social-github m-r-1"></span>
+      <a href="https://codigo.conahcyt.mx/sisdai/sisdai-css" target="_blank" rel="noopener">
+        <span class="pictograma-social-github"></span>
         sisdai-css
       </a>
     </p>

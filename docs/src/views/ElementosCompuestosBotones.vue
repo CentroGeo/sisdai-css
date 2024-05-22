@@ -4,7 +4,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 <template>
   <div class="contenedor m-y-maximo">
     <div class="ancho-lectura">
-      <h1>Botones compuestos</h1>
+      <h1>Botones compuestos <span class="etiqueta">preliminar</span></h1>
       <p>
         Son botones especiales que además de utilizarce en lugares muy específicos,
         algunos elementos no son botones, pero parecen,
@@ -23,7 +23,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="flex flex-contenido-centrado">
       <div class="columna-6">
         <a 
-          class="boton-descarga" 
+          class="boton-descarga boton-primario" 
           href="../img/grafica-variantes.png"
           download="nombre-que-tomara-la-descarga"
         >
@@ -46,7 +46,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         :tiene_ejemplo="false"
         html='
         <a 
-          class="boton-descarga" 
+          class="boton-descarga boton-primario" 
           href="../img/grafica-variantes.png"
           download="nombre-que-tomara-la-descarga"
         >

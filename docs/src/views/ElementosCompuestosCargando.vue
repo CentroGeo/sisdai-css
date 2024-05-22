@@ -1,7 +1,7 @@
 <template>
   <div class="contenedor m-y-maximo">
     <div class="ancho-lectura">
-      <h1>Cargando</h1>
+      <h1>Cargando <span class="etiqueta">preliminar</span></h1>
     </div>
     <div class="vista-cargando p-y-maximo">
       <ul>
