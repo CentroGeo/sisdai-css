@@ -13,43 +13,41 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.indice-de-contenido {
-    .titulo-indice {
-      font-size: 18px;
-      font-weight: 500;
+.indice-contenido {
+  @include mediaquery('esc') {
+    position: sticky;
+    top: 150px;
+  }
+
+  .indice-contenido-titulo {
+    @extend .titulo-base;
+    font-size: 1.125rem; //18px
+    padding-left: map-get($contenedores, 'mov', 'margen-interior');
+    padding-right: map-get($contenedores, 'mov', 'margen-interior');
+    @include mediaquery('esc') {
+      padding-left: 0;
+      padding-right: 0;
     }
-    .contenedor-indice-de-contenido {
-      ul {
-        padding-left: 0;
-        li {
-          list-style: none;
-          margin: 0;
-        }
-      }
+  }
+  
+  .indice-contenido-contenedor {
+    ul, ol {
+      @extend .lista-limpia;
     }
+    
     a {
+      background: transparent;
       display: block;
       border-radius: 0;
-      padding: map-get($espaciado, '1')
-        map-get($contenedores, 'mov', 'margen-interior');
-      text-decoration: none;
-      background: transparent;
       color: var(--menu-lateral-color);
       font-weight: 400;
       text-decoration: none;
-      @media (min-width: map-get($breakpoints, 'esc')) {
-        a {
-          padding: map-get($espaciado, '1')
-            map-get($contenedores, 'esc', 'margen-interior');
-        }
+      padding: map-get($espaciado, '1') map-get($contenedores, 'esc', 'margen-interior');
+
+      &:hover {
+        background: var(--menu-lateral-accion-fondo-hover);
+        color: var(--menu-lateral-hover-color)
       }
-      @media (hover: hover) {
-        &:hover {
-          background: var(--menu-lateral-accion-fondo-hover);
-          color: var(--menu-lateral-hover-color)
-        }
-      }
-  
       &:active,
       &:focus {
         color: var(--menu-lateral-accion);
@@ -66,3 +64,4 @@
       }
     }
   }
+}
