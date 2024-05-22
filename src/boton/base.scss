@@ -13,6 +13,10 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
+button,
+input[type=button],
+input[type=submit],
+input[type=reset],
 .boton {
   border: none; // el borde debe ser box shadow para empatar con el alto de los elementos en diseño
   border-radius: map-get($borde-redondeado, '4'); 
@@ -48,10 +52,4 @@
     line-height: 1;
     padding: 0 0 0 map-get($espaciado, '1');
   }
-}
-button,
-input[type=button],
-input[type=submit],
-input[type=reset] {
-  @extend .boton;
 }

@@ -13,7 +13,8 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.boton-primario {
+.boton-primario,
+.boton-con-contenedor-primario {
   background-color: var(--boton-primario-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-primario-borde); // border-color: var(--boton-primario-borde);
   color: var(--boton-primario-color);
@@ -42,14 +43,9 @@
     color: var(--boton-primario-focus-color);
   }
 }
-button,
-input[type=button]:not(.boton-secundario),
-input[type=submit]:not(.boton-secundario),
-.boton-con-contenedor-primario {
-  @extend .boton-primario;
-}
 
-.boton-secundario {
+.boton-secundario,
+.boton-con-contenedor-secundario {
   background-color: var(--boton-secundario-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-secundario-borde); // border-color: var(--boton-secundario-borde);
   color: var(--boton-secundario-color);
@@ -78,10 +74,6 @@ input[type=submit]:not(.boton-secundario),
       0 0 8px var(--boton-secundario-focus-sombra);
     color: var(--boton-secundario-focus-color);
   }
-}
-.boton-con-contenedor-secundario,
-input[type=reset]:not(.boton-primario) {
-  @extend .boton-secundario;
 }
 
 .boton-sin-contenedor-primario {
