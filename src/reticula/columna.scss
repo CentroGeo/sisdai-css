@@ -36,6 +36,9 @@
 .flex-contenido-equidistante {
   justify-content: space-evenly;
 }
+.flex-reversa {
+  flex-direction: row-reverse;
+}
 
 .grid {
   box-sizing: border-box;
@@ -69,6 +72,9 @@
         flex: 1 1 calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')) - 1px);
         max-width: calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')));
       }
+      .flex > .columna-orden-#{$i} {
+        order: $i;
+      }
       .grid > .columna-#{$i} {
         grid-column: span $i;
       }
@@ -86,12 +92,19 @@
         flex: 1 1 calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')) - 1px);
         max-width: calc(calc(($i / map-get($configuracion, 'columnas') * 100%)) - map-get($configuracion, 'espaciado') + calc($i / map-get($configuracion, 'columnas') * map-get($configuracion, 'espaciado')));
       }
+      .flex > .columna-orden-#{$i}-#{$dispositivo} {
+        order: $i;
+      }
       .grid > .columna-#{$i}-#{$dispositivo} {
         grid-column: span $i;
       }
       .columns-#{$i}-#{$dispositivo} {
         column-count: $i;
       }
+    }
+
+    .flex-reversa-#{$dispositivo} {
+      flex-direction: row-reverse;
     }
   }
 }
