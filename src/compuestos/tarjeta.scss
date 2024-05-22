@@ -53,7 +53,7 @@
   }
 
   .tarjeta-etiqueta {
-    @extend .notas;
+    @extend .nota;
   }
   .tarjeta-titulo {
     @extend .h6;
