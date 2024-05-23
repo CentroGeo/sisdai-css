@@ -1,5 +1,7 @@
 <script setup>
+import { ref } from 'vue'
 import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+const estaAbierto = ref(false)
 </script>
 <template>
   <div>
@@ -7,13 +9,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="flex">
       <div class="columna-4 menu-lateral-fondo">
 
-        <nav class="menu-lateral abierto">
+        <nav class="menu-lateral" :class="{abierto: estaAbierto}">
 
           <button 
             class="menu-lateral-boton" 
             aria-controls="ejemplomenulateral" 
-            aria-expanded="true"
-            aria-label="Abrir/Cerrar navegación"
+            :aria-expanded="estaAbierto"
+            @click="estaAbierto = !estaAbierto"
           >
             <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
           </button>
@@ -34,7 +36,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 </a>
               </li>
               <li class="colapsable">
-                <!-- cambiar con js el aria-expanded="false" a "true" cuando se abra -->
                 <button 
                   class="colapsable-boton" 
                   aria-controls="ejemplocolapsable1" 
@@ -44,7 +45,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                   Colapsable cerrado
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>
-                <!-- eliminar con js el aria-hidden="true" cuando se abra -->
                 <div 
                   class="colapsable-contenedor"
                   id="ejemplocolapsable1"
@@ -58,7 +58,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 </div>
               </li>
               <li class="colapsable abierto">
-                <!-- cambiar con js el aria-expanded="true" a "false" cuando se colapse -->
                 <button 
                   class="colapsable-boton" 
                   aria-controls="ejemplocolapsable2" 
@@ -68,7 +67,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                   Colapsable abierto
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>
-                <!-- agregar con js el aria-hidden="true" cuando se colapse -->
                 <div 
                   class="colapsable-contenedor"
                   id="ejemplocolapsable2"
@@ -81,7 +79,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                       <a href="#">Enlace</a>
                     </li>
                     <li class="colapsable abierto">
-                      <!-- cambiar con js el aria-expanded="true" a "false" cuando se colapse -->
                       <button 
                         class="colapsable-boton" 
                         aria-controls="ejemplocolapsable3" 
@@ -91,7 +88,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                         Colapsable sublista abierto
                         <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                       </button>
-                      <!-- agregar con js el aria-hidden="true" cuando se colapse -->
                       <div 
                         class="colapsable-contenedor"
                         id="ejemplocolapsable3"
@@ -138,7 +134,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <button 
                   class="menu-lateral-boton" 
                   aria-controls="ID-UNICO" 
-                  aria-expanded="false" <- solo en móvil <- aqui se cambia a true (notas estado abierto)
+                  aria-expanded="false" <- aqui se cambia a true (notas estado abierto)
                   aria-label="Abrir/Cerrar navegación"
                 >
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
@@ -147,10 +143,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <div 
                   class="menu-lateral-contenedor"
                   id="ID-UNICO"
-                  aria-hidden="true" <- solo en móvil <- se elimina este atributo (notas estado abierto)
                 >
   
-                  <!-- contenido que se muestra u oculta en móvil -->
+                  <!-- contenido que se muestra u oculta en móvil, siempre visible en escritorio -->
   
                 </div>
               </nav>
