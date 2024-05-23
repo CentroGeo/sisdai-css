@@ -15,27 +15,27 @@
 
 
 .borde {
-  border: 1px solid var(--borde-color-1);
+  border: 1px solid currentcolor;
 }
 .borde-t {
-  border-top: 1px solid var(--borde-color-1);
+  border-top: 1px solid currentcolor;
 }
 .borde-r {
-  border-right: 1px solid var(--borde-color-1);
+  border-right: 1px solid currentcolor;
 }
 .borde-b {
-  border-bottom: 1px solid var(--borde-color-1);
+  border-bottom: 1px solid currentcolor;
 }
 .borde-l {
-  border-left: 1px solid var(--borde-color-1);
+  border-left: 1px solid currentcolor;
 }
 .borde-x {
-  border-right: 1px solid var(--borde-color-1);
-  border-left: 1px solid var(--borde-color-1);
+  border-right: 1px solid currentcolor;
+  border-left: 1px solid currentcolor;
 }
 .borde-y {
-  border-top: 1px solid var(--borde-color-1);
-  border-bottom: 1px solid var(--borde-color-1);
+  border-top: 1px solid currentcolor;
+  border-bottom: 1px solid currentcolor;
 }
 
 // color
