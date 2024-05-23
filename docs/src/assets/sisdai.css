@@ -19,6 +19,14 @@
   --globo-informacion-fondo: #141414E6;
   --globo-informacion-color: #ffffff;
   --globo-informacion-accion: #80AAFF;
+  --menu-accesibilidad-boton-fondo: #ffffff;
+  --menu-accesibilidad-boton-borde: #ffffff;
+  --menu-accesibilidad-boton-color: #0068FF;
+  --menu-accesibilidad-boton-color-hover: #0058CC;
+  --menu-accesibilidad-boton-sombra-focus: #005DFF;
+  --menu-accesibilidad-contenedor-fondo: #f5f5f5;
+  --menu-accesibilidad-contenedor-sombra: 0 4px 8px #00000029;
+  --menu-accesibilidad-contenedor-color: #364a69;
 }
 
 html {
@@ -6411,7 +6419,7 @@ textarea {
   content: "";
   height: 1.125rem;
   width: 1.125rem;
-  top: 8px;
+  top: 9px;
   left: 8px;
   padding: 4px;
   background-color: var(--input-fondo);
@@ -6465,7 +6473,7 @@ textarea {
   color: var(--input-color);
   position: absolute;
   left: calc(0.125rem + 8px - 1px);
-  top: 7px;
+  top: 8px;
   font-weight: 800;
   text-align: center;
 }
@@ -6482,7 +6490,7 @@ textarea {
   color: var(--input-color);
   position: absolute;
   left: calc(0.125rem + 4px + 1px);
-  top: 7px;
+  top: 8px;
   font-weight: 800;
   font-size: 1.2rem;
 }
@@ -7624,12 +7632,6 @@ ol + hr {
   font-size: 2rem;
   transition: all 0.4s ease-in-out;
 }
-.boton-flotante .boton-flotante-alternador .boton-flotante-a11y-cerrado {
-  display: block;
-}
-.boton-flotante .boton-flotante-alternador .boton-flotante-a11y-abierto {
-  display: none;
-}
 .boton-flotante .boton-flotante-alternador .boton-flotante-pictograma-cerrado {
   opacity: 1;
 }
@@ -7640,11 +7642,15 @@ ol + hr {
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
+  padding: 0;
+  margin: 0;
 }
 .boton-flotante .boton-flotante-cuerpo * {
   display: inline-flex;
   align-items: center;
   white-space: nowrap;
+  margin: 0;
+  padding: 0;
 }
 .boton-flotante .boton-flotante-cuerpo .boton-flotante-hipervinculo {
   background-color: var(--boton-flotante-fondo);
@@ -7683,12 +7689,6 @@ ol + hr {
   padding: 0;
   margin: 0 4px 0 0;
 }
-.boton-flotante .boton-flotante-cuerpo .pictograma.pictograma-resaltado,
-.boton-flotante .boton-flotante-cuerpo [class^=pictograma-].pictograma-resaltado,
-.boton-flotante .boton-flotante-cuerpo [class*=" pictograma-"].pictograma-resaltado {
-  animation: animacionResaltada 2s ease-in-out infinite;
-  position: relative;
-}
 .boton-flotante.abierto .boton-flotante-alternador {
   border-radius: 20px 0 0 20px;
 }
@@ -7697,12 +7697,6 @@ ol + hr {
 }
 .boton-flotante.abierto .boton-flotante-alternador .boton-flotante-pictograma-abierto {
   opacity: 1;
-}
-.boton-flotante.abierto .boton-flotante-alternador .boton-flotante-a11y-cerrado {
-  display: none;
-}
-.boton-flotante.abierto .boton-flotante-alternador .boton-flotante-a11y-abierto {
-  display: block;
 }
 .boton-flotante.abierto .boton-flotante-hipervinculo {
   max-width: 200px;
@@ -7876,202 +7870,79 @@ dialog.modal .modal-contenedor .modal-cerrar {
   color: var(--tipografia-color);
 }
 
-.contenedor-menu-accesibilidad {
+.menu-accesibilidad {
   position: fixed;
-  z-index: 4;
-  margin: 0;
-  /* * * * * Transiciones * * * * */
-  --a11y-transicion: 300ms;
-  --a11y-ancho: 186;
-  --a11y-relacion-tiempo: calc(var(--a11y-transicion) / var(--a11y-ancho));
-  bottom: 32px;
-  right: 32px;
-  transition: bottom calc(var(--a11y-relacion-tiempo) * 48) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 96)), right calc(var(--a11y-relacion-tiempo) * 48) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 96));
-  /* * * * * Transiciones * * * * */
+  z-index: 9999;
+  bottom: 40px;
+  right: 40px;
 }
-.contenedor-menu-accesibilidad .icono-boton-accesibilidad {
-  background: transparent;
+.menu-accesibilidad.abierto .menu-accesibilidad-contenedor {
+  box-shadow: var(--menu-accesibilidad-contenedor-sombra);
+  padding: 16px;
+  width: 260px;
+  max-height: 500px;
+}
+
+.menu-accesibilidad-boton {
+  background: var(--menu-accesibilidad-boton-fondo);
+  border: 1px solid var(--menu-accesibilidad-boton-borde);
   border-radius: 50%;
-  border: none;
+  color: var(--menu-accesibilidad-boton-color);
   display: block;
-  height: 40px;
-  width: 40px;
+  padding: 1px;
+  margin: -20px;
+}
+.menu-accesibilidad-boton .pictograma,
+.menu-accesibilidad-boton [class^=pictograma-],
+.menu-accesibilidad-boton [class*=" pictograma-"] {
+  font-size: 2.5rem;
   padding: 0;
-  margin: 0 0 -16px !important;
+  margin-top: -1px;
 }
-.contenedor-menu-accesibilidad .icono-boton-accesibilidad:hover, .contenedor-menu-accesibilidad .icono-boton-accesibilidad:focus {
-  box-shadow: 0 0 0 5px rgba(29, 116, 230, 0.25);
+.menu-accesibilidad-boton:hover, .menu-accesibilidad-boton:focus {
+  color: var(--menu-accesibilidad-boton-color-hover);
 }
-.contenedor-menu-accesibilidad .icono-boton-accesibilidad .icono-accesibilidad {
-  background-color: #fff;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  color: #1d74e6;
-  padding-left: 0 !important;
+.menu-accesibilidad-boton:focus {
+  box-shadow: 0 0 0 1px var(--menu-accesibilidad-boton-borde), 0 0 0 2px var(--menu-accesibilidad-boton-sombra-focus), 0 0 12px var(--menu-accesibilidad-boton-sombra-focus);
 }
-.contenedor-menu-accesibilidad .icono-boton-accesibilidad .icono-accesibilidad::before {
-  margin-top: -2px;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad {
-  background-color: var(--nota-fondo);
-  box-shadow: 0 4px 8px 0 var(--sombra);
+
+.menu-accesibilidad-contenedor {
+  background-color: var(--menu-accesibilidad-contenedor-fondo);
+  box-shadow: 0 0 0 transparent;
+  color: var(--menu-accesibilidad-contenedor-color);
+  display: block;
+  margin: 0;
   padding: 0;
+  width: 0;
+  max-height: 0;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 }
-.contenedor-menu-accesibilidad .menu-accesibilidad > :first-child {
-  margin-top: 12px;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .titulo,
-.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad {
-  padding: 4px 16px;
-  color: var(--menu-lateral-color);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .titulo {
-  text-align: left;
+.menu-accesibilidad-contenedor .menu-accesibilidad-titulo {
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0;
-  font-size: 16px;
-  color: var(--menu-lateral-color);
+  line-height: 1.25em;
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid currentcolor;
 }
-.contenedor-menu-accesibilidad .menu-accesibilidad hr {
-  margin: 4px 16px;
-  overflow: hidden;
-  border-top: 1px solid var(--menu-lateral-color);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis {
-  width: calc(100% - 32px);
-  margin-left: 16px !important;
-  margin-right: 16px !important;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis legend {
-  width: 100%;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis legend:hover {
-  background: var(--boton-secundario-hover-fondo);
-  border: 1px solid transparent;
-  box-shadow: none;
-  color: var(--tipografia-color);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label:hover .nombre-variable, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis legend:hover .nombre-variable {
-  color: var(--tipografia-color);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label .figura-variable, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis legend .figura-variable {
-  max-width: inherit;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis label .nombre-variable, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis legend .nombre-variable {
-  font-size: 16px;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:hover + label:before, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:hover + legend:before {
-  box-shadow: inset 0 0 0 1px var(--tipografia-color);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:focus + label, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:focus + legend {
-  background: var(--boton-secundario-hover-fondo);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked:not(:hover) + label:before, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked:not(:hover) + legend:before {
-  background: var(--input-controles-color);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked + label:after, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked + legend:after {
-  color: var(--tipografia-color-1);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked:hover:checked:not(:disabled) + label:after, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked:hover:checked:not(:disabled) + legend:after {
-  color: var(--tipografia-color-1);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked + label:before, .contenedor-menu-accesibilidad .menu-accesibilidad .controlador-vis input[type=checkbox]:checked + legend:before {
-  background: var(--input-controles-color);
-  box-shadow: inset 0 0 0 1px var(--input-controles-color);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button],
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button],
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit],
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=submit],
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=reset],
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=reset],
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class^=boton],
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class^=boton],
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class*=" boton"],
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class*=" boton"], .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-gobmx, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-conahcyt {
-  margin-left: 20px !important;
-  padding: 4px !important;
-  text-decoration: none !important;
-  border: 1px solid transparent;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:hover:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button]:hover,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button]:hover,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit]:hover,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=submit]:hover,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=reset]:hover,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=reset]:hover,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class^=boton]:hover,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class^=boton]:hover,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class*=" boton"]:hover,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class*=" boton"]:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-gobmx:hover, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-conahcyt:hover {
-  color: var(--hipervinculo-color);
-  background: var(--boton-secundario-hover-fondo);
-  box-shadow: none !important;
-  border: 1px solid var(--hipervinculo-color) !important;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad), .a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad button:focus:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad):not(.boton-accesibilidad),
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=button]:focus,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=button]:focus,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=submit]:focus,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=submit]:focus,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada input[type=reset]:focus,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad input[type=reset]:focus,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class^=boton]:focus,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class^=boton]:focus,
-.contenedor-menu-accesibilidad .menu-accesibilidad .a11y-simplificada [class*=" boton"]:focus,
-.a11y-simplificada .contenedor-menu-accesibilidad .menu-accesibilidad [class*=" boton"]:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-gobmx:focus, .contenedor-menu-accesibilidad .menu-accesibilidad .hipervinculo-conahcyt:focus {
-  background: var(--boton-secundario-hover-fondo);
-  box-shadow: 0 0 8px var(--input-focus);
-  border: 1px solid var(--hipervinculo-focus-sombra);
-  outline: none;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad {
-  background: transparent;
-  border: none;
-  border-radius: 0;
+.menu-accesibilidad-contenedor .menu-accesibilidad-opcion label, .menu-accesibilidad-contenedor .menu-accesibilidad-opcion legend {
   display: flex;
-  gap: 8px;
   width: 100%;
-  font-size: 12px;
-  font-weight: 600;
-  text-align: left;
-  margin-right: 0;
+  height: 40px;
+  align-items: center;
+  white-space: nowrap;
 }
-.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad:hover {
-  background: var(--boton-secundario-hover-fondo);
+.menu-accesibilidad-contenedor .menu-accesibilidad-opcion label::before, .menu-accesibilidad-contenedor .menu-accesibilidad-opcion legend::before, .menu-accesibilidad-contenedor .menu-accesibilidad-opcion label::after, .menu-accesibilidad-contenedor .menu-accesibilidad-opcion legend::after {
+  top: auto;
 }
-.contenedor-menu-accesibilidad .menu-accesibilidad .opcion-accesibilidad:focus {
-  background: var(--boton-secundario-hover-fondo);
-  border: 1px solid var(--boton-secundario-focus-borde);
-  box-shadow: 0 0 8px var(--boton-secundario-focus-sombra);
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad > :last-child {
-  margin-bottom: 12px;
-}
-.contenedor-menu-accesibilidad .menu-accesibilidad {
-  max-height: 0px;
-  width: 0px;
-  margin: 0 16px 16px 24px;
-  transition: width var(--a11y-transicion) linear 0s, max-height var(--a11y-transicion) linear 0s, margin-right calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32)), margin-bottom calc(var(--a11y-relacion-tiempo) * 32) linear calc(var(--a11y-relacion-tiempo) * (var(--a11y-ancho) - 32));
-}
-.contenedor-menu-accesibilidad.abierto {
-  bottom: 8px;
-  right: 8px;
-  transition-delay: 0s, 0s;
-}
-.contenedor-menu-accesibilidad.abierto .menu-accesibilidad {
-  width: 283px !important;
-  max-height: 330px;
-  margin-right: 0;
-  margin-bottom: 0;
-  transition-delay: 0s, 0s, calc(var(--a11y-relacion-tiempo) * 32), calc(var(--a11y-relacion-tiempo) * 32);
-}
-.contenedor-menu-accesibilidad.abierto .menu-accesibilidad .titulo {
-  width: 170px;
+.menu-accesibilidad-contenedor .menu-accesibilidad-opcion .pictograma,
+.menu-accesibilidad-contenedor .menu-accesibilidad-opcion [class^=pictograma-],
+.menu-accesibilidad-contenedor .menu-accesibilidad-opcion [class*=" pictograma-"] {
+  font-size: 1.5rem;
+  padding: 0;
+  margin-right: 4px;
 }
 
 .menu-lateral {
@@ -8089,12 +7960,14 @@ dialog.modal .modal-contenedor .modal-cerrar {
     margin-left: -40px;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
     transition: all 0.3s ease-in-out;
   }
   .menu-lateral.abierto .menu-lateral-boton {
     border-radius: 20px 0 0 20px;
   }
   .menu-lateral.abierto .menu-lateral-contenedor {
+    visibility: visible;
     margin-left: 0;
     opacity: 1;
     pointer-events: inherit;
@@ -9299,33 +9172,33 @@ span.controlador-vis label, span.controlador-vis legend,
   }
 }
 .borde {
-  border: 1px solid var(--borde-color-1);
+  border: 1px solid currentcolor;
 }
 
 .borde-t {
-  border-top: 1px solid var(--borde-color-1);
+  border-top: 1px solid currentcolor;
 }
 
 .borde-r {
-  border-right: 1px solid var(--borde-color-1);
+  border-right: 1px solid currentcolor;
 }
 
 .borde-b {
-  border-bottom: 1px solid var(--borde-color-1);
+  border-bottom: 1px solid currentcolor;
 }
 
 .borde-l {
-  border-left: 1px solid var(--borde-color-1);
+  border-left: 1px solid currentcolor;
 }
 
 .borde-x {
-  border-right: 1px solid var(--borde-color-1);
-  border-left: 1px solid var(--borde-color-1);
+  border-right: 1px solid currentcolor;
+  border-left: 1px solid currentcolor;
 }
 
 .borde-y {
-  border-top: 1px solid var(--borde-color-1);
-  border-bottom: 1px solid var(--borde-color-1);
+  border-top: 1px solid currentcolor;
+  border-bottom: 1px solid currentcolor;
 }
 
 .borde-color-1 {
