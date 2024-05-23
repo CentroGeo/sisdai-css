@@ -288,7 +288,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
@@ -322,7 +322,6 @@
     </nav>
 
     <menu role="complementary" class="tmp-menu">
-      <span>A11y</span>
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
       <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
@@ -351,12 +350,15 @@
 
 <style lang="scss" scoped>
   .tmp-menu {
-    background: #000;
-    color: #aaa;
+    background: #fff9;
+    backdrop-filter: blur(10px);
+    color: #00f;
     display: flex;
+    flex-direction: row;
     margin: 0;
     padding: 4px;
     position: fixed;
+    top: inherit;
     bottom: 0;
     left: 0;
     right: 0;
