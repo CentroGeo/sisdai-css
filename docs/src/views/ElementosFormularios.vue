@@ -19,19 +19,24 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <h2 class="m-t-10">Elementos</h2>
 
       <p>
-        La etiqueta <code>&lt;label/></code> se recomienda siempre utilizarla y ligarla por medio de su atributo <code>for</code>
-        al <code>input</code> al que sirve de referecia. Ésta etiqueta puede contener un elemento con la clase 
+        La etiqueta <code>label</code> se recomienda siempre utilizarla y ligarla por medio de su atributo <code>for</code>
+        al <code>input</code> al que sirve de referecia.
+      </p>
+      <p>
+        La etiqueta <code>label</code> puede contener un elemento con la clase 
         <code>.formulario-obligatoriedad</code> para agregarle información acerca de si el campo es opcional o requerido.
+        Esta última clase es únicamente de estilo, no reemplaza el uso del <code>required</code> en los campos y demás 
+        elementos del formulario.
       </p>
       
       <p>
-        Tanto el campo de texto <code>&lt;input/></code> para las clases mas generales (no checkbox, ni radio, ni range), 
+        Tanto el campo de texto <code>input</code> para las clases mas generales (no checkbox, ni radio, ni range), 
         como el selector y el área de texto; son del ancho del contenedor o columna que lo contenga, 
         pero tiene un ancho máximo de <code>700px</code> para mejorar la legibilidad.
       </p>
 
       <p>
-        El área de texto <code>&lt;textarea/></code> además tiene un alto mínimo de <code>120px</code>, 
+        El área de texto <code>textarea</code> además tiene un alto mínimo de <code>120px</code>, 
         ésta altura se puede incrementar con el atributo <code>rows</code> nativo del área de texto.
       </p>
 
@@ -212,7 +217,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           Campo para subir archivos
         </label>
         <input
-          id="arvhico"
+          id="archivo"
           type="file"
         />
         '
@@ -386,16 +391,14 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="checkbox1" 
-          type="checkbox"
-          name="checkboxes"
-          checked
-        />
-        <label for="checkbox1">
-          Casilla de verificación seleccionada
-        </label>
-      </p>
+      <input id="checkbox1" 
+        type="checkbox"
+        name="checkboxes"
+        checked
+      />
+      <label for="checkbox1">
+        Casilla de verificación seleccionada
+      </label>
       '
       />
       </div>
@@ -403,17 +406,15 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="checkbox2" 
-          type="checkbox" 
-          name="checkboxes" 
-          class="indeterminate"
-          indeterminate
-        />
-        <label for="checkbox2">
-          Casilla indeterminada
-        </label>
-      </p>
+      <input id="checkbox2" 
+        type="checkbox" 
+        name="checkboxes" 
+        class="indeterminate"
+        indeterminate
+      />
+      <label for="checkbox2">
+        Casilla indeterminada
+      </label>
       '
       />
       </div>
@@ -421,16 +422,14 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="checkbox3" 
-          type="checkbox" 
-          name="checkboxes" 
-          disabled
-        />
-        <label for="checkbox3">
-          Casilla deshabilitada
-        </label>
-      </p>
+      <input id="checkbox3" 
+        type="checkbox" 
+        name="checkboxes" 
+        disabled
+      />
+      <label for="checkbox3">
+        Casilla deshabilitada
+      </label>
       '
       />
       </div>
@@ -438,17 +437,15 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="checkbox3" 
-          type="checkbox" 
-          name="checkboxes" 
-          disabled
-          checked
-        />
-        <label for="checkbox3">
-          Casilla deshabilitada seleccionada
-        </label>
-      </p>
+      <input id="checkbox3" 
+        type="checkbox" 
+        name="checkboxes" 
+        disabled
+        checked
+      />
+      <label for="checkbox3">
+        Casilla deshabilitada seleccionada
+      </label>
       '
       />
       </div>
@@ -560,31 +557,27 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="r1" 
-          type="radio" 
-          name="radio"
-        />
-        <label for="r1">
-          Radio
-        </label>
-      </p>
+      <input id="r1" 
+        type="radio" 
+        name="radio"
+      />
+      <label for="r1">
+        Radio
+      </label>
       '
       />
       </div>
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="r2" 
-          type="radio" 
-          name="radio" 
-          checked
-        />
-        <label for="r2">
-          Radio seleccionado
-        </label>
-      </p>
+      <input id="r2" 
+        type="radio" 
+        name="radio" 
+        checked
+      />
+      <label for="r2">
+        Radio seleccionado
+      </label>
       '
       />
       </div>
@@ -592,33 +585,29 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="r3" 
-          type="radio" 
-          name="rdes" 
-        disabled 
-        />
-        <label for="r3">
-          Radio deshabilitado
-        </label>
-      </p>
+      <input id="r3" 
+        type="radio" 
+        name="rdes" 
+      disabled 
+      />
+      <label for="r3">
+        Radio deshabilitado
+      </label>
       '
       />
       </div>
       <div class="columna-4 m-t-3">
       <EjemploCodigoVertical
       html='
-      <p>
-        <input id="r4" 
-          type="radio"
-          name="rdes"
-          checked 
-          disabled
-        />
-        <label for="r4">
-          Radio deshabilitado seleccionado
-        </label>
-      </p>
+      <input id="r4" 
+        type="radio"
+        name="rdes"
+        checked 
+        disabled
+      />
+      <label for="r4">
+        Radio deshabilitado seleccionado
+      </label>
       '
       />
       </div>
