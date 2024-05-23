@@ -28,62 +28,82 @@ const estaAbierto = ref(true)
       <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
-        <div role="toolbar" class="boton-flotante">
-          <button class="boton-primario boton-flotante-alternador">
+        <div 
+          class="boton-flotante" 
+          :class="{abierto: estaAbierto}"
+        >
+          <button 
+            class="boton-primario boton-flotante-alternador"
+            aria-controls="IDUNICO" 
+            aria-label="Abrir/Cerrar menu de enlaces"
+            :aria-expanded="estaAbierto"
+            @click="estaAbierto = !estaAbierto"
+          >
             <span 
-              class="boton-flotante-pictograma-abierto pictograma-restar"
+              class="boton-flotante-pictograma-abierto pictograma-restar" 
               aria-hidden="true"
             ></span>
             <span 
-              class="boton-flotante-pictograma-cerrado pictograma-agregar"
+              class="boton-flotante-pictograma-cerrado pictograma-agregar" 
               aria-hidden="true"
             ></span>
-
-            <span class="boton-flotante-a11y-abierto a11y-solo-lectura">
-              Cerrar botón flotante
-            </span>
-            <span class="boton-flotante-a11y-cerrado a11y-solo-lectura">
-              Abrir botón flotante
-            </span>
           </button>
 
-          <div class="boton-flotante-cuerpo">
+          <menu 
+            class="boton-flotante-cuerpo"
+            id="IDUNICO"
+            :aria-hidden="!estaAbierto"
+          >
             <a href="#" class="boton-flotante-hipervinculo">
               <span 
-                class="pictograma-documento pictograma-resaltado"
+                class="pictograma-documento" 
                 aria-hidden="true"
               ></span>
               Enlace
             </a>
             <a href="#" class="boton-flotante-hipervinculo">
-              <span class="pictograma-documento" aria-hidden="true"></span>
+              <span 
+                class="pictograma-documento" 
+                aria-hidden="true"
+              ></span>
               Otro Enlace
             </a>
-          </div>
+          </menu>
         </div>
         '
       />
     </div>
 
 
-    <div class="boton-flotante" :class="{abierto: estaAbierto}">
-      <button class="boton-primario boton-flotante-alternador" @click="estaAbierto = !estaAbierto">
+    <div 
+      class="boton-flotante" 
+      :class="{abierto: estaAbierto}"
+    >
+      <button 
+        class="boton-primario boton-flotante-alternador"
+        aria-controls="botonflotanteejemplo" 
+        aria-label="Abrir/Cerrar colapsable"
+        :aria-expanded="estaAbierto"
+        @click="estaAbierto = !estaAbierto"
+      >
         <span class="boton-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
-        <span class="boton-flotante-a11y-abierto a11y-solo-lectura">Cerrar botón flotante</span>
         <span class="boton-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>
-        <span class="boton-flotante-a11y-cerrado a11y-solo-lectura">Abrir botón flotante</span>
       </button>
 
-      <div class="boton-flotante-cuerpo">
+      <menu 
+        class="boton-flotante-cuerpo"
+        id="botonflotanteejemplo"
+        :aria-hidden="!estaAbierto"
+      >
         <a href="#" class="boton-flotante-hipervinculo">
-          <span class="pictograma-documento pictograma-resaltado" aria-hidden="true"></span>
+          <span class="pictograma-documento" aria-hidden="true"></span>
           Enlace
         </a>
         <a href="#" class="boton-flotante-hipervinculo">
           <span class="pictograma-documento" aria-hidden="true"></span>
           Otro Enlace
         </a>
-      </div>
+      </menu>
     </div>
     
   </div>
