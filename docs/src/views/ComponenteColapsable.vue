@@ -1,5 +1,7 @@
 <script setup>
+import { ref } from 'vue'
 import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+const estaAbierto = ref(false)
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -20,6 +22,33 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         al agregar o quitar la clase <code>abierto</code> al <code>colapsable</code>.
         Cuando la usuaria haga click en el botón <code>colapsable-boton</code>, se expande el contenedor <code>colapsable-contenedor</code>.
       </p>
+
+      <div class="colapsable" :class="{abierto: estaAbierto}">
+        <button 
+          class="colapsable-boton" 
+          aria-controls="colapsableejemplo" 
+          aria-label="Abrir/Cerrar colapsable"
+          :aria-expanded="estaAbierto"
+          @click="estaAbierto = !estaAbierto"
+        >
+          Encabezado colapsable          
+          <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
+        </button>
+        <div 
+          class="colapsable-contenedor" 
+          id="colapsableejemplo" 
+          :aria-hidden="!estaAbierto"
+        >
+          <ul>
+            <li>
+              <a href="#">Enlace</a>
+            </li>
+            <li>
+              <a href="#">Enlace</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       
     </div>
 
