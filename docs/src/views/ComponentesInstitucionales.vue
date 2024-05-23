@@ -22,7 +22,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         se encuentra con la estructura y enlaces utilizados durante el año 2024.
       </p>
     </div>
-    <nav class="navegacion navegacion-gobmx">
+    <nav class="navegacion navegacion-gobmx" aria-label="Menú Gobierno de México">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -51,7 +51,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       :tiene_ejemplo="false"
         html='
-        <nav class="navegacion navegacion-gobmx">
+        <nav class="navegacion navegacion-gobmx" aria-label="Menú Gobierno de México">
           <div class="nav-contenedor-identidad">
             <a href="#" class="nav-hiperviculo-logo">
               <img 
@@ -88,7 +88,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         se encuentra con la estructura y enlaces utilizados durante el año 2024.
       </p>
     </div>
-    <nav class="navegacion navegacion-conahcyt">
+    <nav class="navegacion navegacion-conahcyt" aria-label="Menú principal">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -132,7 +132,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
-        <nav class="navegacion navegacion-conahcyt">
+        <nav class="navegacion navegacion-conahcyt" aria-label="Menú principal">
           <div class="nav-contenedor-identidad">
             <a href="#" class="nav-hiperviculo-logo">
               <img 
@@ -184,7 +184,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         se encuentra con la estructura y enlaces utilizados durante el año 2024.
       </p>
     </div>
-    <footer class="contenedor piepagina-gobmx">
+    <footer class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
       <div class="flex flex-wrap">
         <div class="columna-8 columna-4-esc">
           <img src="https://cdn.conacyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México" width="200px" height="60px" />
@@ -237,7 +237,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
-        <footer class="contenedor piepagina-gobmx">
+        <footer class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
           <div class="flex flex-wrap">
             
             <div class="columna-8 columna-4-esc">
@@ -306,7 +306,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         se encuentra con la estructura y enlaces utilizados durante el año 2024.
       </p>
     </div>
-    <footer class="contenedor piepagina-conahcyt">
+    <footer class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
       <div class="flex flex-wrap">
         <div class="columna-8 columna-8-esc">
           <img
@@ -367,7 +367,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
-        <footer class="contenedor piepagina-conahcyt">
+        <footer class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
           <div class="flex flex-wrap">
             <div class="columna-8 columna-8-esc">
               <img
