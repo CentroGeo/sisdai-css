@@ -220,19 +220,18 @@
           <ul class="nav-menu">
             <li><RouterLink class="nav-hipervinculo" to="/" exact>Inicio</RouterLink></li>
 
-            <!-- ACCESIBILIDAD
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')">Accesibilidad</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
                 <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/">Cambio de fuente</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/">Vista simplificada</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/">Reducir/Incrementar tipografía</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/">Enlaces subrayados</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/">Modo claro/oscuro</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/cambio-fuente">Cambio de fuente</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/modo-claro-oscuro">Modo claro/oscuro</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li> -->
               </ul>
-            </li> 
-            -->
+            </li>            
             
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')">Fundamentos</button>

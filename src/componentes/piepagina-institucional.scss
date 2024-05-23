@@ -26,6 +26,10 @@
       margin: 0;
     }
   }
+  a:focus,
+  a:hover {
+    text-decoration: none !important;
+  }
 
   .piepagina-titulo {
     font-size: 1.125rem; //18px

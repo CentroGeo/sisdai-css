@@ -10,6 +10,21 @@ const router = createRouter({
       component: InicioView
     },
     {
+      path: '/accesibilidad',
+      children: [
+        {
+          path: 'cambio-fuente',
+          name: 'cambio-fuente',
+          component: () => import('../views/AccesibilidadCambioFuente.vue')
+        },
+        {
+          path: 'mostrar-solo-texto',
+          name: 'mostrar-solo-texto',
+          component: () => import('../views/AccesibilidadMostrarSoloTexto.vue')
+        }
+      ]
+    },
+    {
       path: '/fundamentos',
       children: [
         {
