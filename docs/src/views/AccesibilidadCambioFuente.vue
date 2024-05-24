@@ -22,7 +22,7 @@ import { onDeactivated } from 'vue';
       </p>
 
       <p class="h4 m-t-10">
-        Consideraciones en el área de desarrollo para poder mantener el cambio de fuente tipográfica.
+        Consideraciones en el área de desarrollo para poder mantener el estado 'Cambio de fuente'.
       </p>
 
       <p>
@@ -60,9 +60,5 @@ import { onDeactivated } from 'vue';
         ]
       </pre>
 
-     
-    
-
-        
   </div>
 </template>

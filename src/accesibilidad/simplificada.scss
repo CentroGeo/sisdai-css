@@ -14,31 +14,11 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .a11y-simplificada {
-  .a11y-simplificada-contenedor {
-    box-sizing: border-box;
-    display: block;
-    margin: auto;
-    padding: 0;
-
-    @each $dispositivo, $map in $a11y-simplificada-contenedores {
-      @include mediaquery($dispositivo) {
-        >[class^='columna-'],
-        >[class*=' columna-'] {
-          display: block;
-          max-width: map-get($contenedores, $dispositivo, 'ancho-lectura');
-          padding: map-get($map, 'margen-interior');
-          margin: map-get($map, 'margen-interior') auto;
-        }
-      }
-    }
-  }
-
-  button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton),
+  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
   input[type=button],
   input[type=submit],
-  input[type=reset],
-  [class^='boton'],
-  [class*=' boton'] {
+  input[type=reset] {
     @extend .hipervinculo;
     background-color: transparent !important;
     &:not(:last-child) {
@@ -87,6 +67,7 @@
     }
   }
 
+  .tarjeta-hipervinculo-interno,
   .tarjeta-hipervinculo-externo {
     background: var(--tarjetas-simplificada-fondo);
     border: 1px solid var(--tarjetas-simplificada-borde);
@@ -120,81 +101,18 @@
     }
   }
 
-  .tarjeta-hipervinculo-interno {
-    border: 1px solid var(--tarjetas-simplificada-borde);
-    .tarjeta-cuerpo {
-      background-color: var(--tarjetas-simplificada-fondo);
-      > * {
-        color: var(--tarjetas-simplificada-color);
-      }
-    }
-    &:hover,
-    &:focus,
-    &:focus-visible {
-      box-shadow: none;
-      .tarjeta-cuerpo {
-        background: var(--tarjetas-simplificada-fondo-hover);
-        > * {
-          color: var(--tarjetas-simplificada-color-hover);
-        }
-      }
-    }
-    &:focus,
-    &:focus-visible {
-      box-shadow: 0 0 8px 1px var(--tarjeta-simplificada-sombra-focus);
-      .tarjeta-cuerpo {
-        background: var(--tarjeta-simplificada-fondo-focus);
-        > * {
-          color: var(--tarjeta-simplificada-color-focus);
-        }
-      }
-    }
-  }
-
   .boton-flotante {
     position: static;
-
+    box-shadow: none;
     .boton-flotante-alternador {
       display: none !important;
     }
-
     .boton-flotante-cuerpo {
-      &:hover,
-      &:focus {
-        text-decoration: none !important;
-      }
       .boton-flotante-hipervinculo {
-        max-width: 200px;
+        border-radius: 0;
         opacity: 1;
-        padding: 0 map-get($espaciado, '1') 0 0;
-      }
-      .pictograma,
-      [class^='pictograma-'],
-      [class*=' pictograma-'] {
-        font-size: 1em;
-      }
-      .pictograma-resaltado {
-        animation: none;
-      }
-    }
-  }
-
-  .audio {
-    background: transparent;
-    padding: 0;
-
-    .audio-cuerpo {
-      padding: map-get($espaciado, '2');
-    }
-    .boton-pictograma {
-      display: inline-flex !important;
-      align-items: center !important;
-      .pictograma,
-      [class^='pictograma-'],
-      [class*=' pictograma-'] {
-        display: inline-flex !important;
-        align-items: center !important;
-        font-size: 1.5rem !important; // 24px
+        max-width: 200px;
+        padding: 0 map-get($espaciado, '1');
       }
     }
   }
@@ -202,15 +120,10 @@
   @each $dispositivo, $configuracion in $columnas {
     @include mediaquery($dispositivo) {
       .flex.flex-columnas-100-al-simplificar {
-        margin-right: calc(map-get($configuracion, 'espaciado') * -.5);
-        margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
-
         >[class^='columna-'],
         >[class*=' columna-'] {
-          flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
-          max-width: calc(100% - map-get($configuracion, 'espaciado'));
-          margin-left: map-get($configuracion, 'espaciado')*.5;
-          margin-right: map-get($configuracion, 'espaciado')*.5;
+          flex-basis: calc(100%);
+          max-width: calc(100%);
         }
       }
     }

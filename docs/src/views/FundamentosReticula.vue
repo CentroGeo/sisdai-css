@@ -485,7 +485,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       <p>
         Existe una clase especial <code>.flex-columnas-100-al-simplificar</code> que se le puede agregar a <code>.flex</code>, 
         la cual indicará que todas sus <code>.columna-#</code> deberán escalarse a un ancho del 100% de la pantalla 
-        cuando se seleccione la <code>VISTA SIMPLIFICADA</code>
+        cuando se seleccione la opción <code>Mostrar solo texto</code> del menú de accesibilidad.
       </p>
     </div>
 

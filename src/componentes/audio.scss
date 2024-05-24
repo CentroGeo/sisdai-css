@@ -32,11 +32,6 @@
     }
   }
 
-  .audio-cuerpo {
-    background: var(--tarjetas-fondo);
-    border-radius: map-get($borde-redondeado, '20');
-  }
-
   .audio-velocidad {
     flex: 1 1;
     max-width: map-get($espaciado, 'maximo');
