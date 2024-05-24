@@ -21,6 +21,11 @@ const router = createRouter({
           path: 'mostrar-solo-texto',
           name: 'mostrar-solo-texto',
           component: () => import('../views/AccesibilidadMostrarSoloTexto.vue')
+        },
+        {
+          path: 'enlaces-subrayados',
+          name: 'enlaces-subrayados',
+          component: () => import('../views/AccesibilidadEnlaceSubrayado.vue')
         }
       ]
     },
