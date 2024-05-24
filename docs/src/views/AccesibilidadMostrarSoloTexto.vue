@@ -12,7 +12,9 @@ import { onDeactivated } from 'vue';
         lo que facilita a las personas enfocarse y llevar a cabo las tareas más importantes. 
         Además, puede disminuir el consumo de datos al limitar las consultas de videos o gráficas. 
       </p>
-
+      <p>
+        Esta funcionalidad se logra agregar ó remover la clase <code>.a11y-simplificada</code> a la etiqueta <code>body</code>.
+      </p>
 
       <dl>
         <dt>Portadas</dt>
@@ -71,7 +73,7 @@ import { onDeactivated } from 'vue';
 
     <div class="ancho-lectura">
       <p class="h4 m-t-10">
-        Consideraciones en el área de desarrollo para poder mantener el estado 'Mostrar solo texto'.
+        Consideraciones en el área de desarrollo para poder mantener el estado <em>Mostrar solo texto</em>.
       </p>
       <p>
         Las reglas de que clase necesita reformatearse y como, descritas arriba en español plano, 
@@ -101,7 +103,7 @@ import { onDeactivated } from 'vue';
     <div class="ancho-lectura">
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
-        debe existir la opcion de Mostrar solo texto de la siguiente manera:
+        debe existir la opcion de <em>Mostrar solo texto</em>, de la siguiente manera:
        </p>
     </div>
     <pre class="nota nota-contenedor">

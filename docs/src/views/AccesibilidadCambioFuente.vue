@@ -12,8 +12,7 @@ import { onDeactivated } from 'vue';
       </p>
 
       <p>
-        La funcionalidad básica de esta función es agregar ó remover la clase <code>.a11y-tipografia</code> 
-        de la etiqueta <code>body</code> para cambiar la fuente.
+        Esta funcionalidad se logra agregar ó remover la clase <code>.a11y-simplificada</code> a la etiqueta <code>body</code>.
       </p>
 
       <p>
@@ -22,7 +21,7 @@ import { onDeactivated } from 'vue';
       </p>
 
       <p class="h4 m-t-10">
-        Consideraciones en el área de desarrollo para poder mantener el estado 'Cambio de fuente'.
+        Consideraciones en el área de desarrollo para poder mantener el estado <em>Cambio de Fuente</em>.
       </p>
 
       <p>
@@ -45,7 +44,7 @@ import { onDeactivated } from 'vue';
     <div class="ancho-lectura">
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
-        debe existir la opcion de Cambio de Fuente de la siguiente manera:
+        debe existir la opcion de <em>Cambio de Fuente</em>, de la siguiente manera:
        </p>
     </div>
       <pre class="nota nota-contenedor">
