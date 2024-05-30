@@ -3685,7 +3685,7 @@ ol + hr {
 .contenedor-alto-fijo:hover {
   background-color: var(--tabla-fondo-impar);
 }
-.contenedor-alto-fijo :first-child {
+.contenedor-alto-fijo > :first-child {
   margin-top: 0;
 }
 
@@ -8301,16 +8301,16 @@ ol + hr {
   overflow-x: hidden;
   scrollbar-width: thin;
 }
-.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :first-child:not(.figura-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :first-child:not(.figura-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :first-child:not(.figura-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :first-child:not(.figura-variable) {
+.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis > :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis > :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis > :first-child:not(.figura-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-pie-vis > :first-child:not(.figura-variable) {
   margin-top: 0;
 }
-.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis :last-child:not(.nombre-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis :last-child:not(.nombre-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis :last-child:not(.nombre-variable),
-.contenedor-vis .contenedor-vis-paneles .panel-pie-vis :last-child:not(.nombre-variable) {
+.contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis > :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis > :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis > :last-child:not(.nombre-variable),
+.contenedor-vis .contenedor-vis-paneles .panel-pie-vis > :last-child:not(.nombre-variable) {
   margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {

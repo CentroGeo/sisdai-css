@@ -55,7 +55,7 @@
   &:hover {
     background-color: var(--tabla-fondo-impar); //TODO: definir el color
   }
-  :first-child {
+  > :first-child {
     margin-top: 0;
   }
 }

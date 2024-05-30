@@ -69,12 +69,12 @@
       overflow-x: hidden;
       scrollbar-width: thin;
 
-      :first-child:not(
+      > :first-child:not(
         .figura-variable /* para que los simbolos de las leyendas no se muevan */
       ) {
         margin-top: 0;
       }
-      :last-child:not(
+      > :last-child:not(
         .nombre-variable /* para que las etiquetas de las leyendas no se muevan */
       ) {
         margin-bottom: 0;
