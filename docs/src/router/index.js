@@ -26,7 +26,12 @@ const router = createRouter({
           path: 'enlaces-subrayados',
           name: 'enlaces-subrayados',
           component: () => import('../views/AccesibilidadEnlaceSubrayado.vue')
-        }
+        },
+        {
+          path: 'vista-oscura',
+          name: 'vista-oscura',
+          component: () => import('../views/AccesibilidadVistaOscura.vue')
+        },
       ]
     },
     {
