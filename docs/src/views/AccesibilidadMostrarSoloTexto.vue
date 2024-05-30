@@ -78,7 +78,7 @@ import { onDeactivated } from 'vue';
       <p>
         Las reglas de que clase necesita reformatearse y como, descritas arriba en español plano, 
         se encuentran en el archivo de <code>src/accesibilidad/simplificada.scss</code>. Si se agrega 
-        un nuevo elemento en su proyecto puede utilizar la clase <code>.a11y-simplificada</code> 
+        un nuevo elemento se necesita utilizar la clase <code>.a11y-simplificada</code> en un archivo de estilos
         para dentro crear las nuevas reglas que requiera.
       </p>
       <ol>
