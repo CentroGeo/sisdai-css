@@ -7,7 +7,8 @@ import { onDeactivated } from 'vue';
       <h1>Ir al contenido principal</h1>
       
       <p>
-        Enlace de accesibilidad para dirigir a la persona usuaria al bloque del contenido principal, saltando todos los menús de la página web.
+        Enlace de accesibilidad para dirigir a la persona usuaria al bloque del contenido principal, saltando todos los menús de la página web.<br />
+        Esta funcionalidad es general del sitio, siempre existe, no se encuentra ligada al menú de accesibilidad.
       </p>
 
       <p class="h4 m-t-10">
@@ -32,7 +33,7 @@ import { onDeactivated } from 'vue';
         <span aria-hidden="true">&lt;</span>/main<span aria-hidden="true">&gt;</span>
 
         ...
-        
+
       <span aria-hidden="true">&lt;</span>/body<span aria-hidden="true">&gt;</span>
     </pre>
 
