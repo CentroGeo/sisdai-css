@@ -2,6 +2,131 @@
 :root {
   --tipografia-familia: "Montserrat", sans-serif;
   --tipografia-tamanio: 16px;
+  --pagina-fondo: #ffffff;
+  --nota-fondo: #F0F6FF;
+  --tipografia-color: #141414;
+  --tipografia-color-1: #ffffff;
+  --tipografia-color-2: #0068FF;
+  --tipografia-color-3: #5E7392;
+  --borde-color-1: #141414;
+  --borde-color-2: #767677;
+  --borde-color-3: #AAAAAA;
+  --borde-color-4: #ffffff;
+  --borde-focus: #005DFF;
+  --sombra: #0000001a;
+  --sombra-focus: #005DFF;
+  --sombra-hover: #0000001a;
+  --detalle-fondo: #F0F6FF;
+  --detalle-focus-sombra: #005DFF;
+  --boton-primario-fondo: #0068FF;
+  --boton-primario-borde: #0068FF;
+  --boton-primario-color: #ffffff;
+  --boton-primario-sombra: transparent;
+  --boton-primario-deshabilitado-fondo: #dddddd;
+  --boton-primario-deshabilitado-borde: #dddddd;
+  --boton-primario-deshabilitado-color: #767677;
+  --boton-primario-deshabilitado-sombra: transparent;
+  --boton-primario-hover-fondo: #0058CC;
+  --boton-primario-hover-borde: #0058CC;
+  --boton-primario-hover-color: #ffffff;
+  --boton-primario-hover-sombra: #0000001a;
+  --boton-primario-focus-fondo: #0058CC;
+  --boton-primario-focus-borde: #ffffff;
+  --boton-primario-focus-color: #ffffff;
+  --boton-primario-focus-sombra: #005DFF;
+  --boton-primario-focus-contorno: #005DFF;
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: #364A69;
+  --boton-secundario-color: #364A69;
+  --boton-secundario-sombra: transparent;
+  --boton-secundario-deshabilitado-fondo: transparent;
+  --boton-secundario-deshabilitado-borde: #dddddd;
+  --boton-secundario-deshabilitado-color: #AAAAAA;
+  --boton-secundario-deshabilitado-sombra: transparent;
+  --boton-secundario-hover-fondo: #CCE1FF;
+  --boton-secundario-hover-borde: #364A69;
+  --boton-secundario-hover-color: #364A69;
+  --boton-secundario-hover-sombra: #0000001a;
+  --boton-secundario-focus-fondo: #CCE1FF;
+  --boton-secundario-focus-borde: #005DFF;
+  --boton-secundario-focus-color: #364A69;
+  --boton-secundario-focus-sombra: #005DFF;
+  --boton-conahcyt-fondo: #DDDDDD;
+  --boton-icono-sin-borde-color: #0068FF;
+  --label-color: #5E7392;
+  --input-fondo: transparent;
+  --input-color: #141414;
+  --input-borde: #5E7392;
+  --input-controles-color: #0068FF;
+  --input-deshabilitado-fondo: #DDDDDD;
+  --input-deshabilitado-color: #AAAAAA;
+  --input-hover: #364A69;
+  --input-focus: #005DFF;
+  --input-select-svg: url('data:image/svg+xml,    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">        <g fill="%23141414">            <path d="M14.25,25.9,9,20.65l1.05-1.05,4.2,4.2,4.2-4.2,1.05,1.05Z" transform="translate(-2 -10.6)"/>            <rect width="24" height="24" fill="none"/>        </g>    </svg>');
+  --tabla-fondo-impar: #F0F6FF;
+  --tabla-fondo-notas: #CCE1FF;
+  --tarjetas-fondo: #F5F5F5;
+  --tarjetas-color: #141414;
+  --tarjetas-externas-color: #ffffff;
+  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
+  --tarjetas-internas-color: #141414;
+  --tarjetas-internas-fondo: #F5F5F5;
+  --tarjetas-interna-fondo-hover: #DDDDDD;
+  --tarjetas-simplificada-fondo: #FFFFFF;
+  --tarjetas-simplificada-color: #005DFF;
+  --tarjetas-simplificada-borde: #005DFF;
+  --tarjetas-simplificada-fondo-hover: #005DFF;
+  --tarjetas-simplificadas-borde-hover: #005DFF;
+  --tarjetas-simplificada-color-hover: #FFFFFF;
+  --tarjeta-simplificada-fondo-focus: #005DFF;
+  --tarjeta-simplificada-borde-focus: #FFFFFF;
+  --tarjeta-simplificada-color-focus: #FFFFFF;
+  --tarjeta-simplificada-contorno-focus: #005DFF;
+  --tarjeta-simplificada-sombra-focus: #005DFF;
+  --tarjetas-contenido-simplificada-fondo: #F5F5F5;
+  --tarjetas--contenido-simplificada-color: #141414;
+  --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
+  --navegacion-conahcyt-fondo: #ffffff;
+  --navegacion-conahcyt-sombra: #00000032;
+  --navegacion-conahcyt-color: #002663;
+  --navegacion-conahcyt-fondo-icono: #002663;
+  --navegacion-conahcyt-fondo-hover: #F5F5F5;
+  --menu-lateral-color: #102543;
+  --menu-lateral-fondo: #DBEAFF;
+  --menu-lateral-accion: #0068FF;
+  --menu-lateral-hover-color: #ffffff;
+  --menu-lateral-accion-fondo-hover: #364A69;
+  --menu-lateral-accion-fondo-active: #F8FBFF;
+  --menu-lateral-accion-sombra-active: #0068FF;
+  --submenu-lateral-fondo-mov: #DBEAFF;
+  --submenu-lateral-fondo-colapsable: #CCE1FF;
+  --acciones-informativo: #19439C;
+  --acciones-informativo-2: #ECF2FF;
+  --acciones-error: #940B1C;
+  --acciones-error-2: #FEE9EC;
+  --acciones-advertencia: #916802;
+  --acciones-advertencia-2: #FFF7E3;
+  --acciones-correcto: #2A6F4D;
+  --acciones-correcto-2: #E7FBF1;
+  --hipervinculo-color: #005DFF;
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-deshabilitado-color: #AAAAAA;
+  --hipervinculo-deshabilitado-sombra: transparent;
+  --hipervinculo-hover-color: #356CCC;
+  --hipervinculo-hover-sombra: transparent;
+  --hipervinculo-focus-color: #005DFF;
+  --hipervinculo-focus-sombra: #005DFF;
+  --hipervinculo-visitado: #9233FF;
+  --navegacion-fondo: #eef;
+  --navegacion-sombra: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(,0,0,.2);
+  --navegacion-redondeado: 0 0 8px 8px;
+  --navegacion-color: #00f;
+  --navegacion-fondo-hover: #ddf;
+  --navegacion-sombra-hover: 0 1px 0 0 #ccf, 0 8px 8px -4px rgba(0,0,0,.2);
+  --navegacion-color-hover: #00f;
+  --navegacion-fondo-active: #00f;
+  --navegacion-sombra-active: 0 0 0 0;
+  --navegacion-color-active: #fff;
   --color-gobmx-oscuro-1: #18302D;
   --color-gobmx-oscuro-2: #1F5D50;
   --color-gobmx-claro-0: #FFFFFF;
@@ -10241,18 +10366,41 @@ span.controlador-vis label, span.controlador-vis legend,
   max-width: 200px;
   padding: 0 8px;
 }
-@media screen and (max-width: 767px) {
-  .a11y-simplificada .flex.flex-columnas-100-al-simplificar > [class^=columna-],
+.a11y-simplificada .flex.flex-columnas-100-al-simplificar > [class^=columna-],
 .a11y-simplificada .flex.flex-columnas-100-al-simplificar > [class*=" columna-"] {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .a11y-simplificada .a11y-simplificada-contenedor {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .a11y-simplificada .a11y-simplificada-contenedor > .flex > [class^=columna-],
+.a11y-simplificada .a11y-simplificada-contenedor > .flex > [class*=" columna-"] {
     flex-basis: 100%;
     max-width: 100%;
   }
+  .a11y-simplificada .a11y-simplificada-contenedor > .grid > [class^=columna-],
+.a11y-simplificada .a11y-simplificada-contenedor > .grid > [class*=" columna-"] {
+    grid-column: span 8;
+  }
 }
 @media screen and (min-width: 768px) {
-  .a11y-simplificada .flex.flex-columnas-100-al-simplificar > [class^=columna-],
-.a11y-simplificada .flex.flex-columnas-100-al-simplificar > [class*=" columna-"] {
+  .a11y-simplificada .a11y-simplificada-contenedor {
+    max-width: 700px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .a11y-simplificada .a11y-simplificada-contenedor > .flex > [class^=columna-],
+.a11y-simplificada .a11y-simplificada-contenedor > .flex > [class*=" columna-"] {
     flex-basis: 100%;
     max-width: 100%;
+  }
+  .a11y-simplificada .a11y-simplificada-contenedor > .grid > [class^=columna-],
+.a11y-simplificada .a11y-simplificada-contenedor > .grid > [class*=" columna-"] {
+    grid-column: span 16;
   }
 }
 

@@ -12,67 +12,48 @@ import { onDeactivated } from 'vue';
         facilitando así la exploración durante períodos prolongados. 
       </p>
 
-      <p>
-        La paleta de color
+      <p class="nota nota-contenedor">
+        TODO: reescribir cuando se complete la nueva funcionalidad del color
+      </p>
 
-        src/_variables.scss
-        :root {}
+      <p>
+        Los colores predeterminados para todos los elementos del sistema estan en <code>:root { ... }</code> del archivo<code>src/_variables.scss</code>.
       </p>
       <p>
-       el modo claro
-
-        src/accesibilidad/oscura.scss
-        body[data-vista-oscura='true'] {}
-
-
-        el modo oscuro
-        src/accesibilidad/clara.scss
-        body[data-vista-clara='true'] {}
-
+        Para cambiar entre modo claro/oscuro el menu de accesibilidad agrega a la etiqueta de <code>body</code>
+        la propiedad <code>data-light-theme-eni='true'</code> en modo claro en tema eni 
+        y <code>data-dark-theme-eni='true'</code> en modo oscuro del tema eni.
       </p>
       <p>
-        ?
+        Estas propiedades leen los archivos de <code></code> de <code>src/accesibilidad/clara.scss</code> y <code>src/accesibilidad/oscura.scss</code>
+        para sobreescribir las variables predeterminadas dependiendo del modo seleccionado por la persona usuaria.
       </p>
       
       <p class="h4 m-t-10">
         Consideraciones en el área de desarrollo para poder mantener el estado <em>Vista oscura</em>.
       </p>
       <p>
-        Deben existir declaradas las variables de color para todos los elementos y componentes que se utilicen en el sitio web
-        tanto en el archivo <code>src/accesibilidad/clara.scss</code> como en <code>src/accesibilidad/oscura.scss</code>. 
-        Para introducir nuevos elementos a las funciones de modos de color, se necesitan describir las variables de CSS 
-        dentro de la etiqueta de vista clara y oscura. 
+        Deben existir declaradas las variables de color para todos los elementos en loa archivos antes mencionados.
       </p>
       <p>
-        Se recomienda utilizar la convención para los nombes de variables de 
-        color <code>--componente-estado-atributo</code> utilizada por el Sisdai.
-      </p>
-      <p>
-        Se recomienta vincular los colores de elementos y componentes con las
-        variables de color de la paleta del sistema.
+        Si se introducen más elementos al sistema o página web, se deben declarar las variables de color predeterminado, 
+        para modo claro y para modo oscuro.
       </p>
     </div>
     <pre class="nota nota-contenedor">
-      body[data-vista-clara='true'] {
-        --minuevocomponente-borde: var(--color-primario-1);
-        --minuevocomponente-enfoque-borde: var(--color-primario-2);
-      }
-
-      body[data-vista-oscura='true'] {
-        --minuevocomponente-borde: var(--color-primario-3);
-        --minuevocomponente-enfoque-borde: var(--color-primario-4);
-      }
-    </pre>
-
-    <div class="ancho-lectura">
-      <p>
-        Paleta de color
-      </p>
-    </div>
-    <pre class="nota nota-contenedor">
-      // paleta
       :root {
-        --color-primario-1: #000;
+        --minuevocomponente-borde: #000;
+        --minuevocomponente-enfoque-borde: #00f;
+      }
+      
+      body[data-light-theme-eni='true'] {
+        --minuevocomponente-borde: #000;
+        --minuevocomponente-enfoque-borde: #00f;
+      }
+
+      body[data-dark-theme-eni='true'] {
+        --minuevocomponente-borde: #fff;
+        --minuevocomponente-enfoque-borde: 9cf;
       }
     </pre>
 
