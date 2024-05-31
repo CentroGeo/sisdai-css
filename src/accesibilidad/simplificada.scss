@@ -117,13 +117,30 @@
     }
   }
 
-  @each $dispositivo, $configuracion in $columnas {
-    @include mediaquery($dispositivo) {
-      .flex.flex-columnas-100-al-simplificar {
-        >[class^='columna-'],
-        >[class*=' columna-'] {
-          flex-basis: calc(100%);
-          max-width: calc(100%);
+  .flex.flex-columnas-100-al-simplificar {
+    > [class^='columna-'],
+    > [class*=' columna-'] {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .a11y-simplificada-contenedor {
+    @each $dispositivo, $map in $contenedores {
+      @include mediaquery($dispositivo) {
+        max-width: map-get($map, 'ancho-lectura');
+        padding-left: map-get($map, 'margen-interior-lectura');
+        padding-right: map-get($map, 'margen-interior-lectura');
+
+        > .flex > [class^='columna-'],
+        > .flex > [class*=' columna-'] {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+
+        > .grid > [class^='columna-'],
+        > .grid > [class*=' columna-'] {
+          grid-column: span map-get($columnas, $dispositivo, 'columnas');
         }
       }
     }

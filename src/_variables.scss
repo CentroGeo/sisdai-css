@@ -74,7 +74,7 @@ $borde-color: (
   '4':  var(--borde-color-4),
 );
 
-// TAMAÑOS / PICTOGRAMAS
+// PICTOGRAMAS // tamaños especiales
 $pictograma: (
   '24': (
     'tamanio': 1rem,
@@ -143,17 +143,6 @@ $contenedores: (
     'ancho-minimo': 500px,
     'margen-interior': map-get($espaciado, '6'),
     'margen-interior-lectura': map-get($espaciado, '0'),
-  )
-);
-
-$a11y-simplificada-contenedores: (
-  'mov': (
-    'columnas': 1,
-    'espaciado': map-get($espaciado, '2'),
-  ),
-  'esc': (
-    'columnas': 2,
-    'espaciado': map-get($espaciado, '3'),
   )
 );
 

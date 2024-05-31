@@ -129,6 +129,50 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
           </div>
       '/>
     </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Contenedor para vista simplificada</h2>
+      <p>
+        Este contenedor no importa que formato tenga, que tan ancho sea, 
+        si el contenedor tiene la clase <code>a11y-simplificada-contenedor</code>,
+        cuando se selecciona la opción de accesibilidad de vista simplificada, 
+        se muestra el contenido en un solo bloque con ancho de lectura vertical.
+      </p>
+    </div>
+    
+    <div class="contenedor a11y-simplificada-contenedor m-y-3">
+      <div class="grid">
+        <div class="columna-4 conahcyt-fondo-claro-1">
+          <p>1</p>
+        </div>
+        <div class="columna-1 gobmx-fondo-claro-2 ">
+          <p>2</p>
+        </div>
+        <div class="columna-6 conahcyt-fondo-claro-2">
+          <p>3</p>
+        </div>
+        <div class="columna-2 gobmx-fondo-claro-1">
+          <p>4</p>
+        </div>
+        <div class="columna-3 gobmx-fondo-claro-2 ">
+          <p>5</p>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor">
+      <EjemploEstiloClase 
+        clases="contenedor"
+        codigo='
+          <div class="contenedor a11y-simplificada-contenedor">
+            <div class="grid">
+              <div class="columna-4">
+                cualquier contenido ...
+                ...
+  
+            </div>
+          </div>
+      '/>
+    </div>
    
   </div>
 </template>
