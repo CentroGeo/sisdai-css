@@ -32,6 +32,11 @@ const router = createRouter({
           name: 'vista-oscura',
           component: () => import('../views/AccesibilidadVistaOscura.vue')
         },
+        {
+          path: 'ir-contenido-principal',
+          name: 'ir-contenido-principal',
+          component: () => import('../views/AccesibilidadIrContenidoPrincipal.vue')
+        },
       ]
     },
     {
