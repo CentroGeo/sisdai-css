@@ -37,6 +37,11 @@ const router = createRouter({
           name: 'ir-contenido-principal',
           component: () => import('../views/AccesibilidadIrContenidoPrincipal.vue')
         },
+        {
+          path: 'reducir-incrementar-tipografia',
+          name: 'reducir-incrementar-tipografia',
+          component: () => import('../views/AccesibilidadReducirAumentarTipografia.vue')
+        },
       ]
     },
     {

@@ -229,7 +229,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
             </li>            
             
