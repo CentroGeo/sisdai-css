@@ -22,7 +22,7 @@
   box-shadow: var(--navegacion-sombra);
   display: block;
   position: relative;
-  z-index: 110;
+  z-index: 9999;
   padding-left: map-get($contenedores, 'mov', 'margen-interior');
   padding-right: map-get($contenedores, 'mov', 'margen-interior');
   &.navegacion-pegada {
@@ -31,10 +31,10 @@
   }
 }
 .navegacion + .navegacion {
-  z-index: 109;
+  z-index: 9998;
 }
 .navegacion + .navegacion + .navegacion {
-  z-index: 108;
+  z-index: 9997;
 }
 .nav-contenedor-identidad {
   display: flex;

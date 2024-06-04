@@ -15,9 +15,12 @@
 
 dialog::backdrop {
   background-color: var(--dialogo-fondo);
+  
 }
 
 dialog {
+  position: absolute;
+  z-index: 999999;
   &.modal {
     position: fixed;
     top: 0;
