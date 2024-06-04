@@ -13,12 +13,14 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 .menu-lateral {
+  position: sticky;
   display: flex;
+  z-index: 999;
 
   @include mediaquery('mov') {
-    position: fixed;
-    width: 70vw;
-    top: 140px;
+    margin-top: map-get($espaciado, '5');
+    top: 15vh;
+    width: 80vw;
 
     .menu-lateral-contenedor {
       border-radius: 0 map-get($borde-redondeado, '20') map-get($borde-redondeado, '20') 0;
@@ -28,6 +30,8 @@
       pointer-events: none;
       visibility: hidden;
       transition: all 0.3s ease-in-out;
+      max-height: 75vh;
+      overflow-y: auto;
     }
     
     &.abierto {
@@ -44,14 +48,9 @@
   }
 
   @include mediaquery('esc') {
-    position: sticky;
-    width: 100%;
     top: map-get($espaciado, '5');
-    height: calc(100vh - map-get($espaciado, '5'));
+    width: 100%;
 
-    .menu-lateral-boton {
-      display: none;
-    }
     .menu-lateral-contenedor {
       border-radius: 0;
       padding-top: map-get($espaciado, '5');
@@ -59,25 +58,31 @@
   }
 }
 
-.menu-lateral-boton {
-  background: var(--menu-lateral-fondo);
-  border-radius: map-get($borde-redondeado, '20');
-  margin-right: 2px;
-  margin-left: map-get($espaciado, '2');
-  display: flex;
-  padding: 0;
-  z-index: 3;
 
-  .pictograma,
-  [class^='pictograma-'],
-  [class*=' pictograma-'] {
-    align-self: flex-start;
-    padding: map-get($espaciado, '2');
+.menu-lateral-boton {
+  @include mediaquery('mov') {
+    background: var(--menu-lateral-fondo);
+    border-radius: map-get($borde-redondeado, '20');
+    margin-right: 2px;
+    margin-left: map-get($espaciado, '2');
+    display: flex;
+    padding: 0;
+    z-index: 3;
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      align-self: flex-start;
+      font-size: 1.35em;
+      padding: map-get($espaciado, '1');
+    }
+    &:active,
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
+    }
   }
-  &:active,
-  &:hover,
-  &:focus {
-    box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
+  @include mediaquery('esc') {
+    display: none;
   }
 }
 
@@ -85,7 +90,6 @@
   background: var(--menu-lateral-fondo);
   position: relative;
   width: 100%;
-  z-index: 2;
 
   * {
     margin-top: 0;
@@ -137,25 +141,50 @@
     li {
       a,
       button {
-        padding-left: map-get($espaciado, '5');
+        padding-left: map-get($espaciado, '3');
       }
       li {
         a,
         button {
-          padding-left: map-get($espaciado, '7');
+          padding-left: map-get($espaciado, '5');
         }
         li {
           a,
           button {
-            padding-left: map-get($espaciado, '9');
+            padding-left: map-get($espaciado, '7');
+          }
+        }
+      }
+    }
+  } 
+  
+  @include mediaquery('esc') {
+    ul, ol {
+      li {
+        a,
+        button {
+          padding-left: map-get($espaciado, '5');
+        }
+        li {
+          a,
+          button {
+            padding-left: map-get($espaciado, '7');
+          }
+          li {
+            a,
+            button {
+              padding-left: map-get($espaciado, '9');
+            }
           }
         }
       }
     }
   }
-  
 }
 
 .menu-lateral-fondo {
-  background: var(--menu-lateral-fondo);
+  position: relative;
+  @include mediaquery('esc') {
+    background: var(--menu-lateral-fondo);
+  }
 }
