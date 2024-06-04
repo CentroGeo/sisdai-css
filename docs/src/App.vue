@@ -320,6 +320,10 @@
       </div>
     </nav>
 
+    <main role="main" id="principal">
+      <RouterView />
+    </main>
+    
     <menu role="complementary" class="tmp-menu">
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
       <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
@@ -340,10 +344,6 @@
 
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>
-    <main role="main" id="principal">
-      <RouterView />
-    </main>
-
   </div>
 </template>
 
@@ -364,6 +364,7 @@
     align-items: baseline;
     z-index: 1111;
     gap: 8px;
+
   }
   .tmp-menu * {
     font-size: 14px;
