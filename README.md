@@ -58,14 +58,15 @@ Puedes importar la biblioteca de manera general en el archivo `main.js` de tu pr
 ```js
 // src/main.js
 
-import 'sisdai-css/src/sisdai.scss'
+import 'sisdai-css/dist/sisdai.min.css'
 
 ```
 
 Ó en el archivo o sección de estilos de tu proyecto
 
 ```css
-@import 'sisdai-css/src/sisdai.scss';
+
+@import 'sisdai-css/dist/sisdai.min.css';
 ```
 
 *Opcionalmente** se pueden importar las variables y mixins para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
@@ -151,6 +152,12 @@ Clona este repositorio utilizando **solo el protocolo HTTPS**, es decir.
 
 ```bash
 git clone https://codigo.conahcyt.mx/sisdai/sisdai-css.git
+```
+
+Entra a la carpeta del proyecto
+
+``` sh
+cd sisdai-css
 ```
 
 Instala las dependencias del proyecto
