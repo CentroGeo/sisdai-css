@@ -1,13 +1,13 @@
 <script setup>
 import { ref } from 'vue'
 import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
-const estaAbierto = ref(false)
+const estaAbierto = ref(true)
 </script>
 <template>
   <div>
 
     <div class="flex">
-      <div class="columna-4 menu-lateral-fondo">
+      <div class="columna-4 columna-1-mov menu-lateral-fondo">
 
         <nav class="menu-lateral" :class="{abierto: estaAbierto}">
 
@@ -32,7 +32,22 @@ const estaAbierto = ref(false)
               </li>
               <li>
                 <a href="#">
-                  hipervinculo
+                  hipervinculo 1
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 2
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 3
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 4
                 </a>
               </li>
               <li class="colapsable">
@@ -105,12 +120,57 @@ const estaAbierto = ref(false)
                   </ul>
                 </div>
               </li>
+              <li>
+                <a href="#">
+                  hipervinculo 5
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 6
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 7
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 8
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 9
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 10
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 11
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 12
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  hipervinculo 13
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
 
       </div>
-      <div class="columna-12">
+      <div class="columna-12 columna-7-mov">
         <div class="contenedor m-y-maximo">
           <div class="contenedor alineacion-izquierda ancho-lectura">
 
@@ -216,16 +276,41 @@ const estaAbierto = ref(false)
               color de fondo en la columna en donde se encuentre el menu para que en la vista de escritorio se complete visualmente
               la sección aunque el menu tenga poca altura. 
             </p>
+            
             <EjemploCodigoVertical
               :tiene_ejemplo="false"
               html='
-              <div class="columna-4 menu-lateral-fondo">
+              <div class="columna-4 columna-1-mov menu-lateral-fondo">
   
                 <nav class="menu-lateral">
   
                   <!-- contenido del menu -->
   
                 </nav>
+              </div>
+            '/>
+
+            <p>
+              Es importante notar que para el <code>menu-lateral</code> en vista de celular, se mantiene una columna;
+              misma que debe restarse de la sección del contenido que aparezca en la vista, como se muestra a continuación.
+            </p>
+            <EjemploCodigoVertical
+              :tiene_ejemplo="false"
+              html='
+              <div class="columna-4 columna-1-mov menu-lateral-fondo">
+  
+                <nav class="menu-lateral">
+  
+                  <!-- contenido del menu -->
+  
+                </nav>
+
+                <div class="columna-12 columna-7-mov">
+                  
+                  <!-- contenido de la página -->
+
+                </div>
+                
               </div>
             '/>
           </div>
