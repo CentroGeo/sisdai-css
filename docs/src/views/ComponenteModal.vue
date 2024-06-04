@@ -66,11 +66,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 // el modal tiene su backdrop definido
   .ej-backdrop {
     background-color: var(--dialogo-fondo);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1; // se pone z-index bajisimo para poder seguir navegando normal y porder ver el ejemplo
   }
 </style>
