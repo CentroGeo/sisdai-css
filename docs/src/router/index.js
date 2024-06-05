@@ -203,6 +203,11 @@ const router = createRouter({
           component: () => import('../views/ComponenteIndiceContenido.vue')
         },
         {
+          path: 'info-despliegue',
+          name: 'info-despliegue',
+          component: () => import('../views/ComponenteInfoDeDespliegu.vue')
+        },
+        {
           path: 'globo-informacion',
           name: 'globo-informacion',
           component: () => import('../views/ComponenteGloboDeInformacion.vue')
