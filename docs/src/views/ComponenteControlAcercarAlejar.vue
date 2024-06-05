@@ -11,12 +11,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
         Este componente se utiliza para ajustar el nivel de acercamiento en un mapa.
       </p>
-      <p>
-        <b>Nota:</b> para mostrar el ejemplo se utiliza un campo <code lang="en">input type="range"</code>
-        que debe ser reemplazado por el componente <code>SisdaiControlDeslizante</code>,
-        al que se le debe agregar el nombre de la clase y el atributo <code>aria-label</code> 
-        del campo, como se muestra a continuación.
-      </p>
       
       <EjemploCodigoVertical
         html='

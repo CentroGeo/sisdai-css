@@ -15,12 +15,12 @@
 
 dialog::backdrop {
   background-color: var(--dialogo-fondo);
-  
 }
 
 dialog {
   position: absolute;
   z-index: 999999;
+
   &.modal {
     position: fixed;
     top: 0;
@@ -32,41 +32,28 @@ dialog {
     color: var(--tipografia-color);
     border-radius: map-get($borde-redondeado, '20');
     border: none;
-    
     padding: map-get($espaciado, '3');
-    margin: map-get($espaciado, 'maximo') auto;
+    margin: map-get($espaciado, '8') auto;
     width: calc(100% - map-get($espaciado, '5'));
+    max-width: 462px;
 
     @include mediaquery('esc') {
-      min-width: 462px;
-      max-width: 1110px;
+      margin: map-get($espaciado, 'maximo') auto;
     }
-
+    
     &.modal-chico {
-      @include mediaquery('esc') {
-        width: 462px;
-      }
+      max-width: 462px;
     }
     &.modal-grande {
-      @include mediaquery('mov') {
-        top: auto;
-        margin: auto;
-        border-bottom-right-radius: 0;
-        border-bottom-left-radius: 0;
-        width: 100%;
-      }
+      max-width: 1110px;
     }
-    &.modal-pantalla-completa {
-      width: 100%;
-      max-width: 100%;
-      height: 100%;
-      max-height: 100%;
-      margin: 0px;
-      border-radius: 0px;
-    }
-
+   
     .modal-contenedor {
       position: relative;
+
+      .modal-cabecera {
+        margin-bottom: map-get($espaciado, '3');
+      }
       
       .modal-cuerpo {
         > :first-child {
@@ -75,30 +62,24 @@ dialog {
         > :last-child {
           margin-bottom: 0;
         }
+        max-height: calc(80vh - (map-get($espaciado, '8')*2));
+        overflow-y: auto;
+        @include mediaquery('esc') {
+          max-height: calc(80vh - (map-get($espaciado, 'maximo')*2));
+        }
       }
 
       .modal-pie {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: row-reverse;
         gap: map-get($espaciado, '3');
         margin-top: map-get($espaciado, '5');
-
-        > button,
-        > .boton {
-          flex: 1 0;
-          justify-content: center;
-        }
-        @include mediaquery('esc') {
-          > button,
-          > .boton {
-            flex: inherit;
-          }
-        }
       }
 
       .modal-titulo {
         @extend .titulo-base;
         font-size: 1.125rem; //18px
+        margin: 0;
         padding-right: map-get($espaciado, '5'); //para dejarle espacio al boton cerrar
         @include mediaquery('esc') {
           font-size: 1.5rem; // 24px
@@ -107,10 +88,17 @@ dialog {
 
       .modal-cerrar {
         position: absolute;
-        top: 0;
+        top: -4px;
         right: 0;
         color: var(--tipografia-color);
+        @include mediaquery('esc') {
+          top: 0;
+        }
       }
     }
   }
+}
+
+body.overflow-hidden {
+  overflow: hidden;
 }
