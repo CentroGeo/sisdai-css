@@ -1,3 +1,6 @@
+<script setup>
+import pkg from '../../../package.json'
+</script>
 <template>
   <div class="contenedor ancho-lectura m-y-maximo">
     <h1>sisdai-css</h1>
@@ -7,12 +10,16 @@
     </p>
     <p class="parrafo-texto-alto">
       Se encuentra alojada de manera provisional dentro del proyecto local. Es decir sólo se puede acceder a ella
-      siguiendo las instrucciones de instalación de este proyecto.
+      siguiendo las instrucciones de instalación descritas en el README.md de este proyecto.
     </p>
     <p class="parrafo-texto-alto">
-      <a href="https://codigo.conahcyt.mx/sisdai/sisdai-css" target="_blank" rel="noopener">
+      <a 
+        :href="`https://codigo.conahcyt.mx/sisdai/sisdai-css/-/tree/v${pkg.version}`"
+        target="_blank" 
+        rel="noref noopener"
+        >
         <span class="pictograma-social-github"></span>
-        sisdai-css
+        sisdai-css#{{ pkg.version }}
       </a>
     </p>
   </div>

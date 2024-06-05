@@ -13,21 +13,29 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-@import './audio';
-@import './campo-busqueda';
-@import './control-acercar-alejar';
-@import './boton-flotante';
-@import './globo-informacion';
-@import './modal';
-@import './menu-accesibilidad';
-@import './menu-lateral';
-@import './indice-contenido';
-@import './colapsable';
-@import './informacion-despliegue';
+dl.informacion-despliegue {
+  position: fixed;
+  left: 0;
+  // right: 0;
+  border-radius: 4px;
+  bottom: 0;
+  z-index: 99999;
+  background: #00000099;
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+  padding: 4px;
+  font-size: 10px;
+  line-height: 1em;
+  color: #ffffff;
 
-@import './navegacion';
-@import './navegacion-hipervinculo';
-@import './navegacion-boton';
+  dt,
+  dd {
+    margin: 0;
+    display: inline-block;
+  }
 
-@import './navegacion-institucional';
-@import './piepagina-institucional';
+  dd:not(:last-child) {
+    padding-right: 8px;
+  }
+}

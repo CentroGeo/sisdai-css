@@ -8410,6 +8410,30 @@ body.overflow-hidden {
   height: auto;
 }
 
+dl.informacion-despliegue {
+  position: fixed;
+  left: 0;
+  border-radius: 4px;
+  bottom: 0;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+  padding: 4px;
+  font-size: 10px;
+  line-height: 1em;
+  color: #ffffff;
+}
+dl.informacion-despliegue dt,
+dl.informacion-despliegue dd {
+  margin: 0;
+  display: inline-block;
+}
+dl.informacion-despliegue dd:not(:last-child) {
+  padding-right: 8px;
+}
+
 #app {
   overflow: clip;
 }

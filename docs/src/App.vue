@@ -1,6 +1,7 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, ref, watch, computed } from 'vue'
+  import pkg from '../../package.json'
   
   const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
@@ -219,7 +220,6 @@
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li><RouterLink class="nav-hipervinculo" to="/" exact>Inicio</RouterLink></li>
-
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')">Accesibilidad</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
@@ -262,9 +262,9 @@
             </li>
 
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')">Elementos Compuestos</button>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')">Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos Compuestos</button></li>
+                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas <span class="etiqueta">pre</span></RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
@@ -287,6 +287,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/info-despliegue">Información de despliegue</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
@@ -325,6 +326,7 @@
     </main>
     
     <menu role="complementary" class="tmp-menu">
+      
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
       <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
@@ -343,32 +345,37 @@
       </button>
 
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
+
+      <span class="info">sisdai-css#v{{ pkg.version }}</span>
     </menu>
   </div>
 </template>
 
 <style lang="scss" scoped>
   .tmp-menu {
-    background: #fff9;
-    backdrop-filter: blur(10px);
-    color: #00f;
+    background: #0002;
+    backdrop-filter: blur(5px);
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 4px;
+    padding: 8px;
     position: fixed;
     top: inherit;
     bottom: 0;
     left: 0;
     right: 0;
     align-items: baseline;
-    z-index: 1111;
+    z-index: 999;
     gap: 8px;
-
+    // display: none;
   }
   .tmp-menu * {
-    font-size: 14px;
-    line-height: 14px;
-    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px;
+  }
+  .tmp-menu .info {
+    flex: 1;
+    text-align: right;
   }
 </style>
