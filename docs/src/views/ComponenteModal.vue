@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
 const modalPredeterminado = ref()
@@ -22,6 +22,21 @@ function cerrarModalGrande() {
   modalGrande.value.close()
   document.querySelector('body').classList.remove('overflow-hidden')
 }
+
+const reestablecerModalCerrado = ev => {
+  if (ev.key === 'Escape') {
+    document.querySelector('body').classList.remove('overflow-hidden')
+    modalPredeterminado.value.close()
+  }
+}
+
+onMounted(() => {
+window.addEventListener('keydown', reestablecerModalCerrado)
+})
+
+onUnmounted(() => {
+window.removeEventListener('keydown', reestablecerModalCerrado)
+})
 </script>
 
 <template>
