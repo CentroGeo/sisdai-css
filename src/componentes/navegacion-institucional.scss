@@ -16,7 +16,7 @@
 .navegacion-gobmx {
   background-color: var(--color-gobmx-oscuro-1);
   box-shadow: none;
-  .nav-menu-contedor {
+  .nav-menu-contenedor {
     background-color: var(--color-gobmx-oscuro-1);
     box-shadow: 0 8px 8px -4px #0002;
     border-top: 1px solid var(--color-gobmx-claro-1);
@@ -45,14 +45,12 @@
       }
     }
   }
-  .nav-hiperviculo-logo {
-    .nav-logo {
-      width: 128px;
-      height: 38px;
-    }
+  .nav-logo {
+    width: 128px;
+    height: 38px;
   }
-  @include mediaquery('nav') {
-    .nav-menu-contedor {
+  &.navegacion-extendida {
+    .nav-menu-contenedor {
       border-top: none;
     }
   }
@@ -61,7 +59,7 @@
 .navegacion-conahcyt {
   background: var(--navegacion-conahcyt-fondo);
   box-shadow: 0 5px 5px var(--navegacion-conahcyt-sombra);
-  .nav-menu-contedor {
+  .nav-menu-contenedor {
     background-color: var(--navegacion-conahcyt-fondo);
   }
   .nav-hipervinculo {
@@ -88,11 +86,9 @@
       color: var(--navegacion-conahcyt-color);
     }
   }
-  .nav-hiperviculo-logo {
-    .nav-logo {
-      width: 130px;
-      height: 38px;
-    }
+  .nav-logo {
+    width: 130px;
+    height: 38px;
   }
   .nav-boton-menu {
     .nav-icono-menu {

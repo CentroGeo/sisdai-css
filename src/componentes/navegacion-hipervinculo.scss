@@ -71,25 +71,21 @@
   display: block;
 }
 
-.navegacion:not(.navegacion-movil-forzada) {
+.navegacion.navegacion-extendida {
   .nav-hipervinculo {
-    @include mediaquery('nav') {
-      display: inline-flex;
-      white-space: nowrap;
-    }
+    display: inline-flex;
+    white-space: nowrap;
   }
 }
 
 .nav-hiperviculo-logo {
+  flex-shrink: 0;
   display: inline-flex;
   padding: map-get($espaciado, 'minimo') 0;
   margin: 0;
   &:focus-visible {
     outline: none;
     box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
-  }
-  .nav-logo {
-    height: 38px;
   }
 }
 

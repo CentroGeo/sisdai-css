@@ -24,11 +24,6 @@
       @content;
     }
   }
-  @else if $breakpoint == 'nav' {
-    @media screen and (min-width: $navegacion-breakpoint) {
-      @content;
-    }
-  }
 }
 
 @mixin ancho-lectura {

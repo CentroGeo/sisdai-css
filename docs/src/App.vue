@@ -1,6 +1,6 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  import { onBeforeMount, onMounted, ref, watch, computed } from 'vue'
+  import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
   import pkg from '../../package.json'
   
   const isA11yOscura = ref(null)
@@ -11,11 +11,13 @@
   const showGob = ref(null)
   const showMenu = ref(null)
   const showSubmenu = ref('')
+  // navegacion
+  const esColapsable = ref(false)
+  const anchoNavegacion = ref(1400)
 
   isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
   showSubmenu.value = false
   
-
   function toggleA11yTypography() {
     isA11yTypography.value = !isA11yTypography.value
   }
@@ -26,6 +28,7 @@
   function toggleA11yLink() {
     isA11yUnderline.value = !isA11yUnderline.value
   }
+
   function toggleGob() {
     showMenu.value = false
     showGob.value = !showGob.value
@@ -36,8 +39,23 @@
     showMenu.value = !showMenu.value
   }
   function toggleSubmenu(submenu) {
-    showSubmenu.value = submenu
+    if(showSubmenu.value == submenu) {
+      showSubmenu.value = ''
+    } else {
+      showSubmenu.value = submenu
+    }
   }
+  function mostrarSubmenu(submenu) {
+    if(esColapsable.value == false) {
+      showSubmenu.value = submenu
+    }
+  }
+  function ocultarSumbenu() {
+    if(esColapsable.value == false) {
+      showSubmenu.value = ''
+    }
+  }
+
   function upFontSize() {
     fontSize.value ++
     let up_size = `${fontSize.value}px`
@@ -138,6 +156,10 @@
     }
     return nombres[tema.value]
   })
+
+  function validarNavegacionColapsable() {
+    esColapsable.value = (anchoNavegacion.value > window.innerWidth) ? true : false
+  }
    
   onBeforeMount(() => {
     window.matchMedia('(prefers-color-scheme: dark)')
@@ -148,6 +170,14 @@
     setTemaEnDocumentoYLocalStorage()
     window.matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change',setTemaEnDocumentoYLocalStorage)
+
+    validarNavegacionColapsable()
+    window.addEventListener('resize', validarNavegacionColapsable)
+  })
+
+  onUnmounted(() => {
+    window.removeEventListener('change', setTemaEnDocumentoYLocalStorage)
+    window.removeEventListener('resize', validarNavegacionColapsable)
   })
 
   watch([perfil, tema], () => {
@@ -178,7 +208,7 @@
 <template>
   <div>
     <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
-    <nav class="navegacion navegacion-gobmx">
+    <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
           <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México.">
@@ -187,7 +217,7 @@
           <span class="nav-icono-menu"></span>
         </button>
       </div>
-      <div class="nav-menu-contedor" :class="{ 'abierto': showGob }">
+      <div class="nav-menu-contenedor" :class="{ 'abierto': showGob }">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li><a href="https://coronavirus.gob.mx/" class="nav-hipervinculo" target="_blank" rel="noopener">Información sobre COVID-19</a></li>
@@ -204,26 +234,26 @@
       </div>
     </nav>
 
-    <nav class="navegacion navegacion-conahcyt navegacion-pegada ">
+    <nav class="navegacion navegacion-conahcyt navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img class="nav-logo invertir" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
         </a>
-        <button @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
+        <button v-if="esColapsable" @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>
         </button>
-        <div class="nav-informacion">
+        <div v-if="esColapsable" class="nav-informacion">
           Sección: <b>{{ $route.name }}</b>
         </div>
       </div>
-      <div class="nav-menu-contedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }">
+      <div class="nav-menu-contenedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
-            <li><RouterLink class="nav-hipervinculo" to="/" exact>Inicio</RouterLink></li>
-            <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')">Accesibilidad</button>
+            <li><RouterLink class="nav-hipervinculo" to="/" exact @mouseover="mostrarSubmenu('')">Inicio</RouterLink></li>
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')" @mouseover="mostrarSubmenu('accesibilidad')">Accesibilidad</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/cambio-fuente">Cambio de fuente</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li>
@@ -234,9 +264,9 @@
             </li>            
             
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')">Fundamentos</button>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')" @mouseover="mostrarSubmenu('fundamentos')">Fundamentos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
@@ -247,9 +277,9 @@
             </li>
 
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('elementos')">Elementos</button>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('elementos')" @mouseover="mostrarSubmenu('elementos')">Elementos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
@@ -262,9 +292,9 @@
             </li>
 
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')">Compuestos</button>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')" @mouseover="mostrarSubmenu('elementoscompuestos')">Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas <span class="etiqueta">pre</span></RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
@@ -276,9 +306,9 @@
             </li>
 
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')">Componentes</button>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')" @mouseover="mostrarSubmenu('componentes')">Componentes</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Busqueda</RouterLink></li>
@@ -297,9 +327,9 @@
             </li>
 
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')">Visualizaciones</button>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')" @mouseover="mostrarSubmenu('visualizaciones')">Visualizaciones</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontenedor">Contenedor</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
@@ -307,9 +337,9 @@
             </li>
 
             <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')">Auxiliares</button>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')" @mouseover="mostrarSubmenu('auxiliares')">Auxiliares</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
-                <li><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/bordes">Bordes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
