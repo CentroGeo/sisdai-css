@@ -8168,7 +8168,8 @@ body.overflow-hidden {
   .menu-lateral {
     margin-top: 40px;
     top: 15vh;
-    width: 80vw;
+    width: 55px;
+    transition: all 0.2s linear;
   }
   .menu-lateral .menu-lateral-contenedor {
     border-radius: 0 20px 20px 0;
@@ -8177,9 +8178,13 @@ body.overflow-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
-    transition: all 0.3s ease-in-out;
+    width: 100%;
     max-height: 75vh;
     overflow-y: auto;
+    transition: all 0.5s ease-in-out;
+  }
+  .menu-lateral.abierto {
+    width: 80vw;
   }
   .menu-lateral.abierto .menu-lateral-boton {
     border-radius: 20px 0 0 20px;

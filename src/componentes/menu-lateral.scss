@@ -18,9 +18,11 @@
   z-index: 999;
 
   @include mediaquery('mov') {
+
     margin-top: map-get($espaciado, '5');
     top: 15vh;
-    width: 80vw;
+    width: 55px;
+    transition: all 0.2s linear;
 
     .menu-lateral-contenedor {
       border-radius: 0 map-get($borde-redondeado, '20') map-get($borde-redondeado, '20') 0;
@@ -29,12 +31,14 @@
       opacity: 0;
       pointer-events: none;
       visibility: hidden;
-      transition: all 0.3s ease-in-out;
+      width: 100%;
       max-height: 75vh;
       overflow-y: auto;
+      transition: all 0.5s ease-in-out;
     }
     
     &.abierto {
+      width: 80vw;
       .menu-lateral-boton {
         border-radius: map-get($borde-redondeado, '20') 0 0 map-get($borde-redondeado, '20');
       }
