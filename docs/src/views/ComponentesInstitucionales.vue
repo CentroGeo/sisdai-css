@@ -37,7 +37,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span class="nav-icono-menu"></span>
         </button>
       </div>
-      <div class="nav-menu-contedor"> <!-- alternar la clase abierto -->
+      <div class="nav-menu-contenedor"> <!-- alternar la clase abierto -->
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li>
@@ -66,7 +66,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               <span class="nav-icono-menu"></span>
             </button>
           </div>
-          <div class="nav-menu-contedor"> <!-- alternar la clase abierto -->
+          <div class="nav-menu-contenedor"> <!-- alternar la clase abierto -->
             <div class="nav-menu-principal">
               <ul class="nav-menu">
                 <li>
@@ -104,7 +104,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </button>
         <div class="nav-informacion">Nombre de la sección actual</div>
       </div>
-      <div class="nav-menu-contedor"> <!-- alternar la clase abierto -->
+      <div class="nav-menu-contenedor"> <!-- alternar la clase abierto -->
         <div class="nav-menu-complementario">
           <a href="#" class="nav-hipervinculo">Menú complementario</a>
         </div>
@@ -113,7 +113,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <li>
               <a href="#" class="nav-hipervinculo">Menú</a>
             </li>
-            <li class="nav-contenedor-submenu">
+            <li>
               <button class="nav-boton-submenu">Menú con submenu</button>
               <ul class="nav-submenu">
                 <li>
@@ -148,7 +148,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </button>
             <div class="nav-informacion">Nombre de la sección actual</div>
           </div>
-          <div class="nav-menu-contedor"> <!-- alternar la clase abierto -->
+          <div class="nav-menu-contenedor"> <!-- alternar la clase abierto -->
             <div class="nav-menu-complementario">
               <a href="#" class="nav-hipervinculo">Menú complementario</a>
             </div>
@@ -157,7 +157,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <li>
                   <a href="#" class="nav-hipervinculo">Menú</a>
                 </li>
-                <li class="nav-contenedor-submenu">
+                <li>
                   <button class="nav-boton-submenu">Menú con submenu</button>
                   <ul class="nav-submenu">
                     <li>

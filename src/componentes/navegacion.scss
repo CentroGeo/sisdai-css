@@ -25,6 +25,12 @@
   z-index: 9999;
   padding-left: map-get($contenedores, 'mov', 'margen-interior');
   padding-right: map-get($contenedores, 'mov', 'margen-interior');
+  
+  @include mediaquery('esc') {
+    padding-left: map-get($contenedores, 'esc', 'margen-interior');
+    padding-right: map-get($contenedores, 'esc', 'margen-interior');
+  }
+
   &.navegacion-pegada {
     position: sticky;
     top: 0;
@@ -40,6 +46,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
   .nav-informacion {
     background: var(--submenu-lateral-fondo-colapsable);
     color: var(--menu-lateral-color);
@@ -48,9 +55,16 @@
     margin-left: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
     margin-right: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
     flex: 1 0 calc(100% - map-get($contenedores, 'mov', 'margen-interior') * 2);
+
+    @include mediaquery('esc') {
+      display: none;
+    }
   }
 }
-.nav-menu-contedor {
+.nav-logo {
+  height: 38px;
+}
+.nav-menu-contenedor {
   background-color: var(--navegacion-fondo);
   box-shadow: var(--navegacion-sombra);
   border-radius: var(--navegacion-redondeado);
@@ -95,12 +109,17 @@
   }
 }
 
-@include mediaquery('nav') {
-  .navegacion:not(.navegacion-movil-forzada) {
+
+  .navegacion.navegacion-extendida {
     display: flex;
     align-items: center;
-    padding-left: map-get($contenedores, 'esc', 'margen-interior');
-    padding-right: map-get($contenedores, 'esc', 'margen-interior');
+    padding-left: map-get($contenedores, 'mov', 'margen-interior');
+    padding-right: map-get($contenedores, 'mov', 'margen-interior');
+    
+    @include mediaquery('esc') {
+      padding-left: map-get($contenedores, 'esc', 'margen-interior');
+      padding-right: map-get($contenedores, 'esc', 'margen-interior');
+    }
    
     .nav-contenedor-identidad {
       display: flex;
@@ -110,7 +129,7 @@
         display: none;
       }
     }
-    .nav-menu-contedor {
+    .nav-menu-contenedor {
       background-color: transparent;
       box-shadow: none;
       border-radius: none;
@@ -141,16 +160,6 @@
       align-items: center;
       li {
         position: relative;
-        &.nav-contenedor-submenu {
-          &:hover,
-          &:focus,
-          &:focus-within {
-            > .nav-submenu {
-              opacity: 1;
-              pointer-events: inherit;
-            }
-          }
-        }
       }
     }
     .nav-submenu {
@@ -166,19 +175,8 @@
       }
       &.abierto {
         right: 0;
+        opacity: 1;
+        pointer-events: inherit;
       }
     }
   }
-  
-  .navegacion.navegacion-movil-forzada {
-    padding-left: map-get($contenedores, 'esc', 'margen-interior');
-    padding-right: map-get($contenedores, 'esc', 'margen-interior');
-    
-    .nav-informacion {
-      padding: map-get($espaciado, 'minimo') map-get($contenedores, 'esc', 'margen-interior');
-      margin-left: calc(map-get($contenedores, 'esc', 'margen-interior') * -1);
-      margin-right: calc(map-get($contenedores, 'esc', 'margen-interior') * -1);
-      flex: 1 0 calc(100% - map-get($contenedores, 'mov', 'margen-interior') * 2);
-    }
-  }
-}

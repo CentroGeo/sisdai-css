@@ -148,13 +148,13 @@ body[data-dark-theme-sisdai='true'] {
   --navegacion-conahcyt-fondo-hover: #003384;
 
   // Logo de conahcyt
-  .nav-hiperviculo-logo {
-		.nav-logo {
-      &.invertir {
-        filter: brightness(0) invert(1);
-      }
-		}
-	}
+  // .nav-hiperviculo-logo {
+	// 	.nav-logo {
+  //     &.invertir {
+  //       filter: brightness(0) invert(1);
+  //     }
+	// 	}
+	// }
   
   // Navegacion secundaria
   --menu-lateral-color: #FFFFFF;
@@ -351,13 +351,13 @@ body[data-dark-theme-eni='true'] {
   --navegacion-conahcyt-fondo-hover: #003384;
 
   // Logo de conahcyt
-  .nav-hiperviculo-logo {
-		.nav-logo {
-      &.invertir {
-        filter: brightness(0) invert(1);
-      }
-		}
-	}
+  // .nav-hiperviculo-logo {
+	// 	.nav-logo {
+  //     &.invertir {
+  //       filter: brightness(0) invert(1);
+  //     }
+	// 	}
+	// }
   
   // Navegacion secundaria
   --menu-lateral-color: #FFFFFF;
@@ -565,13 +565,13 @@ body[data-dark-theme-gema='true'] {
   
 
   // Logo de conahcyt
-  .nav-hiperviculo-logo {
-		.nav-logo {
-      &.invertir {
-        filter: brightness(0) invert(1);
-      }
-		}
-	}
+  // .nav-hiperviculo-logo {
+	// 	.nav-logo {
+  //     &.invertir {
+  //       filter: brightness(0) invert(1);
+  //     }
+	// 	}
+	// }
   
 }
 
@@ -588,7 +588,7 @@ body[data-dark-theme-gema='true'] {
   img.invertir,
   svg.invertir,
   .color-invertir {
-    filter: brightness(0) invert(1);
+    filter: invert(1) brightness(100);
   }
   // Contenedores documentación retícula
   .conahcyt-fondo-claro-1 {
