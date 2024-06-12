@@ -15,9 +15,10 @@
 
 
 .navegacion .nav-boton-menu {
-  background: transparent;
+  background-color: transparent;
   border: none;
   box-shadow: none;
+  color: var(--navegacion-color);
   display: inline-flex;
   width: 46px;
   height: 46px;
@@ -26,30 +27,36 @@
   border: none;
   border-radius: 0;
   justify-content: center;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   &:hover,
   &:focus {
-    background: transparent;
-    border: none;
-    box-shadow: none;
+    background-color: var(--navegacion-fondo-hover);
+    box-shadow: var(--navegacion-sombra-hover);
+    color: var(--navegacion-color-hover);
+    z-index: 1;
+  }
+  &:focus-visible {
+    box-shadow: 
+      inset 0 0 0 1px var(--boton-secundario-focus-borde),
+      0 0 8px var(--boton-secundario-focus-sombra);
   }
   .nav-icono-menu {
-    background: var(--navegacion-color);
+    background: currentColor;
     width: 20px;
     height: 1px;
     display: block;
-    transition: all 0.3s ease-in-out;
+    transition: width 0.2s ease-in-out;
     position: absolute;
     top: 22px;
     &::after,
     &::before {
-      background: var(--navegacion-color);
+      background: currentColor;
       content: '';
       width: 20px;
       height: 1px;
       display: block;
       position: absolute;
-      transition: all 0.3s ease-in-out;
+      transition: transform 0.2s ease-in-out;
     }
     &::after {
       top: 5px;
@@ -91,7 +98,7 @@
   }
   &:not(:disabled):focus-visible {
     box-shadow: 
-    inset 0 0 0 1px var(--boton-secundario-focus-borde), // border-color: var(--boton-secundario-focus-borde);
+    inset 0 0 0 1px var(--boton-secundario-focus-borde),
     0 0 8px var(--boton-secundario-focus-sombra);
   }
 }

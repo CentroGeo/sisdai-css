@@ -8677,9 +8677,10 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 
 .navegacion .nav-boton-menu {
-  background: transparent;
+  background-color: transparent;
   border: none;
   box-shadow: none;
+  color: var(--navegacion-color);
   display: inline-flex;
   width: 46px;
   height: 46px;
@@ -8688,30 +8689,34 @@ dl.informacion-despliegue dd:not(:last-child) {
   border: none;
   border-radius: 0;
   justify-content: center;
-  transition: all 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .navegacion .nav-boton-menu:hover, .navegacion .nav-boton-menu:focus {
-  background: transparent;
-  border: none;
-  box-shadow: none;
+  background-color: var(--navegacion-fondo-hover);
+  box-shadow: var(--navegacion-sombra-hover);
+  color: var(--navegacion-color-hover);
+  z-index: 1;
+}
+.navegacion .nav-boton-menu:focus-visible {
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
 }
 .navegacion .nav-boton-menu .nav-icono-menu {
-  background: var(--navegacion-color);
+  background: currentColor;
   width: 20px;
   height: 1px;
   display: block;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.2s ease-in-out;
   position: absolute;
   top: 22px;
 }
 .navegacion .nav-boton-menu .nav-icono-menu::after, .navegacion .nav-boton-menu .nav-icono-menu::before {
-  background: var(--navegacion-color);
+  background: currentColor;
   content: "";
   width: 20px;
   height: 1px;
   display: block;
   position: absolute;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 .navegacion .nav-boton-menu .nav-icono-menu::after {
   top: 5px;
@@ -8824,11 +8829,13 @@ dl.informacion-despliegue dd:not(:last-child) {
   box-shadow: none;
   color: var(--color-gobmx-claro-2);
 }
-.navegacion-gobmx .nav-boton-menu .nav-icono-menu {
-  background: #fff;
+.navegacion-gobmx .nav-boton-menu {
+  background-color: var(--color-gobmx-oscuro-1);
+  color: var(--color-gobmx-claro-1);
 }
-.navegacion-gobmx .nav-boton-menu .nav-icono-menu::after, .navegacion-gobmx .nav-boton-menu .nav-icono-menu::before {
-  background: #fff;
+.navegacion-gobmx .nav-boton-menu:hover, .navegacion-gobmx .nav-boton-menu:focus {
+  background-color: var(--color-gobmx-oscuro-1);
+  color: var(--color-gobmx-claro-2);
 }
 .navegacion-gobmx .nav-logo {
   width: 128px;
@@ -8867,11 +8874,13 @@ dl.informacion-despliegue dd:not(:last-child) {
   width: 130px;
   height: 38px;
 }
-.navegacion-conahcyt .nav-boton-menu .nav-icono-menu {
-  background: var(--navegacion-conahcyt-fondo-icono);
+.navegacion-conahcyt .nav-boton-menu {
+  background-color: var(--navegacion-conahcyt-fondo);
+  color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-boton-menu .nav-icono-menu::after, .navegacion-conahcyt .nav-boton-menu .nav-icono-menu::before {
-  background: var(--navegacion-conahcyt-fondo-icono);
+.navegacion-conahcyt .nav-boton-menu:hover, .navegacion-conahcyt .nav-boton-menu:focus {
+  background-color: var(--navegacion-conahcyt-fondo-hover);
+  color: var(--navegacion-conahcyt-color);
 }
 .navegacion-conahcyt .nav-boton-submenu, .navegacion-conahcyt .nav-boton-regresar {
   background: transparent;

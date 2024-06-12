@@ -63,9 +63,9 @@
     &:focus-visible {
       outline: none;
       box-shadow: 
-      inset 0 0 0 1px var(--boton-secundario-focus-borde),
-      var(--navegacion-sombra-active),
-      0 0 8px var(--boton-secundario-focus-sombra);
+        inset 0 0 0 1px var(--boton-secundario-focus-borde),
+        var(--navegacion-sombra-active),
+        0 0 8px var(--boton-secundario-focus-sombra);
     }
   }
   display: block;

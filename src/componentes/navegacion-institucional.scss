@@ -37,12 +37,12 @@
     }
   }
   .nav-boton-menu {
-    .nav-icono-menu {
-      background: #fff;
-      &::after,
-      &::before {
-        background: #fff;
-      }
+    background-color: var(--color-gobmx-oscuro-1);
+    color: var(--color-gobmx-claro-1);
+    &:hover,
+    &:focus {
+      background-color: var(--color-gobmx-oscuro-1);
+      color: var(--color-gobmx-claro-2);
     }
   }
   .nav-logo {
@@ -91,12 +91,12 @@
     height: 38px;
   }
   .nav-boton-menu {
-    .nav-icono-menu {
-      background: var(--navegacion-conahcyt-fondo-icono);
-      &::after,
-      &::before {
-        background: var(--navegacion-conahcyt-fondo-icono);
-      }
+    background-color: var(--navegacion-conahcyt-fondo);
+    color: var(--navegacion-conahcyt-color);
+    &:hover,
+    &:focus {
+      background-color: var(--navegacion-conahcyt-fondo-hover);
+      color: var(--navegacion-conahcyt-color);
     }
   }
   .nav-boton-submenu {
