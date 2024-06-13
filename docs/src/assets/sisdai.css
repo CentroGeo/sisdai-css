@@ -6584,16 +6584,16 @@ table thead {
   font-weight: 600;
 }
 table thead tr {
-  border-bottom: 1px solid var(--borde-color-2);
+  border-bottom: 1px solid var(--tabla-borde);
 }
 table tbody tr:nth-child(odd) {
-  background-color: var(--tabla-fondo-impar);
+  background-color: var(--tabla-fila-impar-fondo);
 }
 table tfoot {
   font-weight: 600;
 }
 table tfoot tr {
-  background-color: var(--tabla-fondo-notas);
+  background-color: var(--tabla-fila-pie-fondo);
 }
 
 .titulo-tabla {
@@ -10127,6 +10127,11 @@ body[data-dark-theme-eni=true] {
   --texto-inverso: var(--color-neutro-0);
   --estado-enfoque: var(--color-interactivo-3);
   --campo-fondo: var(--fondo);
+  --tabla-fila-par-fondo: var(--color-secundario-12);
+  --tabla-fila-impar-fondo: var(--color-secundario-10);
+  --tabla-fila-pie-fondo: var(--color-secundario-8);
+  --tabla-borde: var(--color-secundario-6);
+  --tabla-color: var(--texto-primario);
   --boton-primario-fondo: var(--color-primario-2);
   --boton-primario-borde: var(--color-primario-2);
   --boton-primario-color: var(--color-secundario-12);
@@ -10198,6 +10203,11 @@ body[data-light-theme-eni=true] {
   --texto-inverso: var(--color-neutro-0);
   --estado-enfoque: var(--color-interactivo-1);
   --campo-fondo: var(--fondo);
+  --tabla-fila-par-fondo: var(--color-neutro-0);
+  --tabla-fila-impar-fondo: var(--color-secundario-2);
+  --tabla-fila-pie-fondo: var(--color-secundario-4);
+  --tabla-borde: var(--color-neutro-4);
+  --tabla-color: var(--texto-primario);
   --boton-primario-fondo: var(--color-primario-3);
   --boton-primario-borde: var(--color-primario-3);
   --boton-primario-color: var(--color-neutro-0);

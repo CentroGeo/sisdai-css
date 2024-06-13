@@ -31,18 +31,18 @@ table {
   thead {
     font-weight: 600;
     tr {
-      border-bottom: 1px solid var(--borde-color-2);
+      border-bottom: 1px solid var(--tabla-borde);
     }
   }
   tbody {
     tr:nth-child(odd) {
-      background-color: var(--tabla-fondo-impar);
+      background-color: var(--tabla-fila-impar-fondo);
     }
   }
   tfoot {
     font-weight: 600;
     tr {
-      background-color: var(--tabla-fondo-notas);
+      background-color: var(--tabla-fila-pie-fondo);
     }
   }
 }
