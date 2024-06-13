@@ -42,14 +42,15 @@ a,
   }
   &:hover {
     background-color: transparent;
-    color: var(--hipervinculo-hover-color);
+    box-shadow: 0 0 2px var(--hipervinculo-cursor-sombra);
+    color: var(--hipervinculo-cursor-color);
     text-decoration: underline;
     box-shadow: none;
   }
   &:focus-visible {
     background-color: transparent;
-    color: var(--hipervinculo-focus-color);
-    outline: 2px dashed var(--hipervinculo-focus-sombra);
+    color: var(--hipervinculo-enfoque-color);
+    outline: 2px dashed var(--hipervinculo-enfoque-sombra);
     box-shadow: none;
   }
 
@@ -76,14 +77,14 @@ a,
   }
   &:hover {
     background-color: transparent !important;
-    color: var(--hipervinculo-hover-color) !important;
+    color: var(--hipervinculo-cursor-color) !important;
     text-decoration: underline !important;
     box-shadow: none !important;
   }
   &:focus-visible {
     background-color: transparent !important;
-    color: var(--hipervinculo-focus-color) !important;
-    outline: 2px dashed var(--hipervinculo-focus-sombra) !important;
+    color: var(--hipervinculo-enfoque-color) !important;
+    outline: 2px dashed var(--hipervinculo-enfoque-sombra) !important;
     box-shadow: none !important;
   }
 }

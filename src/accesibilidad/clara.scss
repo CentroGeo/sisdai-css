@@ -58,6 +58,16 @@ body[data-light-theme-eni='true'] {
   --boton-secundario-enfoque-borde: var(--estado-enfoque);
   --boton-secundario-enfoque-color: var(--color-secundario-8);
   --boton-secundario-enfoque-sombra: var(--estado-enfoque);
+
+  --hipervinculo-color: var(--color-interactivo-1);
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-deshabilitado-color: var(--color-neutro-3);
+  --hipervinculo-deshabilitado-sombra: transparent;
+  --hipervinculo-cursor-color: var(--color-interactivo-2);
+  --hipervinculo-cursor-sombra: transparent;
+  --hipervinculo-enfoque-color: var(--estado-enfoque);
+  --hipervinculo-enfoque-sombra: var(--estado-enfoque);
+  --hipervinculo-visitado: var(--color-interactivo-6);
   
   // componentes
   --modal-fondo: var(--fondo);
