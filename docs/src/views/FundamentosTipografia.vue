@@ -343,10 +343,10 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       :propiedades="[[
         {titulo:'General'},
         {nombre:'Tipografia', valor:'var(--tipografia-codigo, monospace)'},
-        {nombre:'Color', valor:'var(--tipografia-color-3)'},
+        {nombre:'Color', valor:'var(--texto-secundario)'},
         {titulo:''},
         {titulo:'<kdb>'},
-        {nombre:'Fondo', valor:'var(--nota-fondo)'},
+        {nombre:'Fondo', valor:'var(--fondo-acento)'},
         {nombre:'Borde redondeado', valor:'4px'},
       ]]"
     />

@@ -24,6 +24,12 @@ body[data-light-theme-eni='true'] {
   // elementos
   --campo-fondo: var(--fondo);
 
+  --tabla-fila-par-fondo: var(--color-neutro-0);
+  --tabla-fila-impar-fondo: var(--color-secundario-2);
+  --tabla-fila-pie-fondo: var(--color-secundario-4);
+  --tabla-borde: var(--color-neutro-4);
+  --tabla-color: var(--texto-primario);
+
   --boton-primario-fondo: var(--color-primario-3);
   --boton-primario-borde: var(--color-primario-3);
   --boton-primario-color: var(--color-neutro-0);

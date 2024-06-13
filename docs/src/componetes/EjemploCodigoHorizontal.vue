@@ -47,7 +47,7 @@
       margin: 0;
     }
     span {
-      color: var(--texto-primario);
+      color: var(--texto-secundario);
       margin-right: 8px;
     }
   }
