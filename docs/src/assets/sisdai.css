@@ -5671,15 +5671,15 @@ input[type=reset] [class*=" pictograma-"],
 }
 .boton-primario:not(:disabled):hover, .ir-contenido-principal:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):hover, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):hover, .boton-descarga:not(:disabled):hover,
 .boton-con-contenedor-primario:not(:disabled):hover {
-  background-color: var(--boton-primario-hover-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-primario-hover-borde), 3px 3px 4px var(--boton-primario-hover-sombra);
-  color: var(--boton-primario-hover-color);
+  background-color: var(--boton-primario-cursor-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-primario-cursor-borde), 3px 3px 4px var(--boton-primario-hover-sombra);
+  color: var(--boton-primario-cursor-color);
 }
 .boton-primario:not(:disabled):focus, .ir-contenido-principal:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + label:not(:disabled):focus, .boton-alternar [type=radio]:not(:disabled):checked + legend:not(:disabled):focus, .boton-descarga:not(:disabled):focus,
 .boton-con-contenedor-primario:not(:disabled):focus {
-  background-color: var(--boton-primario-focus-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-primario-focus-borde), 0 0 0 1px var(--boton-primario-focus-contorno), 0 0 8px var(--boton-primario-focus-sombra);
-  color: var(--boton-primario-focus-color);
+  background-color: var(--boton-primario-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-primario-enfoque-borde), 0 0 0 1px var(--boton-primario-enfoque-contorno), 0 0 8px var(--boton-primario-enfoque-sombra);
+  color: var(--boton-primario-enfoque-color);
 }
 
 .boton-secundario,
@@ -5701,15 +5701,15 @@ input[type=reset] [class*=" pictograma-"],
 }
 .boton-secundario:not(:disabled):hover,
 .boton-con-contenedor-secundario:not(:disabled):hover {
-  background-color: var(--boton-secundario-hover-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-hover-borde), 0 0 8px var(--boton-secundario-hover-sombra);
-  color: var(--boton-secundario-hover-color);
+  background-color: var(--boton-secundario-cursor-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-cursor-borde), 0 0 8px var(--boton-secundario-cursor-sombra);
+  color: var(--boton-secundario-cursor-color);
 }
 .boton-secundario:not(:disabled):focus,
 .boton-con-contenedor-secundario:not(:disabled):focus {
-  background-color: var(--boton-secundario-focus-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
-  color: var(--boton-secundario-focus-color);
+  background-color: var(--boton-secundario-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-enfoque-borde), 0 0 8px var(--boton-secundario-enfoque-sombra);
+  color: var(--boton-secundario-enfoque-color);
 }
 
 .boton-sin-contenedor-primario {
@@ -10152,7 +10152,41 @@ body[data-dark-theme-eni=true] {
   --titulo: var(--color-neutro-0);
   --texto-primario: var(--color-neutro-0);
   --texto-secundario: var(--color-secundario-5);
+  --estado-enfoque: var(--color-interactivo-3);
   --campo-fondo: var(--fondo);
+  --boton-primario-fondo: var(--color-primario-2);
+  --boton-primario-borde: var(--color-primario-2);
+  --boton-primario-color: var(--color-secundario-12);
+  --boton-primario-sombra: transparent;
+  --boton-primario-deshabilitado-fondo: var(--color-secundario-8);
+  --boton-primario-deshabilitado-borde: var(--color-secundario-8);
+  --boton-primario-deshabilitado-color: var(--color-secundario-7);
+  --boton-primario-deshabilitado-sombra: transparent;
+  --boton-primario-cursor-fondo: var(--color-primario-1);
+  --boton-primario-cursor-borde: var(--color-primario-1);
+  --boton-primario-cursor-color: var(--color-secundario-12);
+  --boton-primario-cursor-sombra: var(transparent);
+  --boton-primario-enfoque-fondo: var(--color-primario-1);
+  --boton-primario-enfoque-borde: var(--color-secundario-12);
+  --boton-primario-enfoque-color: var(--color-secundario-12);
+  --boton-primario-enfoque-contorno: var(--estado-enfoque);
+  --boton-primario-enfoque-sombra: var(--estado-enfoque);
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: var(--color-secundario-5);
+  --boton-secundario-color: var(--color-secundario-5);
+  --boton-secundario-sombra: transparent;
+  --boton-secundario-deshabilitado-fondo: transparent;
+  --boton-secundario-deshabilitado-borde: var(--color-secundario-7);
+  --boton-secundario-deshabilitado-color: var(--color-secundario-8);
+  --boton-secundario-deshabilitado-sombra: transparent;
+  --boton-secundario-cursor-fondo: var(--color-secundario-8);
+  --boton-secundario-cursor-borde: var(--color-secundario-5);
+  --boton-secundario-cursor-color: var(--color-secundario-5);
+  --boton-secundario-cursor-sombra: transparent;
+  --boton-secundario-enfoque-fondo: var(--color-secundario-8);
+  --boton-secundario-enfoque-borde: var(--estado-enfoque);
+  --boton-secundario-enfoque-color: var(--color-secundario-5);
+  --boton-secundario-enfoque-sombra: var(--estado-enfoque);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);
@@ -10173,7 +10207,41 @@ body[data-light-theme-eni=true] {
   --titulo: var(--color-neutro-6);
   --texto-primario: var(--color-neutro-6);
   --texto-secundario: var(--color-secundario-8);
+  --estado-enfoque: var(--color-interactivo-1);
   --campo-fondo: var(--fondo);
+  --boton-primario-fondo: var(--color-primario-3);
+  --boton-primario-borde: var(--color-primario-3);
+  --boton-primario-color: var(--color-neutro-0);
+  --boton-primario-sombra: transparent;
+  --boton-primario-deshabilitado-fondo: var(--color-neutro-2);
+  --boton-primario-deshabilitado-borde: var(--color-neutro-2);
+  --boton-primario-deshabilitado-color: var(--color-neutro-4);
+  --boton-primario-deshabilitado-sombra: transparent;
+  --boton-primario-cursor-fondo: var(--color-primario-4);
+  --boton-primario-cursor-borde: var(--color-primario-4);
+  --boton-primario-cursor-color: var(--color-neutro-0);
+  --boton-primario-cursor-sombra: var(transparent);
+  --boton-primario-enfoque-fondo: var(--color-primario-4);
+  --boton-primario-enfoque-borde: var(--color-neutro-0);
+  --boton-primario-enfoque-color: var(--color-neutro-0);
+  --boton-primario-enfoque-contorno: var(--estado-enfoque);
+  --boton-primario-enfoque-sombra: var(--estado-enfoque);
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: var(--color-secundario-8);
+  --boton-secundario-color: var(--color-secundario-8);
+  --boton-secundario-sombra: transparent;
+  --boton-secundario-deshabilitado-fondo: transparent;
+  --boton-secundario-deshabilitado-borde: var(--color-neutro-2);
+  --boton-secundario-deshabilitado-color: var(--color-neutro-3);
+  --boton-secundario-deshabilitado-sombra: transparent;
+  --boton-secundario-cursor-fondo: var(--color-secundario-4);
+  --boton-secundario-cursor-borde: var(--color-secundario-8);
+  --boton-secundario-cursor-color: var(--color-secundario-8);
+  --boton-secundario-cursor-sombra: transparent;
+  --boton-secundario-enfoque-fondo: var(--color-secundario-4);
+  --boton-secundario-enfoque-borde: var(--estado-enfoque);
+  --boton-secundario-enfoque-color: var(--color-secundario-8);
+  --boton-secundario-enfoque-sombra: var(--estado-enfoque);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);

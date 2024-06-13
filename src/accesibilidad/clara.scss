@@ -10,9 +10,47 @@ body[data-light-theme-eni='true'] {
   
   --texto-primario: var(--color-neutro-6);
   --texto-secundario: var(--color-secundario-8);
+
+  // estado base
+  --estado-enfoque: var(--color-interactivo-1);
   
   // elementos
   --campo-fondo: var(--fondo);
+
+  --boton-primario-fondo: var(--color-primario-3);
+  --boton-primario-borde: var(--color-primario-3);
+  --boton-primario-color: var(--color-neutro-0);
+  --boton-primario-sombra: transparent;
+  --boton-primario-deshabilitado-fondo: var(--color-neutro-2);
+  --boton-primario-deshabilitado-borde: var(--color-neutro-2);
+  --boton-primario-deshabilitado-color: var(--color-neutro-4);
+  --boton-primario-deshabilitado-sombra: transparent;
+  --boton-primario-cursor-fondo: var(--color-primario-4);
+  --boton-primario-cursor-borde: var(--color-primario-4);
+  --boton-primario-cursor-color: var(--color-neutro-0);
+  --boton-primario-cursor-sombra: var(transparent);
+  --boton-primario-enfoque-fondo: var(--color-primario-4);
+  --boton-primario-enfoque-borde: var(--color-neutro-0);
+  --boton-primario-enfoque-color: var(--color-neutro-0);
+  --boton-primario-enfoque-contorno: var(--estado-enfoque);
+  --boton-primario-enfoque-sombra: var(--estado-enfoque);
+
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: var(--color-secundario-8);
+  --boton-secundario-color: var(--color-secundario-8);
+  --boton-secundario-sombra: transparent;
+  --boton-secundario-deshabilitado-fondo: transparent;
+  --boton-secundario-deshabilitado-borde: var(--color-neutro-2);
+  --boton-secundario-deshabilitado-color: var(--color-neutro-3);
+  --boton-secundario-deshabilitado-sombra: transparent;
+  --boton-secundario-cursor-fondo: var(--color-secundario-4);
+  --boton-secundario-cursor-borde: var(--color-secundario-8);
+  --boton-secundario-cursor-color: var(--color-secundario-8);
+  --boton-secundario-cursor-sombra: transparent;
+  --boton-secundario-enfoque-fondo: var(--color-secundario-4);
+  --boton-secundario-enfoque-borde: var(--estado-enfoque);
+  --boton-secundario-enfoque-color: var(--color-secundario-8);
+  --boton-secundario-enfoque-sombra: var(--estado-enfoque);
   
   // componentes
   --modal-fondo: var(--fondo);
