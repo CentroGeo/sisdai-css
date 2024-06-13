@@ -39,31 +39,31 @@
 }
 
 // color
-@each $id, $valor in $borde-color {
-  .borde-color-#{$id} {
-    border-color: $valor;
-  }
-  .borde-t-color-#{$id} {
-    border-top-color: $valor;
-  }
-  .borde-r-color-#{$id} {
-    border-right-color: $valor;
-  }
-  .borde-b-color-#{$id} {
-    border-bottom-color: $valor;
-  }
-  .borde-l-color-#{$id} {
-    border-left-color: $valor;
-  }
-  .borde-x-color-#{$id} {
-    border-right-color: $valor;
-    border-left-color: $valor;
-  }
-  .borde-y-color-#{$id} {
-    border-top-color: $valor;
-    border-bottom-color: $valor;
-  }
-}
+// @each $id, $valor in $borde-color {
+//   .borde-color-#{$id} {
+//     border-color: $valor;
+//   }
+//   .borde-t-color-#{$id} {
+//     border-top-color: $valor;
+//   }
+//   .borde-r-color-#{$id} {
+//     border-right-color: $valor;
+//   }
+//   .borde-b-color-#{$id} {
+//     border-bottom-color: $valor;
+//   }
+//   .borde-l-color-#{$id} {
+//     border-left-color: $valor;
+//   }
+//   .borde-x-color-#{$id} {
+//     border-right-color: $valor;
+//     border-left-color: $valor;
+//   }
+//   .borde-y-color-#{$id} {
+//     border-top-color: $valor;
+//     border-bottom-color: $valor;
+//   }
+// }
 
 // grosor
 @each $id, $valor in $borde-grosor {

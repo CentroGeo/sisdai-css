@@ -27,7 +27,7 @@ select {
   padding-top: calc(map-get($espaciado, '1') + 1px);
   padding-bottom: calc(map-get($espaciado, '1') + 1px);
   background-image: var(--input-select-svg);
-  background-color: var(--input-fondo);
+  background-color: var(--campo-fondo);
   color: var(--input-color);
   overflow: hidden;
   white-space: nowrap;

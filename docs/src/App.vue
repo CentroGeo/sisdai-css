@@ -1,13 +1,13 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
-  import pkg from '../../package.json'
+  // import pkg from '../../package.json'
   
   const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
   const isA11yView = ref(null)
   const isA11yUnderline = ref(null)
-  const fontSize = ref(16)
+  // const fontSize = ref(16)
   const showGob = ref(null)
   const showMenu = ref(null)
   const showSubmenu = ref('')
@@ -18,21 +18,21 @@
   isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
   showSubmenu.value = false
   
-  function toggleA11yTypography() {
-    isA11yTypography.value = !isA11yTypography.value
-  }
+  // function toggleA11yTypography() {
+  //   isA11yTypography.value = !isA11yTypography.value
+  // }
 
-  function toggleA11yView() {
-    isA11yView.value = !isA11yView.value
-  }
-  function toggleA11yLink() {
-    isA11yUnderline.value = !isA11yUnderline.value
-  }
+  // function toggleA11yView() {
+  //   isA11yView.value = !isA11yView.value
+  // }
+  // function toggleA11yLink() {
+  //   isA11yUnderline.value = !isA11yUnderline.value
+  // }
 
-  function toggleGob() {
-    showMenu.value = false
-    showGob.value = !showGob.value
-  }
+  // function toggleGob() {
+  //   showMenu.value = false
+  //   showGob.value = !showGob.value
+  // }
   function toggleMenu() {
     showGob.value = false
     showSubmenu.value = ''
@@ -56,26 +56,26 @@
     }
   }
 
-  function upFontSize() {
-    fontSize.value ++
-    let up_size = `${fontSize.value}px`
-    document.documentElement.style.setProperty('--tipografia-tamanio',up_size)
-  }
-  function downFontSize() {
-    fontSize.value --
-    let down_size = `${fontSize.value}px`
-    document.documentElement.style.setProperty('--tipografia-tamanio',down_size)
-  }
-  function resetA11y() {
-    isA11yTypography.value = false
-    isA11yView.value = false
-    isA11yUnderline.value = false
-    fontSize.value = 16
-    document.documentElement.style.setProperty('--tipografia-tamanio','16')
-    // Resetea variable
-    isA11yOscura.value = false
-    tema.value = 'clara'
-  }
+  // function upFontSize() {
+  //   fontSize.value ++
+  //   let up_size = `${fontSize.value}px`
+  //   document.documentElement.style.setProperty('--tipografia-tamanio',up_size)
+  // }
+  // function downFontSize() {
+  //   fontSize.value --
+  //   let down_size = `${fontSize.value}px`
+  //   document.documentElement.style.setProperty('--tipografia-tamanio',down_size)
+  // }
+  // function resetA11y() {
+  //   isA11yTypography.value = false
+  //   isA11yView.value = false
+  //   isA11yUnderline.value = false
+  //   fontSize.value = 16
+  //   document.documentElement.style.setProperty('--tipografia-tamanio','16')
+  //   // Resetea variable
+  //   isA11yOscura.value = false
+  //   tema.value = 'clara'
+  // }
 
   // Módulo de vista oscura
   const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
@@ -90,17 +90,17 @@
     ]
   }
 
-  function alternarPerfil() {
-    // remueve el atributo para dejar a los otros perfiles
-    body.removeAttribute(`data-dark-theme-${perfil.value}`)
-    body.removeAttribute(`data-light-theme-${perfil.value}`)
+  // function alternarPerfil() {
+  //   // remueve el atributo para dejar a los otros perfiles
+  //   body.removeAttribute(`data-dark-theme-${perfil.value}`)
+  //   body.removeAttribute(`data-light-theme-${perfil.value}`)
     
-    // rotar entre estos perfiles
-    const perfiles = ['eni', 'sisdai', 'gema']
-    perfil.value = perfiles[
-      (perfiles.indexOf(perfil.value) + 1) % 3
-    ]
-  }
+  //   // rotar entre estos perfiles
+  //   const perfiles = ['eni', 'sisdai', 'gema']
+  //   perfil.value = perfiles[
+  //     (perfiles.indexOf(perfil.value) + 1) % 3
+  //   ]
+  // }
 
   function getTemaDispositivo() {
     if (
@@ -208,7 +208,7 @@
 <template>
   <div>
     <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
-    <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
+    <!-- <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
           <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México.">
@@ -232,7 +232,7 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav> -->
 
     <nav class="navegacion navegacion-conahcyt navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
@@ -250,7 +250,7 @@
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li><RouterLink class="nav-hipervinculo" to="/" exact @mouseover="mostrarSubmenu('')">Inicio</RouterLink></li>
-            <li>
+            <!-- <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')" @mouseover="mostrarSubmenu('accesibilidad')">Accesibilidad</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
@@ -261,17 +261,17 @@
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
-            </li>            
+            </li> -->
             
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')" @mouseover="mostrarSubmenu('fundamentos')">Fundamentos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
-                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/tipografia">Tipografia</RouterLink></li>
               </ul>
             </li>
@@ -284,28 +284,28 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/separadores">Separadores <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>
               </ul>
             </li>
 
-            <li class="nav-contenedor-submenu">
+            <!-- <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')" @mouseover="mostrarSubmenu('elementoscompuestos')">Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">NOSTA Alertas <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">Cargando <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">NOSTA Cargando <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
               </ul>
-            </li>
+            </li> -->
 
-            <li class="nav-contenedor-submenu">
+            <!-- <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')" @mouseover="mostrarSubmenu('componentes')">Componentes</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
@@ -324,9 +324,9 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
               </ul>
-            </li>
+            </li> -->
 
-            <li class="nav-contenedor-submenu">
+            <!-- <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')" @mouseover="mostrarSubmenu('visualizaciones')">Visualizaciones</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
@@ -334,9 +334,9 @@
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
               </ul>
-            </li>
+            </li> -->
 
-            <li class="nav-contenedor-submenu">
+            <!-- <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')" @mouseover="mostrarSubmenu('auxiliares')">Auxiliares</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
@@ -344,7 +344,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
-            </li>
+            </li> -->
             
           </ul>
         </div>
@@ -357,31 +357,31 @@
     
     <menu role="complementary" class="tmp-menu">
       
-      <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
-      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
-      <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
-      <button class="boton-primario" @click="upFontSize">Incrementar fuente</button>
-      <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
+      <!-- <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button> -->
+      <!-- <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button> -->
+      <!-- <button class="boton-primario" @click="downFontSize">Reducir fuente</button> -->
+      <!-- <button class="boton-primario" @click="upFontSize">Incrementar fuente</button> -->
+      <!-- <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button> -->
 
       <button 
         class="boton-primario" 
         @click="alternarTema">
         Tema: {{ nombreTemaActual }}
       </button>
-      <button       
+      <!-- <button       
         class="boton-primario" 
         @click="alternarPerfil">
         Perfil: {{ perfil }}
-      </button>
+      </button> -->
 
-      <button class="boton-secundario" @click="resetA11y">Apagar</button>
+      <!-- <button class="boton-secundario" @click="resetA11y">Apagar</button> -->
 
-      <span class="info">sisdai-css#v{{ pkg.version }}</span>
+      <!-- <span class="info">sisdai-css#v{{ pkg.version }}</span> -->
     </menu>
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .tmp-menu {
     background: #0002;
     backdrop-filter: blur(5px);
@@ -408,4 +408,15 @@
     flex: 1;
     text-align: right;
   }
+  .etiqueta {
+    font-size: 0.75rem; // 14px
+    font-weight: 600;
+    padding: .25rem .5rem;
+    line-height: calc(1em * 1.3);
+    margin: 0;
+    display: inline-flex;
+    border-radius: 20px;
+    background-color: #f005;
+  }
+
 </style>

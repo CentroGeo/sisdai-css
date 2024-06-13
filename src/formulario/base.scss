@@ -20,7 +20,7 @@ $form-campo-alto: 40px;
 
 // estilos generales
 .form-campo-base {
-  background-color: var(--input-fondo);
+  background-color: var(--campo-fondo);
   border: 1px solid var(--input-borde);
   border-radius: $form-campo-radio;
   box-sizing: border-box;

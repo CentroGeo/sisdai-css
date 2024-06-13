@@ -28,8 +28,8 @@ dialog {
     right: 0;
     left: 0;
 
-    background-color: var(--pagina-fondo);
-    color: var(--tipografia-color);
+    background-color: var(--modal-fondo);
+    color: var(--modal-color);
     border-radius: map-get($borde-redondeado, '20');
     border: none;
     padding: map-get($espaciado, '3');
@@ -90,7 +90,6 @@ dialog {
         position: absolute;
         top: -4px;
         right: 0;
-        color: var(--tipografia-color);
         @include mediaquery('esc') {
           top: 0;
         }

@@ -15,7 +15,7 @@
 
 [class^='vis-'],
 [class*=' vis-'] {
-  color: var(--tipografia-color);
+  color: var(--visualizacion-color);
   font-family: var(--tipografia-familia, 'sans-serif');
 }
 
@@ -50,7 +50,7 @@
   font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.2);
   font-weight: 400;
-  fill: var(--tipografia-color);
+  fill: var(--visualizacion-color);
   margin: 0;
 }
 
@@ -58,7 +58,7 @@
   font-size: 0.75rem; // 12px
   line-height: calc(1em * 1.25);
   font-weight: 600;
-  fill: var(--tipografia-color);
+  fill: var(--visualizacion-color);
   margin: 0;
 }
 
@@ -82,7 +82,7 @@
     width: 1.125rem; // 18px
     height: 1.125rem; // 18px
     background-color: var(--acciones-informativo);
-    border: 1px solid var(--tipografia-color);
+    border: 1px solid var(--tipografia-color); // TODO cambiar po run borde.. revisar otra vez vis/controlador.scss 
     border-radius: 50%;
     display: inline-flex;
     margin-right: map-get($espaciado, 'minimo');

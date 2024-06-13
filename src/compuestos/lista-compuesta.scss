@@ -50,16 +50,16 @@
   > * {
     margin: 0;
   }
-  .lista-compuesta-texto-primario {
-    color: var(--tipografia-color);
+  .lista-compuesta-titulo {
+    color: var(--texto-primario);
     font-weight: 500;
   }
-  .lista-compuesta-texto-secundario {
-    color: var(--tipografia-color);
+  .lista-compuesta-texto {
+    color: var(--texto-primario);
     font-weight: 400;
   }
-  .lista-compuesta-texto-terciario {
-    color: var(--tipografia-color-3);
+  .lista-compuesta-texto-secundario {
+    color: var(--texto-secundario);
     font-weight: 400;
   }
 }

@@ -1,7 +1,9 @@
 .controlador-vis {
   --controlador-vis-control-alto: 1.125rem;
   --controlador-vis-figura-alto: 18px;
-  --controlador-vis-figura-borde: 1px;
+  --controlador-vis-figura-borde-grosor: 1px;
+  --controlador-vis-figura-borde-color: var(--borde);
+  --controlador-vis-figura-fondo: #7e8cf5;
   
   min-height: var(--controlador-vis-control-alto);
   vertical-align: text-top;
@@ -41,8 +43,8 @@
     min-width: calc(var(--controlador-vis-figura-alto));
     height: calc(var(--controlador-vis-figura-alto));
     &.muestra {
-      background-color: #7e8cf5;
-      border: var(--controlador-vis-figura-borde) solid var(--tipografia-color);
+      background-color: var(--controlador-vis-figura-fondo);
+      border: var(--controlador-vis-figura-borde-grosor) solid var(--controlador-vis-figura-borde-color);
       border-radius: 50%;
     }
     &.pictograma,

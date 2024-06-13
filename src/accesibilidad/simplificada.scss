@@ -38,7 +38,7 @@
       .portada-cuerpo {
         margin-top: 0px;
         > * {
-          color: var(--tipografia-color);
+          color: var(--tipografia-color); // TODO: revisar luego estas serian de titulo
         }
       }
     }
