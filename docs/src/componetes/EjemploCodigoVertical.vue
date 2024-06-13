@@ -22,7 +22,7 @@
 <style lang="scss">
 .ej-vertical {
   .codigo {
-    background: var(--nota-fondo);
+    background: var(--fondo-acento);
     border-radius: 0 0 8px 8px;
     font-size: 0.75rem;
     padding: 0;

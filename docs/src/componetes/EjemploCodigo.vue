@@ -18,7 +18,7 @@
 </template>
 <style lang="scss">
 .ej-codigo {
-  background: var(--nota-fondo);
+  background: var(--fondo-acento);
   border-radius: 8px;
   font-size: 0.75rem;
   margin: 0;
