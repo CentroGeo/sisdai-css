@@ -3,13 +3,20 @@ body[data-light-theme-eni='true'] {
   
   // base
   --fondo: var(--color-neutro-0);
+  --fondo-neutro: var(--color-neutro-1);
+  --fondo-acento: var(--color-secundario-2);
+  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb), 1) 0%, rgba(var(--color-neutro-7-rgb), 0.59) 60%, rgba(var(--color-neutro-7-rgb), 0) 100%);
 
   --borde: var(--color-neutro-4);
   
   --titulo: var(--color-neutro-6);
+  --titulo-inverso: var(--color-neutro-0);
+  --titulo-acento: var(--color-primario-3);
   
   --texto-primario: var(--color-neutro-6);
   --texto-secundario: var(--color-secundario-8);
+  --texto-acento: var(--color-primario-3);
+  --texto-inverso: var(--color-neutro-0);
   
   // elementos
   --campo-fondo: var(--fondo);

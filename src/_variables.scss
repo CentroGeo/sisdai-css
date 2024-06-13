@@ -91,7 +91,7 @@ $pictograma: (
 );
 
 // AUX / tamaño tipografico
-$tamanio: ( 
+$texto-tamanio: ( 
   '1': 0.75rem,
   '2': 0.875rem,
   '3': 1rem,
@@ -102,6 +102,17 @@ $tamanio: (
   '8': 3rem,
   '9': 3.5rem,
   '10': 5rem,
+);
+$texto-color: (
+  'primario': var(--texto-primario),
+  'secundario': var(--texto-secundario), 
+  'acento': var(--texto-acento),
+  'inverso': var(--texto-inverso),
+);
+$titulo-color: (
+  'primario': var(--titulo),
+  'acento': var(--titulo-acento),
+  'inverso': var(--titulo-inverso),
 );
 
 // ESPACIADO // MARGIN PADDING GAP
@@ -155,12 +166,15 @@ $columnas: (
   )
 );
 
+
+
 // Variables de CSS
 :root {
   // estas variables son importantes que sean en CSS
   // para que el menu de accesibilidad las pueda cambiar fácilmente
   --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
+  --tipografia-codigo: monospace;
 
   // colores primitivos
   --color-primario-4: #0058CC;
@@ -168,7 +182,9 @@ $columnas: (
   --color-primario-2: #6692FF;
   --color-primario-1: #80AAFF;
   --color-neutro-7: #000000;
+  --color-neutro-7-rgb: 0, 0, 0;
   --color-neutro-6: #141414;
+  --color-neutro-6-rgb: 20, 20, 20;
   --color-neutro-5: #434344;
   --color-neutro-4: #767677;
   --color-neutro-3: #AAAAAA;
@@ -176,7 +192,8 @@ $columnas: (
   --color-neutro-1: #F5F5F5;
   --color-neutro-0: #FFFFFF;
   --color-secundario-12: #102543;
-  --color-secundario-11: #142A48;
+  --color-secundario-11: #142a48;
+  --color-secundario-11-rgb: 20, 42, 72;
   --color-secundario-10: #1B304E;
   --color-secundario-9: #2A3F5D;
   --color-secundario-8: #364A69;
@@ -218,6 +235,7 @@ $columnas: (
   --color-mx-3: #DFC9A1;
   --color-mx-2: #BD9558;
   --color-mx-1: #9E2148;
+
 
 //   --pagina-fondo: #ffffff;
 //   --nota-fondo: #F0F6FF;

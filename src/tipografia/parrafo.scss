@@ -19,10 +19,12 @@ p {
   margin-bottom: map-get($espaciado, '3');
 }
 
-.parrafo-texto-secundario {
-  color: var(--tipografia-color-3);
-}
-
 .parrafo-texto-alto {
   font-size: 1.25rem; // 20px
+}
+
+@each $nombre, $valor in $texto-color {
+  .texto-color-#{$nombre} {
+    color: $valor;
+  }
 }

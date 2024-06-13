@@ -69,3 +69,9 @@ h6,.h6 {
     font-size: 1.125rem; //18px
   }
 }
+
+@each $nombre, $valor in $titulo-color {
+  .titulo-color-#{$nombre} {
+    color: $valor;
+  }
+}

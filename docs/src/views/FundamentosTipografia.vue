@@ -111,6 +111,40 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.125rem'},
       ]]"
     />
+    
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Color en Títulos</h2>
+    </div>
+    <EjemploCodigoHorizontal 
+      html='
+      <h3 class="titulo-color-primario">
+        Título color primario
+      </h3>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--titulo)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <h3 class="titulo-color-acento">
+        Título color acento
+      </h3>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--titulo-acento)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <h3 class="titulo-color-inverso">
+        Título color inverso
+      </h3>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--titulo-inverso)'},
+      ]]"
+    />
 
 
     <div class="contenedor ancho-lectura">
@@ -133,18 +167,6 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
     />
     <EjemploCodigoHorizontal 
       html='
-      <p class="parrafo-texto-secundario">
-        Ejemplo de párrafo texto secundario.
-        Lorem ipsum dolor sit amet elit.
-      </p>
-      '
-      :propiedades="[[
-        {titulo:'.parrafo-texto-secundario'},
-        {nombre:'Color', valor:'var(--tipografia-color-3)'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
       <p class="parrafo-texto-alto">
         Ejemplo de párrafo texto alto.
         Utilizado para introducciones o 
@@ -154,6 +176,49 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       :propiedades="[[
         {titulo:'.parrafo-texto-alto'},
         {nombre:'Tamaño', valor:'1.25rem'},
+      ]]"
+    />
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Color en Texto</h2>
+    </div>
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-primario">
+        Texto color primario
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-primario)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-secundario">
+        Texto color secundario
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-secundario)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-acento">
+        Texto color acento
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-acento)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-inverso">
+        Texto color inverso
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-inverso)'},
       ]]"
     />
 
@@ -208,7 +273,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
     />
     <EjemploCodigoHorizontal 
       html='
-      <div class="notas-contenedor">
+      <div class="nota-contenedor">
         <p class="nota-titulo">
           Notas:
         </p>
@@ -220,7 +285,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       '
       :propiedades="[[
         {titulo:'.nota-contenedor'},
-        {nombre:'Fondo', valor:'var(--nota-fondo)'},
+        {nombre:'Fondo', valor:'var(--fondo-acento)'},
         {nombre:'Margen interior', valor:'24px'},
       ]]"
     />
