@@ -284,7 +284,7 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/separadores">Separadores <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>

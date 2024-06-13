@@ -6062,7 +6062,7 @@ img {
 }
 
 figure {
-  color: var(--tipografia-color-3);
+  color: var(--texto-secundario);
   margin: 24px 0;
   clear: both;
 }
