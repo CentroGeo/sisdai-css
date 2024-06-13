@@ -19,7 +19,7 @@
 <style lang="scss">
 .ej-estilo-clase {
   .ejemplo {
-    background: var(--nota-fondo);
+    background: var(--fondo-acento);
   }
   .codigo {
     margin: 0 -3.5rem;

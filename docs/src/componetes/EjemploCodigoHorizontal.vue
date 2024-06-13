@@ -47,7 +47,7 @@
       margin: 0;
     }
     span {
-      color: var(--tipografia-color-3);
+      color: var(--texto-primario);
       margin-right: 8px;
     }
   }

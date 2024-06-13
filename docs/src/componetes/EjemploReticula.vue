@@ -30,17 +30,17 @@
     background-size: 8px 8px;
     [class^='columna'],
     [class*=" columna"] {
-      background: var(--nota-fondo);
+      background: var(--fondo-acento);
       min-height: 40px;
       line-height: 40px;
       text-align: center;
     }
     p {
-      background: var(--nota-fondo);
+      background: var(--fondo-acento);
     }
   }
   .codigo {
-    background: var(--nota-fondo);
+    background: var(--fondo-acento);
     border-radius: 8px;
     font-size: 0.75rem;
     margin: 0;

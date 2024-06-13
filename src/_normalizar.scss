@@ -103,10 +103,10 @@ kbd {
   font-family: var(--tipografia-codigo, monospace);
   font-weight: 400;
   font-size: 1em;
-  color: var(--tipografia-color-3);
+  color: var(--texto-secundario);
 }
 
 kbd {
-  background-color: var(--nota-fondo);
+  background-color: var(--fondo-acento);
   border-radius: 4px;
 }

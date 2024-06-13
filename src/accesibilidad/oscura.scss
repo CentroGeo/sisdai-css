@@ -18,13 +18,20 @@ body[data-dark-theme-eni='true'] {
 
   // base
   --fondo: var(--color-secundario-12);
+  --fondo-neutro: var(--color-secundario-10);
+  --fondo-acento: var(--color-secundario-10);
+  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb), 1) 0%, rgba(ar(--color-secundario-11-rgb), 0.59) 60%, rgba(ar(--color-secundario-11-rgb), 0) 100%);
 
   --borde: var(--color-neutro-0);
   
   --titulo: var(--color-neutro-0);
+  --titulo-inverso: var(--color-neutro-0);
+  --titulo-acento: var(--color-primario-2);
   
   --texto-primario: var(--color-neutro-0);
   --texto-secundario: var(--color-secundario-5);
+  --texto-acento: var(--color-primario-2);
+  --texto-inverso: var(--color-neutro-0);
 
   // elementos
   --campo-fondo: var(--fondo);

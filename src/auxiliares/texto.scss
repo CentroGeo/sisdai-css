@@ -14,7 +14,7 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 // tamaño
-@each $id, $valor in $tamanio {
+@each $id, $valor in $texto-tamanio {
   .texto-tamanio-#{$id} {
     font-size: $valor;
     line-height: calc(1em * 1.25);
@@ -36,7 +36,7 @@
 // tamaño responsivo
 @each $dispositivo, $x in $breakpoints {
   @include mediaquery($dispositivo) {
-    @each $id, $valor in $tamanio {
+    @each $id, $valor in $texto-tamanio {
       .texto-tamanio-#{$id}-#{$dispositivo} {
         font-size: $valor;
         line-height: calc(1em * 1.25);
@@ -44,20 +44,6 @@
     }
   }
 }
-
-// color 
-// .texto-color-base {
-//   color: var(--tipografia-color); // TODO: texto primario secundario acento
-// }
-// .texto-color-1 {
-//   color: var(--tipografia-color-1);
-// }
-// .texto-color-2 {
-//   color: var(--tipografia-color-2);
-// }
-// .texto-color-3 {
-//   color: var(--tipografia-color-3);
-// }
 
 // alineacion
 .texto-centrado {
