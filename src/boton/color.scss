@@ -16,44 +16,44 @@
 .boton-primario,
 .boton-con-contenedor-primario {
   background-color: var(--boton-primario-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-primario-borde); // border-color: var(--boton-primario-borde);
+  box-shadow: inset 0 0 0 1px var(--boton-primario-borde);
   color: var(--boton-primario-color);
   &.deshabilitado,
   &:disabled {
     background-color: var(--boton-primario-deshabilitado-fondo);
-    box-shadow: inset 0 0 0 1px var(--boton-primario-deshabilitado-borde); // border-color: var(--boton-primario-deshabilitado-borde);
+    box-shadow: inset 0 0 0 1px var(--boton-primario-deshabilitado-borde);
     color: var(--boton-primario-deshabilitado-color);
   }
   &:visited {
     color: var(--boton-primario-color);
   }
   &:not(:disabled):hover {
-    background-color: var(--boton-primario-hover-fondo); 
+    background-color: var(--boton-primario-cursor-fondo); 
     box-shadow: 
-      inset 0 0 0 1px var(--boton-primario-hover-borde), // border-color: var(--boton-primario-hover-borde);
+      inset 0 0 0 1px var(--boton-primario-cursor-borde),
       3px 3px 4px var(--boton-primario-hover-sombra);
-    color: var(--boton-primario-hover-color);
+    color: var(--boton-primario-cursor-color);
   }
   &:not(:disabled):focus {
-    background-color: var(--boton-primario-focus-fondo);
+    background-color: var(--boton-primario-enfoque-fondo);
     box-shadow: 
-      inset 0 0 0 1px var(--boton-primario-focus-borde), // border-color: var(--boton-primario-focus-borde);
-      0 0 0 1px var(--boton-primario-focus-contorno),
-      0 0 8px var(--boton-primario-focus-sombra);
-    color: var(--boton-primario-focus-color);
+      inset 0 0 0 1px var(--boton-primario-enfoque-borde),
+      0 0 0 1px var(--boton-primario-enfoque-contorno),
+      0 0 8px var(--boton-primario-enfoque-sombra);
+    color: var(--boton-primario-enfoque-color);
   }
 }
 
 .boton-secundario,
 .boton-con-contenedor-secundario {
   background-color: var(--boton-secundario-fondo);
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-borde); // border-color: var(--boton-secundario-borde);
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-borde);
   color: var(--boton-secundario-color);
   &.deshabilitado,
   &:disabled {
     background-color: var(--boton-secundario-deshabilitado-fondo);
     box-shadow: 
-      inset 0 0 0 1px var(--boton-secundario-deshabilitado-borde), // border-color: var(--boton-secundario-deshabilitado-borde);
+      inset 0 0 0 1px var(--boton-secundario-deshabilitado-borde),
       3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
     color: var(--boton-secundario-deshabilitado-color);
   }
@@ -61,18 +61,18 @@
     color: var(--boton-secundario-color);
   }
   &:not(:disabled):hover {
-    background-color: var(--boton-secundario-hover-fondo);
+    background-color: var(--boton-secundario-cursor-fondo);
     box-shadow: 
-      inset 0 0 0 1px var(--boton-secundario-hover-borde), // border-color: var(--boton-secundario-hover-borde);
-      0 0 8px var(--boton-secundario-hover-sombra);
-    color: var(--boton-secundario-hover-color);
+      inset 0 0 0 1px var(--boton-secundario-cursor-borde), // border-color: var(--boton-secundario-hover-borde);
+      0 0 8px var(--boton-secundario-cursor-sombra);
+    color: var(--boton-secundario-cursor-color);
   }
   &:not(:disabled):focus {
-    background-color: var(--boton-secundario-focus-fondo);
+    background-color: var(--boton-secundario-enfoque-fondo);
     box-shadow: 
-      inset 0 0 0 1px var(--boton-secundario-focus-borde), // border-color: var(--boton-secundario-focus-borde);
-      0 0 8px var(--boton-secundario-focus-sombra);
-    color: var(--boton-secundario-focus-color);
+      inset 0 0 0 1px var(--boton-secundario-enfoque-borde), // border-color: var(--boton-secundario-focus-borde);
+      0 0 8px var(--boton-secundario-enfoque-sombra);
+    color: var(--boton-secundario-enfoque-color);
   }
 }
 
