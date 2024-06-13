@@ -437,16 +437,16 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         o los que correspondan a incrementos de 24px, 32px y 48px respectivamente. 
       </p>
       <p>
-        Para lo que se crearon las clases de tamaño <code>.pictograma-24</code>, <code>.pictograma-32</code>
-        y <code>.pictograma-48</code> en donde el número corresponde al tamaño de la fuente en pixeles
+        Para lo que se crearon las clases de tamaño <code>.pictograma-chico</code>, <code>.pictograma-mediano</code>
+        y <code>.pictograma-grande</code> en donde el número corresponde al tamaño de la fuente en pixeles
         cuando la tipografía base esta en <code>16px</code>. Están declarados en unidades <code>rem</code>
         para respetar la jerarquia en caso que se incremente o reduzca el tamaño tipográfico general.
       </p>
       <EjemploCodigoVertical
       html='
-      <span class="pictograma-flkt pictograma-24"></span>
-      <span class="pictograma-flkt pictograma-32"></span>
-      <span class="pictograma-flkt pictograma-48"></span>
+      <span class="pictograma-flkt pictograma-chico"></span>
+      <span class="pictograma-flkt pictograma-mediano"></span>
+      <span class="pictograma-flkt pictograma-grande"></span>
       '
       />
 
@@ -458,7 +458,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </p>
       <EjemploCodigoVertical
       html='
-      <span class="pictograma-flkt pictograma-24-mov pictograma-48-esc"></span>
+      <span class="pictograma-flkt pictograma-chico-mov pictograma-grande-esc"></span>
       '
       />
     </div>

@@ -76,15 +76,15 @@ $borde-grosor: (
 
 // PICTOGRAMAS // tamaños especiales
 $pictograma: (
-  '24': (
+  'chico': (
     'tamanio': 1rem,
     'espaciado': 4px,
   ),
-  '32': (
+  'mediano': (
     'tamanio': 1.5rem,
     'espaciado': 4px,
   ),
-  '48': (
+  'grande': (
     'tamanio': 2rem,
     'espaciado': 8px,
   ),
@@ -163,7 +163,7 @@ $columnas: (
   --tipografia-tamanio: 16px;
 
   // colores primitivos
-  --color-primario-4: #0058CC;
+  --color-primario-4: #0058cc;
   --color-primario-3: #0068FF;
   --color-primario-2: #6692FF;
   --color-primario-1: #80AAFF;

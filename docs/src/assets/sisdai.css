@@ -2,7 +2,7 @@
 :root {
   --tipografia-familia: "Montserrat", sans-serif;
   --tipografia-tamanio: 16px;
-  --color-primario-4: #0058CC;
+  --color-primario-4: #0058cc;
   --color-primario-3: #0068FF;
   --color-primario-2: #6692FF;
   --color-primario-1: #80AAFF;
@@ -723,49 +723,49 @@ p {
   content: "\e009";
 }
 
-.pictograma-24 {
+.pictograma-chico {
   font-size: 1rem;
   padding: 4px;
 }
 
-.pictograma-32 {
+.pictograma-mediano {
   font-size: 1.5rem;
   padding: 4px;
 }
 
-.pictograma-48 {
+.pictograma-grande {
   font-size: 2rem;
   padding: 8px;
 }
 
 @media screen and (max-width: 767px) {
-  .pictograma-24-mov {
+  .pictograma-chico-mov {
     font-size: 1rem;
     padding: 4px;
   }
 
-  .pictograma-32-mov {
+  .pictograma-mediano-mov {
     font-size: 1.5rem;
     padding: 4px;
   }
 
-  .pictograma-48-mov {
+  .pictograma-grande-mov {
     font-size: 2rem;
     padding: 8px;
   }
 }
 @media screen and (min-width: 768px) {
-  .pictograma-24-esc {
+  .pictograma-chico-esc {
     font-size: 1rem;
     padding: 4px;
   }
 
-  .pictograma-32-esc {
+  .pictograma-mediano-esc {
     font-size: 1.5rem;
     padding: 4px;
   }
 
-  .pictograma-48-esc {
+  .pictograma-grande-esc {
     font-size: 2rem;
     padding: 8px;
   }
