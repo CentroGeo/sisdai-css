@@ -15,7 +15,7 @@
 
 fieldset {
   background-color: var(--campo-fondo);
-  border: 1px solid var(--input-borde);
+  border: 1px solid var(--campo-borde);
   border-radius: $form-campo-radio;
   padding: map-get($espaciado, '2');
   margin-top: map-get($espaciado, '3');
