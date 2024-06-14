@@ -26,15 +26,15 @@ select {
   padding-right: map-get($espaciado, '5');
   padding-top: calc(map-get($espaciado, '1') + 1px);
   padding-bottom: calc(map-get($espaciado, '1') + 1px);
-  background-image: var(--input-select-svg);
+  // background-image: var(--input-select-svg); // TODO
   background-color: var(--campo-fondo);
-  color: var(--input-color);
+  color: var(--campo-color);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 
   &:disabled {
     opacity: 1;
-    background-image: var(--input-select-deshabilitada-svg);
+    // background-image: var(--input-select-deshabilitada-svg); // TODO
   }
 }

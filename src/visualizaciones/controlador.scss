@@ -13,7 +13,7 @@
     padding: calc(map-get($espaciado, '1') + 2px);
     margin: 0 0 map-get($espaciado, '1') 0;
     line-height: 1.25em;
-    color: var(--input-color);
+    color: var(--campo-color);
     vertical-align: text-top;
     display: inline-flex;
   }
@@ -64,8 +64,8 @@
   [type=radio]:disabled + label .figura-variable.muestra,
   [type=checkbox]:checked:disabled + label .figura-variable.muestra,
   [type=radio]:checked:disabled + label .figura-variable.muestra {
-    background-color: var(--input-deshabilitado-fondo);
-    border-color: var(--input-deshabilitado-color);
+    background-color: var(--campo-deshabilitado-fondo);
+    border-color: var(--campo-deshabilitado-color);
   }
 }
 

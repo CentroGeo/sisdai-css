@@ -166,7 +166,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Interlineado', valor:'1.25em'},
         {nombre:'Peso', valor:'Regular (400)'},
         {nombre:'Margen derecho', valor:'24px'},
-        {nombre:'Color', valor:'var(--label-color)'},
+        {nombre:'Color', valor:'var(--campo-etiqueta-color)'},
       ]]"
     /> 
   </div>

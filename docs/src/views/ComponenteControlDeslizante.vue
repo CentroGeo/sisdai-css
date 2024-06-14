@@ -46,25 +46,25 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
   &::-webkit-slider-runnable-track {
     background: linear-gradient(
       to right,
-      var(--input-controles-color),
-      var(--input-controles-color) 50%,
-      var(--input-deshabilitado-fondo) 50%
+      var(--campo-rango-activo),
+      var(--campo-rango-activo) 50%,
+      var(--campo-rango) 50%
     );
   }
   &::-moz-range-track {
     background: linear-gradient(
       to right,
-      var(--input-controles-color),
-      var(--input-controles-color) 50%,
-      var(--input-deshabilitado-fondo) 50%
+      var(--campo-rango-activo),
+      var(--campo-rango-activo) 50%,
+      var(--campo-rango) 50%
     );
   }
   &::-ms-fill-upper {
     background: linear-gradient(
       to right,
-      var(--input-controles-color),
-      var(--input-controles-color) 50%,
-      var(--input-deshabilitado-fondo) 50%
+      var(--campo-rango-activo),
+      var(--campo-rango-activo) 50%,
+      var(--campo-rango) 50%
     );
   }
 }

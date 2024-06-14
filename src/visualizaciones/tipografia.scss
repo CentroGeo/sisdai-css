@@ -74,7 +74,7 @@
   font-size: 1rem; // 16px
   line-height: calc(1em * 1.25);
   font-weight: 400;
-  color: var(--label-color);
+  color: var(--campo-etiqueta-color);
   display: inline-flex;
   margin: map-get($espaciado, '1') map-get($espaciado, '3') map-get($espaciado, '1') 0;
 
@@ -87,8 +87,8 @@
     display: inline-flex;
     margin-right: map-get($espaciado, 'minimo');
     &.disabled {
-      background: var(--input-deshabilitado-fondo);
-      border: 1px solid var(--input-deshabilitado-color);
+      background: var(--campo-deshabilitado-fondo);
+      border: 1px solid var(--campo-deshabilitado-color);
     }
   }
 }

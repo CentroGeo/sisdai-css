@@ -12,7 +12,6 @@
 
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
 [type='checkbox'],
 [type='radio'] {
   position: absolute;
@@ -26,11 +25,12 @@
   line-height: 1.25em;
   border: 0;
 }
+// campo contenedor = la cajita que hace el label que encapsula todo
 [type='checkbox'] + label,
 [type='radio'] + label {
   line-height: 1.25em;
-  background-color: transparent;
-  border: 1px solid transparent;
+  background-color: var(--campo-contenedor-fondo);
+  border: 1px solid var(--campo-contenedor-borde);
   border-radius: $form-campo-radio;
   cursor: pointer;
   display: inline-flex;
@@ -41,73 +41,69 @@
   padding-top: calc(map-get($espaciado, '1'));
   padding-bottom: calc(map-get($espaciado, '1'));
 }
+[type='checkbox']:hover + label,
+[type='radio']:hover + label {
+  background-color: var(--campo-cursor-fondo);
+  border-color: var(--campo-cursor-borde);
+}
 [type='checkbox']:focus + label,
 [type='radio']:focus + label {
-  background-color: var(--input-hover);
-  border-color: var(--input-focus);
-  box-shadow: 0 0 8px var(--input-focus);
+  background-color: var(--campo-enfoque-fondo);
+  border-color: var(--campo-enfoque-borde);
+  box-shadow: 0 0 8px var(--campo-enfoque-sombra);
   outline: none;
   z-index: 1;
 }
-[type='checkbox']:hover + label,
-[type='radio']:hover + label {
-  background-color: var(--input-hover);
-  border-color: var(--input-borde);
+[type='checkbox']:disabled + label,
+[type='radio']:disabled + label,
+[type='checkbox']:checked:disabled + label,
+[type='radio']:checked:disabled + label {
+  background-color: var(--campo-deshabilitado-fondo);
+  border-color: var(--campo-deshabilitado-borde);
+  color: var(--campo-deshabilitado-color);
+  &:hover {
+    background-color: var(--campo-deshabilitado-fondo);
+    cursor: default;
+  }
 }
-[type='checkbox']:hover + label::before,
-[type='radio']:hover + label::before {
-  border-color: var(--input-borde);
-}
+
+// campo control = los elementos after y before que dibujan el checkbox y el radio button
 [type='checkbox'] + label::before,
 [type='radio'] + label::before {
+  background-color: var(--campo-control-fondo);
+  border: 1px solid var(--campo-control-borde);
   box-sizing: border-box;
-  border: 1px solid var(--input-borde);
   content: '';
   height: 1.125rem;
   width: 1.125rem;
   top: calc(map-get($espaciado, '1') + 1px);
   left: calc(map-get($espaciado, '1'));
   padding: calc(map-get($espaciado, 'minimo'));
-  background-color: var(--campo-fondo);
   position: absolute;
 }
-
-// desabilitado
-[type='checkbox']:disabled + label,
-[type='radio']:disabled + label,
-[type='checkbox']:checked:disabled + label,
-[type='radio']:checked:disabled + label {
-  background-color: var(--input-deshabilitado-fondo);
-  border-color: var(--input-deshabilitado-borde);
-  color: var(--input-placeholder);
-  &:hover {
-    background-color: var(--input-deshabilitado-fondo);
-    cursor: default;
-  }
+[type='checkbox']:checked + label::before,
+[type='radio']:checked + label::before,
+[type='checkbox']:checked:hover + label::before,
+[type='radio']:checked:hover + label::before {
+  background-color: var(--campo-control-fondo);
+  border: 1px solid var(--campo-control-borde);
 }
 [type='radio']:disabled + label::before,
 [type='radio']:checked:disabled + label::before,
 [type='checkbox']:disabled + label::before,
 [type='checkbox']:checked:disabled + label::before {
-  background-color: var(--campo-fondo);
-  border-color: var(--input-deshabilitado-borde);
+  background-color: var(--campo-control-deshabilitado-fondo);
+  border-color: var(--campo-control-deshabilitado-borde);
 }
 
 // checkbox
 [type='checkbox'] + label::before {
   border-radius: map-get($borde-redondeado, '2');
 }
-[type='checkbox']:checked + label::before,
-[type='radio']:checked + label::before {
-  background-color: var(--campo-fondo);
-}
-[type='checkbox']:checked:hover + label::before {
-  background-color: var(--campo-fondo);
-}
 [type='checkbox']:checked + label::after {
   font-family: 'sisdai-pictogramas';
   content: '\6a';
-  color: var(--input-color);
+  color: var(--campo-control-seleccionado-color);
   position: absolute;
   left: calc(0.125rem + map-get($espaciado, '1') - 1px);
   top: calc(map-get($espaciado, '1'));
@@ -115,13 +111,13 @@
   text-align: center;
 }
 [type='checkbox']:checked:hover + label::after {
-  color: var(--input-color);
+  color: var(--campo-control-seleccionado-color);
 }
 [type='checkbox']:not(:checked).indeterminate + label::after,
 [type='checkbox']:indeterminate + label::after {
   font-family: 'sisdai-pictogramas';
   content: '\2f';
-  color: var(--input-color);
+  color: var(--campo-control-seleccionado-color);
   position: absolute;
   left: calc(0.125rem + map-get($espaciado, 'minimo') + 1px);
   top: calc(map-get($espaciado, '1'));
@@ -129,17 +125,18 @@
   font-size: 1.2rem;
 }
 [type='checkbox']:checked:disabled + label::after {
-  color: var(--input-deshabilitado-borde);
+  color: var(--campo-control-deshabilitado-color);
 }
 
 // radio
 [type='radio'] + label::before {
   border-radius: 50%;
 }
-[type='radio']:checked + label::before { 
-  background-color: var(--input-borde); // este hace de separacion tipo borde del circulo
-  box-shadow: inset 0 0 0 0.15rem var(--campo-fondo); // este es el circulo solido de fondo
+[type='radio']:checked + label::before,
+[type='radio']:checked:hover + label::before {
+  background-color: var(--campo-control-seleccionado-color); // esta es la bolita del centro
+  box-shadow: inset 0 0 0 0.15rem var(--campo-control-seleccionado-fondo); // espacio de fondo alrededor de la bolita
 }
 [type='radio']:checked:disabled + label::before {
-  background-color: var(--input-deshabilitado-borde);
+  background-color: var(--campo-control-deshabilitado-color); // bolita seleccionada y deshabilitada
 }
