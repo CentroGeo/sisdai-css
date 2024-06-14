@@ -6261,6 +6261,7 @@ textarea {
   line-height: 1.25em;
   background-color: var(--campo-contenedor-fondo);
   border: 1px solid var(--campo-contenedor-borde);
+  box-shadow: 0 0 0 var(--campo-contenedor-borde);
   border-radius: 8px;
   cursor: pointer;
   display: inline-flex;
@@ -6270,18 +6271,19 @@ textarea {
   padding-right: 8px;
   padding-top: 8px;
   padding-bottom: 8px;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-[type=checkbox]:hover + label, [type=checkbox]:hover + legend,
-[type=radio]:hover + label,
-[type=radio]:hover + legend {
+[type=checkbox]:not(:disabled):hover + label, [type=checkbox]:not(:disabled):hover + legend,
+[type=radio]:not(:disabled):hover + label,
+[type=radio]:not(:disabled):hover + legend {
   background-color: var(--campo-cursor-fondo);
   border-color: var(--campo-cursor-borde);
 }
 
-[type=checkbox]:focus + label, [type=checkbox]:focus + legend,
-[type=radio]:focus + label,
-[type=radio]:focus + legend {
+[type=checkbox]:not(:disabled):focus + label, [type=checkbox]:not(:disabled):focus + legend,
+[type=radio]:not(:disabled):focus + label,
+[type=radio]:not(:disabled):focus + legend {
   background-color: var(--campo-enfoque-fondo);
   border-color: var(--campo-enfoque-borde);
   box-shadow: 0 0 8px var(--campo-enfoque-sombra);
@@ -6297,13 +6299,6 @@ textarea {
   background-color: var(--campo-deshabilitado-fondo);
   border-color: var(--campo-deshabilitado-borde);
   color: var(--campo-deshabilitado-color);
-}
-[type=checkbox]:disabled + label:hover, [type=checkbox]:disabled + legend:hover,
-[type=radio]:disabled + label:hover,
-[type=radio]:disabled + legend:hover,
-[type=checkbox]:checked:disabled + label:hover,
-[type=radio]:checked:disabled + label:hover {
-  background-color: var(--campo-deshabilitado-fondo);
   cursor: default;
 }
 
@@ -6320,15 +6315,6 @@ textarea {
   left: 8px;
   padding: 4px;
   position: absolute;
-}
-
-[type=checkbox]:checked + label::before, [type=checkbox]:checked + legend::before,
-[type=radio]:checked + label::before,
-[type=radio]:checked + legend::before,
-[type=checkbox]:checked:hover + label::before,
-[type=radio]:checked:hover + label::before {
-  background-color: var(--campo-control-fondo);
-  border: 1px solid var(--campo-control-borde);
 }
 
 [type=radio]:disabled + label::before, [type=radio]:disabled + legend::before,
@@ -6355,13 +6341,9 @@ textarea {
   text-align: center;
 }
 
-[type=checkbox]:checked:hover + label::after, [type=checkbox]:checked:hover + legend::after {
-  color: var(--campo-control-seleccionado-color);
-}
-
-[type=checkbox]:not(:checked).indeterminate + label::after, [type=checkbox]:not(:checked).indeterminate + legend::after,
-[type=checkbox]:indeterminate + label::after,
-[type=checkbox]:indeterminate + legend::after {
+[type=checkbox]:not(:checked):not(:disabled).indeterminate + label::after, [type=checkbox]:not(:checked):not(:disabled).indeterminate + legend::after,
+[type=checkbox]:indeterminate:not(:disabled) + label::after,
+[type=checkbox]:indeterminate:not(:disabled) + legend::after {
   font-family: "sisdai-pictogramas";
   content: "/";
   color: var(--campo-control-seleccionado-color);
@@ -6372,7 +6354,11 @@ textarea {
   font-size: 1.2rem;
 }
 
-[type=checkbox]:checked:disabled + label::after, [type=checkbox]:checked:disabled + legend::after {
+[type=checkbox]:checked:disabled + label::after, [type=checkbox]:checked:disabled + legend::after,
+[type=checkbox]:indeterminate:disabled + label::after,
+[type=checkbox]:indeterminate:disabled + legend::after,
+[type=checkbox]:not(:checked):disabled.indeterminate + label::after,
+[type=checkbox]:not(:checked):disabled.indeterminate + legend::after {
   color: var(--campo-control-deshabilitado-color);
 }
 
@@ -6380,8 +6366,8 @@ textarea {
   border-radius: 50%;
 }
 
-[type=radio]:checked + label::before, [type=radio]:checked + legend::before,
-[type=radio]:checked:hover + label::before {
+[type=radio]:not(:disabled):checked + label::before, [type=radio]:not(:disabled):checked + legend::before,
+[type=radio]:not(:disabled):checked:hover + label::before {
   background-color: var(--campo-control-seleccionado-color);
   box-shadow: inset 0 0 0 0.15rem var(--campo-control-seleccionado-fondo);
 }
@@ -6415,6 +6401,7 @@ select:disabled {
 [type=range] {
   background-color: transparent;
   border: 1px solid transparent;
+  box-shadow: 0 0 0 transparent;
   box-sizing: border-box;
   width: 100%;
   -ms-touch-action: manipulation;
@@ -6427,82 +6414,87 @@ select:disabled {
   border-radius: 8px;
   display: flex;
   margin: 0;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 [type=range]::-moz-range-thumb {
   margin-top: -0.375rem;
   height: 1rem;
   width: 1rem;
-  background: var(--campo-rango-activo);
   border: 0;
   border-radius: 0.5rem;
+  background-color: var(--campo-rango-activo);
+  transition: background-color 0.2s ease-in-out;
 }
 [type=range]::-ms-thumb {
   margin-top: -0.375rem;
   width: 1rem;
   height: 1rem;
-  background: var(--campo-rango-activo);
   border: 0;
   border-radius: 0.5rem;
+  background-color: var(--campo-rango-activo);
+  transition: background-color 0.2s ease-in-out;
 }
 [type=range]::-webkit-slider-thumb {
   margin-top: -0.375rem;
   width: 1rem;
   height: 1rem;
-  background: var(--campo-rango-activo);
   border: 0;
   border-radius: 0.5rem;
   -webkit-appearance: none;
-}
-[type=range]::-webkit-slider-thumb:hover {
   background-color: var(--campo-rango-activo);
+  transition: background-color 0.2s ease-in-out;
 }
 [type=range]::-webkit-slider-runnable-track {
-  background: var(--campo-rango-activo);
   border: 0;
   border-radius: 0.25rem;
   width: 100%;
   height: 0.25rem;
+  background-color: var(--campo-rango-activo);
+  transition: background-color 0.2s ease-in-out;
 }
 [type=range]::-moz-range-track {
-  background: var(--campo-rango-activo);
   border: 0;
   border-radius: 0.25rem;
   width: 100%;
   height: 0.25rem;
+  background-color: var(--campo-rango-activo);
+  transition: background-color 0.2s ease-in-out;
 }
 [type=range]::-ms-fill-lower {
-  background: var(--campo-rango-activo);
   border: 0;
   border-radius: 0.25rem;
   width: 100%;
   height: 0.25rem;
+  background-color: var(--campo-rango-activo);
+  transition: background-color 0.2s ease-in-out;
 }
 [type=range]::-ms-fill-upper {
-  background: var(--campo-rango);
   border: 0;
   border-radius: 0.25rem;
   width: 100%;
   height: 0.25rem;
+  background-color: var(--campo-rango);
+  transition: background-color 0.2s ease-in-out;
 }
-[type=range]:hover::-moz-range-thumb {
+[type=range]:not(:disabled):hover::-moz-range-thumb {
   background-color: var(--campo-rango-cursor);
 }
-[type=range]:hover::-ms-thumb {
+[type=range]:not(:disabled):hover::-ms-thumb {
   background-color: var(--campo-rango-cursor);
 }
-[type=range]:hover::-webkit-slider-thumb {
+[type=range]:not(:disabled):hover::-webkit-slider-thumb {
   background-color: var(--campo-rango-cursor);
 }
-[type=range]:hover::-webkit-slider-runnable-track {
+[type=range]:not(:disabled):hover::-webkit-slider-runnable-track {
   background-color: var(--campo-rango-cursor);
 }
-[type=range]:hover::-moz-range-track {
+[type=range]:not(:disabled):hover::-moz-range-track {
   background-color: var(--campo-rango-cursor);
 }
-[type=range]:hover::-ms-fill-lower {
+[type=range]:not(:disabled):hover::-ms-fill-lower {
   background-color: var(--campo-rango-cursor);
 }
-[type=range]:hover::-ms-fill-upper {
+[type=range]:not(:disabled):hover::-ms-fill-upper {
   background-color: var(--campo-rango-cursor);
 }
 [type=range]:disabled {
@@ -10177,7 +10169,36 @@ body[data-dark-theme-eni=true] {
   --texto-acento: var(--color-primario-2);
   --texto-inverso: var(--color-neutro-0);
   --estado-enfoque: var(--color-interactivo-3);
-  --campo-fondo: var(--fondo);
+  --campo-etiqueta-color: var(--color-secundario-5);
+  --campo-fondo: var(--color-secundario-12);
+  --campo-color: var(--color-neutro-0);
+  --campo-borde: var(--color-secundario-5);
+  --campo-ejemplo-color: var(--color-secundario-7);
+  --campo-ejemplo-cursor-color: var(--color-secundario-5);
+  --campo-ejemplo-enfoque-color: var(--color-secundario-5);
+  --campo-ejemplo-deshabilitado-color: var(--color-secundario-7);
+  --campo-deshabilitado-fondo: var(--color-secundario-7);
+  --campo-deshabilitado-color: var(--color-secundario-7);
+  --campo-deshabilitado-borde: var(--color-secundario-8);
+  --campo-cursor-fondo: var(--color-secundario-10);
+  --campo-cursor-borde: var(--color-secundario-5);
+  --campo-enfoque-fondo: var(--color-secundario-10);
+  --campo-enfoque-borde: var(--estado-enfoque);
+  --campo-enfoque-sombra: var(--estado-enfoque);
+  --campo-rango-activo: var(--color-primario-2);
+  --campo-rango-cursor: var(--color-primario-1);
+  --campo-rango-deshabilitado: var(--color-secundario-7);
+  --campo-rango: var(--color-secundario-7);
+  --campo-control-fondo: var(--color-secundario-12);
+  --campo-control-borde: var(--color-secundario-5);
+  --campo-control-seleccionado-fondo: var(--color-secundario-12);
+  --campo-control-seleccionado-borde: var(--color-secundario-5);
+  --campo-control-seleccionado-color: var(--color-secundario-5);
+  --campo-control-deshabilitado-fondo: var(--color-secundario-12);
+  --campo-control-deshabilitado-borde: var(--color-secundario-8);
+  --campo-control-deshabilitado-color: var(--color-secundario-8);
+  --campo-contenedor-fondo: transparent;
+  --campo-contenedor-borde: transparent;
   --tabla-fila-par-fondo: var(--color-secundario-12);
   --tabla-fila-impar-fondo: var(--color-secundario-10);
   --tabla-fila-pie-fondo: var(--color-secundario-8);
@@ -10253,7 +10274,36 @@ body[data-light-theme-eni=true] {
   --texto-acento: var(--color-primario-3);
   --texto-inverso: var(--color-neutro-0);
   --estado-enfoque: var(--color-interactivo-1);
-  --campo-fondo: var(--fondo);
+  --campo-etiqueta-color: var(--color-secundario-8);
+  --campo-fondo: var(--color-neutro-0);
+  --campo-color: var(--color-neutro-6);
+  --campo-borde: var(--color-secundario-8);
+  --campo-ejemplo-color: var(--color-neutro-4);
+  --campo-ejemplo-cursor-color: var(--color-secundario-8);
+  --campo-ejemplo-enfoque-color: var(--color-secundario-8);
+  --campo-ejemplo-deshabilitado-color: var(--color-neutro-4);
+  --campo-deshabilitado-fondo: var(--color-neutro-2);
+  --campo-deshabilitado-color: var(--color-neutro-4);
+  --campo-deshabilitado-borde: var(--color-neutro-3);
+  --campo-cursor-fondo: var(--color-secundario-2);
+  --campo-cursor-borde: var(--color-secundario-8);
+  --campo-enfoque-fondo: var(--color-secundario-2);
+  --campo-enfoque-borde: var(--estado-enfoque);
+  --campo-enfoque-sombra: var(--estado-enfoque);
+  --campo-rango-activo: var(--color-primario-3);
+  --campo-rango-cursor: var(--color-primario-4);
+  --campo-rango-deshabilitado: var(--color-neutro-4);
+  --campo-rango: var(--color-neutro-2);
+  --campo-control-fondo: var(--color-neutro-0);
+  --campo-control-borde: var(--color-secundario-8);
+  --campo-control-seleccionado-fondo: var(--color-neutro-0);
+  --campo-control-seleccionado-borde: var(--color-secundario-8);
+  --campo-control-seleccionado-color: var(--color-secundario-8);
+  --campo-control-deshabilitado-fondo: var(--color-neutro-0);
+  --campo-control-deshabilitado-borde: var(--color-neutro-3);
+  --campo-control-deshabilitado-color: var(--color-neutro-3);
+  --campo-contenedor-fondo: transparent;
+  --campo-contenedor-borde: transparent;
   --tabla-fila-par-fondo: var(--color-neutro-0);
   --tabla-fila-impar-fondo: var(--color-secundario-2);
   --tabla-fila-pie-fondo: var(--color-secundario-4);
