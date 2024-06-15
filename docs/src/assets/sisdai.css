@@ -6920,7 +6920,7 @@ ol + hr {
 
 .tarjeta {
   flex: 1 1;
-  background: var(--tarjetas-fondo);
+  background: var(--tarjeta-fondo);
   border-radius: 20px;
   overflow: hidden;
 }
@@ -6934,7 +6934,7 @@ ol + hr {
 .tarjeta .tarjeta-cuerpo {
   align-items: stretch;
   padding: 24px;
-  color: var(--tarjetas-color);
+  color: var(--tarjeta-color);
   transition: all 0.27s ease-in-out;
 }
 .tarjeta .tarjeta-cuerpo > * {
@@ -6978,7 +6978,7 @@ ol + hr {
   box-sizing: border-box;
   margin-top: 8px;
   margin-bottom: 8px;
-  background: var(--tarjetas-internas-fondo);
+  background: var(--tarjeta-interna-fondo);
 }
 .tarjeta-hipervinculo .tarjeta-cuerpo > *, .tarjeta-hipervinculo-externo .tarjeta-cuerpo > *, .tarjeta-hipervinculo-interno .tarjeta-cuerpo > * {
   margin: 4px 0;
@@ -6990,11 +6990,11 @@ ol + hr {
   margin-bottom: 0;
 }
 .tarjeta-hipervinculo:hover, .tarjeta-hipervinculo-externo:hover, .tarjeta-hipervinculo-interno:hover, .tarjeta-hipervinculo:focus, .tarjeta-hipervinculo-externo:focus, .tarjeta-hipervinculo-interno:focus, .tarjeta-hipervinculo:focus-visible, .tarjeta-hipervinculo-externo:focus-visible, .tarjeta-hipervinculo-interno:focus-visible {
-  box-shadow: 0 0 0 2px var(--hipervinculo-focus-sombra), 0 0 8px 1px var(--hipervinculo-focus-sombra);
+  box-shadow: 0 0 0 2px var(--hipervinculo-enfoque-sombra), 0 0 8px 1px var(--hipervinculo-enfoque-sombra);
 }
 .tarjeta-hipervinculo:hover, .tarjeta-hipervinculo-externo:hover, .tarjeta-hipervinculo-interno:hover {
   text-decoration: none;
-  background-color: var(--tarjetas-internas-fondo-hover);
+  background-color: var(--tarjeta-interna-cursor-fondo);
 }
 .tarjeta-hipervinculo:hover .tarjeta-imagen, .tarjeta-hipervinculo-externo:hover .tarjeta-imagen, .tarjeta-hipervinculo-interno:hover .tarjeta-imagen {
   transform: scale(1);
@@ -7038,7 +7038,7 @@ ol + hr {
 .tarjeta-hipervinculo-externo .tarjeta-degradado {
   position: relative;
   width: 100%;
-  background: var(--tarjetas-externas-fondo-gradiente);
+  background: var(--tarjeta-externa-fondo-degradado);
   display: flex;
   align-items: stretch;
   margin-top: 48px;
@@ -7049,7 +7049,7 @@ ol + hr {
   width: 100%;
 }
 .tarjeta-hipervinculo-externo .tarjeta-cuerpo > * {
-  color: var(--tarjetas-externas-color);
+  color: var(--tarjeta-externa-color);
   border-color: currentColor;
 }
 .tarjeta-hipervinculo-externo .tarjeta-cuerpo .pictograma,
@@ -9872,13 +9872,13 @@ span.controlador-vis label, span.controlador-vis legend,
   color: var(--tipografia-color);
 }
 .a11y-simplificada .tarjeta .tarjeta-cuerpo {
-  background: var(--tarjetas-contenido-simplificada-fondo);
-  color: var(--tarjetas--contenido-simplificada-color);
+  background: var(--tarjeta-contenido-simplificada-fondo);
+  color: var(--tarjeta-contenido-simplificada-color);
 }
 .a11y-simplificada .tarjeta .tarjeta-cuerpo p,
 .a11y-simplificada .tarjeta .tarjeta-cuerpo .tarjeta-titulo,
 .a11y-simplificada .tarjeta .tarjeta-cuerpo .tarjeta-etiqueta {
-  color: var(--tarjetas--contenido-simplificada-color);
+  color: var(--tarjeta-contenido-simplificada-color);
 }
 .a11y-simplificada .tarjeta .tarjeta-cuerpo a, .a11y-simplificada .tarjeta .tarjeta-cuerpo button {
   text-decoration: none !important;
@@ -9890,10 +9890,10 @@ span.controlador-vis label, span.controlador-vis legend,
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno,
 .a11y-simplificada .tarjeta-hipervinculo-externo {
-  background: var(--tarjetas-simplificada-fondo);
-  border: 1px solid var(--tarjetas-simplificada-borde);
+  background: var(--tarjeta-simplificada-fondo);
+  border: 1px solid var(--tarjeta-simplificada-borde);
   min-height: auto;
-  color: var(--tarjetas-simplificada-color);
+  color: var(--tarjeta-simplificada-color);
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno .tarjeta-degradado,
 .a11y-simplificada .tarjeta-hipervinculo-externo .tarjeta-degradado {
@@ -9902,11 +9902,11 @@ span.controlador-vis label, span.controlador-vis legend,
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno .tarjeta-cuerpo,
 .a11y-simplificada .tarjeta-hipervinculo-externo .tarjeta-cuerpo {
-  color: var(--tarjetas-simplificada-color);
+  color: var(--tarjeta-simplificada-color);
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno .tarjeta-cuerpo > *,
 .a11y-simplificada .tarjeta-hipervinculo-externo .tarjeta-cuerpo > * {
-  color: var(--tarjetas-simplificada-color);
+  color: var(--tarjeta-simplificada-color);
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno:hover, .a11y-simplificada .tarjeta-hipervinculo-interno:focus, .a11y-simplificada .tarjeta-hipervinculo-interno:focus-visible,
 .a11y-simplificada .tarjeta-hipervinculo-externo:hover,
@@ -9918,19 +9918,19 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .tarjeta-hipervinculo-externo:hover .tarjeta-cuerpo,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus .tarjeta-cuerpo,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus-visible .tarjeta-cuerpo {
-  background: var(--tarjetas-simplificada-fondo-hover);
+  background: var(--tarjeta-simplificada-cursor-fondo);
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno:hover .tarjeta-cuerpo > *, .a11y-simplificada .tarjeta-hipervinculo-interno:focus .tarjeta-cuerpo > *, .a11y-simplificada .tarjeta-hipervinculo-interno:focus-visible .tarjeta-cuerpo > *,
 .a11y-simplificada .tarjeta-hipervinculo-externo:hover .tarjeta-cuerpo > *,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus .tarjeta-cuerpo > *,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus-visible .tarjeta-cuerpo > * {
-  color: var(--tarjetas-simplificada-color-hover);
+  color: var(--tarjeta-simplificada-cursor-color);
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno:focus, .a11y-simplificada .tarjeta-hipervinculo-interno:focus-visible,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus-visible {
-  background: var(--tarjeta-simplificada-fondo-focus);
-  box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
+  background: var(--tarjeta-simplificada-enfoque-fondo);
+  box-shadow: 0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
 }
 .a11y-simplificada .boton-flotante {
   position: static;
@@ -10159,7 +10159,7 @@ body[data-dark-theme-eni=true] {
   --fondo: var(--color-secundario-12);
   --fondo-neutro: var(--color-secundario-10);
   --fondo-acento: var(--color-secundario-10);
-  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb), 1) 0%, rgba(ar(--color-secundario-11-rgb), 0.59) 60%, rgba(ar(--color-secundario-11-rgb), 0) 100%);
+  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.59) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
   --borde: var(--color-neutro-0);
   --titulo: var(--color-neutro-0);
   --titulo-inverso: var(--color-neutro-0);
@@ -10246,6 +10246,26 @@ body[data-dark-theme-eni=true] {
   --hipervinculo-enfoque-color: var(--estado-enfoque);
   --hipervinculo-enfoque-sombra: var(--estado-enfoque);
   --hipervinculo-visitado: var(--color-interactivo-5);
+  --tarjeta-fondo: var(--color-secundario-10);
+  --tarjeta-color: var(--color-neutro-0);
+  --tarjeta-externa-color: var(--texto-inverso);
+  --tarjeta-externa-fondo-degradado: var(--fondo-degradado);
+  --tarjeta-interna-color: var(--color-neutro-0);
+  --tarjeta-interna-fondo: var(--color-secundario-10);
+  --tarjeta-interna-cursor-fondo: var(--color-secundario-8);
+  --tarjeta-simplificada-fondo: var(--color-secundario-12);
+  --tarjeta-simplificada-color: var(--color-interactivo-3);
+  --tarjeta-simplificada-borde: var(--color-interactivo-3);
+  --tarjeta-simplificada-cursor-fondo: var(--color-interactivo-3);
+  --tarjeta-simplificada-cursor-borde: var(--color-interactivo-3);
+  --tarjeta-simplificada-cursor-color: var(--color-secundario-12);
+  --tarjeta-simplificada-enfoque-fondo: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-borde: var(--color-secundario-12);
+  --tarjeta-simplificada-enfoque-color: var(--color-secundario-12);
+  --tarjeta-simplificada-enfoque-contorno: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
+  --tarjeta-contenido-simplificada-fondo: var(--color-secundario-10);
+  --tarjeta-contenido-simplificada-color: var(--color-neutro-0);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);
@@ -10264,7 +10284,7 @@ body[data-light-theme-eni=true] {
   --fondo: var(--color-neutro-0);
   --fondo-neutro: var(--color-neutro-1);
   --fondo-acento: var(--color-secundario-2);
-  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb), 1) 0%, rgba(var(--color-neutro-7-rgb), 0.59) 60%, rgba(var(--color-neutro-7-rgb), 0) 100%);
+  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-secundario-7-rgb),1) 0%, rgba(var(--color-secundario-7-rgb),0.59) 60%, rgba(var(--color-secundario-7-rgb),0) 100%);
   --borde: var(--color-neutro-4);
   --titulo: var(--color-neutro-6);
   --titulo-inverso: var(--color-neutro-0);
@@ -10351,6 +10371,26 @@ body[data-light-theme-eni=true] {
   --hipervinculo-enfoque-color: var(--estado-enfoque);
   --hipervinculo-enfoque-sombra: var(--estado-enfoque);
   --hipervinculo-visitado: var(--color-interactivo-6);
+  --tarjeta-fondo: var(--color-neutro-1);
+  --tarjeta-color: var(--color-neutro-6);
+  --tarjeta-externa-color: var(--texto-inverso);
+  --tarjeta-externa-fondo-degradado: var(--fondo-degradado);
+  --tarjeta-interna-color: var(--color-neutro-6);
+  --tarjeta-interna-fondo: var(--color-neutro-1);
+  --tarjeta-interna-cursor-fondo: var(--color-neutro-2);
+  --tarjeta-simplificada-fondo: var(--color-neutro-0);
+  --tarjeta-simplificada-color: var(--color-interactivo-1);
+  --tarjeta-simplificada-borde: var(--color-interactivo-1);
+  --tarjeta-simplificada-cursor-fondo: var(--color-interactivo-1);
+  --tarjeta-simplificada-cursor-borde: var(--color-interactivo-1);
+  --tarjeta-simplificada-cursor-color: var(--color-neutro-0);
+  --tarjeta-simplificada-enfoque-fondo: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-borde: var(--color-neutro-0);
+  --tarjeta-simplificada-enfoque-color: var(--color-neutro-0);
+  --tarjeta-simplificada-enfoque-contorno: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
+  --tarjeta-contenido-simplificada-fondo: var(--color-neutro-1);
+  --tarjeta-contenido-simplificada-color: var(--color-neutro-6);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);

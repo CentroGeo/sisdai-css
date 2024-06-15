@@ -5,7 +5,7 @@ body[data-light-theme-eni='true'] {
   --fondo: var(--color-neutro-0);
   --fondo-neutro: var(--color-neutro-1);
   --fondo-acento: var(--color-secundario-2);
-  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb), 1) 0%, rgba(var(--color-neutro-7-rgb), 0.59) 60%, rgba(var(--color-neutro-7-rgb), 0) 100%);
+  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-secundario-7-rgb),1) 0%, rgba(var(--color-secundario-7-rgb),0.59) 60%, rgba(var(--color-secundario-7-rgb),0) 100%);
 
   --borde: var(--color-neutro-4);
   
@@ -103,6 +103,28 @@ body[data-light-theme-eni='true'] {
   --hipervinculo-enfoque-color: var(--estado-enfoque);
   --hipervinculo-enfoque-sombra: var(--estado-enfoque);
   --hipervinculo-visitado: var(--color-interactivo-6);
+
+  // elementos compuestos
+  --tarjeta-fondo: var(--color-neutro-1);
+  --tarjeta-color: var(--color-neutro-6);
+  --tarjeta-externa-color: var(--texto-inverso);
+  --tarjeta-externa-fondo-degradado: var(--fondo-degradado);
+  --tarjeta-interna-color: var(--color-neutro-6);
+  --tarjeta-interna-fondo: var(--color-neutro-1);
+  --tarjeta-interna-cursor-fondo: var(--color-neutro-2);
+  --tarjeta-simplificada-fondo: var(--color-neutro-0);
+  --tarjeta-simplificada-color: var(--color-interactivo-1);
+  --tarjeta-simplificada-borde: var(--color-interactivo-1);
+  --tarjeta-simplificada-cursor-fondo: var(--color-interactivo-1);
+  --tarjeta-simplificada-cursor-borde: var(--color-interactivo-1);
+  --tarjeta-simplificada-cursor-color: var(--color-neutro-0);
+  --tarjeta-simplificada-enfoque-fondo: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-borde: var(--color-neutro-0);
+  --tarjeta-simplificada-enfoque-color: var(--color-neutro-0);
+  --tarjeta-simplificada-enfoque-contorno: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
+  --tarjeta-contenido-simplificada-fondo: var(--color-neutro-1);
+  --tarjeta-contenido-simplificada-color: var(--color-neutro-6);
   
   // componentes
   --modal-fondo: var(--fondo);

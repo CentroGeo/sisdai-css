@@ -22,9 +22,9 @@
   //   isA11yTypography.value = !isA11yTypography.value
   // }
 
-  // function toggleA11yView() {
-  //   isA11yView.value = !isA11yView.value
-  // }
+  function toggleA11yView() {
+    isA11yView.value = !isA11yView.value
+  }
   // function toggleA11yLink() {
   //   isA11yUnderline.value = !isA11yUnderline.value
   // }
@@ -289,19 +289,19 @@
               </ul>
             </li>
 
-            <!-- <li class="nav-contenedor-submenu">
+            <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')" @mouseover="mostrarSubmenu('elementoscompuestos')">Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">NOSTA Alertas <span class="etiqueta">pre</span></RouterLink></li>
+            <!--     <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">NOSTA Alertas <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">NOSTA Cargando <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
               </ul>
-            </li> -->
+            </li>
 
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')" @mouseover="mostrarSubmenu('componentes')">Componentes</button>
@@ -356,7 +356,7 @@
     <menu role="complementary" class="tmp-menu">
       
       <!-- <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button> -->
-      <!-- <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button> -->
+      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
       <!-- <button class="boton-primario" @click="downFontSize">Reducir fuente</button> -->
       <!-- <button class="boton-primario" @click="upFontSize">Incrementar fuente</button> -->
       <!-- <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button> -->

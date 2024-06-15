@@ -21,7 +21,7 @@
   box-sizing: border-box;
   margin-top: map-get($espaciado, '1');
   margin-bottom: map-get($espaciado, '1');
-  background: var(--tarjetas-internas-fondo);
+  background: var(--tarjeta-interna-fondo);
 
   .tarjeta-cuerpo {
     > * {
@@ -39,13 +39,13 @@
   &:focus,
   &:focus-visible {
     box-shadow: 
-    0 0 0 2px var(--hipervinculo-focus-sombra),
-    0 0 8px 1px var(--hipervinculo-focus-sombra);
+    0 0 0 2px var(--hipervinculo-enfoque-sombra),
+    0 0 8px 1px var(--hipervinculo-enfoque-sombra);
   }
 
   &:hover {
     text-decoration: none;
-    background-color: var(--tarjetas-internas-fondo-hover);
+    background-color: var(--tarjeta-interna-cursor-fondo);
     .tarjeta-imagen {
       transform: scale(1);
     }

@@ -35,7 +35,7 @@
   .tarjeta-degradado {
     position: relative;
     width: 100%;
-    background: var(--tarjetas-externas-fondo-gradiente);
+    background: var(--tarjeta-externa-fondo-degradado);
     display: flex;
     align-items: stretch;
     margin-top: map-get($espaciado, '6');
@@ -46,7 +46,7 @@
     padding: map-get($espaciado, '3');
     width: 100%;
     > * {
-      color: var(--tarjetas-externas-color);
+      color: var(--tarjeta-externa-color);
       border-color: currentColor;
     }
     .pictograma,

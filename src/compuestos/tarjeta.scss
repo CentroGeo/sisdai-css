@@ -15,7 +15,7 @@
 
 .tarjeta {
   flex: 1 1;
-  background: var(--tarjetas-fondo);
+  background: var(--tarjeta-fondo);
   border-radius: map-get($borde-redondeado, '20');
   overflow: hidden;
 
@@ -30,7 +30,7 @@
   .tarjeta-cuerpo {
     align-items: stretch;
     padding: map-get($espaciado, '3');
-    color: var(--tarjetas-color);
+    color: var(--tarjeta-color);
     @include transicion;
 
     > * {
