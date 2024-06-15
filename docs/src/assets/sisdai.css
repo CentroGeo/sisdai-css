@@ -10177,9 +10177,9 @@ body[data-dark-theme-eni=true] {
   --campo-ejemplo-cursor-color: var(--color-secundario-5);
   --campo-ejemplo-enfoque-color: var(--color-secundario-5);
   --campo-ejemplo-deshabilitado-color: var(--color-secundario-7);
-  --campo-deshabilitado-fondo: var(--color-secundario-7);
+  --campo-deshabilitado-fondo: var(--color-secundario-8);
   --campo-deshabilitado-color: var(--color-secundario-7);
-  --campo-deshabilitado-borde: var(--color-secundario-8);
+  --campo-deshabilitado-borde: var(--color-secundario-6);
   --campo-cursor-fondo: var(--color-secundario-10);
   --campo-cursor-borde: var(--color-secundario-5);
   --campo-enfoque-fondo: var(--color-secundario-10);
