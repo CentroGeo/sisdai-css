@@ -166,7 +166,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
       <p>
-        <button class="boton-chico"> 
+        <button class="boton-primario boton-chico"> 
           boton-chico
         </button>
       </p>
@@ -177,7 +177,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
       <p>
-        <button> 
+        <button class="boton-primario"> 
           boton
         </button>
       </p>
@@ -188,7 +188,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
       <p>
-        <button class="boton-grande">
+        <button class="boton-primario boton-grande">
           boton-grande
         </button>
       </p>
@@ -208,7 +208,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
       <p>
-        <button class="boton-chico"> 
+        <button class="boton-primario boton-chico"> 
           boton-chico
           <span 
             class="pictograma-flkt" 
@@ -223,7 +223,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
       <p>
-        <button> 
+        <button class="boton-primario"> 
           boton
           <span 
             class="pictograma-flkt" 
@@ -238,7 +238,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <EjemploCodigoVertical
       html='
       <p>
-        <button class="boton-grande">
+        <button class="boton-primario boton-grande">
           boton-grande
           <span 
             class="pictograma-flkt" 

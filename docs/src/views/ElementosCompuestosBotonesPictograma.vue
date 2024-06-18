@@ -26,6 +26,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <p>
         <button 
           class="
+            boton-primario
             boton-pictograma 
             boton-chico
           "
@@ -51,7 +52,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       html='
       <p>
         <button 
-          class="boton-pictograma"
+          class="
+            boton-primario
+            boton-pictograma
+          "
         >
           <span 
             class="pictograma-flkt" 
@@ -74,6 +78,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <p>
         <button 
           class="
+            boton-primario
             boton-pictograma 
             boton-grande
           "

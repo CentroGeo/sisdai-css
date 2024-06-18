@@ -5712,45 +5712,45 @@ input[type=reset] [class*=" pictograma-"],
 }
 
 .boton-sin-contenedor-primario {
-  background: transparent;
-  box-shadow: none;
+  background: var(--boton-sin-contenedor-primario-fondo);
+  box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-primario-borde), 0 0 0 var(--boton-sin-contenedor-primario-sombra);
   color: var(--boton-sin-contenedor-primario-color);
 }
 .boton-sin-contenedor-primario.deshabilitado, .boton-sin-contenedor-primario:disabled {
-  background: transparent;
-  box-shadow: none;
+  background: var(--boton-sin-contenedor-primario-deshabilitado-fondo);
+  box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-primario-deshabilitado-borde), 0 0 0 var(--boton-sin-contenedor-primario-deshabilitado-sombra);
   color: var(--boton-sin-contenedor-primario-deshabilitado-color);
 }
 .boton-sin-contenedor-primario:not(:disabled):hover {
-  background-color: var(--boton-sin-contenedor-primario-hover-fondo);
-  box-shadow: none;
-  color: var(--boton-sin-contenedor-primario-hover-color);
+  background: var(--boton-sin-contenedor-primario-cursor-fondo);
+  box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-primario-cursor-borde), 0 0 0 var(--boton-sin-contenedor-primario-cursor-sombra);
+  color: var(--boton-sin-contenedor-primario-cursor-color);
 }
 .boton-sin-contenedor-primario:not(:disabled):focus {
-  background-color: var(--boton-sin-contenedor-primario-focus-fondo);
-  box-shadow: 0 0 0 1px var(--boton-sin-contenedor-primario-focus-borde), 0 0 8px var(--boton-sin-contenedor-primario-focus-sombra);
-  color: var(--boton-sin-contenedor-primario-focus-color);
+  background: var(--boton-sin-contenedor-primario-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-sin-contenedor-primario-enfoque-borde), 0 0 8px var(--boton-sin-contenedor-primario-enfoque-sombra);
+  color: var(--boton-sin-contenedor-primario-enfoque-color);
 }
 
 .boton-sin-contenedor-secundario {
-  background: transparent;
-  box-shadow: none;
+  background: var(--boton-sin-contenedor-secundario-fondo);
+  box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-secundario-borde), 0 0 0 var(--boton-sin-contenedor-secundario-sombra);
   color: var(--boton-sin-contenedor-secundario-color);
 }
 .boton-sin-contenedor-secundario.deshabilitado, .boton-sin-contenedor-secundario:disabled {
-  background: transparent;
-  box-shadow: none;
+  background: var(--boton-sin-contenedor-secundario-deshabilitado-fondo);
+  box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-secundario-deshabilitado-borde), 0 0 0 var(--boton-sin-contenedor-secundario-deshabilitado-sombra);
   color: var(--boton-sin-contenedor-secundario-deshabilitado-color);
 }
 .boton-sin-contenedor-secundario:not(:disabled):hover {
-  background-color: var(--boton-sin-contenedor-secundario-hover-fondo);
-  box-shadow: none;
-  color: var(--boton-sin-contenedor-secundario-hover-color);
+  background: var(--boton-sin-contenedor-secundario-cursor-fondo);
+  box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-secundario-cursor-borde), 0 0 0 var(--boton-sin-contenedor-secundario-cursor-sombra);
+  color: var(--boton-sin-contenedor-secundario-cursor-color);
 }
 .boton-sin-contenedor-secundario:not(:disabled):focus {
-  background-color: var(--boton-sin-contenedor-secundario-focus-fondo);
-  box-shadow: 0 0 0 1px var(--boton-sin-contenedor-secundario-focus-borde), 0 0 8px var(--boton-sin-contenedor-secundario-focus-sombra);
-  color: var(--boton-sin-contenedor-secundario-focus-color);
+  background: var(--boton-sin-contenedor-secundario-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-sin-contenedor-secundario-enfoque-borde), 0 0 8px var(--boton-sin-contenedor-secundario-enfoque-sombra);
+  color: var(--boton-sin-contenedor-secundario-enfoque-color);
 }
 
 .boton-chico {
@@ -10415,7 +10415,7 @@ body[data-dark-theme-eni=true] {
   --boton-primario-cursor-fondo: var(--color-primario-1);
   --boton-primario-cursor-borde: var(--color-primario-1);
   --boton-primario-cursor-color: var(--color-secundario-12);
-  --boton-primario-cursor-sombra: var(transparent);
+  --boton-primario-cursor-sombra: transparent;
   --boton-primario-enfoque-fondo: var(--color-primario-1);
   --boton-primario-enfoque-borde: var(--color-secundario-12);
   --boton-primario-enfoque-color: var(--color-secundario-12);
@@ -10437,6 +10437,40 @@ body[data-dark-theme-eni=true] {
   --boton-secundario-enfoque-borde: var(--estado-enfoque);
   --boton-secundario-enfoque-color: var(--color-secundario-5);
   --boton-secundario-enfoque-sombra: var(--estado-enfoque);
+  --boton-sin-contenedor-primario-fondo: transparent;
+  --boton-sin-contenedor-primario-borde: transparent;
+  --boton-sin-contenedor-primario-color: var(--color-primario-2);
+  --boton-sin-contenedor-primario-sombra: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-fondo: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-borde: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-color: var(--color-secundario-8);
+  --boton-sin-contenedor-primario-deshabilitado-sombra: transparent;
+  --boton-sin-contenedor-primario-cursor-fondo: transparent;
+  --boton-sin-contenedor-primario-cursor-borde: transparent;
+  --boton-sin-contenedor-primario-cursor-color: var(--color-primario-1);
+  --boton-sin-contenedor-primario-cursor-sombra: transparent;
+  --boton-sin-contenedor-primario-enfoque-fondo: var(--color-secundario-8);
+  --boton-sin-contenedor-primario-enfoque-borde: var(--estado-enfoque);
+  --boton-sin-contenedor-primario-enfoque-color: var(--color-primario-2);
+  --boton-sin-contenedor-primario-enfoque-contorno: transparent;
+  --boton-sin-contenedor-primario-enfoque-sombra: var(--estado-enfoque);
+  --boton-sin-contenedor-secundario-fondo: transparent;
+  --boton-sin-contenedor-secundario-borde: transparent;
+  --boton-sin-contenedor-secundario-color: var(--color-secundario-5);
+  --boton-sin-contenedor-secundario-sombra: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-fondo: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-borde: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-color: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-deshabilitado-sombra: transparent;
+  --boton-sin-contenedor-secundario-cursor-fondo: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-cursor-borde: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-cursor-color: var(--color-secundario-5);
+  --boton-sin-contenedor-secundario-cursor-sombra: transparent;
+  --boton-sin-contenedor-secundario-enfoque-fondo: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-enfoque-borde: var(--estado-enfoque);
+  --boton-sin-contenedor-secundario-enfoque-color: var(--color-secundario-5);
+  --boton-sin-contenedor-secundario-enfoque-contorno: transparent;
+  --boton-sin-contenedor-secundario-enfoque-sombra: var(--estado-enfoque);
   --hipervinculo-color: var(--color-interactivo-3);
   --hipervinculo-sombra: transparent;
   --hipervinculo-deshabilitado-color: var(--color-secundario-8);
@@ -10553,7 +10587,7 @@ body[data-light-theme-eni=true] {
   --boton-primario-cursor-fondo: var(--color-primario-4);
   --boton-primario-cursor-borde: var(--color-primario-4);
   --boton-primario-cursor-color: var(--color-neutro-0);
-  --boton-primario-cursor-sombra: var(transparent);
+  --boton-primario-cursor-sombra: transparent;
   --boton-primario-enfoque-fondo: var(--color-primario-4);
   --boton-primario-enfoque-borde: var(--color-neutro-0);
   --boton-primario-enfoque-color: var(--color-neutro-0);
@@ -10575,6 +10609,40 @@ body[data-light-theme-eni=true] {
   --boton-secundario-enfoque-borde: var(--estado-enfoque);
   --boton-secundario-enfoque-color: var(--color-secundario-8);
   --boton-secundario-enfoque-sombra: var(--estado-enfoque);
+  --boton-sin-contenedor-primario-fondo: transparent;
+  --boton-sin-contenedor-primario-borde: transparent;
+  --boton-sin-contenedor-primario-color: var(--color-primario-3);
+  --boton-sin-contenedor-primario-sombra: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-fondo: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-borde: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-color: var(--color-neutro-3);
+  --boton-sin-contenedor-primario-deshabilitado-sombra: transparent;
+  --boton-sin-contenedor-primario-cursor-fondo: transparent;
+  --boton-sin-contenedor-primario-cursor-borde: transparent;
+  --boton-sin-contenedor-primario-cursor-color: var(--color-primario-4);
+  --boton-sin-contenedor-primario-cursor-sombra: transparent;
+  --boton-sin-contenedor-primario-enfoque-fondo: var(--color-secundario-4);
+  --boton-sin-contenedor-primario-enfoque-borde: var(--estado-enfoque);
+  --boton-sin-contenedor-primario-enfoque-color: var(--color-primario-3);
+  --boton-sin-contenedor-primario-enfoque-contorno: transparent;
+  --boton-sin-contenedor-primario-enfoque-sombra: var(--estado-enfoque);
+  --boton-sin-contenedor-secundario-fondo: transparent;
+  --boton-sin-contenedor-secundario-borde: transparent;
+  --boton-sin-contenedor-secundario-color: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-sombra: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-fondo: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-borde: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-color: var(--color-neutro-3);
+  --boton-sin-contenedor-secundario-deshabilitado-sombra: transparent;
+  --boton-sin-contenedor-secundario-cursor-fondo: var(--color-secundario-4);
+  --boton-sin-contenedor-secundario-cursor-borde: var(--color-secundario-4);
+  --boton-sin-contenedor-secundario-cursor-color: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-cursor-sombra: transparent;
+  --boton-sin-contenedor-secundario-enfoque-fondo: var(--color-secundario-4);
+  --boton-sin-contenedor-secundario-enfoque-borde: var(--estado-enfoque);
+  --boton-sin-contenedor-secundario-enfoque-color: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-enfoque-contorno: transparent;
+  --boton-sin-contenedor-secundario-enfoque-sombra: var(--estado-enfoque);
   --hipervinculo-color: var(--color-interactivo-1);
   --hipervinculo-sombra: transparent;
   --hipervinculo-deshabilitado-color: var(--color-neutro-3);
