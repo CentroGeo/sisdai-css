@@ -642,13 +642,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </label>
       <input 
         id="campo" 
-        class="formulario-campo-confirmacion"
+        class="campo-confirmacion"
         type="text" 
         placeholder="Texto de ejemplo"
       />
       <p 
         class="formulario-ayuda 
-        formulario-texto-confirmacion"
+        ayuda-confirmacion"
       >
         Texto de ayuda.
       </p>
@@ -666,13 +666,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </label>
       <input 
         id="campo" 
-        class="formulario-campo-error"
+        class="campo-error"
         type="text" 
         placeholder="Texto de ejemplo"
       />
       <p 
         class="formulario-ayuda 
-        formulario-texto-error"
+        ayuda-error"
       >
         Texto de ayuda.
       </p>

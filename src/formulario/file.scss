@@ -15,8 +15,6 @@
 
 // archivo
 [type='file'] {
-  @extend .form-campo-base;
   height: $form-campo-alto;
   padding-left: calc(map-get($espaciado, 'minimo') + 2px) !important;
-  display: inline-flex;
 }

@@ -5,18 +5,29 @@ body[data-light-theme-eni='true'] {
   --fondo: var(--color-neutro-0);
   --fondo-neutro: var(--color-neutro-1);
   --fondo-acento: var(--color-secundario-2);
+  --fondo-informacion: var(--color-informativo-1);
+  --fondo-confirmacion: var(--color-confirmacion-1);
+  --fondo-alerta: var(--color-alerta-1);
+  --fondo-error: var(--color-error-1);
+  
   --fondo-degradado: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb), 1) 0%, rgba(var(--color-neutro-7-rgb), 0.59) 60%, rgba(var(--color-neutro-7-rgb), 0) 100%);
 
   --borde: var(--color-neutro-4);
-  
-  --titulo: var(--color-neutro-6);
-  --titulo-inverso: var(--color-neutro-0);
-  --titulo-acento: var(--color-primario-3);
+  --borde-secundario: var(--color-neutro-3);
+  --borde-acento: var(--color-secundario-9);
+  --borde-informacion: var(--color-informativo-3);
+  --borde-confirmacion: var(--color-confirmacion-3);
+  --borde-alerta: var(--color-alerta-3);
+  --borde-error: var(--color-error-3);
   
   --texto-primario: var(--color-neutro-6);
   --texto-secundario: var(--color-secundario-8);
   --texto-acento: var(--color-primario-3);
   --texto-inverso: var(--color-neutro-0);
+  --texto-informacion: var(--color-informativo-3);
+  --texto-confirmacion: var(--color-confirmacion-3);
+  --texto-alerta: var(--color-alerta-3);
+  --texto-error: var(--color-error-3);
 
   // estado base
   --estado-enfoque: var(--color-interactivo-1);
@@ -47,11 +58,14 @@ body[data-light-theme-eni='true'] {
   --campo-control-seleccionado-fondo: var(--color-neutro-0);
   --campo-control-seleccionado-borde: var(--color-secundario-8);
   --campo-control-seleccionado-color: var(--color-secundario-8);
-  --campo-control-deshabilitado-fondo: var(--color-neutro-0);
+  --campo-control-deshabilitado-fondo: var(--color-neutro-2);
   --campo-control-deshabilitado-borde: var(--color-neutro-3);
   --campo-control-deshabilitado-color: var(--color-neutro-3);
   --campo-contenedor-fondo: transparent;
   --campo-contenedor-borde: transparent;
+
+  --campo-selector-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><polygon fill="%23141414" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/></g></svg>');
+  --campo-selector-deshabilitado-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><polygon fill="%23767677" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/></g></svg>');
 
   --tabla-fila-par-fondo: var(--color-neutro-0);
   --tabla-fila-impar-fondo: var(--color-secundario-2);

@@ -14,7 +14,6 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .titulo-base {
-  color: var(--titulo);
   font-weight: 500;
   margin-top: map-get($espaciado, '3');
   margin-bottom: map-get($espaciado, '3');
@@ -67,11 +66,5 @@ h6,.h6 {
   font-size: 1rem; // 16px
   @include mediaquery(esc) {
     font-size: 1.125rem; //18px
-  }
-}
-
-@each $nombre, $valor in $titulo-color {
-  .titulo-color-#{$nombre} {
-    color: $valor;
   }
 }

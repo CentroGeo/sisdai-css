@@ -20,21 +20,23 @@ select {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  box-shadow: none;
   background-position: calc(100% - map-get($espaciado, '1')), 50%;
   background-size: map-get($espaciado, '4');
   background-repeat: no-repeat;
+  background-image: var(--campo-selector-svg);
   padding-right: map-get($espaciado, '5');
   padding-top: calc(map-get($espaciado, '1') + 1px);
   padding-bottom: calc(map-get($espaciado, '1') + 1px);
-  // background-image: var(--input-select-svg); // TODO
   background-color: var(--campo-fondo);
   color: var(--campo-color);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  display: flex;
 
   &:disabled {
     opacity: 1;
-    // background-image: var(--input-select-deshabilitada-svg); // TODO
+    background-image: var(--campo-selector-deshabilitado-svg);
   }
 }

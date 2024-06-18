@@ -22,9 +22,3 @@ p {
 .parrafo-texto-alto {
   font-size: 1.25rem; // 20px
 }
-
-@each $nombre, $valor in $texto-color {
-  .texto-color-#{$nombre} {
-    color: $valor;
-  }
-}
