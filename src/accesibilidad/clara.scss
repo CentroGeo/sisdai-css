@@ -176,6 +176,9 @@ body[data-light-theme-eni='true'] {
   --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
   --tarjeta-contenido-simplificada-fondo: var(--color-neutro-1);
   --tarjeta-contenido-simplificada-color: var(--color-neutro-6);
+
+  --portada-fondo: var(--fondo-degradado-ligero);
+  --portada-color: var(--texto-inverso);
   
   // componentes
   --modal-fondo: var(--fondo);

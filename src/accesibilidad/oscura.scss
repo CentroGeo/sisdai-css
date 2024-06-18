@@ -25,7 +25,7 @@ body[data-dark-theme-eni='true'] {
   --fondo-alerta: var(--color-alerta-4);
   --fondo-error: var(--color-error-4);
 
-  --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.59) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
+  --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.6) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
   --fondo-degradado-ligero: linear-gradient(transparent, rgba(var(--color-secundario-11-rgb),0.8));
 
   --borde: var(--color-neutro-0);
@@ -191,6 +191,9 @@ body[data-dark-theme-eni='true'] {
   --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
   --tarjeta-contenido-simplificada-fondo: var(--color-secundario-10);
   --tarjeta-contenido-simplificada-color: var(--color-neutro-0);
+
+  --portada-fondo: var(--fondo-degradado-ligero);
+  --portada-color: var(--texto-inverso);
 
   // componentes
   --modal-fondo: var(--fondo);
