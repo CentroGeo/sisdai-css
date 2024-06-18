@@ -6784,7 +6784,7 @@ ol + hr {
 .portada .portada-degradado {
   position: relative;
   width: 100%;
-  background: var(--portada-fondo-grandiente);
+  background: var(--portada-fondo);
   display: flex;
   align-items: stretch;
   margin-top: 48px;
@@ -10056,7 +10056,7 @@ span.controlador-vis label, span.controlador-vis legend,
   margin-top: 0px;
 }
 .a11y-simplificada .portada .portada-degradado .portada-cuerpo > * {
-  color: var(--tipografia-color);
+  color: var(--texto-primario);
 }
 .a11y-simplificada .tarjeta .tarjeta-cuerpo {
   background: var(--tarjeta-contenido-simplificada-fondo);
@@ -10351,6 +10351,7 @@ body[data-dark-theme-eni=true] {
   --fondo-alerta: var(--color-alerta-4);
   --fondo-error: var(--color-error-4);
   --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.6) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
+  --fondo-degradado-ligero: linear-gradient(transparent, rgba(var(--color-secundario-11-rgb),0.8));
   --borde: var(--color-neutro-0);
   --borde-secundario: var(--color-secundario-8);
   --borde-acento: var(--color-secundario-5);
@@ -10500,6 +10501,8 @@ body[data-dark-theme-eni=true] {
   --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
   --tarjeta-contenido-simplificada-fondo: var(--color-secundario-10);
   --tarjeta-contenido-simplificada-color: var(--color-neutro-0);
+  --portada-fondo: var(--fondo-degradado-ligero);
+  --portada-color: var(--texto-inverso);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);
@@ -10523,6 +10526,7 @@ body[data-light-theme-eni=true] {
   --fondo-alerta: var(--color-alerta-1);
   --fondo-error: var(--color-error-1);
   --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb),1) 0%, rgba(var(--color-neutro-7-rgb),0.59) 60%, rgba(var(--color-neutro-7-rgb),0) 100%);
+  --fondo-degradado-ligero: linear-gradient(transparent, rgba(var(--color-neutro-7-rgb),0.8));
   --borde: var(--color-neutro-4);
   --borde-secundario: var(--color-neutro-3);
   --borde-acento: var(--color-secundario-9);
@@ -10672,6 +10676,8 @@ body[data-light-theme-eni=true] {
   --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
   --tarjeta-contenido-simplificada-fondo: var(--color-neutro-1);
   --tarjeta-contenido-simplificada-color: var(--color-neutro-6);
+  --portada-fondo: var(--fondo-degradado-ligero);
+  --portada-color: var(--texto-inverso);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);

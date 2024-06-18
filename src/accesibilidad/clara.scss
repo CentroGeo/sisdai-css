@@ -11,6 +11,7 @@ body[data-light-theme-eni='true'] {
   --fondo-error: var(--color-error-1);
   
   --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb),1) 0%, rgba(var(--color-neutro-7-rgb),0.59) 60%, rgba(var(--color-neutro-7-rgb),0) 100%);
+  --fondo-degradado-ligero: linear-gradient(transparent, rgba(var(--color-neutro-7-rgb),0.8));
 
   --borde: var(--color-neutro-4);
   --borde-secundario: var(--color-neutro-3);
@@ -175,6 +176,9 @@ body[data-light-theme-eni='true'] {
   --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
   --tarjeta-contenido-simplificada-fondo: var(--color-neutro-1);
   --tarjeta-contenido-simplificada-color: var(--color-neutro-6);
+
+  --portada-fondo: var(--fondo-degradado-ligero);
+  --portada-color: var(--texto-inverso);
   
   // componentes
   --modal-fondo: var(--fondo);
