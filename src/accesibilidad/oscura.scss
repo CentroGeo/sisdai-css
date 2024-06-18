@@ -20,18 +20,29 @@ body[data-dark-theme-eni='true'] {
   --fondo: var(--color-secundario-12);
   --fondo-neutro: var(--color-secundario-10);
   --fondo-acento: var(--color-secundario-10);
-  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.59) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
+  --fondo-informacion: var(--color-informativo-4);
+  --fondo-confirmacion: var(--color-confirmacion-4);
+  --fondo-alerta: var(--color-alerta-4);
+  --fondo-error: var(--color-error-4);
+
+  --fondo-degradado: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(ar(--color-secundario-11-rgb),0.59) 60%, rgba(ar(--color-secundario-11-rgb),0) 100%);
 
   --borde: var(--color-neutro-0);
-  
-  --titulo: var(--color-neutro-0);
-  --titulo-inverso: var(--color-neutro-0);
-  --titulo-acento: var(--color-primario-2);
+  --borde-secundario: var(--color-secundario-8);
+  --borde-acento: var(--color-secundario-5);
+  --borde-informacion: var(--color-informativo-2);
+  --borde-confirmacion: var(--color-confirmacion-2);
+  --borde-alerta: var(--color-alerta-2);
+  --borde-error: var(--color-error-2);
   
   --texto-primario: var(--color-neutro-0);
   --texto-secundario: var(--color-secundario-5);
   --texto-acento: var(--color-primario-2);
   --texto-inverso: var(--color-neutro-0);
+  --texto-informacion: var(--color-informativo-2);
+  --texto-confirmacion: var(--color-confirmacion-2);
+  --texto-alerta: var(--color-alerta-2);
+  --texto-error: var(--color-error-2);
 
   // estado base
   --estado-enfoque: var(--color-interactivo-3);
@@ -62,11 +73,14 @@ body[data-dark-theme-eni='true'] {
   --campo-control-seleccionado-fondo: var(--color-secundario-12);
   --campo-control-seleccionado-borde: var(--color-secundario-5);
   --campo-control-seleccionado-color: var(--color-secundario-5);
-  --campo-control-deshabilitado-fondo: var(--color-secundario-12);
-  --campo-control-deshabilitado-borde: var(--color-secundario-8);
-  --campo-control-deshabilitado-color: var(--color-secundario-8);
+  --campo-control-deshabilitado-fondo: var(--color-secundario-8);
+  --campo-control-deshabilitado-borde: var(--color-secundario-7);
+  --campo-control-deshabilitado-color: var(--color-secundario-7);
   --campo-contenedor-fondo: transparent;
   --campo-contenedor-borde: transparent;
+  
+  --campo-selector-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><polygon fill="%23FFFFFF" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/></g></svg>');
+  --campo-selector-deshabilitado-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><polygon fill="%235E7392" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/></g></svg>');
 
   --tabla-fila-par-fondo: var(--color-secundario-12);
   --tabla-fila-impar-fondo: var(--color-secundario-10);

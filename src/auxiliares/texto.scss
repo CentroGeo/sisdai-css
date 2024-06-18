@@ -45,6 +45,13 @@
   }
 }
 
+// color
+@each $nombre, $valor in $texto-color {
+  .texto-color-#{$nombre} {
+    color: $valor;
+  }
+}
+
 // alineacion
 .texto-centrado {
   text-align: center;

@@ -130,4 +130,5 @@
 }
 [type='radio']:checked:disabled + label::before {
   background-color: var(--campo-control-deshabilitado-color); // bolita seleccionada y deshabilitada
+  box-shadow: inset 0 0 0 0.15rem var(--campo-control-deshabilitado-fondo); // espacio de fondo alrededor de la bolita
 }

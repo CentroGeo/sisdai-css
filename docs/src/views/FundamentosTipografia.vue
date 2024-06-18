@@ -111,40 +111,6 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.125rem'},
       ]]"
     />
-    
-    <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Color en Títulos</h2>
-    </div>
-    <EjemploCodigoHorizontal 
-      html='
-      <h3 class="titulo-color-primario">
-        Título color primario
-      </h3>
-      '
-      :propiedades="[[
-        {nombre:'Color', valor:'var(--titulo)'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <h3 class="titulo-color-acento">
-        Título color acento
-      </h3>
-      '
-      :propiedades="[[
-        {nombre:'Color', valor:'var(--titulo-acento)'},
-      ]]"
-    />
-    <EjemploCodigoHorizontal 
-      html='
-      <h3 class="titulo-color-inverso">
-        Título color inverso
-      </h3>
-      '
-      :propiedades="[[
-        {nombre:'Color', valor:'var(--titulo-inverso)'},
-      ]]"
-    />
 
 
     <div class="contenedor ancho-lectura">
@@ -180,6 +146,9 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
     />
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Color en Texto</h2>
+      <p>
+        El color en texto aplica a todas las etiquetas que puedan contener texto incluyendo titulos, parrafos, listas, pictogramas... etc.
+      </p>
     </div>
     <EjemploCodigoHorizontal 
       html='
@@ -219,6 +188,46 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       '
       :propiedades="[[
         {nombre:'Color', valor:'var(--texto-inverso)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-informacion">
+        Texto color informacion
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-informacion)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-confirmacion">
+        Texto color confirmacion
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-confirmacion)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-alerta">
+        Texto color alerta
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-alerta)'},
+      ]]"
+    />
+    <EjemploCodigoHorizontal 
+      html='
+      <p class="texto-color-error">
+        Texto color error
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-error)'},
       ]]"
     />
 

@@ -138,11 +138,6 @@ const router = createRouter({
           component: () => import('../views/ElementosCompuestosPortadas.vue')
         },
         {
-          path: 'alertas',
-          name: 'alertas',
-          component: () => import('../views/ElementosCompuestosAlertas.vue')
-        },
-        {
           path: 'cargando',
           name: 'cargando',
           component: () => import('../views/ElementosCompuestosCargando.vue')
