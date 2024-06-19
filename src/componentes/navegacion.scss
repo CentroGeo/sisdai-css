@@ -18,8 +18,8 @@
 }
 
 .navegacion {
-  background-color: var(--navegacion-fondo);
-  box-shadow: var(--navegacion-sombra);
+  background-color: var(--navegacion-primaria-fondo);
+  box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
   display: block;
   position: relative;
   z-index: 9999;
@@ -42,14 +42,16 @@
 .navegacion + .navegacion + .navegacion {
   z-index: 9997;
 }
+
 .nav-contenedor-identidad {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 
+  // TODO
   .nav-informacion {
-    background: var(--submenu-lateral-fondo-colapsable);
-    color: var(--menu-lateral-color);
+    background: var(--submenu-lateral-fondo-colapsable); // TODO
+    color: var(--menu-lateral-color); // TODO
     font-size: 0.75rem;
     padding: map-get($espaciado, 'minimo') map-get($contenedores, 'mov', 'margen-interior');
     margin-left: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
@@ -61,13 +63,15 @@
     }
   }
 }
+
 .nav-logo {
   height: 38px;
 }
+
 .nav-menu-contenedor {
-  background-color: var(--navegacion-fondo);
-  box-shadow: var(--navegacion-sombra);
-  border-radius: var(--navegacion-redondeado);
+  background-color: var(--navegacion-primaria-fondo);
+  box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
+  border-radius: 0 0 8px 8px;
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -83,6 +87,7 @@
     }
   }
 }
+
 .nav-menu {
   list-style: none;
   margin: 0;
@@ -91,11 +96,15 @@
     margin: 0;
     padding: 0;
   }
+  li:last-of-type .nav-boton {
+    margin-bottom: map-get($espaciado, '2');
+  }
 }
+
 .nav-submenu {
-  background-color: var(--navegacion-fondo);
-  border-radius: var(--navegacion-redondeado);
-  box-shadow: var(--navegacion-sombra);
+  background-color: var(--navegacion-primaria-fondo);
+  box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
+  border-radius: 0 0 8px 8px;
   width: 100%;
   list-style: none;
   margin: 0;
@@ -109,74 +118,76 @@
   }
 }
 
-
-  .navegacion.navegacion-extendida {
+.navegacion.navegacion-extendida {
+  display: flex;
+  align-items: center;
+  padding-left: map-get($contenedores, 'mov', 'margen-interior');
+  padding-right: map-get($contenedores, 'mov', 'margen-interior');
+  
+  @include mediaquery('esc') {
+    padding-left: map-get($contenedores, 'esc', 'margen-interior');
+    padding-right: map-get($contenedores, 'esc', 'margen-interior');
+  }
+  
+  .nav-contenedor-identidad {
     display: flex;
     align-items: center;
-    padding-left: map-get($contenedores, 'mov', 'margen-interior');
-    padding-right: map-get($contenedores, 'mov', 'margen-interior');
-    
-    @include mediaquery('esc') {
-      padding-left: map-get($contenedores, 'esc', 'margen-interior');
-      padding-right: map-get($contenedores, 'esc', 'margen-interior');
-    }
-   
-    .nav-contenedor-identidad {
-      display: flex;
-      align-items: center;
-      .nav-boton-menu,
-      .nav-informacion {
-        display: none;
-      }
-    }
-    .nav-menu-contenedor {
-      background-color: transparent;
-      box-shadow: none;
-      border-radius: none;
-      flex: 1;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      position: relative;
-      overflow: visible;
-      width: 100%;
-      max-width: inherit;
-      right: 0;
-      top: 0;
-      .nav-menu-complementario {
-        padding-left: 16px;
-      }
-      .nav-menu-principal {
-        flex: 1;
-        display: flex;
-        justify-content: flex-end;
-      }
-      &.abierto.submenu-abierto {
-        right: 0;
-      }
-    }
-    .nav-menu {
-      display: flex;
-      align-items: center;
-      li {
-        position: relative;
-      }
-    }
-    .nav-submenu {
-      overflow: clip;
-      opacity: 0;
-      pointer-events: none;
-      top: inherit;
-      left: inherit;
-      right: 0;
-      width: inherit;
-      .nav-hipervinculo {
-        display: block;
-      }
-      &.abierto {
-        right: 0;
-        opacity: 1;
-        pointer-events: inherit;
-      }
+    .nav-boton-menu,
+    .nav-informacion {
+      display: none;
     }
   }
+  .nav-menu-contenedor {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: none;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    max-width: inherit;
+    right: 0;
+    top: 0;
+    .nav-menu-complementario {
+      padding-left: 16px;
+    }
+    .nav-menu-principal {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+    }
+    &.abierto.submenu-abierto {
+      right: 0;
+    }
+  }
+  .nav-menu {
+    display: flex;
+    align-items: center;
+    li {
+      position: relative;
+    }
+    li:last-of-type .nav-boton {
+      margin-bottom: 0;
+    }
+  }
+  .nav-submenu {
+    overflow: clip;
+    opacity: 0;
+    pointer-events: none;
+    top: inherit;
+    left: inherit;
+    right: 0;
+    width: inherit;
+    .nav-hipervinculo {
+      display: block;
+    }
+    &.abierto {
+      right: 0;
+      opacity: 1;
+      pointer-events: inherit;
+    }
+  }
+}

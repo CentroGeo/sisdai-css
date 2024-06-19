@@ -16,6 +16,9 @@ body[data-light-theme-eni='true'] {
   --opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
   --opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
 
+  --fondo-opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
+  --fondo-opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
+
   --borde: var(--color-neutro-4);
   --borde-secundario: var(--color-neutro-3);
   --borde-acento: var(--color-secundario-9);
@@ -210,6 +213,17 @@ body[data-light-theme-eni='true'] {
   --globo-hipervinculo-visitado: var(--color-interactivo-5);
 
   --visualizacion-color: var(--texto-primario);
+
+  --navegacion-primaria-fondo: var(--color-neutro-0);
+  --navegacion-primaria-sombra: var(--opacidad-ligero);
+  --navegacion-primaria-color: var(--color-secundario-12);
+  --navegacion-primaria-cursor-fondo: var(--color-secundario-2);
+  --navegacion-primaria-enfoque-borde: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-fondo: var(--color-secundario-2);
+  --navegacion-primaria-activo-borde: var(--color-primario-3);
+  --navegacion-primaria-seccion-fondo: var(--color-secundario-4);
+  --navegacion-primaria-seccion-color: var(--color-secundario-8);
 
   // --pagina-fondo: #ffffff;
   // --nota-fondo: #F0F6FF;
