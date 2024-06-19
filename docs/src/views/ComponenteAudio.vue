@@ -28,7 +28,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
           <audio src="ruta/archivo/audio.mp3"></audio>
           
-          <div class="flex flex-contenido-separado texto-color-2">
+          <div class="flex flex-contenido-separado texto-color-acento">
             <div role="timer" aria-label="Tiempo transcurrido">
               00:00 
             </div>

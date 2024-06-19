@@ -7301,7 +7301,7 @@ ol + hr {
 }
 
 .audio {
-  background: var(--tarjetas-fondo);
+  background: var(--fondo-neutro);
   border-radius: 20px;
   padding: 16px;
 }
@@ -10541,6 +10541,8 @@ body[data-light-theme-eni=true] {
   --degradado-ligero: linear-gradient(transparent, rgba(var(--color-neutro-7-rgb),0.8));
   --opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
   --opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
+  --fondo-opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
+  --fondo-opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
   --borde: var(--color-neutro-4);
   --borde-secundario: var(--color-neutro-3);
   --borde-acento: var(--color-secundario-9);

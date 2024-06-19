@@ -307,7 +307,7 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')" @mouseover="mostrarSubmenu('componentes')">Componentes</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Busqueda</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li> -->
