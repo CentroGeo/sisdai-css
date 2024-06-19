@@ -5,7 +5,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
   <div class="contenedor m-y-maximo">
 
     <div class="ancho-lectura">
-      <h1>Campo de busqueda</h1>
+      <h1>Campo de búsqueda</h1>
       <p>
         Estilos para el componente <code>SisdaiCampoBusqueda</code> declarado en la biblioteca 
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
