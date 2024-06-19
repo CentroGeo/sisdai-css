@@ -21,7 +21,7 @@
   box-sizing: border-box;
   margin-top: map-get($espaciado, '1');
   margin-bottom: map-get($espaciado, '1');
-  background: var(--tarjeta-interna-fondo);
+  background: var(--tarjeta-fondo);
 
   .tarjeta-cuerpo {
     > * {
@@ -39,13 +39,13 @@
   &:focus,
   &:focus-visible {
     box-shadow: 
-    0 0 0 2px var(--tarjeta-interna-enfoque-borde), // borde
-    0 0 8px 1px var(--tarjeta-interna-enfoque-sombra);
+    0 0 0 2px var(--tarjeta-enfoque-borde), // borde
+    0 0 8px 1px var(--tarjeta-enfoque-sombra);
   }
 
   &:hover {
     text-decoration: none;
-    background-color: var(--tarjeta-interna-cursor-fondo);
+    background-color: var(--tarjeta-cursor-fondo);
     .tarjeta-imagen {
       transform: scale(1);
     }
