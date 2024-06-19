@@ -5711,22 +5711,22 @@ input[type=reset] [class*=" pictograma-"],
   color: var(--boton-secundario-enfoque-color);
 }
 
-.boton-sin-contenedor-primario {
+.boton-sin-contenedor-primario, .navegacion .nav-boton-menu {
   background: var(--boton-sin-contenedor-primario-fondo);
   box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-primario-borde), 0 0 0 var(--boton-sin-contenedor-primario-sombra);
   color: var(--boton-sin-contenedor-primario-color);
 }
-.boton-sin-contenedor-primario.deshabilitado, .boton-sin-contenedor-primario:disabled {
+.boton-sin-contenedor-primario.deshabilitado, .navegacion .deshabilitado.nav-boton-menu, .boton-sin-contenedor-primario:disabled, .navegacion .nav-boton-menu:disabled {
   background: var(--boton-sin-contenedor-primario-deshabilitado-fondo);
   box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-primario-deshabilitado-borde), 0 0 0 var(--boton-sin-contenedor-primario-deshabilitado-sombra);
   color: var(--boton-sin-contenedor-primario-deshabilitado-color);
 }
-.boton-sin-contenedor-primario:not(:disabled):hover {
+.boton-sin-contenedor-primario:not(:disabled):hover, .navegacion .nav-boton-menu:not(:disabled):hover {
   background: var(--boton-sin-contenedor-primario-cursor-fondo);
   box-shadow: inset 0 0 0 0 var(--boton-sin-contenedor-primario-cursor-borde), 0 0 0 var(--boton-sin-contenedor-primario-cursor-sombra);
   color: var(--boton-sin-contenedor-primario-cursor-color);
 }
-.boton-sin-contenedor-primario:not(:disabled):focus {
+.boton-sin-contenedor-primario:not(:disabled):focus, .navegacion .nav-boton-menu:not(:disabled):focus {
   background: var(--boton-sin-contenedor-primario-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--boton-sin-contenedor-primario-enfoque-borde), 0 0 8px var(--boton-sin-contenedor-primario-enfoque-sombra);
   color: var(--boton-sin-contenedor-primario-enfoque-color);
@@ -5765,15 +5765,15 @@ input[type=reset] [class*=" pictograma-"],
 
 a,
 .hipervinculo,
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset] {
@@ -5794,15 +5794,15 @@ a,
 }
 a:not(:disabled),
 .hipervinculo:not(:disabled),
-.a11y-simplificada .boton:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .ir-contenido-principal:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-pictograma:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-descarga:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .ir-contenido-principal:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-pictograma:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-descarga:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:not(:disabled),
 .a11y-simplificada input[type=submit]:not(:disabled),
 .a11y-simplificada input[type=reset]:not(:disabled) {
@@ -5811,15 +5811,15 @@ a:not(:disabled),
 }
 a:disabled,
 .hipervinculo:disabled,
-.a11y-simplificada .boton:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .ir-contenido-principal:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-pictograma:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-descarga:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .ir-contenido-principal:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-pictograma:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-descarga:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled {
@@ -5829,15 +5829,15 @@ a:disabled,
 }
 a:visited,
 .hipervinculo:visited,
-.a11y-simplificada .boton:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .ir-contenido-principal:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-pictograma:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-descarga:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .ir-contenido-principal:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-pictograma:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-descarga:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:visited,
 .a11y-simplificada input[type=submit]:visited,
 .a11y-simplificada input[type=reset]:visited {
@@ -5845,15 +5845,15 @@ a:visited,
 }
 a:hover,
 .hipervinculo:hover,
-.a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover {
@@ -5865,15 +5865,15 @@ a:hover,
 }
 a:focus-visible,
 .hipervinculo:focus-visible,
-.a11y-simplificada .boton:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .ir-contenido-principal:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-pictograma:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-descarga:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .ir-contenido-principal:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-pictograma:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-descarga:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:focus-visible,
 .a11y-simplificada input[type=submit]:focus-visible,
 .a11y-simplificada input[type=reset]:focus-visible {
@@ -5886,41 +5886,41 @@ a .pictograma,
 a [class^=pictograma-],
 a [class*=" pictograma-"],
 .hipervinculo .pictograma,
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
-.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
+.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) .pictograma,
 .a11y-simplificada input[type=button] .pictograma,
 .a11y-simplificada input[type=submit] .pictograma,
 .a11y-simplificada input[type=reset] .pictograma,
 .hipervinculo [class^=pictograma-],
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
-.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
+.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class^=pictograma-],
 .a11y-simplificada input[type=button] [class^=pictograma-],
 .a11y-simplificada input[type=submit] [class^=pictograma-],
 .a11y-simplificada input[type=reset] [class^=pictograma-],
 .hipervinculo [class*=" pictograma-"],
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
-.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
+.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante) [class*=" pictograma-"],
 .a11y-simplificada input[type=button] [class*=" pictograma-"],
 .a11y-simplificada input[type=submit] [class*=" pictograma-"],
 .a11y-simplificada input[type=reset] [class*=" pictograma-"] {
@@ -5931,8 +5931,8 @@ a [class*=" pictograma-"],
   padding: 0;
 }
 
-.hipervinculo:disabled, .a11y-simplificada .boton:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.hipervinculo:disabled, .a11y-simplificada .boton:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled {
@@ -5940,15 +5940,15 @@ a [class*=" pictograma-"],
   color: var(--hipervinculo-deshabilitado-color) !important;
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra) !important;
 }
-.hipervinculo:visited, .a11y-simplificada .boton:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.hipervinculo:visited, .a11y-simplificada .boton:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:visited,
 .a11y-simplificada input[type=submit]:visited,
 .a11y-simplificada input[type=reset]:visited {
   color: var(--hipervinculo-visitado) !important;
 }
-.hipervinculo:hover, .a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.hipervinculo:hover, .a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover {
@@ -5957,8 +5957,8 @@ a [class*=" pictograma-"],
   text-decoration: underline !important;
   box-shadow: none !important;
 }
-.hipervinculo:focus-visible, .a11y-simplificada .boton:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.hipervinculo:focus-visible, .a11y-simplificada .boton:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button]:focus-visible,
 .a11y-simplificada input[type=submit]:focus-visible,
 .a11y-simplificada input[type=reset]:focus-visible {
@@ -5971,56 +5971,56 @@ a [class*=" pictograma-"],
 a[class^=m-],
 a[class^=p-],
 .hipervinculo[class^=m-],
-.a11y-simplificada [class^=m-].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class^=m-].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class^=m-].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class^=m-].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=m-].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=m-].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=m-].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=m-].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[class^=m-][type=button],
 .a11y-simplificada input[class^=m-][type=submit],
 .a11y-simplificada input[class^=m-][type=reset],
 .hipervinculo[class^=p-],
-.a11y-simplificada [class^=p-].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class^=p-].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class^=p-].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class^=p-].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=p-].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=p-].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=p-].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class^=p-].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[class^=p-][type=button],
 .a11y-simplificada input[class^=p-][type=submit],
 .a11y-simplificada input[class^=p-][type=reset],
 a[class*=" m-"],
 a[class*=" p-"],
 .hipervinculo[class*=" m-"],
-.a11y-simplificada [class*=" m-"].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class*=" m-"].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class*=" m-"].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class*=" m-"].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" m-"].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" m-"].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" m-"].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" m-"].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[class*=" m-"][type=button],
 .a11y-simplificada input[class*=" m-"][type=submit],
 .a11y-simplificada input[class*=" m-"][type=reset],
 .hipervinculo[class*=" p-"],
-.a11y-simplificada [class*=" p-"].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class*=" p-"].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class*=" p-"].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada [class*=" p-"].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + label[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + label[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar [type=radio] + legend[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada [type=radio] + legend[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" p-"].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" p-"].ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" p-"].boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada [class*=" p-"].boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + label[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + label[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar [type=radio] + legend[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada [type=radio] + legend[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[class*=" p-"][type=button],
 .a11y-simplificada input[class*=" p-"][type=submit],
 .a11y-simplificada input[class*=" p-"][type=reset] {
@@ -7994,8 +7994,8 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 
 .navegacion {
-  background-color: var(--navegacion-fondo);
-  box-shadow: var(--navegacion-sombra);
+  background-color: var(--navegacion-primaria-fondo);
+  box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
   display: block;
   position: relative;
   z-index: 9999;
@@ -8046,9 +8046,9 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 
 .nav-menu-contenedor {
-  background-color: var(--navegacion-fondo);
-  box-shadow: var(--navegacion-sombra);
-  border-radius: var(--navegacion-redondeado);
+  background-color: var(--navegacion-primaria-fondo);
+  box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
+  border-radius: 0 0 8px 8px;
   display: flex;
   flex-direction: column;
   width: 70%;
@@ -8074,11 +8074,14 @@ dl.informacion-despliegue dd:not(:last-child) {
   margin: 0;
   padding: 0;
 }
+.nav-menu li:last-of-type .nav-boton {
+  margin-bottom: 16px;
+}
 
 .nav-submenu {
-  background-color: var(--navegacion-fondo);
-  border-radius: var(--navegacion-redondeado);
-  box-shadow: var(--navegacion-sombra);
+  background-color: var(--navegacion-primaria-fondo);
+  box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
+  border-radius: 0 0 8px 8px;
   width: 100%;
   list-style: none;
   margin: 0;
@@ -8145,6 +8148,9 @@ dl.informacion-despliegue dd:not(:last-child) {
 .navegacion.navegacion-extendida .nav-menu li {
   position: relative;
 }
+.navegacion.navegacion-extendida .nav-menu li:last-of-type .nav-boton {
+  margin-bottom: 0;
+}
 .navegacion.navegacion-extendida .nav-submenu {
   overflow: clip;
   opacity: 0;
@@ -8154,7 +8160,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   right: 0;
   width: inherit;
 }
-.navegacion.navegacion-extendida .nav-submenu .nav-hipervinculo {
+.navegacion.navegacion-extendida .nav-submenu .nav-hipervinculo, .navegacion.navegacion-extendida .nav-submenu .nav-boton-regresar, .navegacion.navegacion-extendida .nav-submenu .nav-boton-submenu {
   display: block;
 }
 .navegacion.navegacion-extendida .nav-submenu.abierto {
@@ -8163,54 +8169,45 @@ dl.informacion-despliegue dd:not(:last-child) {
   pointer-events: inherit;
 }
 
-.nav-hipervinculo {
-  background-color: var(--navegacion-fondo);
+.nav-hipervinculo, .nav-boton-regresar, .nav-boton-submenu {
+  background-color: var(--navegacion-primaria-fondo);
   box-shadow: 0 0 0 0;
-  color: var(--navegacion-color);
-  border: none;
+  color: var(--navegacion-primaria-color);
   border-radius: 0;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1em;
   padding: 16px;
   text-decoration: none;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: block;
 }
-.nav-hipervinculo:visited {
-  color: var(--navegacion-color);
+.nav-hipervinculo:visited, .nav-boton-regresar:visited, .nav-boton-submenu:visited {
+  color: var(--navegacion-primaria-color);
 }
-.nav-hipervinculo:hover, .nav-hipervinculo:focus {
-  border: none;
-  border-radius: 0;
-  background-color: var(--navegacion-fondo-hover);
-  box-shadow: var(--navegacion-sombra-hover);
-  color: var(--navegacion-color-hover);
-  z-index: 1;
+.nav-hipervinculo:hover, .nav-boton-regresar:hover, .nav-boton-submenu:hover, .nav-hipervinculo:focus, .nav-boton-regresar:focus, .nav-boton-submenu:focus {
+  background-color: var(--navegacion-primaria-cursor-fondo);
+  color: var(--navegacion-primaria-color);
   text-decoration: none;
 }
-.nav-hipervinculo:focus-visible {
+.nav-hipervinculo:focus-visible, .nav-boton-regresar:focus-visible, .nav-boton-submenu:focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
+  background-color: var(--navegacion-primaria-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
 }
-.nav-hipervinculo:active, .nav-hipervinculo.active, .nav-hipervinculo.nuxt-link-active, .nav-hipervinculo.nuxt-link-exact-active, .nav-hipervinculo.router-link-active, .nav-hipervinculo.router-link-exact-active {
-  background-color: var(--navegacion-fondo-active);
-  box-shadow: var(--navegacion-sombra-active);
-  color: var(--navegacion-color-active);
+.nav-hipervinculo:active, .nav-boton-regresar:active, .nav-boton-submenu:active, .nav-hipervinculo.active, .active.nav-boton-regresar, .active.nav-boton-submenu, .nav-hipervinculo.nuxt-link-active, .nuxt-link-active.nav-boton-regresar, .nuxt-link-active.nav-boton-submenu, .nav-hipervinculo.nuxt-link-exact-active, .nuxt-link-exact-active.nav-boton-regresar, .nuxt-link-exact-active.nav-boton-submenu, .nav-hipervinculo.router-link-active, .router-link-active.nav-boton-regresar, .router-link-active.nav-boton-submenu, .nav-hipervinculo.router-link-exact-active, .router-link-exact-active.nav-boton-regresar, .router-link-exact-active.nav-boton-submenu {
+  box-shadow: inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde);
 }
-.nav-hipervinculo:active:hover, .nav-hipervinculo:active:focus-visible, .nav-hipervinculo.active:hover, .nav-hipervinculo.active:focus-visible, .nav-hipervinculo.nuxt-link-active:hover, .nav-hipervinculo.nuxt-link-active:focus-visible, .nav-hipervinculo.nuxt-link-exact-active:hover, .nav-hipervinculo.nuxt-link-exact-active:focus-visible, .nav-hipervinculo.router-link-active:hover, .nav-hipervinculo.router-link-active:focus-visible, .nav-hipervinculo.router-link-exact-active:hover, .nav-hipervinculo.router-link-exact-active:focus-visible {
-  border: none;
-  border-radius: 0;
-  background-color: var(--navegacion-fondo-hover);
-  box-shadow: var(--navegacion-sombra-hover), var(--navegacion-sombra-active);
-  color: var(--navegacion-color-hover);
+.nav-hipervinculo:active:hover, .nav-boton-regresar:active:hover, .nav-boton-submenu:active:hover, .nav-hipervinculo:active:focus, .nav-boton-regresar:active:focus, .nav-boton-submenu:active:focus, .nav-hipervinculo.active:hover, .active.nav-boton-regresar:hover, .active.nav-boton-submenu:hover, .nav-hipervinculo.active:focus, .active.nav-boton-regresar:focus, .active.nav-boton-submenu:focus, .nav-hipervinculo.nuxt-link-active:hover, .nuxt-link-active.nav-boton-regresar:hover, .nuxt-link-active.nav-boton-submenu:hover, .nav-hipervinculo.nuxt-link-active:focus, .nuxt-link-active.nav-boton-regresar:focus, .nuxt-link-active.nav-boton-submenu:focus, .nav-hipervinculo.nuxt-link-exact-active:hover, .nuxt-link-exact-active.nav-boton-regresar:hover, .nuxt-link-exact-active.nav-boton-submenu:hover, .nav-hipervinculo.nuxt-link-exact-active:focus, .nuxt-link-exact-active.nav-boton-regresar:focus, .nuxt-link-exact-active.nav-boton-submenu:focus, .nav-hipervinculo.router-link-active:hover, .router-link-active.nav-boton-regresar:hover, .router-link-active.nav-boton-submenu:hover, .nav-hipervinculo.router-link-active:focus, .router-link-active.nav-boton-regresar:focus, .router-link-active.nav-boton-submenu:focus, .nav-hipervinculo.router-link-exact-active:hover, .router-link-exact-active.nav-boton-regresar:hover, .router-link-exact-active.nav-boton-submenu:hover, .nav-hipervinculo.router-link-exact-active:focus, .router-link-exact-active.nav-boton-regresar:focus, .router-link-exact-active.nav-boton-submenu:focus {
+  background-color: var(--navegacion-primaria-cursor-fondo);
 }
-.nav-hipervinculo:active:focus-visible, .nav-hipervinculo.active:focus-visible, .nav-hipervinculo.nuxt-link-active:focus-visible, .nav-hipervinculo.nuxt-link-exact-active:focus-visible, .nav-hipervinculo.router-link-active:focus-visible, .nav-hipervinculo.router-link-exact-active:focus-visible {
+.nav-hipervinculo:active:focus-visible, .nav-boton-regresar:active:focus-visible, .nav-boton-submenu:active:focus-visible, .nav-hipervinculo.active:focus-visible, .active.nav-boton-regresar:focus-visible, .active.nav-boton-submenu:focus-visible, .nav-hipervinculo.nuxt-link-active:focus-visible, .nuxt-link-active.nav-boton-regresar:focus-visible, .nuxt-link-active.nav-boton-submenu:focus-visible, .nav-hipervinculo.nuxt-link-exact-active:focus-visible, .nuxt-link-exact-active.nav-boton-regresar:focus-visible, .nuxt-link-exact-active.nav-boton-submenu:focus-visible, .nav-hipervinculo.router-link-active:focus-visible, .router-link-active.nav-boton-regresar:focus-visible, .router-link-active.nav-boton-submenu:focus-visible, .nav-hipervinculo.router-link-exact-active:focus-visible, .router-link-exact-active.nav-boton-regresar:focus-visible, .router-link-exact-active.nav-boton-submenu:focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), var(--navegacion-sombra-active), 0 0 8px var(--boton-secundario-focus-sombra);
+  background-color: var(--navegacion-primaria-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
 }
 
-.navegacion.navegacion-extendida .nav-hipervinculo {
+.navegacion.navegacion-extendida .nav-hipervinculo, .navegacion.navegacion-extendida .nav-boton-regresar, .navegacion.navegacion-extendida .nav-boton-submenu {
   display: inline-flex;
   white-space: nowrap;
 }
@@ -8220,35 +8217,18 @@ dl.informacion-despliegue dd:not(:last-child) {
   display: inline-flex;
   padding: 4px 0;
   margin: 0;
+  border-radius: 0;
 }
 .nav-hiperviculo-logo:focus-visible {
   outline: none;
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
+  background-color: var(--navegacion-primaria-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
 }
 
 .navegacion .nav-boton-menu {
-  background-color: transparent;
-  border: none;
-  box-shadow: none;
-  color: var(--navegacion-color);
-  display: inline-flex;
   width: 46px;
   height: 46px;
-  padding: 0;
-  margin: 0 !important;
-  border: none;
-  border-radius: 0;
   justify-content: center;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-}
-.navegacion .nav-boton-menu:hover, .navegacion .nav-boton-menu:focus {
-  background-color: var(--navegacion-fondo-hover);
-  box-shadow: var(--navegacion-sombra-hover);
-  color: var(--navegacion-color-hover);
-  z-index: 1;
-}
-.navegacion .nav-boton-menu:focus-visible {
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
 }
 .navegacion .nav-boton-menu .nav-icono-menu {
   background: currentColor;
@@ -8284,31 +8264,14 @@ dl.informacion-despliegue dd:not(:last-child) {
   transform: translate3d(-10px, 5px, 0) rotate(135deg);
 }
 
-.navegacion .navegacion-boton-base, .navegacion .nav-boton-submenu, .navegacion .nav-boton-regresar, .navegacion .nav-boton {
-  background-color: var(--navegacion-fondo);
-  border: none;
-  box-shadow: 0 0 0 0;
-  color: var(--navegacion-color);
-  display: inline-flex;
-  font-size: 0.875rem;
-  font-weight: 400;
-  line-height: 1em;
-  text-decoration: none;
-  white-space: nowrap;
-  transition: all 0.2s ease-in-out;
-}
-.navegacion .navegacion-boton-base:hover, .navegacion .nav-boton-submenu:hover, .navegacion .nav-boton-regresar:hover, .navegacion .nav-boton:hover, .navegacion .navegacion-boton-base:focus, .navegacion .nav-boton-submenu:focus, .navegacion .nav-boton-regresar:focus, .navegacion .nav-boton:focus {
-  background-color: var(--navegacion-fondo-hover);
-  box-shadow: var(--navegacion-sombra-hover);
-  color: var(--navegacion-color-hover);
-}
-.navegacion .navegacion-boton-base:not(:disabled):focus-visible, .navegacion .nav-boton-submenu:not(:disabled):focus-visible, .navegacion .nav-boton-regresar:not(:disabled):focus-visible, .navegacion .nav-boton:not(:disabled):focus-visible {
-  box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
-}
-
 .nav-boton {
-  padding: 8px;
-  margin: 8px 16px;
+  height: 24px;
+  font-size: 0.875rem;
+  display: flex;
+  font-weight: 400;
+  white-space: nowrap;
+  padding: 4px;
+  margin: 4px 16px;
 }
 .nav-boton .pictograma,
 .nav-boton [class^=pictograma-],
@@ -8316,18 +8279,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   padding: 0;
 }
 
-.nav-boton-submenu, .nav-boton-regresar {
-  border-radius: 0;
-  padding: 16px;
-  margin: 0;
-  width: 100%;
-}
-.nav-boton-submenu:active, .nav-boton-regresar:active, .nav-boton-submenu.active, .active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-active, .nuxt-link-active.nav-boton-regresar, .nav-boton-submenu.nuxt-link-exact-active, .nuxt-link-exact-active.nav-boton-regresar, .nav-boton-submenu.router-link-exact-active, .router-link-exact-active.nav-boton-regresar {
-  background-color: var(--navegacion-fondo-active);
-  box-shadow: var(--navegacion-sombra-active);
-  color: var(--navegacion-color-active);
-}
-.nav-boton-submenu::after, .nav-boton-regresar::after {
+.nav-boton-submenu::after {
   font-family: "sisdai-pictogramas" !important;
   font-size: 1rem;
   height: 0.875rem;
@@ -8350,11 +8302,11 @@ dl.informacion-despliegue dd:not(:last-child) {
 .navegacion.navegacion-extendida .nav-boton-regresar {
   display: none;
 }
-.navegacion.navegacion-extendida .nav-boton {
-  margin: 0 0 0 4px;
-}
-.navegacion.navegacion-extendida .nav-boton-submenu::after, .navegacion.navegacion-extendida .nav-boton-regresar::after {
+.navegacion.navegacion-extendida .nav-boton-submenu::after {
   transform: rotate(90deg);
+}
+.navegacion.navegacion-extendida .nav-boton {
+  margin: 0 0 0 8px;
 }
 
 .navegacion-gobmx {
@@ -8366,15 +8318,15 @@ dl.informacion-despliegue dd:not(:last-child) {
   box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.1333333333);
   border-top: 1px solid var(--color-gobmx-claro-1);
 }
-.navegacion-gobmx .nav-hipervinculo {
+.navegacion-gobmx .nav-hipervinculo, .navegacion-gobmx .nav-boton-submenu, .navegacion-gobmx .nav-boton-regresar {
   background: transparent;
   box-shadow: none;
   color: var(--color-gobmx-claro-1);
 }
-.navegacion-gobmx .nav-hipervinculo:visited {
+.navegacion-gobmx .nav-hipervinculo:visited, .navegacion-gobmx .nav-boton-submenu:visited, .navegacion-gobmx .nav-boton-regresar:visited {
   color: var(--color-gobmx-claro-1);
 }
-.navegacion-gobmx .nav-hipervinculo:active, .navegacion-gobmx .nav-hipervinculo:hover, .navegacion-gobmx .nav-hipervinculo:focus {
+.navegacion-gobmx .nav-hipervinculo:active, .navegacion-gobmx .nav-boton-submenu:active, .navegacion-gobmx .nav-boton-regresar:active, .navegacion-gobmx .nav-hipervinculo:hover, .navegacion-gobmx .nav-boton-submenu:hover, .navegacion-gobmx .nav-boton-regresar:hover, .navegacion-gobmx .nav-hipervinculo:focus, .navegacion-gobmx .nav-boton-submenu:focus, .navegacion-gobmx .nav-boton-regresar:focus {
   background: transparent;
   box-shadow: none;
   color: var(--color-gobmx-claro-2);
@@ -8402,20 +8354,20 @@ dl.informacion-despliegue dd:not(:last-child) {
 .navegacion-conahcyt .nav-menu-contenedor {
   background-color: var(--navegacion-conahcyt-fondo);
 }
-.navegacion-conahcyt .nav-hipervinculo {
+.navegacion-conahcyt .nav-hipervinculo, .navegacion-conahcyt .nav-boton-submenu, .navegacion-conahcyt .nav-boton-regresar {
   background: transparent;
   box-shadow: none;
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-hipervinculo:visited {
+.navegacion-conahcyt .nav-hipervinculo:visited, .navegacion-conahcyt .nav-boton-submenu:visited, .navegacion-conahcyt .nav-boton-regresar:visited {
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-hipervinculo:hover, .navegacion-conahcyt .nav-hipervinculo:focus {
+.navegacion-conahcyt .nav-hipervinculo:hover, .navegacion-conahcyt .nav-boton-submenu:hover, .navegacion-conahcyt .nav-boton-regresar:hover, .navegacion-conahcyt .nav-hipervinculo:focus, .navegacion-conahcyt .nav-boton-submenu:focus, .navegacion-conahcyt .nav-boton-regresar:focus {
   background-color: var(--navegacion-conahcyt-fondo-hover);
   box-shadow: none;
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-hipervinculo:active, .navegacion-conahcyt .nav-hipervinculo.active, .navegacion-conahcyt .nav-hipervinculo.nuxt-link-active, .navegacion-conahcyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conahcyt .nav-hipervinculo.router-link-active, .navegacion-conahcyt .nav-hipervinculo.router-link-exact-active {
+.navegacion-conahcyt .nav-hipervinculo:active, .navegacion-conahcyt .nav-boton-submenu:active, .navegacion-conahcyt .nav-boton-regresar:active, .navegacion-conahcyt .nav-hipervinculo.active, .navegacion-conahcyt .active.nav-boton-submenu, .navegacion-conahcyt .active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.nuxt-link-active, .navegacion-conahcyt .nuxt-link-active.nav-boton-submenu, .navegacion-conahcyt .nuxt-link-active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conahcyt .nuxt-link-exact-active.nav-boton-submenu, .navegacion-conahcyt .nuxt-link-exact-active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.router-link-active, .navegacion-conahcyt .router-link-active.nav-boton-submenu, .navegacion-conahcyt .router-link-active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.router-link-exact-active, .navegacion-conahcyt .router-link-exact-active.nav-boton-submenu, .navegacion-conahcyt .router-link-exact-active.nav-boton-regresar {
   background-color: transparent;
   box-shadow: inset 0 -5px 0 var(--navegacion-conahcyt-color);
   color: var(--navegacion-conahcyt-color);
@@ -8432,22 +8384,22 @@ dl.informacion-despliegue dd:not(:last-child) {
   background-color: var(--navegacion-conahcyt-fondo-hover);
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-boton-submenu, .navegacion-conahcyt .nav-boton-regresar {
+.navegacion-conahcyt .nav-boton-submenu {
   background: transparent;
   box-shadow: none;
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-boton-submenu:hover, .navegacion-conahcyt .nav-boton-regresar:hover, .navegacion-conahcyt .nav-boton-submenu:focus, .navegacion-conahcyt .nav-boton-regresar:focus {
+.navegacion-conahcyt .nav-boton-submenu:hover, .navegacion-conahcyt .nav-boton-submenu:focus {
   background-color: var(--navegacion-conahcyt-fondo-hover);
   box-shadow: none;
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-boton-submenu:active, .navegacion-conahcyt .nav-boton-regresar:active, .navegacion-conahcyt .nav-boton-submenu.active, .navegacion-conahcyt .active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-active, .navegacion-conahcyt .nuxt-link-active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-exact-active, .navegacion-conahcyt .nuxt-link-exact-active.nav-boton-regresar, .navegacion-conahcyt .nav-boton-submenu.router-link-exact-active, .navegacion-conahcyt .router-link-exact-active.nav-boton-regresar {
+.navegacion-conahcyt .nav-boton-submenu:active, .navegacion-conahcyt .nav-boton-submenu.active, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-active, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-exact-active, .navegacion-conahcyt .nav-boton-submenu.router-link-exact-active {
   background-color: transparent;
   box-shadow: inset 0 -5px 0 var(--color-conahcyt-oscuro-1);
   color: var(--navegacion-conahcyt-color);
 }
-.navegacion-conahcyt .nav-boton-submenu:not(:disabled):focus-visible, .navegacion-conahcyt .nav-boton-regresar:not(:disabled):focus-visible {
+.navegacion-conahcyt .nav-boton-submenu:not(:disabled):focus-visible {
   box-shadow: none;
 }
 .navegacion-conahcyt .nav-submenu {
@@ -10028,15 +9980,15 @@ span.controlador-vis label, span.controlador-vis legend,
     visibility: hidden;
   }
 }
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset] {
   background-color: transparent !important;
 }
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child),
-.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child),
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child),
+.a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante):not(:last-child),
 .a11y-simplificada input[type=button]:not(:last-child),
 .a11y-simplificada input[type=submit]:not(:last-child),
 .a11y-simplificada input[type=reset]:not(:last-child) {
@@ -10200,24 +10152,24 @@ span.controlador-vis label, span.controlador-vis legend,
 
 .a11y-hipervinculos a,
 .a11y-hipervinculos .hipervinculo,
-.a11y-hipervinculos .a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-hipervinculos .a11y-simplificada input[type=button],
 .a11y-simplificada .a11y-hipervinculos input[type=button],
 .a11y-hipervinculos .a11y-simplificada input[type=submit],
@@ -10228,24 +10180,24 @@ span.controlador-vis label, span.controlador-vis legend,
 }
 .a11y-hipervinculos a:hover, .a11y-hipervinculos a:focus, .a11y-hipervinculos a:focus-within, .a11y-hipervinculos a:active,
 .a11y-hipervinculos .hipervinculo:hover,
-.a11y-hipervinculos .a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:hover,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:hover,
@@ -10253,24 +10205,24 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .a11y-simplificada input[type=reset]:hover,
 .a11y-simplificada .a11y-hipervinculos input[type=reset]:hover,
 .a11y-hipervinculos .hipervinculo:focus,
-.a11y-hipervinculos .a11y-simplificada .boton:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-pictograma:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-pictograma:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-descarga:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-descarga:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada button:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos button:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-pictograma:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-pictograma:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-descarga:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-descarga:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada button:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos button:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:focus,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:focus,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:focus,
@@ -10278,24 +10230,24 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .a11y-simplificada input[type=reset]:focus,
 .a11y-simplificada .a11y-hipervinculos input[type=reset]:focus,
 .a11y-hipervinculos .hipervinculo:focus-within,
-.a11y-hipervinculos .a11y-simplificada .boton:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-pictograma:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-pictograma:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-descarga:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-descarga:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada button:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos button:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-pictograma:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-pictograma:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-descarga:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-descarga:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada button:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos button:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:focus-within,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:focus-within,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:focus-within,
@@ -10303,24 +10255,24 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-hipervinculos .a11y-simplificada input[type=reset]:focus-within,
 .a11y-simplificada .a11y-hipervinculos input[type=reset]:focus-within,
 .a11y-hipervinculos .hipervinculo:active,
-.a11y-hipervinculos .a11y-simplificada .boton:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-pictograma:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-pictograma:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-descarga:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos .boton-descarga:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-hipervinculos .a11y-simplificada button:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-.a11y-simplificada .a11y-hipervinculos button:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.nav-boton-regresar):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .ir-contenido-principal:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .ir-contenido-principal:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-pictograma:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-pictograma:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-descarga:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos .boton-descarga:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + label:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada .boton-alternar [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-hipervinculos .a11y-simplificada button:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+.a11y-simplificada .a11y-hipervinculos button:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-hipervinculos .a11y-simplificada input[type=button]:active,
 .a11y-simplificada .a11y-hipervinculos input[type=button]:active,
 .a11y-hipervinculos .a11y-simplificada input[type=submit]:active,
@@ -10350,8 +10302,10 @@ body[data-dark-theme-eni=true] {
   --fondo-confirmacion: var(--color-confirmacion-4);
   --fondo-alerta: var(--color-alerta-4);
   --fondo-error: var(--color-error-4);
-  --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.6) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
-  --fondo-degradado-ligero: linear-gradient(transparent, rgba(var(--color-secundario-11-rgb),0.8));
+  --degradado-fuerte: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.6) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
+  --degradado-ligero: linear-gradient(transparent, rgba(var(--color-secundario-11-rgb),0.8));
+  --opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
+  --opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
   --borde: var(--color-neutro-0);
   --borde-secundario: var(--color-secundario-8);
   --borde-acento: var(--color-secundario-5);
@@ -10506,6 +10460,16 @@ body[data-dark-theme-eni=true] {
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);
+  --navegacion-primaria-fondo: var(--color-secundario-12);
+  --navegacion-primaria-sombra: var(--opacidad-fuerte);
+  --navegacion-primaria-color: var(--color-neutro-0);
+  --navegacion-primaria-cursor-fondo: var(--color-secundario-10);
+  --navegacion-primaria-enfoque-borde: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-fondo: var(--color-secundario-10);
+  --navegacion-primaria-activo-borde: var(--color-primario-2);
+  --navegacion-primaria-seccion-fondo: var(--color-secundario-8);
+  --navegacion-primaria-seccion-color: var(--color-secundario-5);
 }
 
 .a11y-oscura .boton-conahcyt img {
@@ -10527,6 +10491,8 @@ body[data-light-theme-eni=true] {
   --fondo-error: var(--color-error-1);
   --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb),1) 0%, rgba(var(--color-neutro-7-rgb),0.59) 60%, rgba(var(--color-neutro-7-rgb),0) 100%);
   --fondo-degradado-ligero: linear-gradient(transparent, rgba(var(--color-neutro-7-rgb),0.8));
+  --fondo-opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
+  --fondo-opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
   --borde: var(--color-neutro-4);
   --borde-secundario: var(--color-neutro-3);
   --borde-acento: var(--color-secundario-9);
@@ -10681,6 +10647,16 @@ body[data-light-theme-eni=true] {
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);
+  --navegacion-primaria-fondo: var(--color-neutro-0);
+  --navegacion-primaria-sombra: var(--opacidad-ligero);
+  --navegacion-primaria-color: var(--color-secundario-12);
+  --navegacion-primaria-cursor-fondo: var(--color-secundario-2);
+  --navegacion-primaria-enfoque-borde: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-fondo: var(--color-secundario-2);
+  --navegacion-primaria-activo-borde: var(--color-primario-3);
+  --navegacion-primaria-seccion-fondo: var(--color-secundario-4);
+  --navegacion-primaria-seccion-color: var(--color-secundario-8);
 }
 
 /*# sourceMappingURL=sisdai.css.map */

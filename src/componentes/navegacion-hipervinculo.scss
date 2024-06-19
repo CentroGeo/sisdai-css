@@ -14,34 +14,31 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .nav-hipervinculo {
-  background-color: var(--navegacion-fondo);
+  background-color: var(--navegacion-primaria-fondo);
   box-shadow: 0 0 0 0;
-  color: var(--navegacion-color);
-  border: none;
+  color: var(--navegacion-primaria-color);
   border-radius: 0;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: calc(1em * 1);
   padding: map-get($espaciado, '2');
   text-decoration: none;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
-  box-shadow 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   &:visited {
-    color: var(--navegacion-color);
+    color: var(--navegacion-primaria-color);
   }
   &:hover,
   &:focus {
-    border: none;
-    border-radius: 0;
-    background-color: var(--navegacion-fondo-hover);
-    box-shadow: var(--navegacion-sombra-hover);
-    color: var(--navegacion-color-hover);
-    z-index: 1;
+    background-color: var(--navegacion-primaria-cursor-fondo);
+    color: var(--navegacion-primaria-color);
     text-decoration: none;
   }
   &:focus-visible {
     outline: none;
-    box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
+    background-color: var(--navegacion-primaria-enfoque-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 
+      0 0 8px var(--navegacion-primaria-enfoque-sombra);
   }
   &:active,
   &.active,
@@ -49,23 +46,18 @@
   &.nuxt-link-exact-active,
   &.router-link-active,
   &.router-link-exact-active {
-    background-color: var(--navegacion-fondo-active);
-    box-shadow: var(--navegacion-sombra-active);
-    color: var(--navegacion-color-active);
+    box-shadow: inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde);
     &:hover,
-    &:focus-visible {
-      border: none;
-      border-radius: 0;
-      background-color: var(--navegacion-fondo-hover);
-      box-shadow: var(--navegacion-sombra-hover), var(--navegacion-sombra-active);
-      color: var(--navegacion-color-hover);
+    &:focus {
+      background-color: var(--navegacion-primaria-cursor-fondo);
     }
     &:focus-visible {
       outline: none;
+      background-color: var(--navegacion-primaria-enfoque-fondo);
       box-shadow: 
-        inset 0 0 0 1px var(--boton-secundario-focus-borde),
-        var(--navegacion-sombra-active),
-        0 0 8px var(--boton-secundario-focus-sombra);
+        inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde),
+        inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde),
+        0 0 8px var(--navegacion-primaria-enfoque-sombra);
     }
   }
   display: block;
@@ -83,9 +75,13 @@
   display: inline-flex;
   padding: map-get($espaciado, 'minimo') 0;
   margin: 0;
+  border-radius: 0;
   &:focus-visible {
     outline: none;
-    box-shadow: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
+    background-color: var(--navegacion-primaria-enfoque-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 
+      0 0 8px var(--navegacion-primaria-enfoque-sombra);
   }
 }
 

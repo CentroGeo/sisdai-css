@@ -234,7 +234,8 @@
       </div>
     </nav> -->
 
-    <nav class="navegacion navegacion-conahcyt navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
+    <!-- <nav class="navegacion navegacion-conahcyt navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()"> -->
+    <nav class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img class="nav-logo invertir" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
@@ -318,7 +319,7 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li> -->
               </ul>
             </li>

@@ -105,8 +105,8 @@ window.removeEventListener('resize', validarNavegacionColapsable)
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li>
-              <a href="#" class="nav-hipervinculo">
-                Menú
+              <a href="#" class="nav-hipervinculo active">
+                Menú activo
               </a>
             </li>
             <li>
@@ -115,7 +115,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
               </a>
             </li>
             <li>
-              <button class="nav-boton">
+              <button class="nav-boton boton-primario">
                 <span class="pictograma-buscar" aria-hidden="true"></span>
                 <span class="a11y-solo-lectura"> Buscar </span>
               </button>
@@ -163,7 +163,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                   </a>
                 </li>
                 <li>
-                  <button class="nav-boton">
+                  <button class="nav-boton boton-primario">
                     <span class="pictograma-buscar" aria-hidden="true"></span>
                     <span class="a11y-solo-lectura"> Buscar </span>
                   </button>
@@ -194,7 +194,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
     >
 
       <div class="nav-contenedor-identidad">
-        <a href="#" class="nav-hiperviculo-logo" >
+        <a href="#" class="nav-hiperviculo-logo">
           <img 
             class="nav-logo" 
             src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" 
@@ -286,10 +286,10 @@ window.removeEventListener('resize', validarNavegacionColapsable)
               </ul>
             </li>
             <li>
-              <button class="nav-boton" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()">nav boton</button>
+              <button class="nav-boton boton-sin-contenedor-secundario" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()">nav boton</button>
             </li>
             <li>
-              <button class="nav-boton" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()">
+              <button class="nav-boton boton-sin-contenedor-secundario" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()">
                 <span class="pictograma-buscar" aria-hidden="true"></span>
                 <span class="a11y-solo-lectura"> Buscar </span>
               </button>
@@ -492,7 +492,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                       </ul>
                     </li>
                     <li>
-                      <button class="nav-boton" 
+                      <button class="nav-boton boton-sin-contenedor-secundario" 
                         @mouseover="ocultarSumbenu()" 
                         @click="cerrarMenuSubmenu()"
                       >
@@ -500,7 +500,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                       </button>
                     </li>
                     <li>
-                      <button class="nav-boton" 
+                      <button class="nav-boton boton-sin-contenedor-secundario" 
                         @mouseover="ocultarSumbenu()" 
                         @click="cerrarMenuSubmenu()"
                       >
