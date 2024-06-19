@@ -296,7 +296,7 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">TODO Cargando <span class="etiqueta">pre</span></RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
               </ul>

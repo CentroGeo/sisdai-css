@@ -10,8 +10,8 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         Pueden contener multiples elementos dentro del elemento de lista <code>&lt;li/></code>.
       </p>
       <p>
-        Dentro de los elementos de lista, todas comparten el bloque de <code>.lista-compuesta-cuperpo</code> que puede contener las clases 
-        <code>.lista-compuesta-texto-primario</code>, <code>.lista-compuesta-texto-secundario</code> y <code>.lista-compuesta-texto-terciario</code>.
+        Dentro de los elementos de lista, todas comparten el bloque de <code>.lista-compuesta-cuerpo</code> que puede contener las clases 
+        <code>.lista-compuesta-titulo</code>, <code>.lista-compuesta-texto-primario</code> y <code>.lista-compuesta-texto-secundario</code>.
       </p>
     </div>
 
@@ -33,9 +33,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <img src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/avatar.svg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
+                <p class="lista-compuesta-titulo">titulo</p>
                 <p class="lista-compuesta-texto-primario">texto-primario</p>
                 <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-                <p class="lista-compuesta-texto-terciario">texto-terciario</p>
               </div>
             </a>
           </li>
@@ -45,9 +45,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/nymeria.jpg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
-                <p class="lista-compuesta-texto-primario">Nombre(s) Primer y Segundo apellido</p>
-                <p class="lista-compuesta-texto-secundario">Rol o cargo</p>
-                <p class="lista-compuesta-texto-terciario">Institución de adscripción</p>
+                <p class="lista-compuesta-titulo">Nombre(s) Primer y Segundo apellido</p>
+                <p class="lista-compuesta-texto-primario">Rol o cargo</p>
+                <p class="lista-compuesta-texto-secundario">Institución de adscripción</p>
               </div>
             </a>
           </li>
@@ -57,9 +57,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/nilo.jpg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
-                <p class="lista-compuesta-texto-primario">Nombre(s) Primer y Segundo apellido</p>
-                <p class="lista-compuesta-texto-secundario">Rol o cargo</p>
-                <p class="lista-compuesta-texto-terciario">Institución de adscripción</p>
+                <p class="lista-compuesta-titulo">Nombre(s) Primer y Segundo apellido</p>
+                <p class="lista-compuesta-texto-primario">Rol o cargo</p>
+                <p class="lista-compuesta-texto-secundario">Institución de adscripción</p>
               </div>
             </a>
           </li>
@@ -76,14 +76,14 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                   <img src="..." alt=""/>
                 </div>
                 <div class="lista-compuesta-cuerpo">
+                  <p class="lista-compuesta-titulo">
+                    titulo
+                  </p>
                   <p class="lista-compuesta-texto-primario">
                     texto-primario
                   </p>
                   <p class="lista-compuesta-texto-secundario">
                     texto-secundario
-                  </p>
-                  <p class="lista-compuesta-texto-terciario">
-                    texto-terciario
                   </p>
                 </div>
               </a>
@@ -154,10 +154,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
 
     <div class="ancho-lectura">
-      <h2 class="m-t-10">Lista pictotrama</h2>
+      <h2 class="m-t-10">Lista pictograma</h2>
       <p>
         La lista <code>.lista-pictograma</code> utiliza pictogramas del sistema de diseño, que al utilizarse como tipografía,
-        varia su tamaño dependiendo de la etiqueta o clase a la que se agregue.
+        varía su tamaño dependiendo de la etiqueta o clase a la que se agregue.
       </p>
       <p>
         Para la correcta visualización de este tipo de lista, 
@@ -169,18 +169,18 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <ul class="lista-compuesta lista-pictograma">
           <li>
             <div class="lista-pictograma-imagen">
-              <span class="pictograma-flkt pictograma-32 texto-color-2"></span>
+              <span class="pictograma-flkt pictograma-mediano texto-color-acento"></span>
             </div>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-secundario">texto-secundario</p>
+              <p class="lista-compuesta-texto-primario">texto-primario</p>
             </div>
           </li>
           <li>
             <div class="lista-pictograma-imagen">
-              <span class="pictograma-flkt pictograma-32 texto-color-2"></span>
+              <span class="pictograma-flkt pictograma-mediano texto-color-acento"></span>
             </div>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-secundario">
+              <p class="lista-compuesta-texto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Aut perspiciatis dolores magni temporibus, ab consequuntur molestiae, 
                 illo quasi ipsum at natus qui autem facere ducimus consectetur 
@@ -198,12 +198,12 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <li>
               <div class="lista-pictograma-imagen">
                 <span 
-                  class="pictograma-flkt pictograma-32 texto-color-2"
+                  class="pictograma-flkt pictograma-mediano texto-color-acento"
                 ></span>
               </div>
               <div class="lista-compuesta-cuerpo">
-                <p class="lista-compuesta-texto-secundario">
-                  texto-secundario
+                <p class="lista-compuesta-texto-primario">
+                  texto-primario
                 </p>
               </div>
             </li>
@@ -227,9 +227,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <ul class="lista-compuesta lista-accion">
           <li>
             <div class="lista-compuesta-cuerpo">
+              <p class="lista-compuesta-titulo">titulo</p>
               <p class="lista-compuesta-texto-primario">texto-primario</p>
               <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-              <p class="lista-compuesta-texto-terciario">texto-terciario</p>
             </div>
             <div class="lista-accion-acciones">
               <button class="boton-pictograma boton-sin-contenedor-primario">
@@ -248,9 +248,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </li>
           <li>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-              <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-              <p class="lista-compuesta-texto-terciario">355kb</p>
+              <p class="lista-compuesta-titulo">Nombre de archivo</p>
+              <p class="lista-compuesta-texto-primario">19/12/2024</p>
+              <p class="lista-compuesta-texto-secundario">355kb</p>
             </div>
             <div class="lista-accion-acciones">
               <button class="boton-pictograma boton-sin-contenedor-primario">
@@ -269,9 +269,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </li>
           <li>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-              <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-              <p class="lista-compuesta-texto-terciario">355kb</p>
+              <p class="lista-compuesta-titulo">Nombre de archivo</p>
+              <p class="lista-compuesta-texto-primario">19/12/2024</p>
+              <p class="lista-compuesta-texto-secundario">355kb</p>
             </div>
             <div class="lista-accion-acciones">
               <button class="boton-pictograma boton-sin-contenedor-secundario">
@@ -289,9 +289,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <ul class="lista-compuesta lista-accion">
             <li>
               <div class="lista-compuesta-cuerpo">
+                <p class="lista-compuesta-titulo"> titulo </p>
                 <p class="lista-compuesta-texto-primario"> texto-primario </p>
                 <p class="lista-compuesta-texto-secundario"> texto-secundario </p>
-                <p class="lista-compuesta-texto-terciario"> texto-terciario </p>
               </div>
               <div class="lista-accion-acciones">
                 <button 
@@ -323,7 +323,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <p>
         La clase <code>.lista-casilla</code> requiere que se utilice un <code>&lt;input type="checkbox"/></code> 
         seguido inmediatamente de su <code>&lt;label /></code>. 
-        En éste caso la etiqueta <code>&lt;label /></code> contendra las clases de textos primario, secundario y terciario.
+        En éste caso la etiqueta <code>&lt;label /></code> contendrá las clases de titulo, textos primario y secundario.
       </p>
     </div>
 
@@ -337,9 +337,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 checked
               />
               <label for="checkbox1">
+                <p class="lista-compuesta-titulo">titulo</p>
                 <p class="lista-compuesta-texto-primario">texto-primario</p>
                 <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-                <p class="lista-compuesta-texto-terciario">texto-terciario</p>
             </label>
           </li>
           <li>
@@ -348,9 +348,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 name="checkboxes"
               />
               <label for="checkbox2">
-                <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-                <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-                <p class="lista-compuesta-texto-terciario">355kb</p>
+                <p class="lista-compuesta-titulo">Nombre de archivo</p>
+                <p class="lista-compuesta-texto-primario">19/12/2024</p>
+                <p class="lista-compuesta-texto-secundario">355kb</p>
             </label>
           </li>
           <li>
@@ -359,9 +359,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 name="checkboxes"
               />
               <label for="checkbox3">
-                <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-                <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-                <p class="lista-compuesta-texto-terciario">355kb</p>
+                <p class="lista-compuesta-titulo">Nombre de archivo</p>
+                <p class="lista-compuesta-texto-primario">19/12/2024</p>
+                <p class="lista-compuesta-texto-secundario">355kb</p>
             </label>
           </li>
         </ul>
@@ -378,9 +378,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                   checked
                 />
                 <label for="checkbox1">
+                  <p class="lista-compuesta-titulo"> titulo </p>
                   <p class="lista-compuesta-texto-primario"> texto-primario </p>
                   <p class="lista-compuesta-texto-secundario"> texto-secundario </p>
-                  <p class="lista-compuesta-texto-terciario"> texto-terciario </p>
               </label>
             </li>
             ...

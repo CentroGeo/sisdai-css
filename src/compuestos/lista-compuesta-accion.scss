@@ -15,7 +15,7 @@
 
 .lista-accion {
   li {
-    border-bottom: 1px solid var(--borde-color-3);
+    border-bottom: 1px solid var(--borde-secundario);
     padding: map-get($espaciado, '2') 0;
   }
   .lista-accion-acciones {

@@ -39,7 +39,7 @@
     width: 100%;
     text-decoration: none;
     &:hover {
-      background-color: var(--tarjetas-internas-fondo); 
+      background-color: var(--estado-cursor); 
     }
   }
 }
@@ -54,7 +54,7 @@
     color: var(--texto-primario);
     font-weight: 500;
   }
-  .lista-compuesta-texto {
+  .lista-compuesta-texto-primario {
     color: var(--texto-primario);
     font-weight: 400;
   }

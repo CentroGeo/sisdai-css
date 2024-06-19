@@ -7000,7 +7000,7 @@ ol + hr {
   text-decoration: none;
 }
 .lista-compuesta a:hover {
-  background-color: var(--tarjetas-internas-fondo);
+  background-color: var(--estado-cursor);
 }
 
 .lista-compuesta-cuerpo, .lista-casilla li [type=checkbox] + label, .lista-casilla li [type=checkbox] + legend,
@@ -7020,9 +7020,9 @@ ol + hr {
   color: var(--texto-primario);
   font-weight: 500;
 }
-.lista-compuesta-cuerpo .lista-compuesta-texto, .lista-casilla li [type=checkbox] + label .lista-compuesta-texto, .lista-casilla li [type=checkbox] + legend .lista-compuesta-texto,
-.lista-casilla li [type=radio] + label .lista-compuesta-texto,
-.lista-casilla li [type=radio] + legend .lista-compuesta-texto {
+.lista-compuesta-cuerpo .lista-compuesta-texto-primario, .lista-casilla li [type=checkbox] + label .lista-compuesta-texto-primario, .lista-casilla li [type=checkbox] + legend .lista-compuesta-texto-primario,
+.lista-casilla li [type=radio] + label .lista-compuesta-texto-primario,
+.lista-casilla li [type=radio] + legend .lista-compuesta-texto-primario {
   color: var(--texto-primario);
   font-weight: 400;
 }
@@ -7090,7 +7090,7 @@ ol + hr {
 }
 
 .lista-accion li {
-  border-bottom: 1px solid var(--borde-color-3);
+  border-bottom: 1px solid var(--borde-secundario);
   padding: 16px 0;
 }
 .lista-accion .lista-accion-acciones {
@@ -7110,7 +7110,7 @@ ol + hr {
 }
 
 .lista-casilla li {
-  border-bottom: 1px solid var(--borde-color-3);
+  border-bottom: 1px solid var(--borde-secundario);
   padding: 12px 0;
 }
 .lista-casilla li [type=checkbox] + label, .lista-casilla li [type=checkbox] + legend,
@@ -10368,6 +10368,7 @@ body[data-dark-theme-eni=true] {
   --texto-alerta: var(--color-alerta-2);
   --texto-error: var(--color-error-2);
   --estado-enfoque: var(--color-interactivo-3);
+  --estado-cursor: var(--color-secundario-10);
   --campo-etiqueta-color: var(--color-secundario-5);
   --campo-fondo: var(--color-secundario-12);
   --campo-color: var(--color-neutro-0);
@@ -10541,6 +10542,7 @@ body[data-light-theme-eni=true] {
   --texto-alerta: var(--color-alerta-3);
   --texto-error: var(--color-error-3);
   --estado-enfoque: var(--color-interactivo-1);
+  --estado-cursor: var(--color-secundario-2);
   --campo-etiqueta-color: var(--color-secundario-8);
   --campo-fondo: var(--color-neutro-0);
   --campo-color: var(--color-neutro-6);
