@@ -14,7 +14,7 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 dialog::backdrop {
-  background-color: var(--dialogo-fondo);
+  background-color: var(--fondo-opacidad-ligero);
 }
 
 dialog {
@@ -28,8 +28,8 @@ dialog {
     right: 0;
     left: 0;
 
-    background-color: var(--modal-fondo);
-    color: var(--modal-color);
+    background-color: var(--fondo);
+    color: var(--texto-primario);
     border-radius: map-get($borde-redondeado, '20');
     border: none;
     padding: map-get($espaciado, '3');

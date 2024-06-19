@@ -13,6 +13,9 @@ body[data-light-theme-eni='true'] {
   --fondo-degradado-fuerte: linear-gradient(0deg, rgba(var(--color-neutro-7-rgb),1) 0%, rgba(var(--color-neutro-7-rgb),0.59) 60%, rgba(var(--color-neutro-7-rgb),0) 100%);
   --fondo-degradado-ligero: linear-gradient(transparent, rgba(var(--color-neutro-7-rgb),0.8));
 
+  --fondo-opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
+  --fondo-opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
+
   --borde: var(--color-neutro-4);
   --borde-secundario: var(--color-neutro-3);
   --borde-acento: var(--color-secundario-9);

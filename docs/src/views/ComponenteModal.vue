@@ -191,7 +191,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
               alt=""
             />
             <figcaption>
-              Esparragus el perrito el mejor y mas bonito mister chaparrito.
+              Esparragus el perrito el mejor y más bonito mister chaparrito.
             </figcaption>
           </figure>
           <p>
