@@ -6784,7 +6784,7 @@ ol + hr {
 .portada .portada-degradado {
   position: relative;
   width: 100%;
-  background: var(--portada-fondo);
+  background: var(--fondo-degradado-ligero);
   display: flex;
   align-items: stretch;
   margin-top: 48px;
@@ -6797,7 +6797,7 @@ ol + hr {
   text-align: center;
 }
 .portada .portada-cuerpo > * {
-  color: var(--portada-color);
+  color: var(--texto-inverso);
   border-color: currentColor;
   margin: 8px 0;
 }
@@ -6809,7 +6809,7 @@ ol + hr {
 }
 .portada .portada-titulo {
   font-size: 2.25rem;
-  color: var(--portada-color);
+  color: var(--texto-inverso);
 }
 @media screen and (min-width: 768px) {
   .portada .portada-titulo {
@@ -6818,7 +6818,7 @@ ol + hr {
 }
 .portada .portada-subtitulo {
   font-size: 1.125rem;
-  color: var(--portada-color);
+  color: var(--texto-inverso);
 }
 @media screen and (min-width: 768px) {
   .portada .portada-subtitulo {
@@ -6827,7 +6827,7 @@ ol + hr {
 }
 .portada.portada-secundaria .portada-titulo {
   font-size: 2.25rem;
-  color: var(--portada-color);
+  color: var(--texto-inverso);
 }
 @media screen and (min-width: 768px) {
   .portada.portada-secundaria .portada-titulo {
@@ -10501,8 +10501,6 @@ body[data-dark-theme-eni=true] {
   --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
   --tarjeta-contenido-simplificada-fondo: var(--color-secundario-10);
   --tarjeta-contenido-simplificada-color: var(--color-neutro-0);
-  --portada-fondo: var(--fondo-degradado-ligero);
-  --portada-color: var(--texto-inverso);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);
@@ -10676,8 +10674,6 @@ body[data-light-theme-eni=true] {
   --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
   --tarjeta-contenido-simplificada-fondo: var(--color-neutro-1);
   --tarjeta-contenido-simplificada-color: var(--color-neutro-6);
-  --portada-fondo: var(--fondo-degradado-ligero);
-  --portada-color: var(--texto-inverso);
   --modal-fondo: var(--fondo);
   --modal-color: var(--texto-primario);
   --visualizacion-color: var(--texto-primario);
