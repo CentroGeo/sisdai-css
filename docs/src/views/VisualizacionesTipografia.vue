@@ -43,7 +43,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
           </p>
 
           <p class="vis-nomenclatura">
-            <span class="figura-variable"></span>
+            <span class="figura-variable disabled"></span>
             Nomenclatura
           </p>
           <p class="vis-nomenclatura">
@@ -53,7 +53,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         </div>
       </div>
 
-      <div class="contenedor-vis-atribuciones borde-t borde-color-3">
+      <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
         <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <img
             class="color-invertir"
@@ -152,7 +152,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
     <EjemploCodigoHorizontal 
       html='
       <p class="vis-nomenclatura">
-        <span class="figura-variable"></span>
+        <span class="figura-variable disabled"></span>
         Nomenclatura
       </p>
       <p class="vis-nomenclatura">
@@ -166,7 +166,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Interlineado', valor:'1.25em'},
         {nombre:'Peso', valor:'Regular (400)'},
         {nombre:'Margen derecho', valor:'24px'},
-        {nombre:'Color', valor:'var(--campo-etiqueta-color)'},
+        {nombre:'Color', valor:'var(--texto-secundario)'},
       ]]"
     /> 
   </div>

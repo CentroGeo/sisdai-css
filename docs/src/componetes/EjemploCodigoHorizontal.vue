@@ -10,7 +10,7 @@
   })
 </script>
 <template>
-  <div class="ej-horizontal flex borde-b borde-color-3">
+  <div class="ej-horizontal flex borde-b borde-color-secundario">
     <div class="columna-8 columna-6-esc" v-html="html"></div>
     <div class="columna-8 columna-6-esc">
       <pre class="codigo">{{ html }}</pre>

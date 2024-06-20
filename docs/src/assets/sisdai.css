@@ -8851,7 +8851,7 @@ span.controlador-vis label, span.controlador-vis legend,
 
 [class^=vis-],
 [class*=" vis-"] {
-  color: var(--visualizacion-color);
+  color: var(--texto-primario);
   font-family: var(--tipografia-familia, "sans-serif");
 }
 
@@ -8888,7 +8888,7 @@ span.controlador-vis label, span.controlador-vis legend,
   font-size: 0.75rem;
   line-height: 1.2em;
   font-weight: 400;
-  fill: var(--visualizacion-color);
+  fill: var(--texto-primario);
   margin: 0;
 }
 
@@ -8896,7 +8896,7 @@ span.controlador-vis label, span.controlador-vis legend,
   font-size: 0.75rem;
   line-height: 1.25em;
   font-weight: 600;
-  fill: var(--visualizacion-color);
+  fill: var(--texto-primario);
   margin: 0;
 }
 
@@ -8912,15 +8912,15 @@ span.controlador-vis label, span.controlador-vis legend,
   font-size: 1rem;
   line-height: 1.25em;
   font-weight: 400;
-  color: var(--campo-etiqueta-color);
+  color: var(--texto-secundario);
   display: inline-flex;
   margin: 8px 24px 8px 0;
 }
 .vis-nomenclatura .figura-variable {
   width: 1.125rem;
   height: 1.125rem;
-  background-color: var(--acciones-informativo);
-  border: 1px solid var(--tipografia-color);
+  background-color: #66A5FE;
+  border: 1px solid var(--borde);
   border-radius: 50%;
   display: inline-flex;
   margin-right: 4px;
@@ -10479,7 +10479,6 @@ body[data-dark-theme-eni=true] {
   --globo-hipervinculo-enfoque-color: var(--estado-enfoque);
   --globo-hipervinculo-enfoque-sombra: var(--estado-enfoque);
   --globo-hipervinculo-visitado: var(--color-interactivo-5);
-  --visualizacion-color: var(--texto-primario);
   --navegacion-primaria-fondo: var(--color-secundario-12);
   --navegacion-primaria-sombra: var(--opacidad-fuerte);
   --navegacion-primaria-color: var(--color-neutro-0);
@@ -10690,7 +10689,6 @@ body[data-light-theme-eni=true] {
   --globo-hipervinculo-enfoque-color: var(--estado-enfoque);
   --globo-hipervinculo-enfoque-sombra: var(--estado-enfoque);
   --globo-hipervinculo-visitado: var(--color-interactivo-5);
-  --visualizacion-color: var(--texto-primario);
   --navegacion-primaria-fondo: var(--color-neutro-0);
   --navegacion-primaria-sombra: var(--opacidad-ligero);
   --navegacion-primaria-color: var(--color-secundario-12);
