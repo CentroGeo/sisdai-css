@@ -8,9 +8,8 @@
   // tamaño del boxshadow de checkboxes en focus definido en el archivo base de formularios
   $sombra-espacio: 8px; 
 
-  background-color: var(--tarjetas-internas-fondo);
+  background-color: var(--fondo-neutro);
   border-radius: map-get($borde-redondeado, '20');
-  color: var(--tarjetas-internas-color);
   width: 100%;
   
   .contenedor-vis-paneles {
@@ -47,12 +46,12 @@
           margin: 0;
           svg{
             .vis-linea-ejes{
-              stroke:var(--borde-color-2);
+              stroke:var(--borde);
               stroke-dasharray: 3 3;
               stroke-width: 1px;
             }
             .vis-linea-base{
-              stroke:var(--borde-color-2);
+              stroke:var(--borde);
               stroke-width: 1px;
             }
           }

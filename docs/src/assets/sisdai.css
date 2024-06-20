@@ -8465,9 +8465,8 @@ dl.informacion-despliegue dd:not(:last-child) {
   --contenedor-vis-alto-atribuciones: 58px;
   --contenedor-vis-alto-maximo: calc(100vh - var(--contenedor-vis-alto-menus));
   --contenedor-vis-alto-minimo-vis: 300px;
-  background-color: var(--tarjetas-internas-fondo);
+  background-color: var(--fondo-neutro);
   border-radius: 20px;
-  color: var(--tarjetas-internas-color);
   width: 100%;
 }
 .contenedor-vis .contenedor-vis-paneles {
@@ -8516,12 +8515,12 @@ dl.informacion-despliegue dd:not(:last-child) {
   margin: 0;
 }
 .contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip figure svg .vis-linea-ejes {
-  stroke: var(--borde-color-2);
+  stroke: var(--borde);
   stroke-dasharray: 3 3;
   stroke-width: 1px;
 }
 .contenedor-vis .contenedor-vis-paneles .contenido-vis div.contenedor-svg-ejes-tooltip figure svg .vis-linea-base {
-  stroke: var(--borde-color-2);
+  stroke: var(--borde);
   stroke-width: 1px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis,

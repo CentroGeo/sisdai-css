@@ -75,7 +75,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
         </div>
       </div>
-      <div class="contenedor-vis-atribuciones borde-t borde-color-3">
+      <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
         <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <img
             class="color-invertir"
@@ -111,7 +111,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </div>
   
           <!-- atribuciones -->
-          <div class="contenedor-vis-atribuciones borde-t borde-color-3">
+          <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
             <a 
               class="logo-conacyt" 
               href="https://conahcyt.mx/" 

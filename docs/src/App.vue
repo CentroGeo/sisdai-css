@@ -323,15 +323,15 @@
               </ul>
             </li>
 
-            <!-- <li class="nav-contenedor-submenu">
+            <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')" @mouseover="mostrarSubmenu('visualizaciones')">Visualizaciones</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontenedor">Contenedor</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li> -->
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li> -->
               </ul>
-            </li> -->
+            </li>
 
             <!-- <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')" @mouseover="mostrarSubmenu('auxiliares')">Auxiliares</button>
