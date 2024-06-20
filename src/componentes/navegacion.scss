@@ -48,10 +48,9 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  // TODO
   .nav-informacion {
-    background: var(--submenu-lateral-fondo-colapsable); // TODO
-    color: var(--menu-lateral-color); // TODO
+    background: var(--navegacion-primaria-seccion-fondo);
+    color: var(--navegacion-primaria-seccion-color);
     font-size: 0.75rem;
     padding: map-get($espaciado, 'minimo') map-get($contenedores, 'mov', 'margen-interior');
     margin-left: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);

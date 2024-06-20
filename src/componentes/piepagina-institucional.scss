@@ -50,21 +50,44 @@
 
 .piepagina-gobmx {
   @extend .piepagina;
-  background-color: var(--color-gobmx-oscuro-1);
+  background-color: var(--color-mx-5);
   background-image: url('https://cdn.conacyt.mx/sisdai/recursos/gobmxpleca.svg');
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: auto 50px;
-  
-  color: var(--color-gobmx-claro-0);
+  color: var(--color-mx-0);
   padding-top: map-get($espaciado, '4');
   padding-bottom: map-get($espaciado, '10');
+
+  a {
+    color: var(--color-mx-3);
+    &:visited {
+      color: var(--color-mx-3);
+    }
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      color: var(--color-mx-2);
+    }
+  }
 }
 
 .piepagina-conahcyt {
   @extend .piepagina;
   background: var(--color-conahcyt-degradado);
-  color: var(--color-gobmx-claro-0);
+  color: var(--color-conahcyt-0);
   padding-top: map-get($espaciado, '4');
   padding-bottom: map-get($espaciado, '4');
+
+  a {
+    color: var(--color-conahcyt-0);
+    &:visited {
+      color: var(--color-conahcyt-0);
+    }
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      color: var(--color-conahcyt-1);
+    }
+  }
 }

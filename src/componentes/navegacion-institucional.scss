@@ -14,35 +14,37 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .navegacion-gobmx {
-  background-color: var(--color-gobmx-oscuro-1);
+  background-color: var(--color-mx-5);
   box-shadow: none;
   .nav-menu-contenedor {
-    background-color: var(--color-gobmx-oscuro-1);
-    box-shadow: 0 8px 8px -4px #0002;
-    border-top: 1px solid var(--color-gobmx-claro-1);
+    background-color: var(--color-mx-5);
+    border-top: 1px solid var(--color-mx-3);
   }
   .nav-hipervinculo {
     background: transparent;
     box-shadow: none;
-    color: var(--color-gobmx-claro-1);
+    color: var(--color-mx-3);
     &:visited {
-      color: var(--color-gobmx-claro-1);
+      color: var(--color-mx-3);
     }
     &:active,
     &:hover,
     &:focus {
       background: transparent;
       box-shadow: none;
-      color: var(--color-gobmx-claro-2);
+      color: var(--color-mx-2);
     }
   }
   .nav-boton-menu {
-    background-color: var(--color-gobmx-oscuro-1);
-    color: var(--color-gobmx-claro-1);
-    &:hover,
-    &:focus {
-      background-color: var(--color-gobmx-oscuro-1);
-      color: var(--color-gobmx-claro-2);
+    background-color: transparent;
+    color: var(--color-mx-0);
+    &:not(:disabled):hover {
+      background-color: transparent;
+      color: var(--color-mx-2);
+    }
+    &:not(:disabled):focus {
+      background-color: transparent;
+      color: var(--color-mx-0);
     }
   }
   .nav-logo {
@@ -53,77 +55,5 @@
     .nav-menu-contenedor {
       border-top: none;
     }
-  }
-}
-
-.navegacion-conahcyt {
-  background: var(--navegacion-conahcyt-fondo);
-  box-shadow: 0 5px 5px var(--navegacion-conahcyt-sombra);
-  .nav-menu-contenedor {
-    background-color: var(--navegacion-conahcyt-fondo);
-  }
-  .nav-hipervinculo {
-    background: transparent;
-    box-shadow: none;
-    color: var(--navegacion-conahcyt-color);
-    &:visited {
-      color: var(--navegacion-conahcyt-color);
-    }
-    &:hover,
-    &:focus {
-      background-color: var(--navegacion-conahcyt-fondo-hover); 
-      box-shadow: none;
-      color: var(--navegacion-conahcyt-color);
-    }
-    &:active,
-    &.active,
-    &.nuxt-link-active,
-    &.nuxt-link-exact-active,
-    &.router-link-active,
-    &.router-link-exact-active {
-      background-color: transparent;
-      box-shadow: inset 0 -5px 0 var(--navegacion-conahcyt-color);
-      color: var(--navegacion-conahcyt-color);
-    }
-  }
-  .nav-logo {
-    width: 130px;
-    height: 38px;
-  }
-  .nav-boton-menu {
-    background-color: var(--navegacion-conahcyt-fondo);
-    color: var(--navegacion-conahcyt-color);
-    &:hover,
-    &:focus {
-      background-color: var(--navegacion-conahcyt-fondo-hover);
-      color: var(--navegacion-conahcyt-color);
-    }
-  }
-  .nav-boton-submenu {
-    background: transparent;
-    box-shadow: none;
-    color: var(--navegacion-conahcyt-color);
-    &:hover,
-    &:focus {
-      background-color: var(--navegacion-conahcyt-fondo-hover);
-      box-shadow: none;
-      color: var(--navegacion-conahcyt-color);
-    }
-    &:active,
-    &.active,
-    &.nuxt-link-active,
-    &.nuxt-link-exact-active,
-    &.router-link-exact-active {
-      background-color: transparent;
-      box-shadow: inset 0 -5px 0 var(--color-conahcyt-oscuro-1);
-      color: var(--navegacion-conahcyt-color);
-    }
-    &:not(:disabled):focus-visible {
-      box-shadow: none;
-    }
-  }
-  .nav-submenu {
-    background-color: var(--navegacion-conahcyt-fondo);
-    box-shadow: 0 8px 8px -4px #0012;
   }
 }

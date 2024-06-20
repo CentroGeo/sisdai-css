@@ -83,12 +83,12 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Navegación de Conahcyt</h2>
       <p>
-        En el ejemplo se muestran las clases necesarias para armar el componente de navegación del Conahcyt.
+        Las clases para construir la navegación del Conahcyt son las mismas que las que requiere el componente de Navegacion principal.
         En la biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
         se encuentra con la estructura y enlaces utilizados durante el año 2024.
       </p>
     </div>
-    <nav class="navegacion navegacion-conahcyt" aria-label="Menú principal">
+    <nav class="navegacion" aria-label="Menú principal">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -195,7 +195,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
           <p>
             Parrafo de texto simple con 
-            <a class="hipervinculo-gobmx" href="#">
+            <a href="#">
               Enlace
             </a>
           </p>
@@ -206,7 +206,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
           <ul>
             <li>
-              <a class="hipervinculo-gobmx" href="#">
+              <a href="#">
                 Hipervínculo de Gobierno
               </a>
             </li>
@@ -218,13 +218,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
           <ul class="piepagina-social">
             <li>
-              <a href="#" class="hipervinculo-gobmx">
+              <a href="#">
                 <span class="pictograma-social-facebook" aria-hidden="true"></span>
                 <span class="a11y-solo-lectura">feisbuk</span>
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-gobmx">
+              <a href="#">
                 <span class="pictograma-social-x" aria-hidden="true"></span>
                 <span class="a11y-solo-lectura">x.</span>
               </a>
@@ -255,7 +255,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </p>
               <p>
                 Parrafo de texto simple con 
-                <a class="hipervinculo-gobmx" ... >
+                <a ... >
                   Enlace
                 </a>
               </p>
@@ -267,7 +267,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </p>
               <ul>
                 <li>
-                  <a class="hipervinculo-gobmx" ... >
+                  <a ... >
                     Hipervínculo de Gobierno
                   </a>
                 </li>
@@ -280,12 +280,12 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </p>
               <ul class="piepagina-social">
                 <li>
-                  <a class="hipervinculo-gobmx" ... >
+                  <a ... >
                     <span class="pictograma-social-facebook" ... />
                   </a>
                 </li>
                 <li>
-                  <a class="hipervinculo-gobmx" ... >
+                  <a ... >
                     <span class="pictograma-social-x" ... />
                   </a>
                 </li>
@@ -317,7 +317,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           />
           <p>
             Parrafo de texto simple con 
-            <a class="hipervinculo-conahcyt" href="#">
+            <a href="#">
               Enlace
             </a>
           </p>
@@ -328,7 +328,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
           <ul>
             <li>
-              <a class="hipervinculo-conahcyt" href="#">
+              <a href="#">
                 Hipervínculo
               </a>
             </li>
@@ -340,22 +340,22 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
           <ul class="piepagina-social">
             <li>
-              <a href="#" class="hipervinculo-conahcyt">
+              <a href="#">
                 <span class="pictograma-social-facebook" />
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-conahcyt">
+              <a href="#">
                 <span class="pictograma-social-x" />
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-conahcyt">
+              <a href="#">
                 <span class="pictograma-social-instagram" />
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-conahcyt">
+              <a href="#">
                 <span class="pictograma-social-youtube" />
               </a>
             </li>
@@ -378,7 +378,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               />
               <p>
                 Parrafo de texto simple con 
-                <a class="hipervinculo-conahcyt" href="#">
+                <a href="#">
                   Enlace
                 </a>
               </p>
@@ -389,7 +389,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </p>
               <ul>
                 <li>
-                  <a class="hipervinculo-conahcyt" href="#">
+                  <a href="#">
                     Hipervínculo
                   </a>
                 </li>
@@ -401,22 +401,22 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </p>
               <ul class="piepagina-social">
                 <li>
-                  <a href="#" class="hipervinculo-conahcyt">
+                  <a href="#">
                     <span class="pictograma-social-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hipervinculo-conahcyt">
+                  <a href="#">
                     <span class="pictograma-social-x" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hipervinculo-conahcyt">
+                  <a href="#">
                     <span class="pictograma-social-instagram" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" class="hipervinculo-conahcyt">
+                  <a href="#">
                     <span class="pictograma-social-youtube" />
                   </a>
                 </li>
