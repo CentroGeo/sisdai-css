@@ -341,7 +341,7 @@
   .sisdai-mapa-control {
     &-acercar-alejar,
     &-ajuste-vista {
-      right: calc(var(--margen) + 320px);
+      right: calc(var(--margen) + 320px); // preguntar sobre esta variable
     }
   }
 }
