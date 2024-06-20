@@ -1,0 +1,54 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+:root {
+  // colores neutros
+  --color-neutro-7: #000000;
+  --color-neutro-7-rgb: 0, 0, 0;
+  --color-neutro-6: #141414;
+  --color-neutro-6-rgb: 20, 20, 20;
+  --color-neutro-5: #434344;
+  --color-neutro-4: #767677;
+  --color-neutro-3: #AAAAAA;
+  --color-neutro-2: #DDDDDD;
+  --color-neutro-1: #F5F5F5;
+  --color-neutro-0: #FFFFFF;
+  
+  // colores interactivos
+  --color-interactivo-1: #005DFF;
+  --color-interactivo-2: #356CCC;
+  --color-interactivo-3: #668BFF;
+  --color-interactivo-4: #8999CC;
+  --color-interactivo-5: #CF99FF;
+  --color-interactivo-6: #9233FF;
+
+  // colores semanticos de notificaciones
+  --color-informativo-4: #172136;
+  --color-informativo-3: #19439C;
+  --color-informativo-2: #66A5FE;
+  --color-informativo-1: #ECF2FF;
+  --color-confirmacion-4: #0D2619;
+  --color-confirmacion-3: #2A6F4D;
+  --color-confirmacion-2: #1BD97C;
+  --color-confirmacion-1: #E7FBF1;
+  --color-alerta-4: #201C11;
+  --color-alerta-3: #916802;
+  --color-alerta-2: #FFDC69;
+  --color-alerta-1: #FFF7E3;
+  --color-error-4: #341116;
+  --color-error-3: #940B1C;
+  --color-error-2: #FF6969;
+  --color-error-1: #FCDADE;
+}
