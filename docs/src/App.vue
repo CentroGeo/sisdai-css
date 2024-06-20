@@ -29,10 +29,10 @@
   //   isA11yUnderline.value = !isA11yUnderline.value
   // }
 
-  // function toggleGob() {
-  //   showMenu.value = false
-  //   showGob.value = !showGob.value
-  // }
+  function toggleGob() {
+    showMenu.value = false
+    showGob.value = !showGob.value
+  }
   function toggleMenu() {
     showGob.value = false
     showSubmenu.value = ''
@@ -208,7 +208,7 @@
 <template>
   <div>
     <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
-    <!-- <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
+    <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
           <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México.">
@@ -232,9 +232,8 @@
           </ul>
         </div>
       </div>
-    </nav> -->
+    </nav>
 
-    <!-- <nav class="navegacion navegacion-conahcyt navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()"> -->
     <nav class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
@@ -320,7 +319,7 @@
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
               </ul>
             </li>
 

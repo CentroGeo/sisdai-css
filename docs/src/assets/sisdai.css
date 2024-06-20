@@ -3,64 +3,6 @@
   --tipografia-familia: "Montserrat", sans-serif;
   --tipografia-tamanio: 16px;
   --tipografia-codigo: monospace;
-  --color-primario-4: #0058cc;
-  --color-primario-3: #0068FF;
-  --color-primario-2: #6692FF;
-  --color-primario-1: #80AAFF;
-  --color-neutro-7: #000000;
-  --color-neutro-7-rgb: 0, 0, 0;
-  --color-neutro-6: #141414;
-  --color-neutro-6-rgb: 20, 20, 20;
-  --color-neutro-5: #434344;
-  --color-neutro-4: #767677;
-  --color-neutro-3: #AAAAAA;
-  --color-neutro-2: #DDDDDD;
-  --color-neutro-1: #F5F5F5;
-  --color-neutro-0: #FFFFFF;
-  --color-secundario-12: #102543;
-  --color-secundario-11: #142a48;
-  --color-secundario-11-rgb: 20, 42, 72;
-  --color-secundario-10: #1B304E;
-  --color-secundario-9: #2A3F5D;
-  --color-secundario-8: #364A69;
-  --color-secundario-7: #5E7392;
-  --color-secundario-6: #889DBB;
-  --color-secundario-5: #B1C6E4;
-  --color-secundario-4: #CCE1FF;
-  --color-secundario-3: #DBEAFF;
-  --color-secundario-2: #F0F6FF;
-  --color-secundario-1: #F8FBFF;
-  --color-interactivo-1: #005DFF;
-  --color-interactivo-2: #356CCC;
-  --color-interactivo-3: #668BFF;
-  --color-interactivo-4: #8999CC;
-  --color-interactivo-5: #CF99FF;
-  --color-interactivo-6: #9233FF;
-  --color-informativo-4: #172136;
-  --color-informativo-3: #19439C;
-  --color-informativo-2: #66A5FE;
-  --color-informativo-1: #ECF2FF;
-  --color-confirmacion-4: #0D2619;
-  --color-confirmacion-3: #2A6F4D;
-  --color-confirmacion-2: #1BD97C;
-  --color-confirmacion-1: #E7FBF1;
-  --color-alerta-4: #201C11;
-  --color-alerta-3: #916802;
-  --color-alerta-2: #FFDC69;
-  --color-alerta-1: #FFF7E3;
-  --color-error-4: #341116;
-  --color-error-3: #940B1C;
-  --color-error-2: #FF6969;
-  --color-error-1: #FCDADE;
-  --color-conahcyt-4: #001C4A;
-  --color-conahcyt-3: #002663;
-  --color-conahcyt-2: #003384;
-  --color-conahcyt-1: #13AFF0;
-  --color-mx-5: #18302D;
-  --color-mx-4: #1F5D50;
-  --color-mx-3: #DFC9A1;
-  --color-mx-2: #BD9558;
-  --color-mx-1: #9E2148;
 }
 
 html {
@@ -161,6 +103,76 @@ kbd {
 kbd {
   background-color: var(--fondo-acento);
   border-radius: 4px;
+}
+
+:root {
+  --color-neutro-7: #000000;
+  --color-neutro-7-rgb: 0, 0, 0;
+  --color-neutro-6: #141414;
+  --color-neutro-6-rgb: 20, 20, 20;
+  --color-neutro-5: #434344;
+  --color-neutro-4: #767677;
+  --color-neutro-3: #AAAAAA;
+  --color-neutro-2: #DDDDDD;
+  --color-neutro-1: #F5F5F5;
+  --color-neutro-0: #FFFFFF;
+  --color-interactivo-1: #005DFF;
+  --color-interactivo-2: #356CCC;
+  --color-interactivo-3: #668BFF;
+  --color-interactivo-4: #8999CC;
+  --color-interactivo-5: #CF99FF;
+  --color-interactivo-6: #9233FF;
+  --color-informativo-4: #172136;
+  --color-informativo-3: #19439C;
+  --color-informativo-2: #66A5FE;
+  --color-informativo-1: #ECF2FF;
+  --color-confirmacion-4: #0D2619;
+  --color-confirmacion-3: #2A6F4D;
+  --color-confirmacion-2: #1BD97C;
+  --color-confirmacion-1: #E7FBF1;
+  --color-alerta-4: #201C11;
+  --color-alerta-3: #916802;
+  --color-alerta-2: #FFDC69;
+  --color-alerta-1: #FFF7E3;
+  --color-error-4: #341116;
+  --color-error-3: #940B1C;
+  --color-error-2: #FF6969;
+  --color-error-1: #FCDADE;
+}
+
+:root {
+  --color-conahcyt-4: #001C4A;
+  --color-conahcyt-3: #002663;
+  --color-conahcyt-2: #003384;
+  --color-conahcyt-1: #13AFF0;
+  --color-conahcyt-0: #FFFFFF;
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001C4A);
+  --color-mx-5: #18302D;
+  --color-mx-4: #1F5D50;
+  --color-mx-3: #DFC9A1;
+  --color-mx-2: #BD9558;
+  --color-mx-1: #9E2148;
+  --color-mx-0: #FFFFFF;
+}
+
+:root {
+  --color-primario-4: #0058cc;
+  --color-primario-3: #0068FF;
+  --color-primario-2: #6692FF;
+  --color-primario-1: #80AAFF;
+  --color-secundario-12: #102543;
+  --color-secundario-11: #142a48;
+  --color-secundario-11-rgb: 20, 42, 72;
+  --color-secundario-10: #1B304E;
+  --color-secundario-9: #2A3F5D;
+  --color-secundario-8: #364A69;
+  --color-secundario-7: #5E7392;
+  --color-secundario-6: #889DBB;
+  --color-secundario-5: #B1C6E4;
+  --color-secundario-4: #CCE1FF;
+  --color-secundario-3: #DBEAFF;
+  --color-secundario-2: #F0F6FF;
+  --color-secundario-1: #F8FBFF;
 }
 
 .titulo-base, .indice-contenido .indice-contenido-titulo, dialog.modal .modal-contenedor .modal-titulo, .portada.portada-secundaria .portada-titulo, .portada .portada-subtitulo, .portada .portada-titulo, h6, .h6, .tarjeta .tarjeta-titulo, .titulo-tabla, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
@@ -8053,8 +8065,8 @@ dl.informacion-despliegue dd:not(:last-child) {
   justify-content: space-between;
 }
 .nav-contenedor-identidad .nav-informacion {
-  background: var(--submenu-lateral-fondo-colapsable);
-  color: var(--menu-lateral-color);
+  background: var(--navegacion-primaria-seccion-fondo);
+  color: var(--navegacion-primaria-seccion-color);
   font-size: 0.75rem;
   padding: 4px 24px;
   margin-left: -24px;
@@ -8247,7 +8259,7 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 .nav-hiperviculo-logo:focus-visible {
   outline: none;
-  background-color: var(--navegacion-primaria-enfoque-fondo);
+  background-color: transparent;
   box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
 }
 
@@ -8336,34 +8348,37 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 
 .navegacion-gobmx {
-  background-color: var(--color-gobmx-oscuro-1);
+  background-color: var(--color-mx-5);
   box-shadow: none;
 }
 .navegacion-gobmx .nav-menu-contenedor {
-  background-color: var(--color-gobmx-oscuro-1);
-  box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.1333333333);
-  border-top: 1px solid var(--color-gobmx-claro-1);
+  background-color: var(--color-mx-5);
+  border-top: 1px solid var(--color-mx-3);
 }
 .navegacion-gobmx .nav-hipervinculo, .navegacion-gobmx .nav-boton-submenu, .navegacion-gobmx .nav-boton-regresar {
   background: transparent;
   box-shadow: none;
-  color: var(--color-gobmx-claro-1);
+  color: var(--color-mx-3);
 }
 .navegacion-gobmx .nav-hipervinculo:visited, .navegacion-gobmx .nav-boton-submenu:visited, .navegacion-gobmx .nav-boton-regresar:visited {
-  color: var(--color-gobmx-claro-1);
+  color: var(--color-mx-3);
 }
 .navegacion-gobmx .nav-hipervinculo:active, .navegacion-gobmx .nav-boton-submenu:active, .navegacion-gobmx .nav-boton-regresar:active, .navegacion-gobmx .nav-hipervinculo:hover, .navegacion-gobmx .nav-boton-submenu:hover, .navegacion-gobmx .nav-boton-regresar:hover, .navegacion-gobmx .nav-hipervinculo:focus, .navegacion-gobmx .nav-boton-submenu:focus, .navegacion-gobmx .nav-boton-regresar:focus {
   background: transparent;
   box-shadow: none;
-  color: var(--color-gobmx-claro-2);
+  color: var(--color-mx-2);
 }
 .navegacion-gobmx .nav-boton-menu {
-  background-color: var(--color-gobmx-oscuro-1);
-  color: var(--color-gobmx-claro-1);
+  background-color: transparent;
+  color: var(--color-mx-0);
 }
-.navegacion-gobmx .nav-boton-menu:hover, .navegacion-gobmx .nav-boton-menu:focus {
-  background-color: var(--color-gobmx-oscuro-1);
-  color: var(--color-gobmx-claro-2);
+.navegacion-gobmx .nav-boton-menu:not(:disabled):hover {
+  background-color: transparent;
+  color: var(--color-mx-2);
+}
+.navegacion-gobmx .nav-boton-menu:not(:disabled):focus {
+  background-color: transparent;
+  color: var(--color-mx-0);
 }
 .navegacion-gobmx .nav-logo {
   width: 128px;
@@ -8371,66 +8386,6 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 .navegacion-gobmx.navegacion-extendida .nav-menu-contenedor {
   border-top: none;
-}
-
-.navegacion-conahcyt {
-  background: var(--navegacion-conahcyt-fondo);
-  box-shadow: 0 5px 5px var(--navegacion-conahcyt-sombra);
-}
-.navegacion-conahcyt .nav-menu-contenedor {
-  background-color: var(--navegacion-conahcyt-fondo);
-}
-.navegacion-conahcyt .nav-hipervinculo, .navegacion-conahcyt .nav-boton-submenu, .navegacion-conahcyt .nav-boton-regresar {
-  background: transparent;
-  box-shadow: none;
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-hipervinculo:visited, .navegacion-conahcyt .nav-boton-submenu:visited, .navegacion-conahcyt .nav-boton-regresar:visited {
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-hipervinculo:hover, .navegacion-conahcyt .nav-boton-submenu:hover, .navegacion-conahcyt .nav-boton-regresar:hover, .navegacion-conahcyt .nav-hipervinculo:focus, .navegacion-conahcyt .nav-boton-submenu:focus, .navegacion-conahcyt .nav-boton-regresar:focus {
-  background-color: var(--navegacion-conahcyt-fondo-hover);
-  box-shadow: none;
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-hipervinculo:active, .navegacion-conahcyt .nav-boton-submenu:active, .navegacion-conahcyt .nav-boton-regresar:active, .navegacion-conahcyt .nav-hipervinculo.active, .navegacion-conahcyt .active.nav-boton-submenu, .navegacion-conahcyt .active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.nuxt-link-active, .navegacion-conahcyt .nuxt-link-active.nav-boton-submenu, .navegacion-conahcyt .nuxt-link-active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.nuxt-link-exact-active, .navegacion-conahcyt .nuxt-link-exact-active.nav-boton-submenu, .navegacion-conahcyt .nuxt-link-exact-active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.router-link-active, .navegacion-conahcyt .router-link-active.nav-boton-submenu, .navegacion-conahcyt .router-link-active.nav-boton-regresar, .navegacion-conahcyt .nav-hipervinculo.router-link-exact-active, .navegacion-conahcyt .router-link-exact-active.nav-boton-submenu, .navegacion-conahcyt .router-link-exact-active.nav-boton-regresar {
-  background-color: transparent;
-  box-shadow: inset 0 -5px 0 var(--navegacion-conahcyt-color);
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-logo {
-  width: 130px;
-  height: 38px;
-}
-.navegacion-conahcyt .nav-boton-menu {
-  background-color: var(--navegacion-conahcyt-fondo);
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-boton-menu:hover, .navegacion-conahcyt .nav-boton-menu:focus {
-  background-color: var(--navegacion-conahcyt-fondo-hover);
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-boton-submenu {
-  background: transparent;
-  box-shadow: none;
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-boton-submenu:hover, .navegacion-conahcyt .nav-boton-submenu:focus {
-  background-color: var(--navegacion-conahcyt-fondo-hover);
-  box-shadow: none;
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-boton-submenu:active, .navegacion-conahcyt .nav-boton-submenu.active, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-active, .navegacion-conahcyt .nav-boton-submenu.nuxt-link-exact-active, .navegacion-conahcyt .nav-boton-submenu.router-link-exact-active {
-  background-color: transparent;
-  box-shadow: inset 0 -5px 0 var(--color-conahcyt-oscuro-1);
-  color: var(--navegacion-conahcyt-color);
-}
-.navegacion-conahcyt .nav-boton-submenu:not(:disabled):focus-visible {
-  box-shadow: none;
-}
-.navegacion-conahcyt .nav-submenu {
-  background-color: var(--navegacion-conahcyt-fondo);
-  box-shadow: 0 8px 8px -4px rgba(0, 0, 17, 0.1333333333);
 }
 
 .piepagina, .piepagina-conahcyt, .piepagina-gobmx {
@@ -8470,21 +8425,39 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 
 .piepagina-gobmx {
-  background-color: var(--color-gobmx-oscuro-1);
+  background-color: var(--color-mx-5);
   background-image: url("https://cdn.conacyt.mx/sisdai/recursos/gobmxpleca.svg");
   background-position: bottom;
   background-repeat: repeat-x;
   background-size: auto 50px;
-  color: var(--color-gobmx-claro-0);
+  color: var(--color-mx-0);
   padding-top: 32px;
   padding-bottom: 80px;
+}
+.piepagina-gobmx a {
+  color: var(--color-mx-3);
+}
+.piepagina-gobmx a:visited {
+  color: var(--color-mx-3);
+}
+.piepagina-gobmx a:hover, .piepagina-gobmx a:focus, .piepagina-gobmx a:focus-visible {
+  color: var(--color-mx-2);
 }
 
 .piepagina-conahcyt {
   background: var(--color-conahcyt-degradado);
-  color: var(--color-gobmx-claro-0);
+  color: var(--color-conahcyt-0);
   padding-top: 32px;
   padding-bottom: 32px;
+}
+.piepagina-conahcyt a {
+  color: var(--color-conahcyt-0);
+}
+.piepagina-conahcyt a:visited {
+  color: var(--color-conahcyt-0);
+}
+.piepagina-conahcyt a:hover, .piepagina-conahcyt a:focus, .piepagina-conahcyt a:focus-visible {
+  color: var(--color-conahcyt-1);
 }
 
 .contenedor-vis {
