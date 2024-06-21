@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
-const estaAbierto = ref(false)
+const estaAbierto = ref(true)
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -15,9 +15,10 @@ const estaAbierto = ref(false)
       </p>
 
       <p>
-        El <code>menu-accesibilidad</code> se compone de un boton <code>menu-accesibilidad-boton</code> a través del cuál
-        se agrega o quita la clase <code>abierto</code> sobre <code>menu-accesibilidad</code> para mostrar u ocultar las
-        opciones de accesibilidad que se albergan en el contenedor <code>menu-accesibilidad-contenedor</code>.
+        El menú de accesibilidad utiliza las clases del <code>menu-flotante</code> que se compone de un boton <code>menu-flotante-boton</code> a través del cuál
+        se agrega o quita la clase <code>abierto</code> sobre <code>menu-flotante</code> para mostrar u ocultar las
+        opciones de accesibilidad que se albergan en el contenedor <code>menu-flotante-contenedor</code>.
+        Además para posicionarlo a la derecha se debe utilizar la clase <code>menu-flotante-derecho</code>.
       </p>
 
       
@@ -25,10 +26,10 @@ const estaAbierto = ref(false)
         :tiene_ejemplo="false"
         html='
 
-        <div class="menu-accesibilidad" :class="{abierto: estaAbierto}">
+        <div class="menu-flotante menu-flotante-derecho" :class="{abierto: estaAbierto}">
 
           <button
-            class="menu-accesibilidad-boton"
+            class="menu-flotante-boton"
             aria-label="Abrir y cerrar menú de accesibilidad"
             aria-controls="menua11y"
             :aria-expanded="estaAbierto"
@@ -38,42 +39,37 @@ const estaAbierto = ref(false)
           </button>
 
           <menu 
-            class="menu-accesibilidad-contenedor" 
+            class="menu-flotante-contenedor" 
             id="menua11y"
             :aria-hidden="!estaAbierto"
           >
-            <p class="menu-accesibilidad-titulo">Herramientas de accesibilidad</p>
+            <p class="menu-flotante-titulo">Herramientas de accesibilidad</p>
 
-            <div class="menu-accesibilidad-opcion">
-              <input id="a11y-tipografia" type="checkbox"/>
-              <label for="a11y-tipografia">
-                <span class="pictograma-cambio-tipografia"></span>
-                Cambio de fuente
-              </label>
-            </div>
-            <div class="menu-accesibilidad-opcion">
-              <input id="a11y-hipervinculos" type="checkbox"/>
-              <label for="a11y-hipervinculos">
-                <span class="pictograma-enlace-subrayado"></span>
-                Enlaces subrayados
-              </label>
-            </div>
-            <div class="menu-accesibilidad-opcion">
-              <input id="a11y-simplificada" type="checkbox"/>
-              <label for="a11y-simplificada">
-                <span class="pictograma-vista-simplificada"></span>
-                Mostrar solo texto
-              </label>
-            </div>
-            <div class="menu-accesibilidad-opcion">
-              <input id="a11y-oscura" type="checkbox"/>
-              <label for="a11y-oscura">
-                <span class="pictograma-contraste"></span>
-                Vista Oscura
-              </label>
-            </div>
+            <input id="a11y-tipografia" type="checkbox"/>
+            <label for="a11y-tipografia">
+              <span class="pictograma-cambio-tipografia"></span>
+              Cambio de fuente
+            </label>
+
+            <input id="a11y-hipervinculos" type="checkbox"/>
+            <label for="a11y-hipervinculos">
+              <span class="pictograma-enlace-subrayado"></span>
+              Enlaces subrayados
+            </label>
+
+            <input id="a11y-simplificada" type="checkbox"/>
+            <label for="a11y-simplificada">
+              <span class="pictograma-vista-simplificada"></span>
+              Mostrar solo texto
+            </label>
+
+            <input id="a11y-oscura" type="checkbox"/>
+            <label for="a11y-oscura">
+              <span class="pictograma-contraste"></span>
+              Vista Oscura
+            </label>
             
-            <button class="boton-secundario boton-chico menu-accesibilidad-reestablecer">
+            <button class="boton-secundario boton-chico m-t-2">
               Restablecer
             </button>
           </menu>
@@ -116,13 +112,10 @@ export default [
 ]
       </pre>
     </div>
-
-
     
-    <div class="menu-accesibilidad" :class="{abierto: estaAbierto}">
-
+    <div class="menu-flotante menu-flotante-derecho" :class="{abierto: estaAbierto}">
       <button
-        class="menu-accesibilidad-boton"
+        class="menu-flotante-boton"
         aria-label="Abrir y cerrar menú de accesibilidad"
         aria-controls="menua11y"
         :aria-expanded="estaAbierto"
@@ -130,49 +123,37 @@ export default [
       >
         <span class="pictograma-accesibilidad" aria-hidden="true"/>
       </button>
-
       <menu 
-        class="menu-accesibilidad-contenedor" 
+        class="menu-flotante-contenedor" 
         id="menua11y"
         :aria-hidden="!estaAbierto"
       >
-        <p class="menu-accesibilidad-titulo">Herramientas de accesibilidad</p>
-
-        <div class="menu-accesibilidad-opcion">
-          <input id="a11y-tipografia" type="checkbox"/>
-          <label for="a11y-tipografia">
-            <span class="pictograma-cambio-tipografia"></span>
-            Cambio de fuente
-          </label>
-        </div>
-        <div class="menu-accesibilidad-opcion">
-          <input id="a11y-hipervinculos" type="checkbox"/>
-          <label for="a11y-hipervinculos">
-            <span class="pictograma-enlace-subrayado"></span>
-            Enlaces subrayados
-          </label>
-        </div>
-        <div class="menu-accesibilidad-opcion">
-          <input id="a11y-simplificada" type="checkbox"/>
-          <label for="a11y-simplificada">
-            <span class="pictograma-vista-simplificada"></span>
-            Mostrar solo texto
-          </label>
-        </div>
-        <div class="menu-accesibilidad-opcion">
-          <input id="a11y-oscura" type="checkbox"/>
-          <label for="a11y-oscura">
-            <span class="pictograma-contraste"></span>
-            Vista Oscura
-          </label>
-        </div>
-        
+        <p class="menu-flotante-titulo">Herramientas de accesibilidad</p>
+        <input id="a11y-tipografia" type="checkbox"/>
+        <label for="a11y-tipografia">
+          <span class="pictograma-cambio-tipografia"></span>
+          Cambio de fuente
+        </label>
+        <input id="a11y-hipervinculos" type="checkbox"/>
+        <label for="a11y-hipervinculos">
+          <span class="pictograma-enlace-subrayado"></span>
+          Enlaces subrayados
+        </label>
+        <input id="a11y-simplificada" type="checkbox"/>
+        <label for="a11y-simplificada">
+          <span class="pictograma-vista-simplificada"></span>
+          Mostrar solo texto
+        </label>
+        <input id="a11y-oscura" type="checkbox"/>
+        <label for="a11y-oscura">
+          <span class="pictograma-contraste"></span>
+          Vista Oscura
+        </label>
         <button class="boton-secundario boton-chico m-t-2">
           Restablecer
         </button>
       </menu>
     </div>
-
 
   </div>
 </template>

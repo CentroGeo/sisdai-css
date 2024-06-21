@@ -224,6 +224,26 @@ body[data-light-theme-eni='true'] {
   --navegacion-primaria-activo-borde: var(--color-primario-3);
   --navegacion-primaria-seccion-fondo: var(--color-secundario-4);
   --navegacion-primaria-seccion-color: var(--color-secundario-8);
+  
+  --menu-flotante-boton-fondo: var(--color-primario-3);
+  --menu-flotante-boton-color: var(--color-neutro-0);
+  --menu-flotante-boton-contorno: transparent;
+  --menu-flotante-boton-borde: var(--color-neutro-0);
+  --menu-flotante-boton-sombra: transparent;
+  --menu-flotante-boton-cursor-fondo: var(--color-primario-4);
+  --menu-flotante-boton-cursor-color: var(--color-neutro-0);
+  --menu-flotante-boton-cursor-contorno: transparent;
+  --menu-flotante-boton-cursor-borde: var(--color-neutro-0);
+  --menu-flotante-boton-cursor-sombra: transparent;
+  --menu-flotante-boton-enfoque-color: var(--color-neutro-0);
+  --menu-flotante-boton-enfoque-fondo: var(--color-primario-4);
+  --menu-flotante-boton-enfoque-contorno: var(--estado-enfoque);
+  --menu-flotante-boton-enfoque-borde: var(--color-neutro-0);
+  --menu-flotante-boton-enfoque-sombra: var(--estado-enfoque);
+  --menu-flotante-contenedor-fondo: var(--fondo-neutro);
+  --menu-flotante-contenedor-color: var(--texto-secundario);
+  --menu-flotante-contenedor-borde: var(--borde-acento);
+  --menu-flotante-contenedor-sombra: var(--opacidad-ligero);
 
   // --pagina-fondo: #ffffff;
   // --nota-fondo: #F0F6FF;

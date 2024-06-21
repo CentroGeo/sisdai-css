@@ -1,0 +1,161 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+.menu-flotante {
+  position: fixed;
+  z-index: 9999;
+  bottom: 40px;
+  
+  &.menu-flotante-derecho {
+    right: -260px;
+    transition: all .3s ease-in-out;
+  }
+  &.menu-flotante-derecho.abierto {
+    right: 40px;
+  }
+
+  &.menu-flotante-izquierdo {
+    left: 40px;
+  }
+
+  &.abierto {
+    
+    .menu-flotante-pictograma-cerrado {
+      opacity: 0;
+    }
+    
+    .menu-flotante-pictograma-abierto {
+      opacity: 1;
+    }
+
+    .menu-flotante-contenedor {
+      box-shadow: 
+        inset 0 0 0 .1px var(--opacidad-ligero),
+        0 8px 16px -4px var(--opacidad-ligero);
+      max-height: 500px;
+      padding: map-get($espaciado, '3');
+      opacity: 1; 
+    }
+  }
+	
+  .menu-flotante-boton {
+    background-color: var(--menu-flotante-boton-fondo);
+    color: var(--menu-flotante-boton-color);
+    box-shadow: 
+      inset 0 0 0 1px var(--menu-flotante-boton-borde),
+      0 0 0 1px var(--menu-flotante-boton-contorno),
+      0 0 8px var(--menu-flotante-boton-sombra);
+    border-radius: 50%;
+    margin: -20px;
+    padding: map-get($espaciado, '1');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    position: relative;
+    width: 40px;
+    height: 40px;
+
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      font-size: 1.5rem; // 24px
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    &:not(:disabled):hover {
+      background-color: var(--menu-flotante-boton-cursor-fondo);
+      color: var(--menu-flotante-boton-cursor-color);
+      box-shadow: 
+        inset 0 0 0 1px var(--menu-flotante-boton-cursor-borde),
+        0 0 0 1px var(--menu-flotante-boton-cursor-contorno),
+        3px 3px 4px var(--menu-flotante-boton-cursor-sombra);
+    }
+    &:not(:disabled):focus {
+      background-color: var(--menu-flotante-boton-enfoque-fondo);
+      color: var(--menu-flotante-boton-enfoque-color);
+      box-shadow: 
+        inset 0 0 0 1px var(--menu-flotante-boton-enfoque-borde),
+        0 0 0 1px var(--menu-flotante-boton-enfoque-contorno),
+        0 0 8px var(--menu-flotante-boton-enfoque-sombra);
+    }
+  }
+
+  .menu-flotante-pictograma-abierto,
+  .menu-flotante-pictograma-cerrado {
+    position: absolute;
+    transition: all .27s ease-in-out;
+  }
+
+  .menu-flotante-pictograma-cerrado {
+    opacity: 1;
+  }
+  .menu-flotante-pictograma-abierto {
+    opacity: 0;
+  }
+
+  .menu-flotante-contenedor {
+    background-color: var(--menu-flotante-contenedor-fondo);
+    box-shadow: 0 0 0 0 transparent;
+    color: var(--menu-flotante-contenedor-color);
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    width: 300px;
+    max-height: 0;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    
+    .menu-flotante-titulo {
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.25em;
+      margin-top: 0;
+      margin-bottom: map-get($espaciado, '1');
+      padding-bottom: map-get($espaciado, '2');
+      border-bottom: 1px solid var(--menu-flotante-contenedor-borde);
+    }
+
+    a,
+    label,
+    p:not(.menu-flotante-titulo) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 40px;
+      width: 100%;
+
+      &::before,
+      &::after {
+        top: auto;
+      }
+    }
+    
+    label {
+      .pictograma,
+      [class^='pictograma-'],
+      [class*=' pictograma-'] {
+        font-size: 1.5rem; // 24px
+        padding: 0;
+        margin-right: map-get($espaciado, 'minimo');
+      }
+    }
+  }
+}
