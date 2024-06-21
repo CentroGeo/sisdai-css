@@ -269,9 +269,9 @@
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/tipografia">Tipografia</RouterLink></li>
               </ul>
             </li>
