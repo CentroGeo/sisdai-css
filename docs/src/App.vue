@@ -334,15 +334,16 @@
               </ul>
             </li>
 
-            <!-- <li class="nav-contenedor-submenu">
+            <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')" @mouseover="mostrarSubmenu('auxiliares')">Auxiliares</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/bordes">Bordes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/fondos">Fondos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
-            </li> -->
+            </li>
             
           </ul>
         </div>

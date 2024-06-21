@@ -9,7 +9,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <p>
         Al utilizar las clases de posicion de bordes se crea un borde
         de grosor de <code>1px</code> 
-        y del color base de los bordes <code>var(--borde-color-1)</code>.
+        y del color base de los bordes <code>var(--borde-1)</code>.
         Los estilos de grosor y color pueden cambiarse utilizando las 
         clases adicionales para cada propiedad.
       </p>
@@ -102,8 +102,8 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4">
         <EjemploCodigoVertical
           html='
-          <p class="borde borde-color-1">
-            var(--borde-color-1)
+          <p class="borde borde-color-primario">
+            var(--borde)
           </p>
           '
         />
@@ -111,8 +111,8 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4">
         <EjemploCodigoVertical
           html='
-          <p class="borde borde-color-2">
-            var(--borde-color-2)
+          <p class="borde borde-color-secundario">
+            var(--borde-secundario)
           </p>
           '
         />
@@ -120,8 +120,8 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4">
         <EjemploCodigoVertical
           html='
-          <p class="borde borde-color-3">
-            var(--borde-color-3)
+          <p class="borde borde-color-acento">
+            var(--borde-acento)
           </p>
           '
         />
@@ -129,8 +129,35 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       <div class="columna-4">
         <EjemploCodigoVertical
           html='
-          <p class="borde borde-color-4">
-            var(--borde-color-4)
+          <p class="borde borde-color-informacion">
+            var(--borde-informacion)
+          </p>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigoVertical
+          html='
+          <p class="borde borde-color-confirmacion">
+            var(--borde-confirmacion)
+          </p>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigoVertical
+          html='
+          <p class="borde borde-color-alerta">
+            var(--borde-alerta)
+          </p>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigoVertical
+          html='
+          <p class="borde borde-color-error">
+            var(--borde-error)
           </p>
           '
         />

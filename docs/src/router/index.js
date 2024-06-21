@@ -277,6 +277,11 @@ const router = createRouter({
           name: 'bordes',
           component: () => import('../views/AuxiliaresBordes.vue')
         },
+        {
+          path: 'fondos',
+          name: 'fondos',
+          component: () => import('../views/AuxiliaresFondos.vue')
+        },
       ]
     },
   ]
