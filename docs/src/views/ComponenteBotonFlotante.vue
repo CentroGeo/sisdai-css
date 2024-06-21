@@ -21,19 +21,21 @@ const estaAbierto = ref(true)
         posicionado el componente en el esquina inferior izquierda.
       </p>
       <p>
-        A la clase principal <code>.boton-flotante</code> se le agrega o remueve la clase <code>.abierto</code>
-        para mostrar el icono correspondiente a abrir/cerrar y para mostrar/ocultar los enlaces dentro del cuerpo del componente.
+        El botón flotante utiliza las clases del <code>menu-flotante</code> que se compone de un boton <code>menu-flotante-boton</code> a través del cuál
+        se agrega o quita la clase <code>abierto</code> sobre <code>menu-flotante</code> para mostrar u ocultar las
+        opciones de accesibilidad que se albergan en el contenedor <code>menu-flotante-contenedor</code>.
+        Además para posicionarlo a la izquierda se debe utilizar la clase <code>menu-flotante-izquierdo</code>.
       </p>
 
       <EjemploCodigoVertical
         :tiene_ejemplo="false"
         html='
         <div 
-          class="boton-flotante" 
+          class="menu-flotante" 
           :class="{abierto: estaAbierto}"
         >
           <button 
-            class="boton-primario boton-flotante-alternador"
+            class="menu-flotante-boton"
             aria-controls="IDUNICO" 
             aria-label="Abrir/Cerrar menu de enlaces"
             :aria-expanded="estaAbierto"
@@ -50,23 +52,21 @@ const estaAbierto = ref(true)
           </button>
 
           <menu 
-            class="boton-flotante-cuerpo"
+            class="menu-flotante-contenedor"
             id="IDUNICO"
             :aria-hidden="!estaAbierto"
           >
-            <a href="#" class="boton-flotante-hipervinculo">
-              <span 
-                class="pictograma-documento" 
-                aria-hidden="true"
-              ></span>
-              Enlace
+            <a href="#">
+              Ir a Gestor de Mapas (Gema)
+              <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
             </a>
-            <a href="#" class="boton-flotante-hipervinculo">
-              <span 
-                class="pictograma-documento" 
-                aria-hidden="true"
-              ></span>
-              Otro Enlace
+            <a href="#" class="m-t-2">
+              Ir a Sistema de Diseño y Accesibilidad para la Investigación (Sisdai)
+              <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+            </a>
+            <a href="#" class="m-t-2">
+              Ir a Ecosistemas Nacionales Informáticos (ENI)
+              <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
             </a>
           </menu>
         </div>
@@ -76,32 +76,36 @@ const estaAbierto = ref(true)
 
 
     <div 
-      class="boton-flotante" 
+      class="menu-flotante" 
       :class="{abierto: estaAbierto}"
     >
       <button 
-        class="boton-primario boton-flotante-alternador"
+        class="menu-flotante-boton"
         aria-controls="botonflotanteejemplo" 
         aria-label="Abrir/Cerrar colapsable"
         :aria-expanded="estaAbierto"
         @click="estaAbierto = !estaAbierto"
       >
-        <span class="boton-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
-        <span class="boton-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>
+        <span class="menu-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
+        <span class="menu-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>
       </button>
 
       <menu 
-        class="boton-flotante-cuerpo"
+        class="menu-flotante-contenedor"
         id="botonflotanteejemplo"
         :aria-hidden="!estaAbierto"
       >
-        <a href="#" class="boton-flotante-hipervinculo">
-          <span class="pictograma-documento" aria-hidden="true"></span>
-          Enlace
+        <a href="#">
+          Ir a Gestor de Mapas (Gema)
+          <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
         </a>
-        <a href="#" class="boton-flotante-hipervinculo">
-          <span class="pictograma-documento" aria-hidden="true"></span>
-          Otro Enlace
+        <a href="#" class="m-t-2">
+          Ir a Sistema de Diseño y Accesibilidad para la Investigación (Sisdai)
+          <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+        </a>
+        <a href="#" class="m-t-2">
+          Ir a Ecosistemas Nacionales Informáticos (ENI)
+          <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
         </a>
       </menu>
     </div>

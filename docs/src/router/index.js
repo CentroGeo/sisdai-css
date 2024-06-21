@@ -157,6 +157,11 @@ const router = createRouter({
           name: 'botones-pictogramas',
           component: () => import('../views/ElementosCompuestosBotonesPictograma.vue')
         },
+        {
+          path: 'menu-flotante',
+          name: 'menu-flotante',
+          component: () => import('../views/ElementosCompuestosMenuFlotante.vue')
+        },
       ]
     },
     {
