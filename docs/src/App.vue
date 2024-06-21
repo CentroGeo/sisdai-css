@@ -1,7 +1,7 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
-  // import pkg from '../../package.json'
+  import pkg from '../../package.json'
   
   const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
@@ -268,7 +268,7 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
                 <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li>
@@ -375,7 +375,7 @@
 
       <!-- <button class="boton-secundario" @click="resetA11y">Apagar</button> -->
 
-      <!-- <span class="info">sisdai-css#v{{ pkg.version }}</span> -->
+      <span class="info">sisdai-css#v{{ pkg.version }}</span>
     </menu>
   </div>
 </template>
@@ -396,7 +396,7 @@
     align-items: baseline;
     z-index: 999;
     gap: 8px;
-    display: none;
+    // display: none;
   }
   .tmp-menu * {
     font-size: 12px;
