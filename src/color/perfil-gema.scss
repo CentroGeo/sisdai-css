@@ -13,7 +13,8 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-:root {
+body[data-gema-clara='true'],
+body[data-gema-oscura='true'] {
   // colores primarios
   --color-primario-4: #993310;
   --color-primario-3: #CC4B14;

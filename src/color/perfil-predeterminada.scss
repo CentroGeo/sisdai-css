@@ -13,25 +13,27 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
+body[data-predeterminada-clara='true'],
+body[data-predeterminada-oscura='true'],
 :root {
   // colores primarios
-  --color-primario-4: #2B13B1;
-  --color-primario-3: #3F17E4;
-  --color-primario-2: #9674E1;
-  --color-primario-1: #A28BDF;
-  
+  --color-primario-4: #0058cc;
+  --color-primario-3: #0068FF;
+  --color-primario-2: #6692FF;
+  --color-primario-1: #80AAFF;
+
   // colores secundarios
-  --color-secundario-12: #201540;
-  --color-secundario-11: #1f143f;
-  --color-secundario-11-rgb: 31, 20, 63;
-  --color-secundario-10: #2B204C;
-  --color-secundario-9: #3A2F5B;
-  --color-secundario-8: #453B67;
-  --color-secundario-7: #6E6380;
-  --color-secundario-6: #978CB7;
-  --color-secundario-5: #BFB5E0;
-  --color-secundario-4: #DBD0FB;
-  --color-secundario-3: #E4DEFC;
-  --color-secundario-2: #F4F1FE;
-  --color-secundario-1: #FEFAF8;
+  --color-secundario-12: #102543;
+  --color-secundario-11: #142a48;
+  --color-secundario-11-rgb: 20, 42, 72;
+  --color-secundario-10: #1B304E;
+  --color-secundario-9: #2A3F5D;
+  --color-secundario-8: #364A69;
+  --color-secundario-7: #5E7392;
+  --color-secundario-6: #889DBB;
+  --color-secundario-5: #B1C6E4;
+  --color-secundario-4: #CCE1FF;
+  --color-secundario-3: #DBEAFF;
+  --color-secundario-2: #F0F6FF;
+  --color-secundario-1: #F8FBFF;
 }

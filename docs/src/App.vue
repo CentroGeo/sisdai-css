@@ -79,7 +79,7 @@
 
   // Módulo de vista oscura
   const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
-  const perfil = ref('eni') // 'eni' | 'sisdai' | 'gema'
+  const perfil = ref('predeterminada') // 'predeterminada' | 'sisdai' | 'gema'
   const body = document.querySelector("body")
 
   function alternarTema() {
@@ -90,17 +90,17 @@
     ]
   }
 
-  // function alternarPerfil() {
-  //   // remueve el atributo para dejar a los otros perfiles
-  //   body.removeAttribute(`data-dark-theme-${perfil.value}`)
-  //   body.removeAttribute(`data-light-theme-${perfil.value}`)
+  function alternarPerfil() {
+    // remueve el atributo para dejar a los otros perfiles
+    body.removeAttribute(`data-${perfil.value}-oscura`)
+    body.removeAttribute(`data-${perfil.value}-clara`)
     
-  //   // rotar entre estos perfiles
-  //   const perfiles = ['eni', 'sisdai', 'gema']
-  //   perfil.value = perfiles[
-  //     (perfiles.indexOf(perfil.value) + 1) % 3
-  //   ]
-  // }
+    // rotar entre estos perfiles
+    const perfiles = ['predeterminada', 'sisdai', 'gema']
+    perfil.value = perfiles[
+      (perfiles.indexOf(perfil.value) + 1) % 3
+    ]
+  }
 
   function getTemaDispositivo() {
     if (
@@ -120,15 +120,15 @@
   }
 
   function setTemaClaro() {
-    body.removeAttribute(`data-dark-theme-${perfil.value}`)
-    body.removeAttribute(`data-light-theme-${perfil.value}`)
-    body.setAttribute(`data-light-theme-${perfil.value}`, true)
+    body.removeAttribute(`data-${perfil.value}-oscura`)
+    body.removeAttribute(`data-${perfil.value}-clara`)
+    body.setAttribute(`data-${perfil.value}-clara`, true)
   }
 
   function setTemaOscuro() {
-    body.removeAttribute(`data-light-theme-${perfil.value}`)
-    body.removeAttribute(`data-dark-theme-${perfil.value}`)
-    body.setAttribute(`data-dark-theme-${perfil.value}`, true)
+    body.removeAttribute(`data-${perfil.value}-clara`)
+    body.removeAttribute(`data-${perfil.value}-oscura`)
+    body.setAttribute(`data-${perfil.value}-oscura`, true)
   }
 
   function setTemaEnDocumentoYLocalStorage() {
@@ -250,18 +250,18 @@
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li><RouterLink class="nav-hipervinculo" to="/" exact @mouseover="mostrarSubmenu('')">Inicio</RouterLink></li>
-            <!-- <li>
+            <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')" @mouseover="mostrarSubmenu('accesibilidad')">Accesibilidad</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/cambio-fuente">Cambio de fuente</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li>
+                <!-- <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
-            </li> -->
+            </li>
             
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')" @mouseover="mostrarSubmenu('fundamentos')">Fundamentos</button>
@@ -293,9 +293,7 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')" @mouseover="mostrarSubmenu('elementoscompuestos')">Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">TODO Cargando <span class="etiqueta">pre</span></RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/menu-flotante">Menu Flotante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
@@ -310,7 +308,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Búsqueda</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
@@ -367,11 +365,11 @@
         @click="alternarTema">
         Tema: {{ nombreTemaActual }}
       </button>
-      <!-- <button       
+      <button
         class="boton-primario" 
         @click="alternarPerfil">
         Perfil: {{ perfil }}
-      </button> -->
+      </button>
 
       <!-- <button class="boton-secundario" @click="resetA11y">Apagar</button> -->
 
