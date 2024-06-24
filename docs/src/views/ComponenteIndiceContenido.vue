@@ -6,7 +6,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
   <div class="flex">
     <div class="columna-4 menu-lateral-fondo oculto-mov">
     </div>
-    <div class="columna-4 columna-orden-3-esc">
+    <div class="columna-4 columna-8-mov columna-orden-3-esc">
       <div class="indice-contenido">
         <p 
           class="indice-contenido-titulo" 
