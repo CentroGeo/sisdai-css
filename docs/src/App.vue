@@ -7,7 +7,7 @@
   const isA11yTypography = ref(null)
   const isA11yView = ref(null)
   const isA11yUnderline = ref(null)
-  // const fontSize = ref(16)
+  const fontSize = ref(16)
   const showGob = ref(null)
   const showMenu = ref(null)
   const showSubmenu = ref('')
@@ -18,16 +18,16 @@
   isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
   showSubmenu.value = false
   
-  // function toggleA11yTypography() {
-  //   isA11yTypography.value = !isA11yTypography.value
-  // }
+  function toggleA11yTypography() {
+    isA11yTypography.value = !isA11yTypography.value
+  }
 
   function toggleA11yView() {
     isA11yView.value = !isA11yView.value
   }
-  // function toggleA11yLink() {
-  //   isA11yUnderline.value = !isA11yUnderline.value
-  // }
+  function toggleA11yLink() {
+    isA11yUnderline.value = !isA11yUnderline.value
+  }
 
   function toggleGob() {
     showMenu.value = false
@@ -56,26 +56,26 @@
     }
   }
 
-  // function upFontSize() {
-  //   fontSize.value ++
-  //   let up_size = `${fontSize.value}px`
-  //   document.documentElement.style.setProperty('--tipografia-tamanio',up_size)
-  // }
-  // function downFontSize() {
-  //   fontSize.value --
-  //   let down_size = `${fontSize.value}px`
-  //   document.documentElement.style.setProperty('--tipografia-tamanio',down_size)
-  // }
-  // function resetA11y() {
-  //   isA11yTypography.value = false
-  //   isA11yView.value = false
-  //   isA11yUnderline.value = false
-  //   fontSize.value = 16
-  //   document.documentElement.style.setProperty('--tipografia-tamanio','16')
-  //   // Resetea variable
-  //   isA11yOscura.value = false
-  //   tema.value = 'clara'
-  // }
+  function upFontSize() {
+    fontSize.value ++
+    let up_size = `${fontSize.value}px`
+    document.documentElement.style.setProperty('--tipografia-tamanio',up_size)
+  }
+  function downFontSize() {
+    fontSize.value --
+    let down_size = `${fontSize.value}px`
+    document.documentElement.style.setProperty('--tipografia-tamanio',down_size)
+  }
+  function resetA11y() {
+    isA11yTypography.value = false
+    isA11yView.value = false
+    isA11yUnderline.value = false
+    fontSize.value = 16
+    document.documentElement.style.setProperty('--tipografia-tamanio','16')
+    // Resetea variable
+    isA11yOscura.value = false
+    tema.value = 'clara'
+  }
 
   // Módulo de vista oscura
   const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
@@ -312,10 +312,10 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/info-despliegue">Información de despliegue</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
@@ -354,11 +354,11 @@
     
     <menu role="complementary" class="tmp-menu">
       
-      <!-- <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button> -->
+      <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
       <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
-      <!-- <button class="boton-primario" @click="downFontSize">Reducir fuente</button> -->
-      <!-- <button class="boton-primario" @click="upFontSize">Incrementar fuente</button> -->
-      <!-- <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button> -->
+      <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
+      <button class="boton-primario" @click="upFontSize">Incrementar fuente</button>
+      <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
 
       <button 
         class="boton-primario" 
@@ -371,7 +371,7 @@
         Perfil: {{ perfil }}
       </button>
 
-      <!-- <button class="boton-secundario" @click="resetA11y">Apagar</button> -->
+      <button class="boton-secundario" @click="resetA11y">Apagar</button>
 
       <span class="info">sisdai-css#v{{ pkg.version }}</span>
     </menu>
@@ -394,7 +394,7 @@
     align-items: baseline;
     z-index: 999;
     gap: 8px;
-    // display: none;
+    display: none;
   }
   .tmp-menu * {
     font-size: 12px;

@@ -7764,11 +7764,18 @@ body.overflow-hidden {
   .menu-lateral.abierto .menu-lateral-boton {
     border-radius: 20px 0 0 20px;
   }
+  .menu-lateral.abierto .menu-lateral-boton .pictograma,
+.menu-lateral.abierto .menu-lateral-boton [class^=pictograma-],
+.menu-lateral.abierto .menu-lateral-boton [class*=" pictograma-"] {
+    transform: rotate(180deg);
+  }
   .menu-lateral.abierto .menu-lateral-contenedor {
+    border-left-color: var(--navegacion-secundaria-borde);
     visibility: visible;
     margin-left: 0;
     opacity: 1;
     pointer-events: inherit;
+    box-shadow: 4px 8px 16px -4px var(--opacidad-ligero);
   }
 }
 @media screen and (min-width: 768px) {
@@ -7784,9 +7791,9 @@ body.overflow-hidden {
 
 @media screen and (max-width: 767px) {
   .menu-lateral-boton {
-    background: var(--menu-lateral-fondo);
+    background: var(--navegacion-secundaria-fondo);
     border-radius: 20px;
-    margin-right: 2px;
+    color: var(--navegacion-secundaria-color);
     margin-left: 16px;
     display: flex;
     padding: 0;
@@ -7797,10 +7804,18 @@ body.overflow-hidden {
 .menu-lateral-boton [class*=" pictograma-"] {
     align-self: flex-start;
     font-size: 1.35em;
-    padding: 8px;
+    padding: 16px 8px;
+    transition: transform 0.27s ease;
   }
-  .menu-lateral-boton:active, .menu-lateral-boton:hover, .menu-lateral-boton:focus {
-    box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
+  .menu-lateral-boton:hover {
+    background: var(--navegacion-secundaria-cursor-fondo);
+    box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+    color: var(--navegacion-secundaria-cursor-color);
+  }
+  .menu-lateral-boton:focus {
+    background: var(--navegacion-secundaria-enfoque-fondo);
+    box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde), 0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+    color: var(--navegacion-secundaria-enfoque-color);
   }
 }
 @media screen and (min-width: 768px) {
@@ -7810,7 +7825,9 @@ body.overflow-hidden {
 }
 
 .menu-lateral-contenedor {
-  background: var(--menu-lateral-fondo);
+  background: var(--navegacion-secundaria-fondo);
+  border-left: 1px solid transparent;
+  color: var(--navegacion-secundaria-color);
   position: relative;
   width: 100%;
 }
@@ -7821,35 +7838,45 @@ body.overflow-hidden {
 .menu-lateral-contenedor a,
 .menu-lateral-contenedor button {
   background-color: transparent;
-  color: var(--menu-lateral-color);
+  color: var(--navegacion-secundaria-color);
   border-radius: 0;
   display: flex;
   width: 100%;
+  text-decoration: none;
   padding: 8px 24px;
 }
 .menu-lateral-contenedor a:hover,
 .menu-lateral-contenedor button:hover {
-  background: var(--menu-lateral-accion-fondo-hover);
-  color: var(--menu-lateral-hover-color);
-}
-.menu-lateral-contenedor a {
-  background: transparent;
-  font-weight: 400;
+  background: var(--navegacion-secundaria-cursor-fondo);
+  box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+  color: var(--navegacion-secundaria-cursor-color);
   text-decoration: none;
 }
-.menu-lateral-contenedor a.router-link-exact-active, .menu-lateral-contenedor a:active, .menu-lateral-contenedor a:focus, .menu-lateral-contenedor a.link-activo {
-  background: var(--menu-lateral-accion-fondo-active);
-  box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
-  color: var(--menu-lateral-accion);
-}
-.menu-lateral-contenedor a:focus-visible {
+.menu-lateral-contenedor a:focus, .menu-lateral-contenedor a:focus-visible, .menu-lateral-contenedor a:active, .menu-lateral-contenedor a.router-link-exact-active, .menu-lateral-contenedor a.link-activo,
+.menu-lateral-contenedor button:focus,
+.menu-lateral-contenedor button:focus-visible,
+.menu-lateral-contenedor button:active,
+.menu-lateral-contenedor button.router-link-exact-active,
+.menu-lateral-contenedor button.link-activo {
+  background: var(--navegacion-secundaria-activo-fondo);
+  box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
+  color: var(--navegacion-secundaria-activo-color);
+  text-decoration: none;
   outline: none;
+}
+.menu-lateral-contenedor a:focus-visible,
+.menu-lateral-contenedor button:focus-visible {
+  background: var(--navegacion-secundaria-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde), 0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+  color: var(--navegacion-secundaria-enfoque-color);
+  outline: none;
+  text-decoration: none;
+}
+.menu-lateral-contenedor a {
+  font-weight: 400;
 }
 .menu-lateral-contenedor button {
   font-weight: 500;
-}
-.menu-lateral-contenedor button:focus-visible {
-  box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
 }
 .menu-lateral-contenedor ul li a,
 .menu-lateral-contenedor ul li button, .menu-lateral-contenedor ol li a,
@@ -7889,7 +7916,7 @@ body.overflow-hidden {
 }
 @media screen and (min-width: 768px) {
   .menu-lateral-fondo {
-    background: var(--menu-lateral-fondo);
+    background: var(--navegacion-secundaria-fondo);
   }
 }
 
@@ -10464,6 +10491,19 @@ body[data-gema-oscura=true] {
   --navegacion-primaria-activo-borde: var(--color-primario-2);
   --navegacion-primaria-seccion-fondo: var(--color-secundario-8);
   --navegacion-primaria-seccion-color: var(--color-secundario-5);
+  --navegacion-secundaria-color: var(--color-neutro-0);
+  --navegacion-secundaria-fondo: var(--color-secundario-9);
+  --navegacion-secundaria-borde: var(--color-secundario-5);
+  --navegacion-secundaria-cursor-color: var(--color-neutro-0);
+  --navegacion-secundaria-cursor-fondo: var(--color-secundario-8);
+  --navegacion-secundaria-cursor-borde: var(--color-secundario-4);
+  --navegacion-secundaria-activo-color: var(--color-primario-2);
+  --navegacion-secundaria-activo-fondo: var(--color-secundario-11);
+  --navegacion-secundaria-activo-borde: var(--color-primario-2);
+  --navegacion-secundaria-enfoque-color: var(--color-neutro-0);
+  --navegacion-secundaria-enfoque-fondo: var(--color-secundario-8);
+  --navegacion-secundaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-secundaria-enfoque-borde: var(--estado-enfoque);
   --menu-flotante-boton-fondo: var(--color-primario-2);
   --menu-flotante-boton-color: var(--color-secundario-12);
   --menu-flotante-boton-contorno: transparent;
@@ -10693,6 +10733,19 @@ body[data-sisdai-clara=true],
   --navegacion-primaria-activo-borde: var(--color-primario-3);
   --navegacion-primaria-seccion-fondo: var(--color-secundario-4);
   --navegacion-primaria-seccion-color: var(--color-secundario-8);
+  --navegacion-secundaria-color: var(--color-secundario-12);
+  --navegacion-secundaria-fondo: var(--color-secundario-3);
+  --navegacion-secundaria-borde: var(--color-secundario-5);
+  --navegacion-secundaria-cursor-color: var(--color-secundario-12);
+  --navegacion-secundaria-cursor-fondo: var(--color-secundario-4);
+  --navegacion-secundaria-cursor-borde: var(--color-secundario-8);
+  --navegacion-secundaria-activo-color: var(--color-primario-3);
+  --navegacion-secundaria-activo-fondo: var(--color-secundario-1);
+  --navegacion-secundaria-activo-borde: var(--color-primario-3);
+  --navegacion-secundaria-enfoque-color: var(--color-secundario-12);
+  --navegacion-secundaria-enfoque-fondo: var(--color-secundario-4);
+  --navegacion-secundaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-secundaria-enfoque-borde: var(--estado-enfoque);
   --menu-flotante-boton-fondo: var(--color-primario-3);
   --menu-flotante-boton-color: var(--color-neutro-0);
   --menu-flotante-boton-contorno: transparent;

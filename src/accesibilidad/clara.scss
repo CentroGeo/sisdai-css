@@ -225,6 +225,20 @@ body[data-sisdai-clara='true'],
   --navegacion-primaria-activo-borde: var(--color-primario-3);
   --navegacion-primaria-seccion-fondo: var(--color-secundario-4);
   --navegacion-primaria-seccion-color: var(--color-secundario-8);
+
+  --navegacion-secundaria-color: var(--color-secundario-12);
+  --navegacion-secundaria-fondo: var(--color-secundario-3);
+  --navegacion-secundaria-borde: var(--color-secundario-5);
+  --navegacion-secundaria-cursor-color: var(--color-secundario-12);
+  --navegacion-secundaria-cursor-fondo: var(--color-secundario-4);
+  --navegacion-secundaria-cursor-borde: var(--color-secundario-8);
+  --navegacion-secundaria-activo-color: var(--color-primario-3);
+  --navegacion-secundaria-activo-fondo: var(--color-secundario-1);
+  --navegacion-secundaria-activo-borde: var(--color-primario-3);
+  --navegacion-secundaria-enfoque-color: var(--color-secundario-12);
+  --navegacion-secundaria-enfoque-fondo: var(--color-secundario-4);
+  --navegacion-secundaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-secundaria-enfoque-borde: var(--estado-enfoque);
   
   --menu-flotante-boton-fondo: var(--color-primario-3);
   --menu-flotante-boton-color: var(--color-neutro-0);
