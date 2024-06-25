@@ -96,8 +96,7 @@ import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
       </p>
     </div>
 
-
-    <div class="flex">
+    <div class="flex flex-contenido-centrado">
       <div class="columna-4">
         <p>Neutro</p>
         <EjemploMuestraColor variable="var(--color-neutro-7)" hexadecimal="#000000" texto="#fff"/>
@@ -113,9 +112,9 @@ import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
       <div class="columna-4">
         <p>Interactivo</p>
         <EjemploMuestraColor variable="var(--color-interactivo-6)" hexadecimal="#9233FF" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-interactivo-5)" hexadecimal="#CF99FF" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-interactivo-4)" hexadecimal="#8999CC" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-interactivo-3)" hexadecimal="#668BFF" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-5)" hexadecimal="#CF99FF" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-4)" hexadecimal="#8999CC" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-3)" hexadecimal="#668BFF" texto="#000"/>
         <EjemploMuestraColor variable="var(--color-interactivo-2)" hexadecimal="#356CCC" texto="#fff"/>
         <EjemploMuestraColor variable="var(--color-interactivo-1)" hexadecimal="#005DFF" texto="#fff"/>
       </div>
@@ -152,6 +151,37 @@ import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
         <EjemploMuestraColor variable="var(--color-error-3)" hexadecimal="#940B1C" texto="#fff"/>
         <EjemploMuestraColor variable="var(--color-error-2)" hexadecimal="#FF6969" texto="#000"/>
         <EjemploMuestraColor variable="var(--color-error-1)" hexadecimal="#FCDADE" texto="#000"/>
+      </div>
+    </div>
+
+    <div class="ancho-lectura">
+      <h3 class="m-t-5">Colores institucionales</h3>
+      <p>
+        Definidas en el archivo <code>src/color/institucionales.scss</code>, estas variables son colores definidos 
+        en base a los colores institucionales del Gobierno de México y Conahcyt durante el 2024.
+        Que necesitarán actualizarse cuando los colores de identidad de alguno cambie.
+      </p>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-4">
+        <p>Gobierno de México</p>
+        <EjemploMuestraColor variable="var(--color-mx-5)" hexadecimal="#434344" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-4)" hexadecimal="#767677" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-3)" hexadecimal="#AAAAAA" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-mx-2)" hexadecimal="#DDDDDD" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-mx-1)" hexadecimal="#F5F5F5" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-0)" hexadecimal="#FFFFFF" texto="#000"/>
+      </div>
+
+      <div class="columna-4">
+        <p>Conahcyt</p>
+        <EjemploMuestraColor variable="var(--color-conahcyt-5)" hexadecimal="#CF99FF" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-4)" hexadecimal="#8999CC" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-3)" hexadecimal="#668BFF" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-2)" hexadecimal="#356CCC" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-1)" hexadecimal="#005DFF" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-0)" hexadecimal="#005DFF" texto="#000"/>
       </div>
     </div>
 
