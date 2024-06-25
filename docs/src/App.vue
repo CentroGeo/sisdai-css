@@ -90,16 +90,23 @@
     ]
   }
 
+  function agregarPerfilTemaPredeterminados() {
+    body.setAttribute('data-perfil', perfil.value)
+    body.setAttribute('data-tema', 'claro')
+  }
+
   function alternarPerfil() {
     // remueve el atributo para dejar a los otros perfiles
-    body.removeAttribute(`data-${perfil.value}-oscura`)
-    body.removeAttribute(`data-${perfil.value}-clara`)
+    // body.removeAttribute('data-tema-oscuro')
+    // body.removeAttribute('data-tema-claro')
     
     // rotar entre estos perfiles
     const perfiles = ['predeterminada', 'sisdai', 'gema']
     perfil.value = perfiles[
       (perfiles.indexOf(perfil.value) + 1) % 3
     ]
+
+    body.setAttribute('data-perfil', perfil.value)
   }
 
   function getTemaDispositivo() {
@@ -120,15 +127,11 @@
   }
 
   function setTemaClaro() {
-    body.removeAttribute(`data-${perfil.value}-oscura`)
-    body.removeAttribute(`data-${perfil.value}-clara`)
-    body.setAttribute(`data-${perfil.value}-clara`, true)
+    body.setAttribute(`data-tema`, 'claro')
   }
 
   function setTemaOscuro() {
-    body.removeAttribute(`data-${perfil.value}-clara`)
-    body.removeAttribute(`data-${perfil.value}-oscura`)
-    body.setAttribute(`data-${perfil.value}-oscura`, true)
+    body.setAttribute(`data-tema`, 'oscuro')
   }
 
   function setTemaEnDocumentoYLocalStorage() {
@@ -167,11 +170,15 @@
   })
 
   onMounted(() => {
+    agregarPerfilTemaPredeterminados()
+
     setTemaEnDocumentoYLocalStorage()
+    
     window.matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change',setTemaEnDocumentoYLocalStorage)
 
     validarNavegacionColapsable()
+    
     window.addEventListener('resize', validarNavegacionColapsable)
   })
 
@@ -267,7 +274,7 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')" @mouseover="mostrarSubmenu('fundamentos')">Fundamentos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
@@ -394,7 +401,7 @@
     align-items: baseline;
     z-index: 999;
     gap: 8px;
-    display: none;
+    // display: none;
   }
   .tmp-menu * {
     font-size: 12px;

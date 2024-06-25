@@ -17,20 +17,7 @@
 @each $id, $valor in $texto-tamanio {
   .texto-tamanio-#{$id} {
     font-size: $valor;
-    line-height: calc(1em * 1.25);
-    @include mediaquery('mov') {
-      @if $id == '0' and $id == 'minimo' {
-        $valor: 0;
-      }
-      @if $id != '0' and $id != 'minimo' {
-        @if $valor == .5rem {
-          $valor: $valor + .125rem;
-        }
-        $valor: $valor - calc($valor / ($valor * 4));
-      }
-      font-size: $valor;
-      line-height: calc(1em * 1.25);
-    }
+    line-height: calc(1em * 1.5);
   }
 }
 // tamaño responsivo
