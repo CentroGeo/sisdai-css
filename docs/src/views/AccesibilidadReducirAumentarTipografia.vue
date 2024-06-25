@@ -22,7 +22,7 @@ import { onDeactivated } from 'vue';
       </p>
      
     </div>
-    <pre class="nota nota-contenedor">
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
       // Variables de CSS
 
       :root {
@@ -38,7 +38,7 @@ import { onDeactivated } from 'vue';
       </p>
     </div>
 
-    <pre class="nota nota-contenedor">
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
     // docs/src/App.vue
 
     <span aria-hidden="true">&lt;</span>script setup<span aria-hidden="true">&gt;</span>

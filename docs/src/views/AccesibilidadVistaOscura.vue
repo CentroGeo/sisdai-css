@@ -12,48 +12,36 @@ import { onDeactivated } from 'vue';
         facilitando así la exploración durante períodos prolongados. 
       </p>
 
-      <p class="nota nota-contenedor">
-        TODO: reescribir cuando se complete la nueva funcionalidad del color
-      </p>
-
       <p>
-        Los colores predeterminados para todos los elementos del sistema estan en <code>:root { ... }</code> del archivo<code>src/_variables.scss</code>.
+        Para cambiar entre temas claro y oscuro el menu de accesibilidad agrega a la etiqueta de <code>body</code>
+        la propiedad <code>data-tema='claro'</code> o <code>data-tema='oscuro'</code>, además de agregar la clase
+        especial <code>.a11y-oscura</code> al tema oscuro para facilitar la correcta visualizacion de componentes no nativos del sistema de diseño.
       </p>
       <p>
-        Para cambiar entre modo claro/oscuro el menu de accesibilidad agrega a la etiqueta de <code>body</code>
-        la propiedad <code>data-light-theme-eni='true'</code> en modo claro en tema eni 
-        y <code>data-dark-theme-eni='true'</code> en modo oscuro del tema eni.
-      </p>
-      <p>
-        Estas propiedades leen los archivos de <code></code> de <code>src/accesibilidad/clara.scss</code> y <code>src/accesibilidad/oscura.scss</code>
-        para sobreescribir las variables predeterminadas dependiendo del modo seleccionado por la persona usuaria.
+        Con estas propiedades filtran los estilos declarados en <code>src/color/tema-claro.scss</code> y <code>src/color/tema-oscuro.scss</code>
+        para sobreescribir las variables predeterminadas de componente nativos del sistema de diseño, dependiendo del tema seleccionado por la persona usuaria.
       </p>
       
       <p class="h4 m-t-10">
         Consideraciones en el área de desarrollo para poder mantener el estado <em>Vista oscura</em>.
       </p>
       <p>
-        Deben existir declaradas las variables de color para todos los elementos en loa archivos antes mencionados.
-      </p>
-      <p>
-        Si se introducen más elementos al sistema o página web, se deben declarar las variables de color predeterminado, 
-        para modo claro y para modo oscuro.
+        Si se utilizan componentes no nativos al sistema de diseño, ó se editan en línea los estilos de alguno,
+        es importante declarar los estilos considerando como predeterminado el tema claro y agregar las variaciones de color 
+        necesarias para la correcta visualización en el modo oscuro mediante el uso de la clase especial <code>.a11y-oscura</code>.
       </p>
     </div>
-    <pre class="nota nota-contenedor">
-      :root {
-        --minuevocomponente-borde: #000;
-        --minuevocomponente-enfoque-borde: #00f;
-      }
-      
-      body[data-light-theme-eni='true'] {
-        --minuevocomponente-borde: #000;
-        --minuevocomponente-enfoque-borde: #00f;
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
+      // para una clase no nativa creada tomando como predeterminado el tema claro
+      .nombre-de-mi-clase-nueva {
+        background-color: black;
+        color: white;
       }
 
-      body[data-dark-theme-eni='true'] {
-        --minuevocomponente-borde: #fff;
-        --minuevocomponente-enfoque-borde: 9cf;
+      // debe existir su equivalente inverso para el tema oscuro
+      .a11y-oscura .nombre-de-mi-clase-nueva {
+        background-color: white;
+        color: black;
       }
     </pre>
 
@@ -63,17 +51,16 @@ import { onDeactivated } from 'vue';
         debe existir la opcion de <em>Vista oscura</em>, de la siguiente manera:
        </p>
     </div>
-      <pre class="nota nota-contenedor">
-        export default [
-          {
-            accion: 'alternarVistaOscura',
-            claseCss: 'a11y-oscura',
-            icono: 'pictograma-contraste',
-            titulo: 'Vista Oscura',
-          },
-          ...
-        ]
-      </pre>
-
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
+      export default [
+        {
+          accion: 'alternarVistaOscura',
+          claseCss: 'a11y-oscura',
+          icono: 'pictograma-contraste',
+          titulo: 'Vista Oscura',
+        },
+        ...
+      ]
+    </pre>
   </div>
 </template>

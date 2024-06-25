@@ -35,7 +35,7 @@ import { onDeactivated } from 'vue';
         <dt>Imágenes</dt>
         <dd>
           Oculta todas las imágenes excepto los logotipos de la navegación
-          <pre class="nota nota-contenedor m-0">
+          <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
           img:not(.nav-logo)
           svg:not(.nav-logo)
           </pre>
@@ -44,7 +44,7 @@ import { onDeactivated } from 'vue';
         <dt>Botones</dt>
         <dd>
           Modifica los botones para mostrarlos como hipervínculos, excepto los de navegación y el componente *boton-flotante
-          <pre class="nota nota-contenedor m-0">
+          <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
           button
             :not(.nav-boton)
             :not(.nav-boton-menu)
@@ -87,7 +87,7 @@ import { onDeactivated } from 'vue';
         <li>No comience el nombre de sus clases con la palabra boton.</li>
       </ol>
     </div>
-    <pre class="nota nota-contenedor">
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
       .a11y-simplificada {
         .mi-nuevo-componente {
           ...
@@ -106,7 +106,7 @@ import { onDeactivated } from 'vue';
         debe existir la opcion de <em>Mostrar solo texto</em>, de la siguiente manera:
        </p>
     </div>
-    <pre class="nota nota-contenedor">
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
       export default [
        {
           accion: 'alternarVistaSimplificada',

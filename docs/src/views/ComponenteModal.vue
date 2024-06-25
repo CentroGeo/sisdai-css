@@ -112,7 +112,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         </button>
         
       </p>
-      <pre class="nota nota-contenedor">
+      <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
         <span aria-hidden="true">&lt;</span>dialog class="modal"<span aria-hidden="true">&gt;</span>
           ...
         <span aria-hidden="true">&lt;</span>/dialog<span aria-hidden="true">&gt;</span>
@@ -132,7 +132,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           Abrir modal grande
         </button>
       </p>
-      <pre class="nota nota-contenedor">
+      <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
         <span aria-hidden="true">&lt;</span>dialog class="modal modal-grande"<span aria-hidden="true">&gt;</span>
           ...
         <span aria-hidden="true">&lt;</span>/dialog<span aria-hidden="true">&gt;</span>
@@ -186,12 +186,12 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           </p>
           <figure>
             <img 
-              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-1.jpg" 
+              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/minou.jpg" 
               width="100%"
               alt=""
             />
             <figcaption>
-              Esparragus el perrito el mejor y más bonito mister chaparrito.
+              Sr. Gato (Minou)
             </figcaption>
           </figure>
           <p>

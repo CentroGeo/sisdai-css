@@ -30,7 +30,7 @@ import { onDeactivated } from 'vue';
         directamente en la cabecera del archivo <code>index.html</code> del proyecto.
       </p>
     </div>
-    <pre class="nota nota-contenedor">
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
       
       <span aria-hidden="true">&lt;</span>link rel="preconnect" href="https://fonts.googleapis.com"<span aria-hidden="true">&gt;</span>
       <span aria-hidden="true">&lt;</span>link rel="preconnect" href="https://fonts.gstatic.com" crossorigin<span aria-hidden="true">&gt;</span>
@@ -47,7 +47,8 @@ import { onDeactivated } from 'vue';
         debe existir la opcion de <em>Cambio de Fuente</em>, de la siguiente manera:
        </p>
     </div>
-      <pre class="nota nota-contenedor">
+      <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
+        
         export default [
           {
             accion: 'alternarTipografiaAccesible',

@@ -20,7 +20,7 @@ import { onDeactivated } from 'vue';
         que direccione al <code>id</code> del contenedor principal, que en Vue vendría siendo el contenedor que encapsule la etiqueta <code>RouterView</code>.
       </p>
     </div>
-    <pre class="nota nota-contenedor">
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
       <span aria-hidden="true">&lt;</span>body<span aria-hidden="true">&gt;</span>
         <span aria-hidden="true">&lt;</span>a href="#principal" class="ir-contenido-principal"<span aria-hidden="true">&gt;</span>
           Ir a contenido principal

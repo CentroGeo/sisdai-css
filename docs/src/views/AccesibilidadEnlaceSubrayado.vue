@@ -33,7 +33,7 @@ import { onDeactivated } from 'vue';
         debe existir la opcion de <em>Enlaces subrayados</em>, de la siguiente manera:
        </p>
     </div>
-    <pre class="nota nota-contenedor">
+    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
       export default [
         {
           accion: 'alternarEnlacesSubrayados',
