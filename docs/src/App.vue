@@ -220,8 +220,9 @@
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
           <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México.">
         </a>
-        <button @click="toggleGob" class="nav-boton-menu" :class="{ 'abierto': showGob }">
+        <button v-if="esColapsable" @click="toggleGob" class="nav-boton-menu" :class="{ 'abierto': showGob }">
           <span class="nav-icono-menu"></span>
+          <span class="a11y-solo-lectura"> Menu Gobierno de México </span>
         </button>
       </div>
       <div class="nav-menu-contenedor" :class="{ 'abierto': showGob }">
@@ -248,6 +249,7 @@
         </a>
         <button v-if="esColapsable" @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>
+          <span class="a11y-solo-lectura"> Menu Principal </span>
         </button>
         <div v-if="esColapsable" class="nav-informacion">
           Sección: <b>{{ $route.name }}</b>
