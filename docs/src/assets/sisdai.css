@@ -6568,12 +6568,22 @@ ol + hr {
 }
 
 .tarjeta {
-  flex: 1 1;
   background: var(--tarjeta-fondo);
   border-radius: 20px;
+  box-sizing: content-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.tarjeta img {
+  border-radius: 0;
+  max-width: inherit;
 }
 .tarjeta .tarjeta-imagen {
+  max-width: inherit;
   width: 100%;
   height: 240px;
   object-fit: cover;
@@ -6581,19 +6591,13 @@ ol + hr {
   border-radius: 0;
 }
 .tarjeta .tarjeta-cuerpo {
-  align-items: stretch;
   padding: 24px;
   color: var(--tarjeta-color);
+  flex-grow: 1;
   transition: all 0.27s ease-in-out;
 }
 .tarjeta .tarjeta-cuerpo > * {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.tarjeta .tarjeta-cuerpo > button,
-.tarjeta .tarjeta-cuerpo > [class^=boton-],
-.tarjeta .tarjeta-cuerpo > [class*=" boton-"] {
-  margin-top: 8px;
+  margin: 16px 0;
 }
 .tarjeta .tarjeta-cuerpo > :first-child {
   margin-top: 0;
@@ -6601,42 +6605,39 @@ ol + hr {
 .tarjeta .tarjeta-cuerpo > :last-child {
   margin-bottom: 0;
 }
+.tarjeta .tarjeta-pie {
+  display: flex;
+  gap: 8px;
+  padding: 0 24px 24px;
+}
 @media screen and (min-width: 768px) {
   .tarjeta-horizontal {
-    display: flex;
     flex-wrap: nowrap;
-    position: relative;
+    min-width: 480px;
   }
   .tarjeta-horizontal .tarjeta-imagen {
     height: 100%;
-    width: 244px;
+    width: 240px;
     position: absolute;
     top: 0;
     bottom: 0;
   }
   .tarjeta-horizontal .tarjeta-cuerpo {
-    padding-left: 268px;
+    padding-left: 264px;
+  }
+  .tarjeta-horizontal .tarjeta-pie {
+    padding-left: 264px;
   }
 }
 
 .tarjeta-hipervinculo, .tarjeta-hipervinculo-externo, .tarjeta-hipervinculo-interno {
-  display: inline-flex;
-  overflow: hidden;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-  box-sizing: border-box;
+  font-weight: normal;
   margin-top: 8px;
   margin-bottom: 8px;
   background: var(--tarjeta-fondo);
-}
-.tarjeta-hipervinculo .tarjeta-cuerpo > *, .tarjeta-hipervinculo-externo .tarjeta-cuerpo > *, .tarjeta-hipervinculo-interno .tarjeta-cuerpo > * {
-  margin: 4px 0;
-}
-.tarjeta-hipervinculo .tarjeta-cuerpo > :first-child, .tarjeta-hipervinculo-externo .tarjeta-cuerpo > :first-child, .tarjeta-hipervinculo-interno .tarjeta-cuerpo > :first-child {
-  margin-top: 0;
-}
-.tarjeta-hipervinculo .tarjeta-cuerpo > :last-child, .tarjeta-hipervinculo-externo .tarjeta-cuerpo > :last-child, .tarjeta-hipervinculo-interno .tarjeta-cuerpo > :last-child {
-  margin-bottom: 0;
 }
 .tarjeta-hipervinculo:hover, .tarjeta-hipervinculo-externo:hover, .tarjeta-hipervinculo-interno:hover, .tarjeta-hipervinculo:focus, .tarjeta-hipervinculo-externo:focus, .tarjeta-hipervinculo-interno:focus, .tarjeta-hipervinculo:focus-visible, .tarjeta-hipervinculo-externo:focus-visible, .tarjeta-hipervinculo-interno:focus-visible {
   box-shadow: 0 0 0 2px var(--tarjeta-enfoque-borde), 0 0 8px 1px var(--tarjeta-enfoque-sombra);
@@ -6655,38 +6656,37 @@ ol + hr {
   transform: scale(1);
 }
 
-.tarjeta-hipervinculo-interno {
-  flex: 1 1;
-  flex-direction: column;
-  width: 100%;
-}
-.tarjeta-hipervinculo-interno .tarjeta-imagen {
-  height: 240px;
-}
-.tarjeta-hipervinculo-interno .tarjeta-cuerpo {
-  padding: 16px;
-}
-
 .tarjeta-hipervinculo-externo {
-  display: flex;
   position: relative;
   width: 100%;
-  min-height: 240px;
+  min-height: 200px;
 }
-.tarjeta-hipervinculo-externo .tarjeta-imagen {
+.tarjeta-hipervinculo-externo img.tarjeta-imagen {
   transform: scale(1.1);
   position: absolute;
   width: 100%;
   height: 100%;
-  left: 0;
-  top: 0;
   object-fit: cover;
   object-position: 50% 50%;
   transition: all 0.27s ease-in-out;
 }
+.tarjeta-hipervinculo-externo picture.tarjeta-imagen {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  transition: all 0.27s ease-in-out;
+}
+.tarjeta-hipervinculo-externo picture.tarjeta-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
 .tarjeta-hipervinculo-externo .tarjeta-degradado {
   position: relative;
   width: 100%;
+  height: 100%;
   background: var(--tarjeta-externa-fondo-degradado);
   display: flex;
   align-items: stretch;

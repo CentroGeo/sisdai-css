@@ -15,15 +15,4 @@
 
 .tarjeta-hipervinculo-interno {
   @extend .tarjeta-hipervinculo;
-  flex: 1 1;
-  flex-direction: column;
-  width: 100%;
-
-  .tarjeta-imagen {
-    height: 240px;
-  }
-
-  .tarjeta-cuerpo {
-    padding: map-get($espaciado, '2');
-  }
 }

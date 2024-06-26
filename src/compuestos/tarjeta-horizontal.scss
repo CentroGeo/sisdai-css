@@ -15,20 +15,23 @@
 
 .tarjeta-horizontal {
   @media screen and (min-width: calc(map-get($breakpoints, 'esc'))) {
-    display: flex;
     flex-wrap: nowrap;
-    position: relative;
+    min-width: 480px;
 
     .tarjeta-imagen {
       height: 100%;
-      width: 244px;
+      width: 240px;
       position: absolute;
       top: 0;
       bottom: 0;
     }
     
     .tarjeta-cuerpo {
-      padding-left: calc(244px + map-get($espaciado, '3'));
+      padding-left: calc(240px + map-get($espaciado, '3'));
+    }
+
+    .tarjeta-pie {
+      padding-left: calc(240px + map-get($espaciado, '3'));
     }
   }
 }

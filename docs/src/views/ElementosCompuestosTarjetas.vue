@@ -2,7 +2,7 @@
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
-  <div class="contenedor m-y-maximo">
+  <div class="contenedor p-y-maximo">
     <div class="ancho-lectura">
       <h1>Tarjetas</h1>
       <p>
@@ -12,21 +12,41 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </p>
     </div>
 
-    <div class="ancho-lectura m-b-10">
+    <div class="ancho-lectura">
       <h2 class="m-t-10">Tarjetas de contenido</h2>
       <p>
         Las tarjetas de contenido se conforman de un contenedor principal
         llamado con la clase <code>.tarjeta</code> en el que puede existir
-        una imagen <code>img.tarjeta-imagen</code> y un contenedor general <code>div.tarjeta-cuerpo</code>.
+        una imagen <code>img.tarjeta-imagen</code>, un contenedor de contenido general <code>div.tarjeta-cuerpo</code>
+        y un <code>div.tarjeta-pie</code> para agregar botones o hipervínculos.
       </p>
       <p>
         En el <code>div.tarjeta-cuerpo</code> puede existir cualquier elemento de html,
         pero tiene dos clases especiales para agregar un texto pequeño de <code>.tarjeta-etiqueta</code>
         y un <code>.tarjeta-titulo</code> de la tarjeta.
       </p>
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo="HTML"
+        codigo='
+          <div class="tarjeta">
+            <img class="tarjeta-imagen" ... />
+
+            <div class="tarjeta-cuerpo">
+              <p class="tarjeta-etiqueta"> ... </p>
+              <p class="tarjeta-titulo"> ... </p>
+              <p> ... </p>  
+            </div>
+            
+            <div class="tarjeta-pie">
+              <button type="button" class="boton-primario boton-chico"> ... </button>
+            </div>
+          </div>
+        '
+      />
     </div>
 
-    <div class="flex">
+    <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-4">
         <div class="tarjeta">
           <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-1.jpg" alt="">
@@ -34,26 +54,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
             <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
-            <button type="button" class="boton-primario boton-chico">predeterminado</button>
+          </div>
+          <div class="tarjeta-pie">
+            <button type="button" class="boton-primario boton-chico">botón</button>
           </div>
         </div>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <div class="tarjeta">
-          <img class="tarjeta-imagen" ... />
-
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-etiqueta"> ... </p>
-            <p class="tarjeta-titulo"> ... </p>
-            <p> ... </p>
-            
-            <button type="button" class="boton-primario boton-chico"> ... </button>
-          </div>
-        </div>
-        '
-        />
       </div>
     
       <div class="columna-4">
@@ -65,44 +70,6 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
           </div>
         </div>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <div class="tarjeta">
-          <img class="tarjeta-imagen" ... />
-
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-etiqueta"> ... </p>
-            <p class="tarjeta-titulo"> ... </p>
-            <p> ... </p>
-          </div>
-        </div>
-        '
-        />
-      </div>
-
-      <div class="columna-4">
-        <div class="tarjeta">
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
-            <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
-            <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
-          </div>
-        </div>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <div class="tarjeta">
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-etiqueta"> ... </p>
-            <p class="tarjeta-titulo"> ... </p>
-            <p> ... </p>
-          </div>
-        </div>
-        '
-        />
       </div>
 
       <div class="columna-4">
@@ -110,23 +77,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
+          </div>
+          <div class="tarjeta-pie">
             <a href="#">Enlace</a>
           </div>
         </div>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <div class="tarjeta">
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-etiqueta"> ... </p>
-            <p class="tarjeta-titulo"> ... </p>
-            <p> ... </p>
-            <a href="#">Enlace</a>
-          </div>
-        </div>
-        '
-        />
       </div>
     </div>
 
@@ -136,34 +91,56 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Tienen los mismos elementos que las tarjetas de contenido,
         con la diferencia que en su versión de escritorio se muestran de manera horizontal.
       </p>
-      <div class="tarjeta tarjeta-horizontal">
-        <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-3.jpg" alt="">
-        <div class="tarjeta-cuerpo">
-          <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
-          <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
-          <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
-          <button type="button" class="boton-primario boton-chico">predeterminado</button>
-        </div>
-      </div>
+
       <EjemploCodigo
         :tiene_ejemplo="false"
         tipo="HTML"
         codigo='
-        <div class="tarjeta tarjeta-horizontal">
-          <img class="tarjeta-imagen" ... />
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-etiqueta"> ... </p>
-            <p class="tarjeta-titulo"> ... </p>
-            <p> ... </p>
-            <button type="button" class="boton-primario boton-chico"> ... </button>
+          <div class="tarjeta tarjeta-horizontal">
+            <img class="tarjeta-imagen" ... />
+            <div class="tarjeta-cuerpo">
+              <p class="tarjeta-etiqueta"> ... </p>
+              <p class="tarjeta-titulo"> ... </p>
+              <p> ... </p>
+            </div>
+            <div class="tarjeta-pie">
+              <button type="button" class="boton-primario boton-chico"> ... </button>
+            </div>
           </div>
-          </div>
-        </div>
         '
-        />
+      />
     </div>
 
+    <div class="flex flex-contenido-centrado m-y-5">
+      <div class="columna-8">
+        <div class="tarjeta tarjeta-horizontal">
+          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-3.jpg" alt="">
+          <div class="tarjeta-cuerpo">
+            <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
+            <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
+            <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
+          </div>
+          <div class="tarjeta-pie">
+            <button type="button" class="boton-primario boton-chico">botón</button>
+            <button type="button" class="boton-secundario boton-chico">botón</button>
+          </div>
+        </div>
+      </div>
+      <div class="columna-8">
+        <div class="tarjeta tarjeta-horizontal">
+          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/gambusino.jpg" alt="">
+          <div class="tarjeta-cuerpo">
+            <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
+            <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
+          </div>
+          <div class="tarjeta-pie">
+            <button type="button" class="boton-primario boton-chico">botón</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Tarjetas de hipervínculo interno -->
     <div class="ancho-lectura">
       <h2 class="m-t-10">Tarjetas de hipervínculo interno</h2>
       <p>
@@ -179,9 +156,22 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Obviamente a este elemento no se le deben agregar hipervínculos ni botones dentro! 
         porque el contenedor principal ya tiene la acción del hipervínculo.
       </p>
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo="HTML"
+        codigo='
+          <a class="tarjeta tarjeta-hipervinculo-interno">
+            <img class="tarjeta-imagen" ... />
+            <div class="tarjeta-cuerpo">
+              <p class="tarjeta-titulo"> ... </p>
+              <p class="tarjeta-etiqueta"> ... </p>
+              <p> ... </p>
+            </div>
+          </a>
+        '
+      />
     </div>
-
-    <div class="flex flex-contenido-centrado">
+    <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-4">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="#">
           <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/asha.jpg" alt="">
@@ -190,37 +180,19 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
           </div>
         </a>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <a class="tarjeta tarjeta-hipervinculo-interno">
-          <img class="tarjeta-imagen" ... />
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-titulo"> ... </p>
-            <p class="tarjeta-etiqueta"> ... </p>
-          </div>
-        </a>
-        '
-        />
       </div>
       <div class="columna-4">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="#">
           <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/becka.jpg" alt="">
-          
+          <div class="tarjeta-cuerpo">
+            <p class="tarjeta-titulo">Texto largo de ejemplo.</p>
+            <p> 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugit facere tempora, 
+              laboriosam odio ducimus nisi adipisci obcaecati consequatur nemo. Iusto, incidunt dolorem. 
+              Accusantium velit neque deleniti nisi nam ipsum.
+            </p>
+          </div>
         </a>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <a class="tarjeta tarjeta-hipervinculo-interno">
-          <img class="tarjeta-imagen" ... />
-          <span class="a11y-solo-lectura">
-            Texto que describe el hipervínculo
-          </span>
-        </a>
-        '
-        />
       </div>
       <div class="columna-4">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="#">
@@ -230,24 +202,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p>Parrafo normal, para agregar una descripción pequeña.</p>
           </div>
         </a>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <a class="tarjeta tarjeta-hipervinculo-interno">
-          <img class="tarjeta-imagen" ... />
-          <div class="tarjeta-cuerpo">
-            <p class="tarjeta-titulo"> ... </p>
-            <p> ... </p>
-          </div>
-        </a>
-        '
-        />
       </div>
-      
     </div>
 
-
+    <!-- Tarjetas de hipervínculo externo -->
     <div class="ancho-lectura">
       <h2 class="m-t-10">Tarjetas de hipervínculo externo</h2>
       <p>
@@ -263,9 +221,35 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Obviamente a este elemento no se le deben agregar hipervínculos ni botones dentro! 
         porque el contenedor principal ya tiene la acción del hipervínculo.
       </p>
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo="HTML"
+        codigo='
+          <a class="tarjeta tarjeta-hipervinculo-externo">
+            <picture class="tarjeta-imagen">
+              <source srcset="..." media="(min-width: 700px)"/>
+              <img src="..." alt="" />
+            </picture>
+            <div class="tarjeta-degradado">
+              <div class="tarjeta-cuerpo">
+                <p>
+                  Nota
+                </p>
+                <p class="h2 borde-b">
+                  Título
+                  <span class="pictograma-flecha-arriba-derecha"></span>
+                </p>
+                <p class="h5">
+                  Subtítulo
+                </p>
+                <p> ... </p>
+              </div>
+            </div>
+          </a>
+        '
+      />
     </div>
-
-    <div class="flex flex-contenido-centrado">
+    <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-6">
         <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <picture class="tarjeta-imagen"> 
@@ -280,39 +264,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             </div>
           </div>
         </a>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <a class="tarjeta tarjeta-hipervinculo-externo">
-          <picture class="tarjeta-imagen">
-            <source srcset="..." media="(min-width: 700px)"/>
-            <img src="..." alt="" />
-          </picture>
-          <div class="tarjeta-degradado">
-            <div class="tarjeta-cuerpo">
-              <p>
-                Capítulo
-              </p>
-              <p class="h2 borde-b">
-                Nombre del capítulo 
-                <span class="pictograma-flecha-arriba-derecha"></span>
-              </p>
-              <p class="h5">
-                ENI Nombre
-              </p>
-            </div>
-          </div>
-        </a>
-        '
-        />
       </div>
       <div class="columna-6">
         <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
-          <picture class="tarjeta-imagen"> 
-            <source srcset="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/perro-2.jpg" media="(min-width: 700px)"/>
-            <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/perro-3.jpg" alt="" />
-          </picture>
+          <img class="tarjeta-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/perro-3.jpg" alt="" />
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
               <p>ENI</p>
@@ -320,31 +275,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             </div>
           </div>
         </a>
-        <EjemploCodigo
-        :tiene_ejemplo="false"
-        tipo="HTML"
-        codigo='
-        <a class="tarjeta tarjeta-hipervinculo-externo">
-          <picture class="tarjeta-imagen">
-            <source srcset="..." media="(min-width: 700px)"/>
-            <img src="..." alt="" />
-          </picture>
-          <div class="tarjeta-degradado">
-            <div class="tarjeta-cuerpo">
-              <p>ENI</p>
-              <p class="h1">
-                Nombre ENI 
-                <span class="pictograma-flecha-arriba-derecha"></span>
-              </p>
-            </div>
-          </div>
-        </a>
-        '
-        />
       </div>
     </div>
-
-    
-
   </div>
 </template>
