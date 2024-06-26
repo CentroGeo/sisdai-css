@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -131,9 +131,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <span class="nombre-variable">Nombre variable</span>
           </label>
         </span>
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
+        <EjemploCodigo
+          :tiene_ejemplo='false'
+          tipo='HTML'
+          codigo='
           <span class="controlador-vis">
             <input id="zz" type="checkbox">
             <label for="zz">
@@ -153,9 +154,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <span class="nombre-variable">Controlador con parrafo de lectura</span>
           </p>
         </div>
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
+        <EjemploCodigo
+          :tiene_ejemplo='false'
+          tipo='HTML'
+          codigo='
           <div class="controlador-vis" style="--controlador-vis-figura-alto: 18px;">
             <p class="lectura">
               <svg class="figura-variable">
@@ -176,9 +178,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <span class="nombre-variable">Figura variable con muestra</span>
           </label>
         </span>
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
+        <EjemploCodigo
+          :tiene_ejemplo='false'
+          tipo='HTML'
+          codigo='
           <span class="controlador-vis">
             <input id="yy" type="checkbox">
             <label for="yy">
@@ -208,9 +211,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <span class="nombre-variable">Con pictograma</span>
           </label>
         </span>
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
+        <EjemploCodigo
+          :tiene_ejemplo='false'
+          tipo='HTML'
+          codigo='
           <span class="controlador-vis">
             <input id="xx" type="checkbox">
             <label for="xx">
@@ -232,9 +236,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </span>
           </label>
         </span>
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
+        <EjemploCodigo
+          :tiene_ejemplo='false'
+          tipo='HTML'
+          codigo='
           <span class="controlador-vis" style="--controlador-vis-figura-alto: 32px;">
             <input id="ww" type="checkbox">
             <label for="ww">
@@ -259,9 +264,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </span>
           </label>
         </div>
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
+        <EjemploCodigo
+          :tiene_ejemplo='false'
+          tipo='HTML'
+          codigo='
           <div class="controlador-vis" style="--controlador-vis-figura-alto: 37px;">
             <input id="vv" type="checkbox">
             <label for="vv">
@@ -286,9 +292,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </span>
           </label>
         </div>
-        <EjemploCodigoVertical
-          :tiene_ejemplo="false"
-          html='
+        <EjemploCodigo
+          :tiene_ejemplo='false'
+          tipo='HTML'
+          codigo='
           <div class="controlador-vis" style="--controlador-vis-figura-alto: 7px;">
             <input id="uu" type="checkbox">
             <label for="uu">

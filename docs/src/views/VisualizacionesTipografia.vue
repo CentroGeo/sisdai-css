@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
+import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -44,7 +44,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
 
           <p class="vis-nomenclatura">
             <span class="figura-variable disabled"></span>
-            Nomenclatura
+            Nomenclatura deshabilitada
           </p>
           <p class="vis-nomenclatura">
             <span class="figura-variable"></span>
@@ -67,7 +67,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       </div>
     </div>
 
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       class="m-t-10"
       html='
       <p class="vis-titulo-visualizacion">
@@ -84,7 +84,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.5rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="vis-fecha-actualizacion">
         Fecha de actualización
@@ -97,7 +97,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Peso', valor:'Medium (500)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="vis-instruccional">
         Instruccional
@@ -110,7 +110,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Peso', valor:'Regular (400)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="vis-valores-ejes">
         Valores de ejes
@@ -123,7 +123,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Peso', valor:'Regular (400)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="vis-titulo-ejes">
         Título de ejes
@@ -136,7 +136,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Peso', valor:'Semibold (600)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="vis-titulo-leyenda">
         Título de leyenda
@@ -149,11 +149,11 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Peso', valor:'Semibold (600)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="vis-nomenclatura">
         <span class="figura-variable disabled"></span>
-        Nomenclatura
+        Nomenclatura deshabilitada
       </p>
       <p class="vis-nomenclatura">
         <span class="figura-variable"></span>

@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -12,8 +12,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         Es un componente de desarrollo para presentar la información acerca del versionamiento, el ambiente y la fecha de despliegue.
       </p>
       
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <dl class="informacion-despliegue">
           <dt>Versión</dt>
           <dd>v1.2.3</dd>

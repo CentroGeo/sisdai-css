@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -26,50 +26,54 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex">
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button type="button">
-          button
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button type="button">
+              button
+            </button>
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <input 
-          type="button" 
-          value="input button"
-        />
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML' 
+        codigo='
+          <p>
+            <input 
+              type="button" 
+              value="input button"
+            />
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <input 
-          type="submit" 
-          value="input submit"
-        />
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <input 
+              type="submit" 
+              value="input submit"
+            />
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <input 
-          type="reset" 
-          value="input reset"
-        />
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <input 
+              type="reset" 
+              value="input reset"
+            />
+          </p>
+        '
       />
       </div>
     </div>
@@ -90,63 +94,67 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex">
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button 
-          type="button"
-          class="boton-primario"
-        >
-          botón primario
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button 
+              type="button"
+              class="boton-primario"
+            >
+              botón primario
+            </button>
+          </p>
+        '
       />
       </div>
       
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button 
-          type="button"
-          class="boton-primario"
-          disabled
-        >
-          botón primario deshabilitado
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button 
+              type="button"
+              class="boton-primario"
+              disabled
+            >
+              botón primario deshabilitado
+            </button>
+          </p>
+        '
       />
       </div>
     
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button 
-          type="button"
-          class="boton-secundario"
-        >
-          botón secundario
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button 
+              type="button"
+              class="boton-secundario"
+            >
+              botón secundario
+            </button>
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button 
-          type="button"
-          class="boton-secundario"
-          disabled
-        >
-          botón secundario deshabilitado
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button 
+              type="button"
+              class="boton-secundario"
+              disabled
+            >
+              botón secundario deshabilitado
+            </button>
+          </p>
+        '
       />
       </div>
     </div>
@@ -163,36 +171,39 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button class="boton-primario boton-chico"> 
-          boton-chico
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button class="boton-primario boton-chico"> 
+              boton-chico
+            </button>
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button class="boton-primario"> 
-          boton
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button class="boton-primario"> 
+              boton
+            </button>
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button class="boton-primario boton-grande">
-          boton-grande
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button class="boton-primario boton-grande">
+              boton-grande
+            </button>
+          </p>
+        '
       />
       </div>
     </div>
@@ -205,48 +216,51 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button class="boton-primario boton-chico"> 
-          boton-chico
-          <span 
-            class="pictograma-flkt" 
-            aria-hidden="true"
-          ></span>
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button class="boton-primario boton-chico"> 
+              boton-chico
+              <span 
+                class="pictograma-flkt" 
+                aria-hidden="true"
+              ></span>
+            </button>
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button class="boton-primario"> 
-          boton
-          <span 
-            class="pictograma-flkt" 
-            aria-hidden="true"
-          ></span>
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button class="boton-primario"> 
+              boton
+              <span 
+                class="pictograma-flkt" 
+                aria-hidden="true"
+              ></span>
+            </button>
+          </p>
+        '
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <p>
-        <button class="boton-primario boton-grande">
-          boton-grande
-          <span 
-            class="pictograma-flkt" 
-            aria-hidden="true"
-          ></span>
-        </button>
-      </p>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <p>
+            <button class="boton-primario boton-grande">
+              boton-grande
+              <span 
+                class="pictograma-flkt" 
+                aria-hidden="true"
+              ></span>
+            </button>
+          </p>
+        '
       />
       </div>
     </div>

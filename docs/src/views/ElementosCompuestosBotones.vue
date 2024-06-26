@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -42,24 +42,25 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </a>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
-        <a 
-          class="boton-descarga boton-primario" 
-          href="../img/grafica-variantes.png"
-          download="nombre-que-tomara-la-descarga"
-        >
-          <div class="boton-descarga-cuerpo">
-            <p class="boton-descarga-titulo"> Título </p>
-            <p> ... </p>
-            <span 
-              class="boton-descarga-pictograma pictograma-archivo-descargar" 
-              aria-hidden="true"
-            ></span>
-          </div>
-        </a>
-        '
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo="HTML"
+          codigo='
+            <a 
+              class="boton-descarga boton-primario" 
+              href="../img/grafica-variantes.png"
+              download="nombre-que-tomara-la-descarga"
+            >
+              <div class="boton-descarga-cuerpo">
+                <p class="boton-descarga-titulo"> Título </p>
+                <p> ... </p>
+                <span 
+                  class="boton-descarga-pictograma pictograma-archivo-descargar" 
+                  aria-hidden="true"
+                ></span>
+              </div>
+            </a>
+          '
         />
       </div>
     </div>
@@ -96,24 +97,25 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </a>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
-        <a 
-          class="boton-descarga deshabilitado" 
-          href="../img/grafica-variantes.png"
-          download="nombre-que-tomara-la-descarga"
-        >
-          <div class="boton-descarga-cuerpo">
-            <p class="boton-descarga-titulo"> Título </p>
-            <p> ... </p>
-            <span 
-              class="boton-descarga-pictograma pictograma-archivo-descargar" 
-              aria-hidden="true"
-            ></span>
-          </div>
-        </a>
-        '
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo="HTML"
+          codigo='
+            <a 
+              class="boton-descarga deshabilitado" 
+              href="../img/grafica-variantes.png"
+              download="nombre-que-tomara-la-descarga"
+            >
+              <div class="boton-descarga-cuerpo">
+                <p class="boton-descarga-titulo"> Título </p>
+                <p> ... </p>
+                <span 
+                  class="boton-descarga-pictograma pictograma-archivo-descargar" 
+                  aria-hidden="true"
+                ></span>
+              </div>
+            </a>
+          '
         />
       </div>
     </div>
@@ -143,24 +145,25 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </div>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
-        <div 
-          class="boton-alternar" 
-          role="group" 
-          aria-label="Ejemplo grupo de elementos seleccionables"
-        >
-          <input id="a1" name="ejemplo" value="a1" type="radio" checked />
-          <label for="a1"> Opcion 1 </label>
-          
-          <input id="a2" name="ejemplo" value="a2" type="radio" />
-          <label for="a2"> Opcion 2 </label>
-          
-          <input id="a3" name="ejemplo" value="a3" type="radio" />
-          <label for="a3"> Opcion 3 </label>
-        </div>
-        '
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo="HTML"
+          codigo='
+            <div 
+              class="boton-alternar" 
+              role="group" 
+              aria-label="Ejemplo grupo de elementos seleccionables"
+            >
+              <input id="a1" name="ejemplo" value="a1" type="radio" checked />
+              <label for="a1"> Opcion 1 </label>
+              
+              <input id="a2" name="ejemplo" value="a2" type="radio" />
+              <label for="a2"> Opcion 2 </label>
+              
+              <input id="a3" name="ejemplo" value="a3" type="radio" />
+              <label for="a3"> Opcion 3 </label>
+            </div>
+          '
         />
       </div>
       <div class="columna-6">
@@ -173,21 +176,22 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         Ej. Boton alternar deshabilitado
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
-        <div 
-          class="boton-alternar" 
-          role="group" 
-          aria-label="Ejemplo grupo de elementos deshabilitados"
-        >
-          <input id="b1" name="ej-b" value="b1" type="radio" checked disabled />
-          <label for="b1"> Opcion 1 </label>
-          
-          <input id="b2" name="ej-b" value="b2" type="radio" disabled />
-          <label for="b2"> Opcion 2 </label>
-        </div>
-        '
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo="HTML"
+          codigo='
+            <div 
+              class="boton-alternar" 
+              role="group" 
+              aria-label="Ejemplo grupo de elementos deshabilitados"
+            >
+              <input id="b1" name="ej-b" value="b1" type="radio" checked disabled />
+              <label for="b1"> Opcion 1 </label>
+              
+              <input id="b2" name="ej-b" value="b2" type="radio" disabled />
+              <label for="b2"> Opcion 2 </label>
+            </div>
+          '
         />
       </div>
     </div>

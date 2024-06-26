@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -90,9 +90,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
 
 
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <div class="contenedor-vis">
   
           <!-- paneles del contenedor -->

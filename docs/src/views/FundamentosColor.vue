@@ -1,5 +1,6 @@
 <script setup>
 import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -22,7 +23,7 @@ import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
     </div>
 
     <div class="ancho-lectura">
-      <h2 class="m-t-10">Paleta de color</h2>
+      <h2 class="m-t-10">Perfil de color</h2>
       <p>
         El color predeterminado del Sisdai utiliza la familia de azul celeste como color principal de acción (--color-primario 1-4),
         la familia de azul marino para organizar el contenido de distintos elementos (--color-secundario 1-12).
@@ -31,7 +32,10 @@ import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
         Las variables de color se encuentran definidas en el archivo <code>src/color/perfil-predeterminada.scss</code>. 
         Estas variables son la base modificable de cada perfil de color.
       </p>
-      
+      <p>
+        Además se incorporan otros colores, reutilizables en todos los perfiles, para mejorar la usabilidad 
+        y la comunicación visual efectiva en el diseño de la interfaz de persona usuaria.
+      </p>
     </div>
     <div class="flex m-y-5">
       <div class="columna-4">
@@ -86,13 +90,45 @@ import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
 
     <div class="ancho-lectura">
       <p>
-        Además se incorporan otros colores, reutilizables en todos los perfiles, para mejorar la usabilidad 
-        y la comunicación visual efectiva en el diseño de la interfaz de persona usuaria.
+        Para crear un nuevo perfil de color es necesario únicamente crear éstas 16 variables antes mencionadas,
+        en un archivo de css tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-predeterminada.scss</code>
       </p>
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo="CSS"
+        codigo="
+          body[data-perfil='predeterminada'],
+          :root {
+            // colores primarios
+            --color-primario-4: #0058cc;
+            --color-primario-3: #0068FF;
+            --color-primario-2: #6692FF;
+            --color-primario-1: #80AAFF;
+
+            // colores secundarios
+            --color-secundario-12: #102543;
+            --color-secundario-11: #142a48;
+            --color-secundario-11-rgb: 20, 42, 72;
+            --color-secundario-10: #1B304E;
+            --color-secundario-9: #2A3F5D;
+            --color-secundario-8: #364A69;
+            --color-secundario-7: #5E7392;
+            --color-secundario-6: #889DBB;
+            --color-secundario-5: #B1C6E4;
+            --color-secundario-4: #CCE1FF;
+            --color-secundario-3: #DBEAFF;
+            --color-secundario-2: #F0F6FF;
+            --color-secundario-1: #F8FBFF;
+          }
+        "
+      />
+    </div>
+
+    <div class="ancho-lectura">
       <h3 class="m-t-5">Colores base</h3>
       <p>
         Definidas en el archivo <code>src/color/base.scss</code>, las variables base son colores que se reutilizan en
-        todos los perfiles de color, no es necesario redefinirlas para crear una paleta nueva.
+        todos los perfiles de color, no es necesario redefinirlas para crear un perfil de color nuevo.
       </p>
     </div>
 

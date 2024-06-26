@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -66,9 +66,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
           :tiene_ejemplo="false"
-          html='
+          tipo='HTML'
+          codigo='
           <ul class="lista-compuesta lista-avatar">
             <li>
               <a href="#">
@@ -131,9 +132,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
           :tiene_ejemplo="false"
-          html='
+          tipo='HTML'
+          codigo='
           <ul class="lista-compuesta lista-logotipo">
             <li>
               <a href="#">
@@ -191,9 +193,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
           :tiene_ejemplo="false"
-          html='
+          tipo='HTML'
+          codigo='
           <ul class="lista-compuesta lista-pictograma">
             <li>
               <div class="lista-pictograma-imagen">
@@ -283,9 +286,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo='HTML'
+        codigo='
           <ul class="lista-compuesta lista-accion">
             <li>
               <div class="lista-compuesta-cuerpo">
@@ -367,9 +371,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo='HTML'
+        codigo='
           <ul class="lista-computesta lista-casilla">
             <li>
                 <input id="checkbox1" 

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 const estaAbierto = ref(false)
 </script>
 <template>
@@ -48,6 +48,13 @@ const estaAbierto = ref(false)
           </ul>
         </div>
       </div>
+
+      <p>
+        El elemento principal del colapsable es un botón, por lo tanto las clases de estilo de botón pueden afectarlo.
+        Pero el uso principal de este componente es dentro del menú lateral, componente que también da formato a los botones e hipervínculos que contiene
+        para mantener el estilo unificado. Por lo mismo, para éste componente no se definieron estilos de color, únicamente se le agregan estilos 
+        de estructura que le permiten colapsar al contenedor y mantener siempre visible su botón de acción.
+      </p>
       
     </div>
 
@@ -56,8 +63,9 @@ const estaAbierto = ref(false)
         <p>
           Ejemplo colapsado
         </p>
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="colapsable">
             <!-- cambiar con js el aria-expanded="false" a "true" cuando se abra -->
             <button 
@@ -100,8 +108,9 @@ const estaAbierto = ref(false)
         <p>
           Ejemplo abierto
         </p>
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="colapsable abierto">
             <!-- cambiar con js el aria-expanded="true" a "false" cuando se colapse -->
             <button 

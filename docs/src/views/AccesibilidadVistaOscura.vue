@@ -1,5 +1,6 @@
-
-import { onDeactivated } from 'vue';
+<script setup>
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+</script>
 <template>
   <div class="contenedor m-y-maximo">
 
@@ -31,36 +32,44 @@ import { onDeactivated } from 'vue';
         necesarias para la correcta visualización en el modo oscuro mediante el uso de la clase especial <code>.a11y-oscura</code>.
       </p>
     </div>
-    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
-      // para una clase no nativa creada tomando como predeterminado el tema claro
-      .nombre-de-mi-clase-nueva {
-        background-color: black;
-        color: white;
-      }
+    <EjemploCodigo
+      :tiene_ejemplo='false'
+      tipo='CSS'
+      codigo='
+          // para una clase no nativa creada tomando como predeterminado el tema claro
+          .nombre-de-mi-clase-nueva {
+            background-color: black;
+            color: white;
+          }
 
-      // debe existir su equivalente inverso para el tema oscuro
-      .a11y-oscura .nombre-de-mi-clase-nueva {
-        background-color: white;
-        color: black;
-      }
-    </pre>
-
+          // debe existir su equivalente inverso para el tema oscuro
+          .a11y-oscura .nombre-de-mi-clase-nueva {
+            background-color: white;
+            color: black;
+          }
+      '
+    />
+    
     <div class="ancho-lectura">
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
         debe existir la opcion de <em>Vista oscura</em>, de la siguiente manera:
        </p>
     </div>
-    <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
-      export default [
-        {
-          accion: 'alternarVistaOscura',
-          claseCss: 'a11y-oscura',
-          icono: 'pictograma-contraste',
-          titulo: 'Vista Oscura',
-        },
-        ...
-      ]
-    </pre>
+    <EjemploCodigo
+      :tiene_ejemplo='false'
+      tipo='JavaScript'
+      codigo='
+           export default [
+            {
+              accion: "alternarVistaOscura",
+              claseCss: "a11y-oscura",
+              icono: "pictograma-contraste",
+              titulo: "Vista Oscura",
+            },
+            ...
+          ]
+      '
+    />
   </div>
 </template>

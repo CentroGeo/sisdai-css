@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -13,8 +13,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         proporcionando términos o frases relevantes para obtener resultados que coincidan con la consulta.
       </p>
       
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <div class="campo-busqueda">
 
           <input type="search" class="campo-busqueda-entrada" placeholder="Campo de búsqueda" />

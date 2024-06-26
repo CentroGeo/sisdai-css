@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -37,10 +37,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <button type="button" class="boton-primario boton-chico">predeterminado</button>
           </div>
         </div>
-        <EjemploCodigoVertical
-        class="m-y-1"
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <div class="tarjeta">
           <img class="tarjeta-imagen" ... />
 
@@ -65,10 +65,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
           </div>
         </div>
-        <EjemploCodigoVertical
-        class="m-y-1"
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <div class="tarjeta">
           <img class="tarjeta-imagen" ... />
 
@@ -90,10 +90,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
           </div>
         </div>
-        <EjemploCodigoVertical
-        class="m-y-1"
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <div class="tarjeta">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-etiqueta"> ... </p>
@@ -113,10 +113,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <a href="#">Enlace</a>
           </div>
         </div>
-        <EjemploCodigoVertical
-        class="m-y-1"
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <div class="tarjeta">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-etiqueta"> ... </p>
@@ -145,10 +145,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <button type="button" class="boton-primario boton-chico">predeterminado</button>
         </div>
       </div>
-      <EjemploCodigoVertical
-        class="m-y-1"
+      <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <div class="tarjeta tarjeta-horizontal">
           <img class="tarjeta-imagen" ... />
           <div class="tarjeta-cuerpo">
@@ -190,9 +190,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
           </div>
         </a>
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <a class="tarjeta tarjeta-hipervinculo-interno">
           <img class="tarjeta-imagen" ... />
           <div class="tarjeta-cuerpo">
@@ -208,9 +209,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/becka.jpg" alt="">
           
         </a>
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <a class="tarjeta tarjeta-hipervinculo-interno">
           <img class="tarjeta-imagen" ... />
           <span class="a11y-solo-lectura">
@@ -228,9 +230,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             <p>Parrafo normal, para agregar una descripción pequeña.</p>
           </div>
         </a>
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <a class="tarjeta tarjeta-hipervinculo-interno">
           <img class="tarjeta-imagen" ... />
           <div class="tarjeta-cuerpo">
@@ -277,9 +280,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </div>
           </div>
         </a>
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <a class="tarjeta tarjeta-hipervinculo-externo">
           <picture class="tarjeta-imagen">
             <source srcset="..." media="(min-width: 700px)"/>
@@ -316,9 +320,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </div>
           </div>
         </a>
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <a class="tarjeta tarjeta-hipervinculo-externo">
           <picture class="tarjeta-imagen">
             <source srcset="..." media="(min-width: 700px)"/>

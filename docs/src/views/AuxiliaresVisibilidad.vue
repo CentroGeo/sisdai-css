@@ -1,6 +1,6 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
-import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -8,8 +8,9 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       <h1>Visibilidad</h1>
 
       <h2 class="m-t-10">Oculto</h2>
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <ul>
           <li>
             Al agregar esta clase se hace que 
@@ -27,8 +28,9 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       />
 
       <h2 class="m-t-10">No visible</h2>
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <ul>
           <li>
             Esta clase hace que el elemento no se vea
@@ -54,7 +56,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         agregando el sufijo -mov ó -esc
       </p>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
     html='
     <p class="oculto-mov">
       Elemento oculto en dispositivos móviles
@@ -68,7 +70,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       {nombre:'Display', valor:'inherit'},
     ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
     html='
     <p class="oculto-esc">
       Elemento oculto en dispositivos de escritorio
@@ -82,7 +84,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       {nombre:'display', valor:'none'},
     ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
     html='
     <p class="no-visible-mov">
       Elemento no visible en móviles
@@ -96,7 +98,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       {nombre:'visibility', valor:'inherit'},
     ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
     html='
     <p class="no-visible-esc">
       Elemento no visible en escritorio

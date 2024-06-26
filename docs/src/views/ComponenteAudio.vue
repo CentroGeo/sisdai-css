@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -12,8 +12,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         Este componente permite reproducir audios en el navegador.
       </p>
       
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <div class="audio"  role="toolbar" aria-label="Controles para reproducir audio">
 
           <div class="audio-cabecera">

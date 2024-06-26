@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -23,44 +23,47 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex flex-contenido-centrado m-t-5">
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <a href="#">
-        hipervinculo
-      </a>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <a href="#">
+            hipervinculo
+          </a>
+        '
       />
       </div>
 
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <button 
-        class="hipervinculo"
-        type="button"
-        role="link"
-      >
-        boton estilo hipervinculo
-      </a>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <button 
+            class="hipervinculo"
+            type="button"
+            role="link"
+          >
+            boton estilo hipervinculo
+          </a>
+        '
       />
       </div>
 
       <div class="columna-4">
-      <EjemploCodigoVertical
-      html='
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        hipervinculo externo
-        <span
-          class="pictograma-enlace-externo"
-          aria-hidden="true"
-        />
-      </a>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hipervinculo externo
+            <span
+              class="pictograma-enlace-externo"
+              aria-hidden="true"
+            />
+          </a>
+        '
       />
       </div>
     </div>

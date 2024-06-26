@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
+import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -32,7 +32,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         <i>*con la excepción del h1 en su versión de escritorio</i>.
       </p>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <h1>Título h1</h1>
       <p class="h1">Clase de titulo h1</p>
@@ -46,7 +46,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Margen superior', valor:'64px'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <h2>Título h2</h2>
       <p class="h2">Clase de titulo h2</p>
@@ -59,7 +59,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'2rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <h3>Título h3</h3>
       <p class="h3">Clase de titulo h3</p>
@@ -72,7 +72,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.75rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <h4>Título h4</h4>
       <p class="h4">Clase de titulo h4</p>
@@ -85,7 +85,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.5rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <h5>Título h5</h5>
       <p class="h5">Clase de titulo h5</p>
@@ -98,7 +98,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.25rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <h6>Título h6</h6>
       <p class="h6">Clase de titulo h6</p>
@@ -121,7 +121,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         Los parrafos tienen margenes superior e inferior de 24px.
       </p>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p>
         Ejemplo de párrafo. Lorem ipsum dolor sit 
@@ -131,7 +131,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       </p>
       '
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="parrafo-texto-alto">
         Ejemplo de párrafo texto alto.
@@ -150,7 +150,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         El color en texto aplica a todas las etiquetas que puedan contener texto incluyendo titulos, parrafos, listas, pictogramas... etc.
       </p>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-primario">
         Texto color primario
@@ -160,7 +160,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Color', valor:'var(--texto-primario)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-secundario">
         Texto color secundario
@@ -170,7 +170,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Color', valor:'var(--texto-secundario)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-acento">
         Texto color acento
@@ -180,7 +180,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Color', valor:'var(--texto-acento)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-inverso">
         Texto color inverso
@@ -190,7 +190,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Color', valor:'var(--texto-inverso)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-informacion">
         Texto color informacion
@@ -200,7 +200,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Color', valor:'var(--texto-informacion)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-confirmacion">
         Texto color confirmacion
@@ -210,7 +210,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Color', valor:'var(--texto-confirmacion)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-alerta">
         Texto color alerta
@@ -220,7 +220,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Color', valor:'var(--texto-alerta)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-color-error">
         Texto color error
@@ -241,7 +241,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       </p>
     </div>
 
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="nota">
         <b>Las notas</b> se utilizan para hacer observaciones 
@@ -257,7 +257,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Margen inferior', valor:'24px'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="nota-titulo">
         Notas:
@@ -280,7 +280,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Margen superior', valor:'16px'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <div class="nota-contenedor">
         <p class="nota-titulo">
@@ -307,7 +307,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         por favor acerquese a su equipo de diseño para hablar del tema.
       </p>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html="
       <p>
         texto <b>bold</b>
@@ -340,7 +340,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'0.75em'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html="
       <p>
         <code>código</code>

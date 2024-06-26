@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
 const modalPredeterminado = ref()
 const modalGrande = ref()
@@ -53,9 +53,10 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         el <code>.modal-cabecera</code>, el <code>.modal-cuerpo</code>, el <code>.modal-pie</code> 
         y el boton de cierre <code>.modal-cerrar</code>.
       </p>
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <dialog
           class="modal"
           ref="modalPredeterminado"
@@ -112,11 +113,16 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         </button>
         
       </p>
-      <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
-        <span aria-hidden="true">&lt;</span>dialog class="modal"<span aria-hidden="true">&gt;</span>
-          ...
-        <span aria-hidden="true">&lt;</span>/dialog<span aria-hidden="true">&gt;</span>
-      </pre>
+      
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+          <dialog class="modal">
+            ...
+          </dialog>
+        '
+      />
       
       
       <p>
@@ -132,12 +138,15 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           Abrir modal grande
         </button>
       </p>
-      <pre class="texto-tamanio-1 fondo-color-informacion p-t-3">
-        <span aria-hidden="true">&lt;</span>dialog class="modal modal-grande"<span aria-hidden="true">&gt;</span>
-          ...
-        <span aria-hidden="true">&lt;</span>/dialog<span aria-hidden="true">&gt;</span>
-      </pre>
-      
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+          <dialog class="modal modal-grande">
+            ...
+          </dialog>
+        '
+      />
     </div>
 
     <dialog

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 const estaAbierto = ref(true)
 </script>
 <template>
@@ -94,9 +94,10 @@ const estaAbierto = ref(true)
       </div>
 
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
           <div class="menu-flotante menu-flotante-izquierdo">
             <button class="menu-flotante-boton">
               <span 

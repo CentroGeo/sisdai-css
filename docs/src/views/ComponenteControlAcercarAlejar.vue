@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -12,8 +12,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         Este componente se utiliza para ajustar el nivel de acercamiento en un mapa.
       </p>
       
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <div 
           class="control-acercar-alejar" 
           role="toolbar"

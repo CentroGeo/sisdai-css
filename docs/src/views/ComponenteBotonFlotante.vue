@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 const estaAbierto = ref(true)
 </script>
 <template>
@@ -27,9 +27,10 @@ const estaAbierto = ref(true)
         Además para posicionarlo a la izquierda se debe utilizar la clase <code>menu-flotante-izquierdo</code>.
       </p>
 
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <div 
           class="menu-flotante" 
           :class="{abierto: estaAbierto}"

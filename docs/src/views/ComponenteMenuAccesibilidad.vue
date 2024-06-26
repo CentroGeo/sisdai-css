@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 const estaAbierto = ref(true)
 </script>
 <template>
@@ -22,11 +22,14 @@ const estaAbierto = ref(true)
       </p>
 
       
-      <EjemploCodigoVertical 
-        :tiene_ejemplo="false"
-        html='
-
-        <div class="menu-flotante menu-flotante-derecho" :class="{abierto: estaAbierto}">
+      <EjemploCodigo 
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+        <div 
+          class="menu-flotante menu-flotante-derecho" 
+          :class="{abierto: estaAbierto}"
+        >
 
           <button
             class="menu-flotante-boton"
@@ -83,34 +86,37 @@ const estaAbierto = ref(true)
         en el componente se cargan desde el archivo <code>opcionesDefault.js</code>.
         Las opciones mostradas en este ejemplo se tendrían que agregar de la siguiente manera:
       </p>
-      <pre class="nota">
-export default [
-  {
-    accion: 'alternarTipografiaAccesible',
-    claseCss: 'a11y-tipografia',
-    icono: 'pictograma-cambio-tipografia',
-    titulo: 'Cambio de fuente',
-  },
-  {
-    accion: 'alternarEnlacesSubrayados',
-    claseCss: 'a11y-hipervinculos',
-    icono: 'pictograma-enlace-subrayado',
-    titulo: 'Enlaces subrayados',
-  },
-  {
-    accion: 'alternarVistaSimplificada',
-    claseCss: 'a11y-simplificada',
-    icono: 'pictograma-vista-simplificada',
-    titulo: 'Mostrar solo texto',
-  },
-  {
-    accion: 'alternarVistaOscura',
-    claseCss: 'a11y-oscura',
-    icono: 'pictograma-contraste',
-    titulo: 'Vista Oscura',
-  },
-]
-      </pre>
+      <EjemploCodigo 
+        :tiene_ejemplo='false'
+        tipo='javaScript'
+        codigo='
+          export default [
+            {
+              accion: "alternarTipografiaAccesible",
+              claseCss: "a11y-tipografia",
+              icono: "pictograma-cambio-tipografia",
+              titulo: "Cambio de fuente",
+            },
+            {
+              accion: "alternarEnlacesSubrayados",
+              claseCss: "a11y-hipervinculos",
+              icono: "pictograma-enlace-subrayado",
+              titulo: "Enlaces subrayados",
+            },
+            {
+              accion: "alternarVistaSimplificada",
+              claseCss: "a11y-simplificada",
+              icono: "pictograma-vista-simplificada",
+              titulo: "Mostrar solo texto",
+            },
+            {
+              accion: "alternarVistaOscura",
+              claseCss: "a11y-oscura",
+              icono: "pictograma-contraste",
+              titulo: "Vista Oscura",
+            },
+          ]
+      '/>
     </div>
     
     <div class="menu-flotante menu-flotante-derecho" :class="{abierto: estaAbierto}">

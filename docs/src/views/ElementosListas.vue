@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -18,8 +18,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <ol>
           <li>Lista Nivel 1</li>
           <li>
@@ -40,8 +41,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <ul>
           <li>Lista Nivel 1</li>
           <li>
@@ -62,8 +64,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       />
       </div>
       <div class="columna-4">
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <dl>
           <dt>Término</dt>
           <dd>Descripción del término</dd>

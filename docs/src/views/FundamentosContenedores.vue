@@ -95,9 +95,9 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <EjemploEstiloClase 
       clases="contenedor ancho-lectura m-y-3"
       codigo='
-        <div class="contenedor ancho-lectura">
-          contenedor ancho-lectura
-        </div>
+          <div class="contenedor ancho-lectura">
+            contenedor ancho-lectura
+          </div>
     '/>
     
     <div class="contenedor ancho-lectura">
@@ -142,7 +142,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     
     <div class="contenedor a11y-simplificada-contenedor m-y-3">
       <div class="grid">
-        <div class="columna-4 fondo-color-informacion">
+        <div class="columna-4 fondo-color-neutro">
           <p>1</p>
         </div>
         <div class="columna-1 fondo-color-confirmacion">

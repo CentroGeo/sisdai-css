@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 const estaAbierto = ref(true)
 </script>
 <template>
@@ -186,10 +186,12 @@ const estaAbierto = ref(true)
               se agrega o quita la clase <code>abierto</code> directamente sobre el <code>menu-lateral</code> 
               para mostrar u ocultar su contenido.
             </p>
-            <EjemploCodigoVertical
-              :tiene_ejemplo="false"
-              html='
-              <nav class="menu-lateral"> <- aqui se agrega .abierto (notas estado abierto)
+            <EjemploCodigo
+              :tiene_ejemplo='false'
+              margen_pre='m-l--10'
+              tipo='HTML'
+              codigo='
+              <nav class="menu-lateral"> <-- aqui se agrega .abierto (notas estado abierto) -->
   
                 <button 
                   class="menu-lateral-boton" 
@@ -215,9 +217,11 @@ const estaAbierto = ref(true)
               contenga listas anidadas de hipervínculos y componentes de contenido colapsable <code>SisdaiColapsableNavegacion</code>
             </p>
   
-            <EjemploCodigoVertical
-              :tiene_ejemplo="false"
-              html='
+            <EjemploCodigo
+              :tiene_ejemplo='false'
+              margen_pre='m-l--10'
+              tipo='HTML'
+              codigo='
               <nav class="menu-lateral abierto">
   
                 <button 
@@ -277,9 +281,11 @@ const estaAbierto = ref(true)
               la sección aunque el menu tenga poca altura. 
             </p>
             
-            <EjemploCodigoVertical
-              :tiene_ejemplo="false"
-              html='
+            <EjemploCodigo
+              :tiene_ejemplo='false'
+              margen_pre='m-l--10'
+              tipo='HTML'
+              codigo='
               <div class="columna-4 columna-1-mov menu-lateral-fondo">
   
                 <nav class="menu-lateral">
@@ -294,9 +300,11 @@ const estaAbierto = ref(true)
               Es importante notar que para el <code>menu-lateral</code> en vista de celular, se mantiene una columna;
               misma que debe restarse de la sección del contenido que aparezca en la vista, como se muestra a continuación.
             </p>
-            <EjemploCodigoVertical
-              :tiene_ejemplo="false"
-              html='
+            <EjemploCodigo
+              :tiene_ejemplo='false'
+              margen_pre='m-l--10'
+              tipo='HTML'
+              codigo='
               <div class="columna-4 columna-1-mov menu-lateral-fondo">
   
                 <nav class="menu-lateral">

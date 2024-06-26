@@ -10388,6 +10388,14 @@ span.controlador-vis label, span.controlador-vis legend,
     visibility: hidden;
   }
 }
+.desbordado-x {
+  overflow-x: auto;
+}
+
+.desbordado-y {
+  overflow-y: auto;
+}
+
 .a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
 .a11y-simplificada input[type=button],

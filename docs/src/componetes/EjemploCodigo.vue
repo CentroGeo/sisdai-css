@@ -1,33 +1,29 @@
 <script setup>
   defineProps({
-    html: {
+    codigo: {
       type: String,
       required: true
+    },
+    margen_pre: {
+      type: String,
+      default: 'm-l--7'
     },
     tipo: {
       type: String,
       required: true
+    },
+    tiene_ejemplo: {
+      type: Boolean,
+      default: true
     }
   })
 </script>
 <template>
-  <div class="ej-codigo">
-    <code>{{ tipo }}</code>
-    <pre>{{ html }}</pre>
+  <div>
+    <div v-if="tiene_ejemplo" v-html="codigo"></div>
+    <div class="fondo-color-informacion borde-redondeado-8 texto-tamanio-1 desbordado-x m-t-1 p-1">
+      <code class="texto-color-informacion">{{ tipo }}</code>
+      <pre :class="margen_pre">{{ codigo }}</pre>
+    </div>
   </div>
 </template>
-<style lang="scss">
-.ej-codigo {
-  background: var(--fondo-acento);
-  border-radius: 8px;
-  font-size: 0.75rem;
-  margin: 0;
-  code {
-    display: block;
-    padding: 4px;
-  }
-  pre {
-    margin: -1rem;
-  }
-}
-</style>

@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -13,8 +13,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="fondo-color-primario">
             var(--fondo)
           </p>
@@ -22,8 +23,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="fondo-color-neutro">
             var(--fondo-neutro)
           </p>
@@ -31,8 +33,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="fondo-color-acento">
             var(--fondo-acento)
           </p>
@@ -40,8 +43,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="fondo-color-informacion">
             var(--fondo-informacion)
           </p>
@@ -49,8 +53,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="fondo-color-confirmacion">
             var(--fondo-confirmacion)
           </p>
@@ -58,8 +63,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="fondo-color-alerta">
             var(--fondo-alerta)
           </p>
@@ -67,8 +73,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="fondo-color-error">
             var(--fondo-error)
           </p>

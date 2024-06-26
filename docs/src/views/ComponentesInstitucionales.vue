@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="m-y-maximo">
@@ -48,9 +48,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </div>
     </nav>
     <div class="contenedor ancho-lectura m-y-1">
-      <EjemploCodigoVertical
-      :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <nav class="navegacion navegacion-gobmx" aria-label="Menú Gobierno de México">
           <div class="nav-contenedor-identidad">
             <a href="#" class="nav-hiperviculo-logo">
@@ -129,9 +130,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </div>
     </nav>
     <div class="contenedor ancho-lectura m-y-1">
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <nav class="navegacion navegacion-conahcyt" aria-label="Menú principal">
           <div class="nav-contenedor-identidad">
             <a href="#" class="nav-hiperviculo-logo">
@@ -234,9 +236,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </div>
     </footer>
     <div class="contenedor ancho-lectura m-y-1">
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <footer class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
           <div class="flex flex-wrap">
             
@@ -364,9 +367,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
       </div>
     </footer>
     <div class="contenedor ancho-lectura m-y-1">
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <footer class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
           <div class="flex flex-wrap">
             <div class="columna-8 columna-8-esc">

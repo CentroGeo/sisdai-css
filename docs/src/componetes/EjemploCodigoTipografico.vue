@@ -12,14 +12,14 @@
 <template>
   <div class="ej-horizontal flex borde-b borde-color-secundario">
     <div class="columna-8 columna-6-esc" v-html="html"></div>
-    <div class="columna-8 columna-6-esc">
-      <pre class="codigo">{{ html }}</pre>
+    <div class="columna-8 columna-6-esc fondo-color-informacion borde-redondeado-8 texto-tamanio-1 desbordado-x m-y-1">
+      <pre class="m-l--3">{{ html }}</pre>
     </div>
-    <div class="columna-8 columna-4-esc propiedades p-t-1">
-      <ul v-for="(dispositivo, index) in propiedades" :key="index">
+    <div class="columna-8 columna-4-esc propiedades p-t-1 texto-tamanio-1">
+      <ul class="lista-limpia" v-for="(dispositivo, index) in propiedades" :key="index">
         <li v-for="(prop, index) in dispositivo" :key="index">
           <b>{{ prop.titulo }}</b>
-          <span>{{ prop.nombre }}</span>
+          <span class="texto-color-secundario m-r-1">{{ prop.nombre }}</span>
           {{ prop.valor }}
         </li>
       </ul>
@@ -28,27 +28,10 @@
 </template>
 <style lang="scss">
 .ej-horizontal {
-  .codigo {
-    font-size: 0.75rem;
-    padding: 0;
-    margin: -0.75rem;
-  }
   .propiedades {
     display: flex;
-    font-size: 0.75rem;
-    line-height: 1.5em;
     ul {
       flex: 1 1 50%;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      margin: 0;
-    }
-    span {
-      color: var(--texto-secundario);
-      margin-right: 8px;
     }
   }
 }

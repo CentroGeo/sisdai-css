@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
 
@@ -37,8 +37,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             El <code>indice-contenido</code> se compone de un título <code>indice-contenido-titulo</code>
             y un contenedor <code>indice-contenido-contenedor</code> en el cual se espera que contenga hipervínculos locales.
           </p>
-          <EjemploCodigoVertical 
-            html='
+          <EjemploCodigo 
+            tipo='HTML'
+            codigo='
             <div class="indice-contenido">
               <p 
                 class="indice-contenido-titulo" 
