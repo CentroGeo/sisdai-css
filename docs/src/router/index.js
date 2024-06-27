@@ -228,6 +228,11 @@ const router = createRouter({
           component: () => import('../views/ComponenteControlDeslizante.vue')
         },
         {
+          path: 'control-deslizante-contenido',
+          name: 'control-deslizante-contenido',
+          component: () => import('../views/ComponenteControlDeslizanteContenido.vue')
+        },
+        {
           path: 'control-acercar-alejar',
           name: 'control-acercar-alejar',
           component: () => import('../views/ComponenteControlAcercarAlejar.vue')
