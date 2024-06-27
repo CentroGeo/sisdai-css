@@ -18,45 +18,45 @@
 fieldset,
 .formulario-horizontal {
   &.formulario-error {
-    border-color: var(--borde-error); // TODO
+    border-color: var(--borde-error);
 
     .form-campo-base {
-      border-color: var(--borde-error); // TODO
+      border-color: var(--borde-error);
     }
 
     .formulario-ayuda {
-      color: var(--texto-error); // TODO
+      color: var(--texto-error);
     }
   }
 
   &.formulario-confirmacion {
-    border-color: var(--borde-informacion); // TODO
+    border-color: var(--borde-confirmacion);
 
     .form-campo-base {
-      border-color: var(--borde-informacion); // TODO
+      border-color: var(--borde-confirmacion);
     }
     .formulario-ayuda {
-      color: var(--texto-confirmacion); // TODO
+      color: var(--texto-confirmacion);
     }
   }
 }
 
 .form-campo-base {
   &.campo-error {
-    border-color: var(--borde-error); // TODO
+    border-color: var(--borde-error);
   }
 
   &.campo-confirmacion {
-    border-color: var(--borde-informacion); // TODO
+    border-color: var(--borde-confirmacion);
   }
 }
 
 .formulario-ayuda {
   &.ayuda-error {
-    color: var(--texto-error); // TODO
+    color: var(--texto-error);
   }
 
   &.ayuda-confirmacion {
-    color: var(--texto-confirmacion); // TODO
+    color: var(--texto-confirmacion);
   }
 }

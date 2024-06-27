@@ -7,14 +7,23 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Listas</h1>
       <p>
-        Los estilos se aplican directamente a las etiquetas nativas para listas, 
-        mismas que recomendamo utilizar observando los requerimientos del HTML semántico. 
+        Se recomienda aplicar los estilos directamente a las etiquetas nativas 
+        de listas <code>&lt;ol/></code> y <code>&lt;ul/></code>, cumpliendo con 
+        los requerimientos del HTML semántico. Esto asegura una integración 
+        coherente y accesible dentro de la estructura web. 
       </p>
-      <p>
-        Tanto las listas ordenadas <code>&lt;ol/></code> como las desordenadas <code>&lt;ul/></code> se pueden 
-        anidar agregando un espacio de sangría en cada nivel como se ve en los ejemplos.
-        En la lista ordenada además se incrementa la numeración de sub elementos en cada nivel.
-      </p>
+      <ul>
+        <li>
+          Listas ordenadas <code>&lt;ol/></code>: se pueden anidar, incrementando 
+          la numeración de los subelementos en cada nivel. Esto ayuda a mantener una 
+          jerarquía clara y entender la estructura de los elementos listados.
+        </li>
+        <li>
+          Listas desordenadas <code>&lt;ul/></code>: también admiten anidación con un 
+          espacio de sangría que se incrementa con cada nivel, facilitando la distinción 
+          visual entre diferentes niveles y subniveles. 
+        </li>
+      </ul>
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">

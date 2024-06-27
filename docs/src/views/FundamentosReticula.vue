@@ -8,12 +8,10 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h1>Retícula</h1>
       <p>
-        Los contenedores, la retícula y todos los elementos responsivos cambian de disposición o tamaño 
-        de <code>mov</code> a <code>esc</code> pasando de <var>768px</var> de ancho de pantalla.
-      </p>
-      <p class="nota">
-        Los colores utilizados en la documentacion son únicamente de referencia,
-        nada en estas clases agrega color.
+        Los contenedores, la retícula y todos los elementos responsivos modifican su disposición o 
+        tamaño de <code>mov</code> a <code>esc</code> al superar los 768px de ancho de pantalla. 
+        Los colores utilizados en la documentación son únicamente referenciales; no se añade 
+        color mediante estas clases.
       </p>
 
       <h2 class="m-t-10">
@@ -22,13 +20,11 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         Columnas
       </h2>
       <p>
-        Las clases de columnas se utilizan dentro de un contenedor con la clase <code>.flex</code> ó <code>.grid</code>. 
-        Se escribieron ambas opciones por las diferentes propiedades que pueden utilizar para cada estilo de display.
-        Las columnas funcionan de la misma manera, pero las propiedades del contenedor son especificas del tipo.
-      </p>
-      <p>
-        La retícula compone de 16 clases de columnas separadas a 24px en escritorio, 
-        que pasan a ser únicamente 8 columnas separadas por 16px para dispositivos móviles. 
+        Las <i>clases</i> de columnas se emplean dentro de contenedores que usan las clases <code>.flex</code> ó 
+        <code>.grid</code>, adaptadas a las propiedades específicas de cada tipo de visualización. Aunque las columnas 
+        funcionan de manera similar en ambos casos, las propiedades de los contenedores son específicas del estilo de 
+        visualización elegido. La retícula incluye 16 clases de columnas, con separaciones de 24px en escritorio y 8 
+        columnas con separaciones de 16px para dispositivos móviles.
       </p>
       <EjemploPropiedades
         :propiedades="[[
@@ -94,8 +90,15 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         Tamaño de columnas
       </h2>
       <p>
-        Los nombres de las columnas son numericas <code>columna-#</code> en donde # es la cantidad de columnas a las que equivale el bloque.
-        Cuando en dispositivos móviles se utiliza un número de columna mayor que 8, la columna se ajusta al ancho del 100%.
+        Las columnas se identifican mediante nombres numéricos que indican cuántas columnas abarca cada bloque dentro 
+        de una retícula. La nomenclatura utilizada es  <code>columna-#</code>, donde <code>#</code> representa la 
+        cantidad de columnas que el bloque ocupa en un contenedor más amplio. Por ejemplo, <code>columna-3</code> 
+        significa que el bloque ocupa tres columnas en la retícula. 
+      </p>
+      <p>
+        En dispositivos móviles, el diseño responsivo modifica el comportamiento de las columnas para adaptarse a 
+        pantallas más pequeñas. Si se utiliza el número de columna <code>#</code> que excede las 8 columnas 
+        disponibles en móviles, el sistema automáticamente ajusta el ancho del bloque a 100% del contenedor.
       </p>
     </div>
     <EjemploReticula
@@ -382,8 +385,8 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h3 class="m-t-5">Tamaño responsivo</h3>
       <p>
-        Existen clases responsivas para los dispositivos <code>-mov</code> <code>-esc</code>. 
-        Estas clases tienen mayor prioridad que las que no especifican el dispositivo para poder reformatear la disposicion en caso de ser necesario.
+        Las <i>clases</i> responsivas para dispositivos (<code>-mov</code> <code>-esc</code>) tienen 
+        prioridad sobre las <i>clases</i> generales para permitir reajustes de disposición según sea necesario.
       </p>
     </div>
     <EjemploReticula
@@ -405,9 +408,10 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         alineación de contenido
       </h2>
       <p>
-        Aprovechando las propiedades de los contenedores flex, se crearon clases para aprovechar la flexibilidad del acomodo de sus columnas.
-        Las clases de posicion siguen la lógica de <code>flex-contenido-POSICION</code>, en donde posición puede tomar los valores de 
-        inicio, final, centrado, espaciado, alrededor y equidistante.
+        Utilizando las <i>propiedades</i> flexibles de los contenedores, se han creado clases que maximizan la 
+        adaptabilidad en la disposición de las columnas. Estas <i>clases</i> de posición utilizan el formato 
+        <code>flex-contenido-POSICION</code>, donde la posición puede tomar los valores de: inicio, 
+        final, centrado, espaciado, alrededor o equidistante.
       </p>
     </div>
     <h3 class="m-b-0 m-t-5">flex-contenido-inicio</h3>
@@ -480,12 +484,12 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">
         <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" ref="noopener noreferrer">Flex</a>
-        para vista simplificada
+        para vista mostrar solo texto
       </h2>
       <p>
-        Existe una clase especial <code>.flex-columnas-100-al-simplificar</code> que se le puede agregar a <code>.flex</code>, 
-        la cual indicará que todas sus <code>.columna-#</code> deberán escalarse a un ancho del 100% de la pantalla 
-        cuando se seleccione la opción <code>Mostrar solo texto</code> del menú de accesibilidad.
+        Se ha diseñado una <i>clase</i> especial, <code>.flex-columnas-100-al-simplificar</code>, que se puede añadir 
+        a <code>.flex</code> para que todas las <code>.columna-#</code> se escalen a un ancho de 100% de la 
+        pantalla cuando se active la opción <code>Mostrar solo texto</code> del menú de accesibilidad..
       </p>
     </div>
 
@@ -506,12 +510,9 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/columns" target="_blank" ref="noopener noreferrer">Columns</a>
       </h2>
       <p>
-        Otra forma de utilizar columnas, es con la propiedad columnas. Es una propiedad muy sencilla a la que únicamente
-        se le puede especificar la cantidad de columnas y el espacio entre ellas.
-      </p>
-      <p>
-        Para unificar las columnas se pueden utilizar con las 16 de columnas separadas a 24px en escritorio, 
-        y 8 columnas separadas por 16px para dispositivos móviles. 
+        La <i>propiedad</i> de <code>columnas</code> es una forma sencilla de gestionar la cantidad de columnas y 
+        el espacio entre ellas. Las configuraciones permiten utilizar las mismas 16 columnas separadas por 24px en 
+        escritorio y 8 columnas separadas por 16px para dispositivos móviles. 
       </p>
       <EjemploPropiedades
         :propiedades="[[
@@ -556,10 +557,8 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         columnas responsivas
       </h3>
       <p>
-        Las columnas en este caso tambien cuentan con tamaños para cada dispositivo,
-        que al igual que en el resto de los elementos se utiliza con los prefijos 
-        <code>-mov</code> para dispositivos móviles
-        y <code>-esc</code> para dispositivos de escritorio.
+        Las columnas también cuentan con tamaños adaptativos para cada tipo de dispositivo, utilizando los 
+        prefijos <code>-mov</code> para dispositivos móviles y <code>-esc</code> para escritorio. 
       </p>
       <EjemploPropiedades
         :propiedades="[[

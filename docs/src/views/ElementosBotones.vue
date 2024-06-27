@@ -7,21 +7,20 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h1>Botones</h1>
       <p>
-        Los estilos de botones se aplican a las etiquetas nativas para botones <code>button</code>, 
-        <code>input[button]</code>, <code>input[submit]</code> y <code>input[reset]</code>. 
-        Etiquetas que recomendamos utilizar observando los requerimientos del HTML semántico.
+        Los <i>estilos</i> de botones están diseñados para aplicarse a las etiquetas nativas de HTML: 
+        <code>button</code>, <code>input[button]</code>, <code>input[submit]</code> e <code>input[reset]</code>. 
+        Recomendamos utilizar estas etiquetas cumpliendo con los requerimientos del HTML semántico. 
       </p>
       <p>
-        Aún así, existe la clase <code>.boton</code> para agregarle el estilo a otro tipo de elemento,
-        al que además deberá agregársele el rol de boton <code>role="button"</code> y en el que se 
-        debe cuidar mantener la funcionalidad de un botón a través de funciones de javascript.
+        Para elementos no nativos que requieran estilos de botón, proporcionamos la clase 
+        <code>.boton</code>. A estos elementos se les debe asignar el atributo <code>role="button"</code> 
+        para asegurar accesibilidad y mantener la funcionalidad de un botón mediante funciones de JavaScript. 
       </p>
       <p>
-        Hay que recorder, que por accesibilidad los botones deben ser elementos que hacen una accion,
-        como enviar un formulario o descargar un documento, no se deben utilizar las clases únicamente 
-        por cómo se ven visualmente.
+        Es importante recordar que los botones deben ser utilizados para realizar acciones concretas, 
+        como enviar un formulario o descargar un documento. No se deben usar las clases de botón solo 
+        por su apariencia visual, ya que esto podría afectar la accesibilidad. 
       </p>
-      
     </div>
 
     <div class="flex">
@@ -84,12 +83,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Botones primario y secundario
       </h2>
       <p>
-        El <code>boton-primario</code>, también conocido como llamado a la acción (<span lang="en">call to action o CTA</span> en inglés) 
-        se utiliza para atraer la atención de la persona usuaria hacia una acción. 
+        El <code>boton-primario</code>, también conocido como “llamado a la acción” 
+        (<span lang="en">call to action o CTA</span> en inglés) se utiliza para 
+        captar la atención de la persona usuaria hacia una acción.
       </p>
       <p>
-        El <code>boton-secundario</code> se utiliza cuando se tengan dos o más acciones juntas
-        para restar importancia a acciones como cancelar. 
+        El <code>boton-secundario</code> se emplea para situaciones donde hay 
+        múltiples acciones y es necesario diferenciar la importancia, por ejemplo, 
+        en botones de cancelar o retroceder. 
       </p>
     </div>
     <div class="flex">
@@ -166,7 +167,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Botón chico, regular y grande
       </h2>
       <p>
-        El tamaño del botón no afecta el color, pueden mezclarse ambas clases.
+        El tamaño de un botón, sea chico, regular o grande, no influye en su color. 
+        Las clases correspondientes al tamaño pueden combinarse libremente con las clases de color. 
       </p>
     </div>
     <div class="flex flex-contenido-centrado">

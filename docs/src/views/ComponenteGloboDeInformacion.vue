@@ -8,12 +8,21 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Globo de información</h1>
       <p>
-        Directiva declarada en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-      </p>
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Globo de información" y sus características particulares.
+      </p> 
       <p>
-        Comunmente conocidos como Tooltips, estas directivas funcionan para cualquier elemento html o componente de vue, 
-        agregando la directiva <code>v-globo-informacion</code> o <code>v-globo-informacion-extendido</code>.
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
+      </p>
+
+      <p>
+        Comúnmente conocido como “Tooltips”, el globo de información puede aplicarse a cualquier elemento HTML 
+        o componente de Vue. Se implementa agregando la directiva <code>v-globo-informacion</code> 
+        o <code>v-globo-informacion-extendido</code>, proporcionando información adicional a la persona usuaria. 
       </p>
     </div>
 

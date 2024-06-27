@@ -6,24 +6,32 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Tarjetas</h1>
       <p>
-        Las tarjetas son un componente de diseño en el que todos sus elementos son opcionales,
-        razón por la cual se crearon en la sección de elementos compuestos,
-        para darle la flexibilidad al desarrollador de hacer lo que se requiera en determinado proyecto.
+        Las tarjetas son componentes flexibles que se componen de elementos opcionales adaptados a 
+        las necesidades específicas de cada proyecto. La estructura básica de una tarjeta incluye: 
       </p>
+      <ul>
+        <li>
+          Contenedor principal: utiliza la clase <code>.tarjeta</code>.
+        </li>
+        <li>
+          Imagen: es opcional y se puede agregar con la clase <code>.tarjeta-imagen</code>.
+        </li>
+        <li>
+          Cuerpo de la tarjeta: puede agregarse como <code>.tarjeta-cuerpo</code> y contener cualquier elemento HTML. 
+          Frecuentemente incluye: <code>.tarjeta-etiqueta</code> (para texto cortos) y <code>.tarjeta-titulo</code> 
+          para agregar título a la tarjeta.
+        </li>
+        <li>
+          Pie de la tarjeta: es un elemento opcional que se agrega con la clase <code>.tarjeta-pie</code>.
+          Es utilizado para agregar elementos interactivos como botones o hipervínculos al final de la tarjeta.
+        </li>
+      </ul>
     </div>
 
     <div class="ancho-lectura">
       <h2 class="m-t-10">Tarjetas de contenido</h2>
       <p>
-        Las tarjetas de contenido se conforman de un contenedor principal
-        llamado con la clase <code>.tarjeta</code> en el que puede existir
-        una imagen <code>img.tarjeta-imagen</code>, un contenedor de contenido general <code>div.tarjeta-cuerpo</code>
-        y un <code>div.tarjeta-pie</code> para agregar botones o hipervínculos.
-      </p>
-      <p>
-        En el <code>div.tarjeta-cuerpo</code> puede existir cualquier elemento de html,
-        pero tiene dos clases especiales para agregar un texto pequeño de <code>.tarjeta-etiqueta</code>
-        y un <code>.tarjeta-titulo</code> de la tarjeta.
+        Las tarjetas de contenido siguen la estructura básica anteriormente descrita. 
       </p>
       <EjemploCodigo
         :tiene_ejemplo="false"
@@ -88,8 +96,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Tarjetas de contenido horizontal</h2>
       <p>
-        Tienen los mismos elementos que las tarjetas de contenido,
-        con la diferencia que en su versión de escritorio se muestran de manera horizontal.
+        Siguen la misma estructura básica de las tarjetas, pero se presentan de manera horizontal en la versión de escritorio. 
       </p>
 
       <EjemploCodigo
@@ -144,17 +151,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Tarjetas de hipervínculo interno</h2>
       <p>
-        En este caso el elemeto principal, el contenedor de la tarjeta 
-        es un hipervínculo con la clase <code>.tarjeta-hipervinculo-interno</code>.
+        Las tarjetas de hipervínculo interno utilizan la clase <code>.tarjeta-hipervinculo-interno</code> 
+        como contenedor principal. Este elemento actúa como un hipervínculo, 
+        envolviendo todos los componentes de la tarjeta.
       </p>
       <p>
-        También como el resto de las tarjetas puede tener una <code>.tarjeta-imagen</code> y
-        un contenedor de <code>.tarjeta-cuerpo</code> al que se le puede agregar cualquier 
-        elemento, pero mantiene las clases especiales de <code>.tarjeta-titulo</code> y <code>.tarjeta-etiqueta</code>.
-      </p>
-      <p>
-        Obviamente a este elemento no se le deben agregar hipervínculos ni botones dentro! 
-        porque el contenedor principal ya tiene la acción del hipervínculo.
+        Incluye los mismos elementos que la estructura básica de las tarjetas, pero no debe contener 
+        otros hipervínculos o botones internos para evitar conflictos con la acción principal del hipervínculo. 
       </p>
       <EjemploCodigo
         :tiene_ejemplo="false"
@@ -199,7 +202,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/baghira.jpg" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-titulo">Título de la tarjeta</p>
-            <p>Parrafo normal, para agregar una descripción pequeña.</p>
+            <p>Párrafo normal, para agregar una descripción pequeña.</p>
           </div>
         </a>
       </div>
@@ -209,17 +212,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Tarjetas de hipervínculo externo</h2>
       <p>
-        Para éste tipo de tarjeta se espera que el contenedor principal sea un hipervínculo
-        externo con la clase <code>.tarjeta-hipervinculo-externo</code>.
-      </p>
-      <p>
-        Esta tarjeta tiene un contenedor <code>.tarjeta-imagen</code> para posicionar la imagen al fondo,
-        un contenedor sobre la imagen para agregar un degradado <code>.tarjeta-degradado</code> que mejore
-        la legibilidad del <code>.tarjeta-cuerpo</code> que acepta cualquier tipo de texto.
-      </p>
-      <p>
-        Obviamente a este elemento no se le deben agregar hipervínculos ni botones dentro! 
-        porque el contenedor principal ya tiene la acción del hipervínculo.
+        Las tarjetas de hipervínculo externo usan la clase <code>.tarjeta-hipervinculo-externo</code> 
+        como contenedor principal. Incluye un degradado <code>.tarjeta-degradado</code> sobre la 
+        imagen de fondo para mejorar la legibilidad, atenuando visualmente los detalles de la imagen 
+        donde se superpone el texto. Al igual que las tarjetas de hipervínculos internos, no deben 
+        contener hipervínculos ni botones adicionales dentro del contenedor principal.
       </p>
       <EjemploCodigo
         :tiene_ejemplo="false"

@@ -29,14 +29,25 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <div class="ancho-lectura">
           <h1>Índice de contenido <span class="etiqueta">preliminar</span></h1>
           <p>
-            Estilos para el componente <code>SisdaiIndiceDeContenido</code> declarado en la biblioteca 
-            <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-            Este componente se utiliza como un menú de navegación entre distinas secciones de una vista.
-          </p>
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Índice de contenido" y sus características particulares.
+      </p> 
+      <p>
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
+      </p>
+
           <p>
-            El <code>indice-contenido</code> se compone de un título <code>indice-contenido-titulo</code>
-            y un contenedor <code>indice-contenido-contenedor</code> en el cual se espera que contenga hipervínculos locales.
+            El componente <code>SisdaiIndiceDeContenido</code> está diseñado para funcionar como un menú de navegación 
+            entre distintas secciones de una vista. Incluye un título <code>indice-contenido-titulo</code> y un 
+            contenedor <code>indice-contenido-contenedor</code>, el cual debe albergar hipervínculos locales que 
+            faciliten la navegación directa a las secciones correspondientes. Este componente es esencial para mejorar 
+            la orientación de la persona usuaria dentro de sitios o aplicaciones complejas. 
           </p>
+          
           <EjemploCodigo 
             tipo='HTML'
             codigo='

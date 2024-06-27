@@ -6,19 +6,15 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h1>Tipografía</h1>
       <p>
-        El Sisdai utiliza <a href="https://fonts.google.com/specimen/Montserrat" target="_blank" rel="noopener noreferrer">Montserrat</a> 
-        como familia tipográfica base, con un tamaño de 16px que se equivale a 1rem.  
-      </p>
-      <p>
-        Todas las tipografías se calculan en <code>rem</code> para que al momento de
-        cambiar el tamaño de la tipografía todos los textos se ajusten manteniendo la
-        relación jerárquica del tamaño.
-      </p>
-      <p>
-        Las variables de familia tipografica y tamaño estan
-        declaradas dentro del archivo <code>src/_variables.scss</code> 
-        de la carpeta raiz del proyecto, bajo los nombres de
-        <code>--tipografia-familia</code> y <code>--tipografia-tamanio</code>
+        El Sistema de Diseño y Accesibilidad para la Investigación (Sisdai) utiliza 
+        <a href="https://fonts.google.com/specimen/Montserrat" target="_blank" rel="noopener noreferrer">Montserrat</a> 
+        como su familia tipográfica predeterminada, con un tamaño base de 16px, 
+        equivalente a 1rem. Todas las medidas tipográficas están definidas en 
+        <code>rem</code> para asegurar que, al cambiar el tamaño base, todos 
+        los textos se ajustan proporcionalmente manteniendo la jerarquía visual. 
+        Las variables de familia tipográfica y tamaño están declaradas en el archivo 
+        <code>src/_variables.scss</code> en la carpeta raíz del proyecto, bajo los nombres
+        <code>--tipografia-familia</code> y <code>--tipografia-tamanio</code>.
       </p>
     </div>
 
@@ -26,10 +22,11 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Títulos</h2>
       <p>
-        Para todas las etiquetas de heading y clases de titulos el
-        interlineado se mantiene de 1.25em, el peso de la tipografia es medium
-        (500) y tienen margenes superior e inferior de 24px 
-        <i>*con la excepción del h1 en su versión de escritorio</i>.
+        Para todas las etiquetas de encabezado (heading) y clases de títulos, 
+        el interlineado se mantiene en 1.25em y la tipografía tiene un peso 
+        medio (medium 500). Además, todos los encabezados y títulos incluyen 
+        márgenes superior e inferior de 24px, excepto para el <code>h1</code> 
+        en su versión de escritorio donde estas medidas pueden variar. 
       </p>
     </div>
     <EjemploCodigoTipografico 
@@ -116,9 +113,9 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Parrafos</h2>
       <p>
-        El texto en general tiene el tamaño de 1rem con interlineado
-        de 1.5em y su peso tipográfico es regular (400).
-        Los parrafos tienen margenes superior e inferior de 24px.
+        El tamaño de texto general es de 1 rem, con un interlineado de 
+        1.5em y un peso tipográfico 400 (regular). Además, los párrafos 
+        cuentan con márgenes superior e inferior de 24px.
       </p>
     </div>
     <EjemploCodigoTipografico 
@@ -237,7 +234,8 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Notas</h2>
       <p>
-        Notas es un estilo de parrafo con texto pequeño, puede utilizarse con o sin título y con o sin contenedor.
+        El <i>estilo</i> <code>notas</code> es un tipo de párrafo con texto más pequeño, 
+        que puede usarse con o sin título y con o sin contenedor. 
       </p>
     </div>
 
@@ -302,9 +300,9 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Etiquetas de texto en línea</h2>
       <p>
-        Es importante utilizar las etiquetas de html semánticamente.
-        Si lo que se requiere es por estilo y no por definición,
-        por favor acerquese a su equipo de diseño para hablar del tema.
+        Es importante utilizar las etiquetas HTML de manera semántica. 
+        Si el uso previsto es por estilo y no por definición, es 
+        recomendable consultar con el equipo de diseño.
       </p>
     </div>
     <EjemploCodigoTipografico 

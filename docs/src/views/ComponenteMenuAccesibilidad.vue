@@ -9,18 +9,24 @@ const estaAbierto = ref(true)
     <div class="ancho-lectura">
       <h1>Menú Accesibilidad</h1>
       <p>
-        Estilos para el componente <code>SisdaiMenuAccesibilidad</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-        El Menú de accesibilidad permite ejecutar a las funciones que agregan reglas de accesibilidad al sitio web.
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Menú accesibilidad" y sus características particulares.
+      </p> 
+      <p>
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
       </p>
 
       <p>
-        El menú de accesibilidad utiliza las clases del <code>menu-flotante</code> que se compone de un boton <code>menu-flotante-boton</code> a través del cuál
-        se agrega o quita la clase <code>abierto</code> sobre <code>menu-flotante</code> para mostrar u ocultar las
-        opciones de accesibilidad que se albergan en el contenedor <code>menu-flotante-contenedor</code>.
-        Además para posicionarlo a la derecha se debe utilizar la clase <code>menu-flotante-derecho</code>.
+        El componente <code>SisdaiMenuAccesibilidad</code> permite a las personas usuarias ejecutar funciones 
+        que incorporan reglas de accesibilidad en el sitio web. Consiste en un botón (<code>menu-flotante-boton</code>) 
+        que al ser activado, agrega o quita la clase <code>abierto</code> sobre <code>menu-flotante menu-flotante-derecho</code> para mostrar 
+        u ocultar las opciones de accesibilidad albergadas en el contenedor <code>menu-flotante-contenedor</code>. 
+        Las opciones se cargan desde el archivo de configuaración <code>opcionesDefault.js</code>.
       </p>
-
       
       <EjemploCodigo 
         :tiene_ejemplo='false'
@@ -81,11 +87,6 @@ const estaAbierto = ref(true)
       ' />
     
       <h2 class="m-t-10">Archivo de configuración</h2>
-      <p>
-        Las opciones de accesibilidad que se muestran dentro del menú de accesibilidad, 
-        en el componente se cargan desde el archivo <code>opcionesDefault.js</code>.
-        Las opciones mostradas en este ejemplo se tendrían que agregar de la siguiente manera:
-      </p>
       <EjemploCodigo 
         :tiene_ejemplo='false'
         tipo='javaScript'
@@ -118,7 +119,7 @@ const estaAbierto = ref(true)
           ]
       '/>
     </div>
-    
+
     <div class="menu-flotante menu-flotante-derecho" :class="{abierto: estaAbierto}">
       <button
         class="menu-flotante-boton"

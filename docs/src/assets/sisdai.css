@@ -6298,14 +6298,14 @@ fieldset.formulario-error .formulario-ayuda,
 }
 fieldset.formulario-confirmacion,
 .formulario-horizontal.formulario-confirmacion {
-  border-color: var(--borde-informacion);
+  border-color: var(--borde-confirmacion);
 }
 fieldset.formulario-confirmacion .form-campo-base, fieldset.formulario-confirmacion input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]), fieldset.formulario-confirmacion textarea, fieldset.formulario-confirmacion select,
 .formulario-horizontal.formulario-confirmacion .form-campo-base,
 .formulario-horizontal.formulario-confirmacion input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]),
 .formulario-horizontal.formulario-confirmacion textarea,
 .formulario-horizontal.formulario-confirmacion select {
-  border-color: var(--borde-informacion);
+  border-color: var(--borde-confirmacion);
 }
 fieldset.formulario-confirmacion .formulario-ayuda,
 .formulario-horizontal.formulario-confirmacion .formulario-ayuda {
@@ -6316,7 +6316,7 @@ fieldset.formulario-confirmacion .formulario-ayuda,
   border-color: var(--borde-error);
 }
 .form-campo-base.campo-confirmacion, input.campo-confirmacion:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]), textarea.campo-confirmacion, select.campo-confirmacion {
-  border-color: var(--borde-informacion);
+  border-color: var(--borde-confirmacion);
 }
 
 .formulario-ayuda.ayuda-error {

@@ -11,7 +11,7 @@
   })
 </script>
 <template>
-  <div class="p-3 borde borde-color-secundario texto-tamanio-1" :style="{'background-color': variable}">
+  <div class="p-3 borde borde-color-secundario texto-tamanio-1" :style="{'background': variable}">
     <code :style="{'color': texto}">{{ variable }}</code>
   </div>
 </template>

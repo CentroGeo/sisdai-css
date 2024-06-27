@@ -9,10 +9,6 @@ import pkg from '../../../package.json'
       Investigación (<a href="https://sisdai.conacyt.mx/" target="_blank">Sisdai</a>).
     </p>
     <p class="parrafo-texto-alto">
-      Se encuentra alojada de manera provisional dentro del proyecto local. Es decir sólo se puede acceder a ella
-      siguiendo las instrucciones de instalación descritas en el README.md de este proyecto.
-    </p>
-    <p class="parrafo-texto-alto">
       <a 
         :href="`https://codigo.conahcyt.mx/sisdai/sisdai-css/-/tree/v${pkg.version}`"
         target="_blank" 

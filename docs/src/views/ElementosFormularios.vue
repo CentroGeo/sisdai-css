@@ -6,12 +6,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h1>Formularios</h1>
       <p>
-        El Sisdai recomienda el uso de HTML semántico para mejorar la usabilidad y accesibilidad de la web.
-        Es por esto que reforzamos dando estilo a las etiquetas nativas para que se puedan utilizar sin agregar ninguna clase.
+        El Sistema de Diseño y Accesibilidad para la Investigación (Sisdai), fomenta el uso de HTML semántico 
+        para mejorar la usabilidad y accesibilidad de la web. Por ello, damos estilo a las etiquetas nativas 
+        para que puedan utilizarse eficientemente sin necesidad de añadir clases adicionales. 
       </p>
       <p>
-        Por otro lado, entendemos que existen componentes que necesitan mejor estructura para comprender su uso,
-        por lo que se crearon clases para dar contexto, ayuda, o simplemente estructurar mejor la información.
+        Reconocemos que algunos componentes requieren una estructura más definida para facilitar su comprensión. 
+        Así, hemos creado clases específicas que proporcionan contexto, asistencia o simplemente organizan mejor la información. 
       </p>
     </div>
     
@@ -19,29 +20,23 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <h2 class="m-t-10">Elementos</h2>
 
       <p>
-        La etiqueta <code>label</code> se recomienda siempre utilizarla y ligarla por medio de su atributo <code>for</code>
-        al <code>input</code> al que sirve de referecia.
+        Recomendamos siempre utilizar la etiqueta <code>&lt;label/></code>, vinculándola al <code>input</code>
+        correspondiente mediante el atributo <code>for</code>. Esta etiqueta puede incluir un elemento con la clase 
+        <code>.formulario-obligatoriedad</code> para indicar si el campo es opcional o requerido.       
       </p>
       <p>
-        La etiqueta <code>label</code> puede contener un elemento con la clase 
-        <code>.formulario-obligatoriedad</code> para agregarle información acerca de si el campo es opcional o requerido.
-        Esta última clase es únicamente de estilo, no reemplaza el uso del <code>required</code> en los campos y demás 
-        elementos del formulario.
+        Para las clases más generales de <code>&lt;input/></code> (excluyendo checkbox, radio y range), así 
+        como para selectores y áreas de texto, el ancho se adapta al contenedor o columna que los contiene, 
+        pero no excede los 700px para asegurar una buena legibilidad. 
       </p>
-      
       <p>
-        Tanto el campo de texto <code>input</code> para las clases mas generales (no checkbox, ni radio, ni range), 
-        como el selector y el área de texto; son del ancho del contenedor o columna que lo contenga, 
-        pero tiene un ancho máximo de <code>700px</code> para mejorar la legibilidad.
+        El <code>&lt;textarea/></code> tiene un alto mínimo de 120px, que puede incrementarse con el atributo 
+        <code>rows</code>. Este diseño facilita la escritura de contenido extenso sin restricciones visuales.
       </p>
 
       <p>
-        El área de texto <code>textarea</code> además tiene un alto mínimo de <code>120px</code>, 
-        ésta altura se puede incrementar con el atributo <code>rows</code> nativo del área de texto.
-      </p>
-
-      <p>
-        Opcionalmente se agrega la clase <code>.formulario-ayuda</code> para poner notas debajo de las etiquetas <code>input</code>.
+        Opcionalmente, se puede añadir la clase <code>.formulario-ayuda</code> para incluir notas informativas 
+        bajo las etiquetas de <code>input</code>.
       </p>
     </div>
 
@@ -238,7 +233,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         tipo='HTML'
         codigo='
           <label for="buscar">
-            Campo de busqueda
+            Campo de búsqueda
           </label>
           <input
             id="buscar"
@@ -325,7 +320,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         tipo='HTML'
         codigo='
           <label for="hora">
-            hora
+            Hora
           </label>
           <input 
             id="hora" 
@@ -400,10 +395,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura m-l-0">
       <h3 class="m-t-6">Casillas de verificacion</h3>
       <p>
-        Para las casillas de verificacion <code>checkbox</code> 
-        es importante que su etiqueta <code>label</code> 
-        se posicione justo después de ésta, ya es es a través 
-        del <code>label</code> que se crean los estilos.
+        Es importante que la etiqueta <code>&lt;label/></code> se posicione 
+        inmediatamente después del <code>checkbox</code>, pues es a través 
+        del <code>&lt;label/></code> que se aplican los estilos correspondientes.  
       </p>
     </div>
     <div class="grid">
@@ -477,9 +471,12 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura m-l-0">
       <h3 class="m-t-6">Checkboxes anidados</h3>
       <p>
-        Contenedor <code>.casillas-anidadas</code> subcontenedor <code>.casillas-subseleccion</code>.
-        Estas clases de contenedor funcionan tanto en <code>div</code>, 
-        como en listas ordenadas <code>ol</code> y desordenadas <code>ul</code>.
+        Es posible implementar el contenedor principal <code>.casillas-anidadas</code> que puede incluir 
+        tanto <code>&lt;div/></code> como listas ordenadas <code>&lt;ol/></code> y desordenadas <code>&lt;ul/></code>. 
+        Dentro de este contenedor, utilizamos el sub contenedor <code>.casillas-subseleccion</code> para 
+        agrupar elementos relacionados que pueden ser tanto campos de entrada <code>&lt;input/></code> como 
+        etiquetas <code>&lt;label/></code>. Con esto aseguramos que las clases se apliquen de manera uniforme, 
+        tanto en divisiones como en listas, lo cual facilita la organización y estilo de los elementos anidados. 
       </p>
     </div>
     <div class="grid">
@@ -571,11 +568,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura m-l-0">
       <h3 class="m-t-6">Botones de Radio</h3>
       <p>
-        Al igual que las casillas de verificacion,
-        en los botones de <code>radio</code>,
-        es importante que su etiqueta <code>label</code> 
-        se posicione justo después de ésta, ya es es a través 
-        del <code>label</code> que se crean los estilos.
+        Al igual que con las casillas de verificación, es fundamental que la etiqueta <code>&lt;label/></code> se sitúe 
+        justo después del botón de radio para que los estilos se apliquen correctamente a través del <code>&lt;label/></code>.
       </p>
     </div>
     <div class="grid">

@@ -22,11 +22,6 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Consideraciones en el área de desarrollo para poder mantener el estado <em>Enlaces subrayados</em>.
       </p>
       <p>
-        Pues nada, es tan simple que pues naa. Tomen agüita.
-      </p>
-    </div>
-    <div class="ancho-lectura">
-      <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
         debe existir la opcion de <em>Enlaces subrayados</em>, de la siguiente manera:
        </p>

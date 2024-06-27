@@ -8,16 +8,13 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
       <h1>Texto</h1>
       <h2 class="m-t-10">Tamaño</h2>
       <p>
-        Este sistema de diseño tiene un tamaño base de 16px equivalente a 1rem. 
-        Esta equivalencia ayuda a las personas desarrolladoras a establecer 
-        reglas que permiten adaptar el texto a los diferentes 
-        tamaños y resoluciones de dispositivos. 
-      </p>
-      <p>
-        A partir de esta base (16px) se establecen jerarquías preferentemente en múltiplos de 4. 
-        Sin embargo, pueden hacerse excepciones en los textos secundarios, 
-        como notas y pies de foto, donde el tamaño de la tipografía será 14px 
-        y en los subtítulos Nivel 6 donde es de 18px. 
+        El tamaño base del sistema es de 16px, que equivale a 1rem. Esta 
+        equivalencia facilita a las personas desarrolladoras establecer 
+        reglas adaptativas para diferentes tamaños y resoluciones de 
+        dispositivos. Basándose en esta medida, la jerarquía de tamaños 
+        se define generalmente en múltiplos de 4. Sin embargo, se permiten 
+        excepciones: los textos secundarios como notas y pies de foto tienen 
+        un tamaño de 14 px y los subtítulos de nivel 6 son de 18 px.  
       </p>
       
     </div>
@@ -125,9 +122,10 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura m-b-6">
       <h3 class="m-t-10">Tamaño responsivo</h3>
       <p>
-        Además se puede especificar para el dispositivo para 
-        el que se require determinado tamaño, agregando el sufijo
-        <code>-mov</code> ó <code>-esc</code>
+        Para adaptar el tamaño del texto según el dispositivo, 
+        se añaden los sufijos <code>-mov</code> para móviles o 
+        <code>-esc</code> para escritorio, especificando así 
+        el tamaño adecuado para cada tipo de pantalla.
       </p>
     </div>
     <EjemploCodigoTipografico 
@@ -148,8 +146,8 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Color de texto</h2>
       <p>
-        Existen clases de color para el texto equivalentes a
-        variables de color definidas en modo claro y oscuro para cada tema.
+        Se dispone de clases de color para el texto, correspondientes 
+        a variables definidas para modos claro y oscuros en cada tema.
       </p>
     </div>
     <EjemploCodigoTipografico 

@@ -7,15 +7,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Controlador Vis</h1>
       <p>
-        El <code>controlador-vis</code> es un campo especial que se utiliza para en gráficas 
+        El controlador-vis es un componente especializado que se emplea en 
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
-        y mapas <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>
-        para representar y controlar las variables que se muestran en la visualizacion.
+        y <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a> 
+        para gestionar y controlar las variables mostradas en las visualizaciones. 
+        Este controlador permite:
       </p>
       <p>
-        En estos ejemplos se usa la clase <code>muestra</code> en el elemento que contiene la <code>figura-variable</code> 
-        para mostrar como se vé el símbolo de una nomenclatura.<br>
-        Puede precendír de esta clase o customizarla para dar forma a los simbolos necesarios.
+        Utilizar la clase <code>muestra</code> en el elemento que contiene la <code>figura-variable</code> 
+        para demostrar cómo se visualiza el símbolo de una nomenclatura específica. Esta clase puede 
+        omitirse o personalizarse según se necesite para adaptar la forma de los símbolos. 
       </p>
     </div>
 
@@ -38,7 +39,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                   <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18">
                     <line x1="0" y1="18" x2="18" y2="0" style="stroke:#0d9fea;stroke-width:1;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:bevel;fill:transparent;"></line>
                   </svg>
-                  <span class="nombre-variable">Controlador con parrafo de lectura</span>
+                  <span class="nombre-variable">Controlador con párrafo de lectura</span>
                 </p>
               </div>
             </div>
@@ -151,7 +152,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <svg class="figura-variable" style="--controlador-vis-figura-alto: 18px; min-width: 18px;" width="18" height="18">
               <line x1="0" y1="18" x2="18" y2="0" style="stroke:#0d9fea;stroke-width:1;stroke-opacity:1;stroke-linecap:square;stroke-linejoin:bevel;fill:transparent;"></line>
             </svg>
-            <span class="nombre-variable">Controlador con parrafo de lectura</span>
+            <span class="nombre-variable">Controlador con párrafo de lectura</span>
           </p>
         </div>
         <EjemploCodigo
@@ -164,7 +165,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 ...
               </svg>
               <span class="nombre-variable">
-                Controlador con parrafo de lectura
+                Controlador con párrafo de lectura
               </span>
             </p>
           </div>
@@ -198,8 +199,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Tamaño</h2>
       <p>
-        Para controlar el tamaño de la <code>figura-variable</code> el <code>controlador-vis</code> tiene la variable de CSS
-        <code>--controlador-vis-figura-alto</code>, la cual se puede usar para modificar el tamaño de la figura.
+        A través de la variable CSS <code>--controlador-vis-figura-alto</code>, es posible modificar el tamaño de 
+        la <code>figura-variable</code>, permitiendo una adaptación precisa al diseño de la visualización. 
+
       </p>
     </div>
     <div class="flex flex-contenido-centrado">

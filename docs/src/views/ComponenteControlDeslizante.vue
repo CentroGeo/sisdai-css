@@ -7,14 +7,24 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Control deslizante</h1>
       <p>
-        Estilos para el componente <code>SisdaiControlDeslizante</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-      </p>
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Control deslizante" y sus características particulares.
+      </p> 
       <p>
-        Toma los estilos del <code lang="en">input type="range"</code>
-        pero le agrega estilos declarados en el componente
-        para cambiar el color de la barra conforme cambia el valor del atributo <code lang="en">value</code>,
-        como se muestra en el ejemplo, pero de manera dinámica.
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
+      </p>
+
+      <p>
+        El componente <code>SisdaiControlDeslizante</code> toma la base de 
+        un <code lang="en">input type="range"</code> pero se enriquece con 
+        estilos adicionales para modificar el color de la barra de progreso 
+        conforme al valor del atributo <code>value</code>, mostrando los cambios de manera 
+        dinámica. Este componente es clave para interfaces interactivas que 
+        requieren ajustes graduales de valores.
       </p>
       
       <EjemploCodigo

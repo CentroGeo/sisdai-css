@@ -6,9 +6,10 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="ancho-lectura">
       <h1>Tipografía en visualizaciones</h1>
       <p>
-        Estilos tipograficos para visualizaciones utilizada por las bibliotecas de gráficas 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
-        y mapas <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>.
+        Para las visualizaciones creadas con <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
+        y <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>, se aplican 
+        estilos tipográficos específicos que aseguran la legibilidad y la coherencia estética a lo largo de diferentes tipos de gráficas y 
+        mapas. Estos estilos están diseñados para complementar la presentación de datos y mejorar la experiencia de la persona usuaria.
       </p>
     </div>
 

@@ -212,7 +212,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
       <div class="columna-4">
         <p>Conahcyt</p>
-        <EjemploMuestraColor variable="var(--color-conahcyt-5)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-degradado)" texto="#fff"/>
         <EjemploMuestraColor variable="var(--color-conahcyt-4)" texto="#fff"/>
         <EjemploMuestraColor variable="var(--color-conahcyt-3)" texto="#fff"/>
         <EjemploMuestraColor variable="var(--color-conahcyt-2)" texto="#fff"/>

@@ -7,17 +7,25 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Hipervínculos</h1>
       <p>
-        Los estilos se aplican a las etiquetas nativas para hipervínculos <code>a</code>.
-        Etiqueta que recomendamo utilizar observando los requerimientos del HTML semántico.
+        Para los hipervínculos se aplican estilos a las etiquetas nativas <code>&lt;a/></code> 
+        las cuales recomendamos utilizar cumpliendo con los requerimientos del HTML semántico. 
+        Esto asegura que los enlaces se integren correctamente en la estructura de la página y 
+        sean accesibles para todas las personas usuarias. 
       </p>
       <p>
-        Aún así, existe la clase <code>.hipervinculo</code> para agregarle el estilo a otro tipo de elemento,
-        al que además deberá agregársele el rol de boton <code>role="link"</code> y en el que se 
-        debe cuidar mantener la funcionalidad de un hipervínculo a través de funciones de javascript.
+        Para aquellos casos donde se requiera aplicar estilos de hipervínculo a un elemento 
+        que no es un enlace nativo, se puede utilizar la clase <code>.hipervinculo</code>. 
+        A estos elementos se les debe asignar el atributo <code>role="link"</code> para 
+        preservar la semántica y asegurar que mantengan la funcionalidad de un hipervínculo, 
+        generalmente a través de funciones de JavaScript.
       </p>
       <p>
-        Al utilizar la propiedad <code>target="_blank"</code> se le añade un pseudoelemento
-        con el contenido <code>content:". Abre nueva pestaña.";</code>  para mejorar accesibilidad con lectores de pantalla.
+        Cuando se utiliza la propiedad <code>target="_blank"</code> para abrir enlaces en 
+        una nueva pestaña, se añade un pseudo elemento con el contenido <code>content:". Abre nueva pestaña."</code>. 
+        Este añadido mejora la experiencia para las personas usuarias que utilizan lectores 
+        de pantalla, proporcionando un contexto adicional sobre el comportamiento del enlace. 
+        Esta práctica ayuda a comunicar claramente que el enlace se abrirá en una nueva ventana 
+        o pestaña, lo cual es útil para la navegación accesible.
       </p>
     </div>
 

@@ -13,19 +13,24 @@ const estaAbierto = ref(true)
         <span class="etiqueta">preliminar</span>
       </h1>
       <p>
-        Estilos para el componente <code><code>SisdaiBotonFlotante</code></code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-      </p>
-      <p>  
-        Este permite tener enlaces fijos en todas las vistas del sitio,
-        posicionado el componente en el esquina inferior izquierda.
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Botón flotante" y sus características particulares.
+      </p> 
+      <p>
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
       </p>
       <p>
-        El botón flotante utiliza las clases del <code>menu-flotante</code> que se compone de un boton <code>menu-flotante-boton</code> a través del cuál
-        se agrega o quita la clase <code>abierto</code> sobre <code>menu-flotante</code> para mostrar u ocultar las
-        opciones de accesibilidad que se albergan en el contenedor <code>menu-flotante-contenedor</code>.
-        Además para posicionarlo a la izquierda se debe utilizar la clase <code>menu-flotante-izquierdo</code>.
-      </p>
+        El componente <code>SisdaiBotonFlotante</code> permite disponer de enlaces fijos 
+        accesibles en todas las vistas del sitio. Se posiciona en la esquina inferior 
+        izquierda. Para controlar su comportamiento, a la clase principal 
+        <code>.menu-flotante .menu-flotante-izquierdo</code> se le puede agregar o quitar la clase <code>.abierto</code>, 
+        la cual ajusta la visualización del icono de abrir/cerrar y gestiona la visibilidad 
+        de los enlaces dentro del cuerpo del componente. A continuación se muestra un ejemplo: 
+       </p>
 
       <EjemploCodigo
         :tiene_ejemplo='false'

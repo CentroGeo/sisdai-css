@@ -6,9 +6,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Botones compuestos <span class="etiqueta">preliminar</span></h1>
       <p>
-        Son botones especiales que además de utilizarce en lugares muy específicos,
-        algunos elementos no son botones, pero parecen,
-        y además requieren de una estructura específica para armarlos.
+        Son botones especiales y se utilizan en contextos muy específicos. 
+        Algunos elementos dentro de estos botones pueden no ser botones 
+        propiamente dichos, pero tienen apariencia de tales y requieren de 
+        una estructura específica para su correcta implementación.
       </p>
     </div>
 
@@ -16,8 +17,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Botón de descarga</h2>
       <p>
-        Es un tipo de boton en bloque que toma el ancho completo
-        del contenedor en donde se encuentre.
+        Este tipo de <i>botón</i> actúa como un bloque que se expande para ocupar 
+        el ancho completo del contenedor en el que se encuentra.
       </p>
     </div>
     <div class="flex flex-contenido-centrado">
@@ -67,9 +68,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
     <div class="ancho-lectura">
       <p>
-        Si el <code>.boton-descarga</code> fuera una etiqueta de hipervínculo, 
-        es necesario agregar la clase <code>.deshabilitado</code> al elemento para obtener el estado <code>disabled</code>
-        nativo del botón.
+        Si el botón de descarga se implementa utilizando una etiqueta de hipervínculo, 
+        es necesario añadir la clase <code>.deshabilitado</code> al elemento para simular 
+        el estado deshabilitado <code>disabled</code> propio de un botón.
       </p>
     </div>
 
@@ -123,25 +124,24 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Botón alternar</h2>
       <p>
-        El botón alternar consta de un contenedor <code>.boton-alternar</code>
-        en el que se agregan botones de radio, que se agrupan utilizando el mismo <code>name</code> 
-        para todos los campos.
-      </p>
-      <p>
-        Para utilizar el <code>.boton-alternar</code> como deshabilitado es necesario
-        agregar a los botones de radio el atributo <code>disabled</code> para cambiarle el estado,
-        el estilo y hacer que no puedan ser accedidos por medio del teclado.
+
+        El <i>botón</i> alternar se organiza mediante el contenedor <code>.boton-alternar</code>, 
+        dentro del cual se colocan botones de radio. Estos botones se agrupan utilizando el 
+        mismo atributo <code>name</code>, asegurando que funciones como un grupo único de selección. 
+        Para marcar el <code>.boton-alternar</code> como deshabilitado, se debe agregar el atributo 
+        <code>disabled</code> a cada botón de radio. Esto cambia su estado y estilo, impidiendo que 
+        sean accesibles mediante el teclado, lo cual es crucial para mantener la coherencia en la interfaz.
       </p>
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-6">
         <div class="boton-alternar" role="group" aria-label="Ejemplo grupo de elementos seleccionables">
           <input type="radio" id="a1" name="ejemplo" value="seleccionado" checked />
-          <label for="a1">Opcion 1</label>
+          <label for="a1">Opción 1</label>
           <input type="radio" id="a2" name="ejemplo" value="opcion" />
-          <label for="a2">Opcion 2</label>
+          <label for="a2">Opción 2</label>
           <input type="radio" id="a3" name="ejemplo" value="deshabilitado" />
-          <label for="a3">Opcion 3</label>
+          <label for="a3">Opción 3</label>
         </div>
       </div>
       <div class="columna-6">
@@ -155,13 +155,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               aria-label="Ejemplo grupo de elementos seleccionables"
             >
               <input id="a1" name="ejemplo" value="a1" type="radio" checked />
-              <label for="a1"> Opcion 1 </label>
+              <label for="a1"> Opción 1 </label>
               
               <input id="a2" name="ejemplo" value="a2" type="radio" />
-              <label for="a2"> Opcion 2 </label>
+              <label for="a2"> Opción 2 </label>
               
               <input id="a3" name="ejemplo" value="a3" type="radio" />
-              <label for="a3"> Opcion 3 </label>
+              <label for="a3"> Opción 3 </label>
             </div>
           '
         />
@@ -169,11 +169,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <div class="columna-6">
         <div class="boton-alternar" role="group" aria-label="Ejemplo grupo de elementos deshabilitados">
           <input type="radio" id="b1" name="ej-b" value="seleccionado" checked disabled />
-          <label for="b1">Opcion 1</label>
+          <label for="b1">Opción 1</label>
           <input type="radio" id="b2" name="ej-b" value="opcion" disabled />
-          <label for="b2">Opcion 2</label>
+          <label for="b2">Opción 2</label>
         </div>
-        Ej. Boton alternar deshabilitado
+        Ej. Botón alternar deshabilitado
       </div>
       <div class="columna-6">
         <EjemploCodigo
@@ -186,10 +186,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               aria-label="Ejemplo grupo de elementos deshabilitados"
             >
               <input id="b1" name="ej-b" value="b1" type="radio" checked disabled />
-              <label for="b1"> Opcion 1 </label>
+              <label for="b1"> Opción 1 </label>
               
               <input id="b2" name="ej-b" value="b2" type="radio" disabled />
-              <label for="b2"> Opcion 2 </label>
+              <label for="b2"> Opción 2 </label>
             </div>
           '
         />

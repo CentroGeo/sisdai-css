@@ -6,12 +6,12 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Listas compuestas</h1>
       <p>
-        Las listas compuestas <code>.lista-compuesta</code> son clases creadas para etiquetas de listas ordenadas <code>&lt;ol/></code> o desordenadas <code>&lt;ul/></code>. 
-        Pueden contener multiples elementos dentro del elemento de lista <code>&lt;li/></code>.
-      </p>
-      <p>
-        Dentro de los elementos de lista, todas comparten el bloque de <code>.lista-compuesta-cuerpo</code> que puede contener las clases 
-        <code>.lista-compuesta-titulo</code>, <code>.lista-compuesta-texto-primario</code> y <code>.lista-compuesta-texto-secundario</code>.
+        La <i>clase</i> <code>.lista-compuesta</code> está diseñada para etiquetas de listas 
+        ordenadas <code>&lt;ol/></code> o desordenadas <code>&lt;ul/></code> , permitiendo 
+        contener múltiples elementos dentro de cada <code>&lt;li/></code>. Estas listas 
+        incorporan el bloque <code>.lista-compuesta-cuerpo</code>, que puede incluir las clases 
+        <code>.lista-compuesta-titulo</code>, <code>.lista-compuesta-texto-primario</code> y 
+        <code>.lista-compuesta-texto-secundario</code>.
       </p>
     </div>
 
@@ -19,9 +19,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Lista avatar</h2>
       <p>
-        La clase <code>.lista-avatar</code> cada elemento de lista contiene un bloque de 
-        <code>.lista-avatar-imagen</code> para agregar una imagen circular y un bloque de <code>.lista-compuesta-cuerpo</code>. 
-        Dentro del elemento de la lista puede ir la etiqueta de hipervínculo conteniendo ambos bloques.
+        Cada elemento en la <i>clase</i> <code>.lista-avatar</code> contiene un bloque 
+        <code>.lista-avatar-imagen</code> para agregar una imagen circular y un bloque 
+        <code>.lista-compuesta-cuerpo</code>. Dentro del elemento de la lista, puede 
+        incluirse una etiqueta de hipervínculo que englobe ambos bloques. 
       </p>
     </div>
     <div class="flex flex-contenido-centrado">
@@ -101,9 +102,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Lista logotipo</h2>
       <p>
-        La clase <code>.lista-logotipo</code> cada elemento de lista contiene un bloque de 
-        <code>.lista-logotipo-imagen</code> para agregar una imagen rectangular y un bloque de <code>.lista-compuesta-cuerpo</code>. 
-        Dentro del elemento de la lista puede ir la etiqueta de hipervínculo conteniendo ambos bloques.
+        En la <i>clase</i> <code>.lista-logotipo</code>, cada elemento de la lista incorpora un bloque 
+        <code>.lista-logotipo-imagen</code> para una imagen rectangular y un bloque 
+        <code>.lista-compuesta-cuerpo</code>. Este diseño también puede incluir una etiqueta de 
+        hipervínculo que contenga ambos bloques. 
       </p>
     </div>
     <div class="flex flex-contenido-centrado">
@@ -158,12 +160,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Lista pictograma</h2>
       <p>
-        La lista <code>.lista-pictograma</code> utiliza pictogramas del sistema de diseño, que al utilizarse como tipografía,
-        varía su tamaño dependiendo de la etiqueta o clase a la que se agregue.
-      </p>
-      <p>
-        Para la correcta visualización de este tipo de lista, 
-        se recomienda utilizar el mismo tamaño de pictograma en todos sus elementos.
+        La <i>clase</i> <code>.lista-pictograma</code> utiliza pictogramas del sistema de diseño. 
+        Dado que estos pictogramas funcionan como tipografía, su tamaño varía dependiendo de la 
+        etiqueta o clase aplicada. Para mantener una presentación uniforme, se recomienda usar 
+        el mismo tamaño de pictograma en todos los elementos de la lista.
+
       </p>
     </div>
     <div class="flex flex-contenido-centrado">
@@ -220,8 +221,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Lista con acciones</h2>
       <p>
-        La clase <code>.lista-accion</code> puede contener un bloque de <code>.lista-compuesta-cuerpo</code> y un bloque
-        de <code>.lista-accion-acciones</code> en el que se pueden agregar tantos botones como requiera cada elemento de lista.
+        La <i>clase</i> <code>.lista-accion</code> incorpora los bloques <code>.lista-compuesta-cuerpo</code> y 
+        <code>.lista-accion-acciones</code>, donde se pueden agregar múltiples botones según las necesidades 
+        de cada elemento de la lista.
       </p>
     </div>
 
@@ -325,9 +327,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Lista con casillas</h2>
       <p>
-        La clase <code>.lista-casilla</code> requiere que se utilice un <code>&lt;input type="checkbox"/></code> 
-        seguido inmediatamente de su <code>&lt;label /></code>. 
-        En éste caso la etiqueta <code>&lt;label /></code> contendrá las clases de titulo, textos primario y secundario.
+        La <i>clase</i> <code>.lista-casilla</code> utiliza un <code>&lt;input type="checkbox"/></code> 
+        seguido inmediatamente por su etiqueta <code>&lt;label /></code>, la cual contiene las clases 
+        de textos primario, secundario y terciario, facilitando la estructura y accesibilidad de la lista. 
       </p>
     </div>
 

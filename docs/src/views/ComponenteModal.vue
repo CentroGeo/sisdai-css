@@ -44,15 +44,25 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
     <div class="ancho-lectura">
       <h1>Modal</h1>
       <p>
-        Estilos para el componente <code>SisdaiModal</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-      </p>
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Modal" y sus características particulares.
+      </p> 
       <p>
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
+      </p>
+
+      <p>
+        El componente <code>SisdaiModal</code> facilita la creación de ventanas modales. 
         Para construir un modal se utiliza la etiqueta <code>dialog</code> con la clase <code>.modal</code>
         que contiene un elemento <code>.modal-contenedor</code> en donde se encapsulan
         el <code>.modal-cabecera</code>, el <code>.modal-cuerpo</code>, el <code>.modal-pie</code> 
         y el boton de cierre <code>.modal-cerrar</code>.
       </p>
+
       <EjemploCodigo
         :tiene_ejemplo='false'
         tipo='HTML'

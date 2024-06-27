@@ -8,30 +8,37 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h1>Espaciado</h1>
       <p>
-        La escala de espaciado de Sisdai complementa las escalas de la tipografía
-        y la cuadrícula mediante el uso de múltiplos de cuatro y ocho pixeles.
-        Cada nivel de la escala se puede utilizar según las necesidades del diseño.
+        La escala de espaciado se ha diseñado para complementar las escalas de 
+        tipografía y la cuadrícula, utilizando  múltiplos de cuatro y ocho 
+        píxeles. Esta escala permite seleccionar el nivel adecuado según las 
+        necesidades del diseño.
       </p>
       <p>
-        El espaciado se utiliza en margenes exteriores <small lang="en">(margin)</small> e interiores <small lang="en">(padding)</small>.
-        Para el margen exterior se utiliza <code>m</code> y para el margen interior se utiliza <code>p</code> 
-        en base a los nombres de las propiedades de CSS.
-        El nombre de las clases es una combinacion entre <code>propiedad-posicion-tamaño</code>.
+        El espaciado se utiliza tanto en márgenes exteriores <small lang="en">(margin)</small> 
+        como en  interiores <small lang="en">(padding)</small>, utilizando <code>m</code> 
+        para margen y <code>p</code> para padding, con base en los nombres de las propiedades 
+        de CSS. Las clases se nombran siguiendo el formato <code>propiedad-posicion-tamaño</code>.
       </p>
-      <p class="nota">
-        Los colores utilizados en la documentacion son únicamente de referencia,
-        nada en estas clases agrega color.
+      <p>
+        Los colores utilizados en la documentación son solo referenciales y 
+        no se aplican a través de estas clases. 
       </p>
     </div>
 
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Tamaños</h2>
       <p>
-        Las variables de tamaño estan declaradas en una lista numerica en incrementos de 8 en 8 de 0 a 10.
-        A los que se les agregan los margenes especiales mínimo (4px), extra (96px) y máximo (120px).
+        Las variables de tamaño están estructuradas en una lista numérica, 
+        incrementando de 8 en 8 desde 0 hasta 80px, complementadas con 
+        márgenes especiales para casos específicos. Los márgenes especiales 
+        incluyen: mínimo (4px), extra (96px) y máximo (120px). 
       </p>
-      <p class="nota">
-        Los puntos dibujados en el fondo del ejemplo del margen exterior, están separados por 8px.
+      <p>
+        Cada clase define un margen superior específico, demostrando la 
+        aplicación práctica de la lista numérica de tamaños y márgenes 
+        especiales. Los puntos dibujados en el fondo del ejemplo están 
+        separados por 8px, ilustrando la progresión del espaciado, a 
+        continuación se puede observar: 
       </p>
     </div>
     <EjemploEspaciado codigo='<div class="m-t-0"> margen superior 0 </div>'/>
@@ -52,7 +59,9 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h3 class="m-t-10">Tamaño responsivo</h3>
       <p>
-        Además se puede especificar para el dispositivo para el que se require determinado tamaño, agregando el sufijo -mov ó -esc
+        Adicionalmente, se puede especificar el tamaño adecuado para cada tipo 
+        de  dispositivo agregando el sufijo <code>-mov</code> para dispositivos 
+        móviles ó <code>-esc</code> para escritorio.
       </p>
       <EjemploPropiedades
         :propiedades="[[
@@ -69,13 +78,13 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Posiciones</h2>
       <p> 
-        Posición vacía se agrega en general a todos lados,
-        <code>t</code> <i>top</i> arriba, 
-        <code>b</code> <i>bottom</i> abajo, 
-        <code>l</code> <i>left</i> izquierda,
-        <code>r</code> <i>right</i> derecha,
-        <code>x</code> eje horizontal combinación de izquierda y derecha,
-        <code>y</code> eje vertical combinacion de arriba y abajo.
+        Las clases de posición se añaden según la necesidad: 
+        <code>t</code> para arriba (top), 
+        <code>b</code> para abajo (bottom), 
+        <code>l</code> para izquierda (left), 
+        <code>r</code> para derecha (right), 
+        <code>x</code> para el eje horizontal (combinación de izquierda y derecha), 
+        <code>y</code> para el eje vertical (combinación de arriba y abajo).
       </p>
     </div>
     <EjemploEspaciado codigo='

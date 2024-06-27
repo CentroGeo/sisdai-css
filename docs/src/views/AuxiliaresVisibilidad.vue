@@ -51,9 +51,10 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura m-b-6">
       <h2 class="m-t-10">Visibilidad por dispositivos</h2>
       <p>
-        Además se puede especificar para el dispositivo para el que se
-        require como se muestre o no un elemento en pantalla,
-        agregando el sufijo -mov ó -esc
+        Para controlar la visibilidad de un elemento en diferentes 
+        dispositivos, se pueden utilizar los sufijos <code>-mov</code> 
+        para móviles y <code>-esc</code> para escritorio. Esto permite 
+        especificar cómo se muestra o no un elemento en cada tipo de dispositivo.
       </p>
     </div>
     <EjemploCodigoTipografico 

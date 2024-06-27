@@ -7,19 +7,19 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h1>Institucionales</h1>
       <p>
-        Las clases y ejemplos a continuación pueden variar, han variado un poco cada año. 
-        Pero al ser elementos requeridos a la hora de construir sitios web solicitados por 
-        el Gobierno de México y el Conahcyt, se hace más útil tenerlos en un único lugar
-        para a la hora de actualizar no tener que estar creando componentes cada vez.
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        agrupa una serie de elementos importantes para la construcción de sitios web institucionales, especialmente diseñados para cumplir 
+        con los requerimientos del Gobierno de México y el Conahcyt. Estos componentes han experimentado algunas variaciones anuales, 
+        sin embargo, su estandarización facilita las actualizaciones sin la necesidad de crear nuevos componentes. A continuación se 
+        detallan los componentes y su aplicación.
       </p>
     </div>
 
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Navegación de Gobierno de México</h2>
       <p>
-        En el ejemplo se muestran las clases necesarias para armar el componente de navegación del Gobierno de México.
-        En la biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
-        se encuentra con la estructura y enlaces utilizados durante el año 2024.
+        Este componente incluye todas las clases necesarias para estructurar la navegación conforme a los estándares del Gobierno de México. 
+        La estructura y los enlaces que se utilizan actualmente están definidos en la biblioteca citada para el año 2024. 
       </p>
     </div>
     <nav class="navegacion navegacion-gobmx" aria-label="Menú Gobierno de México">
@@ -84,9 +84,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Navegación de Conahcyt</h2>
       <p>
-        Las clases para construir la navegación del Conahcyt son las mismas que las que requiere el componente de Navegacion principal.
-        En la biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
-        se encuentra con la estructura y enlaces utilizados durante el año 2024.
+        Similar al componente anterior, pero específicamente adaptado a las necesidades del Conahcyt. 
+        Incluye clases y estructuras pertinentes que se han actualizado en la biblioteca citada para el año 2024. 
       </p>
     </div>
     <nav class="navegacion" aria-label="Menú principal">
@@ -181,9 +180,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Pie de página del Gobierno de México</h2>
       <p>
-        En el ejemplo se muestran las clases necesarias para armar el componente de pie de página del Gobierno de México.
-        En la biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
-        se encuentra con la estructura y enlaces utilizados durante el año 2024.
+        Este componente muestra cómo implementar un pie de página que cumple con los requisitos del 
+        Gobierno de México. Las clases y la estructura necesarias están actualizadas y documentadas 
+        en la biblioteca citada para el año 2024. 
       </p>
     </div>
     <footer class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
@@ -304,9 +303,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Pie de página del Conahcyt</h2>
       <p>
-        En el ejemplo se muestran las clases necesarias para armar el componente de pie de página del Conahcyt.
-        En la biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
-        se encuentra con la estructura y enlaces utilizados durante el año 2024.
+        Este componente muestra cómo implementar un pie de página que cumple con los requisitos del Gobierno de México. 
+        Las clases y la estructura necesarias están actualizadas y documentadas en la biblioteca citada para el año 2024. 
       </p>
     </div>
     <footer class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
