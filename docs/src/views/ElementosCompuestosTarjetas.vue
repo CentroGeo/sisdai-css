@@ -10,12 +10,20 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         las necesidades específicas de cada proyecto. La estructura básica de una tarjeta incluye: 
       </p>
       <ul>
-        <li>Contenedor principal: generalmente lleva la clase <code>.tarjeta</code>.</li>
-        <li>Imagen: es opcional y se puede agregar con la clase <code>.tarjeta-imagen</code>.</li>
         <li>
-          Cuerpo de la tarjeta: puede agregarse como <code>.tarjeta-cuerpo</code> y contender cualquier elemento HTML. 
+          Contenedor principal: utiliza la clase <code>.tarjeta</code>.
+        </li>
+        <li>
+          Imagen: es opcional y se puede agregar con la clase <code>.tarjeta-imagen</code>.
+        </li>
+        <li>
+          Cuerpo de la tarjeta: puede agregarse como <code>.tarjeta-cuerpo</code> y contener cualquier elemento HTML. 
           Frecuentemente incluye: <code>.tarjeta-etiqueta</code> (para texto cortos) y <code>.tarjeta-titulo</code> 
           para agregar título a la tarjeta.
+        </li>
+        <li>
+          Pie de la tarjeta: es un elemento opcional que se agrega con la clase <code>.tarjeta-pie</code>.
+          Es utilizado para agregar elementos interactivos como botones o hipervínculos al final de la tarjeta.
         </li>
       </ul>
     </div>
