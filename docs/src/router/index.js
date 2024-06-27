@@ -10,6 +10,16 @@ const router = createRouter({
       component: InicioView
     },
     {
+      path: '/como-empezar',
+      name: '¿Cómo empezar?',
+      component: () => import('../views/InicioComoEmpezar.vue')
+    },
+    {
+      path: '/como-colaborar',
+      name: '¿Cómo colaborar?',
+      component: () => import('../views/InicioComoColaborar.vue')
+    },
+    {
       path: '/accesibilidad',
       children: [
         {
