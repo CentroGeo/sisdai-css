@@ -10,8 +10,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         ordenadas <code>&lt;ol/></code> o desordenadas <code>&lt;ul/></code> , permitiendo 
         contener múltiples elementos dentro de cada <code>&lt;li/></code>. Estas listas 
         incorporan el bloque <code>.lista-compuesta-cuerpo</code>, que puede incluir las clases 
-        <code>.lista-compuesta-texto-primario</code>, <code>.lista-compuesta-texto-secundario</code> y 
-        <code>.lista-compuesta-texto-terciario</code>.
+        <code>.lista-compuesta-titulo</code>, <code>.lista-compuesta-texto-primario</code> y 
+        <code>.lista-compuesta-texto-secundario</code>.
       </p>
     </div>
 
