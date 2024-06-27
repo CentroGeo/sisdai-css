@@ -22,9 +22,9 @@ const estaAbierto = ref(true)
 
       <p>
         El componente <code>SisdaiMenuAccesibilidad</code> permite a las personas usuarias ejecutar funciones 
-        que incorporan reglas de accesibilidad en el sitio web. Consiste en un botón (<code>menu-accesibilidad-boton</code>) 
-        que al ser activado, agrega o quita la clase <code>abierto</code> sobre <code>menu-accesibilidad</code> para mostrar 
-        u ocultar las opciones de accesibilidad albergadas en el contenedor <code>menu-accesibilidad-contenedor</code>. 
+        que incorporan reglas de accesibilidad en el sitio web. Consiste en un botón (<code>menu-flotante-boton</code>) 
+        que al ser activado, agrega o quita la clase <code>abierto</code> sobre <code>menu-flotante menu-flotante-derecho</code> para mostrar 
+        u ocultar las opciones de accesibilidad albergadas en el contenedor <code>menu-flotante-contenedor</code>. 
         Las opciones se cargan desde el archivo de configuaración <code>opcionesDefault.js</code>.
       </p>
       
@@ -87,35 +87,37 @@ const estaAbierto = ref(true)
       ' />
     
       <h2 class="m-t-10">Archivo de configuración</h2>
-      
-      <pre class="nota">
-export default [
-  {
-    accion: 'alternarTipografiaAccesible',
-    claseCss: 'a11y-tipografia',
-    icono: 'pictograma-cambio-tipografia',
-    titulo: 'Cambio de fuente',
-  },
-  {
-    accion: 'alternarEnlacesSubrayados',
-    claseCss: 'a11y-hipervinculos',
-    icono: 'pictograma-enlace-subrayado',
-    titulo: 'Enlaces subrayados',
-  },
-  {
-    accion: 'alternarVistaSimplificada',
-    claseCss: 'a11y-simplificada',
-    icono: 'pictograma-vista-simplificada',
-    titulo: 'Mostrar solo texto',
-  },
-  {
-    accion: 'alternarVistaOscura',
-    claseCss: 'a11y-oscura',
-    icono: 'pictograma-contraste',
-    titulo: 'Vista Oscura',
-  },
-]
-      </pre>
+      <EjemploCodigo 
+        :tiene_ejemplo='false'
+        tipo='javaScript'
+        codigo='
+          export default [
+            {
+              accion: "alternarTipografiaAccesible",
+              claseCss: "a11y-tipografia",
+              icono: "pictograma-cambio-tipografia",
+              titulo: "Cambio de fuente",
+            },
+            {
+              accion: "alternarEnlacesSubrayados",
+              claseCss: "a11y-hipervinculos",
+              icono: "pictograma-enlace-subrayado",
+              titulo: "Enlaces subrayados",
+            },
+            {
+              accion: "alternarVistaSimplificada",
+              claseCss: "a11y-simplificada",
+              icono: "pictograma-vista-simplificada",
+              titulo: "Mostrar solo texto",
+            },
+            {
+              accion: "alternarVistaOscura",
+              claseCss: "a11y-oscura",
+              icono: "pictograma-contraste",
+              titulo: "Vista Oscura",
+            },
+          ]
+      '/>
     </div>
 
     <div class="menu-flotante menu-flotante-derecho" :class="{abierto: estaAbierto}">
