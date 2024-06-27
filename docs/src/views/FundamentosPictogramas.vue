@@ -437,11 +437,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Al integrarse con la tipografía, el tamaño de los pictogramas varía dependiendo 
         de la etiqueta en la que se encuentren. Sin embargo,  el Sisdai específica el 
         uso de los tamaños originales o aquellos que correspondan a incrementos de 24px, 
-        32px y 48px. Para esto, se han creado las clases <code>.pictograma-24</code>, 
-        <code>.pictograma-32</code> y <code>.pictograma-48</code>, donde el número indica 
-        el tamaño de la fuente en píxeles asumiendo una tipografía base de <code>16px</code>. 
-        Estos tamaños están expresados en unidades <code>rem</code> para mantener la jerarquía 
-        tipográfica ante ajustes de tamaño general.
+        32px y 48px. Para esto, se han creado las clases <code>.pictograma-chico</code>, 
+        <code>.pictograma-mediano</code> y <code>.pictograma-grande</code>.
       </p>
       <EjemploCodigo
       tipo='HTML'
