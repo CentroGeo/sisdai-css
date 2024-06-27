@@ -32,7 +32,7 @@ const estaAbierto = ref(true)
         tipo='HTML'
         codigo='
         <div 
-          class="menu-flotante" 
+          class="menu-flotante menu-flotante-izquierdo" 
           :class="{abierto: estaAbierto}"
         >
           <button 
