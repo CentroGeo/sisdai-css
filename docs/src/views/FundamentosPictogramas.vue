@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -20,9 +20,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         de texto, tal como se ilustra en el siguiente ejemplo: 
       </p>
 
-      <EjemploCodigoVertical
-      html='
-      <h2 class="pictograma-actualizar"></h2>
+      <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <h2 class="pictograma-actualizar"></h2>
       '
       />
     </div>
@@ -442,11 +443,12 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         Estos tamaños están expresados en unidades <code>rem</code> para mantener la jerarquía 
         tipográfica ante ajustes de tamaño general.
       </p>
-      <EjemploCodigoVertical
-      html='
-      <span class="pictograma-flkt pictograma-24"></span>
-      <span class="pictograma-flkt pictograma-32"></span>
-      <span class="pictograma-flkt pictograma-48"></span>
+      <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <span class="pictograma-flkt pictograma-chico"></span>
+        <span class="pictograma-flkt pictograma-mediano"></span>
+        <span class="pictograma-flkt pictograma-grande"></span>
       '
       />
 
@@ -456,9 +458,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         agregando el sufijo <code>-mov</code> para dispositivos móviles y <code>-esc</code> 
         para dispositivos de escritorio.
       </p>
-      <EjemploCodigoVertical
-      html='
-      <span class="pictograma-flkt pictograma-24-mov pictograma-48-esc"></span>
+      <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <span class="pictograma-flkt pictograma-chico-mov pictograma-grande-esc"></span>
       '
       />
     </div>

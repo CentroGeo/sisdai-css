@@ -1,12 +1,12 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
 
   <div class="flex">
     <div class="columna-4 menu-lateral-fondo oculto-mov">
     </div>
-    <div class="columna-4 columna-orden-3-esc">
+    <div class="columna-4 columna-8-mov columna-orden-3-esc">
       <div class="indice-contenido">
         <p 
           class="indice-contenido-titulo" 
@@ -48,8 +48,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             la orientación de la persona usuaria dentro de sitios o aplicaciones complejas. 
           </p>
           
-          <EjemploCodigoVertical 
-            html='
+          <EjemploCodigo 
+            tipo='HTML'
+            codigo='
             <div class="indice-contenido">
               <p 
                 class="indice-contenido-titulo" 

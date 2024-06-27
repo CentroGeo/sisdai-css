@@ -13,32 +13,25 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.hipervinculo-gobmx {
-  @extend .hipervinculo;
-  color: var(--color-gobmx-claro-1);
-  font-weight: 400;
-  text-decoration: none;
-  &:visited {
-    color: var(--color-gobmx-claro-1) !important;
-  }
-  &:hover,
-  &:focus {
-    color: var(--color-gobmx-claro-2) !important;
-  }
-}
-
-.hipervinculo-conahcyt {
-  @extend .hipervinculo;
-  color: var(--color-conahcyt-claro-1);
-  font-weight: 400;
-  text-decoration: none;
-  &:visited {
-    color: var(--color-conahcyt-claro-1) !important;
-  }
-  &:hover {
-    color: var(--color-conahcyt-acento) !important;
-  }
-  &:focus {
-    color: var(--color-conahcyt-acento) !important;
-  }
+body[data-perfil='gema'] {
+  // colores primarios
+  --color-primario-4: #993310;
+  --color-primario-3: #CC4B14;
+  --color-primario-2: #F4A762;
+  --color-primario-1: #F2B17C;
+  
+  // colores secundarios
+  --color-secundario-12: #412110;
+  --color-secundario-11: #462614;
+  --color-secundario-11-rgb: 70, 38, 20;
+  --color-secundario-10: #4C2C1B;
+  --color-secundario-9: #5B3B2A;
+  --color-secundario-8: #674736;
+  --color-secundario-7: #90705F;
+  --color-secundario-6: #B99988;
+  --color-secundario-5: #E2C2B1;
+  --color-secundario-4: #FDDDCC;
+  --color-secundario-3: #FDE7DB;
+  --color-secundario-2: #FFF5F0;
+  --color-secundario-1: #FEFAF8;
 }

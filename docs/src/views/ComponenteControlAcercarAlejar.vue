@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -27,8 +27,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         debe asignar el nombre de la clase y el atributo <code>aria-label</code> adecuados para asegurar 
         su funcionalidad correcta. 
       </p>
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <div 
           class="control-acercar-alejar" 
           role="toolbar"

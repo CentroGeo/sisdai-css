@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -28,8 +28,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         se le debe asignar el nombre de la clase y el atributo <code>aria-label</code> adecuados para asegurar su funcionalidad correcta. 
       </p>
       
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
         <div class="audio"  role="toolbar" aria-label="Controles para reproducir audio">
 
           <div class="audio-cabecera">
@@ -44,7 +45,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
           <audio src="ruta/archivo/audio.mp3"></audio>
           
-          <div class="flex flex-contenido-separado texto-color-2">
+          <div class="flex flex-contenido-separado texto-color-secundario">
             <div role="timer" aria-label="Tiempo transcurrido">
               00:00 
             </div>

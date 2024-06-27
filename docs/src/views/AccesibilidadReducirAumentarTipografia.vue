@@ -1,5 +1,6 @@
-
-import { onDeactivated } from 'vue';
+<script setup>
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+</script>
 <template>
   <div class="contenedor m-y-maximo">
 
@@ -18,18 +19,21 @@ import { onDeactivated } from 'vue';
         para mantener las jerarquías tipográficas cuando se edite el tamaño base.
       </p>
       <p>
-        Bebe existir la variable global del tamaño base
+        Debe existir la variable global del tamaño base
       </p>
-     
     </div>
-    <pre class="nota nota-contenedor">
-      // Variables de CSS
+    <EjemploCodigo
+      :tiene_ejemplo='false'
+      tipo='CSS'
+      codigo='
+          // Variables de CSS
 
-      :root {
-        --tipografia-tamanio: 16px;
-        ...
-      }
-    </pre>
+          :root {
+            --tipografia-tamanio: 16px;
+            ...
+          }
+      '
+    />
 
     <div class="ancho-lectura">
       <p>
@@ -37,34 +41,38 @@ import { onDeactivated } from 'vue';
         de tamaño tipografico general en ésta página de documentación.
       </p>
     </div>
+    <EjemploCodigo
+      :tiene_ejemplo='false'
+      tipo='Vue.js'
+      codigo="
+          // docs/src/App.vue
 
-    <pre class="nota nota-contenedor">
-    // docs/src/App.vue
+          <script setup>
+            
+            import { ref } from 'vue'
+            
+            const fontSize = ref(16)
 
-    <span aria-hidden="true">&lt;</span>script setup<span aria-hidden="true">&gt;</span>
-      import { ref } from 'vue'
-      
-      const fontSize = ref(16)
+            function upFontSize() {
+              fontSize.value ++
+              let up_size = `${fontSize.value}px`
+              document.documentElement.style.setProperty('--tipografia-tamanio',up_size)
+            }
 
-      function upFontSize() {
-        fontSize.value ++
-        let up_size = `${fontSize.value}px`
-        document.documentElement.style.setProperty('--tipografia-tamanio',up_size)
-      }
+            function downFontSize() {
+              fontSize.value --
+              let down_size = `${fontSize.value}px`
+              document.documentElement.style.setProperty('--tipografia-tamanio',down_size)
+            }
 
-      function downFontSize() {
-        fontSize.value --
-        let down_size = `${fontSize.value}px`
-        document.documentElement.style.setProperty('--tipografia-tamanio',down_size)
-      }
+            function resetA11y() {
+              fontSize.value = 16
+              document.documentElement.style.setProperty('--tipografia-tamanio','16')
+            }
 
-      function resetA11y() {
-        fontSize.value = 16
-        document.documentElement.style.setProperty('--tipografia-tamanio','16')
-      }
-
-    <span aria-hidden="true">&lt;</span>/script<span aria-hidden="true">&gt;</span>
-    </pre>
+          </script>
+      "
+    />
 
   </div>
 </template>

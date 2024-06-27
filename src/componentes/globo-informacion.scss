@@ -13,10 +13,10 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.globo-informacion {
-  background-color: var(--globo-informacion-fondo);
+.globo-informacion {   
+  background-color: var(--globo-fondo);
   border-radius: map-get($borde-redondeado, '8');
-  color: var(--globo-informacion-color);
+  color: var(--globo-color);
   display: block;
   position: relative;
   padding: map-get($espaciado, '2');
@@ -39,17 +39,50 @@
     margin-bottom: 0;
   }
 
-  a,
   button {
-    color: var(--globo-informacion-accion);
+    background: var(--globo-boton-fondo);
+    box-shadow: 
+      inset 0 0 0 0 var(--globo-boton-borde), //borde
+      0 0 0 var(--globo-boton-sombra);
+    color: var(--globo-boton-color);
+    &:not(:disabled):hover {
+      background: var(--globo-boton-cursor-fondo);
+      box-shadow: 
+        inset 0 0 0 0 var(--globo-boton-cursor-borde), //borde
+        0 0 0 var(--globo-boton-cursor-sombra);
+      color: var(--globo-boton-cursor-color);
+    }
+    &:not(:disabled):focus {
+      background: var(--globo-boton-enfoque-fondo);
+      box-shadow: 
+        inset 0 0 0 1px var(--globo-boton-enfoque-borde), //borde
+        0 0 8px var(--globo-boton-enfoque-sombra);
+      color: var(--globo-boton-enfoque-color);
+    }
+  }
+
+  a {
+    box-shadow: 0 0 2px var(--globo-hipervinculo-sombra);
+    color: var(--globo-hipervinculo-color);
+    &:visited {
+      color: var(--globo-hipervinculo-visitado);
+    }
+    &:hover {
+      box-shadow: 0 0 2px var(--globo-hipervinculo-cursor-sombra);
+      color: var(--globo-hipervinculo-cursor-color);
+    }
+    &:focus-visible {
+      color: var(--globo-hipervinculo-enfoque-color);
+      outline: 2px dashed var(--globo-hipervinculo-enfoque-sombra);
+    }
   }
 
   .globo-informacion-punto-color {
     width: 0.625rem;
     height: 0.625rem;
     border-radius: 50%;
-    border: 1px solid var(--borde-color-4);
-    background-color: var(--globo-informacion-accion);
+    border: 1px solid var(--borde);
+    background-color: #80AAFF;
     display: inline-block;
   }
 

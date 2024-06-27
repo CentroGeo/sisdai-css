@@ -1,0 +1,271 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+// Variables de color oscuro
+body[data-tema='oscuro'] {
+
+  // base
+  --fondo: var(--color-secundario-12);
+  --fondo-neutro: var(--color-secundario-10);
+  --fondo-acento: var(--color-secundario-10);
+  --fondo-informacion: var(--color-informativo-4);
+  --fondo-confirmacion: var(--color-confirmacion-4);
+  --fondo-alerta: var(--color-alerta-4);
+  --fondo-error: var(--color-error-4);
+
+  --degradado-fuerte: linear-gradient(0deg, rgba(var(--color-secundario-11-rgb),1) 0%, rgba(var(--color-secundario-11-rgb),0.6) 60%, rgba(var(--color-secundario-11-rgb),0) 100%);
+  --degradado-ligero: linear-gradient(transparent, rgba(var(--color-secundario-11-rgb),0.8));
+
+  --opacidad-fuerte: rgba(var(--color-neutro-6-rgb),0.9);
+  --opacidad-ligero: rgba(var(--color-neutro-6-rgb),0.5);
+
+  --borde: var(--color-neutro-0);
+  --borde-secundario: var(--color-secundario-8);
+  --borde-acento: var(--color-secundario-5);
+  --borde-informacion: var(--color-informativo-2);
+  --borde-confirmacion: var(--color-confirmacion-2);
+  --borde-alerta: var(--color-alerta-2);
+  --borde-error: var(--color-error-2);
+  
+  --texto-primario: var(--color-neutro-0);
+  --texto-secundario: var(--color-secundario-5);
+  --texto-acento: var(--color-primario-2);
+  --texto-inverso: var(--color-neutro-0);
+  --texto-informacion: var(--color-informativo-2);
+  --texto-confirmacion: var(--color-confirmacion-2);
+  --texto-alerta: var(--color-alerta-2);
+  --texto-error: var(--color-error-2);
+
+  // estado base
+  --estado-enfoque: var(--color-interactivo-3);
+  --estado-cursor: var(--color-secundario-10);
+
+  // elementos
+  --campo-etiqueta-color: var(--color-secundario-5);
+  --campo-fondo: var(--color-secundario-12);
+  --campo-color: var(--color-neutro-0);
+  --campo-borde: var(--color-secundario-5);
+  --campo-ejemplo-color: var(--color-secundario-7);
+  --campo-ejemplo-cursor-color: var(--color-secundario-5);
+  --campo-ejemplo-enfoque-color: var(--color-secundario-5);
+  --campo-ejemplo-deshabilitado-color: var(--color-secundario-7);
+  --campo-deshabilitado-fondo: var(--color-secundario-8);
+  --campo-deshabilitado-color: var(--color-secundario-7);
+  --campo-deshabilitado-borde: var(--color-secundario-6);
+  --campo-cursor-fondo: var(--color-secundario-10);
+  --campo-cursor-borde: var(--color-secundario-5);
+  --campo-enfoque-fondo: var(--color-secundario-10);
+  --campo-enfoque-borde: var(--estado-enfoque);
+  --campo-enfoque-sombra: var(--estado-enfoque);
+  --campo-rango-activo: var(--color-primario-2);
+  --campo-rango-cursor: var(--color-primario-1);
+  --campo-rango-deshabilitado: var(--color-secundario-7);
+  --campo-rango: var(--color-secundario-7);
+  --campo-control-fondo: var(--color-secundario-12);
+  --campo-control-borde: var(--color-secundario-5);
+  --campo-control-seleccionado-fondo: var(--color-secundario-12);
+  --campo-control-seleccionado-borde: var(--color-secundario-5);
+  --campo-control-seleccionado-color: var(--color-secundario-5);
+  --campo-control-deshabilitado-fondo: var(--color-secundario-8);
+  --campo-control-deshabilitado-borde: var(--color-secundario-7);
+  --campo-control-deshabilitado-color: var(--color-secundario-7);
+  --campo-contenedor-fondo: transparent;
+  --campo-contenedor-borde: transparent;
+  
+  --campo-selector-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><polygon fill="%23FFFFFF" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/></g></svg>');
+  --campo-selector-deshabilitado-svg: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g><polygon fill="%235E7392" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/></g></svg>');
+
+  --tabla-fila-par-fondo: var(--color-secundario-12);
+  --tabla-fila-impar-fondo: var(--color-secundario-10);
+  --tabla-fila-pie-fondo: var(--color-secundario-8);
+  --tabla-borde: var(--color-secundario-6);
+  --tabla-color: var(--texto-primario);
+
+  --boton-primario-fondo: var(--color-primario-2);
+  --boton-primario-borde: var(--color-primario-2);
+  --boton-primario-color: var(--color-secundario-12);
+  --boton-primario-sombra: transparent;
+  --boton-primario-deshabilitado-fondo: var(--color-secundario-8);
+  --boton-primario-deshabilitado-borde: var(--color-secundario-8);
+  --boton-primario-deshabilitado-color: var(--color-secundario-7);
+  --boton-primario-deshabilitado-sombra: transparent;
+  --boton-primario-cursor-fondo: var(--color-primario-1);
+  --boton-primario-cursor-borde: var(--color-primario-1);
+  --boton-primario-cursor-color: var(--color-secundario-12);
+  --boton-primario-cursor-sombra: transparent;
+  --boton-primario-enfoque-fondo: var(--color-primario-1);
+  --boton-primario-enfoque-borde: var(--color-secundario-12);
+  --boton-primario-enfoque-color: var(--color-secundario-12);
+  --boton-primario-enfoque-contorno: var(--estado-enfoque);
+  --boton-primario-enfoque-sombra: var(--estado-enfoque);
+
+  --boton-secundario-fondo: transparent;
+  --boton-secundario-borde: var(--color-secundario-5);
+  --boton-secundario-color: var(--color-secundario-5);
+  --boton-secundario-sombra: transparent;
+  --boton-secundario-deshabilitado-fondo: transparent;
+  --boton-secundario-deshabilitado-borde: var(--color-secundario-7);
+  --boton-secundario-deshabilitado-color: var(--color-secundario-8);
+  --boton-secundario-deshabilitado-sombra: transparent;
+  --boton-secundario-cursor-fondo: var(--color-secundario-8);
+  --boton-secundario-cursor-borde: var(--color-secundario-5);
+  --boton-secundario-cursor-color: var(--color-secundario-5);
+  --boton-secundario-cursor-sombra: transparent;
+  --boton-secundario-enfoque-fondo: var(--color-secundario-8);
+  --boton-secundario-enfoque-borde: var(--estado-enfoque);
+  --boton-secundario-enfoque-color: var(--color-secundario-5);
+  --boton-secundario-enfoque-sombra: var(--estado-enfoque);
+
+  --boton-sin-contenedor-primario-fondo: transparent;
+  --boton-sin-contenedor-primario-borde: transparent;
+  --boton-sin-contenedor-primario-color: var(--color-primario-2);
+  --boton-sin-contenedor-primario-sombra: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-fondo: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-borde: transparent;
+  --boton-sin-contenedor-primario-deshabilitado-color: var(--color-secundario-8);
+  --boton-sin-contenedor-primario-deshabilitado-sombra: transparent;
+  --boton-sin-contenedor-primario-cursor-fondo: transparent;
+  --boton-sin-contenedor-primario-cursor-borde: transparent;
+  --boton-sin-contenedor-primario-cursor-color: var(--color-primario-1);
+  --boton-sin-contenedor-primario-cursor-sombra: transparent;
+  --boton-sin-contenedor-primario-enfoque-fondo: var(--color-secundario-8);
+  --boton-sin-contenedor-primario-enfoque-borde: var(--estado-enfoque);
+  --boton-sin-contenedor-primario-enfoque-color: var(--color-primario-2);
+  --boton-sin-contenedor-primario-enfoque-contorno: transparent;
+  --boton-sin-contenedor-primario-enfoque-sombra: var(--estado-enfoque);
+
+  --boton-sin-contenedor-secundario-fondo: transparent;
+  --boton-sin-contenedor-secundario-borde: transparent;
+  --boton-sin-contenedor-secundario-color: var(--color-secundario-5);
+  --boton-sin-contenedor-secundario-sombra: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-fondo: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-borde: transparent;
+  --boton-sin-contenedor-secundario-deshabilitado-color: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-deshabilitado-sombra: transparent;
+  --boton-sin-contenedor-secundario-cursor-fondo: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-cursor-borde: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-cursor-color: var(--color-secundario-5);
+  --boton-sin-contenedor-secundario-cursor-sombra: transparent;
+  --boton-sin-contenedor-secundario-enfoque-fondo: var(--color-secundario-8);
+  --boton-sin-contenedor-secundario-enfoque-borde: var(--estado-enfoque);
+  --boton-sin-contenedor-secundario-enfoque-color: var(--color-secundario-5);
+  --boton-sin-contenedor-secundario-enfoque-contorno: transparent;
+  --boton-sin-contenedor-secundario-enfoque-sombra: var(--estado-enfoque);
+
+  --hipervinculo-color: var(--color-interactivo-3);
+  --hipervinculo-sombra: transparent;
+  --hipervinculo-deshabilitado-color: var(--color-secundario-8);
+  --hipervinculo-deshabilitado-sombra: transparent;
+  --hipervinculo-cursor-color: var(--color-interactivo-4);
+  --hipervinculo-cursor-sombra: transparent;
+  --hipervinculo-enfoque-color: var(--estado-enfoque);
+  --hipervinculo-enfoque-sombra: var(--estado-enfoque);
+  --hipervinculo-visitado: var(--color-interactivo-5);
+
+  // elementos compuestos
+  --tarjeta-fondo: var(--color-secundario-10);
+  --tarjeta-color: var(--color-neutro-0);
+  --tarjeta-cursor-fondo: var(--color-secundario-8);
+  --tarjeta-enfoque-borde: var(--estado-enfoque);
+  --tarjeta-enfoque-sombra: var(--estado-enfoque);
+  --tarjeta-externa-color: var(--texto-inverso);
+  --tarjeta-externa-fondo-degradado: var(--degradado-fuerte);
+  --tarjeta-interna-color: var(--color-neutro-0);
+  --tarjeta-interna-fondo: var(--color-secundario-10);
+  --tarjeta-simplificada-fondo: var(--color-secundario-12);
+  --tarjeta-simplificada-color: var(--color-interactivo-3);
+  --tarjeta-simplificada-borde: var(--color-interactivo-3);
+  --tarjeta-simplificada-cursor-fondo: var(--color-interactivo-3);
+  --tarjeta-simplificada-cursor-borde: var(--color-interactivo-3);
+  --tarjeta-simplificada-cursor-color: var(--color-secundario-12);
+  --tarjeta-simplificada-enfoque-fondo: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-borde: var(--color-secundario-12);
+  --tarjeta-simplificada-enfoque-color: var(--color-secundario-12);
+  --tarjeta-simplificada-enfoque-contorno: var(--estado-enfoque);
+  --tarjeta-simplificada-enfoque-sombra: var(--estado-enfoque);
+  --tarjeta-contenido-simplificada-fondo: var(--color-secundario-10);
+  --tarjeta-contenido-simplificada-color: var(--color-neutro-0);
+
+  // componentes
+  --modal-fondo: var(--fondo);
+  --modal-color: var(--texto-primario);
+
+  --globo-fondo: var(--opacidad-fuerte); 
+  --globo-color: var(--texto-inverso);
+  --globo-boton-fondo: transparent;
+  --globo-boton-color: var(--color-secundario-5);
+  --globo-boton-borde: transparent;
+  --globo-boton-sombra: transparent;
+  --globo-boton-cursor-fondo: var(--color-secundario-8);
+  --globo-boton-cursor-color: var(--color-secundario-5);
+  --globo-boton-cursor-borde: var(--color-secundario-8);
+  --globo-boton-cursor-sombra: transparent;
+  --globo-boton-enfoque-fondo: var(--color-secundario-8);
+  --globo-boton-enfoque-color: var(--color-secundario-5);
+  --globo-boton-enfoque-borde: var(--estado-enfoque);
+  --globo-boton-enfoque-sombra: var(--estado-enfoque);
+  --globo-hipervinculo-color: var(--color-interactivo-3);
+  --globo-hipervinculo-sombra: transparent;
+  --globo-hipervinculo-cursor-color: var(--color-interactivo-4);
+  --globo-hipervinculo-cursor-sombra: transparent;
+  --globo-hipervinculo-enfoque-color: var(--estado-enfoque);
+  --globo-hipervinculo-enfoque-sombra: var(--estado-enfoque);
+  --globo-hipervinculo-visitado: var(--color-interactivo-5);
+
+  --navegacion-primaria-fondo: var(--color-secundario-12);
+  --navegacion-primaria-sombra: var(--opacidad-fuerte);
+  --navegacion-primaria-color: var(--color-neutro-0);
+  --navegacion-primaria-cursor-fondo: var(--color-secundario-10);
+  --navegacion-primaria-enfoque-borde: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-primaria-enfoque-fondo: var(--color-secundario-10);
+  --navegacion-primaria-activo-borde: var(--color-primario-2);
+  --navegacion-primaria-seccion-fondo: var(--color-secundario-8);
+  --navegacion-primaria-seccion-color: var(--color-secundario-5);
+
+  --navegacion-secundaria-color: var(--color-neutro-0);
+  --navegacion-secundaria-fondo: var(--color-secundario-9);
+  --navegacion-secundaria-borde: var(--color-secundario-5);
+  --navegacion-secundaria-cursor-color: var(--color-neutro-0);
+  --navegacion-secundaria-cursor-fondo: var(--color-secundario-8);
+  --navegacion-secundaria-cursor-borde: var(--color-secundario-4);
+  --navegacion-secundaria-activo-color: var(--color-primario-2);
+  --navegacion-secundaria-activo-fondo: var(--color-secundario-11);
+  --navegacion-secundaria-activo-borde: var(--color-primario-2);
+  --navegacion-secundaria-enfoque-color: var(--color-neutro-0);
+  --navegacion-secundaria-enfoque-fondo: var(--color-secundario-8);
+  --navegacion-secundaria-enfoque-sombra: var(--estado-enfoque);
+  --navegacion-secundaria-enfoque-borde: var(--estado-enfoque);
+
+  --menu-flotante-boton-fondo: var(--color-primario-2);
+  --menu-flotante-boton-color: var(--color-secundario-12);
+  --menu-flotante-boton-contorno: transparent;
+  --menu-flotante-boton-borde: var(--color-secundario-12);
+  --menu-flotante-boton-sombra: transparent;
+  --menu-flotante-boton-cursor-fondo: var(--color-primario-1);
+  --menu-flotante-boton-cursor-color: var(--color-secundario-12);
+  --menu-flotante-boton-cursor-contorno: transparent;
+  --menu-flotante-boton-cursor-borde: var(--color-secundario-12);
+  --menu-flotante-boton-cursor-sombra: transparent;
+  --menu-flotante-boton-enfoque-color: var(--color-secundario-12);
+  --menu-flotante-boton-enfoque-fondo: var(--color-primario-1);
+  --menu-flotante-boton-enfoque-contorno: var(--estado-enfoque);
+  --menu-flotante-boton-enfoque-borde: var(--color-secundario-12);
+  --menu-flotante-boton-enfoque-sombra: var(--estado-enfoque);
+  --menu-flotante-contenedor-fondo: var(--fondo-neutro);
+  --menu-flotante-contenedor-color: var(--texto-secundario);
+  --menu-flotante-contenedor-borde: var(--borde-acento);
+  --menu-flotante-contenedor-sombra: var(--opacidad-ligero);
+}

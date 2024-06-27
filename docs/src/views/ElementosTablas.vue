@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -21,8 +21,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex flex-contenido-centrado">
       <div class="columna-8">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="titulo-tabla">Título tabla base</p>
           <table>
             <caption>Descripción o información adicional de la tabla</caption>
@@ -58,7 +59,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </tr>
             </tfoot>
           </table>
-          <br />
           '
         />
       </div>
@@ -77,8 +77,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex flex-contenido-centrado">
       <div class="columna-8">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="titulo-tabla">Título tabla condensada</p>
           <table class="tabla-condensada">
             <caption> Descripción o información adicional de la tabla </caption>
@@ -107,7 +108,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </tr>
             </tbody>
           </table>
-          <br />
           '
         />
       </div>
@@ -124,8 +124,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex flex-contenido-centrado m-t-5">
       <div class="columna-8">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="titulo-tabla">Título tabla expandida</p>
           <table class="tabla-expandida">
             <caption>
@@ -183,7 +184,6 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
               </tr>
             </tbody>
           </table>
-          <br />
           '
         />
       </div>

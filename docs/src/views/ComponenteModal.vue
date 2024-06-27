@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
 const modalPredeterminado = ref()
 const modalGrande = ref()
@@ -61,9 +61,10 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         <code>.modal-pantalla-completa</code> para ajustar el tamaño de modal. Estas clases 
         deben aplicarse en la etiqueta <code>dialog</code> junto con la clase base <code>modal</code>. 
       </p>
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <dialog
           class="modal"
           ref="modalPredeterminado"
@@ -120,11 +121,16 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         </button>
         
       </p>
-      <pre class="nota nota-contenedor">
-        <span aria-hidden="true">&lt;</span>dialog class="modal"<span aria-hidden="true">&gt;</span>
-          ...
-        <span aria-hidden="true">&lt;</span>/dialog<span aria-hidden="true">&gt;</span>
-      </pre>
+      
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+          <dialog class="modal">
+            ...
+          </dialog>
+        '
+      />
       
       
       <p>
@@ -140,12 +146,15 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           Abrir modal grande
         </button>
       </p>
-      <pre class="nota nota-contenedor">
-        <span aria-hidden="true">&lt;</span>dialog class="modal modal-grande"<span aria-hidden="true">&gt;</span>
-          ...
-        <span aria-hidden="true">&lt;</span>/dialog<span aria-hidden="true">&gt;</span>
-      </pre>
-      
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+          <dialog class="modal modal-grande">
+            ...
+          </dialog>
+        '
+      />
     </div>
 
     <dialog
@@ -194,12 +203,12 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           </p>
           <figure>
             <img 
-              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-1.jpg" 
+              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/minou.jpg" 
               width="100%"
               alt=""
             />
             <figcaption>
-              Esparragus el perrito el mejor y mas bonito mister chaparrito.
+              Sr. Gato (Minou)
             </figcaption>
           </figure>
           <p>

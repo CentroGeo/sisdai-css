@@ -39,7 +39,7 @@
 }
 
 // color
-@each $id, $valor in $borde-color {
+@each $id, $valor in $borde-color { // aqui
   .borde-color-#{$id} {
     border-color: $valor;
   }

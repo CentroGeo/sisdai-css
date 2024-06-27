@@ -79,7 +79,7 @@
 
   // Módulo de vista oscura
   const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
-  const perfil = ref('eni') // 'eni' | 'sisdai' | 'gema'
+  const perfil = ref('predeterminada') // 'predeterminada' | 'sisdai' | 'gema'
   const body = document.querySelector("body")
 
   function alternarTema() {
@@ -90,16 +90,23 @@
     ]
   }
 
+  function agregarPerfilTemaPredeterminados() {
+    body.setAttribute('data-perfil', perfil.value)
+    body.setAttribute('data-tema', 'claro')
+  }
+
   function alternarPerfil() {
     // remueve el atributo para dejar a los otros perfiles
-    body.removeAttribute(`data-dark-theme-${perfil.value}`)
-    body.removeAttribute(`data-light-theme-${perfil.value}`)
+    // body.removeAttribute('data-tema-oscuro')
+    // body.removeAttribute('data-tema-claro')
     
     // rotar entre estos perfiles
-    const perfiles = ['eni', 'sisdai', 'gema']
+    const perfiles = ['predeterminada', 'sisdai', 'gema']
     perfil.value = perfiles[
       (perfiles.indexOf(perfil.value) + 1) % 3
     ]
+
+    body.setAttribute('data-perfil', perfil.value)
   }
 
   function getTemaDispositivo() {
@@ -120,15 +127,11 @@
   }
 
   function setTemaClaro() {
-    body.removeAttribute(`data-dark-theme-${perfil.value}`)
-    body.removeAttribute(`data-light-theme-${perfil.value}`)
-    body.setAttribute(`data-light-theme-${perfil.value}`, true)
+    body.setAttribute(`data-tema`, 'claro')
   }
 
   function setTemaOscuro() {
-    body.removeAttribute(`data-light-theme-${perfil.value}`)
-    body.removeAttribute(`data-dark-theme-${perfil.value}`)
-    body.setAttribute(`data-dark-theme-${perfil.value}`, true)
+    body.setAttribute(`data-tema`, 'oscuro')
   }
 
   function setTemaEnDocumentoYLocalStorage() {
@@ -167,11 +170,15 @@
   })
 
   onMounted(() => {
+    agregarPerfilTemaPredeterminados()
+
     setTemaEnDocumentoYLocalStorage()
+    
     window.matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change',setTemaEnDocumentoYLocalStorage)
 
     validarNavegacionColapsable()
+    
     window.addEventListener('resize', validarNavegacionColapsable)
   })
 
@@ -213,8 +220,9 @@
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
           <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México.">
         </a>
-        <button @click="toggleGob" class="nav-boton-menu" :class="{ 'abierto': showGob }">
+        <button v-if="esColapsable" @click="toggleGob" class="nav-boton-menu" :class="{ 'abierto': showGob }">
           <span class="nav-icono-menu"></span>
+          <span class="a11y-solo-lectura"> Menu Gobierno de México </span>
         </button>
       </div>
       <div class="nav-menu-contenedor" :class="{ 'abierto': showGob }">
@@ -234,13 +242,14 @@
       </div>
     </nav>
 
-    <nav class="navegacion navegacion-conahcyt navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
+    <nav class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img class="nav-logo invertir" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
         </a>
         <button v-if="esColapsable" @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>
+          <span class="a11y-solo-lectura"> Menu Principal </span>
         </button>
         <div v-if="esColapsable" class="nav-informacion">
           Sección: <b>{{ $route.name }}</b>
@@ -261,13 +270,13 @@
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
-            </li>            
+            </li>
             
             <li class="nav-contenedor-submenu">
               <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')" @mouseover="mostrarSubmenu('fundamentos')">Fundamentos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li> -->
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
@@ -281,12 +290,10 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/detalles">Detalles <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos/separadores">Separadores <span class="etiqueta">pre</span></RouterLink></li> --> 
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>
               </ul>
             </li>
@@ -295,11 +302,9 @@
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')" @mouseover="mostrarSubmenu('elementoscompuestos')">Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/alertas">Alertas <span class="etiqueta">pre</span></RouterLink></li> -->
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-compuestos">Botones Compuestos <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
-                <!-- <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/cargando">Cargando <span class="etiqueta">pre</span></RouterLink></li> -->
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/menu-flotante">Menu Flotante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
               </ul>
@@ -311,7 +316,7 @@
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Busqueda</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Búsqueda</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
@@ -341,6 +346,7 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/bordes">Bordes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/fondos">Fondos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
@@ -368,7 +374,7 @@
         @click="alternarTema">
         Tema: {{ nombreTemaActual }}
       </button>
-      <button       
+      <button
         class="boton-primario" 
         @click="alternarPerfil">
         Perfil: {{ perfil }}
@@ -381,7 +387,7 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
+<style lang="scss">
   .tmp-menu {
     background: #0002;
     backdrop-filter: blur(5px);
@@ -408,4 +414,15 @@
     flex: 1;
     text-align: right;
   }
+  .etiqueta {
+    font-size: 0.75rem; // 14px
+    font-weight: 600;
+    padding: .25rem .5rem;
+    line-height: calc(1em * 1.3);
+    margin: 0;
+    display: inline-flex;
+    border-radius: 20px;
+    background-color: #f005;
+  }
+
 </style>

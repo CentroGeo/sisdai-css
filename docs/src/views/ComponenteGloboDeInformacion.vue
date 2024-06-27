@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 
 <template>
@@ -29,8 +29,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="flex flex-contenido-centrado">
       <div class="columna-8">
         <h2 class="m-t-10">Globo de información</h2>
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="globo-informacion" role="tooltip">
             <p>
               <span class="globo-informacion-punto-color"></span>
@@ -45,8 +46,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="flex flex-contenido-centrado">
       <div class="columna-8">
         <h2 class="m-t-10">Globo de información complejo</h2>
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="globo-informacion globo-informacion-grande" role="tooltip">
             <p>
               <b>Lorem ipsum</b>
@@ -70,8 +72,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="flex flex-contenido-centrado">
       <div class="columna-8">
         <h2 class="m-t-10">Globo de información complejo con botón de cierre</h2>
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="globo-informacion globo-informacion-extra" role="tooltip">
             <p>
               <b>Red Nacional de Jardines Etnobiológicos</b>

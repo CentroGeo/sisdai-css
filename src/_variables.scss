@@ -13,38 +13,15 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-// COLOR
-$color-gobmx: (
-  'oscuro-1': #18302D,
-  'oscuro-2': #1F5D50,
-  'claro-0': #FFFFFF,
-  'claro-1': #DFC9A1,
-  'claro-2': #BD9558,
-  'acento': #9E2148,
-);
-
-$color-conahcyt: (
-  'oscuro-1': #002663,
-  'oscuro-2': #003384,
-  'claro-0': #F5F5F5,
-  'claro-1': #DDDDDD,
-  'claro-2': #AAAAAA,
-  'acento': #13aff0,
-);
-$color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
-
-// TODO: investigar si necesitamos este arreglo
-// si las variables ya existen en CSS
-// se pueden utilizar directo mas facil
-$acciones: (
-  'informativo': var(--acciones-informativo),
-  'informativo-2': var(--acciones-informativo-2),
-  'error': var(--acciones-error),
-  'error-2': var(--acciones-error-2),
-  'advertencia': var(--acciones-advertencia),
-  'advertencia-2': var(--acciones-advertencia-2),
-  'correcto': var(--acciones-correcto),
-  'correcto-2': var(--acciones-correcto-2),
+// AUX / fondos
+$fondo-color: (
+  'primario': var(--fondo),
+  'neutro': var(--fondo-neutro),
+  'acento': var(--fondo-acento),
+  'informacion': var(--fondo-informacion),
+  'confirmacion': var(--fondo-confirmacion),
+  'alerta': var(--fondo-alerta),
+  'error': var(--fondo-error),
 );
 
 // AUX / bordes
@@ -67,31 +44,18 @@ $borde-grosor: (
   '4':  4px,
 );
 
-$borde-color: (
-  '1':  var(--borde-color-1),
-  '2':  var(--borde-color-2),
-  '3':  var(--borde-color-3),
-  '4':  var(--borde-color-4),
-);
-
-// PICTOGRAMAS // tamaños especiales
-$pictograma: (
-  '24': (
-    'tamanio': 1rem,
-    'espaciado': 4px,
-  ),
-  '32': (
-    'tamanio': 1.5rem,
-    'espaciado': 4px,
-  ),
-  '48': (
-    'tamanio': 2rem,
-    'espaciado': 8px,
-  ),
+$borde-color: ( // aqui
+  'primario': var(--borde),
+  'secundario': var(--borde-secundario),
+  'acento': var(--borde-acento),
+  'informacion': var(--borde-informacion),
+  'confirmacion': var(--borde-confirmacion),
+  'alerta': var(--borde-alerta),
+  'error': var(--borde-error),
 );
 
 // AUX / tamaño tipografico
-$tamanio: ( 
+$texto-tamanio: ( 
   '1': 0.75rem,
   '2': 0.875rem,
   '3': 1rem,
@@ -102,6 +66,33 @@ $tamanio: (
   '8': 3rem,
   '9': 3.5rem,
   '10': 5rem,
+);
+
+$texto-color: (
+  'primario': var(--texto-primario),
+  'secundario': var(--texto-secundario), 
+  'acento': var(--texto-acento),
+  'inverso': var(--texto-inverso),
+  'informacion': var(--texto-informacion),
+  'confirmacion': var(--texto-confirmacion),
+  'alerta': var(--texto-alerta),
+  'error': var(--texto-error),
+);
+
+// PICTOGRAMAS // tamaños especiales
+$pictograma: (
+  'chico': (
+    'tamanio': 1rem,
+    'espaciado': 4px,
+  ),
+  'mediano': (
+    'tamanio': 1.5rem,
+    'espaciado': 4px,
+  ),
+  'grande': (
+    'tamanio': 2rem,
+    'espaciado': 8px,
+  ),
 );
 
 // ESPACIADO // MARGIN PADDING GAP
@@ -161,243 +152,5 @@ $columnas: (
   // para que el menu de accesibilidad las pueda cambiar fácilmente
   --tipografia-familia: 'Montserrat', sans-serif;
   --tipografia-tamanio: 16px;
-
-  --pagina-fondo: #ffffff;
-  --nota-fondo: #F0F6FF;
-  
-  // Tipografia
-  --tipografia-color: #141414;
-  --tipografia-color-1: #ffffff;
-  --tipografia-color-2: #0068FF;
-  --tipografia-color-3: #5E7392;
-
-  // Bordes
-  --borde-color-1: #141414;
-  --borde-color-2: #767677;
-  --borde-color-3: #AAAAAA;
-  --borde-color-4: #ffffff;
-  --borde-focus: #005DFF;
-
-  // Sombras
-  --sombra: #0000001a;
-  --sombra-focus: #005DFF;
-  --sombra-hover: #0000001a;
-
-  // Detalles
-  --detalle-fondo: #F0F6FF;
-  --detalle-focus-sombra: #005DFF;
-
-  // Boton primario
-  --boton-primario-fondo: #0068FF;
-  --boton-primario-borde: #0068FF;
-  --boton-primario-color: #ffffff;
-  --boton-primario-sombra: transparent;
-    --boton-primario-deshabilitado-fondo: #dddddd;
-    --boton-primario-deshabilitado-borde: #dddddd;
-    --boton-primario-deshabilitado-color: #767677;
-    --boton-primario-deshabilitado-sombra: transparent;
-      --boton-primario-hover-fondo: #0058CC;
-      --boton-primario-hover-borde: #0058CC;
-      --boton-primario-hover-color: #ffffff;
-      --boton-primario-hover-sombra: #0000001a;
-        --boton-primario-focus-fondo: #0058CC;
-        --boton-primario-focus-borde: #ffffff;
-        --boton-primario-focus-color: #ffffff;
-        --boton-primario-focus-sombra: #005DFF;
-        --boton-primario-focus-contorno: #005DFF;
-  
-  // Boton secundario
-  --boton-secundario-fondo: transparent;
-  --boton-secundario-borde: #364A69;
-  --boton-secundario-color: #364A69;
-  --boton-secundario-sombra: transparent;
-    --boton-secundario-deshabilitado-fondo: transparent;
-    --boton-secundario-deshabilitado-borde: #dddddd;
-    --boton-secundario-deshabilitado-color: #AAAAAA;
-    --boton-secundario-deshabilitado-sombra: transparent;
-      --boton-secundario-hover-fondo: #CCE1FF;
-      --boton-secundario-hover-borde: #364A69;
-      --boton-secundario-hover-color: #364A69;
-      --boton-secundario-hover-sombra: #0000001a;
-        --boton-secundario-focus-fondo: #CCE1FF;
-        --boton-secundario-focus-borde: #005DFF;
-        --boton-secundario-focus-color: #364A69;
-        --boton-secundario-focus-sombra: #005DFF;
-  
-  // Boton primario sin contenedor
-  --boton-sin-contenedor-primario-color: #0068FF; 
-    --boton-sin-contenedor-primario-deshabilitado-color: #AAAAAA; 
-      --boton-sin-contenedor-primario-hover-fondo: transparent;
-      --boton-sin-contenedor-primario-hover-color: #0058CC;
-      --boton-sin-contenedor-primario-hover-sombra: transparent;
-        --boton-sin-contenedor-primario-focus-fondo: #CCE1FF; 
-        --boton-sin-contenedor-primario-focus-borde: #005DFF;
-        --boton-sin-contenedor-primario-focus-color: #0068FF;
-        --boton-sin-contenedor-primario-focus-sombra: #005DFF;
-  
-  // Boton secundario sin contenedor
-  --boton-sin-contenedor-secundario-color: #364A69; 
-    --boton-sin-contenedor-secundario-deshabilitado-color: #AAAAAA;
-      --boton-sin-contenedor-secundario-hover-fondo: #CCE1FF;
-      --boton-sin-contenedor-secundario-hover-color: #364A69;
-      --boton-sin-contenedor-secundario-hover-sombra: transparent;
-        --boton-sin-contenedor-secundario-focus-fondo: #CCE1FF;
-        --boton-sin-contenedor-secundario-focus-borde: #005DFF;
-        --boton-sin-contenedor-secundario-focus-color: #364A69;
-        --boton-sin-contenedor-secundario-focus-sombra: #005DFF;
-
-  // boron alternar
-  --boton-alternar-fondo: #DDDDDD;
-  --boton-alternar-color: #364A69;
-  --boton-alternar-deshabilitado-color: #767677;
-  --boton-alternar-deshabilitado-fondo: #AAAAAA;
-
-  // boton flotante
-  --boton-flotante-fondo: var(--pagina-fondo);
-  --boton-flotante-fondo-hover: #cce1ff;
-  --boton-flotante-fondo-focus: #cce1ff;
-  --boton-flotante-color: #364a69;
-  --boton-flotante-color-hover: #364a69;
-  --boton-flotante-color-focus: #364a69;
-  --boton-flotante-sombra-focus: inset 0 0 0 1px var(--boton-secundario-focus-borde), 0 0 8px var(--boton-secundario-focus-sombra);
-  
-  // Boton icono sin borde
-  --boton-icono-sin-borde-color: #0068FF;
-
-  // Elementos de formulario
-  --label-color: #364A69;
-  --input-fondo: var(--pagina-fondo);
-  --input-color: #141414;
-  --input-borde: #364A69;
-  --input-placeholder: #767677; // este tambien lo usa el label de checkbox y radio en el estado deshabilitado
-  --input-controles-color: #0068FF;
-    --input-deshabilitado-fondo: #DDDDDD;
-    --input-deshabilitado-borde: #AAAAAA;
-    --input-deshabilitado-color: #141414;
-    --input-hover: #F0F6FF;
-    --input-focus: #005DFF;
-    // cambiar el color en fill="%23364A69" en donde %23 equivale a # y los siguientes 6 números son el código hexadecimal de color
-    --input-select-svg: url('data:image/svg+xml,\
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
-        <g id="icon">\
-          <polygon fill="%23364A69" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
-        </g>\
-      </svg>');
-    --input-select-deshabilitada-svg: url('data:image/svg+xml,\
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">\
-        <g id="icon">\
-          <polygon fill="%23767677" points="16,22 6,12 7.4,10.6 16,19.2 24.6,10.6 26,12 "/>\
-        </g>\
-      </svg>');
-    --input-confirmacion: #2A6F4D;
-    --input-error: #940B1C;
-
-  // Tablas
-  --tabla-fondo-impar: #F0F6FF;
-  --tabla-fondo-notas: #CCE1FF;
-
-  // Tarjetas
-  --tarjetas-fondo: #F5F5F5;
-  --tarjetas-color: #141414;
-  --tarjetas-externas-color: #ffffff;
-  --tarjetas-externas-fondo-gradiente: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.59) 60%, rgba(0,0,0,0) 100%);
-  --tarjetas-internas-color: #141414;
-  --tarjetas-internas-fondo: #F5F5F5;
-    --tarjetas-internas-fondo-hover: #DDDDDD;
-
-  --tarjetas-simplificada-fondo: #FFFFFF;
-  --tarjetas-simplificada-color: #005DFF;
-  --tarjetas-simplificada-borde: #005DFF;
-    --tarjetas-simplificada-fondo-hover: #005DFF;
-    --tarjetas-simplificadas-borde-hover: #005DFF;
-    --tarjetas-simplificada-color-hover: #FFFFFF;
-      --tarjeta-simplificada-fondo-focus: #005DFF;
-      --tarjeta-simplificada-borde-focus: #FFFFFF;
-      --tarjeta-simplificada-color-focus: #FFFFFF;
-      --tarjeta-simplificada-contorno-focus: #005DFF;
-      --tarjeta-simplificada-sombra-focus: #005DFF;
-  --tarjetas-contenido-simplificada-fondo: #F5F5F5;
-  --tarjetas--contenido-simplificada-color: #141414;
-
-  // Portada
-  --portada-fondo-grandiente: linear-gradient(transparent, #000000e5);
-  --portada-color: #ffffff;
-  
-  // Navegacion principal
-  --navegacion-conahcyt-fondo: #ffffff;
-  --navegacion-conahcyt-sombra: #00000032;
-  --navegacion-conahcyt-color: #002663;
-  --navegacion-conahcyt-fondo-icono: #002663;
-  --navegacion-conahcyt-fondo-hover: #F5F5F5;
-  
-  // Navegacion secundaria
-  --menu-lateral-color: #102543;
-  --menu-lateral-fondo: #DBEAFF;
-  --menu-lateral-accion: #0068FF;
-  --menu-lateral-hover-color: #ffffff;
-    --menu-lateral-accion-fondo-hover: #364A69;
-      --menu-lateral-accion-fondo-active: #F8FBFF;
-      --menu-lateral-accion-sombra-active: #0068FF;
-  --submenu-lateral-fondo-mov: #DBEAFF;
-  --submenu-lateral-fondo-colapsable: #CCE1FF;
-
-  // Acciones
-  --acciones-informativo: #19439C;
-  --acciones-informativo-2: #ECF2FF;
-  --acciones-error: #940B1C;
-  --acciones-error-2: #FEE9EC;
-  --acciones-advertencia: #916802;
-  --acciones-advertencia-2: #FFF7E3;
-  --acciones-correcto: #2A6F4D;
-  --acciones-correcto-2: #E7FBF1;
-
-  // Hipervinculos
-  --hipervinculo-color: #005DFF;
-  --hipervinculo-sombra: transparent;
-  --hipervinculo-deshabilitado-color: #AAAAAA;
-  --hipervinculo-deshabilitado-sombra: transparent;
-  --hipervinculo-hover-color: #356CCC;
-  --hipervinculo-hover-sombra: transparent;
-  --hipervinculo-focus-color: #005DFF;
-  --hipervinculo-focus-sombra: #005DFF;
-  --hipervinculo-visitado: #9233FF;
-
-  // Navegacion
-  --navegacion-fondo: #fff;
-  --navegacion-sombra: 0 1px 0 .1px #ccc, 0 4px 4px rgba(0,0,0,0.2);
-  --navegacion-redondeado: 0 0 8px 8px;
-  --navegacion-color: #364a69;
-    --navegacion-fondo-hover: #F0F6FF;
-    --navegacion-sombra-hover: 0 0 0 0 transparent;
-    --navegacion-color-hover: #364a69;
-      --navegacion-fondo-active: #fff;
-      --navegacion-sombra-active: inset 0 -4px 0 0 #0068FF;
-      --navegacion-color-active: #364a69;
-
-
-  // Color
-  @each $id, $valor in $color-gobmx {
-    --color-gobmx-#{$id}: #{$valor};
-  }
-
-  @each $id, $valor in $color-conahcyt {
-    --color-conahcyt-#{$id}: #{$valor};
-  }
-  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001c4a);
-
- // color globo informacion
- --dialogo-fondo: rgba(0,0,0,0.5);
- --globo-informacion-fondo: #141414E6;
- --globo-informacion-color: #ffffff;
- --globo-informacion-accion: #80AAFF;
-
-  // menu accesibilidad
-  --menu-accesibilidad-boton-fondo: #ffffff;
-  --menu-accesibilidad-boton-borde: #ffffff;
-  --menu-accesibilidad-boton-color: #0068FF;
-  --menu-accesibilidad-boton-color-hover: #0058CC;
-  --menu-accesibilidad-boton-sombra-focus: #005DFF;
-  --menu-accesibilidad-contenedor-fondo: #f5f5f5;
-  --menu-accesibilidad-contenedor-sombra: 0 4px 8px #00000029;
-  --menu-accesibilidad-contenedor-color: #364a69;
+  --tipografia-codigo: monospace;
 }

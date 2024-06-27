@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
 </script>
 <template>
@@ -63,10 +63,10 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       </div>
     </div>
     <div class="contenedor m-b-10">
-      <EjemploCodigoVertical
-        class="m-y-1"
+      <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <div class="portada">
           <img class="portada-imagen" src="..." alt="">
           <div class="portada-degradado">
@@ -109,10 +109,10 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       </div>
     </div>
     <div class="contenedor">
-      <EjemploCodigoVertical
-        class="m-y-1"
+      <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo="HTML"
+        codigo='
         <div class="portada portada-secundaria">
           <img class="portada-imagen" src="..." alt="">
           <div class="portada-degradado">

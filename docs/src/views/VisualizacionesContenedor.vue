@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -77,7 +77,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </p>
         </div>
       </div>
-      <div class="contenedor-vis-atribuciones borde-t borde-color-3">
+      <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
         <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <img
             class="color-invertir"
@@ -92,9 +92,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
 
 
-      <EjemploCodigoVertical
-        :tiene_ejemplo="false"
-        html='
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
         <div class="contenedor-vis">
   
           <!-- paneles del contenedor -->
@@ -113,7 +114,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </div>
   
           <!-- atribuciones -->
-          <div class="contenedor-vis-atribuciones borde-t borde-color-3">
+          <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
             <a 
               class="logo-conacyt" 
               href="https://conahcyt.mx/" 

@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
+import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -18,7 +18,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
       </p>
       
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-1">
         texto-tamanio-1
@@ -28,7 +28,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'0.75rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-2">
         texto-tamanio-2
@@ -38,7 +38,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'0.875rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-3">
         texto-tamanio-3
@@ -48,7 +48,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-4">
         texto-tamanio-4
@@ -58,7 +58,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.125rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-5">
         texto-tamanio-5
@@ -68,7 +68,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.25rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-6">
         texto-tamanio-6
@@ -78,7 +78,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'1.5rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-7">
         texto-tamanio-7
@@ -88,7 +88,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'2.25rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-8">
         texto-tamanio-8
@@ -98,7 +98,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'3rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-9">
         texto-tamanio-9
@@ -108,7 +108,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Tamaño', valor:'3.5rem'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-10">
         texto-tamanio-10
@@ -128,7 +128,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         el tamaño adecuado para cada tipo de pantalla.
       </p>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-tamanio-4-mov texto-tamanio-6-esc">
         texto-tamanio-4-mov texto-tamanio-6-esc
@@ -150,44 +150,84 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         a variables definidas para modos claro y oscuros en cada tema.
       </p>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
-      <p class="texto-color-base">
-        texto-color-base
+      <p class="texto-color-primario">
+        Texto color primario
       </p>
       '
       :propiedades="[[
-        {nombre:'Color', valor:'var(--tipografia-color)'},
+        {nombre:'Color', valor:'var(--texto-primario)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
-      <p class="texto-color-1">
-        texto-color-1
+      <p class="texto-color-secundario">
+        Texto color secundario
       </p>
       '
       :propiedades="[[
-        {nombre:'Color', valor:'var(--tipografia-color-1)'},
+        {nombre:'Color', valor:'var(--texto-secundario)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
-      <p class="texto-color-2">
-        texto-color-2
+      <p class="texto-color-acento">
+        Texto color acento
       </p>
       '
       :propiedades="[[
-        {nombre:'Color', valor:'var(--tipografia-color-2)'},
+        {nombre:'Color', valor:'var(--texto-acento)'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
-      <p class="texto-color-3">
-        texto-color-3
+      <p class="texto-color-inverso">
+        Texto color inverso
       </p>
       '
       :propiedades="[[
-        {nombre:'Color', valor:'var(--tipografia-color-3)'},
+        {nombre:'Color', valor:'var(--texto-inverso)'},
+      ]]"
+    />
+    <EjemploCodigoTipografico 
+      html='
+      <p class="texto-color-informacion">
+        Texto color informacion
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-informacion)'},
+      ]]"
+    />
+    <EjemploCodigoTipografico 
+      html='
+      <p class="texto-color-confirmacion">
+        Texto color confirmacion
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-confirmacion)'},
+      ]]"
+    />
+    <EjemploCodigoTipografico 
+      html='
+      <p class="texto-color-alerta">
+        Texto color alerta
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-alerta)'},
+      ]]"
+    />
+    <EjemploCodigoTipografico 
+      html='
+      <p class="texto-color-error">
+        Texto color error
+      </p>
+      '
+      :propiedades="[[
+        {nombre:'Color', valor:'var(--texto-error)'},
       ]]"
     />
 
@@ -195,7 +235,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Alineación</h2>
     </div>
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-centrado">
         texto-centrado
@@ -205,7 +245,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Alineacion', valor:'centrada'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-derecha">
         texto-derecha
@@ -215,7 +255,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Alineacion', valor:'derecha'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-izquierda">
         texto-izquierda
@@ -225,7 +265,7 @@ import EjemploCodigoHorizontal from '@/componetes/EjemploCodigoHorizontal.vue'
         {nombre:'Alineacion', valor:'izquierda'},
       ]]"
     />
-    <EjemploCodigoHorizontal 
+    <EjemploCodigoTipografico 
       html='
       <p class="texto-justificado">
         texto-justificado

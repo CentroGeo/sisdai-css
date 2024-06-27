@@ -14,14 +14,17 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 @charset 'UTF-8';
+
+// color predeterminada clara
+@import 'color';
+
 // primero siempre las variables, normalizador y mixins 
 @import '_variables';
 @import '_normalizar';
 @import '_mixins';
 
 // fundamentos
-@import 'color/institucional';
-@import 'color/acciones';
+// @import 'color';
 @import 'tipografia';
 @import 'pictograma';
 @import 'reticula';
@@ -53,4 +56,3 @@
 @import 'accesibilidad/hipervinculos';
 @import 'accesibilidad/ir-contenido-principal';
 @import 'accesibilidad/oscura';
-@import 'accesibilidad/clara';

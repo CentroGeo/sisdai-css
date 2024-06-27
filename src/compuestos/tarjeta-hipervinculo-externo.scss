@@ -15,27 +15,40 @@
 
 .tarjeta-hipervinculo-externo {
   @extend .tarjeta-hipervinculo;
-  display: flex;
   position: relative;
   width: 100%;
-  min-height: 240px;
-
-  .tarjeta-imagen {
+  min-height: 200px;
+  
+  
+  img.tarjeta-imagen {
     transform: scale(1.1);
     position: absolute;
     width: 100%;
     height: 100%;
-    left: 0;
-    top: 0;
     object-fit: cover;
     object-position: 50% 50%;
     @include transicion;
+  }
+  
+  picture.tarjeta-imagen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    @include transicion;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
   }
 
   .tarjeta-degradado {
     position: relative;
     width: 100%;
-    background: var(--tarjetas-externas-fondo-gradiente);
+    height: 100%;
+    background: var(--tarjeta-externa-fondo-degradado);
     display: flex;
     align-items: stretch;
     margin-top: map-get($espaciado, '6');
@@ -46,7 +59,7 @@
     padding: map-get($espaciado, '3');
     width: 100%;
     > * {
-      color: var(--tarjetas-externas-color);
+      color: var(--tarjeta-externa-color);
       border-color: currentColor;
     }
     .pictograma,

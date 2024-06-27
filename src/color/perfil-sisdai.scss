@@ -13,29 +13,25 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-@each $nombre, $color in $color-gobmx {
-  .gobmx-fondo-#{$nombre} {
-    background-color: $color;
-  }
-  .gobmx-borde-#{$nombre} {
-    border-color: $color;
-  }
-  .gobmx-texto-#{$nombre} {
-    color: $color;
-  }
-}
-
-@each $nombre, $color in $color-conahcyt {
-  .conahcyt-fondo-#{$nombre} {
-    background-color: $color;
-  }
-  .conahcyt-borde-#{$nombre} {
-    border-color: $color;
-  }
-  .conahcyt-texto-#{$nombre} {
-    color: $color;
-  }
-}
-.conahcyt-fondo-degradado {
-  background-image: var(--color-conahcyt-degradado);
+body[data-perfil='sisdai'] {
+  // colores primarios
+  --color-primario-4: #2B13B1;
+  --color-primario-3: #3F17E4;
+  --color-primario-2: #9674E1;
+  --color-primario-1: #A28BDF;
+  
+  // colores secundarios
+  --color-secundario-12: #201540;
+  --color-secundario-11: #1f143f;
+  --color-secundario-11-rgb: 31, 20, 63;
+  --color-secundario-10: #2B204C;
+  --color-secundario-9: #3A2F5B;
+  --color-secundario-8: #453B67;
+  --color-secundario-7: #6E6380;
+  --color-secundario-6: #978CB7;
+  --color-secundario-5: #BFB5E0;
+  --color-secundario-4: #DBD0FB;
+  --color-secundario-3: #E4DEFC;
+  --color-secundario-2: #F4F1FE;
+  --color-secundario-1: #FEFAF8;
 }

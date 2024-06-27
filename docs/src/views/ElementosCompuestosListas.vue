@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -34,9 +34,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <img src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/avatar.svg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
+                <p class="lista-compuesta-titulo">titulo</p>
                 <p class="lista-compuesta-texto-primario">texto-primario</p>
                 <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-                <p class="lista-compuesta-texto-terciario">texto-terciario</p>
               </div>
             </a>
           </li>
@@ -46,9 +46,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/nymeria.jpg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
-                <p class="lista-compuesta-texto-primario">Nombre(s) Primer y Segundo apellido</p>
-                <p class="lista-compuesta-texto-secundario">Rol o cargo</p>
-                <p class="lista-compuesta-texto-terciario">Institución de adscripción</p>
+                <p class="lista-compuesta-titulo">Nombre(s) Primer y Segundo apellido</p>
+                <p class="lista-compuesta-texto-primario">Rol o cargo</p>
+                <p class="lista-compuesta-texto-secundario">Institución de adscripción</p>
               </div>
             </a>
           </li>
@@ -58,18 +58,19 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/nilo.jpg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
-                <p class="lista-compuesta-texto-primario">Nombre(s) Primer y Segundo apellido</p>
-                <p class="lista-compuesta-texto-secundario">Rol o cargo</p>
-                <p class="lista-compuesta-texto-terciario">Institución de adscripción</p>
+                <p class="lista-compuesta-titulo">Nombre(s) Primer y Segundo apellido</p>
+                <p class="lista-compuesta-texto-primario">Rol o cargo</p>
+                <p class="lista-compuesta-texto-secundario">Institución de adscripción</p>
               </div>
             </a>
           </li>
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
           :tiene_ejemplo="false"
-          html='
+          tipo='HTML'
+          codigo='
           <ul class="lista-compuesta lista-avatar">
             <li>
               <a href="#">
@@ -77,14 +78,14 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                   <img src="..." alt=""/>
                 </div>
                 <div class="lista-compuesta-cuerpo">
+                  <p class="lista-compuesta-titulo">
+                    titulo
+                  </p>
                   <p class="lista-compuesta-texto-primario">
                     texto-primario
                   </p>
                   <p class="lista-compuesta-texto-secundario">
                     texto-secundario
-                  </p>
-                  <p class="lista-compuesta-texto-terciario">
-                    texto-terciario
                   </p>
                 </div>
               </a>
@@ -133,9 +134,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
           :tiene_ejemplo="false"
-          html='
+          tipo='HTML'
+          codigo='
           <ul class="lista-compuesta lista-logotipo">
             <li>
               <a href="#">
@@ -170,18 +172,18 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <ul class="lista-compuesta lista-pictograma">
           <li>
             <div class="lista-pictograma-imagen">
-              <span class="pictograma-flkt pictograma-32 texto-color-2"></span>
+              <span class="pictograma-flkt pictograma-mediano texto-color-acento"></span>
             </div>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-secundario">texto-secundario</p>
+              <p class="lista-compuesta-texto-primario">texto-primario</p>
             </div>
           </li>
           <li>
             <div class="lista-pictograma-imagen">
-              <span class="pictograma-flkt pictograma-32 texto-color-2"></span>
+              <span class="pictograma-flkt pictograma-mediano texto-color-acento"></span>
             </div>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-secundario">
+              <p class="lista-compuesta-texto">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                 Aut perspiciatis dolores magni temporibus, ab consequuntur molestiae, 
                 illo quasi ipsum at natus qui autem facere ducimus consectetur 
@@ -192,19 +194,20 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
           :tiene_ejemplo="false"
-          html='
+          tipo='HTML'
+          codigo='
           <ul class="lista-compuesta lista-pictograma">
             <li>
               <div class="lista-pictograma-imagen">
                 <span 
-                  class="pictograma-flkt pictograma-32 texto-color-2"
+                  class="pictograma-flkt pictograma-mediano texto-color-acento"
                 ></span>
               </div>
               <div class="lista-compuesta-cuerpo">
-                <p class="lista-compuesta-texto-secundario">
-                  texto-secundario
+                <p class="lista-compuesta-texto-primario">
+                  texto-primario
                 </p>
               </div>
             </li>
@@ -229,9 +232,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <ul class="lista-compuesta lista-accion">
           <li>
             <div class="lista-compuesta-cuerpo">
+              <p class="lista-compuesta-titulo">titulo</p>
               <p class="lista-compuesta-texto-primario">texto-primario</p>
               <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-              <p class="lista-compuesta-texto-terciario">texto-terciario</p>
             </div>
             <div class="lista-accion-acciones">
               <button class="boton-pictograma boton-sin-contenedor-primario">
@@ -250,9 +253,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </li>
           <li>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-              <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-              <p class="lista-compuesta-texto-terciario">355kb</p>
+              <p class="lista-compuesta-titulo">Nombre de archivo</p>
+              <p class="lista-compuesta-texto-primario">19/12/2024</p>
+              <p class="lista-compuesta-texto-secundario">355kb</p>
             </div>
             <div class="lista-accion-acciones">
               <button class="boton-pictograma boton-sin-contenedor-primario">
@@ -271,9 +274,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           </li>
           <li>
             <div class="lista-compuesta-cuerpo">
-              <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-              <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-              <p class="lista-compuesta-texto-terciario">355kb</p>
+              <p class="lista-compuesta-titulo">Nombre de archivo</p>
+              <p class="lista-compuesta-texto-primario">19/12/2024</p>
+              <p class="lista-compuesta-texto-secundario">355kb</p>
             </div>
             <div class="lista-accion-acciones">
               <button class="boton-pictograma boton-sin-contenedor-secundario">
@@ -285,15 +288,16 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo='HTML'
+        codigo='
           <ul class="lista-compuesta lista-accion">
             <li>
               <div class="lista-compuesta-cuerpo">
+                <p class="lista-compuesta-titulo"> titulo </p>
                 <p class="lista-compuesta-texto-primario"> texto-primario </p>
                 <p class="lista-compuesta-texto-secundario"> texto-secundario </p>
-                <p class="lista-compuesta-texto-terciario"> texto-terciario </p>
               </div>
               <div class="lista-accion-acciones">
                 <button 
@@ -339,9 +343,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 checked
               />
               <label for="checkbox1">
+                <p class="lista-compuesta-titulo">titulo</p>
                 <p class="lista-compuesta-texto-primario">texto-primario</p>
                 <p class="lista-compuesta-texto-secundario">texto-secundario</p>
-                <p class="lista-compuesta-texto-terciario">texto-terciario</p>
             </label>
           </li>
           <li>
@@ -350,9 +354,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 name="checkboxes"
               />
               <label for="checkbox2">
-                <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-                <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-                <p class="lista-compuesta-texto-terciario">355kb</p>
+                <p class="lista-compuesta-titulo">Nombre de archivo</p>
+                <p class="lista-compuesta-texto-primario">19/12/2024</p>
+                <p class="lista-compuesta-texto-secundario">355kb</p>
             </label>
           </li>
           <li>
@@ -361,17 +365,18 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                 name="checkboxes"
               />
               <label for="checkbox3">
-                <p class="lista-compuesta-texto-primario">Nombre de archivo</p>
-                <p class="lista-compuesta-texto-secundario">19/12/2024</p>
-                <p class="lista-compuesta-texto-terciario">355kb</p>
+                <p class="lista-compuesta-titulo">Nombre de archivo</p>
+                <p class="lista-compuesta-texto-primario">19/12/2024</p>
+                <p class="lista-compuesta-texto-secundario">355kb</p>
             </label>
           </li>
         </ul>
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
+        <EjemploCodigo
         :tiene_ejemplo="false"
-        html='
+        tipo='HTML'
+        codigo='
           <ul class="lista-computesta lista-casilla">
             <li>
                 <input id="checkbox1" 
@@ -380,9 +385,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
                   checked
                 />
                 <label for="checkbox1">
+                  <p class="lista-compuesta-titulo"> titulo </p>
                   <p class="lista-compuesta-texto-primario"> texto-primario </p>
                   <p class="lista-compuesta-texto-secundario"> texto-secundario </p>
-                  <p class="lista-compuesta-texto-terciario"> texto-terciario </p>
               </label>
             </li>
             ...

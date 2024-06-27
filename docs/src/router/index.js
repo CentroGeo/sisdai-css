@@ -138,11 +138,6 @@ const router = createRouter({
           component: () => import('../views/ElementosCompuestosPortadas.vue')
         },
         {
-          path: 'alertas',
-          name: 'alertas',
-          component: () => import('../views/ElementosCompuestosAlertas.vue')
-        },
-        {
           path: 'cargando',
           name: 'cargando',
           component: () => import('../views/ElementosCompuestosCargando.vue')
@@ -161,6 +156,11 @@ const router = createRouter({
           path: 'botones-pictogramas',
           name: 'botones-pictogramas',
           component: () => import('../views/ElementosCompuestosBotonesPictograma.vue')
+        },
+        {
+          path: 'menu-flotante',
+          name: 'menu-flotante',
+          component: () => import('../views/ElementosCompuestosMenuFlotante.vue')
         },
       ]
     },
@@ -276,6 +276,11 @@ const router = createRouter({
           path: 'bordes',
           name: 'bordes',
           component: () => import('../views/AuxiliaresBordes.vue')
+        },
+        {
+          path: 'fondos',
+          name: 'fondos',
+          component: () => import('../views/AuxiliaresFondos.vue')
         },
       ]
     },

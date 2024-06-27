@@ -18,7 +18,6 @@
   z-index: 999;
 
   @include mediaquery('mov') {
-
     margin-top: map-get($espaciado, '5');
     top: 15vh;
     width: 55px;
@@ -41,12 +40,19 @@
       width: 80vw;
       .menu-lateral-boton {
         border-radius: map-get($borde-redondeado, '20') 0 0 map-get($borde-redondeado, '20');
+        .pictograma,
+        [class^='pictograma-'],
+        [class*=' pictograma-'] {
+          transform: rotate(180deg);
+        }
       }
       .menu-lateral-contenedor {
+        border-left-color: var(--navegacion-secundaria-borde);
         visibility: visible;
         margin-left: 0;
         opacity: 1;
         pointer-events: inherit;
+        box-shadow: 4px 8px 16px -4px var(--opacidad-ligero);
       }
     }
   }
@@ -62,12 +68,11 @@
   }
 }
 
-
 .menu-lateral-boton {
   @include mediaquery('mov') {
-    background: var(--menu-lateral-fondo);
+    background: var(--navegacion-secundaria-fondo);
     border-radius: map-get($borde-redondeado, '20');
-    margin-right: 2px;
+    color: var(--navegacion-secundaria-color);
     margin-left: map-get($espaciado, '2');
     display: flex;
     padding: 0;
@@ -77,12 +82,20 @@
     [class*=' pictograma-'] {
       align-self: flex-start;
       font-size: 1.35em;
-      padding: map-get($espaciado, '1');
+      padding: map-get($espaciado, '2') map-get($espaciado, '1');
+      transition: transform 0.27s ease;
     }
-    &:active,
-    &:hover,
+    &:hover {
+      background: var(--navegacion-secundaria-cursor-fondo);
+      box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+      color: var(--navegacion-secundaria-cursor-color);
+    }
     &:focus {
-      box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
+      background: var(--navegacion-secundaria-enfoque-fondo);
+      box-shadow: 
+        inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde),
+        0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+      color: var(--navegacion-secundaria-enfoque-color);
     }
   }
   @include mediaquery('esc') {
@@ -91,7 +104,9 @@
 }
 
 .menu-lateral-contenedor {
-  background: var(--menu-lateral-fondo);
+  background: var(--navegacion-secundaria-fondo);
+  border-left: 1px solid transparent;
+  color: var(--navegacion-secundaria-color);
   position: relative;
   width: 100%;
 
@@ -107,38 +122,48 @@
   a,
   button {
     background-color: transparent;
-    color: var(--menu-lateral-color);
+    color: var(--navegacion-secundaria-color);
     border-radius: 0;
     display: flex;
     width: 100%;
+    text-decoration: none;
     padding: map-get($espaciado, '1') map-get($espaciado, '3');
+    
     &:hover {
-      background: var(--menu-lateral-accion-fondo-hover);
-      color: var(--menu-lateral-hover-color);
+      background: var(--navegacion-secundaria-cursor-fondo);
+      box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+      color: var(--navegacion-secundaria-cursor-color);
+      text-decoration: none;
+    }
+
+    &:focus,
+    &:focus-visible,
+    &:active,
+    &.router-link-exact-active,
+    &.link-activo {
+      background: var(--navegacion-secundaria-activo-fondo);
+      box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
+      color: var(--navegacion-secundaria-activo-color);
+      text-decoration: none;
+      outline: none;
+    }
+    
+    &:focus-visible {
+      background: var(--navegacion-secundaria-enfoque-fondo);
+      box-shadow: 
+        inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde),
+        0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+      color: var(--navegacion-secundaria-enfoque-color);
+      outline: none;
+      text-decoration: none;
     }
   }
 
   a {
-    background: transparent;
     font-weight: 400;
-    text-decoration: none;
-    &.router-link-exact-active,
-    &:active,
-    &:focus,
-    &.link-activo {
-      background: var(--menu-lateral-accion-fondo-active);
-      box-shadow: inset 8px 0 0 var(--menu-lateral-accion-sombra-active);
-      color: var(--menu-lateral-accion);
-    }
-    &:focus-visible {
-      outline: none;
-    }
   }
   button {
     font-weight: 500;
-    &:focus-visible {
-      box-shadow: 0 0 8px var(--menu-lateral-accion-sombra-active), inset 0 0 0 1px var(--menu-lateral-accion-sombra-active);
-    }
   }
 
   ul, ol {
@@ -189,6 +214,6 @@
 .menu-lateral-fondo {
   position: relative;
   @include mediaquery('esc') {
-    background: var(--menu-lateral-fondo);
+    background: var(--navegacion-secundaria-fondo);
   }
 }

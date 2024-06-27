@@ -13,13 +13,20 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-.etiqueta {
-  font-size: 0.75rem; // 14px
-  font-weight: 600;
-  padding: .25rem .5rem;
-  line-height: calc(1em * 1.3);
-  margin: 0;
-  display: inline-flex;
-  border-radius: map-get($borde-redondeado, '20');
-  background-color: map-get($acciones, 'error-2');
+:root {
+  // colores conahcyt 2024
+  --color-conahcyt-4: #001C4A;
+  --color-conahcyt-3: #002663;
+  --color-conahcyt-2: #003384;
+  --color-conahcyt-1: #13AFF0;
+  --color-conahcyt-0: #FFFFFF;
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001C4A);
+
+  // colores gobierno de mexico 2024
+  --color-mx-5: #18302D;
+  --color-mx-4: #1F5D50;
+  --color-mx-3: #DFC9A1;
+  --color-mx-2: #BD9558;
+  --color-mx-1: #9E2148;
+  --color-mx-0: #FFFFFF;
 }

@@ -15,7 +15,7 @@
 
 .lista-casilla {
   li {
-    border-bottom: 1px solid var(--borde-color-3);
+    border-bottom: 1px solid var(--borde-secundario);
     padding: calc(map-get($espaciado, '1') + map-get($espaciado, 'minimo')) 0;
 
     [type='checkbox'] + label,

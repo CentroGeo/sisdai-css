@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -27,9 +27,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         requieren ajustes graduales de valores.
       </p>
       
-      <EjemploCodigoVertical
-        html='
-        <label for="rango">
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="rango">
             Rango
           </label>
           <input 
@@ -42,13 +43,47 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           />
         '
       />
+      <EjemploCodigo
+        tipo='CSS'
+        :tiene_ejemplo='false'
+        codigo='
+          // los valores de fondo deben ser controlados
+          // de manera dinámica con javascript
+          
+          .control-deslizante {
+            &::-webkit-slider-runnable-track {
+              background: linear-gradient(
+                to right,
+                var(--campo-rango-activo),
+                var(--campo-rango-activo) 50%,
+                var(--campo-rango) 50%
+              );
+            }
+            &::-moz-range-track {
+              background: linear-gradient(
+                to right,
+                var(--campo-rango-activo),
+                var(--campo-rango-activo) 50%,
+                var(--campo-rango) 50%
+              );
+            }
+            &::-ms-fill-upper {
+              background: linear-gradient(
+                to right,
+                var(--campo-rango-activo),
+                var(--campo-rango-activo) 50%,
+                var(--campo-rango) 50%
+              );
+            }
+          }
+        '
+      />
 
     </div>    
   </div>
 </template>
 
 <style lang="scss">
-
 // estilos únicamente de ejemplo
 // este fondo se tiene que agregar de manera dinamica con javascipt
 
@@ -56,25 +91,25 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
   &::-webkit-slider-runnable-track {
     background: linear-gradient(
       to right,
-      var(--input-controles-color),
-      var(--input-controles-color) 50%,
-      var(--input-deshabilitado-fondo) 50%
+      var(--campo-rango-activo),
+      var(--campo-rango-activo) 50%,
+      var(--campo-rango) 50%
     );
   }
   &::-moz-range-track {
     background: linear-gradient(
       to right,
-      var(--input-controles-color),
-      var(--input-controles-color) 50%,
-      var(--input-deshabilitado-fondo) 50%
+      var(--campo-rango-activo),
+      var(--campo-rango-activo) 50%,
+      var(--campo-rango) 50%
     );
   }
   &::-ms-fill-upper {
     background: linear-gradient(
       to right,
-      var(--input-controles-color),
-      var(--input-controles-color) 50%,
-      var(--input-deshabilitado-fondo) 50%
+      var(--campo-rango-activo),
+      var(--campo-rango-activo) 50%,
+      var(--campo-rango) 50%
     );
   }
 }

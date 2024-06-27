@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -28,8 +28,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde">
             borde general
           </p>
@@ -37,8 +38,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-t">
             borde arriba
           </p>
@@ -46,8 +48,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-b">
             borde abajo
           </p>
@@ -55,8 +58,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-l">
             borde izquierda
           </p>
@@ -64,8 +68,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-r">
             borde derecha
           </p>
@@ -73,8 +78,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-x">
             borde izquierda y derecha
           </p>
@@ -82,8 +88,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-y">
             borde arriba y abajo
           </p>
@@ -103,37 +110,71 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
-          <p class="borde borde-color-1">
-            var(--borde-color-1)
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="borde borde-color-primario">
+            var(--borde)
           </p>
           '
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
-          <p class="borde borde-color-2">
-            var(--borde-color-2)
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="borde borde-color-secundario">
+            var(--borde-secundario)
           </p>
           '
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
-          <p class="borde borde-color-3">
-            var(--borde-color-3)
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="borde borde-color-acento">
+            var(--borde-acento)
           </p>
           '
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
-          <p class="borde borde-color-4">
-            var(--borde-color-4)
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="borde borde-color-informacion">
+            var(--borde-informacion)
+          </p>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="borde borde-color-confirmacion">
+            var(--borde-confirmacion)
+          </p>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="borde borde-color-alerta">
+            var(--borde-alerta)
+          </p>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="borde borde-color-error">
+            var(--borde-error)
           </p>
           '
         />
@@ -151,8 +192,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde borde-l-grosor-0">
             borde 0px a la izquierda
           </p>
@@ -160,8 +202,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-t borde-grosor-1">
             borde arriba de 1px
           </p>
@@ -169,8 +212,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-b borde-grosor-2">
             borde abajo de 2px
           </p>
@@ -178,8 +222,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-y borde-grosor-3">
             borde arriba y abajo de 3px
           </p>
@@ -187,8 +232,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-x borde-grosor-4">
             borde izquierda y derecha de 4px
           </p>
@@ -196,8 +242,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-4">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde-x borde-l-grosor-4">
             borde izquierda 4px y derecha de 1px
           </p>
@@ -218,8 +265,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-redondeado-0">
             <p>borde sin redondear</p>
           </div>
@@ -227,8 +275,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-redondeado-2">
             <p>borde redondeado de 2px</p>
           </div>
@@ -236,8 +285,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-redondeado-4">
             <p>borde redondeado de 4px</p>
           </div>
@@ -245,8 +295,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-redondeado-8">
             <p>borde redondeado de 8px</p>
           </div>
@@ -254,8 +305,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-redondeado-16">
             <p>borde redondeado de 16px</p>
           </div>
@@ -263,8 +315,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-redondeado-20">
             <p>borde redondeado de 20px</p>
           </div>
@@ -272,8 +325,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-redondeado-24">
             <p>borde redondeado de 24px</p>
           </div>
@@ -281,8 +335,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-l-redondeado-0 borde-r-redondeado-24">
             <p>
               borde sin redondear a la derecha
@@ -293,8 +348,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-t-l-redondeado-16">
             <p>
               borde redondeado arriba a la izquierda
@@ -304,8 +360,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
       </div>
       <div class="columna-6">
-        <EjemploCodigoVertical
-          html='
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <div class="borde borde-b-r-redondeado-16">
             <p>
               borde redondeado abajo a la derecha

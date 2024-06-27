@@ -11,19 +11,8 @@
 </script>
 <template>
   <div class="ej-estilo-clase">
-    <div class="ejemplo" :class="clases">
-      <pre class="codigo">{{ codigo }}</pre>
+    <div class="fondo-color-informacion" :class="clases">
+      <pre class="texto-tamanio-1 m-l--5">{{ codigo }}</pre>
     </div>
   </div>
 </template>
-<style lang="scss">
-.ej-estilo-clase {
-  .ejemplo {
-    background: var(--nota-fondo);
-  }
-  .codigo {
-    margin: 0 -3.5rem;
-    font-size: 0.75rem;
-  }
-}
-</style>

@@ -14,12 +14,23 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .tarjeta {
-  flex: 1 1;
-  background: var(--tarjetas-fondo);
+  background: var(--tarjeta-fondo);
   border-radius: map-get($borde-redondeado, '20');
+  box-sizing: content-box;
+  position: relative;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    border-radius: 0;
+    max-width: inherit;
+  }
 
   .tarjeta-imagen {
+    max-width: inherit;
     width: 100%;
     height: 240px;
     object-fit: cover;
@@ -28,20 +39,13 @@
   }
 
   .tarjeta-cuerpo {
-    align-items: stretch;
     padding: map-get($espaciado, '3');
-    color: var(--tarjetas-color);
+    color: var(--tarjeta-color);
+    flex-grow: 1;
     @include transicion;
 
     > * {
-      margin-top: map-get($espaciado, '2');
-      margin-bottom: map-get($espaciado, '2');
-    }
-
-    > button,
-    > [class^='boton-'],
-    > [class*=' boton-'] {
-      margin-top: map-get($espaciado, '1');
+      margin: map-get($espaciado, '2') 0;
     }
 
     > :first-child {
@@ -50,6 +54,12 @@
     > :last-child {
       margin-bottom: 0;
     }
+  }
+
+  .tarjeta-pie {
+    display: flex;
+    gap: map-get($espaciado, '1');
+    padding: 0 map-get($espaciado, '3') map-get($espaciado, '3');
   }
 
   .tarjeta-etiqueta {

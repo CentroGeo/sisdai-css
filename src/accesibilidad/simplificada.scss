@@ -14,8 +14,8 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .a11y-simplificada {
-  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-accesibilidad-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
+  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
   input[type=button],
   input[type=submit],
   input[type=reset] {
@@ -38,7 +38,7 @@
       .portada-cuerpo {
         margin-top: 0px;
         > * {
-          color: var(--tipografia-color);
+          color: var(--texto-primario);
         }
       }
     }
@@ -46,12 +46,12 @@
 
   .tarjeta {
     .tarjeta-cuerpo {
-      background: var(--tarjetas-contenido-simplificada-fondo);
-      color: var(--tarjetas--contenido-simplificada-color);
+      background: var(--tarjeta-contenido-simplificada-fondo);
+      color: var(--tarjeta-contenido-simplificada-color);
       p,
       .tarjeta-titulo, 
       .tarjeta-etiqueta {
-				color: var(--tarjetas--contenido-simplificada-color);
+				color: var(--tarjeta-contenido-simplificada-color);
 			}
       a, button {
         text-decoration: none !important;
@@ -69,18 +69,18 @@
 
   .tarjeta-hipervinculo-interno,
   .tarjeta-hipervinculo-externo {
-    background: var(--tarjetas-simplificada-fondo);
-    border: 1px solid var(--tarjetas-simplificada-borde);
+    background: var(--tarjeta-simplificada-fondo);
+    border: 1px solid var(--tarjeta-simplificada-borde);
     min-height: auto;
-    color: var(--tarjetas-simplificada-color);
+    color: var(--tarjeta-simplificada-color);
     .tarjeta-degradado {
       background: none;
       margin: 0;
     }
     .tarjeta-cuerpo {
-      color: var(--tarjetas-simplificada-color);
+      color: var(--tarjeta-simplificada-color);
       > * {
-        color: var(--tarjetas-simplificada-color);
+        color: var(--tarjeta-simplificada-color);
       }
     }
     &:hover,
@@ -88,16 +88,16 @@
     &:focus-visible {
       box-shadow: none;
       .tarjeta-cuerpo {
-        background: var(--tarjetas-simplificada-fondo-hover);
+        background: var(--tarjeta-simplificada-cursor-fondo);
         > * {
-          color: var(--tarjetas-simplificada-color-hover);
+          color: var(--tarjeta-simplificada-cursor-color);
         }
       }
     }
     &:focus,
     &:focus-visible {
-      background: var(--tarjeta-simplificada-fondo-focus);
-      box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
+      background: var(--tarjeta-simplificada-enfoque-fondo);
+      box-shadow: 0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
     }
   }
 

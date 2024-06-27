@@ -38,7 +38,7 @@
   .portada-degradado {
 		position: relative;
 		width: 100%;
-		background: var(--portada-fondo-grandiente);
+		background: var(--degradado-ligero);
 		display: flex;
 		align-items: stretch;
 		margin-top: map-get($espaciado, '6');
@@ -51,7 +51,7 @@
     max-width: 700px;
     text-align: center;
     > * {
-      color: var(--portada-color);
+      color: var(--texto-inverso);
       border-color: currentColor;
       margin: map-get($espaciado, '1') 0;
     }
@@ -66,7 +66,7 @@
   .portada-titulo {
     @extend .titulo-base;
     font-size: 2.25rem; // 36px
-    color: var(--portada-color);
+    color: var(--texto-inverso);
     @include mediaquery('esc') { 
       font-size: 5rem; // 80px
     }
@@ -75,7 +75,7 @@
   .portada-subtitulo {
     @extend .titulo-base;
     font-size: 1.125rem; // 18px
-    color: var(--portada-color);
+    color: var(--texto-inverso);
     @include mediaquery('esc') {
       font-size: 1.5rem; //24px
     }
@@ -85,7 +85,7 @@
     .portada-titulo {
       @extend .titulo-base;
       font-size: 2.25rem; // 36px
-      color: var(--portada-color);
+      color: var(--texto-inverso);
       @include mediaquery('esc') {
         font-size: 3.5rem; // 56px
       }

@@ -1,467 +1,225 @@
+<script setup>
+import EjemploMuestraColor from '../componetes/EjemploMuestraColor.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+</script>
 <template>
   <div class="contenedor m-y-maximo">
-    <h1>Color</h1>
-    <div class="fondo-error-2 texto-error texto-centrado borde-redondeado-8 p-maximo">
-      <p class="texto-tamanio-10 icono-colaborar">!!!</p>
-      <p class="texto-tamanio-6">
-        Sección esta en revisión.<br>
-        Quizás nada de lo que se encuentra aqui exista en la siguiente versión<br>
+    
+    <div class="ancho-lectura">
+      <h1>Color</h1>
+      
+      <p>
+        La paleta de color del Sisdai, así como su uso y aplicación en interfaces digitales, 
+        tienen como fundamento los criterios de contraste de las 
+        <a href="https://www.w3.org/TR/WCAG22/">
+          Directrices de Accesibilidad al Contenido Web 2.2
+        </a>
+        (WCAG 2.2) de la Iniciativa de Accesibilidad Web (WAI) del Consorcio World Wide Web (W3C). 
+      </p>
+      <p>
+        Además la lógica del color en el Sisdai atiende requerimientos de jerarquia, legibilidad y consistencia.
+        Desde el diseño hasta la implementación en las bibliotecas y componentes.
       </p>
     </div>
-    <h2 class="m-t-maximo">Identidad Gobierno de México</h2>
-    <div class="grid">
-      <div
-        class="columna-2 m-y-1 gobmx-fondo-oscuro-1 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.gobmx-fondo-oscuro-1</p>
-        <p>#18302D</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 gobmx-fondo-oscuro-2 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.gobmx-fondo-oscuro-2</p>
-        <p>#103e34</p>
-      </div>
-      <div class="columna-2 m-y-1 gobmx-fondo-claro-1 borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.gobmx-fondo-claro-1</p>
-        <p>#fff</p>
-      </div>
-      <div class="columna-2 m-y-1 gobmx-fondo-claro-2 borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.gobmx-fondo-claro-2</p>
-        <p>#DFC9A1</p>
-      </div>
-      <div class="columna-2 m-y-1 gobmx-fondo-acento borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.gobmx-fondo-acento</p>
-        <p>#9E2148</p>
-      </div>
-    </div>
-    <div class="grid">
-      <div
-        class="columna-2 m-y-1 gobmx-borde-oscuro-1 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.gobmx-borde-oscuro-1</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 gobmx-borde-oscuro-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.gobmx-borde-oscuro-2</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 gobmx-borde-claro-1 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.gobmx-borde-claro-1</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 gobmx-borde-claro-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.gobmx-borde-claro-2</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 gobmx-borde-acento borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.gobmx-borde-acento</p>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="columna-2 m-y-1 gobmx-texto-oscuro-1">
-        <p>color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.gobmx-texto-oscuro-1</p>
-      </div>
 
-      <div class="columna-2 m-y-1 gobmx-texto-oscuro-2">
-        <p>color de texto</p>
+    <div class="ancho-lectura">
+      <h2 class="m-t-10">Perfil de color</h2>
+      <p>
+        El color predeterminado del Sisdai utiliza la familia de azul celeste como color principal de acción (--color-primario 1-4),
+        la familia de azul marino para organizar el contenido de distintos elementos (--color-secundario 1-12).
+      </p>
+      <p>
+        Las variables de color se encuentran definidas en el archivo <code>src/color/perfil-predeterminada.scss</code>. 
+        Estas variables son la base modificable de cada perfil de color.
+      </p>
+      <p>
+        Además se incorporan otros colores, reutilizables en todos los perfiles, para mejorar la usabilidad 
+        y la comunicación visual efectiva en el diseño de la interfaz de persona usuaria.
+      </p>
+    </div>
+    <div class="flex m-y-5">
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-primario-4)" texto="#fff"/>
       </div>
-      <div class="columna-2">
-        <p>.gobmx-texto-oscuro-2</p>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-primario-3)" texto="#fff"/>
       </div>
-      <div class="columna-2 m-y-1 gobmx-texto-claro-1">
-        <p>color de texto</p>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-primario-2)" texto="#000"/>
       </div>
-      <div class="columna-2">
-        <p>.gobmx-texto-claro-1</p>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-primario-1)" texto="#000"/>
       </div>
-      <div class="columna-2 m-y-1 gobmx-texto-claro-2">
-        <p>color de texto</p>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-12)" texto="#fff"/>
       </div>
-      <div class="columna-2">
-        <p>.gobmx-texto-claro-2</p>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-11)" texto="#fff"/>
       </div>
-      <div class="columna-2 m-y-1 gobmx-texto-acento">
-        <p>color de texto</p>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-10)" texto="#fff"/>
       </div>
-      <div class="columna-2">
-        <p>.gobmx-texto-acento</p>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-9)" texto="#fff"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-8)" texto="#fff"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-7)" texto="#fff"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-6)" texto="#000"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-5)" texto="#000"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-4)" texto="#000"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-3)" texto="#000"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-2)" texto="#000"/>
+      </div>
+      <div class="columna-4">
+        <EjemploMuestraColor variable="var(--color-secundario-1)" texto="#000"/>
       </div>
     </div>
 
-    <h2 class="m-t-10">Identidad Conahcyt</h2>
-    <div class="grid">
-      <div
-        class="columna-2 m-y-1 conahcyt-fondo-oscuro-1 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-fondo-oscuro-1</p>
-        <p>#002663</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-fondo-oscuro-2 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-fondo-oscuro-2</p>
-        <p>#003384</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-fondo-claro-0 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-fondo-claro-0</p>
-        <p>#DDDDDD4c</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-fondo-claro-1 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-fondo-claro-1</p>
-        <p>#DDDDDD</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-fondo-claro-2 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-fondo-claro-2</p>
-        <p>#8C8D8E</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-fondo-acento borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-fondo-acento</p>
-        <p>#13aff0</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-fondo-degradado borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-fondo-degradado</p>
-        <p>#003384, #002663, #001c4a</p>
-      </div>
+    <div class="ancho-lectura">
+      <p>
+        Para crear un nuevo perfil de color es necesario únicamente crear éstas 16 variables antes mencionadas,
+        en un archivo de css tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-predeterminada.scss</code>
+      </p>
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo="CSS"
+        codigo="
+          body[data-perfil='predeterminada'],
+          :root {
+            // colores primarios
+            --color-primario-4: #0058cc;
+            --color-primario-3: #0068FF;
+            --color-primario-2: #6692FF;
+            --color-primario-1: #80AAFF;
+
+            // colores secundarios
+            --color-secundario-12: #102543;
+            --color-secundario-11: #142a48;
+            --color-secundario-11-rgb: 20, 42, 72;
+            --color-secundario-10: #1B304E;
+            --color-secundario-9: #2A3F5D;
+            --color-secundario-8: #364A69;
+            --color-secundario-7: #5E7392;
+            --color-secundario-6: #889DBB;
+            --color-secundario-5: #B1C6E4;
+            --color-secundario-4: #CCE1FF;
+            --color-secundario-3: #DBEAFF;
+            --color-secundario-2: #F0F6FF;
+            --color-secundario-1: #F8FBFF;
+          }
+        "
+      />
     </div>
-    <div class="grid">
-      <div
-        class="columna-2 m-y-1 conahcyt-borde-oscuro-1 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-borde-oscuro-1</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-borde-oscuro-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-borde-oscuro-2</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-borde-claro-0 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-borde-claro-0</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-borde-claro-1 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-borde-claro-1</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-borde-claro-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-borde-claro-2</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 conahcyt-borde-acento borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.conahcyt-borde-acento</p>
-      </div>
+
+    <div class="ancho-lectura">
+      <h3 class="m-t-5">Colores base</h3>
+      <p>
+        Definidas en el archivo <code>src/color/base.scss</code>, las variables base son colores que se reutilizan en
+        todos los perfiles de color, no es necesario redefinirlas para crear un perfil de color nuevo.
+      </p>
     </div>
-    <div class="grid">
-      <div class="columna-2 m-y-1 conahcyt-texto-oscuro-1">
-        <p>Color de texto</p>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-4">
+        <p>Neutro</p>
+        <EjemploMuestraColor variable="var(--color-neutro-7)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-neutro-6)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-neutro-5)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-neutro-4)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-neutro-3)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-neutro-2)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-neutro-1)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-neutro-0)" texto="#000"/>
       </div>
-      <div class="columna-2">
-        <p>.conahcyt-texto-oscuro-1</p>
-      </div>
-      <div class="columna-2 m-y-1 conahcyt-texto-oscuro-2">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.conahcyt-texto-oscuro-2</p>
-      </div>
-      <div class="columna-2 m-y-1 conahcyt-texto-claro-0">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.conahcyt-texto-claro-0</p>
-      </div>
-      <div class="columna-2 m-y-1 conahcyt-texto-claro-1">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.conahcyt-texto-claro-1</p>
-      </div>
-      <div class="columna-2 m-y-1 conahcyt-texto-claro-2">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.conahcyt-texto-claro-2</p>
-      </div>
-      <div class="columna-2 m-y-1 conahcyt-texto-acento">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.conahcyt-texto-acento</p>
+
+      <div class="columna-4">
+        <p>Interactivo</p>
+        <EjemploMuestraColor variable="var(--color-interactivo-6)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-5)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-4)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-3)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-2)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-interactivo-1)" texto="#fff"/>
       </div>
     </div>
 
-    <h2 class="m-t-10">Paleta de color de estados de acción</h2>
-    <div class="grid">
-      <div class="columna-2 m-y-1 fondo-informativo borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-informativo</p>
-        <p>#19439C</p>
+    <div class="flex">
+      <div class="columna-4">
+        <p>Informativo</p>
+        <EjemploMuestraColor variable="var(--color-informativo-4)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-informativo-3)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-informativo-2)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-informativo-1)" texto="#000"/>
       </div>
-      <div class="columna-2 m-y-1 fondo-error borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-error</p>
-        <p>#940B1C</p>
+
+      <div class="columna-4">
+        <p>Confirmación</p>
+        <EjemploMuestraColor variable="var(--color-confirmacion-4)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-confirmacion-3)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-confirmacion-2)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-confirmacion-1)" texto="#000"/>
       </div>
-      <div class="columna-2 m-y-1 fondo-advertencia borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-advertencia</p>
-        <p>#916802</p>
+
+      <div class="columna-4">
+        <p>Alerta</p>
+        <EjemploMuestraColor variable="var(--color-alerta-4)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-alerta-3)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-alerta-2)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-alerta-1)" texto="#000"/>
       </div>
-      <div class="columna-2 m-y-1 fondo-correcto borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-correcto</p>
-        <p>#2A6F4D</p>
-      </div>
-    </div>
-    <div class="grid">
-      <div
-        class="columna-2 m-y-1 borde-informativo borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-informativo</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 borde-error borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-error</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 borde-advertencia borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-advertencia</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 borde-correcto borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-correcto</p>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="columna-2 m-y-1 texto-informativo">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-informativo</p>
-      </div>
-      <div class="columna-2 m-y-1 texto-error">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-error</p>
-      </div>
-      <div class="columna-2 m-y-1 texto-advertencia">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-advertencia</p>
-      </div>
-      <div class="columna-2 m-y-1 texto-correcto">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-correcto</p>
+    
+      <div class="columna-4">
+        <p>Error</p>
+        <EjemploMuestraColor variable="var(--color-error-4)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-error-3)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-error-2)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-error-1)" texto="#000"/>
       </div>
     </div>
 
-    <div class="grid">
-      <div class="columna-2 m-y-1 fondo-informativo-2 borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-informativo-2</p>
-        <p>#ECF2FF</p>
+    <div class="ancho-lectura">
+      <h3 class="m-t-5">Colores institucionales</h3>
+      <p>
+        Definidas en el archivo <code>src/color/institucionales.scss</code>, estas variables son colores definidos 
+        en base a los colores institucionales del Gobierno de México y Conahcyt durante el 2024.
+        Que necesitarán actualizarse cuando los colores de identidad de alguno cambie.
+      </p>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-4">
+        <p>Gobierno de México</p>
+        <EjemploMuestraColor variable="var(--color-mx-5)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-4)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-3)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-mx-2)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-mx-1)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-0)" texto="#000"/>
       </div>
-      <div class="columna-2 m-y-1 fondo-error-2 borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-error-2</p>
-        <p>#FEE9EC</p>
-      </div>
-      <div class="columna-2 m-y-1 fondo-advertencia-2 borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-advertencia-2</p>
-        <p>#FFF7E3</p>
-      </div>
-      <div class="columna-2 m-y-1 fondo-correcto-2 borde-redondeado-8"></div>
-      <div class="columna-2">
-        <p>.fondo-correcto-2</p>
-        <p>#E7FBF1</p>
+
+      <div class="columna-4">
+        <p>Conahcyt</p>
+        <EjemploMuestraColor variable="var(--color-conahcyt-5)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-4)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-3)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-2)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-1)" texto="#000"/>
+        <EjemploMuestraColor variable="var(--color-conahcyt-0)" texto="#000"/>
       </div>
     </div>
-    <div class="grid">
-      <div
-        class="columna-2 m-y-1 borde-informativo-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-informativo-2</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 borde-error-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-error-2</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 borde-advertencia-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-advertencia-2</p>
-      </div>
-      <div
-        class="columna-2 m-y-1 borde-correcto-2 borde borde-grosor-3 borde-redondeado-8"
-      ></div>
-      <div class="columna-2">
-        <p>.borde-correcto-2</p>
-      </div>
-    </div>
-    <div class="grid">
-      <div class="columna-2 m-y-1 texto-informativo-2">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-informativo-2</p>
-      </div>
-      <div class="columna-2 m-y-1 texto-error-2">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-error-2</p>
-      </div>
-      <div class="columna-2 m-y-1 texto-advertencia-2">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-advertencia-2</p>
-      </div>
-      <div class="columna-2 m-y-1 texto-correcto-2">
-        <p>Color de texto</p>
-      </div>
-      <div class="columna-2">
-        <p>.texto-correcto-2</p>
-      </div>
-    </div>
-    <div>
-      <section class="alertas">
-        <div class="alertas__contenedor contenedor">
-          <article class="alerta informativa">
-            <div class="alerta__info">
-              <div class="alerta__encabezado">
-                <div class="alerta__info--titulo">
-                  <span class="icono-informacion"></span>
-                  <p class="alerta__titulo">Alerta informativa</p>
-                </div>
-                <span class="icono-cerrar"></span>
-              </div>
-              <div class="alerta__contenido">
-                <p class="alerta__parrafo">
-                  Este es el contenido de una alerta informativa que proporciona
-                  información relevante a la persona usuaria sobre el estado del
-                  sistema
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="alerta confirmacion">
-            <div class="alerta__info">
-              <div class="alerta__encabezado">
-                <div class="alerta__info--titulo">
-                  <span class="icono-informacion"></span>
-                  <p class="alerta__titulo">Alerta confirmación</p>
-                </div>
-                <span class="icono-cerrar"></span>
-              </div>
-              <div class="alerta__contenido">
-                <p class="alerta__parrafo">
-                  Este es el contenido de una alerta informativa que proporciona
-                  información relevante a la persona usuaria sobre el estado del
-                  sistema
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="alerta advertencia">
-            <div class="alerta__info">
-              <div class="alerta__encabezado">
-                <div class="alerta__info--titulo">
-                  <span class="icono-informacion"></span>
-                  <p class="alerta__titulo">Alerta informativa</p>
-                </div>
-                <span class="icono-cerrar"></span>
-              </div>
-              <div class="alerta__contenido">
-                <p class="alerta__parrafo">
-                  Este es el contenido de una alerta informativa que proporciona
-                  información relevante a la persona usuaria sobre el estado del
-                  sistema
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="alerta error">
-            <div class="alerta__info">
-              <div class="alerta__encabezado">
-                <div class="alerta__info--titulo">
-                  <span class="icono-informacion"></span>
-                  <p class="alerta__titulo">Alerta informativa</p>
-                </div>
-                <span class="icono-cerrar"></span>
-              </div>
-              <div class="alerta__contenido">
-                <p class="alerta__parrafo">
-                  Este es el contenido de una alerta informativa que proporciona
-                  información relevante a la persona usuaria sobre el estado del
-                  sistema
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
+
   </div>
 </template>

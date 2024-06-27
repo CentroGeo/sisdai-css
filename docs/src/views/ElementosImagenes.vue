@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -33,29 +33,31 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="flex">
       <div class="columna-8">
-      <EjemploCodigoVertical
-      html='
-      <img 
-        src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/xiu.jpg" 
-        alt=""
-      />
-      
-      Si el archivo es más pequeño que el contenedor en donde está,
-      únicamente cubrirá la proporción de sus dimensiones.
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <img 
+            src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/xiu.jpg" 
+            alt=""
+          />
+          
+          Si el archivo es más pequeño que el contenedor en donde está,
+          únicamente cubrirá la proporción de sus dimensiones.
+        '
       />
       </div>
       <div class="columna-8">
-      <EjemploCodigoVertical
-      html='
-      <img 
-        src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/bose-1.jpg" 
-        alt=""
-      />
-      
-      Si las dimensiones del archivo son mayores que del contenedor en el que está,
-      el ancho se ajusta para no pasar del ancho del contenedor.
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <img 
+            src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/bose-1.jpg" 
+            alt=""
+          />
+          
+          Si las dimensiones del archivo son mayores que del contenedor en el que está,
+          el ancho se ajusta para no pasar del ancho del contenedor.
+        '
       />
       </div>
     </div>
@@ -69,19 +71,20 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         Utilizando el atributo <code>media</code>, se puede especificar el ancho mínimo o máximo 
         para seleccionar cuál imagen mostrar según el tamaño de la ventana del navegador. 
       </p>
-      <EjemploCodigoVertical
-      html='
-      <picture> 
-        <source 
-          srcset="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/pekibb.jpg"
-          media="(min-width: 700px)"
-        />
-        <img 
-          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/pekihermosa.jpg"
-          alt="" 
-        />
-      </picture>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <picture> 
+            <source 
+              srcset="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/pekibb.jpg"
+              media="(min-width: 700px)"
+            />
+            <img 
+              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/pekihermosa.jpg"
+              alt="" 
+            />
+          </picture>
+        '
       />
     </div>
 
@@ -96,34 +99,35 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         proporcionando contexto sobre el contenido oculto.
       </p>
     </div>
-    <EjemploCodigoVertical
-      html='
-      <figure>
-        <img 
-          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-1.jpg" 
-          height="380px"
-          alt=""
-        />
-        <img 
-          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-2.jpg" 
-          height="380px"
-          alt=""
-        />
-        <img 
-          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-3.jpg" 
-          height="380px"
-          alt=""
-        />
-        <img 
-          src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-4.jpg" 
-          height="380px"
-          alt=""
-        />
-        <figcaption>
-          Galería de esparragus
-        </figcaption>
-      </figure>
-      '
+    <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <figure>
+            <img 
+              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-1.jpg" 
+              height="380px"
+              alt=""
+            />
+            <img 
+              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-2.jpg" 
+              height="380px"
+              alt=""
+            />
+            <img 
+              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-3.jpg" 
+              height="380px"
+              alt=""
+            />
+            <img 
+              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/esparragus-4.jpg" 
+              height="380px"
+              alt=""
+            />
+            <figcaption>
+              Galería de esparragus
+            </figcaption>
+          </figure>
+        '
       />
 
   </div>

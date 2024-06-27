@@ -1,5 +1,5 @@
 <script setup>
-import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
+import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -42,28 +42,30 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
     <div class="flex flex-contenido-centrado">
     <div class="columna-4 m-t-3">
-    <EjemploCodigoVertical
-      html='
-      <label for="campo">
-        Etiqueta del campo
-        <span class="formulario-obligatoriedad">
-          (Obligatorio)
-        </span>
-      </label>
-      <input 
-        id="campo" 
-        type="text" 
-        placeholder="Texto de ejemplo"
-      />
-      <p class="formulario-ayuda">
-        Texto de ayuda.
-      </p>
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <label for="campo">
+          Etiqueta del campo
+          <span class="formulario-obligatoriedad">
+            (Obligatorio)
+          </span>
+        </label>
+        <input 
+          id="campo" 
+          type="text" 
+          placeholder="Texto de ejemplo"
+        />
+        <p class="formulario-ayuda">
+          Texto de ayuda.
+        </p>
       '
     />
     </div>
     <div class="columna-4 m-t-3">
-    <EjemploCodigoVertical
-      html='
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
         <label for="selector">
           Selector
           <span class="formulario-obligatoriedad">
@@ -84,12 +86,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <p class="formulario-ayuda">
           Texto de ayuda.
         </p>
-        '
+      '
     />
     </div>
     <div class="columna-4 m-t-3">
-    <EjemploCodigoVertical
-      html='
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
         <label for="areadetexto">
           Área de texto
           <span class="formulario-obligatoriedad">
@@ -103,31 +106,33 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         <p class="formulario-ayuda">
           Texto de ayuda.
         </p>
-        '
+      '
     />
     </div>
     </div>
 
     <div class="flex flex-contenido-centrado">
     <div class="columna-4 m-t-3">
-    <EjemploCodigoVertical
-      html='
-      <label for="campod">
-        Campo deshabilitado
-      </label>
-      <input 
-        id="campod" 
-        type="text" 
-        placeholder="Texto de ejemplo"
-        value="Texto deshabilitado"
-        disabled
-      />
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <label for="campod">
+          Campo deshabilitado
+        </label>
+        <input 
+          id="campod" 
+          type="text" 
+          placeholder="Texto de ejemplo"
+          value="Texto deshabilitado"
+          disabled
+        />
       '
     />
     </div>
     <div class="columna-4 m-t-3">
-    <EjemploCodigoVertical
-      html='
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
         <label for="selectord">
           Selector deshabilitado
         </label>
@@ -136,12 +141,13 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             Selecciona algo
           </option>
         </select>
-        '
+      '
     />
     </div>
     <div class="columna-4 m-t-3">
-    <EjemploCodigoVertical
-      html='
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
         <label for="areadetextod">
           Área de texto
         </label>
@@ -151,7 +157,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           disabled
         >Área de texto deshabilitada
         </textarea>
-        '
+      '
     />
     </div>
     </div>
@@ -161,174 +167,185 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor">
       <div class="flex">
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="texto">
-          Campo de texto 
-        </label>
-        <input
-          id="texto"
-          type="text"
-          placeholder="Texto"
-          value=""
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="texto">
+            Campo de texto 
+          </label>
+          <input
+            id="texto"
+            type="text"
+            placeholder="Texto"
+            value=""
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="contrasenia">
-          Campo de contraseña
-        </label>
-        <input
-          id="contrasenia"
-          type="password"
-          placeholder="3jEmpl."
-          value="3jEmpl."
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="contrasenia">
+            Campo de contraseña
+          </label>
+          <input
+            id="contrasenia"
+            type="password"
+            placeholder="3jEmpl."
+            value="3jEmpl."
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="correo">
-          Campo de correo
-        </label>
-        <input
-          id="correo"
-          type="email"
-          placeholder="nombre@dominio.mx"
-          value="nombre@dominio.mx"
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="correo">
+            Campo de correo
+          </label>
+          <input
+            id="correo"
+            type="email"
+            placeholder="nombre@dominio.mx"
+            value="nombre@dominio.mx"
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="archivo">
-          Campo para subir archivos
-        </label>
-        <input
-          id="archivo"
-          type="file"
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="archivo">
+            Campo para subir archivos
+          </label>
+          <input
+            id="archivo"
+            type="file"
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="buscar">
-          Campo de búsqueda
-        </label>
-        <input
-          id="buscar"
-          type="search"
-          placeholder="Buscando. . ."
-          value="Buscando. . ."
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="buscar">
+            Campo de búsqueda
+          </label>
+          <input
+            id="buscar"
+            type="search"
+            placeholder="Buscando. . ."
+            value="Buscando. . ."
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="numero">
-          Campo numérico
-        </label>
-        <input
-          id="numero"
-          type="number"
-          placeholder="10"
-          step="10"
-          min="10" 
-          max="100"
-          value=""
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="numero">
+            Campo numérico
+          </label>
+          <input
+            id="numero"
+            type="number"
+            placeholder="10"
+            step="10"
+            min="10" 
+            max="100"
+            value=""
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="telefono">
-          Campo de teléfono
-        </label>
-        <input
-          id="telefono"
-          type="tel"
-          placeholder="12 1234 1234"
-          pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
-          value=""
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="telefono">
+            Campo de teléfono
+          </label>
+          <input
+            id="telefono"
+            type="tel"
+            placeholder="12 1234 1234"
+            pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+            value=""
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="url">
-          Campo de URL
-        </label>
-        <input
-          id="url"
-          type="url"
-          placeholder="https://dominio.com"
-          pattern="https://.*"
-          value=""
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="url">
+            Campo de URL
+          </label>
+          <input
+            id="url"
+            type="url"
+            placeholder="https://dominio.com"
+            pattern="https://.*"
+            value=""
+          />
         '
       />
       </div>
     
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="fecha">
-          Fecha
-        </label>
-        <input 
-          id="fecha" 
-          type="date"
-          min="2020-01-01" 
-          max="2023-12-31"
-          value=""
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="fecha">
+            Fecha
+          </label>
+          <input 
+            id="fecha" 
+            type="date"
+            min="2020-01-01" 
+            max="2023-12-31"
+            value=""
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="hora">
-          Hora
-        </label>
-        <input 
-          id="hora" 
-          type="time"
-          min="09:00"
-          max="18:00"
-          value=""
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="hora">
+            Hora
+          </label>
+          <input 
+            id="hora" 
+            type="time"
+            min="09:00"
+            max="18:00"
+            value=""
+          />
         '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-        <label for="fechayhora">
-          Fecha y hora
-        </label>
-        <input 
-          id="fechayhora" 
-          type="datetime-local"
-          min="2018-06-07T00:00"
-          max="2018-06-14T00:00"
-          value="2018-06-12T19:30"
-        />
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <label for="fechayhora">
+            Fecha y hora
+          </label>
+          <input 
+            id="fechayhora" 
+            type="datetime-local"
+            min="2018-06-07T00:00"
+            max="2018-06-14T00:00"
+            value="2018-06-12T19:30"
+          />
         '
       />
       </div>
@@ -339,8 +356,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <h3>Rango</h3>
     <div class="flex">
     <div class="columna-8">
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
           <label for="rango">
             Rango
           </label>
@@ -355,8 +373,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
         />
     </div>
     <div class="columna-8">
-      <EjemploCodigoVertical
-        html='
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
           <label for="rango">
             Rango deshabilitado
           </label>
@@ -383,64 +402,68 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="grid">
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="checkbox1" 
-        type="checkbox"
-        name="checkboxes"
-        checked
-      />
-      <label for="checkbox1">
-        Casilla de verificación seleccionada
-      </label>
-      '
-      />
-      </div>
-
-      <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="checkbox2" 
-        type="checkbox" 
-        name="checkboxes" 
-        class="indeterminate"
-        indeterminate
-      />
-      <label for="checkbox2">
-        Casilla indeterminada
-      </label>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="checkbox1" 
+            type="checkbox"
+            name="checkboxes"
+            checked
+          />
+          <label for="checkbox1">
+            Casilla de verificación seleccionada
+          </label>
+        '
       />
       </div>
 
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="checkbox3" 
-        type="checkbox" 
-        name="checkboxes" 
-        disabled
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="checkbox2" 
+            type="checkbox" 
+            name="checkboxes" 
+            class="indeterminate"
+            indeterminate
+          />
+          <label for="checkbox2">
+            Casilla indeterminada
+          </label>
+        '
       />
-      <label for="checkbox3">
-        Casilla deshabilitada
-      </label>
-      '
+      </div>
+
+      <div class="columna-4 m-t-3">
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="checkbox3" 
+            type="checkbox" 
+            name="checkboxes" 
+            disabled
+          />
+          <label for="checkbox3">
+            Casilla deshabilitada
+          </label>
+        '
       />
       </div>
       
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="checkbox3" 
-        type="checkbox" 
-        name="checkboxes" 
-        disabled
-        checked
-      />
-      <label for="checkbox3">
-        Casilla deshabilitada seleccionada
-      </label>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="checkbox3" 
+            type="checkbox" 
+            name="checkboxes" 
+            disabled
+            checked
+          />
+          <label for="checkbox3">
+            Casilla deshabilitada seleccionada
+          </label>
+        '
       />
       </div>
     </div>
@@ -474,19 +497,20 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </div>
           </div>
         </div>
-      <EjemploCodigoVertical
-      :tiene_ejemplo="false"
-      html='
-      <div class="casillas-anidadas">
-        <input ... />
-        <label> ... </label>
-        <div class="casillas-subseleccion casillas-anidadas">
-          <input ... />
-          <label> ... </label>
-          ...
-        </div>
-      </div>
-      '
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo='HTML'
+        codigo='
+          <div class="casillas-anidadas">
+            <input ... />
+            <label> ... </label>
+            <div class="casillas-subseleccion casillas-anidadas">
+              <input ... />
+              <label> ... </label>
+              ...
+            </div>
+          </div>
+        '
       />
       </div>
       
@@ -517,24 +541,25 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
             </ul>
           </li>
         </ul>
-      <EjemploCodigoVertical
-      :tiene_ejemplo="false"
-      html='
-      <ul class="casillas-anidadas">
-        <li>
-          <input ... />
-          <label> ... </label>
-          <ul class="casillas-subseleccion casillas-anidadas">
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo='HTML'
+        codigo='
+          <ul class="casillas-anidadas">
             <li>
               <input ... />
               <label> ... </label>
+              <ul class="casillas-subseleccion casillas-anidadas">
+                <li>
+                  <input ... />
+                  <label> ... </label>
+                </li>
+                ...
+              </ul>
+              ...
             </li>
-            ...
           </ul>
-          ...
-        </li>
-      </ul>
-      '
+        '
       />
       </div>
     </div>
@@ -549,60 +574,64 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     </div>
     <div class="grid">
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="r1" 
-        type="radio" 
-        name="radio"
-      />
-      <label for="r1">
-        Radio
-      </label>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="r1" 
+            type="radio" 
+            name="radio"
+          />
+          <label for="r1">
+            Radio
+          </label>
+        '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="r2" 
-        type="radio" 
-        name="radio" 
-        checked
-      />
-      <label for="r2">
-        Radio seleccionado
-      </label>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="r2" 
+            type="radio" 
+            name="radio" 
+            checked
+          />
+          <label for="r2">
+            Radio seleccionado
+          </label>
+        '
       />
       </div>
       
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="r3" 
-        type="radio" 
-        name="rdes" 
-      disabled 
-      />
-      <label for="r3">
-        Radio deshabilitado
-      </label>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="r3" 
+            type="radio" 
+            name="rdes" 
+          disabled 
+          />
+          <label for="r3">
+            Radio deshabilitado
+          </label>
+        '
       />
       </div>
       <div class="columna-4 m-t-3">
-      <EjemploCodigoVertical
-      html='
-      <input id="r4" 
-        type="radio"
-        name="rdes"
-        checked 
-        disabled
-      />
-      <label for="r4">
-        Radio deshabilitado seleccionado
-      </label>
-      '
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <input id="r4" 
+            type="radio"
+            name="rdes"
+            checked 
+            disabled
+          />
+          <label for="r4">
+            Radio deshabilitado seleccionado
+          </label>
+        '
       />
       </div>
     </div>
@@ -610,14 +639,15 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
 
     <h2 class="m-t-10">Formulario horizontal</h2>
-    <EjemploCodigoVertical
-      html='
-      <div class="formulario-horizontal">
-        <label for="horizontal1">Etiqueta</label>
-        <input id="horizontal1" type="text" placeholder="placeholder" value="value">
-        <label for="horizontal2">Etiqueta</label>
-        <input id="horizontal2" type="text" placeholder="placeholder" value="value">
-      </div>
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <div class="formulario-horizontal">
+          <label for="horizontal1">Etiqueta</label>
+          <input id="horizontal1" type="text" placeholder="placeholder" value="value">
+          <label for="horizontal2">Etiqueta</label>
+          <input id="horizontal2" type="text" placeholder="placeholder" value="value">
+        </div>
       '
     />
     
@@ -626,50 +656,52 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <h2 class="m-t-10">Estados</h2>
     <div class="flex">
     <div class="columna-8 m-t-3">
-    <EjemploCodigoVertical
-      html='
-      <label for="campo">
-        Etiqueta del campo
-        <span class="formulario-obligatoriedad">
-          (Obligatorio)
-        </span>
-      </label>
-      <input 
-        id="campo" 
-        class="formulario-campo-confirmacion"
-        type="text" 
-        placeholder="Texto de ejemplo"
-      />
-      <p 
-        class="formulario-ayuda 
-        formulario-texto-confirmacion"
-      >
-        Texto de ayuda.
-      </p>
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <label for="campo">
+          Etiqueta del campo
+          <span class="formulario-obligatoriedad">
+            (Obligatorio)
+          </span>
+        </label>
+        <input 
+          id="campo" 
+          class="campo-confirmacion"
+          type="text" 
+          placeholder="Texto de ejemplo"
+        />
+        <p 
+          class="formulario-ayuda 
+          ayuda-confirmacion"
+        >
+          Texto de ayuda.
+        </p>
       '
     />
     </div>
     <div class="columna-8 m-t-3">
-    <EjemploCodigoVertical
-      html='
-      <label for="campo">
-        Etiqueta del campo
-        <span class="formulario-obligatoriedad">
-          (Obligatorio)
-        </span>
-      </label>
-      <input 
-        id="campo" 
-        class="formulario-campo-error"
-        type="text" 
-        placeholder="Texto de ejemplo"
-      />
-      <p 
-        class="formulario-ayuda 
-        formulario-texto-error"
-      >
-        Texto de ayuda.
-      </p>
+    <EjemploCodigo
+      tipo='HTML'
+      codigo='
+        <label for="campo">
+          Etiqueta del campo
+          <span class="formulario-obligatoriedad">
+            (Obligatorio)
+          </span>
+        </label>
+        <input 
+          id="campo" 
+          class="campo-error"
+          type="text" 
+          placeholder="Texto de ejemplo"
+        />
+        <p 
+          class="formulario-ayuda 
+          ayuda-error"
+        >
+          Texto de ayuda.
+        </p>
       '
     />
     </div>

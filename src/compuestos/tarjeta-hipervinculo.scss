@@ -14,38 +14,25 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .tarjeta-hipervinculo {
-  display: inline-flex;
-  overflow: hidden;
-  border-radius: map-get($borde-redondeado, '20');
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-  box-sizing: border-box;
+  font-weight: normal;
   margin-top: map-get($espaciado, '1');
   margin-bottom: map-get($espaciado, '1');
-  background: var(--tarjetas-internas-fondo);
-
-  .tarjeta-cuerpo {
-    > * {
-      margin: map-get($espaciado, 'minimo') 0;
-    }
-    > :first-child {
-      margin-top: 0;
-    }
-    > :last-child {
-      margin-bottom: 0;
-    }
-  }
+  background: var(--tarjeta-fondo);
 
   &:hover,
   &:focus,
   &:focus-visible {
     box-shadow: 
-    0 0 0 2px var(--hipervinculo-focus-sombra),
-    0 0 8px 1px var(--hipervinculo-focus-sombra);
+    0 0 0 2px var(--tarjeta-enfoque-borde),
+    0 0 8px 1px var(--tarjeta-enfoque-sombra);
   }
 
   &:hover {
     text-decoration: none;
-    background-color: var(--tarjetas-internas-fondo-hover);
+    background-color: var(--tarjeta-cursor-fondo);
     .tarjeta-imagen {
       transform: scale(1);
     }
