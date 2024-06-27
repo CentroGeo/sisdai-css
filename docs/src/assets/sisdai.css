@@ -1260,12 +1260,10 @@ p {
     font-size: 1rem;
     padding: 4px;
   }
-
   .pictograma-mediano-mov {
     font-size: 1.5rem;
     padding: 4px;
   }
-
   .pictograma-grande-mov {
     font-size: 2rem;
     padding: 8px;
@@ -1276,12 +1274,10 @@ p {
     font-size: 1rem;
     padding: 4px;
   }
-
   .pictograma-mediano-esc {
     font-size: 1.5rem;
     padding: 4px;
   }
-
   .pictograma-grande-esc {
     font-size: 2rem;
     padding: 8px;
@@ -1396,156 +1392,122 @@ p {
     row-gap: 16px;
   }
   .flex > [class^=columna-],
-.flex > [class*=" columna-"] {
+  .flex > [class*=" columna-"] {
     flex: 1 1;
   }
-
   .grid {
     column-gap: 16px;
     row-gap: 16px;
     grid-template-columns: repeat(8, 1fr);
   }
   .grid > [class^=columna-],
-.grid > [class*=" columna-"] {
+  .grid > [class*=" columna-"] {
     grid-column: span 16;
   }
-
   .columns {
     column-gap: 16px;
   }
-
   .flex > .columna-1 {
     flex: 1 1 calc(12.5% - 16px + 2px - 1px);
     max-width: calc(12.5% - 16px + 2px);
   }
-
   .flex > .columna-orden-1 {
     order: 1;
   }
-
   .grid > .columna-1 {
     grid-column: span 1;
   }
-
   .columns-1 {
     column-count: 1;
   }
-
   .flex > .columna-2 {
     flex: 1 1 calc(25% - 16px + 4px - 1px);
     max-width: calc(25% - 16px + 4px);
   }
-
   .flex > .columna-orden-2 {
     order: 2;
   }
-
   .grid > .columna-2 {
     grid-column: span 2;
   }
-
   .columns-2 {
     column-count: 2;
   }
-
   .flex > .columna-3 {
     flex: 1 1 calc(37.5% - 16px + 6px - 1px);
     max-width: calc(37.5% - 16px + 6px);
   }
-
   .flex > .columna-orden-3 {
     order: 3;
   }
-
   .grid > .columna-3 {
     grid-column: span 3;
   }
-
   .columns-3 {
     column-count: 3;
   }
-
   .flex > .columna-4 {
     flex: 1 1 calc(50% - 16px + 8px - 1px);
     max-width: calc(50% - 16px + 8px);
   }
-
   .flex > .columna-orden-4 {
     order: 4;
   }
-
   .grid > .columna-4 {
     grid-column: span 4;
   }
-
   .columns-4 {
     column-count: 4;
   }
-
   .flex > .columna-5 {
     flex: 1 1 calc(62.5% - 16px + 10px - 1px);
     max-width: calc(62.5% - 16px + 10px);
   }
-
   .flex > .columna-orden-5 {
     order: 5;
   }
-
   .grid > .columna-5 {
     grid-column: span 5;
   }
-
   .columns-5 {
     column-count: 5;
   }
-
   .flex > .columna-6 {
     flex: 1 1 calc(75% - 16px + 12px - 1px);
     max-width: calc(75% - 16px + 12px);
   }
-
   .flex > .columna-orden-6 {
     order: 6;
   }
-
   .grid > .columna-6 {
     grid-column: span 6;
   }
-
   .columns-6 {
     column-count: 6;
   }
-
   .flex > .columna-7 {
     flex: 1 1 calc(87.5% - 16px + 14px - 1px);
     max-width: calc(87.5% - 16px + 14px);
   }
-
   .flex > .columna-orden-7 {
     order: 7;
   }
-
   .grid > .columna-7 {
     grid-column: span 7;
   }
-
   .columns-7 {
     column-count: 7;
   }
-
   .flex > .columna-8 {
     flex: 1 1 calc(100% - 16px + 16px - 1px);
     max-width: calc(100% - 16px + 16px);
   }
-
   .flex > .columna-orden-8 {
     order: 8;
   }
-
   .grid > .columna-8 {
     grid-column: span 8;
   }
-
   .columns-8 {
     column-count: 8;
   }
@@ -1556,292 +1518,226 @@ p {
     row-gap: 24px;
   }
   .flex > [class^=columna-],
-.flex > [class*=" columna-"] {
+  .flex > [class*=" columna-"] {
     flex: 1 1;
   }
-
   .grid {
     column-gap: 24px;
     row-gap: 24px;
     grid-template-columns: repeat(16, 1fr);
   }
   .grid > [class^=columna-],
-.grid > [class*=" columna-"] {
+  .grid > [class*=" columna-"] {
     grid-column: span 16;
   }
-
   .columns {
     column-gap: 24px;
   }
-
   .flex > .columna-1 {
     flex: 1 1 calc(6.25% - 24px + 1.5px - 1px);
     max-width: calc(6.25% - 24px + 1.5px);
   }
-
   .flex > .columna-orden-1 {
     order: 1;
   }
-
   .grid > .columna-1 {
     grid-column: span 1;
   }
-
   .columns-1 {
     column-count: 1;
   }
-
   .flex > .columna-2 {
     flex: 1 1 calc(12.5% - 24px + 3px - 1px);
     max-width: calc(12.5% - 24px + 3px);
   }
-
   .flex > .columna-orden-2 {
     order: 2;
   }
-
   .grid > .columna-2 {
     grid-column: span 2;
   }
-
   .columns-2 {
     column-count: 2;
   }
-
   .flex > .columna-3 {
     flex: 1 1 calc(18.75% - 24px + 4.5px - 1px);
     max-width: calc(18.75% - 24px + 4.5px);
   }
-
   .flex > .columna-orden-3 {
     order: 3;
   }
-
   .grid > .columna-3 {
     grid-column: span 3;
   }
-
   .columns-3 {
     column-count: 3;
   }
-
   .flex > .columna-4 {
     flex: 1 1 calc(25% - 24px + 6px - 1px);
     max-width: calc(25% - 24px + 6px);
   }
-
   .flex > .columna-orden-4 {
     order: 4;
   }
-
   .grid > .columna-4 {
     grid-column: span 4;
   }
-
   .columns-4 {
     column-count: 4;
   }
-
   .flex > .columna-5 {
     flex: 1 1 calc(31.25% - 24px + 7.5px - 1px);
     max-width: calc(31.25% - 24px + 7.5px);
   }
-
   .flex > .columna-orden-5 {
     order: 5;
   }
-
   .grid > .columna-5 {
     grid-column: span 5;
   }
-
   .columns-5 {
     column-count: 5;
   }
-
   .flex > .columna-6 {
     flex: 1 1 calc(37.5% - 24px + 9px - 1px);
     max-width: calc(37.5% - 24px + 9px);
   }
-
   .flex > .columna-orden-6 {
     order: 6;
   }
-
   .grid > .columna-6 {
     grid-column: span 6;
   }
-
   .columns-6 {
     column-count: 6;
   }
-
   .flex > .columna-7 {
     flex: 1 1 calc(43.75% - 24px + 10.5px - 1px);
     max-width: calc(43.75% - 24px + 10.5px);
   }
-
   .flex > .columna-orden-7 {
     order: 7;
   }
-
   .grid > .columna-7 {
     grid-column: span 7;
   }
-
   .columns-7 {
     column-count: 7;
   }
-
   .flex > .columna-8 {
     flex: 1 1 calc(50% - 24px + 12px - 1px);
     max-width: calc(50% - 24px + 12px);
   }
-
   .flex > .columna-orden-8 {
     order: 8;
   }
-
   .grid > .columna-8 {
     grid-column: span 8;
   }
-
   .columns-8 {
     column-count: 8;
   }
-
   .flex > .columna-9 {
     flex: 1 1 calc(56.25% - 24px + 13.5px - 1px);
     max-width: calc(56.25% - 24px + 13.5px);
   }
-
   .flex > .columna-orden-9 {
     order: 9;
   }
-
   .grid > .columna-9 {
     grid-column: span 9;
   }
-
   .columns-9 {
     column-count: 9;
   }
-
   .flex > .columna-10 {
     flex: 1 1 calc(62.5% - 24px + 15px - 1px);
     max-width: calc(62.5% - 24px + 15px);
   }
-
   .flex > .columna-orden-10 {
     order: 10;
   }
-
   .grid > .columna-10 {
     grid-column: span 10;
   }
-
   .columns-10 {
     column-count: 10;
   }
-
   .flex > .columna-11 {
     flex: 1 1 calc(68.75% - 24px + 16.5px - 1px);
     max-width: calc(68.75% - 24px + 16.5px);
   }
-
   .flex > .columna-orden-11 {
     order: 11;
   }
-
   .grid > .columna-11 {
     grid-column: span 11;
   }
-
   .columns-11 {
     column-count: 11;
   }
-
   .flex > .columna-12 {
     flex: 1 1 calc(75% - 24px + 18px - 1px);
     max-width: calc(75% - 24px + 18px);
   }
-
   .flex > .columna-orden-12 {
     order: 12;
   }
-
   .grid > .columna-12 {
     grid-column: span 12;
   }
-
   .columns-12 {
     column-count: 12;
   }
-
   .flex > .columna-13 {
     flex: 1 1 calc(81.25% - 24px + 19.5px - 1px);
     max-width: calc(81.25% - 24px + 19.5px);
   }
-
   .flex > .columna-orden-13 {
     order: 13;
   }
-
   .grid > .columna-13 {
     grid-column: span 13;
   }
-
   .columns-13 {
     column-count: 13;
   }
-
   .flex > .columna-14 {
     flex: 1 1 calc(87.5% - 24px + 21px - 1px);
     max-width: calc(87.5% - 24px + 21px);
   }
-
   .flex > .columna-orden-14 {
     order: 14;
   }
-
   .grid > .columna-14 {
     grid-column: span 14;
   }
-
   .columns-14 {
     column-count: 14;
   }
-
   .flex > .columna-15 {
     flex: 1 1 calc(93.75% - 24px + 22.5px - 1px);
     max-width: calc(93.75% - 24px + 22.5px);
   }
-
   .flex > .columna-orden-15 {
     order: 15;
   }
-
   .grid > .columna-15 {
     grid-column: span 15;
   }
-
   .columns-15 {
     column-count: 15;
   }
-
   .flex > .columna-16 {
     flex: 1 1 calc(100% - 24px + 24px - 1px);
     max-width: calc(100% - 24px + 24px);
   }
-
   .flex > .columna-orden-16 {
     order: 16;
   }
-
   .grid > .columna-16 {
     grid-column: span 16;
   }
-
   .columns-16 {
     column-count: 16;
   }
@@ -1851,138 +1747,106 @@ p {
     flex: 1 1 calc(12.5% - 16px + 2px - 1px);
     max-width: calc(12.5% - 16px + 2px);
   }
-
   .flex > .columna-orden-1-mov {
     order: 1;
   }
-
   .grid > .columna-1-mov {
     grid-column: span 1;
   }
-
   .columns-1-mov {
     column-count: 1;
   }
-
   .flex > .columna-2-mov {
     flex: 1 1 calc(25% - 16px + 4px - 1px);
     max-width: calc(25% - 16px + 4px);
   }
-
   .flex > .columna-orden-2-mov {
     order: 2;
   }
-
   .grid > .columna-2-mov {
     grid-column: span 2;
   }
-
   .columns-2-mov {
     column-count: 2;
   }
-
   .flex > .columna-3-mov {
     flex: 1 1 calc(37.5% - 16px + 6px - 1px);
     max-width: calc(37.5% - 16px + 6px);
   }
-
   .flex > .columna-orden-3-mov {
     order: 3;
   }
-
   .grid > .columna-3-mov {
     grid-column: span 3;
   }
-
   .columns-3-mov {
     column-count: 3;
   }
-
   .flex > .columna-4-mov {
     flex: 1 1 calc(50% - 16px + 8px - 1px);
     max-width: calc(50% - 16px + 8px);
   }
-
   .flex > .columna-orden-4-mov {
     order: 4;
   }
-
   .grid > .columna-4-mov {
     grid-column: span 4;
   }
-
   .columns-4-mov {
     column-count: 4;
   }
-
   .flex > .columna-5-mov {
     flex: 1 1 calc(62.5% - 16px + 10px - 1px);
     max-width: calc(62.5% - 16px + 10px);
   }
-
   .flex > .columna-orden-5-mov {
     order: 5;
   }
-
   .grid > .columna-5-mov {
     grid-column: span 5;
   }
-
   .columns-5-mov {
     column-count: 5;
   }
-
   .flex > .columna-6-mov {
     flex: 1 1 calc(75% - 16px + 12px - 1px);
     max-width: calc(75% - 16px + 12px);
   }
-
   .flex > .columna-orden-6-mov {
     order: 6;
   }
-
   .grid > .columna-6-mov {
     grid-column: span 6;
   }
-
   .columns-6-mov {
     column-count: 6;
   }
-
   .flex > .columna-7-mov {
     flex: 1 1 calc(87.5% - 16px + 14px - 1px);
     max-width: calc(87.5% - 16px + 14px);
   }
-
   .flex > .columna-orden-7-mov {
     order: 7;
   }
-
   .grid > .columna-7-mov {
     grid-column: span 7;
   }
-
   .columns-7-mov {
     column-count: 7;
   }
-
   .flex > .columna-8-mov {
     flex: 1 1 calc(100% - 16px + 16px - 1px);
     max-width: calc(100% - 16px + 16px);
   }
-
   .flex > .columna-orden-8-mov {
     order: 8;
   }
-
   .grid > .columna-8-mov {
     grid-column: span 8;
   }
-
   .columns-8-mov {
     column-count: 8;
   }
-
   .flex-reversa-mov {
     flex-direction: row-reverse;
   }
@@ -1992,274 +1856,210 @@ p {
     flex: 1 1 calc(6.25% - 24px + 1.5px - 1px);
     max-width: calc(6.25% - 24px + 1.5px);
   }
-
   .flex > .columna-orden-1-esc {
     order: 1;
   }
-
   .grid > .columna-1-esc {
     grid-column: span 1;
   }
-
   .columns-1-esc {
     column-count: 1;
   }
-
   .flex > .columna-2-esc {
     flex: 1 1 calc(12.5% - 24px + 3px - 1px);
     max-width: calc(12.5% - 24px + 3px);
   }
-
   .flex > .columna-orden-2-esc {
     order: 2;
   }
-
   .grid > .columna-2-esc {
     grid-column: span 2;
   }
-
   .columns-2-esc {
     column-count: 2;
   }
-
   .flex > .columna-3-esc {
     flex: 1 1 calc(18.75% - 24px + 4.5px - 1px);
     max-width: calc(18.75% - 24px + 4.5px);
   }
-
   .flex > .columna-orden-3-esc {
     order: 3;
   }
-
   .grid > .columna-3-esc {
     grid-column: span 3;
   }
-
   .columns-3-esc {
     column-count: 3;
   }
-
   .flex > .columna-4-esc {
     flex: 1 1 calc(25% - 24px + 6px - 1px);
     max-width: calc(25% - 24px + 6px);
   }
-
   .flex > .columna-orden-4-esc {
     order: 4;
   }
-
   .grid > .columna-4-esc {
     grid-column: span 4;
   }
-
   .columns-4-esc {
     column-count: 4;
   }
-
   .flex > .columna-5-esc {
     flex: 1 1 calc(31.25% - 24px + 7.5px - 1px);
     max-width: calc(31.25% - 24px + 7.5px);
   }
-
   .flex > .columna-orden-5-esc {
     order: 5;
   }
-
   .grid > .columna-5-esc {
     grid-column: span 5;
   }
-
   .columns-5-esc {
     column-count: 5;
   }
-
   .flex > .columna-6-esc {
     flex: 1 1 calc(37.5% - 24px + 9px - 1px);
     max-width: calc(37.5% - 24px + 9px);
   }
-
   .flex > .columna-orden-6-esc {
     order: 6;
   }
-
   .grid > .columna-6-esc {
     grid-column: span 6;
   }
-
   .columns-6-esc {
     column-count: 6;
   }
-
   .flex > .columna-7-esc {
     flex: 1 1 calc(43.75% - 24px + 10.5px - 1px);
     max-width: calc(43.75% - 24px + 10.5px);
   }
-
   .flex > .columna-orden-7-esc {
     order: 7;
   }
-
   .grid > .columna-7-esc {
     grid-column: span 7;
   }
-
   .columns-7-esc {
     column-count: 7;
   }
-
   .flex > .columna-8-esc {
     flex: 1 1 calc(50% - 24px + 12px - 1px);
     max-width: calc(50% - 24px + 12px);
   }
-
   .flex > .columna-orden-8-esc {
     order: 8;
   }
-
   .grid > .columna-8-esc {
     grid-column: span 8;
   }
-
   .columns-8-esc {
     column-count: 8;
   }
-
   .flex > .columna-9-esc {
     flex: 1 1 calc(56.25% - 24px + 13.5px - 1px);
     max-width: calc(56.25% - 24px + 13.5px);
   }
-
   .flex > .columna-orden-9-esc {
     order: 9;
   }
-
   .grid > .columna-9-esc {
     grid-column: span 9;
   }
-
   .columns-9-esc {
     column-count: 9;
   }
-
   .flex > .columna-10-esc {
     flex: 1 1 calc(62.5% - 24px + 15px - 1px);
     max-width: calc(62.5% - 24px + 15px);
   }
-
   .flex > .columna-orden-10-esc {
     order: 10;
   }
-
   .grid > .columna-10-esc {
     grid-column: span 10;
   }
-
   .columns-10-esc {
     column-count: 10;
   }
-
   .flex > .columna-11-esc {
     flex: 1 1 calc(68.75% - 24px + 16.5px - 1px);
     max-width: calc(68.75% - 24px + 16.5px);
   }
-
   .flex > .columna-orden-11-esc {
     order: 11;
   }
-
   .grid > .columna-11-esc {
     grid-column: span 11;
   }
-
   .columns-11-esc {
     column-count: 11;
   }
-
   .flex > .columna-12-esc {
     flex: 1 1 calc(75% - 24px + 18px - 1px);
     max-width: calc(75% - 24px + 18px);
   }
-
   .flex > .columna-orden-12-esc {
     order: 12;
   }
-
   .grid > .columna-12-esc {
     grid-column: span 12;
   }
-
   .columns-12-esc {
     column-count: 12;
   }
-
   .flex > .columna-13-esc {
     flex: 1 1 calc(81.25% - 24px + 19.5px - 1px);
     max-width: calc(81.25% - 24px + 19.5px);
   }
-
   .flex > .columna-orden-13-esc {
     order: 13;
   }
-
   .grid > .columna-13-esc {
     grid-column: span 13;
   }
-
   .columns-13-esc {
     column-count: 13;
   }
-
   .flex > .columna-14-esc {
     flex: 1 1 calc(87.5% - 24px + 21px - 1px);
     max-width: calc(87.5% - 24px + 21px);
   }
-
   .flex > .columna-orden-14-esc {
     order: 14;
   }
-
   .grid > .columna-14-esc {
     grid-column: span 14;
   }
-
   .columns-14-esc {
     column-count: 14;
   }
-
   .flex > .columna-15-esc {
     flex: 1 1 calc(93.75% - 24px + 22.5px - 1px);
     max-width: calc(93.75% - 24px + 22.5px);
   }
-
   .flex > .columna-orden-15-esc {
     order: 15;
   }
-
   .grid > .columna-15-esc {
     grid-column: span 15;
   }
-
   .columns-15-esc {
     column-count: 15;
   }
-
   .flex > .columna-16-esc {
     flex: 1 1 calc(100% - 24px + 24px - 1px);
     max-width: calc(100% - 24px + 24px);
   }
-
   .flex > .columna-orden-16-esc {
     order: 16;
   }
-
   .grid > .columna-16-esc {
     grid-column: span 16;
   }
-
   .columns-16-esc {
     column-count: 16;
   }
-
   .flex-reversa-esc {
     flex-direction: row-reverse;
   }
@@ -3535,1258 +3335,965 @@ p {
   .m-0-mov {
     margin: 0;
   }
-
   .m-t-0-mov {
     margin-top: 0;
   }
-
   .m-r-0-mov {
     margin-right: 0;
   }
-
   .m-b-0-mov {
     margin-bottom: 0;
   }
-
   .m-l-0-mov {
     margin-left: 0;
   }
-
   .m-x-0-mov {
     margin-left: 0;
     margin-right: 0;
   }
-
   .m-y-0-mov {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .m--0-mov {
     margin: 0;
   }
-
   .m-t--0-mov {
     margin-top: 0;
   }
-
   .m-r--0-mov {
     margin-right: 0;
   }
-
   .m-b--0-mov {
     margin-bottom: 0;
   }
-
   .m-l--0-mov {
     margin-left: 0;
   }
-
   .m-x--0-mov {
     margin-left: 0;
     margin-right: 0;
   }
-
   .m-y--0-mov {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .p-0-mov {
     padding: 0;
   }
-
   .p-t-0-mov {
     padding-top: 0;
   }
-
   .p-r-0-mov {
     padding-right: 0;
   }
-
   .p-b-0-mov {
     padding-bottom: 0;
   }
-
   .p-l-0-mov {
     padding-left: 0;
   }
-
   .p-x-0-mov {
     padding-left: 0;
     padding-right: 0;
   }
-
   .p-y-0-mov {
     padding-top: 0;
     padding-bottom: 0;
   }
-
   .m-minimo-mov {
     margin: 4px;
   }
-
   .m-t-minimo-mov {
     margin-top: 4px;
   }
-
   .m-r-minimo-mov {
     margin-right: 4px;
   }
-
   .m-b-minimo-mov {
     margin-bottom: 4px;
   }
-
   .m-l-minimo-mov {
     margin-left: 4px;
   }
-
   .m-x-minimo-mov {
     margin-left: 4px;
     margin-right: 4px;
   }
-
   .m-y-minimo-mov {
     margin-top: 4px;
     margin-bottom: 4px;
   }
-
   .m--minimo-mov {
     margin: -4px;
   }
-
   .m-t--minimo-mov {
     margin-top: -4px;
   }
-
   .m-r--minimo-mov {
     margin-right: -4px;
   }
-
   .m-b--minimo-mov {
     margin-bottom: -4px;
   }
-
   .m-l--minimo-mov {
     margin-left: -4px;
   }
-
   .m-x--minimo-mov {
     margin-left: -4px;
     margin-right: -4px;
   }
-
   .m-y--minimo-mov {
     margin-top: -4px;
     margin-bottom: -4px;
   }
-
   .p-minimo-mov {
     padding: 4px;
   }
-
   .p-t-minimo-mov {
     padding-top: 4px;
   }
-
   .p-r-minimo-mov {
     padding-right: 4px;
   }
-
   .p-b-minimo-mov {
     padding-bottom: 4px;
   }
-
   .p-l-minimo-mov {
     padding-left: 4px;
   }
-
   .p-x-minimo-mov {
     padding-left: 4px;
     padding-right: 4px;
   }
-
   .p-y-minimo-mov {
     padding-top: 4px;
     padding-bottom: 4px;
   }
-
   .m-1-mov {
     margin: 8px;
   }
-
   .m-t-1-mov {
     margin-top: 8px;
   }
-
   .m-r-1-mov {
     margin-right: 8px;
   }
-
   .m-b-1-mov {
     margin-bottom: 8px;
   }
-
   .m-l-1-mov {
     margin-left: 8px;
   }
-
   .m-x-1-mov {
     margin-left: 8px;
     margin-right: 8px;
   }
-
   .m-y-1-mov {
     margin-top: 8px;
     margin-bottom: 8px;
   }
-
   .m--1-mov {
     margin: -8px;
   }
-
   .m-t--1-mov {
     margin-top: -8px;
   }
-
   .m-r--1-mov {
     margin-right: -8px;
   }
-
   .m-b--1-mov {
     margin-bottom: -8px;
   }
-
   .m-l--1-mov {
     margin-left: -8px;
   }
-
   .m-x--1-mov {
     margin-left: -8px;
     margin-right: -8px;
   }
-
   .m-y--1-mov {
     margin-top: -8px;
     margin-bottom: -8px;
   }
-
   .p-1-mov {
     padding: 8px;
   }
-
   .p-t-1-mov {
     padding-top: 8px;
   }
-
   .p-r-1-mov {
     padding-right: 8px;
   }
-
   .p-b-1-mov {
     padding-bottom: 8px;
   }
-
   .p-l-1-mov {
     padding-left: 8px;
   }
-
   .p-x-1-mov {
     padding-left: 8px;
     padding-right: 8px;
   }
-
   .p-y-1-mov {
     padding-top: 8px;
     padding-bottom: 8px;
   }
-
   .m-2-mov {
     margin: 16px;
   }
-
   .m-t-2-mov {
     margin-top: 16px;
   }
-
   .m-r-2-mov {
     margin-right: 16px;
   }
-
   .m-b-2-mov {
     margin-bottom: 16px;
   }
-
   .m-l-2-mov {
     margin-left: 16px;
   }
-
   .m-x-2-mov {
     margin-left: 16px;
     margin-right: 16px;
   }
-
   .m-y-2-mov {
     margin-top: 16px;
     margin-bottom: 16px;
   }
-
   .m--2-mov {
     margin: -16px;
   }
-
   .m-t--2-mov {
     margin-top: -16px;
   }
-
   .m-r--2-mov {
     margin-right: -16px;
   }
-
   .m-b--2-mov {
     margin-bottom: -16px;
   }
-
   .m-l--2-mov {
     margin-left: -16px;
   }
-
   .m-x--2-mov {
     margin-left: -16px;
     margin-right: -16px;
   }
-
   .m-y--2-mov {
     margin-top: -16px;
     margin-bottom: -16px;
   }
-
   .p-2-mov {
     padding: 16px;
   }
-
   .p-t-2-mov {
     padding-top: 16px;
   }
-
   .p-r-2-mov {
     padding-right: 16px;
   }
-
   .p-b-2-mov {
     padding-bottom: 16px;
   }
-
   .p-l-2-mov {
     padding-left: 16px;
   }
-
   .p-x-2-mov {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .p-y-2-mov {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-
   .m-3-mov {
     margin: 24px;
   }
-
   .m-t-3-mov {
     margin-top: 24px;
   }
-
   .m-r-3-mov {
     margin-right: 24px;
   }
-
   .m-b-3-mov {
     margin-bottom: 24px;
   }
-
   .m-l-3-mov {
     margin-left: 24px;
   }
-
   .m-x-3-mov {
     margin-left: 24px;
     margin-right: 24px;
   }
-
   .m-y-3-mov {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-
   .m--3-mov {
     margin: -24px;
   }
-
   .m-t--3-mov {
     margin-top: -24px;
   }
-
   .m-r--3-mov {
     margin-right: -24px;
   }
-
   .m-b--3-mov {
     margin-bottom: -24px;
   }
-
   .m-l--3-mov {
     margin-left: -24px;
   }
-
   .m-x--3-mov {
     margin-left: -24px;
     margin-right: -24px;
   }
-
   .m-y--3-mov {
     margin-top: -24px;
     margin-bottom: -24px;
   }
-
   .p-3-mov {
     padding: 24px;
   }
-
   .p-t-3-mov {
     padding-top: 24px;
   }
-
   .p-r-3-mov {
     padding-right: 24px;
   }
-
   .p-b-3-mov {
     padding-bottom: 24px;
   }
-
   .p-l-3-mov {
     padding-left: 24px;
   }
-
   .p-x-3-mov {
     padding-left: 24px;
     padding-right: 24px;
   }
-
   .p-y-3-mov {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
   .m-4-mov {
     margin: 32px;
   }
-
   .m-t-4-mov {
     margin-top: 32px;
   }
-
   .m-r-4-mov {
     margin-right: 32px;
   }
-
   .m-b-4-mov {
     margin-bottom: 32px;
   }
-
   .m-l-4-mov {
     margin-left: 32px;
   }
-
   .m-x-4-mov {
     margin-left: 32px;
     margin-right: 32px;
   }
-
   .m-y-4-mov {
     margin-top: 32px;
     margin-bottom: 32px;
   }
-
   .m--4-mov {
     margin: -32px;
   }
-
   .m-t--4-mov {
     margin-top: -32px;
   }
-
   .m-r--4-mov {
     margin-right: -32px;
   }
-
   .m-b--4-mov {
     margin-bottom: -32px;
   }
-
   .m-l--4-mov {
     margin-left: -32px;
   }
-
   .m-x--4-mov {
     margin-left: -32px;
     margin-right: -32px;
   }
-
   .m-y--4-mov {
     margin-top: -32px;
     margin-bottom: -32px;
   }
-
   .p-4-mov {
     padding: 32px;
   }
-
   .p-t-4-mov {
     padding-top: 32px;
   }
-
   .p-r-4-mov {
     padding-right: 32px;
   }
-
   .p-b-4-mov {
     padding-bottom: 32px;
   }
-
   .p-l-4-mov {
     padding-left: 32px;
   }
-
   .p-x-4-mov {
     padding-left: 32px;
     padding-right: 32px;
   }
-
   .p-y-4-mov {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
   .m-5-mov {
     margin: 40px;
   }
-
   .m-t-5-mov {
     margin-top: 40px;
   }
-
   .m-r-5-mov {
     margin-right: 40px;
   }
-
   .m-b-5-mov {
     margin-bottom: 40px;
   }
-
   .m-l-5-mov {
     margin-left: 40px;
   }
-
   .m-x-5-mov {
     margin-left: 40px;
     margin-right: 40px;
   }
-
   .m-y-5-mov {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-
   .m--5-mov {
     margin: -40px;
   }
-
   .m-t--5-mov {
     margin-top: -40px;
   }
-
   .m-r--5-mov {
     margin-right: -40px;
   }
-
   .m-b--5-mov {
     margin-bottom: -40px;
   }
-
   .m-l--5-mov {
     margin-left: -40px;
   }
-
   .m-x--5-mov {
     margin-left: -40px;
     margin-right: -40px;
   }
-
   .m-y--5-mov {
     margin-top: -40px;
     margin-bottom: -40px;
   }
-
   .p-5-mov {
     padding: 40px;
   }
-
   .p-t-5-mov {
     padding-top: 40px;
   }
-
   .p-r-5-mov {
     padding-right: 40px;
   }
-
   .p-b-5-mov {
     padding-bottom: 40px;
   }
-
   .p-l-5-mov {
     padding-left: 40px;
   }
-
   .p-x-5-mov {
     padding-left: 40px;
     padding-right: 40px;
   }
-
   .p-y-5-mov {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   .m-6-mov {
     margin: 48px;
   }
-
   .m-t-6-mov {
     margin-top: 48px;
   }
-
   .m-r-6-mov {
     margin-right: 48px;
   }
-
   .m-b-6-mov {
     margin-bottom: 48px;
   }
-
   .m-l-6-mov {
     margin-left: 48px;
   }
-
   .m-x-6-mov {
     margin-left: 48px;
     margin-right: 48px;
   }
-
   .m-y-6-mov {
     margin-top: 48px;
     margin-bottom: 48px;
   }
-
   .m--6-mov {
     margin: -48px;
   }
-
   .m-t--6-mov {
     margin-top: -48px;
   }
-
   .m-r--6-mov {
     margin-right: -48px;
   }
-
   .m-b--6-mov {
     margin-bottom: -48px;
   }
-
   .m-l--6-mov {
     margin-left: -48px;
   }
-
   .m-x--6-mov {
     margin-left: -48px;
     margin-right: -48px;
   }
-
   .m-y--6-mov {
     margin-top: -48px;
     margin-bottom: -48px;
   }
-
   .p-6-mov {
     padding: 48px;
   }
-
   .p-t-6-mov {
     padding-top: 48px;
   }
-
   .p-r-6-mov {
     padding-right: 48px;
   }
-
   .p-b-6-mov {
     padding-bottom: 48px;
   }
-
   .p-l-6-mov {
     padding-left: 48px;
   }
-
   .p-x-6-mov {
     padding-left: 48px;
     padding-right: 48px;
   }
-
   .p-y-6-mov {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-
   .m-7-mov {
     margin: 56px;
   }
-
   .m-t-7-mov {
     margin-top: 56px;
   }
-
   .m-r-7-mov {
     margin-right: 56px;
   }
-
   .m-b-7-mov {
     margin-bottom: 56px;
   }
-
   .m-l-7-mov {
     margin-left: 56px;
   }
-
   .m-x-7-mov {
     margin-left: 56px;
     margin-right: 56px;
   }
-
   .m-y-7-mov {
     margin-top: 56px;
     margin-bottom: 56px;
   }
-
   .m--7-mov {
     margin: -56px;
   }
-
   .m-t--7-mov {
     margin-top: -56px;
   }
-
   .m-r--7-mov {
     margin-right: -56px;
   }
-
   .m-b--7-mov {
     margin-bottom: -56px;
   }
-
   .m-l--7-mov {
     margin-left: -56px;
   }
-
   .m-x--7-mov {
     margin-left: -56px;
     margin-right: -56px;
   }
-
   .m-y--7-mov {
     margin-top: -56px;
     margin-bottom: -56px;
   }
-
   .p-7-mov {
     padding: 56px;
   }
-
   .p-t-7-mov {
     padding-top: 56px;
   }
-
   .p-r-7-mov {
     padding-right: 56px;
   }
-
   .p-b-7-mov {
     padding-bottom: 56px;
   }
-
   .p-l-7-mov {
     padding-left: 56px;
   }
-
   .p-x-7-mov {
     padding-left: 56px;
     padding-right: 56px;
   }
-
   .p-y-7-mov {
     padding-top: 56px;
     padding-bottom: 56px;
   }
-
   .m-8-mov {
     margin: 64px;
   }
-
   .m-t-8-mov {
     margin-top: 64px;
   }
-
   .m-r-8-mov {
     margin-right: 64px;
   }
-
   .m-b-8-mov {
     margin-bottom: 64px;
   }
-
   .m-l-8-mov {
     margin-left: 64px;
   }
-
   .m-x-8-mov {
     margin-left: 64px;
     margin-right: 64px;
   }
-
   .m-y-8-mov {
     margin-top: 64px;
     margin-bottom: 64px;
   }
-
   .m--8-mov {
     margin: -64px;
   }
-
   .m-t--8-mov {
     margin-top: -64px;
   }
-
   .m-r--8-mov {
     margin-right: -64px;
   }
-
   .m-b--8-mov {
     margin-bottom: -64px;
   }
-
   .m-l--8-mov {
     margin-left: -64px;
   }
-
   .m-x--8-mov {
     margin-left: -64px;
     margin-right: -64px;
   }
-
   .m-y--8-mov {
     margin-top: -64px;
     margin-bottom: -64px;
   }
-
   .p-8-mov {
     padding: 64px;
   }
-
   .p-t-8-mov {
     padding-top: 64px;
   }
-
   .p-r-8-mov {
     padding-right: 64px;
   }
-
   .p-b-8-mov {
     padding-bottom: 64px;
   }
-
   .p-l-8-mov {
     padding-left: 64px;
   }
-
   .p-x-8-mov {
     padding-left: 64px;
     padding-right: 64px;
   }
-
   .p-y-8-mov {
     padding-top: 64px;
     padding-bottom: 64px;
   }
-
   .m-9-mov {
     margin: 72px;
   }
-
   .m-t-9-mov {
     margin-top: 72px;
   }
-
   .m-r-9-mov {
     margin-right: 72px;
   }
-
   .m-b-9-mov {
     margin-bottom: 72px;
   }
-
   .m-l-9-mov {
     margin-left: 72px;
   }
-
   .m-x-9-mov {
     margin-left: 72px;
     margin-right: 72px;
   }
-
   .m-y-9-mov {
     margin-top: 72px;
     margin-bottom: 72px;
   }
-
   .m--9-mov {
     margin: -72px;
   }
-
   .m-t--9-mov {
     margin-top: -72px;
   }
-
   .m-r--9-mov {
     margin-right: -72px;
   }
-
   .m-b--9-mov {
     margin-bottom: -72px;
   }
-
   .m-l--9-mov {
     margin-left: -72px;
   }
-
   .m-x--9-mov {
     margin-left: -72px;
     margin-right: -72px;
   }
-
   .m-y--9-mov {
     margin-top: -72px;
     margin-bottom: -72px;
   }
-
   .p-9-mov {
     padding: 72px;
   }
-
   .p-t-9-mov {
     padding-top: 72px;
   }
-
   .p-r-9-mov {
     padding-right: 72px;
   }
-
   .p-b-9-mov {
     padding-bottom: 72px;
   }
-
   .p-l-9-mov {
     padding-left: 72px;
   }
-
   .p-x-9-mov {
     padding-left: 72px;
     padding-right: 72px;
   }
-
   .p-y-9-mov {
     padding-top: 72px;
     padding-bottom: 72px;
   }
-
   .m-10-mov {
     margin: 80px;
   }
-
   .m-t-10-mov {
     margin-top: 80px;
   }
-
   .m-r-10-mov {
     margin-right: 80px;
   }
-
   .m-b-10-mov {
     margin-bottom: 80px;
   }
-
   .m-l-10-mov {
     margin-left: 80px;
   }
-
   .m-x-10-mov {
     margin-left: 80px;
     margin-right: 80px;
   }
-
   .m-y-10-mov {
     margin-top: 80px;
     margin-bottom: 80px;
   }
-
   .m--10-mov {
     margin: -80px;
   }
-
   .m-t--10-mov {
     margin-top: -80px;
   }
-
   .m-r--10-mov {
     margin-right: -80px;
   }
-
   .m-b--10-mov {
     margin-bottom: -80px;
   }
-
   .m-l--10-mov {
     margin-left: -80px;
   }
-
   .m-x--10-mov {
     margin-left: -80px;
     margin-right: -80px;
   }
-
   .m-y--10-mov {
     margin-top: -80px;
     margin-bottom: -80px;
   }
-
   .p-10-mov {
     padding: 80px;
   }
-
   .p-t-10-mov {
     padding-top: 80px;
   }
-
   .p-r-10-mov {
     padding-right: 80px;
   }
-
   .p-b-10-mov {
     padding-bottom: 80px;
   }
-
   .p-l-10-mov {
     padding-left: 80px;
   }
-
   .p-x-10-mov {
     padding-left: 80px;
     padding-right: 80px;
   }
-
   .p-y-10-mov {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-
   .m-extra-mov {
     margin: 96px;
   }
-
   .m-t-extra-mov {
     margin-top: 96px;
   }
-
   .m-r-extra-mov {
     margin-right: 96px;
   }
-
   .m-b-extra-mov {
     margin-bottom: 96px;
   }
-
   .m-l-extra-mov {
     margin-left: 96px;
   }
-
   .m-x-extra-mov {
     margin-left: 96px;
     margin-right: 96px;
   }
-
   .m-y-extra-mov {
     margin-top: 96px;
     margin-bottom: 96px;
   }
-
   .m--extra-mov {
     margin: -96px;
   }
-
   .m-t--extra-mov {
     margin-top: -96px;
   }
-
   .m-r--extra-mov {
     margin-right: -96px;
   }
-
   .m-b--extra-mov {
     margin-bottom: -96px;
   }
-
   .m-l--extra-mov {
     margin-left: -96px;
   }
-
   .m-x--extra-mov {
     margin-left: -96px;
     margin-right: -96px;
   }
-
   .m-y--extra-mov {
     margin-top: -96px;
     margin-bottom: -96px;
   }
-
   .p-extra-mov {
     padding: 96px;
   }
-
   .p-t-extra-mov {
     padding-top: 96px;
   }
-
   .p-r-extra-mov {
     padding-right: 96px;
   }
-
   .p-b-extra-mov {
     padding-bottom: 96px;
   }
-
   .p-l-extra-mov {
     padding-left: 96px;
   }
-
   .p-x-extra-mov {
     padding-left: 96px;
     padding-right: 96px;
   }
-
   .p-y-extra-mov {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-
   .m-maximo-mov {
     margin: 120px;
   }
-
   .m-t-maximo-mov {
     margin-top: 120px;
   }
-
   .m-r-maximo-mov {
     margin-right: 120px;
   }
-
   .m-b-maximo-mov {
     margin-bottom: 120px;
   }
-
   .m-l-maximo-mov {
     margin-left: 120px;
   }
-
   .m-x-maximo-mov {
     margin-left: 120px;
     margin-right: 120px;
   }
-
   .m-y-maximo-mov {
     margin-top: 120px;
     margin-bottom: 120px;
   }
-
   .m--maximo-mov {
     margin: -120px;
   }
-
   .m-t--maximo-mov {
     margin-top: -120px;
   }
-
   .m-r--maximo-mov {
     margin-right: -120px;
   }
-
   .m-b--maximo-mov {
     margin-bottom: -120px;
   }
-
   .m-l--maximo-mov {
     margin-left: -120px;
   }
-
   .m-x--maximo-mov {
     margin-left: -120px;
     margin-right: -120px;
   }
-
   .m-y--maximo-mov {
     margin-top: -120px;
     margin-bottom: -120px;
   }
-
   .p-maximo-mov {
     padding: 120px;
   }
-
   .p-t-maximo-mov {
     padding-top: 120px;
   }
-
   .p-r-maximo-mov {
     padding-right: 120px;
   }
-
   .p-b-maximo-mov {
     padding-bottom: 120px;
   }
-
   .p-l-maximo-mov {
     padding-left: 120px;
   }
-
   .p-x-maximo-mov {
     padding-left: 120px;
     padding-right: 120px;
   }
-
   .p-y-maximo-mov {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -4796,1258 +4303,965 @@ p {
   .m-0-esc {
     margin: 0;
   }
-
   .m-t-0-esc {
     margin-top: 0;
   }
-
   .m-r-0-esc {
     margin-right: 0;
   }
-
   .m-b-0-esc {
     margin-bottom: 0;
   }
-
   .m-l-0-esc {
     margin-left: 0;
   }
-
   .m-x-0-esc {
     margin-left: 0;
     margin-right: 0;
   }
-
   .m-y-0-esc {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .m--0-esc {
     margin: 0;
   }
-
   .m-t--0-esc {
     margin-top: 0;
   }
-
   .m-r--0-esc {
     margin-right: 0;
   }
-
   .m-b--0-esc {
     margin-bottom: 0;
   }
-
   .m-l--0-esc {
     margin-left: 0;
   }
-
   .m-x--0-esc {
     margin-left: 0;
     margin-right: 0;
   }
-
   .m-y--0-esc {
     margin-top: 0;
     margin-bottom: 0;
   }
-
   .p-0-esc {
     padding: 0;
   }
-
   .p-t-0-esc {
     padding-top: 0;
   }
-
   .p-r-0-esc {
     padding-right: 0;
   }
-
   .p-b-0-esc {
     padding-bottom: 0;
   }
-
   .p-l-0-esc {
     padding-left: 0;
   }
-
   .p-x-0-esc {
     padding-left: 0;
     padding-right: 0;
   }
-
   .p-y-0-esc {
     padding-top: 0;
     padding-bottom: 0;
   }
-
   .m-minimo-esc {
     margin: 4px;
   }
-
   .m-t-minimo-esc {
     margin-top: 4px;
   }
-
   .m-r-minimo-esc {
     margin-right: 4px;
   }
-
   .m-b-minimo-esc {
     margin-bottom: 4px;
   }
-
   .m-l-minimo-esc {
     margin-left: 4px;
   }
-
   .m-x-minimo-esc {
     margin-left: 4px;
     margin-right: 4px;
   }
-
   .m-y-minimo-esc {
     margin-top: 4px;
     margin-bottom: 4px;
   }
-
   .m--minimo-esc {
     margin: -4px;
   }
-
   .m-t--minimo-esc {
     margin-top: -4px;
   }
-
   .m-r--minimo-esc {
     margin-right: -4px;
   }
-
   .m-b--minimo-esc {
     margin-bottom: -4px;
   }
-
   .m-l--minimo-esc {
     margin-left: -4px;
   }
-
   .m-x--minimo-esc {
     margin-left: -4px;
     margin-right: -4px;
   }
-
   .m-y--minimo-esc {
     margin-top: -4px;
     margin-bottom: -4px;
   }
-
   .p-minimo-esc {
     padding: 4px;
   }
-
   .p-t-minimo-esc {
     padding-top: 4px;
   }
-
   .p-r-minimo-esc {
     padding-right: 4px;
   }
-
   .p-b-minimo-esc {
     padding-bottom: 4px;
   }
-
   .p-l-minimo-esc {
     padding-left: 4px;
   }
-
   .p-x-minimo-esc {
     padding-left: 4px;
     padding-right: 4px;
   }
-
   .p-y-minimo-esc {
     padding-top: 4px;
     padding-bottom: 4px;
   }
-
   .m-1-esc {
     margin: 8px;
   }
-
   .m-t-1-esc {
     margin-top: 8px;
   }
-
   .m-r-1-esc {
     margin-right: 8px;
   }
-
   .m-b-1-esc {
     margin-bottom: 8px;
   }
-
   .m-l-1-esc {
     margin-left: 8px;
   }
-
   .m-x-1-esc {
     margin-left: 8px;
     margin-right: 8px;
   }
-
   .m-y-1-esc {
     margin-top: 8px;
     margin-bottom: 8px;
   }
-
   .m--1-esc {
     margin: -8px;
   }
-
   .m-t--1-esc {
     margin-top: -8px;
   }
-
   .m-r--1-esc {
     margin-right: -8px;
   }
-
   .m-b--1-esc {
     margin-bottom: -8px;
   }
-
   .m-l--1-esc {
     margin-left: -8px;
   }
-
   .m-x--1-esc {
     margin-left: -8px;
     margin-right: -8px;
   }
-
   .m-y--1-esc {
     margin-top: -8px;
     margin-bottom: -8px;
   }
-
   .p-1-esc {
     padding: 8px;
   }
-
   .p-t-1-esc {
     padding-top: 8px;
   }
-
   .p-r-1-esc {
     padding-right: 8px;
   }
-
   .p-b-1-esc {
     padding-bottom: 8px;
   }
-
   .p-l-1-esc {
     padding-left: 8px;
   }
-
   .p-x-1-esc {
     padding-left: 8px;
     padding-right: 8px;
   }
-
   .p-y-1-esc {
     padding-top: 8px;
     padding-bottom: 8px;
   }
-
   .m-2-esc {
     margin: 16px;
   }
-
   .m-t-2-esc {
     margin-top: 16px;
   }
-
   .m-r-2-esc {
     margin-right: 16px;
   }
-
   .m-b-2-esc {
     margin-bottom: 16px;
   }
-
   .m-l-2-esc {
     margin-left: 16px;
   }
-
   .m-x-2-esc {
     margin-left: 16px;
     margin-right: 16px;
   }
-
   .m-y-2-esc {
     margin-top: 16px;
     margin-bottom: 16px;
   }
-
   .m--2-esc {
     margin: -16px;
   }
-
   .m-t--2-esc {
     margin-top: -16px;
   }
-
   .m-r--2-esc {
     margin-right: -16px;
   }
-
   .m-b--2-esc {
     margin-bottom: -16px;
   }
-
   .m-l--2-esc {
     margin-left: -16px;
   }
-
   .m-x--2-esc {
     margin-left: -16px;
     margin-right: -16px;
   }
-
   .m-y--2-esc {
     margin-top: -16px;
     margin-bottom: -16px;
   }
-
   .p-2-esc {
     padding: 16px;
   }
-
   .p-t-2-esc {
     padding-top: 16px;
   }
-
   .p-r-2-esc {
     padding-right: 16px;
   }
-
   .p-b-2-esc {
     padding-bottom: 16px;
   }
-
   .p-l-2-esc {
     padding-left: 16px;
   }
-
   .p-x-2-esc {
     padding-left: 16px;
     padding-right: 16px;
   }
-
   .p-y-2-esc {
     padding-top: 16px;
     padding-bottom: 16px;
   }
-
   .m-3-esc {
     margin: 24px;
   }
-
   .m-t-3-esc {
     margin-top: 24px;
   }
-
   .m-r-3-esc {
     margin-right: 24px;
   }
-
   .m-b-3-esc {
     margin-bottom: 24px;
   }
-
   .m-l-3-esc {
     margin-left: 24px;
   }
-
   .m-x-3-esc {
     margin-left: 24px;
     margin-right: 24px;
   }
-
   .m-y-3-esc {
     margin-top: 24px;
     margin-bottom: 24px;
   }
-
   .m--3-esc {
     margin: -24px;
   }
-
   .m-t--3-esc {
     margin-top: -24px;
   }
-
   .m-r--3-esc {
     margin-right: -24px;
   }
-
   .m-b--3-esc {
     margin-bottom: -24px;
   }
-
   .m-l--3-esc {
     margin-left: -24px;
   }
-
   .m-x--3-esc {
     margin-left: -24px;
     margin-right: -24px;
   }
-
   .m-y--3-esc {
     margin-top: -24px;
     margin-bottom: -24px;
   }
-
   .p-3-esc {
     padding: 24px;
   }
-
   .p-t-3-esc {
     padding-top: 24px;
   }
-
   .p-r-3-esc {
     padding-right: 24px;
   }
-
   .p-b-3-esc {
     padding-bottom: 24px;
   }
-
   .p-l-3-esc {
     padding-left: 24px;
   }
-
   .p-x-3-esc {
     padding-left: 24px;
     padding-right: 24px;
   }
-
   .p-y-3-esc {
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
   .m-4-esc {
     margin: 32px;
   }
-
   .m-t-4-esc {
     margin-top: 32px;
   }
-
   .m-r-4-esc {
     margin-right: 32px;
   }
-
   .m-b-4-esc {
     margin-bottom: 32px;
   }
-
   .m-l-4-esc {
     margin-left: 32px;
   }
-
   .m-x-4-esc {
     margin-left: 32px;
     margin-right: 32px;
   }
-
   .m-y-4-esc {
     margin-top: 32px;
     margin-bottom: 32px;
   }
-
   .m--4-esc {
     margin: -32px;
   }
-
   .m-t--4-esc {
     margin-top: -32px;
   }
-
   .m-r--4-esc {
     margin-right: -32px;
   }
-
   .m-b--4-esc {
     margin-bottom: -32px;
   }
-
   .m-l--4-esc {
     margin-left: -32px;
   }
-
   .m-x--4-esc {
     margin-left: -32px;
     margin-right: -32px;
   }
-
   .m-y--4-esc {
     margin-top: -32px;
     margin-bottom: -32px;
   }
-
   .p-4-esc {
     padding: 32px;
   }
-
   .p-t-4-esc {
     padding-top: 32px;
   }
-
   .p-r-4-esc {
     padding-right: 32px;
   }
-
   .p-b-4-esc {
     padding-bottom: 32px;
   }
-
   .p-l-4-esc {
     padding-left: 32px;
   }
-
   .p-x-4-esc {
     padding-left: 32px;
     padding-right: 32px;
   }
-
   .p-y-4-esc {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-
   .m-5-esc {
     margin: 40px;
   }
-
   .m-t-5-esc {
     margin-top: 40px;
   }
-
   .m-r-5-esc {
     margin-right: 40px;
   }
-
   .m-b-5-esc {
     margin-bottom: 40px;
   }
-
   .m-l-5-esc {
     margin-left: 40px;
   }
-
   .m-x-5-esc {
     margin-left: 40px;
     margin-right: 40px;
   }
-
   .m-y-5-esc {
     margin-top: 40px;
     margin-bottom: 40px;
   }
-
   .m--5-esc {
     margin: -40px;
   }
-
   .m-t--5-esc {
     margin-top: -40px;
   }
-
   .m-r--5-esc {
     margin-right: -40px;
   }
-
   .m-b--5-esc {
     margin-bottom: -40px;
   }
-
   .m-l--5-esc {
     margin-left: -40px;
   }
-
   .m-x--5-esc {
     margin-left: -40px;
     margin-right: -40px;
   }
-
   .m-y--5-esc {
     margin-top: -40px;
     margin-bottom: -40px;
   }
-
   .p-5-esc {
     padding: 40px;
   }
-
   .p-t-5-esc {
     padding-top: 40px;
   }
-
   .p-r-5-esc {
     padding-right: 40px;
   }
-
   .p-b-5-esc {
     padding-bottom: 40px;
   }
-
   .p-l-5-esc {
     padding-left: 40px;
   }
-
   .p-x-5-esc {
     padding-left: 40px;
     padding-right: 40px;
   }
-
   .p-y-5-esc {
     padding-top: 40px;
     padding-bottom: 40px;
   }
-
   .m-6-esc {
     margin: 48px;
   }
-
   .m-t-6-esc {
     margin-top: 48px;
   }
-
   .m-r-6-esc {
     margin-right: 48px;
   }
-
   .m-b-6-esc {
     margin-bottom: 48px;
   }
-
   .m-l-6-esc {
     margin-left: 48px;
   }
-
   .m-x-6-esc {
     margin-left: 48px;
     margin-right: 48px;
   }
-
   .m-y-6-esc {
     margin-top: 48px;
     margin-bottom: 48px;
   }
-
   .m--6-esc {
     margin: -48px;
   }
-
   .m-t--6-esc {
     margin-top: -48px;
   }
-
   .m-r--6-esc {
     margin-right: -48px;
   }
-
   .m-b--6-esc {
     margin-bottom: -48px;
   }
-
   .m-l--6-esc {
     margin-left: -48px;
   }
-
   .m-x--6-esc {
     margin-left: -48px;
     margin-right: -48px;
   }
-
   .m-y--6-esc {
     margin-top: -48px;
     margin-bottom: -48px;
   }
-
   .p-6-esc {
     padding: 48px;
   }
-
   .p-t-6-esc {
     padding-top: 48px;
   }
-
   .p-r-6-esc {
     padding-right: 48px;
   }
-
   .p-b-6-esc {
     padding-bottom: 48px;
   }
-
   .p-l-6-esc {
     padding-left: 48px;
   }
-
   .p-x-6-esc {
     padding-left: 48px;
     padding-right: 48px;
   }
-
   .p-y-6-esc {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-
   .m-7-esc {
     margin: 56px;
   }
-
   .m-t-7-esc {
     margin-top: 56px;
   }
-
   .m-r-7-esc {
     margin-right: 56px;
   }
-
   .m-b-7-esc {
     margin-bottom: 56px;
   }
-
   .m-l-7-esc {
     margin-left: 56px;
   }
-
   .m-x-7-esc {
     margin-left: 56px;
     margin-right: 56px;
   }
-
   .m-y-7-esc {
     margin-top: 56px;
     margin-bottom: 56px;
   }
-
   .m--7-esc {
     margin: -56px;
   }
-
   .m-t--7-esc {
     margin-top: -56px;
   }
-
   .m-r--7-esc {
     margin-right: -56px;
   }
-
   .m-b--7-esc {
     margin-bottom: -56px;
   }
-
   .m-l--7-esc {
     margin-left: -56px;
   }
-
   .m-x--7-esc {
     margin-left: -56px;
     margin-right: -56px;
   }
-
   .m-y--7-esc {
     margin-top: -56px;
     margin-bottom: -56px;
   }
-
   .p-7-esc {
     padding: 56px;
   }
-
   .p-t-7-esc {
     padding-top: 56px;
   }
-
   .p-r-7-esc {
     padding-right: 56px;
   }
-
   .p-b-7-esc {
     padding-bottom: 56px;
   }
-
   .p-l-7-esc {
     padding-left: 56px;
   }
-
   .p-x-7-esc {
     padding-left: 56px;
     padding-right: 56px;
   }
-
   .p-y-7-esc {
     padding-top: 56px;
     padding-bottom: 56px;
   }
-
   .m-8-esc {
     margin: 64px;
   }
-
   .m-t-8-esc {
     margin-top: 64px;
   }
-
   .m-r-8-esc {
     margin-right: 64px;
   }
-
   .m-b-8-esc {
     margin-bottom: 64px;
   }
-
   .m-l-8-esc {
     margin-left: 64px;
   }
-
   .m-x-8-esc {
     margin-left: 64px;
     margin-right: 64px;
   }
-
   .m-y-8-esc {
     margin-top: 64px;
     margin-bottom: 64px;
   }
-
   .m--8-esc {
     margin: -64px;
   }
-
   .m-t--8-esc {
     margin-top: -64px;
   }
-
   .m-r--8-esc {
     margin-right: -64px;
   }
-
   .m-b--8-esc {
     margin-bottom: -64px;
   }
-
   .m-l--8-esc {
     margin-left: -64px;
   }
-
   .m-x--8-esc {
     margin-left: -64px;
     margin-right: -64px;
   }
-
   .m-y--8-esc {
     margin-top: -64px;
     margin-bottom: -64px;
   }
-
   .p-8-esc {
     padding: 64px;
   }
-
   .p-t-8-esc {
     padding-top: 64px;
   }
-
   .p-r-8-esc {
     padding-right: 64px;
   }
-
   .p-b-8-esc {
     padding-bottom: 64px;
   }
-
   .p-l-8-esc {
     padding-left: 64px;
   }
-
   .p-x-8-esc {
     padding-left: 64px;
     padding-right: 64px;
   }
-
   .p-y-8-esc {
     padding-top: 64px;
     padding-bottom: 64px;
   }
-
   .m-9-esc {
     margin: 72px;
   }
-
   .m-t-9-esc {
     margin-top: 72px;
   }
-
   .m-r-9-esc {
     margin-right: 72px;
   }
-
   .m-b-9-esc {
     margin-bottom: 72px;
   }
-
   .m-l-9-esc {
     margin-left: 72px;
   }
-
   .m-x-9-esc {
     margin-left: 72px;
     margin-right: 72px;
   }
-
   .m-y-9-esc {
     margin-top: 72px;
     margin-bottom: 72px;
   }
-
   .m--9-esc {
     margin: -72px;
   }
-
   .m-t--9-esc {
     margin-top: -72px;
   }
-
   .m-r--9-esc {
     margin-right: -72px;
   }
-
   .m-b--9-esc {
     margin-bottom: -72px;
   }
-
   .m-l--9-esc {
     margin-left: -72px;
   }
-
   .m-x--9-esc {
     margin-left: -72px;
     margin-right: -72px;
   }
-
   .m-y--9-esc {
     margin-top: -72px;
     margin-bottom: -72px;
   }
-
   .p-9-esc {
     padding: 72px;
   }
-
   .p-t-9-esc {
     padding-top: 72px;
   }
-
   .p-r-9-esc {
     padding-right: 72px;
   }
-
   .p-b-9-esc {
     padding-bottom: 72px;
   }
-
   .p-l-9-esc {
     padding-left: 72px;
   }
-
   .p-x-9-esc {
     padding-left: 72px;
     padding-right: 72px;
   }
-
   .p-y-9-esc {
     padding-top: 72px;
     padding-bottom: 72px;
   }
-
   .m-10-esc {
     margin: 80px;
   }
-
   .m-t-10-esc {
     margin-top: 80px;
   }
-
   .m-r-10-esc {
     margin-right: 80px;
   }
-
   .m-b-10-esc {
     margin-bottom: 80px;
   }
-
   .m-l-10-esc {
     margin-left: 80px;
   }
-
   .m-x-10-esc {
     margin-left: 80px;
     margin-right: 80px;
   }
-
   .m-y-10-esc {
     margin-top: 80px;
     margin-bottom: 80px;
   }
-
   .m--10-esc {
     margin: -80px;
   }
-
   .m-t--10-esc {
     margin-top: -80px;
   }
-
   .m-r--10-esc {
     margin-right: -80px;
   }
-
   .m-b--10-esc {
     margin-bottom: -80px;
   }
-
   .m-l--10-esc {
     margin-left: -80px;
   }
-
   .m-x--10-esc {
     margin-left: -80px;
     margin-right: -80px;
   }
-
   .m-y--10-esc {
     margin-top: -80px;
     margin-bottom: -80px;
   }
-
   .p-10-esc {
     padding: 80px;
   }
-
   .p-t-10-esc {
     padding-top: 80px;
   }
-
   .p-r-10-esc {
     padding-right: 80px;
   }
-
   .p-b-10-esc {
     padding-bottom: 80px;
   }
-
   .p-l-10-esc {
     padding-left: 80px;
   }
-
   .p-x-10-esc {
     padding-left: 80px;
     padding-right: 80px;
   }
-
   .p-y-10-esc {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-
   .m-extra-esc {
     margin: 96px;
   }
-
   .m-t-extra-esc {
     margin-top: 96px;
   }
-
   .m-r-extra-esc {
     margin-right: 96px;
   }
-
   .m-b-extra-esc {
     margin-bottom: 96px;
   }
-
   .m-l-extra-esc {
     margin-left: 96px;
   }
-
   .m-x-extra-esc {
     margin-left: 96px;
     margin-right: 96px;
   }
-
   .m-y-extra-esc {
     margin-top: 96px;
     margin-bottom: 96px;
   }
-
   .m--extra-esc {
     margin: -96px;
   }
-
   .m-t--extra-esc {
     margin-top: -96px;
   }
-
   .m-r--extra-esc {
     margin-right: -96px;
   }
-
   .m-b--extra-esc {
     margin-bottom: -96px;
   }
-
   .m-l--extra-esc {
     margin-left: -96px;
   }
-
   .m-x--extra-esc {
     margin-left: -96px;
     margin-right: -96px;
   }
-
   .m-y--extra-esc {
     margin-top: -96px;
     margin-bottom: -96px;
   }
-
   .p-extra-esc {
     padding: 96px;
   }
-
   .p-t-extra-esc {
     padding-top: 96px;
   }
-
   .p-r-extra-esc {
     padding-right: 96px;
   }
-
   .p-b-extra-esc {
     padding-bottom: 96px;
   }
-
   .p-l-extra-esc {
     padding-left: 96px;
   }
-
   .p-x-extra-esc {
     padding-left: 96px;
     padding-right: 96px;
   }
-
   .p-y-extra-esc {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-
   .m-maximo-esc {
     margin: 120px;
   }
-
   .m-t-maximo-esc {
     margin-top: 120px;
   }
-
   .m-r-maximo-esc {
     margin-right: 120px;
   }
-
   .m-b-maximo-esc {
     margin-bottom: 120px;
   }
-
   .m-l-maximo-esc {
     margin-left: 120px;
   }
-
   .m-x-maximo-esc {
     margin-left: 120px;
     margin-right: 120px;
   }
-
   .m-y-maximo-esc {
     margin-top: 120px;
     margin-bottom: 120px;
   }
-
   .m--maximo-esc {
     margin: -120px;
   }
-
   .m-t--maximo-esc {
     margin-top: -120px;
   }
-
   .m-r--maximo-esc {
     margin-right: -120px;
   }
-
   .m-b--maximo-esc {
     margin-bottom: -120px;
   }
-
   .m-l--maximo-esc {
     margin-left: -120px;
   }
-
   .m-x--maximo-esc {
     margin-left: -120px;
     margin-right: -120px;
   }
-
   .m-y--maximo-esc {
     margin-top: -120px;
     margin-bottom: -120px;
   }
-
   .p-maximo-esc {
     padding: 120px;
   }
-
   .p-t-maximo-esc {
     padding-top: 120px;
   }
-
   .p-r-maximo-esc {
     padding-right: 120px;
   }
-
   .p-b-maximo-esc {
     padding-bottom: 120px;
   }
-
   .p-l-maximo-esc {
     padding-left: 120px;
   }
-
   .p-x-maximo-esc {
     padding-left: 120px;
     padding-right: 120px;
   }
-
   .p-y-maximo-esc {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -7084,14 +6298,14 @@ fieldset.formulario-error .formulario-ayuda,
 }
 fieldset.formulario-confirmacion,
 .formulario-horizontal.formulario-confirmacion {
-  border-color: var(--borde-informacion);
+  border-color: var(--borde-confirmacion);
 }
 fieldset.formulario-confirmacion .form-campo-base, fieldset.formulario-confirmacion input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]), fieldset.formulario-confirmacion textarea, fieldset.formulario-confirmacion select,
 .formulario-horizontal.formulario-confirmacion .form-campo-base,
 .formulario-horizontal.formulario-confirmacion input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]),
 .formulario-horizontal.formulario-confirmacion textarea,
 .formulario-horizontal.formulario-confirmacion select {
-  border-color: var(--borde-informacion);
+  border-color: var(--borde-confirmacion);
 }
 fieldset.formulario-confirmacion .formulario-ayuda,
 .formulario-horizontal.formulario-confirmacion .formulario-ayuda {
@@ -7102,7 +6316,7 @@ fieldset.formulario-confirmacion .formulario-ayuda,
   border-color: var(--borde-error);
 }
 .form-campo-base.campo-confirmacion, input.campo-confirmacion:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=button]):not([type=submit]):not([type=reset]), textarea.campo-confirmacion, select.campo-confirmacion {
-  border-color: var(--borde-informacion);
+  border-color: var(--borde-confirmacion);
 }
 
 .formulario-ayuda.ayuda-error {
@@ -8227,8 +7441,8 @@ body.overflow-hidden {
     border-radius: 20px 0 0 20px;
   }
   .menu-lateral.abierto .menu-lateral-boton .pictograma,
-.menu-lateral.abierto .menu-lateral-boton [class^=pictograma-],
-.menu-lateral.abierto .menu-lateral-boton [class*=" pictograma-"] {
+  .menu-lateral.abierto .menu-lateral-boton [class^=pictograma-],
+  .menu-lateral.abierto .menu-lateral-boton [class*=" pictograma-"] {
     transform: rotate(180deg);
   }
   .menu-lateral.abierto .menu-lateral-contenedor {
@@ -8262,8 +7476,8 @@ body.overflow-hidden {
     z-index: 3;
   }
   .menu-lateral-boton .pictograma,
-.menu-lateral-boton [class^=pictograma-],
-.menu-lateral-boton [class*=" pictograma-"] {
+  .menu-lateral-boton [class^=pictograma-],
+  .menu-lateral-boton [class*=" pictograma-"] {
     align-self: flex-start;
     font-size: 1.35em;
     padding: 16px 8px;
@@ -8357,18 +7571,18 @@ body.overflow-hidden {
 }
 @media screen and (min-width: 768px) {
   .menu-lateral-contenedor ul li a,
-.menu-lateral-contenedor ul li button, .menu-lateral-contenedor ol li a,
-.menu-lateral-contenedor ol li button {
+  .menu-lateral-contenedor ul li button, .menu-lateral-contenedor ol li a,
+  .menu-lateral-contenedor ol li button {
     padding-left: 40px;
   }
   .menu-lateral-contenedor ul li li a,
-.menu-lateral-contenedor ul li li button, .menu-lateral-contenedor ol li li a,
-.menu-lateral-contenedor ol li li button {
+  .menu-lateral-contenedor ul li li button, .menu-lateral-contenedor ol li li a,
+  .menu-lateral-contenedor ol li li button {
     padding-left: 56px;
   }
   .menu-lateral-contenedor ul li li li a,
-.menu-lateral-contenedor ul li li li button, .menu-lateral-contenedor ol li li li a,
-.menu-lateral-contenedor ol li li li button {
+  .menu-lateral-contenedor ul li li li button, .menu-lateral-contenedor ol li li li a,
+  .menu-lateral-contenedor ol li li li button {
     padding-left: 72px;
   }
 }
@@ -9125,8 +8339,8 @@ dl.informacion-despliegue dd:not(:last-child) {
     min-height: calc(var(--contenedor-vis-alto-minimo-vis) + var(--contenedor-vis-alto-atribuciones) + 24px);
   }
   .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis,
-.contenedor-vis .contenedor-vis-paneles .contenido-vis,
-.contenedor-vis .contenedor-vis-paneles .panel-derecha-vis {
+  .contenedor-vis .contenedor-vis-paneles .contenido-vis,
+  .contenedor-vis .contenedor-vis-paneles .panel-derecha-vis {
     grid-row-start: 2;
   }
   .contenedor-vis .contenedor-vis-paneles .panel-pie-vis {
@@ -9139,10 +8353,10 @@ dl.informacion-despliegue dd:not(:last-child) {
     grid-template-rows: auto 1fr 0;
   }
   .contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-izquierda-vis .panel-encabezado-vis,
-.contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-izquierda-vis .panel-pie-vis, .contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-derecha-vis .panel-encabezado-vis,
-.contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-derecha-vis .panel-pie-vis, .contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-izquierda-vis .panel-encabezado-vis,
-.contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-izquierda-vis .panel-pie-vis, .contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-derecha-vis .panel-encabezado-vis,
-.contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-derecha-vis .panel-pie-vis {
+  .contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-izquierda-vis .panel-pie-vis, .contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-derecha-vis .panel-encabezado-vis,
+  .contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-derecha-vis .panel-pie-vis, .contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-izquierda-vis .panel-encabezado-vis,
+  .contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-izquierda-vis .panel-pie-vis, .contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-derecha-vis .panel-encabezado-vis,
+  .contenedor-vis .contenedor-vis-paneles.con-panel-pie-vis.con-panel-derecha-vis .panel-pie-vis {
     grid-column-end: span 2;
   }
   .contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis.con-panel-pie-vis {
@@ -9167,7 +8381,7 @@ dl.informacion-despliegue dd:not(:last-child) {
     grid-template-columns: 1fr 2fr 1fr;
   }
   .contenedor-vis .contenedor-vis-paneles.con-panel-izquierda-vis.con-panel-derecha-vis .panel-encabezado-vis,
-.contenedor-vis .contenedor-vis-paneles.con-panel-izquierda-vis.con-panel-derecha-vis .panel-pie-vis {
+  .contenedor-vis .contenedor-vis-paneles.con-panel-izquierda-vis.con-panel-derecha-vis .panel-pie-vis {
     grid-column-end: span 3;
   }
   .contenedor-vis .contenedor-vis-paneles.con-panel-izquierda-vis.con-panel-derecha-vis .contenido-vis {
@@ -10217,47 +9431,38 @@ span.controlador-vis label, span.controlador-vis legend,
     font-size: 0.75rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-2-mov {
     font-size: 0.875rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-3-mov {
     font-size: 1rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-4-mov {
     font-size: 1.125rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-5-mov {
     font-size: 1.25rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-6-mov {
     font-size: 1.5rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-7-mov {
     font-size: 2.25rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-8-mov {
     font-size: 3rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-9-mov {
     font-size: 3.5rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-10-mov {
     font-size: 5rem;
     line-height: 1.25em;
@@ -10268,47 +9473,38 @@ span.controlador-vis label, span.controlador-vis legend,
     font-size: 0.75rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-2-esc {
     font-size: 0.875rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-3-esc {
     font-size: 1rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-4-esc {
     font-size: 1.125rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-5-esc {
     font-size: 1.25rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-6-esc {
     font-size: 1.5rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-7-esc {
     font-size: 2.25rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-8-esc {
     font-size: 3rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-9-esc {
     font-size: 3.5rem;
     line-height: 1.25em;
   }
-
   .texto-tamanio-10-esc {
     font-size: 5rem;
     line-height: 1.25em;
@@ -10374,7 +9570,6 @@ span.controlador-vis label, span.controlador-vis legend,
   .oculto-mov {
     display: none;
   }
-
   .no-visible-mov {
     visibility: hidden;
   }
@@ -10383,7 +9578,6 @@ span.controlador-vis label, span.controlador-vis legend,
   .oculto-esc {
     display: none;
   }
-
   .no-visible-esc {
     visibility: hidden;
   }
@@ -10512,12 +9706,12 @@ span.controlador-vis label, span.controlador-vis legend,
     padding-right: 24px;
   }
   .a11y-simplificada .a11y-simplificada-contenedor > .flex > [class^=columna-],
-.a11y-simplificada .a11y-simplificada-contenedor > .flex > [class*=" columna-"] {
+  .a11y-simplificada .a11y-simplificada-contenedor > .flex > [class*=" columna-"] {
     flex-basis: 100%;
     max-width: 100%;
   }
   .a11y-simplificada .a11y-simplificada-contenedor > .grid > [class^=columna-],
-.a11y-simplificada .a11y-simplificada-contenedor > .grid > [class*=" columna-"] {
+  .a11y-simplificada .a11y-simplificada-contenedor > .grid > [class*=" columna-"] {
     grid-column: span 8;
   }
 }
@@ -10528,12 +9722,12 @@ span.controlador-vis label, span.controlador-vis legend,
     padding-right: 0;
   }
   .a11y-simplificada .a11y-simplificada-contenedor > .flex > [class^=columna-],
-.a11y-simplificada .a11y-simplificada-contenedor > .flex > [class*=" columna-"] {
+  .a11y-simplificada .a11y-simplificada-contenedor > .flex > [class*=" columna-"] {
     flex-basis: 100%;
     max-width: 100%;
   }
   .a11y-simplificada .a11y-simplificada-contenedor > .grid > [class^=columna-],
-.a11y-simplificada .a11y-simplificada-contenedor > .grid > [class*=" columna-"] {
+  .a11y-simplificada .a11y-simplificada-contenedor > .grid > [class*=" columna-"] {
     grid-column: span 16;
   }
 }
