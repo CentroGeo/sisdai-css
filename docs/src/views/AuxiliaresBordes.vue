@@ -8,9 +8,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <h1>Bordes</h1>
       <p>
         Utilizando la clase de posición de bordes se crea un borde 
-        de 1px de grosor y de color base especificado en la 
-        variable CSS <code>--borde-color-1</code>. Es posible modificar 
-        el grosor y el color utilizado clases adicionales diseñadas 
+        de 1px de grosor utilizando el mismo color que tenga el bloque de texto. 
+        Es posible modificar el grosor y el color utilizado clases adicionales diseñadas 
         para cada propiedad específica. 
       </p>
       <h2 class="m-t-10">Posiciones</h2>
