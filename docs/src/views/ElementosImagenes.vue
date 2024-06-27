@@ -7,23 +7,28 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h1>Imágenes</h1>
       
-      <p class="h4">Acerca de la accesibilidad en el Sisdai.</p>
       <p>
-        Todas las imágenes deben tener el atributo <code>alt</code>. 
-        Éste atrubuto <b>puede</b> ir vacio <code>alt=""</code> si la imagen es únicamente decorativa;  
-        pero <b>debe</b> llevar texo alternativo <code>alt="texto que describe la imagen"</code> 
-        cuando la imágen da más información referente al contenido del sitio.
+        Es importante que todas las imágenes puedan incluir el atributo <code>alt</code>. 
+        Este atributo debe dejarse vacío (<code>alt=""</code>) si la imagen es meramente 
+        decorativa. Sin embargo, cuando la imagen aporta información adicional relevante 
+        para el contenido del sitio, debe incluirse un texto descriptivo 
+        (<code>alt="texto que describe la imagen"</code>). Esto asegura que las personas 
+        usuarias que dependen de lectores de pantalla puedan entender el contenido que la 
+        imagen representa.
       </p>
       <p>
-        Ninguna imágen debe verse en la vista simplificada.
+        Con la configuración de mostrar solo texto, las imágenes no deben mostrarse para 
+        mantener un diseño más claro y centrado en el texto. 
       </p>
     </div>
 
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Imagen &lt; img /></h2>
       <p>
-        La etiqueta de imagen <code>&lt; img /></code> es un elemento de linea
-        que se dibuja dependiendo de las dimensiones del archivo.
+        La etiqueta <code>&lt;img/></code> es un elemento en línea que se renderiza 
+        según las dimensiones especificadas en el archivo de la imagen. Es importante 
+        gestionar adecuadamente las dimensiones para asegurar que la imagen se muestre 
+        correctamente sin distorsión.
       </p>
     </div>
     <div class="flex">
@@ -58,9 +63,12 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Imagen compuesta &lt; picture /></h2>
-      <p>Con la etiqueta <code>picture</code> se pueden definir distintos archivos para la misma imágen.</p>
-      <p>Con el atributo <code>media</code> de puede definir el ancho minimo (o máximo) para mostrar una u otra imágen.</p>
-
+      <p>
+        La etiqueta <code>&lt;picture/></code> permite definir varios archivos de imagen para 
+        el mismo visual, facilitando la adaptación a diferentes tamaños de pantalla o resoluciones. 
+        Utilizando el atributo <code>media</code>, se puede especificar el ancho mínimo o máximo 
+        para seleccionar cuál imagen mostrar según el tamaño de la ventana del navegador. 
+      </p>
       <EjemploCodigoVertical
       html='
       <picture> 
@@ -80,14 +88,12 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Contenedor de imágenes &lt; figure /></h2>
       <p>
-        La etiqueta de <code>figure</code> sirve para encapsular una o varias imágenes. 
-        Cuenta con la etiqueda de <code>figcaption</code> en donde se puede agregar 
-        una descripcion más explicativa de lo que se está viendo, 
-        este texto es visible por todos los navegadores.
-      </p>
-      <p>
-        Si se ocultan las imágenes por la selección de la <b>Vista simplificada</b>, 
-        el texto del <code>figcaption</code> permanecerá visible.
+        La etiqueta <code>&lt;figure/></code> es útil para agrupar una o varias imágenes 
+        y se complementa con <code>&lt;figcaption/></code>, donde se puede agregar una 
+        descripción más detallada de las imágenes contenidas. Esta descripción es accesible 
+        y visible en todos los navegadores. Incluso si las imágenes se ocultan en la vista 
+        mostrar solo texto, el texto de <code>&lt;figcaption/></code> sigue siendo visible, 
+        proporcionando contexto sobre el contenido oculto.
       </p>
     </div>
     <EjemploCodigoVertical

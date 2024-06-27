@@ -7,21 +7,22 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="ancho-lectura">
       <h1>Bordes</h1>
       <p>
-        Al utilizar las clases de posicion de bordes se crea un borde
-        de grosor de <code>1px</code> 
-        y del color base de los bordes <code>var(--borde-color-1)</code>.
-        Los estilos de grosor y color pueden cambiarse utilizando las 
-        clases adicionales para cada propiedad.
+        Utilizando la clase de posición de bordes se crea un borde 
+        de 1px de grosor y de color base especificado en la 
+        variable CSS <code>--borde-color-1</code>. Es posible modificar 
+        el grosor y el color utilizado clases adicionales diseñadas 
+        para cada propiedad específica. 
       </p>
       <h2 class="m-t-10">Posiciones</h2>
       <p> 
-        Posición vacía se agrega en general a todos lados,
-        <code>t</code> <i>top</i> arriba, 
-        <code>b</code> <i>bottom</i> abajo, 
-        <code>l</code> <i>left</i> izquierda,
-        <code>r</code> <i>right</i> derecha,
-        <code>x</code> eje horizontal combinación de izquierda y derecha,
-        <code>y</code> eje vertical combinacion de arriba y abajo.
+        Las posiciones de borde incluyen:
+        <code>t</code> para arriba (top), 
+        <code>b</code> para abajo (bottom), 
+        <code>l</code> para izquierda (left), 
+        <code>r</code> para derecha (right), 
+        <code>x</code> para el eje horizontal (combinación de izquierda y derecha), 
+        <code>y</code> para el eje vertical (combinación de arriba y abajo). 
+        Estas especificaciones permiten una aplicación precisa de cada lado del elemento.
       </p>
     </div>
 
@@ -94,9 +95,11 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Colores</h2>
       <p>
-        Las variables de color de CSS estan declaradas para modo claro y oscuro en la carpeta de <code>src/accesibilidad</code>.
-        Las variaciones de color de borde pueden utilizarse independientes para cada posicion.
-      </p>
+        Las variables de color para los bordes están definidas para modos claro y oscuro 
+        y se encuentra en la carpeta <code>src/accesibilidad</code>. Las variaciones de 
+        color se pueden aplicar de manera independiente para cada posición, permitiendo 
+        una personalización detallada según el diseño deseado.
+        </p>
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
@@ -140,9 +143,10 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Grosores</h2>
       <p>
-        El nombre del sufijo de la clase hace referencia al grosor en pixeles,
-        van en incrementos de 1, del 0 al 4.
-        Las variaciones de grosor de borde independientes para cada posicion.
+        El grosor del borde se indica con un sufijo en el nombre de la clase, que 
+        representa el grosor en píxeles y varía en incrementos de 1, desde 0 hasta 4. 
+        Estas variaciones permiten ajustar el grosor del borde de manera independiente 
+        para cada posición.
       </p>
     </div>
     <div class="flex flex-contenido-centrado">
@@ -205,9 +209,11 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Redondeado</h2>
       <p>
-        El nombre del sufijo de la clase hace referencia al borde redondeado en pixeles,
-        van en incrementos de 4, del 0 al 24, agregando además un extra de 2px.
-        Las variaciones de redondeado independientes para cada posicion.
+        Para los bordes redondeados, el sufijo en el nombre de la clase indica el grado 
+        de redondeo de píxeles, en incrementos de 4, desde 0 hasta 24, con un incremento 
+        adicional de 2px. Al igual que con los colores y grosores, las variaciones de 
+        redondeo se pueden aplicar de forma independiente para cada posición, proporcionando 
+        flexibilidad en el diseño visual de los elementos.   
       </p>
     </div>
     <div class="flex flex-contenido-centrado">

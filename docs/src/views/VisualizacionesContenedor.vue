@@ -7,21 +7,23 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="ancho-lectura">
       <h1>Contenedor Vis</h1>
       <p>
-        El contenedor especial <code>contenedor-vis</code> es utilizado por las bibliotecas de gráficas 
+        El contenedor-vis es un elemento importante utilizado por las bibliotecas 
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
-        y de mapas <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>
+        y <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>
+        para agrupar y organizar visualizaciones gráficas y de mapas. Este contenedor se divide en dos secciones principales:
       </p>
-
-      <p>
-        El <code>contenedor-vis</code> tiene dos grandes secciones: el <code>contenedor-vis-paneles</code> agrupa todos los paneles de la visualización 
-        y el <code>contenedor-vis-atribuciones</code> que se pone al final del contenedor con las ligas a Conahcyt y Sisdai.
-      </p>
-
-      <p>
-        A la par de la clase <code>contenedor-vis-paneles</code> se debe especificar que paneles se utilizarán en la visualización,
-        esto para calcular el alto máximo de la gráfica/mapa, el ancho de paneles y posiciones de los mismos. <br>
-        Es importante notar que aunque exista algún panel, si no se agrega a la lista del contenedor no se mostrarán en pantalla.
-      </p>
+      <ol>
+        <li>
+          Panel de visualización (<code>contenedor-vis-paneles</code>): esta sección agrupa todos los paneles de la visualización. 
+          Es esencial especificar qué paneles se utilizarán, ya que esto determina el cálculo del alto máximo y el ancho de los 
+          paneles, así como la disposición de éstos en la visualización. Cabe destacar que los paneles no se mostrarán si no se 
+          agregan explícitamente a la lista del contenedor. 
+        </li>
+        <li>
+          Atribuciones (<code>contenedor-vis-atribuciones</code>): situada al final del contenedor, esta sección incluye enlaces 
+          hace Conahcyt y Sisdai, proporcionando créditos y referencias necesarias.
+        </li>
+      </ol>
     </div>
 
 

@@ -8,15 +8,27 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h1>Portadas</h1>
       <p>
-        Las portadas constan de ilustraciones, fotografías o animaciones 
-        que se muestran en un primer momento a pantalla completa junto con el título del sitio.
+        Las portadas son introducciones visuales que generalmente ocupan la pantalla completa 
+        al ingresar a un sitio, incluyendo ilustraciones, fotografías o animaciones. Estas se 
+        acompañan del título y, opcionalmente, de un subtítulo del sitio.
       </p>
       <p>
-        Las portadas se construyen a partir de un contenedor principal <code>.portada</code>
-        que contiene una imagen <code>.portada-imagen</code> cubierta por un contenedor <code>.portada-degradado</code>
-        en donde se aloja el <code>.portada-cuerpo</code> que puede llevar 
-        un <code>.portada-titulo</code> y un <code>.portada-subtitulo</code>,
-        que se ajustan en tamaño automáticamete dependiendo el ancho de la pantalla.
+        Las portadas presentan la siguiente estructura: 
+      </p>
+      <ul>
+        <li>Contenedor principal: <code>.portada</code> es el contenedor principal que aloja todos los elementos de la portada. </li>
+        <li>Imagen de fondo: <code>.portada-imagen</code> cubre todo el contenedor y se ajusta automáticamente al tamaño de la pantalla.</li>
+        <li>Degradado: <code>.portada-degradado</code> es un contenedor que mejora la visibilidad del texto sobre la imagen de fondo.</li>
+        <li>
+          Cuerpo de la portada: <code>.portada-cuerpo</code> alberga los elementos textuales, incluyendo:
+          <ul>
+            <li>Título: <code>.portada-titulo</code></li>
+            <li>Subtítulo: <code>.portada-subtitulo</code></li>
+          </ul>
+        </li>
+      </ul>
+      <p>
+        Los tamaños del título y subtítulo se ajustan automáticamente según el ancho de la pantalla para optimizar la legibilidad. 
       </p>
     </div>
 

@@ -7,9 +7,11 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h1>Botones de Pictograma</h1>
       <p>
-        Los botones de pictograma estan basados en el estilo de los botones generales, 
-        pero visualmente únicamente contienen un pictograma,
-        por lo que es necesario e importantísimo agregar un span de lectura para los navegadores.
+        Los botones de pictograma están basados en el estilo general de botones, 
+        pero se caracterizan por contener únicamente un pictograma. Es crucial 
+        agregar un elemento <code>&lt;span/></code> de lectura accesible para 
+        asegurar la compresibilidad en lectores de pantalla, ya que estos botones 
+        no incluyen texto visible.
       </p>
     </div>
 
@@ -37,7 +39,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton
+              Ejemplo botón
               pictograma chico
           </span>
         </button>
@@ -60,7 +62,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               pictograma
           </span>
         </button>
@@ -85,7 +87,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               pictograma grande
           </span>
         </button>
@@ -118,7 +120,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton
+              Ejemplo botón
               primario
           </span>
         </button>
@@ -143,7 +145,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               secundario
           </span>
         </button>
@@ -168,7 +170,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               primario sin contenedor
           </span>
         </button>
@@ -193,7 +195,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               secundario sin contenedor
           </span>
         </button>
@@ -226,7 +228,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton
+              Ejemplo botón
               primario deshabilitado
           </span>
         </button>
@@ -253,7 +255,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               secundario deshabilitado
           </span>
         </button>
@@ -279,7 +281,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               primario sin contenedor
               deshabilitado
           </span>
@@ -307,7 +309,7 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
           <span 
             class="a11y-solo-lectura"
           >
-              Ejemplo boton 
+              Ejemplo botón 
               secundario sin contenedor
               deshabilitado
           </span>

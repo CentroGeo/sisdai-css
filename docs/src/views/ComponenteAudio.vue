@@ -7,9 +7,25 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="ancho-lectura">
       <h1>Audio</h1>
       <p>
-        Estilos para el componente <code>SisdaiAudio</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-        Este componente permite reproducir audios en el navegador.
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Audio" y sus características particulares.
+      </p> 
+      <p>
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
+      </p>
+
+      <p>
+        El componente <code>SisdaiAudio</code> está diseñado para facilitar la reproducción 
+        de audios directamente en el navegador. 
+      </p>
+      <p>
+        Puedes notar en el siguiente ejemplo que se utiliza un campo <code>&lt;input type="range"></code>, 
+        el cual debe ser sustituido por el componente <code>SisdaiControlDeslizante</code>. A este último 
+        se le debe asignar el nombre de la clase y el atributo <code>aria-label</code> adecuados para asegurar su funcionalidad correcta. 
       </p>
       
       <EjemploCodigoVertical

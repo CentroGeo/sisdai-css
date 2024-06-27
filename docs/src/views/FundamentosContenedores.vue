@@ -8,30 +8,29 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h1>Contenedores</h1>
       <p>
-        Los contenedores son clases para agrugar contenido y darles margenes generales. 
-      
-        Las propiedades dentro del arreglo de los contenedores estan agrupadas por dispositivo, 
-        <code>mov</code> para dispositivos móviles como celulares y tabletas; 
-        y <code>esc</code> para dispositivos de escritorio, monitores y laptobs.
+        Los contenedores son clases para agrupar contenido y establecer márgenes generales.
+        Las propiedades de los contenedores se organizan según el tipo de dispositivo:
+        <code>mov</code> para dispositivos móviles como celulares y tabletas,
+        y <code>esc</code> para dispositivos de escritorio, monitores y laptops.
       </p>
       <p>
-        Los contenedores, la retícula y todos los elementos responsivos cambian de disposición o tamaño 
-        de <code>mov</code> a <code>esc</code> pasando de <var>768px</var> de ancho de pantalla.
-      </p>
-      <p class="nota">
-        Los colores utilizados en la documentacion son únicamente de referencia,
-        nada en estas clases agrega color.
+        Tanto los contenedores como la retícula y todos los elementos responsivos 
+        ajustan su disposición o tamaño al cambiar de <code>mov</code> a 
+        <code>esc</code>, específicamente a partir de un ancho de pantalla 
+        de 768 px. Los colores utilizados en la documentación son solo 
+        referenciales; ninguna de estas clases añade color al contenido.
       </p>
     </div>
     
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Contenedor</h2>
       <p>
-        El contenedor toma el ancho completo de la pantalla. Los margenes exteriores izquierdo y derecho se estandarizaron a automático, lo que centra al contenedor.
-      </p>
-      <p>
-        El margen interior del eje horizontal del contenedor varía dependiendo del dispositivo, pero si existe un contenedor anidado en otro contenedor,
-        el margen interior del eje horizontal del segundo, tercer, cuarto... contenedores, se vuelven cero.
+        El contenedor ocupa el ancho completo de la pantalla y sus márgenes exteriores
+        izquierdo y derecho se han estandarizado en automático para centrarlo. 
+        El margen interior horizontal del contenedor varía según  el dispositivo. 
+        Sin embargo, si un contenedor está anidado dentro de otro, los márgenes 
+        interiores horizontales del segundo, tercer, cuarto y subsiguientes 
+        contenedores, se reducen a cero.
       </p>
       <EjemploPropiedades
         :propiedades="[[
@@ -55,7 +54,10 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
    
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Contenedor de ancho fijo</h2>
-      <p>Se centra y se limita el ancho máximo que puede tener el contenedor en cada dispositivo.</p>
+      <p>
+        Este tipo de contenedor se centra y tiene un ancho máximo predeterminado
+        para cada dispositivo, garantizando así uniformidad y coherencia visual.
+      </p>
       <EjemploPropiedades 
         :propiedades="[[
           {titulo:'Celular'},
@@ -79,7 +81,11 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
    
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Contenedor de ancho de lectura</h2>
-      <p>Se centra y se limita el ancho máximo que puede tener el contenedor para mejorar la lectura</p>
+      <p>
+        Este contenedor se centra y  limita el ancho máximo que puede tener el 
+        contenedor para mejorar la legibilidad del contenido, facilitando una 
+        experiencia de lectura más cómoda para la persona usuaria.
+      </p>
       <EjemploPropiedades 
       :propiedades="[[
         {titulo:'Celular'},
@@ -103,7 +109,8 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Alineación de contenedores</h2>
       <p>
-        Clases para alinear los contendores de ancho fijo y de ancho lectura
+        Existen clases específicas para alinear los contenedores de ancho fijo 
+        y de  lectura, asegurando una disposición estética y funcional adecuada.
       </p>
     </div>
     <div class="contenedor">
@@ -131,12 +138,12 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     </div>
 
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Contenedor para vista simplificada</h2>
+      <h2 class="m-t-10">Contenedor para vista mostrar solo texto</h2>
       <p>
-        Este contenedor no importa que formato tenga, que tan ancho sea, 
-        si el contenedor tiene la clase <code>a11y-simplificada-contenedor</code>,
-        cuando se selecciona la opción de accesibilidad de vista simplificada, 
-        se muestra el contenido en un solo bloque con ancho de lectura vertical.
+        Independientemente del formato o ancho, si el contenedor tiene la 
+        clase <code>a11y-simplificada-contenedor</code>, cuando se selecciona 
+        la opción de accesibilidad de mostrar solo texto, el contenido se 
+        reorganiza en un solo bloque vertical óptimo para la lectura.
       </p>
     </div>
     

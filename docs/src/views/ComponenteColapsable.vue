@@ -9,20 +9,24 @@ const estaAbierto = ref(false)
     <div class="ancho-lectura">
       <h1>Colapsable <span class="etiqueta">preliminar</span></h1>
       <p>
-        Estilos para el componente <code>SisdaiColapsableNavegacion</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-      </p>
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Colapsable navegación" y sus características particulares.
+      </p> 
       <p>
-        Los estilos de estos elementos colapsables aún no está definido dentro del sistema de diseño. 
-        Consiste en un elemento <code>colapsable</code> que contiene un botón <code>colapsable-boton</code> 
-        y un contenedor <code>colapsable-contenedor</code>.
-      </p>
-      <p>
-        La lógica funciona mediante javascript únicamente en la biblioteca de componentes,
-        al agregar o quitar la clase <code>abierto</code> al <code>colapsable</code>.
-        Cuando la usuaria haga click en el botón <code>colapsable-boton</code>, se expande el contenedor <code>colapsable-contenedor</code>.
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
       </p>
 
+      <p>
+        El componente <code>SisdaiColapsableNavegacion</code> es un elemento dinámico cuyos estilos aún están en 
+        desarrollo dentro del sistema de diseño. Consiste en un botón <code>colapsable-boton</code> y un contenedor 
+        <code>colapsable-contenedor</code>. La funcionalidad se maneja a través de JavaScript, permitiendo que al 
+        hacer clic en el botón, se añada o quite la clase abierta para expandir o colapsar el contenedor.
+      </p>
+      
       <div class="colapsable" :class="{abierto: estaAbierto}">
         <button 
           class="colapsable-boton" 

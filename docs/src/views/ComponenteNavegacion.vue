@@ -58,11 +58,21 @@ window.removeEventListener('resize', validarNavegacionColapsable)
     <div class="contenedor ancho-lectura">
       <h1>Navegación</h1>
       <p>
-        Estilos para el componente <code>SisdaiNavegacionPrincipal</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-        Este componente se utiliza para crear la navegación principal de un sitio web.
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Navegación" y sus características particulares.
+      </p> 
+      <p>
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
       </p>
 
+      <p>
+        El componente <code>SisdaiNavegacionPrincipal</code> es esencial para estructurar la navegación principal 
+        de un sitio web, permitiendo una integración y personalización eficiente en diferentes tipos de proyectos.
+      </p>
       <p>
         La navegación se compone de una etiqueta <code>nav.navegacion</code> separado en dos subsecciones:
       </p>
@@ -98,7 +108,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
 
         <div class="nav-menu-complementario">
           <a href="#" class="nav-hipervinculo" >
-            MENU
+            MENÚ
           </a>
         </div>
         
@@ -146,7 +156,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
             <!-- sección opcional para hipervínculos externos -->
             <div class="nav-menu-complementario">
               <a href="#" class="nav-hipervinculo" >
-                MENU
+                MENÚ
               </a>
             </div>
             

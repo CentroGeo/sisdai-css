@@ -7,16 +7,17 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="ancho-lectura">
       <h1>Pictogramas</h1>
       <p>
-        La mayoría de los pictogramas utilizados en Sisdai se recuperaron de 
-        <a href="https://carbondesignsystem.com" target="_blank" ref="noopener noreferrer">Carbon Design System</a>
-        de código abierto.
+        La mayoría de los pictogramas utilizados en Sisdai se recuperaron de
+        <a href="https://carbondesignsystem.com" target="_blank" ref="noopener noreferrer">Carbon Design System</a>, 
+        sistema de código abierto.
       </p>
       <p>
-        Desde Sisdai se han incorporado pictogramas acordes a requerimientos de comunicación particulares basados en la plantilla maestra del mismo. 
-      </p>
-      <p>
-        Estos pictogramas se acomodan dentro de una tipografía para mejorar la flexibilidad de su uso dentro de la web
-        y se utilizan mediante clases que se utilizan en etiquetas de texto, como se muestra en el ejemplo.
+        Además, hemos incorporado pictogramas específicos que cumplen con 
+        requisitos de comunicación particulares, siguiendo la plantilla 
+        maestra del sistema. Estos pictogramas se han adaptado para funcionar 
+        como parte de la tipografía, aumentando así su flexibilidad de uso 
+        en sitios web. Se implementan a través de clases aplicadas a etiquetas 
+        de texto, tal como se ilustra en el siguiente ejemplo: 
       </p>
 
       <EjemploCodigoVertical
@@ -432,15 +433,14 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Tamaños especiales</h2>
       <p>
-        Los pictogramas al ser tipografía varian dependiendo de la etiquta en donde se encuentre.
-        Aún así en el sistema de diseño especifica que se deben usar los tamaños originales 
-        o los que correspondan a incrementos de 24px, 32px y 48px respectivamente. 
-      </p>
-      <p>
-        Para lo que se crearon las clases de tamaño <code>.pictograma-24</code>, <code>.pictograma-32</code>
-        y <code>.pictograma-48</code> en donde el número corresponde al tamaño de la fuente en pixeles
-        cuando la tipografía base esta en <code>16px</code>. Están declarados en unidades <code>rem</code>
-        para respetar la jerarquia en caso que se incremente o reduzca el tamaño tipográfico general.
+        Al integrarse con la tipografía, el tamaño de los pictogramas varía dependiendo 
+        de la etiqueta en la que se encuentren. Sin embargo,  el Sisdai específica el 
+        uso de los tamaños originales o aquellos que correspondan a incrementos de 24px, 
+        32px y 48px. Para esto, se han creado las clases <code>.pictograma-24</code>, 
+        <code>.pictograma-32</code> y <code>.pictograma-48</code>, donde el número indica 
+        el tamaño de la fuente en píxeles asumiendo una tipografía base de <code>16px</code>. 
+        Estos tamaños están expresados en unidades <code>rem</code> para mantener la jerarquía 
+        tipográfica ante ajustes de tamaño general.
       </p>
       <EjemploCodigoVertical
       html='
@@ -452,9 +452,9 @@ import EjemploCodigoVertical from '../componetes/EjemploCodigoVertical.vue'
 
       <h3 class="m-t-10">Tamaños especiales responsivos</h3>
       <p>
-        Como en el resto de las clases responsivas, se utiliza agregando el subfijo 
-        <code>-mov</code> para dispositivos móviles y 
-        <code>-esc</code> para dispositivos de escritorio.
+        Al igual que con otras clases responsivas, los pictogramas adaptan su tamaño 
+        agregando el sufijo <code>-mov</code> para dispositivos móviles y <code>-esc</code> 
+        para dispositivos de escritorio.
       </p>
       <EjemploCodigoVertical
       html='

@@ -27,27 +27,27 @@ const estaAbierto = ref(true)
             <ul>
               <li>
                 <router-link to="/">
-                  router link inicio prueba
+                  Router link inicio prueba
                 </router-link>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 1
+                  Hipervínculo 1
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 2
+                  Hipervínculo 2
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 3
+                  Hipervínculo 3
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 4
+                  Hipervínculo 4
                 </a>
               </li>
               <li class="colapsable">
@@ -100,7 +100,7 @@ const estaAbierto = ref(true)
                         aria-expanded="true" 
                         aria-label="Abrir/Cerrar colapsable"
                       >
-                        Colapsable sublista abierto
+                        Colapsable sub lista abierto
                         <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                       </button>
                       <div 
@@ -122,47 +122,47 @@ const estaAbierto = ref(true)
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 5
+                  Hipervínculo 5
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 6
+                  Hipervínculo 6
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 7
+                  Hipervínculo 7
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 8
+                  Hipervínculo 8
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 9
+                  Hipervínculo 9
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 10
+                  Hipervínculo 10
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 11
+                  Hipervínculo 11
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 12
+                  Hipervínculo 12
                 </a>
               </li>
               <li>
                 <a href="#">
-                  hipervinculo 13
+                  Hipervínculo 13
                 </a>
               </li>
             </ul>
@@ -176,15 +176,21 @@ const estaAbierto = ref(true)
 
             <h1>Menú lateral <span class="etiqueta">preliminar</span></h1>
             <p>
-              Estilos para el componente <code>SisdaiMenuLateral</code> declarado en la biblioteca 
-              <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-            </p>
-  
+              La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+              proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+              está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+              el componente "Menú lateral" y sus características particulares.
+            </p> 
             <p>
-              Este componente <code>menu-lateral</code> tiene la logica de los colapsables en versión móvil, 
-              es decir que en celulares se muestra el botón <code>menu-lateral-boton</code> a través del cual 
-              se agrega o quita la clase <code>abierto</code> directamente sobre el <code>menu-lateral</code> 
-              para mostrar u ocultar su contenido.
+              Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+              está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+              con el sitio web de manera efectiva.
+            </p>
+
+            <p>
+              El componente <code>SisdaiMenuLateral</code> gestiona los elementos colapsables en versión móvil, 
+              facilitando la interacción en dispositivos más pequeños. A través de un botón (<code>menu-lateral-boton</code>), 
+              este componente permite agregar o quitar la clase <code>abierto</code> para controlar la visualización de su contenido.
             </p>
             <EjemploCodigoVertical
               :tiene_ejemplo="false"
@@ -211,8 +217,8 @@ const estaAbierto = ref(true)
               </nav>
             '/>
             <p>
-              Dentro del componente, se encuentra el contenedor <code>menu-lateral-contenedor</code> que se espera
-              contenga listas anidadas de hipervínculos y componentes de contenido colapsable <code>SisdaiColapsableNavegacion</code>
+              Dentro del componente se encuentra la clase <code>.menu-lateral-contenedor</code>, que puede contener listas anidadas de hipervínculos 
+              y otros componentes colapsables.
             </p>
   
             <EjemploCodigoVertical
@@ -272,9 +278,8 @@ const estaAbierto = ref(true)
             '/>
             
             <p>
-              La clase <code>menu-lateral-fondo</code>, no forma parte del <code>menu-lateral</code>, pero ayuda a poner el mismo
-              color de fondo en la columna en donde se encuentre el menu para que en la vista de escritorio se complete visualmente
-              la sección aunque el menu tenga poca altura. 
+              Adicionalmente, <code>menu-lateral-fondo</code> ayuda a uniformizar el color de 
+              fondo en la columna donde se ubica el menú.
             </p>
             
             <EjemploCodigoVertical

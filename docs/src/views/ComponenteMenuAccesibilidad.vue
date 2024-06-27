@@ -9,17 +9,24 @@ const estaAbierto = ref(false)
     <div class="ancho-lectura">
       <h1>Menú Accesibilidad</h1>
       <p>
-        Estilos para el componente <code>SisdaiMenuAccesibilidad</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
-        El Menú de accesibilidad permite ejecutar a las funciones que agregan reglas de accesibilidad al sitio web.
+        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
+        está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
+        el componente "Menú accesibilidad" y sus características particulares.
+      </p> 
+      <p>
+        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
+        con el sitio web de manera efectiva.
       </p>
 
       <p>
-        El <code>menu-accesibilidad</code> se compone de un boton <code>menu-accesibilidad-boton</code> a través del cuál
-        se agrega o quita la clase <code>abierto</code> sobre <code>menu-accesibilidad</code> para mostrar u ocultar las
-        opciones de accesibilidad que se albergan en el contenedor <code>menu-accesibilidad-contenedor</code>.
+        El componente <code>SisdaiMenuAccesibilidad</code> permite a las personas usuarias ejecutar funciones 
+        que incorporan reglas de accesibilidad en el sitio web. Consiste en un botón (<code>menu-accesibilidad-boton</code>) 
+        que al ser activado, agrega o quita la clase <code>abierto</code> sobre <code>menu-accesibilidad</code> para mostrar 
+        u ocultar las opciones de accesibilidad albergadas en el contenedor <code>menu-accesibilidad-contenedor</code>. 
+        Las opciones se cargan desde el archivo de configuaración <code>opcionesDefault.js</code>.
       </p>
-
       
       <EjemploCodigoVertical 
         :tiene_ejemplo="false"
@@ -82,11 +89,7 @@ const estaAbierto = ref(false)
       ' />
     
       <h2 class="m-t-10">Archivo de configuración</h2>
-      <p>
-        Las opciones de accesibilidad que se muestran dentro del menú de accesibilidad, 
-        en el componente se cargan desde el archivo <code>opcionesDefault.js</code>.
-        Las opciones mostradas en este ejemplo se tendrían que agregar de la siguiente manera:
-      </p>
+      
       <pre class="nota">
 export default [
   {
