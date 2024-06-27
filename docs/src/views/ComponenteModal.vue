@@ -56,11 +56,13 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
       </p>
 
       <p>
-        El componente <code>SisdaiModal</code> facilita la creación de ventanas modales, 
-        ofreciendo clases adicionales como <code>.modal-chico</code>, <code>.modal-grande</code> y 
-        <code>.modal-pantalla-completa</code> para ajustar el tamaño de modal. Estas clases 
-        deben aplicarse en la etiqueta <code>dialog</code> junto con la clase base <code>modal</code>. 
+        El componente <code>SisdaiModal</code> facilita la creación de ventanas modales. 
+        Para construir un modal se utiliza la etiqueta <code>dialog</code> con la clase <code>.modal</code>
+        que contiene un elemento <code>.modal-contenedor</code> en donde se encapsulan
+        el <code>.modal-cabecera</code>, el <code>.modal-cuerpo</code>, el <code>.modal-pie</code> 
+        y el boton de cierre <code>.modal-cerrar</code>.
       </p>
+
       <EjemploCodigo
         :tiene_ejemplo='false'
         tipo='HTML'
