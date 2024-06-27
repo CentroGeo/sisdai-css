@@ -27,7 +27,7 @@ const estaAbierto = ref(true)
         El componente <code>SisdaiBotonFlotante</code> permite disponer de enlaces fijos 
         accesibles en todas las vistas del sitio. Se posiciona en la esquina inferior 
         izquierda. Para controlar su comportamiento, a la clase principal 
-        <code>.boton-flotante</code> se le puede agregar o quitar la clase <code>.abierto</code>, 
+        <code>.menu-flotante .menu-flotante-izquierdo</code> se le puede agregar o quitar la clase <code>.abierto</code>, 
         la cual ajusta la visualización del icono de abrir/cerrar y gestiona la visibilidad 
         de los enlaces dentro del cuerpo del componente. A continuación se muestra un ejemplo: 
        </p>
