@@ -42,7 +42,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         </dd>
         <dt>Botones</dt>
         <dd>
-          Modifica los botones para mostrarlos como hipervínculos, excepto los de navegación y el componente *boton-flotante
+          Modifica los botones para mostrarlos como hipervínculos, excepto los de navegación y menús flotantes
           <EjemploCodigo
             :tiene_ejemplo='false'
             tipo='CSS'
@@ -59,13 +59,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             '
           />
         </dd>
-        <dt>*boton-flotante</dt>
+        <dt>Contenedor</dt>
         <dd>
-          Modifica la posicion para que no esten flotando los enlaces y oculta el botón que oculta/muestra los enlaces
+          La clase <code>.a11y-simplificada-contenedor</code> que puede aplicarse a contenedores flex,
+          reorganiza el contenido en un solo bloque vertical óptimo para la lectura. 
         </dd>
         <dt>Reticula</dt>
         <dd>
-          La clase .flex-columnas-100-al-simplificar que puede agregarse a contenedores .flex,
+          La clase <code>.flex-columnas-100-al-simplificar</code> que puede agregarse a contenedores flex,
           hace que todas las columnas dentro se pongan al 100% del contenedor en el estado de Mostrar solo texto
         </dd>
       </dl>
