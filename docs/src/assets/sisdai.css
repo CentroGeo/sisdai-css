@@ -7238,6 +7238,43 @@ ol + hr {
   right: 8px;
 }
 
+.control-deslizante-contenido {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.control-deslizante-contenido-tarjeta {
+  height: auto;
+  flex: 1 0 100%;
+}
+
+.control-deslizante-contenido-boton {
+  background: linear-gradient(90deg, transparent 16px, red 17px, red 24px, transparent 24px);
+  border-radius: 0;
+  padding: 0;
+  cursor: col-resize !important;
+  width: 40px;
+  z-index: 9999;
+  position: relative;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.control-deslizante-contenido-boton .pictograma,
+.control-deslizante-contenido-boton [class^=pictograma-],
+.control-deslizante-contenido-boton [class*=" pictograma-"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  background: red;
+  color: white;
+  padding: 0;
+  height: 40px;
+  width: 20px;
+}
+
 .globo-informacion {
   background-color: var(--globo-fondo);
   border-radius: 8px;
@@ -9620,16 +9657,16 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .portada .portada-degradado .portada-cuerpo > * {
   color: var(--texto-primario);
 }
-.a11y-simplificada .tarjeta .tarjeta-cuerpo {
+.a11y-simplificada .tarjeta:not(.control-deslizante-contenido-tarjeta) .tarjeta-cuerpo {
   background: var(--tarjeta-contenido-simplificada-fondo);
   color: var(--tarjeta-contenido-simplificada-color);
 }
-.a11y-simplificada .tarjeta .tarjeta-cuerpo p,
-.a11y-simplificada .tarjeta .tarjeta-cuerpo .tarjeta-titulo,
-.a11y-simplificada .tarjeta .tarjeta-cuerpo .tarjeta-etiqueta {
+.a11y-simplificada .tarjeta:not(.control-deslizante-contenido-tarjeta) .tarjeta-cuerpo p,
+.a11y-simplificada .tarjeta:not(.control-deslizante-contenido-tarjeta) .tarjeta-cuerpo .tarjeta-titulo,
+.a11y-simplificada .tarjeta:not(.control-deslizante-contenido-tarjeta) .tarjeta-cuerpo .tarjeta-etiqueta {
   color: var(--tarjeta-contenido-simplificada-color);
 }
-.a11y-simplificada .tarjeta .tarjeta-cuerpo a, .a11y-simplificada .tarjeta .tarjeta-cuerpo button {
+.a11y-simplificada .tarjeta:not(.control-deslizante-contenido-tarjeta) .tarjeta-cuerpo a, .a11y-simplificada .tarjeta:not(.control-deslizante-contenido-tarjeta) .tarjeta-cuerpo button {
   text-decoration: none !important;
 }
 @media screen and (min-width: 768px) {
@@ -9730,6 +9767,20 @@ span.controlador-vis label, span.controlador-vis legend,
   .a11y-simplificada .a11y-simplificada-contenedor > .grid > [class*=" columna-"] {
     grid-column: span 16;
   }
+}
+.a11y-simplificada .control-deslizante-contenido {
+  gap: 16px;
+}
+.a11y-simplificada .control-deslizante-contenido-tarjeta {
+  height: auto;
+  flex: 1 1 50%;
+  border-radius: 16px;
+}
+.a11y-simplificada .control-deslizante-contenido-boton {
+  display: none;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 .a11y-tipografia {

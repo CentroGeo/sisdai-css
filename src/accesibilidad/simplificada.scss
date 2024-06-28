@@ -44,7 +44,7 @@
     }
   }
 
-  .tarjeta {
+  .tarjeta:not(.control-deslizante-contenido-tarjeta) {
     .tarjeta-cuerpo {
       background: var(--tarjeta-contenido-simplificada-fondo);
       color: var(--tarjeta-contenido-simplificada-color);
@@ -144,5 +144,20 @@
         }
       }
     }
+  }
+
+  .control-deslizante-contenido {
+    gap: 16px;
+  }
+  .control-deslizante-contenido-tarjeta {
+    height: auto;
+    flex: 1 1 50%;
+    border-radius: 16px;
+  }
+  .control-deslizante-contenido-boton {
+    display: none;
+    width: 0;
+    height: 0;
+    overflow: hidden;
   }
 }
