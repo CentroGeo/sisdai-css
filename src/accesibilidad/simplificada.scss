@@ -148,6 +148,9 @@
 
   .control-deslizante-contenido {
     gap: 16px;
+    @include mediaquery('mov') {
+      flex-direction: column;
+    }
   }
   .control-deslizante-contenido-tarjeta {
     height: auto;

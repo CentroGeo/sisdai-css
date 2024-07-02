@@ -29,8 +29,13 @@
             </div>
           </div>
           <button class="control-deslizante-contenido-boton" type="button">
-            <span class="pictograma-angulo-izquierdo borde-r-redondeado-20"></span>
-            <span class="pictograma-angulo-derecho borde-l-redondeado-20"></span>
+            <span class="control-deslizante-contenido-boton-pictogramas">
+              <span class="pictograma-angulo-izquierdo borde-r-redondeado-20"></span>
+              <span class="pictograma-angulo-derecho borde-l-redondeado-20"></span>
+            </span>
+            <span class="a11y-solo-lectura">
+              Pa arrastrar imagenes
+            </span>
           </button>
           <div class="control-deslizante-contenido-tarjeta tarjeta borde-r-redondeado-0 fondo-color-acento">
             <img

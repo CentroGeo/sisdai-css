@@ -25,15 +25,45 @@
 }
 
 .control-deslizante-contenido-boton {
-  background: linear-gradient(90deg, transparent 16px, red 17px, red 24px, transparent 24px);
+  background: transparent;
   border-radius: 0;
+  position: relative;
   padding: 0;
   cursor: col-resize !important;
   width: 40px;
-  z-index: 9999;
+  z-index: 9;
   position: relative;
   margin-left: -20px;
   margin-right: -20px;
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: -1px;
+    bottom: -1px;
+    background-color: var(--boton-primario-fondo);
+    box-shadow: 
+      inset 0 0 0 0px var(--boton-primario-enfoque-borde), // borde
+      0 0 0 0px var(--boton-primario-enfoque-contorno),
+      0 0 0px var(--boton-primario-enfoque-sombra);
+    width: 8px;
+    left: 16px;
+    transition: background-color .27s ease-in-out, box-shadow .27s ease-in-out;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    display: none;
+    top: 0;
+    bottom: 0;
+    background-color: var(--boton-primario-fondo);
+    width: 6px;
+    left: 17px;
+    transition: background-color .27s ease-in-out;
+    z-index: 3;
+  }
+
   .pictograma,
   [class^='pictograma-'],
   [class*=' pictograma-'] {
@@ -42,10 +72,53 @@
     justify-content: center;
     font-size: 1.5rem; // 24px
     line-height: 1;
-    background: red;
-    color: white;
     padding: 0;
     height: 40px;
     width: 20px;
+
+  }
+  .control-deslizante-contenido-boton-pictogramas {
+    z-index: 2;
+    border-radius: 50%;
+    background-color: var(--boton-primario-fondo);
+    box-shadow: 
+      inset 0 0 0 0px var(--boton-primario-enfoque-borde), // borde
+      0 0 0 0px var(--boton-primario-enfoque-contorno),
+      0 0 0px var(--boton-primario-enfoque-sombra);
+    color: var(--boton-primario-color);
+    transition: background-color .27s ease-in-out, color .27s ease-in-out, box-shadow .27s ease-in-out;
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      background-color: var(--boton-primario-cursor-fondo);
+    }
+    .control-deslizante-contenido-boton-pictogramas {
+      background-color: var(--boton-primario-cursor-fondo);
+      color: var(--boton-primario-cursor-color);
+    }
+  }
+  &:focus {
+    &::after {
+      background-color: var(--boton-primario-enfoque-fondo);
+      box-shadow: 
+        inset 0 0 0 1px var(--boton-primario-enfoque-borde), // borde
+        0 0 0 1px var(--boton-primario-enfoque-contorno),
+        0 0 18px var(--boton-primario-enfoque-sombra);
+    }
+    &::before {
+      background-color: var(--boton-primario-enfoque-fondo);
+    }
+    .control-deslizante-contenido-boton-pictogramas {
+      background-color: var(--boton-primario-enfoque-fondo);
+      color: var(--boton-primario-enfoque-color);
+      box-shadow: 
+        inset 0 0 0 1px var(--boton-primario-enfoque-borde), // borde
+        0 0 0 1px var(--boton-primario-enfoque-contorno),
+        0 0 18px var(--boton-primario-enfoque-sombra);
+    }
   }
 }
+
+
