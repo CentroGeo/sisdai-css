@@ -18,26 +18,26 @@
         </a>
       </div>
 
-      <div class="columna-8">
-        <a class="tarjeta tarjeta-hipervinculo-externo" href="/como-empezar" target="_self" rel="noopener noreferrer">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/asha.jpg" alt="" />
-          <div class="tarjeta-degradado">
-            <div class="tarjeta-cuerpo">
-              <p class="h4">¿Cómo empezar?</p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="columna-8">
-        <a class="tarjeta tarjeta-hipervinculo-externo" href="/como-colaborar" target="_self" rel="noopener noreferrer">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-1.jpg" alt="" />
-          <div class="tarjeta-degradado">
-            <div class="tarjeta-cuerpo">
-              <p class="h4">¿Cómo colaborar?</p>
-            </div>
-          </div>
-        </a>
-      </div>
+<!--      <div class="columna-8">-->
+<!--        <a class="tarjeta tarjeta-hipervinculo-externo" href="/como-empezar" target="_self" rel="noopener noreferrer">-->
+<!--          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/asha.jpg" alt="" />-->
+<!--          <div class="tarjeta-degradado">-->
+<!--            <div class="tarjeta-cuerpo">-->
+<!--              <p class="h4">¿Cómo empezar?</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="columna-8">-->
+<!--        <a class="tarjeta tarjeta-hipervinculo-externo" href="/como-colaborar" target="_self" rel="noopener noreferrer">-->
+<!--          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-1.jpg" alt="" />-->
+<!--          <div class="tarjeta-degradado">-->
+<!--            <div class="tarjeta-cuerpo">-->
+<!--              <p class="h4">¿Cómo colaborar?</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </div>-->
 
       <div class="columna-16">
         <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">

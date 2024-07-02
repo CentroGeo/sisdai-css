@@ -351,7 +351,25 @@
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
             </li>
-            
+
+            <li class="nav-contenedor-submenu">
+              <p class="nav-version-submenu">v{{ pkg.version }}</p>
+            </li>
+
+            <li>
+              <a
+                  href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                <img
+                  class="nav-logo boton-sin-contenedor-secundario"
+                  src="../public/gitlab-logo-500.png"
+                  alt=""
+                  />
+              </a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -425,4 +443,16 @@
     background-color: #f005;
   }
 
+  .nav-version-submenu {
+    background-color: var(--navegacion-primaria-fondo);
+    box-shadow: 0 0 0 0;
+    color: var(--navegacion-primaria-color);
+    border-radius: 0;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: calc(1em * 1);
+    text-decoration: none;
+    margin: 0;
+    padding: 16px;
+  }
 </style>
