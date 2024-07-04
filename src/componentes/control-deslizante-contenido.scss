@@ -1,0 +1,169 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+.control-deslizante-contenido {
+  display: flex;
+  overflow: hidden;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.control-deslizante-contenido-tarjeta-fija,
+.control-deslizante-contenido-tarjeta-movil {
+  height: auto;
+  flex: 1 0 100%;
+  .tarjeta-titulo {
+    max-width: 40%;
+  }
+}
+.control-deslizante-contenido-tarjeta-fija {
+  z-index: 2;
+}
+.control-deslizante-contenido-tarjeta-movil {
+  z-index: 3;
+  background-color: var(--fondo-acento);
+  box-shadow: inset 4px 0 0 var(--boton-primario-fondo), -4px 0 0 var(--boton-primario-fondo), -8px 0 24px var(--opacidad-ligero);
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  .tarjeta-imagen {
+    padding-left: 3px;
+  }
+}
+
+[type='range'].control-deslizante-contenido-control {
+  --thumb-size: 40px;
+  position: absolute;
+  left: calc(var(--thumb-size) * -0.5);
+  right: calc(var(--thumb-size) * -0.5);
+  top: calc(50% - 20px);
+  z-index: 4;
+  width: calc(100% + var(--thumb-size));
+  height: var(--thumb-size);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  cursor: default;
+  // bolita
+  &::-moz-range-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: calc(var(--thumb-size) * 0.5);
+    cursor: col-resize;
+    background-color: var(--boton-primario-fondo);
+    background-image: url('data:image/svg+xml;utf8,<svg viewbox="0 0 40 40"  width="40" height="40" xmlns="http://www.w3.org/2000/svg"><path fill="none" stroke="white" stroke-width="2" d="M15 13 L8 20 L15 27"/><path fill="none" stroke="white" stroke-width="2" d="M25 13 L32 20 L25 27"/></svg>');
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  &::-ms-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: calc(var(--thumb-size) * 0.5);
+    cursor: col-resize;
+    background-color: var(--boton-primario-fondo);
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  &::-webkit-slider-thumb {
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    border-radius: calc(var(--thumb-size) * 0.5);
+    cursor: col-resize;
+    background-color: var(--boton-primario-fondo);
+    transition: background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  // linea
+  &::-webkit-slider-runnable-track {
+    background-color: transparent;
+  }
+  &::-moz-range-track {
+    background-color: transparent;
+  }
+  &::-ms-fill-lower {
+    background-color: transparent;
+  }
+  &::-ms-fill-upper {
+    background-color: transparent;
+  }
+
+  &:not(:disabled):hover,
+  &:not(:disabled):focus {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    // bolita
+    &::-moz-range-thumb {
+      background-color: var(--boton-primario-enfoque-fondo);
+    }
+    &::-ms-thumb {
+      background-color: var(--boton-primario-enfoque-fondo);
+    }
+    &::-webkit-slider-thumb {
+      background-color: var(--boton-primario-enfoque-fondo);
+    }
+    // linea
+    &::-webkit-slider-runnable-track {
+      background-color: transparent;
+    }
+    &::-moz-range-track {
+      background-color: transparent;
+    }
+    &::-ms-fill-lower {
+      background-color: transparent;
+    }
+    &::-ms-fill-upper {
+      background-color: transparent;
+    }
+  }
+
+  &:not(:disabled):focus {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    // bolita
+    &::-moz-range-thumb {
+      background-color: var(--boton-primario-enfoque-fondo);
+      box-shadow: 
+      inset 0 0 0 1px var(--boton-primario-enfoque-borde),
+      0 0 0 1px var(--boton-primario-enfoque-contorno),
+      0 0 18px var(--boton-primario-enfoque-sombra);
+    }
+    &::-ms-thumb {
+      background-color: var(--boton-primario-enfoque-fondo);
+      box-shadow: 
+      inset 0 0 0 1px var(--boton-primario-enfoque-borde),
+      0 0 0 1px var(--boton-primario-enfoque-contorno),
+      0 0 18px var(--boton-primario-enfoque-sombra);
+    }
+    &::-webkit-slider-thumb {
+      background-color: var(--boton-primario-enfoque-fondo);
+      box-shadow: 
+      inset 0 0 0 1px var(--boton-primario-enfoque-borde),
+      0 0 0 1px var(--boton-primario-enfoque-contorno),
+      0 0 18px var(--boton-primario-enfoque-sombra);
+    }
+    // linea
+    &::-webkit-slider-runnable-track {
+      background-color: transparent;
+    }
+    &::-moz-range-track {
+      background-color: transparent;
+    }
+    &::-ms-fill-lower {
+      background-color: transparent;
+    }
+    &::-ms-fill-upper {
+      background-color: transparent;
+    }
+  }
+}

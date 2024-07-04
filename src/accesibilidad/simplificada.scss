@@ -44,7 +44,7 @@
     }
   }
 
-  .tarjeta {
+  .tarjeta:not(.control-deslizante-contenido-tarjeta-fija):not(.control-deslizante-contenido-tarjeta-movil) {
     .tarjeta-cuerpo {
       background: var(--tarjeta-contenido-simplificada-fondo);
       color: var(--tarjeta-contenido-simplificada-color);
@@ -144,5 +144,29 @@
         }
       }
     }
+  }
+
+  .control-deslizante-contenido {
+    gap: 16px;
+    @include mediaquery('mov') {
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+  .control-deslizante-contenido-tarjeta-fija,
+  .control-deslizante-contenido-tarjeta-movil {
+    height: auto;
+    flex: 1 1 50%;
+    border-radius: 16px;
+    box-shadow: none;
+    .tarjeta-titulo {
+      max-width: 100%;
+    }
+  }
+  .control-deslizante-contenido-tarjeta-movil {
+    transform: translateX(0);
+  }
+  .control-deslizante-contenido-control {
+    display: none;
   }
 }
