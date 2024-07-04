@@ -14,20 +14,19 @@
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
 .a11y-simplificada {
-  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-  input[type=button],
-  input[type=submit],
-  input[type=reset] {
+  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
     @extend .hipervinculo;
     background-color: transparent !important;
+    box-shadow: none !important;
     &:not(:last-child) {
       margin-right: map-get($espaciado, '1');
     }
   }
 
-  img:not(.nav-logo),
-  svg:not(.nav-logo) {
+  picture:not(.nav-logo):not(.nav-img),
+  img:not(.nav-logo):not(.nav-img),
+  svg:not(.nav-logo):not(.nav-img) {
     display: none!important;
   }
 
@@ -56,9 +55,6 @@
       .tarjeta-etiqueta {
 				color: var(--tarjeta-contenido-simplificada-color);
 			}
-      a, button {
-        text-decoration: none !important;
-      }
     }
   }
 
@@ -106,22 +102,6 @@
     &:focus-visible {
       background: var(--tarjeta-simplificada-enfoque-fondo);
       box-shadow: 0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
-    }
-  }
-
-  .boton-flotante {
-    position: static;
-    box-shadow: none;
-    .boton-flotante-alternador {
-      display: none !important;
-    }
-    .boton-flotante-cuerpo {
-      .boton-flotante-hipervinculo {
-        border-radius: 0;
-        opacity: 1;
-        max-width: 200px;
-        padding: 0 map-get($espaciado, '1');
-      }
     }
   }
 

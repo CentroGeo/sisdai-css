@@ -35,8 +35,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             :tiene_ejemplo='false'
             tipo='CSS'
             codigo='
-              img:not(.nav-logo)
-              svg:not(.nav-logo)
+              picture
+              img
+              svg
+                :not(.nav-logo)
+                :not(.nav-img)
             '
           />
         </dd>
