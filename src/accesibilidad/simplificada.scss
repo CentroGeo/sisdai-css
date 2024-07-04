@@ -64,6 +64,9 @@
       .tarjeta-cuerpo {
         padding-left: map-get($espaciado, '3');
       }
+      .tarjeta-pie {
+        padding-left: map-get($espaciado, '3');
+      }
     }
   }
 
@@ -78,6 +81,7 @@
       margin: 0;
     }
     .tarjeta-cuerpo {
+      background: var(--tarjeta-simplificada-fondo);
       color: var(--tarjeta-simplificada-color);
       > * {
         color: var(--tarjeta-simplificada-color);
@@ -87,6 +91,7 @@
     &:focus,
     &:focus-visible {
       box-shadow: none;
+      background: var(--tarjeta-simplificada-cursor-fondo);
       .tarjeta-cuerpo {
         background: var(--tarjeta-simplificada-cursor-fondo);
         > * {
