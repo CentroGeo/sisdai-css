@@ -45,6 +45,9 @@
   }
 
   .tarjeta {
+    .tarjeta-imagen {
+      display: none;
+    }
     .tarjeta-cuerpo {
       background: var(--tarjeta-contenido-simplificada-fondo);
       color: var(--tarjeta-contenido-simplificada-color);

@@ -9620,6 +9620,9 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .portada .portada-degradado .portada-cuerpo > * {
   color: var(--texto-primario);
 }
+.a11y-simplificada .tarjeta .tarjeta-imagen {
+  display: none;
+}
 .a11y-simplificada .tarjeta .tarjeta-cuerpo {
   background: var(--tarjeta-contenido-simplificada-fondo);
   color: var(--tarjeta-contenido-simplificada-color);
