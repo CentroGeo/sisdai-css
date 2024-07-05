@@ -16,6 +16,7 @@
 // auxiliar de color oscuro para mejorar accesibilidad y agregar casos especiales
 .a11y-oscura {
   // Imagenes . En modo oscuro pasa a blanco
+  picture.invertir,
   img.invertir,
   svg.invertir,
   .color-invertir {

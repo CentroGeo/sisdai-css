@@ -24,9 +24,9 @@
     }
   }
 
-  picture:not(.nav-logo):not(.nav-img),
-  img:not(.nav-logo):not(.nav-img),
-  svg:not(.nav-logo):not(.nav-img) {
+  picture:not(.nav-logo),
+  img:not(.nav-logo),
+  svg:not(.nav-logo) {
     display: none!important;
   }
 
