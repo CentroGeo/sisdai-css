@@ -7681,6 +7681,7 @@ dl.informacion-despliegue dd:not(:last-child) {
 .navegacion {
   background-color: var(--navegacion-primaria-fondo);
   box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
+  font-size: 0.875rem;
   display: block;
   position: relative;
   z-index: 9999;
@@ -7891,6 +7892,10 @@ dl.informacion-despliegue dd:not(:last-child) {
   background-color: var(--navegacion-primaria-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
 }
+.nav-hipervinculo .nav-logo, .nav-boton-regresar .nav-logo, .nav-boton-submenu .nav-logo {
+  margin-top: -12px;
+  margin-bottom: -12px;
+}
 
 .navegacion.navegacion-extendida .nav-hipervinculo, .navegacion.navegacion-extendida .nav-boton-regresar, .navegacion.navegacion-extendida .nav-boton-submenu {
   display: inline-flex;
@@ -7953,8 +7958,10 @@ dl.informacion-despliegue dd:not(:last-child) {
   height: 24px;
   font-size: 0.875rem;
   display: flex;
+  width: inherit;
   font-weight: 400;
   white-space: nowrap;
+  align-items: center;
   padding: 4px;
   margin: 4px 16px;
 }
@@ -9811,6 +9818,7 @@ span.controlador-vis label, span.controlador-vis legend,
   transform: translateY(0%);
 }
 
+.a11y-oscura picture.invertir,
 .a11y-oscura img.invertir,
 .a11y-oscura svg.invertir,
 .a11y-oscura .color-invertir {

@@ -272,7 +272,7 @@
               </ul>
             </li>
             
-            <li class="nav-contenedor-submenu">
+            <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')" @mouseover="mostrarSubmenu('fundamentos')">Fundamentos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
@@ -285,7 +285,7 @@
               </ul>
             </li>
 
-            <li class="nav-contenedor-submenu">
+            <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementos')" @mouseover="mostrarSubmenu('elementos')">Elementos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
@@ -298,7 +298,7 @@
               </ul>
             </li>
 
-            <li class="nav-contenedor-submenu">
+            <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')" @mouseover="mostrarSubmenu('elementoscompuestos')">Compuestos</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
@@ -310,7 +310,7 @@
               </ul>
             </li>
 
-            <li class="nav-contenedor-submenu">
+            <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')" @mouseover="mostrarSubmenu('componentes')">Componentes</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
@@ -331,7 +331,7 @@
               </ul>
             </li>
 
-            <li class="nav-contenedor-submenu">
+            <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')" @mouseover="mostrarSubmenu('visualizaciones')">Visualizaciones</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
@@ -341,7 +341,7 @@
               </ul>
             </li>
 
-            <li class="nav-contenedor-submenu">
+            <li>
               <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')" @mouseover="mostrarSubmenu('auxiliares')">Auxiliares</button>
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
@@ -351,25 +351,24 @@
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
             </li>
-
-            <li class="nav-contenedor-submenu">
-              <p class="nav-version-submenu">v{{ pkg.version }}</p>
+            <li>
+              
             </li>
-
             <li>
               <a
-                  href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-boton boton boton-sin-contenedor-secundario"
               >
                 <img
-                  class="nav-logo boton-sin-contenedor-secundario"
-                  src="../public/gitlab-logo-500.png"
+                  class="nav-logo"
+                  src="/gitlab-logo-500.png"
                   alt=""
-                  />
+                />
+                v{{ pkg.version }}
               </a>
             </li>
-
           </ul>
         </div>
       </div>
@@ -380,13 +379,11 @@
     </main>
     
     <menu role="complementary" class="tmp-menu">
-      
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
       <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementar fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-
       <button 
         class="boton-primario" 
         @click="alternarTema">
@@ -397,10 +394,7 @@
         @click="alternarPerfil">
         Perfil: {{ perfil }}
       </button>
-
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
-
-      <span class="info">sisdai-css#v{{ pkg.version }}</span>
     </menu>
   </div>
 </template>
@@ -441,18 +435,5 @@
     display: inline-flex;
     border-radius: 20px;
     background-color: #f005;
-  }
-
-  .nav-version-submenu {
-    background-color: var(--navegacion-primaria-fondo);
-    box-shadow: 0 0 0 0;
-    color: var(--navegacion-primaria-color);
-    border-radius: 0;
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: calc(1em * 1);
-    text-decoration: none;
-    margin: 0;
-    padding: 16px;
   }
 </style>
