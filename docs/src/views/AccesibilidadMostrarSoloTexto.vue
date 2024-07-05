@@ -39,17 +39,17 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               img
               svg
                 :not(.nav-logo)
-                :not(.nav-img)
             '
           />
         </dd>
         <dt>Botones</dt>
         <dd>
-          Modifica los botones para mostrarlos como hipervínculos, excepto los de navegación y menús flotantes
+          Modifica los botones para mostrarlos como hipervínculos, excepto los de navegación, botones especiales y menús flotantes
           <EjemploCodigo
             :tiene_ejemplo='false'
             tipo='CSS'
             codigo='
+              .button
               button
                 :not(.nav-boton)
                 :not(.nav-boton-menu)
