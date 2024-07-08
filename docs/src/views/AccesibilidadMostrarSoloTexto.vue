@@ -42,6 +42,20 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             '
           />
         </dd>
+        <dt>Video</dt>
+        <dd>
+          Oculta todoss loss videos de la etiqueta nativa y si existe un iframe dentro de la clase .video, que se puede utilizar para los videos insertados de youtube
+          <EjemploCodigo
+            :tiene_ejemplo='false'
+            tipo='CSS'
+            codigo='
+              video
+
+              .video 
+                iframe
+            '
+          />
+        </dd>
         <dt>Botones</dt>
         <dd>
           Modifica los botones para mostrarlos como hipervínculos, excepto los de navegación, botones especiales y menús flotantes
