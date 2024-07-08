@@ -339,8 +339,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           codigo='
           <div class="borde borde-l-redondeado-0 borde-r-redondeado-24">
             <p>
-              borde sin redondear a la derecha
-              redondeado a 24px a la izquierda
+              borde sin redondear a la izquierda
+              redondeado a 24px a la derecha
             </p>
           </div>
           '
