@@ -6062,7 +6062,8 @@ input[type=reset],
 .boton-alternar [type=radio] + label,
 .boton-alternar [type=radio] + legend,
 .boton-descarga,
-.boton-pictograma {
+.boton-pictograma,
+.globo-informacion .globo-informacion-cerrar {
   border: none;
   border-radius: 4px;
   box-sizing: border-box;
@@ -6085,7 +6086,8 @@ input[type=reset]:not(:disabled),
 .boton-alternar [type=radio] + label:not(:disabled),
 .boton-alternar [type=radio] + legend:not(:disabled),
 .boton-descarga:not(:disabled),
-.boton-pictograma:not(:disabled) {
+.boton-pictograma:not(:disabled),
+.globo-informacion .globo-informacion-cerrar:not(:disabled) {
   cursor: pointer;
   transition: all 0.27s ease-in-out;
 }
@@ -6102,12 +6104,14 @@ input[type=reset]:disabled,
 .boton-alternar [type=radio] + legend.deshabilitado,
 .deshabilitado.boton-descarga,
 .deshabilitado.boton-pictograma,
+.globo-informacion .deshabilitado.globo-informacion-cerrar,
 .boton:disabled,
 .ir-contenido-principal:disabled,
 .boton-alternar [type=radio] + label:disabled,
 .boton-alternar [type=radio] + legend:disabled,
 .boton-descarga:disabled,
-.boton-pictograma:disabled {
+.boton-pictograma:disabled,
+.globo-informacion .globo-informacion-cerrar:disabled {
   pointer-events: none;
 }
 button:hover, button:focus,
@@ -6123,12 +6127,14 @@ input[type=reset]:focus,
 .boton-alternar [type=radio] + legend:hover,
 .boton-descarga:hover,
 .boton-pictograma:hover,
+.globo-informacion .globo-informacion-cerrar:hover,
 .boton:focus,
 .ir-contenido-principal:focus,
 .boton-alternar [type=radio] + label:focus,
 .boton-alternar [type=radio] + legend:focus,
 .boton-descarga:focus,
-.boton-pictograma:focus {
+.boton-pictograma:focus,
+.globo-informacion .globo-informacion-cerrar:focus {
   text-decoration: none;
   outline: none;
 }
@@ -6150,18 +6156,21 @@ input[type=reset] [class*=" pictograma-"],
 .boton-alternar [type=radio] + legend .pictograma,
 .boton-descarga .pictograma,
 .boton-pictograma .pictograma,
+.globo-informacion .globo-informacion-cerrar .pictograma,
 .boton [class^=pictograma-],
 .ir-contenido-principal [class^=pictograma-],
 .boton-alternar [type=radio] + label [class^=pictograma-],
 .boton-alternar [type=radio] + legend [class^=pictograma-],
 .boton-descarga [class^=pictograma-],
 .boton-pictograma [class^=pictograma-],
+.globo-informacion .globo-informacion-cerrar [class^=pictograma-],
 .boton [class*=" pictograma-"],
 .ir-contenido-principal [class*=" pictograma-"],
 .boton-alternar [type=radio] + label [class*=" pictograma-"],
 .boton-alternar [type=radio] + legend [class*=" pictograma-"],
 .boton-descarga [class*=" pictograma-"],
-.boton-pictograma [class*=" pictograma-"] {
+.boton-pictograma [class*=" pictograma-"],
+.globo-informacion .globo-informacion-cerrar [class*=" pictograma-"] {
   display: inline-flex;
   align-items: center;
   font-size: 1rem;
@@ -6291,6 +6300,8 @@ a,
 .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent;
   border: none;
@@ -6317,6 +6328,8 @@ a:not(:disabled),
 .boton-alternar .a11y-simplificada [type=radio] + label:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:not(:disabled):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   cursor: pointer;
   transition: all 0.27s ease-in-out;
@@ -6331,6 +6344,8 @@ a:disabled,
 .boton-alternar .a11y-simplificada [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent;
   color: var(--hipervinculo-deshabilitado-color);
@@ -6346,6 +6361,8 @@ a:visited,
 .boton-alternar .a11y-simplificada [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   color: var(--hipervinculo-visitado);
 }
@@ -6359,6 +6376,8 @@ a:hover,
 .boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent;
   box-shadow: 0 0 2px var(--hipervinculo-cursor-sombra);
@@ -6376,6 +6395,8 @@ a:focus-visible,
 .boton-alternar .a11y-simplificada [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent;
   color: var(--hipervinculo-enfoque-color);
@@ -6394,6 +6415,8 @@ a [class*=" pictograma-"],
 .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) .pictograma,
 .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) .pictograma,
 .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) .pictograma,
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) .pictograma,
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) .pictograma,
 .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) .pictograma,
 .hipervinculo [class^=pictograma-],
 .a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class^=pictograma-],
@@ -6404,6 +6427,8 @@ a [class*=" pictograma-"],
 .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class^=pictograma-],
 .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class^=pictograma-],
 .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class^=pictograma-],
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class^=pictograma-],
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class^=pictograma-],
 .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class^=pictograma-],
 .hipervinculo [class*=" pictograma-"],
 .a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class*=" pictograma-"],
@@ -6414,6 +6439,8 @@ a [class*=" pictograma-"],
 .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class*=" pictograma-"],
 .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class*=" pictograma-"],
 .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class*=" pictograma-"],
+.a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class*=" pictograma-"],
+.globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class*=" pictograma-"],
 .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) [class*=" pictograma-"] {
   display: inline;
   vertical-align: baseline;
@@ -6422,24 +6449,24 @@ a [class*=" pictograma-"],
   padding: 0;
 }
 
-.hipervinculo:disabled, .a11y-simplificada .boton:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.hipervinculo:disabled, .a11y-simplificada .boton:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .globo-informacion .globo-informacion-cerrar:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .globo-informacion .a11y-simplificada .globo-informacion-cerrar:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:disabled:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent !important;
   color: var(--hipervinculo-deshabilitado-color) !important;
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra) !important;
 }
-.hipervinculo:visited, .a11y-simplificada .boton:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.hipervinculo:visited, .a11y-simplificada .boton:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .globo-informacion .globo-informacion-cerrar:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .globo-informacion .a11y-simplificada .globo-informacion-cerrar:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:visited:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   color: var(--hipervinculo-visitado) !important;
 }
-.hipervinculo:hover, .a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.hipervinculo:hover, .a11y-simplificada .boton:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .globo-informacion .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .globo-informacion .a11y-simplificada .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent !important;
   color: var(--hipervinculo-cursor-color) !important;
   text-decoration: underline !important;
   box-shadow: none !important;
 }
-.hipervinculo:focus-visible, .a11y-simplificada .boton:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.hipervinculo:focus-visible, .a11y-simplificada .boton:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .globo-informacion .globo-informacion-cerrar:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .globo-informacion .a11y-simplificada .globo-informacion-cerrar:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:focus-visible:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent !important;
   color: var(--hipervinculo-enfoque-color) !important;
@@ -6458,6 +6485,8 @@ a[class^=p-],
 .boton-alternar .a11y-simplificada [type=radio] + label[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion [class^=m-].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada [class^=m-].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button[class^=m-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .hipervinculo[class^=p-],
 .a11y-simplificada [class^=p-].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
@@ -6468,6 +6497,8 @@ a[class^=p-],
 .boton-alternar .a11y-simplificada [type=radio] + label[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion [class^=p-].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada [class^=p-].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button[class^=p-]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 a[class*=" m-"],
 a[class*=" p-"],
@@ -6480,6 +6511,8 @@ a[class*=" p-"],
 .boton-alternar .a11y-simplificada [type=radio] + label[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion [class*=" m-"].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada [class*=" m-"].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button[class*=" m-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .hipervinculo[class*=" p-"],
 .a11y-simplificada [class*=" p-"].boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
@@ -6490,6 +6523,8 @@ a[class*=" p-"],
 .boton-alternar .a11y-simplificada [type=radio] + label[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .boton-alternar [type=radio] + legend[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada [type=radio] + legend[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion [class*=" p-"].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada [class*=" p-"].globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button[class*=" p-"]:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   display: inline-block;
 }
@@ -7592,7 +7627,9 @@ ol + hr {
 .lista-accion .lista-accion-acciones .boton-alternar [type=radio] + legend,
 .boton-alternar .lista-accion .lista-accion-acciones [type=radio] + legend,
 .lista-accion .lista-accion-acciones .boton-descarga,
-.lista-accion .lista-accion-acciones .boton-pictograma {
+.lista-accion .lista-accion-acciones .boton-pictograma,
+.lista-accion .lista-accion-acciones .globo-informacion .globo-informacion-cerrar,
+.globo-informacion .lista-accion .lista-accion-acciones .globo-informacion-cerrar {
   margin-left: 4px;
 }
 
@@ -7609,12 +7646,14 @@ ol + hr {
   padding-left: calc(1.25rem + 16px + 4px);
 }
 
-.boton-pictograma {
+.boton-pictograma, .globo-informacion .globo-informacion-cerrar {
   padding: 4px;
 }
-.boton-pictograma .pictograma,
+.boton-pictograma .pictograma, .globo-informacion .globo-informacion-cerrar .pictograma,
 .boton-pictograma [class^=pictograma-],
-.boton-pictograma [class*=" pictograma-"] {
+.globo-informacion .globo-informacion-cerrar [class^=pictograma-],
+.boton-pictograma [class*=" pictograma-"],
+.globo-informacion .globo-informacion-cerrar [class*=" pictograma-"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -7622,20 +7661,24 @@ ol + hr {
   line-height: 1;
   padding: 0;
 }
-.boton-pictograma.boton-chico {
+.boton-pictograma.boton-chico, .globo-informacion .boton-chico.globo-informacion-cerrar {
   padding: 4px;
 }
-.boton-pictograma.boton-chico .pictograma,
+.boton-pictograma.boton-chico .pictograma, .globo-informacion .boton-chico.globo-informacion-cerrar .pictograma,
 .boton-pictograma.boton-chico [class^=pictograma-],
-.boton-pictograma.boton-chico [class*=" pictograma-"] {
+.globo-informacion .boton-chico.globo-informacion-cerrar [class^=pictograma-],
+.boton-pictograma.boton-chico [class*=" pictograma-"],
+.globo-informacion .boton-chico.globo-informacion-cerrar [class*=" pictograma-"] {
   font-size: 1rem;
 }
-.boton-pictograma.boton-grande {
+.boton-pictograma.boton-grande, .globo-informacion .boton-grande.globo-informacion-cerrar {
   padding: 8px;
 }
-.boton-pictograma.boton-grande .pictograma,
+.boton-pictograma.boton-grande .pictograma, .globo-informacion .boton-grande.globo-informacion-cerrar .pictograma,
 .boton-pictograma.boton-grande [class^=pictograma-],
-.boton-pictograma.boton-grande [class*=" pictograma-"] {
+.globo-informacion .boton-grande.globo-informacion-cerrar [class^=pictograma-],
+.boton-pictograma.boton-grande [class*=" pictograma-"],
+.globo-informacion .boton-grande.globo-informacion-cerrar [class*=" pictograma-"] {
   font-size: 1.5rem;
 }
 
@@ -7997,53 +8040,37 @@ ol + hr {
   background-color: var(--globo-fondo);
   border-radius: 8px;
   color: var(--globo-color);
-  display: block;
+  align-items: flex-start;
+  display: inline-flex;
   position: relative;
-  padding: 16px;
   width: auto;
-  max-width: 240px;
-  gap: 8px;
   z-index: 99;
 }
-.globo-informacion > * {
-  font-size: 0.75rem;
-  line-height: 1.25em;
+.globo-informacion .globo-informacion-cuerpo {
+  padding: 16px;
+}
+.globo-informacion .globo-informacion-cuerpo > *:not(div) {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.globo-informacion > :first-child {
+.globo-informacion .globo-informacion-cuerpo > *:not(div):first-child {
   margin-top: 0;
 }
-.globo-informacion > :last-child {
+.globo-informacion .globo-informacion-cuerpo > *:not(div):last-child {
   margin-bottom: 0;
 }
-.globo-informacion button {
-  background: var(--globo-boton-fondo);
-  box-shadow: inset 0 0 0 0 var(--globo-boton-borde), 0 0 0 var(--globo-boton-sombra);
-  color: var(--globo-boton-color);
-}
-.globo-informacion button:not(:disabled):hover {
-  background: var(--globo-boton-cursor-fondo);
-  box-shadow: inset 0 0 0 0 var(--globo-boton-cursor-borde), 0 0 0 var(--globo-boton-cursor-sombra);
-  color: var(--globo-boton-cursor-color);
-}
-.globo-informacion button:not(:disabled):focus {
-  background: var(--globo-boton-enfoque-fondo);
-  box-shadow: inset 0 0 0 1px var(--globo-boton-enfoque-borde), 0 0 8px var(--globo-boton-enfoque-sombra);
-  color: var(--globo-boton-enfoque-color);
-}
-.globo-informacion a {
+.globo-informacion .globo-informacion-cuerpo a {
   box-shadow: 0 0 2px var(--globo-hipervinculo-sombra);
   color: var(--globo-hipervinculo-color);
 }
-.globo-informacion a:visited {
+.globo-informacion .globo-informacion-cuerpo a:visited {
   color: var(--globo-hipervinculo-visitado);
 }
-.globo-informacion a:hover {
+.globo-informacion .globo-informacion-cuerpo a:hover {
   box-shadow: 0 0 2px var(--globo-hipervinculo-cursor-sombra);
   color: var(--globo-hipervinculo-cursor-color);
 }
-.globo-informacion a:focus-visible {
+.globo-informacion .globo-informacion-cuerpo a:focus-visible {
   color: var(--globo-hipervinculo-enfoque-color);
   outline: 2px dashed var(--globo-hipervinculo-enfoque-sombra);
 }
@@ -8055,28 +8082,29 @@ ol + hr {
   background-color: #80AAFF;
   display: inline-block;
 }
-.globo-informacion.globo-informacion-grande {
-  max-height: 160px;
-  max-width: 420px;
-  overflow-y: auto;
+.globo-informacion:not(.globo-informacion-extendido) {
+  font-size: 0.75rem;
 }
-.globo-informacion.globo-informacion-grande > * {
-  font-size: 1rem;
+.globo-informacion.globo-informacion-extendido {
+  font-size: inherit;
 }
-.globo-informacion.globo-informacion-extra {
-  max-height: 160px;
-  max-width: 460px;
-  overflow-y: auto;
-  padding-right: 40px;
-}
-.globo-informacion.globo-informacion-extra > * {
-  font-size: 1rem;
-}
-.globo-informacion.globo-informacion-extra .globo-informacion-cerrar {
-  position: absolute;
+.globo-informacion .globo-informacion-cerrar {
+  position: sticky;
   top: 0;
-  right: 0;
-  margin: 8px;
+  margin: 8px 8px 8px 0;
+  background: var(--globo-boton-fondo);
+  box-shadow: inset 0 0 0 0 var(--globo-boton-borde), 0 0 0 var(--globo-boton-sombra);
+  color: var(--globo-boton-color);
+}
+.globo-informacion .globo-informacion-cerrar:not(:disabled):hover {
+  background: var(--globo-boton-cursor-fondo);
+  box-shadow: inset 0 0 0 0 var(--globo-boton-cursor-borde), 0 0 0 var(--globo-boton-cursor-sombra);
+  color: var(--globo-boton-cursor-color);
+}
+.globo-informacion .globo-informacion-cerrar:not(:disabled):focus {
+  background: var(--globo-boton-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--globo-boton-enfoque-borde), 0 0 8px var(--globo-boton-enfoque-sombra);
+  color: var(--globo-boton-enfoque-color);
 }
 
 dialog::backdrop {
@@ -10379,12 +10407,12 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .mensaje-a11y-simplificada {
   display: block;
 }
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar), .globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   background-color: transparent !important;
   box-shadow: none !important;
 }
-.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child),
+.a11y-simplificada .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .ir-contenido-principal:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-pictograma:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-descarga:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + label:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .boton-alternar [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child), .globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child),
 .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar):not(:last-child) {
   margin-right: 8px;
 }
@@ -10562,6 +10590,10 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .a11y-simplificada .globo-informacion .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .a11y-hipervinculos .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .globo-informacion .a11y-simplificada .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .a11y-hipervinculos .globo-informacion-cerrar:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .a11y-simplificada button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .a11y-hipervinculos button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   text-decoration: underline !important;
@@ -10584,6 +10616,10 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .a11y-simplificada .globo-informacion .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .a11y-hipervinculos .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .globo-informacion .a11y-simplificada .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .a11y-hipervinculos .globo-informacion-cerrar:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .a11y-simplificada button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .a11y-hipervinculos button:hover:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .hipervinculo:focus,
@@ -10603,6 +10639,10 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .a11y-simplificada .globo-informacion .globo-informacion-cerrar:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .a11y-hipervinculos .globo-informacion-cerrar:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .globo-informacion .a11y-simplificada .globo-informacion-cerrar:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .a11y-hipervinculos .globo-informacion-cerrar:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .a11y-simplificada button:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .a11y-hipervinculos button:focus:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .hipervinculo:focus-within,
@@ -10622,6 +10662,10 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .a11y-simplificada .globo-informacion .globo-informacion-cerrar:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .a11y-hipervinculos .globo-informacion-cerrar:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .globo-informacion .a11y-simplificada .globo-informacion-cerrar:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .a11y-hipervinculos .globo-informacion-cerrar:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .a11y-simplificada button:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .a11y-hipervinculos button:focus-within:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .hipervinculo:active,
@@ -10641,6 +10685,10 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .boton-alternar .a11y-hipervinculos [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .boton-alternar .a11y-simplificada [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .boton-alternar .a11y-simplificada .a11y-hipervinculos [type=radio] + legend:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .a11y-simplificada .globo-informacion .globo-informacion-cerrar:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-simplificada .globo-informacion .a11y-hipervinculos .globo-informacion-cerrar:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.a11y-hipervinculos .globo-informacion .a11y-simplificada .globo-informacion-cerrar:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+.globo-informacion .a11y-simplificada .a11y-hipervinculos .globo-informacion-cerrar:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-hipervinculos .a11y-simplificada button:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
 .a11y-simplificada .a11y-hipervinculos button:active:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
   text-decoration: underline !important;
