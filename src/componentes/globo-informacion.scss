@@ -18,6 +18,7 @@
   border-radius: map-get($borde-redondeado, '8');
   color: var(--globo-color);
   align-items: flex-start;
+  justify-content: space-between;
   display: inline-flex;
   position: relative;
   width: auto;
