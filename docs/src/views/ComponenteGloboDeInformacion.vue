@@ -160,8 +160,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                   </ul>
                   <p class="nota">
                     <b>Nota: </b>
-                    No utilizar elementos que tengan fondo predeterminado,
-                    como las tablas o los bloques de notas. No se leen bien
+                    No utilizar elementos que tengan fondo predeterminado pero no tambien
+                    también de color de texto. No se leen bien
                     en modo claro porque el texto del globo siempre se mantiene claro.
                   </p>
                 </div>

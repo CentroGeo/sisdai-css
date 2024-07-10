@@ -90,8 +90,8 @@
   .tarjeta-hipervinculo-externo {
     background: var(--tarjeta-simplificada-fondo);
     border: 1px solid var(--tarjeta-simplificada-borde);
-    min-height: auto;
     color: var(--tarjeta-simplificada-color);
+    min-height: auto;
     .tarjeta-degradado {
       background: none;
       margin: 0;
@@ -108,6 +108,7 @@
     &:focus-visible {
       box-shadow: none;
       background: var(--tarjeta-simplificada-cursor-fondo);
+      border-color: var(--tarjeta-simplificada-cursor-borde);
       .tarjeta-cuerpo {
         background: var(--tarjeta-simplificada-cursor-fondo);
         > * {
@@ -118,7 +119,16 @@
     &:focus,
     &:focus-visible {
       background: var(--tarjeta-simplificada-enfoque-fondo);
-      box-shadow: 0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
+      border-color: var(--tarjeta-simplificada-enfoque-borde);
+      box-shadow: 
+        inset 0 0 0 1px var(--tarjeta-simplificada-enfoque-contorno),
+        0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
+      .tarjeta-cuerpo {
+        background: var(--tarjeta-simplificada-enfoque-fondo);
+        > * {
+          color: var(--tarjeta-simplificada-enfoque-color);
+        }
+      }
     }
   }
 

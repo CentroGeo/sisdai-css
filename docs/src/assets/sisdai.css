@@ -165,7 +165,6 @@ body[data-tema=claro],
   --campo-control-fondo: var(--color-neutro-0);
   --campo-control-borde: var(--color-secundario-8);
   --campo-control-seleccionado-fondo: var(--color-neutro-0);
-  --campo-control-seleccionado-borde: var(--color-secundario-8);
   --campo-control-seleccionado-color: var(--color-secundario-8);
   --campo-control-deshabilitado-fondo: var(--color-neutro-2);
   --campo-control-deshabilitado-borde: var(--color-neutro-3);
@@ -182,7 +181,6 @@ body[data-tema=claro],
   --boton-primario-fondo: var(--color-primario-3);
   --boton-primario-borde: var(--color-primario-3);
   --boton-primario-color: var(--color-neutro-0);
-  --boton-primario-sombra: transparent;
   --boton-primario-deshabilitado-fondo: var(--color-neutro-2);
   --boton-primario-deshabilitado-borde: var(--color-neutro-2);
   --boton-primario-deshabilitado-color: var(--color-neutro-4);
@@ -199,7 +197,6 @@ body[data-tema=claro],
   --boton-secundario-fondo: transparent;
   --boton-secundario-borde: var(--color-secundario-8);
   --boton-secundario-color: var(--color-secundario-8);
-  --boton-secundario-sombra: transparent;
   --boton-secundario-deshabilitado-fondo: transparent;
   --boton-secundario-deshabilitado-borde: var(--color-neutro-2);
   --boton-secundario-deshabilitado-color: var(--color-neutro-3);
@@ -227,7 +224,6 @@ body[data-tema=claro],
   --boton-sin-contenedor-primario-enfoque-fondo: var(--color-secundario-4);
   --boton-sin-contenedor-primario-enfoque-borde: var(--estado-enfoque);
   --boton-sin-contenedor-primario-enfoque-color: var(--color-primario-3);
-  --boton-sin-contenedor-primario-enfoque-contorno: transparent;
   --boton-sin-contenedor-primario-enfoque-sombra: var(--estado-enfoque);
   --boton-sin-contenedor-secundario-fondo: transparent;
   --boton-sin-contenedor-secundario-borde: transparent;
@@ -244,7 +240,6 @@ body[data-tema=claro],
   --boton-sin-contenedor-secundario-enfoque-fondo: var(--color-secundario-4);
   --boton-sin-contenedor-secundario-enfoque-borde: var(--estado-enfoque);
   --boton-sin-contenedor-secundario-enfoque-color: var(--color-secundario-8);
-  --boton-sin-contenedor-secundario-enfoque-contorno: transparent;
   --boton-sin-contenedor-secundario-enfoque-sombra: var(--estado-enfoque);
   --hipervinculo-color: var(--color-interactivo-1);
   --hipervinculo-sombra: transparent;
@@ -396,7 +391,6 @@ body[data-tema=oscuro] {
   --campo-control-fondo: var(--color-secundario-12);
   --campo-control-borde: var(--color-secundario-5);
   --campo-control-seleccionado-fondo: var(--color-secundario-12);
-  --campo-control-seleccionado-borde: var(--color-secundario-5);
   --campo-control-seleccionado-color: var(--color-secundario-5);
   --campo-control-deshabilitado-fondo: var(--color-secundario-8);
   --campo-control-deshabilitado-borde: var(--color-secundario-7);
@@ -413,7 +407,6 @@ body[data-tema=oscuro] {
   --boton-primario-fondo: var(--color-primario-2);
   --boton-primario-borde: var(--color-primario-2);
   --boton-primario-color: var(--color-secundario-12);
-  --boton-primario-sombra: transparent;
   --boton-primario-deshabilitado-fondo: var(--color-secundario-8);
   --boton-primario-deshabilitado-borde: var(--color-secundario-8);
   --boton-primario-deshabilitado-color: var(--color-secundario-7);
@@ -430,7 +423,6 @@ body[data-tema=oscuro] {
   --boton-secundario-fondo: transparent;
   --boton-secundario-borde: var(--color-secundario-5);
   --boton-secundario-color: var(--color-secundario-5);
-  --boton-secundario-sombra: transparent;
   --boton-secundario-deshabilitado-fondo: transparent;
   --boton-secundario-deshabilitado-borde: var(--color-secundario-7);
   --boton-secundario-deshabilitado-color: var(--color-secundario-8);
@@ -458,7 +450,6 @@ body[data-tema=oscuro] {
   --boton-sin-contenedor-primario-enfoque-fondo: var(--color-secundario-8);
   --boton-sin-contenedor-primario-enfoque-borde: var(--estado-enfoque);
   --boton-sin-contenedor-primario-enfoque-color: var(--color-primario-2);
-  --boton-sin-contenedor-primario-enfoque-contorno: transparent;
   --boton-sin-contenedor-primario-enfoque-sombra: var(--estado-enfoque);
   --boton-sin-contenedor-secundario-fondo: transparent;
   --boton-sin-contenedor-secundario-borde: transparent;
@@ -475,7 +466,6 @@ body[data-tema=oscuro] {
   --boton-sin-contenedor-secundario-enfoque-fondo: var(--color-secundario-8);
   --boton-sin-contenedor-secundario-enfoque-borde: var(--estado-enfoque);
   --boton-sin-contenedor-secundario-enfoque-color: var(--color-secundario-5);
-  --boton-sin-contenedor-secundario-enfoque-contorno: transparent;
   --boton-sin-contenedor-secundario-enfoque-sombra: var(--estado-enfoque);
   --hipervinculo-color: var(--color-interactivo-3);
   --hipervinculo-sombra: transparent;
@@ -7140,12 +7130,18 @@ table thead tr {
 }
 table tbody tr:nth-child(odd) {
   background-color: var(--tabla-fila-impar-fondo);
+  color: var(--tabla-color);
+}
+table tbody tr:nth-child(even) {
+  background-color: var(--tabla-fila-par-fondo);
+  color: var(--tabla-color);
 }
 table tfoot {
   font-weight: 600;
 }
 table tfoot tr {
   background-color: var(--tabla-fila-pie-fondo);
+  color: var(--tabla-color);
 }
 
 .titulo-tabla {
@@ -7444,6 +7440,11 @@ ol + hr {
 }
 .tarjeta-hipervinculo:focus-visible .tarjeta-imagen, .tarjeta-hipervinculo-externo:focus-visible .tarjeta-imagen, .tarjeta-hipervinculo-interno:focus-visible .tarjeta-imagen {
   transform: scale(1);
+}
+
+.tarjeta-hipervinculo-interno {
+  background: var(--tarjeta-interna-fondo);
+  color: var(--tarjeta-interna-color);
 }
 
 .tarjeta-hipervinculo-externo {
@@ -7792,7 +7793,7 @@ ol + hr {
   opacity: 1;
 }
 .menu-flotante.abierto .menu-flotante-contenedor {
-  box-shadow: inset 0 0 0 0.1px var(--opacidad-ligero), 0 8px 16px -4px var(--opacidad-ligero);
+  box-shadow: inset 0 0 0 0.1px var(--menu-flotante-contenedor-sombra), 0 8px 16px -4px var(--menu-flotante-contenedor-sombra);
   max-height: 500px;
   padding: 24px;
   opacity: 1;
@@ -8041,6 +8042,7 @@ ol + hr {
   border-radius: 8px;
   color: var(--globo-color);
   align-items: flex-start;
+  justify-content: space-between;
   display: inline-flex;
   position: relative;
   width: auto;
@@ -10464,8 +10466,8 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .tarjeta-hipervinculo-externo {
   background: var(--tarjeta-simplificada-fondo);
   border: 1px solid var(--tarjeta-simplificada-borde);
-  min-height: auto;
   color: var(--tarjeta-simplificada-color);
+  min-height: auto;
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno .tarjeta-degradado,
 .a11y-simplificada .tarjeta-hipervinculo-externo .tarjeta-degradado {
@@ -10487,6 +10489,7 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus-visible {
   box-shadow: none;
   background: var(--tarjeta-simplificada-cursor-fondo);
+  border-color: var(--tarjeta-simplificada-cursor-borde);
 }
 .a11y-simplificada .tarjeta-hipervinculo-interno:hover .tarjeta-cuerpo, .a11y-simplificada .tarjeta-hipervinculo-interno:focus .tarjeta-cuerpo, .a11y-simplificada .tarjeta-hipervinculo-interno:focus-visible .tarjeta-cuerpo,
 .a11y-simplificada .tarjeta-hipervinculo-externo:hover .tarjeta-cuerpo,
@@ -10504,7 +10507,18 @@ span.controlador-vis label, span.controlador-vis legend,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus,
 .a11y-simplificada .tarjeta-hipervinculo-externo:focus-visible {
   background: var(--tarjeta-simplificada-enfoque-fondo);
-  box-shadow: 0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
+  border-color: var(--tarjeta-simplificada-enfoque-borde);
+  box-shadow: inset 0 0 0 1px var(--tarjeta-simplificada-enfoque-contorno), 0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
+}
+.a11y-simplificada .tarjeta-hipervinculo-interno:focus .tarjeta-cuerpo, .a11y-simplificada .tarjeta-hipervinculo-interno:focus-visible .tarjeta-cuerpo,
+.a11y-simplificada .tarjeta-hipervinculo-externo:focus .tarjeta-cuerpo,
+.a11y-simplificada .tarjeta-hipervinculo-externo:focus-visible .tarjeta-cuerpo {
+  background: var(--tarjeta-simplificada-enfoque-fondo);
+}
+.a11y-simplificada .tarjeta-hipervinculo-interno:focus .tarjeta-cuerpo > *, .a11y-simplificada .tarjeta-hipervinculo-interno:focus-visible .tarjeta-cuerpo > *,
+.a11y-simplificada .tarjeta-hipervinculo-externo:focus .tarjeta-cuerpo > *,
+.a11y-simplificada .tarjeta-hipervinculo-externo:focus-visible .tarjeta-cuerpo > * {
+  color: var(--tarjeta-simplificada-enfoque-color);
 }
 .a11y-simplificada .flex.flex-columnas-100-al-simplificar > [class^=columna-],
 .a11y-simplificada .flex.flex-columnas-100-al-simplificar > [class*=" columna-"] {
