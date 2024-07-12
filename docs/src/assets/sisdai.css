@@ -8469,17 +8469,17 @@ body.overflow-hidden {
   height: 0;
   transition: opacity 0.27s ease;
 }
-.colapsable.abierto .colapsable-boton .pictograma,
-.colapsable.abierto .colapsable-boton [class^=pictograma-],
-.colapsable.abierto .colapsable-boton [class*=" pictograma-"] {
+.colapsable.abierto > .colapsable-boton .pictograma,
+.colapsable.abierto > .colapsable-boton [class^=pictograma-],
+.colapsable.abierto > .colapsable-boton [class*=" pictograma-"] {
   padding: 0 0 0 8px;
 }
-.colapsable.abierto .colapsable-boton .pictograma::before,
-.colapsable.abierto .colapsable-boton [class^=pictograma-]::before,
-.colapsable.abierto .colapsable-boton [class*=" pictograma-"]::before {
+.colapsable.abierto > .colapsable-boton .pictograma::before,
+.colapsable.abierto > .colapsable-boton [class^=pictograma-]::before,
+.colapsable.abierto > .colapsable-boton [class*=" pictograma-"]::before {
   transform: rotate(270deg);
 }
-.colapsable.abierto .colapsable-contenedor {
+.colapsable.abierto > .colapsable-contenedor {
   cursor: inherit;
   pointer-events: inherit;
   opacity: 1;
