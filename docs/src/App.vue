@@ -264,11 +264,11 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/cambio-fuente">Cambio de fuente</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li>
               </ul>
             </li>
             
@@ -378,21 +378,21 @@
       <RouterView />
     </main>
     
-    <menu role="complementary" class="tmp-menu">
+    <menu class="tmp-menu">
       <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
-      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
+      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista predeterminada' : 'Vista simplificada'}}</button>
       <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
       <button class="boton-primario" @click="upFontSize">Incrementar fuente</button>
       <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
       <button 
         class="boton-primario" 
         @click="alternarTema">
-        Tema: {{ nombreTemaActual }}
+        Tema {{ nombreTemaActual }}
       </button>
       <button
         class="boton-primario" 
         @click="alternarPerfil">
-        Perfil: {{ perfil }}
+        Perfil {{ perfil }}
       </button>
       <button class="boton-secundario" @click="resetA11y">Apagar</button>
     </menu>

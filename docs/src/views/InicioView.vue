@@ -12,7 +12,7 @@
           <img class="tarjeta-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/gitlab.png" alt="" />
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
-              <p class="h4">Repositorio sisdai-css <span class="pictograma-flecha-arriba-derecha"></span></p>
+              <p class="h4">Ir al repositorio sisdai-css <span class="pictograma-flecha-arriba-derecha"></span></p>
             </div>
           </div>
         </a>
@@ -44,7 +44,7 @@
           <img class="tarjeta-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/sisdai.png" alt="" />
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
-              <p class="h4">Ir a Sisdai <span class="pictograma-flecha-arriba-derecha"></span></p>
+              <p class="h4">Ir al Sisdai <span class="pictograma-flecha-arriba-derecha"></span></p>
             </div>
           </div>
         </a>

@@ -7,30 +7,32 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Mostrar solo texto</h1>
       <p>
-        Al activar esta función, se eliminan botones y elementos gráficos como imágenes, videos, tarjetas, 
-        gráficas, tableros, etc. El contenido se reduce a su mínima expresión en forma de texto y enlaces, 
-        lo que facilita a las personas enfocarse y llevar a cabo las tareas más importantes. 
-        Además, puede disminuir el consumo de datos al limitar las consultas de videos o gráficas. 
+        Al activar este estado, se eliminan botones y elementos gráficos como imágenes, videos, tarjetas, gráficas, tableros, 
+        etc. de la interfaz. El contenido se reduce a su mínima expresión en forma de texto y enlaces, 
+        facilitando a las personas enfocarse y llevar a cabo las tareas más importantes. Además, puede disminuir 
+        el consumo de datos al limitar las consultas de videos o gráficas.
       </p>
       <p>
-        Esta funcionalidad se logra agregar ó remover la clase <code>.a11y-simplificada</code> a la etiqueta <code>body</code>.
+        Esta funcionalidad se implementa agregando o removiendo la clase <code>.a11y-simplificada</code> a la etiqueta <code>body</code>. 
+        Al aplicar <var>Mostrar solo texto</var>, se realizan cambios específicos en algunos elementos de las páginas.
+        A continuación se describen las reglas de dichos cambios:
       </p>
       <dl>
         <dt>Portadas</dt>
         <dd>
-          Mantiene solo los títulos
+          Se mantienen solo los títulos.
         </dd>
         <dt>Tarjetas de contenido</dt>
         <dd>
-          Mantiene el formato del texto, oculta las imágenes y reformatea los botones como enlaces
+          Se mantiene el formato del texto, se ocultan las imágenes y los botones adquieren el formato de enlaces.
         </dd>
-        <dt>Tarjetas de hipervinculo</dt>
+        <dt>Tarjetas de hipervínculo</dt>
         <dd>
-          Mantiene el formato del texto, oculta las imágenes y crea estilos en la tarjeta para los estados de cursor encima y enfoque.
+          Se mantiene el formato del texto, se ocultan las imágenes y las tarjetas adquieren los estados de cursor encima y enfoque.
         </dd>
         <dt>Imágenes</dt>
         <dd>
-          Oculta todas las imágenes excepto los logotipos de la navegación
+          Se ocultan todas las imágenes excepto los logotipos de la navegación y de los créditos.
           <EjemploCodigo
             :tiene_ejemplo='false'
             tipo='CSS'
@@ -44,7 +46,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         </dd>
         <dt>Video</dt>
         <dd>
-          Oculta todoss loss videos de la etiqueta nativa y si existe un iframe dentro de la clase .video, que se puede utilizar para los videos insertados de youtube
+          Oculta todoss loss videos de la etiqueta nativa y si existe un iframe dentro de la clase .video, 
+          que se puede utilizar para los videos insertados de Youtube.
           <EjemploCodigo
             :tiene_ejemplo='false'
             tipo='CSS'
@@ -58,7 +61,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         </dd>
         <dt>Botones</dt>
         <dd>
-          Modifica los botones para mostrarlos como hipervínculos, excepto los de navegación, botones especiales y menús flotantes
+          Los botones adquieren el formato de hipervínculos, excepto los de navegación y menús flotantes.
           <EjemploCodigo
             :tiene_ejemplo='false'
             tipo='CSS'
@@ -76,33 +79,34 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             '
           />
         </dd>
-        <dt>Contenedor</dt>
+        <dt>Contenedores</dt>
         <dd>
-          La clase <code>.a11y-simplificada-contenedor</code> que puede aplicarse a contenedores flex,
-          reorganiza el contenido en un solo bloque vertical óptimo para la lectura. 
+          Al aplicar la clase <code>.a11y-simplificada-contenedor</code> a los contenedores flex, 
+          el contenido se reorganiza en un solo bloque vertical, optimizando la lectura.
         </dd>
-        <dt>Reticula</dt>
+        <dt>Retícula</dt>
         <dd>
-          La clase <code>.flex-columnas-100-al-simplificar</code> que puede agregarse a contenedores flex,
-          hace que todas las columnas dentro se pongan al 100% del contenedor en el estado de Mostrar solo texto
+          Al aplicar la clase <code>.flex-columnas-100-al-simplificar</code> a los contenedores flex, 
+          las columnas ocupan el 100% del espacio del contenedor donde se encuentran.
         </dd>
       </dl>
+      <p>
+        Estas reglas pueden consultarse en el archivo <code>src/accesibilidad/simplificada.scss</code>.
+      </p>
     </div>
 
     <div class="ancho-lectura">
       <p class="h4 m-t-10">
-        Consideraciones en el área de desarrollo para poder mantener el estado <em>Mostrar solo texto</em>.
+        Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Mostrar solo texto</em>.
       </p>
       <p>
-        Las reglas de que clase necesita reformatearse y como, descritas arriba en español plano, 
-        se encuentran en el archivo de <code>src/accesibilidad/simplificada.scss</code>. Si se agrega 
-        un nuevo elemento se necesita utilizar la clase <code>.a11y-simplificada</code> en un archivo de estilos
-        para dentro crear las nuevas reglas que requiera.
+        Si se agrega un nuevo elemento, es necesario  utilizar la clase .a11y-simplificada 
+        en un archivo de estilos para  crear las nuevas reglas que requiera. 
+        Se recomienda:
       </p>
       <ol>
-        <li>Recomendamos poner las clases de accesibilidad al final de su archivo de estilos.</li>
-        <li>No utilizar clases con nombres iguales a componentes ya existentes.</li>
-        <li>No comience el nombre de sus clases con la palabra boton.</li>
+        <li>Escribir las clases de accesibilidad al final del archivo de estilos.</li>
+        <li>No utilizar la misma nomenclatura de los componentes ni clases ya existentes al definir el nombre de una nueva clase de accesibilidad.</li>
       </ol>
     </div>
     <EjemploCodigo
@@ -124,9 +128,12 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     />
 
     <div class="ancho-lectura">
+      <p class="h4 m-t-10">
+        Consideraciones para el correcto mantenimiento del estado <em>Mostrar solo texto</em>.
+      </p>
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
-        debe existir la opcion de <em>Mostrar solo texto</em>, de la siguiente manera:
+        la opción de <em>Mostrar solo texto</em> debe integrarse de la siguiente manera:
        </p>
     </div>
     <EjemploCodigo

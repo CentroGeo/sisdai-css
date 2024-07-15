@@ -22,10 +22,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         El componente <code>SisdaiControlAcercarAlejar</code> es utilizado para ajustar el nivel de zoom en mapas.
       </p>
       <p>
-        Puedes notar en el siguiente ejemplo que se emplea un <code>&lt;input type="range"></code>, el cual 
-        debe ser reemplazado por el componente <code>SisdaiControlDeslizante</code> . A este último se le 
-        debe asignar el nombre de la clase y el atributo <code>aria-label</code> adecuados para asegurar 
-        su funcionalidad correcta. 
+        Este componente consta de un contenedor <code>control-acercar-alejar</code> 
+        un campo de rango <code>control-acercar-alejar-rango</code>, 
+        un par de botones para incrementar o decrementar el valor del rango 
+        y un campo de texto <code>control-acercar-alejar-porcentaje</code> para mostrar y editar la cantidad de zoom.
       </p>
       <EjemploCodigo
         tipo='HTML'
@@ -51,7 +51,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
           <input 
             type="text" 
-            maxlength="3"
+            maxlength="4"
             inputmode="numeric" 
             min="0"
             max="100"

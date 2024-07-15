@@ -11,15 +11,15 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         por la tipografía Atkinson Hyperlegible, diseñada por el Braille Institute para lectores con baja visión. 
       </p>
       <p>
-        Esta funcionalidad se logra agregar ó remover la clase <code>.a11y-simplificada</code> a la etiqueta <code>body</code>.
+        La funcionalidad se logra al agregar o remover la clase <code>.a11y-simplificada</code> a la etiqueta <code>body</code>.
       </p>
       <p>
         La clase <code>.a11y-tipografia</code> cambia el valor de la variable de CSS global <code>--tipografia-familia</code> por 
-        <code>'Atkinson Hyperlegible', sans-serif;</code>. Este cambio aplica a todos los elementos de la página.
+        <code>'Atkinson Hyperlegible', sans-serif;</code>. El cambio de fuente se aplica a todos los elementos de la página.
       </p>
-      <p class="h4 m-t-10">
-        Consideraciones en el área de desarrollo para poder mantener el estado <em>Cambio de Fuente</em>.
-      </p>
+      <h2 class="h4 m-t-10">
+        Consideraciones para mantener el estado <em>Cambio de Fuente</em>.
+      </h2>
       <p>
         Ambas tipografías deben estar cargadas en el proyecto. <br>
         Se recomienda utilizar los links de <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferer">GoogleFonts</a>
@@ -43,7 +43,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
-        debe existir la opcion de <em>Cambio de Fuente</em>, de la siguiente manera:
+        debe existir la opción de <em>Cambio de Fuente</em>, de la siguiente manera:
        </p>
     </div>
     <EjemploCodigo

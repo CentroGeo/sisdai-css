@@ -8,8 +8,8 @@ const estaAbierto = ref(true)
     <div class="ancho-lectura">
       <h1>Menú Flotante</h1>
       <p>
-        El menú flotante es un elemento que a través de la interacción con un botón sencillo, puede mostrar y ocultar 
-        la información completa que requiera un menú. 
+        El menú flotante es un elemento que, a través de la interacción con un botón sencillo, 
+        puede mostrar y ocultar la información completa que requiere un menú.
       </p>
     </div>
 
@@ -19,6 +19,7 @@ const estaAbierto = ref(true)
     >
       <button 
         class="menu-flotante-boton"
+        aria-label="Menú de ejemplo"
         @click="estaAbierto = !estaAbierto"
       >
         <span class="menu-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
@@ -56,40 +57,35 @@ const estaAbierto = ref(true)
       <div class="columna-6">
         <h2 class="m-t-0">menu-flotante</h2>
         <p>
-          La clase <code>menu-flotante</code> puede ir acompañada de las clases 
-          de posicion <code>menu-flotante-izquierdo</code> ó <code>menu-flotante-derecho</code>.
-          Para ambas clases el menú se fija en la parte baja de la pantalla, 
-          con 40 pixeles de margenes alrededor.
+          La clase <code>menu-flotante</code> puede ir acompañada de las clases de posición 
+          <code>menu-flotante-izquierdo</code> ó <code>menu-flotante-derecho</code>. 
+          Para ambas clases, el menú se fija en la parte baja de la pantalla, 
+          con márgenes de 40 píxeles  alrededor.
         </p>
         <p>
-          El <code>menu-flotante</code> contiene el <code>menu-flotante-boton</code>
-          que debe ser el elemento que ejecute la accion de Ocultar/Mostrar el contenido del 
-          <code>menu-flotante-contenedor</code> que contendrá todas las opciones del menú.
+          El <code>menu-flotante</code> contiene el <code>menu-flotante-boton</code>, 
+          que debe ser el elemento que ejecute la acción de Ocultar/Mostrar 
+          el contenido del <code>menu-flotante-contenedor</code>, 
+          el cual contendrá todas las opciones del menú.
         </p>
-
+        
         <h2 class="m-t-0">menu-flotante-boton</h2>
         <p>
-          El boton <code>menu-flotante-boton</code> 
-          que siempre se encuentra visible, requiere que se utilice un pictograma
-          para reducir al mínimo el espacio visual que toma en la pantalla.
-        </p>
-        <p>
-          Sin embargo en algunas ocaciones es difícil encontrar un elemento que represente
-          el contenido del menú. Para estos casos se recomienta utilizar dos pictogramas
-          para representar la acción Abrir/Cerrar que ejecuta el botón.
-        </p>
-        <p>
-          Para este caso se utilizan las clases <code>menu-flotante-pictograma-abierto</code>
-          y <code>menu-flotante-pictograma-cerrado</code> que alternan la visibilidad del 
-          pictograma con el estado del menú.
+          El botón menu-flotante-boton, que siempre está visible, 
+          requiere el uso de un pictograma para minimizar el espacio visual que ocupa en la pantalla. 
+          Sin embargo, en algunas ocasiones es difícil encontrar un elemento que represente el contenido del menú. 
+          Para estos casos, se recomienda utilizar dos pictogramas para representar la acción Abrir/Cerrar que ejecuta el botón. 
+          En este caso, se utilizan las clases 
+          <code>menu-flotante-pictograma-abierto</code> y <code>menu-flotante-pictograma-cerrado</code>, 
+          que alternan la visibilidad del pictograma según el estado del menú.
         </p>
 
         <h2 class="m-t-0">menu-flotante-contenedor</h2>
         <p>
-          El <code>menu-flotante-contenedor</code> puede contener distintos tipos de elementos,
-          más espeficifamente se espera que contenga hipervínculos, botones, casillas de verificacion y un título,
-          éste último siendo el único que tiene su clase especial <code>menu-flotante-titulo</code> para
-          darle formato.
+          El <code>menu-flotante-contenedor</code> puede contener distintos tipos de elementos. 
+          Específicamente, se espera que contenga hipervínculos, botones, casillas de 
+          verificación y un título, éste último siendo el único que tiene su clase especial 
+          <code>menu-flotante-titulo</code> para darle formato.
         </p>
       </div>
 

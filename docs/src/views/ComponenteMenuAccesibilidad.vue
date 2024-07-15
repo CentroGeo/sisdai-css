@@ -22,10 +22,14 @@ const estaAbierto = ref(true)
 
       <p>
         El componente <code>SisdaiMenuAccesibilidad</code> permite a las personas usuarias ejecutar funciones 
-        que incorporan reglas de accesibilidad en el sitio web. Consiste en un botón (<code>menu-flotante-boton</code>) 
-        que al ser activado, agrega o quita la clase <code>abierto</code> sobre <code>menu-flotante menu-flotante-derecho</code> para mostrar 
-        u ocultar las opciones de accesibilidad albergadas en el contenedor <code>menu-flotante-contenedor</code>. 
-        Las opciones se cargan desde el archivo de configuaración <code>opcionesDefault.js</code>.
+        que incorporan reglas de accesibilidad en el sitio web.
+      </p>
+      <p>
+        Este componente consta de un botón <code>menu-flotante-boton</code> que, al ser activado, 
+        añade o elimina la clase abierto en el elemento <code>menu-flotante menu-flotante-derecho</code>. 
+        Esta acción muestra u oculta las opciones de accesibilidad contenidas en el 
+        <code>menu-flotante-contenedor</code>. 
+        Las opciones se cargan desde el archivo de configuración <code>opcionesDefault.js</code>.
       </p>
       
       <EjemploCodigo 
