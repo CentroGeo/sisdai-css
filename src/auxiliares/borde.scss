@@ -105,11 +105,11 @@
     border-bottom-left-radius: $valor;
     border-bottom-right-radius: $valor;
   }
-  .borde-r-redondeado-#{$id} {
+  .borde-l-redondeado-#{$id} {
     border-top-left-radius: $valor;
     border-bottom-left-radius: $valor;
   }
-  .borde-l-redondeado-#{$id} {
+  .borde-r-redondeado-#{$id} {
     border-top-right-radius: $valor;
     border-bottom-right-radius: $valor;
   }

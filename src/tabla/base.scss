@@ -37,12 +37,18 @@ table {
   tbody {
     tr:nth-child(odd) {
       background-color: var(--tabla-fila-impar-fondo);
+      color: var(--tabla-color);
+    }
+    tr:nth-child(even) {
+      background-color: var(--tabla-fila-par-fondo);
+      color: var(--tabla-color);
     }
   }
   tfoot {
     font-weight: 600;
     tr {
       background-color: var(--tabla-fila-pie-fondo);
+      color: var(--tabla-color);
     }
   }
 }

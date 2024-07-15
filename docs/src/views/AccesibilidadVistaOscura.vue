@@ -6,30 +6,32 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
     <div class="ancho-lectura">
       <h1>Vista oscura</h1>
-      
       <p>
         Dentro de las alternativas disponibles en el menú de accesibilidad, está la vista oscura, 
         la cual permite a las personas usuarias ajustar su experiencia de navegación en condiciones de iluminación baja, 
         facilitando así la exploración durante períodos prolongados. 
       </p>
-
       <p>
-        Para cambiar entre temas claro y oscuro el menu de accesibilidad agrega a la etiqueta de <code>body</code>
-        la propiedad <code>data-tema='claro'</code> o <code>data-tema='oscuro'</code>, además de agregar la clase
-        especial <code>.a11y-oscura</code> al tema oscuro para facilitar la correcta visualizacion de componentes no nativos del sistema de diseño.
+        Para cambiar entre los temas claro y oscuro, el menú de accesibilidad actualiza la etiqueta 
+        <code>body</code> con el atributo <code>data-tema='claro'</code> o <code>data-tema='oscuro'</code>. 
+        En el caso del tema oscuro, agrega la clase especial <code>.a11y-oscura</code> 
+        para facilitar la correcta visualización de componentes no nativos del Sisdai.
       </p>
       <p>
-        Con estas propiedades filtran los estilos declarados en <code>src/color/tema-claro.scss</code> y <code>src/color/tema-oscuro.scss</code>
-        para sobreescribir las variables predeterminadas de componente nativos del sistema de diseño, dependiendo del tema seleccionado por la persona usuaria.
+        Con estas propiedades se filtran los estilos declarados en <code>src/color/tema-claro.scss</code> y 
+        <code>src/color/tema-oscuro.scss</code> para sobreescribir las variables predeterminadas de los 
+        componentes nativos del Sisdai, dependiendo del tema seleccionado por la persona usuaria.
+
       </p>
       
       <p class="h4 m-t-10">
-        Consideraciones en el área de desarrollo para poder mantener el estado <em>Vista oscura</em>.
+        Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Vista oscura</em>.
       </p>
       <p>
-        Si se utilizan componentes no nativos al sistema de diseño, ó se editan en línea los estilos de alguno,
-        es importante declarar los estilos considerando como predeterminado el tema claro y agregar las variaciones de color 
-        necesarias para la correcta visualización en el modo oscuro mediante el uso de la clase especial <code>.a11y-oscura</code>.
+        Si se utilizan componentes no nativos del sistema de diseño o se editan en línea los estilos de alguno, 
+        es importante declarar los estilos considerando como predeterminado el tema claro y agregar las 
+        variaciones de color necesarias para la correcta visualización en el modo oscuro mediante 
+        el uso de la clase especial <code>.a11y-oscura</code>.
       </p>
     </div>
     <EjemploCodigo
@@ -51,9 +53,12 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     />
     
     <div class="ancho-lectura">
+      <h2 class="h4 m-t-10">
+        Consideraciones para el correcto mantenimiento del estado <em>Vista oscura</em>.
+      </h2>
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
-        debe existir la opcion de <em>Vista oscura</em>, de la siguiente manera:
+        la opción de <em>Vista oscura</em> debe integrarse de la siguiente manera:
        </p>
     </div>
     <EjemploCodigo

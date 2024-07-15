@@ -61,6 +61,11 @@
     }
   }
   display: block;
+
+  .nav-logo {
+    margin-top: calc(map-get($espaciado, '2') * -1 + 4px);
+    margin-bottom: calc(map-get($espaciado, '2') * -1 + 4px);
+  }
 }
 
 .navegacion.navegacion-extendida {

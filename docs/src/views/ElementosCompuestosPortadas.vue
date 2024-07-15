@@ -125,6 +125,47 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
         '
       />
     </div>
+
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Portada con video de fondo</h2>
+    </div>
+    <div class="portada">
+      <video class="portada-imagen oculto-mov" autoplay muted>
+        <source src="https://dev-dadsig-cdn.crip.conahcyt.mx/sisdai/landing-sisdai/inicio/videos/sisdaiescritorio.mp4" type="video/mp4">
+      </video>
+      <video class="portada-imagen oculto-esc" autoplay muted>
+        <source src="https://dev-dadsig-cdn.crip.conahcyt.mx/sisdai/landing-sisdai/inicio/videos/sisdaimovil.mp4" type="video/mp4">
+      </video>
+      <div class="portada-degradado">
+        <div class="portada-cuerpo">
+          <p class="portada-titulo">Portada con video de fondo</p>
+          <p class="portada-subtitulo">Subtítulo</p>
+        </div>
+      </div>
+    </div>
+    <div class="contenedor">
+      <EjemploCodigo
+        :tiene_ejemplo="false"
+        tipo="HTML"
+        codigo='
+        <div class="portada">
+          <video class="portada-imagen oculto-mov" autoplay muted>
+            <source src="..." type="video/mp4">
+          </video>
+          <video class="portada-imagen oculto-esc" autoplay muted>
+            <source src="..." type="video/mp4">
+          </video>
+          <div class="portada-degradado">
+            <div class="portada-cuerpo">
+              <p class="portada-titulo">Título portada secundaria</p>
+              <p class="portada-subtitulo">Subtítulo</p>
+            </div>
+          </div>
+        </div>
+        '
+      />
+    </div>
     
   </div>
 </template>

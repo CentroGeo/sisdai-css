@@ -55,7 +55,7 @@
     transition: opacity 0.27s ease;
   }
   
-  &.abierto {
+  &.abierto > {
     .colapsable-boton {
       .pictograma,
       [class^='pictograma-'],

@@ -61,9 +61,10 @@
   height: 24px;
   font-size: 0.875rem;
   display: flex;
-
+  width: inherit;
   font-weight: 400;
   white-space: nowrap;
+  align-items: center;
   padding: map-get($espaciado, 'minimo');
   margin: map-get($espaciado, 'minimo') map-get($espaciado, '2');
 

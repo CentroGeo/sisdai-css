@@ -42,8 +42,8 @@
 
     .menu-flotante-contenedor {
       box-shadow: 
-        inset 0 0 0 .1px var(--opacidad-ligero),
-        0 8px 16px -4px var(--opacidad-ligero);
+        inset 0 0 0 .1px var(--menu-flotante-contenedor-sombra),
+        0 8px 16px -4px var(--menu-flotante-contenedor-sombra);
       max-height: 500px;
       padding: map-get($espaciado, '3');
       opacity: 1; 

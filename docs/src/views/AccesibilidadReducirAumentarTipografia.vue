@@ -7,19 +7,20 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Reducir / Aumentar Tipografía <span class="etiqueta">preliminar</span></h1>
       <p>
-        Será una funcionalidad que le permita a la persona usuaria hacer todo el texto del sitio en general, 
-        mas grande o mas chico que el establecido predeterminadamente por el sisitema de diseño a 16px de base.
+        Esta funcionalidad permite a la persona usuaria hacer que todo el texto del sitio 
+        sea más grande o más pequeño que el tamaño predeterminado establecido por el Sisdai, 
+        que es de  16px como base.
       </p>
       
-      <p class="h4 m-t-10">
-        Consideraciones de desarrollo para poder agregar el estado <em>Reducir / Aumentar Tipografía</em>.
-      </p>
+      <h2 class="h4 m-t-10">
+        Consideraciones para agregar el estado <em>Reducir / Aumentar Tipografía</em>.
+      </h2>
       <p>
         Todos los tamaños tipográficos de todos los elementos deben estar declarados en unidades <code>rem</code>
         para mantener las jerarquías tipográficas cuando se edite el tamaño base.
       </p>
       <p>
-        Debe existir la variable global del tamaño base
+        Debe existir la variable global para el tamaño base de la tipografía.
       </p>
     </div>
     <EjemploCodigo
@@ -37,8 +38,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
     <div class="ancho-lectura">
       <p>
-        Ejemplo de cómo esta aplicada la lógica para incrementar, decrementar y reestablecer el valor
-        de tamaño tipografico general en ésta página de documentación.
+        Para incrementar, disminuir  y restablecer el valor de tamaño tipográfico general, 
+        se puede aplicar la siguiente lógica utilizada en ésta página de documentación:
       </p>
     </div>
     <EjemploCodigo

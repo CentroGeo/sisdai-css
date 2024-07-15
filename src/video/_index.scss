@@ -13,13 +13,4 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-// auxiliar de color oscuro para mejorar accesibilidad y agregar casos especiales
-.a11y-oscura {
-  // Imagenes . En modo oscuro pasa a blanco
-  picture.invertir,
-  img.invertir,
-  svg.invertir,
-  .color-invertir {
-    filter: invert(1) brightness(100);
-  }
-}
+@import './base.scss';

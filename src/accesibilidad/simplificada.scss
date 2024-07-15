@@ -12,27 +12,48 @@
 
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+.a11y-simplificada-mostrar-mensaje {
+  display: none;
+}
 
 .a11y-simplificada {
-  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-flotante),
-  input[type=button],
-  input[type=submit],
-  input[type=reset] {
+  .a11y-simplificada-mostrar-mensaje { //para agregar texto que solo se lee en 'mostrar solo texto'
+    display: block;
+  }
+  
+  .a11y-simplificada-ocultar {
+    display: none;
+  }
+
+  .a11y-simplificada-formato-hipervinculo,
+  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
+  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
     @extend .hipervinculo;
     background-color: transparent !important;
+    box-shadow: none !important;
     &:not(:last-child) {
       margin-right: map-get($espaciado, '1');
     }
   }
 
-  img:not(.nav-logo),
-  svg:not(.nav-logo) {
-    display: none!important;
+  video,
+  picture:not(.nav-logo):not(.a11y-simplificada-mantener-imagen),
+  img:not(.nav-logo):not(.a11y-simplificada-mantener-imagen),
+  svg:not(.nav-logo):not(.a11y-simplificada-mantener-imagen) {
+    display: none !important;
+  }
+
+  .video {
+    iframe {
+      display: none;
+    }
   }
 
   .portada {
     height: auto;
+    .portada-imagen {
+      display: none;
+    }
     .portada-degradado {
       background: transparent;
       .portada-cuerpo {
@@ -45,6 +66,9 @@
   }
 
   .tarjeta:not(.control-deslizante-contenido-tarjeta-fija):not(.control-deslizante-contenido-tarjeta-movil) {
+    .tarjeta-imagen {
+      display: none;
+    }
     .tarjeta-cuerpo {
       background: var(--tarjeta-contenido-simplificada-fondo);
       color: var(--tarjeta-contenido-simplificada-color);
@@ -53,15 +77,15 @@
       .tarjeta-etiqueta {
 				color: var(--tarjeta-contenido-simplificada-color);
 			}
-      a, button {
-        text-decoration: none !important;
-      }
     }
   }
 
   .tarjeta-horizontal {
     @media screen and (min-width: calc(map-get($breakpoints, 'esc'))) {
       .tarjeta-cuerpo {
+        padding-left: map-get($espaciado, '3');
+      }
+      .tarjeta-pie {
         padding-left: map-get($espaciado, '3');
       }
     }
@@ -71,13 +95,14 @@
   .tarjeta-hipervinculo-externo {
     background: var(--tarjeta-simplificada-fondo);
     border: 1px solid var(--tarjeta-simplificada-borde);
-    min-height: auto;
     color: var(--tarjeta-simplificada-color);
+    min-height: auto;
     .tarjeta-degradado {
       background: none;
       margin: 0;
     }
     .tarjeta-cuerpo {
+      background: var(--tarjeta-simplificada-fondo);
       color: var(--tarjeta-simplificada-color);
       > * {
         color: var(--tarjeta-simplificada-color);
@@ -87,6 +112,8 @@
     &:focus,
     &:focus-visible {
       box-shadow: none;
+      background: var(--tarjeta-simplificada-cursor-fondo);
+      border-color: var(--tarjeta-simplificada-cursor-borde);
       .tarjeta-cuerpo {
         background: var(--tarjeta-simplificada-cursor-fondo);
         > * {
@@ -97,22 +124,15 @@
     &:focus,
     &:focus-visible {
       background: var(--tarjeta-simplificada-enfoque-fondo);
-      box-shadow: 0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
-    }
-  }
-
-  .boton-flotante {
-    position: static;
-    box-shadow: none;
-    .boton-flotante-alternador {
-      display: none !important;
-    }
-    .boton-flotante-cuerpo {
-      .boton-flotante-hipervinculo {
-        border-radius: 0;
-        opacity: 1;
-        max-width: 200px;
-        padding: 0 map-get($espaciado, '1');
+      border-color: var(--tarjeta-simplificada-enfoque-borde);
+      box-shadow: 
+        inset 0 0 0 1px var(--tarjeta-simplificada-enfoque-contorno),
+        0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
+      .tarjeta-cuerpo {
+        background: var(--tarjeta-simplificada-enfoque-fondo);
+        > * {
+          color: var(--tarjeta-simplificada-enfoque-color);
+        }
       }
     }
   }

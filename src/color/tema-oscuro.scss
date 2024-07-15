@@ -76,7 +76,6 @@ body[data-tema='oscuro'] {
   --campo-control-fondo: var(--color-secundario-12);
   --campo-control-borde: var(--color-secundario-5);
   --campo-control-seleccionado-fondo: var(--color-secundario-12);
-  --campo-control-seleccionado-borde: var(--color-secundario-5);
   --campo-control-seleccionado-color: var(--color-secundario-5);
   --campo-control-deshabilitado-fondo: var(--color-secundario-8);
   --campo-control-deshabilitado-borde: var(--color-secundario-7);
@@ -96,7 +95,6 @@ body[data-tema='oscuro'] {
   --boton-primario-fondo: var(--color-primario-2);
   --boton-primario-borde: var(--color-primario-2);
   --boton-primario-color: var(--color-secundario-12);
-  --boton-primario-sombra: transparent;
   --boton-primario-deshabilitado-fondo: var(--color-secundario-8);
   --boton-primario-deshabilitado-borde: var(--color-secundario-8);
   --boton-primario-deshabilitado-color: var(--color-secundario-7);
@@ -114,7 +112,6 @@ body[data-tema='oscuro'] {
   --boton-secundario-fondo: transparent;
   --boton-secundario-borde: var(--color-secundario-5);
   --boton-secundario-color: var(--color-secundario-5);
-  --boton-secundario-sombra: transparent;
   --boton-secundario-deshabilitado-fondo: transparent;
   --boton-secundario-deshabilitado-borde: var(--color-secundario-7);
   --boton-secundario-deshabilitado-color: var(--color-secundario-8);
@@ -143,7 +140,6 @@ body[data-tema='oscuro'] {
   --boton-sin-contenedor-primario-enfoque-fondo: var(--color-secundario-8);
   --boton-sin-contenedor-primario-enfoque-borde: var(--estado-enfoque);
   --boton-sin-contenedor-primario-enfoque-color: var(--color-primario-2);
-  --boton-sin-contenedor-primario-enfoque-contorno: transparent;
   --boton-sin-contenedor-primario-enfoque-sombra: var(--estado-enfoque);
 
   --boton-sin-contenedor-secundario-fondo: transparent;
@@ -161,7 +157,6 @@ body[data-tema='oscuro'] {
   --boton-sin-contenedor-secundario-enfoque-fondo: var(--color-secundario-8);
   --boton-sin-contenedor-secundario-enfoque-borde: var(--estado-enfoque);
   --boton-sin-contenedor-secundario-enfoque-color: var(--color-secundario-5);
-  --boton-sin-contenedor-secundario-enfoque-contorno: transparent;
   --boton-sin-contenedor-secundario-enfoque-sombra: var(--estado-enfoque);
 
   --hipervinculo-color: var(--color-interactivo-3);
