@@ -479,7 +479,78 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       </div>
       '
     />
-    
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Clases especiales de alineación</h2>
+      <p>
+        La clase <code>.flex-reversa</code>, que se agrega 
+        para invertir el orden de las columnas en una fila flex.
+      </p>
+      <p>
+        Esta clase es responsiva, se puede utilizar para invertir 
+        el orden únicamente en celular con <code>.flex-reversa-mov</code>
+        y para pantallas de escritorio con <code>.flex-reversa-esc</code>
+      </p>
+    </div>
+
+    <h3 class="m-b-0 m-t-5">flex-reversa</h3>
+    <EjemploReticula
+      codigo='
+      <div class="flex flex-reversa">
+        <div class="columna-1"> 1 </div>
+        <div class="columna-2"> 2 </div>
+        <div class="columna-3"> 3 </div>
+      </div>
+      '
+    />
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="m-t-10">Clases de alineación vertical</h2>
+      <p>
+        La clase <code>.flex-vertical-centrado</code>, que se agrega 
+        para centrar el contenido en un bloque de altura mayor al mismo.
+      </p>
+      <p>
+        La clase <code>.flex-vertical-final</code>, que se agrega 
+        para posicionar el contenido al final de un bloque de altura mayor al mismo.
+      </p>
+      <p>
+        La clase <code>.flex-vertical-inicio</code>, que se agrega 
+        para posicionar el contenido al inicio de un bloque de altura mayor al mismo.
+      </p>
+    </div>
+    <h3 class="m-b-0 m-t-5">flex-vertical-centrado</h3>
+    <EjemploReticula
+      codigo='
+      <div class="flex">
+        <div 
+          class="columna-4"
+          style="height: 500px;"
+        > 
+          <p>Sin centrado vertical</p>
+        </div>
+        
+        <div 
+          class="columna-4 flex-vertical-centrado"
+          style="height: 500px;"
+        > 
+          <p>Centrado</p>
+        </div>
+        <div 
+          class="columna-4 flex-vertical-final"
+          style="height: 500px;"
+        > 
+          <p>Final</p>
+        </div>
+        <div 
+          class="columna-4 flex-vertical-inicio"
+          style="height: 500px;"
+        > 
+          <p>Inicio</p>
+        </div>
+      </div>
+      '
+    />
     
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">
@@ -489,7 +560,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       <p>
         Se ha diseñado una <i>clase</i> especial, <code>.flex-columnas-100-al-simplificar</code>, que se puede añadir 
         a <code>.flex</code> para que todas las <code>.columna-#</code> se escalen a un ancho de 100% de la 
-        pantalla cuando se active la opción <code>Mostrar solo texto</code> del menú de accesibilidad..
+        pantalla cuando se active la opción <code>Mostrar solo texto</code> del menú de accesibilidad.
       </p>
     </div>
 

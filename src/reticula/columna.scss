@@ -40,6 +40,25 @@
   flex-direction: row-reverse;
 }
 
+.flex-vertical-centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.flex-vertical-final {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+.flex-vertical-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
 .grid {
   box-sizing: border-box;
   display: grid;
