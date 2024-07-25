@@ -13,6 +13,7 @@ const estaAbierto = ref(true)
 
           <button 
             class="menu-lateral-boton" 
+            aria-label="Navegación secundaria"
             aria-controls="ejemplomenulateral" 
             :aria-expanded="estaAbierto"
             @click="estaAbierto = !estaAbierto"
@@ -234,7 +235,7 @@ const estaAbierto = ref(true)
                   class="menu-lateral-boton" 
                   aria-controls="ID-UNICO-DOS" 
                   aria-expanded="true" 
-                  aria-label="Abrir/Cerrar navegación"
+                  aria-label="Navegacion secundaria"
                 >
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>

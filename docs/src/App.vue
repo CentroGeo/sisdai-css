@@ -245,7 +245,7 @@
     <nav class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
-          <img class="nav-logo invertir" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
+          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
         </a>
         <button v-if="esColapsable" @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>

@@ -33,7 +33,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             height="38" 
           />
         </a>
-        <button class="nav-boton-menu"> <!-- alternar la clase abierto -->
+        <button class="nav-boton-menu" aria-label="menu gobierno"> <!-- alternar la clase abierto -->
           <span class="nav-icono-menu"></span>
         </button>
       </div>
@@ -92,14 +92,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
-            class="nav-logo invertir" 
+            class="nav-logo a11y-oscura-filtro-blanco" 
             src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" 
             alt="Conahcyt."
             width="130" 
             height="38" 
           />
         </a>
-        <button class="nav-boton-menu"> <!-- alternar la clase abierto -->
+        <button class="nav-boton-menu" aria-label="menu-principal"> <!-- alternar la clase abierto -->
           <span class="nav-icono-menu"></span>
         </button>
         <div class="nav-informacion">Nombre de la sección actual</div>
@@ -137,7 +137,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <div class="nav-contenedor-identidad">
             <a href="#" class="nav-hiperviculo-logo">
               <img 
-                class="nav-logo invertir" 
+                class="nav-logo a11y-oscura-filtro-blanco" 
                 src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" 
                 alt="Conahcyt."
                 width="130" 
@@ -341,22 +341,22 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <ul class="piepagina-social">
             <li>
-              <a href="#">
+              <a href="#" aria-label="enlace ejeplo facebook">
                 <span class="pictograma-social-facebook" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="enlace ejemplo x">
                 <span class="pictograma-social-x" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="enlace ejemplo instagram">
                 <span class="pictograma-social-instagram" />
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" aria-label="enlace ejemplo youtube">
                 <span class="pictograma-social-youtube" />
               </a>
             </li>
