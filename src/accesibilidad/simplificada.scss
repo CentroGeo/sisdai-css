@@ -12,13 +12,35 @@
 
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-.a11y-simplificada-mostrar-mensaje {
+
+// se oculta normalmente
+.a11y-simplificada-mostrar-inline {
+  display: none;
+}
+.a11y-simplificada-mostrar-bloque {
   display: none;
 }
 
+// se oculta normalmente + variacion que le agrega la posibilidad de que siempre se pueda leer
+.a11y-simplificada-leer-mostrar-inline {  
+  display: inline-flex;
+  visibility: hidden;
+  width: 0;
+  overflow: hidden;
+}
+
 .a11y-simplificada {
-  .a11y-simplificada-mostrar-mensaje { //para agregar texto que solo se lee en 'mostrar solo texto'
+  .a11y-simplificada-mostrar-inline {
+    display: inline-flex;
+  }
+
+  .a11y-simplificada-mostrar-bloque {
     display: block;
+  }
+
+  .a11y-simplificada-leer-mostrar-inline {
+    visibility: visible;
+    width: inherit;
   }
   
   .a11y-simplificada-ocultar {
@@ -164,5 +186,9 @@
         }
       }
     }
+  }
+
+  .texto-centrado {
+    text-align: left;
   }
 }
