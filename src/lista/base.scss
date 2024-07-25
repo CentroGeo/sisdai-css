@@ -35,21 +35,6 @@ ul {
   }
 }
 
-ol {
-  list-style-type: none;
-  counter-reset: item;
-  li {
-    counter-increment: item;
-    ol {
-      list-style-type: none;
-      counter-reset: item;
-    }
-    &::before {
-      content: counters(item, '.') '. ';
-    }
-  }
-}
-
 dl {
   dt {
     font-weight: 600;

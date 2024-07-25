@@ -13,7 +13,18 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 
-@import './base';
-@import './tipo';
-@import './secuenciada';
+.lista-sin-estilo {
+  list-style-type: none;
+}
 
+.lista-decimal {
+  list-style-type: decimal;
+}
+
+.lista-romana {
+  list-style-type: upper-roman;
+}
+
+.lista-latina {
+  list-style-type: lower-latin;
+}
