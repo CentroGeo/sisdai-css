@@ -52,23 +52,3 @@ table {
     }
   }
 }
-
-.titulo-tabla {
-  @extend .h6;
-  margin-bottom: 0;
-}
-
-
-.tabla-condensada {
-  th,
-  td {
-    padding: map-get($espaciado, '1') map-get($espaciado, '2');
-  }
-}
-
-.tabla-expandida {
-  th,
-  td {
-    padding: map-get($espaciado, '3');
-  }
-}

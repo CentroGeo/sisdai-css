@@ -12,7 +12,15 @@
 
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+.titulo-tabla {
+  @extend .h6;
+  margin-bottom: 0;
+}
 
-@import './base';
-@import './tamanio';
-@import './complementos';
+.contenedor-tabla {
+  max-width: 100%;
+  overflow-x: auto;
+  table {
+    max-width: 100%;
+  }
+}

@@ -12,7 +12,16 @@
 
 // You should have received a copy of the GNU Lesser General Public License along
 // with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+.tabla-condensada {
+  th,
+  td {
+    padding: map-get($espaciado, '1') map-get($espaciado, '2');
+  }
+}
 
-@import './base';
-@import './tamanio';
-@import './complementos';
+.tabla-expandida {
+  th,
+  td {
+    padding: map-get($espaciado, '3');
+  }
+}

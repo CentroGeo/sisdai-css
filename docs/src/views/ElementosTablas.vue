@@ -24,7 +24,6 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <EjemploCodigo
           tipo='HTML'
           codigo='
-          <p class="titulo-tabla">Título tabla base</p>
           <table>
             <caption>Descripción o información adicional de la tabla</caption>
             <thead>
@@ -184,6 +183,108 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </tr>
             </tbody>
           </table>
+          '
+        />
+      </div>
+    </div>
+
+    <div class="ancho-lectura m-t-10">
+      <h2>Complementos</h2>
+    
+      <h3>Titulo para tablas</h3>
+      <p>
+        En base a la declaracion del <code>h6</code> la clase <code>.titulo-tabla</code>
+        se utiliza para poner un título.
+      </p>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-8">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="titulo-tabla">Título tabla</p>
+
+          <table>
+            <caption>Descripción o información adicional de la tabla</caption>
+            <thead>
+              <tr>
+                <th>Encabezado A</th>
+                <th>Encabezado B</th>
+                <th>Encabezado C</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+              </tr>
+              <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+              </tr>
+            </tbody>
+          </table>
+          '
+        />
+      </div>
+    </div>
+
+    <div class="ancho-lectura m-t-10">
+      <h3>Contenedor de tablas</h3>
+      <p>
+        La clase <code>.contenedor-tabla</code> se utiliza cuando el contenido de una tabla
+        se sabe muy extenso en cuanto a cantidad de columnas, para agregar un scroll horizontal
+        cuando la pantalla no es suficiente para mostrar toda la información.
+      </p>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-8">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <p class="titulo-tabla">Título tabla</p>
+          
+          <div class="contenedor-tabla">
+            <table>
+              <caption>Descripción o información adicional de la tabla</caption>
+              <thead>
+                <tr>
+                  <th>Encabezado A</th>
+                  <th>Encabezado B</th>
+                  <th>Encabezado C</th>
+                  <th>Encabezado D</th>
+                  <th>Encabezado E</th>
+                  <th>Encabezado F</th>
+                  <th>Encabezado G</th>
+                  <th>Encabezado H</th>
+                  <th>Encabezado I</th>
+                  <th>Encabezado J</th>
+                  <th>Encabezado K</th>
+                  <th>Encabezado L</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Celda 1</td>
+                  <td>Celda 2</td>
+                  <td>Celda 3</td>
+                  <td>Celda 4</td>
+                  <td>Celda 5</td>
+                  <td>Celda 6</td>
+                  <td>Celda 7</td>
+                  <td>Celda 8</td>
+                  <td>Celda 9</td>
+                  <td>Celda 10</td>
+                  <td>Celda 11</td>
+                  <td>Celda 12</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           '
         />
       </div>
