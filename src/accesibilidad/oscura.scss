@@ -19,7 +19,8 @@
   picture.invertir,
   img.invertir,
   svg.invertir,
-  .color-invertir {
-    filter: invert(1) brightness(100);
+  .color-invertir,
+  .a11y-oscura-filtro-blanco {
+    filter: grayscale(1) brightness(100);
   }
 }

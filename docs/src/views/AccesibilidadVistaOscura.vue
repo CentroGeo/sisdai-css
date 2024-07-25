@@ -21,12 +21,33 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Con estas propiedades se filtran los estilos declarados en <code>src/color/tema-claro.scss</code> y 
         <code>src/color/tema-oscuro.scss</code> para sobreescribir las variables predeterminadas de los 
         componentes nativos del Sisdai, dependiendo del tema seleccionado por la persona usuaria.
-
       </p>
-      
-      <p class="h4 m-t-10">
+    </div>
+    <div class="ancho-lectura">
+      <h2 class="h4 m-t-10">
+        Clases especiales
+      </h2>
+      <p>
+        La clase <code>.a11y-oscura-filtro-blanco</code> se agrega a imágenes con fondo libre (png o svg)
+        para aplicar un filtro que vuelve completamente blanca una imagen al pasar al tema oscuro.<br />
+        Por ejemplo el logotipo del Conahcyt en la navegación principal:
+      </p>
+    </div>
+    <EjemploCodigo
+      :tiene_ejemplo='false'
+      tipo='HTML'
+      codigo='
+        <img 
+          class="nav-logo a11y-oscura-filtro-blanco" 
+          src="..." 
+          alt="Conahcyt"
+        />
+      '
+    />
+    <div class="ancho-lectura">
+      <h2 class="h4 m-t-10">
         Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Vista oscura</em>.
-      </p>
+      </h2>
       <p>
         Si se utilizan componentes no nativos del sistema de diseño o se editan en línea los estilos de alguno, 
         es importante declarar los estilos considerando como predeterminado el tema claro y agregar las 
