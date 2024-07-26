@@ -252,4 +252,20 @@ body[data-tema='claro'],
   --menu-flotante-contenedor-color: var(--texto-secundario);
   --menu-flotante-contenedor-borde: var(--borde-acento);
   --menu-flotante-contenedor-sombra: var(--opacidad-ligero);
+  
+  --menu-accesibilidad-boton-fondo: var(--color-interactivo-1);
+  --menu-accesibilidad-boton-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-contorno: transparent;
+  --menu-accesibilidad-boton-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-sombra: transparent;
+  --menu-accesibilidad-boton-cursor-fondo: var(--color-interactivo-2);
+  --menu-accesibilidad-boton-cursor-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-cursor-contorno: transparent;
+  --menu-accesibilidad-boton-cursor-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-cursor-sombra: transparent;
+  --menu-accesibilidad-boton-enfoque-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-enfoque-fondo: var(--color-interactivo-1);
+  --menu-accesibilidad-boton-enfoque-contorno: var(--estado-enfoque);
+  --menu-accesibilidad-boton-enfoque-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-enfoque-sombra: var(--estado-enfoque);
 }
