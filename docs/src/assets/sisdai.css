@@ -337,6 +337,21 @@ body[data-tema=claro],
   --menu-flotante-contenedor-color: var(--texto-secundario);
   --menu-flotante-contenedor-borde: var(--borde-acento);
   --menu-flotante-contenedor-sombra: var(--opacidad-ligero);
+  --menu-accesibilidad-boton-fondo: var(--color-interactivo-1);
+  --menu-accesibilidad-boton-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-contorno: transparent;
+  --menu-accesibilidad-boton-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-sombra: transparent;
+  --menu-accesibilidad-boton-cursor-fondo: var(--color-interactivo-2);
+  --menu-accesibilidad-boton-cursor-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-cursor-contorno: transparent;
+  --menu-accesibilidad-boton-cursor-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-cursor-sombra: transparent;
+  --menu-accesibilidad-boton-enfoque-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-enfoque-fondo: var(--color-interactivo-1);
+  --menu-accesibilidad-boton-enfoque-contorno: var(--estado-enfoque);
+  --menu-accesibilidad-boton-enfoque-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-enfoque-sombra: var(--estado-enfoque);
 }
 
 body[data-tema=oscuro] {
@@ -563,6 +578,21 @@ body[data-tema=oscuro] {
   --menu-flotante-contenedor-color: var(--texto-secundario);
   --menu-flotante-contenedor-borde: var(--borde-acento);
   --menu-flotante-contenedor-sombra: var(--opacidad-ligero);
+  --menu-accesibilidad-boton-fondo: var(--color-interactivo-1);
+  --menu-accesibilidad-boton-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-contorno: transparent;
+  --menu-accesibilidad-boton-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-sombra: transparent;
+  --menu-accesibilidad-boton-cursor-fondo: var(--color-interactivo-2);
+  --menu-accesibilidad-boton-cursor-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-cursor-contorno: transparent;
+  --menu-accesibilidad-boton-cursor-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-cursor-sombra: transparent;
+  --menu-accesibilidad-boton-enfoque-color: var(--color-neutro-0);
+  --menu-accesibilidad-boton-enfoque-fondo: var(--color-interactivo-1);
+  --menu-accesibilidad-boton-enfoque-contorno: var(--estado-enfoque);
+  --menu-accesibilidad-boton-enfoque-borde: var(--color-neutro-0);
+  --menu-accesibilidad-boton-enfoque-sombra: var(--estado-enfoque);
 }
 
 :root {
@@ -8611,6 +8641,22 @@ dl.informacion-despliegue dd {
 }
 dl.informacion-despliegue dd:not(:last-child) {
   padding-right: 8px;
+}
+
+.menu-flotante.menu-accesibilidad .menu-flotante-boton {
+  background-color: var(--menu-accesibilidad-boton-fondo);
+  color: var(--menu-accesibilidad-boton-color);
+  box-shadow: inset 0 0 0 1px var(--menu-accesibilidad-boton-borde), 0 0 0 1px var(--menu-accesibilidad-boton-contorno), 0 0 8px var(--menu-accesibilidad-boton-sombra);
+}
+.menu-flotante.menu-accesibilidad .menu-flotante-boton:not(:disabled):hover {
+  background-color: var(--menu-accesibilidad-boton-cursor-fondo);
+  color: var(--menu-accesibilidad-boton-cursor-color);
+  box-shadow: inset 0 0 0 1px var(--menu-accesibilidad-boton-cursor-borde), 0 0 0 1px var(--menu-accesibilidad-boton-cursor-contorno), 3px 3px 4px var(--menu-accesibilidad-boton-cursor-sombra);
+}
+.menu-flotante.menu-accesibilidad .menu-flotante-boton:not(:disabled):focus {
+  background-color: var(--menu-accesibilidad-boton-enfoque-fondo);
+  color: var(--menu-accesibilidad-boton-enfoque-color);
+  box-shadow: inset 0 0 0 1px var(--menu-accesibilidad-boton-enfoque-borde), 0 0 0 1px var(--menu-accesibilidad-boton-enfoque-contorno), 0 0 8px var(--menu-accesibilidad-boton-enfoque-sombra);
 }
 
 #app {
