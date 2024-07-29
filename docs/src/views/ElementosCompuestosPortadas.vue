@@ -9,8 +9,8 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       <h1>Portadas</h1>
       <p>
         Las portadas son introducciones visuales que generalmente ocupan la pantalla completa 
-        al ingresar a un sitio, incluyendo ilustraciones, fotografías o animaciones. Estas se 
-        acompañan del título y, opcionalmente, de un subtítulo del sitio.
+        al ingresar a un sitio, incluyendo ilustraciones, fotografías o animaciones. Éstas se 
+        acompañan del título y, opcionalmente, de un subtítulo.
       </p>
       <p>
         Las portadas presentan la siguiente estructura: 

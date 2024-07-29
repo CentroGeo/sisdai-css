@@ -2,7 +2,7 @@
 
 El proyecto sisdai-css es una biblioteca de estilos de Sass 
 alineada al Sistema de Diseño y Accesibilidad para la Investigación 
-([Sisdai](https://sisdai.conahcyt.mx)).
+([Sisdai](https://dev-dadsig-sisdai-css.crip.conahcyt.mx/)).
 
 Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
 en su equipo a través del **protocolo HTTPS**.
