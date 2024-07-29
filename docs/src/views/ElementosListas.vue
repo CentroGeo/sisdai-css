@@ -169,8 +169,48 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <EjemploCodigo
           tipo='HTML'
           codigo='
+          <ol class="lista-latina-minuscula">
+            <li>.lista-latina-minuscula</li>
+            <li>
+              Lista Nivel 1
+              <ul>
+                <li>
+                  Lista Nivel 2
+                </li>
+                <li>Lista Nivel 2</li>
+              </ul>
+            </li>
+            <li>Lista Nivel 1</li>
+          </ol>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <ol class="lista-romana">
             <li>.lista-romana</li>
+            <li>
+              Lista Nivel 1
+              <ol class="lista-decimal">
+                <li>
+                  Lista Nivel 2
+                </li>
+                <li>Lista Nivel 2</li>
+              </ol>
+            </li>
+            <li>Lista Nivel 1</li>
+          </ol>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
+          <ol class="lista-romana-minuscula">
+            <li>.lista-romana-minuscula</li>
             <li>
               Lista Nivel 1
               <ol class="lista-decimal">
