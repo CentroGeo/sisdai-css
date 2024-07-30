@@ -6,7 +6,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Tablas</h1>
       <p>
-        Desde el Sistema de Diseño y Accesibilidad para la Investigación (Sisdai) enfatizamos el uso del HTML 
+        Desde el Sisdai enfatizamos el uso del HTML 
         semántico para tablas, lo cual mejora su usabilidad y accesibilidad. Se proporciona estilo a las 
         etiquetas nativas de tablas para que puedan utilizarse sin la necesidad de clases adicionales.
       </p>

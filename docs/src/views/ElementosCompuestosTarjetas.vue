@@ -255,9 +255,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </picture>
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
-              <p>Capítulo</p>
-              <p class="h2 borde-b">Nombre del capítulo <span class="pictograma-flecha-arriba-derecha"></span></p>
-              <p class="h5">ENI Nombre</p>
+              <p>Etiqueta</p>
+              <p class="h2 borde-b">Título del sitio externo <span class="pictograma-flecha-arriba-derecha"></span></p>
+              <p class="h5">Texto secundario</p>
             </div>
           </div>
         </a>
@@ -267,8 +267,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <img class="tarjeta-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/perro-3.jpg" alt="" />
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
-              <p>ENI</p>
-              <p class="h1">Nombre ENI <span class="pictograma-flecha-arriba-derecha"></span></p>
+              <p>Etiqueta</p>
+              <p class="h1">Título del sitio externo <span class="pictograma-flecha-arriba-derecha"></span></p>
             </div>
           </div>
         </a>

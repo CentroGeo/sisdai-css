@@ -6,7 +6,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor ancho-lectura">
       <h1>Formularios</h1>
       <p>
-        El Sistema de Diseño y Accesibilidad para la Investigación (Sisdai), fomenta el uso de HTML semántico 
+        El Sisdai, fomenta el uso de HTML semántico 
         para mejorar la usabilidad y accesibilidad de la web. Por ello, damos estilo a las etiquetas nativas 
         para que puedan utilizarse eficientemente sin necesidad de añadir clases adicionales. 
       </p>
