@@ -1,0 +1,43 @@
+// This file is part of sisdai-css.
+//
+// sisdai-css is free software: you can redistribute it and/or modify
+// it under the terms of the GNU Lesser General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+
+// sisdai-css is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+// Public License for more details.
+
+// You should have received a copy of the GNU Lesser General Public License along
+// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+
+.menu-flotante.menu-accesibilidad {
+  
+  .menu-flotante-boton {
+    background-color: var(--menu-accesibilidad-boton-fondo);
+    color: var(--menu-accesibilidad-boton-color);
+    box-shadow: 
+      inset 0 0 0 1px var(--menu-accesibilidad-boton-borde),
+      0 0 0 1px var(--menu-accesibilidad-boton-contorno),
+      0 0 8px var(--menu-accesibilidad-boton-sombra);
+
+    &:not(:disabled):hover {
+      background-color: var(--menu-accesibilidad-boton-cursor-fondo);
+      color: var(--menu-accesibilidad-boton-cursor-color);
+      box-shadow: 
+        inset 0 0 0 1px var(--menu-accesibilidad-boton-cursor-borde),
+        0 0 0 1px var(--menu-accesibilidad-boton-cursor-contorno),
+        3px 3px 4px var(--menu-accesibilidad-boton-cursor-sombra);
+    }
+    &:not(:disabled):focus {
+      background-color: var(--menu-accesibilidad-boton-enfoque-fondo);
+      color: var(--menu-accesibilidad-boton-enfoque-color);
+      box-shadow: 
+        inset 0 0 0 1px var(--menu-accesibilidad-boton-enfoque-borde),
+        0 0 0 1px var(--menu-accesibilidad-boton-enfoque-contorno),
+        0 0 8px var(--menu-accesibilidad-boton-enfoque-sombra);
+    }
+  }
+}

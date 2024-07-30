@@ -22,7 +22,7 @@ dl {
 
 ol,
 ul {
-  list-style-position: inside;
+  padding-left: map-get($espaciado, '3');
   li {
     margin: map-get($espaciado, '2') 0;
   }

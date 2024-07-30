@@ -37,7 +37,7 @@ const estaAbierto = ref(true)
         tipo='HTML'
         codigo='
         <div 
-          class="menu-flotante menu-flotante-derecho" 
+          class="menu-flotante menu-flotante-derecho menu-accesibilidad" 
           :class="{abierto: estaAbierto}"
         >
 
@@ -86,8 +86,7 @@ const estaAbierto = ref(true)
               Restablecer
             </button>
           </menu>
-          </div>
-
+        </div>
       ' />
     
       <h2 class="m-t-10">Archivo de configuración</h2>
@@ -124,7 +123,7 @@ const estaAbierto = ref(true)
       '/>
     </div>
 
-    <div class="menu-flotante menu-flotante-derecho" :class="{abierto: estaAbierto}">
+    <div class="menu-flotante menu-flotante-derecho menu-accesibilidad" :class="{abierto: estaAbierto}">
       <button
         class="menu-flotante-boton"
         aria-label="Abrir y cerrar menú de accesibilidad"
