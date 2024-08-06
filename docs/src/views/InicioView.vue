@@ -39,16 +39,6 @@
 <!--        </a>-->
 <!--      </div>-->
 
-      <div class="columna-16">
-        <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
-          <img class="tarjeta-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/sisdai.png" alt="" />
-          <div class="tarjeta-degradado">
-            <div class="tarjeta-cuerpo">
-              <p class="h4">Ir al Sisdai <span class="pictograma-flecha-arriba-derecha"></span></p>
-            </div>
-          </div>
-        </a>
-      </div>
     </div>
   </div>
 </template>
