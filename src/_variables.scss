@@ -34,6 +34,7 @@ $borde-grosor: (
 );
 $borde-color: (
   'primario': var(--borde),
+  'neutro': var(--borde-neutro),
   'secundario': var(--borde-secundario),
   'acento': var(--borde-acento),
   'informacion': var(--borde-informacion),
