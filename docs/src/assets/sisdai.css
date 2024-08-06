@@ -8757,6 +8757,36 @@ div.controlador-vis label {
   border-bottom-color: var(--borde);
 }
 
+.borde-color-neutro {
+  border-color: var(--borde-neutro);
+}
+
+.borde-t-color-neutro {
+  border-top-color: var(--borde-neutro);
+}
+
+.borde-r-color-neutro {
+  border-right-color: var(--borde-neutro);
+}
+
+.borde-b-color-neutro {
+  border-bottom-color: var(--borde-neutro);
+}
+
+.borde-l-color-neutro {
+  border-left-color: var(--borde-neutro);
+}
+
+.borde-x-color-neutro {
+  border-right-color: var(--borde-neutro);
+  border-left-color: var(--borde-neutro);
+}
+
+.borde-y-color-neutro {
+  border-top-color: var(--borde-neutro);
+  border-bottom-color: var(--borde-neutro);
+}
+
 .borde-color-secundario {
   border-color: var(--borde-secundario);
 }
