@@ -1,17 +1,15 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+// lo utiliza la biblioteca de componentes para bloquear el scroll en el body
+.overflow-hidden {
+  overflow: hidden;
+}
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
+.desbordado-x {
+  overflow-x: auto;
+}
 
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+.desbordado-y {
+  overflow-y: auto;
+}
 
 .oculto {
   display: none;
@@ -30,11 +28,4 @@
       visibility: hidden;
     }
   }
-}
-
-.desbordado-x {
-  overflow-x: auto;
-}
-.desbordado-y {
-  overflow-y: auto;
 }

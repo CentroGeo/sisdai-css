@@ -1,26 +1,26 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+.texto-centrado {
+  text-align: center;
+}
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
+.texto-derecha {
+  text-align: right;
+}
 
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+.texto-izquierda {
+  text-align: left;
+}
 
-// tamaño
+.texto-justificado {
+  text-align: justify;
+}
+
 @each $id, $valor in $texto-tamanio {
   .texto-tamanio-#{$id} {
     font-size: $valor;
     line-height: calc(1em * 1.5);
   }
 }
-// tamaño responsivo
+
 @each $dispositivo, $x in $breakpoints {
   @include mediaquery($dispositivo) {
     @each $id, $valor in $texto-tamanio {
@@ -32,23 +32,8 @@
   }
 }
 
-// color
 @each $nombre, $valor in $texto-color {
   .texto-color-#{$nombre} {
     color: $valor;
   }
-}
-
-// alineacion
-.texto-centrado {
-  text-align: center;
-}
-.texto-derecha {
-  text-align: right;
-}
-.texto-izquierda {
-  text-align: left;
-}
-.texto-justificado {
-  text-align: justify;
 }

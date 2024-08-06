@@ -1,37 +1,26 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 img {
-  border-radius: map-get($borde-redondeado, '8');
+  border-radius: map.get($borde-redondeado, '8');
   max-width: 100%;
 }
 
 figure {
   color: var(--texto-secundario);
-  margin: map-get($espaciado, '3') 0;
+  margin: map.get($espaciado, '3') 0;
   clear: both;
+  
   img {
-    margin-bottom: map-get($espaciado, '1');
+    margin-bottom: map.get($espaciado, '1');
   }
+  
   img:not(:last-of-type) {
-    margin-right: map-get($espaciado, '1');
+    margin-right: map.get($espaciado, '1');
   }
   
   figcaption {
-    margin-top: calc(map-get($espaciado, '1') * -1);
-    font-size: 0.875rem; // 14px
+    margin-top: calc(map.get($espaciado, '1') * -1);
+    font-size: 0.875rem;
     font-weight: 400;
     clear: both;
   }

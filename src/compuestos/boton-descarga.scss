@@ -1,24 +1,12 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .boton-descarga {
-  @extend .boton;
-  @extend .boton-primario;
+  @include boton-estructura-principal;
+  @include boton-contenedor-primario;
+
   display: block;
-  border-radius: map-get($borde-redondeado, '12');
-  padding: map-get($espaciado, '4');
+  border-radius: map.get($borde-redondeado, '12');
+  padding: map.get($espaciado, '4');
   text-align: left;
   width: 100%;
   
@@ -27,29 +15,30 @@
     font-size: 1rem;
     line-height: calc(1.25rem);
     font-weight: 600;
-    margin: 0 0 map-get($espaciado, '1');
+    margin: 0 0 map.get($espaciado, '1');
   }
 
   .boton-descarga-cuerpo {
     display: block;
     position: relative;
-    padding-right: map-get($espaciado, '5');
+    padding-right: map.get($espaciado, '5');
     font-weight: 400;
     
     > * {
-      margin-top: map-get($espaciado, '1');
-      margin-bottom: map-get($espaciado, '1');
+      margin-top: map.get($espaciado, '1');
+      margin-bottom: map.get($espaciado, '1');
     }
 
     > :first-child {
       margin-top: 0;
     }
+
     > :last-child {
       margin-bottom: 0;
     }
 
     .boton-descarga-pictograma {
-      font-size: 2rem; // 32px
+      font-size: 2rem;
       position: absolute;
       bottom: 0;
       right: 0;

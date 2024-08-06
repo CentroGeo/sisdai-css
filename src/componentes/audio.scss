@@ -1,32 +1,22 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .audio {
   background: var(--fondo-neutro);
-  border-radius: map-get($borde-redondeado, '20');
-  padding: map-get($espaciado, '2');
+  border-radius: map.get($borde-redondeado, '20');
+  padding: map.get($espaciado, '2');
 
   .audio-cabecera {
-    margin-bottom: map-get($espaciado, '3');
+    margin-bottom: map.get($espaciado, '3');
+
     > * {
-      margin-top: map-get($espaciado, '2');
-      margin-bottom: map-get($espaciado, '2');
+      margin-top: map.get($espaciado, '2');
+      margin-bottom: map.get($espaciado, '2');
     }
+
     > :first-child {
       margin-top: 0;
     }
+
     > :last-child {
       margin-bottom: 0;
     }
@@ -34,7 +24,7 @@
 
   .audio-velocidad {
     flex: 1 1;
-    max-width: map-get($espaciado, 'maximo');
+    max-width: map.get($espaciado, 'maximo');
   }
 
   .audio-reproduccion {
@@ -42,12 +32,12 @@
     display: flex;
     justify-content: center;
     white-space: nowrap;
-    gap: map-get($espaciado, '1');
+    gap: map.get($espaciado, '1');
   }
 
   .audio-volumen {
     flex: 1 1;
-    max-width: map-get($espaciado, 'maximo');
+    max-width: map.get($espaciado, 'maximo');
     display: flex;
     white-space: nowrap;
   }

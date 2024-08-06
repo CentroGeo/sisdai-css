@@ -1,25 +1,9 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-// variables que comparten los elementos del formulario
+@use "sass:map";
 
 $form-campo-radio: 8px;
 $form-campo-alto: 40px;
 
-// estilos generales
-.form-campo-base {
+@mixin campo-estructura-color {
   background-color: var(--campo-fondo);
   border: 1px solid var(--campo-borde);
   border-radius: $form-campo-radio;
@@ -29,100 +13,53 @@ $form-campo-alto: 40px;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5em;
-  padding: calc(map-get($espaciado, '1') - 1px) map-get($espaciado, '2');
+  padding: calc(map.get($espaciado, '1') - 1px) map.get($espaciado, '2');
   width: 100%;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
+
   @include ancho-lectura;
-  // estados
+
   &:disabled {
     background-color: var(--campo-deshabilitado-fondo);
     border-color: var(--campo-deshabilitado-borde);
     color: var(--campo-deshabilitado-color);
   }
+
   &:not(:disabled) {
     @include transicion;
   }
+
   &:not(:disabled):hover {
     background-color: var(--campo-cursor-fondo);
     border-color: var(--campo-cursor-borde);
   }
+
   &:not(:disabled):focus {
     background-color: var(--campo-enfoque-fondo);
     border-color: var(--campo-enfoque-borde);
     box-shadow: 0 0 8px var(--campo-enfoque-sombra);
     outline: none;
   }
-  
 }
 
-// placeholder
 ::placeholder {
-  font-style: italic;
-  color: var(--campo-ejemplo-color);
-}
-::-webkit-input-placeholder {
-  font-style: italic;
-  color: var(--campo-ejemplo-color);
-}
-:-moz-placeholder {
   font-style: italic;
   color: var(--campo-ejemplo-color);
   opacity: 1;
 }
-:-ms-input-placeholder {
-  font-style: italic;
-  color: var(--campo-ejemplo-color);
-}
 
 :hover::placeholder {
-  color: var(--campo-ejemplo-cursor-color);
-}
-:hover::-webkit-input-placeholder {
-  color: var(--campo-ejemplo-cursor-color);
-}
-:hover:-moz-placeholder {
-  color: var(--campo-ejemplo-cursor-color);
-}
-:hover:-ms-input-placeholder {
   color: var(--campo-ejemplo-cursor-color);
 }
 
 :focus::placeholder {
   color: var(--campo-ejemplo-enfoque-color);
 }
-:focus::-webkit-input-placeholder {
-  color: var(--campo-ejemplo-enfoque-color);
-}
-:focus:-moz-placeholder {
-  color: var(--campo-ejemplo-enfoque-color);
-}
-:focus:-ms-input-placeholder {
-  color: var(--campo-ejemplo-enfoque-color);
-}
 
 :disabled::placeholder {
   color: var(--campo-ejemplo-deshabilitado-color);
 }
-:disabled::-webkit-input-placeholder {
-  color: var(--campo-ejemplo-deshabilitado-color);
-}
-:disabled:-moz-placeholder {
-  color: var(--campo-ejemplo-deshabilitado-color);
-}
-:disabled:-ms-input-placeholder {
-  color: var(--campo-ejemplo-deshabilitado-color);
-}
 
 :read-only::placeholder {
-  color: var(--campo-ejemplo-deshabilitado-color);
-}
-:read-only::-webkit-input-placeholder {
-  color: var(--campo-ejemplo-deshabilitado-color);
-}
-:read-only:-moz-placeholder {
-  color: var(--campo-ejemplo-deshabilitado-color);
-}
-:read-only:-ms-input-placeholder {
   color: var(--campo-ejemplo-deshabilitado-color);
 }

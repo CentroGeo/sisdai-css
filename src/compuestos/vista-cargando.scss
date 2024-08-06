@@ -1,7 +1,7 @@
-// https://www.felixsanz.dev/es/snippets/7-animaciones-de-carga-creadas-en-css#sound
+@use "sass:map";
 
 .vista-cargando {
-  background: rgba(0, 0, 0, 0.2);
+  background: var(--opacidad-ligero);
   z-index: 9;
   display: flex;
   justify-content: center;
@@ -9,10 +9,7 @@
 
   &.posicion-absoluta {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
   }
 
   > ul {
@@ -22,41 +19,50 @@
     padding: 0;
     height: 50px;
     list-style: none;
-    gap: 4px;
+    gap: map.get($espaciado, 'minimo');
 
     > li {
-      background: #fff;
+      background: var(--globo-color);
       width: 10px;
       height: 8px;
-      animation: vistaCargando 0ms -800ms linear infinite alternate;
+      animation: vista-cargando 0ms -800ms linear infinite alternate;
 
       &:nth-child(1) {
         animation-duration: 405ms;
       }
+
       &:nth-child(2) {
         animation-duration: 477ms;
       }
+
       &:nth-child(3) {
         animation-duration: 456ms;
       }
+
       &:nth-child(4) {
         animation-duration: 402ms;
       }
+
       &:nth-child(5) {
         animation-duration: 472ms;
       }
+
       &:nth-child(6) {
         animation-duration: 452ms;
       }
+
       &:nth-child(7) {
         animation-duration: 415ms;
       }
+
       &:nth-child(8) {
         animation-duration: 456ms;
       }
+
       &:nth-child(9) {
         animation-duration: 497ms;
       }
+
       &:nth-child(10) {
         animation-duration: 440ms;
       }

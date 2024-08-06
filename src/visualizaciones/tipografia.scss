@@ -1,17 +1,4 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 [class^='vis-'],
 [class*=' vis-'] {
@@ -21,33 +8,34 @@
 
 .vis-titulo-visualizacion {
   display: block;
-  margin: map-get($espaciado, '2') 0;
+  margin: map.get($espaciado, '2') 0;
   line-height: calc(1em * 1.25);
-  font-size: 1.125rem; // 18px
+  font-size: 1.125rem;
   font-weight: 600;
+
   @include mediaquery(esc) {
-    font-size: 1.5rem; // 24px
+    font-size: 1.5rem;
   }
 }
 
 .vis-fecha-actualizacion {
   display: block;
-  font-size: 0.75rem; // 12px
+  font-size: 0.75rem;
   line-height: calc(1em * 1.2);
   font-weight: 500;
-  margin: map-get($espaciado, '2') 0;
+  margin: map.get($espaciado, '2') 0;
 }
 
 .vis-instruccional {
   display: block;
-  font-size: 1rem; // 16px
+  font-size: 1rem;
   line-height: 1.25em;
   font-weight: 400;
-  margin: map-get($espaciado, '2') 0;
+  margin: map.get($espaciado, '2') 0;
 }
 
 .vis-valores-ejes {
-  font-size: 0.75rem; // 12px
+  font-size: 0.75rem;
   line-height: calc(1em * 1.2);
   font-weight: 400;
   fill: var(--texto-primario);
@@ -55,7 +43,7 @@
 }
 
 .vis-titulo-ejes {
-  font-size: 0.75rem; // 12px
+  font-size: 0.75rem;
   line-height: calc(1em * 1.25);
   font-weight: 600;
   fill: var(--texto-primario);
@@ -64,28 +52,29 @@
 
 .vis-titulo-leyenda {
   display: block;
-  font-size: 1rem; // 16px
+  font-size: 1rem;
   line-height: calc(1em * 1.25);
   font-weight: 600;
-  margin: map-get($espaciado, '2') 0;
+  margin: map.get($espaciado, '2') 0;
 }
 
 .vis-nomenclatura {
-  font-size: 1rem; // 16px
+  font-size: 1rem;
   line-height: calc(1em * 1.25);
   font-weight: 400;
   color: var(--texto-secundario);
   display: inline-flex;
-  margin: map-get($espaciado, '1') map-get($espaciado, '3') map-get($espaciado, '1') 0;
+  margin: map.get($espaciado, '1') map.get($espaciado, '3') map.get($espaciado, '1') 0;
 
   .figura-variable {
-    width: 1.125rem; // 18px
-    height: 1.125rem; // 18px
-    background-color: #66A5FE;
-    border: 1px solid var(--borde);
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: var(--texto-acento);
+    border: 1px solid var(--borde-neutro);
     border-radius: 50%;
     display: inline-flex;
-    margin-right: map-get($espaciado, 'minimo');
+    margin-right: map.get($espaciado, 'minimo');
+
     &.disabled {
       background: var(--campo-deshabilitado-fondo);
       border: 1px solid var(--campo-deshabilitado-color);

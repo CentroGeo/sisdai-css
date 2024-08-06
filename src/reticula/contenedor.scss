@@ -1,23 +1,11 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .contenedor {
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
   .ancho-fijo,
   .ancho-minimo,
   .ancho-lectura {
@@ -25,40 +13,46 @@
     margin-left: auto;
     margin-right: auto;
   }
+
   @each $dispositivo, $map in $contenedores {
     @include mediaquery($dispositivo) {
-      padding-left: map-get($map, 'margen-interior');
-      padding-right: map-get($map, 'margen-interior');
+      padding-left: map.get($map, 'margen-interior');
+      padding-right: map.get($map, 'margen-interior');
+
       .ancho-fijo,
       &.ancho-fijo {
-        max-width: map-get($map, 'ancho-maximo');
+        max-width: map.get($map, 'ancho-maximo');
       }
+
       .ancho-minimo,
       &.ancho-minimo {
-        max-width: map-get($map, 'ancho-minimo');
+        max-width: map.get($map, 'ancho-minimo');
       }
+
       .ancho-lectura,
       &.ancho-lectura {
-        max-width: map-get($map, 'ancho-lectura');
-        padding-left: map-get($map, 'margen-interior-lectura');
-        padding-right: map-get($map, 'margen-interior-lectura');
+        max-width: map.get($map, 'ancho-lectura');
+        padding-left: map.get($map, 'margen-interior-lectura');
+        padding-right: map.get($map, 'margen-interior-lectura');
       }
     }
   }
-  .contenedor { // elimina padding en contenedores anidados
+
+  .contenedor {
     padding-left: 0;
     padding-right: 0;
   }
   
-  // alineacion
   .alineacion-cetrada {
     margin-left: auto;
     margin-right: auto;
   }
+
   .alineacion-derecha {
     margin-left: auto;
     margin-right: 0;
   }
+
   .alineacion-izquierda {
     margin-left: 0;
     margin-right: auto;

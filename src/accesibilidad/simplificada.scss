@@ -1,27 +1,13 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-// se oculta normalmente
 .a11y-simplificada-mostrar-inline {
   display: none;
 }
+
 .a11y-simplificada-mostrar-bloque {
   display: none;
 }
 
-// se oculta normalmente + variacion que le agrega la posibilidad de que siempre se pueda leer
 .a11y-simplificada-leer-mostrar-inline {  
   display: inline-flex;
   visibility: hidden;
@@ -48,20 +34,22 @@
   }
 
   .a11y-simplificada-formato-hipervinculo,
-  .boton:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar),
-  button:not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.menu-flotante-boton):not(.colapsable-boton):not(.menu-lateral-boton):not(.boton-pictograma):not(.boton-alternar) {
-    @extend .hipervinculo;
+  .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+  button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) {
+    @include hipervinculo-estructura-color-principal;
+
     background-color: transparent !important;
     box-shadow: none !important;
+    
     &:not(:last-child) {
-      margin-right: map-get($espaciado, '1');
+      margin-right: map.get($espaciado, '1');
     }
   }
 
   video,
-  picture:not(.nav-logo):not(.a11y-simplificada-mantener-imagen),
-  img:not(.nav-logo):not(.a11y-simplificada-mantener-imagen),
-  svg:not(.nav-logo):not(.a11y-simplificada-mantener-imagen) {
+  picture:not(.nav-logo, .a11y-simplificada-mantener-imagen),
+  img:not(.nav-logo, .a11y-simplificada-mantener-imagen),
+  svg:not(.nav-logo, .a11y-simplificada-mantener-imagen) {
     display: none !important;
   }
 
@@ -73,13 +61,17 @@
 
   .portada {
     height: auto;
+    
     .portada-imagen {
       display: none;
     }
+    
     .portada-degradado {
       background: transparent;
+    
       .portada-cuerpo {
-        margin-top: 0px;
+        margin-top: 0;
+        
         > * {
           color: var(--texto-primario);
         }
@@ -91,9 +83,11 @@
     .tarjeta-imagen {
       display: none;
     }
+    
     .tarjeta-cuerpo {
       background: var(--tarjeta-contenido-simplificada-fondo);
       color: var(--tarjeta-contenido-simplificada-color);
+    
       p,
       .tarjeta-titulo, 
       .tarjeta-etiqueta {
@@ -103,12 +97,13 @@
   }
 
   .tarjeta-horizontal {
-    @media screen and (min-width: calc(map-get($breakpoints, 'esc'))) {
+    @media screen and (min-width: map.get($breakpoints, 'esc')) {
       .tarjeta-cuerpo {
-        padding-left: map-get($espaciado, '3');
+        padding-left: map.get($espaciado, '3');
       }
+    
       .tarjeta-pie {
-        padding-left: map-get($espaciado, '3');
+        padding-left: map.get($espaciado, '3');
       }
     }
   }
@@ -119,30 +114,33 @@
     border: 1px solid var(--tarjeta-simplificada-borde);
     color: var(--tarjeta-simplificada-color);
     min-height: auto;
+    
     .tarjeta-degradado {
       background: none;
       margin: 0;
     }
+    
     .tarjeta-cuerpo {
       background: var(--tarjeta-simplificada-fondo);
       color: var(--tarjeta-simplificada-color);
-      > * {
-        color: var(--tarjeta-simplificada-color);
-      }
     }
+    
     &:hover,
     &:focus,
     &:focus-visible {
       box-shadow: none;
       background: var(--tarjeta-simplificada-cursor-fondo);
       border-color: var(--tarjeta-simplificada-cursor-borde);
+    
       .tarjeta-cuerpo {
         background: var(--tarjeta-simplificada-cursor-fondo);
+    
         > * {
           color: var(--tarjeta-simplificada-cursor-color);
         }
       }
     }
+    
     &:focus,
     &:focus-visible {
       background: var(--tarjeta-simplificada-enfoque-fondo);
@@ -150,8 +148,10 @@
       box-shadow: 
         inset 0 0 0 1px var(--tarjeta-simplificada-enfoque-contorno),
         0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
-      .tarjeta-cuerpo {
+    
+        .tarjeta-cuerpo {
         background: var(--tarjeta-simplificada-enfoque-fondo);
+    
         > * {
           color: var(--tarjeta-simplificada-enfoque-color);
         }
@@ -170,9 +170,9 @@
   .a11y-simplificada-contenedor {
     @each $dispositivo, $map in $contenedores {
       @include mediaquery($dispositivo) {
-        max-width: map-get($map, 'ancho-lectura');
-        padding-left: map-get($map, 'margen-interior-lectura');
-        padding-right: map-get($map, 'margen-interior-lectura');
+        max-width: map.get($map, 'ancho-lectura');
+        padding-left: map.get($map, 'margen-interior-lectura');
+        padding-right: map.get($map, 'margen-interior-lectura');
 
         > .flex > [class^='columna-'],
         > .flex > [class*=' columna-'] {
@@ -182,7 +182,7 @@
 
         > .grid > [class^='columna-'],
         > .grid > [class*=' columna-'] {
-          grid-column: span map-get($columnas, $dispositivo, 'columnas');
+          grid-column: span map.get($columnas, $dispositivo, 'columnas');
         }
       }
     }

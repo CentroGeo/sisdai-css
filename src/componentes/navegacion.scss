@@ -1,17 +1,4 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 #app {
   overflow: clip;
@@ -24,12 +11,12 @@
   display: block;
   position: relative;
   z-index: 9999;
-  padding-left: map-get($contenedores, 'mov', 'margen-interior');
-  padding-right: map-get($contenedores, 'mov', 'margen-interior');
+  padding-left: map.get($contenedores, 'mov', 'margen-interior');
+  padding-right: map.get($contenedores, 'mov', 'margen-interior');
   
   @include mediaquery('esc') {
-    padding-left: map-get($contenedores, 'esc', 'margen-interior');
-    padding-right: map-get($contenedores, 'esc', 'margen-interior');
+    padding-left: map.get($contenedores, 'esc', 'margen-interior');
+    padding-right: map.get($contenedores, 'esc', 'margen-interior');
   }
 
   &.navegacion-pegada {
@@ -37,9 +24,11 @@
     top: 0;
   }
 }
+
 .navegacion + .navegacion {
   z-index: 9998;
 }
+
 .navegacion + .navegacion + .navegacion {
   z-index: 9997;
 }
@@ -53,10 +42,10 @@
     background: var(--navegacion-primaria-seccion-fondo);
     color: var(--navegacion-primaria-seccion-color);
     font-size: 0.75rem;
-    padding: map-get($espaciado, 'minimo') map-get($contenedores, 'mov', 'margen-interior');
-    margin-left: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
-    margin-right: calc(map-get($contenedores, 'mov', 'margen-interior') * -1);
-    flex: 1 0 calc(100% - map-get($contenedores, 'mov', 'margen-interior') * 2);
+    padding: map.get($espaciado, 'minimo') map.get($contenedores, 'mov', 'margen-interior');
+    margin-left: calc(map.get($contenedores, 'mov', 'margen-interior') * -1);
+    margin-right: calc(map.get($contenedores, 'mov', 'margen-interior') * -1);
+    flex: 1 0 calc(100% - map.get($contenedores, 'mov', 'margen-interior') * 2);
 
     @include mediaquery('esc') {
       display: none;
@@ -80,8 +69,10 @@
   top: 46px;
   right: -320px;
   transition: right 0.3s ease-in-out;
+
   &.abierto {
     right: 0;
+
     &.submenu-abierto {
       right: -320px;
     }
@@ -92,12 +83,14 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
   li {
     margin: 0;
     padding: 0;
   }
+
   li:last-of-type .nav-boton {
-    margin-bottom: map-get($espaciado, '2');
+    margin-bottom: map.get($espaciado, '2');
   }
 }
 
@@ -113,6 +106,7 @@
   top: 0;
   right: -320px;
   transition: right 0.3s ease-in-out;
+
   &.abierto {
     right: 320px;
   }
@@ -121,22 +115,24 @@
 .navegacion.navegacion-extendida {
   display: flex;
   align-items: center;
-  padding-left: map-get($contenedores, 'mov', 'margen-interior');
-  padding-right: map-get($contenedores, 'mov', 'margen-interior');
+  padding-left: map.get($contenedores, 'mov', 'margen-interior');
+  padding-right: map.get($contenedores, 'mov', 'margen-interior');
   
   @include mediaquery('esc') {
-    padding-left: map-get($contenedores, 'esc', 'margen-interior');
-    padding-right: map-get($contenedores, 'esc', 'margen-interior');
+    padding-left: map.get($contenedores, 'esc', 'margen-interior');
+    padding-right: map.get($contenedores, 'esc', 'margen-interior');
   }
   
   .nav-contenedor-identidad {
     display: flex;
     align-items: center;
+
     .nav-boton-menu,
     .nav-informacion {
       display: none;
     }
   }
+
   .nav-menu-contenedor {
     background-color: transparent;
     box-shadow: none;
@@ -151,28 +147,35 @@
     max-width: inherit;
     right: 0;
     top: 0;
+
     .nav-menu-complementario {
       padding-left: 16px;
     }
+
     .nav-menu-principal {
       flex: 1;
       display: flex;
       justify-content: flex-end;
     }
+
     &.abierto.submenu-abierto {
       right: 0;
     }
   }
+
   .nav-menu {
     display: flex;
     align-items: center;
+
     li {
       position: relative;
     }
+
     li:last-of-type .nav-boton {
       margin-bottom: 0;
     }
   }
+
   .nav-submenu {
     overflow: clip;
     opacity: 0;
@@ -181,9 +184,11 @@
     left: inherit;
     right: 0;
     width: inherit;
+
     .nav-hipervinculo {
       display: block;
     }
+
     &.abierto {
       right: 0;
       opacity: 1;

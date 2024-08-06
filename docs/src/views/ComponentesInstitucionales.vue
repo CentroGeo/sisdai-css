@@ -22,7 +22,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         La estructura y los enlaces que se utilizan actualmente están definidos en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <nav class="navegacion navegacion-gobmx" aria-label="Menú Gobierno de México">
+    <nav class="navegacion navegacion-extendida navegacion-gobmx" aria-label="Menú Gobierno de México">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -33,11 +33,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             height="38" 
           />
         </a>
-        <button class="nav-boton-menu" aria-label="menu gobierno"> <!-- alternar la clase abierto -->
+        <button class="nav-boton-menu" aria-label="menu gobierno">
           <span class="nav-icono-menu"></span>
         </button>
       </div>
-      <div class="nav-menu-contenedor"> <!-- alternar la clase abierto -->
+      <div class="nav-menu-contenedor">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li>
@@ -52,7 +52,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         :tiene_ejemplo='false'
         tipo='HTML'
         codigo='
-        <nav class="navegacion navegacion-gobmx" aria-label="Menú Gobierno de México">
+        <nav class="navegacion navegacion-extendida navegacion-gobmx" aria-label="Menú Gobierno de México">
           <div class="nav-contenedor-identidad">
             <a href="#" class="nav-hiperviculo-logo">
               <img 
@@ -88,7 +88,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Incluye clases y estructuras pertinentes que se han actualizado en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <nav class="navegacion" aria-label="Menú principal">
+    <nav class="navegacion navegacion-extendida" aria-label="Menú principal">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -99,30 +99,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             height="38" 
           />
         </a>
-        <button class="nav-boton-menu" aria-label="menu-principal"> <!-- alternar la clase abierto -->
+        <button class="nav-boton-menu" aria-label="menu-principal">
           <span class="nav-icono-menu"></span>
         </button>
         <div class="nav-informacion">Nombre de la sección actual</div>
       </div>
-      <div class="nav-menu-contenedor"> <!-- alternar la clase abierto -->
-        <div class="nav-menu-complementario">
-          <a href="#" class="nav-hipervinculo">Menú complementario</a>
-        </div>
+      <div class="nav-menu-contenedor">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li>
-              <a href="#" class="nav-hipervinculo">Menú</a>
-            </li>
-            <li>
-              <button class="nav-boton-submenu">Menú con submenu</button>
-              <ul class="nav-submenu">
-                <li>
-                  <button class="nav-boton-regresar">Menú con submenu</button>
-                </li>
-                <li>
-                  <a href="#" class="nav-hipervinculo">Submenu</a>
-                </li>
-              </ul>
+              <a href="#" class="nav-hipervinculo">Enlace</a>
             </li>
           </ul>
         </div>
@@ -133,7 +119,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         :tiene_ejemplo='false'
         tipo='HTML'
         codigo='
-        <nav class="navegacion navegacion-conahcyt" aria-label="Menú principal">
+        <nav class="navegacion navegacion-extendida navegacion-conahcyt" aria-label="Menú principal">
           <div class="nav-contenedor-identidad">
             <a href="#" class="nav-hiperviculo-logo">
               <img 
@@ -150,24 +136,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <div class="nav-informacion">Nombre de la sección actual</div>
           </div>
           <div class="nav-menu-contenedor"> <!-- alternar la clase abierto -->
-            <div class="nav-menu-complementario">
-              <a href="#" class="nav-hipervinculo">Menú complementario</a>
-            </div>
             <div class="nav-menu-principal">
               <ul class="nav-menu">
                 <li>
-                  <a href="#" class="nav-hipervinculo">Menú</a>
-                </li>
-                <li>
-                  <button class="nav-boton-submenu">Menú con submenu</button>
-                  <ul class="nav-submenu">
-                    <li>
-                      <button class="nav-boton-regresar">Menú con submenu</button>
-                    </li>
-                    <li>
-                      <a href="#" class="nav-hipervinculo">Submenu</a>
-                    </li>
-                  </ul>
+                  <a href="#" class="nav-hipervinculo">Enlace</a>
                 </li>
               </ul>
             </div>
@@ -185,7 +157,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <footer class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
+    <aside class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
       <div class="flex flex-wrap">
         <div class="columna-8 columna-4-esc">
           <img src="https://cdn.conacyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México" width="200px" height="60px" />
@@ -196,7 +168,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <p>
             Parrafo de texto simple con 
-            <a href="#">
+            <a href="#" class="hipervinculo-gobmx">
               Enlace
             </a>
           </p>
@@ -207,7 +179,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <ul>
             <li>
-              <a href="#">
+              <a href="#" class="hipervinculo-gobmx">
                 Hipervínculo de Gobierno
               </a>
             </li>
@@ -219,13 +191,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <ul class="piepagina-social">
             <li>
-              <a href="#">
+              <a href="#" class="hipervinculo-gobmx">
                 <span class="pictograma-social-facebook" aria-hidden="true"></span>
                 <span class="a11y-solo-lectura">feisbuk</span>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="#" class="hipervinculo-gobmx">
                 <span class="pictograma-social-x" aria-hidden="true"></span>
                 <span class="a11y-solo-lectura">x.</span>
               </a>
@@ -233,13 +205,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </ul>
         </div>
       </div>
-    </footer>
+    </aside>
     <div class="contenedor ancho-lectura m-y-1">
       <EjemploCodigo
         :tiene_ejemplo='false'
         tipo='HTML'
         codigo='
-        <footer class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
+        <aside class="contenedor piepagina-gobmx" aria-label="Gobierno de México">
           <div class="flex flex-wrap">
             
             <div class="columna-8 columna-4-esc">
@@ -257,7 +229,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <p>
                 Parrafo de texto simple con 
-                <a ... >
+                <a ... class="hipervinculo-gobmx" >
                   Enlace
                 </a>
               </p>
@@ -269,7 +241,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <ul>
                 <li>
-                  <a ... >
+                  <a ... class="hipervinculo-gobmx" >
                     Hipervínculo de Gobierno
                   </a>
                 </li>
@@ -282,12 +254,12 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <ul class="piepagina-social">
                 <li>
-                  <a ... >
+                  <a ... class="hipervinculo-gobmx" >
                     <span class="pictograma-social-facebook" ... />
                   </a>
                 </li>
                 <li>
-                  <a ... >
+                  <a ... class="hipervinculo-gobmx" >
                     <span class="pictograma-social-x" ... />
                   </a>
                 </li>
@@ -295,7 +267,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             </div>
 
           </div>
-        </footer>
+        </aside>
         '
       />
     </div>
@@ -307,7 +279,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Las clases y la estructura necesarias están actualizadas y documentadas en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <footer class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
+    <aside class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
       <div class="flex flex-wrap">
         <div class="columna-8 columna-8-esc">
           <img
@@ -318,7 +290,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           />
           <p>
             Parrafo de texto simple con 
-            <a href="#">
+            <a href="#" class="hipervinculo-conahcyt">
               Enlace
             </a>
           </p>
@@ -329,7 +301,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <ul>
             <li>
-              <a href="#">
+              <a href="#" class="hipervinculo-conahcyt">
                 Hipervínculo
               </a>
             </li>
@@ -341,35 +313,35 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <ul class="piepagina-social">
             <li>
-              <a href="#" aria-label="enlace ejeplo facebook">
+              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejeplo facebook">
                 <span class="pictograma-social-facebook" />
               </a>
             </li>
             <li>
-              <a href="#" aria-label="enlace ejemplo x">
+              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejemplo x">
                 <span class="pictograma-social-x" />
               </a>
             </li>
             <li>
-              <a href="#" aria-label="enlace ejemplo instagram">
+              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejemplo instagram">
                 <span class="pictograma-social-instagram" />
               </a>
             </li>
             <li>
-              <a href="#" aria-label="enlace ejemplo youtube">
+              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejemplo youtube">
                 <span class="pictograma-social-youtube" />
               </a>
             </li>
           </ul>
         </div>
       </div>
-    </footer>
+    </aside>
     <div class="contenedor ancho-lectura m-y-1">
       <EjemploCodigo
         :tiene_ejemplo='false'
         tipo='HTML'
         codigo='
-        <footer class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
+        <aside class="contenedor piepagina-conahcyt" aria-label="Conahcyt">
           <div class="flex flex-wrap">
             <div class="columna-8 columna-8-esc">
               <img
@@ -380,7 +352,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               />
               <p>
                 Parrafo de texto simple con 
-                <a href="#">
+                <a ... class="hipervinculo-conahcyt">
                   Enlace
                 </a>
               </p>
@@ -391,7 +363,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <ul>
                 <li>
-                  <a href="#">
+                  <a ... class="hipervinculo-conahcyt">
                     Hipervínculo
                   </a>
                 </li>
@@ -403,29 +375,29 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <ul class="piepagina-social">
                 <li>
-                  <a href="#">
+                  <a ... class="hipervinculo-conahcyt">
                     <span class="pictograma-social-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a ... class="hipervinculo-conahcyt">
                     <span class="pictograma-social-x" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a ... class="hipervinculo-conahcyt">
                     <span class="pictograma-social-instagram" />
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a ... class="hipervinculo-conahcyt">
                     <span class="pictograma-social-youtube" />
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-        </footer>
+        </aside>
         '
       />
     </div>

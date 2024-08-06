@@ -1,52 +1,42 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 fieldset {
   background-color: var(--campo-fondo);
   border: 1px solid var(--campo-borde);
   border-radius: $form-campo-radio;
-  padding: map-get($espaciado, '2');
-  margin-top: map-get($espaciado, '3');
-  margin-bottom: map-get($espaciado, '3');
+  padding: map.get($espaciado, '2');
+  margin-top: map.get($espaciado, '3');
+  margin-bottom: map.get($espaciado, '3');
 }
 
-// estilos formulario
 .formulario-horizontal {
   label {
-    margin-right: map-get($espaciado, 'minimo');
+    margin-right: map.get($espaciado, 'minimo');
   }
-  input:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='button']):not([type='submit']):not([type='reset']),
+
+  input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']),
   textarea,
   select {
     width: inherit;
+
     &:not(:last-child) {
-      margin-right: map-get($espaciado, '3');
+      margin-right: map.get($espaciado, '3');
     }
   }
 }
 
-// 
 .casillas-anidadas {
   list-style: none;
   padding: 0;
+
   li {
     margin: 0;
   }
+
   label {
     display: flex;
   }
+
   .casillas-subseleccion {
     list-style: none;
     padding: 0 0 0 calc(1.25rem + 4px);

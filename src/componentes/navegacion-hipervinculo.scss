@@ -1,38 +1,29 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-.nav-hipervinculo {
+@mixin navegacion-menu-elemento {
   background-color: var(--navegacion-primaria-fondo);
+  border-radius: 0;
   box-shadow: 0 0 0 0;
   color: var(--navegacion-primaria-color);
-  border-radius: 0;
+  display: block;
   font-size: 0.875rem;
   font-weight: 400;
   line-height: calc(1em * 1);
-  padding: map-get($espaciado, '2');
+  padding: map.get($espaciado, '2');
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
   &:visited {
     color: var(--navegacion-primaria-color);
   }
+
   &:hover,
   &:focus {
     background-color: var(--navegacion-primaria-cursor-fondo);
     color: var(--navegacion-primaria-color);
     text-decoration: none;
   }
+
   &:focus-visible {
     outline: none;
     background-color: var(--navegacion-primaria-enfoque-fondo);
@@ -40,6 +31,7 @@
       inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 
       0 0 8px var(--navegacion-primaria-enfoque-sombra);
   }
+
   &:active,
   &.active,
   &.nuxt-link-active,
@@ -47,10 +39,12 @@
   &.router-link-active,
   &.router-link-exact-active {
     box-shadow: inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde);
+
     &:hover,
     &:focus {
       background-color: var(--navegacion-primaria-cursor-fondo);
     }
+
     &:focus-visible {
       outline: none;
       background-color: var(--navegacion-primaria-enfoque-fondo);
@@ -60,11 +54,14 @@
         0 0 8px var(--navegacion-primaria-enfoque-sombra);
     }
   }
-  display: block;
+}
+
+.nav-hipervinculo {
+  @include navegacion-menu-elemento;
 
   .nav-logo {
-    margin-top: calc(map-get($espaciado, '2') * -1 + 4px);
-    margin-bottom: calc(map-get($espaciado, '2') * -1 + 4px);
+    margin-top: calc(map.get($espaciado, '2') * -1 + 4px);
+    margin-bottom: calc(map.get($espaciado, '2') * -1 + 4px);
   }
 }
 
@@ -78,9 +75,10 @@
 .nav-hiperviculo-logo {
   flex-shrink: 0;
   display: inline-flex;
-  padding: map-get($espaciado, 'minimo') 0;
+  padding: map.get($espaciado, 'minimo') 0;
   margin: 0;
   border-radius: 0;
+
   &:focus-visible {
     outline: none;
     background-color: transparent;

@@ -1,70 +1,81 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-.titulo-base {
+// base pa todos los titulos
+%titulo-base {
   font-weight: 500;
-  margin-top: map-get($espaciado, '3');
-  margin-bottom: map-get($espaciado, '3');
+  margin-top: map.get($espaciado, '3');
+  margin-bottom: map.get($espaciado, '3');
   line-height: calc(1em * 1.25);
 }
 
-h1,.h1 {
-  @extend .titulo-base;
-  font-size: 2rem; // 32px
+// titulo-elemento es como h6 
+%titulo-elemento {
+  @extend %titulo-base;
+
+  font-size: 1rem;
+
   @include mediaquery(esc) {
-    font-size: 2.25rem; // 36px
-    margin-top: map-get($espaciado, '8');
+    font-size: 1.125rem;
+  }
+}
+
+h1,.h1 {
+  @extend %titulo-base;
+
+  font-size: 2rem;
+
+  @include mediaquery(esc) {
+    font-size: 2.25rem;
+    margin-top: map.get($espaciado, '8');
   }
 }
 
 h2,.h2 {
-  @extend .titulo-base;
-  font-size: 1.75rem; // 28px
+  @extend %titulo-base;
+
+  font-size: 1.75rem;
+
   @include mediaquery(esc) {
-    font-size: 2rem; // 32px
+    font-size: 2rem;
   }
 }
 
 h3,.h3 {
-  @extend .titulo-base;
-  font-size: 1.5rem; // 24px
+  @extend %titulo-base;
+
+  font-size: 1.5rem;
+
   @include mediaquery(esc) {
-    font-size: 1.75rem; // 28px
+    font-size: 1.75rem;
   }
 }
 
 h4,.h4 {
-  @extend .titulo-base;
-  font-size: 1.25rem; // 20px
+  @extend %titulo-base;
+
+  font-size: 1.25rem;
+
   @include mediaquery(esc) {
-    font-size: 1.5rem; // 24px
+    font-size: 1.5rem;
   }
 }
 
 h5,.h5 {
-  @extend .titulo-base;
-  font-size: 1.125rem; //18px
+  @extend %titulo-base;
+
+  font-size: 1.125rem;
+
   @include mediaquery(esc) {
-    font-size: 1.25rem; // 20px
+    font-size: 1.25rem;
   }
 }
 
 h6,.h6 {
-  @extend .titulo-base;
-  font-size: 1rem; // 16px
+  @extend %titulo-base;
+
+  font-size: 1rem;
+
   @include mediaquery(esc) {
-    font-size: 1.125rem; //18px
+    font-size: 1.125rem;
   }
 }
