@@ -253,7 +253,7 @@ Situarlo antes de los auxiliares y los archivos de accesibilidad
 
 Para facilitar el mantenimiento de la biblioteca se debe prestar atención en las variables declaradas en `_variables.css`
 y hacer uso de ellas sobre todo en márgenes y colores; 
-las tipografías deben estar declaradas en unidades rem para que se actualicen conforme el tamaño general de la tipografía del sitio.
+las tipografías deben estar declaradas en unidades _rem_ para que se actualicen conforme el tamaño general de la tipografía del sitio.
 
 Además se deben utilizar en la medida de lo posible los `_mixins.scss` de mediaquery 
 o en su defecto utilizar las variables en el @media screen and (max-width: calc(map-get($breakpoints, 'esc')))
