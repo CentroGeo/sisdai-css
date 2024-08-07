@@ -22,7 +22,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         La estructura y los enlaces que se utilizan actualmente están definidos en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <nav class="navegacion navegacion-extendida navegacion-gobmx" aria-label="Menú Gobierno de México">
+    <nav class="navegacion-eg navegacion-extendida navegacion-gobmx" aria-label="Menú Gobierno de México">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -88,7 +88,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Incluye clases y estructuras pertinentes que se han actualizado en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <nav class="navegacion navegacion-extendida" aria-label="Menú principal">
+    <nav class="navegacion-eg navegacion-extendida" aria-label="Menú principal">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 

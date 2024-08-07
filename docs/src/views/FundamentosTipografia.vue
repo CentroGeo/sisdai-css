@@ -300,9 +300,10 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Etiquetas de texto en línea</h2>
       <p>
-        Es importante utilizar las etiquetas HTML de manera semántica. 
-        Si el uso previsto es por estilo y no por definición, es 
-        recomendable consultar con el equipo de diseño.
+        Es importante utilizar las etiquetas HTML de manera semántica para 
+        mejorar la legibilidad y usabilidad de los productos digitales, además 
+        tiene la ventaja de contar con sitios web más accesibles y más 
+        significativos para los motores de búsqueda.
       </p>
     </div>
     <EjemploCodigoTipografico 

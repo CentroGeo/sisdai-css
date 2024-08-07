@@ -7752,6 +7752,26 @@ dl.informacion-despliegue dd:not(:last-child) {
   top: 0;
 }
 
+.navegacion-eg {
+  background-color: var(--navegacion-primaria-fondo);
+  box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
+  font-size: 0.875rem;
+  display: block;
+  position: relative;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media screen and (min-width: 768px) {
+  .navegacion-eg {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+.navegacion-eg.navegacion-pegada {
+  position: sticky;
+  top: 0;
+}
+
 .navegacion + .navegacion {
   z-index: 9998;
 }

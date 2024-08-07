@@ -2,9 +2,17 @@
   <div class="contenedor ancho-lectura p-b-maximo">
     <h1 class="texto-centrado">sisdai-css</h1>
     <p>
-      Esta es la documentación de la biblioteca de estilos del Sistema de Diseño y Accesibilidad para la
-      Investigación (<a href="https://sisdai.conacyt.mx/" target="_blank">Sisdai</a>).
+      Esta es la documentación para personas desarrolladoras de la biblioteca 
+      de estilos del Sistema de Diseño y Accesibilidad para la Investigación  
+      (<a href="https://sisdai.conacyt.mx/" target="_blank">Sisdai</a>).
+      <br><br>
+      <i>sisdai-css</i> es una biblioteca de estilos de Sass que normaliza la forma 
+      en que se visualizan los elementos de HTML entre los distintos 
+      navegadores, estandariza estilos desde las etiquetas de HTML y 
+      agrega clases para ayudar a la accesibilidad digital.
     </p>
+
+
 
     <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-16">
