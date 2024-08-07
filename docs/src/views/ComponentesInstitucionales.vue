@@ -403,4 +403,27 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     </div>
 
   </div>
+  
 </template>
+
+<style scoped>
+  .navegacion-eg {
+    background-color: var(--navegacion-primaria-fondo);
+    box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
+    font-size: 0.875rem;
+    display: block;
+    position: relative;
+    padding-left: map.get($contenedores, 'mov', 'margen-interior');
+    padding-right: map.get($contenedores, 'mov', 'margen-interior');
+  
+    @include mediaquery('esc') {
+      padding-left: map.get($contenedores, 'esc', 'margen-interior');
+      padding-right: map.get($contenedores, 'esc', 'margen-interior');
+  }
+
+  &.navegacion-pegada {
+    position: sticky;
+    top: 0;
+  }
+}
+  </style>
