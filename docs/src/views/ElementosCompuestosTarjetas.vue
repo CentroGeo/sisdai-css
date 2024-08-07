@@ -234,7 +234,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 </p>
                 <p class="h2 borde-b">
                   Título
-                  <span class="pictograma-flecha-arriba-derecha"></span>
+                  <span class="pictograma-enlace-externo"></span>
                 </p>
                 <p class="h5">
                   Subtítulo
@@ -256,7 +256,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
               <p>Etiqueta</p>
-              <p class="h2 borde-b">Título del sitio externo <span class="pictograma-flecha-arriba-derecha"></span></p>
+              <p class="h2 borde-b">Título del sitio externo <span class="pictograma-enlace-externo"></span></p>
               <p class="h5">Texto secundario</p>
             </div>
           </div>
@@ -268,7 +268,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
               <p>Etiqueta</p>
-              <p class="h1">Título del sitio externo <span class="pictograma-flecha-arriba-derecha"></span></p>
+              <p class="h1">Título del sitio externo <span class="pictograma-enlace-externo"></span></p>
             </div>
           </div>
         </a>
