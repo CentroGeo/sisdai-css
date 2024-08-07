@@ -87,7 +87,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
       </p>
     </div>
     
-    <nav class="navegacion navegacion-extendida">
+    <nav class="navegacion navegacion-extendida nav-doc">
       <div class="nav-contenedor-identidad">
         <img 
           class="nav-logo m-r-1"
@@ -190,7 +190,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
     </div>
     <nav 
       aria-label="Navegación principal"
-      class="navegacion"
+      class="navegacion nav-doc"
       :class="{'navegacion-extendida': !esColapsable}"
       @mouseleave="ocultarSumbenu()"
     >
@@ -516,3 +516,9 @@ window.removeEventListener('resize', validarNavegacionColapsable)
     </div>
   </div>
 </template>
+
+<style scoped>
+  .nav-doc {
+    z-index:1;
+  }
+  </style>

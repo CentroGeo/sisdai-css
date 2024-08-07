@@ -22,7 +22,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         La estructura y los enlaces que se utilizan actualmente están definidos en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <nav class="navegacion-eg navegacion-extendida navegacion-gobmx" aria-label="Menú Gobierno de México">
+    <nav class="navegacion navegacion-extendida navegacion-gobmx nav-doc" aria-label="Menú Gobierno de México">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -88,7 +88,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Incluye clases y estructuras pertinentes que se han actualizado en la biblioteca citada para el año 2024. 
       </p>
     </div>
-    <nav class="navegacion-eg navegacion-extendida" aria-label="Menú principal">
+    <nav class="navegacion navegacion-extendida nav-doc" aria-label="Menú principal">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
           <img 
@@ -407,23 +407,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 </template>
 
 <style scoped>
-  .navegacion-eg {
-    background-color: var(--navegacion-primaria-fondo);
-    box-shadow: 0 4px 8px -4px var(--navegacion-primaria-sombra);
-    font-size: 0.875rem;
-    display: block;
-    position: relative;
-    padding-left: map.get($contenedores, 'mov', 'margen-interior');
-    padding-right: map.get($contenedores, 'mov', 'margen-interior');
-  
-    @include mediaquery('esc') {
-      padding-left: map.get($contenedores, 'esc', 'margen-interior');
-      padding-right: map.get($contenedores, 'esc', 'margen-interior');
+  .nav-doc {
+    z-index:1;
   }
-
-  &.navegacion-pegada {
-    position: sticky;
-    top: 0;
-  }
-}
   </style>
