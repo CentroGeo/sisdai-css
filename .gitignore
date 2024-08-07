@@ -4,6 +4,9 @@
 
 /node_modules
 
+docs/src/assets/sisdai.css
+docs/src/assets/sisdai.css.map
+
 .sass-cache/
 *.sass.map
 *.scss.map
