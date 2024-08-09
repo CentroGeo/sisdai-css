@@ -10,8 +10,8 @@
 
 .a11y-simplificada-leer-mostrar-inline {  
   display: inline-flex;
-  visibility: hidden;
   width: 0;
+  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -25,8 +25,8 @@
   }
 
   .a11y-simplificada-leer-mostrar-inline {
-    visibility: visible;
     width: inherit;
+    white-space: normal;
   }
   
   .a11y-simplificada-ocultar {

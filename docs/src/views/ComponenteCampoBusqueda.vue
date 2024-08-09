@@ -25,25 +25,24 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         la consulta. Este componente es esencial para sitios con gran cantidad de información, lo cual facilita 
         el acceso y la navegación eficiente del contenido.  
       </p>
-      
+
       <EjemploCodigo
         tipo='HTML'
         codigo='
-        <div class="campo-busqueda">
+        <form class="campo-busqueda">
+          
+          <label for="idunicobusqueda" class="a11y-solo-lectura">Campo de búsqueda</label>
+          <input id="idunicobusqueda" type="text" class="campo-busqueda-entrada" placeholder="Campo de búsqueda" />
 
-          <input type="search" class="campo-busqueda-entrada" placeholder="Campo de búsqueda" />
-
-          <button class="boton-pictograma boton-sin-contenedor-secundario campo-busqueda-borrar">
+          <button class="boton-pictograma boton-sin-contenedor-secundario campo-busqueda-borrar" aria-label="Borrar">
             <span class="pictograma-cerrar" aria-hidden="true"></span>
-            <span class="a11y-solo-lectura">Limpiar campo de búsqueda</span>
           </button>
 
-          <button class="boton-primario boton-pictograma campo-busqueda-buscar">
+          <button class="boton-primario boton-pictograma campo-busqueda-buscar" aria-label="Buscar">
             <span class="pictograma-buscar" aria-hidden="true"></span>
-            <span class="a11y-solo-lectura">Buscar</span>
           </button>
 
-        </div>
+        </form>
         '
       />
 
