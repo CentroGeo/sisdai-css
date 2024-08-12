@@ -10,8 +10,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <p>
         Es importante que cuando las imágenes aporten información relevante para el 
         sitio incluyan el atributo <code>alt</code> (<code>alt="texto que describe la imagen"</code>);
-        sin embargo, si la imagen es ilustratova y no aporta contenido sustancial
+        sin embargo, si la imagen es ilustrativa y no aporta contenido sustancial
         este atributo puede dejarse vacio (<code>alt=""</code>).
+        Esto asegura que las personas usuarias que dependen de lectores de pantalla puedan
+        entender el contenido que la imagen representa.
       </p>
       <p>
         Con la configuración de mostrar solo texto, las imágenes no deben mostrarse para 
