@@ -70,9 +70,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         <dialog
           class="modal"
           ref="modalPredeterminado"
-          role="dialog"
           aria-labelledby="IDUNICOTITULOMODAL"
-          aria-modal="true"
         >
           <div class="modal-contenedor">
             
@@ -95,11 +93,11 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
             </div>
             
             <button 
+              aria-label="Cerrar Modal"
               class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" 
               type="button" 
             >
               <span class="pictograma-cerrar" aria-hidden="true"></span>
-              <span class="a11y-solo-lectura">Cerrar Modal.</span>
             </button>
             
           </div>
@@ -162,13 +160,11 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
     <dialog
       class="modal"
       ref="modalPredeterminado"
-      role="dialog"
-      aria-labelledby="titulopred"
-      aria-modal="true"
+      aria-labelledby="idunicomodaluno"
     >
       <div class="modal-contenedor">
         <div class="modal-cabecera">
-          <h1 id="titulopred" class="modal-titulo">
+          <h1 id="idunicomodaluno" class="modal-titulo">
             Modal predeterminado
           </h1>
         </div>
@@ -180,22 +176,19 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         <div class="modal-pie">
           <button type="button" class="boton-primario">Acción primaria</button>
         </div>
-        <button class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalPredeterminado">
+        <button aria-label="Cerrar Modal" class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalPredeterminado">
           <span class="pictograma-cerrar" aria-hidden="true"></span>
-          <span class="a11y-solo-lectura">Cerrar Modal.</span>
         </button>
       </div>
     </dialog>
     <dialog
       class="modal modal-grande"
       ref="modalGrande"
-      role="dialog"
-      aria-label="modal grande"
-      aria-modal="true"
+      aria-labelledby="idunicomodaldos"
     >
       <div class="modal-contenedor">
         <div class="modal-cabecera">
-          <h1 class="modal-titulo">
+          <h1 id="idunicomodaldos" class="modal-titulo">
             Modal grande
           </h1>
         </div>
@@ -230,9 +223,8 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           <button type="button" class="boton-primario">Aceptar</button>
           <button type="button" class="boton-secundario">Cancelar</button>
         </div>
-        <button class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalGrande">
+        <button aria-label="Cerrar Modal" class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalGrande">
           <span class="pictograma-cerrar" aria-hidden="true"></span>
-          <span class="a11y-solo-lectura">Cerrar Modal.</span>
         </button>
       </div>
     </dialog>

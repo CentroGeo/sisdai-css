@@ -33,7 +33,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             height="38" 
           />
         </a>
-        <button class="nav-boton-menu" aria-label="menu gobierno">
+        <button aria-label="Menu de Gobierno" class="nav-boton-menu" type="button">
           <span class="nav-icono-menu"></span>
         </button>
       </div>
@@ -63,7 +63,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 height="38" 
               />
             </a>
-            <button class="nav-boton-menu"> <!-- alternar la clase abierto -->
+            <button aria-label="Menu de gobierno" class="nav-boton-menu" type="button"> <!-- alternar la clase abierto -->
               <span class="nav-icono-menu"></span>
             </button>
           </div>
@@ -99,7 +99,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             height="38" 
           />
         </a>
-        <button class="nav-boton-menu" aria-label="menu-principal">
+        <button class="nav-boton-menu" aria-label="menu-principal" type="button">
           <span class="nav-icono-menu"></span>
         </button>
         <div class="nav-informacion">Nombre de la sección actual</div>
@@ -130,7 +130,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 height="38" 
               />
             </a>
-            <button class="nav-boton-menu"> <!-- alternar la clase abierto -->
+            <button aria-laabel="Menu" class="nav-boton-menu" type="button"> <!-- alternar la clase abierto -->
               <span class="nav-icono-menu"></span>
             </button>
             <div class="nav-informacion">Nombre de la sección actual</div>
@@ -191,15 +191,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <ul class="piepagina-social">
             <li>
-              <a href="#" class="hipervinculo-gobmx">
-                <span class="pictograma-social-facebook" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura">feisbuk</span>
+              <a aria-label="Facebook" href="#" class="hipervinculo-gobmx">
+                <span aria-hidden="true" class="pictograma-social-facebook" />
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-gobmx">
-                <span class="pictograma-social-x" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura">x.</span>
+              <a aria-label="X" href="#" class="hipervinculo-gobmx">
+                <span aria-hidden="true" class="pictograma-social-x" />
               </a>
             </li>
           </ul>
@@ -254,13 +252,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <ul class="piepagina-social">
                 <li>
-                  <a ... class="hipervinculo-gobmx" >
-                    <span class="pictograma-social-facebook" ... />
+                  <a aria-label="Facebook" href="#" class="hipervinculo-gobmx">
+                    <span aria-hidden="true" class="pictograma-social-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a ... class="hipervinculo-gobmx" >
-                    <span class="pictograma-social-x" ... />
+                  <a aria-label="X" href="#" class="hipervinculo-gobmx">
+                    <span aria-hidden="true" class="pictograma-social-x" />
                   </a>
                 </li>
               </ul>
@@ -313,23 +311,23 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           </p>
           <ul class="piepagina-social">
             <li>
-              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejeplo facebook">
-                <span class="pictograma-social-facebook" />
+              <a aria-label="Facebook" href="#" class="hipervinculo-conahcyt">
+                <span aria-hidden="true" class="pictograma-social-facebook" />
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejemplo x">
-                <span class="pictograma-social-x" />
+              <a aria-label="X" href="#" class="hipervinculo-conahcyt">
+                <span aria-hidden="true" class="pictograma-social-x" />
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejemplo instagram">
-                <span class="pictograma-social-instagram" />
+              <a aria-label="Instagram" href="#" class="hipervinculo-conahcyt">
+                <span aria-hidden="true" class="pictograma-social-instagram" />
               </a>
             </li>
             <li>
-              <a href="#" class="hipervinculo-conahcyt" aria-label="enlace ejemplo youtube">
-                <span class="pictograma-social-youtube" />
+              <a aria-label="Youtube" href="#" class="hipervinculo-conahcyt">
+                <span aria-hidden="true" class="pictograma-social-youtube" />
               </a>
             </li>
           </ul>
@@ -375,23 +373,23 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <ul class="piepagina-social">
                 <li>
-                  <a ... class="hipervinculo-conahcyt">
-                    <span class="pictograma-social-facebook" />
+                  <a aria-label="Facebook" href="#" class="hipervinculo-conahcyt">
+                    <span aria-hidden="true" class="pictograma-social-facebook" />
                   </a>
                 </li>
                 <li>
-                  <a ... class="hipervinculo-conahcyt">
-                    <span class="pictograma-social-x" />
+                  <a aria-label="X" href="#" class="hipervinculo-conahcyt">
+                    <span aria-hidden="true" class="pictograma-social-x" />
                   </a>
                 </li>
                 <li>
-                  <a ... class="hipervinculo-conahcyt">
-                    <span class="pictograma-social-instagram" />
+                  <a aria-label="Instagram" href="#" class="hipervinculo-conahcyt">
+                    <span aria-hidden="true" class="pictograma-social-instagram" />
                   </a>
                 </li>
                 <li>
-                  <a ... class="hipervinculo-conahcyt">
-                    <span class="pictograma-social-youtube" />
+                  <a aria-label="Youtube" href="#" class="hipervinculo-conahcyt">
+                    <span aria-hidden="true" class="pictograma-social-youtube" />
                   </a>
                 </li>
               </ul>

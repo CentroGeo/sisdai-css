@@ -118,9 +118,8 @@ window.removeEventListener('resize', validarNavegacionColapsable)
               </a>
             </li>
             <li>
-              <button class="nav-boton boton-primario">
+              <button aria-label="Buscar" class="nav-boton boton-primario" type="button">
                 <span class="pictograma-buscar" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura"> Buscar </span>
               </button>
             </li>
           </ul>
@@ -165,9 +164,8 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                   </a>
                 </li>
                 <li>
-                  <button class="nav-boton boton-primario">
+                  <button aria-label="Buscar" class="nav-boton boton-primario" type="button">
                     <span class="pictograma-buscar" aria-hidden="true"></span>
-                    <span class="a11y-solo-lectura"> Buscar </span>
                   </button>
                 </li>
               </ul>
@@ -212,6 +210,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
           aria-label="Navegación principal"
           aria-controls="navegacionprincipal"
           @click="abrirCerrarMenu()"
+          type="button"
         >
           <span class="nav-icono-menu" aria-hidden="true"></span>
         </button>
@@ -253,6 +252,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                 :aria-expanded="submenuAbierto"
                 @click="abrirCerrarSubmenu()"
                 @mouseover="mostrarSubmenu()"
+                type="button"
               >
                 Menú con submenu
               </button>
@@ -266,6 +266,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                   <button
                     class="nav-boton-regresar"
                     @click="regresarMenu()"
+                    type="button"
                   >
                     Submenu
                   </button>
@@ -283,12 +284,13 @@ window.removeEventListener('resize', validarNavegacionColapsable)
               </ul>
             </li>
             <li>
-              <button class="nav-boton boton-sin-contenedor-secundario" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()">nav boton</button>
+              <button class="nav-boton boton-sin-contenedor-secundario" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()" type="button">
+                nav boton
+              </button>
             </li>
             <li>
-              <button class="nav-boton boton-sin-contenedor-secundario" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()">
+              <button aria-label="Buscar" class="nav-boton boton-sin-contenedor-secundario" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()" type="button">
                 <span class="pictograma-buscar" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura"> Buscar </span>
               </button>
             </li>
           </ul>
@@ -407,6 +409,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                 aria-label="Navegación principal"
                 aria-controls="navegacionprincipal"
                 @click="abrirCerrarMenu()"
+                type="button"
               >
                 <span class="nav-icono-menu" aria-hidden="true"></span>
               </button>
@@ -455,6 +458,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                       :aria-expanded="submenuAbierto"
                       @click="abrirCerrarSubmenu()"
                       @mouseover="mostrarSubmenu()"
+                      type="button"
                     >
                       Menú con submenu
                     </button>
@@ -468,6 +472,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                         <button
                           class="nav-boton-regresar"
                           @click="regresarMenu()"
+                          type="button"
                         >
                           Submenu
                         </button>
@@ -494,17 +499,19 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                     <button class="nav-boton boton-sin-contenedor-secundario" 
                       @mouseover="ocultarSumbenu()" 
                       @click="cerrarMenuSubmenu()"
+                      type="button"
                     >
                       nav boton
                     </button>
                   </li>
                   <li>
                     <button class="nav-boton boton-sin-contenedor-secundario" 
+                      aria-label="Buscar"
                       @mouseover="ocultarSumbenu()" 
                       @click="cerrarMenuSubmenu()"
+                      type="button"
                     >
                       <span class="pictograma-buscar" aria-hidden="true"></span>
-                      <span class="a11y-solo-lectura"> Buscar </span>
                     </button>
                   </li>
                 </ul>

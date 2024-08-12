@@ -46,6 +46,7 @@ const estaAbierto = ref(true)
             aria-label="Abrir/Cerrar menu de enlaces"
             :aria-expanded="estaAbierto"
             @click="estaAbierto = !estaAbierto"
+            type="button"
           >
             <span 
               class="boton-flotante-pictograma-abierto pictograma-restar" 
@@ -64,15 +65,15 @@ const estaAbierto = ref(true)
           >
             <a href="#">
               Ir a Gestor de Mapas (Gema)
-              <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+              <span class="pictograma-enlace-externo m-l-1" aria-hidden="true"></span>
             </a>
             <a href="#" class="m-t-2">
               Ir a Sistema de Diseño y Accesibilidad para la Investigación (Sisdai)
-              <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+              <span class="pictograma-enlace-externo m-l-1" aria-hidden="true"></span>
             </a>
             <a href="#" class="m-t-2">
               Ir a Ecosistemas Nacionales Informáticos (ENI)
-              <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+              <span class="pictograma-enlace-externo m-l-1" aria-hidden="true"></span>
             </a>
           </menu>
         </div>
@@ -96,24 +97,24 @@ const estaAbierto = ref(true)
         <span class="menu-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>
       </button>
 
-      <menu 
+      <div 
         class="menu-flotante-contenedor"
         id="botonflotanteejemplo"
         :aria-hidden="!estaAbierto"
       >
         <a href="#">
           Ir a Gestor de Mapas (Gema)
-          <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+          <span class="pictograma-enlace-externo m-l-1" aria-hidden="true"></span>
         </a>
         <a href="#" class="m-t-2">
           Ir a Sistema de Diseño y Accesibilidad para la Investigación (Sisdai)
-          <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+          <span class="pictograma-enlace-externo m-l-1" aria-hidden="true"></span>
         </a>
         <a href="#" class="m-t-2">
           Ir a Ecosistemas Nacionales Informáticos (ENI)
-          <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
+          <span class="pictograma-enlace-externo m-l-1" aria-hidden="true"></span>
         </a>
-      </menu>
+      </div>
     </div>
     
   </div>

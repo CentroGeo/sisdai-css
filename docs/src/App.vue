@@ -153,9 +153,9 @@
   }
   const nombreTemaActual = computed(() => {
     const nombres = {
-      'clara':'Claro',
-      'oscura':'Oscuro',
-      'auto':'Automático'
+      'clara':'Clara',
+      'oscura':'Oscura',
+      'auto':'Automática'
     }
     return nombres[tema.value]
   })
@@ -214,7 +214,6 @@
 
 <template>
   <div>
-    <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
     <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
@@ -366,7 +365,7 @@
                 <img
                   class="nav-logo"
                   src="/gitlab-logo-500.png"
-                  alt=""
+                  alt="Repositorio de código sisdai-css "
                 />
                 v{{ pkg.version }}
               </a>
@@ -379,25 +378,38 @@
     <main role="main" id="principal">
       <RouterView />
     </main>
+
+    <aside>
+      <menu class="tmp-menu">
+        <button class="boton-primario" @click="toggleA11yTypography">
+          Cambio de fuente
+        </button>
+        <button class="boton-primario" @click="toggleA11yLink">
+          Enlaces subrayados
+        </button>
+        <button class="boton-primario" @click="toggleA11yView">
+          {{ isA11yView ? 'Vista predeterminada' : 'Mostrar solo texto'}}
+        </button>
+        <button class="boton-primario" @click="alternarTema">
+          Vista {{ nombreTemaActual }}
+        </button>
+        <button class="boton-primario" @click="alternarPerfil">
+          Perfil {{ perfil }}
+        </button>
+        <span class="pictograma-restar" aria-hidden="true" />
+        <button class="boton-primario" @click="downFontSize">
+          Reducir tipografía
+        </button>
+        <button class="boton-primario" @click="upFontSize">
+          Incrementar tipografía
+        </button>
+        <span class="pictograma-restar" aria-hidden="true" />
+        <button class="boton-secundario" @click="resetA11y">
+          Restablecer
+        </button>
+      </menu>
+    </aside>
     
-    <menu class="tmp-menu">
-      <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
-      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista predeterminada' : 'Vista simplificada'}}</button>
-      <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
-      <button class="boton-primario" @click="upFontSize">Incrementar fuente</button>
-      <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-      <button 
-        class="boton-primario" 
-        @click="alternarTema">
-        Tema {{ nombreTemaActual }}
-      </button>
-      <button
-        class="boton-primario" 
-        @click="alternarPerfil">
-        Perfil {{ perfil }}
-      </button>
-      <button class="boton-secundario" @click="resetA11y">Apagar</button>
-    </menu>
   </div>
 </template>
 

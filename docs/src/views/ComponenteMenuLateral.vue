@@ -17,6 +17,7 @@ const estaAbierto = ref(true)
             aria-controls="ejemplomenulateral" 
             :aria-expanded="estaAbierto"
             @click="estaAbierto = !estaAbierto"
+            type="button"
           >
             <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
           </button>
@@ -56,7 +57,7 @@ const estaAbierto = ref(true)
                   class="colapsable-boton" 
                   aria-controls="ejemplocolapsable1" 
                   aria-expanded="false" 
-                  aria-label="Abrir/Cerrar colapsable"
+                  type="button"
                 >
                   Colapsable cerrado
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
@@ -78,7 +79,7 @@ const estaAbierto = ref(true)
                   class="colapsable-boton" 
                   aria-controls="ejemplocolapsable2" 
                   aria-expanded="true" 
-                  aria-label="Abrir/Cerrar colapsable"
+                  type="button"
                 >
                   Colapsable abierto
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
@@ -99,7 +100,7 @@ const estaAbierto = ref(true)
                         class="colapsable-boton" 
                         aria-controls="ejemplocolapsable3" 
                         aria-expanded="true" 
-                        aria-label="Abrir/Cerrar colapsable"
+                        type="button"
                       >
                         Colapsable sub lista abierto
                         <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
@@ -204,7 +205,8 @@ const estaAbierto = ref(true)
                   class="menu-lateral-boton" 
                   aria-controls="ID-UNICO" 
                   aria-expanded="false" <- aqui se cambia a true (notas estado abierto)
-                  aria-label="Abrir/Cerrar navegación"
+                  aria-label="Navegacion secundaria"
+                  type="button"
                 >
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>
@@ -236,6 +238,7 @@ const estaAbierto = ref(true)
                   aria-controls="ID-UNICO-DOS" 
                   aria-expanded="true" 
                   aria-label="Navegacion secundaria"
+                  type="button"
                 >
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>
@@ -260,7 +263,7 @@ const estaAbierto = ref(true)
                         class="colapsable-boton" 
                         aria-controls="ID-UNICO-TRES" 
                         aria-expanded="false" 
-                        aria-label="Abrir/Cerrar colapsable"
+                        type="button"
                       >
                         Colapsable
                         <span aria-hidden="true" class="pictograma-angulo-derecho"></span>

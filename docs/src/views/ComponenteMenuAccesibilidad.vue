@@ -47,6 +47,7 @@ const estaAbierto = ref(true)
             aria-controls="menua11y"
             :aria-expanded="estaAbierto"
             @click="estaAbierto = !estaAbierto"
+            type="button"
           >
             <span class="pictograma-accesibilidad" aria-hidden="true"/>
           </button>
@@ -60,29 +61,29 @@ const estaAbierto = ref(true)
 
             <input id="a11y-tipografia" type="checkbox"/>
             <label for="a11y-tipografia">
-              <span class="pictograma-cambio-tipografia"></span>
+              <span aria-hidden="true" class="pictograma-cambio-tipografia"></span>
               Cambio de fuente
             </label>
 
             <input id="a11y-hipervinculos" type="checkbox"/>
             <label for="a11y-hipervinculos">
-              <span class="pictograma-enlace-subrayado"></span>
+              <span aria-hidden="true" class="pictograma-enlace-subrayado"></span>
               Enlaces subrayados
             </label>
 
             <input id="a11y-simplificada" type="checkbox"/>
             <label for="a11y-simplificada">
-              <span class="pictograma-vista-simplificada"></span>
+              <span aria-hidden="true" class="pictograma-vista-simplificada"></span>
               Mostrar solo texto
             </label>
 
             <input id="a11y-oscura" type="checkbox"/>
             <label for="a11y-oscura">
-              <span class="pictograma-contraste"></span>
+              <span aria-hidden="true" class="pictograma-contraste"></span>
               Vista Oscura
             </label>
             
-            <button class="boton-secundario boton-chico m-t-2">
+            <button class="boton-secundario boton-chico m-t-2" type="button">
               Restablecer
             </button>
           </menu>
@@ -141,25 +142,25 @@ const estaAbierto = ref(true)
         <p class="menu-flotante-titulo">Herramientas de accesibilidad</p>
         <input id="a11y-tipografia" type="checkbox"/>
         <label for="a11y-tipografia">
-          <span class="pictograma-cambio-tipografia"></span>
+          <span aria-hidden="true" class="pictograma-cambio-tipografia" />
           Cambio de fuente
         </label>
         <input id="a11y-hipervinculos" type="checkbox"/>
         <label for="a11y-hipervinculos">
-          <span class="pictograma-enlace-subrayado"></span>
+          <span aria-hidden="true" class="pictograma-enlace-subrayado" />
           Enlaces subrayados
         </label>
         <input id="a11y-simplificada" type="checkbox"/>
         <label for="a11y-simplificada">
-          <span class="pictograma-vista-simplificada"></span>
+          <span aria-hidden="true" class="pictograma-vista-simplificada" />
           Mostrar solo texto
         </label>
         <input id="a11y-oscura" type="checkbox"/>
         <label for="a11y-oscura">
-          <span class="pictograma-contraste"></span>
+          <span aria-hidden="true" class="pictograma-contraste" />
           Vista Oscura
         </label>
-        <button class="boton-secundario boton-chico m-t-2">
+        <button class="boton-secundario boton-chico m-t-2" type="button">
           Restablecer
         </button>
       </menu>
