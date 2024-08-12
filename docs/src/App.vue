@@ -247,7 +247,7 @@
         <a href="#" class="nav-hiperviculo-logo">
           <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
         </a>
-        <a href="https://sisdai.conahcyt.mx" target="_blank" rel="noopener noreferrer" class="nav-hipervinculo">IR A SISDAI</a>
+        <a href="https://sisdai.conahcyt.mx" target="_blank" rel="noopener noreferrer" class="nav-hipervinculo style-bold-link">IR A SISDAI</a>
 
         <button v-if="esColapsable" @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>
@@ -439,3 +439,9 @@
     background-color: #f005;
   }
 </style>
+
+<style scoped>
+  .style-bold-link {
+    font-weight: bold;
+  }
+  </style>

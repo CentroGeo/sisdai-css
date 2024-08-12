@@ -2,7 +2,7 @@
   <div class="contenedor ancho-lectura p-b-maximo">
     <h1 class="texto-centrado">sisdai-css</h1>
     <p>
-      Esta es la documentación para personas desarrolladoras de la biblioteca 
+      Ésta es la documentación para personas desarrolladoras de la biblioteca 
       de estilos del Sistema de Diseño y Accesibilidad para la Investigación  
       (<a href="https://sisdai.conacyt.mx/" target="_blank">Sisdai</a>).
       <br><br>
