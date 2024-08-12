@@ -365,9 +365,9 @@
                 <img
                   class="nav-logo"
                   src="/gitlab-logo-500.png"
-                  alt="Repositorio de código sisdai-css "
+                  :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
                 />
-                v{{ pkg.version }}
+                <span aria-hidden="true">v{{ pkg.version }}</span>
               </a>
             </li>
           </ul>
@@ -396,14 +396,12 @@
         <button class="boton-primario" @click="alternarPerfil">
           Perfil {{ perfil }}
         </button>
-        <span class="pictograma-restar" aria-hidden="true" />
         <button class="boton-primario" @click="downFontSize">
           Reducir tipografía
         </button>
         <button class="boton-primario" @click="upFontSize">
           Incrementar tipografía
         </button>
-        <span class="pictograma-restar" aria-hidden="true" />
         <button class="boton-secundario" @click="resetA11y">
           Restablecer
         </button>
