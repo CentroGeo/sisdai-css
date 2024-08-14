@@ -656,54 +656,113 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <h2 class="m-t-10">Estados</h2>
     <div class="flex">
     <div class="columna-8 m-t-3">
-    <EjemploCodigo
-      tipo='HTML'
-      codigo='
-        <label for="campo">
-          Etiqueta del campo
+      <form v-on:submit.prevent>
+        <label for="campo-confirmacion">
+          Nombre
           <span class="formulario-obligatoriedad">
             (Obligatorio)
           </span>
         </label>
         <input 
-          id="campo" 
+          id="campo-confirmacion" 
           class="campo-confirmacion"
           type="text" 
-          placeholder="Texto de ejemplo"
+          placeholder="Primer nombre y apellido. Ejemplo: Alfonso André"
+          value="Mariana González"
+          required
         />
         <p 
           class="formulario-ayuda 
           ayuda-confirmacion"
         >
-          Texto de ayuda.
+          Campo llenado correctamente.
         </p>
-      '
-    />
+      </form>
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+          <form v-on:submit.prevent>
+            <label for="campo-confirmacion">
+              Nombre completo
+              <span class="formulario-obligatoriedad">
+                (Obligatorio)
+              </span>
+            </label>
+            <input 
+              id="campo-confirmacion" 
+              class="campo-confirmacion"
+              type="text" 
+              placeholder="Primer nombre y apellido. Ejemplo: Alfonso André"
+              value="Mariana González"
+              required
+            />
+            <p 
+              class="formulario-ayuda 
+              ayuda-confirmacion"
+            >
+              Campo llenado correctamente.
+            </p>
+          </form>
+        '
+      />
     </div>
     <div class="columna-8 m-t-3">
-    <EjemploCodigo
-      tipo='HTML'
-      codigo='
-        <label for="campo">
-          Etiqueta del campo
+      <form v-on:submit.prevent>
+        <label for="campo-error">
+          Número de teléfono
           <span class="formulario-obligatoriedad">
             (Obligatorio)
           </span>
         </label>
         <input 
-          id="campo" 
+          id="campo-error" 
           class="campo-error"
-          type="text" 
-          placeholder="Texto de ejemplo"
+          type="tel" 
+          placeholder="12-3456-7890"
+          pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+          value="123"
+          required
         />
         <p 
           class="formulario-ayuda 
           ayuda-error"
         >
-          Texto de ayuda.
+          Campo llenado incorrectamente. Se esperan diez números separados con guión medio, en segmentos de dos, cuatro y cuatro. Por ejemplo 12-3456-7890
         </p>
-      '
-    />
+      </form>
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+          <form v-on:submit.prevent>
+            <label for="campo-error">
+              Número de teléfono
+              <span class="formulario-obligatoriedad">
+                (Obligatorio)
+              </span>
+            </label>
+            <input 
+              id="campo-error" 
+              class="campo-error"
+              type="tel" 
+              placeholder="12-3456-7890"
+              pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+              value="123"
+              required
+            />
+            <p 
+              class="formulario-ayuda 
+              ayuda-error"
+            >
+              Campo llenado incorrectamente. 
+              Se esperan diez números separados con guión medio, 
+              en segmentos de dos, cuatro y cuatro. 
+              Por ejemplo 12-3456-7890
+            </p>
+          </form>
+        '
+      />
     </div>
     </div>
 
