@@ -3,6 +3,8 @@
 .vscode
 
 /node_modules
+package-lock.json
+docs/package-lock.json
 
 docs/src/assets/sisdai.css.map
 
