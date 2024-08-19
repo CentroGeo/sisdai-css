@@ -1,0 +1,71 @@
+@use "sass:map";
+
+.colapsable {
+  position: relative;
+
+  .colapsable-boton {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+    font-weight: 500;
+    padding-top: map.get($espaciado, '1');
+    padding-bottom: map.get($espaciado, '1');
+    width: 100%;
+
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      padding: 0;
+      font-size: 1.25rem;
+
+      &::before {
+        transition: transform 0.27s ease;
+        transform: translateX(0) rotate(90deg);
+        transform-origin: 50% 50%;
+      }
+    }
+  }
+
+  .colapsable-contenedor {
+    cursor: default;
+    pointer-events: none;
+    position: relative;
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.27s ease;
+
+    > ul, 
+    > ol {
+      @include lista-estructura-plana;
+
+      > li {
+        > a {
+          display: block;
+          padding-top: map.get($espaciado, '1');
+          padding-bottom: map.get($espaciado, '1');
+        }
+      }
+    }
+  }
+  
+  &.abierto > {
+    .colapsable-boton {
+      .pictograma,
+      [class^='pictograma-'],
+      [class*=' pictograma-'] {
+        &::before {
+          transform: translateX(-1px) rotate(270deg);
+        }
+      }
+    }
+
+    .colapsable-contenedor {
+      cursor: inherit;
+      pointer-events: inherit;
+      opacity: 1;
+      height: auto;
+    }
+  }
+}

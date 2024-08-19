@@ -1,0 +1,33 @@
+@use "sass:map";
+
+.campo-busqueda {
+  display: flex;
+  position: relative;
+
+  .campo-busqueda-entrada {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: auto;
+    padding-right: calc(32px + map.get($espaciado, '2'));
+
+    &::-webkit-search-decoration,
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-results-button,
+    &::-webkit-search-results-decoration {
+      display: none;
+    }
+  }
+
+  .campo-busqueda-borrar {
+    position: absolute;
+    top: map.get($espaciado, 'minimo');
+    right: 56px;
+    margin: map.get($espaciado, '1');
+  }
+
+  .campo-busqueda-buscar {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: map.get($espaciado, '2');
+  }
+}

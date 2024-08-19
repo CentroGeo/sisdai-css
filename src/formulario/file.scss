@@ -1,0 +1,6 @@
+@use "sass:map";
+
+input[type='file'] {
+  height: $form-campo-alto;
+  padding-left: map.get($espaciado, '1');
+}

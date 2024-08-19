@@ -1,0 +1,27 @@
+@use "sass:map";
+
+img {
+  border-radius: map.get($borde-redondeado, '8');
+  max-width: 100%;
+}
+
+figure {
+  color: var(--texto-secundario);
+  margin: map.get($espaciado, '3') 0;
+  clear: both;
+  
+  img {
+    margin-bottom: map.get($espaciado, '1');
+  }
+  
+  img:not(:last-of-type) {
+    margin-right: map.get($espaciado, '1');
+  }
+  
+  figcaption {
+    margin-top: calc(map.get($espaciado, '1') * -1);
+    font-size: 0.875rem;
+    font-weight: 400;
+    clear: both;
+  }
+}

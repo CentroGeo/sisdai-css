@@ -1,226 +1,194 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
+.a11y-simplificada-mostrar-inline {
+  display: none;
+}
 
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+.a11y-simplificada-mostrar-bloque {
+  display: none;
+}
+
+.a11y-simplificada-leer-mostrar-inline {  
+  display: inline-flex;
+  width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
 
 .a11y-simplificada {
-  .a11y-simplificada-contenedor {
-    box-sizing: border-box;
+  .a11y-simplificada-mostrar-inline {
+    display: inline-flex;
+  }
+
+  .a11y-simplificada-mostrar-bloque {
     display: block;
-    margin: auto;
-    padding: 0;
-
-    @each $dispositivo,
-    $map in $a11y-simplificada-contenedores {
-      @include mediaquery($dispositivo) {
-
-        >[class^='columna-'],
-        >[class*=" columna-"] {
-          display: block;
-          max-width: map-get($contenedores, $dispositivo, 'ancho-lectura');
-          padding: map-get($map, 'margen-interior');
-          margin: map-get($map, 'margen-interior') auto;
-        }
-      }
-    }
   }
 
-  button:not(.hipervinculo-gobmx):not(.hipervinculo-conahcyt):not(.nav-boton):not(.nav-boton-menu):not(.nav-boton-submenu):not(.icono-boton-accesibilidad):not(.opcion-accesibilidad),
-  input[type=button],
-  input[type=submit],
-  input[type=reset],
-  [class^='boton'],
-  [class*=" boton"] {
-    @extend .hipervinculo;
+  .a11y-simplificada-leer-mostrar-inline {
+    width: inherit;
+    white-space: normal;
+  }
+  
+  .a11y-simplificada-ocultar {
+    display: none;
+  }
+
+  .a11y-simplificada-formato-hipervinculo,
+  .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+  button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) {
+    @include hipervinculo-estructura-color-principal;
+
     background-color: transparent !important;
+    box-shadow: none !important;
+    
     &:not(:last-child) {
-      margin-right: map-get($espaciado, '1');
+      margin-right: map.get($espaciado, '1');
     }
   }
 
-  ul,
-  ol,
-  .lista-avatar,
-  .lista-logo {
+  video,
+  picture:not(.nav-logo, .a11y-simplificada-mantener-imagen),
+  img:not(.nav-logo, .a11y-simplificada-mantener-imagen),
+  svg:not(.nav-logo, .a11y-simplificada-mantener-imagen) {
+    display: none !important;
+  }
 
-    .avatar,
-    .logo {
+  .video {
+    iframe {
       display: none;
     }
   }
 
-  img:not(.nav-logo),
-  svg:not(.nav-logo),
-  picture, 
-  video.portada {
-    display: none!important;
-  }
-
-  .contenedor-portada {
+  .portada {
     height: auto;
-
-
-    .degradado-negro-abajo {
+    
+    .portada-imagen {
+      display: none;
+    }
+    
+    .portada-degradado {
       background: transparent;
-
-      .contenido-abajo {
-        margin-top: 0px;
-        * {
-          color: var(--tipografia-color);
+    
+      .portada-cuerpo {
+        margin-top: 0;
+        
+        > * {
+          color: var(--texto-primario);
         }
-      }
-
-      .contenido-texto-degradado {
-        color: var(--hipervinculo-color) !important;
       }
     }
   }
 
   .tarjeta {
-    .contenido-html {
-      background: var(--tarjetas-contenido-simplificada-fondo);
-      color: var(--tarjetas--contenido-simplificada-color);
-      .parrafo-texto-alto {
-				color: var(--tarjetas--contenido-simplificada-color);
-			}
-      a, button {
-        text-decoration: none !important;
-      }
+    .tarjeta-imagen {
+      display: none;
     }
-    &-horizontal {
-      .contenido-html {
-        background: var(--tarjetas-contenido-simplificada-fondo);
-        color: var(--tarjetas--contenido-simplificada-color);
-        .parrafo-texto-alto {
-          color: var(--tarjetas--contenido-simplificada-color);
-        }
-        a, button {
-          text-decoration: none !important;
-        }
-      } 
+    
+    .tarjeta-cuerpo {
+      background: var(--tarjeta-contenido-simplificada-fondo);
+      color: var(--tarjeta-contenido-simplificada-color);
+    
+      p,
+      .tarjeta-titulo, 
+      .tarjeta-etiqueta {
+				color: var(--tarjeta-contenido-simplificada-color);
+			}
     }
   }
 
-  a.tarjeta-hipervinculo-externo {
-    min-height: 0px;
-    background-color: var(--tarjetas-simplificada-fondo);
-    color: var(--tarjetas-simplificada-color);
-    border: 1px solid var(--tarjetas-simplificada-borde);
-    text-decoration: none;
+  .tarjeta-horizontal {
+    @media screen and (min-width: map.get($breakpoints, 'esc')) {
+      .tarjeta-cuerpo {
+        padding-left: map.get($espaciado, '3');
+      }
+    
+      .tarjeta-pie {
+        padding-left: map.get($espaciado, '3');
+      }
+    }
+  }
 
-    .degradado-negro-abajo {
+  .tarjeta-hipervinculo-interno,
+  .tarjeta-hipervinculo-externo {
+    background: var(--tarjeta-simplificada-fondo);
+    border: 1px solid var(--tarjeta-simplificada-borde);
+    color: var(--tarjeta-simplificada-color);
+    min-height: auto;
+    
+    .tarjeta-degradado {
       background: none;
       margin: 0;
     }
-
-    .contenido-abajo {
-      color: var(--tarjetas-simplificada-color);
-
-      .parrafo-texto-alto {
-        color: var(--tarjetas-simplificada-color);
-      }
+    
+    .tarjeta-cuerpo {
+      background: var(--tarjeta-simplificada-fondo);
+      color: var(--tarjeta-simplificada-color);
     }
-
-    &:hover {
-      background: var(--tarjetas-simplificada-fondo-hover);
-      border: 1px solid var(--tarjetas-simplificada-borde-hover);
-      // text-decoration: underline;
-      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto {
-        color: var(--tarjetas-simplificada-color-hover);
-      }
-    }
-    &:focus {
-      background: var(--tarjeta-simplificada-fondo-focus);
-      border: 1px solid var(--tarjeta-simplificada-borde-focus);
-      box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
-      outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
-
-      .contenido-abajo, .contenido-abajo > .parrafo-texto-alto {
-        color: var(--tarjeta-simplificada-color-focus);
-      }
-    }
-
-  }
-
-  a.tarjeta-hipervinculo-interno {
-    border: 1px solid var(--tarjetas-simplificada-borde);
-
-    .contenido-abajo {
-      background-color: var(--tarjetas-simplificada-fondo);
-      color: var(--tarjetas-simplificada-color);
-
-      .parrafo-texto-alto {
-        color: var(--tarjetas-simplificada-color);
-      }
-    }
-
-    &:hover {
-      border: 1px solid var(--tarjetas-simplificada-borde-hover);
-
-      .contenido-abajo {
-        background: var(--tarjetas-simplificada-fondo-hover);
-        color: var(--tarjetas-simplificada-color-hover);
-
-        .parrafo-texto-alto {
-          color: var(--tarjetas-simplificada-color-hover);
+    
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      box-shadow: none;
+      background: var(--tarjeta-simplificada-cursor-fondo);
+      border-color: var(--tarjeta-simplificada-cursor-borde);
+    
+      .tarjeta-cuerpo {
+        background: var(--tarjeta-simplificada-cursor-fondo);
+    
+        > * {
+          color: var(--tarjeta-simplificada-cursor-color);
         }
       }
     }
-
-    &:focus {
-      border: 1px solid var(--tarjeta-simplificada-borde-focus);
-      outline: 1px solid var(--tarjeta-simplificada-contorno-focus);
-      box-shadow: 0 0 8px var(--tarjeta-simplificada-sombra-focus);
-
-      .contenido-abajo {
-        background: var(--tarjeta-simplificada-fondo-focus);
-        color: var(--tarjeta-simplificada-color-focus);
-
-        .parrafo-texto-alto {
-          color: var(--tarjeta-simplificada-color-focus);
+    
+    &:focus,
+    &:focus-visible {
+      background: var(--tarjeta-simplificada-enfoque-fondo);
+      border-color: var(--tarjeta-simplificada-enfoque-borde);
+      box-shadow: 
+        inset 0 0 0 1px var(--tarjeta-simplificada-enfoque-contorno),
+        0 0 8px var(--tarjeta-simplificada-enfoque-sombra);
+    
+        .tarjeta-cuerpo {
+        background: var(--tarjeta-simplificada-enfoque-fondo);
+    
+        > * {
+          color: var(--tarjeta-simplificada-enfoque-color);
         }
       }
     }
   }
 
-  // Ruptura de retículas flex. Columnas al 100% en vista simplificada
+  .flex.flex-columnas-100-al-simplificar {
+    > [class^='columna-'],
+    > [class*=' columna-'] {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
 
+  .a11y-simplificada-contenedor {
+    @each $dispositivo, $map in $contenedores {
+      @include mediaquery($dispositivo) {
+        max-width: map.get($map, 'ancho-lectura');
+        padding-left: map.get($map, 'margen-interior-lectura');
+        padding-right: map.get($map, 'margen-interior-lectura');
 
-  @each $dispositivo,
-  $configuracion in $columnas {
-    @include mediaquery($dispositivo) {
-      .flex.flex-columnas-100-al-simplificar {
-        margin-right: calc(map-get($configuracion, 'espaciado') * -.5);
-        margin-left: calc(map-get($configuracion, 'espaciado') * -.5);
+        > .flex > [class^='columna-'],
+        > .flex > [class*=' columna-'] {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
 
-        >[class^='columna-'],
-        >[class*=" columna-"] {
-          flex-basis: calc(100% - map-get($configuracion, 'espaciado'));
-          max-width: calc(100% - map-get($configuracion, 'espaciado'));
-          margin-left: map-get($configuracion, 'espaciado')*.5;
-          margin-right: map-get($configuracion, 'espaciado')*.5;
+        > .grid > [class^='columna-'],
+        > .grid > [class*=' columna-'] {
+          grid-column: span map.get($columnas, $dispositivo, 'columnas');
         }
       }
-
-    }
-  }
-  .contenedor-alto-fijo{
-    height: auto !important;
-    border-top: 1px solid transparent;
-    &:hover {
-      background-color: inherit; //TODO: definir el color
     }
   }
 
-
+  .texto-centrado {
+    text-align: left;
+  }
 }

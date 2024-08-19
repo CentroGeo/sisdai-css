@@ -1,0 +1,19 @@
+@use "sass:map";
+
+.lista-casilla {
+  li {
+    border-bottom: 1px solid var(--borde-secundario);
+    padding: calc(map.get($espaciado, '1') + map.get($espaciado, 'minimo')) 0;
+
+    [type='checkbox'] + label,
+    [type='radio'] + label{
+      @include transicion;
+
+      flex: 1 1;
+      display: block;
+      padding-top: map.get($espaciado, 'minimo');
+      padding-bottom: map.get($espaciado, 'minimo');
+      padding-left: calc(1.25rem + map.get($espaciado, '2') + 4px);
+    }
+  }
+}

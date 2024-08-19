@@ -1,0 +1,68 @@
+@use "sass:map";
+
+.indice-contenido {
+  @include mediaquery('mov') {
+    padding-left: map.get($contenedores, 'mov', 'margen-interior');
+    padding-right: map.get($contenedores, 'mov', 'margen-interior');
+  }
+
+  @include mediaquery('esc') {
+    position: sticky;
+    top: 150px;
+  }
+
+  .indice-contenido-titulo {
+    @extend %titulo-base;
+
+    font-size: 1.125rem;
+  }
+  
+  .indice-contenido-contenedor {
+    ul, ol {
+      @include lista-estructura-plana;
+    }
+    
+    a {
+      background: transparent;
+      display: block;
+      border-radius: 0;
+      color: var(--navegacion-secundaria-color);
+      font-weight: 400;
+      text-decoration: none;
+      padding: map.get($espaciado, '1') map.get($contenedores, 'mov', 'margen-interior');
+
+      @include mediaquery('esc') {
+        padding-left: map.get($contenedores, 'esc', 'margen-interior');
+        padding-right: map.get($contenedores, 'esc', 'margen-interior');
+      }
+
+      &:hover {
+        background: var(--navegacion-secundaria-cursor-fondo);
+        box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+        color: var(--navegacion-secundaria-cursor-color);
+        text-decoration: none;
+      }
+
+      &:active,
+      &:focus,
+      &.link-activo,
+      &.router-link-exact-active {
+        background: var(--navegacion-secundaria-activo-fondo);
+        box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
+        color: var(--navegacion-secundaria-activo-color);
+        text-decoration: none;
+        outline: none;
+      }
+
+      &:focus-visible {
+        background: var(--navegacion-secundaria-enfoque-fondo);
+        box-shadow: 
+          inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde),
+          0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+        color: var(--navegacion-secundaria-enfoque-color);
+        outline: none;
+        text-decoration: none;
+      }
+    }
+  }
+}

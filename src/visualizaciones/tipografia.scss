@@ -1,0 +1,83 @@
+@use "sass:map";
+
+[class^='vis-'],
+[class*=' vis-'] {
+  color: var(--texto-primario);
+  font-family: var(--tipografia-familia, 'sans-serif');
+}
+
+.vis-titulo-visualizacion {
+  display: block;
+  margin: map.get($espaciado, '2') 0;
+  line-height: calc(1em * 1.25);
+  font-size: 1.125rem;
+  font-weight: 600;
+
+  @include mediaquery(esc) {
+    font-size: 1.5rem;
+  }
+}
+
+.vis-fecha-actualizacion {
+  display: block;
+  font-size: 0.75rem;
+  line-height: calc(1em * 1.2);
+  font-weight: 500;
+  margin: map.get($espaciado, '2') 0;
+}
+
+.vis-instruccional {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.25em;
+  font-weight: 400;
+  margin: map.get($espaciado, '2') 0;
+}
+
+.vis-valores-ejes {
+  font-size: 0.75rem;
+  line-height: calc(1em * 1.2);
+  font-weight: 400;
+  fill: var(--texto-primario);
+  margin: 0;
+}
+
+.vis-titulo-ejes {
+  font-size: 0.75rem;
+  line-height: calc(1em * 1.25);
+  font-weight: 600;
+  fill: var(--texto-primario);
+  margin: 0;
+}
+
+.vis-titulo-leyenda {
+  display: block;
+  font-size: 1rem;
+  line-height: calc(1em * 1.25);
+  font-weight: 600;
+  margin: map.get($espaciado, '2') 0;
+}
+
+.vis-nomenclatura {
+  font-size: 1rem;
+  line-height: calc(1em * 1.25);
+  font-weight: 400;
+  color: var(--texto-secundario);
+  display: inline-flex;
+  margin: map.get($espaciado, '1') map.get($espaciado, '3') map.get($espaciado, '1') 0;
+
+  .figura-variable {
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: var(--texto-acento);
+    border: 1px solid var(--borde-neutro);
+    border-radius: 50%;
+    display: inline-flex;
+    margin-right: map.get($espaciado, 'minimo');
+
+    &.disabled {
+      background: var(--campo-deshabilitado-fondo);
+      border: 1px solid var(--campo-deshabilitado-color);
+    }
+  }
+}

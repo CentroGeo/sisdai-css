@@ -1,0 +1,9 @@
+input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']) {
+  @include campo-estructura-color;
+
+  height: $form-campo-alto;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-flex;
+}

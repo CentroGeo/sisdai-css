@@ -1,0 +1,27 @@
+@use "sass:map";
+
+.lista-avatar {
+  li {
+    padding: map.get($espaciado, '3') 0;
+    align-items: center;
+  }
+
+  li > a {
+    margin: calc(map.get($espaciado, '3') * -1) 0;
+    padding: map.get($espaciado, '3') 0;
+    align-items: center;
+  }
+
+  .lista-avatar-imagen {
+    border-radius: map.get($espaciado, '10');
+    height: map.get($espaciado, '10');
+    width: map.get($espaciado, '10');
+    margin: 0 map.get($espaciado, '3');
+    overflow: hidden;
+
+    img,
+    svg {
+      object-fit: cover;
+    }
+  }
+}

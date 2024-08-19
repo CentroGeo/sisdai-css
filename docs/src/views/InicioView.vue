@@ -1,19 +1,52 @@
 <template>
-  <div class="contenedor ancho-lectura">
-    <h1>sisdai-css</h1>
-    <p class="parrafo-texto-alto">
-      Esta es la documentación de la biblioteca de estilos del Sistema de Diseño y Accesibilidad para la
-      Investigación (<a href="https://sisdai.conacyt.mx/" target="_blank">Sisdai</a>).
+  <div class="contenedor ancho-lectura p-b-maximo">
+    <h1 class="texto-centrado">sisdai-css</h1>
+    <p>
+      Ésta es la documentación para personas desarrolladoras de la biblioteca 
+      de estilos del Sistema de Diseño y Accesibilidad para la Investigación  
+      (<a href="https://sisdai.conacyt.mx/" target="_blank">Sisdai</a>).
+      <br><br>
+      <i>sisdai-css</i> es una biblioteca de estilos de Sass que normaliza la forma 
+      en que se visualizan los elementos de HTML entre los distintos 
+      navegadores, estandariza estilos desde las etiquetas de HTML y 
+      agrega clases para ayudar a la accesibilidad digital.
     </p>
-    <p class="parrafo-texto-alto">
-      Se encuentra alojada de manera provisional dentro del proyecto local. Es decir sólo se puede acceder a ella
-      siguiendo las instrucciones de instalación de este proyecto.
-    </p>
-    <p class="parrafo-texto-alto">
-      <a href="https://github.com/salsa-community/sisdai-css" target="_blank" rel="noopener" class="nav-boton">
-        <span class="icono-social-github m-r-1"></span>
-        sisdai-css
-      </a>
-    </p>
+
+
+
+    <div class="flex flex-contenido-centrado m-y-5">
+      <div class="columna-16">
+        <a class="tarjeta tarjeta-hipervinculo-externo" href="https://codigo.conahcyt.mx/sisdai/sisdai-css" target="_blank" rel="noopener noreferrer">
+          <img class="tarjeta-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/gitlab.png" alt="" />
+          <div class="tarjeta-degradado">
+            <div class="tarjeta-cuerpo">
+              <p class="h4">Ir al repositorio sisdai-css <span class="pictograma-flecha-arriba-derecha"></span></p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+<!--      <div class="columna-8">-->
+<!--        <a class="tarjeta tarjeta-hipervinculo-externo" href="/como-empezar" target="_self" rel="noopener noreferrer">-->
+<!--          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/asha.jpg" alt="" />-->
+<!--          <div class="tarjeta-degradado">-->
+<!--            <div class="tarjeta-cuerpo">-->
+<!--              <p class="h4">¿Cómo empezar?</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      <div class="columna-8">-->
+<!--        <a class="tarjeta tarjeta-hipervinculo-externo" href="/como-colaborar" target="_self" rel="noopener noreferrer">-->
+<!--          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-1.jpg" alt="" />-->
+<!--          <div class="tarjeta-degradado">-->
+<!--            <div class="tarjeta-cuerpo">-->
+<!--              <p class="h4">¿Cómo colaborar?</p>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </a>-->
+<!--      </div>-->
+
+    </div>
   </div>
 </template>

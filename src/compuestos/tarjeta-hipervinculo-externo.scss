@@ -1,0 +1,72 @@
+@use "sass:map";
+
+.tarjeta-hipervinculo-externo {
+  @extend %tarjeta-hipervinculo;
+
+  position: relative;
+  min-height: 200px;
+  
+  img.tarjeta-imagen {
+    transform: scale(1.1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+
+    @include transicion;
+  }
+  
+  picture.tarjeta-imagen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+
+    @include transicion;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+  }
+
+  .tarjeta-degradado {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--tarjeta-externa-fondo-degradado);
+    display: flex;
+    align-items: stretch;
+    margin-top: map.get($espaciado, '6');
+  }
+  
+  .tarjeta-cuerpo {
+    margin-top: auto;
+    padding: map.get($espaciado, '3');
+    width: 100%;
+
+    > * {
+      color: var(--tarjeta-externa-color);
+      border-color: currentcolor;
+    }
+    
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      vertical-align: middle;
+    }
+  }
+
+  &:hover {
+    img.tarjeta-imagen {
+      transform: scale(1);
+    }
+
+    picture.tarjeta-imagen {
+      transform: scale(1);
+    }
+  }
+}

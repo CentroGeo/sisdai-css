@@ -1,0 +1,73 @@
+@use "sass:map";
+
+@mixin hipervinculo-estructura-color-principal {
+  background-color: transparent;
+  border: none;
+  border-radius: map.get($borde-redondeado, '4');
+  box-shadow: 0 0 2px var(--hipervinculo-sombra);
+  box-sizing: border-box;
+  color: var(--hipervinculo-color);
+  font-family: var(--tipografia-familia, 'sans-serif');
+  font-weight: 500;
+  line-height: inherit;
+  padding: 0;
+  text-decoration: none;
+  text-align: left;
+  display: inline;
+  vertical-align: baseline;
+  
+  &:disabled {
+    background-color: transparent;
+    color: var(--hipervinculo-deshabilitado-color);
+    box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
+  }
+
+  &:not(:disabled) {
+    @include transicion;
+    
+    cursor: pointer;
+  }
+  
+  &:visited {
+    color: var(--hipervinculo-visitado);
+  }
+  
+  &:hover {
+    background-color: transparent;
+    color: var(--hipervinculo-cursor-color);
+    text-decoration: underline;
+    box-shadow: none;
+  }
+  
+  &:focus-visible {
+    background-color: transparent;
+    color: var(--hipervinculo-enfoque-color);
+    outline: 1px dashed var(--hipervinculo-enfoque-sombra);
+    outline-offset: 4px;
+    box-shadow: none;
+  }
+
+  .pictograma,
+  [class^='pictograma-'],
+  [class*=' pictograma-'] {
+    display: inline;
+    vertical-align: sub;
+    padding: 0;
+  }
+}
+
+a,
+.hipervinculo {
+  @include hipervinculo-estructura-color-principal;
+}
+
+a[class^='m-'],
+a[class^='p-'],
+.hipervinculo[class^='m-'],
+.hipervinculo[class^='p-'],
+a[class*=' m-'],
+a[class*=' p-'],
+.hipervinculo[class*=' m-'],
+.hipervinculo[class*=' p-'] {
+  display: inline-block;
+}

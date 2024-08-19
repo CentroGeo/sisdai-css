@@ -1,0 +1,31 @@
+// lo utiliza la biblioteca de componentes para bloquear el scroll en el body
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.desbordado-x {
+  overflow-x: auto;
+}
+
+.desbordado-y {
+  overflow-y: auto;
+}
+
+.oculto {
+  display: none;
+}
+
+.no-visible {
+  visibility: hidden;
+}
+
+@each $dispositivo, $x in $breakpoints {
+  @include mediaquery($dispositivo) {
+    .oculto-#{$dispositivo} {
+      display: none;
+    }
+    .no-visible-#{$dispositivo} {
+      visibility: hidden;
+    }
+  }
+}

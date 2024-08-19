@@ -1,0 +1,223 @@
+
+@use "sass:map";
+
+@mixin navegacion-menu-lateral {
+  padding: map.get($espaciado, '1') map.get($espaciado, '3');
+  background-color: transparent;
+  border-radius: 0;
+  color: var(--navegacion-secundaria-color);
+  
+  &:hover {
+    background: var(--navegacion-secundaria-cursor-fondo);
+    box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+    color: var(--navegacion-secundaria-cursor-color);
+    text-decoration: none;
+  }
+
+  &:focus,
+  &:focus-visible,
+  &:active,
+  &.router-link-exact-active,
+  &.link-activo {
+    background: var(--navegacion-secundaria-activo-fondo);
+    box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
+    color: var(--navegacion-secundaria-activo-color);
+    text-decoration: none;
+    outline: none;
+  }
+  
+  &:focus-visible {
+    background: var(--navegacion-secundaria-enfoque-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde),
+      0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+    color: var(--navegacion-secundaria-enfoque-color);
+    outline: none;
+    text-decoration: none;
+  }
+}
+
+.menu-lateral {
+  position: sticky;
+  z-index: 999;
+
+  .menu-lateral-contenedor {
+    background: var(--navegacion-secundaria-fondo);
+    border-left: 1px solid transparent;
+    color: var(--navegacion-secundaria-color);
+    position: relative;
+    width: 100%;
+
+    a {
+      @include navegacion-menu-lateral;
+
+      font-weight: 400;
+      display: block;
+      text-decoration: none;
+    }
+
+    button {
+      @include navegacion-menu-lateral;
+    }
+
+    ul, 
+    ol {
+      @include lista-estructura-plana;
+  
+      li {
+        > a,
+        > button {
+          padding-left: map.get($espaciado, '3');
+        }
+  
+        ul li,
+        ol li {
+          > a,
+          > button {
+            padding-left: map.get($espaciado, '4');
+          }
+  
+          ul li,
+          ol li {
+            > a,
+            > button {
+              padding-left: map.get($espaciado, '5');
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .menu-lateral-boton {
+    background: var(--navegacion-secundaria-fondo);
+    border-radius: map.get($borde-redondeado, '20');
+    color: var(--navegacion-secundaria-color);
+    margin-left: map.get($espaciado, '2');
+    display: flex;
+    padding: 0;
+    z-index: 3;
+
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      align-self: flex-start;
+      font-size: 1.35em;
+      padding: map.get($espaciado, '3') map.get($espaciado, '1');
+      transition: transform 0.27s ease;
+    }
+
+    &:hover {
+      background: var(--navegacion-secundaria-cursor-fondo);
+      box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+      color: var(--navegacion-secundaria-cursor-color);
+    }
+
+    &:focus {
+      background: var(--navegacion-secundaria-enfoque-fondo);
+      box-shadow: 
+        inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde),
+        0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+      color: var(--navegacion-secundaria-enfoque-color);
+    }
+  }
+
+  @include mediaquery('mov') {
+    display: flex;
+    margin-top: map.get($espaciado, '5');
+    top: 15vh;
+    width: 55px;
+    transition: all 0.2s linear;
+
+    .menu-lateral-contenedor {
+      border-radius: 0 map.get($borde-redondeado, '20') map.get($borde-redondeado, '20') 0;
+      overflow: hidden;
+      margin-left: -40px;
+      padding: 0;
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      width: 100%;
+      height: 70vh;
+      overflow-y: auto;
+      transition: all 0.5s ease-in-out;
+    }
+    
+    &.abierto {
+      width: 80vw;
+
+      .menu-lateral-boton {
+        border-radius: map.get($borde-redondeado, '20') 0 0 map.get($borde-redondeado, '20');
+
+        .pictograma,
+        [class^='pictograma-'],
+        [class*=' pictograma-'] {
+          transform: rotate(180deg);
+        }
+      }
+
+      .menu-lateral-contenedor {
+        border-left-color: var(--navegacion-secundaria-borde);
+        visibility: visible;
+        margin-left: 0;
+        opacity: 1;
+        pointer-events: inherit;
+        padding-top: map.get($espaciado, '2');
+        padding-bottom: map.get($espaciado, '2');
+        box-shadow: 4px 8px 16px -4px var(--opacidad-ligero);
+      }
+    }
+  }
+
+  @include mediaquery('esc') {
+    display: block;
+    top: map.get($espaciado, '5');
+    width: 100%;
+    height: calc(100vh - 46px);
+    overflow-y: auto;
+
+    .menu-lateral-contenedor {
+      border-radius: 0;
+      padding-top: map.get($espaciado, '5');
+      padding-bottom: map.get($espaciado, '5');
+
+      ul, 
+      ol {
+        li {
+          > a,
+          > button {
+            padding-left: map.get($espaciado, '5');
+          }
+  
+          ol li,
+          ul li {
+            > a,
+            > button {
+              padding-left: map.get($espaciado, '6');
+            }
+  
+            ol li,
+            ul li {
+              > a,
+              > button {
+                padding-left: map.get($espaciado, '7');
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .menu-lateral-boton {
+      display: none;
+    }
+  }
+}
+
+.menu-lateral-fondo {
+  position: relative;
+
+  @include mediaquery('esc') {
+    background: var(--navegacion-secundaria-fondo);
+  }
+}

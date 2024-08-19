@@ -1,0 +1,90 @@
+@use "sass:map";
+
+@mixin navegacion-menu-elemento {
+  background-color: var(--navegacion-primaria-fondo);
+  border-radius: 0;
+  box-shadow: 0 0 0 0;
+  color: var(--navegacion-primaria-color);
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: calc(1em * 1);
+  padding: map.get($espaciado, '2');
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+  &:visited {
+    color: var(--navegacion-primaria-color);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--navegacion-primaria-cursor-fondo);
+    color: var(--navegacion-primaria-color);
+    text-decoration: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    background-color: var(--navegacion-primaria-enfoque-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 
+      0 0 8px var(--navegacion-primaria-enfoque-sombra);
+  }
+
+  &:active,
+  &.active,
+  &.nuxt-link-active,
+  &.nuxt-link-exact-active,
+  &.router-link-active,
+  &.router-link-exact-active {
+    box-shadow: inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde);
+
+    &:hover,
+    &:focus {
+      background-color: var(--navegacion-primaria-cursor-fondo);
+    }
+
+    &:focus-visible {
+      outline: none;
+      background-color: var(--navegacion-primaria-enfoque-fondo);
+      box-shadow: 
+        inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde),
+        inset 0 -4px 0 0 var(--navegacion-primaria-activo-borde),
+        0 0 8px var(--navegacion-primaria-enfoque-sombra);
+    }
+  }
+}
+
+.nav-hipervinculo {
+  @include navegacion-menu-elemento;
+
+  .nav-logo {
+    margin-top: calc(map.get($espaciado, '2') * -1 + 4px);
+    margin-bottom: calc(map.get($espaciado, '2') * -1 + 4px);
+  }
+}
+
+.navegacion.navegacion-extendida {
+  .nav-hipervinculo {
+    display: inline-flex;
+    white-space: nowrap;
+  }
+}
+
+.nav-hiperviculo-logo {
+  flex-shrink: 0;
+  display: inline-flex;
+  padding: map.get($espaciado, 'minimo') 0;
+  margin: 0;
+  border-radius: 0;
+
+  &:focus-visible {
+    outline: none;
+    background-color: transparent;
+    box-shadow: 
+      inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 
+      0 0 8px var(--navegacion-primaria-enfoque-sombra);
+  }
+}
+

@@ -1,0 +1,39 @@
+.texto-centrado {
+  text-align: center;
+}
+
+.texto-derecha {
+  text-align: right;
+}
+
+.texto-izquierda {
+  text-align: left;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+@each $id, $valor in $texto-tamanio {
+  .texto-tamanio-#{$id} {
+    font-size: $valor;
+    line-height: calc(1em * 1.5);
+  }
+}
+
+@each $dispositivo, $x in $breakpoints {
+  @include mediaquery($dispositivo) {
+    @each $id, $valor in $texto-tamanio {
+      .texto-tamanio-#{$id}-#{$dispositivo} {
+        font-size: $valor;
+        line-height: calc(1em * 1.25);
+      }
+    }
+  }
+}
+
+@each $nombre, $valor in $texto-color {
+  .texto-color-#{$nombre} {
+    color: $valor;
+  }
+}

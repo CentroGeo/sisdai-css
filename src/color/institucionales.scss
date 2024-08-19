@@ -1,0 +1,18 @@
+// colores institucionales no cambian ni por perfil ni por tema
+:root {
+  // colores conahcyt 2024
+  --color-conahcyt-4: #001C4A;
+  --color-conahcyt-3: #002663;
+  --color-conahcyt-2: #003384;
+  --color-conahcyt-1: #13AFF0;
+  --color-conahcyt-0: #FFF;
+  --color-conahcyt-degradado: linear-gradient(to bottom, #003384, #002663, #001C4A);
+
+  // colores gobierno de mexico 2024
+  --color-mx-5: #18302D;
+  --color-mx-4: #1F5D50;
+  --color-mx-3: #DFC9A1;
+  --color-mx-2: #BD9558;
+  --color-mx-1: #9E2148;
+  --color-mx-0: #FFF;
+}

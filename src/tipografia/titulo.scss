@@ -1,0 +1,81 @@
+@use "sass:map";
+
+// base pa todos los titulos
+%titulo-base {
+  font-weight: 500;
+  margin-top: map.get($espaciado, '3');
+  margin-bottom: map.get($espaciado, '3');
+  line-height: calc(1em * 1.25);
+}
+
+// titulo-elemento es como h6 
+%titulo-elemento {
+  @extend %titulo-base;
+
+  font-size: 1rem;
+
+  @include mediaquery(esc) {
+    font-size: 1.125rem;
+  }
+}
+
+h1,.h1 {
+  @extend %titulo-base;
+
+  font-size: 2rem;
+
+  @include mediaquery(esc) {
+    font-size: 2.25rem;
+    margin-top: map.get($espaciado, '8');
+  }
+}
+
+h2,.h2 {
+  @extend %titulo-base;
+
+  font-size: 1.75rem;
+
+  @include mediaquery(esc) {
+    font-size: 2rem;
+  }
+}
+
+h3,.h3 {
+  @extend %titulo-base;
+
+  font-size: 1.5rem;
+
+  @include mediaquery(esc) {
+    font-size: 1.75rem;
+  }
+}
+
+h4,.h4 {
+  @extend %titulo-base;
+
+  font-size: 1.25rem;
+
+  @include mediaquery(esc) {
+    font-size: 1.5rem;
+  }
+}
+
+h5,.h5 {
+  @extend %titulo-base;
+
+  font-size: 1.125rem;
+
+  @include mediaquery(esc) {
+    font-size: 1.25rem;
+  }
+}
+
+h6,.h6 {
+  @extend %titulo-base;
+
+  font-size: 1rem;
+
+  @include mediaquery(esc) {
+    font-size: 1.125rem;
+  }
+}

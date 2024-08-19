@@ -1,56 +1,22 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 details {
-  border-radius: 4px; // TODO: utilizar variable de bordes
-  margin-top: map-get($espaciado, '1');
-  padding: map-get($espaciado, '2');
+  border: 1px solid var(--borde-secundario);
+  border-radius: map.get($borde-redondeado, '8');
+  padding: map.get($espaciado, '3') map.get($espaciado, '3') 0;
+  display: block;
+
+  summary {
+    @extend %titulo-elemento;
+
+    cursor: pointer;
+    padding: map.get($espaciado, '3'); 
+    margin: calc(map.get($espaciado, '3') * -1) calc(map.get($espaciado, '3') * -1) 0; 
+  }
+
   &[open] {
-    background-color: var(--detalle-fondo);
-    summary::before {
-      content: "\69";
+    summary {
+      border-bottom: 1px solid var(--borde-secundario);
     }
   }
-}
-summary {
-  border-radius: 4px; // TODO: utilizar variable de bordes
-  font-size: 1.125em;
-  font-weight: 500;
-  line-height: 1.3em;
-  margin: calc( map-get($espaciado, '2') * -1);
-  padding: map-get($espaciado, '2');
-  list-style: none;
-  cursor: pointer;
-  &:hover,
-  &:active {
-    background-color: var(--detalle-fondo);
-    box-shadow: 0 0 0 transparent;
-  }
-  &:focus {
-    background-color: transparent;
-    box-shadow: 0 0 8px var(--detalle-focus-sombra);
-    border: 1px solid var(--borde-focus);
-    outline: none;
-  }
-  &::before {
-    display: inline-block;  
-    width: 24px;
-    font-family: "sisdai-iconos";
-    content: "\68";
-  }
-}
-details summary > * {
-  display: inline-block;
 }

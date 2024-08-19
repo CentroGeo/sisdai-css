@@ -1,0 +1,60 @@
+@use "sass:map";
+
+.contenedor {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  .ancho-fijo,
+  .ancho-minimo,
+  .ancho-lectura {
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @each $dispositivo, $map in $contenedores {
+    @include mediaquery($dispositivo) {
+      padding-left: map.get($map, 'margen-interior');
+      padding-right: map.get($map, 'margen-interior');
+
+      .ancho-fijo,
+      &.ancho-fijo {
+        max-width: map.get($map, 'ancho-maximo');
+      }
+
+      .ancho-minimo,
+      &.ancho-minimo {
+        max-width: map.get($map, 'ancho-minimo');
+      }
+
+      .ancho-lectura,
+      &.ancho-lectura {
+        max-width: map.get($map, 'ancho-lectura');
+        padding-left: map.get($map, 'margen-interior-lectura');
+        padding-right: map.get($map, 'margen-interior-lectura');
+      }
+    }
+  }
+
+  .contenedor {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .alineacion-cetrada {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .alineacion-derecha {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .alineacion-izquierda {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,11 @@
+@use "sass:map";
+
+p {
+  line-height: calc(1em * 1.5);
+  margin-top: map.get($espaciado, '3');
+  margin-bottom: map.get($espaciado, '3');
+}
+
+.parrafo-texto-alto {
+  font-size: 1.25rem;
+}

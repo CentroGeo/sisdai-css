@@ -1,0 +1,11 @@
+@use "sass:map";
+
+.boton-chico {
+  font-size: 0.875rem;
+  padding: map.get($espaciado, '1');
+}
+
+.boton-grande {
+  font-size: 1rem;
+  padding: map.get($espaciado, '3');
+}

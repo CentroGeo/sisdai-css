@@ -1,0 +1,18 @@
+@use "sass:map";
+
+.lista-accion {
+  li {
+    border-bottom: 1px solid var(--borde-secundario);
+    padding: map.get($espaciado, '2') 0;
+  }
+
+  .lista-accion-acciones {
+    display: flex;
+    align-items: center;
+    
+    button,
+    .boton {
+      margin-left: map.get($espaciado, 'minimo');
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use "sass:map";
+
+.tarjeta-horizontal {
+  @media screen and (min-width: calc(map.get($breakpoints, 'esc'))) {
+    flex-wrap: nowrap;
+    min-width: 480px;
+
+    .tarjeta-imagen {
+      height: 100%;
+      width: 240px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+    
+    .tarjeta-cuerpo {
+      padding-left: calc(240px + map.get($espaciado, '3'));
+    }
+
+    .tarjeta-pie {
+      padding-left: calc(240px + map.get($espaciado, '3'));
+    }
+  }
+}
+

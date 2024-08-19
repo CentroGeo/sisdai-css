@@ -1,0 +1,10 @@
+@use "sass:map";
+
+textarea {
+  @include campo-estructura-color;
+
+  padding: map.get($espaciado, '2');
+  min-height: 120px;
+  resize: none;
+  display: flex;
+}

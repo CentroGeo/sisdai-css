@@ -1,0 +1,19 @@
+@use "sass:map";
+
+.lista-pictograma {
+  li {
+    padding: map.get($espaciado, '3') 0;
+  }
+  
+  .lista-pictograma-imagen {
+    display: flex;
+    align-items: baseline;
+    margin: 0 map.get($espaciado, '3');
+
+    .pictograma,
+    [class^='pictograma-'],
+    [class*=' pictograma-'] {
+      padding: 0;
+    }
+  }
+}

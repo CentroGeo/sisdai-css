@@ -1,0 +1,6 @@
+.tarjeta-hipervinculo-interno {
+  @extend %tarjeta-hipervinculo;
+
+  background: var(--tarjeta-interna-fondo);
+  color: var(--tarjeta-interna-color);
+}

@@ -1,0 +1,41 @@
+@use "sass:map";
+
+.boton-alternar {
+  background-color: var(--fondo-acento);
+  border-radius: 10rem;
+  display: inline-flex;
+  padding: map.get($espaciado, 'minimo');
+  gap: map.get($espaciado, 'minimo');
+
+  [type='radio'] + label {
+    @include boton-estructura-principal;
+    @include boton-contenedor-primario;
+
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--campo-etiqueta-color);
+    border-radius: 10rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    padding: map.get($espaciado, '1') map.get($espaciado, '2');
+    margin: 0;
+  }
+
+  [type='radio'] + label::after,
+  [type='radio'] + label::before {
+    display: none;
+  }
+
+  [type='radio']:checked + label {
+    @include boton-contenedor-primario;
+  }
+
+  [type='radio']:disabled + label {
+    background-color: var(--boton-primario-deshabilitado-fondo);
+    box-shadow: inset 0 0 0 1px var(--boton-primario-deshabilitado-borde),
+      3px 3px 4px var(--boton-primario-deshabilitado-sombra); 
+    color: var(--boton-primario-deshabilitado-color);
+    pointer-events: none;
+    cursor: default;
+  }
+}

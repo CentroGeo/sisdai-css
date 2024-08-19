@@ -1,0 +1,45 @@
+.lista-compuesta {
+  @include lista-estructura-plana;
+
+  li {
+    display: flex;
+    width: 100%;
+  }
+
+  a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--estado-cursor); 
+    }
+  }
+
+  .lista-compuesta-titulo {
+    color: var(--texto-primario);
+    font-weight: 500;
+    margin: 0;
+  }
+
+  .lista-compuesta-texto-primario {
+    color: var(--texto-primario);
+    font-weight: 400;
+    margin: 0;
+  }
+
+  .lista-compuesta-texto-secundario {
+    color: var(--texto-secundario);
+    font-weight: 400;
+    margin: 0;
+  }
+}
+
+.lista-compuesta-cuerpo {
+  flex: 1 1;
+  display: block;
+
+  > :first-child {
+    margin: 0;
+  }
+}

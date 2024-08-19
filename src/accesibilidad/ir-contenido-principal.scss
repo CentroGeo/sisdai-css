@@ -1,0 +1,15 @@
+.ir-contenido-principal {
+  @include boton-estructura-principal;
+  @include boton-contenedor-primario;
+
+  position: absolute;
+  justify-content: center;
+  transform: translateY(-100%);
+  z-index: 99999;
+  width: 100%;
+  border-radius: 0;
+  
+  &:focus {
+    transform: translateY(0%);
+  }
+}

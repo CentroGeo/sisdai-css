@@ -1,0 +1,27 @@
+@use "sass:map";
+
+dl.informacion-despliegue {
+  position: fixed;
+  left: 0;
+  border-radius: map.get($borde-redondeado, '4');
+  bottom: 0;
+  z-index: 99999;
+  background: var(--opacidad-fuerte);
+  backdrop-filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+  padding: map.get($espaciado, '1');
+  font-size: 0.875rem;
+  line-height: 1em;
+  color: var(--texto-inverso);
+
+  dt,
+  dd {
+    margin: 0;
+    display: inline-block;
+  }
+
+  dd:not(:last-child) {
+    padding-right: map.get($espaciado, '2');
+  }
+}

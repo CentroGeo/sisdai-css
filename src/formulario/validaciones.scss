@@ -1,0 +1,21 @@
+input, 
+textarea, 
+select {
+  &.campo-error {
+    border-color: var(--borde-error);
+  }
+
+  &.campo-confirmacion {
+    border-color: var(--borde-confirmacion);
+  }
+}
+
+.formulario-ayuda {
+  &.ayuda-error {
+    color: var(--texto-error);
+  }
+
+  &.ayuda-confirmacion {
+    color: var(--texto-confirmacion);
+  }
+}

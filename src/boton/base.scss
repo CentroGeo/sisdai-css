@@ -1,159 +1,54 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-button,
-input[type=button],
-input[type=submit],
-input[type=reset],
-.boton {
-  border-style: solid;
-  border-width: map-get($bordes, '1');
-  border-radius: map-get($bordes, '4'); 
-  box-shadow: 3px 3px 4px transparent;
+@mixin boton-estructura-principal {
+  // el borde debe ser box shadow para empatar con el alto de los elementos en diseño
+  border: none; 
+  border-radius: map.get($borde-redondeado, '4'); 
   box-sizing: border-box;
   font-family: var(--tipografia-familia, 'sans-serif');
   font-size: 1rem;
-  font-weight: 500;
-  line-height: calc(1em * 1.3);
-  padding: map-get($espaciado, '2') map-get($espaciado, '3');
+  font-weight: 600;
+  line-height: calc(1em * 1.25);
+  padding: map.get($espaciado, '2') map.get($espaciado, '3');
   text-decoration: none;
   text-align: center;
   display: inline-flex;
   align-items: center;
-  &:not(:disabled) {
-    cursor: pointer;
-    transition: all .27s ease-in-out;
-  }
+  cursor: pointer;
+
+  @include transicion;
+    
+  &.deshabilitado,
   &:disabled {
     pointer-events: none;
+    cursor: default;
   }
-  &:visited {
-    color: var(--hipervinculo-color);
-  }
-  &:not(:last-child) {
-    margin-right:  map-get($espaciado, '1');
-  }
-}
-
-.boton-primario {
-  background-color: var(--boton-primario-fondo);
-  border-color: var(--boton-primario-borde);
-  color: var(--boton-primario-color);
-  &:disabled {
-    background-color: var(--boton-primario-deshabilitado-fondo);
-    border-color: var(--boton-primario-deshabilitado-borde);
-    box-shadow: 3px 3px 4px var(--boton-primario-deshabilitado-sombra);
-    color: var(--boton-primario-deshabilitado-color);
-  }
-  &:visited {
-    color: var(--boton-primario-color);
-  }
-  &:not(:disabled):hover {
-    background-color: var(--boton-primario-hover-fondo);
-    border-color: var(--boton-primario-hover-borde);
-    box-shadow: 3px 3px 4px var(--boton-primario-hover-sombra);
-    color: var(--boton-primario-hover-color);
-  }
-  &:not(:disabled):focus {
-    background-color: var(--boton-primario-focus-fondo);
-    // border-color: var(--boton-primario-focus-borde);
-    border-color: var(--boton-primario-focus-borde);
-    box-shadow: 0 0 8px var(--boton-primario-focus-sombra);
-    color: var(--boton-primario-focus-color);
-    // outline: none;
-    outline: 1px solid var(--boton-primario-focus-contorno);
-    
-    // position: relative;
-    // &:after {
-    //   content: '';
-    //   position: absolute;
-    //   top: -4px;
-    //   left: -4px;
-    //   right: -4px;
-    //   bottom: -4px;
-    //   background: var(--boton-primario-focus-borde);
-    //   z-index: -1;
-    //   border-radius: map-get($bordes, '4'); 
-    // }
-  }
-}
-
-.boton-secundario {
-  background-color: var(--boton-secundario-fondo);
-  border-color: var(--boton-secundario-borde);
-  color: var(--boton-secundario-color);
-  &:disabled {
-    background-color: var(--boton-secundario-deshabilitado-fondo);
-    border-color: var(--boton-secundario-deshabilitado-borde);
-    box-shadow: 3px 3px 4px var(--boton-secundario-deshabilitado-sombra);
-    color: var(--boton-secundario-deshabilitado-color);
-  }
-  &:visited {
-    color: var(--boton-secundario-color);
-  }
-  &:not(:disabled):hover {
-    background-color: var(--boton-secundario-hover-fondo);
-    border-color: var(--boton-secundario-hover-borde);
-    box-shadow: 3px 3px 4px var(--boton-secundario-hover-sombra);
-    color: var(--boton-secundario-hover-color);
-  }
-  &:not(:disabled):focus {
-    background-color: var(--boton-secundario-focus-fondo);
-    border-color: var(--boton-secundario-focus-borde);
-    box-shadow: 0 0 8px var(--boton-secundario-focus-sombra);
-    color: var(--boton-secundario-focus-color);
+  
+  &:hover,
+  &:focus {
+    text-decoration: none;
     outline: none;
   }
 }
 
-// .boton-terciario {
-//   background-color: var(--boton-terciario-fondo);
-//   border-color: var(--boton-terciario-borde);
-//   color: var(--boton-terciario-color);
-//   &:disabled {
-//     background-color: var(--boton-terciario-deshabilitado-fondo);
-//     border-color: var(--boton-terciario-deshabilitado-borde);
-//     box-shadow: 3px 3px 4px var(--boton-terciario-deshabilitado-sombra);
-//     color: var(--boton-terciario-deshabilitado-color);
-//   }
-//   &:visited {
-//     color: var(--boton-terciario-color);
-//   }
-//   &:not(:disabled):hover {
-//     background-color: var(--boton-terciario-hover-fondo);
-//     border-color: var(--boton-terciario-hover-borde);
-//     box-shadow: 3px 3px 4px var(--boton-terciario-hover-sombra);
-//     color: var(--boton-terciario-hover-color);
-//   }
-//   &:not(:disabled):focus {
-//     background-color: var(--boton-terciario-focus-fondo);
-//     border-color: var(--boton-terciario-focus-borde);
-//     box-shadow: 0 0 8px var(--boton-terciario-focus-sombra);
-//     color: var(--boton-terciario-focus-color);
-//     outline: none;
-//   }
-// }
-
-.boton-chico {
-  // TODO: confirmar con diseño el tamaño de la tipograria
-  font-size: 0.875rem; // 14px
-  padding: map-get($espaciado, '1') map-get($espaciado, '2');
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+.boton {
+  @include boton-estructura-principal;
 }
 
-.boton-grande {
-  // TODO: confirmar con diseño el tamaño de la tipograria
-  font-size: 1.125rem; // 18px
-  padding: map-get($espaciado, '3');
+button,
+.boton {
+  .pictograma,
+  [class^='pictograma-'],
+  [class*=' pictograma-'] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 0 0 0 map.get($espaciado, '1');
+  }
 }

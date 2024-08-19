@@ -1,0 +1,19 @@
+@use "sass:map";
+
+@each $id, $map in $pictograma-tamanio {
+  .pictograma-#{$id} {
+    font-size: map.get($map, 'tamanio');
+    padding: map.get($map, 'espaciado') ;
+  }
+}
+
+@each $dispositivo, $x in $breakpoints {
+  @include mediaquery($dispositivo) {
+    @each $id, $map in $pictograma-tamanio {
+      .pictograma-#{$id}-#{$dispositivo} {
+        font-size: map.get($map, 'tamanio');
+        padding: map.get($map, 'espaciado') ;
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+@use "sass:map";
+
+.flex {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.flex-contenido-centrado {
+  justify-content: center;
+}
+
+.flex-contenido-inicio {
+  justify-content: flex-start;
+}
+
+.flex-contenido-final {
+  justify-content: flex-end;
+}
+
+.flex-contenido-separado {
+  justify-content: space-between;
+}
+
+.flex-contenido-alrededor {
+  justify-content: space-around;
+}
+
+.flex-contenido-equidistante {
+  justify-content: space-evenly;
+}
+
+.flex-reversa {
+  flex-direction: row-reverse;
+}
+
+.flex-vertical-centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.flex-vertical-final {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.flex-vertical-inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.grid {
+  box-sizing: border-box;
+  display: grid;
+}
+
+@each $dispositivo, $configuracion in $columnas {
+  @include mediaquery($dispositivo) {
+    .flex {
+      gap: map.get($configuracion, 'espaciado') map.get($configuracion, 'espaciado');
+
+      > [class^='columna-'],
+      > [class*=' columna-'] {
+        flex: 1 1;
+      }
+    }
+
+    .grid {
+      gap: map.get($configuracion, 'espaciado') map.get($configuracion, 'espaciado');
+      grid-template-columns: repeat(map.get($configuracion, 'columnas'), 1fr);
+
+      > [class^='columna-'],
+      > [class*=' columna-'] {
+        grid-column: span 16;
+      }
+    }
+
+    .columns {
+      column-gap: map.get($configuracion, 'espaciado');
+    }
+
+    @for $i from 1 through map.get($configuracion, 'columnas') {
+      .flex > .columna-#{$i} {
+        flex: 1 1 calc(calc(($i / map.get($configuracion, 'columnas') * 100%)) - map.get($configuracion, 'espaciado') + calc($i / map.get($configuracion, 'columnas') * map.get($configuracion, 'espaciado')) - 1px);
+        max-width: calc(calc(($i / map.get($configuracion, 'columnas') * 100%)) - map.get($configuracion, 'espaciado') + calc($i / map.get($configuracion, 'columnas') * map.get($configuracion, 'espaciado')));
+      }
+      .flex > .columna-orden-#{$i} {
+        order: $i;
+      }
+      .grid > .columna-#{$i} {
+        grid-column: span $i;
+      }
+      .columns-#{$i} {
+        column-count: $i;
+      }
+    }
+  }
+}
+
+@each $dispositivo, $configuracion in $columnas {
+  @include mediaquery($dispositivo) {
+    @for $i from 1 through map.get($configuracion, 'columnas') {
+      .flex > .columna-#{$i}-#{$dispositivo} {
+        flex: 1 1 calc(calc(($i / map.get($configuracion, 'columnas') * 100%)) - map.get($configuracion, 'espaciado') + calc($i / map.get($configuracion, 'columnas') * map.get($configuracion, 'espaciado')) - 1px);
+        max-width: calc(calc(($i / map.get($configuracion, 'columnas') * 100%)) - map.get($configuracion, 'espaciado') + calc($i / map.get($configuracion, 'columnas') * map.get($configuracion, 'espaciado')));
+      }
+
+      .flex > .columna-orden-#{$i}-#{$dispositivo} {
+        order: $i;
+      }
+
+      .grid > .columna-#{$i}-#{$dispositivo} {
+        grid-column: span $i;
+      }
+
+      .columns-#{$i}-#{$dispositivo} {
+        column-count: $i;
+      }
+    }
+
+    .flex-reversa-#{$dispositivo} {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.columns {
+  > :first-child {
+    margin-top: 0;
+  }
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}

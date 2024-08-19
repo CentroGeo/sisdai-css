@@ -1,0 +1,23 @@
+@use "sass:map";
+
+%tarjeta-hipervinculo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  font-weight: normal;
+  margin-top: map.get($espaciado, '1');
+  margin-bottom: map.get($espaciado, '1');
+  background: var(--tarjeta-fondo);
+  width: 100%;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    background-color: var(--tarjeta-cursor-fondo);
+    box-shadow: 
+      0 0 0 2px var(--tarjeta-enfoque-borde),
+      0 0 8px 1px var(--tarjeta-enfoque-sombra);
+    outline: none;
+    text-decoration: none;
+  }
+}

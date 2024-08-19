@@ -1,19 +1,23 @@
 <script setup>
   import { RouterLink, RouterView } from 'vue-router'
-  import { onBeforeMount, onMounted, ref, watch, computed } from 'vue'
+  import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
+  import pkg from '../../package.json'
   
+  const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
   const isA11yView = ref(null)
   const isA11yUnderline = ref(null)
   const fontSize = ref(16)
   const showGob = ref(null)
   const showMenu = ref(null)
-  const showSubmenu1 = ref(null)
+  const showSubmenu = ref('')
+  // navegacion
+  const esColapsable = ref(false)
+  const anchoNavegacion = ref(1400)
 
-  isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
-  showSubmenu1.value = false
+  isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
+  showSubmenu.value = false
   
-
   function toggleA11yTypography() {
     isA11yTypography.value = !isA11yTypography.value
   }
@@ -24,18 +28,34 @@
   function toggleA11yLink() {
     isA11yUnderline.value = !isA11yUnderline.value
   }
+
   function toggleGob() {
     showMenu.value = false
     showGob.value = !showGob.value
   }
   function toggleMenu() {
     showGob.value = false
-    showSubmenu1.value = false
+    showSubmenu.value = ''
     showMenu.value = !showMenu.value
   }
-  function toggleReticula() {
-    showSubmenu1.value = !showSubmenu1.value
+  function toggleSubmenu(submenu) {
+    if(showSubmenu.value == submenu) {
+      showSubmenu.value = ''
+    } else {
+      showSubmenu.value = submenu
+    }
   }
+  function mostrarSubmenu(submenu) {
+    if(esColapsable.value == false) {
+      showSubmenu.value = submenu
+    }
+  }
+  function ocultarSumbenu() {
+    if(esColapsable.value == false) {
+      showSubmenu.value = ''
+    }
+  }
+
   function upFontSize() {
     fontSize.value ++
     let up_size = `${fontSize.value}px`
@@ -54,224 +74,384 @@
     document.documentElement.style.setProperty('--tipografia-tamanio','16')
     // Resetea variable
     isA11yOscura.value = false
-    theme.value = 'light'
+    tema.value = 'clara'
   }
 
-  // Declaración variable reactiva
-  const isA11yOscura = ref(null)
-  // Inicialización
-  isA11yOscura.value = false
   // Módulo de vista oscura
-  const theme = ref(null) 
-  theme.value = 'auto' // 'dark' | 'light' | 'auto'
-  const perfil = ref(null) 
-  perfil.value = 'eni' // 'eni' | 'sisdai' | 'gema'
+  const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
+  const perfil = ref('predeterminada') // 'predeterminada' | 'sisdai' | 'gema'
+  const body = document.querySelector("body")
 
   function alternarTema() {
-    //rotar entre estos 3 valores
-    const themes = ['light','dark','auto']
-    theme.value = themes[
-      (themes.indexOf(theme.value) + 1) % 3
+    // rotar entre estos 3 temas
+    const themes = ['clara','oscura','auto']
+    tema.value = themes[
+      (themes.indexOf(tema.value) + 1) % 3
     ]
-
-    localStorage.setItem("theme", theme.value)
   }
+
+  function agregarPerfilTemaPredeterminados() {
+    body.setAttribute('data-perfil', perfil.value)
+    body.setAttribute('data-tema', 'claro')
+  }
+
   function alternarPerfil() {
-    document
-      .documentElement
-      .removeAttribute(`data-dark-theme-${perfil.value}`)
-    //rotar entre estos valores
-    const perfiles = ['eni', 'sisdai', 'gema']
+    // remueve el atributo para dejar a los otros perfiles
+    // body.removeAttribute('data-tema-oscuro')
+    // body.removeAttribute('data-tema-claro')
+    
+    // rotar entre estos perfiles
+    const perfiles = ['predeterminada', 'sisdai', 'gema']
     perfil.value = perfiles[
       (perfiles.indexOf(perfil.value) + 1) % 3
     ]
-  }
-  function setThemeInDocument() {
-    const modoOscuro = ref(
-      (
-        window.matchMedia 
-          && window.matchMedia('(prefers-color-scheme: dark)').matches 
-          && theme.value === 'auto'
-      ) || theme.value === 'dark'
-    )
 
-    document
-    .documentElement
-    .setAttribute(`data-dark-theme-${perfil.value}`, modoOscuro.value)
-    
-    modoOscuro.value === true 
-    ? isA11yOscura.value = true : isA11yOscura.value = false
+    body.setAttribute('data-perfil', perfil.value)
+  }
+
+  function getTemaDispositivo() {
+    if (
+      (window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches &&
+        tema.value === 'auto') ||
+      tema.value === 'oscura'
+    ) {
+      return 'oscura'
+    }
+    return 'clara'
+  }
+
+  function setClaseA11yOscura(temaClaroUOscuro) {
+    temaClaroUOscuro === 'oscura' ? 
+      isA11yOscura.value = true : isA11yOscura.value = false
+  }
+
+  function setTemaClaro() {
+    body.setAttribute(`data-tema`, 'claro')
+  }
+
+  function setTemaOscuro() {
+    body.setAttribute(`data-tema`, 'oscuro')
+  }
+
+  function setTemaEnDocumentoYLocalStorage() {
+    localStorage.setItem("theme", tema.value)
+    let temaClaroUOscuro = getTemaDispositivo()
+
+    // Agrega claseSeleccionada `.a11y-oscura`
+    setClaseA11yOscura(temaClaroUOscuro)
+
+    // Agrega y/o remueve el atributo selecctor para :root
+    switch(temaClaroUOscuro) {
+      case 'clara':
+        setTemaClaro()
+        break
+      case 'oscura':
+        setTemaOscuro()
+        break
+    }
   }
   const nombreTemaActual = computed(() => {
     const nombres = {
-      'light':'Claro',
-      'dark':'Oscuro',
-      'auto':'Automático'
+      'clara':'Clara',
+      'oscura':'Oscura',
+      'auto':'Automática'
     }
-    return nombres[theme.value]
+    return nombres[tema.value]
   })
-   
-  // Hooks cycles
-  onBeforeMount(() => {
-    window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change',setThemeInDocument)
-  })
-  onMounted(() => {
-    setThemeInDocument()
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change',setThemeInDocument)
-  })
-  watch([theme, perfil], () => {
-    setThemeInDocument()    
-  })
-  if(localStorage.getItem("theme")) {
-    theme.value = localStorage.getItem("theme")
+
+  function validarNavegacionColapsable() {
+    esColapsable.value = (anchoNavegacion.value > window.innerWidth) ? true : false
   }
+   
+  onBeforeMount(() => {
+    window.matchMedia('(prefers-color-scheme: dark)')
+      .removeEventListener('change',setTemaEnDocumentoYLocalStorage)
+  })
+
+  onMounted(() => {
+    agregarPerfilTemaPredeterminados()
+
+    setTemaEnDocumentoYLocalStorage()
+    
+    window.matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change',setTemaEnDocumentoYLocalStorage)
+
+    validarNavegacionColapsable()
+    
+    window.addEventListener('resize', validarNavegacionColapsable)
+  })
+
+  onUnmounted(() => {
+    window.removeEventListener('change', setTemaEnDocumentoYLocalStorage)
+    window.removeEventListener('resize', validarNavegacionColapsable)
+  })
+
+  watch([perfil, tema], () => {
+    setTemaEnDocumentoYLocalStorage()    
+  })
+  // if(localStorage.getItem("theme")) {
+  //   theme.value = localStorage.getItem("theme")
+  // }
+
+  watch([isA11yOscura, isA11yTypography, isA11yView, isA11yUnderline], () => {
+    // Coloca las clases accesibles en el body
+    isA11yTypography.value 
+      ? body.classList.add('a11y-tipografia') 
+      : body.classList.remove('a11y-tipografia')
+    isA11yView.value 
+      ? body.classList.add('a11y-simplificada') 
+      : body.classList.remove('a11y-simplificada')
+    isA11yUnderline.value 
+      ? body.classList.add('a11y-hipervinculos') 
+      : body.classList.remove('a11y-hipervinculos')
+    isA11yOscura.value 
+      ? body.classList.add('a11y-oscura') 
+      : body.classList.remove('a11y-oscura')
+  })
   
 </script>
 
 <template>
-  <div :class="{ 'a11y-tipografia':isA11yTypography, 'a11y-simplificada':isA11yView, 'a11y-hipervinculos':isA11yUnderline , 
-  'a11y-oscura': isA11yOscura}">
-  <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
-    <nav class="navegacion navegacion-gobmx">
+  <div>
+    <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
-          <img width="128" height="38" class="nav-logo" src="https://framework-gb.cdn.gob.mx/landing/img/logoheader.svg" alt="Gobierno de México.">
+          <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México.">
         </a>
-        <button @click="toggleGob" class="nav-boton-menu" :class="{ 'abierto': showGob }">
+        <button v-if="esColapsable" @click="toggleGob" class="nav-boton-menu" :class="{ 'abierto': showGob }">
           <span class="nav-icono-menu"></span>
+          <span class="a11y-solo-lectura"> Menu Gobierno de México </span>
         </button>
       </div>
-      <div class="nav-menu-contedor" :class="{ 'abierto': showGob }">
+      <div class="nav-menu-contenedor" :class="{ 'abierto': showGob }">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
-            <li><a href="https://mivacuna.salud.gob.mx/index.php" class="nav-hipervinculo" target="_blank" rel="noopener">Registro para vacunación</a></li>
             <li><a href="https://coronavirus.gob.mx/" class="nav-hipervinculo" target="_blank" rel="noopener">Información sobre COVID-19</a></li>
             <li><a href="https://www.gob.mx/tramites" class="nav-hipervinculo" target="_blank" rel="noopener">Trámites</a></li>
             <li><a href="https://www.gob.mx/gobierno" class="nav-hipervinculo" target="_blank" rel="noopener">Gobierno</a></li>
-            <li><a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener"><span class="icono-buscar"></span> </a></li>
+            <li>
+              <a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener">
+                <span class="pictograma-buscar" aria-hidden="true"></span>
+                <span class="a11y-solo-lectura">Busqueda</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <nav class="navegacion navegacion-conahcyt navegacion-pegada">
+    <nav class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
-          <img class="nav-logo invertir" width="130" height="38" src="https://conacyt.mx/wp-content/uploads/2021/10/logo_conacyt_con_sintagma_azul_completo.svg" alt="Conahcyt.">
+          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
         </a>
-        <button @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
+        <a href="https://sisdai.conahcyt.mx" target="_blank" rel="noopener noreferrer" class="nav-hipervinculo style-bold-link">IR A SISDAI</a>
+
+        <button v-if="esColapsable" @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>
+          <span class="a11y-solo-lectura"> Menu Principal </span>
         </button>
-        <div class="nav-informacion">
+        <div v-if="esColapsable" class="nav-informacion">
           Sección: <b>{{ $route.name }}</b>
         </div>
       </div>
-      <div class="nav-menu-contedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu1 }">
+      <div class="nav-menu-contenedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
-            <li><RouterLink class="nav-hipervinculo" to="/" exact>Inicio</RouterLink></li>
-            <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu" @click="toggleReticula">Retícula</button>
-              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu1 }">
-                <li><button class="nav-boton-regresar" @click="toggleReticula">Retícula</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/contenedores">Contenedores</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/reticula">Cuadricula</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/margenes">Márgenes</RouterLink></li>
+            <li><RouterLink class="nav-hipervinculo" to="/" exact @mouseover="mostrarSubmenu('')">Inicio</RouterLink></li>
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('accesibilidad')" @mouseover="mostrarSubmenu('accesibilidad')">Accesibilidad</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'accesibilidad' }">
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Accesibilidad</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/cambio-fuente">Cambio de fuente</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
             </li>
-            <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu">Estilo</button>
-              <ul class="nav-submenu">
-                <li><button class="nav-boton-regresar">Estilo</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/color">Color</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/bordes">Bordes</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/sombras">Sombras</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/separadores">Separadores</RouterLink></li>
+            
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('fundamentos')" @mouseover="mostrarSubmenu('fundamentos')">Fundamentos</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'fundamentos' }">
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Fundamentos</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/color">Color</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/contenedores">Contenedores</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/espaciado">Espaciado</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/pictogramas">Pictogramas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/reticula">Retícula</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/fundamentos/tipografia">Tipografia</RouterLink></li>
               </ul>
             </li>
-            <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu">Contenido</button>
-              <ul class="nav-submenu">
-                <li><button class="nav-boton-regresar">Contenido</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/tipografia">Tipografia</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/iconografia">Iconografia</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/listas">Listas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/tablas">Tablas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/detalles">Detalles</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/imagenes">Imágenes</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/portadas">Portadas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/tarjetas">Tarjetas</RouterLink></li>
 
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('elementos')" @mouseover="mostrarSubmenu('elementos')">Elementos</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }">
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Elementos</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>
               </ul>
             </li>
-            <li class="nav-contenedor-submenu">
-              <button class="nav-boton-submenu">Interactivo</button>
-              <ul class="nav-submenu">
-                <li><button class="nav-boton-regresar">Interactivo</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/botones">Botones</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/hipervinculos">Hipervínculos</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/formularios">Formularios</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/globo-informacion">Globos de informacion</RouterLink></li>
+
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('elementoscompuestos')" @mouseover="mostrarSubmenu('elementoscompuestos')">Compuestos</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }">
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Compuestos</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/menu-flotante">Menu Flotante</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
               </ul>
             </li>
-            <li><RouterLink class="nav-hipervinculo" to="/navegacion">Navegacion</RouterLink></li>
+
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('componentes')" @mouseover="mostrarSubmenu('componentes')">Componentes</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Búsqueda</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/info-despliegue">Información de despliegue</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
+              </ul>
+            </li>
+
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('visualizaciones')" @mouseover="mostrarSubmenu('visualizaciones')">Visualizaciones</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'visualizaciones' }">
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Visualizaciones</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontenedor">Contenedor</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
+              </ul>
+            </li>
+
+            <li>
+              <button class="nav-boton-submenu" @click="toggleSubmenu('auxiliares')" @mouseover="mostrarSubmenu('auxiliares')">Auxiliares</button>
+              <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'auxiliares' }">
+                <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Auxiliares</button></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/bordes">Bordes</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/fondos">Fondos</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/texto">Texto</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
+              </ul>
+            </li>
+            <li>
+              
+            </li>
+            <li>
+              <a
+                href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-boton boton boton-sin-contenedor-secundario"
+              >
+                <img
+                  class="nav-logo"
+                  src="/gitlab-logo-500.png"
+                  :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
+                />
+                <span aria-hidden="true">v{{ pkg.version }}</span>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <menu role="complementary" class="tmp-menu">
-      <span>A11y</span>
-      <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
-      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista normal' : 'Vista simplificada'}}</button>
-      <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
-      <button class="boton-primario" @click="upFontSize">Incrementear fuente</button>
-      <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-
-      <button 
-        class="boton-primario" 
-        @click="alternarTema">
-        Tema: {{ nombreTemaActual }}
-      </button>
-      <button 
-        v-if="nombreTemaActual === 'Oscuro'"
-        class="boton-primario" 
-        @click="alternarPerfil">
-        Perfil: {{ perfil }}
-      </button>
-
-      <button class="boton-secundario" @click="resetA11y">Apagar</button>
-    </menu>
-    <main role="main" class="contenedor m-y-maximo" id="principal">
+    <main role="main" id="principal">
       <RouterView />
     </main>
 
+    <aside>
+      <menu class="tmp-menu">
+        <button class="boton-primario" @click="toggleA11yTypography">
+          Cambio de fuente
+        </button>
+        <button class="boton-primario" @click="toggleA11yLink">
+          Enlaces subrayados
+        </button>
+        <button class="boton-primario" @click="toggleA11yView">
+          {{ isA11yView ? 'Vista predeterminada' : 'Mostrar solo texto'}}
+        </button>
+        <button class="boton-primario" @click="alternarTema">
+          Vista {{ nombreTemaActual }}
+        </button>
+        <button class="boton-primario" @click="alternarPerfil">
+          Perfil {{ perfil }}
+        </button>
+        <button class="boton-primario" @click="downFontSize">
+          Reducir tipografía
+        </button>
+        <button class="boton-primario" @click="upFontSize">
+          Incrementar tipografía
+        </button>
+        <button class="boton-secundario" @click="resetA11y">
+          Restablecer
+        </button>
+      </menu>
+    </aside>
+    
   </div>
 </template>
 
-<style>
-  @import '@/assets/eni.css';
+<style lang="scss">
   .tmp-menu {
-    background: #000;
-    color: #aaa;
+    background: #0002;
+    backdrop-filter: blur(5px);
     display: flex;
+    flex-direction: row;
     margin: 0;
-    padding: 4px;
+    padding: 8px;
     position: fixed;
+    top: inherit;
     bottom: 0;
     left: 0;
     right: 0;
     align-items: baseline;
-    z-index: 1111;
-  }.tmp-menu *{
-    font-size: 14px;
-    line-height: 14px;
-    padding: 8px 16px;
+    z-index: 999;
+    gap: 8px;
+    // display: none;
   }
-  p {
-    max-width: 800px;
+  .tmp-menu * {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px;
   }
-  details p {
-    max-width: inherit;
+  .tmp-menu .info {
+    flex: 1;
+    text-align: right;
+  }
+  .etiqueta {
+    font-size: 0.75rem; // 14px
+    font-weight: 600;
+    padding: .25rem .5rem;
+    line-height: calc(1em * 1.3);
+    margin: 0;
+    display: inline-flex;
+    border-radius: 20px;
+    background-color: #f005;
   }
 </style>
+
+<style scoped>
+  .style-bold-link {
+    font-weight: bold;
+  }
+  </style>

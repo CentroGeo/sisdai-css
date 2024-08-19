@@ -1,0 +1,23 @@
+@import './portada';
+@import './menu-flotante';
+@import './vista-cargando';
+
+// tipos de tarjetas
+@import './tarjeta';
+@import './tarjeta-horizontal';
+@import './tarjeta-hipervinculo';
+@import './tarjeta-hipervinculo-interno';
+@import './tarjeta-hipervinculo-externo';
+
+// tipos de listas
+@import './lista-compuesta';
+@import './lista-compuesta-pictograma';
+@import './lista-compuesta-avatar';
+@import './lista-compuesta-logotipo';
+@import './lista-compuesta-accion';
+@import './lista-compuesta-casilla';
+
+// tipos de botones
+@import './boton-pictograma';
+@import './boton-descarga';
+@import './boton-alternar';

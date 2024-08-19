@@ -1,0 +1,52 @@
+@use "sass:map";
+
+@mixin lista-estructura-plana {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  li {
+    margin: 0;
+  }
+  
+  ol, ul {
+    padding: 0;
+    
+  }
+}
+
+ol,
+ul,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  padding-left: map.get($espaciado, '3');
+  
+  li {
+    margin: map.get($espaciado, '2') 0;
+  }
+  
+  ol,
+  ul {
+    padding: 0 0 0 map.get($espaciado, '2');
+    
+    li {
+      margin: map.get($espaciado, '1') 0;
+    }
+  }
+}
+
+dl {
+  dt {
+    font-weight: 600;
+    margin: map.get($espaciado, '2') 0  map.get($espaciado, '1') 0;
+  }
+  
+  dd {
+    margin: map.get($espaciado, '1') 0 map.get($espaciado, '2') 0;
+  }
+}

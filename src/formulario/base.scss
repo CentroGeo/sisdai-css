@@ -1,0 +1,65 @@
+@use "sass:map";
+
+$form-campo-radio: 8px;
+$form-campo-alto: 40px;
+
+@mixin campo-estructura-color {
+  background-color: var(--campo-fondo);
+  border: 1px solid var(--campo-borde);
+  border-radius: $form-campo-radio;
+  box-sizing: border-box;
+  color: var(--campo-color);
+  font-family: var(--tipografia-familia);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding: calc(map.get($espaciado, '1') - 1px) map.get($espaciado, '2');
+  width: 100%;
+  touch-action: manipulation;
+
+  @include ancho-lectura;
+
+  &:disabled {
+    background-color: var(--campo-deshabilitado-fondo);
+    border-color: var(--campo-deshabilitado-borde);
+    color: var(--campo-deshabilitado-color);
+  }
+
+  &:not(:disabled) {
+    @include transicion;
+  }
+
+  &:not(:disabled):hover {
+    background-color: var(--campo-cursor-fondo);
+    border-color: var(--campo-cursor-borde);
+  }
+
+  &:not(:disabled):focus {
+    background-color: var(--campo-enfoque-fondo);
+    border-color: var(--campo-enfoque-borde);
+    box-shadow: 0 0 8px var(--campo-enfoque-sombra);
+    outline: none;
+  }
+}
+
+::placeholder {
+  font-style: italic;
+  color: var(--campo-ejemplo-color);
+  opacity: 1;
+}
+
+:hover::placeholder {
+  color: var(--campo-ejemplo-cursor-color);
+}
+
+:focus::placeholder {
+  color: var(--campo-ejemplo-enfoque-color);
+}
+
+:disabled::placeholder {
+  color: var(--campo-ejemplo-deshabilitado-color);
+}
+
+:read-only::placeholder {
+  color: var(--campo-ejemplo-deshabilitado-color);
+}

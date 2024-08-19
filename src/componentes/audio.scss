@@ -1,0 +1,45 @@
+@use "sass:map";
+
+.audio {
+  background: var(--fondo-neutro);
+  border-radius: map.get($borde-redondeado, '20');
+  padding: map.get($espaciado, '2');
+
+  .audio-cabecera {
+    margin-bottom: map.get($espaciado, '3');
+
+    > * {
+      margin-top: map.get($espaciado, '2');
+      margin-bottom: map.get($espaciado, '2');
+    }
+
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .audio-velocidad {
+    flex: 1 1;
+    max-width: map.get($espaciado, 'maximo');
+  }
+
+  .audio-reproduccion {
+    flex: 2 0;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+    gap: map.get($espaciado, '1');
+  }
+
+  .audio-volumen {
+    flex: 1 1;
+    max-width: map.get($espaciado, 'maximo');
+    display: flex;
+    white-space: nowrap;
+  }
+  
+}

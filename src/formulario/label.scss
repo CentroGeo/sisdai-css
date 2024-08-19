@@ -1,0 +1,27 @@
+@use "sass:map";
+
+%etiqueta {
+  display: inline-flex;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5em;
+  color: var(--campo-etiqueta-color);
+}
+
+label,
+legend {
+  @extend %etiqueta;
+}
+
+.formulario-obligatoriedad {
+  font-weight: 400;
+  margin-left: map.get($espaciado, 'minimo');
+}
+
+.formulario-ayuda {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: calc(1em * 1.3);
+  margin-top: map.get($espaciado, 'minimo');
+  margin-bottom: map.get($espaciado, '3');
+}

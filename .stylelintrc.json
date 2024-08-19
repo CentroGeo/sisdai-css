@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-standard-scss",
+  "rules": {
+    "color-function-notation": "legacy",
+    "color-hex-alpha": "never",
+    "media-feature-range-notation": "prefix"
+  }
+}
