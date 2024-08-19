@@ -1,17 +1,4 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 [type='range'] {
   background-color: transparent;
@@ -19,12 +6,10 @@
   box-shadow: 0 0 0 transparent;
   box-sizing: border-box;
   width: 100%;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
-  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
-  padding: map-get($espaciado, '1') 0;
+  padding: map.get($espaciado, '1') 0;
   height: $form-campo-alto;
   border-radius: $form-campo-radio;
   display: flex;
@@ -41,6 +26,7 @@
     background-color: var(--campo-rango-activo);
     transition: background-color .2s ease-in-out;
   }
+
   &::-ms-thumb {
     margin-top: calc((-1rem * 0.5) + 0.125rem);
     width: 1rem;
@@ -50,16 +36,18 @@
     background-color: var(--campo-rango-activo);
     transition: background-color .2s ease-in-out;
   }
+
   &::-webkit-slider-thumb {
     margin-top: calc(-0.5rem + 0.125rem);
     width: 1rem;
     height: 1rem;
     border: 0;
     border-radius: 0.5rem;
-    -webkit-appearance: none;
+    appearance: none;
     background-color: var(--campo-rango-activo);
     transition: background-color .2s ease-in-out;
   }
+
   // La pista
   &::-webkit-slider-runnable-track {
     border: 0;
@@ -69,6 +57,7 @@
     background-color: var(--campo-rango-activo);
     transition: background-color .2s ease-in-out;
   }
+
   &::-moz-range-track {
     border: 0;
     border-radius: 0.25rem;
@@ -77,6 +66,7 @@
     background-color: var(--campo-rango-activo);
     transition: background-color .2s ease-in-out;
   }
+  
   &::-ms-fill-lower {
     border: 0;
     border-radius: 0.25rem;
@@ -85,6 +75,7 @@
     background-color: var(--campo-rango-activo);
     transition: background-color .2s ease-in-out;
   }
+  
   &::-ms-fill-upper {
     border: 0;
     border-radius: 0.25rem;
@@ -93,54 +84,70 @@
     background-color: var(--campo-rango);
     transition: background-color .2s ease-in-out;
   }
+
+  &:disabled {
+    cursor: auto;
+    pointer-events: none;
+
+    &::-moz-range-thumb {
+      background-color: var(--campo-rango-deshabilitado);
+    }
+    
+    &::-ms-thumb {
+      background-color: var(--campo-rango-deshabilitado);
+    }
+    
+    &::-webkit-slider-thumb {
+      background-color: var(--campo-rango-deshabilitado);
+    }
+    
+    &::-webkit-slider-runnable-track {
+      background-color: var(--campo-rango-deshabilitado);
+    }
+    
+    &::-moz-range-track {
+      background-color: var(--campo-rango-deshabilitado);
+    }
+    
+    &::-ms-fill-lower {
+      background-color: var(--campo-rango-deshabilitado);
+    }
+    
+    &::-ms-fill-upper {
+      background-color: var(--campo-rango-deshabilitado);
+    }
+  }
+  
   &:not(:disabled):hover {
     &::-moz-range-thumb {
       background-color: var(--campo-rango-cursor);
     }
+    
     &::-ms-thumb {
       background-color: var(--campo-rango-cursor);
     }
+    
     &::-webkit-slider-thumb {
       background-color: var(--campo-rango-cursor);
     }
+    
     &::-webkit-slider-runnable-track {
       background-color: var(--campo-rango-cursor);
     }
+    
     &::-moz-range-track {
       background-color: var(--campo-rango-cursor);
     }
+    
     &::-ms-fill-lower {
       background-color: var(--campo-rango-cursor);
     }
+    
     &::-ms-fill-upper {
       background-color: var(--campo-rango-cursor);
     }
   }
-  &:disabled {
-    cursor: auto;
-    pointer-events: none;
-    &::-moz-range-thumb {
-      background-color: var(--campo-rango-deshabilitado);
-    }
-    &::-ms-thumb {
-      background-color: var(--campo-rango-deshabilitado);
-    }
-    &::-webkit-slider-thumb {
-      background-color: var(--campo-rango-deshabilitado);
-    }
-    &::-webkit-slider-runnable-track {
-      background-color: var(--campo-rango-deshabilitado);
-    }
-    &::-moz-range-track {
-      background-color: var(--campo-rango-deshabilitado);
-    }
-    &::-ms-fill-lower {
-      background-color: var(--campo-rango-deshabilitado);
-    }
-    &::-ms-fill-upper {
-      background-color: var(--campo-rango-deshabilitado);
-    }
-  }
+  
   &:focus {
     background-color: var(--campo-enfoque-fondo);
     border-color: var(--campo-enfoque-borde);

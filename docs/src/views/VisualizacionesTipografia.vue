@@ -57,7 +57,7 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
       <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
         <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <img
-            class="color-invertir"
+            class="a11y-oscura-filtro-blanco"
             src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg"
             alt="Conahcyt"
           />

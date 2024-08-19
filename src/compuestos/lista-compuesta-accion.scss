@@ -1,30 +1,18 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .lista-accion {
   li {
     border-bottom: 1px solid var(--borde-secundario);
-    padding: map-get($espaciado, '2') 0;
+    padding: map.get($espaciado, '2') 0;
   }
+
   .lista-accion-acciones {
     display: flex;
     align-items: center;
     
     button,
     .boton {
-      margin-left: map-get($espaciado, 'minimo');
+      margin-left: map.get($espaciado, 'minimo');
     }
   }
 }

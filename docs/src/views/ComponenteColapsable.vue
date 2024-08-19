@@ -33,6 +33,7 @@ const estaAbierto = ref(false)
           aria-controls="colapsableejemplo" 
           :aria-expanded="estaAbierto"
           @click="estaAbierto = !estaAbierto"
+          type="button"
         >
           Encabezado colapsable          
           <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
@@ -75,7 +76,8 @@ const estaAbierto = ref(false)
             <button 
               class="colapsable-boton" 
               aria-controls="ID-UNICO" 
-              aria-expanded="false" 
+              aria-expanded="false"
+              type="button"
             >
 
               <!-- <slot name="encabezado"> -->
@@ -121,6 +123,7 @@ const estaAbierto = ref(false)
               class="colapsable-boton" 
               aria-controls="ID-UNICO-DOS" 
               aria-expanded="true" 
+              type="button"
             >
 
               <!-- <slot name="encabezado"> -->

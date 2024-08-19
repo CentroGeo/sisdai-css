@@ -6,9 +6,9 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h1>Tipografía</h1>
       <p>
-        El Sistema de Diseño y Accesibilidad para la Investigación (Sisdai) utiliza 
+      El Sisdai utiliza 
         <a href="https://fonts.google.com/specimen/Montserrat" target="_blank" rel="noopener noreferrer">Montserrat</a> 
-        como su familia tipográfica predeterminada, con un tamaño base de 16px, 
+        como su familia tipográfica predeterminada (ya que ésta es la que el Gobierno Federal estipula), con un tamaño base de 16px, 
         equivalente a 1rem. Todas las medidas tipográficas están definidas en 
         <code>rem</code> para asegurar que, al cambiar el tamaño base, todos 
         los textos se ajustan proporcionalmente manteniendo la jerarquía visual. 
@@ -111,7 +111,7 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
 
 
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Parrafos</h2>
+      <h2 class="m-t-10">Párrafos</h2>
       <p>
         El tamaño de texto general es de 1 rem, con un interlineado de 
         1.5em y un peso tipográfico 400 (regular). Además, los párrafos 
@@ -144,7 +144,7 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Color en Texto</h2>
       <p>
-        El color en texto aplica a todas las etiquetas que puedan contener texto incluyendo titulos, parrafos, listas, pictogramas... etc.
+        El color en texto aplica a todas las etiquetas que puedan contener texto incluyendo titulos, párrafos, listas, pictogramas... etc.
       </p>
     </div>
     <EjemploCodigoTipografico 
@@ -300,9 +300,10 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Etiquetas de texto en línea</h2>
       <p>
-        Es importante utilizar las etiquetas HTML de manera semántica. 
-        Si el uso previsto es por estilo y no por definición, es 
-        recomendable consultar con el equipo de diseño.
+        Es importante utilizar las etiquetas HTML de manera semántica para 
+        mejorar la legibilidad y usabilidad de los productos digitales, además 
+        tiene la ventaja de contar con sitios web más accesibles y más 
+        significativos para los motores de búsqueda.
       </p>
     </div>
     <EjemploCodigoTipografico 

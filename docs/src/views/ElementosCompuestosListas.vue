@@ -114,7 +114,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <li>
             <a href="#">
               <div class="lista-logotipo-imagen">
-                <img class="color-invertir a11y-simplificada-mantener-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
+                <img class="a11y-oscura-filtro-blanco a11y-simplificada-mantener-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-texto-primario">texto-primario</p>
@@ -124,7 +124,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <li>
             <a href="#">
               <div class="lista-logotipo-imagen">
-                <img class="color-invertir a11y-simplificada-mantener-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
+                <img class="a11y-oscura-filtro-blanco a11y-simplificada-mantener-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-texto-primario">Nombre de la institución</p>
@@ -142,7 +142,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <li>
               <a href="#">
                 <div class="lista-logotipo-imagen">
-                  <img class="color-invertir a11y-simplificada-mantener-imagen" src="..." alt=""/>
+                  <img class="a11y-oscura-filtro-blanco a11y-simplificada-mantener-imagen" src="..." alt=""/>
                 </div>
                 <div class="lista-compuesta-cuerpo">
                   <p class="lista-compuesta-texto-primario">texto-primario</p>
@@ -160,7 +160,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Lista pictograma</h2>
       <p>
-        La <i>clase</i> <code>.lista-pictograma</code> utiliza pictogramas del sistema de diseño. 
+        La <i>clase</i> <code>.lista-pictograma</code> utiliza pictogramas del Sisdai. 
         Dado que estos pictogramas funcionan como tipografía, su tamaño varía dependiendo de la 
         etiqueta o clase aplicada. Para mantener una presentación uniforme, se recomienda usar 
         el mismo tamaño de pictograma en todos los elementos de la lista.

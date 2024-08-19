@@ -1,31 +1,18 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-@each $id, $map in $pictograma {
+@each $id, $map in $pictograma-tamanio {
   .pictograma-#{$id} {
-    font-size: map-get($map, 'tamanio');
-    padding: map-get($map, 'espaciado') ;
+    font-size: map.get($map, 'tamanio');
+    padding: map.get($map, 'espaciado') ;
   }
 }
 
 @each $dispositivo, $x in $breakpoints {
   @include mediaquery($dispositivo) {
-    @each $id, $map in $pictograma {
+    @each $id, $map in $pictograma-tamanio {
       .pictograma-#{$id}-#{$dispositivo} {
-        font-size: map-get($map, 'tamanio');
-        padding: map-get($map, 'espaciado') ;
+        font-size: map.get($map, 'tamanio');
+        padding: map.get($map, 'espaciado') ;
       }
     }
   }

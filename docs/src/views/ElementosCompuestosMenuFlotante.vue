@@ -84,7 +84,7 @@ const estaAbierto = ref(true)
         <p>
           El <code>menu-flotante-contenedor</code> puede contener distintos tipos de elementos. 
           Específicamente, se espera que contenga hipervínculos, botones, casillas de 
-          verificación y un título, éste último siendo el único que tiene su clase especial 
+          verificación y un título, este último siendo el único que tiene su clase especial 
           <code>menu-flotante-titulo</code> para darle formato.
         </p>
       </div>

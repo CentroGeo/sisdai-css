@@ -22,7 +22,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </h2>
       <p>
         Ambas tipografías deben estar cargadas en el proyecto. <br>
-        Se recomienda utilizar los links de <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferer">GoogleFonts</a>
+        Se recomienda utilizar los links de este <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferer">enlace</a>
         directamente en la cabecera del archivo <code>index.html</code> del proyecto.
       </p>
     </div>

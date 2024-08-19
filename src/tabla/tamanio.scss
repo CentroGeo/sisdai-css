@@ -1,0 +1,15 @@
+@use "sass:map";
+
+.tabla-condensada {
+  th,
+  td {
+    padding: map.get($espaciado, '1') map.get($espaciado, '2');
+  }
+}
+
+.tabla-expandida {
+  th,
+  td {
+    padding: map.get($espaciado, '3');
+  }
+}

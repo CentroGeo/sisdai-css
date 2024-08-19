@@ -1,22 +1,9 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-a,
-.hipervinculo {
+@mixin hipervinculo-estructura-color-principal {
   background-color: transparent;
   border: none;
-  border-radius: map-get($borde-redondeado, '4');
+  border-radius: map.get($borde-redondeado, '4');
   box-shadow: 0 0 2px var(--hipervinculo-sombra);
   box-sizing: border-box;
   color: var(--hipervinculo-color);
@@ -28,29 +15,35 @@ a,
   text-align: left;
   display: inline;
   vertical-align: baseline;
-  &:not(:disabled) {
-    cursor: pointer;
-    @include transicion;
-  }
+  
   &:disabled {
     background-color: transparent;
     color: var(--hipervinculo-deshabilitado-color);
     box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
   }
+
+  &:not(:disabled) {
+    @include transicion;
+    
+    cursor: pointer;
+  }
+  
   &:visited {
     color: var(--hipervinculo-visitado);
   }
+  
   &:hover {
     background-color: transparent;
-    box-shadow: 0 0 2px var(--hipervinculo-cursor-sombra);
     color: var(--hipervinculo-cursor-color);
     text-decoration: underline;
     box-shadow: none;
   }
+  
   &:focus-visible {
     background-color: transparent;
     color: var(--hipervinculo-enfoque-color);
-    outline: 2px dashed var(--hipervinculo-enfoque-sombra);
+    outline: 1px dashed var(--hipervinculo-enfoque-sombra);
+    outline-offset: 4px;
     box-shadow: none;
   }
 
@@ -58,35 +51,14 @@ a,
   [class^='pictograma-'],
   [class*=' pictograma-'] {
     display: inline;
-    vertical-align: baseline;
-    font-size: inherit;
-    line-height: inherit;
+    vertical-align: sub;
     padding: 0;
   }
 }
 
-// para quitarle los colores por defecto a los botones que se utilicen con el estilo de hipervinculo
+a,
 .hipervinculo {
-  &:disabled {
-    background-color: transparent !important;
-    color: var(--hipervinculo-deshabilitado-color) !important;
-    box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra) !important;
-  }
-  &:visited {
-    color: var(--hipervinculo-visitado) !important;
-  }
-  &:hover {
-    background-color: transparent !important;
-    color: var(--hipervinculo-cursor-color) !important;
-    text-decoration: underline !important;
-    box-shadow: none !important;
-  }
-  &:focus-visible {
-    background-color: transparent !important;
-    color: var(--hipervinculo-enfoque-color) !important;
-    outline: 2px dashed var(--hipervinculo-enfoque-sombra) !important;
-    box-shadow: none !important;
-  }
+  @include hipervinculo-estructura-color-principal;
 }
 
 a[class^='m-'],

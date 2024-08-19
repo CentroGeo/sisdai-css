@@ -1,17 +1,5 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
 [type='checkbox'],
 [type='radio'] {
   position: absolute;
@@ -25,6 +13,7 @@
   line-height: 1.25em;
   border: 0;
 }
+
 // campo contenedor = la cajita que hace el label que encapsula todo
 [type='checkbox'] + label,
 [type='radio'] + label {
@@ -37,25 +26,10 @@
   display: inline-flex;
   position: relative;
   margin: 0;
-  padding-left: calc(1.25rem + map-get($espaciado, '1') + 4px);
-  padding-right: map-get($espaciado, '1');
-  padding-top: calc(map-get($espaciado, '1'));
-  padding-bottom: calc(map-get($espaciado, '1'));
+  padding: map.get($espaciado, '1') map.get($espaciado, '1') map.get($espaciado, '1') calc(1.25rem + map.get($espaciado, '1') + 4px);
   transition: background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .3s ease-in-out;
 }
-[type='checkbox']:not(:disabled):hover + label,
-[type='radio']:not(:disabled):hover + label {
-  background-color: var(--campo-cursor-fondo);
-  border-color: var(--campo-cursor-borde);
-}
-[type='checkbox']:not(:disabled):focus + label,
-[type='radio']:not(:disabled):focus + label {
-  background-color: var(--campo-enfoque-fondo);
-  border-color: var(--campo-enfoque-borde);
-  box-shadow: 0 0 8px var(--campo-enfoque-sombra);
-  outline: none;
-  z-index: 1;
-}
+
 [type='checkbox']:disabled + label,
 [type='radio']:disabled + label,
 [type='checkbox']:checked:disabled + label,
@@ -64,6 +38,21 @@
   border-color: var(--campo-deshabilitado-borde);
   color: var(--campo-deshabilitado-color);
   cursor: default;
+}
+
+[type='checkbox']:not(:disabled):hover + label,
+[type='radio']:not(:disabled):hover + label {
+  background-color: var(--campo-cursor-fondo);
+  border-color: var(--campo-cursor-borde);
+}
+
+[type='checkbox']:not(:disabled):focus + label,
+[type='radio']:not(:disabled):focus + label {
+  background-color: var(--campo-enfoque-fondo);
+  border-color: var(--campo-enfoque-borde);
+  box-shadow: 0 0 8px var(--campo-enfoque-sombra);
+  outline: none;
+  z-index: 1;
 }
 
 // campo control = los elementos after y before que dibujan el checkbox y el radio button
@@ -75,60 +64,64 @@
   content: '';
   height: 1.125rem;
   width: 1.125rem;
-  top: calc(map-get($espaciado, '1') + 1px);
-  left: calc(map-get($espaciado, '1'));
-  padding: calc(map-get($espaciado, 'minimo'));
+  top: calc(map.get($espaciado, '1') + 1px);
+  left: calc(map.get($espaciado, '1'));
+  padding: calc(map.get($espaciado, 'minimo'));
   position: absolute;
 }
+
+[type='checkbox'] + label::before {
+  border-radius: map.get($borde-redondeado, '2');
+}
+
+[type='radio'] + label::before {
+  border-radius: 50%;
+}
+
 [type='radio']:disabled + label::before,
-[type='radio']:checked:disabled + label::before,
 [type='checkbox']:disabled + label::before,
+[type='radio']:checked:disabled + label::before,
 [type='checkbox']:checked:disabled + label::before {
   background-color: var(--campo-control-deshabilitado-fondo);
   border-color: var(--campo-control-deshabilitado-borde);
 }
 
-// checkbox
-[type='checkbox'] + label::before {
-  border-radius: map-get($borde-redondeado, '2');
-}
 [type='checkbox']:checked + label::after {
-  font-family: 'sisdai-pictogramas';
+  font-family: sisdai-pictogramas, sans-serif;
   content: '\6a';
   color: var(--campo-control-seleccionado-color);
   position: absolute;
-  left: calc(0.125rem + map-get($espaciado, '1') - 1px);
-  top: calc(map-get($espaciado, '1'));
+  left: calc(0.125rem + map.get($espaciado, '1') - 1px);
+  top: calc(map.get($espaciado, '1'));
   font-weight: 800;
   text-align: center;
 }
-[type='checkbox']:not(:checked):not(:disabled).indeterminate + label::after,
+
+[type='checkbox']:not(:checked, :disabled).indeterminate + label::after,
 [type='checkbox']:indeterminate:not(:disabled) + label::after {
-  font-family: 'sisdai-pictogramas';
+  font-family: sisdai-pictogramas, sans-serif;
   content: '\2f';
   color: var(--campo-control-seleccionado-color);
   position: absolute;
-  left: calc(0.125rem + map-get($espaciado, 'minimo') + 1px);
-  top: calc(map-get($espaciado, '1'));
+  left: calc(0.125rem + map.get($espaciado, 'minimo') + 1px);
+  top: calc(map.get($espaciado, '1'));
   font-weight: 800;
   font-size: 1.2rem;
 }
+
 [type='checkbox']:checked:disabled + label::after,
 [type='checkbox']:indeterminate:disabled + label::after,
 [type='checkbox']:not(:checked):disabled.indeterminate + label::after {
   color: var(--campo-control-deshabilitado-color);
 }
 
-// radio
-[type='radio'] + label::before {
-  border-radius: 50%;
+[type='radio']:checked:disabled + label::before {
+  background-color: var(--campo-control-deshabilitado-color);
+  box-shadow: inset 0 0 0 0.15rem var(--campo-control-deshabilitado-fondo);
 }
+
 [type='radio']:not(:disabled):checked + label::before,
 [type='radio']:not(:disabled):checked:hover + label::before {
-  background-color: var(--campo-control-seleccionado-color); // esta es la bolita del centro
-  box-shadow: inset 0 0 0 0.15rem var(--campo-control-seleccionado-fondo); // espacio de fondo alrededor de la bolita
-}
-[type='radio']:checked:disabled + label::before {
-  background-color: var(--campo-control-deshabilitado-color); // bolita seleccionada y deshabilitada
-  box-shadow: inset 0 0 0 0.15rem var(--campo-control-deshabilitado-fondo); // espacio de fondo alrededor de la bolita
+  background-color: var(--campo-control-seleccionado-color);
+  box-shadow: inset 0 0 0 0.15rem var(--campo-control-seleccionado-fondo);
 }

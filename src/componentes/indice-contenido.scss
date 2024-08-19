@@ -1,36 +1,25 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .indice-contenido {
   @include mediaquery('mov') {
-    padding-left: map-get($contenedores, 'mov', 'margen-interior');
-    padding-right: map-get($contenedores, 'mov', 'margen-interior');
+    padding-left: map.get($contenedores, 'mov', 'margen-interior');
+    padding-right: map.get($contenedores, 'mov', 'margen-interior');
   }
+
   @include mediaquery('esc') {
     position: sticky;
     top: 150px;
   }
 
   .indice-contenido-titulo {
-    @extend .titulo-base;
-    font-size: 1.125rem; //18px
+    @extend %titulo-base;
+
+    font-size: 1.125rem;
   }
   
   .indice-contenido-contenedor {
     ul, ol {
-      @extend .lista-limpia;
+      @include lista-estructura-plana;
     }
     
     a {
@@ -40,10 +29,11 @@
       color: var(--navegacion-secundaria-color);
       font-weight: 400;
       text-decoration: none;
-      padding: map-get($espaciado, '1') map-get($contenedores, 'mov', 'margen-interior');
+      padding: map.get($espaciado, '1') map.get($contenedores, 'mov', 'margen-interior');
+
       @include mediaquery('esc') {
-        padding-left: map-get($contenedores, 'esc', 'margen-interior');
-        padding-right: map-get($contenedores, 'esc', 'margen-interior');
+        padding-left: map.get($contenedores, 'esc', 'margen-interior');
+        padding-right: map.get($contenedores, 'esc', 'margen-interior');
       }
 
       &:hover {

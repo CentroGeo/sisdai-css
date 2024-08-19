@@ -8,11 +8,38 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <h1>Botones de Pictograma</h1>
       <p>
         Los botones de pictograma están basados en el estilo general de botones, 
-        pero se caracterizan por contener únicamente un pictograma. Es crucial 
-        agregar un elemento <code>&lt;span/></code> de lectura accesible para 
-        asegurar la compresibilidad en lectores de pantalla, ya que estos botones 
-        no incluyen texto visible.
+        pero se caracterizan por contener únicamente un pictograma. 
       </p>
+    </div>
+
+    <div class="contenedor ancho-lectura p-t-10">
+      <h2>Accesibilidad</h2>
+      <p>
+        Es crucial agregar a la etiqueta de botón el atributo <code>aria-label</code> 
+        con el nombre de la acción a realizar, para asegurar que las tecnologías de asistencia 
+        comuniquen correctamente dicho nombre, ya que estos botones no incluyen texto visible.
+      </p>
+      <p>
+        Así mismo es importante agregar a la etiqueta que contiene el pictograma el
+        atributo <code>aria-hidden="true"</code> para ocultar la lectura del pictograma, 
+        que al ser tipografía, se lee incorrecamente el uso de la letra que lo representa.
+      </p>
+
+      <EjemploCodigo
+        tipo='HTML'
+        codigo='
+          <button 
+            aria-label="Acción a realizar"
+            class="boton-primario boton-pictograma" 
+            type="button"
+          >
+            <span 
+              aria-hidden="true"
+              class="pictograma-flkt" 
+            />
+          </button>
+        '
+      />
     </div>
 
 
@@ -33,17 +60,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-chico
               "
+              aria-label="Acción a realizar"
+              type="button"
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón
-                  pictograma chico
-              </span>
             </button>
           </p>
         '
@@ -60,17 +83,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-primario
                 boton-pictograma
               "
+              aria-label="Acción a realizar"
+              type="button"
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón 
-                  pictograma
-              </span>
             </button>
           </p>
         '
@@ -87,17 +106,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-grande
               "
+              aria-label="Acción a realizar"
+              type="button"
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón 
-                  pictograma grande
-              </span>
             </button>
           </p>
         '
@@ -121,17 +136,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-con-contenedor-primario
               "
+              aria-label="Acción a realizar"
+              type="button"
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón
-                  primario
-              </span>
             </button>
           </p>
         '
@@ -147,17 +158,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma
                 boton-con-contenedor-secundario
               "
+              aria-label="Acción a realizar"
+              type="button"
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo boton 
-                  secundario
-              </span>
             </button>
           </p>
         '
@@ -173,17 +180,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-sin-contenedor-primario
               "
+              aria-label="Acción a realizar"
+              type="button"
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón 
-                  primario sin contenedor
-              </span>
             </button>
           </p>
         '
@@ -199,17 +202,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-sin-contenedor-secundario
               "
+              aria-label="Acción a realizar"
+              type="button"
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón 
-                  secundario sin contenedor
-              </span>
             </button>
           </p>
         '
@@ -232,18 +231,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-con-contenedor-primario
               "
+              aria-label="Acción a realizar"
+              type="button"
               disabled
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón
-                  primario deshabilitado
-              </span>
             </button>
           </p>
         '
@@ -260,18 +255,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma
                 boton-con-contenedor-secundario
               "
+              aria-label="Acción a realizar"
+              type="button"
               disabled
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón 
-                  secundario deshabilitado
-              </span>
             </button>
           </p>
         '
@@ -287,19 +278,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-sin-contenedor-primario
               "
+              aria-label="Acción a realizar"
+              type="button"
               disabled
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón 
-                  primario sin contenedor
-                  deshabilitado
-              </span>
             </button>
           </p>
         '
@@ -316,19 +302,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 boton-pictograma 
                 boton-sin-contenedor-secundario
               "
+              aria-label="Acción a realizar"
+              type="button"
               disabled
             >
               <span 
                 class="pictograma-flkt" 
                 aria-hidden="true"
               />
-              <span 
-                class="a11y-solo-lectura"
-              >
-                  Ejemplo botón 
-                  secundario sin contenedor
-                  deshabilitado
-              </span>
             </button>
           </p>
         '

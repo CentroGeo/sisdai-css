@@ -31,7 +31,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <EjemploCodigo
         tipo='HTML'
         codigo='
-        <div class="audio"  role="toolbar" aria-label="Controles para reproducir audio">
+        <div class="audio" role="toolbar" aria-label="Controles para reproducir audio">
 
           <div class="audio-cabecera">
             <p class="nota">Etiqueta o texto secundario .nota</p>
@@ -74,29 +74,31 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             </div>
             
             <div class="audio-reproduccion">
-              <button class="boton-pictograma boton-sin-contenedor-primario">
+
+              <button aria-label="Regresar 10 segundos" class="boton-pictograma boton-sin-contenedor-primario" type="button">
                 <span class="pictograma-regresar-10" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura"> Regresar </span>
               </button>
-              <button class="boton-pictograma boton-sin-contenedor-primario">
+
+
+              <!-- Opción para reproducir o pausar la reproducción del audio, la funcionalidad se debe agregar con JavaScript -->
+              <button aria-label="Comenzar/Pausar reproducción" class="boton-pictograma boton-sin-contenedor-primario" type="button">
                 <span class="pictograma-control-comenzar" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura"> Comenzar reproducción </span>
                 <!-- <span class="pictograma-control-pausa" aria-hidden="true"></span> -->
-                <!-- <span class="a11y-solo-lectura"> Pausar reproducción </span> -->
               </button>
-              <button class="boton-pictograma boton-sin-contenedor-primario">
+
+              <button aria-label="Adelantar 10 segundos" class="boton-pictograma boton-sin-contenedor-primario" type="button">
                 <span class="pictograma-adelantar-10" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura"> Adelantar </span>
               </button>
             </div>
             
             <div class="audio-volumen">
-              <button class="boton-pictograma boton-sin-contenedor-primario">
-                <span class="pictograma-volumen" aria-hidden="true"></span>
-                <span class="a11y-solo-lectura"> Encender sonido </span>
-                <!-- <span class="pictograma-silenciar" aria-hidden="true"></span> -->
-                <!-- <span class="a11y-solo-lectura"> Apagar sonido </span> -->
+              
+              <!-- Opción para escuchar o no el sonido, la funcionalidad se debe agregar con JavaScript -->
+              <button aria-label="Encender/Apagar sonido" class="boton-pictograma boton-sin-contenedor-primario" type="button">
+                <span class="pictograma-volumen" aria-hidden="true" />
+                <!-- <span class="pictograma-silenciar" aria-hidden="true" /> -->
               </button>
+
               <input type="range" aria-label="Nivel de volumen" />
             </div>
 

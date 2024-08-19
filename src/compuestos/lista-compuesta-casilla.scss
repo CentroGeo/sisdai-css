@@ -1,30 +1,19 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .lista-casilla {
   li {
     border-bottom: 1px solid var(--borde-secundario);
-    padding: calc(map-get($espaciado, '1') + map-get($espaciado, 'minimo')) 0;
+    padding: calc(map.get($espaciado, '1') + map.get($espaciado, 'minimo')) 0;
 
     [type='checkbox'] + label,
     [type='radio'] + label{
-      @extend .lista-compuesta-cuerpo;
       @include transicion;
-      padding-top: calc(map-get($espaciado, 'minimo') - 1px);
-      padding-bottom: calc(map-get($espaciado, 'minimo') - 1px);
-      padding-left: calc(1.25rem + map-get($espaciado, '2') + 4px);
+
+      flex: 1 1;
+      display: block;
+      padding-top: map.get($espaciado, 'minimo');
+      padding-bottom: map.get($espaciado, 'minimo');
+      padding-left: calc(1.25rem + map.get($espaciado, '2') + 4px);
     }
   }
 }

@@ -1,24 +1,26 @@
+@use "sass:map";
+
 .controlador-vis {
   --controlador-vis-control-alto: 1.125rem;
   --controlador-vis-figura-alto: 18px;
   --controlador-vis-figura-borde-grosor: 1px;
-  --controlador-vis-figura-borde-color: var(--borde);
-  --controlador-vis-figura-fondo: #7e8cf5;
+  --controlador-vis-figura-borde-color: var(--borde-neutro);
+  --controlador-vis-figura-fondo: var(--texto-acento);
   
   min-height: var(--controlador-vis-control-alto);
   vertical-align: text-top;
 
-  // elementos del controlador-vis que no tienen checkbox ni radio buttons
   .lectura {
-    padding: calc(map-get($espaciado, '1') + 2px);
-    margin: 0 0 map-get($espaciado, '1') 0;
+    padding: calc(map.get($espaciado, '1') + 2px);
+    margin: 0 0 map.get($espaciado, '1') 0;
     line-height: 1.25em;
     color: var(--campo-color);
     vertical-align: text-top;
     display: inline-flex;
   }
+
   .anidado {
-    padding-left: calc(1.25rem + map-get($espaciado, '1') + 4px);
+    padding-left: calc(1.25rem + map.get($espaciado, '1') + 4px);
   }
 
   label::before,
@@ -38,15 +40,17 @@
   
   .figura-variable {
     flex-shrink: 0;
-    margin-right: map-get($espaciado, 'minimo');
+    margin-right: map.get($espaciado, 'minimo');
     margin-top: max(calc((var(--controlador-vis-control-alto) - var(--controlador-vis-figura-alto)) * 0.5), 0px);
     min-width: calc(var(--controlador-vis-figura-alto));
     height: calc(var(--controlador-vis-figura-alto));
+
     &.muestra {
       background-color: var(--controlador-vis-figura-fondo);
       border: var(--controlador-vis-figura-borde-grosor) solid var(--controlador-vis-figura-borde-color);
       border-radius: 50%;
     }
+    
     &.pictograma,
     &[class^='pictograma-'],
     &[class*=' pictograma-'] {
@@ -59,29 +63,27 @@
     }
   }
   
-  // figura variable muestra input desabilitado
-  [type=checkbox]:disabled + label .figura-variable.muestra,
-  [type=radio]:disabled + label .figura-variable.muestra,
-  [type=checkbox]:checked:disabled + label .figura-variable.muestra,
-  [type=radio]:checked:disabled + label .figura-variable.muestra {
+  [type="checkbox"]:disabled + label .figura-variable.muestra,
+  [type="radio"]:disabled + label .figura-variable.muestra,
+  [type="checkbox"]:checked:disabled + label .figura-variable.muestra,
+  [type="radio"]:checked:disabled + label .figura-variable.muestra {
     background-color: var(--campo-deshabilitado-fondo);
     border-color: var(--campo-deshabilitado-color);
   }
 }
 
-div.controlador-vis,
-.controlador-vis.en-bloque {
+span.controlador-vis {
+  display: inline-flex;
+  margin-right: map.get($espaciado, '1');
+  margin-bottom: map.get($espaciado, '1');
+  
   label {
-    display: flex;
+    display: inline-flex;
   }
 }
 
-span.controlador-vis,
-.controlador-vis.en-linea {
-  display: inline-flex;
-  margin-right: map-get($espaciado, '1');
-  margin-bottom: map-get($espaciado, '1');
+div.controlador-vis {
   label {
-    display: inline-flex;
+    display: flex;
   }
 }

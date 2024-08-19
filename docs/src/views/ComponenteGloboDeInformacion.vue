@@ -74,9 +74,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 <b>Variable</b> | Valor
               </p>
             </div>
-            <button class="globo-informacion-cerrar">
+            <button aria-label="Cerrar" class="globo-informacion-cerrar" type="button">
               <span class="pictograma-cerrar" aria-hidden="true"></span>
-              <span class="a11y-solo-lectura">Cerrar.</span>
             </button>
           </div>
           '
@@ -109,9 +108,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               </p>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia. Quasi natus alias id itaque quod non distinctio quia nam iste quam doloremque harum eum esse sit asperiores, possimus cum.</p>
             </div>
-            <button class="globo-informacion-cerrar">
+            <button aria-label="Cerrar" class="globo-informacion-cerrar" type="button">
               <span class="pictograma-cerrar" aria-hidden="true"></span>
-              <span class="a11y-solo-lectura">Cerrar.</span>
             </button>
           </div>
           '
@@ -167,9 +165,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 </div>
               </div>
             </div>
-            <button class="globo-informacion-cerrar">
+            <button aria-label="Cerrar" class="globo-informacion-cerrar" type="button">
               <span class="pictograma-cerrar" aria-hidden="true"></span>
-              <span class="a11y-solo-lectura">Cerrar.</span>
             </button>
           </div>
           '
@@ -208,9 +205,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 También con botón
               </button>
             </div>
-            <button class="globo-informacion-cerrar">
+            <button aria-label="Cerrar" class="globo-informacion-cerrar" type="button">
               <span class="pictograma-cerrar" aria-hidden="true"></span>
-              <span class="a11y-solo-lectura">Cerrar.</span>
             </button>
           </div>
           '

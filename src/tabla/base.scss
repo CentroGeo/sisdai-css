@@ -1,74 +1,47 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 table {
   border-collapse: collapse;
+  color: var(--tabla-color);
   text-align: left;
+
   caption {
     text-align: left;
     padding: 0;
     font-size: 1rem;
     line-height: 1.25em;
     font-weight: 400;
-    margin: map-get($espaciado, '2') 0;
+    margin: map.get($espaciado, '2') 0;
   }
+
   th,
   td {
-    padding: map-get($espaciado, '2') map-get($espaciado, '3');
+    padding: map.get($espaciado, '2') map.get($espaciado, '3');
   }
+
   thead {
     font-weight: 600;
+
     tr {
       border-bottom: 1px solid var(--tabla-borde);
     }
   }
+
   tbody {
-    tr:nth-child(odd) {
+    > :nth-child(odd) {
       background-color: var(--tabla-fila-impar-fondo);
-      color: var(--tabla-color);
     }
-    tr:nth-child(even) {
+
+    > :nth-child(even) {
       background-color: var(--tabla-fila-par-fondo);
-      color: var(--tabla-color);
     }
   }
+
   tfoot {
     font-weight: 600;
+
     tr {
       background-color: var(--tabla-fila-pie-fondo);
-      color: var(--tabla-color);
     }
-  }
-}
-
-.titulo-tabla {
-  @extend .h6;
-  margin-bottom: 0;
-}
-
-
-.tabla-condensada {
-  th,
-  td {
-    padding: map-get($espaciado, '1') map-get($espaciado, '2');
-  }
-}
-
-.tabla-expandida {
-  th,
-  td {
-    padding: map-get($espaciado, '3');
   }
 }

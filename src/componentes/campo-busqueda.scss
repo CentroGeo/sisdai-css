@@ -1,27 +1,15 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .campo-busqueda {
   display: flex;
   position: relative;
 
   .campo-busqueda-entrada {
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-    height: auto !important;
-    padding-right: 3rem !important;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: auto;
+    padding-right: calc(32px + map.get($espaciado, '2'));
+
     &::-webkit-search-decoration,
     &::-webkit-search-cancel-button,
     &::-webkit-search-results-button,
@@ -29,14 +17,17 @@
       display: none;
     }
   }
+
   .campo-busqueda-borrar {
     position: absolute;
-    top: calc(map-get($espaciado, '1') * 1.5);
-    right: map-get($espaciado, '8');
+    top: map.get($espaciado, 'minimo');
+    right: 56px;
+    margin: map.get($espaciado, '1');
   }
+
   .campo-busqueda-buscar {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    padding: map-get($espaciado, '2');
+    padding: map.get($espaciado, '2');
   }
 }

@@ -1,24 +1,10 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+@use "sass:map";
 
 .tarjeta-hipervinculo-externo {
-  @extend .tarjeta-hipervinculo;
+  @extend %tarjeta-hipervinculo;
+
   position: relative;
-  width: 100%;
   min-height: 200px;
-  
   
   img.tarjeta-imagen {
     transform: scale(1.1);
@@ -27,6 +13,7 @@
     height: 100%;
     object-fit: cover;
     object-position: 50% 50%;
+
     @include transicion;
   }
   
@@ -35,7 +22,9 @@
     width: 100%;
     height: 100%;
     transform: scale(1.1);
+
     @include transicion;
+    
     img {
       width: 100%;
       height: 100%;
@@ -51,21 +40,33 @@
     background: var(--tarjeta-externa-fondo-degradado);
     display: flex;
     align-items: stretch;
-    margin-top: map-get($espaciado, '6');
+    margin-top: map.get($espaciado, '6');
   }
   
   .tarjeta-cuerpo {
     margin-top: auto;
-    padding: map-get($espaciado, '3');
+    padding: map.get($espaciado, '3');
     width: 100%;
+
     > * {
       color: var(--tarjeta-externa-color);
-      border-color: currentColor;
+      border-color: currentcolor;
     }
+    
     .pictograma,
     [class^='pictograma-'],
     [class*=' pictograma-'] {
       vertical-align: middle;
+    }
+  }
+
+  &:hover {
+    img.tarjeta-imagen {
+      transform: scale(1);
+    }
+
+    picture.tarjeta-imagen {
+      transform: scale(1);
     }
   }
 }

@@ -1,19 +1,11 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
+@use "sass:map";
 
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
+:root {
+  --tipografia-familia: 'Montserrat', sans-serif;
+  --tipografia-tamanio: 16px;
+  --tipografia-codigo: monospace;
+}
 
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-// AUX / fondos
 $fondo-color: (
   'primario': var(--fondo),
   'neutro': var(--fondo-neutro),
@@ -23,8 +15,6 @@ $fondo-color: (
   'alerta': var(--fondo-alerta),
   'error': var(--fondo-error),
 );
-
-// AUX / bordes
 $borde-redondeado: (
   '0': 0,
   '2': 2px,
@@ -35,7 +25,6 @@ $borde-redondeado: (
   '20': 20px,
   '24': 24px,
 );
-
 $borde-grosor: (
   '0':  0,
   '1':  1px,
@@ -43,9 +32,9 @@ $borde-grosor: (
   '3':  3px,
   '4':  4px,
 );
-
-$borde-color: ( // aqui
+$borde-color: (
   'primario': var(--borde),
+  'neutro': var(--borde-neutro),
   'secundario': var(--borde-secundario),
   'acento': var(--borde-acento),
   'informacion': var(--borde-informacion),
@@ -53,8 +42,6 @@ $borde-color: ( // aqui
   'alerta': var(--borde-alerta),
   'error': var(--borde-error),
 );
-
-// AUX / tamaño tipografico
 $texto-tamanio: ( 
   '1': 0.75rem,
   '2': 0.875rem,
@@ -67,7 +54,6 @@ $texto-tamanio: (
   '9': 3.5rem,
   '10': 5rem,
 );
-
 $texto-color: (
   'primario': var(--texto-primario),
   'secundario': var(--texto-secundario), 
@@ -78,9 +64,7 @@ $texto-color: (
   'alerta': var(--texto-alerta),
   'error': var(--texto-error),
 );
-
-// PICTOGRAMAS // tamaños especiales
-$pictograma: (
+$pictograma-tamanio: (
   'chico': (
     'tamanio': 1rem,
     'espaciado': 4px,
@@ -94,9 +78,7 @@ $pictograma: (
     'espaciado': 8px,
   ),
 );
-
-// ESPACIADO // MARGIN PADDING GAP
-$espaciado: ( // x * 8
+$espaciado: (
   '0': 0,
   'minimo': 4px,
   '1': 8px,
@@ -112,45 +94,33 @@ $espaciado: ( // x * 8
   'extra': 96px,
   'maximo': 120px,
 );
-
 $breakpoints: (
   'mov': 320px,
   'esc': 768px,
 );
-
 $contenedores: (
   'mov': (
     'ancho-maximo': 100%,
     'ancho-lectura': 100%,
     'ancho-minimo': 100%,
-    'margen-interior': map-get($espaciado, '3'),
-    'margen-interior-lectura': map-get($espaciado, '3'),
+    'margen-interior': map.get($espaciado, '3'),
+    'margen-interior-lectura': map.get($espaciado, '3'),
   ),
   'esc': (
     'ancho-maximo': 1366px,
     'ancho-lectura': 700px,
     'ancho-minimo': 500px,
-    'margen-interior': map-get($espaciado, '6'),
-    'margen-interior-lectura': map-get($espaciado, '0'),
+    'margen-interior': map.get($espaciado, '6'),
+    'margen-interior-lectura': map.get($espaciado, '0'),
   )
 );
-
 $columnas: (
   'mov': (
     'columnas': 8,
-    'espaciado': map-get($espaciado, '2'),
+    'espaciado': map.get($espaciado, '2'),
   ),
   'esc': (
     'columnas': 16,
-    'espaciado': map-get($espaciado, '3'),
+    'espaciado': map.get($espaciado, '3'),
   )
 );
-
-// Variables de CSS
-:root {
-  // estas variables son importantes que sean en CSS
-  // para que el menu de accesibilidad las pueda cambiar fácilmente
-  --tipografia-familia: 'Montserrat', sans-serif;
-  --tipografia-tamanio: 16px;
-  --tipografia-codigo: monospace;
-}

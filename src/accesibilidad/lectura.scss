@@ -1,19 +1,4 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
-.a11y-solo-lectura:not(:focus):not(:active) {
+.a11y-solo-lectura {
   clip: rect(0 0 0 0); 
   clip-path: inset(100%); 
   height: 1px; 
@@ -21,19 +6,19 @@
   position: absolute; 
   white-space: nowrap; 
   width: 1px;
-  display: block;
-  visibility: hidden;
 }
 
 // Se agrega informacion al letcor de pantalla cuando los hipervinculos abren en una nueva pestaña
-[target='_blank']:after {
+[target='_blank']::after {
   content: '. Abre nueva pestaña.';
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
-  margin: -1px;
+  margin: 0;
   overflow: hidden;
+  white-space: nowrap; 
   clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%); 
   border: 0;
 }

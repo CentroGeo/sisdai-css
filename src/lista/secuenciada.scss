@@ -1,0 +1,19 @@
+ol.lista-secuenciada,
+ul.lista-secuenciada {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 0;
+
+  li {
+    counter-increment: item;
+
+    ol, ul {
+      list-style-type: none;
+      counter-reset: item;
+    }
+
+    &::before {
+      content: counters(item, '.') '. ';
+    }
+  }
+}

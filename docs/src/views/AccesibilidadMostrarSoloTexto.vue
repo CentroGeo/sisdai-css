@@ -89,16 +89,43 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           Al aplicar la clase <code>.flex-columnas-100-al-simplificar</code> a los contenedores flex, 
           las columnas ocupan el 100% del espacio del contenedor donde se encuentran.
         </dd>
+        <dt>Clase .texto-centrado</dt>
+        <dd>
+          El texto se alinea a la izquierda para optimizar la lectura.
+        </dd>
       </dl>
+    </div>
+
+    <div class="ancho-lectura">
+      <h2 class="h4 m-t-10">
+        Clases especiales
+      </h2>
       <p>
-        Estas reglas pueden consultarse en el archivo <code>src/accesibilidad/simplificada.scss</code>.
+        La clase <code>.a11y-simplificada-mostrar-inline</code> se utiliza para mostrar texto únicamente en <var>Mostrar solo texto</var>
+        que en la página normalmente NO es visible ni reproducible por el lector de pantalla.
+      </p>
+      <p>
+        La clase <code>.a11y-simplificada-mostrar-bloque</code> se utiliza para mostrar un bloque de contendido únicamente en <var>Mostrar solo texto</var>
+        que en la página normalmente NO es visible ni reproducible por el lector de pantalla.
+      </p>
+      <p>
+        La clase <code>.a11y-simplificada-ocultar</code> se utiliza para ocultar cualquier cosa en <var>Mostrar solo texto</var>
+        que en la página normalmente es visible.
+      </p>
+      <p>
+        La clase <code>.a11y-simplificada-leer-mostrar-inline</code> se utiliza para mostrar texto únicamente en <var>Mostrar solo texto</var> 
+        que en la página normalmente NO es visible, pero siempre es reproducible por el lector de pantalla.
+      </p>
+      <p>
+        La clase <code>.a11y-simplificada-mantener-imagen</code> se utiliza para mantener siempre visible una imagen aunque se habilite 
+        el estado <var>Mostrar solo texto</var>
       </p>
     </div>
 
     <div class="ancho-lectura">
-      <p class="h4 m-t-10">
+      <h2 class="h4 m-t-10">
         Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Mostrar solo texto</em>.
-      </p>
+      </h2>
       <p>
         Si se agrega un nuevo elemento, es necesario  utilizar la clase .a11y-simplificada 
         en un archivo de estilos para  crear las nuevas reglas que requiera. 
@@ -128,9 +155,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     />
 
     <div class="ancho-lectura">
-      <p class="h4 m-t-10">
+      <h2 class="h4 m-t-10">
         Consideraciones para el correcto mantenimiento del estado <em>Mostrar solo texto</em>.
-      </p>
+      </h2>
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,
         la opción de <em>Mostrar solo texto</em> debe integrarse de la siguiente manera:

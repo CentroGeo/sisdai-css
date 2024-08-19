@@ -25,25 +25,42 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         la consulta. Este componente es esencial para sitios con gran cantidad de información, lo cual facilita 
         el acceso y la navegación eficiente del contenido.  
       </p>
-      
+
+      <form class="campo-busqueda" v-on:submit.prevent>
+          
+        <label for="ejemplobuscar" class="a11y-solo-lectura">Campo de búsqueda</label>
+        <input id="ejemplobuscar" type="search" class="campo-busqueda-entrada" placeholder="Campo de búsqueda" />
+
+        <button class="boton-pictograma boton-sin-contenedor-secundario campo-busqueda-borrar" aria-label="Borrar" type="button">
+          <span class="pictograma-cerrar" aria-hidden="true"></span>
+        </button>
+
+        <button class="boton-primario boton-pictograma campo-busqueda-buscar" aria-label="Buscar" type="button">
+          <span class="pictograma-buscar" aria-hidden="true"></span>
+        </button>
+
+      </form>
+
       <EjemploCodigo
         tipo='HTML'
+        :tiene_ejemplo='false'
         codigo='
-        <div class="campo-busqueda">
+        <form class="campo-busqueda" v-on:submit.prevent>
+          
+          <label for="idunicobusqueda" class="a11y-solo-lectura">
+            Campo de búsqueda
+          </label>
+          <input id="idunicobusqueda" type="search" class="campo-busqueda-entrada" placeholder="Campo de búsqueda" />
 
-          <input type="search" class="campo-busqueda-entrada" placeholder="Campo de búsqueda" />
-
-          <button class="boton-pictograma boton-sin-contenedor-secundario campo-busqueda-borrar">
-            <span class="pictograma-cerrar" aria-hidden="true"></span>
-            <span class="a11y-solo-lectura">Limpiar campo de búsqueda</span>
+          <button aria-label="Borrar"class="boton-pictograma boton-sin-contenedor-secundario campo-busqueda-borrar" type="button">
+            <span aria-hidden="true" class="pictograma-cerrar" />
           </button>
 
-          <button class="boton-primario boton-pictograma campo-busqueda-buscar">
-            <span class="pictograma-buscar" aria-hidden="true"></span>
-            <span class="a11y-solo-lectura">Buscar</span>
+          <button aria-label="Buscar" class="boton-primario boton-pictograma campo-busqueda-buscar" type="button">
+            <span class="pictograma-buscar" aria-hidden="true" />
           </button>
 
-        </div>
+        </form>
         '
       />
 

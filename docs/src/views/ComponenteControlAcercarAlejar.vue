@@ -35,8 +35,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           role="toolbar"
           aria-label="Controles para ajustar el nivel de acercamiento"
         >
-          <button class="boton-pictograma boton-sin-contenedor-secundario">
-            <span class="pictograma-restar" aria-label="Alejar"></span>
+          <button aria-label="Alejar un paso" class="boton-pictograma boton-sin-contenedor-secundario" type="button">
+            <span class="pictograma-restar" aria-hidden="true" />
           </button>
 
           <input 
@@ -45,8 +45,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             aria-label="Ajustar el nivel de acercamiento"
           />
           
-          <button class="boton-pictograma boton-sin-contenedor-secundario">
-            <span class="pictograma-agregar" aria-label="Acercar"></span>
+          <button aria-label="Acercar un paso" class="boton-pictograma boton-sin-contenedor-secundario" type="buttpm">
+            <span class="pictograma-agregar" aria-hidden="true"/>
           </button>
 
           <input 

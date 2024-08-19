@@ -153,9 +153,9 @@
   }
   const nombreTemaActual = computed(() => {
     const nombres = {
-      'clara':'Claro',
-      'oscura':'Oscuro',
-      'auto':'Automático'
+      'clara':'Clara',
+      'oscura':'Oscura',
+      'auto':'Automática'
     }
     return nombres[tema.value]
   })
@@ -214,7 +214,6 @@
 
 <template>
   <div>
-    <a href="#principal" class="ir-contenido-principal">Ir a contenido principal</a>
     <nav class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
@@ -245,8 +244,10 @@
     <nav class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="#" class="nav-hiperviculo-logo">
-          <img class="nav-logo invertir" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
+          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt.">
         </a>
+        <a href="https://sisdai.conahcyt.mx" target="_blank" rel="noopener noreferrer" class="nav-hipervinculo style-bold-link">IR A SISDAI</a>
+
         <button v-if="esColapsable" @click="toggleMenu" class="nav-boton-menu" :class="{ 'abierto': showMenu }">
           <span class="nav-icono-menu"></span>
           <span class="a11y-solo-lectura"> Menu Principal </span>
@@ -267,8 +268,8 @@
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
             </li>
             
@@ -315,19 +316,19 @@
               <ul class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Componentes</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Búsqueda</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/info-despliegue">Información de despliegue</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
             </li>
 
@@ -364,9 +365,9 @@
                 <img
                   class="nav-logo"
                   src="/gitlab-logo-500.png"
-                  alt=""
+                  :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
                 />
-                v{{ pkg.version }}
+                <span aria-hidden="true">v{{ pkg.version }}</span>
               </a>
             </li>
           </ul>
@@ -377,25 +378,36 @@
     <main role="main" id="principal">
       <RouterView />
     </main>
+
+    <aside>
+      <menu class="tmp-menu">
+        <button class="boton-primario" @click="toggleA11yTypography">
+          Cambio de fuente
+        </button>
+        <button class="boton-primario" @click="toggleA11yLink">
+          Enlaces subrayados
+        </button>
+        <button class="boton-primario" @click="toggleA11yView">
+          {{ isA11yView ? 'Vista predeterminada' : 'Mostrar solo texto'}}
+        </button>
+        <button class="boton-primario" @click="alternarTema">
+          Vista {{ nombreTemaActual }}
+        </button>
+        <button class="boton-primario" @click="alternarPerfil">
+          Perfil {{ perfil }}
+        </button>
+        <button class="boton-primario" @click="downFontSize">
+          Reducir tipografía
+        </button>
+        <button class="boton-primario" @click="upFontSize">
+          Incrementar tipografía
+        </button>
+        <button class="boton-secundario" @click="resetA11y">
+          Restablecer
+        </button>
+      </menu>
+    </aside>
     
-    <menu class="tmp-menu">
-      <button class="boton-primario" @click="toggleA11yTypography">Cambiar tipografia</button>
-      <button class="boton-primario" @click="toggleA11yView">{{ isA11yView ? 'Vista predeterminada' : 'Vista simplificada'}}</button>
-      <button class="boton-primario" @click="downFontSize">Reducir fuente</button>
-      <button class="boton-primario" @click="upFontSize">Incrementar fuente</button>
-      <button class="boton-primario" @click="toggleA11yLink">Hipervínculos subrayados</button>
-      <button 
-        class="boton-primario" 
-        @click="alternarTema">
-        Tema {{ nombreTemaActual }}
-      </button>
-      <button
-        class="boton-primario" 
-        @click="alternarPerfil">
-        Perfil {{ perfil }}
-      </button>
-      <button class="boton-secundario" @click="resetA11y">Apagar</button>
-    </menu>
   </div>
 </template>
 
@@ -437,3 +449,9 @@
     background-color: #f005;
   }
 </style>
+
+<style scoped>
+  .style-bold-link {
+    font-weight: bold;
+  }
+  </style>

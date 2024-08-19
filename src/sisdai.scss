@@ -1,59 +1,71 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
+/*
+ * Sisdai y sisdai-css están alineadas a las disposiciones establecidas por
+ * la Coordinación de Estrategia Digital Nacional (DOF:06/09/2021)
+ * en donde se estipula que las "políticas y disposiciones tienen
+ * como objetivo fortalecer el uso del software
+ * libre y los estándares abiertos, fomentar el desarrollo de aplicaciones
+ * institucionales con utilidad pública, lograr la
+ * autonomía, soberanía e independencia tecnológicas dentro de la APF". 
+ * En el artículo 63 se explicita que "cuando se trate
+ * de desarrollos basados en software libre, se respetarán las condiciones de su
+ * licenciamiento original [...]".
+ * 
+ * Considerando lo anterior sisdai-css se publica bajo la licencia
+ * [LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.html). Dicha licencia se puede
+ * consultar en el archivo _LICENSE_ de este repositorio.
+ * Esta licencia se encuentra disponible en inglés porque aunque el Sisdai privilegia
+ * el idioma español se respeta la versión original de acuerdo al proyecto
+ * [GNU](https://www.gnu.org/licenses/licenses.html).
+ *
+ * sisdai-css is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by the
+ * Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * sisdai-css is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
+ * Public License for more details.
+ * You should have received a copy of the GNU Lesser General Public License along
+ * with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
+ */
 @charset 'UTF-8';
 
-// color predeterminada clara
+// Globales 
+@import 'variables';
+@import 'normalizar';
+@import 'mixins';
+
+// Fundamentos
 @import 'color';
-
-// primero siempre las variables, normalizador y mixins 
-@import '_variables';
-@import '_normalizar';
-@import '_mixins';
-
-// fundamentos
-// @import 'color';
 @import 'tipografia';
 @import 'pictograma';
 @import 'reticula';
 
-// elementos
+// Elementos
 @import 'boton';
 @import 'hipervinculo';
-@import 'imagen';
-@import 'video';
 @import 'formulario';
 @import 'tabla';
 @import 'lista';
-@import 'detalle'; // revision diseño
-@import 'separador'; // revision diseño
+@import 'imagen';
 
-// compuestos, componentes y visualizaciones
+// Elementos sin documentacion
+@import 'video';
+@import 'separador';
+@import 'detalle';
+
+// Compuestos, Componentes y Visualizaciones
 @import 'compuestos';
 @import 'componentes';
 @import 'visualizaciones';
 
-// auxiliares 
+// Auxiliares 
 @import 'auxiliares';
 
-// a11y
-// accesibilidad debe cargar al final
-// para que pueda sobre escribir los estilos
+// Accesibilidad. Cargar al final para sobreescribir estilos
+@import 'accesibilidad/ir-contenido-principal';
 @import 'accesibilidad/simplificada';
 @import 'accesibilidad/tipografia';
 @import 'accesibilidad/lectura';
 @import 'accesibilidad/hipervinculos';
-@import 'accesibilidad/ir-contenido-principal';
 @import 'accesibilidad/oscura';

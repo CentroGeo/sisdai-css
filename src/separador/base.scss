@@ -1,41 +1,5 @@
-// This file is part of sisdai-css.
-//
-// sisdai-css is free software: you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as published by the
-// Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-
-// sisdai-css is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General
-// Public License for more details.
-
-// You should have received a copy of the GNU Lesser General Public License along
-// with sisdai-css. If not, see <https://www.gnu.org/licenses/>.
-
 hr {
   border: none;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: var(--borde-color-1);
-  margin-top: map-get($espaciado, '2');
-  margin-bottom: map-get($espaciado, '2');
-}
-.contenedor-vis hr {
-  border-top-color: var(--borde-color-3);
-}
-
-h1 + hr,
-h2 + hr,
-h3 + hr,
-h4 + hr,
-h5 + hr,
-h6 + hr {
-  margin-top: calc(map-get($espaciado, '1') * -1);
-}
-
-ul + hr,
-ol + hr {
-  margin-top: map-get($espaciado, '0');
-  margin-bottom: map-get($espaciado, '0');
+  border-top: 1px solid var(--borde);
+  margin: 0;
 }

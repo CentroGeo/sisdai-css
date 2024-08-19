@@ -122,6 +122,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <EjemploCodigo
           tipo='HTML'
           codigo='
+          <p class="borde borde-color-neutro">
+            var(--borde-neutro)
+          </p>
+          '
+        />
+      </div>
+      <div class="columna-4">
+        <EjemploCodigo
+          tipo='HTML'
+          codigo='
           <p class="borde borde-color-secundario">
             var(--borde-secundario)
           </p>
