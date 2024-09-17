@@ -31,7 +31,11 @@
   .propiedades {
     display: flex;
     ul {
+      list-style: none;
       flex: 1 1 50%;
+      li {
+        margin: .25em 0;
+      }
     }
   }
 }
