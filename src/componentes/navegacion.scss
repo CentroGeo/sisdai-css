@@ -68,10 +68,16 @@
   position: absolute;
   top: 46px;
   right: -320px;
-  transition: right 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
   &.abierto {
     right: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
 
     &.submenu-abierto {
       right: -320px;
@@ -105,10 +111,16 @@
   position: absolute;
   top: 0;
   right: -320px;
-  transition: right 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 
   &.abierto {
     right: 320px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
   }
 }
 
@@ -147,6 +159,9 @@
     max-width: inherit;
     right: 0;
     top: 0;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: inherit;
 
     .nav-menu-complementario {
       padding-left: 16px;
@@ -178,8 +193,6 @@
 
   .nav-submenu {
     overflow: clip;
-    opacity: 0;
-    pointer-events: none;
     top: inherit;
     left: inherit;
     right: 0;
@@ -191,8 +204,6 @@
 
     &.abierto {
       right: 0;
-      opacity: 1;
-      pointer-events: inherit;
     }
   }
 }
