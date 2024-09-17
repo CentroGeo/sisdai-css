@@ -7087,18 +7087,19 @@ details[open] summary {
   position: relative;
 }
 .campo-busqueda .campo-busqueda-entrada {
-  border-top-right-radius: 0 !important;
-  border-bottom-right-radius: 0 !important;
-  height: auto !important;
-  padding-right: 3rem !important;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  height: auto;
+  padding-right: 48px;
 }
 .campo-busqueda .campo-busqueda-entrada::-webkit-search-decoration, .campo-busqueda .campo-busqueda-entrada::-webkit-search-cancel-button, .campo-busqueda .campo-busqueda-entrada::-webkit-search-results-button, .campo-busqueda .campo-busqueda-entrada::-webkit-search-results-decoration {
   display: none;
 }
 .campo-busqueda .campo-busqueda-borrar {
   position: absolute;
-  top: 12px;
-  right: 64px;
+  top: 4px;
+  right: 56px;
+  margin: 8px;
 }
 .campo-busqueda .campo-busqueda-buscar {
   border-top-left-radius: 0;
@@ -7793,10 +7794,16 @@ dl.informacion-despliegue dd:not(:last-child) {
   position: absolute;
   top: 46px;
   right: -320px;
-  transition: right 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .nav-menu-contenedor.abierto {
   right: 0;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
 }
 .nav-menu-contenedor.abierto.submenu-abierto {
   right: -320px;
@@ -7826,10 +7833,16 @@ dl.informacion-despliegue dd:not(:last-child) {
   position: absolute;
   top: 0;
   right: -320px;
-  transition: right 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 .nav-submenu.abierto {
   right: 320px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
 }
 
 .navegacion.navegacion-extendida {
@@ -7866,6 +7879,9 @@ dl.informacion-despliegue dd:not(:last-child) {
   max-width: inherit;
   right: 0;
   top: 0;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: inherit;
 }
 .navegacion.navegacion-extendida .nav-menu-contenedor .nav-menu-complementario {
   padding-left: 16px;
@@ -7890,8 +7906,6 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 .navegacion.navegacion-extendida .nav-submenu {
   overflow: clip;
-  opacity: 0;
-  pointer-events: none;
   top: inherit;
   left: inherit;
   right: 0;
@@ -7902,8 +7916,6 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 .navegacion.navegacion-extendida .nav-submenu.abierto {
   right: 0;
-  opacity: 1;
-  pointer-events: inherit;
 }
 
 .nav-hipervinculo {
@@ -8167,6 +8179,11 @@ dl.informacion-despliegue dd:not(:last-child) {
   background: transparent;
   box-shadow: none;
   color: var(--color-mx-2);
+}
+.navegacion-gobmx .nav-hipervinculo:focus, .navegacion-gobmx .nav-hipervinculo:focus-visible {
+  outline: none;
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--navegacion-primaria-enfoque-borde), 0 0 8px var(--navegacion-primaria-enfoque-sombra);
 }
 .navegacion-gobmx .nav-boton-menu {
   background-color: transparent;
@@ -9746,8 +9763,8 @@ div.controlador-vis label {
 
 .a11y-simplificada-leer-mostrar-inline {
   display: inline-flex;
-  visibility: hidden;
   width: 0;
+  white-space: nowrap;
   overflow: hidden;
 }
 
@@ -9758,8 +9775,8 @@ div.controlador-vis label {
   display: block;
 }
 .a11y-simplificada .a11y-simplificada-leer-mostrar-inline {
-  visibility: visible;
   width: inherit;
+  white-space: normal;
 }
 .a11y-simplificada .a11y-simplificada-ocultar {
   display: none;
