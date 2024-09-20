@@ -20,7 +20,7 @@
   }
 
   &::after {
-    content: '%';
+    content: '%'/'';
     position: absolute;
     right: map.get($espaciado, '1');
   }

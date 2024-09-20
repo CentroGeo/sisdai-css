@@ -5797,7 +5797,7 @@ textarea:not(:disabled):focus {
 
 [type=checkbox]:checked + label::after {
   font-family: sisdai-pictogramas, sans-serif;
-  content: "j";
+  content: "j"/"";
   color: var(--campo-control-seleccionado-color);
   position: absolute;
   left: calc(0.125rem + 8px - 1px);
@@ -5809,7 +5809,7 @@ textarea:not(:disabled):focus {
 [type=checkbox]:not(:checked, :disabled).indeterminate + label::after,
 [type=checkbox]:indeterminate:not(:disabled) + label::after {
   font-family: sisdai-pictogramas, sans-serif;
-  content: "/";
+  content: "/"/"";
   color: var(--campo-control-seleccionado-color);
   position: absolute;
   left: calc(0.125rem + 4px + 1px);
@@ -7125,7 +7125,7 @@ details[open] summary {
   text-align: right !important;
 }
 .control-acercar-alejar::after {
-  content: "%";
+  content: "%"/"";
   position: absolute;
   right: 8px;
 }
@@ -8096,7 +8096,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   font-family: sisdai-pictogramas, sans-serif;
   font-size: 1rem;
   height: 0.875rem;
-  content: "d";
+  content: "d"/"";
   margin-left: 4px;
 }
 
@@ -8143,7 +8143,7 @@ dl.informacion-despliegue dd:not(:last-child) {
 .nav-boton-regresar::before {
   font-family: sisdai-pictogramas, sans-serif;
   font-size: 1rem;
-  content: "d";
+  content: "d"/"";
   margin-left: -4px;
   margin-right: 4px;
   transform: rotate(180deg);
