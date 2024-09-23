@@ -4,15 +4,14 @@ El proyecto sisdai-css es una biblioteca de estilos de Sass
 alineada al Sistema de Diseño y Accesibilidad para la Investigación 
 ([Sisdai](https://sisdai.conahcyt.mx/)).
 
-Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/)
-con la documentación actualizada del proyecto ó seguir las instrucciones escritas en la seccion [Uso local del proyecto](#uso-local-del-proyecto) de éste README.md para levantar la documentación localmente.
+Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó seguir las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de éste README.md para levantar la documentación localmente.
 
 Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
 en su equipo a través del **protocolo HTTPS**.
 
 ## Utilidades
 
-* Normaliza la forma en que se visualizan los elementos de HTML entre los distintos navegadores como Firefox, Chrome, Opera, Safari, Edge
+* Normaliza la forma en que se visualizan los elementos de HTML entre distintos navegadores como Firefox, Chrome, Opera, Safari, Edge
 * Estandariza estilos desde las etiquetas de HTML
 * Agrega clases para ayudar a la accesibilidad
 * Contiene un archivo de `_variables` general para homogeneizar, tipografías, pesos, tamaños, espacios y colores
@@ -20,8 +19,9 @@ en su equipo a través del **protocolo HTTPS**.
 
 ## Instalación y uso
 
-Si tu proyecto esta creado con [sisdai-proyecto-base](https://codigo.conahcyt.mx/sisdai/sisdai-proyecto-base) 
-tiene incluida una versión estable de sisdai-componentes y no requiere ningún paso de instalación ni importación.
+Si tu proyecto está creado con [sisdai-proyecto-base](https://codigo.conahcyt.mx/sisdai/sisdai-proyecto-base) , ya
+tiene incluida una versión estable de sisdai-css y sisdai-componentes y no requiere ningún paso de instalación ni importación. En
+ese caso puedes ir a la sección [Actualización](#actualización).
 
 ### Agrega las tipografías
 
@@ -72,7 +72,7 @@ import 'sisdai-css/dist/sisdai.min.css'
 @import 'sisdai-css/dist/sisdai.min.css';
 ```
 
-*Opcionalmente** se pueden importar las variables y mixins para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
+*Opcionalmente se pueden importar las variables y mixins para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
 
 ```css
 @import 'sisdai-css/src/_variables';
@@ -87,7 +87,7 @@ Muchos de los estilos de la biblioteca se muestran sin agregar ninguna clase, ut
   <h1> Estilo estandarizado de título principal </h1>
 ```
 
-Existen además clases para dar estilo a elementos y se encuentran agrupadas por módulos dependiendo de su uso.
+Existen además clases para dar estilo a elementos, las cuales se encuentran agrupadas por módulos dependiendo de su uso.
 
 ```html
   <p class="h1">Es la jerarquía de texto más alta, se ubica generalmente al inicio de la página y describe el contenido de la misma</p>
@@ -107,28 +107,28 @@ donde N.N.N indica el número de versión, por ejemplo v1.0.0
 ## Listado de elementos
 
 El código se encuentra separado por carpetas dependiendo del tipo de etiqueta o funcionalidad de los elementos que contenga.
-En general clases fundamentales para estructurar las vistas, definir la tipografía, color, así como cada etiqueta nativa de html tiene su propia carpeta.
-Se separaron los elementos compuestos, componentes y clases requeridos para visualizaciones en carpetas y archivos especificos para cada uno,
-para asegurar por jerarquía que estilos puedan sobreescribir a otros.
+En general las clases fundamentales para estructurar las vistas, definir la tipografía, color, así como cada etiqueta nativa de html tiene su propia carpeta.
+Se separaron los elementos compuestos, componentes y clases requeridas para visualizaciones en carpetas y archivos específicos para cada uno y así asegurar por 
+jerarquía que unos estilos se puedan sobreescribir a otros.
 
-| Modulo | Descripcion                                                                                                                                                            |
-| ------ |------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Accesibilidad | Clases para reescribir el estilo de elementos requeridos por el menú de accesibilidad |
-| Auxiliares | Clases auxiliares para desarrollo, estilos de texto, bordes, alineacion y visualizacion en distintos dispositivos |
-| Botón | Clases que se aplican al elemento `<button>` |
-| Color | Variables de CSS para las paletas de color en modo claro y modo oscuro para todos los elementos del sistema Sisdai |
-| Componentes* | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://codigo.conahcyt.mx/sisdai/sisdai-componentes) |
-| Compuestos | Estilos de multiples elementos que combinados crean un nuevo estilo de elemento compuesto |
-| Detalle | Estilos las etiquetas `<details>` `<summary>` |
-| Formulario | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios |
-| Hipercínculo | Estilos de la etiqueta de hipervínculo `<a>` |
-| Imagen | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>` |
-| Lista | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales |
-| Pictograma | Enlace y mapeado de la tipografía Sisdai-Pictogramas  `.pictograma-` |
-| Separador | Estilos de la etiqueta `<hr />` que puede ser complementada con el auxiliar de borde |
-| Retícula | Clases de contenedores y retícula con renglones y columnas |
-| Tabla | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>` |
-| Tipografía | Estilos de las etiquetas de títulos, párrafos y texto en general. |
+| Módulo           | Descripción                                                                                                                                                                              |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Accesibilidad    | Clases para reescribir el estilo de elementos requeridos por el menú de accesibilidad                                                                                                    |
+| Auxiliares       | Clases auxiliares para desarrollo, estilos de texto, bordes, alineación y visualización en distintos dispositivos                                                                        |
+| Botón            | Clases que se aplican al elemento `<button>`                                                                                                                                             |
+| Color            | Variables de CSS para las paletas de color en modo claro y modo oscuro para todos los elementos del sistema Sisdai                                                                       |
+| Componentes*     | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://codigo.conahcyt.mx/sisdai/sisdai-componentes)                                                            |
+| Compuestos       | Estilos de múltiples elementos que combinados crean un nuevo estilo de elemento compuesto                                                                                                |
+| Detalle          | Estilos las etiquetas `<details>` `<summary>`                                                                                                                                            |
+| Formulario       | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                                         |
+| Hipervínculo     | Estilos de la etiqueta de hipervínculo `<a>`                                                                                                                                             |
+| Imagen           | Estilos de las etiquetas relacionadas con imágenes `<img>`, `<figure>` y `<figcaption>`                                                                                                  |
+| Lista            | Estilos de las etiquetas de listas `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>` y `<dd>` y clases de estilos para listas especiales                                                            |
+| Pictograma       | Enlace y mapeado de la tipografía Sisdai-Pictogramas  `.pictograma-`                                                                                                                     |
+| Separador        | Estilos de la etiqueta `<hr />` que puede ser complementada con el auxiliar de borde                                                                                                     |
+| Retícula         | Clases de contenedores y retícula con filas y columnas                                                                                                                                   |
+| Tabla            | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                                      |
+| Tipografía       | Estilos de las etiquetas de títulos, párrafos y texto en general.                                                                                                                        |
 | Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://codigo.conahcyt.mx/sisdai/sisdai-graficas) y [sisdai-mapas](https://codigo.conahcyt.mx/sisdai/sisdai-mapas) |
 
 > [!NOTE]  
@@ -138,11 +138,11 @@ para asegurar por jerarquía que estilos puedan sobreescribir a otros.
 
 ### Pasos previos recomendados
 
-Para desarrollar este proyecto se usó [node.js](https://nodejs.org/en) como
+Para desarrollar este proyecto se usa [node.js](https://nodejs.org/en) como
 entorno de ejecución de JavaScript. La opción recomendada para instalarlo es
 [vía nvm](https://github.com/nvm-sh/nvm) que es el manejador de versiones de
 node. Siguiendo este camino, también se instalará el manejador de paquetes
-[npm](https://www.npmjs.com/). Dado lo anterior las instrucciones de instalación
+[npm](https://www.npmjs.com/). Las instrucciones de instalación
 y dependencias del proyecto se muestran aquí usando tanto npm, como nvm.
 
 ### Dependencias
@@ -176,15 +176,6 @@ Instala las dependencias de la documentación
 npm run docs:install
 ```
 
-### Documentación
-
-Este proyecto cuenta con una documentación más extensa que aún está
-en proceso de desarrollo. Es posible levantarla en un ambiente local con la instrucción:
-
-``` sh
-npm run docs
-```
-
 ## Licencia
 
 **SOFTWARE LIBRE Y ESTÁNDARES ABIERTOS**
@@ -200,7 +191,7 @@ artículo 63 se explicita que "cuando se trate
 de desarrollos basados en software libre, se respetarán las condiciones de su
 licenciamiento original [...]".
 
-Considerando lo anterior sisdai-css se publica bajo la licencia
+Considerando lo anterior, sisdai-css se publica bajo la licencia
 [LGPLv3](https://www.gnu.org/licenses/lgpl-3.0.html). Dicha licencia se puede
 consultar en el archivo _LICENSE_ de este repositorio.
 Esta licencia se encuentra disponible en inglés porque aunque el Sisdai privilegia
@@ -219,8 +210,8 @@ ___
 
 #### Estructura
 
-Las clases se encuentran agrupadas en módulos, dependiendo el tipo de elemento en el que se utilizará,
-si no existiera una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del componente. 
+Las clases se encuentran agrupadas en módulos, dependiendo el tipo de elemento en el que se utilizará. Si no existiera 
+una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del componente. 
 
 ```bash
 sisdai-css/
@@ -232,7 +223,8 @@ sisdai-css/
 ```
 
 Para agregar el nuevo elemento a la biblioteca se debe importar en el archivo principal `sisdai.scss`.
-Hay que recordar que el orden en el que se importen los estilos importa, el último archivo 'gana' el estilo final.
+Hay que recordar que el orden en el que se importen los estilos tiene jerarquía. El último archivo importado es el 
+que le dará estilo al elemento.
 
 ```bash
 sisdai-css/
@@ -241,7 +233,7 @@ sisdai-css/
     └── sisdai.scss
 ```
 
-Situarlo antes de los auxiliares y los archivos de accesibilidad
+Colócalo antes de los auxiliares y los archivos de accesibilidad
 
 ```css
 /* src/sisdai.scss */
@@ -258,7 +250,7 @@ Para facilitar el mantenimiento de la biblioteca se debe prestar atención en la
 y hacer uso de ellas sobre todo en márgenes y colores; 
 las tipografías deben estar declaradas en unidades _rem_ para que se actualicen conforme el tamaño general de la tipografía del sitio.
 
-Además se deben utilizar en la medida de lo posible los `_mixins.scss` de mediaquery 
+Además, se deben utilizar en la medida de lo posible los `_mixins.scss` de mediaquery 
 o en su defecto utilizar las variables en el @media screen and (max-width: calc(map-get($breakpoints, 'esc')))
 para controlar los puntos de cambio de diseño de celular, escritorio y navegación.
 
@@ -274,16 +266,16 @@ sisdai-css/
 
 #### Validaciones con Stylelint
 
-El proyecto esta construido con los estandares de [Stylelint](https://stylelint.io/user-guide/rules) para mejorar las convenciones y evitar erroes comunes.
-Después de agregar los estilos del nuevo elemento, asegurate de que que se cumplan las mismas reglas.
+El proyecto está construido con los estándares de [Stylelint](https://stylelint.io/user-guide/rules) para mejorar las convenciones y evitar errores comunes.
+Después de agregar los estilos del nuevo elemento, asegúrate de que se cumplan las mismas reglas.
 
 Para verificar el proyecto con Stylelint puedes correr en la terminal el comando 
 ```bash
 npx stylelint "**/*.scss"
 ```
 
-Aparecera una lista de errores, en caso de que existan, con sugerencias para solucionarlos. 
-Cuando no aparezca nada en tu lista, estas lista para continuar.
+Aparecerá una lista de errores, en caso de que existan, con sugerencias para solucionarlos. 
+Cuando no aparezca nada en tu lista, estás lista para continuar.
 
 #### Agregar el nuevo elemento a la documentación
 
@@ -292,7 +284,7 @@ Parecido a los módulos en los que se agrupan los estilos, existen vistas en la
 documentación en donde se demuestra como se ve el nuevo estilo, clase o componente
 y se describe brevemente su funcionalidad.
 
-En caso de necesitar una nueva vista, hay que recordar agregarla en las rutas 
+En caso de necesitar una nueva vista, hay que agregarla en las rutas 
 y en la navegación.
 
 #### Compilación y actualización
