@@ -10,7 +10,7 @@ const router = createRouter({
       }
     } else {
       return { 
-        top: 50,
+        top: 0,
         behavior: 'smooth',
       }
     }
