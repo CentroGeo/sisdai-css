@@ -80,7 +80,7 @@
     font-family: sisdai-pictogramas, sans-serif;
     font-size: 1rem;
     height: 0.875rem;
-    content: 'd';
+    content: 'd'/'';
     margin-left: map.get($espaciado, 'minimo');
   }
 }
@@ -95,7 +95,7 @@
   &::before {
     font-family: sisdai-pictogramas, sans-serif;
     font-size: 1rem;
-    content: 'd';
+    content: 'd'/'';
     margin-left: calc(map.get($espaciado, 'minimo') * -1);
     margin-right: map.get($espaciado, 'minimo');
     transform: rotate(180deg);
