@@ -214,6 +214,33 @@
 
 <template>
   <div>
+    <menu class="tmp-menu" aria-label="funciones de accesibilidad">
+      <button class="boton-primario" @click="toggleA11yTypography">
+        Cambiar fuente tipográfica
+      </button>
+      <button class="boton-primario" @click="toggleA11yLink">
+        Subrayar enlaces
+      </button>
+      <button class="boton-primario" @click="toggleA11yView">
+        {{ isA11yView ? 'Mostrar multimedia y texto' : 'Mostrar solo texto'}}
+      </button>
+      <button class="boton-primario" @click="alternarPerfil">
+        Perfil de color {{ perfil }}
+      </button>
+      <button class="boton-primario" @click="alternarTema">
+        Vista {{ nombreTemaActual }}
+      </button>
+      <button class="boton-primario" @click="downFontSize">
+        Reducir tipografía
+      </button>
+      <button class="boton-primario" @click="upFontSize">
+        Incrementar tipografía
+      </button>
+      <button class="boton-secundario" @click="resetA11y">
+        Restablecer
+      </button>
+    </menu>
+    
     <nav aria-label="Menú del Gobierno de México" class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
@@ -299,7 +326,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
             </li>
-            
             <li>
               <button 
                 class="nav-boton-submenu" 
@@ -321,7 +347,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/fundamentos/tipografia">Tipografia</RouterLink></li>
               </ul>
             </li>
-
             <li>
               <button 
                 class="nav-boton-submenu" 
@@ -343,7 +368,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/tablas">Tablas</RouterLink></li>
               </ul>
             </li>
-
             <li>
               <button 
                 class="nav-boton-submenu" 
@@ -364,7 +388,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
               </ul>
             </li>
-
             <li>
               <button 
                 class="nav-boton-submenu" 
@@ -394,7 +417,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
             </li>
-
             <li>
               <button 
                 class="nav-boton-submenu" 
@@ -413,7 +435,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
               </ul>
             </li>
-
             <li>
               <button 
                 class="nav-boton-submenu" 
@@ -452,33 +473,6 @@
         </div>
       </div>
     </nav>
-
-    <menu class="tmp-menu" aria-label="funciones de accesibilidad">
-      <button class="boton-primario" @click="toggleA11yTypography">
-        Cambiar fuente tipográfica
-      </button>
-      <button class="boton-primario" @click="toggleA11yLink">
-        Subrayar enlaces
-      </button>
-      <button class="boton-primario" @click="toggleA11yView">
-        {{ isA11yView ? 'Mostrar multimedia y texto' : 'Mostrar solo texto'}}
-      </button>
-      <button class="boton-primario" @click="alternarPerfil">
-        Perfil de color {{ perfil }}
-      </button>
-      <button class="boton-primario" @click="alternarTema">
-        Vista {{ nombreTemaActual }}
-      </button>
-      <button class="boton-primario" @click="downFontSize">
-        Reducir tipografía
-      </button>
-      <button class="boton-primario" @click="upFontSize">
-        Incrementar tipografía
-      </button>
-      <button class="boton-secundario" @click="resetA11y">
-        Restablecer
-      </button>
-    </menu>
 
     <main>
       <RouterView />
