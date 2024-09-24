@@ -202,7 +202,7 @@ el idioma español se respeta la versión original de acuerdo al proyecto
 
 Por el momento sólo quienes sean
 parte de un equipo de investigación del capítulo de un [ENI](https://eni.conahcyt.mx)
-podrán levantar issues en este repositorio.
+podrán levantar issues en este repositorio. El equipo del [Sisdai](https://sisdai.conahcyt.mx) se encargará de mantenerlo.
 
 ___
 
