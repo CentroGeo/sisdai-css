@@ -7393,36 +7393,50 @@ dialog.modal .modal-contenedor .modal-cerrar {
 }
 .menu-lateral .menu-lateral-contenedor ul li > a,
 .menu-lateral .menu-lateral-contenedor ul li > button,
+.menu-lateral .menu-lateral-contenedor ul li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ol li > a,
-.menu-lateral .menu-lateral-contenedor ol li > button {
+.menu-lateral .menu-lateral-contenedor ol li > button,
+.menu-lateral .menu-lateral-contenedor ol li .colapsable-boton {
   padding-left: 24px;
 }
 .menu-lateral .menu-lateral-contenedor ul li ul li > a,
 .menu-lateral .menu-lateral-contenedor ul li ul li > button,
+.menu-lateral .menu-lateral-contenedor ul li ul li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ul li ol li > a,
 .menu-lateral .menu-lateral-contenedor ul li ol li > button,
+.menu-lateral .menu-lateral-contenedor ul li ol li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ol li ul li > a,
 .menu-lateral .menu-lateral-contenedor ol li ul li > button,
+.menu-lateral .menu-lateral-contenedor ol li ul li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ol li ol li > a,
-.menu-lateral .menu-lateral-contenedor ol li ol li > button {
+.menu-lateral .menu-lateral-contenedor ol li ol li > button,
+.menu-lateral .menu-lateral-contenedor ol li ol li .colapsable-boton {
   padding-left: 32px;
 }
 .menu-lateral .menu-lateral-contenedor ul li ul li ul li > a,
 .menu-lateral .menu-lateral-contenedor ul li ul li ul li > button,
+.menu-lateral .menu-lateral-contenedor ul li ul li ul li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ul li ul li ol li > a,
 .menu-lateral .menu-lateral-contenedor ul li ul li ol li > button,
+.menu-lateral .menu-lateral-contenedor ul li ul li ol li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ul li ol li ul li > a,
 .menu-lateral .menu-lateral-contenedor ul li ol li ul li > button,
+.menu-lateral .menu-lateral-contenedor ul li ol li ul li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ul li ol li ol li > a,
 .menu-lateral .menu-lateral-contenedor ul li ol li ol li > button,
+.menu-lateral .menu-lateral-contenedor ul li ol li ol li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ol li ul li ul li > a,
 .menu-lateral .menu-lateral-contenedor ol li ul li ul li > button,
+.menu-lateral .menu-lateral-contenedor ol li ul li ul li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ol li ul li ol li > a,
 .menu-lateral .menu-lateral-contenedor ol li ul li ol li > button,
+.menu-lateral .menu-lateral-contenedor ol li ul li ol li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ol li ol li ul li > a,
 .menu-lateral .menu-lateral-contenedor ol li ol li ul li > button,
+.menu-lateral .menu-lateral-contenedor ol li ol li ul li .colapsable-boton,
 .menu-lateral .menu-lateral-contenedor ol li ol li ol li > a,
-.menu-lateral .menu-lateral-contenedor ol li ol li ol li > button {
+.menu-lateral .menu-lateral-contenedor ol li ol li ol li > button,
+.menu-lateral .menu-lateral-contenedor ol li ol li ol li .colapsable-boton {
   padding-left: 40px;
 }
 .menu-lateral .menu-lateral-boton {
@@ -7510,36 +7524,50 @@ dialog.modal .modal-contenedor .modal-cerrar {
   }
   .menu-lateral .menu-lateral-contenedor ul li > a,
   .menu-lateral .menu-lateral-contenedor ul li > button,
+  .menu-lateral .menu-lateral-contenedor ul li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ol li > a,
-  .menu-lateral .menu-lateral-contenedor ol li > button {
+  .menu-lateral .menu-lateral-contenedor ol li > button,
+  .menu-lateral .menu-lateral-contenedor ol li .colapsable-boton {
     padding-left: 40px;
   }
   .menu-lateral .menu-lateral-contenedor ul li ol li > a,
   .menu-lateral .menu-lateral-contenedor ul li ol li > button,
+  .menu-lateral .menu-lateral-contenedor ul li ol li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ul li ul li > a,
   .menu-lateral .menu-lateral-contenedor ul li ul li > button,
+  .menu-lateral .menu-lateral-contenedor ul li ul li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ol li ol li > a,
   .menu-lateral .menu-lateral-contenedor ol li ol li > button,
+  .menu-lateral .menu-lateral-contenedor ol li ol li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ol li ul li > a,
-  .menu-lateral .menu-lateral-contenedor ol li ul li > button {
+  .menu-lateral .menu-lateral-contenedor ol li ul li > button,
+  .menu-lateral .menu-lateral-contenedor ol li ul li .colapsable-boton {
     padding-left: 48px;
   }
   .menu-lateral .menu-lateral-contenedor ul li ol li ol li > a,
   .menu-lateral .menu-lateral-contenedor ul li ol li ol li > button,
+  .menu-lateral .menu-lateral-contenedor ul li ol li ol li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ul li ol li ul li > a,
   .menu-lateral .menu-lateral-contenedor ul li ol li ul li > button,
+  .menu-lateral .menu-lateral-contenedor ul li ol li ul li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ul li ul li ol li > a,
   .menu-lateral .menu-lateral-contenedor ul li ul li ol li > button,
+  .menu-lateral .menu-lateral-contenedor ul li ul li ol li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ul li ul li ul li > a,
   .menu-lateral .menu-lateral-contenedor ul li ul li ul li > button,
+  .menu-lateral .menu-lateral-contenedor ul li ul li ul li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ol li ol li ol li > a,
   .menu-lateral .menu-lateral-contenedor ol li ol li ol li > button,
+  .menu-lateral .menu-lateral-contenedor ol li ol li ol li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ol li ol li ul li > a,
   .menu-lateral .menu-lateral-contenedor ol li ol li ul li > button,
+  .menu-lateral .menu-lateral-contenedor ol li ol li ul li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ol li ul li ol li > a,
   .menu-lateral .menu-lateral-contenedor ol li ul li ol li > button,
+  .menu-lateral .menu-lateral-contenedor ol li ul li ol li .colapsable-boton,
   .menu-lateral .menu-lateral-contenedor ol li ul li ul li > a,
-  .menu-lateral .menu-lateral-contenedor ol li ul li ul li > button {
+  .menu-lateral .menu-lateral-contenedor ol li ul li ul li > button,
+  .menu-lateral .menu-lateral-contenedor ol li ul li ul li .colapsable-boton {
     padding-left: 56px;
   }
   .menu-lateral .menu-lateral-boton {
