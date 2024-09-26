@@ -183,7 +183,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
       <p>
         Para utilizar la navegación es necesario declarar el ancho que tiene el contenido del menú principal
         y crear una función que la compare contra el ancho de la pantalla para quitarle/agregarle la clase
-        <code>.navegacion-extendida</code> a la <code>.navegacion</code>
+        <code>.navegacion-extendida</code> a la <code>.navegacion</code>.
       </p>
     </div>
     <nav 
@@ -377,7 +377,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
         '/>
         <br />
         <p class="nota">
-          Nota: las clases con nombres compuestos en el atributo <code>:class</code> deben ir entre comillas simples
+          Nota: las clases con nombres compuestos en el atributo <code>:class</code> deben ir entre comillas simples.
         </p>
         <EjemploCodigo
           :tiene_ejemplo='false'
