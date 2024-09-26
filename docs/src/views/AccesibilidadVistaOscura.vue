@@ -4,7 +4,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="ancho-lectura">
+    <div class="ancho-lectura" id="descripcion">
       <h1>Vista oscura</h1>
       <p>
         Dentro de las alternativas disponibles en el menú de accesibilidad, está la vista oscura, 
@@ -23,8 +23,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         componentes nativos del Sisdai, dependiendo del tema seleccionado por la persona usuaria.
       </p>
     </div>
-    <div class="ancho-lectura">
-      <h2 class="h4 m-t-10">
+    <div class="ancho-lectura" id="clases-especiales">
+      <h2 class="h4 p-t-10">
         Clases especiales
       </h2>
       <p>
@@ -44,9 +44,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         />
       '
     />
-    <div class="ancho-lectura">
-      <h2 class="h4 m-t-10">
-        Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Vista oscura</em>.
+    <div class="ancho-lectura" id="personalizacion">
+      <h2 class="h4 p-t-10">
+        Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Vista oscura</em>
       </h2>
       <p>
         Si se utilizan componentes no nativos del sistema de diseño o se editan en línea los estilos de alguno, 
@@ -73,9 +73,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       '
     />
     
-    <div class="ancho-lectura">
-      <h2 class="h4 m-t-10">
-        Consideraciones para el correcto mantenimiento del estado <em>Vista oscura</em>.
+    <div class="ancho-lectura" id="mantenimiento">
+      <h2 class="h4 p-t-10">
+        Consideraciones para el correcto mantenimiento del estado <em>Vista oscura</em>
       </h2>
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,

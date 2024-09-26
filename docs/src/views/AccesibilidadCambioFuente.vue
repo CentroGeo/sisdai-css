@@ -4,7 +4,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="ancho-lectura">
+    <div class="ancho-lectura" id="descripcion">
       <h1>Cambio de fuente</h1>
       <p>
         Esta opción ofrece a las personas usuarias la posibilidad de cambiar la tipografía predeterminada (Montserrat) 
@@ -17,12 +17,15 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         La clase <code>.a11y-tipografia</code> cambia el valor de la variable de CSS global <code>--tipografia-familia</code> por 
         <code>'Atkinson Hyperlegible', sans-serif;</code>. El cambio de fuente se aplica a todos los elementos de la página.
       </p>
-      <h2 class="h4 m-t-10">
-        Consideraciones para mantener el estado <em>Cambio de Fuente</em>.
+    </div>
+
+    <div class="ancho-lectura" id="mantenimiento">
+      <h2 class="h4 p-t-10">
+        Consideraciones para mantener el estado <em>Cambio de Fuente</em>
       </h2>
       <p>
         Ambas tipografías deben estar cargadas en el proyecto. <br>
-        Se recomienda utilizar los links de este <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferer">enlace</a>
+        Se recomienda utilizar los links de <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferer" lang="en" hreflang="en">Google fonts</a>
         directamente en la cabecera del archivo <code>index.html</code> del proyecto.
       </p>
     </div>
