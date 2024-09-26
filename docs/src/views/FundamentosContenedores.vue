@@ -83,7 +83,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       <h2 class="m-t-10">Contenedor de ancho de lectura</h2>
       <p>
       Este contenedor se centra y limita su ancho máximo para ajustarse al contenido, 
-      mejorando tanto la legibilidad como la experiencia de usuaria en el sitio
+      mejorando tanto la legibilidad como la experiencia de usuaria en el sitio.
       </p>
       <EjemploPropiedades 
       :propiedades="[[

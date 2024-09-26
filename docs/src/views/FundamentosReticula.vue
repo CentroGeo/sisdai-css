@@ -489,7 +489,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       <p>
         Esta clase es responsiva, se puede utilizar para invertir 
         el orden únicamente en celular con <code>.flex-reversa-mov</code>
-        y para pantallas de escritorio con <code>.flex-reversa-esc</code>
+        y para pantallas de escritorio con <code>.flex-reversa-esc</code>.
       </p>
     </div>
 
