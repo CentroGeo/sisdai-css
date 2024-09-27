@@ -91,7 +91,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <p>
         Para crear un nuevo perfil de color es necesario únicamente crear las 16 variables antes mencionadas,
-        en un archivo de css tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-predeterminada.scss</code>
+        en un archivo de css tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-predeterminada.scss</code>.
       </p>
       <EjemploCodigo
         :tiene_ejemplo="false"

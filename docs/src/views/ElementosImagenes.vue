@@ -22,7 +22,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     </div>
 
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Imagen &lt; img /></h2>
+      <h2 class="m-t-10">Imagen</h2>
       <p>
         La etiqueta <code>&lt;img/></code> es un elemento en línea que se renderiza 
         según las dimensiones especificadas en el archivo de la imagen. Es importante 
@@ -63,7 +63,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
     
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Imagen compuesta &lt; picture /></h2>
+      <h2 class="m-t-10">Imagen compuesta</h2>
       <p>
         La etiqueta <code>&lt;picture/></code> permite definir varios archivos de imagen para 
         el mismo visual, facilitando la adaptación a diferentes tamaños de pantalla o resoluciones. 
@@ -88,7 +88,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     </div>
 
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Contenedor de imágenes &lt; figure /></h2>
+      <h2 class="m-t-10">Contenedor de imágenes</h2>
       <p>
         La etiqueta <code>&lt;figure/></code> es útil para agrupar una o varias imágenes 
         y se complementa con <code>&lt;figcaption/></code>, donde se puede agregar una 

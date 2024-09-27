@@ -4,7 +4,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="ancho-lectura">
+    <div class="ancho-lectura" id="descripcion">
       <h1>Ir al contenido principal</h1>
       <p>
         Enlace de accesibilidad permite a la persona usuaria dirigirse al bloque del contenido principal, saltando todos los menús de la página web.
@@ -13,8 +13,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         Esta funcionalidad es general del sitio y siempre está disponible, no está ligada al menú de accesibilidad.
       </p>
       
-      <h2 class="h4 m-t-10">
-        Consideraciones para el correcto mantenimiento del enlace de accesibilidad <em>Ir al contenido principal</em>.
+      <h2 class="h4 p-t-10" id="mantenimiento">
+        Consideraciones para el correcto mantenimiento del enlace de accesibilidad <em>Ir al contenido principal</em>
       </h2>
       <p>
         Debe existir un hipervínculo con la clase <code>.ir-contenido-principal</code>
