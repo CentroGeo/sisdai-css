@@ -64,7 +64,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
           </div>
           <div class="tarjeta-pie">
-            <button type="button" class="boton-primario boton-chico">botón</button>
+            <button type="button" class="boton-primario boton-chico">Botón de ejemplo</button>
           </div>
         </div>
       </div>
@@ -87,7 +87,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
           </div>
           <div class="tarjeta-pie">
-            <a href="#">Enlace</a>
+            <a href="#">Hiverínculo local de ejemplo</a>
           </div>
         </div>
       </div>
@@ -128,8 +128,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p>El texto descriptivo es conciso y significativo. Debe ayudar a la persona usuaria a tomar decisiones. Muestra de 100 a 120 caracteres.</p>
           </div>
           <div class="tarjeta-pie">
-            <button type="button" class="boton-primario boton-chico">botón</button>
-            <button type="button" class="boton-secundario boton-chico">botón</button>
+            <button type="button" class="boton-primario boton-chico">Botón primario ejemplo</button>
+            <button type="button" class="boton-secundario boton-chico">Botón segundario ejemplo</button>
           </div>
         </div>
       </div>
@@ -141,7 +141,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
           </div>
           <div class="tarjeta-pie">
-            <button type="button" class="boton-primario boton-chico">botón</button>
+            <button type="button" class="boton-primario boton-chico">Botón de otro ejemplo</button>
           </div>
         </div>
       </div>

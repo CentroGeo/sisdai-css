@@ -13,7 +13,7 @@ const estaAbierto = ref(true)
 
           <button 
             class="menu-lateral-boton" 
-            aria-label="Navegación secundaria"
+            aria-label="Menú secundario"
             aria-controls="ejemplomenulateral" 
             :aria-expanded="estaAbierto"
             @click="estaAbierto = !estaAbierto"
@@ -29,144 +29,43 @@ const estaAbierto = ref(true)
             <ul>
               <li>
                 <router-link to="/">
-                  Router link inicio prueba
+                  Enlace a la página de inicio
                 </router-link>
               </li>
               <li>
                 <a href="#">
-                  Hipervínculo 1
+                  Enlace local ejemplo uno
                 </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 2
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 3
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 4
-                </a>
-              </li>
-              <li class="colapsable">
-                <button 
-                  class="colapsable-boton" 
-                  aria-controls="ejemplocolapsable1" 
-                  aria-expanded="false" 
-                  type="button"
-                >
-                  Colapsable cerrado
-                  <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
-                </button>
-                <div 
-                  class="colapsable-contenedor"
-                  id="ejemplocolapsable1"
-                  aria-hidden="true" 
-                >
-                  <ul>
-                    <li>
-                      <a href="#">Enlace colapsado</a>
-                    </li>
-                  </ul>
-                </div>
               </li>
               <li class="colapsable abierto">
-                <button 
-                  class="colapsable-boton" 
-                  aria-controls="ejemplocolapsable2" 
-                  aria-expanded="true" 
-                  type="button"
-                >
-                  Colapsable abierto
+                <button class="colapsable-boton">
+                  Nombre de sección colapsable
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>
-                <div 
-                  class="colapsable-contenedor"
-                  id="ejemplocolapsable2"
-                >
-                  <ul>
-                    <li>
-                      <a href="#">Enlace</a>
-                    </li>
-                    <li>
-                      <a href="#">Enlace</a>
-                    </li>
-                    <li class="colapsable abierto">
-                      <button 
-                        class="colapsable-boton" 
-                        aria-controls="ejemplocolapsable3" 
-                        aria-expanded="true" 
-                        type="button"
-                      >
-                        Colapsable sub lista abierto
-                        <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
-                      </button>
-                      <div 
-                        class="colapsable-contenedor"
-                        id="ejemplocolapsable3"
-                      >
-                        <ul>
-                          <li>
-                            <a href="#">Enlace</a>
-                          </li>
-                          <li>
-                            <a href="#">Enlace</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
+                <ul>
+                  <li>
+                    <a href="#">
+                      Enlace local ejemplo colapsable abierto
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li>
                 <a href="#">
-                  Hipervínculo 5
+                  Enlace local ejemplo dos
                 </a>
               </li>
               <li>
                 <a href="#">
-                  Hipervínculo 6
+                  Enlace local ejemplo tres
                 </a>
               </li>
               <li>
                 <a href="#">
-                  Hipervínculo 7
+                  Enlace local ejemplo cuatro
                 </a>
               </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 8
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 9
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 10
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 11
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 12
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  Hipervínculo 13
-                </a>
-              </li>
+              
             </ul>
           </div>
         </nav>
@@ -205,7 +104,7 @@ const estaAbierto = ref(true)
                   class="menu-lateral-boton" 
                   aria-controls="ID-UNICO" 
                   aria-expanded="false" <- aqui se cambia a true (notas estado abierto)
-                  aria-label="Navegacion secundaria"
+                  aria-label="Menú secundario"
                   type="button"
                 >
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
@@ -237,7 +136,7 @@ const estaAbierto = ref(true)
                   class="menu-lateral-boton" 
                   aria-controls="ID-UNICO-DOS" 
                   aria-expanded="true" 
-                  aria-label="Navegacion secundaria"
+                  aria-label="Menú secundario"
                   type="button"
                 >
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
@@ -250,32 +149,32 @@ const estaAbierto = ref(true)
                   <ul>
                     <li>
                       <router-link to="/">
-                        router link inicio prueba
+                        Enlace a la página de inicio
                       </router-link>
                     </li>
                     <li>
                       <a href="#">
-                        hipervinculo
+                        Enlace local ejemplo uno
                       </a>
                     </li>
-                    <li class="colapsable">
+                    <li class="colapsable abierto">
                       <button 
                         class="colapsable-boton" 
                         aria-controls="ID-UNICO-TRES" 
-                        aria-expanded="false" 
+                        aria-expanded="true" 
                         type="button"
                       >
-                        Colapsable
+                        Nombre de sección colapsable
                         <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                       </button>
                       <div 
                         class="colapsable-contenedor" 
                         id="ID-UNICO-TRES" 
-                        aria-hidden="true"
+                        aria-hidden="false"
                       >
                         <ul>
                           <li>
-                            <a href="#">Enlace colapsado</a>
+                            <a href="#">Enlace local ejemplo colapsable abierto</a>
                           </li>
                         </ul>
                       </div>
