@@ -113,9 +113,6 @@
               Clases reutilizables basadas en los fundamentos del Sidai que
               nos permiten personalizar los estilos de la interfaz de usuaria.
             </p>
-            <p>
-              Pruebilla para ver si se despliega y que voy a borrar
-            </p>
           </div>
         </a>
       </div>
