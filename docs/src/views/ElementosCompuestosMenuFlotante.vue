@@ -20,22 +20,23 @@ const estaAbierto = ref(true)
       <button 
         class="menu-flotante-boton"
         aria-label="Menú de ejemplo"
+        aria-controls="IDMENUEJEMPLO"
         @click="estaAbierto = !estaAbierto"
       >
         <span class="menu-flotante-pictograma-abierto pictograma-restar" aria-hidden="true"></span>
         <span class="menu-flotante-pictograma-cerrado pictograma-agregar" aria-hidden="true"></span>
       </button>
-      <menu class="menu-flotante-contenedor">
+      <div id="IDMENUEJEMPLO" class="menu-flotante-contenedor">
 
         <p class="menu-flotante-titulo">Título</p>
         
         <a href="#">
-          Hipervínculo
+          Hipervínculo ejemplo
           <span class="pictograma-flecha-arriba-derecha m-l-1" aria-hidden="true"></span>
         </a>
         
         <a href="#">
-          Descarga
+          Enlace de descarga
           <span class="pictograma-documento m-l-1" aria-hidden="true"></span>
         </a>
 
@@ -50,7 +51,7 @@ const estaAbierto = ref(true)
           Boton secundario chico
         </button>
 
-      </menu>
+      </div>
     </div>
 
     <div class="flex flex-contenido-centrado m-t-10">
@@ -95,7 +96,11 @@ const estaAbierto = ref(true)
         tipo="HTML"
         codigo='
           <div class="menu-flotante menu-flotante-izquierdo">
-            <button class="menu-flotante-boton">
+            <button 
+              class="menu-flotante-boton"
+              aria-label="Menú de ejemplo"
+              aria-controls="IDMENUEJEMPLO"
+            >
               <span 
                 class="
                   menu-flotante-pictograma-abierto 
@@ -112,14 +117,14 @@ const estaAbierto = ref(true)
               ></span>
             </button>
             
-            <menu class="menu-flotante-contenedor">
+            <div id="IDMENUEJEMPLO" class="menu-flotante-contenedor">
               
               <p class="menu-flotante-titulo">
                 Título
               </p>
 
               <a href="#">
-                Hipervínculo
+                Hipervínculo ejemplo
                 <span 
                   class="pictograma-flecha-arriba-derecha m-l-1" 
                   aria-hidden="true"
@@ -127,7 +132,7 @@ const estaAbierto = ref(true)
               </a>
               
               <a href="#" download>
-                Descarga
+                Enlace de descarga
                 <span 
                   class="pictograma-documento m-l-1" 
                   aria-hidden="true"
@@ -144,7 +149,7 @@ const estaAbierto = ref(true)
                 Boton secundario chico
               </button>
 
-            </menu>
+            </div>
           </div>
           '
         />

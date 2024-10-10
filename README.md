@@ -304,3 +304,5 @@ npm run build
 
 El **build** actualiza los archivos de la carpeta de distribución `dist` que se utilizan para actualizar la **CDN** y que puedes utilizar como archivos locales copiándolos y pegándolos en tus proyectos.
 
+----------------
+

@@ -93,7 +93,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
             </div>
             
             <button 
-              aria-label="Cerrar Modal"
+              aria-label="Cerrar"
               class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" 
               type="button" 
             >
@@ -176,7 +176,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
         <div class="modal-pie">
           <button type="button" class="boton-primario">Acción primaria</button>
         </div>
-        <button aria-label="Cerrar Modal" class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalPredeterminado">
+        <button aria-label="Cerrar" class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalPredeterminado">
           <span class="pictograma-cerrar" aria-hidden="true"></span>
         </button>
       </div>
@@ -223,7 +223,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           <button type="button" class="boton-primario">Aceptar</button>
           <button type="button" class="boton-secundario">Cancelar</button>
         </div>
-        <button aria-label="Cerrar Modal" class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalGrande">
+        <button aria-label="Cerrar" class="boton-pictograma boton-sin-contenedor-secundario modal-cerrar" type="button" @click="cerrarModalGrande">
           <span class="pictograma-cerrar" aria-hidden="true"></span>
         </button>
       </div>
