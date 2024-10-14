@@ -11,7 +11,7 @@
         <i>sisdai-css</i> es una biblioteca de estilos de Sass que normaliza la forma
         en que se visualizan los elementos de HTML entre los distintos
         navegadores, estandariza estilos desde las etiquetas de HTML y
-        agrega clases para ayudar a la accesibilidad digital.
+        agrega clases para ayudar a la accesibilidad digital...
       </p>
     </div>
 
