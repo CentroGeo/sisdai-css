@@ -51,6 +51,8 @@ footer,
   padding-bottom: map.get($espaciado, '10');
   
   .hipervinculo-gobmx {
+    display: inline-block;
+    line-height: max(24px, 1.5em);
     color: var(--color-mx-3);
     
     &:visited {
@@ -71,6 +73,8 @@ footer,
   color: var(--color-conahcyt-0);
 
   .hipervinculo-conahcyt {
+    display: inline-block;
+    line-height: max(24px, 1.5em);
     color: var(--color-conahcyt-0);
 
     &:visited {
