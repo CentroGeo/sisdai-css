@@ -8286,6 +8286,8 @@ footer ol,
   padding-bottom: 80px;
 }
 .piepagina-gobmx .hipervinculo-gobmx {
+  display: inline-block;
+  line-height: max(24px, 1.5em);
   color: var(--color-mx-3);
 }
 .piepagina-gobmx .hipervinculo-gobmx:visited {
@@ -8301,6 +8303,8 @@ footer ol,
   color: var(--color-conahcyt-0);
 }
 .piepagina-conahcyt .hipervinculo-conahcyt {
+  display: inline-block;
+  line-height: max(24px, 1.5em);
   color: var(--color-conahcyt-0);
 }
 .piepagina-conahcyt .hipervinculo-conahcyt:visited {
