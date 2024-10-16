@@ -45,10 +45,10 @@ const estaAbierto = ref(false)
         >
           <ul>
             <li>
-              <a href="#">Enlace</a>
+              <a href="#">Enlace ejemplo uno</a>
             </li>
             <li>
-              <a href="#">Enlace</a>
+              <a href="#">Enlace ejemplo dos</a>
             </li>
           </ul>
         </div>
@@ -97,10 +97,10 @@ const estaAbierto = ref(false)
               <!-- <slot name="contenido"> -->
                 <ul>
                   <li>
-                    <a href="#">Enlace</a>
+                    <a href="#">Enlace ejemplo colapsado</a>
                   </li>
                   <li>
-                    <a href="#">Enlace</a>
+                    <a href="#">Enlace ejemplo colapsado dos</a>
                   </li>
                 </ul>
               <!-- </slot> -->
@@ -142,10 +142,10 @@ const estaAbierto = ref(false)
               <!-- <slot name="contenido"> -->
                 <ul>
                   <li>
-                    <a href="#">Enlace</a>
+                    <a href="#">Enlace ejemplo abierto uno</a>
                   </li>
                   <li>
-                    <a href="#">Enlace</a>
+                    <a href="#">Enlace ejemplo abierto dos</a>
                   </li>
                 </ul>
               <!-- </slot> -->

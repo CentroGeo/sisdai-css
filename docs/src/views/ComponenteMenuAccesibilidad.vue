@@ -43,7 +43,7 @@ const estaAbierto = ref(true)
 
           <button
             class="menu-flotante-boton"
-            aria-label="Abrir y cerrar menú de accesibilidad"
+            aria-labelledby="herramientasaccesibilidad"
             aria-controls="menua11y"
             :aria-expanded="estaAbierto"
             @click="estaAbierto = !estaAbierto"
@@ -52,12 +52,14 @@ const estaAbierto = ref(true)
             <span class="pictograma-accesibilidad" aria-hidden="true"/>
           </button>
 
-          <menu 
+          <div 
             class="menu-flotante-contenedor" 
             id="menua11y"
             :aria-hidden="!estaAbierto"
           >
-            <p class="menu-flotante-titulo">Herramientas de accesibilidad</p>
+            <p id="herramientasaccesibilidad" class="menu-flotante-titulo">
+              Herramientas de accesibilidad
+            </p>
 
             <input id="a11y-tipografia" type="checkbox"/>
             <label for="a11y-tipografia">
@@ -86,7 +88,7 @@ const estaAbierto = ref(true)
             <button class="boton-secundario boton-chico m-t-2" type="button">
               Restablecer
             </button>
-          </menu>
+          </div>
         </div>
       ' />
     
@@ -127,19 +129,19 @@ const estaAbierto = ref(true)
     <div class="menu-flotante menu-flotante-derecho menu-accesibilidad" :class="{abierto: estaAbierto}">
       <button
         class="menu-flotante-boton"
-        aria-label="Abrir y cerrar menú de accesibilidad"
-        aria-controls="menua11y"
+        aria-labelledby="herramientasaccesibilidadej"
+        aria-controls="menua11yej"
         :aria-expanded="estaAbierto"
         @click="estaAbierto = !estaAbierto"
       >
         <span class="pictograma-accesibilidad" aria-hidden="true"/>
       </button>
-      <menu 
+      <div 
         class="menu-flotante-contenedor" 
-        id="menua11y"
+        id="menua11yej"
         :aria-hidden="!estaAbierto"
       >
-        <p class="menu-flotante-titulo">Herramientas de accesibilidad</p>
+        <p id="herramientasaccesibilidadej" class="menu-flotante-titulo">Herramientas de accesibilidad</p>
         <input id="a11y-tipografia" type="checkbox"/>
         <label for="a11y-tipografia">
           <span aria-hidden="true" class="pictograma-cambio-tipografia" />
@@ -163,7 +165,7 @@ const estaAbierto = ref(true)
         <button class="boton-secundario boton-chico m-t-2" type="button">
           Restablecer
         </button>
-      </menu>
+      </div>
     </div>
 
   </div>

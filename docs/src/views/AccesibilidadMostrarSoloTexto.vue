@@ -4,7 +4,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="ancho-lectura">
+    <div class="ancho-lectura" id="descripcion">
       <h1>Mostrar solo texto</h1>
       <p>
         Al activar este estado, se eliminan botones y elementos gráficos como imágenes, videos, tarjetas, gráficas, tableros, 
@@ -96,8 +96,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </dl>
     </div>
 
-    <div class="ancho-lectura">
-      <h2 class="h4 m-t-10">
+    <div class="ancho-lectura" id="clases-especiales">
+      <h2 class="h4 p-t-10">
         Clases especiales
       </h2>
       <p>
@@ -118,13 +118,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </p>
       <p>
         La clase <code>.a11y-simplificada-mantener-imagen</code> se utiliza para mantener siempre visible una imagen aunque se habilite 
-        el estado <var>Mostrar solo texto</var>
+        el estado <var>Mostrar solo texto</var>.
       </p>
     </div>
 
-    <div class="ancho-lectura">
-      <h2 class="h4 m-t-10">
-        Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Mostrar solo texto</em>.
+    <div class="ancho-lectura" id="personalizacion">
+      <h2 class="h4 p-t-10">
+        Consideraciones para agregar nuevos elementos que se modifiquen con el estado <em>Mostrar solo texto</em>
       </h2>
       <p>
         Si se agrega un nuevo elemento, es necesario  utilizar la clase .a11y-simplificada 
@@ -154,9 +154,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       '
     />
 
-    <div class="ancho-lectura">
-      <h2 class="h4 m-t-10">
-        Consideraciones para el correcto mantenimiento del estado <em>Mostrar solo texto</em>.
+    <div class="ancho-lectura" id="mantenimiento">
+      <h2 class="h4 p-t-10">
+        Consideraciones para el correcto mantenimiento del estado <em>Mostrar solo texto</em>
       </h2>
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,

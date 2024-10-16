@@ -96,31 +96,24 @@ window.removeEventListener('resize', validarNavegacionColapsable)
           width="57px"
           height="38px"
         />
-        <button class="nav-boton-menu"> ... </button>
-        <div class="nav-informacion"> ... </div>
       </div>
       <div class="nav-menu-contenedor"> 
         <div class="nav-menu-complementario">
           <a href="#" class="nav-hipervinculo" >
-            MENÚ
+            COMPLEMENTARIO
           </a>
         </div>
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li>
               <a href="#" class="nav-hipervinculo active">
-                Menú activo
+                Activo
               </a>
             </li>
             <li>
               <a href="#" class="nav-hipervinculo">
-                Menú
+                Ejemplo
               </a>
-            </li>
-            <li>
-              <button aria-label="Buscar" class="nav-boton boton-primario" type="button">
-                <span class="pictograma-buscar" aria-hidden="true"></span>
-              </button>
             </li>
           </ul>
         </div>
@@ -136,10 +129,12 @@ window.removeEventListener('resize', validarNavegacionColapsable)
       
           <div class="nav-contenedor-identidad">
             <img class="nav-logo" src="..." alt="" />
+            
+            <!-- botón opcional para colapsar navegacion -->
+            <!-- <button class="nav-boton-menu"> -->
 
-            <button class="nav-boton-menu"> ... </button>
-
-            <div class="nav-informacion"> ... </div>
+            <!-- sección opcional para información de página activa en celular -->
+            <!-- <div class="nav-informacion"> -->
           </div>
 
           <div class="nav-menu-contenedor"> 
@@ -147,26 +142,21 @@ window.removeEventListener('resize', validarNavegacionColapsable)
             <!-- sección opcional para hipervínculos externos -->
             <div class="nav-menu-complementario">
               <a href="#" class="nav-hipervinculo" >
-                MENÚ
+                COMPLEMENTARIO
               </a>
             </div>
             
             <div class="nav-menu-principal">
               <ul class="nav-menu">
                 <li>
-                  <a href="#" class="nav-hipervinculo">
-                    Menú
+                  <a href="#" class="nav-hipervinculo active">
+                    Activo
                   </a>
                 </li>
                 <li>
                   <a href="#" class="nav-hipervinculo">
-                    Menú
+                    Ejemplo
                   </a>
-                </li>
-                <li>
-                  <button aria-label="Buscar" class="nav-boton boton-primario" type="button">
-                    <span class="pictograma-buscar" aria-hidden="true"></span>
-                  </button>
                 </li>
               </ul>
             </div>
@@ -183,11 +173,11 @@ window.removeEventListener('resize', validarNavegacionColapsable)
       <p>
         Para utilizar la navegación es necesario declarar el ancho que tiene el contenido del menú principal
         y crear una función que la compare contra el ancho de la pantalla para quitarle/agregarle la clase
-        <code>.navegacion-extendida</code> a la <code>.navegacion</code>
+        <code>.navegacion-extendida</code> a la <code>.navegacion</code>.
       </p>
     </div>
     <nav 
-      aria-label="Navegación principal"
+      aria-label="Menú principal"
       class="navegacion nav-doc"
       :class="{'navegacion-extendida': !esColapsable}"
       @mouseleave="ocultarSumbenu()"
@@ -207,7 +197,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
           class="nav-boton-menu"
           :class="{abierto: menuAbierto || submenuAbierto}"
           :aria-expanded="menuAbierto || submenuAbierto"
-          aria-label="Navegación principal"
+          aria-label="Menú principal"
           aria-controls="navegacionprincipal"
           @click="abrirCerrarMenu()"
           type="button"
@@ -234,14 +224,14 @@ window.removeEventListener('resize', validarNavegacionColapsable)
             rel="noopener noreferrer"
              @click="cerrarMenuSubmenu()"
           >
-            MENU COMPLEMENTARIO
+            ENLACE COMPLEMENTARIO
           </a>
         </div>
         <div class="nav-menu-principal">
           <ul class="nav-menu">
             <li>
               <a href="#" class="nav-hipervinculo" @mouseover="ocultarSumbenu()"  @click="cerrarMenuSubmenu()">
-                Menú
+                Enlace navegación
               </a>
             </li>
             <li>
@@ -254,7 +244,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                 @mouseover="mostrarSubmenu()"
                 type="button"
               >
-                Menú con submenu
+                Elemento con submenu
               </button>
               <ul 
                 id="submenuEjemplo"
@@ -268,24 +258,24 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                     @click="regresarMenu()"
                     type="button"
                   >
-                    Submenu
+                    Regresar
                   </button>
                 </li>
                 <li>
                   <a href="#" class="nav-hipervinculo" @click="cerrarMenuSubmenu()">
-                    Submenu uno
+                    Enlace submenu uno
                   </a>
                 </li>
                 <li>
                   <a href="#" class="nav-hipervinculo" @click="cerrarMenuSubmenu()">
-                    Submenu dos
+                    Enlace submenu dos
                   </a>
                 </li>
               </ul>
             </li>
             <li>
               <button class="nav-boton boton-sin-contenedor-secundario" @mouseover="ocultarSumbenu()" @click="cerrarMenuSubmenu()" type="button">
-                nav boton
+                Botón de navegación
               </button>
             </li>
             <li>
@@ -324,7 +314,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
         tipo='HTML'
         codigo='
         <nav 
-          aria-label="Navegación principal"
+          aria-label="Menú principal"
           class="navegacion"
           :class="{navegacion-extendida: !esColapsable}"
         >
@@ -377,14 +367,14 @@ window.removeEventListener('resize', validarNavegacionColapsable)
         '/>
         <br />
         <p class="nota">
-          Nota: las clases con nombres compuestos en el atributo <code>:class</code> deben ir entre comillas simples
+          Nota: las clases con nombres compuestos en el atributo <code>:class</code> deben ir entre comillas simples.
         </p>
         <EjemploCodigo
           :tiene_ejemplo='false'
           tipo='HTML'
           codigo='
           <nav 
-            aria-label="Navegación principal"
+            aria-label="Menú principal"
             class="navegacion"
             :class="{navegacion-extendida: !esColapsable}"
             @mouseleave="ocultarSumbenu()"
@@ -406,7 +396,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                 class="nav-boton-menu"
                 :class="{abierto: menuAbierto || submenuAbierto}"
                 :aria-expanded="menuAbierto || submenuAbierto"
-                aria-label="Navegación principal"
+                aria-label="Menú principal"
                 aria-controls="navegacionprincipal"
                 @click="abrirCerrarMenu()"
                 type="button"
@@ -435,7 +425,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                   rel="noopener noreferrer"
                   @click="cerrarMenuSubmenu()"
                 >
-                  MENU COMPLEMENTARIO
+                  ENLACE COMPLEMENTARIO
                 </a>
               </div>
               
@@ -447,7 +437,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                       @mouseover="ocultarSumbenu()" 
                       @click="cerrarMenuSubmenu()"
                     >
-                      Menú
+                      Enlace navegación
                     </a>
                   </li>
                   <li>
@@ -460,7 +450,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                       @mouseover="mostrarSubmenu()"
                       type="button"
                     >
-                      Menú con submenu
+                      Elemento con submenu
                     </button>
                     <ul 
                       id="submenuEjemplo"
@@ -474,7 +464,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                           @click="regresarMenu()"
                           type="button"
                         >
-                          Submenu
+                          Regresar
                         </button>
                       </li>
                       <li>
@@ -482,7 +472,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                           class="nav-hipervinculo" 
                           @click="cerrarMenuSubmenu()"
                         >
-                          Submenu uno
+                          Enlace submenu uno
                         </a>
                       </li>
                       <li>
@@ -490,7 +480,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                           class="nav-hipervinculo" 
                           @click="cerrarMenuSubmenu()"
                         >
-                          Submenu dos
+                          Enlace submenu dos
                         </a>
                       </li>
                     </ul>
@@ -501,7 +491,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
                       @click="cerrarMenuSubmenu()"
                       type="button"
                     >
-                      nav boton
+                      Botón de navegación
                     </button>
                   </li>
                   <li>

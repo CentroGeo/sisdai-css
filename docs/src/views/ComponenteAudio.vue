@@ -31,7 +31,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <EjemploCodigo
         tipo='HTML'
         codigo='
-        <div class="audio" role="toolbar" aria-label="Controles para reproducir audio">
+        <div class="audio" role="toolbar" aria-label="Reproductor de audio">
 
           <div class="audio-cabecera">
             <p class="nota">Etiqueta o texto secundario .nota</p>
@@ -55,11 +55,11 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             </div>
           </div>
           
-          <input type="range" aria-label="Barra de progreso de la reproducción" />
+          <input type="range" aria-label="Barra de reproducción" />
     
           <div class="flex">
             <div class="audio-velocidad">
-              <select aria-label="Selecciona la velocidad de reproducción">
+              <select aria-label="Velocidad de reproducción">
                 <optgroup label="Velocidad de reproduccion">
                   <option value="0.25"> 0.25x </option>
                   <option value="0.5"> 0.5x </option>
@@ -75,16 +75,20 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             
             <div class="audio-reproduccion">
 
-              <button aria-label="Regresar 10 segundos" class="boton-pictograma boton-sin-contenedor-primario" type="button">
+              <button aria-label="Atrasar 10 segundos" class="boton-pictograma boton-sin-contenedor-primario" type="button">
                 <span class="pictograma-regresar-10" aria-hidden="true"></span>
               </button>
 
 
               <!-- Opción para reproducir o pausar la reproducción del audio, la funcionalidad se debe agregar con JavaScript -->
-              <button aria-label="Comenzar/Pausar reproducción" class="boton-pictograma boton-sin-contenedor-primario" type="button">
+              <button aria-label="Reproducir" class="boton-pictograma boton-sin-contenedor-primario" type="button">
                 <span class="pictograma-control-comenzar" aria-hidden="true"></span>
-                <!-- <span class="pictograma-control-pausa" aria-hidden="true"></span> -->
               </button>
+              <!-- 
+              <button aria-label="Pausar" class="boton-pictograma boton-sin-contenedor-primario" type="button">
+                <span class="pictograma-control-pausa" aria-hidden="true"></span>
+              </button> 
+              -->
 
               <button aria-label="Adelantar 10 segundos" class="boton-pictograma boton-sin-contenedor-primario" type="button">
                 <span class="pictograma-adelantar-10" aria-hidden="true"></span>
@@ -94,12 +98,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <div class="audio-volumen">
               
               <!-- Opción para escuchar o no el sonido, la funcionalidad se debe agregar con JavaScript -->
-              <button aria-label="Encender/Apagar sonido" class="boton-pictograma boton-sin-contenedor-primario" type="button">
+              <button aria-label="Silenciar" class="boton-pictograma boton-sin-contenedor-primario" type="button">
                 <span class="pictograma-volumen" aria-hidden="true" />
-                <!-- <span class="pictograma-silenciar" aria-hidden="true" /> -->
               </button>
+              <!-- 
+              <button aria-label="Desactivar silencio" class="boton-pictograma boton-sin-contenedor-primario" type="button">
+                <span class="pictograma-silenciar" aria-hidden="true" />
+              </button> 
+              -->
 
-              <input type="range" aria-label="Nivel de volumen" />
+              <input type="range" aria-label="Volumen" />
             </div>
 
           </div>

@@ -4,7 +4,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="ancho-lectura">
+    <div class="ancho-lectura" id="descripcion">
       <h1>Enlaces subrayados</h1>
       <p>
         La función de enlaces subrayados es una opción de presentación visual para destacar los elementos interactivos del sitio. 
@@ -17,9 +17,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         se subrayen en cualquier estado. Este cambio aplica a todos los enlaces de la página.
       </p>
     </div>
-    <div class="ancho-lectura">
-      <h2 class="h4 m-t-10">
-        Consideraciones para el correcto mantenimiento del estado <em>Enlaces subrayados</em>.
+
+    <div class="ancho-lectura" id="mantenimiento">
+      <h2 class="h4 p-t-10">
+        Consideraciones para el correcto mantenimiento del estado <em>Enlaces subrayados</em>
       </h2>
       <p>
         En el archivo de configuración <code>opcionesDefault.js</code> del componente <code>SisdaiMenuAccesibilidad</code>,

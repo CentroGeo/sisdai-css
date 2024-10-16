@@ -66,21 +66,24 @@
   
       li {
         > a,
-        > button {
+        > button,
+        .colapsable-boton {
           padding-left: map.get($espaciado, '3');
         }
   
         ul li,
         ol li {
           > a,
-          > button {
+          > button,
+          .colapsable-boton {
             padding-left: map.get($espaciado, '4');
           }
   
           ul li,
           ol li {
             > a,
-            > button {
+            > button,
+            .colapsable-boton {
               padding-left: map.get($espaciado, '5');
             }
           }
@@ -185,21 +188,24 @@
       ol {
         li {
           > a,
-          > button {
+          > button,
+          .colapsable-boton {
             padding-left: map.get($espaciado, '5');
           }
   
           ol li,
           ul li {
             > a,
-            > button {
+            > button,
+            .colapsable-boton {
               padding-left: map.get($espaciado, '6');
             }
   
             ol li,
             ul li {
               > a,
-              > button {
+              > button,
+              .colapsable-boton {
                 padding-left: map.get($espaciado, '7');
               }
             }

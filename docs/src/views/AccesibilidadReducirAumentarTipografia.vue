@@ -4,16 +4,18 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="ancho-lectura">
+    <div class="ancho-lectura" id="descripcion">
       <h1>Reducir / Aumentar Tipografía <span class="etiqueta">preliminar</span></h1>
       <p>
         Esta funcionalidad permite a la persona usuaria hacer que todo el texto del sitio 
         sea más grande o más pequeño que el tamaño predeterminado establecido por el Sisdai, 
         que es de  16px como base.
       </p>
-      
-      <h2 class="h4 m-t-10">
-        Consideraciones para agregar el estado <em>Reducir / Aumentar Tipografía</em>.
+    </div>
+
+    <div class="ancho-lectura" id="integracion">
+      <h2 class="h4 p-t-10">
+        Consideraciones para agregar el estado <em>Reducir / Aumentar Tipografía</em>
       </h2>
       <p>
         Todos los tamaños tipográficos de todos los elementos deben estar declarados en unidades <code>rem</code>

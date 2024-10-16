@@ -91,7 +91,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <p>
         Para crear un nuevo perfil de color es necesario únicamente crear las 16 variables antes mencionadas,
-        en un archivo de css tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-predeterminada.scss</code>
+        en un archivo de css tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-predeterminada.scss</code>.
       </p>
       <EjemploCodigo
         :tiene_ejemplo="false"
@@ -202,11 +202,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
         <p>Gobierno de México</p>
-        <EjemploMuestraColor variable="var(--color-mx-5)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-mx-4)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-mx-3)" texto="#000"/>
-        <EjemploMuestraColor variable="var(--color-mx-2)" texto="#000"/>
-        <EjemploMuestraColor variable="var(--color-mx-1)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-2)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-1)" texto="#000"/>
         <EjemploMuestraColor variable="var(--color-mx-0)" texto="#000"/>
       </div>
 

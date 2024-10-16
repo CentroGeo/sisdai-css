@@ -244,7 +244,13 @@
     <nav aria-label="Menú del Gobierno de México" class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
       <div class="nav-contenedor-identidad">
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
-          <img width="128" height="38" class="nav-logo" src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México">
+          <img 
+            class="nav-logo" 
+            src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
+            alt="Gobierno de México."
+            width="104.8"
+            height="38" 
+          />
         </a>
         <button 
           v-if="esColapsable" 
@@ -263,7 +269,6 @@
       <div id="menugobiernodemexico" class="nav-menu-contenedor" :class="{ 'abierto': showGob }">
         <div class="nav-menu-principal">
           <ul class="nav-menu">
-            <li><a href="https://coronavirus.gob.mx/" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer">Información sobre COVID-19</a></li>
             <li><a href="https://www.gob.mx/tramites" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer">Trámites</a></li>
             <li><a href="https://www.gob.mx/gobierno" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer">Gobierno</a></li>
             <li>

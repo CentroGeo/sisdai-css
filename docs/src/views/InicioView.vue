@@ -5,7 +5,7 @@
       <p>
         Ésta es la documentación para personas desarrolladoras de la biblioteca
         de estilos del Sistema de Diseño y Accesibilidad para la Investigación
-        (<a href="https://sisdai.conacyt.mx/" target="_blank">Sisdai</a>).
+        (<a href="https://sisdai.conahcyt.mx/" target="_blank">Sisdai</a>).
       </p>
       <p>
         <i>sisdai-css</i> es una biblioteca de estilos de Sass que normaliza la forma

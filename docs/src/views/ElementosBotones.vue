@@ -79,8 +79,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">
-        Color.<br>
-        Botones primario y secundario
+        Color
       </h2>
       <p>
         El <code>boton-primario</code>, también conocido como “llamado a la acción” 
@@ -163,8 +162,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">
-        Tamaño.<br>
-        Botón chico, regular y grande
+        Tamaño
       </h2>
       <p>
         El tamaño de un botón, sea chico, regular o grande, no influye en su color. 

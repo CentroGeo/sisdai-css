@@ -35,17 +35,17 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           role="toolbar"
           aria-label="Controles para ajustar el nivel de acercamiento"
         >
-          <button aria-label="Alejar un paso" class="boton-pictograma boton-sin-contenedor-secundario" type="button">
+          <button aria-label="Alejar" class="boton-pictograma boton-sin-contenedor-secundario" type="button">
             <span class="pictograma-restar" aria-hidden="true" />
           </button>
 
           <input 
             type="range" 
             class="control-acercar-alejar-rango" 
-            aria-label="Ajustar el nivel de acercamiento"
+            aria-label="Nivel de acercamiento"
           />
           
-          <button aria-label="Acercar un paso" class="boton-pictograma boton-sin-contenedor-secundario" type="buttpm">
+          <button aria-label="Acercar" class="boton-pictograma boton-sin-contenedor-secundario" type="buttpm">
             <span class="pictograma-agregar" aria-hidden="true"/>
           </button>
 

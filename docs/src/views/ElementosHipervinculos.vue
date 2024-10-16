@@ -35,22 +35,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         tipo='HTML'
         codigo='
           <a href="#">
-            hipervinculo
-          </a>
-        '
-      />
-      </div>
-
-      <div class="columna-4">
-      <EjemploCodigo
-        tipo='HTML'
-        codigo='
-          <button 
-            class="hipervinculo"
-            type="button"
-            role="link"
-          >
-            boton estilo hipervinculo
+            Hipervínculo de ejemplo
           </a>
         '
       />
@@ -65,7 +50,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             target="_blank"
             rel="noopener noreferrer"
           >
-            hipervinculo externo
+            Ejemplo hipervínculo externo
             <span
               class="pictograma-enlace-externo"
               aria-hidden="true"
