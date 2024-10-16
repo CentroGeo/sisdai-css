@@ -27,10 +27,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <a href="#" class="nav-hiperviculo-logo">
           <img 
             class="nav-logo" 
-            src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg"
+            src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
             alt="Gobierno de México."
             width="128" 
-            height="38" 
+            height="48" 
           />
         </a>
         <button 
@@ -63,10 +63,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <a href="#" class="nav-hiperviculo-logo">
               <img 
                 class="nav-logo" 
-                src="https://cdn.conahcyt.mx/sisdai/recursos/gobmx.svg"
+                src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
                 alt="Gobierno de México."
                 width="128" 
-                height="38" 
+                height="48" 
               />
             </a>
             <button aria-label="Menú de gobierno" aria-controls="menugobiernomexico" class="nav-boton-menu" type="button"> <!-- alternar la clase abierto y aria-expanded -->
@@ -172,7 +172,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor piepagina-gobmx" aria-label="Pie de página de Gobierno de México">
       <div class="flex flex-wrap">
         <div class="columna-8 columna-4-esc">
-          <img src="https://cdn.conacyt.mx/sisdai/recursos/gobmx.svg" alt="Gobierno de México" width="200px" height="60px" />
+          <img src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg" alt="Gobierno de México" width="207px" height="75px" />
         </div>
         <div class="columna-8 columna-4-esc">
           <p class="piepagina-titulo">
@@ -217,6 +217,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 <span aria-hidden="true" class="pictograma-social-x" />
               </a>
             </li>
+            <li>
+              <a lang="en" aria-label="instagram" href="#" class="hipervinculo-gobmx">
+                <span aria-hidden="true" class="pictograma-social-instagram" />
+              </a>
+            </li>
+            <li>
+              <a lang="en" aria-label="youtube" href="#" class="hipervinculo-gobmx">
+                <span aria-hidden="true" class="pictograma-social-youtube" />
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -231,10 +241,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             
             <div class="columna-8 columna-4-esc">
               <img 
-                src="https://cdn.conacyt.mx/sisdai/recursos/gobmx.svg" 
+                src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
                 alt="Gobierno de México" 
-                width="200px" 
-                height="60px" 
+                width="207px" 
+                height="75px"
               />
             </div>
             
@@ -281,6 +291,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
                 <li>
                   <a lang="en" aria-label="X" href="#" class="hipervinculo-gobmx">
                     <span aria-hidden="true" class="pictograma-social-x" />
+                  </a>
+                </li>
+                <li>
+                  <a lang="en" aria-label="instagram" href="#" class="hipervinculo-gobmx">
+                    <span aria-hidden="true" class="pictograma-social-instagram" />
+                  </a>
+                </li>
+                <li>
+                  <a lang="en" aria-label="youtube" href="#" class="hipervinculo-gobmx">
+                    <span aria-hidden="true" class="pictograma-social-youtube" />
                   </a>
                 </li>
               </ul>
