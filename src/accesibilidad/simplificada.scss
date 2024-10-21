@@ -33,17 +33,28 @@
     display: none;
   }
 
-  .a11y-simplificada-formato-hipervinculo,
-  .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
-  button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) {
-    @include hipervinculo-estructura-color-principal;
+  .a11y-simplificada-formato-hipervinculo {
+    @extend %hipervinculo-base;
 
-    background-color: transparent !important;
-    box-shadow: none !important;
+    &:not(:last-child) {
+      margin-right: map.get($espaciado, '1');
+    }
+
+    @include hipervinculo-estructura-color;
+  }
+
+  .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+  button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+  input[type='button'], 
+  input[type='submit'], 
+  input[type='reset'] {
+    @extend %hipervinculo-base;
     
     &:not(:last-child) {
       margin-right: map.get($espaciado, '1');
     }
+
+    @include hipervinculo-estructura-color;
   }
 
   video,

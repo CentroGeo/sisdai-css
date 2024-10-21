@@ -3,22 +3,21 @@
 $form-campo-radio: 8px;
 $form-campo-alto: 40px;
 
-@mixin campo-estructura-color {
-  background-color: var(--campo-fondo);
-  border: 1px solid var(--campo-borde);
-  border-radius: $form-campo-radio;
+%campo-base {
   box-sizing: border-box;
-  color: var(--campo-color);
   font-family: var(--tipografia-familia);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5em;
-  padding: calc(map.get($espaciado, '1') - 1px) map.get($espaciado, '2');
   width: 100%;
   touch-action: manipulation;
+}
 
-  @include ancho-lectura;
-
+@mixin campo-estructura-color {
+  background-color: var(--campo-fondo);
+  border: 1px solid var(--campo-borde);
+  color: var(--campo-color);
+  
   &:disabled {
     background-color: var(--campo-deshabilitado-fondo);
     border-color: var(--campo-deshabilitado-borde);

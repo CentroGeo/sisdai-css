@@ -1,10 +1,13 @@
 @use "sass:map";
 
 textarea {
-  @include campo-estructura-color;
-
+  @extend %campo-base;
+  
+  border-radius: $form-campo-radio;
   padding: map.get($espaciado, '2');
   min-height: 120px;
   resize: none;
   display: flex;
+
+  @include campo-estructura-color;
 }
