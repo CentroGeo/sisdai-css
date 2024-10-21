@@ -1,19 +1,19 @@
 .navegacion-gobmx {
-  background-color: var(--color-mx-5);
+  background-color: var(--color-mx-2);
   box-shadow: none;
 
   .nav-menu-contenedor {
-    background-color: var(--color-mx-5);
-    border-top: 1px solid var(--color-mx-3);
+    background-color: var(--color-mx-2);
+    border-top: 1px solid var(--color-mx-1);
   }
 
   .nav-hipervinculo {
     background: transparent;
     box-shadow: none;
-    color: var(--color-mx-3);
+    color: var(--color-mx-0);
 
     &:visited {
-      color: var(--color-mx-3);
+      color: var(--color-mx-0);
     }
 
     &:active,
@@ -21,7 +21,8 @@
     &:focus {
       background: transparent;
       box-shadow: none;
-      color: var(--color-mx-2);
+      color: var(--color-mx-0);
+      text-decoration: underline;
     }
 
     &:focus,
@@ -40,18 +41,13 @@
 
     &:not(:disabled):hover {
       background-color: transparent;
-      color: var(--color-mx-2);
+      color: var(--color-mx-1);
     }
 
     &:not(:disabled):focus {
       background-color: transparent;
       color: var(--color-mx-0);
     }
-  }
-
-  .nav-logo {
-    width: 128px;
-    height: 38px;
   }
 
   &.navegacion-extendida {

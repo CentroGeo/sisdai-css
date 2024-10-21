@@ -11,6 +11,17 @@ footer,
     margin: map.get($espaciado, '2') 0;
   }
 
+  a {
+    display: inline-block;
+    line-height: max(24px, 1.5em);
+    text-underline-offset: 4px;
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+
   li {
     margin: 0;
   }
@@ -42,26 +53,25 @@ footer,
 }
 
 .piepagina-gobmx {
-  background-color: var(--color-mx-5);
-  background-image: url('https://cdn.conacyt.mx/sisdai/recursos/gobmxpleca.svg');
-  background-position: bottom;
+  background-color: var(--color-mx-2);
+  background-image: url('https://cdn.conahcyt.mx/sisdai-archivos/gobmxpleca-2024.svg');
+  background-position: 0 calc(100% + 34px);
   background-repeat: repeat-x;
-  background-size: auto 50px;
+  background-size: auto 80px;
   color: var(--color-mx-0);
   padding-bottom: map.get($espaciado, '10');
   
   .hipervinculo-gobmx {
-    color: var(--color-mx-3);
+    color: var(--color-mx-0);
     
     &:visited {
-      color: var(--color-mx-3);
+      color: var(--color-mx-0);
     }
     
     &:hover,
     &:focus,
     &:focus-visible {
-      color: var(--color-mx-2);
-      text-decoration: none;
+      color: var(--color-mx-0);
     }
   }
 }
@@ -80,8 +90,7 @@ footer,
     &:hover,
     &:focus,
     &:focus-visible {
-      color: var(--color-conahcyt-1);
-      text-decoration: none;
+      color: var(--color-conahcyt-0);
     }
   }
 }

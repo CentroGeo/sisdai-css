@@ -202,11 +202,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="flex flex-contenido-centrado">
       <div class="columna-4">
         <p>Gobierno de México</p>
-        <EjemploMuestraColor variable="var(--color-mx-5)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-mx-4)" texto="#fff"/>
-        <EjemploMuestraColor variable="var(--color-mx-3)" texto="#000"/>
-        <EjemploMuestraColor variable="var(--color-mx-2)" texto="#000"/>
-        <EjemploMuestraColor variable="var(--color-mx-1)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-2)" texto="#fff"/>
+        <EjemploMuestraColor variable="var(--color-mx-1)" texto="#000"/>
         <EjemploMuestraColor variable="var(--color-mx-0)" texto="#000"/>
       </div>
 
