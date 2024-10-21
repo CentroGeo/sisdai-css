@@ -5500,14 +5500,15 @@ button [class*=" pictograma-"],
   padding: 24px;
 }
 
-a,
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+.a11y-simplificada input[type=button],
+.a11y-simplificada input[type=submit],
+.a11y-simplificada input[type=reset], .a11y-simplificada .a11y-simplificada-formato-hipervinculo, a,
 .hipervinculo {
-  background-color: transparent;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 0 2px var(--hipervinculo-sombra);
   box-sizing: border-box;
-  color: var(--hipervinculo-color);
   font-family: var(--tipografia-familia, "sans-serif");
   font-weight: 500;
   line-height: inherit;
@@ -5516,17 +5517,47 @@ a,
   text-align: left;
   display: inline;
   vertical-align: baseline;
+  cursor: pointer;
+  transition: all 0.27s ease-in-out;
+}
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) .pictograma,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) .pictograma,
+.a11y-simplificada input[type=button] .pictograma,
+.a11y-simplificada input[type=submit] .pictograma,
+.a11y-simplificada input[type=reset] .pictograma, .a11y-simplificada .a11y-simplificada-formato-hipervinculo .pictograma, a .pictograma,
+.hipervinculo .pictograma,
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class^=pictograma-],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class^=pictograma-],
+.a11y-simplificada input[type=button] [class^=pictograma-],
+.a11y-simplificada input[type=submit] [class^=pictograma-],
+.a11y-simplificada input[type=reset] [class^=pictograma-],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class^=pictograma-],
+a [class^=pictograma-],
+.hipervinculo [class^=pictograma-],
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class*=" pictograma-"],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class*=" pictograma-"],
+.a11y-simplificada input[type=button] [class*=" pictograma-"],
+.a11y-simplificada input[type=submit] [class*=" pictograma-"],
+.a11y-simplificada input[type=reset] [class*=" pictograma-"],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class*=" pictograma-"],
+a [class*=" pictograma-"],
+.hipervinculo [class*=" pictograma-"] {
+  display: inline;
+  vertical-align: sub;
+  padding: 0;
+}
+
+a,
+.hipervinculo {
+  background-color: transparent;
+  box-shadow: 0 0 2px var(--hipervinculo-sombra);
+  color: var(--hipervinculo-color);
 }
 a:disabled,
 .hipervinculo:disabled {
   background-color: transparent;
   color: var(--hipervinculo-deshabilitado-color);
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
-}
-a:not(:disabled),
-.hipervinculo:not(:disabled) {
-  transition: all 0.27s ease-in-out;
-  cursor: pointer;
 }
 a:visited,
 .hipervinculo:visited {
@@ -5547,16 +5578,6 @@ a:focus-visible,
   outline-offset: 4px;
   box-shadow: none;
 }
-a .pictograma,
-a [class^=pictograma-],
-a [class*=" pictograma-"],
-.hipervinculo .pictograma,
-.hipervinculo [class^=pictograma-],
-.hipervinculo [class*=" pictograma-"] {
-  display: inline;
-  vertical-align: sub;
-  padding: 0;
-}
 
 a[class^=m-],
 a[class^=p-],
@@ -5567,6 +5588,16 @@ a[class*=" p-"],
 .hipervinculo[class*=" m-"],
 .hipervinculo[class*=" p-"] {
   display: inline-block;
+}
+
+select, textarea, input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]) {
+  box-sizing: border-box;
+  font-family: var(--tipografia-familia);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5em;
+  width: 100%;
+  touch-action: manipulation;
 }
 
 ::placeholder {
@@ -5614,33 +5645,13 @@ legend {
 }
 
 input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]) {
-  background-color: var(--campo-fondo);
-  border: 1px solid var(--campo-borde);
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: var(--campo-color);
-  font-family: var(--tipografia-familia);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 7px 16px;
-  width: 100%;
-  touch-action: manipulation;
-  height: 40px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-flex;
-}
-@media screen and (max-width: 767px) {
-  input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]) {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]) {
-    max-width: 700px;
-  }
+  background-color: var(--campo-fondo);
+  border: 1px solid var(--campo-borde);
+  color: var(--campo-color);
 }
 input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]):disabled {
   background-color: var(--campo-deshabilitado-fondo);
@@ -5661,33 +5672,21 @@ input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=subm
   outline: none;
 }
 
-textarea {
-  background-color: var(--campo-fondo);
-  border: 1px solid var(--campo-borde);
+input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset], .campo-busqueda-entrada) {
+  height: 40px;
   border-radius: 8px;
-  box-sizing: border-box;
-  color: var(--campo-color);
-  font-family: var(--tipografia-familia);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5em;
   padding: 7px 16px;
-  width: 100%;
-  touch-action: manipulation;
+}
+
+textarea {
+  border-radius: 8px;
   padding: 16px;
   min-height: 120px;
   resize: none;
   display: flex;
-}
-@media screen and (max-width: 767px) {
-  textarea {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  textarea {
-    max-width: 700px;
-  }
+  background-color: var(--campo-fondo);
+  border: 1px solid var(--campo-borde);
+  color: var(--campo-color);
 }
 textarea:disabled {
   background-color: var(--campo-deshabilitado-fondo);
@@ -5833,18 +5832,7 @@ textarea:not(:disabled):focus {
 }
 
 select {
-  background-color: var(--campo-fondo);
-  border: 1px solid var(--campo-borde);
   border-radius: 8px;
-  box-sizing: border-box;
-  color: var(--campo-color);
-  font-family: var(--tipografia-familia);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5em;
-  padding: 7px 16px;
-  width: 100%;
-  touch-action: manipulation;
   height: 40px;
   line-height: 1.25em;
   appearance: none;
@@ -5853,25 +5841,20 @@ select {
   background-size: 32px;
   background-repeat: no-repeat;
   background-image: var(--campo-selector-svg);
-  padding-right: 40px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding: 9px 40px 9px 16px;
   background-color: var(--campo-fondo);
   color: var(--campo-color);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: flex;
+  background-color: var(--campo-fondo);
+  border: 1px solid var(--campo-borde);
+  color: var(--campo-color);
 }
-@media screen and (max-width: 767px) {
-  select {
-    max-width: 100%;
-  }
-}
-@media screen and (min-width: 768px) {
-  select {
-    max-width: 700px;
-  }
+select:disabled {
+  opacity: 1;
+  background-image: var(--campo-selector-deshabilitado-svg);
 }
 select:disabled {
   background-color: var(--campo-deshabilitado-fondo);
@@ -5890,10 +5873,6 @@ select:not(:disabled):focus {
   border-color: var(--campo-enfoque-borde);
   box-shadow: 0 0 8px var(--campo-enfoque-sombra);
   outline: none;
-}
-select:disabled {
-  opacity: 1;
-  background-image: var(--campo-selector-deshabilitado-svg);
 }
 
 [type=range] {
@@ -7083,22 +7062,24 @@ details[open] summary {
   display: flex;
   position: relative;
 }
-.campo-busqueda .campo-busqueda-entrada {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+
+.campo-busqueda-entrada {
+  border-radius: 8px 0 0 8px;
   height: auto;
-  padding-right: 48px;
+  padding: 7px 48px 7px 16px;
 }
-.campo-busqueda .campo-busqueda-entrada::-webkit-search-decoration, .campo-busqueda .campo-busqueda-entrada::-webkit-search-cancel-button, .campo-busqueda .campo-busqueda-entrada::-webkit-search-results-button, .campo-busqueda .campo-busqueda-entrada::-webkit-search-results-decoration {
+.campo-busqueda-entrada::-webkit-search-decoration, .campo-busqueda-entrada::-webkit-search-cancel-button, .campo-busqueda-entrada::-webkit-search-results-button, .campo-busqueda-entrada::-webkit-search-results-decoration {
   display: none;
 }
-.campo-busqueda .campo-busqueda-borrar {
+
+.campo-busqueda-borrar {
   position: absolute;
   top: 4px;
   right: 56px;
   margin: 8px;
 }
-.campo-busqueda .campo-busqueda-buscar {
+
+.campo-busqueda-buscar {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   padding: 16px;
@@ -7307,136 +7288,89 @@ dialog.modal .modal-contenedor .modal-cerrar {
   }
 }
 
-.menu-lateral {
-  position: sticky;
-  z-index: 999;
-}
-.menu-lateral .menu-lateral-contenedor {
+.menu-lateral-contenedor {
   background: var(--navegacion-secundaria-fondo);
   border-left: 1px solid transparent;
   color: var(--navegacion-secundaria-color);
   position: relative;
   width: 100%;
 }
-.menu-lateral .menu-lateral-contenedor a {
-  padding: 8px 24px;
-  background-color: transparent;
-  border-radius: 0;
-  color: var(--navegacion-secundaria-color);
+.menu-lateral-contenedor a {
   font-weight: 400;
   display: block;
   text-decoration: none;
-}
-.menu-lateral .menu-lateral-contenedor a:hover {
-  background: var(--navegacion-secundaria-cursor-fondo);
-  box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
-  color: var(--navegacion-secundaria-cursor-color);
-  text-decoration: none;
-}
-.menu-lateral .menu-lateral-contenedor a:focus, .menu-lateral .menu-lateral-contenedor a:focus-visible, .menu-lateral .menu-lateral-contenedor a:active, .menu-lateral .menu-lateral-contenedor a.router-link-exact-active, .menu-lateral .menu-lateral-contenedor a.link-activo {
-  background: var(--navegacion-secundaria-activo-fondo);
-  box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
-  color: var(--navegacion-secundaria-activo-color);
-  text-decoration: none;
-  outline: none;
-}
-.menu-lateral .menu-lateral-contenedor a:focus-visible {
-  background: var(--navegacion-secundaria-enfoque-fondo);
-  box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde), 0 0 8px var(--navegacion-secundaria-enfoque-sombra);
-  color: var(--navegacion-secundaria-enfoque-color);
-  outline: none;
-  text-decoration: none;
-}
-.menu-lateral .menu-lateral-contenedor button {
-  padding: 8px 24px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
   background-color: transparent;
   border-radius: 0;
   color: var(--navegacion-secundaria-color);
 }
-.menu-lateral .menu-lateral-contenedor button:hover {
+.menu-lateral-contenedor a:hover {
   background: var(--navegacion-secundaria-cursor-fondo);
   box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
   color: var(--navegacion-secundaria-cursor-color);
   text-decoration: none;
 }
-.menu-lateral .menu-lateral-contenedor button:focus, .menu-lateral .menu-lateral-contenedor button:focus-visible, .menu-lateral .menu-lateral-contenedor button:active, .menu-lateral .menu-lateral-contenedor button.router-link-exact-active, .menu-lateral .menu-lateral-contenedor button.link-activo {
+.menu-lateral-contenedor a:focus, .menu-lateral-contenedor a:focus-visible, .menu-lateral-contenedor a:active, .menu-lateral-contenedor a.router-link-exact-active, .menu-lateral-contenedor a.link-activo {
   background: var(--navegacion-secundaria-activo-fondo);
   box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
   color: var(--navegacion-secundaria-activo-color);
   text-decoration: none;
   outline: none;
 }
-.menu-lateral .menu-lateral-contenedor button:focus-visible {
+.menu-lateral-contenedor a:focus-visible {
   background: var(--navegacion-secundaria-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde), 0 0 8px var(--navegacion-secundaria-enfoque-sombra);
   color: var(--navegacion-secundaria-enfoque-color);
   outline: none;
   text-decoration: none;
 }
-.menu-lateral .menu-lateral-contenedor ul,
-.menu-lateral .menu-lateral-contenedor ol {
+.menu-lateral-contenedor .colapsable-boton {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 24px;
+  background-color: transparent;
+  border-radius: 0;
+  color: var(--navegacion-secundaria-color);
+}
+.menu-lateral-contenedor .colapsable-boton:hover {
+  background: var(--navegacion-secundaria-cursor-fondo);
+  box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+  color: var(--navegacion-secundaria-cursor-color);
+  text-decoration: none;
+}
+.menu-lateral-contenedor .colapsable-boton:focus, .menu-lateral-contenedor .colapsable-boton:focus-visible, .menu-lateral-contenedor .colapsable-boton:active, .menu-lateral-contenedor .colapsable-boton.router-link-exact-active, .menu-lateral-contenedor .colapsable-boton.link-activo {
+  background: var(--navegacion-secundaria-activo-fondo);
+  box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
+  color: var(--navegacion-secundaria-activo-color);
+  text-decoration: none;
+  outline: none;
+}
+.menu-lateral-contenedor .colapsable-boton:focus-visible {
+  background: var(--navegacion-secundaria-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde), 0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+  color: var(--navegacion-secundaria-enfoque-color);
+  outline: none;
+  text-decoration: none;
+}
+.menu-lateral-contenedor ul,
+.menu-lateral-contenedor ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.menu-lateral .menu-lateral-contenedor ul li,
-.menu-lateral .menu-lateral-contenedor ol li {
+.menu-lateral-contenedor ul li,
+.menu-lateral-contenedor ol li {
   margin: 0;
 }
-.menu-lateral .menu-lateral-contenedor ul ol, .menu-lateral .menu-lateral-contenedor ul ul,
-.menu-lateral .menu-lateral-contenedor ol ol,
-.menu-lateral .menu-lateral-contenedor ol ul {
+.menu-lateral-contenedor ul ol, .menu-lateral-contenedor ul ul,
+.menu-lateral-contenedor ol ol,
+.menu-lateral-contenedor ol ul {
   padding: 0;
 }
-.menu-lateral .menu-lateral-contenedor ul li > a,
-.menu-lateral .menu-lateral-contenedor ul li > button,
-.menu-lateral .menu-lateral-contenedor ul li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ol li > a,
-.menu-lateral .menu-lateral-contenedor ol li > button,
-.menu-lateral .menu-lateral-contenedor ol li .colapsable-boton {
-  padding-left: 24px;
-}
-.menu-lateral .menu-lateral-contenedor ul li ul li > a,
-.menu-lateral .menu-lateral-contenedor ul li ul li > button,
-.menu-lateral .menu-lateral-contenedor ul li ul li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ul li ol li > a,
-.menu-lateral .menu-lateral-contenedor ul li ol li > button,
-.menu-lateral .menu-lateral-contenedor ul li ol li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ol li ul li > a,
-.menu-lateral .menu-lateral-contenedor ol li ul li > button,
-.menu-lateral .menu-lateral-contenedor ol li ul li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ol li ol li > a,
-.menu-lateral .menu-lateral-contenedor ol li ol li > button,
-.menu-lateral .menu-lateral-contenedor ol li ol li .colapsable-boton {
-  padding-left: 32px;
-}
-.menu-lateral .menu-lateral-contenedor ul li ul li ul li > a,
-.menu-lateral .menu-lateral-contenedor ul li ul li ul li > button,
-.menu-lateral .menu-lateral-contenedor ul li ul li ul li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ul li ul li ol li > a,
-.menu-lateral .menu-lateral-contenedor ul li ul li ol li > button,
-.menu-lateral .menu-lateral-contenedor ul li ul li ol li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ul li ol li ul li > a,
-.menu-lateral .menu-lateral-contenedor ul li ol li ul li > button,
-.menu-lateral .menu-lateral-contenedor ul li ol li ul li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ul li ol li ol li > a,
-.menu-lateral .menu-lateral-contenedor ul li ol li ol li > button,
-.menu-lateral .menu-lateral-contenedor ul li ol li ol li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ol li ul li ul li > a,
-.menu-lateral .menu-lateral-contenedor ol li ul li ul li > button,
-.menu-lateral .menu-lateral-contenedor ol li ul li ul li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ol li ul li ol li > a,
-.menu-lateral .menu-lateral-contenedor ol li ul li ol li > button,
-.menu-lateral .menu-lateral-contenedor ol li ul li ol li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ol li ol li ul li > a,
-.menu-lateral .menu-lateral-contenedor ol li ol li ul li > button,
-.menu-lateral .menu-lateral-contenedor ol li ol li ul li .colapsable-boton,
-.menu-lateral .menu-lateral-contenedor ol li ol li ol li > a,
-.menu-lateral .menu-lateral-contenedor ol li ol li ol li > button,
-.menu-lateral .menu-lateral-contenedor ol li ol li ol li .colapsable-boton {
-  padding-left: 40px;
-}
-.menu-lateral .menu-lateral-boton {
+
+.menu-lateral-boton {
   background: var(--navegacion-secundaria-fondo);
   border-radius: 20px;
   color: var(--navegacion-secundaria-color);
@@ -7445,23 +7379,28 @@ dialog.modal .modal-contenedor .modal-cerrar {
   padding: 0;
   z-index: 3;
 }
-.menu-lateral .menu-lateral-boton .pictograma,
-.menu-lateral .menu-lateral-boton [class^=pictograma-],
-.menu-lateral .menu-lateral-boton [class*=" pictograma-"] {
+.menu-lateral-boton .pictograma,
+.menu-lateral-boton [class^=pictograma-],
+.menu-lateral-boton [class*=" pictograma-"] {
   align-self: flex-start;
   font-size: 1.35em;
   padding: 24px 8px;
   transition: transform 0.27s ease;
 }
-.menu-lateral .menu-lateral-boton:hover {
+.menu-lateral-boton:hover {
   background: var(--navegacion-secundaria-cursor-fondo);
   box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
   color: var(--navegacion-secundaria-cursor-color);
 }
-.menu-lateral .menu-lateral-boton:focus {
+.menu-lateral-boton:focus {
   background: var(--navegacion-secundaria-enfoque-fondo);
   box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde), 0 0 8px var(--navegacion-secundaria-enfoque-sombra);
   color: var(--navegacion-secundaria-enfoque-color);
+}
+
+.menu-lateral {
+  position: sticky;
+  z-index: 999;
 }
 @media screen and (max-width: 767px) {
   .menu-lateral {
@@ -7505,6 +7444,54 @@ dialog.modal .modal-contenedor .modal-cerrar {
     padding-bottom: 16px;
     box-shadow: 4px 8px 16px -4px var(--opacidad-ligero);
   }
+  .menu-lateral.abierto .menu-lateral-contenedor ul li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li .colapsable-boton {
+    padding-left: 24px;
+  }
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li .colapsable-boton {
+    padding-left: 32px;
+  }
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li ul li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li ul li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li ul li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li ol li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li ol li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ul li ol li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li ul li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li ul li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li ul li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li ol li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li ol li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ul li ol li ol li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li ul li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li ul li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li ul li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li ol li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li ol li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ul li ol li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li ul li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li ul li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li ul li .colapsable-boton,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li ol li > a,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li ol li > button,
+  .menu-lateral.abierto .menu-lateral-contenedor ol li ol li ol li .colapsable-boton {
+    padding-left: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu-lateral {
@@ -7525,7 +7512,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   .menu-lateral .menu-lateral-contenedor ol li > a,
   .menu-lateral .menu-lateral-contenedor ol li > button,
   .menu-lateral .menu-lateral-contenedor ol li .colapsable-boton {
-    padding-left: 40px;
+    padding-left: 48px;
   }
   .menu-lateral .menu-lateral-contenedor ul li ol li > a,
   .menu-lateral .menu-lateral-contenedor ul li ol li > button,
@@ -7539,7 +7526,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   .menu-lateral .menu-lateral-contenedor ol li ul li > a,
   .menu-lateral .menu-lateral-contenedor ol li ul li > button,
   .menu-lateral .menu-lateral-contenedor ol li ul li .colapsable-boton {
-    padding-left: 48px;
+    padding-left: 56px;
   }
   .menu-lateral .menu-lateral-contenedor ul li ol li ol li > a,
   .menu-lateral .menu-lateral-contenedor ul li ol li ol li > button,
@@ -7565,7 +7552,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   .menu-lateral .menu-lateral-contenedor ol li ul li ul li > a,
   .menu-lateral .menu-lateral-contenedor ol li ul li ul li > button,
   .menu-lateral .menu-lateral-contenedor ol li ul li ul li .colapsable-boton {
-    padding-left: 56px;
+    padding-left: 64px;
   }
   .menu-lateral .menu-lateral-boton {
     display: none;
@@ -8246,15 +8233,6 @@ footer a,
   line-height: max(24px, 1.5em);
   text-underline-offset: 4px;
 }
-footer a:hover, footer a:focus, footer a:focus-visible,
-.piepagina-gobmx a:hover,
-.piepagina-gobmx a:focus,
-.piepagina-gobmx a:focus-visible,
-.piepagina-conahcyt a:hover,
-.piepagina-conahcyt a:focus,
-.piepagina-conahcyt a:focus-visible {
-  text-decoration: underline;
-}
 footer li,
 .piepagina-gobmx li,
 .piepagina-conahcyt li {
@@ -8303,6 +8281,7 @@ footer ol,
 }
 .piepagina-gobmx .hipervinculo-gobmx:hover, .piepagina-gobmx .hipervinculo-gobmx:focus, .piepagina-gobmx .hipervinculo-gobmx:focus-visible {
   color: var(--color-mx-0);
+  text-decoration: underline;
 }
 
 .piepagina-conahcyt {
@@ -8317,6 +8296,7 @@ footer ol,
 }
 .piepagina-conahcyt .hipervinculo-conahcyt:hover, .piepagina-conahcyt .hipervinculo-conahcyt:focus, .piepagina-conahcyt .hipervinculo-conahcyt:focus-visible {
   color: var(--color-conahcyt-0);
+  text-decoration: underline;
 }
 
 .contenedor-vis {
@@ -9817,78 +9797,87 @@ div.controlador-vis label {
 .a11y-simplificada .a11y-simplificada-ocultar {
   display: none;
 }
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo,
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) {
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo {
   background-color: transparent;
-  border: none;
-  border-radius: 4px;
   box-shadow: 0 0 2px var(--hipervinculo-sombra);
-  box-sizing: border-box;
   color: var(--hipervinculo-color);
-  font-family: var(--tipografia-familia, "sans-serif");
-  font-weight: 500;
-  line-height: inherit;
-  padding: 0;
-  text-decoration: none;
-  text-align: left;
-  display: inline;
-  vertical-align: baseline;
-  background-color: transparent !important;
-  box-shadow: none !important;
 }
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo:disabled,
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):disabled,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):disabled {
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo:not(:last-child) {
+  margin-right: 8px;
+}
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo:disabled {
   background-color: transparent;
   color: var(--hipervinculo-deshabilitado-color);
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
 }
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo:not(:disabled),
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):not(:disabled),
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):not(:disabled) {
-  transition: all 0.27s ease-in-out;
-  cursor: pointer;
-}
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo:visited,
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):visited,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):visited {
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo:visited {
   color: var(--hipervinculo-visitado);
 }
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo:hover,
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):hover,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):hover {
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo:hover {
   background-color: transparent;
   color: var(--hipervinculo-cursor-color);
   text-decoration: underline;
   box-shadow: none;
 }
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo:focus-visible,
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):focus-visible,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):focus-visible {
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo:focus-visible {
   background-color: transparent;
   color: var(--hipervinculo-enfoque-color);
   outline: 1px dashed var(--hipervinculo-enfoque-sombra);
   outline-offset: 4px;
   box-shadow: none;
 }
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo .pictograma,
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class^=pictograma-],
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class*=" pictograma-"],
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) .pictograma,
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class^=pictograma-],
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class*=" pictograma-"],
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) .pictograma,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class^=pictograma-],
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class*=" pictograma-"] {
-  display: inline;
-  vertical-align: sub;
-  padding: 0;
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+.a11y-simplificada input[type=button],
+.a11y-simplificada input[type=submit],
+.a11y-simplificada input[type=reset] {
+  background-color: transparent;
+  box-shadow: 0 0 2px var(--hipervinculo-sombra);
+  color: var(--hipervinculo-color);
 }
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo:not(:last-child),
 .a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):not(:last-child),
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):not(:last-child) {
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):not(:last-child),
+.a11y-simplificada input[type=button]:not(:last-child),
+.a11y-simplificada input[type=submit]:not(:last-child),
+.a11y-simplificada input[type=reset]:not(:last-child) {
   margin-right: 8px;
+}
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):disabled,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):disabled,
+.a11y-simplificada input[type=button]:disabled,
+.a11y-simplificada input[type=submit]:disabled,
+.a11y-simplificada input[type=reset]:disabled {
+  background-color: transparent;
+  color: var(--hipervinculo-deshabilitado-color);
+  box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
+}
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):visited,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):visited,
+.a11y-simplificada input[type=button]:visited,
+.a11y-simplificada input[type=submit]:visited,
+.a11y-simplificada input[type=reset]:visited {
+  color: var(--hipervinculo-visitado);
+}
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):hover,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):hover,
+.a11y-simplificada input[type=button]:hover,
+.a11y-simplificada input[type=submit]:hover,
+.a11y-simplificada input[type=reset]:hover {
+  background-color: transparent;
+  color: var(--hipervinculo-cursor-color);
+  text-decoration: underline;
+  box-shadow: none;
+}
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):focus-visible,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):focus-visible,
+.a11y-simplificada input[type=button]:focus-visible,
+.a11y-simplificada input[type=submit]:focus-visible,
+.a11y-simplificada input[type=reset]:focus-visible {
+  background-color: transparent;
+  color: var(--hipervinculo-enfoque-color);
+  outline: 1px dashed var(--hipervinculo-enfoque-sombra);
+  outline-offset: 4px;
+  box-shadow: none;
 }
 .a11y-simplificada video,
 .a11y-simplificada picture:not(.nav-logo, .a11y-simplificada-mantener-imagen),
