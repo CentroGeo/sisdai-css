@@ -25,11 +25,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h2 class="m-t-10">Perfil de color</h2>
       <p>
-        El color predeterminado del Sisdai utiliza la familia de azul celeste como color principal de acción (--color-primario 1-4),
-        la familia de azul marino para organizar el contenido de distintos elementos (--color-secundario 1-12).
-      </p>
-      <p>
-        Las variables de color se encuentran definidas en el archivo <code>src/color/perfil-predeterminada.scss</code>. 
+        Las variables de color se encuentran definidas en el archivo <code>src/color/perfil-sisdai.scss</code>. 
         Estas variables son la base modificable de cada perfil de color.
       </p>
       <p>
@@ -37,53 +33,27 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         y la comunicación visual efectiva en el diseño de la interfaz de persona usuaria.
       </p>
     </div>
-    <div class="flex m-y-5">
+    <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-4">
+        <p>Primario</p>
         <EjemploMuestraColor variable="var(--color-primario-4)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-primario-3)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-primario-2)" texto="#000"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-primario-1)" texto="#000"/>
       </div>
       <div class="columna-4">
+        <p>Secundario</p>
         <EjemploMuestraColor variable="var(--color-secundario-12)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-11)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-10)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-9)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-8)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-7)" texto="#fff"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-6)" texto="#000"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-5)" texto="#000"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-4)" texto="#000"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-3)" texto="#000"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-2)" texto="#000"/>
-      </div>
-      <div class="columna-4">
         <EjemploMuestraColor variable="var(--color-secundario-1)" texto="#000"/>
       </div>
     </div>
@@ -91,7 +61,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <p>
         Para crear un nuevo perfil de color es necesario únicamente crear las 16 variables antes mencionadas,
-        en un archivo de css tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-predeterminada.scss</code>.
+        tomanto como ejemplo el archivo de perfil de color predeterminado <code>src/color/perfil-sisdai.scss</code>.
       </p>
       <EjemploCodigo
         :tiene_ejemplo="false"
@@ -100,25 +70,25 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           body[data-perfil='predeterminada'],
           :root {
             // colores primarios
-            --color-primario-4: #0058cc;
-            --color-primario-3: #0068FF;
-            --color-primario-2: #6692FF;
-            --color-primario-1: #80AAFF;
-
+            --color-primario-4: #2B13B1;
+            --color-primario-3: #3F17E4;
+            --color-primario-2: #9674E1;
+            --color-primario-1: #A28BDF;
+            
             // colores secundarios
-            --color-secundario-12: #102543;
-            --color-secundario-11: #142a48;
-            --color-secundario-11-rgb: 20, 42, 72;
-            --color-secundario-10: #1B304E;
-            --color-secundario-9: #2A3F5D;
-            --color-secundario-8: #364A69;
-            --color-secundario-7: #5E7392;
-            --color-secundario-6: #889DBB;
-            --color-secundario-5: #B1C6E4;
-            --color-secundario-4: #CCE1FF;
-            --color-secundario-3: #DBEAFF;
-            --color-secundario-2: #F0F6FF;
-            --color-secundario-1: #F8FBFF;
+            --color-secundario-12: #201540;
+            --color-secundario-11: #1f143f;
+            --color-secundario-11-rgb: 31, 20, 63;
+            --color-secundario-10: #2B204C;
+            --color-secundario-9: #3A2F5B;
+            --color-secundario-8: #453B67;
+            --color-secundario-7: #6E6380;
+            --color-secundario-6: #978CB7;
+            --color-secundario-5: #BFB5E0;
+            --color-secundario-4: #DBD0FB;
+            --color-secundario-3: #E4DEFC;
+            --color-secundario-2: #F4F1FE;
+            --color-secundario-1: #FEFAF8;
           }
         "
       />

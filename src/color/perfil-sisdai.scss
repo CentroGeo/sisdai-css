@@ -1,5 +1,7 @@
-// perfil sisdai https://sisdai.conahcyt.mx/
-body[data-perfil='sisdai'] {
+// perfil predeterminado del sistema de diseño sisdai https://sisdai.conahcyt.mx/
+body[data-perfil='predeterminada'],
+body[data-perfil='sisdai'],
+:root {
   // colores primarios
   --color-primario-4: #2B13B1;
   --color-primario-3: #3F17E4;
