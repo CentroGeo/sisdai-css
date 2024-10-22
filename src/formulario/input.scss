@@ -1,9 +1,18 @@
-input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']) {
-  @include campo-estructura-color;
+@use "sass:map";
 
-  height: $form-campo-alto;
+input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']) {
+  @extend %campo-base;
+  
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   display: inline-flex;
+
+  @include campo-estructura-color;
+}
+
+input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset'], .campo-busqueda-entrada) {
+  height: $form-campo-alto;
+  border-radius: $form-campo-radio;
+  padding: calc(map.get($espaciado, '1') - 1px) map.get($espaciado, '2');
 }

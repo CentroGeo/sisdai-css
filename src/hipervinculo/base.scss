@@ -1,12 +1,9 @@
 @use "sass:map";
 
-@mixin hipervinculo-estructura-color-principal {
-  background-color: transparent;
+%hipervinculo-base {
   border: none;
   border-radius: map.get($borde-redondeado, '4');
-  box-shadow: 0 0 2px var(--hipervinculo-sombra);
   box-sizing: border-box;
-  color: var(--hipervinculo-color);
   font-family: var(--tipografia-familia, 'sans-serif');
   font-weight: 500;
   line-height: inherit;
@@ -15,17 +12,28 @@
   text-align: left;
   display: inline;
   vertical-align: baseline;
+  cursor: pointer;
+  
+  @include transicion;
+
+  .pictograma,
+  [class^='pictograma-'],
+  [class*=' pictograma-'] {
+    display: inline;
+    vertical-align: sub;
+    padding: 0;
+  }
+}
+
+@mixin hipervinculo-estructura-color {
+  background-color: transparent;
+  box-shadow: 0 0 2px var(--hipervinculo-sombra);
+  color: var(--hipervinculo-color);
   
   &:disabled {
     background-color: transparent;
     color: var(--hipervinculo-deshabilitado-color);
     box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
-  }
-
-  &:not(:disabled) {
-    @include transicion;
-    
-    cursor: pointer;
   }
   
   &:visited {
@@ -46,19 +54,12 @@
     outline-offset: 4px;
     box-shadow: none;
   }
-
-  .pictograma,
-  [class^='pictograma-'],
-  [class*=' pictograma-'] {
-    display: inline;
-    vertical-align: sub;
-    padding: 0;
-  }
 }
 
 a,
 .hipervinculo {
-  @include hipervinculo-estructura-color-principal;
+  @extend %hipervinculo-base;
+  @include hipervinculo-estructura-color;
 }
 
 a[class^='m-'],

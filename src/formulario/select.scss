@@ -1,8 +1,9 @@
 @use "sass:map";
 
 select {
-  @include campo-estructura-color;
+  @extend %campo-base;
 
+  border-radius: $form-campo-radio;
   height: $form-campo-alto;
   line-height: 1.25em;
   appearance: none;
@@ -11,9 +12,7 @@ select {
   background-size: map.get($espaciado, '4');
   background-repeat: no-repeat;
   background-image: var(--campo-selector-svg);
-  padding-right: map.get($espaciado, '5');
-  padding-top: calc(map.get($espaciado, '1') + 1px);
-  padding-bottom: calc(map.get($espaciado, '1') + 1px);
+  padding: calc(map.get($espaciado, '1') + 1px) map.get($espaciado, '5') calc(map.get($espaciado, '1') + 1px) map.get($espaciado, '2');
   background-color: var(--campo-fondo);
   color: var(--campo-color);
   overflow: hidden;
@@ -25,4 +24,6 @@ select {
     opacity: 1;
     background-image: var(--campo-selector-deshabilitado-svg);
   }
+
+  @include campo-estructura-color;
 }

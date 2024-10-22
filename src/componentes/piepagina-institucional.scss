@@ -15,11 +15,6 @@ footer,
     display: inline-block;
     line-height: max(24px, 1.5em);
     text-underline-offset: 4px;
-    &:hover,
-    &:focus,
-    &:focus-visible {
-      text-decoration: underline;
-    }
   }
 
   li {
@@ -72,6 +67,7 @@ footer,
     &:focus,
     &:focus-visible {
       color: var(--color-mx-0);
+      text-decoration: underline;
     }
   }
 }
@@ -91,6 +87,7 @@ footer,
     &:focus,
     &:focus-visible {
       color: var(--color-conahcyt-0);
+      text-decoration: underline;
     }
   }
 }

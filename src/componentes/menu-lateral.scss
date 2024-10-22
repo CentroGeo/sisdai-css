@@ -1,8 +1,11 @@
 
 @use "sass:map";
 
-@mixin navegacion-menu-lateral {
-  padding: map.get($espaciado, '1') map.get($espaciado, '3');
+
+@mixin menu-lateral-contenedor-color {
+  padding-top: map.get($espaciado, '1');
+  padding-bottom: map.get($espaciado, '1');
+  padding-right: map.get($espaciado, '3');
   background-color: transparent;
   border-radius: 0;
   color: var(--navegacion-secundaria-color);
@@ -37,93 +40,67 @@
   }
 }
 
+.menu-lateral-contenedor {
+  background: var(--navegacion-secundaria-fondo);
+  border-left: 1px solid transparent;
+  color: var(--navegacion-secundaria-color);
+  position: relative;
+  width: 100%;
+
+  a {
+    font-weight: 400;
+    display: block;
+    text-decoration: none;
+
+    @include menu-lateral-contenedor-color;
+  }
+
+  .colapsable-boton {
+    @include menu-lateral-contenedor-color;
+  }
+
+  ul, 
+  ol {
+    @include lista-estructura-plana;
+  }
+}
+
+.menu-lateral-boton {
+  background: var(--navegacion-secundaria-fondo);
+  border-radius: map.get($borde-redondeado, '20');
+  color: var(--navegacion-secundaria-color);
+  margin-left: map.get($espaciado, '2');
+  display: flex;
+  padding: 0;
+  z-index: 3;
+
+  .pictograma,
+  [class^='pictograma-'],
+  [class*=' pictograma-'] {
+    align-self: flex-start;
+    font-size: 1.35em;
+    padding: map.get($espaciado, '3') map.get($espaciado, '1');
+    transition: transform 0.27s ease;
+  }
+
+  &:hover {
+    background: var(--navegacion-secundaria-cursor-fondo);
+    box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
+    color: var(--navegacion-secundaria-cursor-color);
+  }
+
+  &:focus {
+    background: var(--navegacion-secundaria-enfoque-fondo);
+    box-shadow: 
+      inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde),
+      0 0 8px var(--navegacion-secundaria-enfoque-sombra);
+    color: var(--navegacion-secundaria-enfoque-color);
+  }
+}
+
 .menu-lateral {
   position: sticky;
   z-index: 999;
-
-  .menu-lateral-contenedor {
-    background: var(--navegacion-secundaria-fondo);
-    border-left: 1px solid transparent;
-    color: var(--navegacion-secundaria-color);
-    position: relative;
-    width: 100%;
-
-    a {
-      @include navegacion-menu-lateral;
-
-      font-weight: 400;
-      display: block;
-      text-decoration: none;
-    }
-
-    button {
-      @include navegacion-menu-lateral;
-    }
-
-    ul, 
-    ol {
-      @include lista-estructura-plana;
-  
-      li {
-        > a,
-        > button,
-        .colapsable-boton {
-          padding-left: map.get($espaciado, '3');
-        }
-  
-        ul li,
-        ol li {
-          > a,
-          > button,
-          .colapsable-boton {
-            padding-left: map.get($espaciado, '4');
-          }
-  
-          ul li,
-          ol li {
-            > a,
-            > button,
-            .colapsable-boton {
-              padding-left: map.get($espaciado, '5');
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .menu-lateral-boton {
-    background: var(--navegacion-secundaria-fondo);
-    border-radius: map.get($borde-redondeado, '20');
-    color: var(--navegacion-secundaria-color);
-    margin-left: map.get($espaciado, '2');
-    display: flex;
-    padding: 0;
-    z-index: 3;
-
-    .pictograma,
-    [class^='pictograma-'],
-    [class*=' pictograma-'] {
-      align-self: flex-start;
-      font-size: 1.35em;
-      padding: map.get($espaciado, '3') map.get($espaciado, '1');
-      transition: transform 0.27s ease;
-    }
-
-    &:hover {
-      background: var(--navegacion-secundaria-cursor-fondo);
-      box-shadow: inset 0 0 0 1px var(--navegacion-secundaria-cursor-borde);
-      color: var(--navegacion-secundaria-cursor-color);
-    }
-
-    &:focus {
-      background: var(--navegacion-secundaria-enfoque-fondo);
-      box-shadow: 
-        inset 0 0 0 1px var(--navegacion-secundaria-enfoque-borde),
-        0 0 8px var(--navegacion-secundaria-enfoque-sombra);
-      color: var(--navegacion-secundaria-enfoque-color);
-    }
-  }
 
   @include mediaquery('mov') {
     display: flex;
@@ -168,6 +145,35 @@
         padding-top: map.get($espaciado, '2');
         padding-bottom: map.get($espaciado, '2');
         box-shadow: 4px 8px 16px -4px var(--opacidad-ligero);
+
+        ul, 
+        ol {
+          li {
+            > a,
+            > button,
+            .colapsable-boton {
+              padding-left: map.get($espaciado, '3');
+            }
+
+            ul li,
+            ol li {
+              > a,
+              > button,
+              .colapsable-boton {
+                padding-left: map.get($espaciado, '4');
+              }
+
+              ul li,
+              ol li {
+                > a,
+                > button,
+                .colapsable-boton {
+                  padding-left: map.get($espaciado, '5');
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -190,7 +196,7 @@
           > a,
           > button,
           .colapsable-boton {
-            padding-left: map.get($espaciado, '5');
+            padding-left: map.get($espaciado, '6');
           }
   
           ol li,
@@ -198,7 +204,7 @@
             > a,
             > button,
             .colapsable-boton {
-              padding-left: map.get($espaciado, '6');
+              padding-left: map.get($espaciado, '7');
             }
   
             ol li,
@@ -206,7 +212,7 @@
               > a,
               > button,
               .colapsable-boton {
-                padding-left: map.get($espaciado, '7');
+                padding-left: map.get($espaciado, '8');
               }
             }
           }
