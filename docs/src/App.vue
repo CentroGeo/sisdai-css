@@ -79,7 +79,7 @@
 
   // Módulo de vista oscura
   const tema = ref('auto') // 'oscura' | 'clara' | 'auto'
-  const perfil = ref('predeterminada') // 'predeterminada' | 'sisdai' | 'gema'
+  const perfil = ref('predeterminado') // 'predeterminado' | 'gema' | 'eni' 
   const body = document.querySelector("body")
 
   function alternarTema() {
@@ -101,7 +101,7 @@
     // body.removeAttribute('data-tema-claro')
     
     // rotar entre estos perfiles
-    const perfiles = ['predeterminada', 'sisdai', 'gema']
+    const perfiles = ['predeterminado', 'gema', 'eni']
     perfil.value = perfiles[
       (perfiles.indexOf(perfil.value) + 1) % 3
     ]
