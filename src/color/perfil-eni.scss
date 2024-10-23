@@ -1,6 +1,5 @@
-// perfil predeterminado, se utiliza tambien para ENI y sus capítulos
-body[data-perfil='predeterminada'],
-:root {
+// perfil eni, se utiliza para Ecosistamas Nacionales Informaticos y sus Capítulos
+body[data-perfil='eni'] {
   // colores primarios
   --color-primario-4: #0058cc;
   --color-primario-3: #0068FF;
