@@ -82,6 +82,9 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 ### Cambiado (Changed)
 
 - Refactorización de la biblioteca entera para homologar documentación y lineamientos de diseño de la información para el Sisdai
+- Refactorización de color
+- Refactorización de nombres de clases
+- Versión estable de documentación
 
 
 
@@ -92,7 +95,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 [1.2.6]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.2.6...v1.2.2
 [1.2.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.2.2...v1.2.0
 [1.2.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.2.0...v1.0.0
-[1.0.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/release/tag/v1.0.0
+[1.0.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/-/releases/v1.0.0
 
 
 
