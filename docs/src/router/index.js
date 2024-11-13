@@ -198,6 +198,14 @@ const router = createRouter({
             title: 'Separadores | Elementos | Sisdai CSS'
           },
         },
+        {
+          path: 'formularios',
+          name: 'Elementos / Formularios',
+          component: () => import('../views/ElementosFormularios.vue'),
+          meta: {
+            title: 'Formularios | Elementos | Sisdai CSS'
+          },
+        },
       ]
     },
     {
@@ -374,6 +382,14 @@ const router = createRouter({
           component: () => import('../views/ComponenteCampoBusqueda.vue'),
           meta: {
             title: 'Campo de búsqueda | Componentes | Sisdai CSS'
+          },
+        },
+        {
+          path: 'formulario',
+          name: 'Componentes / Campo',
+          component: () => import('../views/ComponenteFormulario.vue'),
+          meta: {
+            title: 'Formulario | Componentes | Sisdai CSS'
           },
         },
       ]

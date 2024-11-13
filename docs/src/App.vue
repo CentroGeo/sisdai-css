@@ -410,6 +410,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Búsqueda</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/formulario">Formulario</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/info-despliegue">Información de despliegue</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
@@ -479,7 +480,7 @@
       </div>
     </nav>
 
-    <main>
+    <main id="principal">
       <RouterView />
     </main>
   </div>
