@@ -6066,15 +6066,21 @@ select.campo-confirmacion {
   color: var(--texto-confirmacion);
 }
 
-input:invalid {
+input:invalid,
+textarea:invalid,
+select:invalid {
   border-color: var(--borde-error);
 }
 
-input:invalid + p.formulario-ayuda {
+input:invalid + p.formulario-ayuda,
+textarea:invalid + p.formulario-ayuda,
+select:invalid + p.formulario-ayuda {
   color: var(--texto-error);
 }
 
-input:required:invalid + p.formulario-ayuda::before {
+input:required:invalid + p.formulario-ayuda::before,
+textarea:required:invalid + p.formulario-ayuda::before,
+select:required:invalid + p.formulario-ayuda::before {
   content: "Este campo no puede quedar vacío. ";
 }
 
