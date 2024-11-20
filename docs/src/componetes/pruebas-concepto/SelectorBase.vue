@@ -14,7 +14,7 @@
       type: String,
       required: true
     },
-    titulo: {
+    instruccional: {
       type: String,
       required: false,
       default: 'Selecciona una opción'
@@ -36,7 +36,7 @@
       required: true,
       default: true
     },
-    es_titulo_visible: {
+    es_instruccional_visible: {
       type: Boolean,
       required: true,
       default: true
@@ -69,7 +69,7 @@
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
     > 
-      <option disabled value="" v-if="es_titulo_visible">{{ titulo }}</option>
+      <option disabled value="" v-if="es_instruccional_visible">{{ instruccional }}</option>
       <slot></slot>
     </select>
     <p aria-live="polite" class="formulario-ayuda" role="status" v-if="texto_ayuda || es_obligatorio || texto_error"> 
