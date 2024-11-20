@@ -8,6 +8,12 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 *Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.3.4] - 2024-11-20
+
+### Agregado (Added)
+
+- Instrucciones en el README.md para coincidir con la publicación de la biblioteca en el repositorio de paquetes de npmjs.com
+
 ## [1.3.3] - 2024-10-22
 
 ### Cambiado (Changed)
@@ -87,7 +93,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Versión estable de documentación
 
 
-
+[1.3.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.4...v1.3.3
 [1.3.3]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.3...v1.3.2
 [1.3.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.2...v1.3.1
 [1.3.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.1...v1.3.0

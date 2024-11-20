@@ -1,6 +1,6 @@
 {
   "name": "sisdai-css",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "license": "LGPL-3.0-only",
   "main": "src/sisdai.scss",
@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css/issues"
   },
-  "homepage": "https://codigo.conahcyt.mx/sisdai/sisdai-css/#readme",
+  "homepage": "https://sisdai-css.conahcyt.mx",
   "dependencies": {
     "sass": "^1.80.3"
   },
