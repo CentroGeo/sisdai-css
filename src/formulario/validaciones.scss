@@ -19,3 +19,15 @@ select {
     color: var(--texto-confirmacion);
   }
 }
+
+input:invalid {
+  border-color: var(--borde-error);
+}
+
+input:invalid + p.formulario-ayuda {
+  color: var(--texto-error);
+}
+
+input:required:invalid + p.formulario-ayuda::before {
+  content: 'Este campo no puede quedar vacío. ';
+}
