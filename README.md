@@ -182,10 +182,19 @@ Instala las dependencias del proyecto
 npm install
 ```
 
-Instala las dependencias de la documentación
+Opcionalmente instala las dependencias de la documentación
 
 ``` sh
 npm run docs:install
+```
+
+Opcionalmente levanta en local la documentación
+```sh
+npm run docs
+```
+ó
+```sh
+npm run docs:dev
 ```
 
 ## Licencia
