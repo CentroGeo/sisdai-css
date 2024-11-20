@@ -4,10 +4,10 @@ El proyecto sisdai-css es una biblioteca de estilos de Sass
 alineada al Sistema de Diseño y Accesibilidad para la Investigación 
 ([Sisdai](https://sisdai.conahcyt.mx/)).
 
-Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó seguir las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de éste README.md para levantar la documentación localmente.
+Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este documento.
 
 Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
-en su equipo a través del **protocolo HTTPS**.
+en su equipo a través del **protocolo HTTPS** o bien instalándola mediante [npm](https://www.npmjs.com/).
 
 ## Utilidades
 
@@ -19,7 +19,7 @@ en su equipo a través del **protocolo HTTPS**.
 
 ## Instalación y uso
 
-Si tu proyecto está creado con [sisdai-proyecto-base](https://codigo.conahcyt.mx/sisdai/sisdai-proyecto-base) , ya
+Si tu proyecto está creado con el [proyecto-base](https://codigo.conahcyt.mx/eni/proyecto-base), ya
 tiene incluida una versión estable de sisdai-css y sisdai-componentes y no requiere ningún paso de instalación ni importación. En
 ese caso puedes ir a la sección [Actualización](#actualización).
 
@@ -40,19 +40,23 @@ Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en
 
 ### Instala la biblioteca
 
-En la carpeta principal de tu proyecto Vue, instala la biblioteca en las dependencias de tu proyecto con:
+En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sidai-css mediante dos opciones:
 
-``` bash
+a. Desde el repositorio del [Sisdai en npm](https://www.npmjs.com/~sisdai).
+
+En la línea de comando escribe
+
+```bash
+npm i sisdai-css
+```
+
+b. Desde el repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css)
+
+En la línea de comando escribe
+
+```bash
 npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css
 ```
-
-Dependiendo de la versión de la biblioteca a instalar, la instrucción anterior puede cambiar a:
-
-``` bash
-npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
-```
-
-donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
 ### Importa la biblioteca
 
