@@ -40,7 +40,7 @@ Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en
 
 ### Instala la biblioteca
 
-En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sidai-css mediante dos opciones:
+En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sisdai-css mediante dos opciones:
 
 **Opción A.** Desde el repositorio del [sisdai-css en npm](https://www.npmjs.com/package/sisdai-css).
 
