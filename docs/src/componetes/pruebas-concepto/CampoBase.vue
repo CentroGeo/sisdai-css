@@ -1,4 +1,14 @@
-<script setup>
+<script setup>  
+  const identificador = idAleatorio()
+
+  function idAleatorio() {
+    return 'campo-' + Math.random().toString(36).substring(2)
+  }
+
+  defineExpose({
+    identificador,
+  })
+  
   defineProps({
     etiqueta: {
       type: String,
@@ -15,7 +25,11 @@
     },
     texto_ayuda: {
       type: String,
-      requiered: false
+      default: ''
+    },
+    texto_error: {
+      type: String,
+      default: ''
     },
     modelValue: {
       type: String,
@@ -31,14 +45,9 @@
       required: true,
       default: false
     },
-    err_mensaje_obligatorio: { // TODO: borrame
-      type: String,
-      required: false,
-      default: 'Este campo no puede quedar vacío.'
-    },
   })
-  // TODO: identificador crear automáticamente
-  // TODO: mensaje error fijo
+  
+
 </script>
 <template>
   <div>
@@ -59,10 +68,10 @@
       :aria-required="es_obligatorio"
       :value="modelValue"
       @input="$emit('update:modelValue', $event.target.value)"
-      v-bind:type="tipo"
+      :type="tipo"
     />
-    <p aria-live="polite" class="formulario-ayuda" role="status" v-if="texto_ayuda">
-      <em v-if="err_mensaje_obligatorio">{{ err_mensaje_obligatorio }}</em>      
+    <p aria-live="polite" class="formulario-ayuda" role="status" v-if="texto_ayuda || es_obligatorio || texto_error"> 
+      {{ texto_error }}
       {{ texto_ayuda }}
     </p>
   </div>

@@ -23,7 +23,7 @@ const fechaNacimiento = ref('')
     </div>
 
     <div class="contenedor ancho-lectura">
-      <h2 class="p-t-10 m-t-0">Elementos dentro del formulario</h2>
+      <h2 class="p-t-10 m-t-0">Elementos</h2>
       <p>
         Recomendamos siempre utilizar la etiqueta <code>&lt;label/></code>, vinculándola al <code>input</code>
         correspondiente mediante el atributo <code>for</code>. Esta etiqueta puede incluir un elemento con la clase 
@@ -44,71 +44,75 @@ const fechaNacimiento = ref('')
     </div>
 
     <div class="contenedor ancho-lectura">
-      <h2 class="p-t-10 m-t-0">Componente CampoBase</h2>
+      <h2 class="p-t-10 m-t-0">Campo Base</h2>
       <p>
-        Al utilizar éste componente nos aseguramos que la etiqueta y el campo siempre estén vinculados,
-        opcionalmente podemos definir para cada componente si es obligatorio, un texto de ejemplo 
-        y un mensaje de ayuda para que la persona usuaria comprenda como debe llenarse cada elemento del formulario.
+        Al utilizar el componente <code>SisdaiCampoBase</code> nos aseguramos que la etiqueta y el campo siempre estén vinculados,
+        opcionalmente podemos definir si es obligatorio, agregar un texto de ejemplo 
+        y un mensaje de ayuda para que la persona usuaria comprenda como debe llenarse el campo.
       </p>
-      <p>Referencias:</p>
-      <ul>
-        <li>
-          <a href="https://www.w3.org/WAI/tutorials/forms/">Notas de accesibilidad para formularios</a>
-        </li>
-        <li>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Live_Regions">Aria live</a>
-        </li>
-        <li>
-          <a href="https://www.sarasoueidan.com/blog/accessible-notifications-with-aria-live-regions-part-1/">Notificaciones en formularios</a>
-        </li>
-      </ul>
+      <p>
+        De manera predeterminada el componente es de tipo texto <code>type="text"</code> pudiendo cambiar el atributo
+        escribiendo en la propiedad tipo, el tipo deseado de campo. 
+      </p>
+      <p>
+        Actualmente el campo valida automáticamente cuando es requerido, mostrando el mensaje de error 'Este campo no puede quedar vacío. '.
+        Las implementaciones de otros tipos de error deberán crearse en el momento de su uso.
+      </p>
     </div>
     <div class="flex flex-contenido-centrado">
       <div class="columna-6 m-t-3">
+        <EjemploCodigo
+        tipo='HTML que construye al componente'
+        codigo='
+          <form v-on:submit.prevent>
+            <div>
+              <label for="campo-timestamp">
+                Nombre del campo
+                <span class="formulario-obligatoriedad">
+                  (Obligatorio)
+                </span>
+              </label>
+              <input 
+                id="campo-timestamp" 
+                type="text" 
+                placeholder="Muestra de ejemplo"
+                value="Campo de ejmplo llenado"
+                required
+              />
+              <p class="formulario-ayuda">
+                Mensaje de ayuda.
+              </p>
+            </div>
+          </form>
+          '
+        />
+      </div>
+
+      <div class="columna-6 m-t-3">
         <SisdaiCampoBase 
-          identificador="campofechanac"
           etiqueta="Fecha de nacimiento"
           ejemplo="31/12/2024"
-          texto_ayuda="Escribir la fecha en formato Día/Mes/Año"
-          :es_obligatorio="false"
+          :es_obligatorio="true"
+          :es_etiqueta_visible="true"
           v-model="fechaNacimiento"
+          texto_ayuda="Texto de ayuda"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
-          tipo='Código VUE'
+          tipo='Componente de VUE'
           codigo='
             <SisdaiCampoBase 
-              identificador="identificadorunico"
               etiqueta="Fecha de nacimiento"
               ejemplo="31/12/2024"
-              texto_ayuda="Escribir la fecha en formato Día/Mes/Año"
-              :es_obligatorio="false"
-              v-model="variableValor"
+              :es_obligatorio="true"
+              :es_etiqueta_visible="true"
+              v-model="fechaNacimiento"
+              texto_ayuda="Texto de ayuda"
             />
           '
         />
       </div>
-      <div class="columna-6 m-t-3">
-        <EjemploCodigo
-          tipo='Código HTML'
-          codigo='
-            <label for="campo">
-              Nombre del campo
-              <span class="formulario-obligatoriedad">
-                (Obligatorio)
-              </span>
-            </label>
-            <input 
-              id="campo" 
-              type="text" 
-              placeholder="Muestra de ejemplo"
-            />
-            <p class="formulario-ayuda">
-              Mensaje de ayuda.
-            </p>
-          '
-        />
-      </div>
+      
     </div>
     
     
