@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css/issues"
   },
-  "homepage": "https://codigo.conahcyt.mx/sisdai/sisdai-css/#readme",
+  "homepage": "https://sisdai-css.conahcyt.mx",
   "dependencies": {
     "sass": "^1.80.3"
   },
