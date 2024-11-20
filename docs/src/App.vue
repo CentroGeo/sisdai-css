@@ -503,6 +503,8 @@
     z-index: 999;
     gap: 8px;
     // display: none;
+    max-width: 100%;
+    overflow: auto;
   }
   .tmp-menu * {
     font-size: 12px;
