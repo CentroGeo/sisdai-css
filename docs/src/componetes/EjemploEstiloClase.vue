@@ -16,3 +16,12 @@
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.ej-estilo-clase {
+  .fondo-color-informacion {
+    max-width: 100%;
+    overflow: auto;
+  }
+}
+</style>
