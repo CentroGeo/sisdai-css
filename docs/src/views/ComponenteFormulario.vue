@@ -45,6 +45,32 @@ const seleccionEjemplo = ref('')
       <p>
         Opcionalmente, se puede añadir la clase <code>.formulario-ayuda</code> para incluir texto de ayuda a la persona usuaria.
       </p>
+      <EjemploCodigo
+        tipo='HTML de un campo'
+        codigo='
+        <form v-on:submit.prevent>
+          <div>
+            <label for="idcampo">
+              Nombre del campo
+              <span class="formulario-obligatoriedad">
+                (Obligatorio)
+              </span>
+            </label>
+
+            <input 
+              id="idcampo" 
+              type="text" 
+              placeholder="Muestra de ejemplo"
+              value="Campo de ejemplo llenado"
+              required
+            />
+
+            <p class="formulario-ayuda">
+              Mensaje de ayuda.
+            </p>
+          </div>
+        </form>
+        '/>
     </div>
 
     <div class="contenedor ancho-lectura">
@@ -56,7 +82,7 @@ const seleccionEjemplo = ref('')
       </p>
       <p>
         De manera predeterminada el componente es de tipo texto <code>type="text"</code> pudiendo cambiar el atributo
-        escribiendo en la propiedad tipo, el <code>tipo</code>, deseado de campo. 
+        escribiendo en la propiedad tipo, el <code>tipo</code>, excluyendo los tipos checkbox, radio y range, que tienen su propio componente. 
       </p>
       <p>
         Actualmente el campo valida automáticamente cuando es requerido, mostrando el mensaje de error <i>'Este campo no puede quedar vacío. '</i>.
@@ -81,12 +107,12 @@ const seleccionEjemplo = ref('')
                 id="campo-idcreadoautomaticamente" 
                 type="text" 
                 placeholder="Muestra de ejemplo"
-                value="Campo de ejemplo llenado"
+                value=""
                 required
               />
 
               <p class="formulario-ayuda">
-                Mensaje de ayuda.
+                Texto de ayuda.
               </p>
             </div>
           </form>
@@ -95,28 +121,295 @@ const seleccionEjemplo = ref('')
       </div>
       <div class="columna-6 m-t-3">
         <SisdaiCampoBase 
-          etiqueta="Fecha de nacimiento"
-          ejemplo="31/12/2024"
-          :es_obligatorio="true"
+          etiqueta="Nombre de la etiqueta"
+          ejemplo="Ejemplo"
+          :es_obligatorio="false"
           :es_etiqueta_visible="true"
           v-model="campoEjemplo"
-          texto_ayuda="Texto de ayuda"
+          texto_ayuda="Texto de ayuda."
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
           tipo='Componente de VUE'
           codigo='
             <SisdaiCampoBase 
-              etiqueta="Fecha de nacimiento"
-              ejemplo="31/12/2024"
-              :es_obligatorio="true"
+              etiqueta="Nombre de la etiqueta"
+              ejemplo="Ejemplo"
+              :es_obligatorio="false"
               :es_etiqueta_visible="true"
               v-model="campoEjemplo"
-              texto_ayuda="Texto de ayuda"
+              texto_ayuda="Texto de ayuda."
             />
           '
         />
       </div>
+    </div>
+
+    <div class="contenedor ancho-lectura">
+      <h3 class="p-t-10 m-t-0">Tipos de campo base</h3>
+      <p>
+        Acerca de los tipos de campo, todos se encuentran construidos con etiquetas nativas, por lo que no controlamos como se 
+        presenten, que sabemos que algunos son distintos entre navegadores. 
+      </p>
+      <p>
+        También dependiendo del tipo de campo y navegador, 
+        existen componentes que no muestran los textos de ejemplo debido a que el navegador agrega información específica al campo, 
+        justo donde debería existir el <i lang="en">placeholder</i>.
+      </p>
+      <p>
+        Para éstos casos, se puede hacer uso de la propiedad <code>texto_ayuda</code> del componente, para agregar mensajes de ayuda
+        y/o ejemplos.
+      </p>
+    </div>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de texto"
+          ejemplo="tipo text"
+          tipo="text"
+          v-model="campoTexto"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de texto"
+            ejemplo="tipo text"
+            tipo="text"
+            v-model="campoTexto"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de contraseña"
+          ejemplo="tipo password"
+          tipo="password"
+          v-model="campoContrasenia"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de contraseña"
+            ejemplo="tipo password"
+            tipo="password"
+            v-model="campoContrasenia"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de correo"
+          ejemplo="tipo email"
+          tipo="email"
+          v-model="campoCorreo"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de correo"
+            ejemplo="tipo email"
+            tipo="email"
+            v-model="campoCorreo"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de archivo"
+          ejemplo="tipo file"
+          tipo="file"
+          v-model="campoArchivo"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de archivo"
+            ejemplo="tipo file"
+            tipo="file"
+            v-model="campoArchivo"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de búsqueda"
+          ejemplo="tipo search"
+          tipo="search"
+          v-model="campoBuscar"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de búsqueda"
+            ejemplo="tipo search"
+            tipo="search"
+            v-model="campoBuscar"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo numérico"
+          ejemplo="tipo number"
+          tipo="number"
+          v-model="campoNumerico"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo numérico"
+            ejemplo="tipo number"
+            tipo="number"
+            v-model="campoNumerico"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo teléfono"
+          ejemplo="tipo tel"
+          tipo="tel"
+          v-model="campoTelefono"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo teléfono"
+            ejemplo="tipo tel"
+            tipo="tel"
+            v-model="campoTelefono"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de URL"
+          ejemplo="tipo url"
+          tipo="url"
+          v-model="campoURL"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de URL"
+            ejemplo="tipo url"
+            tipo="url"
+            v-model="campoURL"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de fecha"
+          ejemplo="tipo date"
+          tipo="date"
+          v-model="campoFecha"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de fecha"
+            ejemplo="tipo date"
+            tipo="date"
+            v-model="campoFecha"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de hora"
+          ejemplo="tipo time"
+          tipo="time"
+          v-model="campoHora"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de hora"
+            ejemplo="tipo time"
+            tipo="time"
+            v-model="campoHora"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de fecha y hora"
+          ejemplo="tipo datetime-local"
+          tipo="datetime-local"
+          v-model="campoFechaHora"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de fecha y hora"
+            ejemplo="tipo datetime-local"
+            tipo="datetime-local"
+            v-model="campoFechaHora"
+          />
+          '
+        />
+      </div>
+      <div class="columna-4 m-t-3">
+        <SisdaiCampoBase 
+          etiqueta="Campo de mes"
+          ejemplo="tipo month"
+          tipo="month"
+          v-model="campoMes"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCampoBase 
+            etiqueta="Campo de mes"
+            ejemplo="tipo month"
+            tipo="month"
+            v-model="campoMes"
+          />
+          '
+        />
+      </div>
+    </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="p-t-10 m-t-0">Casillas de verificación</h2>
+    </div>
+
+    <div class="contenedor ancho-lectura">
+      <h2 class="p-t-10 m-t-0">Botones de radio</h2>
     </div>
 
     <div class="contenedor ancho-lectura">
@@ -171,7 +464,6 @@ const seleccionEjemplo = ref('')
           codigo='
           <SisdaiAreaTexto 
             etiqueta="Descripción"
-            :es_etiqueta_visible="true"
             v-model="descripcionEjemplo"
             texto_ayuda="Describe brevemente cómo llenar el campo."
           />
@@ -186,7 +478,7 @@ const seleccionEjemplo = ref('')
         Al utilizar el componente <code>SisdaiSelector</code> nos aseguramos que la etiqueta y el selector siempre estén vinculados.
       </p>
       <p>
-        Opcionalmente podemos definir si es obligatorio, agregar la opción deshabilitada para cambiar el título <i>Selecciona una opción</i>
+        Opcionalmente podemos definir si es obligatorio, agregar la opción deshabilitada para cambiar el instruccional <i>Selecciona una opción</i>
         seleccionar si se muestra o no la primer opción deshabilitada, agregar un mensaje de ayuda y declarar la lista de opciones del selector.
       </p>
       <p>
@@ -210,7 +502,7 @@ const seleccionEjemplo = ref('')
               
               <select id="selector-idcreadoautomaticamente" required>
                 <option disabled value="" selected>
-                  - Selecciona una opción -
+                  Selecciona una opción 
                 </option>
                 <option value="1">
                   Opcion Uno
