@@ -7,7 +7,7 @@ alineada al Sistema de Diseño y Accesibilidad para la Investigación
 Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este documento.
 
 Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
-en su equipo a través del **protocolo HTTPS** o bien instalándola mediante [npm](https://www.npmjs.com/).
+en su equipo a través del **protocolo HTTPS** o bien instalándola mediante [npm/sisdai](https://www.npmjs.com/~sisdai).
 
 ## Utilidades
 
