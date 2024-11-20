@@ -4,10 +4,10 @@ El proyecto sisdai-css es una biblioteca de estilos de Sass
 alineada al Sistema de Diseño y Accesibilidad para la Investigación 
 ([Sisdai](https://sisdai.conahcyt.mx/)).
 
-Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó seguir las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de éste README.md para levantar la documentación localmente.
+Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este documento.
 
 Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
-en su equipo a través del **protocolo HTTPS**.
+en su equipo a través del **protocolo HTTPS** o bien instalándola mediante [npm/sisdai](https://www.npmjs.com/~sisdai).
 
 ## Utilidades
 
@@ -19,7 +19,7 @@ en su equipo a través del **protocolo HTTPS**.
 
 ## Instalación y uso
 
-Si tu proyecto está creado con [sisdai-proyecto-base](https://codigo.conahcyt.mx/sisdai/sisdai-proyecto-base) , ya
+Si tu desarrollo está creado con el [proyecto-base](https://codigo.conahcyt.mx/eni/proyecto-base), ya
 tiene incluida una versión estable de sisdai-css y sisdai-componentes y no requiere ningún paso de instalación ni importación. En
 ese caso puedes ir a la sección [Actualización](#actualización).
 
@@ -40,19 +40,23 @@ Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en
 
 ### Instala la biblioteca
 
-En la carpeta principal de tu proyecto Vue, instala la biblioteca en las dependencias de tu proyecto con:
+En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sisdai-css mediante dos opciones:
 
-``` bash
+**Opción A.** Desde el repositorio del [sisdai-css en npm](https://www.npmjs.com/package/sisdai-css).
+
+En la línea de comando escribe
+
+```bash
+npm i sisdai-css
+```
+
+**Opción B.** Desde el repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css).
+
+En la línea de comando escribe
+
+```bash
 npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css
 ```
-
-Dependiendo de la versión de la biblioteca a instalar, la instrucción anterior puede cambiar a:
-
-``` bash
-npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
-```
-
-donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
 ### Importa la biblioteca
 
@@ -95,13 +99,22 @@ Existen además clases para dar estilo a elementos, las cuales se encuentran agr
 
 ## Actualización
 
-Si actualmente utilizas la biblioteca y necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la versión que requieres nuevamente
+Si necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la versión que requieres nuevamente usando una de estas dos opciones
 
+**Opción A.** Para versiones publicadas en el repositorio de [sisdai-css en npm](https://www.npmjs.com/package/sisdai-css).
+
+```bash
+npm i sidai-css@vN.N.N
+```
+
+**Opción B.** Para cualquier versión desde el repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css)
 ```bash
 npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
 ```
 
 donde N.N.N indica el número de versión, por ejemplo v1.0.0
+
+Consulta el archivo `CHANGELOG.md` del repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css) para conocer las nuevas características y cambios que sufre la biblioteca en cada una de sus versiones.
 
 
 ## Listado de elementos
@@ -130,8 +143,7 @@ jerarquía que unos estilos se puedan sobreescribir a otros.
 | Tabla            | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                                      |
 | Tipografía       | Estilos de las etiquetas de títulos, párrafos y texto en general.                                                                                                                        |
 | Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://codigo.conahcyt.mx/sisdai/sisdai-graficas) y [sisdai-mapas](https://codigo.conahcyt.mx/sisdai/sisdai-mapas) |
-
-> [!NOTE]  
+ 
 > *Estilos que se utilizan en otras bibliotecas del Sisdai
 
 ## Uso local del proyecto
@@ -170,10 +182,19 @@ Instala las dependencias del proyecto
 npm install
 ```
 
-Instala las dependencias de la documentación
+Opcionalmente instala las dependencias de la documentación
 
 ``` sh
 npm run docs:install
+```
+
+Opcionalmente levanta en local la documentación
+```sh
+npm run docs
+```
+ó
+```sh
+npm run docs:dev
 ```
 
 ## Licencia
