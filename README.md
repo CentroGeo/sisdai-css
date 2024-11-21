@@ -1,13 +1,17 @@
 # sisdai-css
 
-El proyecto sisdai-css es una biblioteca de estilos de Sass 
-alineada al Sistema de Diseño y Accesibilidad para la Investigación 
-([Sisdai](https://sisdai.conahcyt.mx/)).
+El proyecto sisdai-css es una biblioteca de estilos de Sass alineada al Sistema de Diseño y Accesibilidad para la 
+Investigación ([Sisdai](https://sisdai.conahcyt.mx/)). El Sisdai es un proyecto de investigación desarrollado por el 
+Centro de Investigación en Ciencias de Información Geoespacial, A.C. 
+([CentroGeo](https://www.centrogeo.org.mx/)) y coordinado por el Consejo Nacional de Humanidades, Ciencias y Tecnologías
+([Conahcyt](https://conahcyt.mx)) del Gobierno de México.
 
-Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este documento.
+Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx) 
+o levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este
+documento.
 
-Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
-en su equipo a través del **protocolo HTTPS** o bien instalándola mediante [npm/sisdai](https://www.npmjs.com/~sisdai).
+Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla en su equipo a través del 
+**protocolo HTTPS** o bien instalándola mediante [npm](https://www.npmjs.com/~centrogeomx).
 
 ## Utilidades
 
@@ -42,12 +46,12 @@ Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en
 
 En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sisdai-css mediante dos opciones:
 
-**Opción A.** Desde el repositorio del [sisdai-css en npm](https://www.npmjs.com/package/sisdai-css).
+**Opción A.** Desde el repositorio del [sisdai-css en npm](https://www.npmjs.com/package/@centrogeomx/sisdai-css).
 
 En la línea de comando escribe
 
 ```bash
-npm i sisdai-css
+npm i @centrogeomx/sisdai-css
 ```
 
 **Opción B.** Desde el repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css).
@@ -104,7 +108,7 @@ Si necesitas utilizar otra versión, ubícate en la carpeta del proyecto en dond
 **Opción A.** Para versiones publicadas en el repositorio de [sisdai-css en npm](https://www.npmjs.com/package/sisdai-css).
 
 ```bash
-npm i sidai-css@vN.N.N
+npm i @centrogeomx/sisdai-css@vN.N.N
 ```
 
 **Opción B.** Para cualquier versión desde el repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css)

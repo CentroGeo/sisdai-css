@@ -1,6 +1,9 @@
 {
-  "name": "sisdai-css",
+  "name": "@centrogeomx/sisdai-css",
   "version": "1.3.4",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Biblioteca de estilos base CSS del Sistema de Diseño y Accesibilidad para la Investigación",
   "license": "LGPL-3.0-only",
   "main": "src/sisdai.scss",

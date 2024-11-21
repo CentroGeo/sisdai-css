@@ -8,6 +8,12 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 *Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.3.5] - 2024-11-21
+
+### Cambiado (Changed)
+
+- El nombre del proyecto en el `package.json` pasa a ser @centrogeomx/sisdai-css para su publicación en el repositorio de npm
+
 ## [1.3.4] - 2024-11-20
 
 ### Agregado (Added)
@@ -92,7 +98,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
-
+[1.3.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.5...v1.3.4
 [1.3.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.4...v1.3.3
 [1.3.3]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.3...v1.3.2
 [1.3.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.2...v1.3.1
