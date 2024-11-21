@@ -405,14 +405,6 @@ const seleccionEjemplo = ref('')
     </div>
 
     <div class="contenedor ancho-lectura">
-      <h2 class="p-t-10 m-t-0">Casillas de verificación</h2>
-    </div>
-
-    <div class="contenedor ancho-lectura">
-      <h2 class="p-t-10 m-t-0">Botones de radio</h2>
-    </div>
-
-    <div class="contenedor ancho-lectura">
       <h2 class="p-t-10 m-t-0">Área de texto</h2>
       <p>
         Al utilizar el componente <code>SisdaiAreaTexto</code> nos aseguramos que la etiqueta y el área de texto siempre estén vinculados,
