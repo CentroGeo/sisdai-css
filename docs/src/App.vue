@@ -366,7 +366,6 @@
               <ul id="submenuelementos" class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }" :aria-hidden="showSubmenu != 'elementos'">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Regresar al menú principal</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
