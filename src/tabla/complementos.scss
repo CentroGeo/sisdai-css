@@ -1,7 +1,10 @@
+@use "sass:map";
+
 .titulo-tabla {
   @extend %titulo-elemento;
 
-  margin-bottom: 0;
+  margin: map.get($espaciado, '2') 0 0;
+  text-align: left;
 }
 
 .contenedor-tabla {
