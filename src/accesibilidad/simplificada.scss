@@ -58,9 +58,9 @@
   }
 
   video,
-  picture:not(.nav-logo, .a11y-simplificada-mantener-imagen),
-  img:not(.nav-logo, .a11y-simplificada-mantener-imagen),
-  svg:not(.nav-logo, .a11y-simplificada-mantener-imagen) {
+  picture:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen),
+  img:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen),
+  svg:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen) {
     display: none !important;
   }
 

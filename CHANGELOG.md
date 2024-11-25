@@ -8,6 +8,24 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 *Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.4.2] - 2024-10-25
+
+### Arreglado (Fixed)
+
+- Acomodando estilos de la etiqueta caption de tabla para que coincida con titulo-tabla. Cambiando documentación para promover el uso de caption para los títulos de tablas.
+
+## [1.4.1] - 2024-10-25
+
+### Arreglado (Fixed)
+
+- Logo de pie sin remover en Mostrar solo texto
+
+## [1.4.0] - 2024-11-22
+
+### Agregado (Added)
+
+- Agregando componentes de formulario con campo base, area de texto y selector
+
 ## [1.3.5] - 2024-11-21
 
 ### Cambiado (Changed)
@@ -98,6 +116,9 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.2...v1.4.1
+[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.1...v1.4.0
+[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.0...v1.3.5
 [1.3.5]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.5...v1.3.4
 [1.3.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.4...v1.3.3
 [1.3.3]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.3...v1.3.2
