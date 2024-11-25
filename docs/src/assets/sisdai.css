@@ -9899,9 +9899,9 @@ div.controlador-vis label {
   box-shadow: none;
 }
 .a11y-simplificada video,
-.a11y-simplificada picture:not(.nav-logo, .a11y-simplificada-mantener-imagen),
-.a11y-simplificada img:not(.nav-logo, .a11y-simplificada-mantener-imagen),
-.a11y-simplificada svg:not(.nav-logo, .a11y-simplificada-mantener-imagen) {
+.a11y-simplificada picture:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen),
+.a11y-simplificada img:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen),
+.a11y-simplificada svg:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen) {
   display: none !important;
 }
 .a11y-simplificada .video iframe {
