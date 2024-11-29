@@ -8,6 +8,13 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 *Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+
+## [1.5.0] - 2024-11-22
+
+### Agregado (Added)
+
+- Agregando componentes de formulario de casilla de verificacion simple, grupo de casillas de verificacion y grupo de botones de radio
+
 ## [1.4.2] - 2024-10-25
 
 ### Arreglado (Fixed)
@@ -116,6 +123,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.5.0...v1.4.2
 [1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.2...v1.4.1
 [1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.1...v1.4.0
 [1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.0...v1.3.5
