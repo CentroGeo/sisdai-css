@@ -5623,13 +5623,21 @@ select, textarea, input:not([type=checkbox], [type=radio], [type=range], [type=b
   color: var(--campo-ejemplo-deshabilitado-color);
 }
 
-label,
-legend {
+label {
   display: inline-flex;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5em;
   color: var(--campo-etiqueta-color);
+}
+
+legend,
+.titulo-leyenda {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.25em;
+  font-weight: 600;
+  margin: 8px 0;
 }
 
 .formulario-obligatoriedad {
@@ -6011,12 +6019,24 @@ input[type=file] {
 }
 
 fieldset {
-  background-color: var(--campo-fondo);
-  border: 1px solid var(--campo-borde);
-  border-radius: 8px;
-  padding: 16px;
+  border: none;
+  padding: 0;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+.grupo-formulario {
+  display: flex;
+  gap: 8px;
+}
+
+.grupo-formulario-vertical {
+  display: grid;
+}
+
+.grupo-formulario label > .formulario-obligatoriedad {
+  display: none;
+  content: "";
 }
 
 .formulario-horizontal label {
@@ -6066,22 +6086,63 @@ select.campo-confirmacion {
   color: var(--texto-confirmacion);
 }
 
-input:invalid,
+fieldset + .formulario-ayuda {
+  margin-top: -20px;
+}
+
+fieldset:invalid + .formulario-ayuda {
+  color: var(--texto-error);
+}
+
+fieldset:has([type=checkbox]:required):invalid + .formulario-ayuda::before {
+  content: "Una o mas casillas necesitan estar verificadas. ";
+}
+
+fieldset:has([type=radio]:required):invalid + .formulario-ayuda::before {
+  content: "Un botón de radio necesita estar seleccionado. ";
+}
+
 textarea:invalid,
 select:invalid {
   border-color: var(--borde-error);
 }
 
-input:invalid + p.formulario-ayuda,
 textarea:invalid + p.formulario-ayuda,
 select:invalid + p.formulario-ayuda {
   color: var(--texto-error);
 }
 
-input:required:invalid + p.formulario-ayuda::before,
 textarea:required:invalid + p.formulario-ayuda::before,
 select:required:invalid + p.formulario-ayuda::before {
   content: "Este campo no puede quedar vacío. ";
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]):invalid {
+  border-color: var(--borde-error);
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]):invalid + p.formulario-ayuda {
+  color: var(--texto-error);
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]):required:invalid + p.formulario-ayuda::before {
+  content: "Este campo no puede quedar vacío. ";
+}
+
+input:is([type=checkbox], [type=radio]):invalid + label {
+  outline: 1px solid var(--borde-error);
+}
+
+input:is([type=checkbox], [type=radio]):invalid + label::before {
+  border: 1px solid var(--borde-error);
+}
+
+input:is([type=checkbox], [type=radio]):invalid + label + .formulario-ayuda {
+  color: var(--texto-error);
+}
+
+input:is([type=checkbox]):required:invalid + label + p.formulario-ayuda::before {
+  content: "Esta casilla necesita estar verificada. ";
 }
 
 table {
