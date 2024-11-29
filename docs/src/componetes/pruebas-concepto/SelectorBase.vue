@@ -1,4 +1,6 @@
 <script setup>  
+  import { computed } from 'vue'
+
   const identificador = idAleatorio()
 
   function idAleatorio() {
@@ -9,14 +11,13 @@
     identificador,
   })
   
-  defineProps({
+  const props = defineProps({
     etiqueta: {
       type: String,
       required: true
     },
     instruccional: {
       type: String,
-      required: false,
       default: 'Selecciona una opción'
     },
     texto_ayuda: {
@@ -28,27 +29,33 @@
       default: ''
     },
     modelValue: {
-      type: String,
+      type: [String, Number],
       default: ""
     },
     es_etiqueta_visible: {
       type: Boolean,
-      required: true,
       default: true
     },
     es_instruccional_visible: {
       type: Boolean,
-      required: true,
       default: true
     },
     es_obligatorio: {
       type: Boolean,
-      required: true,
       default: false
     },
   })
   
+  const emit = defineEmits(['update:modelValue'])
 
+  const modeloSelector = computed({
+    get() {
+      return props.modelValue;
+    },
+    set(value) {
+      emit('update:modelValue', value)
+    }
+  })
 </script>
 <template>
   <div>
@@ -66,8 +73,8 @@
       :id="identificador"
       :required="es_obligatorio"
       :aria-required="es_obligatorio"
-      :value="modelValue"
-      @input="$emit('update:modelValue', $event.target.value)"
+      v-model="modeloSelector"
+      v-bind="$attrs"
     > 
       <option disabled value="" v-if="es_instruccional_visible">{{ instruccional }}</option>
       <slot></slot>

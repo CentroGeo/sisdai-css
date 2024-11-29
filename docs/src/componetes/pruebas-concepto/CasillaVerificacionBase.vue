@@ -4,7 +4,7 @@
   const identificador = idAleatorio()
 
   function idAleatorio() {
-    return 'area-' + Math.random().toString(36).substring(2)
+    return 'casilla-' + Math.random().toString(36).substring(2)
   }
 
   defineExpose({
@@ -12,38 +12,38 @@
   })
   
   const props = defineProps({
+    titulo: {
+      type: String,
+    },
     etiqueta: {
       type: String,
       required: true
     },
-    ejemplo: {
-      type: String,
-    },
     texto_ayuda: {
       type: String,
-      default: '',
+      default: ''
     },
     texto_error: {
       type: String,
       default: ''
     },
     modelValue: {
-      type: String,
-      default: ""
-    },
-    es_etiqueta_visible: {
-      type: Boolean,
-      default: true
+      type: [Boolean, Array],
+      required: true,
     },
     es_obligatorio: {
       type: Boolean,
       default: false
     },
-  })
-  
+    es_ayuda_visible: {
+      type: Boolean,
+      default: false
+    },
+  });
+
   const emit = defineEmits(['update:modelValue'])
 
-  const modeloAreaTexto = computed({
+  const modeloCasilla = computed({
     get() {
       return props.modelValue;
     },
@@ -51,30 +51,39 @@
       emit('update:modelValue', value)
     }
   })
+  
 </script>
 <template>
-  <div>
-    <label :for="identificador" :class="(es_etiqueta_visible)?'':'a11y-solo-lectura'">
-      {{ etiqueta }}
+  <span>
+    <p v-if="titulo" class="titulo-leyenda">
+      {{ titulo }}
       <span 
         v-if="es_obligatorio"
         class="formulario-obligatoriedad" 
       >
         (Obligatorio)
       </span>
-    </label>
-    <textarea 
-      :name="identificador" 
+    </p>
+    <input 
       :id="identificador"
-      :placeholder="ejemplo"
       :required="es_obligatorio"
       :aria-required="es_obligatorio"
-      v-model="modeloAreaTexto"
+      v-model="modeloCasilla"
+      type="checkbox"
       v-bind="$attrs"
     />
-    <p aria-live="polite" class="formulario-ayuda" role="status" v-if="texto_ayuda || es_obligatorio || texto_error"> 
+    <label :for="identificador">
+      {{ etiqueta }}
+      <span 
+        v-if="es_obligatorio && !titulo"
+        class="formulario-obligatoriedad" 
+      >
+        (Obligatorio)
+      </span>
+    </label>
+    <p aria-live="polite" class="formulario-ayuda" role="status" v-if="es_ayuda_visible && (texto_ayuda || es_obligatorio || texto_error)"> 
       {{ texto_error }}
       {{ texto_ayuda }}
     </p>
-  </div>
+  </span>
 </template>

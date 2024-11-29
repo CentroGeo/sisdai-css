@@ -1,6 +1,6 @@
 @use "sass:map";
 
-%etiqueta {
+label {
   display: inline-flex;
   font-size: 1rem;
   font-weight: 500;
@@ -8,9 +8,13 @@
   color: var(--campo-etiqueta-color);
 }
 
-label,
-legend {
-  @extend %etiqueta;
+legend,
+.titulo-leyenda {
+  display: block;
+  font-size: 1rem;
+  line-height: calc(1em * 1.25);
+  font-weight: 600;
+  margin: map.get($espaciado, '1') 0;
 }
 
 .formulario-obligatoriedad {
