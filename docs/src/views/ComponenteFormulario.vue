@@ -2,18 +2,25 @@
 import SisdaiCampoBase from '@/componetes/pruebas-concepto/CampoBase.vue'
 import SisdaiAreaTexto from '@/componetes/pruebas-concepto/AreaTextoBase.vue'
 import SisdaiSelector from '@/componetes/pruebas-concepto/SelectorBase.vue'
+import SisdaiCasilla from '@/componetes/pruebas-concepto/CasillaVerificacionBase.vue'
+import SisdaiBotonRadio from '@/componetes/pruebas-concepto/RadioBotonBase.vue'
+import GrupoCasillasVerificacion from '@/componetes/pruebas-concepto/GrupoCasillasVerificacion.vue'
+import SisdaiGrupoBotonesRadio from '@/componetes/pruebas-concepto/GrupoBotonesRadio.vue'
+
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 import { ref } from 'vue'
 
-const campoEjemplo = ref('')
-const descripcionEjemplo = ref('')
-const seleccionEjemplo = ref('')
+const ejemplo = ref({})
+
+const casillaUnica = ref(false)
+const casillaArreglo = ref([])
+const botonRadio = ref('')
 
 </script>
 <template>
   <div class="contenedor m-y-maximo">
 
-    <div class="ancho-lectura">
+    <div id="formulario" class="ancho-lectura">
       <h1>Formulario</h1>
       <p>
         El Sisdai fomenta el uso de HTML semántico 
@@ -73,7 +80,7 @@ const seleccionEjemplo = ref('')
         '/>
     </div>
 
-    <div class="contenedor ancho-lectura">
+    <div id="campo-base" class="contenedor ancho-lectura">
       <h2 class="p-t-10 m-t-0">Campo base</h2>
       <p>
         Al utilizar el componente <code>SisdaiCampoBase</code> nos aseguramos que la etiqueta y el campo siempre estén vinculados,
@@ -125,7 +132,7 @@ const seleccionEjemplo = ref('')
           ejemplo="Ejemplo"
           :es_obligatorio="false"
           :es_etiqueta_visible="true"
-          v-model="campoEjemplo"
+          v-model="ejemplo.muestra"
           texto_ayuda="Texto de ayuda."
         />
         <EjemploCodigo
@@ -137,15 +144,19 @@ const seleccionEjemplo = ref('')
               ejemplo="Ejemplo"
               :es_obligatorio="false"
               :es_etiqueta_visible="true"
-              v-model="campoEjemplo"
+              v-model="ejemplo.muestra"
               texto_ayuda="Texto de ayuda."
             />
           '
         />
+        <p>
+          El campo base debe recibir una variable
+          de texto o numérica para su modelo de datos <code> v-model:{{ ejemplo.muestra }}</code>
+        </p>
       </div>
     </div>
 
-    <div class="contenedor ancho-lectura">
+    <div id="campo-base-tipos" class="contenedor ancho-lectura">
       <h3 class="p-t-10 m-t-0">Tipos de campo base</h3>
       <p>
         Acerca de los tipos de campo, todos se encuentran construidos con etiquetas nativas, por lo que no controlamos como se 
@@ -167,7 +178,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de texto"
           ejemplo="tipo text"
           tipo="text"
-          v-model="campoTexto"
+          v-model="ejemplo.texto"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -177,7 +188,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de texto"
             ejemplo="tipo text"
             tipo="text"
-            v-model="campoTexto"
+            v-model="ejemplo.texto"
           />
           '
         />
@@ -187,7 +198,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de contraseña"
           ejemplo="tipo password"
           tipo="password"
-          v-model="campoContrasenia"
+          v-model="ejemplo.contrasenia"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -197,7 +208,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de contraseña"
             ejemplo="tipo password"
             tipo="password"
-            v-model="campoContrasenia"
+            v-model="ejemplo.contrasenia"
           />
           '
         />
@@ -207,7 +218,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de correo"
           ejemplo="tipo email"
           tipo="email"
-          v-model="campoCorreo"
+          v-model="ejemplo.correo"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -217,7 +228,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de correo"
             ejemplo="tipo email"
             tipo="email"
-            v-model="campoCorreo"
+            v-model="ejemplo.correo"
           />
           '
         />
@@ -227,7 +238,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de archivo"
           ejemplo="tipo file"
           tipo="file"
-          v-model="campoArchivo"
+          v-model="ejemplo.archivo"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -237,7 +248,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de archivo"
             ejemplo="tipo file"
             tipo="file"
-            v-model="campoArchivo"
+            v-model="ejemplo.archivo"
           />
           '
         />
@@ -247,7 +258,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de búsqueda"
           ejemplo="tipo search"
           tipo="search"
-          v-model="campoBuscar"
+          v-model="ejemplo.busqueda"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -257,7 +268,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de búsqueda"
             ejemplo="tipo search"
             tipo="search"
-            v-model="campoBuscar"
+            v-model="ejemplo.busqueda"
           />
           '
         />
@@ -267,7 +278,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo numérico"
           ejemplo="tipo number"
           tipo="number"
-          v-model="campoNumerico"
+          v-model="ejemplo.numero"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -277,7 +288,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo numérico"
             ejemplo="tipo number"
             tipo="number"
-            v-model="campoNumerico"
+            v-model="ejemplo.numero"
           />
           '
         />
@@ -287,7 +298,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo teléfono"
           ejemplo="tipo tel"
           tipo="tel"
-          v-model="campoTelefono"
+          v-model="ejemplo.telefono"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -297,7 +308,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo teléfono"
             ejemplo="tipo tel"
             tipo="tel"
-            v-model="campoTelefono"
+            v-model="ejemplo.telefono"
           />
           '
         />
@@ -307,7 +318,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de URL"
           ejemplo="tipo url"
           tipo="url"
-          v-model="campoURL"
+          v-model="ejemplo.url"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -317,7 +328,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de URL"
             ejemplo="tipo url"
             tipo="url"
-            v-model="campoURL"
+            v-model="ejemplo.url"
           />
           '
         />
@@ -327,7 +338,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de fecha"
           ejemplo="tipo date"
           tipo="date"
-          v-model="campoFecha"
+          v-model="ejemplo.fecha"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -337,7 +348,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de fecha"
             ejemplo="tipo date"
             tipo="date"
-            v-model="campoFecha"
+            v-model="ejemplo.fecha"
           />
           '
         />
@@ -347,7 +358,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de hora"
           ejemplo="tipo time"
           tipo="time"
-          v-model="campoHora"
+          v-model="ejemplo.hora"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -357,7 +368,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de hora"
             ejemplo="tipo time"
             tipo="time"
-            v-model="campoHora"
+            v-model="ejemplo.hora"
           />
           '
         />
@@ -367,7 +378,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de fecha y hora"
           ejemplo="tipo datetime-local"
           tipo="datetime-local"
-          v-model="campoFechaHora"
+          v-model="ejemplo.fechahora"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -377,7 +388,7 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de fecha y hora"
             ejemplo="tipo datetime-local"
             tipo="datetime-local"
-            v-model="campoFechaHora"
+            v-model="ejemplo.fechahora"
           />
           '
         />
@@ -387,7 +398,7 @@ const seleccionEjemplo = ref('')
           etiqueta="Campo de mes"
           ejemplo="tipo month"
           tipo="month"
-          v-model="campoMes"
+          v-model="ejemplo.mes"
         />
         <EjemploCodigo
           :tiene_ejemplo="false"
@@ -397,14 +408,14 @@ const seleccionEjemplo = ref('')
             etiqueta="Campo de mes"
             ejemplo="tipo month"
             tipo="month"
-            v-model="campoMes"
+            v-model="ejemplo.mes"
           />
           '
         />
       </div>
     </div>
 
-    <div class="contenedor ancho-lectura">
+    <div id="area-de-texto" class="contenedor ancho-lectura">
       <h2 class="p-t-10 m-t-0">Área de texto</h2>
       <p>
         Al utilizar el componente <code>SisdaiAreaTexto</code> nos aseguramos que la etiqueta y el área de texto siempre estén vinculados,
@@ -447,7 +458,7 @@ const seleccionEjemplo = ref('')
       <div class="columna-6 m-t-3">
         <SisdaiAreaTexto 
           etiqueta="Descripción"
-          v-model="descripcionEjemplo"
+          v-model="ejemplo.descripcion"
           texto_ayuda="Describe brevemente cómo llenar el campo."
         />
         <EjemploCodigo
@@ -456,15 +467,19 @@ const seleccionEjemplo = ref('')
           codigo='
           <SisdaiAreaTexto 
             etiqueta="Descripción"
-            v-model="descripcionEjemplo"
+            v-model="ejemplo.descripcion"
             texto_ayuda="Describe brevemente cómo llenar el campo."
           />
           '
         />
+        <p>
+          El área de texto debe recibir una variable
+          de texto o numérica para su modelo de datos <code> v-model:{{ ejemplo.descripcion }}</code>
+        </p>
       </div>
     </div>
 
-    <div class="contenedor ancho-lectura">
+    <div id="selector" class="contenedor ancho-lectura">
       <h2 class="p-t-10 m-t-0">Selector</h2>
       <p>
         Al utilizar el componente <code>SisdaiSelector</code> nos aseguramos que la etiqueta y el selector siempre estén vinculados.
@@ -518,7 +533,7 @@ const seleccionEjemplo = ref('')
       <div class="columna-6 m-t-3">
         <SisdaiSelector
           etiqueta="Selector de ejemplo"
-          v-model="seleccionEjemplo"
+          v-model="ejemplo.selector"
           texto_ayuda="Texto de ayuda."
         >
           <option value="1">
@@ -537,7 +552,7 @@ const seleccionEjemplo = ref('')
           codigo='
           <SisdaiSelector
             etiqueta="Selector de ejemplo"
-            v-model="seleccionEjemplo"
+            v-model="ejemplo.selector"
             texto_ayuda="Texto de ayuda."
           >
             <option value="1">
@@ -552,8 +567,370 @@ const seleccionEjemplo = ref('')
           </SisdaiSelector>
           '
         />
+        <p>
+          El selector debe recibir una variable
+          de texto o numérica para su modelo de datos <code> v-model:{{ ejemplo.selector }}</code>
+        </p>
       </div>
     </div>
-    
+
+    <div id="casilla-verificacion" class="contenedor ancho-lectura">
+      <h2 class="p-t-10 m-t-0">Casilla de verificación</h2>
+      <p>
+        Al utilizar el componente <code>SisdaiCasillaVerificacion</code> 
+        nos aseguramos que la etiqueta y la casilla de verificación siempre estén vinculadas. 
+      </p>
+      <p>
+        Opcionalmente podemos definir si es obligatorio, 
+        agregar un mensaje de ayuda y 
+        agregar un título o leyenda independiente de la etiqueta.
+      </p>
+      <p>
+        Actualmente la casilla de verificación valida automáticamente cuando es requerida, 
+        mostrando el mensaje de error <i>'Esta casilla necesita estar verificada. '</i>. 
+        Podemos definir en cada componente si el mensaje de error es visible o no. 
+        Las implementaciones de otros tipos de error deberán crearse en el momento de su uso.
+      </p>
+    </div>
+    <div class="contenedor ancho-lectura">
+      <h3>Casilla única de verificación</h3>
+      <p>
+        Para cuando se tiene una única casilla de verificación, se puede seleccionar poner o no 
+        un título al componente, que es independiente de la etiqueta. 
+      </p>
+      <p>
+        Si el campo es obligatorio y tiene título, la etiqueta <i>(Obligatorio)</i> aparecerá en el título, si no tiene título
+        se mostrará en la etiqueta, como normalmente aparece para todos los campos.
+      </p>
+    </div>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-6 m-t-3">
+        <EjemploCodigo
+        tipo='HTML que construye al componente'
+        codigo='
+          <form v-on:submit.prevent>
+            <span>
+              <p class="titulo-leyenda">
+                Título
+                <span class="formulario-obligatoriedad">
+                  (Obligatorio)
+                </span>
+              </p>
+              <input 
+                id="casilla-identificadorunico"
+                type="checkbox"
+                required
+              />
+              <label for="casilla-identificadorunico">
+                Nombre de la etiqueta
+              </label>
+              <p aria-live="polite" class="formulario-ayuda" role="status"> 
+                Texto de ayuda
+              </p>
+            </span>
+          </form>
+          '
+        />
+      </div>
+      <div class="columna-6 m-t-3">
+        <SisdaiCasilla
+          etiqueta="Casilla única de verificación"
+          v-model="casillaUnica"
+          texto_ayuda="Texto de ayuda"
+          :es_ayuda_visible="true"
+          titulo="Título leyenda"
+        />
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiCasilla
+            etiqueta="Casilla única de verificación"
+            v-model="casillaUnica"
+            texto_ayuda="Texto de ayuda"
+            :es_ayuda_visible="true"
+            titulo="Título leyenda"
+          />
+          '
+        />
+        <p>
+          La casilla única de verificación debe recibir una variable
+          booleana para su modelo de datos <code> v-model:{{ casillaUnica }}</code>
+        </p>
+      </div>
+    </div>
+    <div class="contenedor ancho-lectura">
+      <h3>Casillas agrupadas de verificación</h3>
+      <p>
+        Para cuando se tienen varias casillas de verificación relacionadas, necesitamos agruparlas.
+        Con el uso del componente <code>GrupoCasillasVerificacion</code> nos aseguramos de que se encuentren
+        correctamente etiquetadas como se requiere para mejorar la accesibilidad.
+      </p>
+      <p>
+        Se recomienda no utilizar títulos ni mensajes de ayuda para cada casilla de verificacion anidada
+        porque puede resultar engorroso. En su lugar el componente <code>GrupoCasillasVerificacion</code> 
+        contiene un título y mensaje generales que podemos utilizar para dar instrucciones acerca del 
+        grupo de casillas.
+      </p>
+      <p>
+        Actualmente el componente <code>GrupoCasillasVerificacion</code> valida automáticamente cuando es requerida
+        alguna de las casillas que contenga, mostrando el mensaje de error <i>'Una o más casillas necesitan estar verificadas. '</i>. 
+        Las implementaciones de otros tipos de error deberán crearse en el momento de su uso.
+      </p>
+    </div>
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-6 m-t-3">
+        <EjemploCodigo
+        tipo='HTML que construye al componente'
+        codigo='
+          <form v-on:submit.prevent>
+            <fieldset class="grupo-formulario">
+              <legend>Título de la agrupación de casillas
+                <span class="formulario-obligatoriedad">
+                  (Obligatorio)
+                </span>
+              </legend>
+              
+              <span>
+                <input 
+                  id="casilla-identificadorgrupaluno"
+                  type="checkbox"
+                  value="uno"
+                  required
+                />
+                <label for="casilla-identificadorgrupaluno">
+                  Uno
+                </label>
+              </span>
+              <span>
+                <input 
+                  id="casilla-identificadorgrupaldos"
+                  type="checkbox"
+                  value="dos"
+                  required
+                />
+                <label for="casilla-identificadorgrupaldos">
+                  Dos
+                </label>
+              </span>
+              <span>
+                <input 
+                  id="casilla-identificadorgrupaltre"
+                  type="checkbox"
+                  value="tres"
+                  required
+                />
+                <label for="casilla-identificadorgrupaltre">
+                  Tres
+                </label>
+              </span>
+              
+            </fieldset>
+            <p aria-live="polite" class="formulario-ayuda" role="status"> 
+              Texto de ayuda.
+            </p>
+          </form>
+          '
+        />
+      </div>
+      <div class="columna-6 m-t-3">
+        <GrupoCasillasVerificacion
+          leyenda="Grupo de casillas de verificacion"
+          texto_ayuda="Texto de ayuda."
+          :es_obligatorio="true"
+        >
+          <SisdaiCasilla
+            etiqueta="Casilla Uno"
+            v-model="casillaArreglo"
+            value="Uno"
+            :es_obligatorio="true"
+          />
+          <SisdaiCasilla
+            etiqueta="Casilla Dos"
+            v-model="casillaArreglo"
+            value="Dos"
+            :es_obligatorio="true"
+          />
+          <SisdaiCasilla
+            etiqueta="Casilla Tres"
+            v-model="casillaArreglo"
+            value="Tres"
+            :es_obligatorio="true"
+          />
+        </GrupoCasillasVerificacion>
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <GrupoCasillasVerificacion
+            leyenda="Grupo de casillas de verificacion"
+            texto_ayuda="Texto de ayuda"
+            :es_obligatorio="true"
+          >
+            <SisdaiCasilla
+              etiqueta="Casilla Uno"
+              v-model="casillaArreglo"
+              value="Uno"
+              :es_obligatorio="true"
+            />
+            <SisdaiCasilla
+              etiqueta="Casilla Dos"
+              v-model="casillaArreglo"
+              value="Dos"
+              :es_obligatorio="true"
+            />
+            <SisdaiCasilla
+              etiqueta="Casilla Tres"
+              v-model="casillaArreglo"
+              value="Tres"
+              :es_obligatorio="true"
+            />
+          </GrupoCasillasVerificacion>
+          '
+        />
+        <p>
+          Las casillas agrupadas deben recibir un arreglo
+          para su modelo de datos <code> v-model:{{ casillaArreglo }}</code>
+        </p>
+      </div>
+    </div>
+
+    <div id="botones-radio" class="contenedor ancho-lectura">
+      <h2 class="p-t-10 m-t-0">Botones de radio</h2>
+      <p>
+        Al utilizar el componente <code>SisdaiBotonRadio</code> 
+        nos aseguramos que la etiqueta y el campo botón de radio siempre estén vinculadas. 
+      </p>
+      <p>
+        Debido a que el campo botón de radio solo tiene sentido para seleccionar una opción en una lista de elementos
+        siempre se debe utilizar junto con el componente <code>SisdaiGrupoBotonesRadio</code> para aseguramos 
+        de que se encuentren correctamente etiquetadas como se requiere para mejorar la accesibilidad. 
+      </p>
+      <p>
+        Se recomienda agregar al <code>SisdaiGrupoBotonesRadio</code> un título y opcionalmente podemos agregar
+        un mensaje de ayuda y definir si los campos y el grupo son obligatorios.
+      </p>
+      <p>
+        El componente <code>SisdaiGrupoBotonesRadio</code> valida automáticamente cuando son requeridos los botones de radio que contiene, 
+        mostrando el mensaje de error <i>'Un botón de radio necesita estar seleccionado. '</i>. 
+        Las implementaciones de otros tipos de error deberán crearse en el momento de su uso. 
+      </p>
+    </div>
+
+    <div class="flex flex-contenido-centrado">
+      <div class="columna-6 m-t-3">
+        <EjemploCodigo
+        tipo='HTML que construye al componente'
+        codigo='
+          <form v-on:submit.prevent>
+            <fieldset 
+              class="grupo-formulario" 
+              role="radiogroup"
+            >
+              <legend>Título de la agrupación de botones de radio
+                <span class="formulario-obligatoriedad">
+                  (Obligatorio)
+                </span>
+              </legend>
+              
+              <span>
+                <input 
+                  id="radio-identificadorgrupaluno"
+                  type="radio"
+                  value="uno"
+                  name="nombredelgrupo"
+                  required
+                />
+                <label for="radio-identificadorgrupaluno">
+                  Uno
+                </label>
+              </span>
+              <span>
+                <input 
+                  id="radio-identificadorgrupaldos"
+                  type="radio"
+                  value="dos"
+                  name="nombredelgrupo"
+                  required
+                />
+                <label for="radio-identificadorgrupaldos">
+                  Dos
+                </label>
+              </span>
+              <span>
+                <input 
+                  id="radio-identificadorgrupaltre"
+                  type="radio"
+                  value="tres"
+                  name="nombredelgrupo"
+                  required
+                />
+                <label for="radio-identificadorgrupaltre">
+                  Tres
+                </label>
+              </span>
+              
+            </fieldset>
+            <p aria-live="polite" class="formulario-ayuda" role="status"> 
+              Texto de ayuda.
+            </p>
+          </form>
+          '
+        />
+      </div>
+      <div class="columna-6 m-t-3">
+        <SisdaiGrupoBotonesRadio
+          leyenda="Grupo de botones de radio"
+          texto_ayuda="Texto de ayuda."
+          :es_obligatorio="true"
+        >
+          <SisdaiBotonRadio 
+            etiqueta="boton radio uno"
+            v-model="botonRadio"
+            value="Uno"
+            name="nombredelgrupo"
+            :es_obligatorio="true"
+          />
+          <SisdaiBotonRadio 
+            etiqueta="boton radio dos"
+            v-model="botonRadio"
+            value="Dos"
+            name="nombredelgrupo"
+            :es_obligatorio="true"
+          />
+        </SisdaiGrupoBotonesRadio>
+        <EjemploCodigo
+          :tiene_ejemplo="false"
+          tipo='Componente de VUE'
+          codigo='
+          <SisdaiGrupoBotonesRadio
+            leyenda="Grupo de botones de radio"
+            texto_ayuda="Texto de ayuda."
+            :es_obligatorio="true"
+          >
+            <SisdaiBotonRadio 
+              etiqueta="boton radio uno"
+              v-model="botonRadio"
+              value="Uno"
+              name="nombredelgrupo"
+              :es_obligatorio="true"
+            />
+            <SisdaiBotonRadio 
+              etiqueta="boton radio dos"
+              v-model="botonRadio"
+              value="Dos"
+              name="nombredelgrupo"
+              :es_obligatorio="true"
+            />
+          </SisdaiGrupoBotonesRadio>
+          '
+        />
+        <p>
+          El grupo de botones de radio debe recibir una variable 
+          de texto o número para su modelo de datos 
+          <code>v-model:{{ botonRadio }}</code>
+        </p>
+      </div>
+    </div>
   </div>
 </template>
