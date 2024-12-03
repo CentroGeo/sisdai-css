@@ -9,6 +9,12 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
 
+## [1.6.0] - 2024-12-02
+
+### Agregado (Added)
+
+- Agregando pictogramas alerta, capas, escribir, filtro, norte en svg desde los archivos cdn de fontastic a la documentación en Fundamentos.
+
 ## [1.5.0] - 2024-11-22
 
 ### Agregado (Added)
@@ -123,6 +129,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.6.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.0...v1.5.0
 [1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.5.0...v1.4.2
 [1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.2...v1.4.1
 [1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.1...v1.4.0
