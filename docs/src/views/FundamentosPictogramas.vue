@@ -37,8 +37,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-actualizar</span>
       </div>
       <div>
+        <span class="pictograma-adelantar-10"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-adelantar-10</span>
+      </div>
+      <div>
         <span class="pictograma-agregar"></span>
         <span class="pictograma-clase-ejemplo">pictograma-agregar</span>
+      </div>
+      <div>
+        <span class="pictograma-alerta"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-alerta</span>
       </div>
       <div>
         <span class="pictograma-angulo-abajo"></span>
@@ -113,8 +121,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-capa-lineas</span>
       </div>
       <div>
+        <span class="pictograma-capa-poligono"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-capa-poligono</span>
+      </div>
+      <div>
         <span class="pictograma-capa-puntos"></span>
         <span class="pictograma-clase-ejemplo">pictograma-capa-puntos</span>
+      </div>
+      <div>
+        <span class="pictograma-capas"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-capas</span>
       </div>
       <div>
         <span class="pictograma-casilla"></span>
@@ -209,8 +225,16 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-enlace-subrayado</span>
       </div>
       <div>
+        <span class="pictograma-escribir"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-escribir</span>
+      </div>
+      <div>
         <span class="pictograma-estrella"></span>
         <span class="pictograma-clase-ejemplo">pictograma-estrella</span>
+      </div>
+      <div>
+        <span class="pictograma-filtro"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-filtro</span>
       </div>
       <div>
         <span class="pictograma-flecha-abajo"></span>
@@ -333,6 +357,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-nivel</span>
       </div>
       <div>
+        <span class="pictograma-norte"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-norte</span>
+      </div>
+      <div>
         <span class="pictograma-numerales"></span>
         <span class="pictograma-clase-ejemplo">pictograma-numerales</span>
       </div>
@@ -365,8 +393,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-persona</span>
       </div>
       <div>
-        <span class="pictograma-capa-poligono"></span>
-        <span class="pictograma-clase-ejemplo">pictograma-capa-poligono</span>
+        <span class="pictograma-regresar-10"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-regresar-10</span>
       </div>
       <div>
         <span class="pictograma-reloj"></span>
