@@ -5,9 +5,14 @@ Todos los cambios más importantes de este proyecto se documentan en este archiv
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/en/1.1.0)
 y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spec/v2.0.0.html).
 
-*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
+\*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.6.1] - 2024-12-06
+
+### Cambiado (Changed)
+
+- A los páneles del conenedor .contenedor-vis les cambiamos los paddings máximos de 32px a 24px.
 
 ## [1.6.0] - 2024-12-02
 
@@ -56,7 +61,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 ### Cambiado (Changed)
 
 - Perfil predeterminado
-- Actualización de documentación de color 
+- Actualización de documentación de color
 
 ### Agregado (Added)
 
@@ -129,11 +134,12 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.6.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.1...v1.6.0
 [1.6.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.0...v1.5.0
-[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.5.0...v1.4.2
-[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.2...v1.4.1
+[1.5.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.5.0...v1.4.2
+[1.4.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.2...v1.4.1
 [1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.1...v1.4.0
-[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.0...v1.3.5
+[1.4.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.0...v1.3.5
 [1.3.5]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.5...v1.3.4
 [1.3.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.4...v1.3.3
 [1.3.3]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.3...v1.3.2
@@ -144,7 +150,3 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 [1.2.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.2.2...v1.2.0
 [1.2.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.2.0...v1.0.0
 [1.0.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/-/releases/v1.0.0
-
-
-
-
