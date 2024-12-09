@@ -1,15 +1,4 @@
 <script setup>  
-
-  const identificador = idAleatorio()
-
-  function idAleatorio() {
-    return 'grupo-' + Math.random().toString(36).substring(2)
-  }
-
-  defineExpose({
-    identificador,
-  })
-  
   defineProps({
     leyenda: {
       type: String,
@@ -32,8 +21,6 @@
       default: false
     },
   });
-
-  
 </script>
 <template>
   <div>
