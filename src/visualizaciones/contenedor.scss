@@ -82,11 +82,7 @@
       scrollbar-width: thin;
       position: relative;
       display: none;
-
-      // overflow-x: hidden; overflow-y: auto;
       overflow: hidden auto;
-
-      // grid-column-start: 1; grid-column-end: span 1;
       grid-column: 1 / span 1;
       grid-row-end: span 1;
 
@@ -148,10 +144,7 @@
       padding-right: map.get($espaciado, "3");
       max-height: var(--contenedor-vis-alto-maximo);
       grid-template-rows: 0 1fr 0;
-      min-height: calc(
-        var(--contenedor-vis-alto-minimo-vis) +
-          var(--contenedor-vis-alto-atribuciones) + 24px
-      );
+      min-height: calc( var(--contenedor-vis-alto-minimo-vis) + var(--contenedor-vis-alto-atribuciones) + 24px);
 
       .panel-izquierda-vis,
       .contenido-vis,
