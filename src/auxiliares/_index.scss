@@ -1,5 +1,4 @@
-@import './animacion';
-@import './borde';
-@import './fondo';
-@import './texto';
-@import './visibilidad';
+@use './borde';
+@use './fondo';
+@use './texto';
+@use './visibilidad';
