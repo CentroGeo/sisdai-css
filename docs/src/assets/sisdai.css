@@ -8311,6 +8311,45 @@ dl.informacion-despliegue dd:not(:last-child) {
   border-top: none;
 }
 
+.pestanias [role=tablist] {
+  min-width: 100%;
+}
+.pestanias [role=tablist] button[role=tab],
+.pestanias [role=tablist] button[role=tab]:focus,
+.pestanias [role=tablist] button[role=tab]:hover {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 20px;
+  padding: 8px 8px 8px;
+  border-radius: inherit;
+  background-color: inherit;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  color: var(--boton-secundario-color);
+}
+.pestanias [role=tablist] button[role=tab]:disabled {
+  color: var(--boton-secundario-deshabilitado-color);
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=true] {
+  border-bottom: 4px solid var(--boton-secundario-borde);
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=false] {
+  border-bottom: 4px solid transparent;
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=false]:focus {
+  background-color: var(--boton-secundario-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-enfoque-borde), 0 0 8px var(--boton-secundario-enfoque-sombra);
+  border-bottom: 4px solid var(--boton-secundario-enfoque-borde);
+  color: var(--boton-secundario-enfoque-color);
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=false]:hover {
+  background-color: var(--boton-secundario-cursor-fondo);
+  box-shadow: inherit;
+  border-bottom: 4px solid var(--boton-secundario-borde);
+}
+
 footer,
 .piepagina-gobmx,
 .piepagina-conahcyt {
