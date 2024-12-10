@@ -1,4 +1,5 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 @mixin lista-estructura-plana {
   margin: 0;
@@ -24,18 +25,18 @@ dl {
 
 ol,
 ul {
-  padding-left: map.get($espaciado, '3');
+  padding-left: map.get(variables.$espaciado, '3');
   
   li {
-    margin: map.get($espaciado, '2') 0;
+    margin: map.get(variables.$espaciado, '2') 0;
   }
   
   ol,
   ul {
-    padding: 0 0 0 map.get($espaciado, '2');
+    padding: 0 0 0 map.get(variables.$espaciado, '2');
     
     li {
-      margin: map.get($espaciado, '1') 0;
+      margin: map.get(variables.$espaciado, '1') 0;
     }
   }
 }
@@ -43,10 +44,10 @@ ul {
 dl {
   dt {
     font-weight: 600;
-    margin: map.get($espaciado, '2') 0  map.get($espaciado, '1') 0;
+    margin: map.get(variables.$espaciado, '2') 0  map.get(variables.$espaciado, '1') 0;
   }
   
   dd {
-    margin: map.get($espaciado, '1') 0 map.get($espaciado, '2') 0;
+    margin: map.get(variables.$espaciado, '1') 0 map.get(variables.$espaciado, '2') 0;
   }
 }
