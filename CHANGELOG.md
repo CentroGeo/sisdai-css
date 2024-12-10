@@ -8,6 +8,12 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 \*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.7.0] - 2024-12-10
+
+### Agregado (Added)
+
+- Agregando componente de pestañas con su módulo scss y vistas en Visualizaciones y Componentes.
+
 ## [1.6.1] - 2024-12-06
 
 ### Cambiado (Changed)
@@ -134,6 +140,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.7.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.0...v1.6.1
 [1.6.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.1...v1.6.0
 [1.6.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.0...v1.5.0
 [1.5.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.5.0...v1.4.2
