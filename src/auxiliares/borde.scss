@@ -1,3 +1,5 @@
+@use '../_variables' as variables;
+
 .borde {
   border: 1px solid currentcolor;
 }
@@ -29,7 +31,7 @@
 }
 
 
-@each $id, $valor in $borde-color {
+@each $id, $valor in variables.$borde-color {
   .borde-color-#{$id} {
     border-color: $valor;
   }
@@ -62,7 +64,7 @@
 }
 
 
-@each $id, $valor in $borde-grosor {
+@each $id, $valor in variables.$borde-grosor {
   .borde-grosor-#{$id} {
     border-width: $valor;
   }
@@ -95,7 +97,7 @@
 }
 
 
-@each $id, $valor in $borde-redondeado {
+@each $id, $valor in variables.$borde-redondeado {
   .borde-redondeado-#{$id} {
     border-radius: $valor;
   }
