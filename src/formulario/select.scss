@@ -1,18 +1,20 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use './base' as campobase;
 
 select {
   @extend %campo-base;
 
-  border-radius: $form-campo-radio;
-  height: $form-campo-alto;
+  border-radius: campobase.$form-campo-radio;
+  height: campobase.$form-campo-alto;
   line-height: 1.25em;
   appearance: none;
   box-shadow: none;
-  background-position: calc(100% - map.get($espaciado, '1')), 50%;
-  background-size: map.get($espaciado, '4');
+  background-position: calc(100% - map.get(variables.$espaciado, '1')), 50%;
+  background-size: map.get(variables.$espaciado, '4');
   background-repeat: no-repeat;
   background-image: var(--campo-selector-svg);
-  padding: calc(map.get($espaciado, '1') + 1px) map.get($espaciado, '5') calc(map.get($espaciado, '1') + 1px) map.get($espaciado, '2');
+  padding: calc(map.get(variables.$espaciado, '1') + 1px) map.get(variables.$espaciado, '5') calc(map.get(variables.$espaciado, '1') + 1px) map.get(variables.$espaciado, '2');
   background-color: var(--campo-fondo);
   color: var(--campo-color);
   overflow: hidden;
@@ -25,5 +27,5 @@ select {
     background-image: var(--campo-selector-deshabilitado-svg);
   }
 
-  @include campo-estructura-color;
+  @include campobase.campo-estructura-color;
 }

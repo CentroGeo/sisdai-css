@@ -1,15 +1,16 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 fieldset {
   border: none;
   padding: 0;
-  margin-top: map.get($espaciado, '3');
-  margin-bottom: map.get($espaciado, '3');
+  margin-top: map.get(variables.$espaciado, '3');
+  margin-bottom: map.get(variables.$espaciado, '3');
 }
 
 .grupo-formulario {
   display: flex;
-  gap: map.get($espaciado, '1');
+  gap: map.get(variables.$espaciado, '1');
 }
 
 .grupo-formulario-vertical {
@@ -23,7 +24,7 @@ fieldset {
 
 .formulario-horizontal {
   label {
-    margin-right: map.get($espaciado, 'minimo');
+    margin-right: map.get(variables.$espaciado, 'minimo');
   }
 
   input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']),
@@ -32,7 +33,7 @@ fieldset {
     width: inherit;
 
     &:not(:last-child) {
-      margin-right: map.get($espaciado, '3');
+      margin-right: map.get(variables.$espaciado, '3');
     }
   }
 }
