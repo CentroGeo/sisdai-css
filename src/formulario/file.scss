@@ -1,6 +1,8 @@
-@use "sass:map";
+@use 'sass:map';
+@use './base' as campobase;
+@use '../_variables' as variables;
 
 input[type='file'] {
-  height: $form-campo-alto;
-  padding-left: map.get($espaciado, '1');
+  height: campobase.$form-campo-alto;
+  padding-left: map.get(variables.$espaciado, '1');
 }

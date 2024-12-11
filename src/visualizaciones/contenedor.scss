@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 .contenedor-vis {
   --contenedor-vis-alto-menus: 50px;
@@ -7,7 +9,7 @@
   --contenedor-vis-alto-minimo-vis: 300px;
 
   background-color: var(--fondo-neutro);
-  border-radius: map.get($borde-redondeado, "20");
+  border-radius: map.get(variables.$borde-redondeado, "20");
   width: 100%;
 
   .contenedor-vis-paneles {
@@ -15,17 +17,15 @@
     grid-gap: 0;
     grid-template-rows: auto auto auto auto auto;
     grid-template-columns: 1;
-    padding-top: map.get($espaciado, "2");
-    padding-left: map.get($espaciado, "2");
-    padding-right: map.get($espaciado, "2");
+    padding-top: map.get(variables.$espaciado, "2");
+    padding-left: map.get(variables.$espaciado, "2");
+    padding-right: map.get(variables.$espaciado, "2");
 
     .contenido-vis {
       width: 100%;
       margin: 0;
       min-height: var(--contenedor-vis-alto-minimo-vis);
       position: relative;
-
-      // TODO: revisar que las filas esten bien.. antes grid-column-start: 1; // grid-column-end: span 1; // grid-row-start: 3; grid-row-end: span 1;
       grid-column: 1 / span 1;
       grid-row: 3 / span 1;
 
@@ -82,11 +82,7 @@
       scrollbar-width: thin;
       position: relative;
       display: none;
-
-      // overflow-x: hidden; overflow-y: auto;
       overflow: hidden auto;
-
-      // grid-column-start: 1; grid-column-end: span 1;
       grid-column: 1 / span 1;
       grid-row-end: span 1;
 
@@ -101,30 +97,30 @@
 
     .panel-encabezado-vis {
       grid-row-start: 1;
-      margin: calc(map.get($espaciado, "1") * -1);
-      padding: map.get($espaciado, "1") map.get($espaciado, "1")
-        map.get($espaciado, "3");
+      margin: calc(map.get(variables.$espaciado, "1") * -1);
+      padding: map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "1")
+        map.get(variables.$espaciado, "3");
     }
 
     .panel-izquierda-vis {
       grid-row-start: 2;
-      margin: calc(map.get($espaciado, "1") * -1);
-      padding: map.get($espaciado, "1") map.get($espaciado, "1")
-        map.get($espaciado, "3");
+      margin: calc(map.get(variables.$espaciado, "1") * -1);
+      padding: map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "1")
+        map.get(variables.$espaciado, "3");
     }
 
     .panel-derecha-vis {
       grid-row-start: 4;
-      margin: calc(map.get($espaciado, "1") * -1);
-      padding: map.get($espaciado, "1") map.get($espaciado, "1")
-        map.get($espaciado, "3");
+      margin: calc(map.get(variables.$espaciado, "1") * -1);
+      padding: map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "1")
+        map.get(variables.$espaciado, "3");
     }
 
     .panel-pie-vis {
       grid-row-start: 5;
-      margin: calc(map.get($espaciado, "1") * -1);
-      padding: map.get($espaciado, "3") map.get($espaciado, "1")
-        map.get($espaciado, "1");
+      margin: calc(map.get(variables.$espaciado, "1") * -1);
+      padding: map.get(variables.$espaciado, "3") map.get(variables.$espaciado, "1")
+        map.get(variables.$espaciado, "1");
     }
 
     &.con-panel-encabezado-vis .panel-encabezado-vis {
@@ -143,15 +139,12 @@
       display: block;
     }
 
-    @include mediaquery("esc") {
-      padding-left: map.get($espaciado, "3");
-      padding-right: map.get($espaciado, "3");
+    @include mix.mediaquery("esc") {
+      padding-left: map.get(variables.$espaciado, "3");
+      padding-right: map.get(variables.$espaciado, "3");
       max-height: var(--contenedor-vis-alto-maximo);
       grid-template-rows: 0 1fr 0;
-      min-height: calc(
-        var(--contenedor-vis-alto-minimo-vis) +
-          var(--contenedor-vis-alto-atribuciones) + 24px
-      );
+      min-height: calc( var(--contenedor-vis-alto-minimo-vis) + var(--contenedor-vis-alto-atribuciones) + 24px);
 
       .panel-izquierda-vis,
       .contenido-vis,
@@ -160,13 +153,13 @@
       }
 
       .panel-derecha-vis {
-        padding-bottom: map.get($espaciado, "1");
-        padding-left: map.get($espaciado, "3");
+        padding-bottom: map.get(variables.$espaciado, "1");
+        padding-left: map.get(variables.$espaciado, "3");
       }
 
       .panel-izquierda-vis {
-        padding-bottom: map.get($espaciado, "1");
-        padding-right: calc(map.get($espaciado, "3"));
+        padding-bottom: map.get(variables.$espaciado, "1");
+        padding-right: calc(map.get(variables.$espaciado, "3"));
         margin-right: 0;
       }
 
@@ -258,15 +251,15 @@
     justify-content: space-between;
     align-items: center;
     line-height: 24px;
-    padding-top: map.get($espaciado, "2");
-    padding-bottom: map.get($espaciado, "2");
-    margin-top: map.get($espaciado, "2");
-    margin-left: map.get($espaciado, "2");
-    margin-right: map.get($espaciado, "2");
+    padding-top: map.get(variables.$espaciado, "2");
+    padding-bottom: map.get(variables.$espaciado, "2");
+    margin-top: map.get(variables.$espaciado, "2");
+    margin-left: map.get(variables.$espaciado, "2");
+    margin-right: map.get(variables.$espaciado, "2");
 
-    @include mediaquery("esc") {
-      margin-left: map.get($espaciado, "3");
-      margin-right: map.get($espaciado, "3");
+    @include mix.mediaquery("esc") {
+      margin-left: map.get(variables.$espaciado, "3");
+      margin-right: map.get(variables.$espaciado, "3");
     }
 
     .logo-conacyt {
@@ -304,8 +297,8 @@
 }
 
 .titulo-clases {
-  margin: map.get($espaciado, "1") 0;
-  padding: 0 0 0 map.get($espaciado, "1");
+  margin: map.get(variables.$espaciado, "1") 0;
+  padding: 0 0 0 map.get(variables.$espaciado, "1");
 }
 
 // clases especiales gema

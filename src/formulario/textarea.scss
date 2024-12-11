@@ -1,13 +1,15 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use './base' as campobase;
 
 textarea {
   @extend %campo-base;
   
-  border-radius: $form-campo-radio;
-  padding: map.get($espaciado, '2');
+  border-radius: campobase.$form-campo-radio;
+  padding: map.get(variables.$espaciado, '2');
   min-height: 120px;
   resize: none;
   display: flex;
 
-  @include campo-estructura-color;
+  @include campobase.campo-estructura-color;
 }

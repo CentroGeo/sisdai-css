@@ -1,15 +1,18 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../boton/base' as botonbase;
+@use '../boton/color' as botoncolor;
 
 .boton-alternar {
   background-color: var(--fondo-acento);
   border-radius: 10rem;
   display: inline-flex;
-  padding: map.get($espaciado, 'minimo');
-  gap: map.get($espaciado, 'minimo');
+  padding: map.get(variables.$espaciado, 'minimo');
+  gap: map.get(variables.$espaciado, 'minimo');
 
   [type='radio'] + label {
-    @include boton-estructura-principal;
-    @include boton-contenedor-primario;
+    @include botonbase.boton-estructura-principal;
+    @include botoncolor.boton-contenedor-primario;
 
     background-color: transparent;
     box-shadow: none;
@@ -17,7 +20,7 @@
     border-radius: 10rem;
     font-weight: 600;
     font-size: 0.875rem;
-    padding: map.get($espaciado, '1') map.get($espaciado, '2');
+    padding: map.get(variables.$espaciado, '1') map.get(variables.$espaciado, '2');
     margin: 0;
   }
 
@@ -27,7 +30,7 @@
   }
 
   [type='radio']:checked + label {
-    @include boton-contenedor-primario;
+    @include botoncolor.boton-contenedor-primario;
   }
 
   [type='radio']:disabled + label {

@@ -1,4 +1,7 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+@use '../hipervinculo/base.scss' as hipervinculobase;
 
 .a11y-simplificada-mostrar-inline {
   display: none;
@@ -37,24 +40,24 @@
     @extend %hipervinculo-base;
 
     &:not(:last-child) {
-      margin-right: map.get($espaciado, '1');
+      margin-right: map.get(variables.$espaciado, '1');
     }
 
-    @include hipervinculo-estructura-color;
+    @include hipervinculobase.hipervinculo-estructura-color;
   }
 
-  .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
-  button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+  .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
+  button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
   input[type='button'], 
   input[type='submit'], 
   input[type='reset'] {
     @extend %hipervinculo-base;
     
     &:not(:last-child) {
-      margin-right: map.get($espaciado, '1');
+      margin-right: map.get(variables.$espaciado, '1');
     }
 
-    @include hipervinculo-estructura-color;
+    @include hipervinculobase.hipervinculo-estructura-color;
   }
 
   video,
@@ -108,13 +111,13 @@
   }
 
   .tarjeta-horizontal {
-    @media screen and (min-width: map.get($breakpoints, 'esc')) {
+    @include mix.mediaquery('esc') {
       .tarjeta-cuerpo {
-        padding-left: map.get($espaciado, '3');
+        padding-left: map.get(variables.$espaciado, '3');
       }
     
       .tarjeta-pie {
-        padding-left: map.get($espaciado, '3');
+        padding-left: map.get(variables.$espaciado, '3');
       }
     }
   }
@@ -179,8 +182,8 @@
   }
 
   .a11y-simplificada-contenedor {
-    @each $dispositivo, $map in $contenedores {
-      @include mediaquery($dispositivo) {
+    @each $dispositivo, $map in variables.$contenedores {
+      @include mix.mediaquery($dispositivo) {
         max-width: map.get($map, 'ancho-lectura');
         padding-left: map.get($map, 'margen-interior-lectura');
         padding-right: map.get($map, 'margen-interior-lectura');
@@ -193,7 +196,7 @@
 
         > .grid > [class^='columna-'],
         > .grid > [class*=' columna-'] {
-          grid-column: span map.get($columnas, $dispositivo, 'columnas');
+          grid-column: span map.get(variables.$columnas, $dispositivo, 'columnas');
         }
       }
     }

@@ -8,6 +8,12 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 \*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.7.1] - 2024-12-11
+
+### Cambiado (Changed)
+
+- Refactorización de la biblioteca entera para cambiar los @imports de sass y eliminar las advertencias de su futura obsolencia
+
 ## [1.7.0] - 2024-12-10
 
 ### Agregado (Added)
@@ -140,6 +146,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.7.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.1...v1.7.0
 [1.7.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.0...v1.6.1
 [1.6.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.1...v1.6.0
 [1.6.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.0...v1.5.0

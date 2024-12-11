@@ -1,4 +1,5 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 input, 
 textarea, 
@@ -24,7 +25,7 @@ select {
 
 // contenedores
 fieldset + .formulario-ayuda {
-  margin-top: calc((map.get($espaciado, '2') + map.get($espaciado, 'minimo')) * -1);
+  margin-top: calc((map.get(variables.$espaciado, '2') + map.get(variables.$espaciado, 'minimo')) * -1);
 }
 
 fieldset:invalid + .formulario-ayuda {

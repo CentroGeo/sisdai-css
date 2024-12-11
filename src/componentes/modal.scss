@@ -1,4 +1,7 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+@use '../tipografia/titulo';
 
 dialog {
   position: absolute;
@@ -13,15 +16,15 @@ dialog {
     inset: 0;
     background-color: var(--fondo);
     color: var(--texto-primario);
-    border-radius: map.get($borde-redondeado, '20');
+    border-radius: map.get(variables.$borde-redondeado, '20');
     border: none;
-    padding: map.get($espaciado, '3');
-    margin: map.get($espaciado, '8') auto;
-    width: calc(100% - map.get($espaciado, '5'));
+    padding: map.get(variables.$espaciado, '3');
+    margin: map.get(variables.$espaciado, '8') auto;
+    width: calc(100% - map.get(variables.$espaciado, '5'));
     max-width: 462px;
 
-    @include mediaquery('esc') {
-      margin: map.get($espaciado, 'maximo') auto;
+    @include mix.mediaquery('esc') {
+      margin: map.get(variables.$espaciado, 'maximo') auto;
     }
     
     &.modal-chico {
@@ -36,11 +39,11 @@ dialog {
       position: relative;
 
       .modal-cabecera {
-        margin-bottom: map.get($espaciado, '3');
+        margin-bottom: map.get(variables.$espaciado, '3');
       }
       
       .modal-cuerpo {
-        max-height: calc(80vh - (map.get($espaciado, '8') * 2));
+        max-height: calc(80vh - (map.get(variables.$espaciado, '8') * 2));
         overflow-y: auto;
 
         > :first-child {
@@ -51,16 +54,16 @@ dialog {
           margin-bottom: 0;
         }
 
-        @include mediaquery('esc') {
-          max-height: calc(80vh - (map.get($espaciado, 'maximo') * 2));
+        @include mix.mediaquery('esc') {
+          max-height: calc(80vh - (map.get(variables.$espaciado, 'maximo') * 2));
         }
       }
 
       .modal-pie {
         display: flex;
         flex-direction: row-reverse;
-        gap: map.get($espaciado, '3');
-        margin-top: map.get($espaciado, '5');
+        gap: map.get(variables.$espaciado, '3');
+        margin-top: map.get(variables.$espaciado, '5');
       }
 
       .modal-titulo {
@@ -68,9 +71,9 @@ dialog {
 
         font-size: 1.125rem;
         margin: 0;
-        padding-right: map.get($espaciado, '5');
+        padding-right: map.get(variables.$espaciado, '5');
         
-        @include mediaquery('esc') {
+        @include mix.mediaquery('esc') {
           font-size: 1.5rem;
         }
       }
@@ -80,7 +83,7 @@ dialog {
         top: -4px;
         right: 0;
 
-        @include mediaquery('esc') {
+        @include mix.mediaquery('esc') {
           top: 0;
         }
       }

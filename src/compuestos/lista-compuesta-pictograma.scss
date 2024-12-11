@@ -1,14 +1,15 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 .lista-pictograma {
   li {
-    padding: map.get($espaciado, '3') 0;
+    padding: map.get(variables.$espaciado, '3') 0;
   }
   
   .lista-pictograma-imagen {
     display: flex;
     align-items: baseline;
-    margin: 0 map.get($espaciado, '3');
+    margin: 0 map.get(variables.$espaciado, '3');
 
     .pictograma,
     [class^='pictograma-'],

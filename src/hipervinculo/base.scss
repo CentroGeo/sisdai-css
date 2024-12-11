@@ -1,8 +1,10 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 %hipervinculo-base {
   border: none;
-  border-radius: map.get($borde-redondeado, '4');
+  border-radius: map.get(variables.$borde-redondeado, '4');
   box-sizing: border-box;
   font-family: var(--tipografia-familia, 'sans-serif');
   font-weight: 500;
@@ -14,7 +16,7 @@
   vertical-align: baseline;
   cursor: pointer;
   
-  @include transicion;
+  @include mix.transicion;
 
   .pictograma,
   [class^='pictograma-'],
