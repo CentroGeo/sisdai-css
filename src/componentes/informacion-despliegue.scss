@@ -1,16 +1,17 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 dl.informacion-despliegue {
   position: fixed;
   left: 0;
-  border-radius: map.get($borde-redondeado, '4');
+  border-radius: map.get(variables.$borde-redondeado, '4');
   bottom: 0;
   z-index: 99999;
   background: var(--opacidad-fuerte);
   backdrop-filter: blur(10px);
   pointer-events: none;
   user-select: none;
-  padding: map.get($espaciado, '1');
+  padding: map.get(variables.$espaciado, '1');
   font-size: 0.875rem;
   line-height: 1em;
   color: var(--texto-inverso);
@@ -22,6 +23,6 @@ dl.informacion-despliegue {
   }
 
   dd:not(:last-child) {
-    padding-right: map.get($espaciado, '2');
+    padding-right: map.get(variables.$espaciado, '2');
   }
 }
