@@ -1,12 +1,15 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../boton/base' as botonbase;
+@use '../boton/color' as botoncolor;
 
 .boton-descarga {
-  @include boton-estructura-principal;
-  @include boton-contenedor-primario;
+  @include botonbase.boton-estructura-principal;
+  @include botoncolor.boton-contenedor-primario;
 
   display: block;
-  border-radius: map.get($borde-redondeado, '12');
-  padding: map.get($espaciado, '4');
+  border-radius: map.get(variables.$borde-redondeado, '12');
+  padding: map.get(variables.$espaciado, '4');
   text-align: left;
   width: 100%;
   
@@ -15,18 +18,18 @@
     font-size: 1rem;
     line-height: calc(1.25rem);
     font-weight: 600;
-    margin: 0 0 map.get($espaciado, '1');
+    margin: 0 0 map.get(variables.$espaciado, '1');
   }
 
   .boton-descarga-cuerpo {
     display: block;
     position: relative;
-    padding-right: map.get($espaciado, '5');
+    padding-right: map.get(variables.$espaciado, '5');
     font-weight: 400;
     
     > * {
-      margin-top: map.get($espaciado, '1');
-      margin-bottom: map.get($espaciado, '1');
+      margin-top: map.get(variables.$espaciado, '1');
+      margin-bottom: map.get(variables.$espaciado, '1');
     }
 
     > :first-child {

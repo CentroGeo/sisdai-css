@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 .menu-flotante {
   position: fixed;
@@ -14,7 +16,7 @@
       0 0 8px var(--menu-flotante-boton-sombra);
     border-radius: 50%;
     margin: -20px;
-    padding: map.get($espaciado, '1');
+    padding: map.get(variables.$espaciado, '1');
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,20 +60,22 @@
   }
 
   .menu-flotante-pictograma-cerrado {
-    @include transicion;
+    @include mix.transicion;
     
     position: absolute;
     opacity: 1;
   }
   
   .menu-flotante-pictograma-abierto {
-    @include transicion;
+    @include mix.transicion;
     
     position: absolute;
     opacity: 0;
   }
 
   .menu-flotante-contenedor {
+    @include mix.transicion;
+
     background-color: var(--menu-flotante-contenedor-fondo);
     box-shadow: 0 0 0 0 transparent;
     color: var(--menu-flotante-contenedor-color);
@@ -83,15 +87,14 @@
     width: 300px;
     max-height: 0;
     opacity: 0;
-    transition: all .3s ease-in-out;
     
     .menu-flotante-titulo {
       font-size: 1rem;
       font-weight: 600;
       line-height: 1.25em;
       margin-top: 0;
-      margin-bottom: map.get($espaciado, '1');
-      padding-bottom: map.get($espaciado, '2');
+      margin-bottom: map.get(variables.$espaciado, '1');
+      padding-bottom: map.get(variables.$espaciado, '2');
       border-bottom: 1px solid var(--menu-flotante-contenedor-borde);
     }
 
@@ -116,14 +119,15 @@
       [class*=' pictograma-'] {
         font-size: 1.5rem;
         padding: 0;
-        margin-right: map.get($espaciado, 'minimo');
+        margin-right: map.get(variables.$espaciado, 'minimo');
       }
     }
   }
   
   &.menu-flotante-derecho {
+    @include mix.transicion;
+    
     right: -260px;
-    transition: all .3s ease-in-out;
   }
 
   &.menu-flotante-derecho.abierto {
@@ -148,7 +152,7 @@
         inset 0 0 0 .1px var(--menu-flotante-contenedor-sombra),
         0 8px 16px -4px var(--menu-flotante-contenedor-sombra);
       max-height: 500px;
-      padding: map.get($espaciado, '3');
+      padding: map.get(variables.$espaciado, '3');
       opacity: 1; 
     }
   }
