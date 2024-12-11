@@ -420,6 +420,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/pestanias">Pestañas</RouterLink></li>
               </ul>
             </li>
             <li>
@@ -438,6 +439,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontenedor">Contenedor</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vispestanias">Pestañas</RouterLink></li>
               </ul>
             </li>
             <li>

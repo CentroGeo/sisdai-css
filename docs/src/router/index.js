@@ -273,6 +273,14 @@ const router = createRouter({
       path: '/componentes',
       children: [
         {
+          path: 'pestanias',
+          name: 'Componentes / Pestañas',
+          component: () => import('../views/ComponentePestanias.vue'),
+          meta: {
+            title: 'Pestañas | Componentes | Sisdai CSS'
+          },
+        },
+        {
           path: 'navegacion',
           name: 'Componentes / Navegación',
           component: () => import('../views/ComponenteNavegacion.vue'),
@@ -397,6 +405,14 @@ const router = createRouter({
     {
       path: '/visualizaciones',
       children: [
+        {
+          path: 'vispestanias',
+          name: 'Visualizaciones / Pestañas',
+          component: () => import('../views/VisualizacionesPestanias.vue'),
+          meta: {
+            title: 'Pestañas | Visualizaciones | Sisdai CSS'
+          },
+        },
         {
           path: 'vistipografia',
           name: 'Visualizaciones / Tipografía',
