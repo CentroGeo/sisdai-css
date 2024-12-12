@@ -16,7 +16,7 @@
   const anchoNavegacion = ref(1450)
 
   isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
-  showSubmenu.value = false
+  showSubmenu.value = ''
   
   function toggleA11yTypography() {
     isA11yTypography.value = !isA11yTypography.value
@@ -305,7 +305,33 @@
       </div>
       <div id="menusisdaicss" class="nav-menu-contenedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }" >
         <div class="nav-menu-complementario">
-          <a href="https://sisdai.conahcyt.mx" target="_blank" rel="noopener noreferrer" class="nav-hipervinculo">IR A SISDAI</a>
+          <ul class="nav-menu">
+            <li>
+              <a 
+                href="https://sisdai.conahcyt.mx" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="nav-hipervinculo"
+              >
+                <small>IR A SISDAI</small>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-hipervinculo"
+              >
+                <img
+                  class="nav-logo m-l--1"
+                  src="/gitlab-logo-500.png"
+                  :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
+                />
+                <span aria-hidden="true">v{{ pkg.version }}</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="nav-menu-principal">
           <ul class="nav-menu">
@@ -403,7 +429,7 @@
               >
                 Componentes
               </button>
-              <ul id="submenucomponentes" class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }" :aria-hidden="showSubmenu != 'componentes'">
+              <ul id="submenucomponentes" class="nav-submenu nav-submenu-columnas" :class="{ 'abierto': showSubmenu == 'componentes' }" :aria-hidden="showSubmenu != 'componentes'">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Regresar al menú principal</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Búsqueda</RouterLink></li>
@@ -461,21 +487,6 @@
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
             </li>
-            <li>
-              <a
-                href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="nav-boton boton boton-sin-contenedor-secundario"
-              >
-                <img
-                  class="nav-logo"
-                  src="/gitlab-logo-500.png"
-                  :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
-                />
-                <span aria-hidden="true">v{{ pkg.version }}</span>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
@@ -515,15 +526,5 @@
   .tmp-menu .info {
     flex: 1;
     text-align: right;
-  }
-  .etiqueta {
-    font-size: 0.75rem; // 14px
-    font-weight: 600;
-    padding: .25rem .5rem;
-    line-height: calc(1em * 1.3);
-    margin: 0;
-    display: inline-flex;
-    border-radius: 20px;
-    background-color: #f005;
   }
 </style>
