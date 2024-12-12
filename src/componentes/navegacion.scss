@@ -113,6 +113,7 @@
   position: absolute;
   top: 0;
   right: -320px;
+  overflow: hidden;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -124,7 +125,13 @@
     visibility: visible;
     pointer-events: inherit;
   }
+
+  &.nav-submenu-columnas {
+    columns: 2;
+    width: 90vw;
+  }
 }
+
 
 .navegacion.navegacion-extendida {
   display: flex;
@@ -166,7 +173,8 @@
     pointer-events: inherit;
 
     .nav-menu-complementario {
-      padding-left: 16px;
+      padding-left: map.get(variables.$espaciado, '1');
+      padding-right: map.get(variables.$espaciado, '1');
     }
 
     .nav-menu-principal {

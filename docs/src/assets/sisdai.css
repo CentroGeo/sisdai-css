@@ -7952,6 +7952,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   position: absolute;
   top: 0;
   right: -320px;
+  overflow: hidden;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -7962,6 +7963,10 @@ dl.informacion-despliegue dd:not(:last-child) {
   opacity: 1;
   visibility: visible;
   pointer-events: inherit;
+}
+.nav-submenu.nav-submenu-columnas {
+  columns: 2;
+  width: 90vw;
 }
 
 .navegacion.navegacion-extendida {
@@ -8003,7 +8008,8 @@ dl.informacion-despliegue dd:not(:last-child) {
   pointer-events: inherit;
 }
 .navegacion.navegacion-extendida .nav-menu-contenedor .nav-menu-complementario {
-  padding-left: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .navegacion.navegacion-extendida .nav-menu-contenedor .nav-menu-principal {
   flex: 1;
@@ -8037,6 +8043,19 @@ dl.informacion-despliegue dd:not(:last-child) {
   right: 0;
 }
 
+.etiqueta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  line-height: 1.25em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--color-error-2);
+  color: var(--color-error-4);
+}
+
 .nav-hipervinculo {
   background-color: var(--navegacion-primaria-fondo);
   border-radius: 0;
@@ -8045,7 +8064,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.25em;
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -8077,6 +8096,10 @@ dl.informacion-despliegue dd:not(:last-child) {
 .nav-hipervinculo .nav-logo {
   margin-top: -12px;
   margin-bottom: -12px;
+}
+.nav-hipervinculo .etiqueta {
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
 }
 
 .navegacion.navegacion-extendida .nav-hipervinculo {
@@ -8156,7 +8179,7 @@ dl.informacion-despliegue dd:not(:last-child) {
 
 .nav-boton {
   height: 24px;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   display: flex;
   width: inherit;
   font-weight: 400;
@@ -8179,7 +8202,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.25em;
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -8227,12 +8250,13 @@ dl.informacion-despliegue dd:not(:last-child) {
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.25em;
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: flex;
   justify-content: flex-start;
+  text-align: left;
   width: 100%;
 }
 .nav-boton-regresar:visited {

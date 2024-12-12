@@ -9,7 +9,7 @@
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: calc(1em * 1);
+  line-height: calc(1em * 1.25);
   padding: map.get(variables.$espaciado, '2');
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -63,6 +63,11 @@
   .nav-logo {
     margin-top: calc(map.get(variables.$espaciado, '2') * -1 + 4px);
     margin-bottom: calc(map.get(variables.$espaciado, '2') * -1 + 4px);
+  }
+
+  .etiqueta {
+    margin-top: -.25rem;
+    margin-bottom: -.25rem;
   }
 }
 
