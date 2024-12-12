@@ -14,8 +14,8 @@
         agrega clases para ayudar a la accesibilidad digital.
       </p>
     </div>
-
-    <div class="flex">
+    
+    <div class="flex flex-contenido-centrado">
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/accesibilidad/cambio-fuente/">
           <img loading="lazy" class="tarjeta-imagen"
@@ -117,5 +117,181 @@
         </a>
       </div>
     </div>
+
+    <div class="ancho-lectura p-t-10">
+      <h2 class="texto-centrado">Otras bibliotecas Sisdai</h2>
+    </div>
+
+    <div class="flex">
+
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy"
+            class="tarjeta-imagen" 
+            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-componentes.png" 
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">sisdai-componentes</p>
+            <p>
+              Biblioteca de componentes reutilizables alineada al Sistema de Diseño y Accesibilidad para la Investigación (Sisdai).
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai-componentes.conahcyt.mx/"
+              aria-label="Ir a documentación de sisdai-componentes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a documentación
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+            <a 
+              class="boton boton-secundario boton-chico"
+              href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes"
+              aria-label="Ir a repositorio de sisdai-componentes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a repositorio
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy"
+            class="tarjeta-imagen" 
+            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-graficas.png" 
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">sisdai-graficas</p>
+            <p>
+              Biblioteca de componentes de código abierto para la construcción de visualizaciones de datos.
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai-graficas.conahcyt.mx/"
+              aria-label="Ir a documentación de sisdai-graficas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a documentación
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+            <a 
+              class="boton boton-secundario boton-chico"
+              href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas"
+              aria-label="Ir a repositorio de sisdai-graficas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a repositorio
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy"
+            class="tarjeta-imagen" 
+            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-mapas.png" 
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">sisdai-mapas</p>
+            <p>
+              Biblioteca de componentes de código abierto para la construcción de mapas interactivos.
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai-mapas.conahcyt.mx/"
+              aria-label="Ir a documentación de sisdai-mapas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a documentación
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+            <a 
+              class="boton boton-secundario boton-chico"
+              href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas"
+              aria-label="Ir a repositorio de sisdai-mapas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a repositorio
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy"
+            class="tarjeta-imagen" 
+            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-portal.png" 
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">Portal Sisdai</p>
+            <p>
+              Fundamentos, elementos, componentes, visualizaciones de datos y plantillas de diseño.
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai.conahcyt.mx/"
+              aria-label="Ir al portal de Sisdai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a Sisdai
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </template>
