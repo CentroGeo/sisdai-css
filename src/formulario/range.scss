@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use './base' as campobase;
 
 [type='range'] {
   background-color: transparent;
@@ -9,9 +11,9 @@
   touch-action: manipulation;
   appearance: none;
   cursor: pointer;
-  padding: map.get($espaciado, '1') 0;
-  height: $form-campo-alto;
-  border-radius: $form-campo-radio;
+  padding: map.get(variables.$espaciado, '1') 0;
+  height: campobase.$form-campo-alto;
+  border-radius: campobase.$form-campo-radio;
   display: flex;
   margin: 0;
   transition: background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .3s ease-in-out;

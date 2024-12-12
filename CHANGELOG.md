@@ -5,8 +5,62 @@ Todos los cambios más importantes de este proyecto se documentan en este archiv
 El formato está basado en [Keep a Changelog](https://keepachangelog.com/en/1.1.0)
 y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spec/v2.0.0.html).
 
-*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
+\*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
+
+## [1.7.2] - 2024-12-11
+
+### Cambiado (Changed)
+
+- Ajustando elementos de navegacion, agregando clase para submenu en columnas, agregando enlaces a otras bibliotecas en la página de inicio y moviendo los enlaces de la navegación principal para homologar las posiciones de los elementos.
+
+## [1.7.1] - 2024-12-11
+
+### Cambiado (Changed)
+
+- Refactorización de la biblioteca entera para cambiar los @imports de sass y eliminar las advertencias de su futura obsolencia
+
+## [1.7.0] - 2024-12-10
+
+### Agregado (Added)
+
+- Agregando componente de pestañas con su módulo scss y vistas en Visualizaciones y Componentes.
+
+## [1.6.1] - 2024-12-06
+
+### Cambiado (Changed)
+
+- A los páneles del conenedor .contenedor-vis les cambiamos los paddings máximos de 32px a 24px.
+
+## [1.6.0] - 2024-12-02
+
+### Agregado (Added)
+
+- Agregando pictogramas alerta, capas, escribir, filtro, norte en svg desde los archivos cdn de fontastic a la documentación en Fundamentos.
+
+## [1.5.0] - 2024-11-22
+
+### Agregado (Added)
+
+- Agregando componentes de formulario de casilla de verificacion simple, grupo de casillas de verificacion y grupo de botones de radio
+
+## [1.4.2] - 2024-10-25
+
+### Arreglado (Fixed)
+
+- Acomodando estilos de la etiqueta caption de tabla para que coincida con titulo-tabla. Cambiando documentación para promover el uso de caption para los títulos de tablas.
+
+## [1.4.1] - 2024-10-25
+
+### Arreglado (Fixed)
+
+- Logo de pie sin remover en Mostrar solo texto
+
+## [1.4.0] - 2024-11-22
+
+### Agregado (Added)
+
+- Agregando componentes de formulario con campo base, area de texto y selector
 
 ## [1.3.5] - 2024-11-21
 
@@ -25,7 +79,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 ### Cambiado (Changed)
 
 - Perfil predeterminado
-- Actualización de documentación de color 
+- Actualización de documentación de color
 
 ### Agregado (Added)
 
@@ -98,6 +152,15 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.7.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.2...v1.7.1
+[1.7.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.1...v1.7.0
+[1.7.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.0...v1.6.1
+[1.6.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.1...v1.6.0
+[1.6.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.6.0...v1.5.0
+[1.5.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.5.0...v1.4.2
+[1.4.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.2...v1.4.1
+[1.4.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.1...v1.4.0
+[1.4.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.4.0...v1.3.5
 [1.3.5]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.5...v1.3.4
 [1.3.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.4...v1.3.3
 [1.3.3]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.3.3...v1.3.2
@@ -108,7 +171,3 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 [1.2.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.2.2...v1.2.0
 [1.2.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.2.0...v1.0.0
 [1.0.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/-/releases/v1.0.0
-
-
-
-

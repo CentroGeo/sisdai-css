@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use './base' as campobase;
 
 [type='checkbox'],
 [type='radio'] {
@@ -21,12 +23,12 @@
   background-color: var(--campo-contenedor-fondo);
   border: 1px solid var(--campo-contenedor-borde);
   box-shadow: 0 0 0 var(--campo-contenedor-borde);
-  border-radius: $form-campo-radio;
+  border-radius: campobase.$form-campo-radio;
   cursor: pointer;
   display: inline-flex;
   position: relative;
   margin: 0;
-  padding: map.get($espaciado, '1') map.get($espaciado, '1') map.get($espaciado, '1') calc(1.25rem + map.get($espaciado, '1') + 4px);
+  padding: map.get(variables.$espaciado, '1') map.get(variables.$espaciado, '1') map.get(variables.$espaciado, '1') calc(1.25rem + map.get(variables.$espaciado, '1') + 4px);
   transition: background-color .2s ease-in-out, border-color .2s ease-in-out, box-shadow .3s ease-in-out;
 }
 
@@ -64,14 +66,14 @@
   content: '';
   height: 1.125rem;
   width: 1.125rem;
-  top: calc(map.get($espaciado, '1') + 1px);
-  left: calc(map.get($espaciado, '1'));
-  padding: calc(map.get($espaciado, 'minimo'));
+  top: calc(map.get(variables.$espaciado, '1') + 1px);
+  left: calc(map.get(variables.$espaciado, '1'));
+  padding: calc(map.get(variables.$espaciado, 'minimo'));
   position: absolute;
 }
 
 [type='checkbox'] + label::before {
-  border-radius: map.get($borde-redondeado, '2');
+  border-radius: map.get(variables.$borde-redondeado, '2');
 }
 
 [type='radio'] + label::before {
@@ -91,8 +93,8 @@
   content: '\6a'/'';
   color: var(--campo-control-seleccionado-color);
   position: absolute;
-  left: calc(0.125rem + map.get($espaciado, '1') - 1px);
-  top: calc(map.get($espaciado, '1'));
+  left: calc(0.125rem + map.get(variables.$espaciado, '1') - 1px);
+  top: calc(map.get(variables.$espaciado, '1'));
   font-weight: 800;
   text-align: center;
 }
@@ -103,8 +105,8 @@
   content: '\2f'/'';
   color: var(--campo-control-seleccionado-color);
   position: absolute;
-  left: calc(0.125rem + map.get($espaciado, 'minimo') + 1px);
-  top: calc(map.get($espaciado, '1'));
+  left: calc(0.125rem + map.get(variables.$espaciado, 'minimo') + 1px);
+  top: calc(map.get(variables.$espaciado, '1'));
   font-weight: 800;
   font-size: 1.2rem;
 }

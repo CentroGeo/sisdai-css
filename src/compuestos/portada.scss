@@ -1,4 +1,7 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+@use '../tipografia/titulo';
 
 .portada {
 	position: relative;
@@ -7,7 +10,7 @@
 	display: flex;
 	height: calc(100vh - 92px);
 	
-  @media (max-width: map.get($breakpoints, 'esc')) {
+  @include mix.mediaquery('mov') { 
 		height: calc(100vh - 120px);
   }
 
@@ -21,7 +24,7 @@
 		object-fit: cover;
 		object-position: 50% 50%;
 
-		@include transicion;
+		@include mix.transicion;
 	}
 
   .portada-degradado {
@@ -30,12 +33,12 @@
 		background: var(--degradado-ligero);
 		display: flex;
 		align-items: stretch;
-		margin-top: map.get($espaciado, '6');
+		margin-top: map.get(variables.$espaciado, '6');
 	}
 
   .portada-cuerpo {			
     margin: auto auto 0;
-    padding: map.get($espaciado, '3') map.get($espaciado, '3') map.get($espaciado, 'extra');
+    padding: map.get(variables.$espaciado, '3') map.get(variables.$espaciado, '3') map.get(variables.$espaciado, 'extra');
     width: 100%;
     max-width: 700px;
     text-align: center;
@@ -43,7 +46,7 @@
     > * {
       color: var(--texto-inverso);
       border-color: currentcolor;
-      margin: map.get($espaciado, '1') 0;
+      margin: map.get(variables.$espaciado, '1') 0;
     }
 
     > :first-child {
@@ -61,7 +64,7 @@
     font-size: 2.25rem;
     color: var(--texto-inverso);
 
-    @include mediaquery('esc') { 
+    @include mix.mediaquery('esc') { 
       font-size: 5rem;
     }
   }
@@ -72,7 +75,7 @@
     font-size: 1.125rem;
     color: var(--texto-inverso);
 
-    @include mediaquery('esc') {
+    @include mix.mediaquery('esc') {
       font-size: 1.5rem;
     }
   }
@@ -84,7 +87,7 @@
       font-size: 2.25rem;
       color: var(--texto-inverso);
 
-      @include mediaquery('esc') {
+      @include mix.mediaquery('esc') {
         font-size: 3.5rem;
       }
     }

@@ -1,12 +1,16 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+@use '../lista/base' as listas;
+@use '../tipografia/titulo';
 
 .indice-contenido {
-  @include mediaquery('mov') {
-    padding-left: map.get($contenedores, 'mov', 'margen-interior');
-    padding-right: map.get($contenedores, 'mov', 'margen-interior');
+  @include mix.mediaquery('mov') {
+    padding-left: map.get(variables.$contenedores, 'mov', 'margen-interior');
+    padding-right: map.get(variables.$contenedores, 'mov', 'margen-interior');
   }
 
-  @include mediaquery('esc') {
+  @include mix.mediaquery('esc') {
     position: sticky;
     top: 150px;
   }
@@ -19,7 +23,7 @@
   
   .indice-contenido-contenedor {
     ul, ol {
-      @include lista-estructura-plana;
+      @include listas.lista-estructura-plana;
     }
     
     a {
@@ -29,11 +33,11 @@
       color: var(--navegacion-secundaria-color);
       font-weight: 400;
       text-decoration: none;
-      padding: map.get($espaciado, '1') map.get($contenedores, 'mov', 'margen-interior');
+      padding: map.get(variables.$espaciado, '1') map.get(variables.$contenedores, 'mov', 'margen-interior');
 
-      @include mediaquery('esc') {
-        padding-left: map.get($contenedores, 'esc', 'margen-interior');
-        padding-right: map.get($contenedores, 'esc', 'margen-interior');
+      @include mix.mediaquery('esc') {
+        padding-left: map.get(variables.$contenedores, 'esc', 'margen-interior');
+        padding-right: map.get(variables.$contenedores, 'esc', 'margen-interior');
       }
 
       &:hover {

@@ -1,3 +1,6 @@
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+
 .texto-centrado {
   text-align: center;
 }
@@ -14,16 +17,16 @@
   text-align: justify;
 }
 
-@each $id, $valor in $texto-tamanio {
+@each $id, $valor in variables.$texto-tamanio {
   .texto-tamanio-#{$id} {
     font-size: $valor;
     line-height: calc(1em * 1.5);
   }
 }
 
-@each $dispositivo, $x in $breakpoints {
-  @include mediaquery($dispositivo) {
-    @each $id, $valor in $texto-tamanio {
+@each $dispositivo, $x in variables.$breakpoints {
+  @include mix.mediaquery($dispositivo) {
+    @each $id, $valor in variables.$texto-tamanio {
       .texto-tamanio-#{$id}-#{$dispositivo} {
         font-size: $valor;
         line-height: calc(1em * 1.25);
@@ -32,7 +35,7 @@
   }
 }
 
-@each $nombre, $valor in $texto-color {
+@each $nombre, $valor in variables.$texto-color {
   .texto-color-#{$nombre} {
     color: $valor;
   }

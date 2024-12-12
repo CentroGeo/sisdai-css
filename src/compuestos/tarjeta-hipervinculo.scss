@@ -1,12 +1,13 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 %tarjeta-hipervinculo {
   display: flex;
   flex-direction: column;
   text-decoration: none;
   font-weight: normal;
-  margin-top: map.get($espaciado, '1');
-  margin-bottom: map.get($espaciado, '1');
+  margin-top: map.get(variables.$espaciado, '1');
+  margin-bottom: map.get(variables.$espaciado, '1');
   background: var(--tarjeta-fondo);
   width: 100%;
 

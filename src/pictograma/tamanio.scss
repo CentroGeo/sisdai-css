@@ -1,15 +1,17 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
-@each $id, $map in $pictograma-tamanio {
+@each $id, $map in variables.$pictograma-tamanio {
   .pictograma-#{$id} {
     font-size: map.get($map, 'tamanio');
     padding: map.get($map, 'espaciado') ;
   }
 }
 
-@each $dispositivo, $x in $breakpoints {
-  @include mediaquery($dispositivo) {
-    @each $id, $map in $pictograma-tamanio {
+@each $dispositivo, $x in variables.$breakpoints {
+  @include mix.mediaquery($dispositivo) {
+    @each $id, $map in variables.$pictograma-tamanio {
       .pictograma-#{$id}-#{$dispositivo} {
         font-size: map.get($map, 'tamanio');
         padding: map.get($map, 'espaciado') ;

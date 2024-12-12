@@ -1,27 +1,28 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 .control-acercar-alejar {
   display: flex;
   align-items: center;
   position: relative;
-  gap: map.get($espaciado, 'minimo');
+  gap: map.get(variables.$espaciado, 'minimo');
 
   .control-acercar-alejar-rango {
     flex: 1 0;
   }
   
   .control-acercar-alejar-porcentaje {
-    flex: 0 1 calc(3ch + map.get($espaciado, '5'));
-    max-width: calc(3ch + map.get($espaciado, '5'));
-    width: calc(3ch + map.get($espaciado, '5'));
-    padding-right: map.get($espaciado, '3') !important;
-    padding-left: map.get($espaciado, 'minimo') !important;
+    flex: 0 1 calc(3ch + map.get(variables.$espaciado, '5'));
+    max-width: calc(3ch + map.get(variables.$espaciado, '5'));
+    width: calc(3ch + map.get(variables.$espaciado, '5'));
+    padding-right: map.get(variables.$espaciado, '3') !important;
+    padding-left: map.get(variables.$espaciado, 'minimo') !important;
     text-align: right !important;
   }
 
   &::after {
     content: '%'/'';
     position: absolute;
-    right: map.get($espaciado, '1');
+    right: map.get(variables.$espaciado, '1');
   }
 }

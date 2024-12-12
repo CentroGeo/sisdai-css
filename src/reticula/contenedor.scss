@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 .contenedor {
   box-sizing: border-box;
@@ -14,8 +16,8 @@
     margin-right: auto;
   }
 
-  @each $dispositivo, $map in $contenedores {
-    @include mediaquery($dispositivo) {
+  @each $dispositivo, $map in variables.$contenedores {
+    @include mix.mediaquery($dispositivo) {
       padding-left: map.get($map, 'margen-interior');
       padding-right: map.get($map, 'margen-interior');
 

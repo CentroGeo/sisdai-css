@@ -30,42 +30,35 @@
  */
 @charset 'UTF-8';
 
-// Globales 
-@import 'variables';
-@import 'normalizar';
-@import 'mixins';
+// Base
+@use 'normalizar';
 
 // Fundamentos
-@import 'color';
-@import 'tipografia';
-@import 'pictograma';
-@import 'reticula';
+@use 'color';
+@use 'tipografia';
+@use 'pictograma';
+@use 'reticula';
 
 // Elementos
-@import 'boton';
-@import 'hipervinculo';
-@import 'formulario';
-@import 'tabla';
-@import 'lista';
-@import 'imagen';
+@use 'boton';
+@use 'hipervinculo';
+@use 'formulario';
+@use 'tabla';
+@use 'lista';
+@use 'imagen';
 
 // Elementos sin documentacion
-@import 'video';
-@import 'separador';
-@import 'detalle';
+@use 'video';
+@use 'separador';
+@use 'detalle';
 
 // Compuestos, Componentes y Visualizaciones
-@import 'compuestos';
-@import 'componentes';
-@import 'visualizaciones';
+@use 'compuestos';
+@use 'componentes';
+@use 'visualizaciones';
 
 // Auxiliares 
-@import 'auxiliares';
+@use 'auxiliares';
 
-// Accesibilidad. Cargar al final para sobreescribir estilos
-@import 'accesibilidad/ir-contenido-principal';
-@import 'accesibilidad/simplificada';
-@import 'accesibilidad/tipografia';
-@import 'accesibilidad/lectura';
-@import 'accesibilidad/hipervinculos';
-@import 'accesibilidad/oscura';
+// Accesibilidad. 
+@use 'accesibilidad';

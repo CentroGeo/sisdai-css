@@ -1,17 +1,19 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../tipografia/titulo';
 
 details {
   border: 1px solid var(--borde-secundario);
-  border-radius: map.get($borde-redondeado, '8');
-  padding: map.get($espaciado, '3') map.get($espaciado, '3') 0;
+  border-radius: map.get(variables.$borde-redondeado, '8');
+  padding: map.get(variables.$espaciado, '3') map.get(variables.$espaciado, '3') 0;
   display: block;
 
   summary {
     @extend %titulo-elemento;
 
     cursor: pointer;
-    padding: map.get($espaciado, '3'); 
-    margin: calc(map.get($espaciado, '3') * -1) calc(map.get($espaciado, '3') * -1) 0; 
+    padding: map.get(variables.$espaciado, '3'); 
+    margin: calc(map.get(variables.$espaciado, '3') * -1) calc(map.get(variables.$espaciado, '3') * -1) 0; 
   }
 
   &[open] {

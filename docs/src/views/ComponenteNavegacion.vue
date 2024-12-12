@@ -167,9 +167,74 @@ window.removeEventListener('resize', validarNavegacionColapsable)
       />
     </div>
 
+    <div class="contenedor ancho-lectura">
+      <h2 class="p-t-10">Elementos de la navegacion</h2>
+      <p>
+        Se pueden agregar hipervinculos <code>.nav-hipervinculo</code> y botones <code>.nav-boton</code> en elementos de lista para crear el menú.
+      </p>
+      <p>
+        También se pueden incluir sub listas para agregar menús desplegables con el botón <code>.nav-boton-submenu</code> seguido de una lista <code>.nav-submenu</code>
+        a la que podemos agregarle la clase <code>.nav-submenu-columnas</code> por si se tiene un contenido muy extenso que se pueda leer mejor a dos columnas.
+        Es recomendable agregar un boton <code>.nav-boton-regresar</code> con la funcionalidad de regresar a las opciones del menú principal.
+      </p>
+    </div>
+
+    <div class="contenedor ancho-lectura m-y-2">
+
+      <EjemploCodigo
+        :tiene_ejemplo='false'
+        tipo='HTML'
+        codigo='
+        <nav class="navegacion navegacion-extendida">
+  
+          <div class="nav-contenedor-identidad">
+            ...
+          </div>
+  
+          <div class="nav-menu-contenedor"> 
+            <div class="nav-menu-principal">
+              <ul class="nav-menu">
+                <li>
+                  <a href="#" class="nav-hipervinculo">
+                    Enlace navegación
+                  </a>
+                </li>
+                <li>
+                  <button class="nav-boton">
+                    Botón de navegación
+                  </button>
+                </li>
+                <li>
+                  <button class="nav-boton-submenu">
+                    Elemento con submenu
+                  </button>
+                  <ul class="nav-submenu nav-submenu-columnas">
+                    <li>
+                      <button class="nav-boton-regresar">
+                        Regresar
+                      </button>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-hipervinculo">
+                        Enlace submenu uno
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="nav-hipervinculo">
+                        Enlace submenu dos
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      '/>
+    </div>
     
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Navegación extendida colapsable</h2>
+      <h2 class="p-t-10">Navegación extendida colapsable</h2>
       <p>
         Para utilizar la navegación es necesario declarar el ancho que tiene el contenido del menú principal
         y crear una función que la compare contra el ancho de la pantalla para quitarle/agregarle la clase
@@ -322,9 +387,8 @@ window.removeEventListener('resize', validarNavegacionColapsable)
         ...
         </nav>
       '/>
-      
       <p class="m-t-10">
-        La funcionalidad de mostrar/ocultar el menú y subenú dependerá de que tan complejo sea el menú que se 
+        La funcionalidad de mostrar/ocultar el menú y submenú dependerá de que tan complejo sea el menú que se 
         requiera en el sitio web que lo utilice. Para el ejemplo que se muestra se tiene un menú colapsable con un submenú.
       </p>
       <EjemploCodigo

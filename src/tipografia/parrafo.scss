@@ -1,9 +1,10 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 p {
   line-height: calc(1em * 1.5);
-  margin-top: map.get($espaciado, '3');
-  margin-bottom: map.get($espaciado, '3');
+  margin-top: map.get(variables.$espaciado, '3');
+  margin-bottom: map.get(variables.$espaciado, '3');
 }
 
 .parrafo-texto-alto {

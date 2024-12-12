@@ -1,4 +1,6 @@
-// lo utiliza la biblioteca de componentes para bloquear el scroll en el body
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -19,8 +21,8 @@
   visibility: hidden;
 }
 
-@each $dispositivo, $x in $breakpoints {
-  @include mediaquery($dispositivo) {
+@each $dispositivo, $x in variables.$breakpoints {
+  @include mix.mediaquery($dispositivo) {
     .oculto-#{$dispositivo} {
       display: none;
     }

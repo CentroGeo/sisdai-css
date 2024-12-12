@@ -1,15 +1,16 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 .tabla-condensada {
   th,
   td {
-    padding: map.get($espaciado, '1') map.get($espaciado, '2');
+    padding: map.get(variables.$espaciado, '1') map.get(variables.$espaciado, '2');
   }
 }
 
 .tabla-expandida {
   th,
   td {
-    padding: map.get($espaciado, '3');
+    padding: map.get(variables.$espaciado, '3');
   }
 }

@@ -1,6 +1,9 @@
+@use '../boton/base' as botonbase;
+@use '../boton/color' as botoncolor;
+
 .ir-contenido-principal {
-  @include boton-estructura-principal;
-  @include boton-contenedor-primario;
+  @include botonbase.boton-estructura-principal;
+  @include botoncolor.boton-contenedor-primario;
 
   position: absolute;
   justify-content: center;
