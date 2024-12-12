@@ -1,8 +1,11 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+@use '../tipografia/titulo';
 
 .tarjeta {
   background: var(--tarjeta-fondo);
-  border-radius: map.get($borde-redondeado, '20');
+  border-radius: map.get(variables.$borde-redondeado, '20');
   box-sizing: content-box;
   position: relative;
   height: 100%;
@@ -36,14 +39,14 @@
   }
 
   .tarjeta-cuerpo {
-    padding: map.get($espaciado, '3') map.get($espaciado, '3') 0;
+    padding: map.get(variables.$espaciado, '3') map.get(variables.$espaciado, '3') 0;
     color: var(--tarjeta-color);
     flex-grow: 1;
 
-    @include transicion;
+    @include mix.transicion;
 
     > * {
-      margin: map.get($espaciado, '2') 0;
+      margin: map.get(variables.$espaciado, '2') 0;
     }
 
     > :first-child {
@@ -53,7 +56,7 @@
 
   .tarjeta-pie {
     display: flex;
-    gap: map.get($espaciado, '1');
-    padding: 0 map.get($espaciado, '3') map.get($espaciado, '3');
+    gap: map.get(variables.$espaciado, '1');
+    padding: 0 map.get(variables.$espaciado, '3') map.get(variables.$espaciado, '3');
   }
 }

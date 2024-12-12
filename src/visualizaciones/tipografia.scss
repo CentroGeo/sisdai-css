@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 [class^='vis-'],
 [class*=' vis-'] {
@@ -8,12 +10,12 @@
 
 .vis-titulo-visualizacion {
   display: block;
-  margin: map.get($espaciado, '2') 0;
+  margin: map.get(variables.$espaciado, '2') 0;
   line-height: calc(1em * 1.25);
   font-size: 1.125rem;
   font-weight: 600;
 
-  @include mediaquery(esc) {
+  @include mix.mediaquery(esc) {
     font-size: 1.5rem;
   }
 }
@@ -23,7 +25,7 @@
   font-size: 0.75rem;
   line-height: calc(1em * 1.2);
   font-weight: 500;
-  margin: map.get($espaciado, '2') 0;
+  margin: map.get(variables.$espaciado, '2') 0;
 }
 
 .vis-instruccional {
@@ -31,7 +33,7 @@
   font-size: 1rem;
   line-height: 1.25em;
   font-weight: 400;
-  margin: map.get($espaciado, '2') 0;
+  margin: map.get(variables.$espaciado, '2') 0;
 }
 
 .vis-valores-ejes {
@@ -55,7 +57,7 @@
   font-size: 1rem;
   line-height: calc(1em * 1.25);
   font-weight: 600;
-  margin: map.get($espaciado, '2') 0;
+  margin: map.get(variables.$espaciado, '2') 0;
 }
 
 .vis-nomenclatura {
@@ -64,7 +66,7 @@
   font-weight: 400;
   color: var(--texto-secundario);
   display: inline-flex;
-  margin: map.get($espaciado, '1') map.get($espaciado, '3') map.get($espaciado, '1') 0;
+  margin: map.get(variables.$espaciado, '1') map.get(variables.$espaciado, '3') map.get(variables.$espaciado, '1') 0;
 
   .figura-variable {
     width: 1.125rem;
@@ -73,7 +75,7 @@
     border: 1px solid var(--borde-neutro);
     border-radius: 50%;
     display: inline-flex;
-    margin-right: map.get($espaciado, 'minimo');
+    margin-right: map.get(variables.$espaciado, 'minimo');
 
     &.disabled {
       background: var(--campo-deshabilitado-fondo);

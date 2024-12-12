@@ -1,11 +1,13 @@
 
-@use "sass:map";
-
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+@use '../lista/base' as listas;
 
 @mixin menu-lateral-contenedor-color {
-  padding-top: map.get($espaciado, '1');
-  padding-bottom: map.get($espaciado, '1');
-  padding-right: map.get($espaciado, '3');
+  padding-top: map.get(variables.$espaciado, '1');
+  padding-bottom: map.get(variables.$espaciado, '1');
+  padding-right: map.get(variables.$espaciado, '3');
   background-color: transparent;
   border-radius: 0;
   color: var(--navegacion-secundaria-color);
@@ -18,7 +20,6 @@
   }
 
   &:focus,
-  &:focus-visible,
   &:active,
   &.router-link-exact-active,
   &.link-activo {
@@ -61,15 +62,15 @@
 
   ul, 
   ol {
-    @include lista-estructura-plana;
+    @include listas.lista-estructura-plana;
   }
 }
 
 .menu-lateral-boton {
   background: var(--navegacion-secundaria-fondo);
-  border-radius: map.get($borde-redondeado, '20');
+  border-radius: map.get(variables.$borde-redondeado, '20');
   color: var(--navegacion-secundaria-color);
-  margin-left: map.get($espaciado, '2');
+  margin-left: map.get(variables.$espaciado, '2');
   display: flex;
   padding: 0;
   z-index: 3;
@@ -79,7 +80,7 @@
   [class*=' pictograma-'] {
     align-self: flex-start;
     font-size: 1.35em;
-    padding: map.get($espaciado, '3') map.get($espaciado, '1');
+    padding: map.get(variables.$espaciado, '3') map.get(variables.$espaciado, '1');
     transition: transform 0.27s ease;
   }
 
@@ -102,15 +103,15 @@
   position: sticky;
   z-index: 999;
 
-  @include mediaquery('mov') {
+  @include mix.mediaquery('mov') {
     display: flex;
-    margin-top: map.get($espaciado, '5');
+    margin-top: map.get(variables.$espaciado, '5');
     top: 15vh;
     width: 55px;
     transition: all 0.2s linear;
 
     .menu-lateral-contenedor {
-      border-radius: 0 map.get($borde-redondeado, '20') map.get($borde-redondeado, '20') 0;
+      border-radius: 0 map.get(variables.$borde-redondeado, '20') map.get(variables.$borde-redondeado, '20') 0;
       overflow: hidden;
       margin-left: -40px;
       padding: 0;
@@ -127,7 +128,7 @@
       width: 80vw;
 
       .menu-lateral-boton {
-        border-radius: map.get($borde-redondeado, '20') 0 0 map.get($borde-redondeado, '20');
+        border-radius: map.get(variables.$borde-redondeado, '20') 0 0 map.get(variables.$borde-redondeado, '20');
 
         .pictograma,
         [class^='pictograma-'],
@@ -142,8 +143,8 @@
         margin-left: 0;
         opacity: 1;
         pointer-events: inherit;
-        padding-top: map.get($espaciado, '2');
-        padding-bottom: map.get($espaciado, '2');
+        padding-top: map.get(variables.$espaciado, '2');
+        padding-bottom: map.get(variables.$espaciado, '2');
         box-shadow: 4px 8px 16px -4px var(--opacidad-ligero);
 
         ul, 
@@ -152,7 +153,7 @@
             > a,
             > button,
             .colapsable-boton {
-              padding-left: map.get($espaciado, '3');
+              padding-left: map.get(variables.$espaciado, '3');
             }
 
             ul li,
@@ -160,7 +161,7 @@
               > a,
               > button,
               .colapsable-boton {
-                padding-left: map.get($espaciado, '4');
+                padding-left: map.get(variables.$espaciado, '4');
               }
 
               ul li,
@@ -168,7 +169,7 @@
                 > a,
                 > button,
                 .colapsable-boton {
-                  padding-left: map.get($espaciado, '5');
+                  padding-left: map.get(variables.$espaciado, '5');
                 }
               }
             }
@@ -178,17 +179,17 @@
     }
   }
 
-  @include mediaquery('esc') {
+  @include mix.mediaquery('esc') {
     display: block;
-    top: map.get($espaciado, '5');
+    top: map.get(variables.$espaciado, '5');
     width: 100%;
     height: calc(100vh - 46px);
     overflow-y: auto;
 
     .menu-lateral-contenedor {
       border-radius: 0;
-      padding-top: map.get($espaciado, '5');
-      padding-bottom: map.get($espaciado, '5');
+      padding-top: map.get(variables.$espaciado, '5');
+      padding-bottom: map.get(variables.$espaciado, '5');
 
       ul, 
       ol {
@@ -196,7 +197,7 @@
           > a,
           > button,
           .colapsable-boton {
-            padding-left: map.get($espaciado, '6');
+            padding-left: map.get(variables.$espaciado, '6');
           }
   
           ol li,
@@ -204,7 +205,7 @@
             > a,
             > button,
             .colapsable-boton {
-              padding-left: map.get($espaciado, '7');
+              padding-left: map.get(variables.$espaciado, '7');
             }
   
             ol li,
@@ -212,7 +213,7 @@
               > a,
               > button,
               .colapsable-boton {
-                padding-left: map.get($espaciado, '8');
+                padding-left: map.get(variables.$espaciado, '8');
               }
             }
           }
@@ -229,7 +230,7 @@
 .menu-lateral-fondo {
   position: relative;
 
-  @include mediaquery('esc') {
+  @include mix.mediaquery('esc') {
     background: var(--navegacion-secundaria-fondo);
   }
 }

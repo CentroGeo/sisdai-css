@@ -1,0 +1,14 @@
+@use 'sass:map';
+
+.etiqueta {
+  font-size: 0.75rem; // 14px
+  font-weight: 600;
+  padding: .25rem .5rem;
+  line-height: calc(1em * 1.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--color-error-2);
+  color: var(--color-error-4);
+}

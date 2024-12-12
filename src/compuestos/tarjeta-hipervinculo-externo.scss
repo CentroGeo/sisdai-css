@@ -1,4 +1,7 @@
-@use "sass:map";
+@use 'sass:map';
+@use './tarjeta-hipervinculo';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 .tarjeta-hipervinculo-externo {
   @extend %tarjeta-hipervinculo;
@@ -14,7 +17,7 @@
     object-fit: cover;
     object-position: 50% 50%;
 
-    @include transicion;
+    @include mix.transicion;
   }
   
   picture.tarjeta-imagen {
@@ -23,7 +26,7 @@
     height: 100%;
     transform: scale(1.1);
 
-    @include transicion;
+    @include mix.transicion;
     
     img {
       width: 100%;
@@ -40,12 +43,12 @@
     background: var(--tarjeta-externa-fondo-degradado);
     display: flex;
     align-items: stretch;
-    margin-top: map.get($espaciado, '6');
+    margin-top: map.get(variables.$espaciado, '6');
   }
   
   .tarjeta-cuerpo {
     margin-top: auto;
-    padding: map.get($espaciado, '3');
+    padding: map.get(variables.$espaciado, '3');
     width: 100%;
 
     > * {

@@ -1,0 +1,51 @@
+@use 'sass:map';
+@use '../_variables' as variables;
+
+.pestanias {
+    [role="tablist"] {
+      min-width: 100%;
+  
+      button[role="tab"],
+      button[role="tab"]:focus,
+      button[role="tab"]:hover {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        padding: map.get(variables.$espaciado, '1');
+        border-radius: inherit;
+        background-color: inherit;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        color: var(--boton-secundario-color);
+      }
+  
+      button[role="tab"]:disabled {
+        color: var(--boton-secundario-deshabilitado-color);
+      }
+  
+      button[role="tab"][aria-selected="true"] {
+        border-bottom: map.get(variables.$borde-grosor, '4') solid var(--boton-secundario-borde);
+      }
+  
+  
+      button[role="tab"][aria-selected="false"] {
+        border-bottom: map.get(variables.$borde-grosor, '4') solid transparent;
+      }
+
+      button[role="tab"][aria-selected="false"]:focus {
+        background-color: var(--boton-secundario-enfoque-fondo);
+        box-shadow: 
+            inset 0 0 0 1px var(--boton-secundario-enfoque-borde),
+            0 0 8px var(--boton-secundario-enfoque-sombra);
+        border-bottom: 4px solid var(--boton-secundario-enfoque-borde);
+        color: var(--boton-secundario-enfoque-color);  
+      }
+
+      button[role="tab"][aria-selected="false"]:hover {
+        background-color: var(--boton-secundario-cursor-fondo);
+        box-shadow: inherit;
+        border-bottom: map.get(variables.$borde-grosor, '4') solid var(--boton-secundario-borde);
+      }
+    }
+  }

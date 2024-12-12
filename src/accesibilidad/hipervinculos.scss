@@ -9,13 +9,14 @@
     &:active {
       text-decoration: underline;
     }
+  }
 
-    &:focus-visible {
-      background-color: transparent;
-      color: var(--hipervinculo-enfoque-color);
-      outline: 1px dashed var(--hipervinculo-enfoque-sombra);
-      outline-offset: 4px;
-      box-shadow: none;
-    }
+  a:not(.ir-contenido-principal):focus-visible,
+  .hipervinculo:focus-visible {
+    background-color: transparent;
+    color: var(--hipervinculo-enfoque-color);
+    outline: 1px dashed var(--hipervinculo-enfoque-sombra);
+    outline-offset: 4px;
+    box-shadow: none;
   }
 }

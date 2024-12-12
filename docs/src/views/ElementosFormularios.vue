@@ -35,8 +35,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </p>
 
       <p>
-        Opcionalmente, se puede añadir la clase <code>.formulario-ayuda</code> para incluir notas informativas 
-        bajo las etiquetas de <code>input</code>.
+        Opcionalmente, se puede añadir la clase <code>.formulario-ayuda</code> para incluir notas informativas.
       </p>
     </div>
 

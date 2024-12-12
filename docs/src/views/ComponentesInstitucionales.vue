@@ -172,7 +172,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor piepagina-gobmx" aria-label="Pie de página de Gobierno de México">
       <div class="flex flex-wrap">
         <div class="columna-8 columna-4-esc">
-          <img src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg" alt="Gobierno de México" width="207px" height="75px" />
+          <img class="pie-logo" src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg" alt="Gobierno de México" width="207px" height="75px" />
         </div>
         <div class="columna-8 columna-4-esc">
           <p class="piepagina-titulo">
@@ -241,6 +241,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             
             <div class="columna-8 columna-4-esc">
               <img 
+                class="pie-logo"
                 src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
                 alt="Gobierno de México" 
                 width="207px" 
@@ -323,6 +324,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <div class="flex flex-wrap">
         <div class="columna-8 columna-8-esc">
           <img
+            class="pie-logo"
             src="https://cdn.conacyt.mx/sisdai/recursos/conahcyt-blanco.svg"
             alt="Conahcyt"
             width="200px"
@@ -390,6 +392,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <div class="flex flex-wrap">
             <div class="columna-8 columna-8-esc">
               <img
+                class="pie-logo"
                 src="https://cdn.conacyt.mx/sisdai/recursos/conahcyt-blanco.svg"
                 alt="Conahcyt"
                 width="200px"

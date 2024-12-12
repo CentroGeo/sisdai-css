@@ -1,14 +1,16 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../tipografia/titulo';
 
 footer,
 .piepagina-gobmx,
 .piepagina-conahcyt {
   font-size: 0.875rem;
-  padding-top: map.get($espaciado, '4');
-  padding-bottom: map.get($espaciado, '4');
+  padding-top: map.get(variables.$espaciado, '4');
+  padding-bottom: map.get(variables.$espaciado, '4');
 
   p {
-    margin: map.get($espaciado, '2') 0;
+    margin: map.get(variables.$espaciado, '2') 0;
   }
 
   a {
@@ -39,7 +41,7 @@ footer,
   display: flex;
   font-size: 1.5rem;
   padding: 0;
-  gap: map.get($espaciado, '3');
+  gap: map.get(variables.$espaciado, '3');
 
   li {
     margin: 0;
@@ -54,7 +56,7 @@ footer,
   background-repeat: repeat-x;
   background-size: auto 80px;
   color: var(--color-mx-0);
-  padding-bottom: map.get($espaciado, '10');
+  padding-bottom: map.get(variables.$espaciado, '10');
   
   .hipervinculo-gobmx {
     color: var(--color-mx-0);

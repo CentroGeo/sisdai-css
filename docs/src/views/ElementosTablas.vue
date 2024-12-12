@@ -13,9 +13,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       
       <h3>Tabla Base</h3>
       <p>
-        Esta configuración es la predeterminada, ideal para mostrar datos de manera clara 
-        y estructurada. Se debe proporcionar una descripción o información adicional sobre 
-        la tabla para contextualizar los datos presentados.
+        Esta configuración es la predeterminada, ideal para mostrar datos de manera clara y estructurada. 
+        Se debe proporcionar un título conciso con información acerca de la tabla para contextualizar los datos presentados.
       </p>
     </div>
 
@@ -25,7 +24,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           tipo='HTML'
           codigo='
           <table>
-            <caption>Descripción o información adicional de la tabla</caption>
+            <caption>Título de la tabla de ejemplo</caption>
             <thead>
               <tr>
                 <th>Encabezado A</th>
@@ -79,9 +78,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <EjemploCodigo
           tipo='HTML'
           codigo='
-          <p class="titulo-tabla">Título tabla condensada</p>
           <table class="tabla-condensada">
-            <caption> Descripción o información adicional de la tabla </caption>
+            <caption>Tabla condensada</caption>
             <thead>
               <tr>
                 <th>Encabezado A</th>
@@ -126,11 +124,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <EjemploCodigo
           tipo='HTML'
           codigo='
-          <p class="titulo-tabla">Título tabla expandida</p>
           <table class="tabla-expandida">
-            <caption>
-              Descripción o información adicional de la tabla
-            </caption>
+            <caption>Tabla expandida</caption>
             <thead>
               <tr>
                 <th>Encabezado A</th>
@@ -193,8 +188,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     
       <h3>Titulo para tablas</h3>
       <p>
-        En base a la declaracion del <code>h6</code> la clase <code>.titulo-tabla</code>
-        se utiliza para poner un título.
+        La etiqueta <code>caption</code> que se utiliza para agregar títulos a las tablas, basa su estilo en a la declaracion del <code>h6</code>.
+        Además se agregó la clase <code>.titulo-tabla</code> por si se necesitara utilizar el estilo fuera de la etiqueta. 
       </p>
     </div>
 
@@ -203,10 +198,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <EjemploCodigo
           tipo='HTML'
           codigo='
-          <p class="titulo-tabla">Título tabla</p>
+          <p class="titulo-tabla">Clase titulo-tabla</p>
 
           <table>
-            <caption>Descripción o información adicional de la tabla</caption>
+            <caption>Etiqueta nativa para títulos de tablas</caption>
             <thead>
               <tr>
                 <th>Encabezado A</th>
@@ -246,11 +241,9 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <EjemploCodigo
           tipo='HTML'
           codigo='
-          <p class="titulo-tabla">Título tabla</p>
-          
           <div class="contenedor-tabla">
             <table>
-              <caption>Descripción o información adicional de la tabla</caption>
+              <caption>Tabla con contenedor horizontal</caption>
               <thead>
                 <tr>
                   <th>Encabezado A</th>

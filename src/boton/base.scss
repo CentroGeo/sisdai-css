@@ -1,22 +1,24 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 @mixin boton-estructura-principal {
   // el borde debe ser box shadow para empatar con el alto de los elementos en diseño
   border: none; 
-  border-radius: map.get($borde-redondeado, '4'); 
+  border-radius: map.get(variables.$borde-redondeado, '4'); 
   box-sizing: border-box;
   font-family: var(--tipografia-familia, 'sans-serif');
   font-size: 1rem;
   font-weight: 600;
   line-height: calc(1em * 1.25);
-  padding: map.get($espaciado, '2') map.get($espaciado, '3');
+  padding: map.get(variables.$espaciado, '2') map.get(variables.$espaciado, '3');
   text-decoration: none;
   text-align: center;
   display: inline-flex;
   align-items: center;
   cursor: pointer;
 
-  @include transicion;
+  @include mix.transicion;
     
   &.deshabilitado,
   &:disabled {
@@ -49,6 +51,6 @@ button,
     justify-content: center;
     font-size: 1rem;
     line-height: 1;
-    padding: 0 0 0 map.get($espaciado, '1');
+    padding: 0 0 0 map.get(variables.$espaciado, '1');
   }
 }

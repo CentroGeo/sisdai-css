@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 const estaAbierto = ref(true)
+const colapsableAbierto = ref(true)
 </script>
 <template>
   <div>
@@ -37,18 +38,29 @@ const estaAbierto = ref(true)
                   Enlace local ejemplo uno
                 </a>
               </li>
-              <li class="colapsable abierto">
-                <button class="colapsable-boton">
+              <li class="colapsable" :class="{abierto: colapsableAbierto}">
+                <button 
+                  class="colapsable-boton"
+                  :aria-expanded="colapsableAbierto"
+                  aria-controls="colapsableejemplo" 
+                  @click="colapsableAbierto = !colapsableAbierto"
+                  >
                   Nombre de sección colapsable
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>
-                <ul>
-                  <li>
-                    <a href="#">
-                      Enlace local ejemplo colapsable abierto
-                    </a>
-                  </li>
-                </ul>
+                <div 
+                  class="colapsable-contenedor" 
+                  id="colapsableejemplo" 
+                  :aria-hidden="!colapsableAbierto"
+                >
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Enlace local ejemplo colapsable abierto
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <a href="#">

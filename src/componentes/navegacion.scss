@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 #app {
   overflow: clip;
@@ -11,12 +13,12 @@
   display: block;
   position: relative;
   z-index: 9999;
-  padding-left: map.get($contenedores, 'mov', 'margen-interior');
-  padding-right: map.get($contenedores, 'mov', 'margen-interior');
+  padding-left: map.get(variables.$contenedores, 'mov', 'margen-interior');
+  padding-right: map.get(variables.$contenedores, 'mov', 'margen-interior');
   
-  @include mediaquery('esc') {
-    padding-left: map.get($contenedores, 'esc', 'margen-interior');
-    padding-right: map.get($contenedores, 'esc', 'margen-interior');
+  @include mix.mediaquery('esc') {
+    padding-left: map.get(variables.$contenedores, 'esc', 'margen-interior');
+    padding-right: map.get(variables.$contenedores, 'esc', 'margen-interior');
   }
 
   &.navegacion-pegada {
@@ -42,12 +44,12 @@
     background: var(--navegacion-primaria-seccion-fondo);
     color: var(--navegacion-primaria-seccion-color);
     font-size: 0.75rem;
-    padding: map.get($espaciado, 'minimo') map.get($contenedores, 'mov', 'margen-interior');
-    margin-left: calc(map.get($contenedores, 'mov', 'margen-interior') * -1);
-    margin-right: calc(map.get($contenedores, 'mov', 'margen-interior') * -1);
-    flex: 1 0 calc(100% - map.get($contenedores, 'mov', 'margen-interior') * 2);
+    padding: map.get(variables.$espaciado, 'minimo') map.get(variables.$contenedores, 'mov', 'margen-interior');
+    margin-left: calc(map.get(variables.$contenedores, 'mov', 'margen-interior') * -1);
+    margin-right: calc(map.get(variables.$contenedores, 'mov', 'margen-interior') * -1);
+    flex: 1 0 calc(100% - map.get(variables.$contenedores, 'mov', 'margen-interior') * 2);
 
-    @include mediaquery('esc') {
+    @include mix.mediaquery('esc') {
       display: none;
     }
   }
@@ -96,7 +98,7 @@
   }
 
   li:last-of-type .nav-boton {
-    margin-bottom: map.get($espaciado, '2');
+    margin-bottom: map.get(variables.$espaciado, '2');
   }
 }
 
@@ -111,6 +113,7 @@
   position: absolute;
   top: 0;
   right: -320px;
+  overflow: hidden;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -122,17 +125,23 @@
     visibility: visible;
     pointer-events: inherit;
   }
+
+  &.nav-submenu-columnas {
+    columns: 2;
+    width: 90vw;
+  }
 }
+
 
 .navegacion.navegacion-extendida {
   display: flex;
   align-items: center;
-  padding-left: map.get($contenedores, 'mov', 'margen-interior');
-  padding-right: map.get($contenedores, 'mov', 'margen-interior');
+  padding-left: map.get(variables.$contenedores, 'mov', 'margen-interior');
+  padding-right: map.get(variables.$contenedores, 'mov', 'margen-interior');
   
-  @include mediaquery('esc') {
-    padding-left: map.get($contenedores, 'esc', 'margen-interior');
-    padding-right: map.get($contenedores, 'esc', 'margen-interior');
+  @include mix.mediaquery('esc') {
+    padding-left: map.get(variables.$contenedores, 'esc', 'margen-interior');
+    padding-right: map.get(variables.$contenedores, 'esc', 'margen-interior');
   }
   
   .nav-contenedor-identidad {
@@ -164,7 +173,8 @@
     pointer-events: inherit;
 
     .nav-menu-complementario {
-      padding-left: 16px;
+      padding-left: map.get(variables.$espaciado, '1');
+      padding-right: map.get(variables.$espaciado, '1');
     }
 
     .nav-menu-principal {

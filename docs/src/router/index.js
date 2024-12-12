@@ -198,6 +198,14 @@ const router = createRouter({
             title: 'Separadores | Elementos | Sisdai CSS'
           },
         },
+        {
+          path: 'formularios',
+          name: 'Elementos / Formularios',
+          component: () => import('../views/ElementosFormularios.vue'),
+          meta: {
+            title: 'Formularios | Elementos | Sisdai CSS'
+          },
+        },
       ]
     },
     {
@@ -264,6 +272,14 @@ const router = createRouter({
     {
       path: '/componentes',
       children: [
+        {
+          path: 'pestanias',
+          name: 'Componentes / Pestañas',
+          component: () => import('../views/ComponentePestanias.vue'),
+          meta: {
+            title: 'Pestañas | Componentes | Sisdai CSS'
+          },
+        },
         {
           path: 'navegacion',
           name: 'Componentes / Navegación',
@@ -376,11 +392,27 @@ const router = createRouter({
             title: 'Campo de búsqueda | Componentes | Sisdai CSS'
           },
         },
+        {
+          path: 'formulario',
+          name: 'Componentes / Campo',
+          component: () => import('../views/ComponenteFormulario.vue'),
+          meta: {
+            title: 'Formulario | Componentes | Sisdai CSS'
+          },
+        },
       ]
     },
     {
       path: '/visualizaciones',
       children: [
+        {
+          path: 'vispestanias',
+          name: 'Visualizaciones / Pestañas',
+          component: () => import('../views/VisualizacionesPestanias.vue'),
+          meta: {
+            title: 'Pestañas | Visualizaciones | Sisdai CSS'
+          },
+        },
         {
           path: 'vistipografia',
           name: 'Visualizaciones / Tipografía',
