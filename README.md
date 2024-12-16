@@ -69,22 +69,23 @@ Puedes importar la biblioteca de manera general en el archivo `main.js` de tu pr
 ```js
 // src/main.js
 
-import 'sisdai-css/dist/sisdai.min.css'
+import '@centrogeomx/sisdai-css'
 
 ```
 
-Ó en el archivo o sección de estilos de tu proyecto
+Ó en el archivo de css o sección de estilos de tu proyecto 
 
 ```css
-
-@import 'sisdai-css/dist/sisdai.min.css';
+/* archivo css */
+@import '@centrogeomx/sisdai-css';
 ```
 
 *Opcionalmente se pueden importar las variables y mixins para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
 
-```css
-@import 'sisdai-css/src/_variables';
-@import 'sisdai-css/src/_mixins';
+```scss
+/* archivo scss */
+@use '@centrogeomx/sisdai-css/src/_variables' as variables;
+@use '@centrogeomx/sisdai-css/src/_mixins' as mixins;
 ```
 
 ### Uso de la biblioteca
@@ -236,12 +237,12 @@ ___
 #### Estructura
 
 Las clases se encuentran agrupadas en módulos, dependiendo el tipo de elemento en el que se utilizará. Si no existiera 
-una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del componente. 
+una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del elemento. 
 
 ```bash
 sisdai-css/
 └── src
-    └── *nuevoelemento* # carpeta del elemento o componente
+    └── *nuevoelemento* # carpeta del elemento
         ├── _index.scss # archivo con import de todos los archivos del nuevo elemento
         ├── base.scss # estilos generales
         └── subelemento.scss # sub elementos o casos particulares
@@ -260,15 +261,13 @@ sisdai-css/
 
 Colócalo antes de los auxiliares y los archivos de accesibilidad
 
-```css
+```scss
 /* src/sisdai.scss */
-...
-...
 
-@import "nuevoelemento";
+@use 'nuevoelemento';
 
-@import "auxiliares";
-@import "accesibilidad";
+@use 'auxiliares';
+@use 'accesibilidad';
 ```
 
 Para facilitar el mantenimiento de la biblioteca se debe prestar atención en las variables declaradas en `_variables.css`
@@ -289,6 +288,12 @@ sisdai-css/
 
 ```
 
+```scss
+@use '_variables' as variables;
+@use '_mixins' as mixins;
+
+```
+
 #### Validaciones con Stylelint
 
 El proyecto está construido con los estándares de [Stylelint](https://stylelint.io/user-guide/rules) para mejorar las convenciones y evitar errores comunes.
@@ -296,7 +301,17 @@ Después de agregar los estilos del nuevo elemento, asegúrate de que se cumplan
 
 Para verificar el proyecto con Stylelint puedes correr en la terminal el comando 
 ```bash
-npx stylelint "**/*.scss"
+npm run pruebas:stylelint
+```
+
+Aparecerá una lista de errores, en caso de que existan, con sugerencias para solucionarlos. 
+Cuando no aparezca nada en tu lista, estás lista para continuar.
+
+#### Validaciones con Sass
+
+Para verificar que el proyecto corra con la última version de Sass, puedes correr en la terminal el comando 
+```bash
+npm run pruebas:sass
 ```
 
 Aparecerá una lista de errores, en caso de que existan, con sugerencias para solucionarlos. 
