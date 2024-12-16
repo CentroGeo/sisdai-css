@@ -2,6 +2,7 @@
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
   import pkg from '../../package.json'
+  const cdn = import.meta.env.VITE_CDN_ARCHIVOS
   
   const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
@@ -246,7 +247,7 @@
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
           <img 
             class="nav-logo" 
-            src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
+            :src="`${cdn}institucional/gobmx-2024.svg`" 
             alt="Gobierno de México."
             width="104.8"
             height="38" 
@@ -284,7 +285,7 @@
     <nav aria-label="Menú principal" class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="https://conahcyt.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener noreferrer">
-          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt">
+          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" :src="`${cdn}institucional/conahcyt-azul.svg`" alt="Conahcyt">
         </a>
         <button 
           v-if="esColapsable"
@@ -325,7 +326,7 @@
               >
                 <img
                   class="nav-logo m-l--1"
-                  src="/gitlab-logo-500.png"
+                  :src="`${cdn}institucional/gitlab-logo-500.png`" 
                   :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
                 />
                 <span aria-hidden="true">v{{ pkg.version }}</span>

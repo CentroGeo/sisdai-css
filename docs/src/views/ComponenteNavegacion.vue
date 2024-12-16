@@ -1,6 +1,7 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 import { ref, onMounted, onUnmounted } from 'vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 
 const anchoNavegacion = ref(768)
 const esColapsable = ref(false)
@@ -91,7 +92,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
       <div class="nav-contenedor-identidad">
         <img 
           class="nav-logo m-r-1"
-          src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" 
+          :src="`${cdn}predeterminadas/logo.svg`" 
           alt="logo"
           width="57px"
           height="38px"
@@ -251,7 +252,7 @@ window.removeEventListener('resize', validarNavegacionColapsable)
         <a href="#" class="nav-hiperviculo-logo">
           <img 
             class="nav-logo" 
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" 
+            :src="`${cdn}predeterminadas/logo.svg`" 
             alt="logo"
             width="57px"
             height="38px"

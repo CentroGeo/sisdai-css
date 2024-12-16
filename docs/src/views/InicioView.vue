@@ -1,3 +1,6 @@
+<script setup>
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
+</script>
 <template>
   <div class="contenedor ancho-fijo p-b-maximo">
     <div class="ancho-lectura p-b-1">
@@ -18,8 +21,12 @@
     <div class="flex flex-contenido-centrado">
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/accesibilidad/cambio-fuente/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/accesibilidad.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/accesibilidad.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Accesibilidad</h2>
             <p>
@@ -33,8 +40,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/fundamentos/color/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/fundamentos.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/fundamentos.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Fundamentos</h2>
             <p>
@@ -47,8 +58,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/elementos/botones/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/elementos.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/elementos.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Elementos</h2>
             <p>
@@ -61,8 +76,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/elementos-compuestos/botones-pictogramas/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/compuesto.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/compuesto.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Compuestos</h2>
             <p>
@@ -75,8 +94,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/componentes/audio/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/componentes.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/componentes.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Componentes</h2>
             <p>
@@ -90,8 +113,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/visualizaciones/viscontenedor/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/visualizaciones.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/visualizaciones.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Visualizaciones</h2>
             <p>
@@ -105,8 +132,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/auxiliares/bordes/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/auxiliares.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/auxiliares.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Auxiliares</h2>
             <p>
@@ -127,9 +158,9 @@
       <div class="columna-8 columna-4-esc">
         <div class="tarjeta">
           <img 
-            loading="lazy"
-            class="tarjeta-imagen" 
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-componentes.png" 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-componentes.png`"
             alt=""
           />
           <div class="tarjeta-cuerpo">
@@ -172,9 +203,9 @@
       <div class="columna-8 columna-4-esc">
         <div class="tarjeta">
           <img 
-            loading="lazy"
-            class="tarjeta-imagen" 
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-graficas.png" 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-graficas.png`"
             alt=""
           />
           <div class="tarjeta-cuerpo">
@@ -217,9 +248,9 @@
       <div class="columna-8 columna-4-esc">
         <div class="tarjeta">
           <img 
-            loading="lazy"
-            class="tarjeta-imagen" 
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-mapas.png" 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-mapas.png`"
             alt=""
           />
           <div class="tarjeta-cuerpo">
@@ -262,9 +293,9 @@
       <div class="columna-8 columna-4-esc">
         <div class="tarjeta">
           <img 
-            loading="lazy"
-            class="tarjeta-imagen" 
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/tarjeta-sisdai-portal.png" 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-portal.png`"
             alt=""
           />
           <div class="tarjeta-cuerpo">

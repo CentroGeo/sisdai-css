@@ -1,6 +1,7 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 <template>
   <div class="m-y-maximo">
@@ -54,7 +55,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     </div>
 
     <div class="portada">
-      <img class="portada-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/duquesa-1.jpg" alt="">
+      <img class="portada-imagen" :src="`${cdn}documentacion/duquesa-1.jpg`" alt="">
       <div class="portada-degradado">
         <div class="portada-cuerpo">
           <p class="portada-titulo">Título</p>
@@ -100,7 +101,7 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
       />
     </div>
     <div class="portada portada-secundaria">
-      <img class="portada-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/godo.jpg" alt="">
+      <img class="portada-imagen" :src="`${cdn}documentacion/godo.jpg`" alt="">
       <div class="portada-degradado">
         <div class="portada-cuerpo">
           <p class="portada-titulo">Título portada secundaria</p>
@@ -132,10 +133,10 @@ import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
     </div>
     <div class="portada">
       <video class="portada-imagen oculto-mov" autoplay muted>
-        <source src="https://dev-dadsig-cdn.crip.conahcyt.mx/sisdai/landing-sisdai/inicio/videos/sisdaiescritorio.mp4" type="video/mp4">
+        <source :src="`${cdn}video/sisdaiescritorio.mp4`" type="video/mp4">
       </video>
       <video class="portada-imagen oculto-esc" autoplay muted>
-        <source src="https://dev-dadsig-cdn.crip.conahcyt.mx/sisdai/landing-sisdai/inicio/videos/sisdaimovil.mp4" type="video/mp4">
+        <source :src="`${cdn}video/sisdaimovil.mp4`" type="video/mp4">
       </video>
       <div class="portada-degradado">
         <div class="portada-cuerpo">
