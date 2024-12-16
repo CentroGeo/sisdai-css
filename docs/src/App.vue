@@ -2,6 +2,7 @@
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
   import pkg from '../../package.json'
+  // const cdn = import.meta.env.VITE_CDN_ARCHIVOS
   
   const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
