@@ -1,5 +1,6 @@
 <script setup>
 import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -58,7 +59,7 @@ import EjemploCodigoTipografico from '@/componetes/EjemploCodigoTipografico.vue'
         <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <img
             class="a11y-oscura-filtro-blanco"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg"
+            :src="`${cdn}institucional/conahcyt-azul.svg`"
             alt="Conahcyt"
           />
         </a>

@@ -2,6 +2,7 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 const modalPredeterminado = ref()
 const modalGrande = ref()
 
@@ -198,7 +199,7 @@ window.removeEventListener('keydown', reestablecerModalCerrado)
           </p>
           <figure>
             <img 
-              src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/minou.jpg" 
+              :src="`${cdn}documentacion/minou.jpg`" 
               width="100%"
               alt=""
             />
