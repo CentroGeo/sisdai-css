@@ -8,6 +8,22 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 \*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.7.4] - 2024-12-17
+
+### Cambiado (Changed)
+
+- homologando títulos de sección con títulos en el menú y títulos en las pesatañas, pestañas con la forma 'Nombre elemento | Sección | nombre-biblioteca'
+
+## [1.7.3] - 2024-12-16
+
+### Cambiado (Changed)
+
+- actualizando rutas de imagenes al cdn
+- actualizando readme para incluir el cambio del use del sass y el @centrogeo de la biblioteca
+
+### Agregado (Added)
+- agregando variables de entorno
+
 ## [1.7.2] - 2024-12-11
 
 ### Cambiado (Changed)
@@ -152,6 +168,8 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.7.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.4...v1.7.3
+[1.7.3]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.3...v1.7.2
 [1.7.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.2...v1.7.1
 [1.7.1]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.1...v1.7.0
 [1.7.0]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.0...v1.6.1

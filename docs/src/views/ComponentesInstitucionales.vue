@@ -1,5 +1,6 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 <template>
   <div class="m-y-maximo">
@@ -27,7 +28,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <a href="#" class="nav-hiperviculo-logo">
           <img 
             class="nav-logo" 
-            src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
+            :src="`${cdn}institucional/gobmx-2024.svg`" 
             alt="Gobierno de México."
             width="128" 
             height="48" 
@@ -63,7 +64,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <a href="#" class="nav-hiperviculo-logo">
               <img 
                 class="nav-logo" 
-                src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
+                src="..."
                 alt="Gobierno de México."
                 width="128" 
                 height="48" 
@@ -99,7 +100,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <a href="#" class="nav-hiperviculo-logo">
           <img 
             class="nav-logo a11y-oscura-filtro-blanco" 
-            src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" 
+            :src="`${cdn}institucional/conahcyt-azul.svg`" 
             alt="Conahcyt."
             width="130" 
             height="38" 
@@ -136,7 +137,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <a href="#" class="nav-hiperviculo-logo">
               <img 
                 class="nav-logo a11y-oscura-filtro-blanco" 
-                src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" 
+                src="..." 
                 alt="Conahcyt."
                 width="130" 
                 height="38" 
@@ -172,7 +173,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="contenedor piepagina-gobmx" aria-label="Pie de página de Gobierno de México">
       <div class="flex flex-wrap">
         <div class="columna-8 columna-4-esc">
-          <img class="pie-logo" src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg" alt="Gobierno de México" width="207px" height="75px" />
+          <img class="pie-logo" :src="`${cdn}institucional/gobmx-2024.svg`" alt="Gobierno de México" width="207px" height="75px" />
         </div>
         <div class="columna-8 columna-4-esc">
           <p class="piepagina-titulo">
@@ -242,7 +243,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <div class="columna-8 columna-4-esc">
               <img 
                 class="pie-logo"
-                src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
+                src="..."
                 alt="Gobierno de México" 
                 width="207px" 
                 height="75px"
@@ -325,7 +326,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <div class="columna-8 columna-8-esc">
           <img
             class="pie-logo"
-            src="https://cdn.conacyt.mx/sisdai/recursos/conahcyt-blanco.svg"
+            :src="`${cdn}institucional/conahcyt-blanco.svg`" 
             alt="Conahcyt"
             width="200px"
             height="60px"
@@ -393,7 +394,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
             <div class="columna-8 columna-8-esc">
               <img
                 class="pie-logo"
-                src="https://cdn.conacyt.mx/sisdai/recursos/conahcyt-blanco.svg"
+                src="..."
                 alt="Conahcyt"
                 width="200px"
                 height="60px"

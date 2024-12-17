@@ -1,11 +1,12 @@
 <script setup>
 import EjemploCodigo from "../componetes/EjemploCodigo.vue";
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 
 <template>
   <div class="contenedor m-y-maximo">
     <div class="ancho-lectura">
-      <h1>Pestañas Vis</h1>
+      <h1>Pestañas</h1>
       <p>
         El contenedor-vis es un elemento importante utilizado por las
         bibliotecas
@@ -182,7 +183,7 @@ import EjemploCodigo from "../componetes/EjemploCodigo.vue";
         >
           <img
             class="a11y-oscura-filtro-blanco"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg"
+            :src="`${cdn}institucional/conahcyt-azul.svg`"
             alt="Conahcyt"
           />
         </a>
@@ -300,7 +301,7 @@ import EjemploCodigo from "../componetes/EjemploCodigo.vue";
 
           <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
             <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
-              <img class="a11y-oscura-filtro-blanco" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt" />
+              <img class="a11y-oscura-filtro-blanco" src="..." alt="Conahcyt" />
             </a>
             <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
               Sisdai

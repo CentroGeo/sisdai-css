@@ -1,5 +1,6 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 <template>
   <div class="contenedor p-y-maximo">
@@ -57,7 +58,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-4">
         <div class="tarjeta">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-1.jpg" alt="">
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/kale-1.jpg`" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
             <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
@@ -71,7 +72,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     
       <div class="columna-4">
         <div class="tarjeta">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-2.jpg" alt="">
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/kale-2.jpg`" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
             <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
@@ -121,7 +122,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-8">
         <div class="tarjeta tarjeta-horizontal">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/kale-3.jpg" alt="">
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/kale-3.jpg`" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
             <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
@@ -135,7 +136,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </div>
       <div class="columna-8">
         <div class="tarjeta tarjeta-horizontal">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/gambusino.jpg" alt="">
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/gambusino.jpg`" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
             <p class="tarjeta-titulo">Título de la tarjeta de una o más palabras</p>
@@ -177,7 +178,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-4">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="#">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/asha.jpg" alt="">
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/asha.jpg`" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-titulo">Título de la tarjeta</p>
             <p class="tarjeta-etiqueta">Etiqueta o texto secundario</p>
@@ -186,7 +187,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </div>
       <div class="columna-4">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="#">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/becka.jpg" alt="">
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/becka.jpg`" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-titulo">Texto largo de ejemplo.</p>
             <p> 
@@ -199,7 +200,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </div>
       <div class="columna-4">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="#">
-          <img class="tarjeta-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/documentacion/baghira.jpg" alt="">
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/baghira.jpg`" alt="">
           <div class="tarjeta-cuerpo">
             <p class="tarjeta-titulo">Título de la tarjeta</p>
             <p>Párrafo normal, para agregar una descripción pequeña.</p>
@@ -250,8 +251,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <div class="columna-6">
         <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <picture class="tarjeta-imagen"> 
-            <source srcset="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/calamidad-3.jpg" media="(min-width: 900px)"/>
-            <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/calamidad-2.jpg" alt="" />
+            <source :srcset="`${cdn}documentacion/calamidad-3.jpg`" media="(min-width: 900px)"/>
+            <img :src="`${cdn}documentacion/calamidad-2.jpg`" alt="" />
           </picture>
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
@@ -264,7 +265,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       </div>
       <div class="columna-6">
         <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
-          <img class="tarjeta-imagen" src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/perro-3.jpg" alt="" />
+          <img class="tarjeta-imagen" :src="`${cdn}documentacion/perro-3.jpg`" alt="" />
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">
               <p>Etiqueta</p>

@@ -1,13 +1,14 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 <template>
   <div class="contenedor m-y-maximo">
     
     <div class="ancho-lectura">
-      <h1>Controlador Vis</h1>
+      <h1>Controlador</h1>
       <p>
-        El controlador-vis es un componente especializado que se emplea en 
+        El <code>controlador-vis</code> es un componente especializado que se emplea en 
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
         y <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a> 
         para gestionar y controlar las variables mostradas en las visualizaciones. 
@@ -114,7 +115,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
           <img
             class="a11y-oscura-filtro-blanco"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg"
+            :src="`${cdn}institucional/conahcyt-azul.svg`"
             alt="Conahcyt"
           />
         </a>
