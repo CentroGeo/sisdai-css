@@ -5,7 +5,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
   <div class="contenedor m-y-maximo">
 
     <div class="contenedor ancho-lectura">
-      <h1>Botones de Pictograma</h1>
+      <h1>Botones de pictograma</h1>
       <p>
         Los botones de pictograma están basados en el estilo general de botones, 
         pero se caracterizan por contener únicamente un pictograma. 

@@ -6,7 +6,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 <template>
   <div class="contenedor m-y-maximo">
     <div class="ancho-lectura">
-      <h1>Pestañas Vis</h1>
+      <h1>Pestañas</h1>
       <p>
         El contenedor-vis es un elemento importante utilizado por las
         bibliotecas
