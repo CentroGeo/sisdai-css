@@ -5,7 +5,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
   <div class="contenedor m-y-maximo">
 
     <div class="ancho-lectura">
-      <h1>Control Acercar Alejar</h1>
+      <h1>Control acercar alejar</h1>
       <p>
         La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
         proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 

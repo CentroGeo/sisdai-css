@@ -6,7 +6,7 @@ const estaAbierto = ref(true)
 <template>
   <div class="contenedor m-y-maximo">
     <div class="ancho-lectura">
-      <h1>Menú Flotante</h1>
+      <h1>Menú flotante</h1>
       <p>
         El menú flotante es un elemento que, a través de la interacción con un botón sencillo, 
         puede mostrar y ocultar la información completa que requiere un menú.

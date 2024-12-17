@@ -6,7 +6,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
   <div class="contenedor m-y-maximo">
 
     <div class="ancho-lectura">
-      <h1>Contenedor Vis</h1>
+      <h1>Contenedor</h1>
       <p>
         El contenedor-vis es un elemento importante utilizado por las bibliotecas 
         <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
