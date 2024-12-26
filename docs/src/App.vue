@@ -319,16 +319,13 @@
             </li>
             <li>
               <a
-                href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
+                href="https://github.com/CentroGeo/sisdai-css"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="nav-hipervinculo"
+                :aria-label="`Repositorio de código sisdai-css versión ${pkg.version}`"
               >
-                <img
-                  class="nav-logo m-l--1"
-                  :src="`${cdn}institucional/gitlab-logo-500.png`" 
-                  :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
-                />
+                <span class="pictograma-social-github m-r-1" aria-hidden="true" />
                 <span aria-hidden="true">v{{ pkg.version }}</span>
               </a>
             </li>

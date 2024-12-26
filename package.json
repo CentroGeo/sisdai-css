@@ -1,6 +1,6 @@
 {
   "name": "@centrogeomx/sisdai-css",
-  "version": "1.7.4",
+  "version": "1.7.5",
   "publishConfig": {
     "access": "public"
   },
@@ -19,10 +19,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://codigo.conahcyt.mx/sisdai/sisdai-css.git"
+    "url": "git+https://github.com/CentroGeo/sisdai-css.git"
   },
   "bugs": {
-    "url": "https://codigo.conahcyt.mx/sisdai/sisdai-css/issues"
+    "url": "https://github.com/CentroGeo/sisdai-css/issues"
   },
   "homepage": "https://sisdai-css.conahcyt.mx",
   "dependencies": {
@@ -34,6 +34,23 @@
     "stylelint-config-standard": "^36.0.1",
     "stylelint-config-standard-scss": "^13.1.0"
   },
+  "keywords": [
+    "sass",
+    "css",
+    "Sisdai",
+    "CentroGeo",
+    "Conahcyt"
+  ],
+  "contributors": [
+    "Alonso Cortés Solís <alo.acs@gmail.com> (https://github.com/AlonsoCortes)",
+    "Andrés Martínez González <andres.geotec@gmail.com> (https://github.com/andres-geotec)",
+    "Daniel Gómez Hernández <gomezhernandez.dan@gmail.com> (https://github.com/jdanielgoh)",
+    "Diana Elizabeth Minor <deminore@hotmail.com> (https://github.com/deminore)",
+    "Eric Torres <erictorres.velasco@hotmail.com> (https://github.com/ciretorres)",
+    "Flkt <flkt.crnpio@gmail.com> (https://github.com/flkt-crnpio)",
+    "Miguel Ángel Martínez <migueldnt.dev@gmail.com> (https://github.com/migueldnt)",
+    "Paulina Pradel <pradel.paulina@gmail.com> (https://github.com/paupradel)"
+  ],
   "files": [
     "dist",
     "src",

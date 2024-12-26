@@ -7,8 +7,8 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
     <div class="ancho-lectura">
       <h1>Tipografía</h1>
       <p>
-        Para las visualizaciones creadas con <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
-        y <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>, se aplican 
+        Para las visualizaciones creadas con <a href="https://sisdai-graficas.conahcyt.mx/" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
+        y <a href="https://sisdai-mapas.conahcyt.mx/" target="_blank" rel="noopener noreferrer">sisdai-mapas</a>, se aplican 
         estilos tipográficos específicos que aseguran la legibilidad y la coherencia estética a lo largo de diferentes tipos de gráficas y 
         mapas. Estos estilos están diseñados para complementar la presentación de datos y mejorar la experiencia de la persona usuaria.
       </p>

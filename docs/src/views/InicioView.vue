@@ -185,7 +185,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
             </a>
             <a 
               class="boton boton-secundario boton-chico"
-              href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes"
+              href="https://github.com/CentroGeo/sisdai-componentes"
               aria-label="Ir a repositorio de sisdai-componentes"
               target="_blank"
               rel="noopener noreferrer"
@@ -230,7 +230,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
             </a>
             <a 
               class="boton boton-secundario boton-chico"
-              href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas"
+              href="https://github.com/CentroGeo/sisdai-graficas"
               aria-label="Ir a repositorio de sisdai-graficas"
               target="_blank"
               rel="noopener noreferrer"
@@ -275,7 +275,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
             </a>
             <a 
               class="boton boton-secundario boton-chico"
-              href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas"
+              href="https://github.com/CentroGeo/sisdai-mapas"
               aria-label="Ir a repositorio de sisdai-mapas"
               target="_blank"
               rel="noopener noreferrer"
