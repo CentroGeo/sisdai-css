@@ -9,8 +9,8 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
       <h1>Controlador</h1>
       <p>
         El <code>controlador-vis</code> es un componente especializado que se emplea en 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-graficas" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
-        y <a href="https://codigo.conahcyt.mx/sisdai/sisdai-mapas" target="_blank" rel="noopener noreferrer">sisdai-mapas</a> 
+        <a href="https://sisdai-graficas.conahcyt.mx/" target="_blank" rel="noopener noreferrer">sisdai-graficas</a>
+        y <a href="https://sisdai-mapas.conahcyt.mx/" target="_blank" rel="noopener noreferrer">sisdai-mapas</a> 
         para gestionar y controlar las variables mostradas en las visualizaciones. 
         Este controlador permite:
       </p>

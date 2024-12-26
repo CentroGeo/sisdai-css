@@ -23,7 +23,7 @@ Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla en
 
 ## Instalación y uso
 
-Si tu desarrollo está creado con el [proyecto-base](https://codigo.conahcyt.mx/eni/proyecto-base), ya
+Si tu desarrollo está creado con el [proyecto-base](https://github.com/CentroGeo/sisdai-proyecto-base), ya
 tiene incluida una versión estable de sisdai-css y sisdai-componentes y no requiere ningún paso de instalación ni importación. En
 ese caso puedes ir a la sección [Actualización](#actualización).
 
@@ -54,12 +54,12 @@ En la línea de comando escribe
 npm i @centrogeomx/sisdai-css
 ```
 
-**Opción B.** Desde el repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css).
+**Opción B.** Desde el repositorio de [sisdai-css en github](https://github.com/CentroGeo/sisdai-css).
 
 En la línea de comando escribe
 
 ```bash
-npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css
+npm install git+https://github.com/CentroGeo/sisdai-css
 ```
 
 ### Importa la biblioteca
@@ -112,14 +112,14 @@ Si necesitas utilizar otra versión, ubícate en la carpeta del proyecto en dond
 npm i @centrogeomx/sisdai-css@vN.N.N
 ```
 
-**Opción B.** Para cualquier versión desde el repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css)
+**Opción B.** Para cualquier versión desde el repositorio de [sisdai-css en github](https://github.com/CentroGeo/sisdai-css)
 ```bash
-npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
+npm install git+https://github.com/CentroGeo/sisdai-css#vN.N.N
 ```
 
 donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
-Consulta el archivo `CHANGELOG.md` del repositorio de [sisdai-css en código.conahcyt.mx](https://codigo.conahcyt.mx/sisdai/sisdai-css) para conocer las nuevas características y cambios que sufre la biblioteca en cada una de sus versiones.
+Consulta el archivo `CHANGELOG.md` del repositorio de [sisdai-css](https://github.com/CentroGeo/sisdai-css) para conocer las nuevas características y cambios que sufre la biblioteca en cada una de sus versiones.
 
 
 ## Listado de elementos
@@ -135,7 +135,7 @@ jerarquía que unos estilos se puedan sobreescribir a otros.
 | Auxiliares       | Clases auxiliares para desarrollo, estilos de texto, bordes, alineación y visualización en distintos dispositivos                                                                        |
 | Botón            | Clases que se aplican al elemento `<button>`                                                                                                                                             |
 | Color            | Variables de CSS para las paletas de color en modo claro y modo oscuro para todos los elementos del sistema Sisdai                                                                       |
-| Componentes*     | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://codigo.conahcyt.mx/sisdai/sisdai-componentes)                                                            |
+| Componentes*     | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://github.com/CentroGeo/sisdai-componentes)                                                            |
 | Compuestos       | Estilos de múltiples elementos que combinados crean un nuevo estilo de elemento compuesto                                                                                                |
 | Detalle          | Estilos las etiquetas `<details>` `<summary>`                                                                                                                                            |
 | Formulario       | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                                         |
@@ -147,7 +147,7 @@ jerarquía que unos estilos se puedan sobreescribir a otros.
 | Retícula         | Clases de contenedores y retícula con filas y columnas                                                                                                                                   |
 | Tabla            | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                                      |
 | Tipografía       | Estilos de las etiquetas de títulos, párrafos y texto en general.                                                                                                                        |
-| Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://codigo.conahcyt.mx/sisdai/sisdai-graficas) y [sisdai-mapas](https://codigo.conahcyt.mx/sisdai/sisdai-mapas) |
+| Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://github.com/CentroGeo/sisdai-graficas) y [sisdai-mapas](https://github.com/CentroGeo/sisdai-mapas) |
  
 > *Estilos que se utilizan en otras bibliotecas del Sisdai
 
@@ -172,7 +172,7 @@ y dependencias del proyecto se muestran aquí usando tanto npm, como nvm.
 Clona este repositorio utilizando **solo el protocolo HTTPS**, es decir.
 
 ```bash
-git clone https://codigo.conahcyt.mx/sisdai/sisdai-css.git
+git clone https://github.com/CentroGeo/sisdai-css.git
 ```
 
 Entra a la carpeta del proyecto

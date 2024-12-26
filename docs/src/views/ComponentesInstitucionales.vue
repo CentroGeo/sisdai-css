@@ -8,7 +8,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
     <div class="contenedor ancho-lectura">
       <h1>Institucionales</h1>
       <p>
-        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        La biblioteca <a href="https://github.com/CentroGeo/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
         agrupa una serie de elementos importantes para la construcción de sitios web institucionales, especialmente diseñados para cumplir 
         con los requerimientos del Gobierno de México y el Conahcyt. Estos componentes han experimentado algunas variaciones anuales, 
         sin embargo, su estandarización facilita las actualizaciones sin la necesidad de crear nuevos componentes. A continuación se 
