@@ -8,6 +8,12 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 \*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.8.1] - 2025-01-01
+
+### Arreglado (Fixed)
+
+- Funcionamiento de variables de ambiente
+
 ## [1.8.0] - 2025-01-01
 
 ### Agregado (Added)
