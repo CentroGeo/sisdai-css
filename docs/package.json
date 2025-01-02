@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite build --mode development",
-    "build": "vite build --mode production",
+    "dev": "vite --mode desarrollo",
+    "build": "vite build",
     "preview": "vite preview --port 3000",
+    "preview-prod": "vite --mode production",
     "lint": "npx eslint"
   },
   "dependencies": {
