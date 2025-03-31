@@ -8,6 +8,12 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 \*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.9.0] - 2025-03-27
+
+### Cambiado (Changed)
+
+- Se actualizaron las versiones y archivos de configuración de las bibliotecas requeridas tanto para el proyecto como para la documentación. 
+
 ## [1.8.1] - 2025-01-01
 
 ### Arreglado (Fixed)
@@ -184,6 +190,9 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.9.0]: https://github.com/CentroGeo/sisdai-css/compare/v1.9.0...v1.8.1
+[1.8.1]: https://github.com/CentroGeo/sisdai-css/compare/v1.8.1...v1.8.0
+[1.8.0]: https://github.com/CentroGeo/sisdai-css/compare/v1.8.0...v1.7.4
 [1.7.4]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.4...v1.7.3
 [1.7.3]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.3...v1.7.2
 [1.7.2]: https://codigo.conahcyt.mx/sisdai/sisdai-css/compare/v1.7.2...v1.7.1
