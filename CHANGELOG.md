@@ -8,11 +8,17 @@ y este proyecto se adhiere al [Versionamiento semántico](https://semver.org/spe
 \*Nota: Este Changelog se comenzó el 2024-10-22. Se documentaron hacia atrás los cambios más relevantes
 de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 
+## [1.9.1] - 2025-07-16
+
+### Arreglado (Fixed)
+
+- Se cambió el color que usan las líneas punteadas de las gráficas a `var(--borde-secundario)` para que sean un gris más claro.
+
 ## [1.9.0] - 2025-03-27
 
 ### Cambiado (Changed)
 
-- Se actualizaron las versiones y archivos de configuración de las bibliotecas requeridas tanto para el proyecto como para la documentación. 
+- Se actualizaron las versiones y archivos de configuración de las bibliotecas requeridas tanto para el proyecto como para la documentación.
 
 ## [1.8.1] - 2025-01-01
 
@@ -44,6 +50,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - actualizando readme para incluir el cambio del use del sass y el @centrogeo de la biblioteca
 
 ### Agregado (Added)
+
 - agregando variables de entorno
 
 ## [1.7.2] - 2024-12-11
@@ -190,6 +197,7 @@ de la biblioteca. Por lo tanto no se listan aquí todos los tags existentes.
 - Refactorización de nombres de clases
 - Versión estable de documentación
 
+[1.9.1]: https://github.com/CentroGeo/sisdai-css/compare/v1.9.1...v1.9.0
 [1.9.0]: https://github.com/CentroGeo/sisdai-css/compare/v1.9.0...v1.8.1
 [1.8.1]: https://github.com/CentroGeo/sisdai-css/compare/v1.8.1...v1.8.0
 [1.8.0]: https://github.com/CentroGeo/sisdai-css/compare/v1.8.0...v1.7.4

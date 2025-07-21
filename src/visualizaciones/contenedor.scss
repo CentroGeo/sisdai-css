@@ -1,6 +1,6 @@
-@use 'sass:map';
-@use '../_variables' as variables;
-@use '../_mixins' as mix;
+@use "sass:map";
+@use "../_variables" as variables;
+@use "../_mixins" as mix;
 
 .contenedor-vis {
   --contenedor-vis-alto-menus: 50px;
@@ -61,7 +61,7 @@
 
           svg {
             .vis-linea-ejes {
-              stroke: var(--borde);
+              stroke: var(--borde-secundario);
               stroke-dasharray: 3 3;
               stroke-width: 1px;
             }
@@ -98,29 +98,29 @@
     .panel-encabezado-vis {
       grid-row-start: 1;
       margin: calc(map.get(variables.$espaciado, "1") * -1);
-      padding: map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "1")
-        map.get(variables.$espaciado, "3");
+      padding: map.get(variables.$espaciado, "1")
+        map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "3");
     }
 
     .panel-izquierda-vis {
       grid-row-start: 2;
       margin: calc(map.get(variables.$espaciado, "1") * -1);
-      padding: map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "1")
-        map.get(variables.$espaciado, "3");
+      padding: map.get(variables.$espaciado, "1")
+        map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "3");
     }
 
     .panel-derecha-vis {
       grid-row-start: 4;
       margin: calc(map.get(variables.$espaciado, "1") * -1);
-      padding: map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "1")
-        map.get(variables.$espaciado, "3");
+      padding: map.get(variables.$espaciado, "1")
+        map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "3");
     }
 
     .panel-pie-vis {
       grid-row-start: 5;
       margin: calc(map.get(variables.$espaciado, "1") * -1);
-      padding: map.get(variables.$espaciado, "3") map.get(variables.$espaciado, "1")
-        map.get(variables.$espaciado, "1");
+      padding: map.get(variables.$espaciado, "3")
+        map.get(variables.$espaciado, "1") map.get(variables.$espaciado, "1");
     }
 
     &.con-panel-encabezado-vis .panel-encabezado-vis {
@@ -144,7 +144,10 @@
       padding-right: map.get(variables.$espaciado, "3");
       max-height: var(--contenedor-vis-alto-maximo);
       grid-template-rows: 0 1fr 0;
-      min-height: calc( var(--contenedor-vis-alto-minimo-vis) + var(--contenedor-vis-alto-atribuciones) + 24px);
+      min-height: calc(
+        var(--contenedor-vis-alto-minimo-vis) +
+          var(--contenedor-vis-alto-atribuciones) + 24px
+      );
 
       .panel-izquierda-vis,
       .contenido-vis,

@@ -8521,7 +8521,7 @@ footer ol,
   margin: 0;
 }
 .contenedor-vis .contenedor-vis-paneles .contenido-vis .contenedor-svg-ejes-tooltip figure svg .vis-linea-ejes {
-  stroke: var(--borde);
+  stroke: var(--borde-secundario);
   stroke-dasharray: 3 3;
   stroke-width: 1px;
 }
