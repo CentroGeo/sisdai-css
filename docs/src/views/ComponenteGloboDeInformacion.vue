@@ -1,6 +1,6 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
-// import EjemploPropiedades from '../componetes/EjemploPropiedades.vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 
 <template>
@@ -9,13 +9,13 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     <div class="ancho-lectura">
       <h1>Globo de información</h1>
       <p>
-        La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        La biblioteca <a href="https://github.com/CentroGeo/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
         proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
         está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
         el componente "Globo de información" y sus características particulares.
       </p> 
       <p>
-        Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+        Cada componente en <a href="https://github.com/CentroGeo/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
         está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
         con el sitio web de manera efectiva.
       </p>
@@ -116,7 +116,58 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         />
       </div>
       <div class="columna-8">
+        <div class="globo-informacion" role="tooltip">
+            <div class="globo-informacion-cuerpo">
+              <div class="flex">
+                <div class="columna-8">
+                  <img 
+                    :src="`${cdn}documentacion/baghira.jpg`" 
+                    alt=""
+                  />
+                </div>
+                <div class="columna-8">
+                  <p class="h2">Título</p>
+                  <p>
+                    Puedo tener casi cualquier contenido, 
+                    deveritas deveritas.
+                  </p>
+                  <p>
+                    texto <b>bold</b>
+                    texto <strong>strong</strong>
+                    texto <small>small</small> 
+                    texto <i>italica</i> 
+                    texto <abbr title="abbr title">abreviación</abbr>
+                    texto <ins>insertado</ins> 
+                    texto <del>eliminado</del> 
+                    texto <dfn>definición</dfn>
+                    texto <sub>sub</sub> 
+                    texto <sup>sup</sup> 
+                    texto <em>énfasis</em> 
+                    texto <cite>cita</cite>
+                    texto <q cite=""> q cita </q>
+                    texto <mark>resaltado</mark>
+                  </p>
+                  <ul>
+                    <li>elemento de lista</li>
+                    <li>elemento de lista</li>
+                    <li>elemento de lista</li>
+                    <li>elemento de lista</li>
+                  </ul>
+                  <p class="nota">
+                    <b>Nota: </b>
+                    No utilizar elementos que tengan fondo predeterminado pero no tambien
+                    también de color de texto. No se leen bien
+                    en modo claro porque el texto del globo siempre se mantiene claro.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button aria-label="Cerrar" class="globo-informacion-cerrar" type="button">
+              <span class="pictograma-cerrar" aria-hidden="true"></span>
+            </button>
+          </div>
         <EjemploCodigo
+          :tiene_ejemplo='false'
           tipo='HTML'
           codigo='
           <div class="globo-informacion" role="tooltip">
@@ -124,7 +175,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
               <div class="flex">
                 <div class="columna-8">
                   <img 
-                    src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/baghira.jpg" 
+                    src="..." 
                     alt=""
                   />
                 </div>

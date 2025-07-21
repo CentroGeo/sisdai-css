@@ -22,7 +22,7 @@ const router = createRouter({
       name: 'Inicio',
       component: InicioView,
       meta: {
-        title: 'Sisdai CSS'
+        title: 'Inicio | sisdai-css'
       },
     },
     {
@@ -33,7 +33,7 @@ const router = createRouter({
           name: 'Accesibilidad / Cambio de fuente',
           component: () => import('../views/AccesibilidadCambioFuente.vue'),
           meta: {
-            title: 'Cambio de fuente | Accesibilidad | Sisdai CSS'
+            title: 'Cambio de fuente | Accesibilidad | sisdai-css'
           },
         },
         {
@@ -41,7 +41,7 @@ const router = createRouter({
           name: 'Accesibilidad / Mostrar solo texto',
           component: () => import('../views/AccesibilidadMostrarSoloTexto.vue'),
           meta: {
-            title: 'Mostrar solo texto | Accesibilidad | Sisdai CSS'
+            title: 'Mostrar solo texto | Accesibilidad | sisdai-css'
           },
         },
         {
@@ -49,7 +49,7 @@ const router = createRouter({
           name: 'Accesibilidad / Enlaces subrayados',
           component: () => import('../views/AccesibilidadEnlaceSubrayado.vue'),
           meta: {
-            title: 'Enlaces subrayados | Accesibilidad | Sisdai CSS'
+            title: 'Enlaces subrayados | Accesibilidad | sisdai-css'
           },
         },
         {
@@ -57,7 +57,7 @@ const router = createRouter({
           name: 'Accesibilidad / Vista oscura',
           component: () => import('../views/AccesibilidadVistaOscura.vue'),
           meta: {
-            title: 'Vista oscura | Accesibilidad | Sisdai CSS'
+            title: 'Vista oscura | Accesibilidad | sisdai-css'
           },
         },
         {
@@ -65,7 +65,7 @@ const router = createRouter({
           name: 'Accesibilidad / Ir al contenido principal',
           component: () => import('../views/AccesibilidadIrContenidoPrincipal.vue'),
           meta: {
-            title: 'Ir al contenido principal | Accesibilidad | Sisdai CSS'
+            title: 'Ir al contenido principal | Accesibilidad | sisdai-css'
           },
         },
         {
@@ -73,7 +73,7 @@ const router = createRouter({
           name: 'reducir-incrementar-tipografia',
           component: () => import('../views/AccesibilidadReducirAumentarTipografia.vue'),
           meta: {
-            title: 'Reducir e incrementar tipografía | Accesibilidad | Sisdai CSS'
+            title: 'Reducir e incrementar tipografía | Accesibilidad | sisdai-css'
           },
         },
       ]
@@ -86,7 +86,7 @@ const router = createRouter({
           name: 'Fundamentos / Contenedores',
           component: () => import('../views/FundamentosContenedores.vue'),
           meta: {
-            title: 'Contenedores | Fundamentos | Sisdai CSS'
+            title: 'Contenedores | Fundamentos | sisdai-css'
           },
         },
         {
@@ -94,7 +94,7 @@ const router = createRouter({
           name: 'Fundamentos / Retícula',
           component: () => import('../views/FundamentosReticula.vue'),
           meta: {
-            title: 'Retícula | Fundamentos | Sisdai CSS'
+            title: 'Retícula | Fundamentos | sisdai-css'
           },
         },
         {
@@ -102,7 +102,7 @@ const router = createRouter({
           name: 'Fundamentos / Espaciado',
           component: () => import('../views/FundamentosEspaciado.vue'),
           meta: {
-            title: 'Espaciado | Fundamentos | Sisdai CSS'
+            title: 'Espaciado | Fundamentos | sisdai-css'
           },
         },
         {
@@ -110,7 +110,7 @@ const router = createRouter({
           name: 'Fundamentos / Tipografía',
           component: () => import('../views/FundamentosTipografia.vue'),
           meta: {
-            title: 'Tipografía | Fundamentos | Sisdai CSS'
+            title: 'Tipografía | Fundamentos | sisdai-css'
           },
         },
         {
@@ -118,7 +118,7 @@ const router = createRouter({
           name: 'Fundamentos / Pictogramas',
           component: () => import('../views/FundamentosPictogramas.vue'),
           meta: {
-            title: 'Pictogramas | Fundamentos | Sisdai CSS'
+            title: 'Pictogramas | Fundamentos | sisdai-css'
           },
         },
         {
@@ -126,7 +126,7 @@ const router = createRouter({
           name: 'Fundamentos / Color',
           component: () => import('../views/FundamentosColor.vue'),
           meta: {
-            title: 'Color | Fundamentos | Sisdai CSS'
+            title: 'Color | Fundamentos | sisdai-css'
           },
         }
       ]
@@ -139,7 +139,7 @@ const router = createRouter({
           name: 'Elementos / Botones',
           component: () => import('../views/ElementosBotones.vue'),
           meta: {
-            title: 'Botones | Elementos | Sisdai CSS'
+            title: 'Botones | Elementos | sisdai-css'
           },
         },
         {
@@ -147,7 +147,7 @@ const router = createRouter({
           name: 'Elementos / Imágenes',
           component: () => import('../views/ElementosImagenes.vue'),
           meta: {
-            title: 'Imágenes | Elementos | Sisdai CSS'
+            title: 'Imágenes | Elementos | sisdai-css'
           },
         },
         {
@@ -155,7 +155,7 @@ const router = createRouter({
           name: 'Elementos / Formularios',
           component: () => import('../views/ElementosFormularios.vue'),
           meta: {
-            title: 'Formularios | Elementos | Sisdai CSS'
+            title: 'Formularios | Elementos | sisdai-css'
           },
         },
         {
@@ -163,7 +163,7 @@ const router = createRouter({
           name: 'Elementos / Hipervínculos',
           component: () => import('../views/ElementosHipervinculos.vue'),
           meta: {
-            title: 'Hipervínculos | Elementos | Sisdai CSS'
+            title: 'Hipervínculos | Elementos | sisdai-css'
           },
         },
         {
@@ -171,7 +171,7 @@ const router = createRouter({
           name: 'Elementos / Listas',
           component: () => import('../views/ElementosListas.vue'),
           meta: {
-            title: 'Listas | Elementos | Sisdai CSS'
+            title: 'Listas | Elementos | sisdai-css'
           },
         },
         {
@@ -179,7 +179,7 @@ const router = createRouter({
           name: 'Elementos / Tablas',
           component: () => import('../views/ElementosTablas.vue'),
           meta: {
-            title: 'Tablas | Elementos | Sisdai CSS'
+            title: 'Tablas | Elementos | sisdai-css'
           },
         },
         {
@@ -187,7 +187,7 @@ const router = createRouter({
           name: 'Elementos / Detalles',
           component: () => import('../views/ElementosDetalles.vue'),
           meta: {
-            title: 'Detalles | Elementos | Sisdai CSS'
+            title: 'Detalles | Elementos | sisdai-css'
           },
         },
         {
@@ -195,7 +195,15 @@ const router = createRouter({
           name: 'Elementos / Separadores',
           component: () => import('../views/ElementosSeparadores.vue'),
           meta: {
-            title: 'Separadores | Elementos | Sisdai CSS'
+            title: 'Separadores | Elementos | sisdai-css'
+          },
+        },
+        {
+          path: 'formularios',
+          name: 'Elementos / Formularios',
+          component: () => import('../views/ElementosFormularios.vue'),
+          meta: {
+            title: 'Formularios | Elementos | sisdai-css'
           },
         },
       ]
@@ -208,7 +216,7 @@ const router = createRouter({
           name: 'Compuestos / Tarjetas',
           component: () => import('../views/ElementosCompuestosTarjetas.vue'),
           meta: {
-            title: 'Tarjetas | Elementos Compuestos | Sisdai CSS'
+            title: 'Tarjetas | Compuestos | sisdai-css'
           },
         },
         {
@@ -216,7 +224,7 @@ const router = createRouter({
           name: 'Compuestos / Portadas',
           component: () => import('../views/ElementosCompuestosPortadas.vue'),
           meta: {
-            title: 'Portadas | Elementos Compuestos | Sisdai CSS'
+            title: 'Portadas | Compuestos | sisdai-css'
           },
         },
         {
@@ -224,7 +232,7 @@ const router = createRouter({
           name: 'Compuestos / Cargador',
           component: () => import('../views/ElementosCompuestosCargando.vue'),
           meta: {
-            title: 'Cargador | Elementos Compuestos | Sisdai CSS'
+            title: 'Cargador | Compuestos | sisdai-css'
           },
         },
         {
@@ -232,7 +240,7 @@ const router = createRouter({
           name: 'Compuestos / Listas compuestas',
           component: () => import('../views/ElementosCompuestosListas.vue'),
           meta: {
-            title: 'Listas compuestas | Elementos Compuestos | Sisdai CSS'
+            title: 'Listas compuestas | Compuestos | sisdai-css'
           },
         },
         {
@@ -240,15 +248,15 @@ const router = createRouter({
           name: 'Compuestos / Botones compuestos',
           component: () => import('../views/ElementosCompuestosBotones.vue'),
           meta: {
-            title: 'Botones compuestos | Elementos Compuestos | Sisdai CSS'
+            title: 'Botones compuestos | Compuestos | sisdai-css'
           },
         },
         {
           path: 'botones-pictogramas',
-          name: 'Compuestos / Botones de pictogramas',
+          name: 'Compuestos / Botones de pictograma',
           component: () => import('../views/ElementosCompuestosBotonesPictograma.vue'),
           meta: {
-            title: 'Botones de pictogramas | Elementos Compuestos | Sisdai CSS'
+            title: 'Botones de pictograma | Compuestos | sisdai-css'
           },
         },
         {
@@ -256,7 +264,7 @@ const router = createRouter({
           name: 'Compuestos / Menú flotante',
           component: () => import('../views/ElementosCompuestosMenuFlotante.vue'),
           meta: {
-            title: 'Menú flotante | Elementos Compuestos | Sisdai CSS'
+            title: 'Menú flotante | Compuestos | sisdai-css'
           },
         },
       ]
@@ -265,11 +273,19 @@ const router = createRouter({
       path: '/componentes',
       children: [
         {
+          path: 'pestanias',
+          name: 'Componentes / Pestañas',
+          component: () => import('../views/ComponentePestanias.vue'),
+          meta: {
+            title: 'Pestañas | Componentes | sisdai-css'
+          },
+        },
+        {
           path: 'navegacion',
           name: 'Componentes / Navegación',
           component: () => import('../views/ComponenteNavegacion.vue'),
           meta: {
-            title: 'Navegación | Componentes | Sisdai CSS'
+            title: 'Navegación | Componentes | sisdai-css'
           },
         },
         {
@@ -277,7 +293,7 @@ const router = createRouter({
           name: 'Componentes / Menú lateral',
           component: () => import('../views/ComponenteMenuLateral.vue'),
           meta: {
-            title: 'Manú lateral | Componentes | Sisdai CSS'
+            title: 'Menú lateral | Componentes | sisdai-css'
           },
         },
         {
@@ -285,7 +301,7 @@ const router = createRouter({
           name: 'Componentes / Menú accesibilidad',
           component: () => import('../views/ComponenteMenuAccesibilidad.vue'),
           meta: {
-            title: 'Menú de accesibilidad | Componentes | Sisdai CSS'
+            title: 'Menú de accesibilidad | Componentes | sisdai-css'
           },
         },
         {
@@ -293,7 +309,7 @@ const router = createRouter({
           name: 'Componentes / Modal',
           component: () => import('../views/ComponenteModal.vue'),
           meta: {
-            title: 'Modal | Componentes | Sisdai CSS'
+            title: 'Modal | Componentes | sisdai-css'
           },
         },
         {
@@ -301,7 +317,7 @@ const router = createRouter({
           name: 'Componentes / Botón flotante',
           component: () => import('../views/ComponenteBotonFlotante.vue'),
           meta: {
-            title: 'Boton flotante | Componentes | Sisdai CSS'
+            title: 'Botón flotante | Componentes | sisdai-css'
           },
         },
         {
@@ -309,7 +325,7 @@ const router = createRouter({
           name: 'Componentes / Colapsable',
           component: () => import('../views/ComponenteColapsable.vue'),
           meta: {
-            title: 'Colapsables | Componentes | Sisdai CSS'
+            title: 'Colapsable | Componentes | sisdai-css'
           },
         },
         {
@@ -317,7 +333,7 @@ const router = createRouter({
           name: 'Componentes / Índice de contenido',
           component: () => import('../views/ComponenteIndiceContenido.vue'),
           meta: {
-            title: 'Índice de contenido | Componentes | Sisdai CSS'
+            title: 'Índice de contenido | Componentes | sisdai-css'
           },
         },
         {
@@ -325,7 +341,7 @@ const router = createRouter({
           name: 'Componentes / Información de despliegue',
           component: () => import('../views/ComponenteInfoDeDespliegu.vue'),
           meta: {
-            title: 'Información de despliegue | Componentes | Sisdai CSS'
+            title: 'Información de despliegue | Componentes | sisdai-css'
           },
         },
         {
@@ -333,7 +349,7 @@ const router = createRouter({
           name: 'Componentes / Globos de información',
           component: () => import('../views/ComponenteGloboDeInformacion.vue'),
           meta: {
-            title: 'Globo de información | Componentes | Sisdai CSS'
+            title: 'Globo de información | Componentes | sisdai-css'
           },
         },
         {
@@ -341,7 +357,7 @@ const router = createRouter({
           name: 'Componentes / Institucionales',
           component: () => import('../views/ComponentesInstitucionales.vue'),
           meta: {
-            title: 'Institucionales | Componentes | Sisdai CSS'
+            title: 'Institucionales | Componentes | sisdai-css'
           },
         },
         {
@@ -349,7 +365,7 @@ const router = createRouter({
           name: 'Componentes / Audio',
           component: () => import('../views/ComponenteAudio.vue'),
           meta: {
-            title: 'Audio | Componentes | Sisdai CSS'
+            title: 'Audio | Componentes | sisdai-css'
           },
         },
         {
@@ -357,7 +373,7 @@ const router = createRouter({
           name: 'Componentes / Control deslizante',
           component: () => import('../views/ComponenteControlDeslizante.vue'),
           meta: {
-            title: 'Control deslizante | Componentes | Sisdai CSS'
+            title: 'Control deslizante | Componentes | sisdai-css'
           },
         },
         {
@@ -365,7 +381,7 @@ const router = createRouter({
           name: 'Componentes / Control acercar alejar',
           component: () => import('../views/ComponenteControlAcercarAlejar.vue'),
           meta: {
-            title: 'Control acercar alejar | Componentes | Sisdai CSS'
+            title: 'Control acercar alejar | Componentes | sisdai-css'
           },
         },
         {
@@ -373,7 +389,15 @@ const router = createRouter({
           name: 'Componentes / Campo de búsqueda',
           component: () => import('../views/ComponenteCampoBusqueda.vue'),
           meta: {
-            title: 'Campo de búsqueda | Componentes | Sisdai CSS'
+            title: 'Campo de búsqueda | Componentes | sisdai-css'
+          },
+        },
+        {
+          path: 'formulario',
+          name: 'Componentes / Campo',
+          component: () => import('../views/ComponenteFormulario.vue'),
+          meta: {
+            title: 'Formulario | Componentes | sisdai-css'
           },
         },
       ]
@@ -382,11 +406,19 @@ const router = createRouter({
       path: '/visualizaciones',
       children: [
         {
+          path: 'vispestanias',
+          name: 'Visualizaciones / Pestañas',
+          component: () => import('../views/VisualizacionesPestanias.vue'),
+          meta: {
+            title: 'Pestañas | Visualizaciones | sisdai-css'
+          },
+        },
+        {
           path: 'vistipografia',
           name: 'Visualizaciones / Tipografía',
           component: () => import('../views/VisualizacionesTipografia.vue'),
           meta: {
-            title: 'Tipografía | Visualizaciones | Sisdai CSS'
+            title: 'Tipografía | Visualizaciones | sisdai-css'
           },
         },
         {
@@ -394,7 +426,7 @@ const router = createRouter({
           name: 'Visualizaciones / Contenedor',
           component: () => import('../views/VisualizacionesContenedor.vue'),
           meta: {
-            title: 'Contenedor | Visualizaciones | Sisdai CSS'
+            title: 'Contenedor | Visualizaciones | sisdai-css'
           },
         },
         {
@@ -402,7 +434,7 @@ const router = createRouter({
           name: 'Visualizaciones / Controladores',
           component: () => import('../views/VisualizacionesControlador.vue'),
           meta: {
-            title: 'Controladores | Visualizaciones | Sisdai CSS'
+            title: 'Controlador | Visualizaciones | sisdai-css'
           },
         }
       ],
@@ -415,7 +447,7 @@ const router = createRouter({
           name: 'Auxiliares / Texto',
           component: () => import('../views/AuxiliaresTexto.vue'),
           meta: {
-            title: 'Texto | Auxiliares | Sisdai CSS'
+            title: 'Texto | Auxiliares | sisdai-css'
           },
         },
         {
@@ -423,7 +455,7 @@ const router = createRouter({
           name: 'Auxiliares / Visibilidad',
           component: () => import('../views/AuxiliaresVisibilidad.vue'),
           meta: {
-            title: 'Visibilidad | Auxiliares | Sisdai CSS'
+            title: 'Visibilidad | Auxiliares | sisdai-css'
           },
         },
         {
@@ -431,7 +463,7 @@ const router = createRouter({
           name: 'Auxiliares / Bordes',
           component: () => import('../views/AuxiliaresBordes.vue'),
           meta: {
-            title: 'Bordes | Auxiliares | Sisdai CSS'
+            title: 'Bordes | Auxiliares | sisdai-css'
           },
         },
         {
@@ -439,7 +471,7 @@ const router = createRouter({
           name: 'Auxiliares / Fondos',
           component: () => import('../views/AuxiliaresFondos.vue'),
           meta: {
-            title: 'Fondos | Auxiliares | Sisdai CSS'
+            title: 'Fondos | Auxiliares | sisdai-css'
           },
         },
       ]

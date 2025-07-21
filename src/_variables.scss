@@ -1,10 +1,4 @@
-@use "sass:map";
-
-:root {
-  --tipografia-familia: 'Montserrat', sans-serif;
-  --tipografia-tamanio: 16px;
-  --tipografia-codigo: monospace;
-}
+@use 'sass:map';
 
 $fondo-color: (
   'primario': var(--fondo),

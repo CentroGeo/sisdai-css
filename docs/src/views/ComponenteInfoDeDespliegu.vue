@@ -5,10 +5,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
   <div class="contenedor m-y-maximo">
 
     <div class="ancho-lectura">
-      <h1>Info De Despliegue</h1>
+      <h1>Información de despliegue</h1>
       <p>
         Estilos para el componente <code>SisdaiInfoDeDespliegue</code> declarado en la biblioteca 
-        <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
+        <a href="https://github.com/CentroGeo/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a>.
         Es un componente de desarrollo para presentar la información acerca del versionamiento, el ambiente y la fecha de despliegue.
       </p>
       

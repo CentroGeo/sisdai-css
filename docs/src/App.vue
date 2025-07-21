@@ -2,6 +2,7 @@
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
   import pkg from '../../package.json'
+  const cdn = import.meta.env.VITE_CDN_ARCHIVOS
   
   const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
@@ -16,7 +17,7 @@
   const anchoNavegacion = ref(1450)
 
   isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
-  showSubmenu.value = false
+  showSubmenu.value = ''
   
   function toggleA11yTypography() {
     isA11yTypography.value = !isA11yTypography.value
@@ -246,7 +247,7 @@
         <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
           <img 
             class="nav-logo" 
-            src="https://cdn.conahcyt.mx/sisdai-archivos/gobmx-2024.svg"
+            :src="`${cdn}institucional/gobmx-2024.svg`" 
             alt="Gobierno de México."
             width="104.8"
             height="38" 
@@ -284,7 +285,7 @@
     <nav aria-label="Menú principal" class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
         <a href="https://conahcyt.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener noreferrer">
-          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" src="https://cdn.conahcyt.mx/sisdai/recursos/conahcyt-azul.svg" alt="Conahcyt">
+          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" :src="`${cdn}institucional/conahcyt-azul.svg`" alt="Conahcyt">
         </a>
         <button 
           v-if="esColapsable"
@@ -305,7 +306,30 @@
       </div>
       <div id="menusisdaicss" class="nav-menu-contenedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }" >
         <div class="nav-menu-complementario">
-          <a href="https://sisdai.conahcyt.mx" target="_blank" rel="noopener noreferrer" class="nav-hipervinculo">IR A SISDAI</a>
+          <ul class="nav-menu">
+            <li>
+              <a 
+                href="https://sisdai.conahcyt.mx" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="nav-hipervinculo"
+              >
+                <small>IR A SISDAI</small>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/CentroGeo/sisdai-css"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="nav-hipervinculo"
+                :aria-label="`Repositorio de código sisdai-css versión ${pkg.version}`"
+              >
+                <span class="pictograma-social-github m-r-1" aria-hidden="true" />
+                <span aria-hidden="true">v{{ pkg.version }}</span>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="nav-menu-principal">
           <ul class="nav-menu">
@@ -325,10 +349,10 @@
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Regresar al menú principal</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/cambio-fuente">Cambio de fuente</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/enlaces-subrayados">Enlaces subrayados</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir a contenido principal</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/ir-contenido-principal">Ir al contenido principal</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/mostrar-solo-texto">Mostrar solo texto</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/vista-oscura">Vista oscura</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir/Incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/accesibilidad/reducir-incrementar-tipografia">Reducir e incrementar tipografía <span class="etiqueta">pre</span></RouterLink></li>
               </ul>
             </li>
             <li>
@@ -366,7 +390,6 @@
               <ul id="submenuelementos" class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementos' }" :aria-hidden="showSubmenu != 'elementos'">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Regresar al menú principal</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/botones">Botones</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos/formularios">Formularios</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/hipervinculos">Hipervínculos</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/imagenes">Imágenes</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos/listas">Listas</RouterLink></li>
@@ -386,9 +409,9 @@
               </button>
               <ul id="submenucompuestos" class="nav-submenu" :class="{ 'abierto': showSubmenu == 'elementoscompuestos' }" :aria-hidden="showSubmenu != 'elementoscompuestos'">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Regresar al menú principal</button></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones Pictogramas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas Compuestas</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/menu-flotante">Menu Flotante</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/botones-pictogramas">Botones de pictograma</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/listas-compuestas">Listas compuestas</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/menu-flotante">Menú flotante</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/portadas">Portadas</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/elementos-compuestos/tarjetas">Tarjetas</RouterLink></li>
               </ul>
@@ -404,22 +427,24 @@
               >
                 Componentes
               </button>
-              <ul id="submenucomponentes" class="nav-submenu" :class="{ 'abierto': showSubmenu == 'componentes' }" :aria-hidden="showSubmenu != 'componentes'">
+              <ul id="submenucomponentes" class="nav-submenu nav-submenu-columnas" :class="{ 'abierto': showSubmenu == 'componentes' }" :aria-hidden="showSubmenu != 'componentes'">
                 <li v-if="esColapsable"><button class="nav-boton-regresar" @click="toggleSubmenu('')">Regresar al menú principal</button></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/audio">Audio</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de Búsqueda</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control Acercar Alejar</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control Deslizante</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de Información</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/campo-busqueda">Campo de búsqueda</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/control-acercar-alejar">Control acercar alejar</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/control-deslizante">Control deslizante</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/formulario">Formulario</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/globo-informacion">Globos de información</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/info-despliegue">Información de despliegue</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú Accesibilidad</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-accesibilidad">Menú de accesibilidad</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/modal">Modal</RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegacion</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/navegacion">Navegación</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/institucionales">* Institucionales</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/boton-flotante">Botón flotante <span class="etiqueta">pre</span></RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/componentes/colapsable">Colapsable <span class="etiqueta">pre</span></RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de Contenido <span class="etiqueta">pre</span></RouterLink></li>
-                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú Lateral <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/indice-contenido">Índice de contenido <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/menu-lateral">Menú lateral <span class="etiqueta">pre</span></RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/componentes/pestanias">Pestañas</RouterLink></li>
               </ul>
             </li>
             <li>
@@ -438,6 +463,7 @@
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontenedor">Contenedor</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/viscontrolador">Controlador</RouterLink></li>
                 <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vistipografia">Tipografía</RouterLink></li>
+                <li><RouterLink class="nav-hipervinculo" to="/visualizaciones/vispestanias">Pestañas</RouterLink></li>
               </ul>
             </li>
             <li>
@@ -459,27 +485,12 @@
                 <li><RouterLink class="nav-hipervinculo" to="/auxiliares/visibilidad">Visibilidad</RouterLink></li>
               </ul>
             </li>
-            <li>
-              <a
-                href="https://codigo.conahcyt.mx/sisdai/sisdai-css"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="nav-boton boton boton-sin-contenedor-secundario"
-              >
-                <img
-                  class="nav-logo"
-                  src="/gitlab-logo-500.png"
-                  :alt="`Repositorio de código sisdai-css versión ${pkg.version}`"
-                />
-                <span aria-hidden="true">v{{ pkg.version }}</span>
-              </a>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <main>
+    <main id="principal">
       <RouterView />
     </main>
   </div>
@@ -501,7 +512,8 @@
     align-items: baseline;
     z-index: 999;
     gap: 8px;
-    // display: none;
+    max-width: 100%;
+    overflow: auto;
   }
   .tmp-menu * {
     font-size: 12px;
@@ -511,15 +523,5 @@
   .tmp-menu .info {
     flex: 1;
     text-align: right;
-  }
-  .etiqueta {
-    font-size: 0.75rem; // 14px
-    font-weight: 600;
-    padding: .25rem .5rem;
-    line-height: calc(1em * 1.3);
-    margin: 0;
-    display: inline-flex;
-    border-radius: 20px;
-    background-color: #f005;
   }
 </style>

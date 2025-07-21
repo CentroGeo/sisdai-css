@@ -1,9 +1,11 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../boton/base' as botonbase;
 
 .boton-pictograma {
-  @include boton-estructura-principal;
+  @include botonbase.boton-estructura-principal;
 
-  padding: map.get($espaciado, 'minimo');
+  padding: map.get(variables.$espaciado, 'minimo');
 
   .pictograma,
   [class^='pictograma-'],
@@ -13,7 +15,7 @@
   }
 
   &.boton-chico {
-    padding: map.get($espaciado, 'minimo');
+    padding: map.get(variables.$espaciado, 'minimo');
 
     .pictograma,
     [class^='pictograma-'],
@@ -23,7 +25,7 @@
   }
   
   &.boton-grande {
-    padding: map.get($espaciado, '1');
+    padding: map.get(variables.$espaciado, '1');
 
     .pictograma,
     [class^='pictograma-'],

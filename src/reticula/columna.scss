@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 .flex {
   box-sizing: border-box;
@@ -60,8 +62,8 @@
   display: grid;
 }
 
-@each $dispositivo, $configuracion in $columnas {
-  @include mediaquery($dispositivo) {
+@each $dispositivo, $configuracion in variables.$columnas {
+  @include mix.mediaquery($dispositivo) {
     .flex {
       gap: map.get($configuracion, 'espaciado') map.get($configuracion, 'espaciado');
 
@@ -103,8 +105,8 @@
   }
 }
 
-@each $dispositivo, $configuracion in $columnas {
-  @include mediaquery($dispositivo) {
+@each $dispositivo, $configuracion in variables.$columnas {
+  @include mix.mediaquery($dispositivo) {
     @for $i from 1 through map.get($configuracion, 'columnas') {
       .flex > .columna-#{$i}-#{$dispositivo} {
         flex: 1 1 calc(calc(($i / map.get($configuracion, 'columnas') * 100%)) - map.get($configuracion, 'espaciado') + calc($i / map.get($configuracion, 'columnas') * map.get($configuracion, 'espaciado')) - 1px);

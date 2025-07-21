@@ -730,18 +730,18 @@ body[data-tema=oscuro] {
   --menu-accesibilidad-boton-enfoque-sombra: var(--estado-enfoque);
 }
 
-.piepagina-titulo, .indice-contenido .indice-contenido-titulo, dialog.modal .modal-contenedor .modal-titulo, .portada.portada-secundaria .portada-titulo, .portada .portada-subtitulo, .portada .portada-titulo, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .tarjeta .tarjeta-titulo, details summary, .titulo-tabla {
+.piepagina-titulo, .indice-contenido .indice-contenido-titulo, dialog.modal .modal-contenedor .modal-titulo, .portada .portada-titulo, .portada .portada-subtitulo, .portada.portada-secundaria .portada-titulo, h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1, .tarjeta .tarjeta-titulo, details summary, .titulo-tabla, table caption {
   font-weight: 500;
   margin-top: 24px;
   margin-bottom: 24px;
   line-height: 1.25em;
 }
 
-.tarjeta .tarjeta-titulo, details summary, .titulo-tabla {
+.tarjeta .tarjeta-titulo, details summary, .titulo-tabla, table caption {
   font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .tarjeta .tarjeta-titulo, details summary, .titulo-tabla {
+  .tarjeta .tarjeta-titulo, details summary, .titulo-tabla, table caption {
     font-size: 1.125rem;
   }
 }
@@ -1284,6 +1284,26 @@ p {
 
 .pictograma-volumen::before {
   content: "\e009";
+}
+
+.pictograma-alerta::before {
+  content: "\e010";
+}
+
+.pictograma-capas::before {
+  content: "\e00f";
+}
+
+.pictograma-escribir::before {
+  content: "\e00e";
+}
+
+.pictograma-filtro::before {
+  content: "\e00d";
+}
+
+.pictograma-norte::before {
+  content: "\e00c";
 }
 
 .pictograma-chico {
@@ -5501,11 +5521,11 @@ button [class*=" pictograma-"],
   padding: 24px;
 }
 
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo, .a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
-.a11y-simplificada input[type=reset], .a11y-simplificada .a11y-simplificada-formato-hipervinculo, a,
+.a11y-simplificada input[type=reset], a,
 .hipervinculo {
   border: none;
   border-radius: 4px;
@@ -5521,26 +5541,26 @@ button [class*=" pictograma-"],
   cursor: pointer;
   transition: all 0.27s ease-in-out;
 }
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) .pictograma,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) .pictograma,
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo .pictograma, .a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) .pictograma,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) .pictograma,
 .a11y-simplificada input[type=button] .pictograma,
 .a11y-simplificada input[type=submit] .pictograma,
-.a11y-simplificada input[type=reset] .pictograma, .a11y-simplificada .a11y-simplificada-formato-hipervinculo .pictograma, a .pictograma,
+.a11y-simplificada input[type=reset] .pictograma, a .pictograma,
 .hipervinculo .pictograma,
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class^=pictograma-],
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class^=pictograma-],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class^=pictograma-],
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class^=pictograma-],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class^=pictograma-],
 .a11y-simplificada input[type=button] [class^=pictograma-],
 .a11y-simplificada input[type=submit] [class^=pictograma-],
 .a11y-simplificada input[type=reset] [class^=pictograma-],
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class^=pictograma-],
 a [class^=pictograma-],
 .hipervinculo [class^=pictograma-],
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class*=" pictograma-"],
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar) [class*=" pictograma-"],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class*=" pictograma-"],
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class*=" pictograma-"],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class*=" pictograma-"],
 .a11y-simplificada input[type=button] [class*=" pictograma-"],
 .a11y-simplificada input[type=submit] [class*=" pictograma-"],
 .a11y-simplificada input[type=reset] [class*=" pictograma-"],
-.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class*=" pictograma-"],
 a [class*=" pictograma-"],
 .hipervinculo [class*=" pictograma-"] {
   display: inline;
@@ -5623,13 +5643,21 @@ select, textarea, input:not([type=checkbox], [type=radio], [type=range], [type=b
   color: var(--campo-ejemplo-deshabilitado-color);
 }
 
-label,
-legend {
+label {
   display: inline-flex;
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.5em;
   color: var(--campo-etiqueta-color);
+}
+
+legend,
+.titulo-leyenda {
+  display: block;
+  font-size: 1rem;
+  line-height: 1.25em;
+  font-weight: 600;
+  margin: 8px 0;
 }
 
 .formulario-obligatoriedad {
@@ -6011,12 +6039,24 @@ input[type=file] {
 }
 
 fieldset {
-  background-color: var(--campo-fondo);
-  border: 1px solid var(--campo-borde);
-  border-radius: 8px;
-  padding: 16px;
+  border: none;
+  padding: 0;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+
+.grupo-formulario {
+  display: flex;
+  gap: 8px;
+}
+
+.grupo-formulario-vertical {
+  display: grid;
+}
+
+.grupo-formulario label > .formulario-obligatoriedad {
+  display: none;
+  content: "";
 }
 
 .formulario-horizontal label {
@@ -6066,18 +6106,73 @@ select.campo-confirmacion {
   color: var(--texto-confirmacion);
 }
 
+fieldset + .formulario-ayuda {
+  margin-top: -20px;
+}
+
+fieldset:invalid + .formulario-ayuda {
+  color: var(--texto-error);
+}
+
+fieldset:has([type=checkbox]:required):invalid + .formulario-ayuda::before {
+  content: "Una o mas casillas necesitan estar verificadas. ";
+}
+
+fieldset:has([type=radio]:required):invalid + .formulario-ayuda::before {
+  content: "Un botón de radio necesita estar seleccionado. ";
+}
+
+textarea:invalid,
+select:invalid {
+  border-color: var(--borde-error);
+}
+
+textarea:invalid + p.formulario-ayuda,
+select:invalid + p.formulario-ayuda {
+  color: var(--texto-error);
+}
+
+textarea:required:invalid + p.formulario-ayuda::before,
+select:required:invalid + p.formulario-ayuda::before {
+  content: "Este campo no puede quedar vacío. ";
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]):invalid {
+  border-color: var(--borde-error);
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]):invalid + p.formulario-ayuda {
+  color: var(--texto-error);
+}
+
+input:not([type=checkbox], [type=radio], [type=range], [type=button], [type=submit], [type=reset]):required:invalid + p.formulario-ayuda::before {
+  content: "Este campo no puede quedar vacío. ";
+}
+
+input:is([type=checkbox], [type=radio]):invalid + label {
+  outline: 1px solid var(--borde-error);
+}
+
+input:is([type=checkbox], [type=radio]):invalid + label::before {
+  border: 1px solid var(--borde-error);
+}
+
+input:is([type=checkbox], [type=radio]):invalid + label + .formulario-ayuda {
+  color: var(--texto-error);
+}
+
+input:is([type=checkbox]):required:invalid + label + p.formulario-ayuda::before {
+  content: "Esta casilla necesita estar verificada. ";
+}
+
 table {
   border-collapse: collapse;
   color: var(--tabla-color);
   text-align: left;
 }
 table caption {
+  margin: 16px 0 0;
   text-align: left;
-  padding: 0;
-  font-size: 1rem;
-  line-height: 1.25em;
-  font-weight: 400;
-  margin: 16px 0;
 }
 table th,
 table td {
@@ -6113,7 +6208,8 @@ table tfoot tr {
 }
 
 .titulo-tabla {
-  margin-bottom: 0;
+  margin: 16px 0 0;
+  text-align: left;
 }
 
 .contenedor-tabla {
@@ -6277,7 +6373,7 @@ details[open] summary {
   display: flex;
   height: calc(100vh - 92px);
 }
-@media (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .portada {
     height: calc(100vh - 120px);
   }
@@ -6401,6 +6497,7 @@ details[open] summary {
   opacity: 0;
 }
 .menu-flotante .menu-flotante-contenedor {
+  transition: all 0.27s ease-in-out;
   background-color: var(--menu-flotante-contenedor-fondo);
   box-shadow: 0 0 0 0 transparent;
   color: var(--menu-flotante-contenedor-color);
@@ -6412,7 +6509,6 @@ details[open] summary {
   width: 300px;
   max-height: 0;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
 }
 .menu-flotante .menu-flotante-contenedor .menu-flotante-titulo {
   font-size: 1rem;
@@ -6447,8 +6543,8 @@ details[open] summary {
   margin-right: 4px;
 }
 .menu-flotante.menu-flotante-derecho {
+  transition: all 0.27s ease-in-out;
   right: -260px;
-  transition: all 0.3s ease-in-out;
 }
 .menu-flotante.menu-flotante-derecho.abierto {
   right: 40px;
@@ -6469,6 +6565,16 @@ details[open] summary {
   opacity: 1;
 }
 
+@keyframes animacion-vista-cargando {
+  0% {
+    opacity: 0.35;
+    height: 8px;
+  }
+  100% {
+    opacity: 1;
+    height: 50px;
+  }
+}
 .vista-cargando {
   background: var(--opacidad-ligero);
   z-index: 9;
@@ -6493,7 +6599,7 @@ details[open] summary {
   background: var(--globo-color);
   width: 10px;
   height: 8px;
-  animation: vista-cargando 0ms -800ms linear infinite alternate;
+  animation: animacion-vista-cargando 0ms -800ms linear infinite alternate;
 }
 .vista-cargando > ul > li:nth-child(1) {
   animation-duration: 405ms;
@@ -7313,7 +7419,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   color: var(--navegacion-secundaria-cursor-color);
   text-decoration: none;
 }
-.menu-lateral-contenedor a:focus, .menu-lateral-contenedor a:focus-visible, .menu-lateral-contenedor a:active, .menu-lateral-contenedor a.router-link-exact-active, .menu-lateral-contenedor a.link-activo {
+.menu-lateral-contenedor a:focus, .menu-lateral-contenedor a:active, .menu-lateral-contenedor a.router-link-exact-active, .menu-lateral-contenedor a.link-activo {
   background: var(--navegacion-secundaria-activo-fondo);
   box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
   color: var(--navegacion-secundaria-activo-color);
@@ -7341,7 +7447,7 @@ dialog.modal .modal-contenedor .modal-cerrar {
   color: var(--navegacion-secundaria-cursor-color);
   text-decoration: none;
 }
-.menu-lateral-contenedor .colapsable-boton:focus, .menu-lateral-contenedor .colapsable-boton:focus-visible, .menu-lateral-contenedor .colapsable-boton:active, .menu-lateral-contenedor .colapsable-boton.router-link-exact-active, .menu-lateral-contenedor .colapsable-boton.link-activo {
+.menu-lateral-contenedor .colapsable-boton:focus, .menu-lateral-contenedor .colapsable-boton:active, .menu-lateral-contenedor .colapsable-boton.router-link-exact-active, .menu-lateral-contenedor .colapsable-boton.link-activo {
   background: var(--navegacion-secundaria-activo-fondo);
   box-shadow: inset 8px 0 0 var(--navegacion-secundaria-activo-borde);
   color: var(--navegacion-secundaria-activo-color);
@@ -7846,6 +7952,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   position: absolute;
   top: 0;
   right: -320px;
+  overflow: hidden;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -7856,6 +7963,10 @@ dl.informacion-despliegue dd:not(:last-child) {
   opacity: 1;
   visibility: visible;
   pointer-events: inherit;
+}
+.nav-submenu.nav-submenu-columnas {
+  columns: 2;
+  width: 90vw;
 }
 
 .navegacion.navegacion-extendida {
@@ -7897,7 +8008,8 @@ dl.informacion-despliegue dd:not(:last-child) {
   pointer-events: inherit;
 }
 .navegacion.navegacion-extendida .nav-menu-contenedor .nav-menu-complementario {
-  padding-left: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .navegacion.navegacion-extendida .nav-menu-contenedor .nav-menu-principal {
   flex: 1;
@@ -7931,6 +8043,19 @@ dl.informacion-despliegue dd:not(:last-child) {
   right: 0;
 }
 
+.etiqueta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  line-height: 1.25em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: var(--color-error-2);
+  color: var(--color-error-4);
+}
+
 .nav-hipervinculo {
   background-color: var(--navegacion-primaria-fondo);
   border-radius: 0;
@@ -7939,7 +8064,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.25em;
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -7971,6 +8096,10 @@ dl.informacion-despliegue dd:not(:last-child) {
 .nav-hipervinculo .nav-logo {
   margin-top: -12px;
   margin-bottom: -12px;
+}
+.nav-hipervinculo .etiqueta {
+  margin-top: -0.25rem;
+  margin-bottom: -0.25rem;
 }
 
 .navegacion.navegacion-extendida .nav-hipervinculo {
@@ -8050,7 +8179,7 @@ dl.informacion-despliegue dd:not(:last-child) {
 
 .nav-boton {
   height: 24px;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   display: flex;
   width: inherit;
   font-weight: 400;
@@ -8073,7 +8202,7 @@ dl.informacion-despliegue dd:not(:last-child) {
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.25em;
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -8121,12 +8250,13 @@ dl.informacion-despliegue dd:not(:last-child) {
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  line-height: 1em;
+  line-height: 1.25em;
   padding: 16px;
   text-decoration: none;
   transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   display: flex;
   justify-content: flex-start;
+  text-align: left;
   width: 100%;
 }
 .nav-boton-regresar:visited {
@@ -8213,6 +8343,44 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 .navegacion-gobmx.navegacion-extendida .nav-menu-contenedor {
   border-top: none;
+}
+
+.pestanias [role=tablist] {
+  min-width: 100%;
+}
+.pestanias [role=tablist] button[role=tab],
+.pestanias [role=tablist] button[role=tab]:focus,
+.pestanias [role=tablist] button[role=tab]:hover {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  padding: 8px;
+  border-radius: inherit;
+  background-color: inherit;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  color: var(--boton-secundario-color);
+}
+.pestanias [role=tablist] button[role=tab]:disabled {
+  color: var(--boton-secundario-deshabilitado-color);
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=true] {
+  border-bottom: 4px solid var(--boton-secundario-borde);
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=false] {
+  border-bottom: 4px solid transparent;
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=false]:focus {
+  background-color: var(--boton-secundario-enfoque-fondo);
+  box-shadow: inset 0 0 0 1px var(--boton-secundario-enfoque-borde), 0 0 8px var(--boton-secundario-enfoque-sombra);
+  border-bottom: 4px solid var(--boton-secundario-enfoque-borde);
+  color: var(--boton-secundario-enfoque-color);
+}
+.pestanias [role=tablist] button[role=tab][aria-selected=false]:hover {
+  background-color: var(--boton-secundario-cursor-fondo);
+  box-shadow: inherit;
+  border-bottom: 4px solid var(--boton-secundario-borde);
 }
 
 footer,
@@ -8353,7 +8521,7 @@ footer ol,
   margin: 0;
 }
 .contenedor-vis .contenedor-vis-paneles .contenido-vis .contenedor-svg-ejes-tooltip figure svg .vis-linea-ejes {
-  stroke: var(--borde);
+  stroke: var(--borde-secundario);
   stroke-dasharray: 3 3;
   stroke-width: 1px;
 }
@@ -8387,22 +8555,22 @@ footer ol,
 .contenedor-vis .contenedor-vis-paneles .panel-encabezado-vis {
   grid-row-start: 1;
   margin: -8px;
-  padding: 8px 8px 32px;
+  padding: 8px 8px 24px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis {
   grid-row-start: 2;
   margin: -8px;
-  padding: 8px 8px 32px;
+  padding: 8px 8px 24px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-derecha-vis {
   grid-row-start: 4;
   margin: -8px;
-  padding: 8px 8px 32px;
+  padding: 8px 8px 24px;
 }
 .contenedor-vis .contenedor-vis-paneles .panel-pie-vis {
   grid-row-start: 5;
   margin: -8px;
-  padding: 32px 8px 8px;
+  padding: 24px 8px 8px;
 }
 .contenedor-vis .contenedor-vis-paneles.con-panel-encabezado-vis .panel-encabezado-vis {
   display: block;
@@ -8431,7 +8599,7 @@ footer ol,
   }
   .contenedor-vis .contenedor-vis-paneles .panel-derecha-vis {
     padding-bottom: 8px;
-    padding-left: 32px;
+    padding-left: 24px;
   }
   .contenedor-vis .contenedor-vis-paneles .panel-izquierda-vis {
     padding-bottom: 8px;
@@ -8719,16 +8887,6 @@ div.controlador-vis label {
   border: 1px solid var(--campo-deshabilitado-color);
 }
 
-@keyframes vista-cargando {
-  0% {
-    opacity: 0.35;
-    height: 8px;
-  }
-  100% {
-    opacity: 1;
-    height: 50px;
-  }
-}
 .borde {
   border: 1px solid currentcolor;
 }
@@ -9827,8 +9985,8 @@ div.controlador-vis label {
   outline-offset: 4px;
   box-shadow: none;
 }
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar),
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar),
 .a11y-simplificada input[type=button],
 .a11y-simplificada input[type=submit],
 .a11y-simplificada input[type=reset] {
@@ -9836,15 +9994,15 @@ div.controlador-vis label {
   box-shadow: 0 0 2px var(--hipervinculo-sombra);
   color: var(--hipervinculo-color);
 }
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):not(:last-child),
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):not(:last-child),
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):not(:last-child),
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):not(:last-child),
 .a11y-simplificada input[type=button]:not(:last-child),
 .a11y-simplificada input[type=submit]:not(:last-child),
 .a11y-simplificada input[type=reset]:not(:last-child) {
   margin-right: 8px;
 }
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):disabled,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):disabled,
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):disabled,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):disabled,
 .a11y-simplificada input[type=button]:disabled,
 .a11y-simplificada input[type=submit]:disabled,
 .a11y-simplificada input[type=reset]:disabled {
@@ -9852,15 +10010,15 @@ div.controlador-vis label {
   color: var(--hipervinculo-deshabilitado-color);
   box-shadow: 0 0 2px var(--hipervinculo-deshabilitado-sombra);
 }
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):visited,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):visited,
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):visited,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):visited,
 .a11y-simplificada input[type=button]:visited,
 .a11y-simplificada input[type=submit]:visited,
 .a11y-simplificada input[type=reset]:visited {
   color: var(--hipervinculo-visitado);
 }
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):hover,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):hover,
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):hover,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):hover,
 .a11y-simplificada input[type=button]:hover,
 .a11y-simplificada input[type=submit]:hover,
 .a11y-simplificada input[type=reset]:hover {
@@ -9869,8 +10027,8 @@ div.controlador-vis label {
   text-decoration: underline;
   box-shadow: none;
 }
-.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):focus-visible,
-.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar):focus-visible,
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):focus-visible,
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar):focus-visible,
 .a11y-simplificada input[type=button]:focus-visible,
 .a11y-simplificada input[type=submit]:focus-visible,
 .a11y-simplificada input[type=reset]:focus-visible {
@@ -9881,9 +10039,9 @@ div.controlador-vis label {
   box-shadow: none;
 }
 .a11y-simplificada video,
-.a11y-simplificada picture:not(.nav-logo, .a11y-simplificada-mantener-imagen),
-.a11y-simplificada img:not(.nav-logo, .a11y-simplificada-mantener-imagen),
-.a11y-simplificada svg:not(.nav-logo, .a11y-simplificada-mantener-imagen) {
+.a11y-simplificada picture:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen),
+.a11y-simplificada img:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen),
+.a11y-simplificada svg:not(.nav-logo, .pie-logo, .a11y-simplificada-mantener-imagen) {
   display: none !important;
 }
 .a11y-simplificada .video iframe {
@@ -10058,7 +10216,7 @@ div.controlador-vis label {
 .a11y-hipervinculos .hipervinculo:active {
   text-decoration: underline;
 }
-.a11y-hipervinculos a:focus-visible,
+.a11y-hipervinculos a:not(.ir-contenido-principal):focus-visible,
 .a11y-hipervinculos .hipervinculo:focus-visible {
   background-color: transparent;
   color: var(--hipervinculo-enfoque-color);

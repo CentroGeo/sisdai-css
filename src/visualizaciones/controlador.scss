@@ -1,4 +1,5 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
 
 .controlador-vis {
   --controlador-vis-control-alto: 1.125rem;
@@ -11,8 +12,8 @@
   vertical-align: text-top;
 
   .lectura {
-    padding: calc(map.get($espaciado, '1') + 2px);
-    margin: 0 0 map.get($espaciado, '1') 0;
+    padding: calc(map.get(variables.$espaciado, '1') + 2px);
+    margin: 0 0 map.get(variables.$espaciado, '1') 0;
     line-height: 1.25em;
     color: var(--campo-color);
     vertical-align: text-top;
@@ -20,7 +21,7 @@
   }
 
   .anidado {
-    padding-left: calc(1.25rem + map.get($espaciado, '1') + 4px);
+    padding-left: calc(1.25rem + map.get(variables.$espaciado, '1') + 4px);
   }
 
   label::before,
@@ -40,7 +41,7 @@
   
   .figura-variable {
     flex-shrink: 0;
-    margin-right: map.get($espaciado, 'minimo');
+    margin-right: map.get(variables.$espaciado, 'minimo');
     margin-top: max(calc((var(--controlador-vis-control-alto) - var(--controlador-vis-figura-alto)) * 0.5), 0px);
     min-width: calc(var(--controlador-vis-figura-alto));
     height: calc(var(--controlador-vis-figura-alto));
@@ -74,8 +75,8 @@
 
 span.controlador-vis {
   display: inline-flex;
-  margin-right: map.get($espaciado, '1');
-  margin-bottom: map.get($espaciado, '1');
+  margin-right: map.get(variables.$espaciado, '1');
+  margin-bottom: map.get(variables.$espaciado, '1');
   
   label {
     display: inline-flex;

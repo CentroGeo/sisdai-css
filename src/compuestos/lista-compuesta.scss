@@ -1,5 +1,7 @@
+@use '../lista/base' as listas;
+
 .lista-compuesta {
-  @include lista-estructura-plana;
+  @include listas.lista-estructura-plana;
 
   li {
     display: flex;

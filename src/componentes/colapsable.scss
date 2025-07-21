@@ -1,4 +1,6 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../lista/base' as listas;
 
 .colapsable {
   position: relative;
@@ -10,8 +12,8 @@
     justify-content: space-between;
     text-align: left;
     font-weight: 500;
-    padding-top: map.get($espaciado, '1');
-    padding-bottom: map.get($espaciado, '1');
+    padding-top: map.get(variables.$espaciado, '1');
+    padding-bottom: map.get(variables.$espaciado, '1');
     width: 100%;
 
     .pictograma,
@@ -38,13 +40,13 @@
 
     > ul, 
     > ol {
-      @include lista-estructura-plana;
+      @include listas.lista-estructura-plana;
 
       > li {
         > a {
           display: block;
-          padding-top: map.get($espaciado, '1');
-          padding-bottom: map.get($espaciado, '1');
+          padding-top: map.get(variables.$espaciado, '1');
+          padding-bottom: map.get(variables.$espaciado, '1');
         }
       }
     }

@@ -1,5 +1,6 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -31,7 +32,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <li>
             <a href="#">
               <div class="lista-avatar-imagen">
-                <img src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/avatar.svg" alt=""/>
+                <img :src="`${cdn}predeterminadas/avatar.svg`" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-titulo">titulo</p>
@@ -43,7 +44,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <li>
             <a href="#">
               <div class="lista-avatar-imagen">
-                <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/nymeria.jpg" alt=""/>
+                <img :src="`${cdn}documentacion/nymeria.jpg`" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-titulo">Nombre(s) Primer y Segundo apellido</p>
@@ -55,7 +56,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <li>
             <a href="#">
               <div class="lista-avatar-imagen">
-                <img src="https://cdn.conacyt.mx/sisdai/recursos/imagenes/documentacion/nilo.jpg" alt=""/>
+                <img :src="`${cdn}documentacion/nilo.jpg`" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-titulo">Nombre(s) Primer y Segundo apellido</p>
@@ -114,7 +115,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <li>
             <a href="#">
               <div class="lista-logotipo-imagen">
-                <img class="a11y-oscura-filtro-blanco a11y-simplificada-mantener-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
+                <img class="a11y-oscura-filtro-blanco a11y-simplificada-mantener-imagen" :src="`${cdn}predeterminadas/logo.svg`" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-texto-primario">texto-primario</p>
@@ -124,7 +125,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
           <li>
             <a href="#">
               <div class="lista-logotipo-imagen">
-                <img class="a11y-oscura-filtro-blanco a11y-simplificada-mantener-imagen" src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/predeterminadas/logo.svg" alt=""/>
+                <img class="a11y-oscura-filtro-blanco a11y-simplificada-mantener-imagen" :src="`${cdn}predeterminadas/logo.svg`" alt=""/>
               </div>
               <div class="lista-compuesta-cuerpo">
                 <p class="lista-compuesta-texto-primario">Nombre de la institución</p>

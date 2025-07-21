@@ -1,8 +1,10 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../boton/base' as botonbase;
 
 .globo-informacion {   
   background-color: var(--globo-fondo);
-  border-radius: map.get($borde-redondeado, '8');
+  border-radius: map.get(variables.$borde-redondeado, '8');
   color: var(--globo-color);
   align-items: flex-start;
   justify-content: space-between;
@@ -12,11 +14,11 @@
   z-index: 99;
 
   .globo-informacion-cuerpo {
-    padding: map.get($espaciado, '2');
+    padding: map.get(variables.$espaciado, '2');
 
     > *:not(div) {
-      margin-top: map.get($espaciado, '2');
-      margin-bottom: map.get($espaciado, '2');
+      margin-top: map.get(variables.$espaciado, '2');
+      margin-bottom: map.get(variables.$espaciado, '2');
       
       &:first-child {
         margin-top: 0;
@@ -65,12 +67,12 @@
   }
   
   .globo-informacion-cerrar {
-    @include boton-estructura-principal;
+    @include botonbase.boton-estructura-principal;
 
-    padding: map.get($espaciado, 'minimo');
+    padding: map.get(variables.$espaciado, 'minimo');
     position: sticky;
     top: 0;
-    margin: map.get($espaciado, '1') map.get($espaciado, '1') map.get($espaciado, '1') 0;
+    margin: map.get(variables.$espaciado, '1') map.get(variables.$espaciado, '1') map.get(variables.$espaciado, '1') 0;
     background: var(--globo-boton-fondo);
     box-shadow: 
       inset 0 0 0 0 var(--globo-boton-borde),

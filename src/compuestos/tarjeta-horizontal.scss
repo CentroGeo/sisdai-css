@@ -1,7 +1,9 @@
-@use "sass:map";
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
 
 .tarjeta-horizontal {
-  @media screen and (min-width: calc(map.get($breakpoints, 'esc'))) {
+  @include mix.mediaquery('esc') { 
     flex-wrap: nowrap;
     min-width: 480px;
 
@@ -14,11 +16,11 @@
     }
     
     .tarjeta-cuerpo {
-      padding-left: calc(240px + map.get($espaciado, '3'));
+      padding-left: calc(240px + map.get(variables.$espaciado, '3'));
     }
 
     .tarjeta-pie {
-      padding-left: calc(240px + map.get($espaciado, '3'));
+      padding-left: calc(240px + map.get(variables.$espaciado, '3'));
     }
   }
 }

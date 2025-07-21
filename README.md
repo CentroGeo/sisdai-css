@@ -1,13 +1,17 @@
 # sisdai-css
 
-El proyecto sisdai-css es una biblioteca de estilos de Sass 
-alineada al Sistema de Diseño y Accesibilidad para la Investigación 
-([Sisdai](https://sisdai.conahcyt.mx/)).
+El proyecto sisdai-css es una biblioteca de estilos de Sass alineada al Sistema de Diseño y Accesibilidad para la 
+Investigación ([Sisdai](https://sisdai.conahcyt.mx/)). El Sisdai es un proyecto de investigación desarrollado por el 
+Centro de Investigación en Ciencias de Información Geoespacial, A.C. 
+([CentroGeo](https://www.centrogeo.org.mx/)) y coordinado por el Consejo Nacional de Humanidades, Ciencias y Tecnologías
+([Conahcyt](https://conahcyt.mx)) del Gobierno de México.
 
-Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx/) ó seguir las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de éste README.md para levantar la documentación localmente.
+Para leer la documentación de la biblioteca, puedes visitar el sitio [sisdai-css.conahcyt.mx](https://sisdai-css.conahcyt.mx) 
+o levantar la documentación localmente siguiendo las instrucciones escritas en la sección [Uso local del proyecto](#uso-local-del-proyecto) de este
+documento.
 
-Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla
-en su equipo a través del **protocolo HTTPS**.
+Cualquier persona puede hacer uso de esta biblioteca al clonarla e instalarla en su equipo a través del 
+**protocolo HTTPS** o bien instalándola mediante [npm](https://www.npmjs.com/~centrogeomx).
 
 ## Utilidades
 
@@ -19,7 +23,7 @@ en su equipo a través del **protocolo HTTPS**.
 
 ## Instalación y uso
 
-Si tu proyecto está creado con [sisdai-proyecto-base](https://codigo.conahcyt.mx/sisdai/sisdai-proyecto-base) , ya
+Si tu desarrollo está creado con el [proyecto-base](https://github.com/CentroGeo/sisdai-proyecto-base), ya
 tiene incluida una versión estable de sisdai-css y sisdai-componentes y no requiere ningún paso de instalación ni importación. En
 ese caso puedes ir a la sección [Actualización](#actualización).
 
@@ -40,19 +44,23 @@ Agrega las siguientes líneas dentro del `<head> </head>` del archivo de html en
 
 ### Instala la biblioteca
 
-En la carpeta principal de tu proyecto Vue, instala la biblioteca en las dependencias de tu proyecto con:
+En la carpeta principal de tu proyecto Vue puedes instalar la última versión de sisdai-css mediante dos opciones:
 
-``` bash
-npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css
+**Opción A.** Desde el repositorio del [sisdai-css en npm](https://www.npmjs.com/package/@centrogeomx/sisdai-css).
+
+En la línea de comando escribe
+
+```bash
+npm i @centrogeomx/sisdai-css
 ```
 
-Dependiendo de la versión de la biblioteca a instalar, la instrucción anterior puede cambiar a:
+**Opción B.** Desde el repositorio de [sisdai-css en github](https://github.com/CentroGeo/sisdai-css).
 
-``` bash
-npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
+En la línea de comando escribe
+
+```bash
+npm install git+https://github.com/CentroGeo/sisdai-css
 ```
-
-donde N.N.N indica el número de versión, por ejemplo v1.0.0
 
 ### Importa la biblioteca
 
@@ -61,22 +69,23 @@ Puedes importar la biblioteca de manera general en el archivo `main.js` de tu pr
 ```js
 // src/main.js
 
-import 'sisdai-css/dist/sisdai.min.css'
+import '@centrogeomx/sisdai-css'
 
 ```
 
-Ó en el archivo o sección de estilos de tu proyecto
+Ó en el archivo de css o sección de estilos de tu proyecto 
 
 ```css
-
-@import 'sisdai-css/dist/sisdai.min.css';
+/* archivo css */
+@import '@centrogeomx/sisdai-css';
 ```
 
 *Opcionalmente se pueden importar las variables y mixins para utilizar las mismas referencias que la biblioteca en los estilos particulares de cada proyecto
 
-```css
-@import 'sisdai-css/src/_variables';
-@import 'sisdai-css/src/_mixins';
+```scss
+/* archivo scss */
+@use '@centrogeomx/sisdai-css/src/_variables' as variables;
+@use '@centrogeomx/sisdai-css/src/_mixins' as mixins;
 ```
 
 ### Uso de la biblioteca
@@ -95,13 +104,22 @@ Existen además clases para dar estilo a elementos, las cuales se encuentran agr
 
 ## Actualización
 
-Si actualmente utilizas la biblioteca y necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la versión que requieres nuevamente
+Si necesitas utilizar otra versión, ubícate en la carpeta del proyecto en donde necesitas la actualización e instala la versión que requieres nuevamente usando una de estas dos opciones
+
+**Opción A.** Para versiones publicadas en el repositorio de [sisdai-css en npm](https://www.npmjs.com/package/sisdai-css).
 
 ```bash
-npm install git+https://codigo.conahcyt.mx/sisdai/sisdai-css#vN.N.N
+npm i @centrogeomx/sisdai-css@vN.N.N
+```
+
+**Opción B.** Para cualquier versión desde el repositorio de [sisdai-css en github](https://github.com/CentroGeo/sisdai-css)
+```bash
+npm install git+https://github.com/CentroGeo/sisdai-css#vN.N.N
 ```
 
 donde N.N.N indica el número de versión, por ejemplo v1.0.0
+
+Consulta el archivo `CHANGELOG.md` del repositorio de [sisdai-css](https://github.com/CentroGeo/sisdai-css) para conocer las nuevas características y cambios que sufre la biblioteca en cada una de sus versiones.
 
 
 ## Listado de elementos
@@ -117,7 +135,7 @@ jerarquía que unos estilos se puedan sobreescribir a otros.
 | Auxiliares       | Clases auxiliares para desarrollo, estilos de texto, bordes, alineación y visualización en distintos dispositivos                                                                        |
 | Botón            | Clases que se aplican al elemento `<button>`                                                                                                                                             |
 | Color            | Variables de CSS para las paletas de color en modo claro y modo oscuro para todos los elementos del sistema Sisdai                                                                       |
-| Componentes*     | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://codigo.conahcyt.mx/sisdai/sisdai-componentes)                                                            |
+| Componentes*     | Estilos de componentes declarados en la biblioteca [sisdai-componentes](https://github.com/CentroGeo/sisdai-componentes)                                                            |
 | Compuestos       | Estilos de múltiples elementos que combinados crean un nuevo estilo de elemento compuesto                                                                                                |
 | Detalle          | Estilos las etiquetas `<details>` `<summary>`                                                                                                                                            |
 | Formulario       | Estilos de todas las etiquetas que conforman y se utilizan dentro de formularios                                                                                                         |
@@ -129,9 +147,8 @@ jerarquía que unos estilos se puedan sobreescribir a otros.
 | Retícula         | Clases de contenedores y retícula con filas y columnas                                                                                                                                   |
 | Tabla            | Estilos para las etiquetas relacionadas con tablas `<table>`, `<caption>`, `<thead>`, `<tfoot>`, `<tbody>`, `<tr>`, `<th>` y `<td>`                                                      |
 | Tipografía       | Estilos de las etiquetas de títulos, párrafos y texto en general.                                                                                                                        |
-| Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://codigo.conahcyt.mx/sisdai/sisdai-graficas) y [sisdai-mapas](https://codigo.conahcyt.mx/sisdai/sisdai-mapas) |
-
-> [!NOTE]  
+| Visualizaciones* | Estilos de elementos utilizados en las bibliotecas [sisdai-graficas](https://github.com/CentroGeo/sisdai-graficas) y [sisdai-mapas](https://github.com/CentroGeo/sisdai-mapas) |
+ 
 > *Estilos que se utilizan en otras bibliotecas del Sisdai
 
 ## Uso local del proyecto
@@ -155,7 +172,7 @@ y dependencias del proyecto se muestran aquí usando tanto npm, como nvm.
 Clona este repositorio utilizando **solo el protocolo HTTPS**, es decir.
 
 ```bash
-git clone https://codigo.conahcyt.mx/sisdai/sisdai-css.git
+git clone https://github.com/CentroGeo/sisdai-css.git
 ```
 
 Entra a la carpeta del proyecto
@@ -170,10 +187,19 @@ Instala las dependencias del proyecto
 npm install
 ```
 
-Instala las dependencias de la documentación
+Opcionalmente instala las dependencias de la documentación
 
 ``` sh
 npm run docs:install
+```
+
+Opcionalmente levanta en local la documentación
+```sh
+npm run docs
+```
+ó
+```sh
+npm run docs:dev
 ```
 
 ## Licencia
@@ -211,12 +237,12 @@ ___
 #### Estructura
 
 Las clases se encuentran agrupadas en módulos, dependiendo el tipo de elemento en el que se utilizará. Si no existiera 
-una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del componente. 
+una carpeta adecuada, se crea una nueva dentro de `src/` con el nombre del elemento. 
 
 ```bash
 sisdai-css/
 └── src
-    └── *nuevoelemento* # carpeta del elemento o componente
+    └── *nuevoelemento* # carpeta del elemento
         ├── _index.scss # archivo con import de todos los archivos del nuevo elemento
         ├── base.scss # estilos generales
         └── subelemento.scss # sub elementos o casos particulares
@@ -235,15 +261,13 @@ sisdai-css/
 
 Colócalo antes de los auxiliares y los archivos de accesibilidad
 
-```css
+```scss
 /* src/sisdai.scss */
-...
-...
 
-@import "nuevoelemento";
+@use 'nuevoelemento';
 
-@import "auxiliares";
-@import "accesibilidad";
+@use 'auxiliares';
+@use 'accesibilidad';
 ```
 
 Para facilitar el mantenimiento de la biblioteca se debe prestar atención en las variables declaradas en `_variables.css`
@@ -264,6 +288,12 @@ sisdai-css/
 
 ```
 
+```scss
+@use '_variables' as variables;
+@use '_mixins' as mixins;
+
+```
+
 #### Validaciones con Stylelint
 
 El proyecto está construido con los estándares de [Stylelint](https://stylelint.io/user-guide/rules) para mejorar las convenciones y evitar errores comunes.
@@ -271,7 +301,17 @@ Después de agregar los estilos del nuevo elemento, asegúrate de que se cumplan
 
 Para verificar el proyecto con Stylelint puedes correr en la terminal el comando 
 ```bash
-npx stylelint "**/*.scss"
+npm run pruebas:stylelint
+```
+
+Aparecerá una lista de errores, en caso de que existan, con sugerencias para solucionarlos. 
+Cuando no aparezca nada en tu lista, estás lista para continuar.
+
+#### Validaciones con Sass
+
+Para verificar que el proyecto corra con la última version de Sass, puedes correr en la terminal el comando 
+```bash
+npm run pruebas:sass
 ```
 
 Aparecerá una lista de errores, en caso de que existan, con sugerencias para solucionarlos. 

@@ -1,4 +1,6 @@
-@each $nombre, $valor in $fondo-color {
+@use '../_variables' as variables;
+
+@each $nombre, $valor in variables.$fondo-color {
   .fondo-color-#{$nombre} {
     background-color: $valor;
   }

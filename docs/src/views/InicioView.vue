@@ -1,3 +1,6 @@
+<script setup>
+const cdn = import.meta.env.VITE_CDN_ARCHIVOS
+</script>
 <template>
   <div class="contenedor ancho-fijo p-b-maximo">
     <div class="ancho-lectura p-b-1">
@@ -14,12 +17,16 @@
         agrega clases para ayudar a la accesibilidad digital.
       </p>
     </div>
-
-    <div class="flex">
+    
+    <div class="flex flex-contenido-centrado">
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/accesibilidad/cambio-fuente/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/accesibilidad.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/accesibilidad.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Accesibilidad</h2>
             <p>
@@ -33,8 +40,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/fundamentos/color/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/fundamentos.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/fundamentos.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Fundamentos</h2>
             <p>
@@ -47,8 +58,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/elementos/botones/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/elementos.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/elementos.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Elementos</h2>
             <p>
@@ -61,8 +76,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/elementos-compuestos/botones-pictogramas/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/compuesto.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/compuesto.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Compuestos</h2>
             <p>
@@ -75,8 +94,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/componentes/audio/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/componentes.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/componentes.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Componentes</h2>
             <p>
@@ -90,8 +113,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/visualizaciones/viscontenedor/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/visualizaciones.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/visualizaciones.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Visualizaciones</h2>
             <p>
@@ -105,8 +132,12 @@
 
       <div class="columna-8">
         <a class="tarjeta tarjeta-hipervinculo-interno" href="/auxiliares/bordes/">
-          <img loading="lazy" class="tarjeta-imagen"
-            src="https://cdn.conahcyt.mx/sisdai/recursos/imagenes/inicio/auxiliares.png" alt="" />
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/auxiliares.png`"
+            alt=""
+          />
           <div class="tarjeta-cuerpo">
             <h2 class="h4">Auxiliares</h2>
             <p>
@@ -117,5 +148,181 @@
         </a>
       </div>
     </div>
+
+    <div class="ancho-lectura p-t-10">
+      <h2 class="texto-centrado">Otras bibliotecas Sisdai</h2>
+    </div>
+
+    <div class="flex">
+
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-componentes.png`"
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">sisdai-componentes</p>
+            <p>
+              Biblioteca de componentes reutilizables alineada al Sistema de Diseño y Accesibilidad para la Investigación (Sisdai).
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai-componentes.conahcyt.mx/"
+              aria-label="Ir a documentación de sisdai-componentes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a documentación
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+            <a 
+              class="boton boton-secundario boton-chico"
+              href="https://github.com/CentroGeo/sisdai-componentes"
+              aria-label="Ir a repositorio de sisdai-componentes"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a repositorio
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-graficas.png`"
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">sisdai-graficas</p>
+            <p>
+              Biblioteca de componentes de código abierto para la construcción de visualizaciones de datos.
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai-graficas.conahcyt.mx/"
+              aria-label="Ir a documentación de sisdai-graficas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a documentación
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+            <a 
+              class="boton boton-secundario boton-chico"
+              href="https://github.com/CentroGeo/sisdai-graficas"
+              aria-label="Ir a repositorio de sisdai-graficas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a repositorio
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-mapas.png`"
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">sisdai-mapas</p>
+            <p>
+              Biblioteca de componentes de código abierto para la construcción de mapas interactivos.
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai-mapas.conahcyt.mx/"
+              aria-label="Ir a documentación de sisdai-mapas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a documentación
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+            <a 
+              class="boton boton-secundario boton-chico"
+              href="https://github.com/CentroGeo/sisdai-mapas"
+              aria-label="Ir a repositorio de sisdai-mapas"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a repositorio
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="columna-8 columna-4-esc">
+        <div class="tarjeta">
+          <img 
+            loading="lazy" 
+            class="tarjeta-imagen"
+            :src="`${cdn}inicio/tarjeta-sisdai-portal.png`"
+            alt=""
+          />
+          <div class="tarjeta-cuerpo">
+            <p class="h6">Portal Sisdai</p>
+            <p>
+              Fundamentos, elementos, componentes, visualizaciones de datos y plantillas de diseño.
+            </p>
+          </div>
+          <div class="tarjeta-pie flex">
+            <a 
+              class="boton boton-primario boton-chico"
+              href="https://sisdai.conahcyt.mx/"
+              aria-label="Ir al portal de Sisdai"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Ir a Sisdai
+              <span
+                class="pictograma-enlace-externo"
+                aria-hidden="true"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 </template>

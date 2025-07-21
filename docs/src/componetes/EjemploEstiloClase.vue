@@ -12,7 +12,16 @@
 <template>
   <div class="ej-estilo-clase">
     <div class="fondo-color-informacion" :class="clases">
-      <pre class="texto-tamanio-1 m-l--5">{{ codigo }}</pre>
+      <pre class="texto-tamanio-1">{{ codigo }}</pre>
     </div>
   </div>
 </template>
+
+<style lang="scss">
+.ej-estilo-clase {
+  .fondo-color-informacion pre {
+    max-width: 100%;
+    overflow: auto;
+  }
+}
+</style>

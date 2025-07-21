@@ -2,6 +2,7 @@
 import { ref } from 'vue'
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
 const estaAbierto = ref(true)
+const colapsableAbierto = ref(true)
 </script>
 <template>
   <div>
@@ -37,18 +38,29 @@ const estaAbierto = ref(true)
                   Enlace local ejemplo uno
                 </a>
               </li>
-              <li class="colapsable abierto">
-                <button class="colapsable-boton">
+              <li class="colapsable" :class="{abierto: colapsableAbierto}">
+                <button 
+                  class="colapsable-boton"
+                  :aria-expanded="colapsableAbierto"
+                  aria-controls="colapsableejemplo" 
+                  @click="colapsableAbierto = !colapsableAbierto"
+                  >
                   Nombre de sección colapsable
                   <span aria-hidden="true" class="pictograma-angulo-derecho"></span>
                 </button>
-                <ul>
-                  <li>
-                    <a href="#">
-                      Enlace local ejemplo colapsable abierto
-                    </a>
-                  </li>
-                </ul>
+                <div 
+                  class="colapsable-contenedor" 
+                  id="colapsableejemplo" 
+                  :aria-hidden="!colapsableAbierto"
+                >
+                  <ul>
+                    <li>
+                      <a href="#">
+                        Enlace local ejemplo colapsable abierto
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
                 <a href="#">
@@ -77,13 +89,13 @@ const estaAbierto = ref(true)
 
             <h1>Menú lateral <span class="etiqueta">preliminar</span></h1>
             <p>
-              La biblioteca <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+              La biblioteca <a href="https://github.com/CentroGeo/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
               proporciona una serie de componentes reutilizables diseñados para mejorar la usabilidad y accesibilidad de los sitios web. Cada componente 
               está diseñado para cumplir con funciones específicas y se integra fácilmente en cualquier proyecto web. A continuación, se describe 
               el componente "Menú lateral" y sus características particulares.
             </p> 
             <p>
-              Cada componente en <a href="https://codigo.conahcyt.mx/sisdai/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
+              Cada componente en <a href="https://github.com/CentroGeo/sisdai-componentes" target="_blank" rel="noopener noreferrer">sisdai-componentes</a> 
               está diseñado pensando en la accesibilidad y adaptabilidad,  lo cual nos acerca a que las personas usuarias puedan navegar e interactuar 
               con el sitio web de manera efectiva.
             </p>

@@ -1,4 +1,8 @@
-@each $id, $valor in $espaciado {
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../_mixins' as mix;
+
+@each $id, $valor in variables.$espaciado {
   .m-#{$id} {
     margin: $valor;
   }
@@ -89,9 +93,9 @@
   }
 }
 
-@each $dispositivo, $x in $breakpoints {
-  @include mediaquery($dispositivo) {
-    @each $id, $valor in $espaciado {
+@each $dispositivo, $x in variables.$breakpoints {
+  @include mix.mediaquery($dispositivo) {
+    @each $id, $valor in variables.$espaciado {
       .m-#{$id}-#{$dispositivo} {
         margin: $valor;
       }

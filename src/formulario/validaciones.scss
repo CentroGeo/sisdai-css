@@ -1,3 +1,6 @@
+@use 'sass:map';
+@use '../_variables' as variables;
+
 input, 
 textarea, 
 select {
@@ -18,4 +21,66 @@ select {
   &.ayuda-confirmacion {
     color: var(--texto-confirmacion);
   }
+}
+
+// contenedores
+fieldset + .formulario-ayuda {
+  margin-top: calc((map.get(variables.$espaciado, '2') + map.get(variables.$espaciado, 'minimo')) * -1);
+}
+
+fieldset:invalid + .formulario-ayuda {
+  color: var(--texto-error);
+}
+
+fieldset:has([type='checkbox']:required):invalid + .formulario-ayuda::before {
+  content: 'Una o mas casillas necesitan estar verificadas. ';
+}
+
+fieldset:has([type='radio']:required):invalid + .formulario-ayuda::before {
+  content: 'Un botón de radio necesita estar seleccionado. ';
+}
+
+// selectores y areas de texto
+textarea:invalid,
+select:invalid {
+  border-color: var(--borde-error);
+}
+
+textarea:invalid + p.formulario-ayuda,
+select:invalid + p.formulario-ayuda {
+  color: var(--texto-error);
+}
+
+textarea:required:invalid + p.formulario-ayuda::before,
+select:required:invalid + p.formulario-ayuda::before {
+  content: 'Este campo no puede quedar vacío. ';
+}
+
+// inputs por tipo
+input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']):invalid {
+  border-color: var(--borde-error);
+}
+
+input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']):invalid + p.formulario-ayuda {
+  color: var(--texto-error);
+}
+
+input:not([type='checkbox'], [type='radio'], [type='range'], [type='button'], [type='submit'], [type='reset']):required:invalid + p.formulario-ayuda::before {
+  content: 'Este campo no puede quedar vacío. ';
+}
+
+input:is([type='checkbox'], [type='radio']):invalid + label {
+  outline: 1px solid var(--borde-error);
+}
+
+input:is([type='checkbox'], [type='radio']):invalid + label::before {
+  border: 1px solid var(--borde-error);
+}
+
+input:is([type='checkbox'], [type='radio']):invalid + label + .formulario-ayuda {
+  color: var(--texto-error);
+}
+
+input:is([type='checkbox']):required:invalid + label + p.formulario-ayuda::before {
+  content: 'Esta casilla necesita estar verificada. ';
 }

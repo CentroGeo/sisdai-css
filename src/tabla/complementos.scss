@@ -1,7 +1,12 @@
+@use 'sass:map';
+@use '../_variables' as variables;
+@use '../tipografia/titulo';
+
 .titulo-tabla {
   @extend %titulo-elemento;
 
-  margin-bottom: 0;
+  margin: map.get(variables.$espaciado, '2') 0 0;
+  text-align: left;
 }
 
 .contenedor-tabla {
