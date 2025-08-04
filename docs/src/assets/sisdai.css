@@ -846,8 +846,8 @@ p {
 
 @font-face {
   font-family: sisdai-pictogramas;
-  src: url("./fonts/sisdai-pictogramas.eot");
-  src: url("./fonts/sisdai-pictogramas.eot?#iefix") format("embedded-opentype"), url("./fonts/sisdai-pictogramas.woff") format("woff"), url("./fonts/sisdai-pictogramas.ttf") format("truetype"), url("./fonts/sisdai-pictogramas.svg#sisdai-pictogramas") format("svg");
+  src: url("https://github.com/CentroGeo/sisdai-css/blob/feature/actualiza-pictogramas/src/pictograma/fonts/sisdai-pictogramas.eot");
+  src: url("https://github.com/CentroGeo/sisdai-css/blob/feature/actualiza-pictogramas/src/pictograma/fonts/sisdai-pictogramas.eot?#iefix") format("embedded-opentype"), url("https://github.com/CentroGeo/sisdai-css/blob/feature/actualiza-pictogramas/src/pictograma/fonts/sisdai-pictogramas.woff") format("woff"), url("https://github.com/CentroGeo/sisdai-css/blob/feature/actualiza-pictogramas/src/pictograma/fonts/sisdai-pictogramas.ttf") format("truetype"), url("https://github.com/CentroGeo/sisdai-css/blob/feature/actualiza-pictogramas/src/pictograma/fonts/sisdai-pictogramas.svg#sisdai-pictogramas") format("svg");
   font-weight: normal;
   font-style: normal;
 }
