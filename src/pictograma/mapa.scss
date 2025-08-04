@@ -166,6 +166,10 @@
   content: '\51';
 }
 
+.pictograma-flecha-abajo::before {
+  content: '\52';
+}
+
 .pictograma-flecha-abajo-derecha::before {
   content: '\53';
 }
@@ -298,6 +302,10 @@
   content: '\3c';
 }
 
+.pictograma-voto-no::before {
+  content: '\3d';
+}
+
 .pictograma-voto-si::before {
   content: '\3e';
 }
@@ -402,20 +410,12 @@
   content: '\e008';
 }
 
-.pictograma-voto-no::before {
-  content: '\3d';
-}
-
 .pictograma-accesibilidad-1::before {
   content: '\e00a';
 }
 
 .pictograma-enlace-externo-1::before {
   content: '\e00b';
-}
-
-.pictograma-flecha-abajo::before {
-  content: '\52';
 }
 
 .pictograma-norte::before {

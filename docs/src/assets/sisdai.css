@@ -1038,6 +1038,10 @@ p {
   content: "Q";
 }
 
+.pictograma-flecha-abajo::before {
+  content: "R";
+}
+
 .pictograma-flecha-abajo-derecha::before {
   content: "S";
 }
@@ -1170,6 +1174,10 @@ p {
   content: "<";
 }
 
+.pictograma-voto-no::before {
+  content: "=";
+}
+
 .pictograma-voto-si::before {
   content: ">";
 }
@@ -1274,20 +1282,12 @@ p {
   content: "\e008";
 }
 
-.pictograma-voto-no::before {
-  content: "=";
-}
-
 .pictograma-accesibilidad-1::before {
   content: "\e00a";
 }
 
 .pictograma-enlace-externo-1::before {
   content: "\e00b";
-}
-
-.pictograma-flecha-abajo::before {
-  content: "R";
 }
 
 .pictograma-norte::before {

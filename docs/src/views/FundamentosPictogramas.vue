@@ -29,7 +29,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     </div>
   
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Listado de clases</h2>      
+      <h2 class="m-t-10">Listado de clases</h2>
     </div>
     <div class="columns-3 columns-1-mov">
       <div>
