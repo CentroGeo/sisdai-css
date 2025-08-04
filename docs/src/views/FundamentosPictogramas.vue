@@ -30,6 +30,8 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
   
     <div class="contenedor ancho-lectura">
       <h2 class="m-t-10">Listado de clases</h2>
+      <span class="pictograma-localizacion"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-localizacion</span>
     </div>
     <div class="columns-3 columns-1-mov">
       <div>

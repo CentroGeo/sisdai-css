@@ -1,10 +1,10 @@
 @font-face {
   font-family: sisdai-pictogramas;
-  src: url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.eot');
-  src: url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas?#iefix') format('embedded-opentype'),
-    url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.woff') format('woff'),
-    url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.ttf') format('truetype'),
-    url('https://cdn.conahcyt.mx/sisdai/recursos/fuentes/pictogramas/sisdai-pictogramas.svg#sisdai-pictogramas') format('svg');
+  src:url('./fonts/sisdai-pictogramas.eot');
+  src:url('./fonts/sisdai-pictogramas.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/sisdai-pictogramas.woff') format('woff'),
+    url('./fonts/sisdai-pictogramas.ttf') format('truetype'),
+    url('./fonts/sisdai-pictogramas.svg#sisdai-pictogramas') format('svg');
   font-weight: normal;
   font-style: normal;
 }
