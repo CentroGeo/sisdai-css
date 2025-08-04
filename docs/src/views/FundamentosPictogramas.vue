@@ -29,9 +29,7 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
     </div>
   
     <div class="contenedor ancho-lectura">
-      <h2 class="m-t-10">Listado de clases</h2>
-      <span class="pictograma-localizacion"></span>
-        <span class="pictograma-clase-ejemplo">pictograma-localizacion</span>
+      <h2 class="m-t-10">Listado de clases</h2>      
     </div>
     <div class="columns-3 columns-1-mov">
       <div>
@@ -107,6 +105,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-bajar-capa</span>
       </div>
       <div>
+        <span class="pictograma-bot"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-bot</span>
+      </div>
+      <div>
         <span class="pictograma-buscar"></span>
         <span class="pictograma-clase-ejemplo">pictograma-buscar</span>
       </div>
@@ -145,6 +147,14 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
       <div>
         <span class="pictograma-cerrar"></span>
         <span class="pictograma-clase-ejemplo">pictograma-cerrar</span>
+      </div>
+      <div>        
+        <span class="pictograma-cerrar-sesion"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-cerrar-sesion</span>
+      </div>
+      <div>        
+        <span class="pictograma-chat"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-chat</span>
       </div>
       <div>
         <span class="pictograma-colaborar"></span>
@@ -235,6 +245,10 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-estrella</span>
       </div>
       <div>
+        <span class="pictograma-explorar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-explorar</span>
+      </div>
+      <div>
         <span class="pictograma-filtro"></span>
         <span class="pictograma-clase-ejemplo">pictograma-filtro</span>
       </div>
@@ -319,12 +333,24 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-subir-capa</span>
       </div>
       <div>
+        <span class="pictograma-ia"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-ia</span>
+      </div>
+      <div>
         <span class="pictograma-informacion"></span>
         <span class="pictograma-clase-ejemplo">pictograma-informacion</span>
       </div>
       <div>
         <span class="pictograma-inicio"></span>
         <span class="pictograma-clase-ejemplo">pictograma-inicio</span>
+      </div>
+      <div>
+        <span class="pictograma-limpiar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-limpiar</span>
+      </div>
+      <div>
+        <span class="pictograma-localizacion"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-localizacion</span>
       </div>
       <div>
         <span class="pictograma-mapa-centro"></span>
@@ -395,8 +421,24 @@ import EjemploCodigo from '../componetes/EjemploCodigo.vue'
         <span class="pictograma-clase-ejemplo">pictograma-persona</span>
       </div>
       <div>
+        <span class="pictograma-previsualizar"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-previsualizar</span>
+      </div>
+      <div>
+        <span class="pictograma-privado"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-privado</span>
+      </div>
+      <div>
+        <span class="pictograma-proyectos"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-proyectos</span>
+      </div>
+      <div>
         <span class="pictograma-regresar-10"></span>
         <span class="pictograma-clase-ejemplo">pictograma-regresar-10</span>
+      </div>
+      <div>
+        <span class="pictograma-reporte"></span>
+        <span class="pictograma-clase-ejemplo">pictograma-reporte</span>
       </div>
       <div>
         <span class="pictograma-reloj"></span>

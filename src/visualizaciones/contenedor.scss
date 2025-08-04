@@ -145,8 +145,7 @@
       max-height: var(--contenedor-vis-alto-maximo);
       grid-template-rows: 0 1fr 0;
       min-height: calc(
-        var(--contenedor-vis-alto-minimo-vis) +
-          var(--contenedor-vis-alto-atribuciones) + 24px
+        var(--contenedor-vis-alto-minimo-vis) + var(--contenedor-vis-alto-atribuciones) + 24px
       );
 
       .panel-izquierda-vis,
