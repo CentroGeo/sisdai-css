@@ -346,3 +346,64 @@ El **build** actualiza los archivos de la carpeta de distribución `dist` que se
 
 ----------------
 
+### ¿Cómo agregar un nuevo pictograma?
+
+Antes de mapear la tipografía Sisdai-Pictogramas `.pictograma-`, es importante que el equipe de diseño valide los archivos SVG fuente. 
+
+#### Mapear los archivos SVG fuente
+
+Para mapear e importar la tipografía se recomienda utilizar [fontastic.me](https://app.fontastic.me/#) con la cuenta de [Sisdai](https://sisdai.conahcyt.mx).
+
+#### Agregar los archivos de tipografía
+
+Al descargar la nueva tipografía se deben colocar los archivos EOT, SVG, TTF y WOFF en la siguiente ruta `docs/assets/fonts` y después configurar los módulos `fuente.scss` y `mapa.scss`.
+
+#### Configurar la fuente de la tipografía
+
+Coloca la ruta de los archivos de tipografía en el módulo de `fuente.scss`. La url también puede ser de un servicio remoto.
+
+```scss
+/* src/pictograma/fuente.scss */
+
+@font-face {
+  font-family: sisdai-pictogramas;
+  src:url('fonts/sisdai-pictogramas.eot');
+  src:url('fonts/sisdai-pictogramas.eot?#iefix') format('embedded-opentype'),
+    url('fonts/sisdai-pictogramas.woff') format('woff'),
+    url('fonts/sisdai-pictogramas.ttf') format('truetype'),
+    url('fonts/sisdai-pictogramas.svg#sisdai-pictogramas') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+```
+
+#### Configurar el mapeo de la tipografía
+
+Copia y pega tal cual la lista del mapeo que viene en el archivo `style.css` importado de fontastic, asegurándote que el valor de la clave en la propiedad `content` no se repita.
+
+```scss
+/* src/pictograma/mapeo.scss */
+
+.pictograma-a:before {
+  content: "\1a";
+}
+.pictograma-b:before {
+  content: "\1b";
+}
+.pictograma-c:before {
+  content: "\1c";
+}
+...
+
+```
+
+#### Agregar el nuevo pictograma a la documentación
+
+En la vista de Fundamentos/Pictogramas de la `docs/` se deben agregar los ejemplos de los nuevos pictogramas. Así, se asegura de que funcionan correctamente.
+
+#### Compilar para desplegar
+
+Finalmente, se debe compilar para desplegar la documentación en desarrollo y crear el archivo de estilos comprimido para producción.
+
+----------------
