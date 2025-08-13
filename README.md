@@ -356,7 +356,7 @@ Para mapear e importar la tipografía se recomienda utilizar [fontastic.me](http
 
 #### Agregar los archivos de tipografía
 
-Al descargar la nueva tipografía se deben colocar los archivos EOT, SVG, TTF y WOFF en la siguiente ruta `src/fonts` y después configurar los módulos `fuente.scss` y `mapa.scss`.
+Al descargar la nueva tipografía se deben colocar los archivos EOT, SVG, TTF y WOFF en la siguiente ruta `src/pictograma/fonts` y después configurar los módulos `fuente.scss` y `mapa.scss`.
 
 #### Configurar la fuente de la tipografía
 
