@@ -356,7 +356,7 @@ Para mapear e importar la tipografía se recomienda utilizar [fontastic.me](http
 
 #### Agregar los archivos de tipografía
 
-Al descargar la nueva tipografía se deben colocar los archivos EOT, SVG, TTF y WOFF en la siguiente ruta `docs/assets/fonts` y después configurar los módulos `fuente.scss` y `mapa.scss`.
+Al descargar la nueva tipografía se deben colocar los archivos EOT, SVG, TTF y WOFF en la siguiente ruta `src/fonts` y después configurar los módulos `fuente.scss` y `mapa.scss`.
 
 #### Configurar la fuente de la tipografía
 
@@ -398,12 +398,13 @@ Copia y pega tal cual la lista del mapeo que viene en el archivo `style.css` imp
 
 ```
 
+#### Compilar para desplegar
+
+Se debe compilar para desplegar la documentación en desarrollo con el comando `npm run docs:install` y el comando `npm run build` crear el archivo de estilos comprimido para producción.
+
+
 #### Agregar el nuevo pictograma a la documentación
 
 En la vista de Fundamentos/Pictogramas de la `docs/` se deben agregar los ejemplos de los nuevos pictogramas. Así, se asegura de que funcionan correctamente.
-
-#### Compilar para desplegar
-
-Finalmente, se debe compilar para desplegar la documentación en desarrollo y crear el archivo de estilos comprimido para producción.
 
 ----------------
