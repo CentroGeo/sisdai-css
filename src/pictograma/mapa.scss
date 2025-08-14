@@ -311,7 +311,7 @@
 }
 
 .pictograma-accesibilidad::before {
-  content: "\e00a";
+  content: '\3f';
 }
 
 .pictograma-restablecer::before {
@@ -323,7 +323,7 @@
 }
 
 .pictograma-enlace-externo::before {
-  content: '\e00b';
+  content: '\5d';
 }
 
 .pictograma-metadatos::before {
@@ -410,26 +410,78 @@
   content: '\e008';
 }
 
-.pictograma-volumen::before {
-  content: '\e009';
+.pictograma-accesibilidad-1::before {
+  content: '\e00a';
 }
 
-.pictograma-alerta::before {
-  content: '\e010';
+.pictograma-enlace-externo-1::before {
+  content: '\e00b';
 }
 
-.pictograma-capas::before {
-  content: '\e00f';
-}
-
-.pictograma-escribir::before {
-  content: '\e00e';
+.pictograma-norte::before {
+  content: '\e00c';
 }
 
 .pictograma-filtro::before {
   content: '\e00d';
 }
 
-.pictograma-norte::before {
-  content: '\e00c';
+.pictograma-escribir::before {
+  content: '\e00e';
+}
+
+.pictograma-capas::before {
+  content: '\e00f';
+}
+
+.pictograma-alerta::before {
+  content: '\e010';
+}
+
+.pictograma-volumen::before {
+  content: '\e009';
+}
+
+.pictograma-bot::before {
+  content: '\e011';
+}
+
+.pictograma-cerrar-sesion::before {
+  content: '\e012';
+}
+
+.pictograma-chat::before {
+  content: '\e013';
+}
+
+.pictograma-explorar::before {
+  content: '\e014';
+}
+
+.pictograma-ia::before {
+  content: '\e015';
+}
+
+.pictograma-limpiar::before {
+  content: '\e016';
+}
+
+.pictograma-previsualizar::before {
+  content: '\e017';
+}
+
+.pictograma-privado::before {
+  content: '\e018';
+}
+
+.pictograma-proyectos::before {
+  content: '\e019';
+}
+
+.pictograma-reporte::before {
+  content: '\e01a';
+}
+
+.pictograma-localizacion::before {
+  content: '\e01b';
 }
