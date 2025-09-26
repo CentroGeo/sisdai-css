@@ -1,16 +1,16 @@
-@use 'sass:map';
-@use '../_variables' as variables;
-@use '../tipografia/titulo';
+@use "sass:map";
+@use "../_variables" as variables;
+@use "../tipografia/titulo";
 
 footer,
 .piepagina-gobmx,
 .piepagina-conahcyt {
   font-size: 0.875rem;
-  padding-top: map.get(variables.$espaciado, '4');
-  padding-bottom: map.get(variables.$espaciado, '4');
+  padding-top: map.get(variables.$espaciado, "4");
+  padding-bottom: map.get(variables.$espaciado, "4");
 
   p {
-    margin: map.get(variables.$espaciado, '2') 0;
+    margin: map.get(variables.$espaciado, "2") 0;
   }
 
   a {
@@ -22,8 +22,8 @@ footer,
   li {
     margin: 0;
   }
-  
-  ul, 
+
+  ul,
   ol {
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@ footer,
   display: flex;
   font-size: 1.5rem;
   padding: 0;
-  gap: map.get(variables.$espaciado, '3');
+  gap: map.get(variables.$espaciado, "3");
 
   li {
     margin: 0;
@@ -51,26 +51,28 @@ footer,
 
 .piepagina-gobmx {
   background-color: var(--color-mx-2);
-  background-image: url('https://cdn.conahcyt.mx/sisdai-archivos/gobmxpleca-2024.svg');
   background-position: 0 calc(100% + 34px);
   background-repeat: repeat-x;
   background-size: auto 80px;
   color: var(--color-mx-0);
-  padding-bottom: map.get(variables.$espaciado, '10');
-  
+  padding-bottom: map.get(variables.$espaciado, "10");
+
   .hipervinculo-gobmx {
     color: var(--color-mx-0);
-    
+
     &:visited {
       color: var(--color-mx-0);
     }
-    
+
     &:hover,
     &:focus,
     &:focus-visible {
       color: var(--color-mx-0);
       text-decoration: underline;
     }
+  }
+  .hipervinculo-subrayado {
+    text-decoration: underline;
   }
 }
 
@@ -84,7 +86,7 @@ footer,
     &:visited {
       color: var(--color-conahcyt-0);
     }
-    
+
     &:hover,
     &:focus,
     &:focus-visible {

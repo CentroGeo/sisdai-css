@@ -8487,7 +8487,6 @@ footer ol,
 
 .piepagina-gobmx {
   background-color: var(--color-mx-2);
-  background-image: url("https://cdn.conahcyt.mx/sisdai-archivos/gobmxpleca-2024.svg");
   background-position: 0 calc(100% + 34px);
   background-repeat: repeat-x;
   background-size: auto 80px;
@@ -8502,6 +8501,9 @@ footer ol,
 }
 .piepagina-gobmx .hipervinculo-gobmx:hover, .piepagina-gobmx .hipervinculo-gobmx:focus, .piepagina-gobmx .hipervinculo-gobmx:focus-visible {
   color: var(--color-mx-0);
+  text-decoration: underline;
+}
+.piepagina-gobmx .hipervinculo-subrayado {
   text-decoration: underline;
 }
 
