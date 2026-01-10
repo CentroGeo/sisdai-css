@@ -9,7 +9,11 @@
 
   .pictograma,
   [class^='pictograma-'],
-  [class*=' pictograma-'] {
+  [class*=' pictograma-'],
+  [class^='pic-sisdai-'],
+  [class*=' pic-sisdai-'],
+  [class^='pic-delito-'],
+  [class*=' pic-delito-'] {
     font-size: 1.5rem;
     padding: 0;
   }
@@ -19,7 +23,11 @@
 
     .pictograma,
     [class^='pictograma-'],
-    [class*=' pictograma-'] {
+    [class*=' pictograma-'],
+    [class^='pic-sisdai-'],
+    [class*=' pic-sisdai-'],
+    [class^='pic-delito-'],
+    [class*=' pic-delito-'] {
       font-size: 1rem;
     }
   }
@@ -29,7 +37,11 @@
 
     .pictograma,
     [class^='pictograma-'],
-    [class*=' pictograma-'] {
+    [class*=' pictograma-'],
+    [class^='pic-sisdai-'],
+    [class*=' pic-sisdai-'],
+    [class^='pic-delito-'],
+    [class*=' pic-delito-'] {
       font-size: 1.5rem;
     }
   }

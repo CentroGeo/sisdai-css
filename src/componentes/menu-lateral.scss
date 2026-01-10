@@ -77,7 +77,11 @@
 
   .pictograma,
   [class^='pictograma-'],
-  [class*=' pictograma-'] {
+  [class*=' pictograma-'],
+  [class^='pic-sisdai-'],
+  [class*=' pic-sisdai-'],
+  [class^='pic-delito-'],
+  [class*=' pic-delito-'] {
     align-self: flex-start;
     font-size: 1.35em;
     padding: map.get(variables.$espaciado, '3') map.get(variables.$espaciado, '1');

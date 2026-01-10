@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+[class^='pic-sisdai-'],
+[class*=' pic-sisdai-'] {
+  vertical-align: middle;
+  display: inline-flex;
+  padding: 0.25em;
+}
+
 [class^='pic-sisdai-']::before,
 [class*=' pic-sisdai-']::before {
   font-family: ff-sisdai;

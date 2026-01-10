@@ -876,6 +876,13 @@ p {
   font-weight: normal;
   font-style: normal;
 }
+[class^=pic-sisdai-],
+[class*=" pic-sisdai-"] {
+  vertical-align: middle;
+  display: inline-flex;
+  padding: 0.25em;
+}
+
 [class^=pic-sisdai-]::before,
 [class*=" pic-sisdai-"]::before {
   font-family: ff-sisdai;
@@ -1065,6 +1072,8 @@ p {
 [class^=pic-delito-],
 [class*=" pic-delito-"] {
   vertical-align: middle;
+  display: inline-flex;
+  padding: 0.25em;
 }
 
 [class^=pic-delito-]::before,
@@ -5723,9 +5732,17 @@ input[type=reset]:focus,
 button .pictograma,
 button [class^=pictograma-],
 button [class*=" pictograma-"],
+button [class^=pic-sisdai-],
+button [class*=" pic-sisdai-"],
+button [class^=pic-delito-],
+button [class*=" pic-delito-"],
 .boton .pictograma,
 .boton [class^=pictograma-],
-.boton [class*=" pictograma-"] {
+.boton [class*=" pictograma-"],
+.boton [class^=pic-sisdai-],
+.boton [class*=" pic-sisdai-"],
+.boton [class^=pic-delito-],
+.boton [class*=" pic-delito-"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -5887,7 +5904,39 @@ a [class^=pictograma-],
 .a11y-simplificada input[type=submit] [class*=" pictograma-"],
 .a11y-simplificada input[type=reset] [class*=" pictograma-"],
 a [class*=" pictograma-"],
-.hipervinculo [class*=" pictograma-"] {
+.hipervinculo [class*=" pictograma-"],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class^=pic-sisdai-],
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class^=pic-sisdai-],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class^=pic-sisdai-],
+.a11y-simplificada input[type=button] [class^=pic-sisdai-],
+.a11y-simplificada input[type=submit] [class^=pic-sisdai-],
+.a11y-simplificada input[type=reset] [class^=pic-sisdai-],
+a [class^=pic-sisdai-],
+.hipervinculo [class^=pic-sisdai-],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class*=" pic-sisdai-"],
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class*=" pic-sisdai-"],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class*=" pic-sisdai-"],
+.a11y-simplificada input[type=button] [class*=" pic-sisdai-"],
+.a11y-simplificada input[type=submit] [class*=" pic-sisdai-"],
+.a11y-simplificada input[type=reset] [class*=" pic-sisdai-"],
+a [class*=" pic-sisdai-"],
+.hipervinculo [class*=" pic-sisdai-"],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class^=pic-delito-],
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class^=pic-delito-],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class^=pic-delito-],
+.a11y-simplificada input[type=button] [class^=pic-delito-],
+.a11y-simplificada input[type=submit] [class^=pic-delito-],
+.a11y-simplificada input[type=reset] [class^=pic-delito-],
+a [class^=pic-delito-],
+.hipervinculo [class^=pic-delito-],
+.a11y-simplificada .a11y-simplificada-formato-hipervinculo [class*=" pic-delito-"],
+.a11y-simplificada .boton:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class*=" pic-delito-"],
+.a11y-simplificada button:not(.nav-boton, .nav-boton-menu, .nav-boton-submenu, .menu-flotante-boton, .colapsable-boton, .menu-lateral-boton, .boton-pictograma, .boton-alternar, .globo-informacion-cerrar) [class*=" pic-delito-"],
+.a11y-simplificada input[type=button] [class*=" pic-delito-"],
+.a11y-simplificada input[type=submit] [class*=" pic-delito-"],
+.a11y-simplificada input[type=reset] [class*=" pic-delito-"],
+a [class*=" pic-delito-"],
+.hipervinculo [class*=" pic-delito-"] {
   display: inline;
   vertical-align: sub;
   padding: 0;
@@ -6790,7 +6839,11 @@ details[open] summary {
 }
 .menu-flotante .menu-flotante-boton .pictograma,
 .menu-flotante .menu-flotante-boton [class^=pictograma-],
-.menu-flotante .menu-flotante-boton [class*=" pictograma-"] {
+.menu-flotante .menu-flotante-boton [class*=" pictograma-"],
+.menu-flotante .menu-flotante-boton [class^=pic-sisdai-],
+.menu-flotante .menu-flotante-boton [class*=" pic-sisdai-"],
+.menu-flotante .menu-flotante-boton [class^=pic-delito-],
+.menu-flotante .menu-flotante-boton [class*=" pic-delito-"] {
   font-size: 1.5rem;
   display: flex;
   align-items: center;
@@ -7091,7 +7144,11 @@ details[open] summary {
 }
 .tarjeta-hipervinculo-externo .tarjeta-cuerpo .pictograma,
 .tarjeta-hipervinculo-externo .tarjeta-cuerpo [class^=pictograma-],
-.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class*=" pictograma-"] {
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class*=" pictograma-"],
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class^=pic-sisdai-],
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class*=" pic-sisdai-"],
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class^=pic-delito-],
+.tarjeta-hipervinculo-externo .tarjeta-cuerpo [class*=" pic-delito-"] {
   vertical-align: middle;
 }
 .tarjeta-hipervinculo-externo:hover img.tarjeta-imagen {
@@ -7158,7 +7215,11 @@ details[open] summary {
 }
 .lista-pictograma .lista-pictograma-imagen .pictograma,
 .lista-pictograma .lista-pictograma-imagen [class^=pictograma-],
-.lista-pictograma .lista-pictograma-imagen [class*=" pictograma-"] {
+.lista-pictograma .lista-pictograma-imagen [class*=" pictograma-"],
+.lista-pictograma .lista-pictograma-imagen [class^=pic-sisdai-],
+.lista-pictograma .lista-pictograma-imagen [class*=" pic-sisdai-"],
+.lista-pictograma .lista-pictograma-imagen [class^=pic-delito-],
+.lista-pictograma .lista-pictograma-imagen [class*=" pic-delito-"] {
   padding: 0;
 }
 
@@ -7258,7 +7319,11 @@ details[open] summary {
 }
 .boton-pictograma .pictograma,
 .boton-pictograma [class^=pictograma-],
-.boton-pictograma [class*=" pictograma-"] {
+.boton-pictograma [class*=" pictograma-"],
+.boton-pictograma [class^=pic-sisdai-],
+.boton-pictograma [class*=" pic-sisdai-"],
+.boton-pictograma [class^=pic-delito-],
+.boton-pictograma [class*=" pic-delito-"] {
   font-size: 1.5rem;
   padding: 0;
 }
@@ -7267,7 +7332,11 @@ details[open] summary {
 }
 .boton-pictograma.boton-chico .pictograma,
 .boton-pictograma.boton-chico [class^=pictograma-],
-.boton-pictograma.boton-chico [class*=" pictograma-"] {
+.boton-pictograma.boton-chico [class*=" pictograma-"],
+.boton-pictograma.boton-chico [class^=pic-sisdai-],
+.boton-pictograma.boton-chico [class*=" pic-sisdai-"],
+.boton-pictograma.boton-chico [class^=pic-delito-],
+.boton-pictograma.boton-chico [class*=" pic-delito-"] {
   font-size: 1rem;
 }
 .boton-pictograma.boton-grande {
@@ -7275,7 +7344,11 @@ details[open] summary {
 }
 .boton-pictograma.boton-grande .pictograma,
 .boton-pictograma.boton-grande [class^=pictograma-],
-.boton-pictograma.boton-grande [class*=" pictograma-"] {
+.boton-pictograma.boton-grande [class*=" pictograma-"],
+.boton-pictograma.boton-grande [class^=pic-sisdai-],
+.boton-pictograma.boton-grande [class*=" pic-sisdai-"],
+.boton-pictograma.boton-grande [class^=pic-delito-],
+.boton-pictograma.boton-grande [class*=" pic-delito-"] {
   font-size: 1.5rem;
 }
 
@@ -7626,7 +7699,11 @@ details[open] summary {
 }
 .globo-informacion .globo-informacion-cerrar .pictograma,
 .globo-informacion .globo-informacion-cerrar [class^=pictograma-],
-.globo-informacion .globo-informacion-cerrar [class*=" pictograma-"] {
+.globo-informacion .globo-informacion-cerrar [class*=" pictograma-"],
+.globo-informacion .globo-informacion-cerrar [class^=pic-sisdai-],
+.globo-informacion .globo-informacion-cerrar [class*=" pic-sisdai-"],
+.globo-informacion .globo-informacion-cerrar [class^=pic-delito-],
+.globo-informacion .globo-informacion-cerrar [class*=" pic-delito-"] {
   justify-content: center;
   font-size: 1.5rem;
   padding: 0;
@@ -7813,7 +7890,11 @@ dialog.modal .modal-contenedor .modal-cerrar {
 }
 .menu-lateral-boton .pictograma,
 .menu-lateral-boton [class^=pictograma-],
-.menu-lateral-boton [class*=" pictograma-"] {
+.menu-lateral-boton [class*=" pictograma-"],
+.menu-lateral-boton [class^=pic-sisdai-],
+.menu-lateral-boton [class*=" pic-sisdai-"],
+.menu-lateral-boton [class^=pic-delito-],
+.menu-lateral-boton [class*=" pic-delito-"] {
   align-self: flex-start;
   font-size: 1.35em;
   padding: 24px 8px;
@@ -8078,13 +8159,21 @@ dialog.modal .modal-contenedor .modal-cerrar {
 }
 .colapsable .colapsable-boton .pictograma,
 .colapsable .colapsable-boton [class^=pictograma-],
-.colapsable .colapsable-boton [class*=" pictograma-"] {
+.colapsable .colapsable-boton [class*=" pictograma-"],
+.colapsable .colapsable-boton [class^=pic-sisdai-],
+.colapsable .colapsable-boton [class*=" pic-sisdai-"],
+.colapsable .colapsable-boton [class^=pic-delito-],
+.colapsable .colapsable-boton [class*=" pic-delito-"] {
   padding: 0;
   font-size: 1.25rem;
 }
 .colapsable .colapsable-boton .pictograma::before,
 .colapsable .colapsable-boton [class^=pictograma-]::before,
-.colapsable .colapsable-boton [class*=" pictograma-"]::before {
+.colapsable .colapsable-boton [class*=" pictograma-"]::before,
+.colapsable .colapsable-boton [class^=pic-sisdai-]::before,
+.colapsable .colapsable-boton [class*=" pic-sisdai-"]::before,
+.colapsable .colapsable-boton [class^=pic-delito-]::before,
+.colapsable .colapsable-boton [class*=" pic-delito-"]::before {
   transition: transform 0.27s ease;
   transform: translateX(0) rotate(90deg);
   transform-origin: 50% 50%;
@@ -8515,7 +8604,11 @@ dl.informacion-despliegue dd:not(:last-child) {
 }
 .nav-boton .pictograma,
 .nav-boton [class^=pictograma-],
-.nav-boton [class*=" pictograma-"] {
+.nav-boton [class*=" pictograma-"],
+.nav-boton [class^=pic-sisdai-],
+.nav-boton [class*=" pic-sisdai-"],
+.nav-boton [class^=pic-delito-],
+.nav-boton [class*=" pic-delito-"] {
   padding: 0;
 }
 
@@ -9104,7 +9197,7 @@ footer ol,
   border: var(--controlador-vis-figura-borde-grosor) solid var(--controlador-vis-figura-borde-color);
   border-radius: 50%;
 }
-.controlador-vis .figura-variable.pictograma, .controlador-vis .figura-variable[class^=pictograma-], .controlador-vis .figura-variable[class*=" pictograma-"] {
+.controlador-vis .figura-variable.pictograma, .controlador-vis .figura-variable[class^=pictograma-], .controlador-vis .figura-variable[class*=" pictograma-"], .controlador-vis .figura-variable[class^=pic-sisdai-], .controlador-vis .figura-variable[class*=" pic-sisdai-"], .controlador-vis .figura-variable[class^=pic-delito-], .controlador-vis .figura-variable[class*=" pic-delito-"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;

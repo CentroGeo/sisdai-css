@@ -45,7 +45,11 @@ button,
 .boton {
   .pictograma,
   [class^='pictograma-'],
-  [class*=' pictograma-'] {
+  [class*=' pictograma-'],
+  [class^='pic-sisdai-'],
+  [class*=' pic-sisdai-'],
+  [class^='pic-delito-'],
+  [class*=' pic-delito-'] {
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -8,6 +8,8 @@
 [class^='pic-delito-'],
 [class*=' pic-delito-'] {
   vertical-align: middle;
+  display: inline-flex;
+  padding: 0.25em;
 }
 
 [class^='pic-delito-']::before,
