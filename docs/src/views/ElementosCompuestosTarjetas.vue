@@ -249,7 +249,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
     </div>
     <div class="flex flex-contenido-centrado m-y-5">
       <div class="columna-6">
-        <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
           <picture class="tarjeta-imagen"> 
             <source :srcset="`${cdn}documentacion/calamidad-3.jpg`" media="(min-width: 900px)"/>
             <img :src="`${cdn}documentacion/calamidad-2.jpg`" alt="" />
@@ -264,7 +264,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
         </a>
       </div>
       <div class="columna-6">
-        <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        <a class="tarjeta tarjeta-hipervinculo-externo" href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
           <img class="tarjeta-imagen" :src="`${cdn}documentacion/perro-3.jpg`" alt="" />
           <div class="tarjeta-degradado">
             <div class="tarjeta-cuerpo">

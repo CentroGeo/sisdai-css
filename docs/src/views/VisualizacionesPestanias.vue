@@ -188,7 +188,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
           />
         </a>
         <a
-          href="https://sisdai.conahcyt.mx/"
+          href="https://sisdai.org/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -303,7 +303,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
             <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
               <img class="a11y-oscura-filtro-blanco" src="..." alt="Conahcyt" />
             </a>
-            <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+            <a href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
               Sisdai
             </a>
           </div>

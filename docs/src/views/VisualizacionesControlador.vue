@@ -119,7 +119,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
             alt="Conahcyt"
           />
         </a>
-        <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        <a href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
           Sisdai
         </a>
       </div>

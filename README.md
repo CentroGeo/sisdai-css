@@ -1,7 +1,7 @@
 # sisdai-css
 
 El proyecto sisdai-css es una biblioteca de estilos de Sass alineada al Sistema de Diseño y Accesibilidad para la 
-Investigación ([Sisdai](https://sisdai.conahcyt.mx/)). El Sisdai es un proyecto de investigación desarrollado por el 
+Investigación ([Sisdai](https://sisdai.org/)). El Sisdai es un proyecto de investigación desarrollado por el 
 Centro de Investigación en Ciencias de Información Geoespacial, A.C. 
 ([CentroGeo](https://www.centrogeo.org.mx/)) y coordinado por el Consejo Nacional de Humanidades, Ciencias y Tecnologías
 ([Conahcyt](https://conahcyt.mx)) del Gobierno de México.
@@ -228,7 +228,7 @@ el idioma español se respeta la versión original de acuerdo al proyecto
 
 Por el momento sólo quienes sean
 parte de un equipo de investigación del capítulo de un [ENI](https://eni.conahcyt.mx)
-podrán levantar issues en este repositorio. El equipo del [Sisdai](https://sisdai.conahcyt.mx) se encargará de mantenerlo.
+podrán levantar issues en este repositorio. El equipo del [Sisdai](https://sisdai.org) se encargará de mantenerlo.
 
 ___
 
@@ -352,7 +352,7 @@ Antes de mapear la tipografía Sisdai-Pictogramas `.pictograma-`, es importante 
 
 #### Mapear los archivos SVG fuente
 
-Para mapear e importar la tipografía se recomienda utilizar [fontastic.me](https://app.fontastic.me/#) con la cuenta de [Sisdai](https://sisdai.conahcyt.mx).
+Para mapear e importar la tipografía se recomienda utilizar [fontastic.me](https://app.fontastic.me/#) con la cuenta de [Sisdai](https://sisdai.org).
 
 #### Agregar los archivos de tipografía
 

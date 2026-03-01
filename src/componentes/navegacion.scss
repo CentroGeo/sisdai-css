@@ -47,7 +47,7 @@
     padding: map.get(variables.$espaciado, 'minimo') map.get(variables.$contenedores, 'mov', 'margen-interior');
     margin-left: calc(map.get(variables.$contenedores, 'mov', 'margen-interior') * -1);
     margin-right: calc(map.get(variables.$contenedores, 'mov', 'margen-interior') * -1);
-    flex: 1 0 calc(100% - map.get(variables.$contenedores, 'mov', 'margen-interior') * 2);
+    flex: 1 0 calc(100vw - map.get(variables.$contenedores, 'mov', 'margen-interior') * 2);
 
     @include mix.mediaquery('esc') {
       display: none;

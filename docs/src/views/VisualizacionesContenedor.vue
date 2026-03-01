@@ -1,6 +1,5 @@
 <script setup>
 import EjemploCodigo from '../componetes/EjemploCodigo.vue'
-const cdn = import.meta.env.VITE_CDN_ARCHIVOS
 </script>
 <template>
   <div class="contenedor m-y-maximo">
@@ -79,19 +78,11 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
         </div>
       </div>
       <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
-        <a class="logo-conacyt" href="https://conahcyt.mx/" target="_blank" rel="noopener noreferrer">
-          <img
-            class="a11y-oscura-filtro-blanco"
-            :src="`${cdn}institucional/conahcyt-azul.svg`"
-            alt="Conahcyt"
-          />
-        </a>
-        <a href="https://sisdai.conahcyt.mx/" target="_blank" rel="noopener noreferrer">
+        <a href="https://sisdai.org/" target="_blank" rel="noopener noreferrer">
           Sisdai
         </a>
       </div>
     </div>
-
 
       <EjemploCodigo
         :tiene_ejemplo='false'
@@ -117,15 +108,7 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
           <!-- atribuciones -->
           <div class="contenedor-vis-atribuciones borde-t borde-color-secundario">
             <a 
-              class="logo-conacyt" 
-              href="https://conahcyt.mx/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <img class="a11y-oscura-filtro-blanco" src="..." alt="Conahcyt"/>
-            </a>
-            <a 
-              href="https://sisdai.conahcyt.mx/" 
+              href="https://sisdai.org/" 
               target="_blank" 
               rel="noopener noreferrer"
             >
@@ -135,9 +118,5 @@ const cdn = import.meta.env.VITE_CDN_ARCHIVOS
         </div>
         '
       />
-
-    
-
-
   </div>
 </template>

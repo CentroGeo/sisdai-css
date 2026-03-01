@@ -5,7 +5,9 @@
 
 .navegacion .nav-boton-menu {
   @include botoncolor.boton-sincontenedor-primario;
-
+  
+  padding-inline: calc(map.get(variables.$contenedores, 'mov', 'margen-interior') * 1.5);
+  margin-right: calc(map.get(variables.$contenedores, 'mov', 'margen-interior') * -1);
   width: 46px;
   height: 46px;
   justify-content: center;

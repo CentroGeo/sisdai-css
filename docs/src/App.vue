@@ -2,21 +2,20 @@
   import { RouterLink, RouterView } from 'vue-router'
   import { onBeforeMount, onMounted, onUnmounted, ref, watch, computed } from 'vue'
   import pkg from '../../package.json'
-  const cdn = import.meta.env.VITE_CDN_ARCHIVOS
+  import sisdai from '@/assets/img/sisdai.png'
   
   const isA11yOscura = ref(null)
   const isA11yTypography = ref(null)
   const isA11yView = ref(null)
   const isA11yUnderline = ref(null)
   const fontSize = ref(16)
-  const showGob = ref(null)
   const showMenu = ref(null)
   const showSubmenu = ref('')
   // navegacion
   const esColapsable = ref(false)
   const anchoNavegacion = ref(1450)
 
-  isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showGob.value, showMenu.value, 
+  isA11yOscura.value, isA11yTypography.value, isA11yView.value, isA11yUnderline.value, showMenu.value, 
   showSubmenu.value = ''
   
   function toggleA11yTypography() {
@@ -30,12 +29,7 @@
     isA11yUnderline.value = !isA11yUnderline.value
   }
 
-  function toggleGob() {
-    showMenu.value = false
-    showGob.value = !showGob.value
-  }
   function toggleMenu() {
-    showGob.value = false
     showSubmenu.value = ''
     showMenu.value = !showMenu.value
   }
@@ -241,51 +235,11 @@
         Restablecer
       </button>
     </menu>
-    
-    <nav aria-label="Menú del Gobierno de México" class="navegacion navegacion-gobmx" :class="{'navegacion-extendida': !esColapsable}">
-      <div class="nav-contenedor-identidad">
-        <a href="https://www.gob.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener">
-          <img 
-            class="nav-logo" 
-            :src="`${cdn}institucional/gobmx-2024.svg`" 
-            alt="Gobierno de México."
-            width="104.8"
-            height="38" 
-          />
-        </a>
-        <button 
-          v-if="esColapsable" 
-          @click="toggleGob" 
-          class="nav-boton-menu" 
-          :class="{ 'abierto': showGob }" 
-          aria-label="Menú del Gobierno de México" 
-          :aria-hidden="!esColapsable"
-          :aria-expanded="esColapsable && !showGob"
-          aria-controls="menugobiernodemexico" 
-          id="botongobmx"
-          >
-          <span class="nav-icono-menu" aria-hidden="true"></span>
-        </button>
-      </div>
-      <div id="menugobiernodemexico" class="nav-menu-contenedor" :class="{ 'abierto': showGob }">
-        <div class="nav-menu-principal">
-          <ul class="nav-menu">
-            <li><a href="https://www.gob.mx/tramites" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer">Trámites</a></li>
-            <li><a href="https://www.gob.mx/gobierno" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer">Gobierno</a></li>
-            <li>
-              <a href="https://www.gob.mx/busqueda" class="nav-hipervinculo" target="_blank" rel="noopener noreferrer" aria-label="Búsqueda">
-                <span class="pictograma-buscar" aria-hidden="true"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
 
     <nav aria-label="Menú principal" class="navegacion navegacion-pegada" :class="{'navegacion-extendida': !esColapsable}" @mouseleave="ocultarSumbenu()">
       <div class="nav-contenedor-identidad">
-        <a href="https://conahcyt.mx/" class="nav-hiperviculo-logo" target="_blank" rel="noopener noreferrer">
-          <img class="nav-logo a11y-oscura-filtro-blanco" width="130" height="38" :src="`${cdn}institucional/conahcyt-azul.svg`" alt="Conahcyt">
+        <a href="https://sisdai.org/" class="nav-hiperviculo-logo" target="_blank" rel="noopener noreferrer">
+          <img class="nav-logo a11y-oscura-filtro-blanco" width="42" height="42" :src="sisdai" alt="Sisdai">
         </a>
         <button 
           v-if="esColapsable"
@@ -307,16 +261,6 @@
       <div id="menusisdaicss" class="nav-menu-contenedor" :class="{ 'abierto': showMenu, 'submenu-abierto': showSubmenu != '' }" >
         <div class="nav-menu-complementario">
           <ul class="nav-menu">
-            <li>
-              <a 
-                href="https://sisdai.conahcyt.mx" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                class="nav-hipervinculo"
-              >
-                <small>IR A SISDAI</small>
-              </a>
-            </li>
             <li>
               <a
                 href="https://github.com/CentroGeo/sisdai-css"
