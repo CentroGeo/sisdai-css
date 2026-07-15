@@ -1,0 +1,21 @@
+name: Espejo hacia GitLab
+
+on:
+  push:
+    branches: ["**"]
+    tags: ["**"]
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout completo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push espejo hacia GitLab
+        run: |
+          git remote add gitlab https://pradelpaw:${{ secrets.GITLAB_TOKEN }}@gitlab.com/sisdai-org/sisdai-css.git
+          git push gitlab --all --force
+          git push gitlab --tags --force
